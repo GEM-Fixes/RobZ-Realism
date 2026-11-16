@@ -1,0 +1,54 @@
+{location "main"
+	{background
+		{picture "/interface/background/robz_dispatch_main"}
+		{video "/video/robz_menu"}
+		{media "main"
+			{file "/music/main_theme" loop}
+		}
+	}
+}
+{location "login"
+	{background
+		{picture "/interface/background/robz_dispatch_loading"}
+		{media "main"
+			{file "/music/main_theme" loop}
+		}
+	}
+}
+{location "single"
+	{background
+		{media "main"
+			{file "/music/campaign_theme" loop}
+		}
+	}
+}
+{location "multi"
+	{background
+		{picture "/interface/background/robz_dispatch_loading"}
+		{media "main"
+			{file "/music/main_theme" loop}
+		}
+	}
+}
+{location "multi_ingame"
+	{background
+		{picture "/interface/background/robz_dispatch_loading"}
+	}
+}
+{location "options"
+	{background
+		{picture "/interface/background/robz_dispatch_loading"}
+		{media "main"
+			{file "/music/main_theme" loop}
+		}
+	}
+}
+{location "credits"
+	{background
+;		{picture "/interface/background/credits"}
+		{media "credits"
+			{file "/music/skirmish_hero_eng" loop
+			}
+		}
+	}
+}

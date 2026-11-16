@@ -1,0 +1,25 @@
+{action
+	{target ground}
+	{cursor "trench"}
+	{fx "flashred"}
+	{item "trench_spade"}
+	{item_in_box}
+	{entity "wires_square_b"}
+	{spacing 26.0}
+	{button "trench_long"}
+	{ShowCount}
+	{able_enqueue}
+	{abledrag}
+	{instructions
+		{bind range 1}
+		{disable_action_restart}
+		{take_item}
+		{reserve_hands}
+		{animations "stand_dig_trench" random loop totaltime 180}
+		{fsm_request "ground-drop"}
+		{unreserve_hands}
+		{install "wires_square_b" 0 exact_placement}
+		{fsm_request nocheck "hold-nothing"}
+	}
+}
+;long trench

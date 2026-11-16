@@ -1,0 +1,172 @@
+{action
+	{target ground}
+	{cursor "trench"}
+	{fx "flashblue"}
+	{item "small_shovel"}
+	{item_in_box}
+	{button "trench_low"}
+	{apply_to_all}
+	{instructions
+		{fsm_request "quick-down"}
+		{disable_action_restart}
+
+		{free_hands}
+		{take_item}
+		{reserve_hands}
+
+	;	{animations "lie_take_gun lie_fire_pistol" random loop totaltime 15}	;почему-то персонаж встает при вызове анимаций, даже если принудительно уложен и вызывается анимация в положении лежа
+	;	{animations "" totaltime 60}	;пустая анимашка не фурычит, а таймера отдельно не нашлось
+
+		{fsm_request "inventory-pick"}	;этот способ нужен для имитации анимации копания, но без вскакивания солдат под пули
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}	;этот способ нужен для имитации анимации копания, но без вскакивания солдат под пули
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}	;этот способ нужен для имитации анимации копания, но без вскакивания солдат под пули
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}	;этот способ нужен для имитации анимации копания, но без вскакивания солдат под пули
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}	;этот способ нужен для имитации анимации копания, но без вскакивания солдат под пули
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}	;этот способ нужен для имитации анимации копания, но без вскакивания солдат под пули
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}	;этот способ нужен для имитации анимации копания, но без вскакивания солдат под пули
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}	;этот способ нужен для имитации анимации копания, но без вскакивания солдат под пули
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}	;этот способ нужен для имитации анимации копания, но без вскакивания солдат под пули
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}	;этот способ нужен для имитации анимации копания, но без вскакивания солдат под пули
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}	;этот способ нужен для имитации анимации копания, но без вскакивания солдат под пули
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}	;этот способ нужен для имитации анимации копания, но без вскакивания солдат под пули
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+		{fsm_request "inventory-pick"}
+		{fsm_request "pistol-pick"}
+
+		{fsm_request "squat"}		;для стабилизации кости basis, иначе начинаются глюки с ориентацией устанавливаемого объекта на наклонных поверхностях
+		{effect "install_cover"} ; event of unit doing it
+		{fsm_request "quick-down"}	;контрольно уложить
+
+		{unreserve_hands}
+		{free_hands}
+	}
+}

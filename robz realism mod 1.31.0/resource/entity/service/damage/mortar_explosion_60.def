@@ -1,0 +1,7 @@
+{game_entity
+	{Skeleton}
+	{props "mortar_explosion_60"}
+	{extender "stuff"
+		{item "mortar_explosion_60"}
+	}
+}

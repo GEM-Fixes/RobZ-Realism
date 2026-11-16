@@ -1,0 +1,17 @@
+{action
+	{target ground}
+	{cursor "use"}
+	{fx "flashred"}
+	{item "hedgehog_kit"}
+	{item_in_box}
+	{button "hedgehog"}
+	{instructions
+		{bind range 1}
+		{disable_action_restart}
+		{free_hands}
+		{reserve_hands}
+		{animations "squat_repair_1 squat_repair_2" random loop totaltime 20}
+		{unreserve_hands}
+		{install "eg2" 0 exact_placement}
+	}
+}

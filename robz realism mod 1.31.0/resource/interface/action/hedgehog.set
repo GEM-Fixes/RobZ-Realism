@@ -1,0 +1,25 @@
+{action
+	{target ground}
+	{cursor "trench"}
+	{fx "flashred"}
+	{item "sandbag_kit"}
+	{item_in_box}
+	{entity "eg"}
+	{spacing 8.0}
+	{button "trench_deep"}
+	{ShowCount}
+	{able_enqueue}
+	{abledrag}
+	{instructions
+		{bind range 1}
+		{disable_action_restart}
+		{take_item}
+		{reserve_hands}
+		{animations "stand_dig_trench" loop totaltime 120}
+		{fsm_request "ground-drop"}
+		{unreserve_hands}
+		{install "eg" 0 exact_placement}
+		{fsm_request nocheck "hold-nothing"}
+	}
+}
+;deep single fox

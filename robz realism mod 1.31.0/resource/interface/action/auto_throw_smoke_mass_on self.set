@@ -1,0 +1,23 @@
+{action
+	{target ground}
+	{cursor "trench"}
+	{fx "flashblue"}
+	{item "smoke grenade"}
+	{item_in_box}
+	{button "throw_smoke_mass"}
+	{apply_to_all}
+	{ShowCount}
+	{instructions
+		{disable_action_restart}
+
+		{take_item}
+		{reserve_hands}
+
+		{fsm_request "throw"}
+		{effect "throw_smoke"} ; event of unit doing it
+
+		{unreserve_hands}
+		{install "x" 0 exact_placement}
+		{fsm_request nocheck "hold-nothing"}
+	}
+}

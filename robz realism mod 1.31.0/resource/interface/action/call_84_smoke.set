@@ -1,0 +1,14 @@
+{action
+	{target ground}
+	;{fx "flashred"}
+	;{abledrag}
+	{button "call_84_smoke"}
+	{able_vehicle}
+	{NotifySelect}
+	{item "84_smoke_off_map"}
+	{item_in_box}
+	{ShowCount}
+	{instant
+		{effect "artillery_smoke_84"}
+	}
+}
