@@ -1,0 +1,22 @@
+{materials
+	{"mtl0"
+		{layer bump
+			{diffuse "/texture/land/_new/grass_flat01"}
+			{bump "/texture/land/_new/grass_flat01_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/grass/steppe_1a"}
+			{bump "/texture/land/grass/steppe_1a_nm"}
+		}
+	}
+	{"mtl1"
+		{layer bump
+			{diffuse "/texture/land/_new/grass_flat01"}
+			{bump "/texture/land/_new/grass_flat01_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/fields/stubble_field3dark"}
+			{bump "/texture/land/fields/stubble_field3dark_nm"}
+		}
+	}
+}

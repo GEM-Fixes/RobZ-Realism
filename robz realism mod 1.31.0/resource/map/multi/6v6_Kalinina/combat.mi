@@ -1,0 +1,180 @@
+{mission
+	{Entity "map_point" 0x802d
+		{Position 4700.62 -7033.38}
+		{xform zl 90}
+		{Extender "map_point"
+			{name a1}
+			{team a}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 1}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 46}
+	}
+	{Entity "map_point" 0x801c
+		{Position 4485.12 -7042.74}
+		{xform zl 90}
+		{Extender "map_point"
+			{name a3}
+			{team a}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 3}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 25}
+	}
+	{Entity "map_point" 0x8008
+		{Position -4449.17 -6970.82}
+		{xform zl 90}
+		{Extender "map_point"
+			{name a2}
+			{team a}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 2}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 5}
+	}
+	{Entity "map_point" 0xc006
+		{Position -4586.71 -6969.49}
+		{xform zl 90}
+		{Extender "map_point"
+			{name a4}
+			{team a}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 4}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 8}
+	}
+	{Entity "map_point" 0x8014
+		{Position -4659.59 6988.87}
+		{xform zl -90}
+		{Extender "map_point"
+			{name b1}
+			{team b}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 1}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 17}
+	}
+	{Entity "map_point" 0x8007
+		{Position -4492.58 6988.38}
+		{xform zl -90}
+		{Extender "map_point"
+			{name b3}
+			{team b}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 3}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 4}
+	}
+	{Entity "map_point" 0xc007
+		{Position 4315.91 6965.03}
+		{xform zl -90}
+		{Extender "map_point"
+			{name b4}
+			{team b}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 4}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 9}
+	}
+	{Entity "map_point" 0x802c
+		{Position 4523.43 6960.45}
+		{xform zl -90}
+		{Extender "map_point"
+			{name b2}
+			{team b}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 2}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 45}
+	}
+	{Tags "keep_places_without_door" 0x1}
+	{Tags "keep_places_without_door" 0x2e}
+	{Tags "keep_places_without_door" 0x36}
+	{Tags "keep_places_without_door" 0x2021}
+	{Tags "keep_places_without_door" 0x6029}
+	{Tags "keep_places_without_door" 0x6032}
+	{Tags "keep_places_without_door" 0x603c}
+	{Tags "keep_places_without_door" 0x6046}
+	{Tags "keep_places_without_door" 0x6085}
+	{Tags "keep_places_without_door" 0x60a1}
+	{Tags "keep_places_without_door" 0x60a2}
+	{Tags "keep_places_without_door" 0x60b3}
+	{Tags "keep_places_without_door" 0x146}
+	{Tags "keep_places_without_door" 0x150}
+	{Tags "keep_places_without_door" 0x1de}
+	{Tags "keep_places_without_door" 0x1df}
+	{Tags "keep_places_without_door" 0x218d}
+	{Tags "keep_places_without_door" 0x218e}
+	{Environment "skirmish/rus-tarnopol"}
+	{Helpers
+		{reinforcements
+			{scoreTotal 0}
+			{scoreCurrent 0}
+		}
+	}
+	{Fog 0}
+}
