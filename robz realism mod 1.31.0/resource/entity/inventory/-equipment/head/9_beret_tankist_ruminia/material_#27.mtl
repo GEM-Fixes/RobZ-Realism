@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "9_beret_tankist_ruminia"}
+	{blend none}
+}

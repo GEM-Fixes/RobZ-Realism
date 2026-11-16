@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "garoet_hat"}
+	{bump "jack_reb_slouchhat_n"}
+	{specular "jack_reb_slouchhat_s"}
+	{color "230 230 230 25"}
+	{blend none}
+}

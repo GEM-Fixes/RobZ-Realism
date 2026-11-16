@@ -1,0 +1,31 @@
+;Exported by: sergienko
+;Date:        Wed Mar 29 16:30:10 2006
+;File:        D:\-projets1_5\3dwork\anima\gun\снаряды\mortar_ammo\gaub.max
+{Skeleton
+	{bone "howitzer_shell"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "122mm_shell.ply"}
+		{bone "tail"
+			{Matrix34
+				-1	0	0
+				0	-1	0
+				0	0	1
+				-5.16796	0.0	0
+			}
+		}
+	}
+}
+{Volume "body"
+	{Cylinder 1.88811 12.4754}
+	{Bone "howitzer_shell"}
+	{Matrix34
+		0	1	0
+		0	0	1
+		1	0	0
+		1.42522	-0.00408972	-0.004019
+	}
+}

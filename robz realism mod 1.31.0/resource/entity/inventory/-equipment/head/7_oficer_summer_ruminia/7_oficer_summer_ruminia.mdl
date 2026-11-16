@@ -1,0 +1,54 @@
+;Exported by: Luzhbin_M
+;Date:        Wed Apr 01 16:39:54 2009
+;File:        D:\Black\head_models\7_oficer_summer_ruminia\7_oficer_summer_ruminia.max
+{Skeleton
+	{bone "7_oficer_summer_ruminia"
+		{Matrix34
+			1.055	0	0
+			0	-1.055	0
+			0	0	1.02
+			0.2	0	-0.2
+		}
+		{VolumeView "7_oficer_summer_ruminia.ply"}
+		{bone "handle"
+			{Matrix34
+				1	0	0
+				0	0	1
+				0	-1	0
+				-0.0809276	0.124973	4.28573
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 3.36133 2.9156 2.82349}
+	{Bone "7_oficer_summer_ruminia"}
+	{Position 0.248802	0.164526	4.70603}
+}
+{Volume "select"
+	{Box 7.32706 8.02016 6.53495}
+	{Bone "7_oficer_summer_ruminia"}
+	{Matrix34
+		1	0	0
+		0	0	1
+		0	-1	0
+		-0.0809263	0.238468	4.38474
+	}
+}
+{Extender "preview"
+	{"stuff"
+		{camera
+			{origin 5.2655	4.67194	6.55838}
+			{lookat -11.1334	-11.689	-0.971249}
+			{fov 45}
+			{horizon 0.0197823}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction -0.338116	-0.33451	-0.154209}
+				{ambient 0x959595}
+			}
+		}
+	}
+}

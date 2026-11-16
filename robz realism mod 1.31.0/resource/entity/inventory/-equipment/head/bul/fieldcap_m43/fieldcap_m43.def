@@ -1,0 +1,7 @@
+{actor
+	(include "/properties/stuff_small.ext")
+	{extender "stuff"
+		{item "fieldcap_m43"}
+	}
+	{Extension "fieldcap_m43.mdl"}
+}

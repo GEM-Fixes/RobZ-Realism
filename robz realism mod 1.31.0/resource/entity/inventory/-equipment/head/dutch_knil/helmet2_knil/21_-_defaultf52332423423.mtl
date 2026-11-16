@@ -1,0 +1,4 @@
+{material bump
+	{diffuse "jap_headgear_specular"}
+	{blend test}
+}

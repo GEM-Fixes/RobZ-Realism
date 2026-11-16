@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "10_bezkozirka_regina marina_italia"}
+	{blend none}
+}

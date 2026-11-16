@@ -1,0 +1,87 @@
+;Exported by: 000
+;Date:        Fri Jun 08 12:17:46 2012
+;File:        D:\спасти все\3dsmax\scenes\5-живот-оттопырь______ КРЮК РИ.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{bone "ri_hoock_1"
+			{Matrix34
+				-0.663744	-0.710729	0.233042
+				-0.184258	-0.146595	-0.971884
+				0.724909	-0.688022	-0.0336559
+				3.02187	-3.19824	-0.687858
+			}
+			{VolumeView "ri_hoock_1.ply"}
+		}
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "ri_hoock_1"}
+	{Matrix34
+		-0.947254	-0.120512	0.296962
+		-0.0168388	-0.978878	-0.20375
+		0.136247	-0.068577	0.988299
+		-0.615409	0.698228	-0.664631
+	}
+}
+{Volume "select"
+	{Polyhedron "select.vol"}
+	{Bone "basis"}
+	{Matrix34
+		0	1	0
+		0.979429	0	-0.201789
+		-0.0119052	0	-0.999929
+		3.83097	-3.06651	4.81382
+	}
+}
+{Extender "preview"
+	{"Stuff_primary"
+		{camera
+			{origin 3.33962	3.64567	-20.6233}
+			{lookat 2.81152	3.38169	-2.96725}
+			{fov 45}
+			{horizon -3.18266}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 7.70153	6.9023	-7.96359}
+			}
+			{"1"
+				{type directional}
+				{direction 0.167558	-0.0329947	0.469932}
+			}
+			{"2"
+				{type point}
+				{position -4.79734	7.36523	-12.6048}
+			}
+		}
+	}
+	{"Stuff"
+		{camera
+			{origin 7.44594	1.42977	-18.6939}
+			{lookat 4.97924	3.76598	-2.8771}
+			{fov 45}
+			{horizon -53.3053}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 7.7486	1.87444	-0.977189}
+			}
+			{"1"
+				{type directional}
+				{direction 0.238938	0.252592	0.359313}
+			}
+			{"2"
+				{type point}
+				{position -6.15919	3.54288	-3.29691}
+			}
+		}
+	}
+}

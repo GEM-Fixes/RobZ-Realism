@@ -1,0 +1,83 @@
+{Skeleton
+	{bone "v2_a4_rocket"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{bone "rocket"
+			{Matrix34
+				0.999848	0.00872541	-0.0151146
+				-0.00872641	0.999962	0
+				0.0151141	0.000131881	0.999886
+				5.29263	1.37677	0.230077
+			}
+			{VolumeView "rocket.ply"}
+			{bone "tail"
+				{Matrix34
+					-0.999846	0	-0.0175366
+					0	-1	0
+					-0.0175366	0	0.999846
+					-61.492	-0.87953	0.0665886
+				}
+			}
+		}
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "rocket"}
+	{Position 92.6935	257.067	-2.08057}
+}
+{Volume "select"
+	{Polyhedron "select.vol"}
+	{Bone "rocket"}
+	{Position 92.6935	257.067	-2.08057}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 68	74.0041	84.6906}
+			{lookat 60	-0.147835	-0.264236}
+			{fov 108}
+			{horizon 3.00003}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction 0.497695	0.0315306	-0.0361246}
+			}
+			{"1"
+				{type directional}
+				{direction -0.0419261	-0.459162	-0.193422}
+			}
+			{"2"
+				{type directional}
+				{direction -0.268368	0.257637	-0.334068}
+			}
+		}
+	}
+
+	{"Stuff_primary"
+		{camera
+			{origin 68	74.0041	84.6906}
+			{lookat 60	-0.147835	-0.264236}
+			{fov 108}
+			{horizon 3.00003}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction 0.497695	0.0315306	-0.0361246}
+			}
+			{"1"
+				{type directional}
+				{direction -0.0419261	-0.459162	-0.193422}
+			}
+			{"2"
+				{type directional}
+				{direction -0.268368	0.257637	-0.334068}
+			}
+		}
+	}
+}

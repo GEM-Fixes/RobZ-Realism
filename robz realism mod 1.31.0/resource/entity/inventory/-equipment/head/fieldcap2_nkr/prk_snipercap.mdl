@@ -1,0 +1,66 @@
+;Exported by: Administrator
+;Date:        Mon Feb 06 16:42:30 2012
+;File:        F:\±±º«¾Ñ»÷ÊÖÃ±.max
+{Skeleton
+	{bone "prk_snipercap"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "prk_snipercap.ply"}
+		{bone "handle"
+			{Matrix34
+				-0.736582	-0.676333	0.00445351
+				0.070637	-0.0703785	0.995016
+				-0.672649	0.733226	0.0996141
+				2.66512	-1.49885	4.12624
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 12.7872 11.8479 9.5606}
+	{Bone "prk_snipercap"}
+	{Matrix34
+		-0.766046	-0.642788	0
+		-0.642788	0.766045	0
+		0	0	-1
+		4.80031	-2.47792	6.87201
+	}
+}
+{Volume "select"
+	{Box 9.01077 5.52125 6.4367}
+	{Bone "prk_snipercap"}
+	{Matrix34
+		-0.766046	-0.642788	0
+		-0.642788	0.766045	0
+		0	0	-1
+		4.14002	-2.61048	5.84172
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 7.89966	6.44133	5.03167}
+			{lookat -3.00181	-3.46602	3.5888}
+			{fov 43.7799}
+			{horizon 2.38819}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position -14.0236	-2.01621	0.920948}
+			}
+			{"1"
+				{type directional}
+				{direction -0.320398	-0.376899	0.0727492}
+			}
+			{"2"
+				{type point}
+				{position -3.55985	-17.0144	0.555411}
+			}
+		}
+	}
+}

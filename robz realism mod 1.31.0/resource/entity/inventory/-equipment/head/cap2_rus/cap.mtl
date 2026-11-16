@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "ushanka"}
+	{blend test}
+}

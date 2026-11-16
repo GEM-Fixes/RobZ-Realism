@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "ger_eqipment_2_co"}
+	{blend none}
+}

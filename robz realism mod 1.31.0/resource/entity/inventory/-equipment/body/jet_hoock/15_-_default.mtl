@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "gun - tube"}
+	{blend none}
+}

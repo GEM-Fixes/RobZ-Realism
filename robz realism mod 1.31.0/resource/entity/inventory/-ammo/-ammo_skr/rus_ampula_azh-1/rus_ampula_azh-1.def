@@ -1,0 +1,13 @@
+{game_entity
+	(include "/properties/stuff_small.ext")
+	{collider "ammo"}
+	{Volume "body"
+		{thickness 4}
+		{able {touch} {bullet} {blast}}
+	}
+	{extender "stuff"
+		{item "ammo bullet_azh1"}
+	}
+	{props "steel" "explosive_stuff"}
+	{Extension "rus_ampula_azh-1.mdl"}
+}

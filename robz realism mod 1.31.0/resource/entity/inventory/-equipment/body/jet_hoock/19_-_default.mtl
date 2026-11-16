@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "mod-4 armor 01"}
+	{blend none}
+}

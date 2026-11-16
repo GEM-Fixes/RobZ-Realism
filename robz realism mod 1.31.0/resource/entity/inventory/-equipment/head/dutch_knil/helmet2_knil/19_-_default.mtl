@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "headgear1"}
+	{blend none}
+}

@@ -1,0 +1,49 @@
+;Exported by: Glit
+;Date:        Wed Jan 29 12:17:55 2014
+;File:        D:\МодСтрой\mod Stronghold\броня\Koljan\Koljan.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{bone "body"
+			{Matrix34
+				0.0695188	0.624154	-0.778203
+				0.211668	-0.771556	-0.599914
+				-0.974866	-0.123016	-0.185751
+				-3.70206	3.69587	1.19929
+			}
+			{VolumeView "body.ply"}
+		}
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "body"}
+	{Matrix34
+		-0.999571	-0.0292456	-0.00142759
+		0.000716358	-0.999924	-0.0123133
+		-0.00106779	-0.0123143	0.999924
+		0.0888006	0.371794	-0.0467348
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin -14.8097	-1.74848	-0.0168242}
+			{lookat 4.18456	-2.18918	0.0693157}
+			{fov 45}
+		}
+		{lights
+			{"0"
+				{type spot}
+				{position -20.9382	-2.09996	-0.478285}
+				{direction 0.494086	-0.0211642	-0.0736963}
+				{theta 43}
+				{phi 45}
+			}
+		}
+	}
+}

@@ -1,0 +1,5 @@
+{material bump
+	{diffuse "officer eng2"}
+	{color "229 229 229 76"}
+	{blend test}
+}

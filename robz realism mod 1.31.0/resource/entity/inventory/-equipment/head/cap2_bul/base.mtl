@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "officer bul"}
+	{bump "officer bul_bp"}
+	{specular "officer bul_sp"}
+	{color "229 229 229 76"}
+	{blend test}
+}

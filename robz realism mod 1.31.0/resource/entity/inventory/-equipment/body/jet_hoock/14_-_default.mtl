@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "gun - sota 1"}
+	{blend none}
+}

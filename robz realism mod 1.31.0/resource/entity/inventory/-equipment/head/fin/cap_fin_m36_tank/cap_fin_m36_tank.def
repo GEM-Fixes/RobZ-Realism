@@ -1,0 +1,7 @@
+{actor
+	(include "/properties/stuff_small.ext")
+	{extender "stuff"
+		{item "cap_fin_m36_tank"}
+	}
+	{Extension "cap_fin_m36_tank.mdl"}
+}

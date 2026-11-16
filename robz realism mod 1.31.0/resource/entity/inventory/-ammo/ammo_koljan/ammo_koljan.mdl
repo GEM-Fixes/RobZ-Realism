@@ -1,0 +1,59 @@
+;Exported by: Glit
+;Date:        Mon Nov 04 21:04:57 2013
+;File:        D:\МодСтрой\мод Corsairs\Оружие\ammo\ammo_koljan_dwemer\ammo_koljan_dwemer.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{bone "body"
+			{Matrix34
+				-0.99446	-0.0923415	0.0502303
+				0.105119	-0.873579	0.475195
+				0	0.477842	0.878446
+				-3.30715	2.7061	-0.443125
+			}
+			{VolumeView "body.ply"}
+		}
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "basis"}
+	{Matrix34
+		0.993306	0.102229	-0.0537778
+		-0.0871102	0.881649	-0.463797
+		0	0.465567	0.885013
+		-3.11352	1.97998	-0.0417238
+	}
+}
+{Volume "select"
+	{Polyhedron "select.vol"}
+	{Bone "basis"}
+	{Matrix34
+		0.993306	0.102229	-0.0537778
+		-0.0871102	0.881649	-0.463797
+		0	0.465567	0.885013
+		-3.11352	1.97998	-0.0417238
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin -11.9001	-2.17385	0.00874424}
+			{lookat 7.09415	-2.54255	-0.247576}
+			{fov 45}
+		}
+		{lights
+			{"0"
+				{type spot}
+				{position -18.0286	-2.08739	-0.564845}
+				{direction 0.494086	0.0381558	-0.0665071}
+				{theta 43}
+				{phi 45}
+			}
+		}
+	}
+}
