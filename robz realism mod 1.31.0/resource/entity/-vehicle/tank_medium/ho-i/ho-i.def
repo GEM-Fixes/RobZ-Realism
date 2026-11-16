@@ -1,0 +1,189 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "turret_rotator" "vision_vehicle_medium" "muzzle_medium"}
+	
+	{extender "enumerator"}
+
+	; --- Godny hitbox armor (ported from GodnyMod: ho-i.def) ---
+	{Volume "body1"	;передн€€ часть и гласис
+		{component "body"}
+		{tags "body"}
+		{thickness 25	;нижний борт 25мм
+			{front	50}
+			{rear	20}
+			{top	0.1}	;внутренн€€ стенка
+			{bottom	9}
+			{right	12}	;гласис
+		}
+	}
+	{Volume "body2"	;боевое отделение
+		{component "body"}
+		{tags "body"}
+		{thickness 20	;верхний борт 20мм
+			{front	50}
+		;	{rear	20}
+			{top	12}
+			{bottom	9}
+		}
+	}
+	{Volume "body3"	;моторное
+		{component "body"}
+		{tags "body"}
+		{thickness 20
+			{front	0.1}	;внутренн€€ стенка
+		;	{rear	20}
+			{top	10}
+			{bottom	9}
+		}
+	}
+	{Volume "turret"
+		{component "turret"}
+		{tags "turret"}
+		{able {holed}}
+		{thickness 25
+			{front	50}
+		;	{rear	25}
+			{top	12}
+			{bottom	10}
+		}
+	}
+	{Volume "hole_man"
+		{able clear {hole}}
+		{component "turret"}
+	}
+	{volume "mantlet"
+		{thickness 50
+		;	{front	50}	;маска
+			{rear	10}
+		}
+	}
+	{volume "engine"
+		{thickness 10}
+	}
+	; --- end Godny hitbox armor ---
+	("armor_medium" turret(60 30 30 10) body(50 30 20 22))
+	{extender "shield"
+			{off}
+	}
+	{component "shieldl1" {tags "shield"}}
+	{component "shieldl2" {tags "shield"}}
+	{component "shieldl3" {tags "shield"}}
+	{component "shieldl4" {tags "shield"}}
+	{component "shieldl5" {tags "shield"}}
+	{component "shieldr1" {tags "shield"}}
+	{component "shieldr2" {tags "shield"}}
+	{component "shieldr3" {tags "shield"}}
+	{component "shieldr4" {tags "shield"}}
+	{component "shieldr5" {tags "shield"}}
+	 
+	{extender "inventory"
+		{box
+			{item "ammo bullet75 japs aphe" 10}
+			{item "ammo bullet75 japs fg" 31}
+			{item "ammo bullet75 japs heat" 8}
+			{item "ammo type97_mag" 1200}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{weapon "75mm_type99" filling "ammo bullet75 japs fg" 1}
+			{RestoreIKAfterAim}
+			("abm_medium")
+		}
+		{place "mgun"
+			{type "mgun_hull"}
+			{weapon "type97_mg" filled}
+			{foresight "foresight3"}
+			{gunner "driver"}
+			{charger "driver"}
+			("abm_mgun")
+			{basic}
+		}			
+				
+	}
+
+	("crew_4_human")
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_pz4_driver"} {end "seat_gunner_stand"} {base "open_driver"}}
+			{reverse 	{end	"board_pz4_driver" -1} {base "open_driver" -1}}
+		}
+		{anm "left"
+			{forward	{begin	"board_tank_right"} {end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_left"} {end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_highArmor"} 	{end "pose_seat_armor_1"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_lowArmor"} {end "pose_seat_armor_2"}}
+			{reverse 	{end	"emit_body"}}
+		}
+		{anm "armor2"
+			{forward	{begin	"board_lowArmor"} {end "pose_seat_armor_1"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+	{sensor
+		{visor "driver"
+			{vision "tank_driver"}
+			{bone "visor1"}
+		}
+		{visor "main"
+			{vision "tank_main-m"}
+			{bone "visor2"}
+		}
+	}
+	
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit6)  animation(armor2))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+	
+	{mass 23500}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.52) len(0.25))
+		{Locomotion ("locomotion")
+			{maxspeed   34}
+			{maxSpeedAtMaxTurn 6}
+			{StartTime	  27}
+			{TurnTime  	  14}
+    		{TurnStart  1.7} 
+    		{BrakeTime    1} 
+    		{StopTime     2} 
+    		{TurnRadius   9} 
+    		{TurnStop   0.9}
+     		{Gears  0.1 0.2 0.3 1} 
+    		{RearGears 0.25}
+		}
+		{FuelBag
+			{volume 470 }	
+			{rate	21 }   
+			{remain 470 }
+			{fuel "fuel"}
+		}
+		{speed
+        	{Normal  34}
+        	{Slow  34}
+    	}
+	}
+	{Extension "ho-i.mdl"}
+	
+        {bone "gun_rot"
+		{speed 0.0008}
+	}
+	{bone "turret"
+		{speed 0.003}	
+	}
+	{bone "mgun1"
+		{speed 0.07}
+	}
+}

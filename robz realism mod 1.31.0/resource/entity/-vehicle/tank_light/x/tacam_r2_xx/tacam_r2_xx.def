@@ -1,0 +1,21 @@
+{game_entity
+	{Extension "tacam_r2_xx.mdl"}
+	{Volume "body1"
+	}
+	{Volume "body2"
+	}
+	{Volume "body3"
+	}
+	{Volume "body"
+	}
+	{Volume "engine"
+	}
+	{Volume "gun"
+	}
+	{Volume "hull"
+	}
+	{Volume "trackleft"
+	}
+	{Volume "trackright"
+	}
+}

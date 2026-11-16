@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "tacam_gun"}
+	{blend none}
+}

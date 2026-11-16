@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "tacam_r2"}
+	{blend none}
+}

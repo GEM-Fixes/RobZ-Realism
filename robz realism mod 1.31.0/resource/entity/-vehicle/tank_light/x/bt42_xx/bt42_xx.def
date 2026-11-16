@@ -1,0 +1,9 @@
+{game_entity
+	{Extension "bt42_xx.mdl"}
+	{Volume "part2"
+	}
+	{Volume "body1"
+	}
+	{Volume "turret"
+	}
+}
