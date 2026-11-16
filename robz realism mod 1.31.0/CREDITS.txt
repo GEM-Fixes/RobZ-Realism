@@ -1,0 +1,568 @@
+RobZ Realism - 'Field Dispatch' menu art: photo credits
+
+Licences checked per file from Wikimedia Commons metadata. PD = public domain; CC-BY / CC-BY-SA photos
+require the attribution shown; CC-BY-SA also requires adaptations to be shared under CC-BY-SA.
+
+== Static main-menu picture and loading screen ==
+[hero]
+  SC 334949 - Infantrymen of the 413th Regiment, 104th Infantry Division, First U.S. Army advance through the debris strewn street in Inden, Germany (52203593522).jpg
+  https://commons.wikimedia.org/wiki/File:SC_334949_-_Infantrymen_of_the_413th_Regiment,_104th_Infantry_Division,_First_U.S._Army_advance_through_the_debris_strewn_street_in_Inden,_Germany_(52203593522).jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive from United States
+
+[sky]
+  SC 270676 - U.S. troops of the 5th Infantry Division, U.S. Third Army, Luxembourg, advance through wintry-looking countryside on their way to the frontlines. 22 December, 1944. (52291633081).jpg
+  https://commons.wikimedia.org/wiki/File:SC_270676_-_U.S._troops_of_the_5th_Infantry_Division,_U.S._Third_Army,_Luxembourg,_advance_through_wintry-looking_countryside_on_their_way_to_the_frontlines._22_December,_1944._(52291633081).jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive from United States
+
+[left]
+  SC 196444-S - Seventh Army infantrymen move through rain and mist to assault a nearby town in the new advance on German held territory. Raon L'Etape area, France. 17 November, 1944.jpg
+  https://commons.wikimedia.org/wiki/File:SC_196444-S_-_Seventh_Army_infantrymen_move_through_rain_and_mist_to_assault_a_nearby_town_in_the_new_advance_on_German_held_territory._Raon_L%27Etape_area,_France._17_November,_1944.jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive
+
+== Menu video (robz_menu.avi, one 526 s pass of the menu music, looped), in order of appearance ==
+Times are seconds into the menu music. Photos marked 'AI-upscaled' were enlarged locally with Real-ESRGAN
+(realesrgan-x4plus), blended back toward a plain resize and re-grained from the original scan, and checked
+side by side at 100%; nothing was added that is not in the photograph. No photo was colourised.
+
+[scene 1, 2-11 s]
+  SC 334949 - Infantrymen of the 413th Regiment, 104th Infantry Division, First U.S. Army advance through the debris strewn street in Inden, Germany (52203593522).jpg
+  https://commons.wikimedia.org/wiki/File:SC_334949_-_Infantrymen_of_the_413th_Regiment,_104th_Infantry_Division,_First_U.S._Army_advance_through_the_debris_strewn_street_in_Inden,_Germany_(52203593522).jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive from United States
+
+[scene 2, 11-23 s]
+  A Churchill tank of 7th Royal Tank Regiment, 31st Tank Brigade, supporting infantry of 8th Royal Scots during Operation 'Epsom', Normandy, 28 June 1944. B6124.jpg
+  https://commons.wikimedia.org/wiki/File:A_Churchill_tank_of_7th_Royal_Tank_Regiment,_31st_Tank_Brigade,_supporting_infantry_of_8th_Royal_Scots_during_Operation_%27Epsom%27,_Normandy,_28_June_1944._B6124.jpg
+  Source: British Army Film & Photographic Unit / Imperial War Museums (Crown copyright expired)  |  Licence: Public domain
+  Photographer/author: No 5 Army Film &amp; Photographic Unit, Stewart (Maj)
+  IWM catalogue: B 6124
+
+[scene 3, 23-35 s]
+  SC 190532 - Mortar crew of Co. B, 132nd Infantry, Americal Div. The company took part in the attack on Jap positions on Hill 260, Bougainville. March, 1944.jpg
+  https://commons.wikimedia.org/wiki/File:SC_190532_-_Mortar_crew_of_Co._B,_132nd_Infantry,_Americal_Div._The_company_took_part_in_the_attack_on_Jap_positions_on_Hill_260,_Bougainville._March,_1944.jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive
+
+[scene 4, 35-47 s]
+  Советская пехота при поддержке танков Т-34 ведет бой на Львовском направлении 1.jpg
+  https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F_%D0%BF%D0%B5%D1%85%D0%BE%D1%82%D0%B0_%D0%BF%D1%80%D0%B8_%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B5_%D1%82%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2_%D0%A2-34_%D0%B2%D0%B5%D0%B4%D0%B5%D1%82_%D0%B1%D0%BE%D0%B9_%D0%BD%D0%B0_%D0%9B%D1%8C%D0%B2%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%BC_%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8_1.jpg
+  Source: Soviet / Russian archives  |  Licence: Public domain
+  Photographer/author: Max Alpert
+
+[scene 5, 47-59 s]
+  Australian 2-pdr anti-tank gun in action at Bakri on the Muar-Parit Sulong Road.jpg
+  https://commons.wikimedia.org/wiki/File:Australian_2-pdr_anti-tank_gun_in_action_at_Bakri_on_the_Muar-Parit_Sulong_Road.jpg
+  Source: Australian Crown copyright expired  |  Licence: Public domain
+  Photographer/author: photographer not identified
+
+[scene 6, 59-72 s]
+  Canadian Army machine-gunners in action near Carpiquet.png
+  https://commons.wikimedia.org/wiki/File:Canadian_Army_machine-gunners_in_action_near_Carpiquet.png
+  Source: Canadian Crown copyright expired  |  Licence: Public domain
+  Photographer/author: Lieut. Donald I. Grant
+  AI-upscaled (Real-ESRGAN, blend strength 0.6)
+
+[scene 7, 72-84 s]
+  StateLibQld 1 124102 Infantry and equipment crossing over newly built bridges, Bougainville, ca. 1945.jpg
+  https://commons.wikimedia.org/wiki/File:StateLibQld_1_124102_Infantry_and_equipment_crossing_over_newly_built_bridges,_Bougainville,_ca._1945.jpg
+  Source: Australian Crown copyright expired  |  Licence: Public domain
+  AI-upscaled (Real-ESRGAN, blend strength 0.6)
+
+[scene 8, 84-96 s]
+  Infantrymen advance aided by medium tank on Kwajalein. 1 February, 1944. (49350350947).jpg
+  https://commons.wikimedia.org/wiki/File:Infantrymen_advance_aided_by_medium_tank_on_Kwajalein._1_February,_1944._(49350350947).jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive from Ireland and United States
+
+[scene 9, 96-107 s]
+  Infantry of 15th (Scottish) Division advance through waist-high corn, supported by Churchill tanks of 7th Royal Tank Regiment during Operation 'Epsom', Normandy, 28 June 1944. B6119.jpg
+  https://commons.wikimedia.org/wiki/File:Infantry_of_15th_(Scottish)_Division_advance_through_waist-high_corn,_supported_by_Churchill_tanks_of_7th_Royal_Tank_Regiment_during_Operation_%27Epsom%27,_Normandy,_28_June_1944._B6119.jpg
+  Source: British Army Film & Photographic Unit / Imperial War Museums (Crown copyright expired)  |  Licence: Public domain
+  Photographer/author: No 5 Army Film &amp; Photographic Unit, Stewart (Maj)
+  IWM catalogue: B 6119
+
+[scene 10, 107-111 s]
+  Marines advancing on beach. Saipan. 15 June, 1944. (52307939160).jpg
+  https://commons.wikimedia.org/wiki/File:Marines_advancing_on_beach._Saipan._15_June,_1944._(52307939160).jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive from United States
+
+[scene 11, 111-115 s]
+  Marcia nel fango.jpg
+  https://commons.wikimedia.org/wiki/File:Marcia_nel_fango.jpg
+  Source: Soviet / Russian archives  |  Licence: Public domain
+  Photographer/author: fotoreporter sovietico sconosciuto
+
+[scene 12, 115-119 s]
+  Soldiers of the Allied Armies in Tobruk 1941.jpg
+  https://commons.wikimedia.org/wiki/File:Soldiers_of_the_Allied_Armies_in_Tobruk_1941.jpg
+  Source: Australian Crown copyright expired  |  Licence: Public domain
+  Photographer/author: Unknown authorUnknown author
+
+[scene 13, 119-123 s]
+  Canadian troops on their way to Juno Beach.jpg
+  https://commons.wikimedia.org/wiki/File:Canadian_troops_on_their_way_to_Juno_Beach.jpg
+  Source: Canadian Crown copyright expired  |  Licence: Public domain
+  Photographer/author: Dennis Sullivan
+  AI-upscaled (Real-ESRGAN, blend strength 0.35)
+
+[scene 14, 123-127 s]
+  SC 270690 - Men of Baker Company, Fifth Infantry Division, move up through the woods outside Neuheim, enroute to Schweinheim, Germany, with tank support. (52291598526).jpg
+  https://commons.wikimedia.org/wiki/File:SC_270690_-_Men_of_Baker_Company,_Fifth_Infantry_Division,_move_up_through_the_woods_outside_Neuheim,_enroute_to_Schweinheim,_Germany,_with_tank_support._(52291598526).jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive from United States
+
+[scene 15, 127-131 s]
+  The British Army in Italy 1944 NA12746.jpg
+  https://commons.wikimedia.org/wiki/File:The_British_Army_in_Italy_1944_NA12746.jpg
+  Source: British Army Film & Photographic Unit / Imperial War Museums (Crown copyright expired)  |  Licence: Public domain
+  Photographer/author: Lambert (Sgt), No 2 Army Film &amp; Photographic Unit
+  IWM catalogue: NA 12746
+  AI-upscaled (Real-ESRGAN, blend strength 0.6)
+
+[scene 16, 131-135 s]
+  On the flank of a battle-wrecked alligator tank the Okinawa sun casts the shadows of 6th Division Marines as they move into to mop up the southern tip of the island HD-SN-99-02891.jpg
+  https://commons.wikimedia.org/wiki/File:On_the_flank_of_a_battle-wrecked_alligator_tank_the_Okinawa_sun_casts_the_shadows_of_6th_Division_Marines_as_they_move_into_to_mop_up_the_southern_tip_of_the_island_HD-SN-99-02891.jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Cpl. A. J. Giossi
+
+[scene 17, 135-139 s]
+  Советская пехота при поддержке танков Т-34 ведет бой на Львовском направлении 2.jpg
+  https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F_%D0%BF%D0%B5%D1%85%D0%BE%D1%82%D0%B0_%D0%BF%D1%80%D0%B8_%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B5_%D1%82%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2_%D0%A2-34_%D0%B2%D0%B5%D0%B4%D0%B5%D1%82_%D0%B1%D0%BE%D0%B9_%D0%BD%D0%B0_%D0%9B%D1%8C%D0%B2%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%BC_%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8_2.jpg
+  Source: Soviet / Russian archives  |  Licence: Public domain
+  Photographer/author: Max Alpert
+
+[scene 18, 139-143 s]
+  Australian infantry and armour at Buna (AWM 014008).jpg
+  https://commons.wikimedia.org/wiki/File:Australian_infantry_and_armour_at_Buna_(AWM_014008).jpg
+  Source: Australian Crown copyright expired  |  Licence: Public domain
+  Photographer/author: George Silk
+
+[scene 19, 143-147 s]
+  Canadian landings at Juno Beach.jpg
+  https://commons.wikimedia.org/wiki/File:Canadian_landings_at_Juno_Beach.jpg
+  Source: Canadian Crown copyright expired  |  Licence: Public domain
+  Photographer/author: Unknown authorUnknown author
+
+[scene 20, 147-151 s]
+  SC 201388 - A 9th U.S. Army tank-dozer moves up into Julich, Germany, after crossing the Roer River. 24 February, 1945. (53005674626).jpg
+  https://commons.wikimedia.org/wiki/File:SC_201388_-_A_9th_U.S._Army_tank-dozer_moves_up_into_Julich,_Germany,_after_crossing_the_Roer_River._24_February,_1945._(53005674626).jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive from United States
+
+[scene 21, 151-156 s]
+  IWM-E-17616-Crusader-19421002 cropped.png
+  https://commons.wikimedia.org/wiki/File:IWM-E-17616-Crusader-19421002_cropped.png
+  Source: British Army Film & Photographic Unit / Imperial War Museums (Crown copyright expired)  |  Licence: Public domain
+  Photographer/author: Neill (Sgt), No 1 Army Film &amp; Photographic Unit
+
+[scene 22, 156-159 s]
+  SC 190531 - Cannon Company of the 164th Regt., Americal Div., firing on Japanese positions at Bougainville, near Hill 260, 13 March, 1944. (49624698702).jpg
+  https://commons.wikimedia.org/wiki/File:SC_190531_-_Cannon_Company_of_the_164th_Regt.,_Americal_Div.,_firing_on_Japanese_positions_at_Bougainville,_near_Hill_260,_13_March,_1944._(49624698702).jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive from Ireland and United States
+
+[scene 23, 159-163 s]
+  Танк Т-34-85, купленный на личные средства председателем колхоза Я.Ф. Шульгой.jpg
+  https://commons.wikimedia.org/wiki/File:%D0%A2%D0%B0%D0%BD%D0%BA_%D0%A2-34-85,_%D0%BA%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BD%D0%B0_%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%B5_%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D0%B0_%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D0%B5%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%BC_%D0%BA%D0%BE%D0%BB%D1%85%D0%BE%D0%B7%D0%B0_%D0%AF.%D0%A4._%D0%A8%D1%83%D0%BB%D1%8C%D0%B3%D0%BE%D0%B9.jpg
+  Source: Soviet / Russian archives  |  Licence: Public domain
+  Photographer/author: Israel Ozersky
+
+[scene 24, 163-167 s]
+  AWM 056767 2 5th Infantry Battalion Salamaua July 1943.jpg
+  https://commons.wikimedia.org/wiki/File:AWM_056767_2_5th_Infantry_Battalion_Salamaua_July_1943.jpg
+  Source: Australian Crown copyright expired  |  Licence: Public domain
+  Photographer/author: Robert John Buchanan
+
+[scene 25, 167-175 s]
+  M2 machine gun provides cover for GIs of the 45th Infantry Division advancing towards Niederbronn-les-Bains, 1944 (49350394046).jpg
+  https://commons.wikimedia.org/wiki/File:M2_machine_gun_provides_cover_for_GIs_of_the_45th_Infantry_Division_advancing_towards_Niederbronn-les-Bains,_1944_(49350394046).jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive from Ireland and United States
+
+[scene 26, 175-179 s]
+  The British Army in Normandy 1944 B8200.jpg
+  https://commons.wikimedia.org/wiki/File:The_British_Army_in_Normandy_1944_B8200.jpg
+  Source: British Army Film & Photographic Unit / Imperial War Museums (Crown copyright expired)  |  Licence: Public domain
+  Photographer/author: Laing (Sgt), No 5 Army Film &amp; Photographic Unit
+  IWM catalogue: B 8200
+  AI-upscaled (Real-ESRGAN, blend strength 0.6)
+
+[scene 27, 179-182 s]
+  Marines of the assault wave on the beach. Stretchers have already been brought into play, although the battle is only a few minutes old. (52303811754).jpg
+  https://commons.wikimedia.org/wiki/File:Marines_of_the_assault_wave_on_the_beach._Stretchers_have_already_been_brought_into_play,_although_the_battle_is_only_a_few_minutes_old._(52303811754).jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive from United States
+
+[scene 28, 182-187 s]
+  RIAN archive 633180 Stream crossing.jpg
+  https://commons.wikimedia.org/wiki/File:RIAN_archive_633180_Stream_crossing.jpg
+  Source: Soviet / Russian archives  |  Licence: Public domain
+  Photographer/author: Alpert / Макс Альперт
+
+[scene 29, 187-192 s]
+  Australian armed forces in Papua New Guinea (9939654945907636).jpg
+  https://commons.wikimedia.org/wiki/File:Australian_armed_forces_in_Papua_New_Guinea_(9939654945907636).jpg
+  Source: Australian Crown copyright expired  |  Licence: Public domain
+  Photographer/author: Australia. Commonwealth Dept. of Information.
+
+[scene 30, 192-199 s]
+  SC 201676 - A half-track of a tank destroyer unit of the 104th Infantry Division, U.S. First Army, moves up to engage the enemy in the wrecked and burning town of Merzenich, Germany. 26 February, 1945. (53009394527).jpg
+  https://commons.wikimedia.org/wiki/File:SC_201676_-_A_half-track_of_a_tank_destroyer_unit_of_the_104th_Infantry_Division,_U.S._First_Army,_moves_up_to_engage_the_enemy_in_the_wrecked_and_burning_town_of_Merzenich,_Germany._26_February,_1945._(53009394527).jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive from United States
+
+[scene 31, 199-204 s]
+  IWM-E-6724-Crusader-19411126.jpg
+  https://commons.wikimedia.org/wiki/File:IWM-E-6724-Crusader-19411126.jpg
+  Source: British Army Film & Photographic Unit / Imperial War Museums (Crown copyright expired)  |  Licence: Public domain
+  Photographer/author: Clements (Lieut), No 1 Army Film &amp; Photographic Unit
+
+[scene 32, 204-209 s]
+  Marines enter the ruins of Garapan, principal city of Saipan, on the alert for Jap snipers hidden in the debris (49480352416).jpg
+  https://commons.wikimedia.org/wiki/File:Marines_enter_the_ruins_of_Garapan,_principal_city_of_Saipan,_on_the_alert_for_Jap_snipers_hidden_in_the_debris_(49480352416).jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive from Ireland and United States
+
+[scene 33, 209-215 s]
+  Ucraina marzo 1944 bis.png
+  https://commons.wikimedia.org/wiki/File:Ucraina_marzo_1944_bis.png
+  Source: Soviet / Russian archives  |  Licence: Public domain
+  Photographer/author: sconosciuto
+
+[scene 34, 215-221 s]
+  SC 196444-S - Seventh Army infantrymen move through rain and mist to assault a nearby town in the new advance on German held territory. Raon L'Etape area, France. 17 November, 1944.jpg
+  https://commons.wikimedia.org/wiki/File:SC_196444-S_-_Seventh_Army_infantrymen_move_through_rain_and_mist_to_assault_a_nearby_town_in_the_new_advance_on_German_held_territory._Raon_L%27Etape_area,_France._17_November,_1944.jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive
+
+[scene 35, 221-227 s]
+  The British Army in Normandy, August 1944- the Advance Towards Aunay-sur-odon B8498.jpg
+  https://commons.wikimedia.org/wiki/File:The_British_Army_in_Normandy,_August_1944-_the_Advance_Towards_Aunay-sur-odon_B8498.jpg
+  Source: British Army Film & Photographic Unit / Imperial War Museums (Crown copyright expired)  |  Licence: Public domain
+  Photographer/author: Gee (Sgt), No 5 Army Film &amp; Photographic Unit
+  IWM catalogue: B 8498
+  AI-upscaled (Real-ESRGAN, blend strength 0.6)
+
+[scene 36, 227-232 s]
+  Tank-borne infantry moving up to take the town of Ghuta before the Japanese can occupy it HD-SN-99-02892.jpg
+  https://commons.wikimedia.org/wiki/File:Tank-borne_infantry_moving_up_to_take_the_town_of_Ghuta_before_the_Japanese_can_occupy_it_HD-SN-99-02892.jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Pfc. Robert L. Keller
+
+[scene 37, 232-237 s]
+  Советские танки Т-34 с десантом вступают в бой под Будапештом.jpg
+  https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5_%D1%82%D0%B0%D0%BD%D0%BA%D0%B8_%D0%A2-34_%D1%81_%D0%B4%D0%B5%D1%81%D0%B0%D0%BD%D1%82%D0%BE%D0%BC_%D0%B2%D1%81%D1%82%D1%83%D0%BF%D0%B0%D1%8E%D1%82_%D0%B2_%D0%B1%D0%BE%D0%B9_%D0%BF%D0%BE%D0%B4_%D0%91%D1%83%D0%B4%D0%B0%D0%BF%D0%B5%D1%88%D1%82%D0%BE%D0%BC.jpg
+  Source: Soviet / Russian archives  |  Licence: Public domain
+  Photographer/author: Георгий Коновалов
+
+[scene 38, 237-243 s]
+  111-SC-196619 - Weary infantrymen take a brief rest on a slope in the Hurtgen forest in Germany. Left to right, Pfc. Maurice Berzon, Buffalo, N.Y., SSgt. Bernard Spurr, Newark, Ohio, and SSgt. Harold Clessler, Ashland, Pa.jpg
+  https://commons.wikimedia.org/wiki/File:111-SC-196619_-_Weary_infantrymen_take_a_brief_rest_on_a_slope_in_the_Hurtgen_forest_in_Germany._Left_to_right,_Pfc._Maurice_Berzon,_Buffalo,_N.Y.,_SSgt._Bernard_Spurr,_Newark,_Ohio,_and_SSgt._Harold_Clessler,_Ashland,_Pa.jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: U.S. Signal Corps
+
+[scene 39, 243-249 s]
+  Sherman tanks in fixed positions under camouflage nets, in use as artillery in the Anzio bridgehead, Italy, 5 May 1944. NA14603.jpg
+  https://commons.wikimedia.org/wiki/File:Sherman_tanks_in_fixed_positions_under_camouflage_nets,_in_use_as_artillery_in_the_Anzio_bridgehead,_Italy,_5_May_1944._NA14603.jpg
+  Source: British Army Film & Photographic Unit / Imperial War Museums (Crown copyright expired)  |  Licence: Public domain
+  Photographer/author: No 2 Army Film &amp; Photographic Unit, Radford (Sgt)
+  IWM catalogue: NA 14603
+  AI-upscaled (Real-ESRGAN, blend strength 0.6)
+
+[scene 40, 249-255 s]
+  SC 190525 - Mortar crew of 164th Inf. Regt., Americal Div., on Bougainville Island. 22 March, 1944.jpg
+  https://commons.wikimedia.org/wiki/File:SC_190525_-_Mortar_crew_of_164th_Inf._Regt.,_Americal_Div.,_on_Bougainville_Island._22_March,_1944.jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive
+
+[scene 41, 255-261 s]
+  1945 04 Completed Semipermanent Bridge over Rhine River at Wesel.jpg
+  https://commons.wikimedia.org/wiki/File:1945_04_Completed_Semipermanent_Bridge_over_Rhine_River_at_Wesel.jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Anonymous photographer ; book PREPARED BY NINTH U.S. ARMY — JUNE 30, 1945
+  AI-upscaled (Real-ESRGAN, blend strength 0.4)
+
+[scene 42, 261-266 s]
+  Campaign in North Africa 1940 - 1943 E18907.jpg
+  https://commons.wikimedia.org/wiki/File:Campaign_in_North_Africa_1940_-_1943_E18907.jpg
+  Source: British Army Film & Photographic Unit / Imperial War Museums (Crown copyright expired)  |  Licence: Public domain
+  Photographer/author: Chetwyn Len (Sgt), No 1 Army Film &amp; Photographic Unit
+  IWM catalogue: E 18907
+  AI-upscaled (Real-ESRGAN, blend strength 0.6)
+
+[scene 43, 266-272 s]
+  SC 190530 - American plane leaving after bombing Japanese pillboxes on Bougainville. Men of the 132nd Inf., Americal Div., watch the flames and smoke rising from the targets. 17 March, 1944. (49623525397).jpg
+  https://commons.wikimedia.org/wiki/File:SC_190530_-_American_plane_leaving_after_bombing_Japanese_pillboxes_on_Bougainville._Men_of_the_132nd_Inf.,_Americal_Div.,_watch_the_flames_and_smoke_rising_from_the_targets._17_March,_1944._(49623525397).jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive from Ireland and United States
+
+[scene 44, 272-278 s]
+  Pontoon bridge Rhine River 1945.jpg
+  https://commons.wikimedia.org/wiki/File:Pontoon_bridge_Rhine_River_1945.jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: U.S. Army Corps of Engineers, photographer unknown
+
+[scene 45, 278-283 s]
+  The British Army in France 1939-40 O2114.jpg
+  https://commons.wikimedia.org/wiki/File:The_British_Army_in_France_1939-40_O2114.jpg
+  Source: British Army Film & Photographic Unit / Imperial War Museums (Crown copyright expired)  |  Licence: Public domain
+  Photographer/author: Keating G (Lt), War Office official photographer
+  IWM catalogue: A 25
+  AI-upscaled (Real-ESRGAN, blend strength 0.5)
+
+[scene 46, 283-291 s]
+  93rd division bougainville 1944.jpg
+  https://commons.wikimedia.org/wiki/File:93rd_division_bougainville_1944.jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Unknown authorUnknown author or not provided
+  Higher-resolution scan: NARA (catalog.archives.gov), NAID 531184, 111-SC-189381-S - Unrestricted use restriction; US federal government work (Signal Corps), public domain
+  https://catalog.archives.gov/medialz/stillpix/111-sc/111-SC-189381-S_43-0063M.TIF
+
+[scene 47, 291-299 s]
+  Aerial view of Wiltz, Luxembourg, 22 January 1945 (148727208).jpg
+  https://commons.wikimedia.org/wiki/File:Aerial_view_of_Wiltz,_Luxembourg,_22_January_1945_(148727208).jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: U.S. Army photo 111-SC-199378
+
+[scene 48, 299-307 s]
+  Sherman tanks and infantry in the ruins of Cassino, Italy, 18 May 1944. NA15009.jpg
+  https://commons.wikimedia.org/wiki/File:Sherman_tanks_and_infantry_in_the_ruins_of_Cassino,_Italy,_18_May_1944._NA15009.jpg
+  Source: British Army Film & Photographic Unit / Imperial War Museums (Crown copyright expired)  |  Licence: Public domain
+  Photographer/author: McConville (Sgt), No 2 Army Film &amp; Photographic Unit
+  IWM catalogue: NA 15009
+  AI-upscaled (Real-ESRGAN, blend strength 0.6)
+
+[scene 49, 307-316 s]
+  CROSS THE RHINE WITH DRY FEET COURTESY OF 9TH ARM'D DIV-LUDENDORFF BRIDGE.jpg
+  https://commons.wikimedia.org/wiki/File:CROSS_THE_RHINE_WITH_DRY_FEET_COURTESY_OF_9TH_ARM%27D_DIV-LUDENDORFF_BRIDGE.jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: US Army
+  AI-upscaled (Real-ESRGAN, blend strength 0.6)
+
+[scene 50, 316-323 s]
+  IWM-E-17100-Crusader-19420920.jpg
+  https://commons.wikimedia.org/wiki/File:IWM-E-17100-Crusader-19420920.jpg
+  Source: British Army Film & Photographic Unit / Imperial War Museums (Crown copyright expired)  |  Licence: Public domain
+  Photographer/author: Martin (Sgt), No 1 Army Film &amp; Photographic Unit
+  AI-upscaled (Real-ESRGAN, blend strength 0.5)
+
+[scene 51, 323-332 s]
+  111-SC-197740 - American infantrymen move through Hurtgen, Germany, on their way to the front lines. Company I, 181st Regiment, 8th Infantry Division.jpg
+  https://commons.wikimedia.org/wiki/File:111-SC-197740_-_American_infantrymen_move_through_Hurtgen,_Germany,_on_their_way_to_the_front_lines._Company_I,_181st_Regiment,_8th_Infantry_Division.jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: U.S. Signal Corps
+
+[scene 52, 332-341 s]
+  The British Army in North-west Europe 1944-45 BU2044.jpg
+  https://commons.wikimedia.org/wiki/File:The_British_Army_in_North-west_Europe_1944-45_BU2044.jpg
+  Source: British Army Film & Photographic Unit / Imperial War Museums (Crown copyright expired)  |  Licence: Public domain
+  Photographer/author: Laing (Sgt), No 5 Army Film &amp; Photographic Unit
+  IWM catalogue: BU 2044
+  AI-upscaled (Real-ESRGAN, blend strength 0.35)
+
+[scene 53, 341-345 s]
+  111-SC-197682 - SC 197682 - An American infantryman keeps firing while two of his comrades insert fresh ammunition in their rifles, as steady fire from this sheltered infantry covers advance near Rosteig, France. December 5, 1944.jpg
+  https://commons.wikimedia.org/wiki/File:111-SC-197682_-_SC_197682_-_An_American_infantryman_keeps_firing_while_two_of_his_comrades_insert_fresh_ammunition_in_their_rifles,_as_steady_fire_from_this_sheltered_infantry_covers_advance_near_Rosteig,_France._December_5,_1944.jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: U.S. Signal Corps
+
+[scene 54, 345-350 s]
+  The British Army in North Africa 1942 E14306.jpg
+  https://commons.wikimedia.org/wiki/File:The_British_Army_in_North_Africa_1942_E14306.jpg
+  Source: British Army Film & Photographic Unit / Imperial War Museums (Crown copyright expired)  |  Licence: Public domain
+  Photographer/author: Fox (Sgt), No 1 Army Film &amp; Photographic Unit
+  IWM catalogue: E 14306
+  AI-upscaled (Real-ESRGAN, blend strength 0.4)
+
+[scene 55, 350-355 s]
+  Ludendorff Bridge at Remagen.jpg
+  https://commons.wikimedia.org/wiki/File:Ludendorff_Bridge_at_Remagen.jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: U.S. Signal Corps/ National Archives
+  AI-upscaled (Real-ESRGAN, blend strength 0.6)
+
+[scene 56, 355-361 s]
+  The British Army in France 1939-40 O2127.jpg
+  https://commons.wikimedia.org/wiki/File:The_British_Army_in_France_1939-40_O2127.jpg
+  Source: British Army Film & Photographic Unit / Imperial War Museums (Crown copyright expired)  |  Licence: Public domain
+  Photographer/author: Keating G (Lt), War Office official photographer
+  IWM catalogue: A 25
+  AI-upscaled (Real-ESRGAN, blend strength 0.5)
+
+[scene 57, 361-366 s]
+  SC 191890-S - Colored troops of a field artillery battery emplace a 155mm howitzer in France. They have been following the advance of the infantry and are now setting up this new position. 28 July, 1944.jpg
+  https://commons.wikimedia.org/wiki/File:SC_191890-S_-_Colored_troops_of_a_field_artillery_battery_emplace_a_155mm_howitzer_in_France._They_have_been_following_the_advance_of_the_infantry_and_are_now_setting_up_this_new_position._28_July,_1944.jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive
+
+[scene 58, 366-371 s]
+  Infantry of the 2nd New Zealand Division link up with Matilda tanks of the Tobruk garrison during Operation 'Crusader', Libya, 2 December 1941. E6918.jpg
+  https://commons.wikimedia.org/wiki/File:Infantry_of_the_2nd_New_Zealand_Division_link_up_with_Matilda_tanks_of_the_Tobruk_garrison_during_Operation_%27Crusader%27,_Libya,_2_December_1941._E6918.jpg
+  Source: British Army Film & Photographic Unit / Imperial War Museums (Crown copyright expired)  |  Licence: Public domain
+  Photographer/author: No 1 Army Film &amp; Photographic Unit, Keating G (Capt)
+  IWM catalogue: E 6918
+
+[scene 59, 371-376 s]
+  SC 270676 - U.S. troops of the 5th Infantry Division, U.S. Third Army, Luxembourg, advance through wintry-looking countryside on their way to the frontlines. 22 December, 1944. (52291633081).jpg
+  https://commons.wikimedia.org/wiki/File:SC_270676_-_U.S._troops_of_the_5th_Infantry_Division,_U.S._Third_Army,_Luxembourg,_advance_through_wintry-looking_countryside_on_their_way_to_the_frontlines._22_December,_1944._(52291633081).jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive from United States
+
+[scene 60, 376-381 s]
+  Sherman tanks of 46th Royal Tank Regiment provide fire support for the Loyal Regiment at Anzio, Italy, 25 January 1944. NA11412.jpg
+  https://commons.wikimedia.org/wiki/File:Sherman_tanks_of_46th_Royal_Tank_Regiment_provide_fire_support_for_the_Loyal_Regiment_at_Anzio,_Italy,_25_January_1944._NA11412.jpg
+  Source: British Army Film & Photographic Unit / Imperial War Museums (Crown copyright expired)  |  Licence: Public domain
+  Photographer/author: Menzies (Sgt), No 2 Army Film &amp; Photographic Unit
+  IWM catalogue: NA 11412
+  AI-upscaled (Real-ESRGAN, blend strength 0.4)
+
+[scene 61, 381-387 s]
+  111-SC-191719 - Advance guard of 29th Infantry Division entering St. Lo, France. July 20, 1944 (cropped).jpg
+  https://commons.wikimedia.org/wiki/File:111-SC-191719_-_Advance_guard_of_29th_Infantry_Division_entering_St._Lo,_France._July_20,_1944_(cropped).jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: U.S. Signal Corps
+
+[scene 62, 387-392 s]
+  The British Army in North-west Europe 1944-45 BU4216.jpg
+  https://commons.wikimedia.org/wiki/File:The_British_Army_in_North-west_Europe_1944-45_BU4216.jpg
+  Source: British Army Film & Photographic Unit / Imperial War Museums (Crown copyright expired)  |  Licence: Public domain
+  Photographer/author: Handford (Lt), No 5 Army Film &amp; Photographic Unit
+  IWM catalogue: BU 4216
+  AI-upscaled (Real-ESRGAN, blend strength 0.5)
+
+[scene 63, 392-397 s]
+  A Marine bazooka team in the ruins of Garapan, Saipan. (49479939413).jpg
+  https://commons.wikimedia.org/wiki/File:A_Marine_bazooka_team_in_the_ruins_of_Garapan,_Saipan._(49479939413).jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive from Ireland and United States
+
+[scene 64, 397-403 s]
+  A Crusader tank of 4th Light Armoured Brigade in the Western Desert, 20 September 1942. E17110.jpg
+  https://commons.wikimedia.org/wiki/File:A_Crusader_tank_of_4th_Light_Armoured_Brigade_in_the_Western_Desert,_20_September_1942._E17110.jpg
+  Source: British Army Film & Photographic Unit / Imperial War Museums (Crown copyright expired)  |  Licence: Public domain
+  Photographer/author: Ackland A W (Sgt), No 1 Army Film &amp; Photographic Unit
+  IWM catalogue: E 17110
+
+[scene 65, 403-408 s]
+  SC 337370 - Mines and snipers in Hanweiler, Germany, forces this battalion anti-tank unit to seek another route as they move up to support their regiment which jumped off on a pre-dawn attack. (52208888299).jpg
+  https://commons.wikimedia.org/wiki/File:SC_337370_-_Mines_and_snipers_in_Hanweiler,_Germany,_forces_this_battalion_anti-tank_unit_to_seek_another_route_as_they_move_up_to_support_their_regiment_which_jumped_off_on_a_pre-dawn_attack._(52208888299).jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive from United States
+
+[scene 66, 408-413 s]
+  6 RTR Sherman tank Italy Sept 1944 IWM NA 18734.jpg
+  https://commons.wikimedia.org/wiki/File:6_RTR_Sherman_tank_Italy_Sept_1944_IWM_NA_18734.jpg
+  Source: British Army Film & Photographic Unit / Imperial War Museums (Crown copyright expired)  |  Licence: Public domain
+  Photographer/author: Loughlin (Sgt), No 2 Army Film &amp; Photographic Unit
+  IWM catalogue: NA 18734
+  AI-upscaled (Real-ESRGAN, blend strength 0.5)
+
+[scene 67, 413-419 s]
+  An American M-10 tank destroyer has just fired into the Galleria di Mont Orso tunnel, west of Fondi, to blast out two German battalions trapped inside. 24 May, 1944. (49353485406).jpg
+  https://commons.wikimedia.org/wiki/File:An_American_M-10_tank_destroyer_has_just_fired_into_the_Galleria_di_Mont_Orso_tunnel,_west_of_Fondi,_to_blast_out_two_German_battalions_trapped_inside._24_May,_1944._(49353485406).jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive from Ireland and United States
+
+[scene 68, 419-425 s]
+  The British Army in North Africa 1942 E16821.jpg
+  https://commons.wikimedia.org/wiki/File:The_British_Army_in_North_Africa_1942_E16821.jpg
+  Source: British Army Film & Photographic Unit / Imperial War Museums (Crown copyright expired)  |  Licence: Public domain
+  Photographer/author: Fox (Sgt), No 1 Army Film &amp; Photographic Unit
+  IWM catalogue: E 16821
+  AI-upscaled (Real-ESRGAN, blend strength 0.6)
+
+[scene 69, 425-430 s]
+  Parachute Infantry Move on Snow-Covered Ground Toward the Front to Keep Up the Pressure Being Applied to the Germans Beyond St. Vith, Belgium - DPLA - 978cb65a6389ae65a1515aa4f125b81b.jpg
+  https://commons.wikimedia.org/wiki/File:Parachute_Infantry_Move_on_Snow-Covered_Ground_Toward_the_Front_to_Keep_Up_the_Pressure_Being_Applied_to_the_Germans_Beyond_St._Vith,_Belgium_-_DPLA_-_978cb65a6389ae65a1515aa4f125b81b.jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: General Services Administration. National Archives and Records Service. Office of Presidential Libraries. Dwight D. Eise
+
+[scene 70, 430-435 s]
+  Normandy- Allied Offensive on the 8th and 9th of July B6617.jpg
+  https://commons.wikimedia.org/wiki/File:Normandy-_Allied_Offensive_on_the_8th_and_9th_of_July_B6617.jpg
+  Source: British Army Film & Photographic Unit / Imperial War Museums (Crown copyright expired)  |  Licence: Public domain
+  Photographer/author: No 5 Army Film &amp; Photographic Unit
+  IWM catalogue: B 6617
+  AI-upscaled (Real-ESRGAN, blend strength 0.6)
+
+[scene 71, 435-442 s]
+  SC 334972 - Tank destroyer moves up to support an infantry attack on German assembly point on outskirts of Julich, Germany. 24 February, 1945. (52235701574).jpg
+  https://commons.wikimedia.org/wiki/File:SC_334972_-_Tank_destroyer_moves_up_to_support_an_infantry_attack_on_German_assembly_point_on_outskirts_of_Julich,_Germany._24_February,_1945._(52235701574).jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive from United States
+
+[scene 72, 442-447 s]
+  A Crusader tank of the 22nd Armoured Brigade returning after action in the Western Desert, 28 July 1942. E14950.jpg
+  https://commons.wikimedia.org/wiki/File:A_Crusader_tank_of_the_22nd_Armoured_Brigade_returning_after_action_in_the_Western_Desert,_28_July_1942._E14950.jpg
+  Source: British Army Film & Photographic Unit / Imperial War Museums (Crown copyright expired)  |  Licence: Public domain
+  Photographer/author: Macdonald (Major), No 1 Army Film &amp; Photographic Unit
+  IWM catalogue: E 14950
+  AI-upscaled (Real-ESRGAN, blend strength 0.45)
+
+[scene 73, 447-452 s]
+  American infantrymen advance to the front through the shell-torn town of Langerwehe, Germany. 10 December, 1944. (49350441796).jpg
+  https://commons.wikimedia.org/wiki/File:American_infantrymen_advance_to_the_front_through_the_shell-torn_town_of_Langerwehe,_Germany._10_December,_1944._(49350441796).jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive from Ireland and United States
+
+[scene 74, 452-457 s]
+  SC 192037 - Tanks move up to support the infantry, as advance after advance is made on the fighting front west of St. Lo, France. 24 July, 1944.jpg
+  https://commons.wikimedia.org/wiki/File:SC_192037_-_Tanks_move_up_to_support_the_infantry,_as_advance_after_advance_is_made_on_the_fighting_front_west_of_St._Lo,_France._24_July,_1944.jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive
+
+[scene 75, 457-463 s]
+  SC 411770 - Infantrymen of Company, D, 399th Infantry Regiment, 100th Inf. Div., pass under the railroad station sign as they advance through Schirmeck. November 25, 1944. (49538938622).jpg
+  https://commons.wikimedia.org/wiki/File:SC_411770_-_Infantrymen_of_Company,_D,_399th_Infantry_Regiment,_100th_Inf._Div.,_pass_under_the_railroad_station_sign_as_they_advance_through_Schirmeck._November_25,_1944._(49538938622).jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive from Ireland and United States
+
+[scene 76, 463-469 s]
+  SC 192002 - A bazooka team swabs out the bore of their weapon, readying for the big push from St. Lo.jpg
+  https://commons.wikimedia.org/wiki/File:SC_192002_-_A_bazooka_team_swabs_out_the_bore_of_their_weapon,_readying_for_the_big_push_from_St._Lo.jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive
+
+[scene 77, 469-479 s]
+  1945 ww2 rhine river ponton bridge Bonn to Beuel beer-bridge.jpg
+  https://commons.wikimedia.org/wiki/File:1945_ww2_rhine_river_ponton_bridge_Bonn_to_Beuel_beer-bridge.jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: U.S Army, Richard N. DeLiberty
+
+[scene 78, 479-488 s]
+  111-SC-196622 - Deep in the Hurtgen forest, in Germany, American infantrymen move across a bridge over a small stream. A tank, part of the new Allied offensive, can be seen in the background.jpg
+  https://commons.wikimedia.org/wiki/File:111-SC-196622_-_Deep_in_the_Hurtgen_forest,_in_Germany,_American_infantrymen_move_across_a_bridge_over_a_small_stream._A_tank,_part_of_the_new_Allied_offensive,_can_be_seen_in_the_background.jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: U.S. Signal Corps
+
+[scene 79, 488-498 s]
+  47th IR 9th ID in Remagen.jpg
+  https://commons.wikimedia.org/wiki/File:47th_IR_9th_ID_in_Remagen.jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: U.S. Army (NARA)
+
+[scene 80, 498-507 s]
+  First US Army Engineer built pontoon bridge crossing the Rhine at Remagen during WW2.jpg
+  https://commons.wikimedia.org/wiki/File:First_US_Army_Engineer_built_pontoon_bridge_crossing_the_Rhine_at_Remagen_during_WW2.jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: U.S. Army
+
+[scene 81, 507-517 s]
+  SC 270642 - 7th U.S. Army infantrymen advance up hill towards Wetzhausen, Germany, while tanks wait to move up with other troops. 9 April, 1945. (52295336147).jpg
+  https://commons.wikimedia.org/wiki/File:SC_270642_-_7th_U.S._Army_infantrymen_advance_up_hill_towards_Wetzhausen,_Germany,_while_tanks_wait_to_move_up_with_other_troops._9_April,_1945._(52295336147).jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: Signal Corps Archive from United States
+
+[scene 82, 517-526 s]
+  Into The Hürtgen- The 28th ID in World War II’s Battle of Hürtgen Forest (7491358).jpg
+  https://commons.wikimedia.org/wiki/File:Into_The_H%C3%BCrtgen-_The_28th_ID_in_World_War_II%E2%80%99s_Battle_of_H%C3%BCrtgen_Forest_(7491358).jpg
+  Source: U.S. Army Signal Corps / U.S. federal government  |  Licence: Public domain
+  Photographer/author: U.S. Army photo by Brad Rhen
+  AI-upscaled (Real-ESRGAN, blend strength 0.4)
+
+== One-line credit for the Workshop description ==
+Menu art: WWII photographs from Australian Crown copyright expired; Canadian Crown copyright expired; Soviet / Russian archives; British Army Film & Photographic Unit / Imperial War Museums (Crown copyright expired); U.S. Army Signal Corps / U.S. federal government via Wikimedia Commons. Full credits in CREDITS.txt.

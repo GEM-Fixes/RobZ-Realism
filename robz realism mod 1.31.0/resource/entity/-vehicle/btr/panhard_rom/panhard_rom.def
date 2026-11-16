@@ -1,0 +1,188 @@
+{game_entity
+	
+	(include "/properties/armoredcar.ext")
+	
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	
+	{props "vehicle" "armored_car" "tank" "zenite" "turret" "wheeled" "with_gun"  "vision_vehicle_medium" "muzzle_zenite" "open_door2"}
+	;{targetClass "armoredcar" "ap fg bullet"}
+	
+	;{targetSelector "tank_aa"}
+	
+	
+	{extension "crew.ext"}
+
+	
+	{volume "body1"
+		
+		{tags "body"}
+		
+		{component "body"}
+		
+		{thickness 15
+		
+			{front 20}
+		
+			{top 7}
+		
+			{bottom 7}
+		}
+	
+	}
+
+	{volume "body2"
+		{tags "body"}
+	
+		{component "body"}
+
+		{thickness 15
+	
+		{front 20}
+	
+			{top 7}
+	
+		{bottom 7}
+		}
+	}
+
+	{volume "body3"
+
+		{tags "body"}
+
+		{component "body"}
+
+		{thickness 15
+
+			{front 20}
+	
+		{top 7}
+
+			{bottom 7}
+
+		}
+
+	}
+
+	{volume "turret"
+
+		{component "turret"}
+
+		{tags "turret" "body"}
+
+		{thickness 15
+
+			{front 26}
+
+			{top 7}
+
+		}
+
+	}
+
+	{volume "crew"
+
+		{able {contact_ground 0}}
+
+	}
+
+
+	{component "turret"
+
+		{RepairTime 10}
+
+	}
+
+
+	{volume "engine"
+
+		{thickness 10
+
+			{rear	15}
+
+		}
+
+	}
+
+	{Volume "Gun"
+
+		{thickness 7}
+
+	}
+
+	{component "Gun"
+
+		{RepairTime 20}
+
+	}
+
+	
+("armor_medium" args 1.0)
+
+
+	{extender "inventory"
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{box
+		       	{item "ammo reibel_belt" 2750}
+                   		{item "bullet25_fra ap" 400}
+			{item "bullet25_fra fg" 100}
+		}
+	}
+	{Weaponry
+            		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "25mm_sa35" filling "bullet25_fra ap"}
+			("abm_zenite")
+		}
+		{place "mgun"
+                  		{type "mgun_coaxial"}
+			{weapon "reibel_optic" filled}
+{charger "charger"}
+			{basic}
+			("abm_mgun")
+		}
+	}
+	("wheel" args "wheelright1")
+
+	("wheel" args "wheelleft1")
+
+	("wheel" args "wheelright2")
+
+	("wheel" args "wheelleft2")
+
+
+	{mass 8300}
+        {Chassis
+		{Locomotion ("locomotion")
+			{MaxSpeed	48}
+	  		{maxSpeedAtMaxTurn 12}		
+			{StartTime 25}
+			{BrakeTime	1.5}	
+			{StopTime	3}
+			{TurnRadius	5}
+			{Gears   0.15 0.25 0.35 1}
+			{RearGears  0.25}
+		}
+			{FuelBag
+				{volume 300 }
+				{rate	  5 } 
+				{remain 300 }
+				{fuel "fuel"}
+			}
+		        {speed
+        		{Normal  38}
+    		}
+	
+	}
+
+	{Extension "panhard.mdl"}
+
+	{bone "turret"
+		{speed 0.004}
+	}
+
+
+
+}

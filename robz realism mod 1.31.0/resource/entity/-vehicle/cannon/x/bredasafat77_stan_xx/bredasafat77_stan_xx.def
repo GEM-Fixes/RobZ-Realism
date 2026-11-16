@@ -1,0 +1,9 @@
+{game_entity
+	{Extension "bredasafat77_stan_xx.mdl"}
+	{Volume "part1"
+	}
+	{Volume "part2"
+	}
+	{Volume "body"
+	}
+}

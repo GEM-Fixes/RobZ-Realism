@@ -1,0 +1,180 @@
+{game_entity
+	(include "/properties/armoredcar.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{props "vehicle" "armored_car" "tank" "turret" "turret_rotator" "wheeled_8" "with_gun" "vision_vehicle_low" "muzzle_medium"}
+	{targetClass "armoredcar" "ap fg bullet"}
+	{targetSelector "tank"}
+
+	{extender "enumerator"
+		{digit_folder "ger"}
+	}
+	{extension "crew.ext"}
+
+	; --- Godny hitbox armor (ported from GodnyMod: sdkfz234_3.def) ---
+	{volume "sticky"
+		{tags "grenade_fg_target"}
+		{able clear {contact} {touch}}
+		{component "sticky_body"}
+	}
+	{volume "body"	;нижн€€ передн€€ часть корпуса
+		{tags "body"}
+		{component "body"}
+		{able {holed}}
+		{thickness 8	;борта
+			{front	30}	;влд, нлд
+			{rear	0.1}	;стык body с body1 и body2
+		;	{top	8}
+			{bottom	5}	;дно
+			{right	15}	;гласис
+		}
+	}
+	{volume "body1"	;верхн€€ часть корпуса
+		{tags "body"}
+		{component "body"}
+		{able {holed}}
+		{thickness 8
+			{front	30}	;мехвод
+			{rear	10}
+			{top	13}	;усилена +5мм
+			{bottom	0.1}	;внутренн€€ стенка на пересечении
+		}
+	}
+	{volume "body2"	;моторное
+		{tags "body"}
+		{component "body"}
+		{thickness 8	;борта
+			{front	10}	;стенка моторного
+			{rear	10}
+		;	{top	8}
+			{bottom	5}
+		}
+	}
+	{volume "body3"	;рубка
+		{tags "body"}
+		{component "body"}
+		{able {holed}}
+		{thickness 14.5	;борта
+		;	{front	14.5}
+		;	{rear	14.5}
+			{top	8}
+			{bottom	0.1}	;внутренн€€ стенка на пересечении
+		}
+	}
+	{volume "turret"
+		{component "turret"}
+		{tags "turret"}
+		{thickness 8
+			{front	0.1}	;внутренн€€ стенка на пересечении
+		}
+	}
+	{Volume "hole_bod"
+		{able clear {hole}}
+		{component "body"}
+	}
+	{Volume "Gun"
+		{tags "no_target"}
+		{able {Visible 0} {Obstacle 0} {Contact 0}}
+		{thickness 10}
+	}
+	{volume "engine"
+		{thickness 10}
+	}
+	{volume "shield1"	;маска оруди€
+		{component "shield1"}
+		{thickness 20
+		;	{front	20}
+			{rear	10}
+		}
+	}
+	{volume "shieldr1"	;юбка
+		{component "shieldr1"}
+		{thickness 4}
+	}
+	{volume "shieldl1"	;юбка
+		{component "shieldl1"}
+		{thickness 4}
+	}
+	{volume "zipr1"	;€щик зип
+		{component "zipr1"}
+		{thickness 6}
+	}
+	; --- end Godny hitbox armor ---
+	{component "turret"
+		{RepairTime 20}
+	}
+	{volume "crew"
+		{able {contact_ground 0}}
+	}
+	{component "Gun"
+		{RepairTime 20}
+	}
+
+	("armor_medium" args 1.1)
+
+	{extender "inventory"
+		{box
+			{item "ammo bullet75 gers fg" 50}
+			{item "ammo bullet75 gers heatc" 10}
+		}
+	}
+	("ger_5x8_sight")
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon			"75mm_k51(l24)" filling "ammo bullet75 gers fg" 1}
+			{charger		"commander"}
+			("abm_low")
+		}
+	}
+	{sensor
+		{visor "main"
+			{vision "tank_main-l"}
+		}
+	}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright3")
+	("wheel" args "wheelleft3")
+	("wheel" args "wheelright4")
+	("wheel" args "wheelleft4")
+
+	{mass 11750}
+	{Chassis
+		{Locomotion ("locomotion")
+			{MaxSpeed	38}
+	  		{maxSpeedAtMaxTurn 8}		
+			{StartTime	20}
+			{BrakeTime	1.5}	
+			{StopTime	3}
+			{TurnRadius	7}
+     			{Gears  0.1 0.2 0.3 1}
+			{RearGears  0.25}
+		}
+		{FuelBag
+			{volume 360}
+			{rate	11}
+			{remain 360}
+			{fuel "fuel"}
+		}
+		{speed
+			{Normal  38}
+			{Slow  38}
+		}
+		("car_trace" fx("tracewheel02") step(0.09) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
+		("car_trace" fx("tracewheel02") step(0.09) wheell("wlr") wheelr("wrr") bonel("FXtraceL3") boner("FXtraceR3"))
+	}
+
+	{Extension "sdkfz234_3.mdl"}
+	
+	{bone "gun_rot"
+		{speed 0.001}
+		{limits -10 10}		;gun min up to max down
+	}
+	{bone "turret"
+		{speed 0.018}
+	}
+}

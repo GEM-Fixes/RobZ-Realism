@@ -1,0 +1,546 @@
+;30m between each drop segement, drifts 40m foward and side to side 5m
+{Skeleton
+	{animation
+		{sequence "1" {speed 0.0088}}
+		{sequence "2" {speed 0.0086}}
+		{sequence "3" {speed 0.0084}}
+		{sequence "4" {speed 0.0082}}
+		{sequence "5" {speed 0.0080}}
+		{sequence "6" {speed 0.0078}}
+		{sequence "7" {speed 0.0076}}
+		{sequence "8" {speed 0.0074}}
+		{sequence "9" {speed 0.0072}}
+		{sequence "10" {speed 0.0070}}
+		{sequence "11" {speed 0.0068}}
+		{sequence "12" {speed 0.0088}}
+		{sequence "13" {speed 0.0086}}
+		{sequence "14" {speed 0.0084}}
+		{sequence "15" {speed 0.0082}}
+		{sequence "16" {speed 0.0080}}
+		{sequence "17" {speed 0.0078}}
+		{sequence "18" {speed 0.0076}}
+		{sequence "19" {speed 0.0074}}
+		{sequence "20" {speed 0.0072}}
+		{sequence "21" {speed 0.0070}}
+		{sequence "22" {speed 0.0068}}
+		{sequence "23" {speed 0.0066}}
+		{sequence "24" {speed 0.0088}}
+		{sequence "25" {speed 0.0086}}
+		{sequence "26" {speed 0.0084}}
+		{sequence "27" {speed 0.0082}}
+		{sequence "28" {speed 0.0080}}
+		{sequence "29" {speed 0.0078}}
+		{sequence "30" {speed 0.0076}}
+		{sequence "31" {speed 0.0074}}
+		{sequence "32" {speed 0.0072}}
+		{sequence "33" {speed 0.0070}}
+		{sequence "34" {speed 0.0068}}
+	}
+	{bone "basis"
+		{matrix34
+			1	0	0
+			0	-1	0
+			0	0	1
+			0	0	0
+		}
+		{bone "plane" ;offsets plane back half the length of its box so that you can use the edge of the unit agains the edge of the map
+			{matrix34
+				1		0	0
+				0		-1	0
+				0		0	1
+				-900	0	0
+			}
+		}
+		{bone "flareF"
+			{Position -600 -500 0}
+		}
+		{bone "flareM"
+			{Position -1400 -500 0}
+		}
+		{bone "flareR"
+			{Position -2200 -500 0}
+		}
+		{bone "parachuteL1"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes1"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human1"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteL2"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes2"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human2"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteL3"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes3"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human3"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteL4"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes4"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human4"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteL5"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes5"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human5"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteL6"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes6"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human6"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteL7"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes7"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human7"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteL8"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes8"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human8"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteL9"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes9"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human9"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteL10"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes10"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human10"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteL11"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes11"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human11"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteM1"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes12"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human12"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteM2"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes13"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human13"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteM3"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes14"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human14"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteM4"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes15"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human15"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteM5"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes16"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human16"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteM6"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes17"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human17"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteM7"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes18"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human18"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteM8"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes19"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human19"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteM9"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes20"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human20"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteM10"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes21"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human21"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteM11"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes22"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human22"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteM12"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes23"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human23"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteR1"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes24"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human24"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteR2"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes25"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human25"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteR3"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes26"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human26"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteR4"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes27"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human27"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteR5"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes28"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human28"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteR6"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes29"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human29"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteR7"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes30"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human30"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteR8"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes31"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human31"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteR9"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes32"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human32"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteR10"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes33"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human33"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+		{bone "parachuteR11"
+			{Position 0		0	10000}
+			{VolumeView "parachute07.ply"}
+			{bone "ropes34"
+				{Position 0.61875	0.0499268	-74.5996}
+				{visibility 0}
+				{VolumeView "ropes07.ply"}
+				{bone "human34"
+					{Position 39.9288	0.229126	-101.479}
+
+				}
+			}
+		}
+	}
+}
+{Volume "body"
+     {Box 1 1 0.01}
+     {Bone "plane"}
+     {Matrix34
+         1       0       0
+         0       1       0
+         0       0       1
+         0       0       2000
+	}
+}
+{Volume "light_flak"
+     {Box 1 1 0.01}
+     {Bone "plane"}
+     {Matrix34
+         1       0       0
+         0       1       0
+         0       0       1
+         0       0       2001
+	}
+}
+{Volume "medium_flak"
+     {Box 1 1 0.01}
+     {Bone "plane"}
+     {Matrix34
+         1       0       0
+         0       1       0
+         0       0       1
+         0       0       2002
+	}
+}
+{Volume "heavy_flak"
+     {Box 1 1 0.01}
+     {Bone "plane"}
+     {Matrix34
+         1       0       0
+         0       1       0
+         0       0       1
+         0       0       2003
+	}
+}

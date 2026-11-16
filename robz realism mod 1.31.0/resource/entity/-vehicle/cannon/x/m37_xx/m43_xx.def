@@ -1,0 +1,9 @@
+{game_entity
+	{Extension "m43_xx.mdl"}
+	; --- Godny hitbox armor (ported from GodnyMod: m43_xx.def) ---
+	{Volume "wheelleft"
+	}
+	{Volume "wheelright"
+	}
+	; --- end Godny hitbox armor ---
+	}

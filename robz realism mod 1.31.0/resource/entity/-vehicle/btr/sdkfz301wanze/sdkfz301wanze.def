@@ -1,0 +1,118 @@
+{entity
+	(include "/properties/tank_unarmed.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{collider "tank.light"}
+	{props "vehicle" "car" "truck" "wheeled" "vision_vehicle_high"}
+	{targetSelector "cannon_rocket"}
+	{patherId "tank.light"}
+
+	("armor_medium" turret(0) body(10 10 10 10))
+	("armor_engine"  t(10 10 10 10))
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_tank_left"} {end "pose_flak38-1_charger"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "gunner"
+			{forward	{begin	"board_tank_left"} {end "pose_flak38-1_charger"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+
+	}
+	{placer 
+		{place "driver" {group "crew"} {visor "driver"}{openForCrush 0}}
+		{place "gunner" {visor "main"}{openForCrush 0}}
+	}
+	(define "crew_human"
+		{placer
+			{place "%place" {group "crew"} {linkbone "%place"} {turnoff {sensor} {shadow}}}
+		}
+		{boarder
+			{door "%door1"}
+			{door "%door2"}
+			{link "%door1" "%place" {anm "%place"} {forward putoff} {reverse puton}}
+			{link "%door2" "%place" {anm "%place"} {forward putoff} {reverse puton}}
+		}
+	)
+	("crew_human_visible_anm" place(driver)		door1(emit1) door2(emit1) anm_left(driver) anm_right(driver) visor(driver))
+	("crew_human_visible_anm" place(gunner)		door1(emit1) door2(emit1) anm_left(gunner) anm_right(gunner) visor(main))
+	("gunner_visible")
+    	{sensor
+        		{visor "main"
+            			{vision "tank_main-h"}
+        		}
+    	}
+	{extender "shield"
+		(mod "not_mp"
+			{on}
+		)
+	}
+	{extender "inventory"
+		{box
+			{item "repair_kit" 1}
+			{item "ammo panzershreck" 18}
+		}
+	}
+	{Weaponry
+		{place "gun"
+			{weapon "weapon panzershreck6" filling "ammo panzershreck" 6}
+			{Barrels 6}
+			{charger "gunner"}
+			{gunner "gunner"}
+			("abm_low")
+			{StationaryFiring}
+		}
+	}
+	{mass 3500}
+	{Chassis
+		("tank_trace" fx("tracks_sm2") step(0.15) len(0.50))
+		{Locomotion ("locomotion")
+			(mod "mp"
+			{MaxSpeed 40}
+				{maxSpeedAtMaxTurn 20}
+			{StartTime 20}
+			{TurnTime 12}
+				{TurnStart  0.6}			
+				{TurnRadius 6} 
+	    			{TurnStop   0.5}
+				{BrakeTime  1}
+				{StopTime   1.5}
+     				{Gears  0.1 0.25 0.7}
+				{RearGears  0.43} 
+			)
+		}
+		(mod "mp"
+		    {speed
+        			{Normal  25}
+    		    }
+		)
+	}
+	{Extension "sdkfz301wanze.mdl"}
+	{volume "body1"
+		{component "body"}
+		{tags "body"}
+	}
+	{volume "body2"
+		{component "body"}
+		{tags "body"}
+	}
+	{volume "body3"
+		{component "body"}
+		{tags "body"}
+	}
+	{Volume "engine"
+		{component "engine"}
+	}
+	{volume "inventory"
+        		{thickness 1}
+	}
+	{Volume "shieldr1"
+		{thickness 10} 
+	}
+	{Volume "shieldr2"
+		{thickness 10} 
+	}
+	{Volume "shieldr3"
+		{thickness 10} 
+	}
+}

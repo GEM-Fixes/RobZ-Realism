@@ -1,0 +1,299 @@
+GodnyMod model/hitbox port into Robz 1.30.10  (2026-10-20)
+=========================================================
+
+What changed
+------------
+resource\entity.pak
+  - Vehicle folders got GodnyMod's models/hitboxes (.mdl .vol .ply .anm .mtl .dds); list at the bottom.
+  - Robz .def files in those folders: Godny's per-volume armor blocks were merged in
+    (search for "; --- Godny hitbox armor"). Ammo, weapons, crew, speeds, sights, armor_* macros are still Robz.
+  - Where Godny's model lacked a part a Robz unit uses (extra AA MG, sight, seat, hatch, commander), that part
+    was copied ("grafted") from the old model into Godny's model, so Robz's loadout still works.
+      Grafted: m24, m5a1, churchill_mk_vii, m4a3e2_jumbo_76 (roof AA MG); ho-ri_1, brummbar, universal_carrier,
+      jagdpanzer_iv, ho-ni, ho-ro, t20 (sight/MG points); m8, marder_3h, m19, karlthor, swg41, universal_carrier
+      (crew/seat points).
+    Renamed in Robz defs because Godny renamed the part: archer (mantlet -> turret), nashorn (gun_rot1 -> turret),
+      hetzer (gun_rot1 -> turret, mgun_turret/mgun -> mgun2).
+    Gun-aiming bones Godny restructured (crashed the game with "unexpected token"):
+      jagdpanther, _ss, _vet: Robz gun_rot speed moved to gun_rot1 (Godny: turret = traverse, gun_rot1 = elevation).
+      grant_m3, grant_m3r: Robz sponson "gun" ball joint (limits 15) replaced by gun_rot1 traverse -15/+15 and
+      gun_rot elevation -20/+9 (Godny's limits), both at Robz's speed 0.001.
+  - Robz variant models sharing a folder with a replaced model (pz4j, pz5a, mkiv, su76m, pz3j/pz3_l/pz3_m,
+    churchill IX/V CS/Kangaroo, m36b1, pz6e_hun, t34-85c, ot34, m3 halftrack variants, wasp, ...) were
+    given private copies of their original files (named "<model>__<file>") so they keep their ORIGINAL hitboxes.
+  - Added inventory/-ammo/howitzer_shell/* (Robz's entity/shell.def references it, but it was missing).
+
+resource\gamelogic.pak
+  - "; --- GodnyMod hitbox port" in tank_unarmed.ext / armoredcar.ext / car.ext / cannon.ext:
+    inventory1, inventory2 = extra ammo racks (Robz "explosive" tag, like "inventory").
+    inbody*, inturret*, incasemate, highlights_mto, turret_repair = non-hittable helper volumes.
+    Godny's own internal-damage system was NOT ported.
+  - Robz bug fix: turret_speed_* presets moved from car1.ext to vehicle.ext. 22 Robz units (P40, Turan I/II/III,
+    Toldi, Nimrod, BT-42, M15 contraereo, T-34 Fin, M1139, Tiger (Hun), AB41, Csaba, AS42, Fiat AA...) crashed the
+    editor with "define not found". Five presets they used were never defined and were added with estimated speeds:
+    turret_speed_heavy 0.0025, _sheavy 0.002, _medium_low 0.0035, _medium35 0.0035, _light_low 0.0045.
+  - Robz bug fixes: units using weapons that don't exist (crash when placed):
+      m26e4_ace: created set/stuff/gun/90mm_m15_ace (= 90mm_m15 with ace reload 9.1s, Robz ace pattern x0.7).
+      pz6e_hun, pz6e_hun_vet: mg34_2 / mg34_2_optic -> mg34_optic (same as Robz's regular Tiger).
+      type92_stan_mohpa: type92hmg_hohpa_style -> type92_hmg.
+      type94 mortar: jp_mortar + "ammo mortar" (neither exists) -> 90mm_type97 + "ammo mortar90" (Type 97 mortar setup).
+  - Robz bug fixes: presets called but never defined anywhere ("define not found" crash). Whole mod scanned; now 0:
+      pz6e_hun, pz6e_hun_vet: armor_heavy_3 -> armor_heavy_advanced, ger_4_sight -> ger_2-5x_sight (as regular Tiger).
+      np_sdkfz251_10 (car folder): ger_1_sight -> ger_1x11_sight.
+      fiat35_inf/_art/_bomb: ita_truck_ammo* -> truck_ammo_axm_inf / truck_ammo_axm_art (Robz minor-Axis loads).
+      construction crate8_art: box_ammo_art -> truck_ammo_art.
+    Still in Robz, non-crashing (empty ammo): t34_3_fin_vet 85mm/MG ammo names, p40 "bullet75_ita cu".
+
+Not ported (kept as Robz original)
+----------------------------------
+  - Godny completely rebuilt the model, so Robz's extra parts can't be grafted on: sdkfz234, pz3f.
+  - Robz ships its own reworked model under the SAME file name (Godny's skeleton + Robz's meshes looked like an
+    exploded view): hetzer (hetzer, hetzer_ss, flammpz38). Reverted to Robz original.
+    pz1b: switched to the VANILLA model instead (Robz's 35 override meshes/textures/anims removed from the folder)
+    so Godny's model + hitboxes fit; Robz's pz1b/pz1b_ger2 unit files kept with Godny armor merged.
+    Broken track still spawns at 90 degrees: vanilla Pz I B model behaviour (track files are byte-identical to
+    vanilla). Tried baking the track bone rotation into the meshes - no effect, reverted.
+  - Same problem (Godny skeleton driving Robz's own reworked meshes) found by scan and switched to VANILLA meshes:
+    nashorn, jagdtiger, is1, jagdpanther (+ jagdpanther_x wreck), pak40, zis2, zis3, m37 folder (m37/m42/m43)
+    + wrecks. Robz's overriding meshes/anims/materials removed so vanilla ones load; Godny hitboxes + Robz stats kept.
+      is1: Robz's IS-122 variant (same folder) keeps its own meshes as is122__*.ply with its material as is12.mtl.
+      np_pak40 (no vanilla folder of its own): vanilla PaK 40 meshes/materials copied in.
+  - np_m5cannon, dshk_stank: reverted to Robz original (Godny model loaded meshes whose materials were missing ->
+    crash when loading a game).
+    (hetzer_ger2 stays ported: it uses the base-game meshes, which Godny's model fits.)
+  - Robz uses its OWN different 3D model (Godny hitboxes don't fit): mk4 (mkiv), su76 (su76m), t26 (t-26_1939),
+    pz4j, pz5a, pz3j/pz3_l/pz3_m, is122, pz6e_hun, m36b1, t34-85c, firefly tulip, churchill IX/V CS/Kangaroo, ...
+  - Robz reworked duplicates: m4a3e8_fury, brummbar_early, np_sdkfz234_1/3/4, np_sdkfz250_11, np_willysmb.
+  - Crusaders (crusaderi, crusaderaa1/2 + wrecks): Robz has a different, textured Crusader model.
+  - New Godny-only units (Crusader II/III/ICS, Black Prince, Centurion, IS-3, Bishop, Pz3M, planes, extra guns/cars).
+  - Tanks Godny never made: Pz IV F, StuG III E/F, StuG IV, M4/M4A1/M4A2 Shermans, BT-5/7, Hungarian/Italian tanks...
+
+Things to test in game
+----------------------
+  - Armor feel: Robz armor_* macros still set thickness through {armor {setting ...}} as well as Godny's per-volume
+    values. If penetration seems unchanged from before, the setting thickness is overriding Godny's volumes.
+  - Ammo-rack hits are more likely on tanks with Godny's extra inventory1/inventory2 racks.
+  - Grafted parts (AA MGs etc.): check they sit in the right place and fire normally.
+  - Some Robz-only extra volumes (e.g. "crew" boxes on open-topped vehicles, pz3n "armor_hull", extra turretN plates)
+    don't exist in Godny's models, so those details are gone for the ported units.
+  - If something crashes: newest file in Documents\my games\men of war - assault squad 2\log\minidumps names the
+    .def and the missing bone/define.
+
+Rollback: the untouched "robz realism mod 1.30.10" folder has the original entity.pak / gamelogic.pak.
+
+Updated folders (names = folders under entity\-vehicle; every unit file in the folder that uses the
+Godny model is updated, e.g. pz4h also covers pz4h_ger2 - but NOT Robz's own variant models listed above)
+---------------------------------------------------------------------------------------------------------
+Heavy tanks / SPGs (23):
+  brummbar, chi-ri, churchill_avre, churchill_crocodile, churchill_mk_vii, elefant, ho-ri, ho-ri_1, is1, is2,
+  isu122, isu152, jagdtiger, kv1, kv2, kv85, m26_pershing, m26e4, pz6bh, pz6e, pz6e_ace, sturmtiger, veteran_tiger
+
+Medium tanks / SPGs (57):
+  achilles, archer, chi-he, chi-nu, chi-to, cometa34, cromwell_mk_vi, cromwell_mk_vii, grant_m3,
+  hetzer_ger2, ho-i, hummel, jagdpanther, jagdpanzer_iv, m10wolverine, m12gmc, m19, m36, m4a3_105, m4a3_75,
+  m4a3_zippo, m4a3c, m4a3e2_jumbo, m4a3e2_jumbo_76, m4a3e8, m4a3m, m4a4, m4a4_firefly, m4a4_tulip, m7, mk2a,
+  mk3, mk6, nashorn, ostwind, pz3, pz3n, pz4g, pz4h, pz5g, pz5g_veteran (veteran/ace/hungarian), sdkfz138_1,
+  stug3g, stug3g_ace, stuh42, su100, su122, su85, t34_0, t34_1, t34_2, t34_2_ger, t34_3, t34_3_ger2, t34m,
+  welberwind
+
+Light tanks / SPGs (27):
+  bm_8_24, bt7a, chi-ha57, ha-go, ho-ni, ho-ni_3, ho-ro, ke-nu, lvt4, m18, m24, m5a1, m8, marder_3h, mk7, pz1,
+  pz1b (vanilla model), pz2f, pz2l, sdkfz303, shinhoto, ss-d, t60, t70, wespe, zis30, su76 (base SU-76 only)
+
+Armored cars / halftracks / tractors (27):
+  ba11, ba64, ha-to, ho-ha3mgun, m16, m20, m3, m3_eng, m3_usa, m8grayhound, mk2daimler, sdkfz222, sdkfz223,
+  sdkfz234_1, sdkfz234_3, sdkfz234_4, sdkfz250_1, sdkfz250_11, sdkfz251_1, sdKfz251_1_stuka, sdkfz4, sdkfz7,
+  sdkfz7_2, sdkfz8, steyr_rso, t20, type93scout, universal_carrier
+
+Guns / MGs / rocket launchers (54):
+  155gpf, 203b4, 61k, bl6, bofors, browning_stan, bs3, d1, degtyarev_stan, dshk_stank, flak18, flak38_wheeled,
+  karlthor, land_mattress, lefh18, m114, m2a1l, m30_1938, m37, m3cannon, m8_howitzer, maxim, maxson, mg34_stan,
+  mg34_tower, mg42_stan, nebelwerfer41, nebelwerfer42, np_m5cannon, np_pak40, oerlikon, pak36, pak38, pak40,
+  pak43, pak47, pak57, pdr25, qf17, qf2, qf6, sfh18, swg41, t90_75m, t91_105m, type_97_150mm, type2_20mm,
+  type2_20mm_stand, type4_200mm, type4_75mm, type96_150mm, vickers, vickers_mgun, zis2, zis3
+
+Trucks / cars (20):
+  bedford, bedford_eng, blitz3_6, blitz3_6eng, blitz3_6f, bm13, dodgewc55, gaz67b, gmc, gmc_eng, isuzutx40,
+  isuzutx40_aa, isuzutx40_eng, isuzutx40_mort, kfz15, kubel_mgun, moto, willysmb, zis5, zis5eng
+
+Boats (1): lcvp
+
+Wrecks (6): tank_medium\x\jagdpanther_x, tank_light\x\t26_x, cannon\x\m37_x, m37_xx, qf6_x, qf6_xx
+
+Multiplayer year selection 1941-1945 (ported from Robz 1.28.6)  (2026-10-26)
+=====================================================================
+resource\gamelogic.pak, set/multiplayer/:
+  - games/presets.inc: adds presets_41/42/43/44/45.inc after presets_44-45.inc (44-45 untouched, still first).
+  - games/presets_41..45.inc: same settings as the 1944-1945 preset (CP 120, limits, buttons, wave modes),
+    with unitset limited to that year. 1944 reuses units_44-45.set filtered to "44".
+  - units/units_41, 42, 43, 45.set: 1.28.6's year unit lists (doctrine lists removed, Axis minor added).
+  - 26 per-nation year lists copied from 1.28.6 (ger/ger_ss/eng/rus/rus_guard/usa/jap *_40..43, *_45):
+      score converted to 1.30.10 scale (score = cost); "flamer" tag -> "flamethrower";
+      light mortar teams -> light_mortar_ger/_ss/_eng; towed guns use "how_y" (1.28.6 "how", in years_compat.set);
+      27 entries removed for units no longer in 1.30.10 (Maus, Sturmpanzer I, Cruiser Mk I/III, T-38,
+      6 heroes, storm_mech_usa).
+  - Unit costs / command points in those lists are 1.28.6's values (not rebalanced).
+  Backup of gamelogic.pak before this change: %TEMP%\godnyport\gamelogic_before_years.pak  Fix (no infantry / crewless vehicles in the new years): the year lists use 1.28.6 soldier types that 1.30.10
+  renamed or removed. Added from 1.28.6 (nothing of 1.30.10 replaced):
+    - units/years_soldiers.set: 327 soldier entries + 20 soldier macros (vet_1..7, vehicle_supporter, tankman2, ...),
+      included by units_41/42/43/45.set right after soldiers.set.
+    - 326 breed files in set/breed/mp/<nation>/ (skins, includes and inventory items all verified present).
+    - 8 soldier slots exist in neither version (eng/para5, ger_ss/06, jap/a, jap/elite_rifle2, rus/penal_rifle,
+      rus/penal_smg, usa/radioman_105, usa/radioman_155) - those squads miss that member, as in 1.28.6.
+  Backup before this step: %TEMP%\godnyport\gamelogic_before_breeds.pak
+Bolt-action rifle animation (from workshop mod "Bolt-Action Animation for Bolt-Action Rifle [Great War Realism Mod]")
+=====================================================================================================================
+Only the bolt feature was taken (that mod also replaces GWR's whole infantry animation/interaction set).
+resource\gamelogic.pak:
+  - properties/animation/human/bolt_gun.anm, bolt_gun_lie.anm (new) + 2 sequences in human_anm.ext.
+  - set/interaction_entity/human.inc (Robz's file, merged):
+      link_weapon: weapon tagged "bolt" -> soldier tag "bolt_action";
+      on fire "hand_right": plays bolt_gun (bolt_gun_lie when prone) 0.2s after each shot;
+      new on "reload": cancels a pending bolt animation; on move on: stops it; on move off: clears "moving"
+      (the original mod never cleared it).
+  - {tag "bolt"} added to 30 bolt-action weapons in set/stuff/rifle (vet/elite variants inherit it):
+      carcano_m91, em3, feg_35m, feg_43m, m1903, m38/m91/m9138_carcano, mannlicher_m1895, mauzer, mosin, mosin_fin,
+      type2rifle, type38rifle(+bayonet), type44_carbine, type99rifle(+bayonet), zb_24rifle,
+      sniper: carcano_m91_scoped, em2, m1903a4(+vet), mauzer_s, mosin_s, mosin_s_fin, type97/type99sniper, zb24_s;
+      ptr/ptrd.
+  The workshop mod itself does not need to be enabled.
+  Backup before this step: %TEMP%\godnyport\gamelogic_before_bolt.pak  Bolt speed matched to each rifle (2026-10-26): animation speed = animation length / (recoveryTime - 0.2s),
+  assuming 30 fps (bolt_gun 57 frames = 1.90s, bolt_gun_lie 41 frames = 1.37s).
+    - Each bolt weapon got a class tag bolt_rNNN (NNN = recoveryTime x 100); vet/elite variants get their own.
+    - human.inc: link_weapon sets the class tag (fastest first); fire handler plays the matching speed.
+      Classes: r075 3.45x/2.48x, r084 2.97/2.14, r100 2.37/1.71, r105 2.24/1.61, r125 1.81/1.30,
+               r140 1.58/1.14, r220 0.95/0.68, r280 0.73/0.53 (standing/prone).
+    - To retune: rerun %TEMP%\godnyport\bolt_speeds.ps1 -Fps <n> on the backup below.
+  Backup before this step: %TEMP%\godnyport\gamelogic_before_boltspeeds.pak  Pose fix (2026-10-26): the GWR bolt animations were authored on GWR's firing stance (head/shoulders/arms 10-40 deg,
+  hands up to 124 deg different from Robz/vanilla), so soldiers snapped between stances. bolt_gun.anm and bolt_gun_lie.anm
+  were retargeted: for each bone, rotation = RobzPose * inverse(GWRstart) * frame, position = RobzPose + (frame - GWRstart),
+  using vanilla stand_fire_rifle_up / lie_fire_gun as the Robz pose. Only the bones those firing poses control are kept
+  (17 standing, 25 prone); frame 0 now equals Robz's firing pose exactly.
+  Crouched soldiers use the standing bolt animation (as in the original mod).
+  Backup before this step: %TEMP%\godnyport\gamelogic_before_retarget.pak  Standing snap fix: bolt animations no longer key the engine-aimed bones (ik_updown, ik_leftright, head, visor) - only
+  shoulders/arms/hands (15 bones standing, 22 prone) - and both sequences blend in/out ({smooth 0.15} in human_anm.ext).
+  Backup before this step: %TEMP%\godnyport\gamelogic_before_retarget2.pak  Correction: dropping the aim/head bones + {smooth} made the snapping worse and was reverted. Standing bolt_gun.anm is
+  now retargeted onto vanilla stand_fire_gun_up (the "gun" long-gun family rifles use; prone already used lie_fire_gun,
+  which fixed prone). Same method as prone: 17 bones incl. aim/head, no smoothing.
+  If standing still pops slightly, vanilla also has a stand_fire_gun_up_1 variant (~14 deg different on average).
+  Backup before this step: %TEMP%\godnyport\gamelogic_before_retarget3.pak  Standing/crouch reference changed to vanilla stand_assault-fire_rifle_up (forward-leaning rifle stance). The engine has
+  several standing rifle poses (stand_fire_rifle_up, stand_assault-fire_rifle_up, gun variants) and scripts cannot detect
+  crouching, so one animation serves standing+crouch; assault-fire_rifle_up is ~10 deg from both crouched rifle poses
+  (others 16-23 deg). Prone (lie_fire_gun) unchanged.
+  Backup before this step: %TEMP%\godnyport\gamelogic_before_retarget4.pak  Rifle clipping fix: standing/crouch bolt_gun.anm keeps the per-bone arm motion on stand_assault-fire_rifle_up, but the
+  rifle bone (right_hand) is now solved per frame so the rifle follows the original animation's path relative to its own
+  start (FK verified: left palm stays within 0.21 units of the rifle in the original). Rifle travel 3.47 (= original,
+  was 3.99), left-hand slip on rifle 0.74 (was 1.96). Script: %TEMP%\godnyport\retarget_rifle.ps1
+  Backup before this step: %TEMP%\godnyport\gamelogic_before_riflepath.pak
+
+==================== MULTIPLAYER BOT REWRITE ====================
+Files (resource\gamelogic.pak, script/multiplayer/):
+  bot.lua        - new bot brain (replaces the vanilla script)
+  bot.data.lua   - settings (BotConfig, BotComposition, ...). Set Debug = false to turn off the chat status and log.
+  bot.units.lua  - generated: every buyable squad/vehicle per army with role, cost and years
+  bot.maps.lua   - generated: flag and spawn positions for every MP map
+Backup of the pack before this change: %TEMP%\godnyport\gamelogic_before_ai.pak
+
+Why the old bot "gave up": 167 of its 614 shopping-list entries do not exist in this mod, and most of the rest are
+for other years. The vanilla script retries a failed purchase forever, so the first bad pick froze its buying for
+the rest of the game.
+
+What the engine lets a bot do: buy a unit, and send a group to a flag. Nothing else (no positions, no enemy info,
+no orders to single soldiers). All tactics are built from those two commands:
+  - buying: picks from the real unit list, gives up on units it cannot buy and learns the game's year,
+    follows a target army mix that changes over time (infantry early, tanks/TDs later, more AT if enemy has tanks)
+  - squads are split into groups of 4 so parts can hold and attack different flags
+  - opening: spreads out and grabs the nearest neutral flags
+  - holds flags, more groups on front-line flags, best holders (MGs, AT guns) stay, tanks go on the attack
+  - attacks one main flag at a time: gathers at the nearest held flag, launches when strong enough,
+    calls it off if it stalls, avoids flags where it keeps losing groups, counter-attacks flags it just lost
+  - extra strength goes to a second target
+  - map knowledge: it reads the map name from game.log and uses flag positions; if it can't, it uses map-free rules
+Debug log: Documents\my games\men of war - assault squad 2\log\robz_bot_<player>.log
+
+Bot update: infantry now split to single soldiers (InfantrySplit = 1), vehicles keep their crew (VehicleSplit = 6). Holding/attack sizes count strength (1 = 4 soldiers) instead of groups.
+
+Bot update: HoldFlags = false - the bot no longer sends groups to flags its team holds (no garrisons, no rallying at own flags); all groups go for neutral and enemy flags. Bot log now appends and also prints into game.log. Engine limit found: a bought squad arrives as at most 2 groups; the K 'disband' is a player-only command. Packs are now installed with %TEMP%\godnyport\install_pak.ps1 (clean rebuild).
+
+Bot update: split test showed the engine makes at most 2 groups per purchase (test now off, SplitTest = false). Found that Spawn says 'yes' even for units the game can't find; the bot now only counts a purchase when its soldiers arrive, checks game.log for 'Unit Not found' 2 s after ordering, and skips such units.
+
+Bot update: buys as soon as it can afford something. If the preferred unit can't be bought it immediately buys an affordable alternative (AltTriesPerSecond); it only saves for a vehicle once it has 8+ groups, for at most 60 s (SaveForVehicles, SaveMinGroups, SaveMaxTime).
+
+--- 2026-10-29: bot unit control DLL (robzbot.dll) ---
+robzbot.dll (in this mod folder) is loaded by script/multiplayer/bot.lua with package.loadlib. It calls mowas_2.exe 3.262.1
+functions at fixed addresses (from the AS2 reconstruction); nothing in the exe is patched. Only the host needs it.
+Adds: per-unit Move (with run = double-click flag), Disband squad (same as K), Attack, own unit list, visible enemies,
+map point positions. bot.lua: squads are disbanded on arrival, every soldier/vehicle is planned separately, long moves
+run, units slow to walking near enemies, attacks stage on the ground short of the target flag, front flags are screened
+from in front, AT units/tanks target visible enemy vehicles. Settings in bot.data.lua (UseRobzDll=false turns it off).
+Without the DLL the bot plays the old way. Source: robzbot.c next to the DLL (build: i686-w64-mingw32-clang -O2 -shared -static -o robzbot.dll robzbot.c -Wl,--kill-at).
+
+2026-10-29 robzbot.dll v2: crash fix - only actors with a brain (real units) are listed/commanded; a move order to a brainless prop crashed the game in FindOrderSquad (EIP 0x8e87e0).
+
+2026-10-29 bot v3/v4: re-plan every 2 s (ThinkPeriod 2, RetargetMin 2). Flag roles: back flags (BackShare 0.42) get one garrison man who stays; middle flags held (MidHoldMin) and attacked first; enemy back flags next; neutral flags rushed. DLL v3 Robz.Cooldown(name): units planned only when out within BuyLead=30 s; vehicle saving max 30 s. DLL v4 Robz.Enemies(true) lists every enemy (fog ignored, 'seen' flag). Director (all difficulties, Director=true): attacks where enemies are weakest, sizes attacks to the defenders (DirAttackRatio), reinforces flags enemies are on/approaching incl. back flags (DirDefendRatio), counter-buys AT vs vehicles and MGs vs infantry. Soldiers' own reactions still use visible enemies only.
+
+== 2026-10-29: AI v5 - combat reactions, firing lines, single-buy limit (robzbot.dll v5) ==
+- Distance fix: the game uses 20 units per metre. The old "enemy is close" checks were ~5 m, so units never reacted and kept sprinting (sprinting soldiers don't shoot). All distances in bot.data.lua are rescaled (comments give metres).
+- Engaged soldiers (enemy seen within 70 m, or taking damage) stop, take the best cover within 16 m facing the enemy (sandbags, walls, craters, via the game's own cover search + take-cover order), or else go prone and fight.
+- Fire and movement: attackers that outnumber what they can see move up 16 m at a time, preferably cover to cover; half the line moves while the other half fires.
+- Attacks form a line across the approach about 15 m outside a defended flag, 3.5 m apart. They assault when they outnumber the defenders 1.3:1 or after 45 s. Holders and garrison men take cover at their spot; holders stay inside the zone.
+- Units walk, not run, when any enemy is within 90 m of them or their destination.
+- One-man purchases: at most one every 30 s, the same one every 90 s, and no more than 25% of soldiers.
+- New DLL functions: Pose, Covers, Cover. Config: Combat=false turns all of this off.
+
+== 2026-10-29: AI v6 - capture teams, dug-in lines, sandbags, machine-gun range (robzbot.dll v6) ==
+- The v5 script did not reach the game on the first try: the pak was built from the wrong folder. It was reinstalled and checked.
+- Contested flags (middle and enemy back flags): 3 riflemen go into the zone to capture or hold it. Everyone else gets the task "dig": a line 10 m behind the zone, 6 m apart, spread sideways toward the neighbouring flags. While a flag is still defended, the whole attack line fights together first.
+- Soldiers who carry sandbags build a 5 m wall just in front of their spot, facing the enemy, using the game's barricade action. They then take cover behind it. They don't start building while an enemy is in sight.
+- Cover choice favours places they can fire from: low cover such as sandbags, low walls and craters, a wall that is actually between them and the enemy, and tall walls only near an end where they can lean out.
+- Machine gunners (any soldier carrying a weapon tagged mgun): they engage out to 135 m. If an enemy comes within 95 m they fall back to about 115 m. They dig in 65 m behind contested flags and stay 30 m behind attack lines.
+- New DLL: Build(), plus mg/bags in Units(). Settings are in bot.data.lua: CaptureTeam, DigBack, BuildSandbags, MGKeep/MGMin/MGWant/MGMax and others.
+
+== 2026-10-29: AI v7 - sandbag lines at 25/50 m, sandbag-first cover, close combat, smoke (robzbot.dll v7) ==
+- Sandbag builders keep building under fire, and keep walking to the spot they build at. After 30 s they take cover behind their own bags.
+- Dug-in spots sit in two bands, 25 m and 50 m behind the flag point, spread sideways and facing the enemy. A spot whose view of the flag is blocked (ray trace: buildings, walls, trees) is slid sideways in 4 m steps until it is clear.
+- Cover: sandbags first (recognised by the entity name), until 3 of our men are already using that sandbag. A cover point on the enemy's side of a wall is never chosen, so men sit behind the bags, not in front.
+- Machine gunners are pushed up: they dig in 35 m behind a flag and stay 12 m behind attack lines. They fall back only inside 85 m (to about 105 m), move up when nothing is within 105 m, and are never sent to a spot inside 85 m of a known enemy.
+- Close combat: an enemy soldier within 40 m triggers a grenade if the soldier has one (at most every 20 s), then a run at the enemy, then an attack order. Men with anti-tank grenades use them on vehicles within 40 m. Gunners and snipers don't do this.
+- Smoke: a middle or enemy back flag with enemies on it and at least 2 of our men fighting for it gets a smoke grenade on the flag point. It is thrown by our nearest soldier within 45 m who has smoke, at most every 40 s per flag.
+- New DLL: Throw (grenade, AT grenade, smoke) and Clear (line of sight). Covers now gives the owning entity's id and name. Units gives grenade, AT grenade and smoke counts.
+
+== AI v8 (2026-10-29) ==
+- Removed the 40 m charge/attack. Soldiers now just throw a grenade at a visible enemy within 37 m (AT grenade at vehicles within 22 m) and stay where they are; no throw if one of our men is within 12 m of the target.
+- Snipers and AT riflemen keep their distance like machine gunners: snipers 95-160 m, AT rifles 75-125 m. They fall back when the enemy gets closer, dig in further back, and are never part of the capture team.
+- AT riflemen attack any visible enemy vehicle within 130 m first.
+- robzbot.dll v8: Units() also reports atr (carries an AT rifle, g_tagAtRifle 0xfcc080) and snp (sniper rifle, g_tagSniperRifle 0xfcc0c8).
+- Emplacements: new role "emplace" (MG nests, mortars, light infantry/mountain guns, 20 mm flak, up to 450 cost). Each sets up once, 30 m behind the flag we hold nearest the enemy, and stays unless the enemy takes that flag.
+- Saving: the bot now saves for up to 90 s for a wanted vehicle (armoured cars and light tanks included) or emplacement once 8 soldiers are on the field. Light vehicles get a bigger share of the army.
+- Settings in bot.data.lua: SniperMin/Want/Max, ATRMin/Want/Max, ATRVehRange, Grenades, GrenadeRange, AtGrenadeRange, GrenadeSafe, EmplaceBack, EmplaceSpacing, SaveMaxTime.
+- v8b (2026-10-29): SaveMinGroups raised to 40 - the bot only saves for vehicles/emplacements once 40 soldiers are on the field.
+
+== PPSh sound (2026-10-29) ==
+- PPSh and PPSh-41 now use the GTA V "Tactical SMG" (Tec Pistol) sound from Realistic Weapon Sounds 5.7 (dlc_2023/weapon_tec_pistol.awc).
+- New folder sound/weapon/shot/smg/tacsmg_burst/ in sound.pak (5 variants, 22 kHz mono, same loudness as the old ppsh_burst files).
+- set/stuff/smg/ppsh and ppsh41: fireSound changed from "smg/ppsh_burst/" to "smg/tacsmg_burst/". The Suomi M31 still uses ppsh_burst, untouched.
+- Undo: change fireSound back in those two files (or restore the gamelogic/sound pak backups in %TEMP%\godnyport).
+- v8c (2026-10-29): fixed troops not moving at all in v8b - removing the MG hold had commented out the line that picks each unit's destination. The sim now fails if units don't move.
+
+== v9 (2026-10-29) ==
+- Crash on leaving a match fixed (robzbot.dll v9): the DLL is now kept loaded until the game exits. Before, Lua unloaded it at match end while enemy units still held links into its memory (attack/grenade targets); destroying the scene then crashed in SoftLinkable::Unlink (EIP 0x446a20).
+- Emplacements now move: each emplacement squad gets the game's own squad order (CaptureFlag) to the flag we hold nearest the enemy; their crew are no longer pulled away as infantry. At most EmplaceMax (4) at once.
+- PPSh tactical SMG sound 1.5x louder (soft-limited peaks).
+
+== v10 faction guides (2026-10-29) ==
+- Buying now follows the Steam workshop faction guides (welkon's guides for USA / Commonwealth / Ostfront / Japan; Josh's Soviet guide for rus and rus_guard).
+- bot.data.lua BotGuide[army]:
+  w    = unit weights inside a role (2.5 strongly preferred ... 0.3 avoid, 0 never buy)
+  must = units kept on the field once the game is that old (lost ones are rebought)
+  comp = multipliers on the army composition (rus: +20% infantry)
+- Must-haves: USA 60mm mortar (4 min); Japan knee mortar (2 min) and Type 90 AT gun (7 min);
+  Red Army 2 rifle squads at start, a Maxim/DP MG (1 min), AT rifle or bazooka (1.5 min); Guards AT rifle/bazooka.
+- German (ger, ger_ss) and axis_minor have no guide and buy as before.
+- Bot log shows "faction guide: N unit weights, M must-haves" at start and "guide must-have: <unit>" when one is forced.
+
+== Match recorder for the regular robz mod (2026-10-30) ==
+- Installed in "robz realism mod 1.30.10" (NOT godny): resource\gamelogic.pak gets script/multiplayer/bot.main.lua (loads the stock AI, then the recorder) and bot.recorder.lua; robzbot.dll v10 (+ robzbot.c) copied into that mod folder.
+- The stock AI plays unchanged. Only one AI per game records (log\robz_rec.lock). Needs: you host, at least one AI slot.
+- Output: Documents\my games\men of war - assault squad 2\log\robz_rec_<date>_<time>.log (players, map points, flag owners, every unit of every player once a second). If the DLL can't load: log\robz_rec_error.log.
+- DLL v10 adds Robz.Players() (eGamePlayer: side +4, name +8, team +0x20, army +0xa8, isAi +0xf5, left +0x150; players vector found by scanning eGame for the bot's own player) and Robz.All() (every unit: owner, type name, weapon, position, hp, squad).
+- Undo: restore %TEMP%\godnyport\gamelogic_20261030_000358.pak over that mod's resource\gamelogic.pak and delete robzbot.dll there.

@@ -1,0 +1,208 @@
+{Patch
+	{id 1}
+	{delete "interface/font/main_10b.fnt"}
+	{delete "interface/font/main_10b.font"}
+	{delete "interface/font/main_10b_0.tga"}
+	{delete "interface/font/main_12.fnt"}
+	{delete "interface/font/main_12.font"}
+	{delete "interface/font/main_12b.fnt"}
+	{delete "interface/font/main_12b.font"}
+	{delete "interface/font/main_12b_0.tga"}
+	{delete "interface/font/main_12b_1.tga"}
+	{delete "interface/font/main_12_0.tga"}
+	{delete "interface/font/main_12_1.tga"}
+	{delete "interface/font/main_15.fnt"}
+	{delete "interface/font/main_15.font"}
+	{delete "interface/font/main_15_0.tga"}
+	{delete "interface/font/main_15_1.tga"}
+	{delete "interface/font/main_18.fnt"}
+	{delete "interface/font/main_18.font"}
+	{delete "interface/font/main_18_0.tga"}
+	{delete "interface/font/main_18_1.tga"}
+	{delete "interface/font/main_21.fnt"}
+	{delete "interface/font/main_21.font"}
+	{delete "interface/font/main_21_0.tga"}
+	{delete "interface/font/main_21_1.tga"}
+	{delete "interface/font/main_27.fnt"}
+	{delete "interface/font/main_27.font"}
+	{delete "interface/font/main_27_0.tga"}
+	{delete "interface/font/main_27_1.tga"}
+	{delete "interface/font/main_27_2.tga"}
+	{delete "interface/font/main_28.fnt"}
+	{delete "interface/font/main_28.font"}
+	{delete "interface/font/main_28_0.tga"}
+	{delete "interface/font/main_28_1.tga"}
+	{delete "interface/font/main_28_2.tga"}
+	{delete "interface/font/main_30.fnt"}
+	{delete "interface/font/main_30.font"}
+	{delete "interface/font/main_30_0.tga"}
+	{delete "interface/font/main_30_1.tga"}
+	{delete "interface/font/main_30_2.tga"}
+	{delete "interface/font/main_30_3.tga"}
+	{delete "interface/font/main_8.fnt"}
+	{delete "interface/font/main_8.font"}
+	{delete "interface/font/main_8b.fnt"}
+	{delete "interface/font/main_8b.font"}
+	{delete "interface/font/main_8b_0.tga"}
+	{delete "interface/font/main_8_0.tga"}
+	{delete "interface/font/main_9.fnt"}
+	{delete "interface/font/main_9.font"}
+	{delete "interface/font/main_9b.fnt"}
+	{delete "interface/font/main_9b.font"}
+	{delete "interface/font/main_9b_0.tga"}
+	{delete "interface/font/main_9_0.tga"}
+	
+;-----
+
+	{delete "map\multi\1v1_argentan\battle_zones.mi"}
+	{delete "map\multi\1v1_frozen_river\battle_zones.mi"}
+	{delete "map\multi\1v1_road\battle_zones.mi"}
+	{delete "map\multi\1v1_reloading_point\battle_zones.mi"}
+	{delete "map\multi\1v1_spring\battle_zones.mi"}
+	{delete "map\multi\1v1_vierville\battle_zones.mi"}
+	{delete "map\multi\1v1_winter_church\battle_zones.mi"}
+	{delete "map\multi\1v1_winter_fields\battle_zones.mi"}
+	{delete "map\multi\1v1_winter_harbor\battle_zones.mi"}
+	{delete "map\multi\1v1_winter_hills\battle_zones.mi"}
+	{delete "map\multi\1v1_winter_town\battle_zones.mi"}
+
+	{delete "map\multi\2v2_bocage\battle_zones.mi"}
+	{delete "map\multi\2v2_canyon\battle_zones.mi"}
+	{delete "map\multi\2v2_cold_stream\battle_zones.mi"}
+	{delete "map\multi\2v2_colleville\battle_zones.mi"}
+	{delete "map\multi\2v2_crossroads\battle_zones.mi"}
+	{delete "map\multi\2v2_farmstead\battle_zones.mi"}
+	{delete "map\multi\2v2_heights\battle_zones.mi"}
+	{delete "map\multi\2v2_kanawa_mine\battle_zones.mi"}
+	{delete "map\multi\2v2_plateau\battle_zones.mi"}
+	{delete "map\multi\2v2_ramelle\battle_zones.mi"}
+	{delete "map\multi\2v2_redoctober\battle_zones.mi"}
+	{delete "map\multi\2v2_trainyard\battle_zones.mi"}
+	{delete "map\multi\2v2_tram_depot\battle_zones.mi"}
+	{delete "map\multi\2v2_urban_garden\battle_zones.mi"}
+	{delete "map\multi\2v2_warehouse\battle_zones.mi"}
+
+	{delete "map\multi\3v3_bog\battle_zones.mi"}
+	{delete "map\multi\3v3_crossing\battle_zones.mi"}
+	{delete "map\multi\3v3_deadriver\battle_zones.mi"}
+	{delete "map\multi\3v3_elalmein\battle_zones.mi"}
+	{delete "map\multi\3v3_farmland\battle_zones.mi"}
+	{delete "map\multi\3v3_frag_town\battle_zones.mi"}
+	{delete "map\multi\3v3_kasserine_pass\battle_zones.mi"}
+	{delete "map\multi\3v3_oasis\battle_zones.mi"}
+	{delete "map\multi\3v3_russy\battle_zones.mi"}
+	{delete "map\multi\3v3_saipan\battle_zones.mi"}
+	{delete "map\multi\3v3_shattered\battle_zones.mi"}
+	{delete "map\multi\3v3_westland\battle_zones.mi"}
+	{delete "map\multi\3v3_facility\battle_zones.mi"}
+	{delete "map\multi\3v3_foot_hills\battle_zones.mi"}
+	{delete "map\multi\3v3_frostbite\battle_zones.mi"}
+	{delete "map\multi\3v3_market\battle_zones.mi"}
+	{delete "map\multi\3v3_sands\battle_zones.mi"}
+	{delete "map\multi\3v3_elalamein\battle_zones.mi"}
+	{delete "map\multi\3v3_river_bank\battle_zones.mi"}
+	
+	{delete "map\multi\4v4_bazerville\battle_zones.mi"}
+	{delete "map\multi\4v4_suburb\battle_zones.mi"}
+	{delete "map\multi\4v4_lakeland\battle_zones.mi"}
+	{delete "map\multi\4v4_nijmegen\battle_zones.mi"}
+	
+	{delete "map\multi\5v5_march\battle_zones.mi"}
+	{delete "map\multi\5v5_port\battle_zones.mi"}
+	{delete "map\multi\5v5_docks\battle_zones.mi"}
+	{delete "map\multi\5v5_normandy\battle_zones.mi"}
+	{delete "map\multi\5v5_railway_station\battle_zones.mi"}
+	{delete "map\multi\5v5_suburb_3\battle_zones.mi"}
+	
+	{delete "map\multi\6v6_station\battle_zones.mi"}
+
+	{delete "map\multi\8v8_coastal_town\battle_zones.mi"}
+	{delete "map\multi\8v8_sands\battle_zones.mi"}
+	{delete "map\multi\8v8_frostbite\battle_zones.mi"}
+	{delete "map\multi\8v8_market\battle_zones.mi"}
+	{delete "map\multi\8v8_ostwind\battle_zones.mi"}
+	{delete "map\multi\8v8_facility\battle_zones.mi"}
+	{delete "map\multi\8v8_foothills\battle_zones.mi"}
+	
+;----	
+	
+	{delete "map\multi\1v1_argentan\combat.mi"}
+	{delete "map\multi\1v1_frozen_river\combat.mi"}
+	{delete "map\multi\1v1_road\combat.mi"}
+	{delete "map\multi\1v1_reloading_point\combat.mi"}
+	{delete "map\multi\1v1_spring\combat.mi"}
+	{delete "map\multi\1v1_vierville\combat.mi"}
+	{delete "map\multi\1v1_winter_church\combat.mi"}
+	{delete "map\multi\1v1_winter_fields\combat.mi"}
+	{delete "map\multi\1v1_winter_harbor\combat.mi"}
+	{delete "map\multi\1v1_winter_hills\combat.mi"}
+	{delete "map\multi\1v1_winter_town\combat.mi"}
+
+	{delete "map\multi\2v2_bocage\combat.mi"}
+	{delete "map\multi\2v2_canyon\combat.mi"}
+	{delete "map\multi\2v2_cold_stream\combat.mi"}
+	{delete "map\multi\2v2_colleville\combat.mi"}
+	{delete "map\multi\2v2_crossroads\combat.mi"}
+	{delete "map\multi\2v2_farmstead\combat.mi"}
+	{delete "map\multi\2v2_heights\combat.mi"}
+	{delete "map\multi\2v2_kanawa_mine\combat.mi"}
+	{delete "map\multi\2v2_plateau\combat.mi"}
+	{delete "map\multi\2v2_ramelle\combat.mi"}
+	{delete "map\multi\2v2_redoctober\combat.mi"}
+	{delete "map\multi\2v2_trainyard\combat.mi"}
+	{delete "map\multi\2v2_tram_depot\combat.mi"}
+	{delete "map\multi\2v2_urban_garden\combat.mi"}
+	{delete "map\multi\2v2_warehouse\combat.mi"}
+
+	{delete "map\multi\3v3_bog\combat.mi"}
+	{delete "map\multi\3v3_crossing\combat.mi"}
+	{delete "map\multi\3v3_deadriver\combat.mi"}
+	{delete "map\multi\3v3_elalmein\combat.mi"}
+	{delete "map\multi\3v3_farmland\combat.mi"}
+	{delete "map\multi\3v3_frag_town\combat.mi"}
+	{delete "map\multi\3v3_kasserine_pass\combat.mi"}
+	{delete "map\multi\3v3_oasis\combat.mi"}
+	{delete "map\multi\3v3_russy\combat.mi"}
+	{delete "map\multi\3v3_saipan\combat.mi"}
+	{delete "map\multi\3v3_shattered\combat.mi"}
+	{delete "map\multi\3v3_westland\combat.mi"}
+	{delete "map\multi\3v3_facility\combat.mi"}
+	{delete "map\multi\3v3_foot_hills\combat.mi"}
+	{delete "map\multi\3v3_frostbite\combat.mi"}
+	{delete "map\multi\3v3_market\combat.mi"}
+	{delete "map\multi\3v3_sands\combat.mi"}
+	{delete "map\multi\3v3_elalamein\combat.mi"}
+	{delete "map\multi\3v3_river_bank\combat.mi"}
+	
+	{delete "map\multi\4v4_bazerville\combat.mi"}
+	{delete "map\multi\4v4_suburb\combat.mi"}
+	{delete "map\multi\4v4_lakeland\combat.mi"}
+	{delete "map\multi\4v4_nijmegen\combat.mi"}
+	
+	{delete "map\multi\5v5_march\combat.mi"}
+	{delete "map\multi\5v5_port\combat.mi"}
+	{delete "map\multi\5v5_docks\combat.mi"}
+	{delete "map\multi\5v5_normandy\combat.mi"}
+	{delete "map\multi\5v5_railway_station\combat.mi"}
+	{delete "map\multi\5v5_suburb_3\combat.mi"}
+	
+	{delete "map\multi\6v6_station\combat.mi"}
+
+	{delete "map\multi\8v8_coastal_town\combat.mi"}
+	{delete "map\multi\8v8_sands\combat.mi"}
+	{delete "map\multi\8v8_frostbite\combat.mi"}
+	{delete "map\multi\8v8_market\combat.mi"}
+	{delete "map\multi\8v8_ostwind\combat.mi"}
+	{delete "map\multi\8v8_facility\combat.mi"}
+	{delete "map\multi\8v8_foothills\combat.mi"}
+	
+;----
+
+
+;----
+
+	{delete "set\multiplayer\games\battle_zones_8x8.set"}
+	{delete "set\multiplayer\games\captureflag.set"}
+
+}
+

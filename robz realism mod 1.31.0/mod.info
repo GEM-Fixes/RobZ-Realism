@@ -1,0 +1,7 @@
+{Mod
+	{Name "Robz Realism mod 1.31.0"}
+	{Desc "Realism mod made by RobZ. Don't use older versions. Recommended settings for Multiplayer PvP: no more than 6000mp."}
+	{MinGameVersion "3.262"}
+	{MaxGameVersion "3.262"}
+	{FileId "610304528"}
+}
