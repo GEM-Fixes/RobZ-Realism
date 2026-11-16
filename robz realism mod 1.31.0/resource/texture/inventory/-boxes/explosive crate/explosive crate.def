@@ -1,0 +1,16 @@
+{game_entity
+	(include "/properties/stuff.ext")
+	{collider "stuff.construction"}
+	{props "-steel" "wood" "fence" "construction" "inventory_box" "spread_items" "placeable"}
+	{ObstacleID "stuff"}
+
+	{Volume "body"
+		{thickness 1}
+		{able {touch}}
+	}
+	{lodclass "decor_small"}
+	{extender "stuff"
+		{item "explosive_crate"}
+	}
+	{Extension "explosive crate.mdl"}
+}

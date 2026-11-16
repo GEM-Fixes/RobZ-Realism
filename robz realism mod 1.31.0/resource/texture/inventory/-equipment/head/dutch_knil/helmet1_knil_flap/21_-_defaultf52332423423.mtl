@@ -1,0 +1,5 @@
+{material bump
+	{diffuse "jap_headgear_specular"}
+	{bump "jap_headgear_normal"}
+	{blend none}
+}

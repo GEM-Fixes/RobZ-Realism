@@ -1,0 +1,59 @@
+;Exported by: Rafii
+;Date:        Fri Jan 06 16:18:22 2017
+;File:        C:\Users\Rafii\Desktop\maxfile\Indische_Nederland2.max
+{Skeleton
+	{bone "dutch_helmet"
+		{parameters "Type = game_entity;Model = entity/head/m38_knil;"}
+		{Matrix34
+			-0.956305	0	-0.292372
+			0	1	0
+			-0.292372	0	0.956305
+			1.15	0	0.6
+		}
+		{VolumeView "dutch_helmet.ply"}
+	}
+}
+{Volume "body"
+	{Box 6.34624 5.70901 3.78434}
+	{Bone "dutch_helmet"}
+	{Matrix34
+		0	1.12	0
+		0	0	1.12
+		1.456	0	0
+		0.462239	-0.136741	2.35287
+	}
+}
+{Volume "select"
+	{Box 6.34624 5.70901 3.78434}
+	{Bone "dutch_helmet"}
+	{Matrix34
+		0	1.12	0
+		0	0	1.12
+		1.456	0	0
+		0.462239	-0.136741	2.35287
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 10.141	-8.60331	3.56709}
+			{lookat 1.55761	-1.18691	2.8227}
+			{fov 22.6199}
+			{horizon -3.3864}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction -0.171162	0.146829	-0.446256}
+			}
+			{"1"
+				{type directional}
+				{direction -0.189277	0.266067	0.378659}
+			}
+			{"2"
+				{type directional}
+				{direction -0.105484	-0.229601	-0.431458}
+			}
+		}
+	}
+}

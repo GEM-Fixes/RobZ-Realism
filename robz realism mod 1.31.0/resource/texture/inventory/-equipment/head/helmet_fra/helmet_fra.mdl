@@ -1,0 +1,89 @@
+;Exported by: Loki
+;Date:        Thu Aug 26 14:34:30 2010
+;File:        E:\PROGRAMS\3Ds Max 8\scenes\helmet.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Matrix34
+				0.00555004	-0.996704	0.0809299
+				0.00953068	0.0809801	0.99667
+				-0.999939	-0.00476024	0.00994889
+				-0.0967399	0.307546	3.19652
+			}
+			{VolumeView "body.ply"}
+		}
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "body"}
+	{Position 0	0	0}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 5.23472	-2.44713	3.23467}
+			{lookat -5.72498	2.69273	3.65751}
+			{fov 60}
+		}
+		{lights
+			{"0"
+				{type spot}
+				{position 2.77002	-6.53861	15.2208}
+				{direction -0.0835746	0.223157	-0.439564}
+				{theta 6.5}
+				{phi 13.5}
+			}
+			{"1"
+				{type point}
+				{position 2.97481	-2.03812	4.71696}
+			}
+		}
+	}
+	{"Stuff_primary"
+		{camera
+			{origin 10.3868	-4.86334	3.06784}
+			{lookat -5.72398	2.69226	3.68941}
+			{fov 45}
+		}
+		{lights
+			{"0"
+				{type spot}
+				{position 2.77002	-6.53861	15.2208}
+				{direction -0.0835746	0.223157	-0.439564}
+				{theta 6.5}
+				{phi 13.5}
+			}
+			{"1"
+				{type point}
+				{position 2.97481	-2.03812	4.71696}
+			}
+		}
+	}
+	{"Stuff_secondary"
+		{camera
+			{origin 6.3591	-2.97444	3.22324}
+			{lookat -5.72398	2.69226	3.68941}
+			{fov 45}
+		}
+		{lights
+			{"0"
+				{type spot}
+				{position 2.77002	-6.53861	15.2208}
+				{direction -0.0835746	0.223157	-0.439564}
+				{theta 6.5}
+				{phi 13.5}
+			}
+			{"1"
+				{type point}
+				{position 2.97481	-2.03812	4.71696}
+			}
+		}
+	}
+}

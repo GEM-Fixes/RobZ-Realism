@@ -1,0 +1,54 @@
+;Exported by: Luzhbin_M
+;Date:        Wed Apr 01 14:45:43 2009
+;File:        D:\Black\head_models\budionovka\budionovka.max
+{Skeleton
+	{bone "budionovka"
+		{Matrix34
+			1.06	0	0
+			0	-1.06	0
+			0	0	1.06
+			0.1	0	0
+		}
+		{VolumeView "budionovka.ply"}
+		{bone "handle"
+			{Matrix34
+				1	0	0
+				0	0	1
+				0	-1	0
+				-0.126442	0.126251	2.70895
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 3.36133 2.9156 2.82349}
+	{Bone "budionovka"}
+	{Position 0.203287	0.165804	3.12925}
+}
+{Volume "select"
+	{Box 7.32706 8.02016 6.53495}
+	{Bone "budionovka"}
+	{Matrix34
+		1	0	0
+		0	0	1
+		0	-1	0
+		-0.126441	0.239745	2.80796
+	}
+}
+{Extender "preview"
+	{"stuff"
+		{camera
+			{origin 5.9855	5.58549	5.62369}
+			{lookat -10.4134	-10.7754	-1.90594}
+			{fov 45}
+			{horizon 0.0197823}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction -0.338116	-0.33451	-0.154209}
+				{ambient 0x959595}
+			}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "ammo_500lb_am"}
+	{bump "ammo_500lb_nm"}
+	{specular "ammo_500lb_gmm"}
+	{color "229 229 229 25"}
+	{blend none}
+}

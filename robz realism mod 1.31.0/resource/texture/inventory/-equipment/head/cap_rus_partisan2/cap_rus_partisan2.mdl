@@ -1,0 +1,47 @@
+;Exported by: Kalinski
+;Date:        Wed Feb 01 03:32:52 2017
+;File:        C:\Users\Kalinski\Desktop\civ\cap partisan1.max
+{Skeleton
+	{bone "cap_rus_partisan2"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "cap_rus_partisan2.ply"}
+	}
+}
+{Volume "body"
+	{Sphere 2.54202}
+	{Bone "cap_rus_partisan2"}
+	{Position 0.0947912	-0.0573442	3.37113}
+}
+{Volume "select"
+	{Box 8.34791 8.20985 7.71118}
+	{Bone "cap_rus_partisan2"}
+	{Position 0.143252	0.16112	3.14803}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 6.10829	-5.09289	3.7946}
+			{lookat 0.836057	-0.111563	3.73228}
+			{fov 45}
+			{horizon -0.238211}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction -0.354828	0.33419	-0.11142}
+			}
+			{"1"
+				{type point}
+				{position 1.3762	-2.3209	3.85514}
+			}
+			{"2"
+				{type point}
+				{position 2.83572	-1.25747	3.08308}
+			}
+		}
+	}
+}

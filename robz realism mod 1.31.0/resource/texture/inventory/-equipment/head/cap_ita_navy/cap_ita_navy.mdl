@@ -1,0 +1,53 @@
+;Exported by: Luzhbin_M
+;Date:        Thu Apr 02 09:57:41 2009
+;File:        D:\Black\head_models\10_bezkozirka_Regina Marina_ITALIA\10_bezkozirka_Regina Marina_ITALIA.max
+{Skeleton
+	{bone "10_bezkozirka_regina_"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "10_bezkozirka_regina_.ply"}
+		{bone "handle"
+			{Matrix34
+				1	0	0
+				0	0	1
+				0	-1	0
+				0.00825598	0.00339906	3.96241
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 3.36133 2.9156 2.82349}
+	{Bone "10_bezkozirka_regina_"}
+	{Position 0.337985	0.0429524	4.38272}
+}
+{Volume "select"
+	{Box 7.32706 8.02016 6.53495}
+	{Bone "10_bezkozirka_regina_"}
+	{Matrix34
+		1	0	0
+		0	0	1
+		0	-1	0
+		0.00825728	0.116894	4.06143
+	}
+}
+{Extender "preview"
+	{"stuff"
+		{camera
+			{origin 5.09012	5.07561	6.19831}
+			{lookat -11.3088	-11.2853	-1.33133}
+			{fov 45}
+			{horizon -0.0197823}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction -0.338116	-0.33451	-0.154209}
+				{ambient 0x959595}
+			}
+		}
+	}
+}

@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "gun - metall 1"}
+	{blend none}
+}

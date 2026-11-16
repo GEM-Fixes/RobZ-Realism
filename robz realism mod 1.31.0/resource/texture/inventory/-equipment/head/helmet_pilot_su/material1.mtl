@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "16_shlem_pilot_cccp"}
+	{bump "16_shlem_pilot_cccp_bump"}
+	{specular "16_shlem_pilot_cccp_spec"}
+	{color "229 229 229 25"}
+	{blend none}
+}

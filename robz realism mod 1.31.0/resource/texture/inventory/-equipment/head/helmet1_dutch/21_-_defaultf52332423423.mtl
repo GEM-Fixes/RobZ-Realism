@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "$/humanskin/dutch/ammo"}
+	{blend test}
+}

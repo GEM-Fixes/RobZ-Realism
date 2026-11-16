@@ -1,0 +1,11 @@
+{Actor
+	(include "/properties/stuff_small.ext")
+	{extender "stuff"
+		{item "fieldcap_jap"}
+	}
+	{Extension "fieldcap_jap.mdl"}
+	{Volume "body"
+	}
+	{Volume "select"
+	}
+}

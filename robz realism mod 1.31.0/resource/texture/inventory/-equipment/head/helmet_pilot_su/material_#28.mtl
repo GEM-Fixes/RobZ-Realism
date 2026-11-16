@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "16_shlem_pilot_cccp"}
+	{blend none}
+}

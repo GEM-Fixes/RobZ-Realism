@@ -1,0 +1,7 @@
+{actor
+	(include "/properties/stuff_small.ext")
+	{extender "stuff" 
+		{item "helmet_pilot_su"}
+	}
+	{Extension "16_shlem_pilot_cccp.mdl"}
+}

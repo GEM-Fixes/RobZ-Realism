@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "crate_reactive"}
+	{blend none}
+}

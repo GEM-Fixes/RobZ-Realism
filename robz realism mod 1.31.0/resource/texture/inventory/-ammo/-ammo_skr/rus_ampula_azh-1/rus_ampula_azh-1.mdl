@@ -1,0 +1,63 @@
+;Exported by: Sergey
+;Date:        Thu Nov 22 04:17:28 2018
+;File:        D:\Documents\3dsmax\scenes\machine_gun\125_mm_ampulomet\ampula.max
+{Skeleton
+	{bone "azh-1"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "azh-1.ply"}
+	}
+}
+{Volume "body"
+	{Sphere 1.50521}
+	{Bone "azh-1"}
+	{Position 0	0	1.33888}
+}
+{Volume "select"
+	{Sphere 1.50521}
+	{Bone "azh-1"}
+	{Position 0	0	1.33888}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin -0.00	17.2294	-29.5}
+			{lookat -0.00	-0.190552	1.5}
+			{fov 5}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction -0.000187147	0.376842	0.328618}
+				{diffuse 0xffeecb}
+			}
+			{"1"
+				{type directional}
+				{direction 0.00012033	-0.498486	0.0388878}
+				{diffuse 0xe2ecff}
+			}
+		}
+	}
+	{"Stuff_primary"
+		{camera
+			{origin -0.00	17.2294	-29.5}
+			{lookat -0.00	-0.190552	1.5}
+			{fov 15}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction -0.000187147	0.376842	0.328618}
+				{diffuse 0xffeecb}
+			}
+			{"1"
+				{type directional}
+				{direction 0.00012033	-0.498486	0.0388878}
+				{diffuse 0xe2ecff}
+			}
+		}
+	}
+}

@@ -1,0 +1,65 @@
+;Exported by: Admin
+;Date:        Sun Jun 07 23:31:44 2009
+;File:        E:\the game\body\tortoise_armor.max
+{Skeleton
+	{bone "tortoise_armor"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "tortoise_armor.ply"}
+		{bone "handle"
+			{Matrix34
+				0	0	1
+				0.0883111	-0.996093	0
+				0.996093	0.0883111	0
+				4.81966	2.96967	-2.92506
+			}
+		}
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "tortoise_armor"}
+	{Matrix34
+		-0.996195	-0.0871515	0
+		0.000407278	-0.00460532	0.999989
+		-0.0871501	0.996185	0.00462261
+		2.15468	2.71967	-3.81819
+	}
+}
+{Volume "select"
+	{Box 8.81045 27.4142 26.9267}
+	{Bone "tortoise_armor"}
+	{Matrix34
+		0	0	-1
+		-0.0871582	0.996195	0
+		0.996195	0.0871581	0
+		4.57111	2.9781	-0.511799
+	}
+}
+{Extender "preview"
+	{"stuff"
+		{camera
+			{origin 6.00096	-171.793	183.349}
+			{lookat 4.78646	-1.67754	-3.31346}
+			{fov 3.89059}
+			{horizon -99.0032}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 11.1142	-4.72033	3.58786}
+			}
+			{"1"
+				{type spot}
+				{position 16.2431	-22.1142	30.9894}
+				{direction -0.0998135	0.215956	-0.439773}
+				{theta 43}
+				{phi 45}
+			}
+		}
+	}
+}

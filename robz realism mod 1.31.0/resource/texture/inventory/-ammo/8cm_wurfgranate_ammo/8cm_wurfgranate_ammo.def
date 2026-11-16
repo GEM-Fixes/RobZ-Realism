@@ -1,0 +1,10 @@
+{game_entity
+	(include "/properties/stuff_small.ext")
+	{collider "ammo"}
+	{extender "stuff"
+		{item "ammo 8cm_wurfgranate"}
+	}
+	{Extension "8cm_wurfgranate_ammo.mdl"}
+	{constrain none}
+	{fogable never}
+}

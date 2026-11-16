@@ -1,0 +1,5 @@
+{material bump
+	{diffuse "missiles"}
+	{bump "missiles_normalmap"}
+	{blend none}
+}

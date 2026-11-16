@@ -1,0 +1,52 @@
+;Exported by: Kalinski
+;Date:        Thu Jun 28 23:17:48 2018
+;File:        C:\Users\Kalinski\Desktop\modshit\finn\stahlhelm.max
+{Skeleton
+	{bone "helmet_fin_m16"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "helmet_fin_m16.ply"}
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "helmet_fin_m16"}
+	{Position 0.703094	0.124126	3.3988}
+}
+{Volume "select"
+	{Box 5.59662 5.08766 5.14459}
+	{Bone "helmet_fin_m16"}
+	{Matrix34
+		1.0387	0	0
+		0	1.0387	0
+		0	0	1.0387
+		0.919993	0.260123	3.58528
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 6.083	-5.12686	3.21967}
+			{lookat 0.810761	-0.145527	3.15735}
+			{fov 45}
+			{horizon -0.239848}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction -0.354828	0.33419	-0.11142}
+			}
+			{"1"
+				{type point}
+				{position 1.3762	-2.3209	3.85514}
+			}
+			{"2"
+				{type point}
+				{position 2.83572	-1.25747	3.08308}
+			}
+		}
+	}
+}

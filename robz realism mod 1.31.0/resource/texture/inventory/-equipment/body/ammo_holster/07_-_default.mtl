@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "mat01"}
+	{blend test}
+}

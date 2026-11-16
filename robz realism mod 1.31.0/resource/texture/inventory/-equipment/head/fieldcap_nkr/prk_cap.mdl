@@ -1,0 +1,70 @@
+;Exported by: Administrator
+;Date:        Sun Jan 15 10:42:56 2012
+;File:        C:\Documents and Settings\Administrator\桌面\人民军军官帽.max
+{Skeleton
+	{bone "prk_cap"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.04	0	0
+			0	-1.04	0
+			0	0	1.04
+		}
+		{VolumeView "prk_cap.ply"}
+		{bone "handle"
+			{Matrix34
+				0.0446339	-0.998994	0.00445348
+				0.0993188	0.00887256	0.995016
+				-0.994054	-0.043971	0.0996154
+				1.18134	1.26997	3.01653
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 12.7872 11.8479 9.5606}
+	{Bone "prk_cap"}
+	{Matrix34
+		0	-1	0
+		-1	0	0
+		0	0	-1
+		2.01355	1.85777	5.7623
+	}
+}
+{Volume "select"
+	{Box 9.01077 5.52125 6.4367}
+	{Bone "prk_cap"}
+	{Matrix34
+		0	-1	0
+		-1	0	0
+		0	0	-1
+		1.69066	1.26676	4.73202
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 8.11901	6.58728	6.1518}
+			{lookat -2.50318	-2.92245	2.1751}
+			{fov 27.8173}
+			{horizon 2.38819}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position -1.20459	9.61927	-0.188737}
+			}
+			{"1"
+				{type directional}
+				{direction -0.49251	0.0462735	0.0727515}
+			}
+			{"2"
+				{type point}
+				{position -0.0484729	3.27355	5.59049}
+			}
+			{"3"
+				{type point}
+				{position 3.07184	-0.81398	6.12841}
+			}
+		}
+	}
+}

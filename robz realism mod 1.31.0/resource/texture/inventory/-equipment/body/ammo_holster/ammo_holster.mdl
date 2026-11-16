@@ -1,0 +1,21 @@
+{Skeleton
+	{bone "body"
+		{Matrix34
+			1	0	0
+			0	-1	0
+			0	0	1
+			0	2	0
+		}
+		{VolumeView "body.ply"}
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "body"}
+	{Position 0.392131	1.24989	-4.58687}
+}
+{Volume "select"
+	{Polyhedron "select.vol"}
+	{Bone "body"}
+	{Position 0.392131	1.24989	-4.58687}
+}

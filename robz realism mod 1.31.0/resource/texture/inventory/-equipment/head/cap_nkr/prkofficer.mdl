@@ -1,0 +1,70 @@
+;Exported by: Administrator
+;Date:        Sun Jan 15 09:33:41 2012
+;File:        C:\Documents and Settings\Administrator\×ÀÃæ\×ÔÎÀ¶ÓÃ±1.max
+{Skeleton
+	{bone "prkofficer"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1.05	0	0
+			0	-1.05	0
+			0	0	1.05
+		}
+		{VolumeView "prkofficer.ply"}
+		{bone "handle"
+			{Matrix34
+				0.044634	-0.998994	0.00445361
+				0.0993186	0.00887252	0.995016
+				-0.994054	-0.043971	0.0996151
+				1.22928	1.18262	2.89279
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 12.7872 11.8479 9.5606}
+	{Bone "prkofficer"}
+	{Matrix34
+		0	-1	0
+		-1	0	0
+		0	0	-1
+		2.06149	1.77042	5.63856
+	}
+}
+{Volume "select"
+	{Box 9.01077 5.52125 6.4367}
+	{Bone "prkofficer"}
+	{Matrix34
+		0	-1	0
+		-1	0	0
+		0	0	-1
+		1.7386	1.1794	4.60828
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 8.16694	6.67463	6.02806}
+			{lookat -2.45525	-2.83509	2.05136}
+			{fov 27.8173}
+			{horizon 2.38819}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position -1.15665	9.70663	-0.312486}
+			}
+			{"1"
+				{type directional}
+				{direction -0.49251	0.0462735	0.0727511}
+			}
+			{"2"
+				{type point}
+				{position -0.000542879	3.36091	5.46674}
+			}
+			{"3"
+				{type point}
+				{position 3.11976	-0.726625	6.00467}
+			}
+		}
+	}
+}

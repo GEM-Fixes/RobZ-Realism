@@ -1,0 +1,57 @@
+;Exported by: and
+;Date:        Sun Feb 21 15:25:56 2010
+;File:        D:\theGame\-ammo\bomb-ka50.max
+{Skeleton
+	{bone "bomb00"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "bomb00.ply"}
+	}
+}
+{Volume "body"
+	{Cylinder 2.18723 19.62}
+	{Bone "bomb00"}
+	{Matrix34
+		0.0503951	0.998729	0
+		-0.0715889	0.00361141	0.997428
+		0.99616	-0.0502657	0.0716799
+		0.020462	-0.338405	0.00239015
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin -2.4184	-1.76248	30.1381}
+			{lookat -1.20997	-0.93461	13.4386}
+			{fov 57.5625}
+			{horizon -122.09}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 4.44345	-53.5673	5.47339}
+			}
+		}
+	}
+	{"Stuff_primary"
+		{camera
+			{origin -2.30657	-5.37937	30.5707}
+			{lookat -1.08458	-2.41285	13.4342}
+			{fov 49.318}
+			{horizon -154.147}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 7.58817	-79.0737	7.29842}
+			}
+			{"1"
+				{type point}
+				{position 3.95387	-76.1141	18.5832}
+			}
+		}
+	}
+}

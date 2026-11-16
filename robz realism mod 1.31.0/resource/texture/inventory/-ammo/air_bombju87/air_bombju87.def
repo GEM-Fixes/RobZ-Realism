@@ -1,0 +1,7 @@
+{game_entity
+	(include "/properties/stuff_bomb.ext")
+	{extender "stuff"
+		{item "air_bombju87"}
+	}
+	{Extension "air_bomb1.mdl"}
+}

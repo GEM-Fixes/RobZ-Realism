@@ -1,0 +1,114 @@
+;;Item: Шлем РККА стальной обр. 1936 г.
+;;Autor:	John Doe, Juny 2011
+{Skeleton
+	{bone "helm_rus"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{Position 0.0 0.0 0.03}
+		{LODView
+			{VolumeView "helmet_rus_obr36.ply"}
+			{VolumeView "helmet_rus_obr36_lod1.ply"}
+		}
+		{bone "handle"	;; место, за которое держит этот предмет в руке
+			{Matrix34
+				-1	0	0
+				0	-1	0
+				0	0	1
+				4.0 0.0 4.25
+			}
+		}
+	}
+}
+
+{Volume "body"
+	{Box 4.5 4.0 3.0}
+	{Position 0.0 0.0 3.75}
+	{Bone "helm_rus"}
+}
+{Volume "select"
+	{Box 8.0 5.0 3.5}
+	{Position 0.0 0.0 3.75}
+	{Bone "helm_rus"}
+}
+{Extender "preview"
+	{"Stuff"	;; вид (ракурс и освещение) предмета в инвентаре
+		{camera
+;;			{origin 5.6651	2.5755	6.39555}
+;;			{lookat -6.87461	-3.40558	0.0642577}
+;;			{fov 45}
+
+;;;			{origin 5.0	5.0	5.0}
+;;;			{lookat -5.5	-6.0	2.5}
+;;;			{fov 46}
+
+;;;			{origin 5.0	5.0	8.25}
+;;;			{lookat -5.5	-6.0	-2.0}
+;;;			{fov 40}
+
+			{origin 3.25	6.0	7.25}
+			{lookat -3.25	-7.0	-1.5}
+			{fov 45}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction 0	0	-0.5}
+				{ambient 0x252525}
+;;;				{ambient 0x5f5f5f}
+			}
+			{"1"
+				{type point}
+				{position 4.47904	2.65034	5.74874}
+			}
+		}
+	}
+	{"Stuff_primary" ;; вид (ракурс и освещение) предмета на панели управления в ячейке 1 (предмет держит в правой руке, левая рука свободна)
+		{camera
+;;			{origin 10.1883	4.73295	8.6384}
+;;			{lookat -6.86068	-3.39893	0.030387}
+;;			{fov 55}
+			
+			{origin 6.5	12.0	14.5}
+			{lookat -3.25	-7.0	-3.5}
+			{fov 40}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction 0	0	-0.5}
+				{ambient 0x252525}
+;;;				{ambient 0x5f5f5f}
+			}
+			{"1"
+				{type point}
+				{position 4.47904	2.65034	5.74874}
+			}
+		}
+	}
+	{"Stuff_secondary" ;; вид (ракурс и освещение) предмета на панели управления в ячейке 2 (предмет держит в правой руке, в левой руке оружие)
+		{camera
+;;			{origin 6.30222	2.79643	6.65139}
+;;			{lookat -6.8255	-3.46511	0.0232192}
+;;			{fov 45}
+
+			{origin 10.1883	4.73295	8.6384}
+			{lookat -6.86068	-3.39893	0.030387}
+			{fov 40}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction 0	0	-0.5}
+				{ambient 0x252525}
+;;;				{ambient 0x5f5f5f}
+			}
+			{"1"
+				{type point}
+				{position 4.47904	2.65034	5.74874}
+			}
+		}
+	}
+}

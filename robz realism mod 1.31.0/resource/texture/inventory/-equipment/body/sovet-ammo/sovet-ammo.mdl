@@ -1,0 +1,72 @@
+;Exported by: Vlad
+;Date:        Mon May 04 14:05:09 2015
+;File:        D:\маё\Проги всякие\3д проэкты\example_bodyarmor11.max
+{Skeleton
+	{bone "body"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "body.ply"}
+		{bone "body2"
+			{Position 	0	0	0}
+			{VolumeView "body2.ply"}
+		}
+	}
+
+}
+{Volume "body2"
+	{Polyhedron "body2.vol"}
+	{Bone "body2"}
+	{Matrix34
+		0	-0.642787	-0.766045
+		1	0	0
+		0	-0.766045	0.642787
+		-0.157477	7.05583	-2.88601
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "body"}
+	{Matrix34
+		0	0	-1
+		1	0	0
+		0	-1	0
+		-3.73096	5.41398	0.724725
+	}
+}
+{Volume "select"
+	{Polyhedron "select.vol"}
+	{Bone "body"}
+	{Matrix34
+		0	0	-1
+		1	0	0
+		0	-1	0
+		-3.73096	5.44024	0.724723
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 26.3717	-5.34333	-0.309279}
+			{lookat -19.668587	-0.893116	-0.05}
+			{fov 22.6199}
+			{horizon 89.7469}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction -0.30144	0.398233	0.0233202}
+			}
+			{"1"
+				{type directional}
+				{direction -0.164806	-0.469956	0.0444972}
+			}
+			{"2"
+				{type directional}
+				{direction -0.175248	0.408131	-0.229602}
+			}
+		}
+	}
+}

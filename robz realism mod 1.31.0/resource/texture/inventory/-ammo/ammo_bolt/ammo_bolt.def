@@ -1,0 +1,8 @@
+{game_entity
+	(include "/properties/stuff_small.ext")
+	{collider "ammo"}
+	{Extension "ammo_bolt.mdl"}
+	{extender "stuff"
+		{item "bolt ammo"}
+	}
+}

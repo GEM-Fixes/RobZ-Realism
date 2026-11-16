@@ -1,0 +1,31 @@
+{game_entity
+	(include "/properties/stuff.ext")
+	{collider "stuff.construction"}
+	{props "-steel" "wood" "fence" "construction" "inventory_box" "spread_items" "ammo_box"}
+	{ObstacleID "stuff"}
+	{extender "inventory"
+		{box
+			{weight 99}
+			{size 4 2}              
+            			{clear}
+			{item "ammo ptr" 1}
+			{item "ammo mgun" 1}
+		}
+	}
+	
+	(include "/properties/resupply_generic.inc")
+	("ammobox_2_ptr_mgun")
+	
+	{Volume "body"
+		{thickness 1}
+		{able {touch}}
+	}
+	
+	{lodclass "decor_small"}
+	
+	{extender "stuff"
+		{item "ammunition_box_2"}
+	}
+	
+	{Extension "box_rusammo.mdl"}
+}

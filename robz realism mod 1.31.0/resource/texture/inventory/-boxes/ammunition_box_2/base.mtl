@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "crate_ammo_ptr"}
+	{blend none}
+}

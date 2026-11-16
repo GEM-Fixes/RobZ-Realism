@@ -1,0 +1,11 @@
+{game_entity
+	(include "/properties/stuff_small.ext")
+	{volume "body"
+		{thickness 1}
+	}
+	{props "capacity"}
+	{extender "stuff"
+		{item "ita_pack2"}
+	}
+	{Extension "ita_pack2.mdl"}
+}

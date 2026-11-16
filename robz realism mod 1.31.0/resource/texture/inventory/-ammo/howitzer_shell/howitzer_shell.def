@@ -1,0 +1,7 @@
+{game_entity
+	{lodclass "stuff_small"}
+	{props "steel"}
+	{Extension "howitzer_shell.mdl"}
+	{constrain none}
+	{fogable never}
+}

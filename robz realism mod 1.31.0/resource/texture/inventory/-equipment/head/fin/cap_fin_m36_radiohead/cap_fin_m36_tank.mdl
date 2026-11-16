@@ -1,0 +1,52 @@
+;Exported by: Kalinski
+;Date:        Thu Jun 28 00:32:02 2018
+;File:        C:\Users\Kalinski\Desktop\modshit\finn\m36 cap radio exp.max
+{Skeleton
+	{bone "cap_fin_m36_tank"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "cap_fin_m36_tank.ply"}
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "cap_fin_m36_tank"}
+	{Position 0.703094	0.124126	3.3988}
+}
+{Volume "select"
+	{Box 5.59662 5.08766 5.14459}
+	{Bone "cap_fin_m36_tank"}
+	{Matrix34
+		1.0387	0	0
+		0	1.0387	0
+		0	0	1.0387
+		0.919993	0.260123	3.58528
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 5.6533	-3.33677	4.25885}
+			{lookat 0.788714	0.162108	3.52938}
+			{fov 45}
+			{horizon -0.239031}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction -0.397854	0.2769	-0.122632}
+			}
+			{"1"
+				{type point}
+				{position -0.583131	-2.57466	3.85514}
+			}
+			{"2"
+				{type point}
+				{position 3.43439	-0.030387	3.70836}
+			}
+		}
+	}
+}
