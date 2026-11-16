@@ -1,0 +1,3702 @@
+{mission
+	{Entity "map_point" 0x802c
+		{Position -2670.11 -4637.46}
+		{xform zl 45.57}
+		{Extender "map_point"
+			{name b4}
+			{team b}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 4}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 45}
+	}
+	{Entity "map_point" 0x802d
+		{Position 3769.59 4406.67}
+		{xform zl -140.81}
+		{Extender "map_point"
+			{name a4}
+			{team a}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 4}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 46}
+	}
+	{Entity "map_point" 0xc002
+		{Position 3987.53 4161.86}
+		{xform zl -136.22}
+		{Extender "map_point"
+			{name a3}
+			{team a}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 3}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 17}
+	}
+	{Entity "map_point" 0xc003
+		{Position 4311.8 3891.56}
+		{xform zl -132.53}
+		{Extender "map_point"
+			{name a2}
+			{team a}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 2}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 18}
+	}
+	{Entity "map_point" 0xc005
+		{Position 4588.74 3637.75}
+		{xform zl -136.44}
+		{Extender "map_point"
+			{name a1}
+			{team a}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 1}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 20}
+	}
+	{Entity "map_point" 0xc008
+		{Position -2954.79 -4347.45}
+		{xform zl 48.31}
+		{Extender "map_point"
+			{name b3}
+			{team b}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 3}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 23}
+	}
+	{Entity "map_point" 0xc009
+		{Position -3253.15 -4010.08}
+		{xform zl 45.35}
+		{Extender "map_point"
+			{name b2}
+			{team b}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 2}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 24}
+	}
+	{Entity "map_point" 0xc00b
+		{Position -3565.64 -3664.92}
+		{xform zl 49.43}
+		{Extender "map_point"
+			{name b1}
+			{team b}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 1}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 26}
+	}
+	{Entity "battle" 0xc004
+		{Position -1917 -4607.29}
+		{xform zl -42.44}
+		{Constrain surface}
+		{Extender "speaker"
+			{SoundName "world/skirmish_environment/open_ground_night2"}
+		}
+	}
+	{Entity "battle" 0xe000
+		{Position -1972.6 -4616.06}
+		{xform zl -42.58}
+		{Constrain surface}
+		{Extender "speaker"
+			{SoundName "world/skirmish_environment/open_ground_day2"}
+		}
+	}
+	{Entity "battle" 0xe001
+		{Position 44.62 394.38}
+		{xform zl -92.74 y 3.22 zw 50.48}
+		{Constrain surface}
+		{Extender "speaker"
+			{SoundName "world/skirmish_environment/open_ground_day1"}
+		}
+	}
+	{Entity "battle" 0x8000
+		{Position -1897.36 -4561.25}
+		{xform zl -130.71 y 0.41 zw 90}
+		{Constrain surface}
+		{Extender "speaker"
+			{SoundName "world/rain/00"}
+		}
+	}
+	{Entity "battle" 0x8001
+		{Position -1940.3 -4657.15}
+		{xform zl -42.74}
+		{Constrain surface}
+		{Extender "speaker"
+			{SoundName "world/skirmish_environment/light_jungle_night2"}
+		}
+	}
+	{Entity "battle" 0x8002
+		{Position -1951.05 -4568.09}
+		{xform zl -43.15}
+		{Constrain surface}
+		{Extender "speaker"
+			{SoundName "world/skirmish_environment/open_ground_night1"}
+		}
+	}
+	{Entity "cow" 0x8007
+		{Position 2948.38 2940.55 5.07}
+		{xform zl 38.51}
+		{Extender "vitality"
+			{Health
+				{max 666}
+				{current 666}
+			}
+		}
+		{Player 0}
+		{MID 5}
+	}
+	{Entity "birds" 0x8008
+		{Position 2375.03 915.34 123.34}
+	}
+	{Entity "birds" 0xc000
+		{Position 881.61 2588.24 130.99}
+	}
+	{Entity "radio" 0xc006
+		{Position 1245.7 -2587.05 157}
+		{Extender "speaker"
+			{SoundName "world/crow"}
+			{Loop 0}
+			{CycleTime 5}
+			{RecoveryTime 2.5}
+		}
+	}
+	{Entity "radio" 0x8009
+		{Position -2430.33 1725.02 77.97}
+		{Extender "speaker"
+			{SoundName "world/crow"}
+			{Loop 0}
+			{CycleTime 5}
+			{RecoveryTime 2.5}
+		}
+	}
+	{Entity "radio" 0x800b
+		{Position -2068.98 650.63}
+		{xform zl -179.7 y 3.21 zw 180}
+		{Constrain surface}
+		{Extender "speaker"
+			{SoundName "world/crow"}
+			{Loop 0}
+			{CycleTime 5}
+			{RecoveryTime 2.5}
+		}
+	}
+	{Entity "radio" 0x800c
+		{Position 271.64 -2003.4}
+		{xform zl -0.08}
+		{Constrain surface}
+		{Extender "speaker"
+			{SoundName "world/crow"}
+			{Loop 0}
+			{CycleTime 5}
+			{RecoveryTime 2.5}
+		}
+	}
+	{Entity "battle" 0x800d
+		{Position 786.16 2984.05 81.5}
+		{Extender "speaker"
+			{SoundName "world/village/00"}
+		}
+	}
+	{Entity "battle" 0xc001
+		{Position 3008.55 1070.02 81.5}
+		{Extender "speaker"
+			{SoundName "world/village/00"}
+		}
+	}
+	{Entity "radio" 0xc007
+		{Position -4215.03 -4095.35 144.53}
+		{xform zl -92.74}
+		{Extender "speaker"
+			{SoundName "world/crow"}
+			{Loop 0}
+			{CycleTime 5}
+			{RecoveryTime 2.5}
+		}
+	}
+	{Entity "radio" 0xc00a
+		{Position -3001.73 2247.22 157.59}
+		{Extender "speaker"
+			{SoundName "world/crow"}
+			{Loop 0}
+			{CycleTime 5}
+			{RecoveryTime 2.5}
+		}
+	}
+	{Entity "birds" 0xc00c
+		{Position -1781.97 3472.31 57.52}
+	}
+	{Entity "birds" 0xc010
+		{Position 3454.97 -1698.96 57.52}
+	}
+	{Entity "waterrun" 0x800a
+		{Position 769.49 2130.46 36.24}
+		{Extender "speaker"
+			{SoundName "world/water/04"}
+		}
+	}
+	{Entity "waterrun" 0x800e
+		{Position 1952.25 1257.4 29.73}
+		{Extender "speaker"
+			{SoundName "world/water/04"}
+		}
+	}
+	{Entity "map_point" 0x8011
+		{Position -3908.84 -3307.54}
+		{xform zl 45.57}
+		{Extender "map_point"
+			{name b5}
+			{team b}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 5}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 8}
+	}
+	{Entity "map_point" 0x8012
+		{Position 3477.2 4749.4}
+		{xform zl -140.81}
+		{Extender "map_point"
+			{name a5}
+			{team a}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 5}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 9}
+	}
+	{Entity "flag_point" 0x8801
+		{Position 497.93 498.85}
+		{xform zl 89.64 y 1.93 zw -90}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f1}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 1}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 1}
+	}
+	{Entity "flag_point" 0x8802
+		{Position 997.93 498.85}
+		{xform zl -0.84}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f2}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 2}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 2}
+	}
+	{Entity "flag_point" 0x8803
+		{Position 851.48 852.4}
+		{xform zl -2.67}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f3}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 3}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 3}
+	}
+	{Entity "flag_point" 0x8804
+		{Position 497.93 998.85}
+		{xform zl 145.18 y 6 zw -146.56}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f4}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 4}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 4}
+	}
+	{Entity "flag_point" 0x8805
+		{Position 144.38 852.4}
+		{xform zl -145.53 y 6.94 zw 145.29}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f5}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 5}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 6}
+	}
+	{Entity "flag_point" 0x8806
+		{Position -2.07 498.85}
+		{xform zl -44.4 y 8.05 zw 45}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f6}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 6}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 7}
+	}
+	{Entity "flag_point" 0x8807
+		{Position 144.38 145.3}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f7}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 7}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 10}
+	}
+	{Entity "flag_point" 0x8808
+		{Position 497.93 -1.15}
+		{xform zl -43.67 y 6.89 zw 43.46}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f8}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 8}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 11}
+	}
+	{Entity "flag_point" 0x8809
+		{Position 851.48 145.3}
+		{xform zl 39.02}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f9}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 9}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 12}
+	}
+	{Entity "flag_point" 0x880a
+		{Position 1497.93 498.85}
+		{xform zl -92.01 y 5.71 zw 90}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f10}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 10}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 13}
+	}
+	{Entity "flag_point" 0x880b
+		{Position 1421.81 881.53}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f11}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 11}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 14}
+	}
+	{Entity "flag_point" 0x880c
+		{Position 1205.04 1205.96}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f12}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 12}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 15}
+	}
+	{Entity "flag_point" 0x880d
+		{Position 880.61 1422.73}
+		{xform zl 33.12}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f13}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 13}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 16}
+	}
+	{Entity "flag_point" 0x880e
+		{Position 497.93 1498.85}
+		{xform zl 0.43}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f14}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 14}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 19}
+	}
+	{Entity "flag_point" 0x880f
+		{Position 115.25 1422.73}
+		{xform zl 138.13 y 5.24 zw -146.2}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f15}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 15}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 21}
+	}
+	{Entity "flag_point" 0x8810
+		{Position -209.18 1205.96}
+		{xform zl 122.64 y 37.07 zw -126.89}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f16}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 16}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 22}
+	}
+	{Entity "flag_point" 0x8811
+		{Position -425.95 881.53}
+		{xform zl -74.99 y 23.41 zw 76.64}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f17}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 17}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 25}
+	}
+	{Entity "flag_point" 0x8812
+		{Position -502.07 498.85}
+		{xform zl 0.56 y 4.31}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f18}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 18}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 27}
+	}
+	{Entity "flag_point" 0x8813
+		{Position -425.95 116.17}
+		{xform zl 52.35 y 4.52 zw -51.86}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f19}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 19}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 28}
+	}
+	{Entity "flag_point" 0x8814
+		{Position -209.18 -208.26}
+		{xform zl 0.38}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f20}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 20}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 29}
+	}
+	{Entity "flag_point" 0x8815
+		{Position 115.25 -425.03}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f21}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 21}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 30}
+	}
+	{Entity "flag_point" 0x8816
+		{Position 497.93 -501.15}
+		{xform zl -94.69 y 6.68 zw 94.09}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f22}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 22}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 31}
+	}
+	{Entity "flag_point" 0x8817
+		{Position 880.61 -425.03}
+		{xform zl -6.8 y 11.31 zw 1.44}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f23}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 23}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 32}
+	}
+	{Entity "flag_point" 0x8818
+		{Position 1205.04 -208.26}
+		{xform zl 148.4 y 5.62 zw -148.72}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f24}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 24}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 33}
+	}
+	{Entity "flag_point" 0x8819
+		{Position 1421.81 116.17}
+		{xform zl 175.98 y 0.9 zw -176.61}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f25}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 25}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 34}
+	}
+	{Entity "flag_point" 0x881a
+		{Position 1997.93 498.85}
+		{xform zl -179.5 y 0.23 zw 180}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f26}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 26}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 35}
+	}
+	{Entity "flag_point" 0x881b
+		{Position 1946.82 887.08}
+		{xform zl -0.18}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f27}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 27}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 36}
+	}
+	{Entity "flag_point" 0x881c
+		{Position 1796.97 1248.85}
+		{xform zl -94.91 y 1.94 zw 94.11}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f28}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 28}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 37}
+	}
+	{Entity "flag_point" 0x881d
+		{Position 1558.59 1559.51}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f29}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 29}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 38}
+	}
+	{Entity "flag_point" 0x881e
+		{Position 1247.93 1797.89}
+		{xform zl 85.28 y 45.91 zw -51.33}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f30}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 30}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 39}
+	}
+	{Entity "flag_point" 0x881f
+		{Position 886.16 1947.74}
+		{xform zl 178.64 y 5.43 zw 180}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f31}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 31}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 40}
+	}
+	{Entity "flag_point" 0x8820
+		{Position 497.93 1998.85}
+		{xform zl -33.51 y 11.66 zw 31.76}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f32}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 32}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 41}
+	}
+	{Entity "flag_point" 0x8821
+		{Position 109.7 1947.74}
+		{xform zl 87.86 y 11.31 zw -90}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f33}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 33}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 42}
+	}
+	{Entity "flag_point" 0x8822
+		{Position -252.07 1797.89}
+		{xform zl -3.29}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f34}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 34}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 43}
+	}
+	{Entity "flag_point" 0x8823
+		{Position -562.73 1559.51}
+		{xform zl 123.13 y 16.59 zw -126.17}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f35}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 35}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 44}
+	}
+	{Entity "flag_point" 0x8824
+		{Position -801.11 1248.85}
+		{xform zl -53.12 y 9.48 zw 53.22}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f36}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 36}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 47}
+	}
+	{Entity "flag_point" 0x8825
+		{Position -950.96 887.08}
+		{xform zl -72.96 y 10.35 zw 72.59}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f37}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 37}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 48}
+	}
+	{Entity "flag_point" 0x8826
+		{Position -1002.07 498.85}
+		{xform zl 0.07}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f38}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 38}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 49}
+	}
+	{Entity "flag_point" 0x8827
+		{Position -950.96 110.62}
+		{xform zl 90.14 y 2.95 zw -90}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f39}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 39}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 50}
+	}
+	{Entity "flag_point" 0x8828
+		{Position -801.11 -251.15}
+		{xform zl -81.4 y 29.58 zw 76.96}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f40}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 40}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 51}
+	}
+	{Entity "flag_point" 0x8829
+		{Position -562.73 -561.81}
+		{xform zl -19.84 y 12.02 zw 20.01}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f41}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 41}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 52}
+	}
+	{Entity "flag_point" 0x882a
+		{Position -252.07 -800.19}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f42}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 42}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 53}
+	}
+	{Entity "flag_point" 0x882b
+		{Position 109.7 -950.04}
+		{xform zl 0.45}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f43}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 43}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 54}
+	}
+	{Entity "flag_point" 0x882c
+		{Position 497.93 -1001.15}
+		{xform zl -5.68}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f44}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 44}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 55}
+	}
+	{Entity "flag_point" 0x882d
+		{Position 886.16 -950.04}
+		{xform zl -18.71 y 5.37 zw 19.46}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f45}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 45}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 56}
+	}
+	{Entity "flag_point" 0x882e
+		{Position 1247.93 -800.19}
+		{xform zl 10.92 y 11.82 zw -11.64}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f46}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 46}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 57}
+	}
+	{Entity "flag_point" 0x882f
+		{Position 1558.59 -561.81}
+		{xform zl 173.18 y 7.47 zw 180}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f47}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 47}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 58}
+	}
+	{Entity "flag_point" 0x8830
+		{Position 1796.97 -251.15}
+		{xform zl -93.31 y 5.04 zw 90}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f48}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 48}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 59}
+	}
+	{Entity "flag_point" 0x8831
+		{Position 1946.82 110.62}
+		{xform zl 1.31}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f49}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 49}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 60}
+	}
+	{Entity "flag_point" 0x8832
+		{Position 3689.08 -1837.4}
+		{xform zl -170.02 y 2.9 zw 168.7}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f50}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 50}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 61}
+	}
+	{Entity "flag_point" 0x8833
+		{Position 4189.08 -1837.4}
+		{xform zl 13.6 y 7.5 zw -12.62}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f51}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 51}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 62}
+	}
+	{Entity "flag_point" 0x8834
+		{Position 4042.63 -1483.85}
+		{xform zl 2.13 y 5.71}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f52}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 52}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 63}
+	}
+	{Entity "flag_point" 0x8835
+		{Position 3689.08 -1337.4}
+		{xform zl -89.57 y 1.42 zw 90}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f53}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 53}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 64}
+	}
+	{Entity "flag_point" 0x8836
+		{Position 3335.53 -1483.85}
+		{xform zl 137.54 y 7.89 zw -135.83}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f54}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 54}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 65}
+	}
+	{Entity "flag_point" 0x8837
+		{Position 3189.08 -1837.4}
+		{xform zl -88.84 y 5.71 zw 90}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f55}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 55}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 66}
+	}
+	{Entity "flag_point" 0x8838
+		{Position 3335.53 -2190.95}
+		{xform zl -3.28}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f56}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 56}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 67}
+	}
+	{Entity "flag_point" 0x8839
+		{Position 3689.08 -2337.4}
+		{xform zl -105.38 y 5.94 zw 105.86}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f57}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 57}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 68}
+	}
+	{Entity "flag_point" 0x883a
+		{Position 4042.63 -2190.95}
+		{xform zl 90.14 y 5.71 zw -90}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f58}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 58}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 69}
+	}
+	{Entity "flag_point" 0x883b
+		{Position 4689.08 -1837.4}
+		{xform zl 0.64}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f59}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 59}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 70}
+	}
+	{Entity "flag_point" 0x883c
+		{Position 4612.96 -1454.72}
+		{xform zl -90.76 y 0.11 zw 90}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f60}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 60}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 71}
+	}
+	{Entity "flag_point" 0x883d
+		{Position 4396.19 -1130.29}
+		{xform zl -93.34 y 5.71 zw 90}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f61}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 61}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 72}
+	}
+	{Entity "flag_point" 0x883e
+		{Position 4071.76 -913.52}
+		{xform zl -53.8 y 16.7 zw 90}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f62}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 62}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 73}
+	}
+	{Entity "flag_point" 0x883f
+		{Position 3689.08 -837.4}
+		{xform zl -91 y 16.7 zw 91.46}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f63}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 63}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 74}
+	}
+	{Entity "flag_point" 0x8840
+		{Position 3306.4 -913.52}
+		{xform zl -110.31 y 17.96 zw 106.94}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f64}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 64}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 75}
+	}
+	{Entity "flag_point" 0x8841
+		{Position 2981.97 -1130.29}
+		{xform zl -1.79}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f65}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 65}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 76}
+	}
+	{Entity "flag_point" 0x8842
+		{Position 2765.2 -1454.72}
+		{xform zl 0.09}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f66}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 66}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 77}
+	}
+	{Entity "flag_point" 0x8843
+		{Position 2689.08 -1837.4}
+		{xform zl -0.15}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f67}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 67}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 78}
+	}
+	{Entity "flag_point" 0x8844
+		{Position 2765.2 -2220.08}
+		{xform zl 82.55 y 2.88 zw -80.87}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f68}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 68}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 79}
+	}
+	{Entity "flag_point" 0x8845
+		{Position 2981.97 -2544.51}
+		{xform zl 91.8 y 5.71 zw -90}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f69}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 69}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 80}
+	}
+	{Entity "flag_point" 0x8846
+		{Position 3306.4 -2761.28}
+		{xform zl 154.61 y 12.6 zw -153.43}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f70}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 70}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 81}
+	}
+	{Entity "flag_point" 0x8847
+		{Position 3689.08 -2837.4}
+		{xform zl 0.77}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f71}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 71}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 82}
+	}
+	{Entity "flag_point" 0x8848
+		{Position 4071.76 -2761.28}
+		{xform zl -2.2}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f72}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 72}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 83}
+	}
+	{Entity "flag_point" 0x8849
+		{Position 4396.19 -2544.51}
+		{xform zl -0.51}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f73}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 73}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 84}
+	}
+	{Entity "flag_point" 0x884a
+		{Position 4612.96 -2220.08}
+		{xform zl 156.04 y 1.57 zw -156.27}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f74}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 74}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 85}
+	}
+	{Entity "flag_point" 0x884b
+		{Position 5189.08 -1837.4}
+		{xform zl -45.36 y 8.05 zw 45}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f75}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 75}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 86}
+	}
+	{Entity "flag_point" 0x884c
+		{Position 5137.97 -1449.17}
+		{xform zl -3.69}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f76}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 76}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 87}
+	}
+	{Entity "flag_point" 0x884d
+		{Position 4988.12 -1087.4}
+		{xform zl -77.24 y 13.88 zw 75.1}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f77}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 77}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 88}
+	}
+	{Entity "flag_point" 0x884e
+		{Position 4749.74 -776.74}
+		{xform zl -22.52 y 5.38 zw 51.52}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f78}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 78}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 89}
+	}
+	{Entity "flag_point" 0x884f
+		{Position 4439.08 -538.36}
+		{xform zl 83.97 y 3.54 zw -86.1}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f79}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 79}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 90}
+	}
+	{Entity "flag_point" 0x8850
+		{Position 4077.31 -388.51}
+		{xform zl 134.06 y 8.05 zw -135}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f80}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 80}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 91}
+	}
+	{Entity "flag_point" 0x8851
+		{Position 3689.08 -337.4}
+		{xform zl 104.98 y 11.86 zw -107.72}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f81}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 81}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 92}
+	}
+	{Entity "flag_point" 0x8852
+		{Position 3300.85 -388.51}
+		{xform zl 107.93 y 9.46 zw -106.86}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f82}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 82}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 93}
+	}
+	{Entity "flag_point" 0x8853
+		{Position 2939.08 -538.36}
+		{xform zl -176.42 y 3.66 zw 180}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f83}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 83}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 94}
+	}
+	{Entity "flag_point" 0x8854
+		{Position 2628.42 -776.74}
+		{xform zl -124.38 y 6.98 zw 125.19}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f84}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 84}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 95}
+	}
+	{Entity "flag_point" 0x8855
+		{Position 2390.04 -1087.4}
+		{xform zl -89.09 y 5.71 zw 90}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f85}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 85}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 96}
+	}
+	{Entity "flag_point" 0x8856
+		{Position 2240.19 -1449.17}
+		{xform zl -109.4 y 17.91 zw 109.04}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f86}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 86}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 97}
+	}
+	{Entity "flag_point" 0x8857
+		{Position 2189.08 -1837.4}
+		{xform zl 0.65}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f87}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 87}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 98}
+	}
+	{Entity "flag_point" 0x8858
+		{Position 2240.19 -2225.63}
+		{xform zl -1.11}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f88}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 88}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 99}
+	}
+	{Entity "flag_point" 0x8859
+		{Position 2390.04 -2587.4}
+		{xform zl -122.21 y 4.66 zw 121.65}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f89}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 89}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 100}
+	}
+	{Entity "flag_point" 0x885a
+		{Position 2628.42 -2898.06}
+		{xform zl 44.93 y 3.12 zw -49.38}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f90}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 90}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 101}
+	}
+	{Entity "flag_point" 0x885b
+		{Position 2939.08 -3136.44}
+		{xform zl 0.53}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f91}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 91}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 102}
+	}
+	{Entity "flag_point" 0x885c
+		{Position 3300.85 -3286.29}
+		{xform zl 179.97 y 3.08 zw 180}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f92}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 92}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 103}
+	}
+	{Entity "flag_point" 0x885d
+		{Position 3689.08 -3337.4}
+		{xform zl -63.01 y 4.77 zw 64.39}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f93}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 93}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 104}
+	}
+	{Entity "flag_point" 0x885e
+		{Position 4077.31 -3286.29}
+		{xform zl 0.34}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f94}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 94}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 105}
+	}
+	{Entity "flag_point" 0x885f
+		{Position 4439.08 -3136.44}
+		{xform zl -1.85}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f95}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 95}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 106}
+	}
+	{Entity "flag_point" 0x8860
+		{Position 4749.74 -2898.06}
+		{xform zl -1.19}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f96}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 96}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 107}
+	}
+	{Entity "flag_point" 0x8861
+		{Position 4988.12 -2587.4}
+		{xform zl 0.81 y 0.32}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f97}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 97}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 108}
+	}
+	{Entity "flag_point" 0x8862
+		{Position 5137.97 -2225.63}
+		{xform zl 178.97 y 19.29 zw 179.55}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f98}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 98}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 109}
+	}
+	{Entity "flag_point" 0x8863
+		{Position -2469.3 3088.88}
+		{xform zl -96.82 y 3.8 zw 96.59}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f99}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 99}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 110}
+	}
+	{Entity "flag_point" 0x8864
+		{Position -1969.3 3088.88}
+		{xform zl -88.42 y 0.04 zw 90}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f100}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 100}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 111}
+	}
+	{Entity "flag_point" 0x8865
+		{Position -2115.75 3442.43}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f101}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 101}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 112}
+	}
+	{Entity "flag_point" 0x8866
+		{Position -2469.3 3588.88}
+		{xform zl -127.91 y 4.75 zw 128.3}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f102}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 102}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 113}
+	}
+	{Entity "flag_point" 0x8867
+		{Position -2822.85 3442.43}
+		{xform zl -118.91 y 3.51 zw 119.03}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f103}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 103}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 114}
+	}
+	{Entity "flag_point" 0x8868
+		{Position -2969.3 3088.88}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f104}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 104}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 115}
+	}
+	{Entity "flag_point" 0x8869
+		{Position -2822.85 2735.33}
+		{xform zl 136.8 y 8.36 zw -137.38}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f105}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 105}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 116}
+	}
+	{Entity "flag_point" 0x886a
+		{Position -2469.3 2588.88}
+		{xform zl -0.26}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f106}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 106}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 117}
+	}
+	{Entity "flag_point" 0x886b
+		{Position -2115.75 2735.33}
+		{xform zl 0.21}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f107}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 107}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 118}
+	}
+	{Entity "flag_point" 0x886c
+		{Position -1469.3 3088.88}
+		{xform zl -1.45}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f108}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 108}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 119}
+	}
+	{Entity "flag_point" 0x886d
+		{Position -1545.42 3471.56}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f109}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 109}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 120}
+	}
+	{Entity "flag_point" 0x886e
+		{Position -1762.19 3795.99}
+		{xform zl -178.02 y 4.39 zw 177.19}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f110}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 110}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 121}
+	}
+	{Entity "flag_point" 0x886f
+		{Position -2086.62 4012.76}
+		{xform zl -90.07 y 1.56 zw 90}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f111}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 111}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 122}
+	}
+	{Entity "flag_point" 0x8870
+		{Position -2469.3 4088.88}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f112}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 112}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 123}
+	}
+	{Entity "flag_point" 0x8871
+		{Position -2851.98 4012.76}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f113}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 113}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 124}
+	}
+	{Entity "flag_point" 0x8872
+		{Position -3176.41 3795.99}
+		{xform zl -41.49 y 8.28 zw 40.68}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f114}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 114}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 125}
+	}
+	{Entity "flag_point" 0x8873
+		{Position -3393.18 3471.56}
+		{xform zl 100.41 y 3.55 zw -101.16}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f115}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 115}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 126}
+	}
+	{Entity "flag_point" 0x8874
+		{Position -3469.3 3088.88}
+		{xform zl -0.08}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f116}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 116}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 127}
+	}
+	{Entity "flag_point" 0x8875
+		{Position -3393.18 2706.2}
+		{xform zl 0.54}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f117}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 117}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 128}
+	}
+	{Entity "flag_point" 0x8876
+		{Position -3176.41 2381.77}
+		{xform zl 152.54 y 6.96 zw -152.32}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f118}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 118}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 129}
+	}
+	{Entity "flag_point" 0x8877
+		{Position -2851.98 2165}
+		{xform zl 0.14}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f119}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 119}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 130}
+	}
+	{Entity "flag_point" 0x8878
+		{Position -2469.3 2088.88}
+		{xform zl 89.62 y 5.71 zw -90}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f120}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 120}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 131}
+	}
+	{Entity "flag_point" 0x8879
+		{Position -2086.62 2165}
+		{xform zl 78.31 y 5.91 zw -78.33}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f121}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 121}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 132}
+	}
+	{Entity "flag_point" 0x887a
+		{Position -1762.19 2381.77}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f122}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 122}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 133}
+	}
+	{Entity "flag_point" 0x887b
+		{Position -1545.42 2706.2}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f123}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 123}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 134}
+	}
+	{Entity "flag_point" 0x887c
+		{Position -969.3 3088.88}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f124}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 124}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 135}
+	}
+	{Entity "flag_point" 0x887d
+		{Position -1020.41 3477.11}
+		{xform zl 90 y 1.02 zw -90}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f125}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 125}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 136}
+	}
+	{Entity "flag_point" 0x887e
+		{Position -1170.26 3838.88}
+		{xform zl 0.55}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f126}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 126}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 137}
+	}
+	{Entity "flag_point" 0x887f
+		{Position -1408.64 4149.54}
+		{xform zl 0.22}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f127}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 127}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 138}
+	}
+	{Entity "flag_point" 0x8880
+		{Position -1719.3 4387.92}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f128}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 128}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 139}
+	}
+	{Entity "flag_point" 0x8881
+		{Position -2081.07 4537.77}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f129}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 129}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 140}
+	}
+	{Entity "flag_point" 0x8882
+		{Position -2469.3 4588.88}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f130}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 130}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 141}
+	}
+	{Entity "flag_point" 0x8883
+		{Position -2857.53 4537.77}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f131}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 131}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 142}
+	}
+	{Entity "flag_point" 0x8884
+		{Position -3219.3 4387.92}
+		{xform zl -0.2}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f132}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 132}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 143}
+	}
+	{Entity "flag_point" 0x8885
+		{Position -3529.96 4149.54}
+		{xform zl -0.22}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f133}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 133}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 144}
+	}
+	{Entity "flag_point" 0x8886
+		{Position -3768.34 3838.88}
+		{xform zl -142.56 y 9.41 zw 142.86}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f134}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 134}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 145}
+	}
+	{Entity "flag_point" 0x8887
+		{Position -3918.19 3477.11}
+		{xform zl -161.1 y 4.96 zw 161.52}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f135}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 135}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 146}
+	}
+	{Entity "flag_point" 0x8888
+		{Position -3969.3 3088.88}
+		{xform zl 54.81 y 9.25 zw -55.42}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f136}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 136}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 147}
+	}
+	{Entity "flag_point" 0x8889
+		{Position -3918.19 2700.65}
+		{xform zl -89.97 y 5.71 zw 90}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f137}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 137}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 148}
+	}
+	{Entity "flag_point" 0x888a
+		{Position -3768.34 2338.88}
+		{xform zl -0.1}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f138}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 138}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 149}
+	}
+	{Entity "flag_point" 0x888b
+		{Position -3529.96 2028.22}
+		{xform zl -58.28 y 16.56 zw 56.37}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f139}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 139}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 150}
+	}
+	{Entity "flag_point" 0x888c
+		{Position -3219.3 1789.84}
+		{xform zl -21.56 y 8.83 zw 21.28}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f140}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 140}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 151}
+	}
+	{Entity "flag_point" 0x888d
+		{Position -2857.53 1639.99}
+		{xform zl 36.69 y 13.82 zw -36.17}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f141}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 141}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 152}
+	}
+	{Entity "flag_point" 0x888e
+		{Position -2469.3 1588.88}
+		{xform zl 42.71 y 22.13 zw -40.85}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f142}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 142}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 153}
+	}
+	{Entity "flag_point" 0x888f
+		{Position -2081.07 1639.99}
+		{xform zl 111.1 y 0.52 zw -110.61}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f143}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 143}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 154}
+	}
+	{Entity "flag_point" 0x8890
+		{Position -1719.3 1789.84}
+		{xform zl -90.37 y 5.71 zw 90}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f144}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 144}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 155}
+	}
+	{Entity "flag_point" 0x8891
+		{Position -1408.64 2028.22}
+		{xform zl 91.69 y 18.06 zw -94.75}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f145}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 145}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 156}
+	}
+	{Entity "flag_point" 0x8892
+		{Position -1170.26 2338.88}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f146}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 146}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 157}
+	}
+	{Entity "flag_point" 0x8893
+		{Position -1020.41 2700.65}
+		{xform zl -89.4 y 8.37 zw 89.6}
+		{Constrain surface}
+		{Extender "map_point"
+			{name f147}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 147}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 158}
+	}
+	{Tags "keep_places_without_door" 0x2004}
+	{Tags "keep_places_without_door" 0x2014}
+	{Tags "keep_places_without_door" 0x39}
+	{Tags "keep_places_without_door" 0x4035}
+	{Tags "keep_places_without_door" 0x4037}
+	{Tags "keep_places_without_door" 0x4047}
+	{Tags "keep_places_without_door" 0x96}
+	{Tags "keep_places_without_door" 0x4084}
+	{Tags "keep_places_without_door" 0x408c}
+	{Tags "keep_places_without_door" 0x2863}
+	{Tags "keep_places_without_door" 0x3032}
+	{Tags "keep_places_without_door" 0x601}
+	{Tags "keep_places_without_door" 0x4088}
+	{Tags "keep_places_without_door" {0x2054 "basis"}}
+	{Tags "keep_places_without_door" {0x205c "2"}}
+	{Tags "keep_places_without_door" 0x2068}
+	{Tags "keep_places_without_door" 0x704c}
+	{Tags "keep_places_without_door" 0x1849}
+	{Tags "keep_places_without_door" 0x186d}
+	{Tags "keep_places_without_door" 0x518}
+	{Tags "keep_places_without_door" 0x51c}
+	{Tags "keep_places_without_door" 0x51d}
+	{Tags "keep_places_without_door" 0x11e}
+	{Tags "keep_places_without_door" 0x203e}
+	{Tags "keep_places_without_door" 0x12c}
+	{Tags "keep_places_without_door" 0x41e8}
+	{Tags "keep_places_without_door" 0x60b2}
+	{Tags "keep_places_without_door" 0x175}
+	{Tags "keep_places_without_door" 0x4401}
+	{Tags "keep_places_without_door" 0x1e5}
+	{Tags "keep_places_without_door" 0x40fd}
+	{Tags "keep_places_without_door" 0x5877}
+	{Tags "keep_places_without_door" 0x2096}
+	{Tags "keep_places_without_door" 0x2097}
+	{Tags "keep_places_without_door" 0x20d3}
+	{Tags "keep_places_without_door" 0x5023}
+	{Tags "keep_places_without_door" 0x2168}
+	{Tags "keep_places_without_door" 0x494}
+	{Tags "keep_places_without_door" 0x49d}
+	{Tags "keep_places_without_door" 0x49e}
+	{Tags "keep_places_without_door" 0x49f}
+	{Tags "keep_places_without_door" 0x4a0}
+	{Tags "keep_places_without_door" 0x4a1}
+	{Tags "keep_places_without_door" 0x4a2}
+	{Tags "keep_places_without_door" 0x4b0}
+	{Tags "keep_places_without_door" 0x7418}
+	{Tags "keep_places_without_door" 0x4d5}
+	{Tags "keep_places_without_door" 0x4de}
+	{Tags "keep_places_without_door" 0x504}
+	{Tags "keep_places_without_door" 0x60e5}
+	{Tags "keep_places_without_door" 0x189a}
+	{Tags "keep_places_without_door" 0x22fb}
+	{Tags "keep_places_without_door" 0x4663}
+	{Tags "keep_places_without_door" 0x4686}
+	{Tags "keep_places_without_door" 0x10d2}
+	{Tags "keep_places_without_door" 0x753}
+	{Tags "keep_places_without_door" 0x7c9}
+	{Tags "keep_places_without_door" 0x4064}
+	{Tags "keep_places_without_door" 0x6000}
+	{Tags "keep_places_without_door" 0x6001}
+	{Tags "keep_places_without_door" 0x4008}
+	{Tags "night" 0xc004}
+	{Tags "day" 0xe000}
+	{Tags "day" 0xe001}
+	{Tags "rain" 0x8000}
+	{Tags "day" 0x8001}
+	{Tags "night" 0x8002}
+	{Brain 0x8007
+		{Properties
+			{fire_mode hold}
+			{move_radius 6}
+		}
+	}
+	{Environment "multi/multi_01"}
+	{Helpers
+		{reinforcements
+			{scoreTotal 0}
+			{scoreCurrent 0}
+		}
+		{triggers
+			{"environment"
+				{condition
+				}
+				{actions
+					{"switch"
+						{"case"
+							{condition
+								{type rand}
+								{value 0.1}
+							}
+							{"environment"
+								{name "multi/multi_10"}
+								{time -1}
+								{apply}
+							}
+							{"delete"
+								{selector
+									{tag day}
+								}
+							}
+							{"delete"
+								{selector
+									{tag night}
+								}
+							}
+						}
+						{"case"
+							{condition
+								{type rand}
+								{value 0.1}
+							}
+							{"environment"
+								{name "multi/multi_09"}
+								{time -1}
+								{apply}
+							}
+							{"delete"
+								{selector
+									{tag day}
+								}
+							}
+							{"delete"
+								{selector
+									{amount 1
+									}
+									{tag night}
+								}
+							}
+							{"delete"
+								{selector
+									{tag rain}
+								}
+							}
+						}
+						{"case"
+							{condition
+								{type rand}
+								{value 0.1}
+							}
+							{"environment"
+								{name "multi/multi_08"}
+								{time -1}
+								{apply}
+							}
+							{"delete"
+								{selector
+									{amount 2
+									}
+									{tag day}
+								}
+							}
+							{"delete"
+								{selector
+									{tag night}
+								}
+							}
+							{"delete"
+								{selector
+									{tag rain}
+								}
+							}
+						}
+						{"case"
+							{condition
+								{type rand}
+								{value 0.1}
+							}
+							{"environment"
+								{name "multi/multi_07"}
+								{time -1}
+								{apply}
+							}
+							{"delete"
+								{selector
+									{amount 2
+									}
+									{tag day}
+								}
+							}
+							{"delete"
+								{selector
+									{tag night}
+								}
+							}
+							{"delete"
+								{selector
+									{tag rain}
+								}
+							}
+						}
+						{"case"
+							{condition
+								{type rand}
+								{value 0.1}
+							}
+							{"environment"
+								{name "multi/multi_06"}
+								{time -1}
+								{apply}
+							}
+							{"delete"
+								{selector
+									{amount 2
+									}
+									{tag day}
+								}
+							}
+							{"delete"
+								{selector
+									{tag night}
+								}
+							}
+							{"delete"
+								{selector
+									{tag rain}
+								}
+							}
+						}
+						{"case"
+							{condition
+								{type rand}
+								{value 0.1}
+							}
+							{"environment"
+								{name "multi/multi_05"}
+								{time -1}
+								{apply}
+							}
+							{"delete"
+								{selector
+									{amount 2
+									}
+									{tag day}
+								}
+							}
+							{"delete"
+								{selector
+									{tag night}
+								}
+							}
+							{"delete"
+								{selector
+									{tag rain}
+								}
+							}
+						}
+						{"case"
+							{condition
+								{type rand}
+								{value 0.1}
+							}
+							{"environment"
+								{name "multi/multi_04"}
+								{time -1}
+								{apply}
+							}
+							{"delete"
+								{selector
+									{amount 2
+									}
+									{tag day}
+								}
+							}
+							{"delete"
+								{selector
+									{tag night}
+								}
+							}
+							{"delete"
+								{selector
+									{tag rain}
+								}
+							}
+						}
+						{"case"
+							{condition
+								{type rand}
+								{value 0.1}
+							}
+							{"environment"
+								{name "multi/multi_03"}
+								{time -1}
+								{apply}
+							}
+							{"delete"
+								{selector
+									{amount 2
+									}
+									{tag day}
+								}
+							}
+							{"delete"
+								{selector
+									{tag night}
+								}
+							}
+							{"delete"
+								{selector
+									{tag rain}
+								}
+							}
+						}
+						{"case"
+							{condition
+								{type rand}
+								{value 0.1}
+							}
+							{"environment"
+								{name "multi/multi_02"}
+								{time -1}
+								{apply}
+							}
+							{"delete"
+								{selector
+									{amount 2
+									}
+									{tag day}
+								}
+							}
+							{"delete"
+								{selector
+									{tag night}
+								}
+							}
+							{"delete"
+								{selector
+									{tag rain}
+								}
+							}
+						}
+						{"default"
+							{"environment"
+								{name "multi/multi_01"}
+								{time -1}
+								{apply}
+							}
+							{"delete"
+								{selector
+									{amount 2
+									}
+									{tag day}
+								}
+							}
+							{"delete"
+								{selector
+									{tag night}
+								}
+							}
+							{"delete"
+								{selector
+									{tag rain}
+								}
+							}
+						}
+					}
+				}
+			}
+			{"music"
+				{condition
+				}
+				{actions
+					{"music"
+						{start "/music/skirmish_background_01.mp3"}
+						{stop_all}
+						{volume game}
+						{fade 5}
+						{loop}
+					}
+					{"delay"
+						{time 480}
+					}
+					{"music"
+						{start "/music/skirmish_background_02.mp3"}
+						{stop_all}
+						{volume game}
+						{fade 5}
+						{loop}
+					}
+					{"delay"
+						{time 120}
+					}
+					{"music"
+						{start "/music/skirmish_background_01.mp3"}
+						{stop_all}
+						{volume game}
+						{fade 5}
+						{loop}
+					}
+					{"delay"
+						{time 480}
+					}
+					{"music"
+						{start "/music/skirmish_background_02.mp3"}
+						{stop_all}
+						{volume game}
+						{fade 5}
+						{loop}
+					}
+					{"delay"
+						{time 120}
+					}
+					{"trigger"
+						{name "music"}
+					}
+				}
+			}
+		}
+	}
+	{Players
+		{count 17}
+		{diplomacy
+			1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+			0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		}
+	}
+	{Fog 1}
+	{EntityManager {Enabled}
+		{CountScale "x0.5"}
+	}
+}
