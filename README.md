@@ -1,5 +1,5 @@
 Realism mod made by RobZ, and credits to Warfare11.
-Mod [url=http://steamcommunity.com/groups/RobZcommunitygroup] Group
+Mod http://steamcommunity.com/groups/RobZcommunitygroup Group
 
 Legacy Versions: https://steamcommunity.com/sharedfiles/filedetails/?id=3126187589
 
@@ -36,8 +36,8 @@ Some changes this mod brings:
 
 This mod has no missions in it, but if you want to make missions with the mod you're free to do so.
 
-Check out [url=https://www.youtube.com/user/TheGameGuards] The Shermanator,  [url=https://www.youtube.com/channel/UCeh0fG-ljotR7q2Gamh0DAA] Warfare11 
-[url=https://www.youtube.com/user/ICBMRaptor2] Raptor, [url=https://www.youtube.com/user/DiplexHeatedHD] DiplexHeated and [url=https://www.youtube.com/user/BaronVonGamez] BaronVonGamez
+Check out https://www.youtube.com/user/TheGameGuards The Shermanator,  https://www.youtube.com/channel/UCeh0fG-ljotR7q2Gamh0DAA Warfare11 
+https://www.youtube.com/user/ICBMRaptor2 Raptor, https://www.youtube.com/user/DiplexHeatedHD DiplexHeated and https://www.youtube.com/user/BaronVonGamez BaronVonGamez
 as they have made videos using my mod.
 
 If you want to support me : [url=https://paypal.me/RobZmod] PayPal 
