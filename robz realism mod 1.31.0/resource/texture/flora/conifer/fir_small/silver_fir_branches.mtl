@@ -1,0 +1,5 @@
+{material bump
+	{diffuse "$/flora_updt/silver_fir_branches"}
+	{alpharef 155}
+	{blend test}
+}

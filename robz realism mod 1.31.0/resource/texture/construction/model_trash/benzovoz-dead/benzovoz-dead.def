@@ -1,0 +1,40 @@
+{game_entity
+	(include "/properties/construction.inc")
+	{ObstacleId "construction"}
+	{collider "particle.big"}
+	{simulation {able 1}}
+	{Extension "benzovoz-dead.mdl"}
+	{props "steel" "dead_vehicle" "big" "part"}
+	{volume	"body2"
+		{thickness 5}
+		{tags "body"}
+	}
+	{volume	"body3"
+		{thickness 10}
+		{tags "body"}
+	}
+	{volume	"body4"
+		{thickness 10}
+		{tags "body"}
+	}
+	{volume	"body5"
+		{thickness 10}
+		{tags "body"}
+	}
+	{volume	"body6"
+		{thickness 10}
+		{tags "body"}
+	}
+	{volume	"body7"
+		{thickness 10}
+		{tags "body"}
+	}
+	{volume	"body7"
+		{thickness 5}
+		{tags "body"}
+	}
+	{volume	"body"
+		{thickness 10}
+		{tags "body"}
+	}
+}

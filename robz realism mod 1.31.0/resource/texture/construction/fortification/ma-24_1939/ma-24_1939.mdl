@@ -1,0 +1,530 @@
+;Exported by: Alexey
+;Date:        Fri Sep 10 06:13:30 2010
+;File:        H:\VTV_models\Models_For_WiW\build\-fin_dots\Ma-24_1939\Ma-24_1939.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{bone "pechy"
+			{Matrix34
+				0.181392	-0.983411	0
+				0.983411	0.181392	0
+				0	0	1
+				56.8726	28.8151	40.3137
+			}
+			{VolumeView "pechy.ply"}
+		}
+		{bone "body"
+			{Position -52.6179	-25.5742	42.9455}
+			{VolumeView "body.ply"}
+		}
+		{bone "lend"
+			{parameters "Land;Ground;"}
+			{Position -14.2603	-11.7357	2.02756}
+			{VolumeView "lend.ply" {Ground}}
+		}
+		{bone "exterior"
+			{Position 2.64625	14.4605	0}
+			{bone "roof"
+				{Position -55.2642	-40.0347	42.9455}
+				{VolumeView "roof.ply"}
+			}
+		}
+		{bone "node_ladder_bottom"
+			{Matrix34
+				0.00124408	0.999999	0
+				-0.999999	0.00124408	0
+				0	0	1
+				-46.9652	29.9125	3.99857
+			}
+		}
+		{bone "node_ladder_top"
+			{Matrix34
+				0.00124408	0.999999	0
+				-0.999999	0.00124408	0
+				0	0	1
+				-46.9651	30.0312	44.8906
+			}
+		}
+		{bone "emit"
+			{Matrix34
+				0.00124408	0.999999	0
+				-0.999999	0.00124408	0
+				0	0	1
+				-46.9735	23.275	3.99857
+			}
+		}
+		{bone "node01"
+			{Matrix34
+				-0.00770404	-0.99997	0
+				0.99997	-0.00770404	0
+				0	0	1
+				-47.1549	29.999	45.026
+			}
+		}
+	}
+}
+{Obstacle "body10"
+	{Obb2
+		{Center 76.0717 19.958}
+		{Extent 12.1482 57.0127}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body11"
+	{Obb2
+		{Center -13.9163 -50.7067}
+		{Extent 102.785 15.5933}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body12"
+	{Obb2
+		{Center -141.613 -55.384}
+		{Extent 50.453 9.93961}
+		{Axis 0.939753 0.341854}
+	}
+	{Rotate}
+}
+{Obstacle "body14"
+	{Obb2
+		{Center -106.807 -24.8338}
+		{Extent 10.0927 25.1863}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body15"
+	{Obb2
+		{Center -66.7882 42.8895}
+		{Extent 10.0927 32.6851}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body16"
+	{Obb2
+		{Center -86.2716 5.16524}
+		{Extent 28.7457 9.23825}
+		{Axis 0.891115 0.453778}
+	}
+	{Rotate}
+}
+{Obstacle "body17"
+	{Obb2
+		{Center -18.5093 64.8548}
+		{Extent 57.3626 10.0927}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body19"
+	{Obb2
+		{Center 41.4677 24.7552}
+		{Extent 23.4676 5.31847}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body20"
+	{Obb2
+		{Center -14.6428 4.87277}
+		{Extent 13.0999 5.00624}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body21"
+	{Obb2
+		{Center 61.2056 64.9074}
+		{Extent 3.08132 9.84247}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body22"
+	{Obb2
+		{Center -31.9358 -12.7027}
+		{Extent 5.26108 23.1368}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body23"
+	{Obb2
+		{Center -6.43519 42.8291}
+		{Extent 5.0563 13.0626}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body24"
+	{Obb2
+		{Center -61.8895 -27.8668}
+		{Extent 4.93151 7.99311}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body25"
+	{Obb2
+		{Center 23.2038 10.1728}
+		{Extent 5.17881 10.2483}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body26"
+	{Obb2
+		{Center 76.1409 102.5}
+		{Extent 13.3591 27.5}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Area "interior"
+	{Polygon2
+		{Radius 0}
+		{Vertex 75 -50}
+		{Vertex 75 15}
+		{Vertex -65 15}
+		{Vertex -105 -5}
+		{Vertex -105 -50}
+	}
+	{Rotate}
+}
+{Area "interior01"
+	{Polygon2
+		{Radius 0}
+		{Vertex 75 15}
+		{Vertex 75 60}
+		{Vertex -65 60}
+		{Vertex -65 15}
+	}
+	{Rotate}
+}
+{Volume "body10"
+	{Box 24.2963 114.025 65.404}
+	{Bone "body"}
+	{Position 128.69	5.61621	-11.2908}
+}
+{Volume "body11"
+	{Box 31.1865 205.571 66.058}
+	{Bone "body"}
+	{Matrix34
+		0	1	0
+		-1	0	0
+		0	0	1
+		38.7017	76.2809	-10.9638
+	}
+}
+{Volume "body12"
+	{Polyhedron "body12.vol"}
+	{Bone "body"}
+	{Matrix34
+		-0.881234	0.47268	0
+		-0.47268	-0.881234	0
+		0	0	1
+		-88.9956	80.9582	-20.1053
+	}
+}
+{Volume "body14"
+	{Box 20.1855 50.3726 41.752}
+	{Bone "body"}
+	{Matrix34
+		-1	0	0
+		0	-1	0
+		0	0	1
+		-54.189	50.408	-22.836
+	}
+}
+{Volume "body15"
+	{Polyhedron "body15.vol"}
+	{Bone "body"}
+	{Position -14.1703	-13.9764	-22.7115}
+}
+{Volume "body16"
+	{Polyhedron "body16.vol"}
+	{Bone "body"}
+	{Matrix34
+		0.330916	-0.94366	0
+		0.94366	0.330916	0
+		0	0	1
+		-30.6385	19.089	-22.4282
+	}
+}
+{Volume "body17"
+	{Polyhedron "body17.vol"}
+	{Bone "body"}
+	{Position 63.3009	-39.2806	-22.3646}
+}
+{Volume "body18"
+	{Box 20.1855 20.5933 7.27575}
+	{Bone "body"}
+	{Matrix34
+		0	-1	0
+		1	0	0
+		0	0	1
+		101.145	-39.4551	-4.85912
+	}
+}
+{Volume "body19"
+	{Box 46.9352 10.6369 41.752}
+	{Bone "body"}
+	{Position 94.0856	0.819038	-22.6379}
+}
+{Volume "body1"
+	{Polyhedron "body1.vol"}
+	{Bone "body"}
+	{Matrix34
+		0.861019	-0.508573	0
+		0.508573	0.861019	0
+		0	0	1
+		9.90484	59.8503	33.6246
+	}
+}
+{Volume "body20"
+	{Box 26.1998 10.0125 41.752}
+	{Bone "body"}
+	{Position 37.9751	20.7014	-22.4563}
+}
+{Volume "body21"
+	{Box 6.16264 19.6849 41.752}
+	{Bone "body"}
+	{Position 113.824	-39.3332	-22.836}
+}
+{Volume "body22"
+	{Box 46.2737 10.5222 41.752}
+	{Bone "body"}
+	{Matrix34
+		0	-1	0
+		1	0	0
+		0	0	1
+		20.6821	38.2768	-22.4563
+	}
+}
+{Volume "body23"
+	{Box 26.1253 10.1126 41.752}
+	{Bone "body"}
+	{Matrix34
+		0	-1	0
+		1	0	0
+		0	0	1
+		46.1827	-17.2549	-22.4563
+	}
+}
+{Volume "body24"
+	{Box 15.9568 9.81518 41.752}
+	{Bone "body"}
+	{Matrix34
+		0.00300081	-0.999995	0
+		0.999995	0.00300081	0
+		0	0	1
+		-9.27156	53.441	-22.7115
+	}
+}
+{Volume "body25"
+	{Box 10.3576 20.4965 41.752}
+	{Bone "body"}
+	{Position 75.8217	15.4013	-22.4398}
+}
+{Volume "body26"
+	{Polyhedron "body26.vol"}
+	{Bone "body"}
+	{Position 128.759	-76.9258	-10.4455}
+}
+{Volume "body2"
+	{Polyhedron "body2.vol"}
+	{Bone "body"}
+	{Matrix34
+		0.861019	-0.508573	0
+		0.508573	0.861019	0
+		0	0	1
+		-2.78381	52.7643	33.6246
+	}
+}
+{Volume "body3"
+	{Polyhedron "body3.vol"}
+	{Bone "body"}
+	{Matrix34
+		0.861019	-0.508574	0
+		0.508574	0.861019	0
+		0	0	1
+		1.48412	59.9836	33.6246
+	}
+}
+{Volume "body4"
+	{Polyhedron "body4.vol"}
+	{Bone "body"}
+	{Matrix34
+		0.861019	-0.508573	0
+		0.508573	0.861019	0
+		0	0	1
+		9.80386	45.3294	33.6246
+	}
+}
+{Volume "body5"
+	{Polyhedron "body5.vol"}
+	{Bone "body"}
+	{Matrix34
+		0.861019	-0.508573	0
+		0.508573	0.861019	0
+		0	0	1
+		13.9996	52.5649	33.6246
+	}
+}
+{Volume "body6"
+	{Cylinder 11.1697 4.979}
+	{Bone "body"}
+	{Matrix34
+		0.861019	-0.508573	0
+		0.508573	0.861019	0
+		0	0	1
+		5.73779	52.6073	39.6715
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "body"}
+	{Matrix34
+		0.861019	-0.508573	0
+		0.508573	0.861019	0
+		0	0	1
+		1.41802	45.5295	33.6246
+	}
+}
+{Volume "enter"
+	{Box 13.643 15.7242 60.3419}
+	{Bone "basis"}
+	{Matrix34
+		-0.00124352	-0.999999	0
+		0.999999	-0.00124352	0
+		0	0	1
+		-47.2678	28.0676	30.1709
+	}
+}
+{Volume "hole10"
+	{Polyhedron "hole10.vol"}
+	{Bone "body"}
+	{Matrix34
+		0.999985	0.00546536	0
+		0	0	1
+		0.00546536	-0.999985	0
+		71.1547	-34.4051	-15.3876
+	}
+}
+{Volume "hole11"
+	{Polyhedron "hole11.vol"}
+	{Bone "body"}
+	{Matrix34
+		0.999985	0.00546536	0
+		0	0	1
+		0.00546536	-0.999985	0
+		101.277	8.16792	-16.005
+	}
+}
+{Volume "hole1"
+	{Box 5.64969 2.89265 6.14686}
+	{Bone "body"}
+	{Matrix34
+		0.861019	-0.508573	0
+		0	0	1
+		-0.508573	-0.861019	0
+		10.3029	61.0328	32.4512
+	}
+}
+{Volume "hole2"
+	{Box 5.64969 2.89265 6.14686}
+	{Bone "body"}
+	{Matrix34
+		0.861019	-0.508573	0
+		0	0	1
+		-0.508573	-0.861019	0
+		0.992529	45.208	32.4512
+	}
+}
+{Volume "hole3"
+	{Box 5.64969 2.89265 6.14686}
+	{Bone "body"}
+	{Matrix34
+		0.877124	0.480263	0
+		0	0	1
+		0.480263	-0.877124	0
+		1.13669	60.3963	32.4512
+	}
+}
+{Volume "hole4"
+	{Box 5.64969 2.89265 6.14686}
+	{Bone "body"}
+	{Matrix34
+		0.877124	0.480263	0
+		0	0	1
+		0.480263	-0.877124	0
+		10.3101	44.7744	32.4512
+	}
+}
+{Volume "hole5"
+	{Box 5.64969 2.89265 6.14686}
+	{Bone "body"}
+	{Matrix34
+		0.0222904	0.999752	0
+		0	0	1
+		0.999751	-0.0222903	0
+		-3.30028	52.7838	32.4512
+	}
+}
+{Volume "hole6"
+	{Box 5.64969 2.89265 6.14686}
+	{Bone "body"}
+	{Matrix34
+		0.0222904	0.999752	0
+		0	0	1
+		0.999751	-0.0222903	0
+		14.5055	52.9609	32.4512
+	}
+}
+{Volume "hole8"
+	{Polyhedron "hole8.vol"}
+	{Bone "body"}
+	{Matrix34
+		-0.00981331	-0.999952	0
+		0	0	1
+		-0.999952	0.00981331	0
+		-8.87672	-7.23667	-6.41866
+	}
+}
+{Volume "hole9"
+	{Polyhedron "hole9.vol"}
+	{Bone "body"}
+	{Matrix34
+		0.899819	-0.436263	0
+		0	0	1
+		-0.436263	-0.899819	0
+		-29.6645	20.662	-15.4512
+	}
+}
+{Volume "roof1"
+	{Box 141.968 59.899 23.6595}
+	{Bone "roof"}
+	{Position 47.5171	-19.9637	11.4769}
+}
+{Volume "roof2"
+	{Polyhedron "roof2.vol"}
+	{Bone "roof"}
+	{Matrix34
+		-0.000166698	-1	0
+		1	-0.000166698	0
+		0	0	1
+		-15.3497	52.9379	11.4845
+	}
+}
+{Volume "roof3"
+	{Polyhedron "roof3.vol"}
+	{Bone "roof"}
+	{Position 4.36471	52.321	26.9631}
+}

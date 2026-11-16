@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "container1a#win"}
+	{blend none}
+}

@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "dot4#win3"}
+	{blend none}
+}

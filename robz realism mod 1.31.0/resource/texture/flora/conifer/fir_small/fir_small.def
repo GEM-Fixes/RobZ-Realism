@@ -1,0 +1,5 @@
+{game_entity
+    (include "/properties/tree.inc")
+	
+	{Extension "fir_small.mdl"}
+}

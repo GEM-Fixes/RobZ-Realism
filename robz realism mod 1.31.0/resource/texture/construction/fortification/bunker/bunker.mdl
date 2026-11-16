@@ -1,0 +1,245 @@
+;Exported by: Wladimir
+;Modeled by: Chompster
+;Date:        Tue Apr 17 01:12:55 2012
+;File:        C:\Documents and Settings\Wladimir\My Documents\3dsmax\scenes\bunker_new.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{bone "bunker_new"
+			{Position 0	0	22.2916}
+			{VolumeView "bunker_new.ply"}
+		}
+	}
+}
+{Obstacle "body10"
+	{Obb2
+		{Center 34.6605 0.00969696}
+		{Extent 3.36661 33.9123}
+		{Axis 1 0}
+	}
+	{Rotate}
+	{Tags  "body"}
+}
+{Obstacle "body11"
+	{Obb2
+		{Center 41.0244 0.126297}
+		{Extent 3.21727 35.6954}
+		{Axis 1 0}
+	}
+	{Rotate}
+	{Tags  "body"}
+}
+{Obstacle "body12"
+	{Obb2
+		{Center 31.8494 35.466}
+		{Extent 5.91967 6.16722}
+		{Axis 0.731613 0.68172}
+	}
+	{Rotate}
+	{Tags  "body"}
+}
+{Obstacle "body13"
+	{Obb2
+		{Center 40.2329 43.2338}
+		{Extent 5.62387 6.20846}
+		{Axis 0.731613 0.68172}
+	}
+	{Rotate}
+	{Tags  "body"}
+}
+{Obstacle "body14"
+	{Obb2
+		{Center 31.9156 -35.4836}
+		{Extent 6.12843 5.90375}
+		{Axis 0.682302 0.73107}
+	}
+	{Rotate}
+	{Tags  "body"}
+}
+{Obstacle "body15"
+	{Obb2
+		{Center 40.1898 -43.225}
+		{Extent 6.17572 5.53791}
+		{Axis 0.682302 0.73107}
+	}
+	{Rotate}
+	{Tags  "body"}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 28.1507 0.0120049}
+		{Extent 3.45942 27.552}
+		{Axis 1 0}
+	}
+	{Rotate}
+	{Tags  "body"}
+}
+{Obstacle "body2"
+	{Obb2
+		{Center 25.2399 -29.4225}
+		{Extent 5.66482 3.46884}
+		{Axis 0.669446 0.742861}
+	}
+	{Rotate}
+	{Tags  "body"}
+}
+{Obstacle "body3"
+	{Obb2
+		{Center -8.14913 -32.5164}
+		{Extent 32.1188 3.38698}
+		{Axis 1 0}
+	}
+	{Rotate}
+	{Tags  "body"}
+}
+{Obstacle "body4"
+	{Obb2
+		{Center -41.6275 -29.4212}
+		{Extent 3.42418 5.66955}
+		{Axis 0.731613 0.68172}
+	}
+	{Rotate}
+	{Tags  "body"}
+}
+{Obstacle "body5"
+	{Obb2
+		{Center -44.5553 -18.2435}
+		{Extent 3.37729 9.30367}
+		{Axis 1 0}
+	}
+	{Rotate}
+	{Tags  "body"}
+}
+{Obstacle "body6"
+	{Obb2
+		{Center -44.5485 16.9051}
+		{Extent 3.4209 9.30571}
+		{Axis 1 0}
+	}
+	{Rotate}
+	{Tags  "body"}
+}
+{Obstacle "body7"
+	{Obb2
+		{Center -41.5919 29.4381}
+		{Extent 5.70903 3.42518}
+		{Axis 0.682302 0.73107}
+	}
+	{Rotate}
+	{Tags  "body"}
+}
+{Obstacle "body8"
+	{Obb2
+		{Center -8.11552 32.5619}
+		{Extent 32.0852 3.38698}
+		{Axis 1 0}
+	}
+	{Rotate}
+	{Tags  "body"}
+}
+{Obstacle "body9"
+	{Obb2
+		{Center 25.2347 29.4574}
+		{Extent 3.47296 5.67184}
+		{Axis 0.743393 0.668854}
+	}
+	{Rotate}
+	{Tags  "body"}
+}
+{Area "interior"
+	{Obb2
+		{Center -8.64397 0.278338}
+		{Extent 33.4745 30.2487}
+		{Axis -1 0}
+	}
+	{Rotate}
+}
+{Volume "body10"
+	{Polyhedron "body10.vol"}
+	{Bone "bunker_new"}
+	{Position 34.6605	-0.00969738	-11.5932}
+}
+{Volume "body11"
+	{Polyhedron "body11.vol"}
+	{Bone "bunker_new"}
+	{Position 41.0244	-0.126297	-13.5712}
+}
+{Volume "body12"
+	{Polyhedron "body12.vol"}
+	{Bone "bunker_new"}
+	{Position 31.8735	-35.5415	-3.58074}
+}
+{Volume "body13"
+	{Polyhedron "body13.vol"}
+	{Bone "bunker_new"}
+	{Position 40.247	-43.2778	-11.3479}
+}
+{Volume "body14"
+	{Polyhedron "body14.vol"}
+	{Bone "bunker_new"}
+	{Position 31.874	35.4123	-3.55039}
+}
+{Volume "body15"
+	{Polyhedron "body15.vol"}
+	{Bone "bunker_new"}
+	{Position 40.1999	43.1689	-11.5947}
+}
+{Volume "body1"
+	{Polyhedron "body1.vol"}
+	{Bone "bunker_new"}
+	{Position 28.1507	-0.0120033	-3.6974}
+}
+{Volume "body2"
+	{Polyhedron "body2.vol"}
+	{Bone "bunker_new"}
+	{Position 26.2858	30.3766	-3.68493}
+}
+{Volume "body3"
+	{Polyhedron "body3.vol"}
+	{Bone "bunker_new"}
+	{Position -8.14913	32.5164	-3.68488}
+}
+{Volume "body4"
+	{Polyhedron "body4.vol"}
+	{Bone "bunker_new"}
+	{Position -42.576	30.4023	-3.68493}
+}
+{Volume "body5"
+	{Polyhedron "body5.vol"}
+	{Bone "bunker_new"}
+	{Position -44.5553	18.2435	-3.68488}
+}
+{Volume "body6"
+	{Polyhedron "body6.vol"}
+	{Bone "bunker_new"}
+	{Position -44.5485	-16.9051	-3.68488}
+}
+{Volume "body7"
+	{Polyhedron "body7.vol"}
+	{Bone "bunker_new"}
+	{Position -42.5901	-30.4322	-3.68491}
+}
+{Volume "body8"
+	{Polyhedron "body8.vol"}
+	{Bone "bunker_new"}
+	{Position -8.11553	-32.5619	-3.68488}
+}
+{Volume "body9"
+	{Polyhedron "body9.vol"}
+	{Bone "bunker_new"}
+	{Position 26.2863	-30.4088	-3.68493}
+}
+{Volume "hole1"
+	{Polyhedron "hole1.vol"}
+	{Bone "bunker_new"}
+	{Position 28.0809	-0.00344544	6.86596}
+}
+{Volume "roof"
+	{Polyhedron "roof.vol"}
+	{Bone "bunker_new"}
+	{Position -8.14449	-0.0233932	18.4178}
+}

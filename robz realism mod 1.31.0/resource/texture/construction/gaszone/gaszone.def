@@ -1,0 +1,8 @@
+{game_entity
+	(include "/properties/bush.inc")
+	{Extension "gas_green.mdl"}
+	{props "gaszone"} 
+	{volume "crown"
+		{Able {contact 1} {bullet 0} {obstacle 0} {touch 1} {overlap 1}}
+	}
+}

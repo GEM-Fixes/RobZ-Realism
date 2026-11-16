@@ -1,0 +1,5 @@
+{material bump
+	{diffuse "$/flora_updt/silver_fir_stem"}
+	{color "230 230 230 25"}
+	{blend none}
+}

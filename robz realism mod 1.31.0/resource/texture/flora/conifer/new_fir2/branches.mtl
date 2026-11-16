@@ -1,0 +1,8 @@
+{material bump
+	{diffuse "$/flora_updt/himalayan_pine_branches"}
+	{bump "$/flora_updt/himalayan_pine_branches_bp"}
+	{specular "$/flora_updt/himalayan_pine_branches_sp"}
+	{color "230 230 230 25"}
+	{alpharef 155}
+	{blend test}
+}

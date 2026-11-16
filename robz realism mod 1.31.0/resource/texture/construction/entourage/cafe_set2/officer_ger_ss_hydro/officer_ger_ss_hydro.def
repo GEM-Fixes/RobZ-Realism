@@ -1,0 +1,4 @@
+{actor
+	{brain "actor"}
+	{Extension "officer_ger_ss_hydro.mdl"}
+}

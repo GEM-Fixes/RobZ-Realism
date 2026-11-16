@@ -1,0 +1,27 @@
+;Exported by: Micha
+;Date:       Tue Sep 09 16:26:26 2008
+;File:        new
+{Skeleton
+	{bone "s88"
+		{parameters "id=body;"}
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "s88.ply"}
+		{bone "fx_shellsmoke"
+			{Matrix34
+				-1	0	0
+				0	1	0
+				0	0	1
+				0	0	0
+			}
+		}
+	}
+}
+{Volume "body"
+	{Cylinder 1.04599 9.02147}
+	{Bone "s88"}
+	{Position -0.0651708	0.0176783	4.51074}
+}

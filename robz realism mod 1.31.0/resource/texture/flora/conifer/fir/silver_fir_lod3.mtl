@@ -1,0 +1,6 @@
+{material bump
+	{diffuse "$/flora_updt/silver_fir_lod3"}
+	{color "230 230 230 25"}
+	{alpharef 155}
+	{blend test}
+}

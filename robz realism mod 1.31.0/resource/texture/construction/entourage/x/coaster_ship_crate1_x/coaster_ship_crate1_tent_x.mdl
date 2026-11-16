@@ -1,0 +1,12 @@
+;Exported by: sergienko
+;Date:        Fri Jun 20 12:13:59 2008
+;File:        D:\-projets1_5\3dwork\anima\construction\vehicle\coaster_ship\coaster_ship02.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+	}
+}

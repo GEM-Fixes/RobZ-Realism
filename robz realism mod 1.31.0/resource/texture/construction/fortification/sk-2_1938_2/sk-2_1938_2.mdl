@@ -1,0 +1,57 @@
+;Exported by: Alexey
+;Date:        Thu Sep 02 21:06:51 2010
+;File:        H:\VTV_models\Models_For_WiW\build\-fin_dots\Sk-2_1938\Sk-2_1938.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{bone "lend"
+			{parameters "Land;Ground;"}
+			{Position -0.0489416	17.3523	-23.47}
+			{VolumeView "lend.ply" {Ground}}
+		}
+		{bone "body"
+			{Position -0.0397406	-1.97737	-18.0615}
+			{VolumeView "body.ply"}
+		}
+	}
+}
+{Obstacle "body1"
+	{Obb2
+		{Center 109.528 28.3791}
+		{Extent 65.0752 2.90514}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Obstacle "body"
+	{Obb2
+		{Center -110.027 28.3791}
+		{Extent 65.0752 2.90514}
+		{Axis 1 0}
+	}
+	{Rotate}
+}
+{Area "cut"
+	{Polygon2
+		{Radius 0}
+		{Vertex -168.406 27.5915}
+		{Vertex -168.406 -19.2186}
+		{Vertex 168.43 -19.2186}
+		{Vertex 168.43 27.5915}
+	}
+	{Rotate}
+}
+{Volume "body1"
+	{Box 130.15 5.81029 52.25}
+	{Bone "body"}
+	{Position 109.568	-26.4017	-5.33046}
+}
+{Volume "body"
+	{Box 130.15 5.81029 52.25}
+	{Bone "body"}
+	{Position -109.987	-26.4017	-5.33046}
+}

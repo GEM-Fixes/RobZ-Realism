@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "$/Model/aboxes#1"}
+	{blend none}
+}

@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "radist1_hairshortblack"}
+	{blend blend}
+}

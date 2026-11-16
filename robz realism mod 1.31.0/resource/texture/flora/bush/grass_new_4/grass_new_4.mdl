@@ -1,0 +1,13 @@
+;Exported by: Normand
+;Date:        Sat Sep 03 11:55:13 2016
+;File:        C:\Users\Normand\grass_new4.max
+{Skeleton
+	{bone "grass"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	0.85
+		}
+		{VolumeView "grass.ply"}
+	}
+}

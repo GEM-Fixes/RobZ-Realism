@@ -1,0 +1,41 @@
+;Exported by: Normand
+;Date:        Mon Oct 07 13:55:44 2019
+;File:        C:\Users\Normand\m4_dummy.max
+{Skeleton
+	{animation
+		{sequence "open" {speed 0.01}}
+		{sequence "crush" {file "open.anm"} {speed -0.03}}
+	}
+	{bone "basis"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{bone "body"
+			{parameters "CommonMesh;ID=body;"}
+			{Position -5.26165	0	0}
+			{VolumeView "body.ply"}
+		}
+	}
+}
+{Volume "body2"
+	{Cylinder 25 15}
+	{Bone "basis"}
+	{Position -3.66085	0.63847	47.3565}
+}
+{Volume "body3"
+	{Box 3.75 3.75 37.5}
+	{Bone "basis"}
+	{Matrix34
+		0	-1	0
+		0	0	1
+		-1	0	0
+		38.6351	-0.317302	47.2225
+	}
+}
+{Volume "body"
+	{Box 118.67 60.7398 40}
+	{Bone "basis"}
+	{Position -3.76893	0.0980787	20}
+}

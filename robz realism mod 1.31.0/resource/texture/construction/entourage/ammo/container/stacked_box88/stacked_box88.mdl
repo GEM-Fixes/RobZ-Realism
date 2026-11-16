@@ -1,0 +1,33 @@
+;Exported by: Micha
+;Date:        Sun Sep 14 02:02:52 2008
+;File:        \\192.168.0.150\meshes\soldiers_meshes\German\early_war\Panzergranaten\exporter_ammo_boxes_closed_stacked.max
+{Skeleton
+	{bone "box88"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "box88.ply"}
+	}
+}
+{Volume "box"
+	{Box 19.9336 20.3709 8.08562}
+	{Bone "box88"}
+	{Matrix34
+		0	1	0
+		-1	0	0
+		0	0	1
+		-0.0357888	0.0977116	4.04281
+	}
+}
+{Volume "inventory"
+	{Box 18.582 1.56991 1.42878}
+	{Bone "box88"}
+	{Matrix34
+		1	0	0
+		0	0	1
+		0	-1	0
+		-0.0432504	-8.91602	0.954253
+	}
+}

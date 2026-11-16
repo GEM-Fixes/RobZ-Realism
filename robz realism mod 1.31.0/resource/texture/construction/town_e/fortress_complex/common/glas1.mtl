@@ -1,0 +1,5 @@
+{material envmap
+	{diffuse "glass"}
+	{envmap "$/environment/envmap_window_build"}
+	{blend blend}
+}

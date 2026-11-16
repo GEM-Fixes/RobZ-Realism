@@ -1,0 +1,5 @@
+{material simple
+	{diffuse "$/flora_updt/himalayan_pine_3_lod3"}
+	{alpharef 155}
+	{blend test}
+}

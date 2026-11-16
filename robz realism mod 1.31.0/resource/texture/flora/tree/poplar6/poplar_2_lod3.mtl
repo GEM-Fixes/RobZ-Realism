@@ -1,0 +1,5 @@
+{material simple
+	{diffuse "$/flora_updt/poplar_2_LOD3"}
+	{alpharef 155}
+	{blend test}
+}

@@ -1,0 +1,173 @@
+{construction
+	(include "/properties/building.inc")
+	{props "concrete"}
+	{obstacleid "unbreakable"}
+	("armor_heavy" args 1.0)
+
+
+	{placer
+		{place "1" {attach snipe_cover} {linkbone "node01"} }
+	}	
+	{boarder
+		{door "emit" {queue 0}}
+		{node "node_ladder_bottom"}
+		{node "node_ladder_top"}
+
+		{anm "ladder_bind"
+			{forward	{begin	"stand_climb_stairs"}}
+			{reverse	{end	"stand_climb_stairs" -1}}
+		}
+		{anm "ladder"
+			{forward {speed 1.2} {loop "stand_upstairs"} {fix_orientation}}
+			{reverse {speed 1.2} {loop "stand_upstairs" -1} {fix_orientation}}
+		}
+
+		{link "emit" "node_ladder_bottom" {anm "ladder_bind"} {forward putoff} {reverse puton}}
+		{link "node_ladder_bottom" "node_ladder_top" {anm "ladder"}}
+		{link "node_ladder_top" "1"}
+	}
+
+
+
+	{Extension "ma-24_1939.mdl"}
+	{Volume "body10"
+		{Thickness 50}
+		{able {visible 1}}
+	}
+	{Volume "body11"
+		{Thickness 50}
+		{able {visible 1}}
+	}
+	{Volume "body12"
+		{Thickness 50}
+		{able {visible 1}}
+	}
+	{Volume "body14"
+		{Thickness 50}
+		{able {visible 1}}
+	}
+	{Volume "body15"
+		{Thickness 50}
+		{able {visible 1}{holed}}
+	}
+	{Volume "body16"
+		{Thickness 50}
+		{able {visible 1}{holed}}
+	}
+	{Volume "body17"
+		{Thickness 50}
+		{able {visible 1}{holed}}
+	}
+	{Volume "body18"
+		{Thickness 50}
+		{able {visible 1}{obstacle 0}}
+	}
+	{Volume "body19"
+		{Thickness 50}
+		{able {visible 1}{holed}}
+	}
+	{Volume "body1"
+		{Thickness 250}
+		{able {holed}{obstacle 0}}
+	}
+	{Volume "body20"
+		{Thickness 50}
+		{able {visible 1}}
+	}
+	{Volume "body21"
+		{Thickness 50}
+		{able {visible 1}}
+	}
+	{Volume "body22"
+		{Thickness 50}
+		{able {visible 1}}
+	}
+	{Volume "body23"
+		{Thickness 50}
+		{able {visible 1}}
+	}
+	{Volume "body24"
+		{Thickness 50}
+		{able {visible 1}}
+	}
+	{Volume "body25"
+		{Thickness 50}
+		{able {visible 1}}
+	}
+	{Volume "body26"
+		{Thickness 50}
+		{able {visible 1}}
+	}
+	{Volume "body2"
+		{Thickness 250}
+		{able {holed}{obstacle 0}}
+	}
+	{Volume "body3"
+		{Thickness 250}
+		{able {holed}{obstacle 0}}
+	}
+	{Volume "body4"
+		{Thickness 250}
+		{able {holed}{obstacle 0}}
+	}
+	{Volume "body5"
+		{Thickness 250}
+		{able {holed}{obstacle 0}}
+	}
+	{Volume "body6"
+		{Thickness 250}
+		{able {holed}{obstacle 0}}
+	}
+	{Volume "body"
+		{Thickness 250}
+		{able {holed}{obstacle 0}}
+	}
+	{Volume "enter"
+                {Tags  "attach" "1"}
+		{able {touch 1}{visible 0}{obstacle 0}}
+	}
+	{Volume "hole10"
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole11"
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole1"
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole2"
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole3"
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole4"
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole5"
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole6"
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole8"
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "hole9"
+		{able clear {hole}{touch 1}}
+	}
+	{Volume "roof1"
+		{Thickness 250}
+		{able {obstacle 0}}
+	}
+	{Volume "roof2"
+		{Thickness 250}
+		{able {obstacle 0}}
+	}
+	{Volume "roof3"
+		{Thickness 250}
+		{able {obstacle 0}}
+	}
+	{Extender "land_patch"
+	}
+}

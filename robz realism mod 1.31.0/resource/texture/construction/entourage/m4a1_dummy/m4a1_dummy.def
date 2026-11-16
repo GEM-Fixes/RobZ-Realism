@@ -1,0 +1,25 @@
+{entity
+	(include "/properties/construction.inc")
+	{props "stack" "animated_crush" "wood" "tent" "burning" "sewer"}
+	{TexMods
+		{"burned" "burned"}
+		{"crushed" "crushed"}
+	}
+	("armor_fabric")
+	("armor_use_volume_thickness")
+	{lodclass "decor_big"}
+	{Volume "body"
+		{Thickness 5}
+		{tags "body" "fire"}
+	}
+	{Volume "body2"
+		{Thickness 5}
+		{tags "body" "fire"}
+	}
+	{Volume "body3"
+		{Thickness 5}
+		{tags "body" "fire"}
+	}
+	
+	{Extension "m4a1_dummy.mdl"}
+}

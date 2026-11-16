@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "eye2"}
+	{blend none}
+}

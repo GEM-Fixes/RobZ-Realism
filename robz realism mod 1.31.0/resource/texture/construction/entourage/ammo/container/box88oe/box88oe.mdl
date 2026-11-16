@@ -1,0 +1,13 @@
+;Exported by: Micha
+;Date:        Sat Sep 13 00:30:17 2008
+;File:        \\192.168.0.150\meshes\soldiers_meshes\German\early_war\Panzergranaten\exporter_ammo_boxes_88oe.max
+{Skeleton
+	{bone "b88o"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "b88o.ply"}
+	}
+}

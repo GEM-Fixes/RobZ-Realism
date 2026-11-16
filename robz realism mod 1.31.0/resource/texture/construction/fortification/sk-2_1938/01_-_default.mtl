@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "greenhouse#win2"}
+	{blend none}
+}

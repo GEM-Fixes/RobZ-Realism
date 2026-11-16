@@ -1,0 +1,184 @@
+;Exported by: Martin
+;Date:        Wed Sep 23 15:08:32 2015
+;File:        D:\work in progress\Call to Arms\Animation\Flora\tree\poplar_2planes.max
+{Skeleton
+	{animation
+		{sequence "stir" {speed 0.6}}
+	}
+	{bone "basis"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{bone "branches"
+			{LODView
+				{VolumeView "branches.ply"}
+				{VolumeView "branches.ply"}
+				{VolumeView "branches.ply"}
+				{VolumeView "branches_lod1.ply"}
+				{VolumeView "branches_lod2.ply"}
+				{VolumeView "branches_lod2.ply"}
+			}
+		}
+		{bone "stem"
+			{LODView
+				{VolumeView "stem.ply"}
+				{VolumeView "stem.ply"}
+				{VolumeView "stem.ply"}
+				{VolumeView "stem_lod1.ply"}
+				{VolumeView "stem_lod2.ply"}
+				{VolumeView "stem_lod2.ply"}
+			}
+		}
+		{bone "bone_base"
+			{Matrix34
+				0	0	1
+				0	1	0
+				-1	0	0
+				0	0	0
+			}
+			{bone "bone001"
+				{Matrix34
+					0.998178	-0.0273461	0.053788
+					0.0273857	0.999625	0
+					-0.0537678	0.00147269	0.998552
+					0.654284	0.95225	0
+				}
+				{bone "bone002"
+					{Matrix34
+						0.994044	0.0818012	-0.0720126
+						-0.0820142	0.996631	0
+						0.07177	0.00590651	0.997404
+						104.258	0	0
+					}
+					{bone "bone003"
+						{Matrix34
+							0.995275	0.0955923	0.0170161
+							-0.0957026	0.995393	0.00579074
+							-0.0163841	-0.00739191	0.999839
+							79.0488	0.000258923	0
+						}
+					}
+					{bone "bone_branches008"
+						{Matrix34
+							0.846545	-0.412633	0.336298
+							0.531174	0.613409	-0.584452
+							0.0348759	0.673397	0.738458
+							1.86588	-4.75673	2.71365
+						}
+					}
+					{bone "bone_branches003"
+						{Matrix34
+							0.94069	0.127494	0.314399
+							0.328167	-0.577043	-0.747882
+							0.0860712	0.806701	-0.584658
+							19.6985	5.7718	2.38514
+						}
+					}
+					{bone "bone_branches001"
+						{Matrix34
+							0.962842	-0.269556	0.0165681
+							0.269435	0.962975	0.00921812
+							-0.0184394	-0.00441161	0.99982
+							19.1271	-5.93273	-1.37153
+						}
+					}
+					{bone "bone_branches007"
+						{Matrix34
+							0.880064	0.376473	-0.289405
+							0.474815	-0.689689	0.546699
+							0.00621768	-0.618544	-0.785726
+							66.9735	2.47899	-2.03806
+						}
+					}
+				}
+				{bone "bone_branches004"
+					{Matrix34
+						0.892638	-0.0689623	0.445469
+						0.448966	0.224462	-0.864897
+						-0.0403453	0.97204	0.231324
+						39.3867	-2.09605	3.75541
+					}
+				}
+				{bone "bone_branches002"
+					{Matrix34
+						0.921035	-0.371708	-0.116304
+						0.3852	0.913497	0.130937
+						0.0575724	-0.165398	0.984545
+						55.9197	-5.15795	-3.01222
+					}
+				}
+				{bone "bone_branches005"
+					{Matrix34
+						0.908658	0.411649	0.0698975
+						0.414072	-0.866854	-0.277683
+						-0.0537171	0.281262	-0.958127
+						56.6943	7.26548	-0.228722
+					}
+				}
+				{bone "bone_branches006"
+					{Matrix34
+						0.824209	0.465321	-0.322732
+						0.566277	-0.680407	0.465163
+						-0.00313903	-0.566148	-0.824298
+						85.9678	2.03584	-4.86601
+					}
+				}
+				{bone "bone_branches009"
+					{Matrix34
+						0.877215	-0.0623898	-0.476027
+						0.478703	0.189201	0.857349
+						0.0365748	-0.979954	0.195836
+						103.466	-3.11083	-7.08244
+					}
+				}
+			}
+		}
+		{bone "circle001"
+			{bone "circle002"
+				{Position 0	8.84516	281.703}
+				{bone "circle003"
+					{Position 0	0	18.9617}
+				}
+			}
+			{bone "circle010"
+				{Position -16.7036	55.495	136.057}
+			}
+			{bone "circle009"
+				{Position 31.5111	47.1854	167.108}
+			}
+			{bone "circle011"
+				{Position 10.654	-53.6233	138.921}
+			}
+			{bone "circle012"
+				{Position -58.021	-11.9333	108.881}
+			}
+			{bone "circle007"
+				{Position -44.8154	-48.1608	187.183}
+			}
+			{bone "circle008"
+				{Position 52.8909	-12.0923	187.183}
+			}
+			{bone "circle006"
+				{Position -4.81179	-39.6646	223.73}
+			}
+			{bone "circle005"
+				{Position -44.9719	29.1546	223.73}
+			}
+			{bone "circle004"
+				{Position 23.8516	40.105	239.358}
+			}
+		}
+	}
+}
+{Volume "bole"
+	{Cylinder 4.07074 232.231}
+	{Bone "stem"}
+	{Position 0.926128	0.729149	112.592}
+}
+{Volume "crown"
+	{Box 77.7188 75.5968 200.684}
+	{Bone "branches"}
+	{Position -5.54426	-2.08852	144.093}
+}

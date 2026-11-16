@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/flora_updt/birch_stem"}
+	{bump "$/flora_updt/poplar_stem_bp"}
+	{specular "$/flora_updt/poplar_stem_sp"}
+	{color "230 230 230 25"}
+	{blend none}
+}

@@ -1,0 +1,6 @@
+{material bump
+	{diffuse "$/Model/at_shells"}
+	{specular "$/Model/at_shells_sp"}
+	{color "229 229 229 25"}
+	{blend none}
+}

@@ -1,0 +1,8 @@
+{material bump
+	{diffuse "$/flora_updt/tree_oak_branches"}
+	{bump "$/flora_updt/tree_oak_branches_bp"}
+	{specular "$/flora_updt/tree_oak_branches_sp"}
+	{color "230 230 230 25"}
+	{alpharef 155}
+	{blend test}
+}

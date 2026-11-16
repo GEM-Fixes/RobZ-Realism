@@ -1,0 +1,7 @@
+{game_entity
+	{Extension "stacked_box88.mdl"}
+	{Volume "box"
+	}
+	{Volume "inventory"
+	}
+}

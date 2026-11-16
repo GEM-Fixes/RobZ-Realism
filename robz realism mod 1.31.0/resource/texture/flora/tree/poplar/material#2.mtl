@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "populus_bark_color"}
+	{blend none}
+}

@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "car-dead2"}
+	{blend none}
+}

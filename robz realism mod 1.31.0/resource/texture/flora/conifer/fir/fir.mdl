@@ -1,0 +1,33 @@
+;Exported by: nn
+;Date:        Thu Dec 04 16:04:43 2015
+;File:        fir_tree.max
+{Skeleton
+	{bone "fir"
+		{Orientation
+			0.9	0	0
+			0	-0.9	0
+			0	0	0.9
+		}
+		{VolumeView "fir.ply"}
+	}
+}
+{Volume "bole"
+	{Polyhedron "bole.vol"}
+	{Bone "fir"}
+	{Matrix34
+		0	-1	0
+		0	0	1
+		-1	0	0
+		-3.63276	0.48494	46.1102
+	}
+}
+{Volume "crown"
+	{Polyhedron "crown.vol"}
+	{Bone "fir"}
+	{Matrix34
+		0	-1	0
+		0	0	1
+		-1	0	0
+		-3.63278	0.48494	103.258
+	}
+}

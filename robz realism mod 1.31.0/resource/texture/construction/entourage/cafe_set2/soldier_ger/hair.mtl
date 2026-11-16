@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "$/human_scenario/hair_black"}
+	{blend blend}
+}

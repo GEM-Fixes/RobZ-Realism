@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "flora_02"}
+	{blend test}
+}

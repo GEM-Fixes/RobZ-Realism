@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "squint_skin_lo"}
+	{blend none}
+}

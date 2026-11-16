@@ -1,0 +1,21 @@
+;Exported by: Фёдор
+;Date:        Sat Jul 26 19:56:40 2014
+;File:        C:\Users\Фёдор\Documents\3dsmax\scenes\wheat_round_01.max
+{Skeleton
+	{bone "basic"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{bone "sack"
+			{Position -2.89788	1.55915	8.26885}
+			{VolumeView "sack.ply"}
+		}
+	}
+}
+{Volume "body04"
+	{Polyhedron "body04.vol"}
+	{Bone "sack"}
+	{Position -0.193024	0.488007	-8.26885}
+}

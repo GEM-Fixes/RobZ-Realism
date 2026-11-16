@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "ford_wheels"}
+	{blend none}
+}
