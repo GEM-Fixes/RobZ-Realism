@@ -40,6 +40,6 @@ Check out https://www.youtube.com/user/TheGameGuards The Shermanator,  https://w
 https://www.youtube.com/user/ICBMRaptor2 Raptor, https://www.youtube.com/user/DiplexHeatedHD DiplexHeated and https://www.youtube.com/user/BaronVonGamez BaronVonGamez
 as they have made videos using my mod.
 
-If you want to support me : [url=https://paypal.me/RobZmod] PayPal 
+If you want to support me : https://paypal.me/RobZmod PayPal 
 
 Report bugs if found in bugs discussion.
