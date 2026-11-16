@@ -1,0 +1,92 @@
+{materials
+	{"mtl0"
+		{layer bump
+			{diffuse "/texture/land/hassock/tuft_1b"}
+			{bump "/texture/land/hassock/tuft_1b_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/grass/gramma_111_vic3"}
+			{bump "/texture/land/grass/gramma_111_vic3_nm"}
+		}
+	}
+	{"mtl1"
+		{layer bump
+			{diffuse "/texture/land/hassock/tuft_1b"}
+			{bump "/texture/land/hassock/tuft_1b_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/fields/stubble_field3a"}
+			{bump "/texture/land/fields/stubble_field3a_nm"}
+		}
+	}
+	{"mtl2"
+		{layer bump
+			{diffuse "/texture/land/hassock/tuft_1b"}
+			{bump "/texture/land/hassock/tuft_1b_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/fields/stubble_field_growed1a"}
+			{bump "/texture/land/fields/stubble_field_growed1a_nm"}
+		}
+	}
+	{"mtl3"
+		{layer bump
+			{diffuse "/texture/land/hassock/tuft_1b"}
+			{bump "/texture/land/hassock/tuft_1b_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/fields/cornfield_2o"}
+			{bump "/texture/land/fields/cornfield_2o_nm"}
+		}
+	}
+	{"mtl4"
+		{layer bump
+			{diffuse "/texture/land/hassock/tuft_1b"}
+			{bump "/texture/land/hassock/tuft_1b_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/fields/stubble_field3ba"}
+			{bump "/texture/land/fields/stubble_field3ba_nm"}
+		}
+	}
+	{"mtl5"
+		{layer bump
+			{diffuse "/texture/land/hassock/tuft_1b"}
+			{bump "/texture/land/hassock/tuft_1b_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/fields/tillage_2"}
+			{bump "/texture/land/fields/tillage_2_nm"}
+		}
+	}
+	{"mtl6"
+		{layer bump
+			{diffuse "/texture/land/hassock/tuft_1b"}
+			{bump "/texture/land/hassock/tuft_1b_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/grass/gramma_12a"}
+			{bump "/texture/land/grass/gramma_12a_nm"}
+		}
+	}
+	{"mtl7"
+		{layer bump
+			{diffuse "/texture/land/hassock/tuft_1b"}
+			{bump "/texture/land/hassock/tuft_1b_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/fields/stubble_field3dark"}
+			{bump "/texture/land/fields/stubble_field3dark_nm"}
+		}
+	}
+	{"mtl8"
+		{layer bump
+			{diffuse "/texture/land/hassock/tuft_1b"}
+			{bump "/texture/land/hassock/tuft_1b_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/_kustrin/asfalt_road_q3"}
+			{bump "/texture/land/_kustrin/asfalt_road_q3_nm"}
+		}
+	}
+}
