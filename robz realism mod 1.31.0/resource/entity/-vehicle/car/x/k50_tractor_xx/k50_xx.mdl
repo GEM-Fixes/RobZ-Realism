@@ -1,0 +1,114 @@
+;Exported by: Normand
+;Date:        Wed Jan 27 15:35:33 2021
+;File:        C:\Users\Normand\hanomag_k50.max
+{Skeleton
+	{bone "basis"
+		{parameters "WheelRadius=0.5;"}
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{bone "body"
+			{parameters "ID=body;"}
+			{Matrix34
+				0.999259	0	-0.0384893
+				0	1	0
+				0.0384893	0	0.999259
+				6.3335	0.0695893	23.7513
+			}
+			{VolumeView "body.ply"}
+			{bone "engine"
+				{Position 15.9833	-0.06959	-7.0922}
+				{bone "engine_cover"
+					{parameters "ID=body;"}
+					{Matrix34
+						0.999286	0.0377785	0
+						-0.0377658	0.99895	0.0259377
+						0.000979889	-0.0259192	0.999664
+						17.5867	0.0564961	3.71325
+					}
+					{VolumeView "engine_cover.ply"}
+				}
+			}
+		}
+		{bone "wheelsl"
+			{parameters "ID=trackleft;"}
+			{Position -0.0451784	15.6814	10.4593}
+			{VolumeView "wheelsl.ply"}
+			{bone "trackl"
+				{parameters "ID=trackleft;"}
+				{Position 0.571015	-0.13797	0.151405}
+			}
+			{bone revolute "wheell2"
+				{parameters "ID=trackleft;"}
+				{Matrix34
+					-1	0	0
+					0	0	1
+					0	1	0
+					-18.7565	-0.137964	0.190758
+				}
+				{VolumeView "wheell2.ply"}
+			}
+			{bone revolute "wheell1"
+				{parameters "ID=trackleft;"}
+				{Matrix34
+					-1	0	0
+					0	0	1
+					0	1	0
+					19.9283	-0.137959	0.111683
+				}
+				{VolumeView "wheell1.ply"}
+			}
+		}
+		{bone "wheelsr"
+			{parameters "ID=trackright;"}
+			{Position -0.0451717	-15.5684	10.4593}
+			{VolumeView "wheelsr.ply"}
+			{bone revolute "wheelr1"
+				{parameters "ID=trackright;"}
+				{Matrix34
+					-1	0	0
+					0	0	1
+					0	1	0
+					19.9283	0.137972	0.111683
+				}
+				{VolumeView "wheelr1.ply"}
+			}
+			{bone revolute "wheelr2"
+				{parameters "ID=trackright;"}
+				{Matrix34
+					-1	0	0
+					0	0	1
+					0	1	0
+					-18.7565	0.137964	0.190758
+				}
+				{VolumeView "wheelr2.ply"}
+			}
+			{bone "trackr"
+				{parameters "ID=trackright;"}
+				{Position 0.571012	0.137966	0.151405}
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 61.5467 22.7755 10}
+	{Bone "body"}
+	{Position -5.0464	-0.370485	-10.9531}
+}
+{Volume "engine"
+	{Box 43.1706 22.2092 22.4587}
+	{Bone "engine"}
+	{Position -3.23136	-0.0677425	4.49057}
+}
+{Volume "trackleft"
+	{Box 56 9 22}
+	{Bone "wheelsl"}
+	{Position 0.802571	-0.304266	0.540661}
+}
+{Volume "trackright"
+	{Box 56 9 22}
+	{Bone "wheelsr"}
+	{Position 0.802565	0.0544491	0.540661}
+}

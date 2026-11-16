@@ -1,0 +1,190 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{collider "tank.light"}
+	{props "light" "-turret" "opened" "vision_vehicle_medium" "muzzle_medium_sides"}
+	;{targetClass "light_tank"}
+	{patherId "tank.light"}
+	{extender "enumerator"}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+	}
+	{volume "body3"
+		{tags "body"}
+		{component "body"}
+	}
+	("armor_spa_light" armor(25 16 15 8))
+	("armor_engine"  t(10 16 15 8))
+	{volume "hull"
+		{tags "body"}
+		{component "body"}
+		{thickness 17}
+	}
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "gunner"
+			{forward	{begin	"board_tank_left"} {end "pose_pak40_gunlayer" 10}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "charger"
+			{forward	{begin	"board_tank_right"} {end "pose_pak40_charger" 10}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_lowArmor"} {end "pose_seat_armor_2"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_lowArmor"} {end "pose_seat_armor_2"}}
+			{reverse 	{end	"emit_body"}}
+		}
+		{anm "armor2"
+			{forward	{begin	"board_lowArmor"} {end "pose_seat_armor_1"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+	(define "crew_human"
+		{placer
+			{place "%place"
+				{group "crew"}
+				{linkbone "%place"}
+				{turnoff {sensor} {shadow}}
+				{visor "main"}
+			}
+		}
+		{boarder
+			{door "%door1"}
+			{door "%door2"}
+			{link "%door1" "%place" {anm "%place"} {forward putoff} {reverse puton}}
+			{link "%door2" "%place" {anm "%place"} {forward putoff} {reverse puton}}
+		}
+	)
+
+	{placer
+		{place "driver" {group "crew"} {visor "driver"}}
+	}
+	{boarder
+		{door "emit1"}
+		{door "emit2"}
+		{link "emit1" "driver" {anm "driver"} {forward putoff} {reverse puton}}
+		{link "emit2" "driver" {anm "driver"} {forward putoff} {reverse puton}}
+		{link "emit1" "commander" {anm "commander"} {forward putoff} {reverse puton}}
+		{link "emit2" "commander" {anm "commander"} {forward putoff} {reverse puton}}
+	}
+
+	("crew_human" place(gunner) door1(emit1) door2(emit2) visor(main))
+	("crew_human" place(charger)	door1(emit1) door2(emit2))
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor2))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor2))
+	
+	{extender "inventory"
+		{box
+            			{item "bullet76 rus br350b" 27}
+            			{item "bullet76 rus fg" 32}
+            			{item "bullet76 rus apcr" 5}
+                                {item "ammo mg_mauser belt" 1500}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "76mm_zis3" filling "ammo bullet76 rus br350b" 1}        
+			("abm_low")
+		}
+		{place "mgun1"
+			{type "mgun_hull"}
+			{weapon "zb53" filled}
+			{foresight "Foresight4"}
+			{gunner "gunner"}
+			{charger "gunner"}
+			("abm_mgun")
+			{basic}
+		}
+		
+	}
+	{mass 10500}
+	{Chassis
+		("tank_trace" fx("tracks_sm") step(0.32) len(1.0))
+		{Locomotion ("locomotion")
+				{maxspeed   24}
+				{maxSpeedAtMaxTurn 13}
+				{StartTime 30}
+				{TurnTime 18}
+				{TurnRadius 7} 
+				{BrakeTime  2}
+				{StopTime   3}
+				{Gears 0.05 0.1 0.25 0.37 0.7}
+				{RearGears 0.1}	
+		}
+		{FuelBag
+			{volume 153 }	
+			{rate	13.3 }   
+			{remain 153 }
+			{fuel "fuel"}
+		}
+	}
+      
+
+	{Placer
+	         {place "shell01"
+	            {entity "shell_ap_76"}
+	            {Linkbone "shell01"}
+	            {handlebone "basis"}
+	            {obstacle disable}
+	         }
+	         {place "shell02"
+	                 {entity "shell_ap_76"}
+		 {Linkbone "shell02"}
+	                 {handlebone "basis"}
+	                 {obstacle disable}
+	         }
+	        {place "shell03"
+	                 {entity "shell_fg_76"}
+		 {Linkbone "shell03"}
+	                 {handlebone "basis"}
+	                 {obstacle disable}
+	         }
+	         {place "shell04"
+	                  {entity "shell_ap_76"}
+		  {Linkbone "shell04"}
+	                  {handlebone "basis"}
+	                  {obstacle disable}
+	         }
+	         {place "shell05"
+	                 {entity "shell_fg_76"}
+	                 {Linkbone "shell05"}
+	                 {handlebone "basis"}
+	                 {obstacle disable}
+	         }
+	         {place "shell06"
+	                 {entity "shell_fg_76"}
+	                 {Linkbone "shell06"}
+ 		 {handlebone "basis"}
+	                  {obstacle disable}
+	         }
+                         {place "shell07"
+	                 {entity "shell_ap_76"}
+	                 {Linkbone "shell07"}
+	                 {handlebone "basis"}
+	                 {obstacle disable}
+	         }
+	         {place "shell08"
+	                  {entity "shell_fg_76"}
+	                  {Linkbone "shell08"}
+	                  {handlebone "basis"}
+	                  {obstacle disable}
+	         }
+	}
+	{Extension "tacam_r2.mdl"}
+	;("turret_speed_light_low")
+}

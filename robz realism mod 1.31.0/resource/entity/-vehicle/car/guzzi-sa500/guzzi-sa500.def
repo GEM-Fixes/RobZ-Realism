@@ -1,0 +1,7 @@
+{moto
+	(include "guzzi-sa500.inc")
+	{extender "inventory"
+		{Box
+		}
+	}
+}

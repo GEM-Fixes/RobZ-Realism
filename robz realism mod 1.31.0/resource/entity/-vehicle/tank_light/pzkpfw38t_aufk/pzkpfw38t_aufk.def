@@ -1,0 +1,149 @@
+{Entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.0))
+	{props "vehicle" "light" "tank" "zenite" "turret" "wheeled_8" "explosion_throw_crew"  "vision_vehicle_medium" "muzzle_zenite" "switch_mgun"}
+	
+	{collider "tank.light"}
+	{targetClass "light_tank"}
+	{patherId "tank.light"}
+	
+	("armor_light" turret(30 8 8 8) body(50 30 30 15))
+	
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+			{front	50}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+			{front	50}
+		}
+	}
+	{volume "engine"
+		{thickness 30
+			{top	15}
+		}
+	}
+	{volume "turret"
+		{component "turret"}
+		{tags "turret"}
+		{thickness 8
+		    {front 30}
+		}
+	}
+	{Volume "Gun"
+		{thickness 10}
+	}
+	{component "Gun"
+		{RepairTime 20}
+	}
+	{component "turret"
+		{RepairTime 20}
+	}
+	{volume "trackleft"
+		{thickness 15}
+	}
+	{volume "trackright"
+		{thickness 15}
+	}
+
+	("crew_4_human_extended")
+	("seat_4_human")
+
+	{extender "inventory"
+		{box
+			{item "ammo mg_mauser belt" 700}
+            {item "ammo bullet20 ger zenite ap" 200}
+            {item "ammo bullet20 ger zenite apcr" 80}
+	    	{item "ammo bullet20 ger zenite fg" 200}
+			{item "ammo mortar_flaer" 10}
+            {item "grenade m39" 3}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{weapon "20mm_kwk38(l55)" filling "ammo bullet20 ger ap" 5}
+			{RestoreIKAfterAim}
+			{gunner "commander"}
+			{charger "charger"}
+			("abm_low")
+		}
+		{place "gun2"
+			{weapon "mortar_flaergun_tank" filling "ammo mortar_flaer" 1}
+			{RestoreIKAfterAim}
+			{gunner "commander"}
+			{charger "charger"}
+		}
+		{place "mgun"
+			("abm_mgun")
+			{LinkBone "mgun"}
+			{type "mgun_coaxial"}
+			{weapon "mg42_optic" filled}
+			{foresight "foresight3"}
+			{charger "charger"}
+			{basic}
+		}
+	}
+
+	{mass 9400}
+       	 {sensor
+		{visor "main"
+			{vision "tank_main-l"}
+		}
+		{visor "main1"
+			{vision "tank_main-m"}
+			{bone "foresight1"}
+		}
+		{visor "view-around"
+			{vision "vehicle_top_turret"}
+			{bone "turret"}
+		}
+	}
+
+	{Chassis
+		("tank_trace" fx("tracks_sm") step(0.52) len(-1.1))
+		{Locomotion ("locomotion")
+			{maxspeed   38}
+			{maxSpeedAtMaxTurn 8}
+			{StartTime  38}
+			{TurnStart  1.7}			
+			{TurnTime   15}
+			{TurnRadius 10} 
+    			{TurnStop   0.9}
+			{BrakeTime  1}
+			{StopTime   2}
+			{Gears      0.1 0.2 0.3 1}
+			{RearGears  0.3}
+		}
+                {speed
+				{Slow	38}
+				{Normal	38}
+				{Fast	38}
+		}
+		{FuelBag
+			{volume 220 }	; liters
+			{rate	14}  	; liters per kilometer
+			{remain 220 }
+			{fuel "fuel"}
+		}
+	}	
+
+	{Extension "pz38t.mdl"}
+
+	{bone "turret"
+		{speed 0.008}
+	}
+	{bone "gun_rot"
+	}
+	{Volume "gun"
+	}
+	{Volume "mantlet"
+	}
+	{Volume "turret"
+	}
+}

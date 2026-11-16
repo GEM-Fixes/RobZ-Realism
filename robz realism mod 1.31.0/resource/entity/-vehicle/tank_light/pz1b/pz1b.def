@@ -1,0 +1,148 @@
+{game_entity
+	(include "/properties/tank_unarmed.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{collider "tank.light"}
+	{props "light" "turret_rotator" "vision_vehicle_low" "switch_mgun"}
+	{targetClass "light_tank" "bullet"}
+	{targetSelector "tank_bullet"}
+	{patherId "tank.light"}
+
+	; --- Godny hitbox armor (ported from GodnyMod: pz1b.def) ---
+	{volume "body1"	;нижн€€ часть корпуса
+		{tags "body"}
+		{component "body"}
+		{thickness 13
+		;	{front	13}	;нлд-14, гласис-8, влд-18
+		;	{rear	13}
+			{top	0.1}	;внутренн€€ стенка
+			{bottom	5}
+			{right	8}	;гласис
+		}
+	}
+	{volume "body2"	;бо
+		{tags "body"}
+		{component "body"}
+		{thickness 13
+			{front	18}
+			{rear	0.1}	;внутренн€€ стенка
+			{top	7}
+			{bottom	5}
+		}
+	}
+	{volume "body3"	;средн€€ часть, скосы консолей левой и правой
+		{tags "body"}
+		{component "body"}
+		{thickness 13
+			{front	8}	;гласис
+			{rear	0.1}	;внутренн€€ стенка
+			{bottom	5}
+		}
+	}
+	{volume "body4"	;мто
+		{tags "body"}
+		{component "body"}
+		{thickness 13
+			{front	10}
+		;	{rear	13}
+			{top	5}
+			{bottom	5}
+		}
+	}
+	{volume "body5"	;задн€€ часть бо
+		{tags "body"}
+		{component "body"}
+		{thickness 13
+			{front	0.1}	;внутренн€€ стенка
+		;	{rear	13}
+			{top	7}
+			{bottom	0.1}	;внутренн€€ стенка
+		}
+	}
+	{Volume "turret"
+		{thickness 13
+			{front	15}
+		;	{rear	13}
+			{top	8}
+			{bottom	5}
+		}
+	}
+	{volume "engine"
+		{thickness 10}
+	}
+	; --- end Godny hitbox armor ---
+	("armor_light" turret(15) body(13 10 10 6))
+	("armor_engine"  t(5 10 10 6))
+	
+	("crew_2_human")
+	("seat_3_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_LowTank_left"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_LowTank_left"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	{boarder
+		{anm "armor"
+			{forward	{begin	"board_LowArmor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	{extender "inventory"
+		{box
+			{item "ammo mg_mauser belt" 2000}
+		}
+	}
+	{Weaponry
+		{place "mgun"
+			{type "mgun_main"}
+			{weapon "mg34_x2" filled}
+			{Barrels 2}
+			{charger "gunner"}
+			("abm_mgun")
+		}
+	}
+
+	{mass 5900}
+	{Chassis
+		("tank_trace" fx("tracks_sm2") step(0.15) len(0.13))
+		{Locomotion ("locomotion")
+			{maxspeed   30}
+			{maxSpeedAtMaxTurn 7}
+			{StartTime  20}
+			{TurnTime   12}
+			{TurnStart  0.9}			
+			{TurnRadius 6} 
+	    	{TurnStop   0.5}
+			{BrakeTime  1}
+			{StopTime   2}
+     		{Gears  0.1 0.2 0.3 1}
+			{RearGears  0.3}
+		}
+		{FuelBag
+			{volume 140 }	
+			{rate	9 }   
+			{remain 140 }
+			{fuel "fuel"}
+		}
+		{speed
+        	{Normal  30}
+        	{Slow  30}
+    	}
+	}
+
+	{Extension "pz1b.mdl"}
+	
+	{bone "gun_rot"
+		{limits -10 18}
+	}
+	{bone "turret"
+		{speed 0.005}
+	}
+}

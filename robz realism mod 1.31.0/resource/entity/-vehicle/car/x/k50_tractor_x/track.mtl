@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "$/animation/k50_track"}
+	{blend none}
+}

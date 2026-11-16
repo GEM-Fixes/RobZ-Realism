@@ -1,0 +1,6 @@
+{material bump
+	{diffuse "tacam_r2"}
+	{specular "$/model/tacam_r2_sp"}
+	{color "229 229 229 25"}
+	{blend none}
+}
