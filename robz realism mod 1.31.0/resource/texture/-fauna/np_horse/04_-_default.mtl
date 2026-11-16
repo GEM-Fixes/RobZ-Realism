@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "$/fauna/sadlecolor"}
+	{blend none}
+}

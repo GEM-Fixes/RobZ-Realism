@@ -1,0 +1,8 @@
+{material bump
+	{diffuse "$/fauna/dog"}
+	{bump "$/fauna/dog_bp"}
+	{specular "$/fauna/dog_sp"}
+	{color "230 230 230 25"}
+	{blend none}
+	{emitsheat}
+}

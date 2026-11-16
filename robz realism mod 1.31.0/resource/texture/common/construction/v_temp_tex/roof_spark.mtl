@@ -1,0 +1,5 @@
+{material simple
+	{diffuse "$/construction/v_temp_tex/roof_spark"}
+	{blend add}
+        {emission}
+}

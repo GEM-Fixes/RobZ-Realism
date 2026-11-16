@@ -1,0 +1,60 @@
+{actor
+	;(include "/properties/selection/vehicle.inc"  scale(0.5))
+	{props "flesh" "evil_animal" "dog"} 
+	{obstacleID "human"}
+	{PatherID	"animal"}
+	{collider "human"}
+	{lodclass "human"}
+	{targetClass 	"human"}
+	{targetSelector "tank_bullet"}
+	{able "-select"}
+	{brain "vehicle"
+		{state "vehicle"}
+	}
+	{mass 30}
+
+	{simulation {able 1} {disableLinked 1}}
+	
+
+	{Chassis "foot"
+		{Run
+			{Slow	5   5	100}
+			{Normal	15   15	200}
+			{Fast	22  22	500}
+		}
+	}
+	{sensor
+		{visor "main"
+    			{vision
+				{h_fov 270}
+  			 	{v_fov 180}
+				{uncover 10}
+				{radius 50}
+    			}
+			{bone "visor"}
+		}
+    	}
+ 	{volume "body"
+		{able {blast} {bullet} {contact}}
+		{thickness 5}
+	}
+	{extender "vitality"
+		{Health {max 750} {current 750}}
+	}
+	{extender "inventory"
+		{box
+			{Size 6 10}
+			{weight 10000}
+			{item "jaws ammo" 1000}
+		}
+	}
+	{Weaponry
+		{place "gun"
+			{weapon "jaws" filled}
+		}
+	}
+	{Obstacle 
+		{Circle2 {radius 0.5}}
+	}
+	{Extension "dog.mdl"}
+}
