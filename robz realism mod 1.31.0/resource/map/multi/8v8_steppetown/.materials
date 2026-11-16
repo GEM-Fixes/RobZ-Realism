@@ -1,0 +1,32 @@
+{materials
+	{"mtl0"
+		{layer bump
+			{diffuse "/texture/land/grass/steppe_5"}
+			{bump "/texture/land/grass/steppe_5_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/hassock/tuft_light02"}
+			{bump "/texture/land/hassock/tuft_light02_nm"}
+		}
+	}
+	{"mtl1"
+		{layer bump
+			{diffuse "/texture/land/grass/steppe_1a"}
+			{bump "/texture/land/grass/steppe_1a_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/hassock/tuft_light01"}
+			{bump "/texture/land/hassock/tuft_light01_nm"}
+		}
+	}
+	{"mtl2"
+		{layer bump
+			{diffuse "/texture/land/grass/steppe_6"}
+			{bump "/texture/land/grass/steppe_6_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/hassock/tuft_light01"}
+			{bump "/texture/land/hassock/tuft_light01_nm"}
+		}
+	}
+}
