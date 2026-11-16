@@ -1,0 +1,91 @@
+{materials
+	{"mtl0"
+		{layer bump
+			{diffuse "/texture/land/grass/gramma_12"}
+			{bump "/texture/land/grass/gramma_12_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/dirt/clay_new2 q1"}
+			{bump "/texture/land/dirt/clay_new2 q1_nm"}
+		}
+	}
+	{"mtl1"
+		{layer bump
+			{diffuse "/texture/land/grass/gramma_111_vic2"}
+			{bump "/texture/land/grass/gramma_111_vic2_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/rock/pebble_redish"}
+			{bump "/texture/land/rock/pebble_redish_nm"}
+		}
+	}
+	{"mtl2"
+		{layer bump
+			{diffuse "/texture/land/grass/gramma_111_vic2"}
+			{bump "/texture/land/grass/gramma_111_vic2_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/leaves/foliage_ongrass"}
+			{bump "/texture/land/leaves/foliage_ongrass_nm"}
+		}
+	}
+	{"mtl3"
+		{layer bump
+			{diffuse "/texture/land/grass/gramma_111_vic2"}
+			{bump "/texture/land/grass/gramma_111_vic2_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/dirt/steep_stones"}
+			{bump "/texture/land/dirt/steep_stones_nm"}
+		}
+	}
+	{"mtl4"
+		{layer bump
+			{diffuse "/texture/land/grass/forestfloor1"}
+			{bump "/texture/land/grass/forestfloor1_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/grass/grass_q4"}
+			{bump "/texture/land/grass/grass_q4_nm"}
+		}
+	}
+	{"mtl5"
+		{layer bump
+			{diffuse "/texture/land/grass/forestfloor1"}
+			{bump "/texture/land/grass/forestfloor1_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/fields/field_02"}
+			{bump "/texture/land/fields/field_02_nm"}
+		}
+	}
+	{"mtl6"
+		{layer bump
+			{diffuse "/texture/land/grass/forestfloor1"}
+			{bump "/texture/land/grass/forestfloor1_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/fields/cornfield_2a"}
+			{bump "/texture/land/fields/cornfield_2a_nm"}
+		}
+	}
+	{"mtl7"
+		{layer bump
+			{diffuse "/texture/land/grass/forestfloor1"}
+			{bump "/texture/land/grass/forestfloor1_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/town/brick_q31"}
+			{bump "/texture/land/town/brick_q31_nm"}
+		}
+	}
+	{"mtl8"
+		{layer bump
+			{diffuse "/texture/land/grass/forestfloor1"}
+			{bump "/texture/land/grass/forestfloor1_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/grass/gramma_02a"}
+		}
+	}
+}

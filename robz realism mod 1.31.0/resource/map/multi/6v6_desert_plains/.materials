@@ -1,0 +1,41 @@
+{materials
+	{"mtl0"
+		{layer bump
+			{diffuse "/texture/land/sand/floor_sand2"}
+			{bump "/texture/land/sand/floor_sand2_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/sand/sand_4"}
+			{bump "/texture/land/sand/sand_4_nm"}
+		}
+	}
+	{"mtl1"
+		{layer bump
+			{diffuse "/texture/land/sand/floor_sand2"}
+			{bump "/texture/land/sand/floor_sand2_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/sand/floor_sand2b"}
+			{bump "/texture/land/sand/floor_sand2b_nm"}
+		}
+	}
+	{"mtl2"
+		{layer bump
+			{diffuse "/texture/land/grass/gramma_02a"}
+		}
+		{layer bump
+			{diffuse "/texture/land/bottom/bottom_1"}
+			{bump "/texture/land/bottom/bottom_1_nm"}
+		}
+	}
+	{"mtl3"
+		{layer bump
+			{diffuse "/texture/land/grass/steppe_6"}
+			{bump "/texture/land/grass/steppe_6_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/sand/floor_stropic2"}
+			{bump "/texture/land/sand/floor_stropic2_nm"}
+		}
+	}
+}
