@@ -1,0 +1,10 @@
+{Skeleton
+	{bone "barricade_vis"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "barricade_vis.ply"}
+	}
+}

@@ -1,0 +1,27 @@
+{game_entity
+	(include "/properties/construction.inc")
+	{props "concrete" "construction" "disable_area" "no_destroyed_stamp" "-slow_on_crush" "trench_weak"}
+	;{props "concrete" "no_destroyed_stamp" "-slow_on_crush"}
+	{collider "stuff"}
+	{obstacleID "construction"}	;small_building construction nothing
+	{constrain ground}
+
+	{Extension "cover_skirmisher.mdl"}
+	{Volume "body"
+		{Tags  "body"}
+		{Thickness 10}
+		{able {visible 1}}
+	}
+	{NoCastShadows}
+
+	{extender "land_patch"
+		{AlignEnabled 1}	;выравнивание включено?
+		{AlignStacked 1}	;ориентировка по начальному уровню поверхности
+		{AlignVolumes 0}	;выравнивание волумов, вредно на наклонных плоскостях
+		{randomrotate 0}
+	}
+
+	("armor_adjustable" thresh_fg(4) thresh_ap(10) dur_fg(2) dur_ap(50) calibre(0))
+
+	{texmod "ground"}
+}
