@@ -1,0 +1,16 @@
+{bullet
+	{tag "ammo shell mortar_flame itemin2hands ic ap"}
+	{detonationThickness 2}
+	{inventory
+		{size 1 1}
+		{weight 100}
+		{fsm "hand-only"}
+	}
+	{mass 12}
+	{entity "rus_ampula_azh-1"}
+	{damage fire
+		{radius 2}
+		{heating 0.5}
+		{time 0.5}
+	}
+}

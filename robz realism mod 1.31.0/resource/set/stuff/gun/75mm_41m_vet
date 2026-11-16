@@ -1,0 +1,23 @@
+{from "pattern gun"     ; "turan2_vet"
+	{filling "bullet75_hun"}
+	{fireSound "gun/50to76_cal/75mm_kwk40"}
+	{reloadSound "gun_r03"}
+	{rechargeTime 5.5}
+	("range_medium")  
+	("caliber_medium")
+	("speed" s(425))
+	{projectileDamage 50}
+	("damage" a(48) b(41) c(36) d(32) e(29))
+	{parameters "apcr"
+		("speed" s(476))
+        		("damage" a(59) b(49) c(39) d(30) e(26))
+	}
+	{parameters "cu"
+		("speed" s(400))
+		("damage" a(100) b(0) c(0) d(0) e(0))
+	}
+	{parameters "fg"
+		("speed" s(450))
+	}
+	("accuracy_medium")
+}

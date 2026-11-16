@@ -1,0 +1,8 @@
+{from "pattern rifle"
+	{filling "ammo 7x57" 5 5}
+	{entity "zb_24rifle"}
+	{fireSound "rifle/mosin_shot/"}
+	{reloadSound "mosin"}
+	{tag "bolt"}	; bolt-action cycling animation
+	{tag "bolt_r220"}	; bolt animation speed class (recoveryTime 2.20s)
+}

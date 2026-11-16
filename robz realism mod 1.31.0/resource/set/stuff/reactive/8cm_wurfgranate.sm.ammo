@@ -1,0 +1,20 @@
+{bullet
+	{tag "dropboxed big smoke no_ricochet"}
+	{inventory
+		{size 4 1}
+		{weight 70}
+	}
+	{mass 3}
+	{entity "8cm_wurfgranate_ammo"}
+	{view "nebelwerfer41_sm_ammo"
+		{tail "rocket_smoke_norm" "tail"}
+	}
+	{detonationThickness 2}
+	{applyProjectile}
+
+	
+}
+
+
+
+

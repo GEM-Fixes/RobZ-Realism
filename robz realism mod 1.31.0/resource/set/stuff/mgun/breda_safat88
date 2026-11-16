@@ -1,0 +1,16 @@
+{from "pattern mgun" ;"breda safat 77 MG nest"
+	{filling "ammo bredasafat_belt" 1000}
+	{entity "bredasafat88"}
+	{fireSound "mgun/fg42_shot"}
+ 	{reloadSound "breda30"}
+	("burst_long")
+	("recoveryTime" r(800))
+	("speed" s(730))
+	{Spreading 1
+		{SpreadPower	1}
+		{BurstAccuracy 100 97 94 91 88 85 80}
+	}
+        {range 150 150}
+
+
+}

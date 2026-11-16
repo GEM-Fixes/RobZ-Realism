@@ -1,0 +1,79 @@
+{environment
+	{light
+		{direction 0.891 0.234 -0.39}
+		{ambient 0xff0f0f0f}
+		{diffuse 0xff2c2c2c}
+		{specular 0xffffffff}
+		{lightsIntensity 0.3}
+		{draw_sun_moon}
+		{sun_moon_radius 1}
+		{night_vision 0.16}
+		{color_correction
+			{tone 0xff2c2c2c}
+			{tone_strength 0.1}
+			{color_shading
+				{shade_tone 0xff4b4b4b}
+			}
+		}
+		{camera_lens_effetcs
+			{light_scattering
+				{intensity 0.5}
+				{ray_length 0.5}
+				{color_tone 0x1010101}
+			}
+			{screen_brightening
+				{intensity 0.3}
+			}
+		}
+	}
+	{wind
+		{speed 6 0 0}
+		{amplitude 0.5}
+	}
+	{haze
+		{enable}
+		{color 0xff9e9bac}
+		{start 10}
+		{end 10000}
+	}
+	{sky
+		{enable}
+		{texture "/texture/wound/concrete_small01"}
+		{globalEnvironment "/texture/common/environment/day_moskow"}
+	}
+	{weather
+		{enable}
+		{density 20}
+		{sound "world/cannonade/wint_battle"}
+	}
+	{thunder
+		{color 0xff686c73}
+	}
+	{video_overlay
+		{color 0xffffffff}
+	}
+	{grain
+		{enable}
+		{colorAmount 0}
+		{grainAmount 0}
+		{grainParticleSize 0.6}
+		{lumAmount 1}
+	}
+	{dof
+		{enable}
+		{near_scale 2.5}
+		{far_scale 0.75}
+		{near_start 50}
+		{near_end 150}
+		{far_start 1000}
+		{far_end 3500}
+		{"3rd_Person"
+			{"3rdP_blurscale" 1}
+		}
+		{blur_strength 3}
+	}
+	{glow
+		{enable}
+		{amount 1}
+	}
+}

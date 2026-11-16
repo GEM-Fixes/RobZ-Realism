@@ -1,0 +1,18 @@
+{from "pattern mgun"
+	{tag "mgun_light"}
+	{filling "ammo 7x57" 25 250}
+	{entity "mg13"}
+	{mass 13}
+	{fireSound	"mgun/mg13_burst/"}
+	{reloadSound "mg34_reload"}
+	{RechargeTime 5}
+	("burst_long")
+	("recoveryTime" r(600))
+	("speed" s(890))
+	{Spreading 1
+		{SpreadPower	1}
+		{BurstAccuracy 100 97 94 91 88 85 82 75 70}
+	}
+
+
+}

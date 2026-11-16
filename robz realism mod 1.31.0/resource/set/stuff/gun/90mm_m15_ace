@@ -1,0 +1,3 @@
+{from "90mm_m15"		; "m26e4_ace" (was referenced by m26e4_ace.def but missing - game crashed)
+	{rechargeTime 9.1}
+}

@@ -1,0 +1,12 @@
+{from "pattern sniper_rifle"
+	{filling "ammo british303_clip" 10}
+	{entity "lee_enfield_mk3_s"}
+	{fireSound "rifle/enfield_s"}
+	{reloadSound "rifle_bolt_ten"}
+
+	{recoveryTime 1.0}
+	{rechargeTime 7.5}
+	("speed" s(744))
+	{tag "bolt"}	; bolt-action cycling animation
+	{tag "bolt_r100"}	; bolt animation speed class (recoveryTime 1.00s)
+}

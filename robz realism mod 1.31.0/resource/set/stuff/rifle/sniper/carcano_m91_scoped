@@ -1,0 +1,9 @@
+{from "pattern sniper_rifle"
+	{filling "ammo 6x52" 6 36}
+	{fireSound "rifle/Carcano_m91"}
+	{entity "carcano_m1891scope"}
+	{reloadSound "kar98k_s_reload"}
+	("speed" s(700))
+	{tag "bolt"}	; bolt-action cycling animation
+	{tag "bolt_r140"}	; bolt animation speed class (recoveryTime 1.40s)
+}

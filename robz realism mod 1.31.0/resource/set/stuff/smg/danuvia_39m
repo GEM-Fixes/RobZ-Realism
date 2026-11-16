@@ -1,0 +1,16 @@
+{from "mp40"
+	{filling "ammo 9x25" 40 40}
+	{entity "danuvia_39m"}
+	{fireSound	"smg/danuvia_39m_burst/"}
+	{reloadSound "mp40_reload"}
+	("burst_short")
+	("recoveryTime" r(750))
+ 	("speed" s(450))
+	{spreading 1.2
+		{SpreadPower	1}
+		{BurstAccuracy 100 97 94 91 88 85 82 79 76 73 70 60}
+	}
+	; -- accuracy_smg_low
+	("distance_1" r1(0.385) r2(1.925) r3(4.40))
+
+}

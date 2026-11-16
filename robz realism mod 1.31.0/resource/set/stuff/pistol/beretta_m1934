@@ -1,0 +1,10 @@
+{from "pattern pistol"
+	{filling "ammo 9x17" 7 35}
+	{mass 1.075}
+	{entity "beretta_m_1934"}
+	{fireSound	"pistol/beretta"}
+	{reloadSound "vis"}
+	("speed" s(229))
+
+
+}

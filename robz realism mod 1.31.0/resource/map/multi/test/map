@@ -1,0 +1,270 @@
+{map
+	{Land
+		{Position 0 0}
+	}
+	{Clips
+		{"[auto]"
+			{world -2000 -2000 2000 2000}
+			{camera -2000 -2000 2000 2000}
+			{pather -2000 -2000 2000 2000}
+			{distance 200 800}
+			{viewAngle 20 50}
+		}
+	}
+	{Ocean
+		{active 0}
+		{state calm}
+		{zlevel 0}
+		{waveamount 8}
+		{wavedir 50}
+	}
+	{Entity "mg42_drum" 0x6c
+		{Extender "stuff"
+			{Item "mg42_inf" filled}
+		}
+	}
+	{Human "mp/ger/grenadier_mg" 0x6e
+		{Position 459.4 -684.02}
+		{SpawnedInFog}
+		{Extender "vitality"
+			{Stamina
+				{current 100}
+			}
+		}
+		{Player 0}
+		{MID 10071}
+		{Score 0.2}
+		{NameId 125 57}
+		{FsmState "stand"}
+	}
+	{Entity "mg42_drum" 0x6f
+		{Position 190.83 -579.65 9.23}
+		{xform zl -109.46 y 0.03 zw 34.44}
+		{Extender "stuff"
+			{Item "mg42_inf" filled}
+		}
+	}
+	{Human "mp/ger/grenadier_mg" 0x74
+		{Position 173.34 -683.43}
+		{xform zl -63.32}
+		{Extender "vitality"
+			{Dead}
+			{Health
+				{current 0}
+			}
+			{Stamina
+				{current 0}
+			}
+		}
+		{DisableObstacles}
+		{Player 0}
+		{MID 10084}
+		{Able "-select"}
+		{Score 0.2}
+		{NameId 5 116}
+		{LastDyingAnimation "stand_die-force_front_3_far"}
+		{FsmState "dead"}
+	}
+	{Entity "mauzer" 0x4007
+		{Extender "stuff"
+			{Item "mauzer_vet" filled}
+		}
+	}
+	{Human "mp/ger/fallschirm_pzfst" 0x4006
+		{Position 439.5 -165.69}
+		{xform zl -48.72}
+		{SpawnedInFog}
+		{Extender "vitality"
+			{Stamina
+				{current 100}
+			}
+		}
+		{Player 2}
+		{MID 10003}
+		{NameId 131 143}
+		{FsmState "stand"}
+	}
+	{Entity "mg42_drum" 0x72
+		{Position 144.93 -646.33 9.3}
+		{xform zl -86.45 y 179.95 zw -11.05}
+		{Extender "stuff"
+			{Item "mg42_inf" filled}
+		}
+	}
+	{Entity "mg42_drum" 0x75
+		{Position 116.06 -625.31 9.31}
+		{xform zl -97.62 y 179.91 zw -54.54}
+		{Extender "stuff"
+			{Item "mg42_inf" filled}
+		}
+	}
+	{Entity "lee_enfield_mk3" 0x88
+		{Position -12.21 -510.84 9.1}
+		{xform zl -103.8 y 0.12 zw 143.97}
+		{Extender "stuff"
+			{Item "em3" filling "british303_clip" "ammo" 5}
+		}
+	}
+	{Entity "piece_medium_steel" 0x4005
+		{Position 80 -454.74 4.83}
+		{xform zl 84.83 y 84.84 zw -60.62}
+	}
+	{Entity "piece_medium_steel" 0x400b
+		{Position 66.05 -464.82 5.83}
+		{xform zl 86.61 y 86.19 zw -65.55}
+	}
+	{Entity "piece_medium_steel" 0x4011
+		{Position 34.71 -456.4 6.08}
+		{xform zl 86 y 83.93 zw -65.63}
+	}
+	{Entity "piece_medium_steel" 0x4014
+		{Position 42.69 -426.37 1.51}
+		{xform zl -86.63 y 96.88 zw 114.32}
+	}
+	{Entity "piece_medium_steel" 0x4017
+		{Position 14.57 -419.25 1.59}
+		{xform zl -86.51 y 95.06 zw 101.87}
+	}
+	{Entity "piece_medium_steel" 0x401a
+		{Position 5.06 -441.92 4.77}
+		{xform zl -85.61 y 95.65 zw 109.58}
+	}
+	{Entity "binocular" 0x9
+		{Position 84.83 87.68 150}
+	}
+	{Entity "binocular" 0xa
+		{Position 67.53 90.46}
+	}
+	{Entity "binocular" 0xb
+		{Position 93.95 -46.58 60}
+	}
+	{Human "mp/eng/oficer" 0xe
+		{Position 428.25 -107.65}
+		{SpawnedInFog}
+		{Extender "vitality"
+			{Stamina
+				{current 100}
+			}
+		}
+		{Player 0}
+		{MID 10005}
+		{NameId 60 0}
+		{FsmState "stand"}
+	}
+	{Human "mp/eng/palmer" 0x10
+		{Position 386.86 -233.87}
+		{SpawnedInFog}
+		{Extender "vitality"
+			{Stamina
+				{current 100}
+			}
+		}
+		{Player 0}
+		{MID 10006}
+		{NameId 31 57}
+		{FsmState "stand"}
+	}
+	{Entity "84_smoke_off_map" 0x6
+		{Position -1393.78 -480.1}
+		{TexMod ""}
+		{Player 255}
+		{MID 10001}
+	}
+	{Inventory 0x6e
+		{box
+			{clear}
+			{item 0x6c {cell 0 0}{user "hand_right"}}
+			{item "mg_mauser" "drum" "ammo" 50 {cell 0 2}}
+			{item "mg_mauser" "drum" "ammo" 50 {cell 2 2}}
+			{item "mg_mauser" "drum" "ammo" 50 {cell 4 2}}
+			{item "mg_mauser" "drum" "ammo" 50 {cell 0 4}}
+			{item "mg_mauser" "drum" "ammo" 50 {cell 2 4}}
+			{item "mg_mauser" "drum" "ammo" 50 {cell 4 4}}
+			{item "valter" filled {cell 0 6}}
+			{item "walther_mag" "ammo" 8 {cell 5 0}}
+			{item "walther_mag" "ammo" 8 {cell 5 1}}
+			{item "bandage" 3 {cell 2 6}}
+			{item "sandbag_kit" {cell 4 6}}
+			{item "barrel_case" {cell 0 7}}
+			{item "helmet_ger_m40" {cell 2 7}{user "head"}}
+		}
+	}
+	{Inventory 0x74
+		{box
+			{clear}
+			{item "mg_mauser" "drum" "ammo" 50 {cell 0 2}}
+			{item "mg_mauser" "drum" "ammo" 50 {cell 2 2}}
+			{item "mg_mauser" "drum" "ammo" 50 {cell 4 2}}
+			{item "mg_mauser" "drum" "ammo" 50 {cell 0 4}}
+			{item "mg_mauser" "drum" "ammo" 50 {cell 2 4}}
+			{item "mg_mauser" "drum" "ammo" 50 {cell 4 4}}
+			{item "valter" filled {cell 0 6}}
+			{item "walther_mag" "ammo" 8 {cell 5 0}}
+			{item "walther_mag" "ammo" 8 {cell 5 1}}
+			{item "bandage" 3 {cell 2 6}}
+			{item "sandbag_kit" {cell 4 6}}
+			{item "barrel_case" {cell 0 7}}
+			{item "helmet_ger_m40" {cell 2 7}{user "head"}}
+		}
+	}
+	{Inventory 0x4006
+		{box
+			{clear}
+			{item 0x4007 {cell 0 0}{user "hand_right"}}
+			{item "mauser_clip" "mauser" "mauser_rifle" "ammo" 10 {cell 4 0}}
+			{item "mauser_clip" "mauser" "mauser_rifle" "ammo" 10 {cell 5 0}}
+			{item "mauser_clip" "mauser" "mauser_rifle" "ammo" 10 {cell 4 1}}
+			{item "mauser_clip" "mauser" "mauser_rifle" "ammo" 10 {cell 5 1}}
+			{item "mauser_clip" "mauser" "mauser_rifle" "ammo" 10 {cell 0 2}}
+			{item "mauser_clip" "mauser" "mauser_rifle" "ammo" 10 {cell 1 2}}
+			{item "mauser_clip" "mauser" "mauser_rifle" "ammo" 10 {cell 2 2}}
+			{item "mauser_clip" "mauser" "mauser_rifle" "ammo" 10 {cell 3 2}}
+			{item "mauser_clip" "mauser" "mauser_rifle" "ammo" 10 {cell 4 2}}
+			{item "mauser_clip" "mauser" "mauser_rifle" "ammo" 10 {cell 5 2}}
+			{item "mauser_clip" "mauser" "mauser_rifle" "ammo" 10 {cell 0 3}}
+			{item "mauser_clip" "mauser" "mauser_rifle" "ammo" 10 {cell 1 3}}
+			{item "mg_mauser" "drum" "ammo" 50 {cell 2 3}}
+			{item "bandage" 5 {cell 4 3}}
+			{item "m39" "grenade" {cell 0 4}}
+			{item "m39" "grenade" {cell 1 4}}
+			{item "panzerfaust_30" "weapon" filled {cell 0 5}}
+			{item "helmet_ger_m38_cover" {cell 0 6}{user "head"}}
+		}
+	}
+	{Inventory 0xe
+		{box
+			{clear}
+			{item "webley" filled {cell 0 0}}
+			{item "webley_clip" "ammo" 6 {cell 2 0}}
+			{item "webley_clip" "ammo" 6 {cell 3 0}}
+			{item "webley_clip" "ammo" 6 {cell 4 0}}
+			{item "webley_clip" "ammo" 6 {cell 5 0}}
+			{item "webley_clip" "ammo" 6 {cell 0 1}}
+			{item "webley_clip" "ammo" 6 {cell 1 1}}
+			{item "smoke_paradrop_ammo_heavy" "grenade" {cell 2 1}}
+			{item "smoke_paradrop_ammo_heavy" "grenade" {cell 4 1}}
+			{item "knife_union" {cell 0 2}}
+			{item "binocular" {cell 2 2}{user "hand_right"}}
+			{item "bandage" 5 {cell 4 2}}
+			{item "cap_eng_off" {cell 0 3}{user "head"}}
+		}
+	}
+	{Inventory 0x10
+		{box
+			{clear}
+			{item "thompson" {cell 0 0}{user "hand_right"}}
+			{item "pistol" "ammo" 100 {cell 4 0}}
+			{item "pistol" "ammo" 30 {cell 4 1}}
+			{item "mk1" "grenade" {cell 0 2}}
+			{item "mk1" "grenade" {cell 1 2}}
+			{item "mk1" "grenade" {cell 2 2}}
+			{item "mk1" "grenade" {cell 3 2}}
+			{item "mk1" "grenade" {cell 4 2}}
+			{item "mk1" "grenade" {cell 5 2}}
+			{item "n73at" "grenade" {cell 0 3}}
+			{item "n73at" "grenade" {cell 2 3}}
+			{item "bandage" 5 {cell 4 3}}
+			{item "cap1_usa" {cell 0 4}{user "head"}}
+		}
+	}
+}

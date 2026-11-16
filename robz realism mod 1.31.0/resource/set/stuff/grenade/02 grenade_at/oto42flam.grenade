@@ -1,0 +1,4 @@
+{from "grenade molotov_coctail"
+	{tag "ic" "molotov_coctail"}
+	{entity "Grenade_oto42flam"}
+}

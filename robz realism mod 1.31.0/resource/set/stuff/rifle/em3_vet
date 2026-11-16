@@ -1,0 +1,4 @@
+{from "em3"
+	{recoveryTime 0.75}
+	{tag "bolt_r075"}	; bolt animation speed class (recoveryTime 0.75s)
+}

@@ -1,0 +1,1 @@
+Handles maximum tolerance of rng. To prevent frustrating cases of things refusing to die.

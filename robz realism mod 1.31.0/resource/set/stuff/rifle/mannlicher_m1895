@@ -1,0 +1,9 @@
+{from "pattern rifle"
+	{filling "ammo 8x50" 5 30}
+	{entity "manliher_m1895"}
+	{fireSound "rifle/mauser98k"}
+	{reloadSound "kar98k_reload"}
+	("speed" s(620))
+	{tag "bolt"}	; bolt-action cycling animation
+	{tag "bolt_r220"}	; bolt animation speed class (recoveryTime 2.20s)
+}

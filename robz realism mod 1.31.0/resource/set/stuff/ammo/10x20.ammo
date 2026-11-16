@@ -1,0 +1,15 @@
+;// 10.35x20mm
+
+{bullet
+	{tag "bullet stackable pierce 7-62_pistol"}
+	{inventory
+		{weight 6.6}
+		{block 15}
+		{size 1 1}
+		{fsm "belt"}
+	}
+	{mass 0.008}
+	{entity "pistol_ammo"}
+	{view "smg_bullet"}
+
+}

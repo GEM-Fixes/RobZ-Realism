@@ -1,0 +1,11 @@
+{from "pattern rifle"
+	{filling "ammo 7x51" 6 36}
+	{entity "m38_carcano"}
+	{fireSound "rifle/carcano_m91"}
+	{reloadSound "rifle_bolt_five"}
+	
+	("speed" s(700))
+	;("accuracy_boost")
+	{tag "bolt"}	; bolt-action cycling animation
+	{tag "bolt_r220"}	; bolt animation speed class (recoveryTime 2.20s)
+}

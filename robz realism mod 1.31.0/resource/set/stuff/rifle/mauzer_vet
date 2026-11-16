@@ -1,0 +1,4 @@
+{from "mauzer"
+	{recoveryTime 1.05}
+	{tag "bolt_r105"}	; bolt animation speed class (recoveryTime 1.05s)
+}

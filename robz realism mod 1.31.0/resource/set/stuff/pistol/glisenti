@@ -1,0 +1,9 @@
+{from "pattern pistol"
+	{filling "ammo 9x19c" 7 35}
+	{mass 2.65}
+	{entity "glisenti"}
+	{fireSound "pistol/nagan"}
+	{reloadSound "valter"}
+	("speed" s(305))
+
+}

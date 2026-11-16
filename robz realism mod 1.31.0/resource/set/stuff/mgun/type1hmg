@@ -1,0 +1,3 @@
+{from "type92_hmg"
+	{fireSound	"mgun/type1hmg_burst/"}
+}

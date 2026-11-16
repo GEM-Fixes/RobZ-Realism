@@ -1,0 +1,17 @@
+{from "pattern at_rifle"
+	{filling "ammo ptr" 7}
+	{entity "type_97_antitank"}
+	{fireSound	"rifle/ptr/type97at"}
+	{reloadSound "ptrd"}
+	
+	{Automatic}
+	{recoveryTime 2}  
+	{rechargeTime 7}
+	{projectileDamageTable {20 40} {100 30} {170 20} {215 15} {250 5}}
+	{parameters "fg"
+		{projectileDamageTable {0 0}}
+		{cursor "cannon_on_fg"}
+		{cursorReloading "cannon_reload_fg"}
+	}
+	("speed" s(750))
+}

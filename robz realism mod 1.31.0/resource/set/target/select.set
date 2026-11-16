@@ -1,0 +1,23 @@
+{selectors
+	(include "human_lunge_mine.inc")
+	(include "human_rocketlauncher.inc")
+	(include "human_at_rifle.inc")
+	(include "human_at_grenade.inc")
+	(include "human_mgun.inc")
+	(include "human_sniper.inc")
+	(include "human_fg.inc")
+	(include "human_bullet.inc")
+	(include "human.inc")
+
+	(include "cannon_shell.inc")
+	(include "cannon_rocket.inc")
+	(include "cannon_bullet.inc")
+
+	(include "moto.inc")
+
+	(include "tank.inc")
+	(include "tank_bullet.inc")
+
+	(include "searchlight.inc")
+}
+ 

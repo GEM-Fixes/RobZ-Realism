@@ -1,0 +1,9 @@
+{from "pattern rifle"
+	{filling "ammo 6x52" 6 36}
+	{entity "carcano_m1891"}
+	{fireSound "rifle/Carcano_m91"}
+	{reloadSound "kar98k_reload"}
+	("speed" s(700))
+	{tag "bolt"}	; bolt-action cycling animation
+	{tag "bolt_r220"}	; bolt animation speed class (recoveryTime 2.20s)
+}

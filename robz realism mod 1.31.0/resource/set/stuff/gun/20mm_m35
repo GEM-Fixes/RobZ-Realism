@@ -1,0 +1,14 @@
+{from "pattern gun"		; "L6-40"
+	{filling "bullet20_ita" 8}
+	{fireSound "gun/zenite/20mm_aa/"}
+	{reloadSound "flak38"}
+	{RecoveryTime 0.25}
+	{rechargeTime 5}
+	{automatic}
+	("range_zenite")
+	("speed" s(855))
+	("caliber_zenite")
+	{projectileDamage 38}
+	("damage" a(38) b(22) c(16) d(8) e(3))
+	("accuracy_zenite_medium")
+}

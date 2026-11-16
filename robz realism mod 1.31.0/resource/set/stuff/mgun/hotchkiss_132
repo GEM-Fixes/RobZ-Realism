@@ -1,0 +1,11 @@
+{from "browning"
+	{filling "ammo 13x96" 30}
+	{entity "hotchkiss132"}
+	{fireSound	"mgun/breda_37_burst/"}
+	{reloadSound "ptrd"}
+	("recoveryTime" r(450))
+	("speed" s(800))
+	{rechargeTime 7}
+	{projectileDamageTable {0 24} {50 20} {100 16} {150 13} {200 4.5} {225 0}} 
+
+}

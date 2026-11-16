@@ -1,0 +1,52 @@
+{materials
+	{"mtl0"
+		{layer bump
+			{diffuse "/texture/land/dirt/muddy_1"}
+			{bump "/texture/land/dirt/muddy_1_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/dirt/muddy_3"}
+			{bump "/texture/land/dirt/muddy_3_nm"}
+		}
+	}
+	{"mtl1"
+		{layer bump
+			{diffuse "/texture/land/dirt/muddy_1"}
+			{bump "/texture/land/dirt/muddy_1_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/dirt/clay_new21"}
+			{bump "/texture/land/dirt/clay_new21_nm"}
+		}
+	}
+	{"mtl2"
+		{layer bump
+			{diffuse "/texture/land/dirt/muddy_1"}
+			{bump "/texture/land/dirt/muddy_1_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/dirt/soil_1b"}
+			{bump "/texture/land/dirt/soil_1b_nm"}
+		}
+	}
+	{"mtl3"
+		{layer bump
+			{diffuse "/texture/land/dirt/muddy_1"}
+			{bump "/texture/land/dirt/muddy_1_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/dirt/steep_clay1"}
+			{bump "/texture/land/dirt/steep_clay1_nm"}
+		}
+	}
+	{"mtl4"
+		{layer bump
+			{diffuse "/texture/land/dirt/muddy_1"}
+			{bump "/texture/land/dirt/muddy_1_nm"}
+		}
+		{layer bump
+			{diffuse "/texture/land/_new/grass_dry02"}
+			{bump "/texture/land/_new/grass_dry02_nm"}
+		}
+	}
+}

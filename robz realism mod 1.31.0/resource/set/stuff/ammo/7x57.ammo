@@ -1,0 +1,14 @@
+;// 7.92x57mm
+
+{bullet
+	{tag "bullet stackable pierce 7-62_rifle"}
+	{inventory
+		{weight 10}
+		{block 20}
+		{size 1 1}
+		{fsm "belt"}
+	}	
+	{mass 0.015}
+	{entity "rifle_cartridge2"}
+	{view "rifle_bullet"}
+}

@@ -1,0 +1,12 @@
+{from "mosin_s"
+	{special
+		{mode aim}
+		{PrepareTime 1.5}	
+		{PrepareCursor "aimed_shot"}
+		{accuracy 2.5}
+		{throw_off}
+	}
+	{recoveryTime 0.84}
+	{range 150 150}
+	{tag "bolt_r084"}	; bolt animation speed class (recoveryTime 0.84s)
+}

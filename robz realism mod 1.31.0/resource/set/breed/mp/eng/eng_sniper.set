@@ -1,0 +1,56 @@
+{breed
+	{skin "eng-scout-cpl"}
+	{portrait eng_soldier4}
+	{icon sniper}
+	{icon_priority 5}
+	{nationality eng}
+	{armors
+		{head helmet_eng_mk3c}
+	}
+	{perks
+		{"health" "350%"
+		}
+		{"health_regeneration" "100%"
+		}
+		{"stamina" "150%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"vision" mp_sniper
+		}
+		{"speed" 1
+		}
+		{"stealth"}
+		{"telescope"}
+		{"tank" 1
+		}
+		{"vehicle" 1
+		}
+		{"cannon" 1
+		}
+		{"pistol" lvl_3
+		}
+		{"smg" lvl_3
+		}
+		{"mgun" lvl_3
+		}
+		{"rifle" lvl_6
+		}
+		{"rocketlauncher" lvl_2
+		}
+		{"melee" lvl_4
+		}
+		{"aimedshot"}
+	}
+        {veterancy
+		(include "veterancy_generic.inc")
+		("veterancy_1")
+	}
+	{inventory
+		{item "ammo british303_clip" 100}
+		{item "bandage" 5}
+		{item "plant" 3}
+		{item "em2_vet" filling "british303_clip ammo" 10}
+		{in_hands 3}
+	}
+}

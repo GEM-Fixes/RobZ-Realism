@@ -1,0 +1,8 @@
+{from "pattern sniper_rifle"
+	{filling "ammo 7x57" 5 30}
+	{entity "rifle_vz24_scope"}
+	{fireSound "rifle/mosin_sniper"}
+	{reloadSound "mosin_s_reload"}
+	{tag "bolt"}	; bolt-action cycling animation
+	{tag "bolt_r140"}	; bolt animation speed class (recoveryTime 1.40s)
+}

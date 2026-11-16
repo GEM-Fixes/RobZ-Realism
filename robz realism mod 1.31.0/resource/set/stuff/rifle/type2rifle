@@ -1,0 +1,11 @@
+{from "pattern rifle"
+	{filling "ammo arisaka7-7_clip" 5}
+	{entity "type2rifle"}
+	{fireSound "rifle/type99_shot"}
+	{reloadSound "type38_reload"}
+	
+	("speed" s(750))
+	;("accuracy_boost")
+	{tag "bolt"}	; bolt-action cycling animation
+	{tag "bolt_r220"}	; bolt animation speed class (recoveryTime 2.20s)
+}

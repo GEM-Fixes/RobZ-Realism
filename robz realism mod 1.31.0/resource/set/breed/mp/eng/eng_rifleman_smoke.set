@@ -1,0 +1,65 @@
+{breed
+	{skin "eng-inf-pvt"}
+	{portrait eng_soldier2}
+	{icon rifleman}
+	{icon_priority 1}
+	{nationality eng}
+	{armors
+		{head helmet2_eng}
+	}
+	{perks
+		{"health" "150%"
+		}
+		{"health_regeneration" "100%"
+		}
+		{"stamina" "100%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"vision" mp_soldier
+		}
+		{"speed" 0.9
+		}
+		{"tank" 0.8
+		}
+		{"vehicle" 1
+		}
+		{"cannon" 1
+		}
+		{"pistol" lvl_2
+		}
+		{"smg" lvl_2
+		}
+		{"mgun" lvl_2
+		}
+		{"rifle" lvl_4
+		}
+		{"rocketlauncher" lvl_1
+		}
+		{"melee" lvl_4
+		}
+	}
+	{veterancy
+		{"lvl_1" 2
+		}
+		{"lvl_2" 5
+		}
+		{"lvl_3" 9
+		}
+		{"lvl_4" 14
+		}
+		{"lvl_5" 20
+		}
+	}
+	{inventory
+		{item "em3" filled}
+		{item "ammo british303_clip" 60}
+		{item "ammo bren_mag" 56}
+		{item "bandage" 3}
+		{item "grenade mk1"}
+		{item "sandbag_kit"}
+		{item "grenade n73at"}
+		{item "n77_smoke grenade" 0 1}
+		{in_hands 0}
+	}
+}

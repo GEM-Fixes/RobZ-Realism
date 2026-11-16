@@ -1,0 +1,12 @@
+{from "pattern mgun"
+	{entity "mle31"}
+	{filling "ammo reibel_belt" 150}
+	{fireSound	"mgun/besa_burst/"}
+	{reloadSound "dp27_reload"}
+	("recoveryTime" r(450))
+	("speed" s(830))
+	("burst_long")
+
+	("spread_optic")
+	("accuracy_mgun_tank")
+}

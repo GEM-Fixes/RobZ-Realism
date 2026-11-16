@@ -1,0 +1,9 @@
+{from "pattern grenade_smoke"
+	{tag "-missile wp fg"}
+	{inventory {size 2 1}}
+	{entity "grenade_ccm34smoke"}
+	{mass 0.3}
+	{throw
+		{range 25}
+	}
+}
