@@ -1,0 +1,350 @@
+{mission
+	{Tags "keep_places_without_door" 0x613e}
+	{Tags "keep_places_without_door" 0x4bd2}
+	{Tags "keep_places_without_door" 0x4bf5}
+	{Tags "keep_places_without_door" 0x4bfa}
+	{Tags "keep_places_without_door" 0x4c01}
+	{Tags "keep_places_without_door" 0x2813}
+	{Tags "keep_places_without_door" 0x5d88}
+	{Tags "keep_places_without_door" 0x5dcc}
+	{Tags "keep_places_without_door" 0x5dd6}
+	{Tags "keep_places_without_door" 0x5de5}
+	{Tags "keep_places_without_door" 0x383e}
+	{Tags "keep_places_without_door" 0x3867}
+	{Tags "keep_places_without_door" 0x7868}
+	{Tags "keep_places_without_door" 0x786a}
+	{Tags "keep_places_without_door" 0x7875}
+	{Tags "keep_places_without_door" 0x787a}
+	{Tags "keep_places_without_door" 0x1598}
+	{Tags "keep_places_without_door" 0x15dd}
+	{Tags "keep_places_without_door" 0x15ee}
+	{Tags "keep_places_without_door" 0x1600}
+	{Tags "keep_places_without_door" 0x1612}
+	{Tags "keep_places_without_door" 0x1617}
+	{Tags "keep_places_without_door" 0x4bd1}
+	{Tags "keep_places_without_door" 0x163f}
+	{Tags "keep_places_without_door" 0x167c}
+	{Tags "keep_places_without_door" 0x16fa}
+	{Tags "keep_places_without_door" 0x612f}
+	{Tags "keep_places_without_door" 0x613a}
+	{Tags "keep_places_without_door" 0x6165}
+	{Tags "keep_places_without_door" 0x40f9}
+	{Tags "keep_places_without_door" 0x4129}
+	{Tags "keep_places_without_door" 0x4130}
+	{Tags "keep_places_without_door" 0x4158}
+	{Tags "keep_places_without_door" 0x4159}
+	{Tags "keep_places_without_door" 0x51d1}
+	{Tags "keep_places_without_door" 0x4c7f}
+	{Tags "keep_places_without_door" 0x4c80}
+	{Tags "keep_places_without_door" 0x4c81}
+	{Tags "keep_places_without_door" 0x4c82}
+	{Tags "keep_places_without_door" 0x4c83}
+	{Tags "keep_places_without_door" 0x4c84}
+	{Tags "keep_places_without_door" 0x4c86}
+	{Tags "keep_places_without_door" 0x4c88}
+	{Tags "keep_places_without_door" 0x4c94}
+	{Tags "keep_places_without_door" 0x5d89}
+	{Tags "keep_places_without_door" 0x5d9d}
+	{Tags "keep_places_without_door" 0x5d9f}
+	{Tags "keep_places_without_door" 0x5da0}
+	{Tags "keep_places_without_door" 0x5dad}
+	{Tags "keep_places_without_door" 0x5dae}
+	{Tags "keep_places_without_door" 0x17ef}
+	{Tags "keep_places_without_door" 0x4431}
+	{Tags "keep_places_without_door" 0x26d0}
+	{Tags "keep_places_without_door" 0x2705}
+	{Tags "keep_places_without_door" 0x2753}
+	{Tags "keep_places_without_door" 0x2786}
+	{Tags "keep_places_without_door" 0x57f0}
+	{Tags "keep_places_without_door" 0x52fb}
+	{Tags "keep_places_without_door" 0x53d3}
+	{Tags "keep_places_without_door" 0x5e1a}
+	{Tags "keep_places_without_door" 0x5e33}
+	{Tags "keep_places_without_door" 0x5e4e}
+	{Tags "keep_places_without_door" 0x5ea1}
+	{Tags "keep_places_without_door" 0x5ebd}
+	{Tags "keep_places_without_door" 0x5ed9}
+	{Tags "keep_places_without_door" 0x5ef5}
+	{Tags "keep_places_without_door" 0x5f11}
+	{Tags "keep_places_without_door" 0x5f2d}
+	{Tags "keep_places_without_door" 0x5f49}
+	{Tags "keep_places_without_door" 0x5f65}
+	{Tags "keep_places_without_door" 0x7413}
+	{Tags "keep_places_without_door" 0x7427}
+	{Tags "keep_places_without_door" 0x744f}
+	{Tags "keep_places_without_door" 0x746a}
+	{Tags "keep_places_without_door" 0x74a0}
+	{Tags "keep_places_without_door" 0x74bb}
+	{Tags "keep_places_without_door" 0x74d6}
+	{Tags "keep_places_without_door" 0x74f1}
+	{Tags "keep_places_without_door" 0x7527}
+	{Tags "keep_places_without_door" 0x1e0b}
+	{Tags "keep_places_without_door" 0x4157}
+	{Tags "keep_places_without_door" 0x3462}
+	{Tags "keep_places_without_door" 0x3510}
+	{Tags "keep_places_without_door" 0x2c58}
+	{Tags "keep_places_without_door" 0x1f85}
+	{Tags "keep_places_without_door" 0x1f99}
+	{Tags "keep_places_without_door" 0x1fb8}
+	{Tags "keep_places_without_door" 0x2063}
+	{Tags "keep_places_without_door" 0x20c6}
+	{Tags "keep_places_without_door" 0x20c7}
+	{Tags "keep_places_without_door" 0x20c8}
+	{Tags "keep_places_without_door" 0x20c9}
+	{Tags "keep_places_without_door" 0x20e2}
+	{Tags "keep_places_without_door" 0x210c}
+	{Tags "keep_places_without_door" 0x2136}
+	{Tags "keep_places_without_door" 0x411e}
+	{Tags "keep_places_without_door" 0x4152}
+	{Tags "keep_places_without_door" 0x4153}
+	{Tags "keep_places_without_door" 0x41af}
+	{Tags "keep_places_without_door" 0x41c0}
+	{Tags "keep_places_without_door" 0x41d9}
+	{Tags "keep_places_without_door" 0x5db7}
+	{Tags "keep_places_without_door" 0x5dbf}
+	{Tags "keep_places_without_door" 0x37f7}
+	{Tags "keep_places_without_door" 0x37fc}
+	{Tags "keep_places_without_door" 0x37fd}
+	{Tags "keep_places_without_door" 0x37fe}
+	{Tags "keep_places_without_door" 0x3c38}
+	{Tags "keep_places_without_door" 0x3c60}
+	{Tags "keep_places_without_door" 0x3c75}
+	{Tags "keep_places_without_door" 0x3cef}
+	{Tags "keep_places_without_door" 0x3d15}
+	{Tags "keep_places_without_door" 0x3d1e}
+	{Tags "keep_places_without_door" 0x3d26}
+	{Tags "keep_places_without_door" 0x3d2f}
+	{Tags "keep_places_without_door" 0x3d34}
+	{Tags "keep_places_without_door" 0x413a}
+	{Tags "keep_places_without_door" 0x413b}
+	{Tags "keep_places_without_door" 0x388b}
+	{Tags "keep_places_without_door" 0x6153}
+	{Tags "keep_places_without_door" 0x1e20}
+	{Tags "keep_places_without_door" 0x3c04}
+	{Tags "keep_places_without_door" 0x3c0c}
+	{Tags "keep_places_without_door" 0x3c24}
+	{Tags "keep_places_without_door" 0x3c4b}
+	{Tags "keep_places_without_door" 0x3c54}
+	{Tags "keep_places_without_door" 0x3c5c}
+	{Tags "keep_places_without_door" 0x3c70}
+	{Tags "keep_places_without_door" 0x3a3e}
+	{Tags "keep_places_without_door" 0x5e15}
+	{Tags "keep_places_without_door" 0x5e32}
+	{Tags "keep_places_without_door" 0x135f}
+	{Tags "keep_places_without_door" 0x686d}
+	{Tags "keep_places_without_door" 0x6886}
+	{Tags "keep_places_without_door" 0x2e14}
+	{Tags "keep_places_without_door" 0x2e15}
+	{Tags "keep_places_without_door" 0x616c}
+	{Tags "keep_places_without_door" 0x3c8a}
+	{Tags "keep_places_without_door" 0x618f}
+	{Tags "keep_places_without_door" 0x6182}
+	{Tags "keep_places_without_door" 0x6183}
+	{Tags "keep_places_without_door" 0x27fa}
+	{Tags "keep_places_without_door" 0x2c67}
+	{Tags "keep_places_without_door" 0x2c7f}
+	{Tags "keep_places_without_door" 0x2d13}
+	{Tags "keep_places_without_door" 0x2d14}
+	{Tags "keep_places_without_door" 0x2d5c}
+	{Tags "keep_places_without_door" 0x2d5d}
+	{Tags "keep_places_without_door" 0x2d5e}
+	{Tags "keep_places_without_door" 0x2d5f}
+	{Tags "keep_places_without_door" 0x2da4}
+	{Tags "keep_places_without_door" 0x2de8}
+	{Tags "keep_places_without_door" 0x2de9}
+	{Tags "keep_places_without_door" 0x2ded}
+	{Tags "keep_places_without_door" 0x3910}
+	{Tags "keep_places_without_door" 0x3911}
+	{Tags "keep_places_without_door" 0x3912}
+	{Tags "keep_places_without_door" 0x3913}
+	{Tags "keep_places_without_door" 0x3914}
+	{Tags "keep_places_without_door" 0x61e2}
+	{Tags "keep_places_without_door" 0x6208}
+	{Tags "keep_places_without_door" 0x42f6}
+	{Tags "keep_places_without_door" 0x2e5a}
+	{Tags "keep_places_without_door" 0x5dc5}
+	{Tags "keep_places_without_door" 0x5dd4}
+	{Tags "keep_places_without_door" 0x5ded}
+	{Tags "keep_places_without_door" 0x38e4}
+	{Tags "keep_places_without_door" 0x3906}
+	{Tags "keep_places_without_door" 0x3941}
+	{Tags "keep_places_without_door" 0x41ab}
+	{Tags "keep_places_without_door" 0x3a89}
+	{Tags "keep_places_without_door" 0x3a8a}
+	{Tags "keep_places_without_door" 0x70fa}
+	{Tags "keep_places_without_door" 0x70fb}
+	{Tags "keep_places_without_door" 0x7175}
+	{Tags "keep_places_without_door" 0x7184}
+	{Tags "keep_places_without_door" 0x3f17}
+	{Tags "keep_places_without_door" 0x3cc0}
+	{Tags "keep_places_without_door" 0x3cc2}
+	{Tags "keep_places_without_door" 0x3cc3}
+	{Tags "keep_places_without_door" 0x3cc9}
+	{Tags "keep_places_without_door" 0x4d19}
+	{Tags "keep_places_without_door" 0x4d1a}
+	{Tags "keep_places_without_door" 0x2f44}
+	{Tags "keep_places_without_door" 0x2f46}
+	{Tags "keep_places_without_door" 0x680d}
+	{Tags "keep_places_without_door" 0x3c55}
+	{Tags "keep_places_without_door" 0x708a}
+	{Tags "keep_places_without_door" 0x709e}
+	{Tags "keep_places_without_door" 0x3c37}
+	{Tags "camonone" "brust_mode" 0x4114}
+	{Tags "camonone" "brust_mode" 0x38c4}
+	{Tags "camonone" "texmod_set" "brust_mode" 0x38c7}
+	{Tags "camonone" "brust_mode" 0x53c9}
+	{Tags "camonone" "brust_mode" 0x53ca}
+	{Tags "camonone" "brust_mode" 0x53cb}
+	{Tags "camonone" "texmod_set" "brust_mode" 0x2d16}
+	{Tags "camonone" "texmod_set" "brust_mode" 0x2dec}
+	{Tags "camonone" "brust_mode" 0x411c}
+	{Tags "camonone" "brust_mode" 0x411d}
+	{Tags "camonone" "brust_mode" 0x411f}
+	{Tags "camonone" "brust_mode" 0x7182}
+	{Tags "camonone" "brust_mode" 0x4d1b}
+	{Tags "camonone" "brust_mode" 0x4113}
+	{Tags "camonone" "brust_mode" 0x4115}
+	{Tags "camonone" "texmod_set" "brust_mode" 0x38c5}
+	{Tags "camonone" "brust_mode" 0x53c8}
+	{Tags "camonone" "brust_mode" 0x4140}
+	{Tags "camonone" "brust_mode" 0x1b34}
+	{Tags "camonone" "brust_mode" 0x6263}
+	{Tags "camonone" "brust_mode" 0x6266}
+	{Tags "camonone" "texmod_set" "brust_mode" 0x38c6}
+	{Tags "camonone" "brust_mode" 0x5302}
+	{Tags "camonone" "brust_mode" 0x5303}
+	{Tags "camonone" "brust_mode" 0x1b33}
+	{Brain 0x4114
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Brain 0x38c4
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Brain 0x38c7
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Brain 0x53c9
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Brain 0x53ca
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Brain 0x53cb
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Brain 0x2d16
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Brain 0x2dec
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Brain 0x411c
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Brain 0x411d
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Brain 0x411f
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Brain 0x7182
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Brain 0x4d1b
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Brain 0x4113
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Brain 0x4115
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Brain 0x38c5
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Brain 0x53c8
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Brain 0x4140
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Brain 0x1b34
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Brain 0x6263
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Brain 0x6266
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Brain 0x38c6
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Brain 0x5302
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Brain 0x5303
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Brain 0x1b33
+		{Properties
+			{fire_mode hold}
+		}
+	}
+	{Environment "skirmish/jap-khalkhingol"}
+	{Helpers
+		{reinforcements
+			{scoreTotal 0}
+			{scoreCurrent 0}
+		}
+	}
+	{Fog 0}
+}

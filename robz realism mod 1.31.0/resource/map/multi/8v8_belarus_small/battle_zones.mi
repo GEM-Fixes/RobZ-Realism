@@ -1,0 +1,800 @@
+{mission
+	{Entity "flag_point_1" 0x8000
+		{Position 441.49 661.19}
+		{Skeleton
+			{MtlParams
+				{"specular color" "e6e6e6ff"}
+			}
+		}
+		{Extender "map_point"
+			{name f1}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 1}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 1}
+	}
+	{Entity "flag_point_2" 0x8001
+		{Position -6405.87 -6103.41 66.93}
+		{Skeleton
+			{MtlParams
+				{"specular color" "e6e6e6ff"}
+			}
+		}
+		{Extender "map_point"
+			{name f2}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 2}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 2}
+	}
+	{Entity "flag_point_3" 0x8002
+		{Position -989.28 -624.47 15.03}
+		{Skeleton
+			{MtlParams
+				{"specular color" "e6e6e6ff"}
+			}
+		}
+		{Extender "map_point"
+			{name f3}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 3}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 3}
+	}
+	{Entity "flag_point_4" 0x8003
+		{Position -874.24 -3354.83 -16.49}
+		{Skeleton
+			{MtlParams
+				{"specular color" "e6e6e6ff"}
+			}
+		}
+		{Extender "map_point"
+			{name f4}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 4}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 4}
+	}
+	{Entity "flag_point_5" 0x8004
+		{Position 1847.16 1969.36}
+		{Skeleton
+			{MtlParams
+				{"specular color" "e6e6e6ff"}
+			}
+		}
+		{Extender "map_point"
+			{name f5}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 5}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 5}
+	}
+	{Entity "flag_point_6" 0x8005
+		{Position 5729.06 5197.01 139.03}
+		{Skeleton
+			{MtlParams
+				{"specular color" "e6e6e6ff"}
+			}
+		}
+		{Extender "map_point"
+			{name f6}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 6}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 6}
+	}
+	{Entity "flag_point_7" 0x8006
+		{Position 1649.1 -1112.06 86.99}
+		{Skeleton
+			{MtlParams
+				{"specular color" "e6e6e6ff"}
+			}
+		}
+		{Extender "map_point"
+			{name f7}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 7}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 7}
+	}
+	{Entity "flag_point_8" 0x8007
+		{Position -920.43 2012.37}
+		{Skeleton
+			{MtlParams
+				{"specular color" "e6e6e6ff"}
+			}
+		}
+		{Extender "map_point"
+			{name f8}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 8}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 8}
+	}
+	{Entity "flag_point_9" 0x8008
+		{Position 7145.12 3636.91 80.57}
+		{Skeleton
+			{MtlParams
+				{"specular color" "e6e6e6ff"}
+			}
+		}
+		{Extender "map_point"
+			{name f9}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 9}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 9}
+	}
+	{Entity "flag_point_10" 0x8009
+		{Position -3718.66 -3280.91}
+		{Skeleton
+			{MtlParams
+				{"specular color" "e6e6e6ff"}
+			}
+		}
+		{Extender "map_point"
+			{name f10}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 10}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 10}
+	}
+	{Entity "flag_point_11" 0x800a
+		{Position -6413 -3458.78}
+		{Skeleton
+			{MtlParams
+				{"specular color" "e6e6e6ff"}
+			}
+		}
+		{Extender "map_point"
+			{name f11}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 11}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 11}
+	}
+	{Entity "flag_point_12" 0x800b
+		{Position -3823.84 -6117.51 99.01}
+		{Skeleton
+			{MtlParams
+				{"specular color" "e6e6e6ff"}
+			}
+		}
+		{Extender "map_point"
+			{name f12}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 12}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 12}
+	}
+	{Entity "flag_point_13" 0x800c
+		{Position 3776.17 3705.13 72.43}
+		{Skeleton
+			{MtlParams
+				{"specular color" "e6e6e6ff"}
+			}
+		}
+		{Extender "map_point"
+			{name f13}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 13}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 13}
+	}
+	{Entity "flag_point_14" 0x800d
+		{Position 4446.71 6837.22 44.7}
+		{Skeleton
+			{MtlParams
+				{"specular color" "e6e6e6ff"}
+			}
+		}
+		{Extender "map_point"
+			{name f14}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 14}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 14}
+	}
+	{Entity "flag_point_15" 0x800e
+		{Position 4607.91 1460.47 149.03}
+		{Skeleton
+			{MtlParams
+				{"specular color" "e6e6e6ff"}
+			}
+		}
+		{Extender "map_point"
+			{name f15}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 15}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 15}
+	}
+	{Entity "flag_point_16" 0x800f
+		{Position 1930.85 4721.28 74.21}
+		{Skeleton
+			{MtlParams
+				{"specular color" "e6e6e6ff"}
+			}
+		}
+		{Extender "map_point"
+			{name f16}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 16}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 16}
+	}
+	{Entity "flag_point_17" 0x8010
+		{Position -3426.32 -462.39}
+		{Skeleton
+			{MtlParams
+				{"specular color" "e6e6e6ff"}
+			}
+		}
+		{Extender "map_point"
+			{name f17}
+			{zoneA 12}
+			{zoneB 12}
+			{phase 0}
+			{order 17}
+			{show All}
+			{visor MapPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 17}
+	}
+	{Entity "map_point" 0x8011
+		{Position 7172.67 -5551.39 35.05}
+		{xform zl 96.65}
+		{Extender "map_point"
+			{name a8}
+			{team a}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 8}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 18}
+	}
+	{Entity "map_point" 0x8012
+		{Position 5420.55 -7172.64 100.99}
+		{xform zl 131.07}
+		{Extender "map_point"
+			{name a7}
+			{team a}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 7}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 19}
+	}
+	{Entity "map_point" 0x8013
+		{Position 6905.78 -6617.2}
+		{xform zl 138.87}
+		{Extender "map_point"
+			{name a6}
+			{team a}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 6}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 20}
+	}
+	{Entity "map_point" 0x8014
+		{Position 5921.49 -6287.4}
+		{xform zl 132.71}
+		{Extender "map_point"
+			{name a3}
+			{team a}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 3}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 21}
+	}
+	{Entity "map_point" 0x8015
+		{Position 6708.58 -6872.01}
+		{xform zl 150}
+		{Extender "map_point"
+			{name a5}
+			{team a}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 5}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 22}
+	}
+	{Entity "map_point" 0x8016
+		{Position 6149.28 -6013.92 89.07}
+		{xform zl 140.69}
+		{Extender "map_point"
+			{name a4}
+			{team a}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 4}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 23}
+	}
+	{Entity "map_point" 0x8017
+		{Position 5804.75 -6843.96 70.98}
+		{xform zl 134.11}
+		{Extender "map_point"
+			{name a2}
+			{team a}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 2}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 24}
+	}
+	{Entity "map_point" 0x8018
+		{Position 6898.51 -5814.25}
+		{xform zl 137.07}
+		{Extender "map_point"
+			{name a1}
+			{team a}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 1}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 25}
+	}
+	{Entity "map_point" 0x8019
+		{Position -7129.87 6560.51 60.99}
+		{xform zl -61.85}
+		{Extender "map_point"
+			{name b8}
+			{team b}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 8}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 26}
+	}
+	{Entity "map_point" 0x801a
+		{Position -5247.44 8260.36 107.03}
+		{xform zl -27.43}
+		{Extender "map_point"
+			{name b7}
+			{team b}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 7}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 27}
+	}
+	{Entity "map_point" 0x801b
+		{Position -6722.49 7648.57}
+		{xform zl -44.8}
+		{Extender "map_point"
+			{name b6}
+			{team b}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 6}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 28}
+	}
+	{Entity "map_point" 0x801c
+		{Position -5811.27 7120.29}
+		{xform zl -45.94}
+		{Extender "map_point"
+			{name b3}
+			{team b}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 3}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 29}
+	}
+	{Entity "map_point" 0x801d
+		{Position -6509.4 7890.27}
+		{xform zl -33.67}
+		{Extender "map_point"
+			{name b5}
+			{team b}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 5}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 30}
+	}
+	{Entity "map_point" 0x801e
+		{Position -6040.21 6847.86 83.76}
+		{xform zl -39.05}
+		{Extender "map_point"
+			{name b4}
+			{team b}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 4}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 31}
+	}
+	{Entity "map_point" 0x801f
+		{Position -5760.22 7733.4 124.99}
+		{xform zl -39.88}
+		{Extender "map_point"
+			{name b2}
+			{team b}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 2}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 32}
+	}
+	{Entity "map_point" 0x8020
+		{Position -6817.9 6881.71}
+		{xform zl -38.01}
+		{Extender "map_point"
+			{name b1}
+			{team b}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 1}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 33}
+	}
+	{Tags "keep_places_without_door" 0x450}
+	{Tags "keep_places_without_door" 0x4769}
+	{Tags "keep_places_without_door" 0x476d}
+	{Tags "keep_places_without_door" 0x1069}
+	{Tags "keep_places_without_door" 0x61e5}
+	{Tags "keep_places_without_door" 0x61e4}
+	{Tags "keep_places_without_door" 0x5854}
+	{Tags "keep_places_without_door" 0x58b5}
+	{Tags "keep_places_without_door" 0x1846}
+	{Tags "keep_places_without_door" 0x29f}
+	{Tags "keep_places_without_door" 0x240f}
+	{Tags "keep_places_without_door" 0x21df}
+	{Tags "keep_places_without_door" 0x31b2}
+	{Tags "keep_places_without_door" 0x4842}
+	{Tags "keep_places_without_door" 0x1272}
+	{Tags "keep_places_without_door" 0x127f}
+	{Tags "keep_places_without_door" 0x197c}
+	{Tags "keep_places_without_door" 0x1981}
+	{Tags "keep_places_without_door" 0x390f}
+	{Tags "keep_places_without_door" 0xa22}
+	{Tags "keep_places_without_door" 0x3c05}
+	{Tags "keep_places_without_door" 0xe4a}
+	{Tags "keep_places_without_door" 0x375}
+	{Tags "keep_places_without_door" 0x4bb}
+	{Tags "keep_places_without_door" 0xc14}
+	{Tags "keep_places_without_door" 0x7027}
+	{Tags "keep_places_without_door" 0x1001}
+	{Tags "keep_places_without_door" 0x40d2}
+	{Tags "keep_places_without_door" 0x3107}
+	{Tags "keep_places_without_door" 0x449}
+	{Tags "keep_places_without_door" 0x50b}
+	{Tags "keep_places_without_door" 0x40e6}
+	{Tags "keep_places_without_door" 0x41db}
+	{Tags "keep_places_without_door" 0x407}
+	{Tags "keep_places_without_door" 0x410}
+	{Tags "keep_places_without_door" 0x314c}
+	{Tags "keep_places_without_door" 0x60a6}
+	{Tags "keep_places_without_door" 0x5023}
+	{Tags "keep_places_without_door" 0x2168}
+	{Tags "keep_places_without_door" 0x4663}
+	{Tags "keep_places_without_door" 0x4686}
+	{Tags "keep_places_without_door" 0x10d2}
+	{Tags "keep_places_without_door" 0x7c9}
+	{Tags "keep_places_without_door" 0x753}
+	{Tags "keep_places_without_door" 0x550}
+	{Tags "keep_places_without_door" 0x4401}
+	{Tags "keep_places_without_door" 0x1405}
+	{Tags "keep_places_without_door" 0x5e4}
+	{Tags "keep_places_without_door" 0x61f}
+	{Tags "keep_places_without_door" 0x4402}
+	{Tags "keep_places_without_door" 0x73e}
+	{Tags "keep_places_without_door" 0x108f}
+	{Tags "keep_places_without_door" 0x501e}
+	{Tags "keep_places_without_door" 0x760}
+	{Tags "keep_places_without_door" 0x84c}
+	{Tags "keep_places_without_door" 0x4cca}
+	{Tags "keep_places_without_door" 0x4cc9}
+	{Tags "keep_places_without_door" 0x2bd5}
+	{Tags "keep_places_without_door" 0xa5b}
+	{Tags "keep_places_without_door" 0xa9b}
+	{Tags "keep_places_without_door" 0xac5}
+	{Tags "keep_places_without_door" 0xaf4}
+	{Tags "keep_places_without_door" 0xc2a}
+	{Tags "keep_places_without_door" 0xc3b}
+	{Tags "keep_places_without_door" 0xd8b}
+	{Tags "keep_places_without_door" 0xe64}
+	{Tags "keep_places_without_door" 0x2ecf}
+	{Tags "keep_places_without_door" 0xf62}
+	{Tags "keep_places_without_door" 0x1364}
+	{Tags "keep_places_without_door" 0x13a8}
+	{Tags "keep_places_without_door" 0x147e}
+	{Tags "keep_places_without_door" 0x14cf}
+	{Tags "keep_places_without_door" 0x14da}
+	{Tags "keep_places_without_door" 0x14f3}
+	{Tags "keep_places_without_door" 0x1506}
+	{Tags "keep_places_without_door" 0x166b}
+	{Tags "keep_places_without_door" 0x7059}
+	{Tags "keep_places_without_door" 0x49d6}
+	{Tags "keep_places_without_door" 0xf0e}
+	{Tags "keep_places_without_door" 0xfe9}
+	{Tags "keep_places_without_door" 0x3bdd}
+	{Tags "keep_places_without_door" 0x3bf6}
+	{Tags "keep_places_without_door" 0x4bfe}
+	{Tags "keep_places_without_door" 0x4c2f}
+	{Tags "keep_places_without_door" 0x4c1e}
+	{Tags "keep_places_without_door" 0x3244}
+	{Tags "keep_places_without_door" 0x11a3}
+	{Tags "keep_places_without_door" 0x2e29}
+	{Tags "keep_places_without_door" 0x2e2a}
+	{Tags "keep_places_without_door" 0x11c8}
+	{Tags "keep_places_without_door" 0x1235}
+	{Tags "keep_places_without_door" 0x2985}
+	{Tags "keep_places_without_door" 0x2f96}
+	{Tags "keep_places_without_door" 0x4033}
+	{Tags "keep_places_without_door" 0x4078}
+	{Environment "multi/sequence_rain/10"}
+	{Helpers
+		{reinforcements
+			{scoreTotal 0}
+			{scoreCurrent 0}
+		}
+	}
+	{Fog 1}
+}

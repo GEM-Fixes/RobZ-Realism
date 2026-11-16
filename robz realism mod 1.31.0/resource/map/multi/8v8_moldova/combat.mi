@@ -1,0 +1,324 @@
+{mission
+	{Entity "map_point" 0x800b
+		{Position 6886.39 8363.52 0.03}
+		{xform zl -147.81}
+		{Extender "map_point"
+			{team a}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 1}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 12}
+	}
+	{Entity "map_point" 0x800c
+		{Position 7338.16 7913.67 0.03}
+		{xform zl -147.81}
+		{Extender "map_point"
+			{team a}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 2}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 13}
+	}
+	{Entity "map_point" 0x800d
+		{Position 7743.09 7505.21 0.03}
+		{xform zl -147.81}
+		{Extender "map_point"
+			{team a}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 3}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 14}
+	}
+	{Entity "map_point" 0x800e
+		{Position 8183.93 7086.63 0.03}
+		{xform zl -147.81}
+		{Extender "map_point"
+			{team a}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 4}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 15}
+	}
+	{Entity "map_point" 0x800f
+		{Position 8627.23 6697.28 0.03}
+		{xform zl -147.81}
+		{Extender "map_point"
+			{team a}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 5}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 16}
+	}
+	{Entity "map_point" 0xc000
+		{Position -6482.32 -8576.92 0.03}
+		{xform zl 32.2}
+		{Extender "map_point"
+			{team b}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 1}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 17}
+	}
+	{Entity "map_point" 0xc001
+		{Position -6934.17 -8127.15 0.03}
+		{xform zl 32.2}
+		{Extender "map_point"
+			{team b}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 2}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 18}
+	}
+	{Entity "map_point" 0xc002
+		{Position -7339.19 -7718.78 0.03}
+		{xform zl 32.2}
+		{Extender "map_point"
+			{team b}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 3}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 19}
+	}
+	{Entity "map_point" 0xc003
+		{Position -7780.11 -7300.28 0.03}
+		{xform zl 32.2}
+		{Extender "map_point"
+			{team b}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 4}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 20}
+	}
+	{Entity "map_point" 0xc004
+		{Position -8223.49 -6911.01 0.03}
+		{xform zl 32.2}
+		{Extender "map_point"
+			{team b}
+			{zoneA 0}
+			{zoneB 0}
+			{phase 0}
+			{order 5}
+			{visor SpawnPoint}
+			{allow
+				{enableCapture}
+				{enableRelease}
+			}
+		}
+		{Player 0}
+		{MID 21}
+	}
+	{Tags "keep_places_without_door" 0x4069}
+	{Tags "keep_places_without_door" 0x40a5}
+	{Tags "keep_places_without_door" 0x601e}
+	{Tags "keep_places_without_door" 0x2053}
+	{Tags "keep_places_without_door" 0x3017}
+	{Tags "keep_places_without_door" 0x2020}
+	{Tags "keep_places_without_door" 0x5068}
+	{Tags "keep_places_without_door" 0x38b}
+	{Tags "keep_places_without_door" 0x206e}
+	{Tags "keep_places_without_door" 0x3015}
+	{Tags "keep_places_without_door" 0x8ed}
+	{Tags "keep_places_without_door" 0x4068}
+	{Tags "keep_places_without_door" 0x157}
+	{Tags "keep_places_without_door" 0x2043}
+	{Tags "keep_places_without_door" 0x4012}
+	{Tags "keep_places_without_door" 0x2036}
+	{Tags "keep_places_without_door" 0x6053}
+	{Tags "keep_places_without_door" 0x2087}
+	{Tags "keep_places_without_door" 0x4a9}
+	{Tags "keep_places_without_door" 0x503}
+	{Tags "keep_places_without_door" 0x8b0}
+	{Tags "keep_places_without_door" 0x40fb}
+	{Tags "keep_places_without_door" 0x4032}
+	{Tags "keep_places_without_door" 0x10a1}
+	{Tags "keep_places_without_door" 0x4120}
+	{Tags "keep_places_without_door" 0x613e}
+	{Tags "keep_places_without_door" 0x71a}
+	{Tags "keep_places_without_door" 0x70a}
+	{Tags "keep_places_without_door" 0x2008}
+	{Tags "keep_places_without_door" 0x5038}
+	{Tags "keep_places_without_door" 0x20d7}
+	{Tags "keep_places_without_door" 0x70e}
+	{Tags "keep_places_without_door" 0x607a}
+	{Tags "keep_places_without_door" 0x60a3}
+	{Tags "keep_places_without_door" 0x4960}
+	{Tags "keep_places_without_door" 0x5c04}
+	{Tags "keep_places_without_door" 0x142f}
+	{Tags "keep_places_without_door" 0x142e}
+	{Tags "keep_places_without_door" 0x7006}
+	{Tags "keep_places_without_door" 0x702d}
+	{Tags "keep_places_without_door" 0x308b}
+	{Tags "keep_places_without_door" 0x30a0}
+	{Tags "keep_places_without_door" 0x2115}
+	{Tags "keep_places_without_door" 0x380e}
+	{Tags "keep_places_without_door" 0x4e08}
+	{Tags "keep_places_without_door" 0x25f2}
+	{Tags "keep_places_without_door" 0x100b}
+	{Tags "keep_places_without_door" 0x100e}
+	{Tags "keep_places_without_door" 0x3002}
+	{Tags "keep_places_without_door" 0x3016}
+	{Tags "keep_places_without_door" 0x2047}
+	{Tags "keep_places_without_door" 0x6f1}
+	{Tags "keep_places_without_door" 0x601d}
+	{Tags "keep_places_without_door" 0x4182}
+	{Tags "keep_places_without_door" 0x609e}
+	{Tags "keep_places_without_door" 0x1000}
+	{Tags "keep_places_without_door" 0xbf2}
+	{Tags "keep_places_without_door" 0xbf3}
+	{Tags "keep_places_without_door" 0xbf4}
+	{Tags "keep_places_without_door" 0x60b2}
+	{Tags "keep_places_without_door" 0xbf5}
+	{Tags "keep_places_without_door" 0xbf6}
+	{Tags "keep_places_without_door" 0xc8b}
+	{Tags "keep_places_without_door" 0x5877}
+	{Tags "keep_places_without_door" 0xebb}
+	{Tags "keep_places_without_door" 0xee1}
+	{Tags "keep_places_without_door" 0x189a}
+	{Tags "keep_places_without_door" 0x14f1}
+	{Tags "keep_places_without_door" 0x14f2}
+	{Tags "keep_places_without_door" 0x1516}
+	{Tags "keep_places_without_door" 0x1554}
+	{Tags "keep_places_without_door" 0x1555}
+	{Tags "keep_places_without_door" 0x1556}
+	{Tags "keep_places_without_door" 0x1557}
+	{Tags "keep_places_without_door" 0x1558}
+	{Tags "keep_places_without_door" 0x1636}
+	{Tags "keep_places_without_door" 0x1692}
+	{Tags "keep_places_without_door" 0x16be}
+	{Tags "keep_places_without_door" 0x19ee}
+	{Tags "keep_places_without_door" 0x1a74}
+	{Tags "keep_places_without_door" 0x1b09}
+	{Tags "keep_places_without_door" 0x1b3f}
+	{Tags "keep_places_without_door" 0x1b67}
+	{Tags "keep_places_without_door" 0x1b90}
+	{Tags "keep_places_without_door" 0x1bc3}
+	{Tags "keep_places_without_door" 0x1d52}
+	{Tags "keep_places_without_door" 0x1d53}
+	{Tags "keep_places_without_door" 0x4cca}
+	{Tags "keep_places_without_door" 0x1d56}
+	{Tags "keep_places_without_door" 0x1d58}
+	{Tags "keep_places_without_door" 0x1dac}
+	{Tags "keep_places_without_door" 0x1dc2}
+	{Tags "keep_places_without_door" 0x1e82}
+	{Tags "keep_places_without_door" 0x4cc9}
+	{Tags "keep_places_without_door" 0x2bd5}
+	{Tags "keep_places_without_door" 0x1fde}
+	{Tags "keep_places_without_door" 0x1fdf}
+	{Tags "keep_places_without_door" 0x2504}
+	{Tags "keep_places_without_door" 0x2545}
+	{Tags "keep_places_without_door" 0x5322}
+	{Tags "keep_places_without_door" 0x4a44}
+	{Tags "keep_places_without_door" 0x30a7}
+	{Tags "keep_places_without_door" 0x30e1}
+	{Tags "keep_places_without_door" 0x2761}
+	{Tags "keep_places_without_door" 0x2762}
+	{Tags "keep_places_without_door" 0x2763}
+	{Tags "keep_places_without_door" 0x2782}
+	{Tags "keep_places_without_door" 0x2783}
+	{Tags "keep_places_without_door" 0x2784}
+	{Tags "keep_places_without_door" 0x3107}
+	{Tags "keep_places_without_door" 0x279a}
+	{Tags "keep_places_without_door" 0x27df}
+	{Tags "keep_places_without_door" 0x2878}
+	{Environment "skirmish/rus-koenigsberg"}
+	{Helpers
+		{reinforcements
+			{scoreTotal 0}
+			{scoreCurrent 0}
+		}
+		{triggers
+			{"e"
+				{condition
+				}
+				{actions
+					{"switch"
+						{"case"
+							{condition
+								{type rand}
+								{value 1}
+							}
+						}
+					}
+					{"environment"
+						{name "skirmish/rus-koenigsberg"}
+						{time -1}
+						{apply}
+					}
+				}
+			}
+		}
+	}
+	{Fog 1}
+}
