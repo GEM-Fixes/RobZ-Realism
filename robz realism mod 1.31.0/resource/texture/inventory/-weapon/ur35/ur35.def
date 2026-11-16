@@ -1,0 +1,9 @@
+{actor
+	(include "/properties/stuff_small.ext")
+	{Extension "polish_ptr_ur.mdl"}
+	{extender "stuff"
+		{item "ur35"}
+	}
+	{nogroupmesh 1}
+	{lodclass "human"}
+}

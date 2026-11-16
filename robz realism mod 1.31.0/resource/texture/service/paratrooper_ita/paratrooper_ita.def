@@ -1,0 +1,8 @@
+{game_entity
+	{Extension "ita-para-smg.mdl"}
+	{placer
+		{place "head"
+			{linkbone "head"} {entity "helmet_ita_para"} {openforcrush}
+		}
+	}
+}

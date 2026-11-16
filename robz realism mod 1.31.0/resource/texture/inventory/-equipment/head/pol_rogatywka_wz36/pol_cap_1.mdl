@@ -1,0 +1,65 @@
+;Exported by: ой
+;Date:        Wed Apr 09 16:48:04 2014
+;File:        D:\Documents\3dsmax\scenes\Helmets\Poland rogatyvka wz37\poland fieldcap officer_01.max
+{Skeleton
+	{bone "rogatyvka_officer"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{bone "rogatyvka"
+			{Matrix34
+				0.971227	0	0.238155
+				0	1	1.49969e-005
+				-0.269515	-1.54386e-005	0.962996
+				0.00489634	-0.0116465	3.20973
+			}
+			{VolumeView "rogatyvka.ply"}
+		}
+	}
+}
+{Volume "body"
+	{Box 5.22897 3.397 4.49965}
+	{Bone "rogatyvka_officer"}
+	{Matrix34
+		1	0	0
+		0	0	1
+		0	-1	0
+		-0.246204	0.0285175	4.29256
+	}
+}
+{Volume "selekt"
+	{Box 5.4957 3.71525 4.68189}
+	{Bone "rogatyvka_officer"}
+	{Matrix34
+		1	0	0
+		0	0	1
+		0	-1	0
+		-0.246204	0.0457835	4.29256
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 11.131	-6.00064	3.16158}
+			{lookat 1.28152	-0.891168	4.37249}
+			{fov 22.6199}
+			{horizon -3.3864}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction -0.171162	0.146829	-0.446256}
+			}
+			{"1"
+				{type directional}
+				{direction -0.189277	0.266067	0.378659}
+			}
+			{"2"
+				{type directional}
+				{direction -0.105484	-0.229601	-0.431458}
+			}
+		}
+	}
+}

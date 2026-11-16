@@ -1,0 +1,8 @@
+{game_entity
+	{Extension "ger-para-smg.mdl"}
+	{placer
+		{place "head"
+			{linkbone "head"} {entity "helmet_ger_m40_lw"} {openforcrush}
+		}
+	}
+}

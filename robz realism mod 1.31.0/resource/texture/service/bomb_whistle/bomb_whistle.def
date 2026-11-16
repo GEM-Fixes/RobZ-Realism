@@ -1,0 +1,20 @@
+{fx
+	{particleview "unvisible particles"
+		{entitygenerator
+			{emissionarea
+				{alpha0 0}
+				{alpha1 0}
+				{speed 0.6}
+			}
+			{particleinit
+				{speed 28.5 1.5}
+				{lifetime 1}
+			}
+			{entity "bomb_whistle_play"}
+			{totalparticles 750}
+			{timetolive 2}
+			{## ownerspeed}
+		}
+		{## offset 0 0 10}
+	}
+}

@@ -1,0 +1,8 @@
+{game_entity
+	{Extension "jap_pilot_gear.mdl"}
+	{placer
+		{place "head"
+			{linkbone "head"} {entity "jappilot_cap"}{openforcrush}
+		}
+	}
+}

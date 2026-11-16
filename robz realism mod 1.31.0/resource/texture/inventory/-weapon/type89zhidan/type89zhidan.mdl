@@ -1,0 +1,88 @@
+;Exported by: Administrator
+;Date:        Sat May 11 19:32:59 2013
+;File:        C:\Users\Administrator\Desktop\ÖÀµ¯Í².max
+{Skeleton
+	{bone "type89zhidan"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "type89zhidan.ply"}
+		{bone "foresight3"
+			{Matrix34
+				0	-1	0
+				1	0	0
+				0	0	1
+				1.17272	-12.5172	0.156842
+			}
+		}
+		{bone "handle"
+			{Matrix34
+				0	0	-1
+				0	1	0
+				1	0	0
+				0.841113	0.996901	0.10486
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 23.1538 3.36158 1.17113}
+	{Bone "type89zhidan"}
+	{Matrix34
+		0	-1	0
+		1	0	0
+		0	0	1
+		-0.117868	0.235153	0.0602603
+	}
+}
+{Volume "select"
+	{Box 27.7845 9.72703 4.3449}
+	{Bone "type89zhidan"}
+	{Matrix34
+		0	-1	0
+		1	0	0
+		0	0	1
+		-1.39052	0.429932	0.414034
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 5.21809	0.388727	30.0344}
+			{lookat 2.42964	0.19786	13.5051}
+			{fov 23.1925}
+			{horizon -92.0442}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction -0.208636	-0.0442343	-0.452233}
+			}
+			{"1"
+				{type point}
+				{position -0.139138	-8.53512	4.11676}
+			}
+		}
+	}
+	{"Stuff_primary"
+		{camera
+			{origin 1.90374	-0.139249	30.9838}
+			{lookat 1.20641	-0.22214	13.7286}
+			{fov 27.3056}
+			{horizon -27.0443}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction -0.0942008	0.117433	-0.476797}
+			}
+			{"1"
+				{type point}
+				{position -4.12448	11.1398	4.09361}
+			}
+		}
+	}
+}

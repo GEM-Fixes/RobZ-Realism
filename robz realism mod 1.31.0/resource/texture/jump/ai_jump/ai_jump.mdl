@@ -1,0 +1,23 @@
+{Skeleton
+{bone "ai_jump"}
+	{bone "basis"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{bone "ai_jump"
+			{Matrix34
+				-1	0	0
+				0	1	0
+				0	0	-1
+				1.18733	-0.0211184	-0.413464
+			}
+			;{VolumeView "pla02.ply"}
+		}
+	}
+}
+{Volume "crown"
+	{Box 14.4937 7.78676 32.4125}
+	{Bone "basis"}    
+}

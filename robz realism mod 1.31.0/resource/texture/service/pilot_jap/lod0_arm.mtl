@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/humanskin/jap/medium_lod0_arm_clean"}
+	{bump "$/humanskin/jap/medium_lod0_arm_clean-fx"}
+	{specular "$/humanskin/jap/medium_lod0_arm_clean-gg"}
+	{color "229 229 229 9"}
+	{blend none}
+}

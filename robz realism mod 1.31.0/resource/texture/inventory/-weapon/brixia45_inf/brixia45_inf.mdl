@@ -1,0 +1,87 @@
+;Exported by: dpostnikov
+;Date:        Fri May 25 16:25:50 2018
+;File:        C:\Users\dpostnikov\Documents\3dsmax\scenes\brixia45_inf.max
+{Skeleton
+	{bone "brixia45_inf"
+		{parameters "CommonMesh;ID=rifle;"}
+		{Matrix34
+			1	0	0
+			0	-1	0
+			0	0	1
+			3	0	0
+		}
+		{VolumeView "brixia45_inf.ply"}
+		{bone "handle"
+			{Matrix34
+				1	0	0
+				0	0	-1
+				0	1	0
+				-0.163499	-3.31679	-0.002579
+			}
+		}
+		{bone "foresight3"
+			{Position 8.44214	5.3773	0.0494036}
+		}
+	}
+}
+{Volume "body"
+	{Box 16.7323 3.36158 1.17113}
+	{Bone "brixia45_inf"}
+	{Matrix34
+		0.793353	0.608761	0
+		-0.608762	0.793354	0
+		0	0	1
+		1.60712	0.107196	-0.0471784
+	}
+}
+{Volume "select"
+	{Box 19.9016 7.87402 5.11811}
+	{Bone "brixia45_inf"}
+	{Position -5.62337	-4.17833	0.00739682}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 4.20468	-5.39987	30.6415}
+			{lookat 3.53968	-2.68744	14.1121}
+			{fov 45}
+			{horizon -177.044}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 14.5862	-2.86581	6.12605}
+			}
+			{"1"
+				{type directional}
+				{direction -0.0792752	0.197722	-0.452351}
+			}
+			{"2"
+				{type point}
+				{position -3.62747	-2.25956	4.55671}
+			}
+		}
+	}
+	{"Stuff_primary"
+		{camera
+			{origin 6.80412	-5.4782	31.2041}
+			{lookat 6.11252	-2.65727	14.0135}
+			{fov 45}
+			{horizon -177.044}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 14.5862	-2.86581	6.12605}
+			}
+			{"1"
+				{type directional}
+				{direction -0.0792752	0.197722	-0.452351}
+			}
+			{"2"
+				{type point}
+				{position -3.62747	-2.25956	4.55671}
+			}
+		}
+	}
+}

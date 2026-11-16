@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/humanskin/jap/gillya_lod1_head_normal"}
+	{bump "$/humanskin/jap/gillya_lod0_head_normal-fx"}
+	{specular "$/humanskin/jap/gillya_lod0_head_normal-gg"}
+	{color "229 229 229 9"}
+	{blend none}
+}

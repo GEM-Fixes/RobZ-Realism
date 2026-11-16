@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "$/humanskin/ita/officer boots"}
+	{blend none}
+}

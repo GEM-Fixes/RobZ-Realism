@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "type97tmg"}
+        	{bump "type97tmg_bp"}
+	{specular "type97tmg_sp"}
+	{color "230 230 230 152"}
+	{blend test}
+}

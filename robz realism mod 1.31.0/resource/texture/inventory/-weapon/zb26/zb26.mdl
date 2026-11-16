@@ -1,0 +1,66 @@
+;Exported by: Joe
+;Date:        Fri Aug 10 02:14:26 2012
+;File:        C:\Users\Joe\Desktop\Models\Completed Full Models\BF2 Completed, Full Models\ZB26\COMPLETED\ZB26.max
+{Skeleton
+	{bone "zb26__genericfirearm"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "zb26__genericfirearm.ply"}
+		{bone "fxshell"
+			{Matrix34
+				0	0	1
+				0	1	0
+				-1	0	0
+				3.06177	2.30704	0.2994
+			}
+		}
+		{bone "foresight3"
+			{Position 17.6088	2.07862	-0.0121856}
+		}
+		{bone "handle"
+			{Matrix34
+				1	0	0
+				0	-0.00530239	-0.999986
+				0	0.999986	-0.00530239
+				5.75381	2.62711	-0.0421015
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 1.09129 28.3822 3.72588}
+	{Bone "zb26__genericfirearm"}
+	{Matrix34
+		0	0	1.34328
+		0.824172	1.49338e-005	0
+		-3.60048e-005	1.98704	0
+		4.79698	2.4701	0.0438735
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 7.91955	-2.09315	-27.205}
+			{lookat 7.77635	-2.07728	-25.4223}
+			{fov 45}
+			{horizon 83.7992}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 7.84908	-3.29048	-24.6127}
+			}
+			{"1"
+				{type directional}
+				{direction -0.16522	0.0523774	0.468998}
+			}
+			{"2"
+				{type point}
+				{position 7.60642	-1.36624	-24.3959}
+			}
+		}
+	}
+}

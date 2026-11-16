@@ -1,0 +1,5 @@
+{material bump
+	{diffuse "bolt"}
+	{bump "bolt_b"}
+	{blend test}
+}

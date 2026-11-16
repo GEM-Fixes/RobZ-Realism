@@ -1,0 +1,78 @@
+{game_entity
+	{extension "/properties/piece.ext"}
+	{obstacleId "nothing"}
+     {Skeleton
+	{bone "basis"
+		{parameters "CommonMesh;"}
+		{Orientation
+			-1	0	0
+			0	-1	0
+			0	0	-1
+		}
+		{bone "trench1"
+			{Orientation
+				-1	0	0
+				0	1	0
+				0	0	1
+			}
+			{Position	0	0.7	0}
+		}
+		{bone "trench2"
+			{Orientation
+				-1	0	0
+				0	-1	0
+				0	0	-1
+			}
+			{Position	0	-0.7	0}
+		}
+		{bone "front_sandbag"
+			{Orientation
+				-1	0	0
+				0	-1	0
+				0	0	-1
+			}
+			{Position	-75	0	0}
+		}
+		{bone "left_sandbag"
+			{Orientation
+				-1	0	0
+				0	-1	0
+				0	0	-1
+			}
+			{Position	-25	59	-2}
+		}
+		{bone "left_sandbag2"
+			{Orientation
+				-1	0	0
+				0	-1	0
+				0	0	-1
+			}
+			{Position	15	59	-2}
+		}
+		{bone "right_sandbag"
+			{Orientation
+				-1	0	0
+				0	-1	0
+				0	0	-1
+			}
+			{Position	-25	-59	-2}
+		}
+		{bone "right_sandbag2"
+			{Orientation
+				-1	0	0
+				0	-1	0
+				0	0	-1
+			}
+			{Position	15	-59	-2}
+		}
+		{bone "netting"
+			{Orientation
+				-1	0	0
+				0	-1	0
+				0	0	-1
+			}
+			{Position	-10	0	10}
+		}
+	}
+     }
+}

@@ -1,0 +1,8 @@
+{game_entity
+	{Extension "ger_pilot.mdl"}
+      	{placer
+		{place "head"
+			{linkbone "head"} {entity "tank_cap1_ger"}{openforcrush}
+		}
+	}
+}

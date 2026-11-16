@@ -1,0 +1,6 @@
+{material bump
+	{diffuse "mkb_42h"}
+	{specular "mkb_42h_sp"}
+	{color "229 229 229 152"}
+	{blend none}
+}

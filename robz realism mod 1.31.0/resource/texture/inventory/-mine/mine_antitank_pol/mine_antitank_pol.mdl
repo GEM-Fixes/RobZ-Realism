@@ -1,0 +1,76 @@
+;Exported by: Sergey
+;Date:        Wed Dec 17 15:49:25 2014
+;File:        C:\Users\Sergey\Documents\3dsmax\scenes\Mina przeciwñzolgowa wz.37\wz37.max
+{Skeleton
+	{bone "wz37"
+		{parameters "ID=mgun;"}
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{LODView
+			{VolumeView "wz37.ply"}
+			{VolumeView "wz37_lod1.ply"}
+		}
+	}
+}
+{Volume "body1"
+	{Cylinder 2.99049 2.11671}
+	{Bone "wz37"}
+	{Position 0.00808012	0.0229307	0.335875}
+}
+{Volume "body"
+	{Cylinder 3.05121 2.05549}
+	{Bone "wz37"}
+	{Position 0.00808012	0.0229307	0.305262}
+}
+{Volume "select"
+	{Cylinder 3.16992 2.22469}
+	{Bone "wz37"}
+	{Position 0.00808012	0.0229307	0.389861}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin -4.13031	7.55984	9.86582}
+			{lookat -2.86046	5.38338	6.86281}
+			{fov 33.3985}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction 0.414969	0.236377	-0.148073}
+			}
+			{"1"
+				{type directional}
+				{direction -0.175366	0.277374	-0.37724}
+			}
+			{"2"
+				{type directional}
+				{direction -0.0185673	-0.499351	0.0174254}
+			}
+		}
+	}
+	{"Stuff_secondary"
+		{camera
+			{origin -5.6732	10.2042	13.5145}
+			{lookat -2.86046	5.38338	6.86281}
+			{fov 30}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction -0.175366	0.277374	-0.37724}
+			}
+			{"1"
+				{type directional}
+				{direction 0.414969	0.236377	-0.148073}
+			}
+			{"2"
+				{type directional}
+				{direction -0.0185673	-0.499351	0.0174254}
+			}
+		}
+	}
+}

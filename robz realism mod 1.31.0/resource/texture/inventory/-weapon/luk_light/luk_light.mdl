@@ -1,0 +1,102 @@
+;Exported by: Glit
+;Date:        Thu Jan 02 16:24:17 2014
+;File:        D:\МодСтрой\mod Stronghold\оружие\luk_light\luk_light.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{bone "foresight3"
+			{Matrix34
+				0.995573	0.0939888	0
+				-0.150176	0.988659	0
+				0	0	1
+				-1.05316	0.214237	0.12955
+			}
+		}
+		{bone "arrow"
+			{Matrix34
+				0.0933988	-0.995628	0.000945744
+				0.994863	0.0982054	0.0245742
+				-0.0181645	-0.000841861	0.999835
+				5.01839	0.882181	0.412776
+			}
+			{VolumeView "arrow.ply"}
+		}
+		{bone "body"
+			{Matrix34
+				0.991274	0.131817	0
+				-0.166643	0.986017	0
+				0	0	1
+				2.7775	0.532236	0.161423
+			}
+			{VolumeView "body.ply"}
+		}
+	}
+}
+{Volume "body1"
+	{Polyhedron "body1.vol"}
+	{Bone "basis"}
+	{Matrix34
+		0.997582	0.0694961	0
+		-0.189165	0.981945	0
+		0	0	1
+		5.93793	-3.56549	0.151838
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "basis"}
+	{Matrix34
+		0.997582	0.0694961	0
+		-0.189165	0.981945	0
+		0	0	1
+		4.078	5.18088	0.151132
+	}
+}
+{Volume "select1"
+	{Polyhedron "select1.vol"}
+	{Bone "basis"}
+	{Matrix34
+		0.997582	0.0694961	0
+		-0.189165	0.981945	0
+		0	0	1
+		4.078	5.18088	0.151132
+	}
+}
+{Volume "select"
+	{Polyhedron "select.vol"}
+	{Bone "basis"}
+	{Matrix34
+		0.997582	0.0694961	0
+		-0.189165	0.981945	0
+		0	0	1
+		5.93793	-3.56549	0.151838
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 5.58469	-3.3038	11.0303}
+			{lookat 5.15479	-0.608551	-5.04745}
+			{fov 45}
+			{horizon -177.044}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 15.4915	-1.7612	-12.7195}
+			}
+			{"1"
+				{type directional}
+				{direction -0.0707579	0.204751	-0.450633}
+			}
+			{"2"
+				{type point}
+				{position -6.74506	0.863281	-14.246}
+			}
+		}
+	}
+}

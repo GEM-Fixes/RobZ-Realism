@@ -1,0 +1,8 @@
+{Game_Entity
+	{Extension "rus_tankman_hp.mdl"}
+	{placer
+		{place "head"
+			{linkbone "head"} {entity "helmet_pilot_rus"}{openforcrush}
+		}
+	}
+}

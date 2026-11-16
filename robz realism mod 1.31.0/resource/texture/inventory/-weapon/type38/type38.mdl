@@ -1,0 +1,81 @@
+;Exported by: Administrator
+;Date:        Sun Dec 01 20:43:55 2013
+;File:        D:\³¯ÏÊMOD\Èý°Ë²½Ç¹1.max
+{Skeleton
+	{bone "type38"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "type38.ply"}
+		{bone "handle"
+			{Matrix34
+				1	0	0
+				0	0	-1
+				0	1	0
+				5.36549	1.84343	0.153943
+			}
+		}
+		{bone "foresight3"
+			{Position 18.9468	1.85866	0.205926}
+		}
+	}
+}
+{Volume "body"
+	{Box 23.1538 3.36158 1.17113}
+	{Bone "type38"}
+	{Position 5.88827	0.884454	0.109343}
+}
+{Volume "select"
+	{Box 27.7845 9.72703 4.3449}
+	{Bone "type38"}
+	{Position 5.69349	-0.388198	0.463116}
+}
+{Extender "preview"
+	{"Stuff_primary"
+		{camera
+			{origin 9.26336	-1.92402	31.0568}
+			{lookat 9.18048	-1.22669	13.8017}
+			{fov 52.1934}
+			{horizon -177.044}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 9.31128	-15.3253	5.73145}
+			}
+			{"1"
+				{type directional}
+				{direction 0.117433	0.0942009	-0.476797}
+			}
+			{"2"
+				{type point}
+				{position 8.06273	3.12216	4.14014}
+			}
+		}
+	}
+	{"Stuff"
+		{camera
+			{origin 6.96998	-6.22134	30.0781}
+			{lookat 6.77912	-3.4329	13.5487}
+			{fov 45}
+			{horizon -177.044}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 15.4215	-4.67058	5.73518}
+			}
+			{"1"
+				{type directional}
+				{direction -0.0442343	0.208636	-0.452233}
+			}
+			{"2"
+				{type point}
+				{position -2.4117	-0.86318	4.16584}
+			}
+		}
+	}
+}

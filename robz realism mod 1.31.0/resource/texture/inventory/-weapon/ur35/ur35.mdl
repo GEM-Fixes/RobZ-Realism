@@ -1,0 +1,85 @@
+;Exported by: Micha
+;Date:        Sat Apr 11 16:52:29 2009
+;File:        \\192.168.0.150\meshes\soldiers_meshes\polish\weapons\AT_wz35\exporter_wz35.max
+{Skeleton
+	{bone "at_wz35"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "at_wz35.ply"}
+		{bone "foresight3"
+			{Position 27.4348	0.780254	-0.0924781}
+		}
+		{bone "handle"
+			{Matrix34
+				1	0	0
+				0	0	-1
+				0	1	0
+				7.07898	1.51341	-0.268656
+			}
+		}
+		{bone "right_hand"
+			{Matrix34
+				0.999253	-0.0193729	-0.0334276
+				0.0201318	0.999544	0.0225164
+				0.0329761	-0.0231725	0.999188
+				3.02426	-0.0410996	0.191112
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 35.2281 3.65115 1.60087}
+	{Bone "at_wz35"}
+	{Position 9.67955	0.090219	0.15501}
+}
+{Volume "select"
+	{Box 29.9047 11.1349 3.05727}
+	{Bone "at_wz35"}
+	{Matrix34
+		1	0	0
+		0	0.999999	0
+		0	0	1
+		6.90966	1.07701	-0.241617
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 11.6892	-1.66905	27.346}
+			{lookat 10.5635	0.19269	5.29628}
+			{fov 76.4518}
+			{horizon 168}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction -0.150319	-0.0182869	-0.476518}
+			}
+			{"1"
+				{type directional}
+				{direction 0.160385	0.350124	-0.318888}
+			}
+		}
+	}
+	{"Stuff_primary"
+		{camera
+			{origin 8.33016	-2.79772	30.8197}
+			{lookat 7.03269	-0.651897	5.40524}
+			{fov 45}
+			{horizon 160}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction -0.150319	-0.0182869	-0.476518}
+			}
+			{"1"
+				{type directional}
+				{direction 0.160385	0.350124	-0.318888}
+			}
+		}
+	}
+}

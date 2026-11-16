@@ -1,0 +1,18 @@
+{game_entity
+	{extension "parachute2.mdl"}
+	{props "parachute2"}
+	{placer
+		{place "attach"
+			{linkbone "attach"} {entity "paratrooper_ger"} {group "crew"} {openforcrush}
+		}
+	}
+	{boarder
+		{anm "pose"
+			{forward	{end "pose_paratruper_flight"}}
+			{reverse	{begin "paratruper_landing"}}
+		}
+		{door "basis"}
+		{link "basis" "attach" {anm "pose"} {forward putoff} {reverse puton}}
+	}
+	{forcequantable}
+}

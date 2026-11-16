@@ -1,0 +1,8 @@
+{game_entity
+	{Extension "jap_paratrooper.mdl"}
+	{placer
+		{place "head"
+			{linkbone "head"} {entity "helmet_jap"} {openforcrush}
+		}
+	}
+}

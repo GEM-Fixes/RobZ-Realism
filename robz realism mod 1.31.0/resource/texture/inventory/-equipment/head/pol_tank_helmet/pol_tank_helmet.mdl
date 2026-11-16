@@ -1,0 +1,68 @@
+;Exported by: ой
+;Date:        Sun Apr 06 12:27:07 2014
+;File:        D:\Documents\3dsmax\scenes\Helmets\poland_tank_helmet.max
+{Skeleton
+	{bone "poland_tank_helmet"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{bone "helmen"
+			{Matrix34
+				-0.970021	0	-0.243019
+				0	-1	0
+				-0.243019	0	0.970021
+				0.0148664	-0.00401307	2.98559
+			}
+			{VolumeView "helmen.ply"}
+			{bone "remen"
+				{VolumeView "remen.ply"}
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 5.31496 3.54331 4.72441}
+	{Bone "helmen"}
+	{Matrix34
+		-0.970021	0	-0.243019
+		-0.243019	0	0.970021
+		0	1	0
+		-0.221434	0.0693326	0.826209
+	}
+}
+{Volume "select"
+	{Box 5.51181 3.74016 4.92126}
+	{Bone "helmen"}
+	{Matrix34
+		-0.970021	0	-0.243019
+		-0.243019	0	0.970021
+		0	1	0
+		-0.221434	0.0756328	0.826209
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 9.6814	-8.25522	4.09624}
+			{lookat 1.51386	-1.24217	2.82222}
+			{fov 22.6199}
+			{horizon -3.3864}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction -0.171162	0.146829	-0.446256}
+			}
+			{"1"
+				{type directional}
+				{direction -0.189277	0.266067	0.378659}
+			}
+			{"2"
+				{type directional}
+				{direction -0.105484	-0.229601	-0.431458}
+			}
+		}
+	}
+}

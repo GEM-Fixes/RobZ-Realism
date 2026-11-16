@@ -1,0 +1,8 @@
+{game_entity
+	(include "/properties/stuff_small.ext")
+	{Extension "gewehr41.mdl"}
+	{extender "stuff"
+		{item "gewehr41"}
+	}
+	{nogroupmesh 1}
+}

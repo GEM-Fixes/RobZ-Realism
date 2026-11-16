@@ -1,0 +1,8 @@
+{actor
+	{skeleton
+		{bone "basis"
+			{position 0 0 0}
+		}
+	}
+	{props "tsmoke"}
+}

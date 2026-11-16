@@ -1,0 +1,12 @@
+{actor
+	{skeleton
+		{bone "basis"
+			{position 0 0 0}
+		}	
+	}
+
+	{obstacleID "nothing"}
+	{collider "airhelp"}
+	{simulation {able 1} {disableLinked 1}}
+	{constrain ground}
+}

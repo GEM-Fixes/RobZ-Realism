@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "brixia45"}
+	{blend none}
+}

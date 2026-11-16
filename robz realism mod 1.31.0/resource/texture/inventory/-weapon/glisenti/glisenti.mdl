@@ -1,0 +1,63 @@
+;Exported by: Zeke Wolff
+;Date:        Tue Jul 23 11:44:24 2013
+;File:        -weapon/glisenti
+{Skeleton
+	{bone "glisenti"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "glisenti.ply"}
+		{bone "foresight3"
+			{Position 5.55533	1.4495	-0.0207713}
+		}
+		{bone "select"
+			{Position 1.03437	0.371359	-1.33995}
+			{visibility 0}
+		}
+	}
+}
+{Volume "body"
+	{Box 6.75451 4.59412 1.26975}
+	{Bone "glisenti"}
+	{Position 1.24524	0.333239	-0.0752566}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 0.980554	-2.08236	7.28471}
+			{lookat 1.5256	-1.02777	2.51975}
+			{fov 45}
+			{horizon -153}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 3.01407	-3.00396	2.2854}
+			}
+			{"1"
+				{type point}
+				{position 1.96085	-0.109525	3.96603}
+			}
+		}
+	}
+	{"Stuff_primary"
+		{camera
+			{origin 0.658083	-2.42595	9.14544}
+			{lookat 1.4157	-0.960076	2.52216}
+			{fov 45}
+			{horizon -153}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 1.96085	-0.109525	3.96603}
+			}
+			{"1"
+				{type point}
+				{position 3.01407	-3.00396	2.2854}
+			}
+		}
+	}
+}

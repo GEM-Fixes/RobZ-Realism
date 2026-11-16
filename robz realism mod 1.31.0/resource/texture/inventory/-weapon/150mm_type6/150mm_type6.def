@@ -1,0 +1,7 @@
+{Actor
+	(include "/properties/stuff_small.ext")
+	{Extension "76mm_34k.mdl"}
+	{extender "stuff"
+		{item "150mm_type6"}
+	}
+}

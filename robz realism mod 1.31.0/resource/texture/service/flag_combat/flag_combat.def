@@ -1,0 +1,13 @@
+{actor
+	{Extension "flag_combat.mdl"}
+	{extender "map_point"}
+	{props "steel" "map_point" "flag" "flag_combat"}
+	{able "-select"}
+	{sensor
+		{visor "main"
+    			{vision "map_point"}
+			{bone "visor"}
+		}
+		{operatableRequired 0}
+    	}
+}

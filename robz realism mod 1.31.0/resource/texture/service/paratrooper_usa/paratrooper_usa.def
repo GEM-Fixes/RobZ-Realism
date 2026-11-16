@@ -1,0 +1,8 @@
+{game_entity
+	{Extension "usa-101st-smg.mdl"}
+	{placer
+		{place "head"
+			{linkbone "head"} {entity "helmet_airborne_usa2"}{openforcrush}
+		}
+	}
+}

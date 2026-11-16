@@ -1,0 +1,82 @@
+;Exported by: Glit
+;Date:        Mon Sep 17 11:04:04 2012
+;File:        C:\Users\Glit\Desktop\crossbow_heavy.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{bone "foresight3"
+			{Matrix34
+				0.997216	0.0745644	0
+				-0.119446	0.992841	0
+				0	0	1
+				4.08891	1.70538	0.256936
+			}
+		}
+		{bone "body"
+			{Matrix34
+				0.0757473	-0.997127	0
+				0	0	-1
+				0.997127	0.0757472	0
+				4.27066	0.88602	0.267134
+			}
+			{VolumeView "body.ply"}
+		}
+		{bone "bolt"
+			{Matrix34
+				0.0757472	-0.997127	0
+				0	0	-1
+				0.997127	0.0757471	0
+				6.98034	2.00379	0.197189
+			}
+			{VolumeView "bolt.ply"}
+		}
+	}
+}
+{Volume "body"
+	{Polyhedron "body.vol"}
+	{Bone "basis"}
+	{Matrix34
+		0.992081	0.1256	0
+		-0.170199	0.98541	0
+		0	0	1
+		3.43155	0.878915	0.214251
+	}
+}
+{Volume "select"
+	{Polyhedron "select.vol"}
+	{Bone "basis"}
+	{Matrix34
+		0.992081	0.1256	0
+		-0.170199	0.98541	0
+		0	0	1
+		3.43155	0.878915	0.214251
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 4.65763	-8.60683	16.68448}
+			{lookat 5.00792	-1.65082	0.0353162}
+			{fov 45}
+			{horizon -177.044}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 11.4563	0.503965	-3.65795}
+			}
+			{"1"
+				{type directional}
+				{direction -0.0485274	0.434725	-0.242197}
+			}
+			{"2"
+				{type point}
+				{position -1.65347	2.30788	-4.16885}
+			}
+		}
+	}
+}

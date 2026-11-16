@@ -1,0 +1,60 @@
+;Exported by: sergienko
+;Date:        Thu Mar 23 12:15:54 2006
+;File:        D:\-projets1_5\3dwork\anima\gun\shot-gun\shot-gun.max
+{Skeleton
+	{bone "shotgun"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "shotgun.ply"}
+		{bone "foresight3"
+			{Position 10.2061	1.57696	0.00385904}
+		}
+		{bone "handle"
+			{Matrix34
+				1	0	0
+				0	0	-1
+				0	1	0
+				5.6965	1.79653	-0.0482147
+			}
+		}
+		{bone "shooter00"
+			{Position 10.2061	1.57696	0.356272}
+		}
+		{bone "shooter01"
+			{Position 10.2061	1.57696	-0.318067}
+		}
+	}
+}
+{Volume "body"
+	{Box 17.031 4.35267 2.75948}
+	{Bone "shotgun"}
+	{Position 1.44247	0.0440556	0.118169}
+}
+{Volume "select"
+	{Box 18.2697 6.46784 3.3361}
+	{Bone "shotgun"}
+	{Position 1.17559	-0.0766087	0.148362}
+}
+{Extender "preview"
+	{"stuff"
+		{camera
+			{origin 3.55493	-13.9872	17.2551}
+			{lookat 2.44349	-5.6548	6.82591}
+			{fov 45}
+			{horizon -174}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction 0	0.5	0}
+			}
+			{"1"
+				{type point}
+				{position 5.62311	10.4119	5.59772}
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{game_entity
+	{extension "/properties/piece.ext"}
+	{simulation {able 0}}
+	{constrain none}
+	{props "smoke"}
+	{obstacleID "nothing"}
+	{collider "smokezone"}
+	{skeleton
+		{bone "basis"
+			{orientation
+				1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+			}
+		}
+	}
+	{volume "body"
+		{sphere 107}
+		{bone "basis"}
+	}
+	{body
+		{proper body}
+		{permit body}
+	}
+}

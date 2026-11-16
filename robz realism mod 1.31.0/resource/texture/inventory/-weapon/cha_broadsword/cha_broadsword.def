@@ -1,0 +1,6 @@
+{actor
+	(include "cha_broadsword.ext")
+	{extender "stuff"
+		{item "cha_broadsword"}
+	}
+}

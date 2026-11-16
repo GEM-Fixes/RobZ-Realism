@@ -1,0 +1,9 @@
+{actor
+	(include "/properties/stuff_small.ext")
+	{Extension "zbrojovka_brno_vz26.mdl"}
+	{extender "stuff"
+		{item "zb_vz26"}
+	}
+	{nogroupmesh 1}
+	{lodclass "human"}
+}

@@ -1,0 +1,11 @@
+{game_entity
+	{Extension "paradrop.mdl"}
+	{props "paratrooper" "paradrop"}
+	{Placer
+		{place "attach"
+			{Linkbone "attach"}
+			{entity "usa_para_ammo"}
+			{handlebone "basis"}
+		}
+	}
+}

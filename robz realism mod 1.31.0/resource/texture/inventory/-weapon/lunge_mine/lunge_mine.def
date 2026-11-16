@@ -1,0 +1,11 @@
+{actor
+	(include "/properties/stuff_small.ext")
+	{Extension "lunge_mine.mdl"}
+	{Volume "body"
+	}
+	{Volume "select"
+	}
+	{extender "stuff"
+		{item "lunge_mine"}
+	}
+}

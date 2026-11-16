@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "allied_lod0_gear_demo"}
+	{bump "allied_lod0_gear_demo_bp"}
+	{specular "allied_lod0_gear_demo_sp"}
+	{color "229 229 229 9"}
+	{blend none}
+}

@@ -1,0 +1,6 @@
+{material bump
+	{diffuse "spear"}
+	{specular "spear_sp"}
+	{color "229 229 229 0"}
+	{blend none}
+}

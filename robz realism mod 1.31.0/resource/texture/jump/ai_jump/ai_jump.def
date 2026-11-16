@@ -1,0 +1,10 @@
+{game_entity
+	(include "/properties/ring.inc")
+	{Extension "ai_jump.mdl"}
+  
+
+	{props "ai_jump"} 
+	{volume "crown"
+		{Able {contact 1}{overlap 1}}
+	}
+}

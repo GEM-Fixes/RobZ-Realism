@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "zb26_c"}
+	{blend none}
+}

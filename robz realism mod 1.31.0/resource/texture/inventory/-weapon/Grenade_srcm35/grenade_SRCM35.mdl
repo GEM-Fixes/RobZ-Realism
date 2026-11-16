@@ -1,0 +1,87 @@
+;Exported by: CHATO59
+;Date:        06/09/2010
+
+{Skeleton
+	{bone "grenade_SRCM35"
+		{Orientation
+			1.0000	0.0000	0.0000
+			0.0000	-1.0000	-0.0000
+			-0.0000	-0.0000	1.0000
+		}
+		{VolumeView "grenade_SRCM35.ply"}
+		{bone "handle"
+			{Matrix34
+				0	0	1
+				1	0	0
+				0	1	0
+				-0.0206311	0.639523	-1.26589
+			}
+		}
+	}
+}
+{Volume "body"
+	{Cylinder 0.876838 4.37876}
+	{Bone "grenade_SRCM35"}
+		{Matrix34
+			-0.0000	1.0000	-0.0000
+			0.0000	0.0000	1.0000
+			1.0000	0.0000	-0.0000
+			0.8679	-0.0271	-0.0017
+		}
+}
+{Volume "select"
+	{Cylinder 2.75415 7.8153}
+	{Bone "grenade_SRCM35"}
+		{Matrix34
+			-0.0000	1.0000	-0.0000
+			0.0000	0.0000	1.0000
+			1.0000	0.0000	-0.0000
+			1.2742	0.0267	-0.0017
+		}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 0.816423	-3.04318	-1.40459}
+			{lookat 0.359735	-0.906245	-0.430262}
+			{fov 38}
+			{horizon -88}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 1.36845	-2.19567	0.0449588}
+			}
+			{"1"
+				{type point}
+				{position 1.36845	2.58721	0.0449588}
+			}
+			{"2"
+				{type directional}
+				{direction -0.00462019	0.485903	0.117802}
+			}
+		}
+	}
+	{"Stuff_secondary"
+		{camera
+			{origin 1.13337	-4.52621	-2.08077}
+			{lookat 0.359735	-0.906245	-0.430262}
+			{fov 45}
+			{horizon -88.441}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 1.36845	-2.19567	0.0449588}
+			}
+			{"1"
+				{type point}
+				{position 1.36845	2.58721	0.0449588}
+			}
+			{"2"
+				{type directional}
+				{direction -0.00462019	0.485903	0.117802}
+			}
+		}
+	}
+}

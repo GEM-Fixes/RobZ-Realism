@@ -1,0 +1,8 @@
+{game_entity
+	{Extension "rus-para-smg.mdl"}
+	{placer
+		{place "head"
+			{linkbone "head"} {entity "helmet_pilot_rus2"}{openforcrush}
+		}
+	}
+}

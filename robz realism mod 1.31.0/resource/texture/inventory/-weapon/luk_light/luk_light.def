@@ -1,0 +1,7 @@
+{entity
+	(include "/properties/stuff_small.ext")
+	{extension "luk_light.mdl"}
+	{extender "stuff"
+		{item "bow_light"}
+	}
+}

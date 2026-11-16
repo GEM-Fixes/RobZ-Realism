@@ -1,0 +1,34 @@
+;exported by: Администратор
+;date:        wed jun 04 12:52:16 2014
+;file:        g:\Работа с pheonix\Редактирование\Мои модели\Мое\Парашюты\парашют Д-10\para_modern_d-10 42.max
+{skeleton
+	{animation
+		{sequence "altitude7" {speed 0.09}}
+		{sequence "altitude6" {speed 0.11}}
+		{sequence "altitude5" {speed 0.2}}
+		{sequence "altitude4" {speed 0.1}}
+		{sequence "altitude3" {speed 0.1}}
+		{sequence "altitude2" {speed 0.1}}
+		{sequence "altitude1" {speed 0.15}}
+		{sequence "open" {speed 0.2}}
+		{sequence "landing" {speed 0.2}}
+	}
+	{bone "basis"
+		{orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{bone "para_base"
+			{position 0	0	1015.42}
+			{bone "para"
+				{parameters "commonmesh;id=body;"}
+				{position -0.129268	0	-0.114441}
+				{volumeview "para.ply"}
+				{bone "attach"
+					{position 0	0	0}
+				}
+			}
+		}
+	}
+}

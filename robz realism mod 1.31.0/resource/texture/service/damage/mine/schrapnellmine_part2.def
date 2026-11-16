@@ -1,0 +1,7 @@
+{game_entity
+	{Skeleton}
+	{props "schrapnellmine_part2"}
+	{extender "stuff"
+		{item "schrapnellmine_part2"}
+	}
+}

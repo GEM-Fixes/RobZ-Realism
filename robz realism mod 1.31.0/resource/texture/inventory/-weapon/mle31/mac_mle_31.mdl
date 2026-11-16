@@ -1,0 +1,146 @@
+;Exported by: Sergey
+;Date:        Wed Aug 13 20:54:45 2014
+;File:        C:\Users\Sergey\Documents\3dsmax\scenes\MAC Mle 31_05.max
+{Skeleton
+	{bone "mle31"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{LODView
+			{VolumeView "mle31.ply"}
+			{VolumeView "mle31_lod1.ply"}
+		}
+		{bone "foresight3"
+			{Matrix34
+				1	0	0
+				0	1	-1.85194e-005
+				0	1.30034e-005	1
+				16.4937	2.73378	-4.99924e-005
+			}
+		}
+		{bone "fxshell"
+			{Matrix34
+				0.00273688	-0.999996	0
+				0.999996	0.00273688	-1.57432e-005
+				1.57356e-005	0	1
+				2.98602	-0.0341701	0
+			}
+		}
+		{bone "handle"
+			{Matrix34
+				1	0	0
+				0	0	1
+				0	-1	0
+				9.91314	3.1737	0.000984266
+			}
+		}
+	}
+}
+{Volume "body1"
+	{Box 1.77892 3.26188 1.00062}
+	{Bone "mle31"}
+	{Matrix34
+		1	0	0
+		0	1	0
+		0	0	1
+		0.831454	-0.109691	0.0015313
+	}
+}
+{Volume "body2"
+	{Box 1.98687 3.93834 1.00062}
+	{Bone "mle31"}
+	{Matrix34
+		1	0	0
+		0	1	0
+		0	0	1
+		-2.6513	-0.439435	0.00153548
+	}
+}
+{Volume "body3"
+	{Box 2.49508 1.6141 1.00062}
+	{Bone "mle31"}
+	{Matrix34
+		1	0	0
+		0	1	0
+		0	0	1
+		3.02923	0.758901	0.00152022
+	}
+}
+{Volume "body"
+	{Box 20.2507 1.8499 1.00062}
+	{Bone "mle31"}
+	{Matrix34
+		1	0	0
+		0	1	0
+		0	0	1
+		6.751	2.41542	0.00149918
+	}
+}
+{Volume "magazin"
+	{Cylinder 2.36009 2.16802}
+	{Bone "mle31"}
+	{Matrix34
+		1	0	0
+		0	1	-1.30034e-005
+		0	1.85194e-005	1
+		4.47479	2.60489	-1.08404
+	}
+}
+{Volume "select"
+	{Box 20.2507 6.00292 1.00062}
+	{Bone "mle31"}
+	{Matrix34
+		1	0	0
+		0	1	0
+		0	0	1
+		6.65133	0.519408	0.00149393
+	}
+}
+{Extender "preview"
+	{"Stuff_primary"
+		{camera
+			{origin 7.78894	-5.93731	27.407}
+			{lookat 7.33902	-1.62258	1.09638}
+			{fov 45}
+			{horizon -177.044}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 20.5749	-1.94152	-10.6649}
+			}
+			{"1"
+				{type directional}
+				{direction -0.0688007	0.197723	-0.454063}
+			}
+			{"2"
+				{type point}
+				{position -7.22019	-1.01424	-13.7083}
+			}
+		}
+	}
+	{"Stuff"
+		{camera
+			{origin 7.05238	-5.58875	26.4821}
+			{lookat 7.19482	-1.31949	1.20015}
+			{fov 45}
+			{horizon -177.044}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 19.5625	-5.13106	-10.864}
+			}
+			{"1"
+				{type directional}
+				{direction -0.0228655	0.211793	-0.452352}
+			}
+			{"2"
+				{type point}
+				{position -7.00725	3.29353	-13.2644}
+			}
+		}
+	}
+}

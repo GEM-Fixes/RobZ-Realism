@@ -1,0 +1,239 @@
+{Skeleton
+	{animation
+		{sequence "vehicle1_in" {speed 0.01} {resume}}
+		{sequence "vehicle1_unload" {resume}}
+		{sequence "close" {speed 0.6}}
+	}
+	{bone "basis"
+		{parameters "Wheelradius=0.12;"}
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{bone revolute "roller_joint"
+			{limits -40 40}
+			{Matrix34
+				-1	0	0
+				0	0	1
+				0	1	0
+				-63.4182	0	17.9683
+			}
+			{bone "roller"
+				{Matrix34
+					-1	0	0
+					0	0	-1
+					0	-1	0
+					97.2802	-16.7625	0
+				}
+				{bone revolute "wheelroller"
+					{Matrix34
+						1	0	0
+						0	0	-1
+						0	1	0
+						-1.52588e-05	0	-0.362615
+					}
+				}
+			}
+			{bone "rope1_base"
+				{Matrix34
+					0.925416	-0.163176	-0.342021
+					-0.336825	0.0593911	-0.939692
+					0.173648	0.984808	0
+					-10.2	-0.999996	14.7624
+				}
+				{bone "rope1_01"
+					{Matrix34
+						0.986585	0.00488185	0.163176
+						0.00488363	0.998223	-0.0593913
+						-0.163176	0.0593915	0.984808
+						10	0	0
+					}
+					{bone "rope1_02"
+						{Position 6.69151	0	-2.18066}
+						{bone "rope1_03"
+							{Position 6.65834	0	-3.1569}
+							{bone "rope1_04"
+								{Position 6.65015	0	-6.74291}
+								{bone "rope1_05"
+									{Position 6.66499	0	-1.99005}
+									{bone "rope1_06"
+										{Position 6.66999	0	0}
+										{bone "rope1_07"
+											{Position 6.665	1.14441e-005	0}
+											{bone "rope1_08"
+												{Position 6.65434	0	0}
+												{bone "rope1_09"
+													{Position 6.67	0	0}
+													{bone "rope1_10"
+														{Position 6.66502	1.14441e-005	0}
+														{bone "rope1_11"
+															{Position 6.66502	0	0}
+															{bone "rope1_12"
+																{Position 8.34569	0	0}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				{bone "rope1"
+					{parameters "CommonMesh;"}
+					{Matrix34
+						-0.163176	0.0593915	0.984808
+						0.0048831	0.998223	-0.0593913
+						-0.986585	-0.00488252	-0.163176
+						0	0	0
+					}
+					{VolumeView "rope1.ply"}
+				}
+			}
+			{bone "rope2_base"
+				{Matrix34
+					0.925417	-0.163176	0.342021
+					-0.336824	0.0593915	0.939693
+					0.173648	0.984808	0
+					-10.2	-1	-14.772
+				}
+				{bone "rope2_01"
+					{Matrix34
+						0.986585	0.00488224	0.163176
+						0.00488319	0.998223	-0.0593913
+						-0.163176	0.0593914	0.984808
+						10	0	0
+					}
+					{bone "rope2_02"
+						{Position 6.69151	0	-2.18066}
+						{bone "rope2_03"
+							{Position 6.65834	0	-3.1569}
+							{bone "rope2_04"
+								{Position 6.65013	0	-6.74291}
+								{bone "rope2_05"
+									{Position 6.66499	0	-1.99005}
+									{bone "rope2_06"
+										{Position 6.67001	0	0.930308}
+										{bone "rope2_07"
+											{Position 6.66499	1.14441e-005	-0.970387}
+											{bone "rope2_08"
+												{Position 6.65432	0	0}
+												{bone "rope2_09"
+													{Position 6.66999	0	0}
+													{bone "rope2_10"
+														{Position 6.665	0	0}
+														{bone "rope2_11"
+															{Position 6.665	0	0}
+															{bone "rope2_12"
+																{Position 8.34569	0	0}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				{bone "rope2"
+					{parameters "CommonMesh;"}
+					{Matrix34
+						-0.163176	0.0593915	0.984808
+						0.00488259	0.998223	-0.0593915
+						-0.986585	-0.00488281	-0.163176
+						0	0	0
+					}
+					{VolumeView "rope2.ply"}
+				}
+			}
+		}
+		{bone "vehicle1"
+			{Position -0.451815	0	0.631523}
+		}
+		{bone "support2"
+			{Position -49.3857	-28.8386	0.434601}
+		}
+		{bone "fxtracel1"
+			{Position -50.5379	-29.0291	0.434601}
+		}
+		{bone "support1"
+			{Position -49.3857	28.8475	0.434601}
+		}
+		{bone "fxtracer1"
+			{Position -50.5597	28.8531	0.434601}
+		}
+		{bone "support4"
+			{Position 46.1244	28.8475	0.434601}
+		}
+		{bone "fxtracer2"
+			{Position 45.0004	28.8475	0.434601}
+		}
+		{bone "support3"
+			{Position 46.1245	-28.8386	0.434601}
+		}
+		{bone "fxtracel2"
+			{Position 45.1669	-29.4501	0.434601}
+		}
+		{bone "link1"
+			{Position -131.761	-1.02332	16.4411}
+		}
+		{bone "open_point"
+			{Position -126.753	4.20848	0.434601}
+		}
+	}
+}
+{Obstacle "rectangle3"
+	{Obb2
+		{Center -1.0179 -0.95297}
+		{Extent 61.8452 30.0479}
+		{Axis 1 -1.51312e-07}
+	}
+	{Rotate}
+}
+{Volume "body"
+	{Box 77.0886 44.0475 9.87474}
+	{Bone "vehicle1"}
+	{Matrix34
+		-1	0	0
+		0	-1	0
+		0	0	1
+		-1.82405	1.00369	2.53542
+	}
+}
+{Volume "roller"
+	{Cylinder 2.40157 79.3504}
+	{Bone "wheelroller"}
+	{Matrix34
+		-1	0	0
+		0	-1	0
+		0	0	1
+		-0.529297	0	3.76821
+	}
+}
+{Volume "select1"
+	{Box 86.1818 5.70427 7.20889}
+	{Bone "rope1_06"}
+	{Matrix34
+		0	1	0
+		0	0	-1
+		-1	0	0
+		-0.0316279	8.14482	2.6644
+	}
+}
+{Volume "select2"
+	{Box 86.1818 5.70427 7.20889}
+	{Bone "rope2_06"}
+	{Matrix34
+		0	1	0
+		0	0	-1
+		-1	0	0
+		0.778759	10.9628	1.80813
+	}
+}

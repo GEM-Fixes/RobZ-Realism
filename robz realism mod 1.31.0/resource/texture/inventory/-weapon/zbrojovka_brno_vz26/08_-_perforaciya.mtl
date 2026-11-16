@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "metal32"}
+	{bump "metal32_bp"}
+	{specular "metal32"}
+	{color "229 229 229 25"}
+	{blend none}
+}

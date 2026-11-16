@@ -1,0 +1,8 @@
+{game_entity
+	{Extension "usnavypilotgear.mdl"}
+	{placer
+		{place "head"
+			{linkbone "head"} {entity "navy_pilot_helmet"}{openforcrush}
+		}
+	}
+}

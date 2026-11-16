@@ -1,0 +1,87 @@
+;Exported by: Admin
+;Date:        Tue Jun 21 06:37:02 2016
+;File:        H:\My_models\grenade_rg42\rg42_1.max
+{Skeleton
+	{bone "rg42"
+		{parameters "CommonMech;ID=mgun;"}
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{LODView
+			{VolumeView "rg42.ply"}
+			{VolumeView "rg42_lod1.ply"}
+		}
+		{bone "handle"
+			{Matrix34
+				0	0	1
+				-0.173648	0.984808	0
+				-0.984808	-0.173648	0
+				-0.492126	0.393701	-1.1811
+			}
+		}
+	}
+}
+{Volume "body"
+	{Cylinder 0.590551 2.46063}
+	{Bone "rg42"}
+	{Matrix34
+		0	0	1
+		1	0	0
+		0	1	0
+		0	1.17126	0
+	}
+}
+{Volume "select"
+	{Cylinder 0.787402 2.75591}
+	{Bone "rg42"}
+	{Matrix34
+		0	0	1
+		1	0	0
+		0	1	0
+		0	1.1811	0
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin -22.3001	-14.3177	5.36077}
+			{lookat 0.33289	-0.802275	-0.0942205}
+			{fov 4.7538}
+			{horizon -127.923}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position -3.90808	-2.89387	1.31929}
+			}
+			{"1"
+				{type point}
+				{position -1.49604	-0.735754	-2.92002}
+			}
+			{"2"
+				{type point}
+				{position 0.259443	-3.91913	-1.12872}
+			}
+		}
+	}
+	{"Stuff_secondary"
+		{camera
+			{origin -4.57247	-5.7268	6.45875}
+			{lookat 0.108898	-0.973539	-0.038845}
+			{fov 18.5444}
+			{horizon 163.538}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position -3.89633	-2.79462	6.24761}
+			}
+			{"1"
+				{type point}
+				{position -3.82783	-4.35119	-4.25831}
+			}
+		}
+	}
+}

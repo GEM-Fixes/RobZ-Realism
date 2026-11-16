@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "common_jerrycan_de"}
+	{blend none}
+}

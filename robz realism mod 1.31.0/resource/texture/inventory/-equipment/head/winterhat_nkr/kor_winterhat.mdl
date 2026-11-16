@@ -1,0 +1,66 @@
+;Exported by: Administrator
+;Date:        Sat Feb 18 11:56:35 2012
+;File:        F:\º«Õ½¶¬Ã±.max
+{Skeleton
+	{bone "kor_winterhat"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "kor_winterhat.ply"}
+		{bone "handle"
+			{Matrix34
+				0.0446358	-0.998993	0.0044528
+				0.0993169	0.00887236	0.995016
+				-0.994054	-0.0439713	0.099614
+				-2.58096	6.24423	3.29488
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 12.7872 11.8479 9.5606}
+	{Bone "kor_winterhat"}
+	{Matrix34
+		0	-1	0
+		-0.999998	0	0
+		0	0	-1
+		-0.458467	7.25055	6.04065
+	}
+}
+{Volume "select"
+	{Box 9.01077 5.52125 6.4367}
+	{Bone "kor_winterhat"}
+	{Matrix34
+		0	-1	0
+		-0.999998	0	0
+		0	0	-1
+		-0.781351	6.65953	5.01036
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 13.3277	0.360845	6.24375}
+			{lookat -1.21247	-0.155303	3.52384}
+			{fov 19.2167}
+			{horizon 2.38819}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 1.96722	-3.68533	8.1491}
+			}
+			{"1"
+				{type directional}
+				{direction -0.494669	0.00317095	0.0727499}
+			}
+			{"2"
+				{type point}
+				{position -20.7642	-13.3758	-0.27591}
+			}
+		}
+	}
+}

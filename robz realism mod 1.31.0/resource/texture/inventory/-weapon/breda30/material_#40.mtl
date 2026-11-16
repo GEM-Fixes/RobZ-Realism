@@ -1,0 +1,6 @@
+{material bump
+	{diffuse "breda30"}
+	{specular "breda30_sp"}
+	{color "229 229 229 152"}
+	{blend none}
+}

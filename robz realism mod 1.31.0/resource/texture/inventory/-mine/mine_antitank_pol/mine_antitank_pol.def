@@ -1,0 +1,20 @@
+{actor
+	(include "/properties/stuff_mine.ext")
+	{Extension "mine_antitank_pol.mdl"}
+	{extender "stuff"
+		{item "mine antitank_pol"}
+	}
+	{extender "mine"
+		{time 10}
+	}
+	{collider "mine.at"}
+	{lodclass "vehicle_small"}
+	{Obstacle "body"
+		{Circle2
+			{Radius 7.5}
+		}
+	}
+	{Volume "body"
+		{density 0}
+	}
+}

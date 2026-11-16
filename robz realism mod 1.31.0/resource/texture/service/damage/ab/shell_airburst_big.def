@@ -1,0 +1,7 @@
+{game_entity
+	{Skeleton}
+	{props "shell_airburst_big"}
+	{extender "stuff"
+		{item "shell_airburst_big"}
+	}
+}

@@ -1,0 +1,38 @@
+;Exported by: vic
+;Date:        Thu Jul 21 15:51:23 2005
+;File:        D:\Obmen\FX voronki\FXWoronka_big2.max
+{Skeleton
+	{bone "crater"
+		{parameters "CommonMesh;Land;Align;"}
+		{Matrix34
+			0.8	0	0
+			0	-0.8	0
+			0	0	0.7
+			0	0	0
+		}
+		{VolumeView "crater.ply"
+			{Layer entity_opaque_biased}
+			{DecalTargetDynamic}
+		}
+		{bone "crater_alpha"
+			{parameters "CommonMesh;Land;Align;"}
+			{VolumeView "crater_alpha.ply"
+				{layer grounddynamic}
+			}
+		}
+	}
+}
+{Area "cut"
+	{Polygon2
+		{Radius 0}
+		{Vertex  19.94944 -19.50032 }
+		{Vertex  26.7085 0.02661792 }
+		{Vertex  19.94944 17.96067 }
+		{Vertex  0.1411781 25.52291 }
+		{Vertex  -19.43585 18.23388 }
+		{Vertex  -26.46812 0.187964 }
+		{Vertex  -19.73363 -19.68596 }
+		{Vertex  0.1411781 -26.37957 }
+	}
+	{Rotate}
+}

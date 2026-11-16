@@ -1,0 +1,6 @@
+{material simple
+	{diffuse "parachute"
+		{axis 64 64}
+	}
+	{blend blend}
+}

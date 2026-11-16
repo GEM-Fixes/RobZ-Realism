@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "$/humanskin/german/para coat/para boots"}
+	{blend none}
+}

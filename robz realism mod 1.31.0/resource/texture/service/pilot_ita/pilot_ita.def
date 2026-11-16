@@ -1,0 +1,8 @@
+{game_entity
+	{Extension "pilot_ita.mdl"} 
+     	{placer
+		{place "head"
+			{linkbone "head"} {entity "cap_ita_basco_mas"}{openforcrush}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{Actor
+	(include "/properties/stuff_small.ext")
+	{Extension "130mm-55_kazemat.mdl"}
+	{extender "stuff"
+		{item "120mm-55_kazemat"}
+	}
+}

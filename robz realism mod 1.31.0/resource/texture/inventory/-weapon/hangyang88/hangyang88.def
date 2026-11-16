@@ -1,0 +1,9 @@
+{actor
+	(include "/properties/stuff_small.ext")
+	{Extension "hangyang88.mdl"}
+	{extender "stuff"
+		{item "mauser_hanyang88"}
+	}
+	{nogroupmesh 1}
+	{lodclass "human"}
+}

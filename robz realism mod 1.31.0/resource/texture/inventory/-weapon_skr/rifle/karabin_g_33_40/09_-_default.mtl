@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/model/skr/wood_weapon_hut"}
+;	{bump "$/model/skr/wood_weapon_hut_bp"}
+	{specular "$/model/skr/wood_weapon_hut_sp"}
+	{color "230 230 230 101"}
+	{blend none}
+}

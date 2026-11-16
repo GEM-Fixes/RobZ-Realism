@@ -1,0 +1,8 @@
+{game_entity
+	{Extension "eng_crew_hp.mdl"}
+	{placer
+		{place "head"
+			{linkbone "head"} {entity "pilothelmet_eng"}{openforcrush}
+		}
+	}
+}

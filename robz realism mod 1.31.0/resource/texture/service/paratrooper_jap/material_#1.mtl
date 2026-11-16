@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/humanskin/jap/axis_lod0_gear_marineinfantry"}
+	{bump "$/humanskin/jap/axis_lod0_gear_marineinfantry-fx"}
+	{specular "$/humanskin/jap/axis_lod0_gear_marineinfantry-gg"}
+	{color "229 229 229 9"}
+	{blend test}
+}

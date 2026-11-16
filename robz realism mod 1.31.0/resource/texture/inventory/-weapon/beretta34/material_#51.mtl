@@ -1,0 +1,6 @@
+{material bump
+	{diffuse "beretta34"}
+	{specular "beretta34_sp"}
+	{color "229 229 229 152"}
+	{blend none}
+}

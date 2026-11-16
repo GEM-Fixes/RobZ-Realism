@@ -1,0 +1,8 @@
+{actor
+	(include "/properties/stuff_small.ext")
+        {extension "type89zhidan.mdl"}
+	{extender "stuff"
+		{item "type89zhidan"}
+	}
+	{nogroupmesh 1}
+}

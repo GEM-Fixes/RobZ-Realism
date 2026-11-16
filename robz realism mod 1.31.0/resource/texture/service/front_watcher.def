@@ -1,0 +1,24 @@
+{actor
+	;{extender "stuff"}
+
+	{skeleton
+		{bone "basis"
+			{position 0 0 0}
+		}
+		; {bone "for"
+		; 	{position 1000 0 0}
+		; }		
+	}
+	; {Volume "hixbox"
+	; 	{box 2000 150 300}
+	; 	{bone "for"}
+	; 	{position 0 0 0}		
+	; 	{able clear {contact}}	
+	; }
+
+	{obstacleID "nothing"}
+	{collider "airhelp"}
+	{simulation {able 1} {disableLinked 1}}
+	{constrain ground}
+	;{lodclass "stuff_small"}
+}

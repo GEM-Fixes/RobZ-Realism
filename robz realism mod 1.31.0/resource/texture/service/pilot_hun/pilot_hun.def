@@ -1,0 +1,8 @@
+{game_entity
+	{Extension "hun_pilot.mdl"}
+        	{placer
+		{place "head"
+			{linkbone "head"} {entity "helmet_pilot_rus"}{openforcrush}
+		}
+	}
+}

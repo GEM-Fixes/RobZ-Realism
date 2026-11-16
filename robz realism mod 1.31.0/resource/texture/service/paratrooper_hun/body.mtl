@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/humanskin/hun_elite"}
+	{bump "$/humanskin/hun_elite_nm"}
+	{specular "$/humanskin/hun_elite_spec"}
+	{color "255 255 255 50"}
+	{blend test}
+}

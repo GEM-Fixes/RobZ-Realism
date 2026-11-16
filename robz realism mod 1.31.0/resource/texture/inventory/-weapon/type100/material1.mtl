@@ -1,0 +1,6 @@
+{material bump
+	{diffuse "type100.bmp"}
+	{specular "formal#l"}
+	{color "229 229 229 25"}
+	{blend test}
+}

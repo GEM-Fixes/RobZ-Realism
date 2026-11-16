@@ -1,0 +1,71 @@
+;Exported by: Administrator
+;Date:        Sun Oct 27 21:16:09 2013
+;File:        E:\朝鲜MOD\侵华日军通讯兵帽.max
+{Skeleton
+	{bone "jap_radiohat"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "jap_radiohat.ply"}
+		{bone "handle"
+			{Matrix34
+				0.0446347	-0.998994	0.00445355
+				0.0993171	0.00887244	0.995016
+				-0.994054	-0.0439711	0.0996136
+				0.537309	1.01607	3.88132
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 12.7872 11.8479 9.5606}
+	{Bone "jap_radiohat"}
+	{Matrix34
+		0	-1	0
+		-1	0	0
+		0	0	-1
+		2.6598	2.02239	6.62708
+	}
+}
+{Volume "select"
+	{Box 9.01077 5.52125 6.4367}
+	{Bone "jap_radiohat"}
+	{Matrix34
+		0	-1	0
+		-1	0	0
+		0	0	-1
+		2.33692	1.43137	5.5968
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 12.993	-6.93238	8.15786}
+			{lookat 0.650902	-0.325734	4.35884}
+			{fov 20.5467}
+			{horizon 2.38819}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position -10.1993	9.50875	15.1405}
+			}
+			{"1"
+				{type directional}
+				{direction -0.494669	0.00317281	0.0727499}
+			}
+			{"2"
+				{type point}
+				{position -6.6653	5.39235	-1.5198}
+			}
+			{"3"
+				{type point}
+				{position 5.50309	-8.46203	7.44764}
+				{diffuse 0xebc7e6}
+			}
+		}
+	}
+}
