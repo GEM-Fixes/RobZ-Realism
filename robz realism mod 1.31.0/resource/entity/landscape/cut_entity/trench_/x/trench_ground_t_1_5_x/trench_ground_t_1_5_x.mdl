@@ -1,0 +1,14 @@
+;Exported by: klimenko
+;Date:        Wed Jan 24 16:03:14 2007
+;File:        D:\-Project-\-3DWork-\trench\trench16_1a_sm10.max
+{Skeleton
+	{bone "trench_ground_t"
+		{parameters "Ground;"}
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	0.3
+		}
+		{VolumeView "trench_ground_t.ply" {Ground} {DecalTarget}}
+	}
+}

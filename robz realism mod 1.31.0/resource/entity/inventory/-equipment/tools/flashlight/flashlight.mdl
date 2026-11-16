@@ -1,0 +1,72 @@
+;Exported by: Ve2al
+;Date:        Thu Jun 13 18:54:18 2013
+;File:        C:\Users\Ve2al\Documents\3dsmax\scenes\Equipment\flashlight.max
+{Skeleton
+	{bone "flashlight"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "flashlight.ply"}
+		{bone "lamp_light_spot2"
+			{parameters "ID=cabine;"}
+			{Matrix34
+				0.936117	-0.0871564	-0.340719
+				-0.34202	0	-0.939693
+				0.0818999	0.996195	-0.02981
+				2.04925	-1.89384	-1.87024
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 3.18898 1.59449 0.767717}
+	{Bone "flashlight"}
+	{Matrix34
+		-0.0818992	0.996195	0.0298094
+		0.342017	0	0.939694
+		0.936117	0.0871562	-0.340718
+		1.63456	-2.57974	-1.72572
+	}
+}
+{Volume "select"
+	{Box 3.18898 1.59449 0.767717}
+	{Bone "flashlight"}
+	{Matrix34
+		-0.0818992	0.996195	0.0298094
+		0.342017	0	0.939694
+		0.936117	0.0871562	-0.340718
+		1.64393	-2.57886	-1.72913
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 7.15561	3.27521	-5.87085}
+			{lookat 4.56922	3.00302	-3.90652}
+			{fov 45}
+			{horizon 5.99999}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction -0.496432	0.0171147	-0.057119}
+			}
+		}
+	}
+	{"Stuff_primary"
+		{camera
+			{origin 5.94045	2.32231	-5.80513}
+			{lookat 5.91968	2.32309	-5.78574}
+			{fov 45}
+			{horizon 7.99998}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction -0.497185	0.0060046	-0.0526366}
+			}
+		}
+	}
+}

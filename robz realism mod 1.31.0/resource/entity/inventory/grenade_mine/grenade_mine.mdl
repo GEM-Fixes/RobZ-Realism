@@ -1,0 +1,57 @@
+;Exported by: Администратор
+;Date:        Fri Mar 02 15:15:58 2012
+;File:        G:\Работа с Pheonix\Редактирование\Мои модели\Мое\Растяжка\Растяжка.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{bone "detector1"
+			{Matrix34
+				0	-1	0
+				0	0	-1
+				1	0	0
+				0.101601	-0.0493348	1.81249
+			}
+			{VolumeView "detector1.ply"}
+		}
+		{bone "for_m67"
+			{Matrix34
+				1	0	0
+				0	0	-1
+				0	1	0
+				0	0	0.5
+			}
+		}
+		{bone "for_f1"
+			{Matrix34
+				0	0	-1
+				0	1	0
+				1	0	0
+				0	0	0.5
+			}
+		}
+	}
+}
+{Volume "body"
+	{Cylinder 0.9 2}
+	{Bone "basis"}
+	{Position -0.0060897	0.00649738	0.941648}
+}
+{Volume "detector"
+	{Box 0.25 10 1}
+	{Bone "detector1"}
+	{Matrix34
+		5.34609	-0.14983	0.0313773
+		0.0409215	0.149829	4.09942
+		-0.66146	-1.20169	0.507211
+		-0.2771	0.479396	21.7194
+	}
+}
+{Volume "select"
+	{Cylinder 5 2.5}
+	{Bone "basis"}
+	{Position -0.00608968	0.00649738	1.19165}
+}

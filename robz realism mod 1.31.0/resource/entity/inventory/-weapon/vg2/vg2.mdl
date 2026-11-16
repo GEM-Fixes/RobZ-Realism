@@ -1,0 +1,80 @@
+;Exported by: Zeke Wolff
+;Date:        Sun Dec 28 00:12:17 2014
+;File:        E:\DCG\MoW\vg2.ms3d
+{Skeleton
+	{bone "vg2"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "vg2.ply"}
+		{bone "foresight3"
+			{Position 13.4108	1.96557	0.0490202}
+		}
+		{bone "handle"
+			{Matrix34
+				1	0	0
+				0	0	-1
+				0	1	0
+				5.43593	2.13911	0.0688965
+			}
+		}
+	}
+}
+{Volume "select"
+	{Box 21.6701 10.3101 3.05727}
+	{Bone "vg2"}
+	{Position 6.15596	0.523643	0.00309801}
+}
+{Volume "body"
+	{Box 13.629 5.34201 1.23277}
+	{Bone "vg2"}
+	{Position 6.15596	0.464133	-0.0239577}
+}
+{Extender "preview"
+	{"Stuff_primary"
+		{camera
+			{origin 1.10384	-4.31293	21.7445}
+			{lookat 1.54829	-2.95495	13.4691}
+			{fov 45}
+			{horizon -157.989}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 3.04553	-13.2517	-38.7774}
+			}
+			{"1"
+				{type directional}
+				{direction -0.0761825	0.382457	-0.312926}
+			}
+			{"2"
+				{type point}
+				{position 3.04553	1.54378	20.2422}
+			}
+		}
+	}
+	{"Stuff"
+		{camera
+			{origin 0.66116	-9.63894	18.4539}
+			{lookat 2.19346	-0.548192	-0.123811}
+			{fov 45}
+			{horizon -155.307}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction 0.0587524	0.479244	-0.129897}
+			}
+			{"1"
+				{type point}
+				{position 3.02153	-1.45834	20.1015}
+			}
+			{"2"
+				{type point}
+				{position 3.02153	-22.9681	-48.1114}
+			}
+		}
+	}
+}

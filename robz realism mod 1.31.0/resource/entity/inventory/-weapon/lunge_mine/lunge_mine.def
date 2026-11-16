@@ -1,0 +1,11 @@
+{entity
+	(include "/properties/stuff_small.ext")
+	{Extension "lunge_mine.mdl"}
+	{extender "stuff"
+		{item "lunge_mine"}
+	}
+	{volume "body"
+		{able {bullet} {select} {contact_ground} {touch} {contact}}
+		{thickness 1}
+	}
+}

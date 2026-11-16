@@ -1,0 +1,53 @@
+;Exported by: Luzhbin_M
+;Date:        Thu May 21 16:37:10 2009
+;File:        D:\art\Models\Hats\16_shlem_pilot_CCCP\16_shlem_pilot_CCCP.max
+{Skeleton
+	{bone "16_shlem_pilot_cccp"
+			{Position -0.05	-0.1	0.05}
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "16_shlem_pilot_cccp.ply"}
+		{bone "handle"
+			{Matrix34
+				1	0	0
+				0	0	1
+				0	-1	0
+				-0.047006	-0.00299178	2.23235
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 3.36133 2.9156 2.82349}
+	{Bone "16_shlem_pilot_cccp"}
+	{Position 0.282723	0.0365616	2.65265}
+}
+{Volume "select"
+	{Box 7.32706 8.02016 6.53495}
+	{Bone "16_shlem_pilot_cccp"}
+	{Matrix34
+		1	0	0
+		0	0	1
+		0	-1	0
+		-0.047005	0.110503	2.33136
+	}
+}
+{Extender "preview"
+	{"stuff"
+		{camera
+			{origin 5.08101	5.01883	4.50501}
+			{lookat -11.3179	-11.3421	-3.02463}
+			{fov 45}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction -0.338116	-0.33451	-0.15421}
+				{ambient 0x959595}
+			}
+		}
+	}
+}

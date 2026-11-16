@@ -1,0 +1,8 @@
+{game_entity
+	(include "/properties/stuff_small.ext")
+	{Extension "mac_1924_29.mdl"}
+	{extender "stuff"
+		{item "fm_24-29"}
+	}
+	{nogroupmesh 1}
+}

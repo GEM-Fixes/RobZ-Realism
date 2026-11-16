@@ -1,0 +1,84 @@
+;Exported by: Schneider
+;Date:        Tue Sep 25 11:05:46 2007
+;File:        C:\Documents and Settings\Schneider1\Desktop\rgd33\rgd33.max
+{Skeleton
+	{bone "rgd33"
+		{parameters "CommonMesh;"}
+		{Orientation
+			0.9	0	0
+			0	-0.9	0
+			0	0	0.9
+		}
+		{VolumeView "rgd33.ply"}
+		{bone "handle"
+			{Matrix34
+				0	1	0
+				1	0	0
+				0	0	-1
+				-0.406505	-1.42283	-0.631293
+			}
+		}
+	}
+}
+{Volume "body"
+	{Cylinder 0.790016 3.55807}
+	{Bone "rgd33"}
+	{Matrix34
+		0	-1	0
+		0	0	1
+		-1	0	0
+		1.3107	0.0112372	0.0100045
+	}
+}
+{Volume "select"
+	{Cylinder 1.47179 3.64765}
+	{Bone "rgd33"}
+	{Matrix34
+		0	-1	0
+		0	0	1
+		-1	0	0
+		1.32153	0.0111797	0.0100588
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 0.852127	5.71922	2.43179}
+			{lookat 0.727069	0.00699819	0.1873}
+			{fov 45}
+			{horizon 21.5594}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction 0.0727362	-0.472365	-0.146904}
+			}
+			{"1"
+				{type point}
+				{position 2.07105	0.977528	0.584024}
+			}
+			{"2"
+				{type point}
+				{position 3.68876	-2.16298	-1.39114}
+			}
+		}
+	}
+	{"Stuff_secondary"
+		{camera
+			{origin 1.53593	5.54317	1.86711}
+			{lookat 1.43256	0.132179	-0.0444063}
+			{fov 45}
+			{horizon 21.5594}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction 0.110274	-0.35432	-0.335107}
+			}
+			{"1"
+				{type point}
+				{position 4.60821	3.46014	-0.303608}
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{actor
+	(include "/properties/stuff_small.ext")
+	;{extension "can.mdl"}
+	{extender "stuff"
+		{item "camo_spawner"}
+	}
+	{volume "body"
+		{thickness 2}
+	}
+	{lodclass "human"}
+}

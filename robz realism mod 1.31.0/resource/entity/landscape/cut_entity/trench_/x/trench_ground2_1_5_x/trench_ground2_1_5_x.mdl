@@ -1,0 +1,14 @@
+;Exported by: klimenko
+;Date:        Wed Nov 29 18:32:14 2006
+;File:        D:\-Project-\-3DWork-\trench\trench12_1ba_sm3.max
+{Skeleton
+	{bone "trench_ground2_1_5_x"
+		{parameters "CommonMesh;Ground;"}
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	0.3
+		}
+		{VolumeView "trench_ground2_1_5_x.ply" {Ground} {DecalTarget}}
+	}
+}

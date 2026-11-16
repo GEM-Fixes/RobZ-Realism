@@ -1,0 +1,9 @@
+{Actor
+	(include "/properties/stuff_small.ext")
+	{Extension "browningm2.mdl"}
+	{extender "stuff"
+		{item "type98mg"}
+	}
+	{nogroupmesh 1}
+	{lodclass "human"}
+}

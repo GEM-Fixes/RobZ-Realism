@@ -1,0 +1,65 @@
+;Exported by: Zeke Wolff
+;Date:        Wed Dec 10 15:23:41 2014
+;File:        E:\DCG\grenade_n74at\grenade_n74at.ms3d
+{Skeleton
+	{bone "n74at"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "n74at.ply"}
+		{bone "handle"
+			{Matrix34
+				0	-1	0
+				1	0	0
+				0	0	1
+				-0.00648594	1.38345	0.623238
+			}
+		}
+	}
+}
+{Volume "body"
+	{Cylinder 1.42503 5.79329}
+	{Bone "n74at"}
+	{Matrix34
+		0	-1	0
+		0	0	1
+		-1	0	0
+		0.126918	0.0310109	-0.00121843
+	}
+}
+{Volume "select"
+	{Cylinder 3.22437 11.6461}
+	{Bone "n74at"}
+	{Matrix34
+		0	-1	0
+		0	0	1
+		-1	0	0
+		0.0201602	0.00233108	0.0561409
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin -0.24628	-4.48356	-4.82057}
+			{lookat 1.271194	0.53813	0.390692}
+			{fov 45}
+			{horizon -177}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction -0.000330038	0.127965	0.483347}
+			}
+			{"1"
+				{type point}
+				{position -2.09498	-2.41082	-3.14612}
+			}
+			{"2"
+				{type point}
+				{position 5.70044	-2.50817	-3.16905}
+			}
+		}
+	}
+}

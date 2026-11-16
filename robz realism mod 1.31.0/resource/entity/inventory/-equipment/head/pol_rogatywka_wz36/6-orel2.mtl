@@ -1,0 +1,6 @@
+{material bump
+	{diffuse "orel2"}
+	{specular "orel2_sp"}
+	{color "229 229 229 152"}
+	{blend test}
+}

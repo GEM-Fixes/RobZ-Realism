@@ -1,0 +1,4 @@
+{
+	(include "/properties/trench.inc")
+	{Extension "tunnel_x.mdl"}
+}

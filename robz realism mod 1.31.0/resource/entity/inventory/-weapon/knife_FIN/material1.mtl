@@ -1,0 +1,6 @@
+{material simple
+	{diffuse "knife fin"
+		{AlphaChannel 0}
+	}
+	{tile}
+}

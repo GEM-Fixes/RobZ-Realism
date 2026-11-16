@@ -1,0 +1,18 @@
+{game_entity
+	(include "/properties/stuff_small.ext")
+	{volume "body"
+		{thickness 1}
+	}
+	{extender "inventory"
+    {box
+        {Size 4 4}
+	{Weight 100}
+		{item "ammo panzershreck" 5}
+    }
+}
+	{props "capacity" "collectable"}
+	{extender "stuff"
+		{item "panzerbacksellsheet"}
+	}
+	{Extension "panzer_backpack.mdl"}
+}

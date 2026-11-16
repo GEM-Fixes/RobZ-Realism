@@ -1,0 +1,7 @@
+{Actor
+	{Extension "jap_radiohat.mdl"}
+	{Volume "body"
+	}
+	{Volume "select"
+	}
+}

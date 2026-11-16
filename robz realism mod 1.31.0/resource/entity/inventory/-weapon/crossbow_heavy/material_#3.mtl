@@ -1,0 +1,5 @@
+{material bump
+	{diffuse "crossbow_wood"}
+	{bump "crossbow_wood_b"}
+	{blend none}
+}

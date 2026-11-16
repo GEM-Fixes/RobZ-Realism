@@ -1,0 +1,5 @@
+{
+	(include "/properties/trench.inc")
+	{Extension "trench_ground_1_5_x.mdl"}
+
+}

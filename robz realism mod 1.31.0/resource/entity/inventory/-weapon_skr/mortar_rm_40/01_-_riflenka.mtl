@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/model/skr/riflenka3_grey"}
+	{bump "$/model/skr/riflenka3_nm"}
+	{specular "$/model/skr/riflenka3_sp"}
+	{color "230 230 230 152"}
+	{blend none}
+}

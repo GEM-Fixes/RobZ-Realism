@@ -1,0 +1,107 @@
+;Exported by: ой
+;Date:        Thu May 08 09:55:36 2014
+;File:        D:\Documents\3dsmax\scenes\_Ammunition\Panzer Backpack.max
+{Skeleton
+	{bone "panzer_backpack"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{bone "panzerbacksellsheet"
+			{parameters "CommonMesh;"}
+			{Matrix34
+				-0.993586	-0.113082	0
+				0.113082	-0.993586	-3.12386e-005
+				0	-3.10382e-005	1
+				8.3473	2.70283	-1.01513
+			}
+			{VolumeView "panzerbacksellsheet.ply"}
+			{bone "ammo1"
+				{Position -0.435175	-1.75512	0.758033}
+				{LODView
+					{VolumeView "panzershreck_r.ply"}
+					{VolumeView "panzershreck_r_lod1.ply"}
+				}
+			}
+			{bone "ammo5"
+				{Position -0.543106	1.72084	0.758033}
+				{LODView
+					{VolumeView "panzershreck_r.ply"}
+					{VolumeView "panzershreck_r_lod1.ply"}
+				}
+			}
+			{bone "ammo4"
+				{Position -0.468425	0.802525	1.77906}
+				{LODView
+					{VolumeView "panzershreck_r.ply"}
+					{VolumeView "panzershreck_r_lod1.ply"}
+				}
+			}
+			{bone "ammo2"
+				{Position -0.494492	-0.807814	1.81257}
+				{LODView
+					{VolumeView "panzershreck_r.ply"}
+					{VolumeView "panzershreck_r_lod1.ply"}
+				}
+			}
+			{bone "ammo3"
+				{Position -0.483152	-0.0276558	0.758033}
+				{LODView
+					{VolumeView "panzershreck_r.ply"}
+					{VolumeView "panzershreck_r_lod1.ply"}
+				}
+			}
+			{bone "handle"
+				{Matrix34
+					0.99995	-0.0100082	0
+					0.0100082	0.99995	0
+					0	0	1
+					-1.42761	-0.0261345	0.335402
+				}
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 10.863 2.69661 6.66251}
+	{Bone "panzer_backpack"}
+	{Matrix34
+		1	0	0
+		0	0	1
+		0	-1	0
+		8.27674	2.53735	0.280241
+	}
+}
+{Volume "select"
+	{Box 11.1921 2.98231 7.07239}
+	{Bone "panzer_backpack"}
+	{Matrix34
+		1	0	0
+		0	0	1
+		0	-1	0
+		8.2982	2.53142	0.268326
+	}
+}
+{Extender "preview"
+	{"stuff"
+		{camera
+			{origin 7.80445	0	14.3896}
+			{lookat 7.93922	-2.85971	-1.68361}
+			{fov 45}
+			{horizon 83.4284}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 14.2894	-0.000206128	13.2958}
+				{diffuse 0xfffbff}
+			}
+			{"1"
+				{type point}
+				{position 2.22741	-0.000207171	13.3632}
+				{diffuse 0xfffbff}
+			}
+		}
+	}
+}

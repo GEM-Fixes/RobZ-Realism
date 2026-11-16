@@ -1,0 +1,15 @@
+{game_entity
+	(include "/properties/stuff.ext")
+	{collider "stuff.construction"}
+	{props "-steel" "wood" "fence" "construction" "inventory_box" "spread_items"}
+	{Extension "crate.mdl"}
+	{Volume "body"
+		{Thickness 10}
+		{able {touch}}
+	}
+	{extender "stuff"
+		{item "crate_uk_mortar"}
+	}
+	{Volume "select"
+	}
+}

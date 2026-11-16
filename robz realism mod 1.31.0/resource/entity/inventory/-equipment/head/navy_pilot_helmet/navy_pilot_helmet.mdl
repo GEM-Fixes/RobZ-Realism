@@ -1,0 +1,65 @@
+;Exported by: Administrator
+;Date:        Sun Nov 25 20:11:28 2012
+;File:        C:\Documents and Settings\Administrator\My Documents\3dsMax\scenes\cap2.max
+{Skeleton
+	{bone "navy_pilot_helmet"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "navy_pilot_helmet.ply"}
+		{bone "handle"
+			{Matrix34
+				0.00852694	-0.999964	0
+				0.99996	0.00894537	0
+				0	0	1
+				0.00946965	-0.30136	1.5852
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 3.82767 3.54161 2.53713}
+	{Bone "navy_pilot_helmet"}
+	{Matrix34
+		0.00852818	-0.999961	0
+		0.999965	0.00894606	0
+		0	0	1
+		-0.0100567	0.0210426	2.53385
+	}
+}
+{Volume "select"
+	{Box 8.33811 5.92873 4.67327}
+	{Bone "navy_pilot_helmet"}
+	{Matrix34
+		0.00852597	-0.999961	0
+		0.999964	0.00894637	0
+		0	0	1
+		0.0376903	-0.0892203	2.2507
+	}
+}
+{Extender "preview"
+	{"stuff"
+		{camera
+			{origin 31.8678	23.3911	7.94119}
+			{lookat -0.151026	0.0346721	2.283}
+			{fov 7.43102}
+			{horizon -4.99799}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 1.2084	0.71608	4.46126}
+			}
+			{"1"
+				{type spot}
+				{position 17.2678	-2.16483	4.22242}
+				{direction -0.49072	0.0665006	-0.0692767}
+				{theta 43}
+				{phi 45}
+			}
+		}
+	}
+}

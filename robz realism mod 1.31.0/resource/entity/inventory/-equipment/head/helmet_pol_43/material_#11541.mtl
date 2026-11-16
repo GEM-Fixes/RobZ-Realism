@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "material"}
+        	{bump "material"}
+	{specular "material"}
+	{color "229 229 229 76"}
+	{blend none}
+}

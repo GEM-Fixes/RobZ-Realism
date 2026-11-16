@@ -1,0 +1,5 @@
+{material bump
+	{diffuse "crossbow_metal"}
+	{bump "crossbow_metal_b"}
+	{blend none}
+}

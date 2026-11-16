@@ -1,0 +1,7 @@
+{actor
+	(include "/properties/stuff_small.ext")
+	{extender "stuff"
+		{item "pol_rogatywka_wz36"}
+	}
+	{Extension "pol_cap_1.mdl"}
+}

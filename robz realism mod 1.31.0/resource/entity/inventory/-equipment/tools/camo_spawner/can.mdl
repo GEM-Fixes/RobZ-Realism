@@ -1,0 +1,63 @@
+;Exported by: Joe
+;Date:        Wed Sep 18 02:09:25 2013
+;File:        C:\Users\Joe\Desktop\Models\Completed Full Models\BF2 Completed, Full Models\STATICS\jerry.max
+{Skeleton
+	{bone "basis"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{bone "handle"
+			{Matrix34
+				-1	0	0
+				0	-1	0
+				0	0	1
+				5.78751	0.0769426	1.49458
+			}
+		}
+		{bone "jerrican__simpleobject"
+			{Matrix34
+				0	0	-1
+				0	1	0
+				1	0	0
+				0	0	1.4794
+			}
+			{VolumeView "jerrican__simpleobject.ply"}
+		}
+	}
+}
+{Volume "body"
+	{Box 11.5297 7.97342 3.20729}
+	{Bone "basis"}
+	{Position 0	0	1.60364}
+}
+{Volume "select"
+	{Box 11.5297 7.97342 3.20729}
+	{Bone "basis"}
+	{Position 0	0	1.60364}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 0.0232306	-0.0428614	11.9155}
+			{lookat 0.0222223	-0.0923871	-16.4664}
+			{fov 45}
+			{horizon 89.9995}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction 1.77734e-005	0.00087247	0.499999}
+			}
+			{"1"
+				{type point}
+				{position -0.0038311	-2.98908	7.98832}
+			}
+			{"2"
+				{type point}
+				{position 0.186315	3.10395	8.14512}
+			}
+		}
+	}
+}

@@ -1,0 +1,55 @@
+;Exported by: sergienko
+;Date:        Thu Feb 17 14:39:11 2005
+;File:        D:\-projets1_5\3dwork\anima\gun\knife\knife rus.max
+{Skeleton
+	{bone "knife_fin"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{LODView
+			{VolumeView "knife_fin.ply"}
+		}
+	}
+}
+{Volume "select"
+	{Box 8.55615 4.126 1.66627}
+	{Bone "knife_fin"}
+	{Matrix34
+		-1.94707e-007	1	-1.50996e-007
+		-1	-1.94707e-007	1.50996e-007
+		1.50996e-007	1.50996e-007	1
+		0.937513	1.32226	0.0720435
+	}
+}
+{Volume "body"
+	{Box 5.98466 0.925752 0.794837}
+	{Bone "knife_fin"}
+	{Matrix34
+		-1.94707e-007	1	-1.50996e-007
+		-1	-1.94707e-007	1.50996e-007
+		1.50996e-007	1.50996e-007	1
+		0.92943	1.68116	0.0359155
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 2.59484	-0.994491	7.05966}
+			{lookat 0.963691	-1.4559	0.5036}
+			{fov 45}
+			{horizon 7.99993}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction 0.347667	2.39977e-009	-0.359343}
+			}
+			{"1"
+				{type point}
+				{position 0.246055	-4.03553	1.00403}
+			}
+		}
+	}
+}

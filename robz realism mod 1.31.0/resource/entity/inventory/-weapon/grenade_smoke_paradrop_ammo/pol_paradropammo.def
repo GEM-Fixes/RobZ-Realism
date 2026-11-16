@@ -1,0 +1,8 @@
+{actor
+	(include "/properties/stuff_grenade.ext")
+	(include "grenade_smoke.inc")
+	{extender "stuff"
+		{item "grenade pol_paradropammo"}
+	}
+	{props "pol_paradropammo"}
+}

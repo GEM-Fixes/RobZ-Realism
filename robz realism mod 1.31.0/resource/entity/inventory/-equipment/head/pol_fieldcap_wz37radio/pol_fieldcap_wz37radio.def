@@ -1,0 +1,7 @@
+{actor
+	(include "/properties/stuff_small.ext")
+	{extender "stuff"
+		{item "pol_fieldcap_wz37radio"}
+	}
+	{Extension "pol_fieldcap_wz37radio.mdl"}
+}

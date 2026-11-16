@@ -1,0 +1,5 @@
+{material bump
+	{diffuse "fhcrates_de"}
+	{bump "fhcrates_deb"}
+	{blend none}
+}

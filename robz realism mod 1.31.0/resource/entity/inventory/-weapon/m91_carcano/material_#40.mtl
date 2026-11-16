@@ -1,0 +1,6 @@
+{material bump
+	{diffuse "m91 carcano"}
+	{specular "m91 carcano_sp"}
+	{color "229 229 229 152"}
+	{blend none}
+}

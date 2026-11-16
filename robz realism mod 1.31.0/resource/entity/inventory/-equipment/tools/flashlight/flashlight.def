@@ -1,0 +1,13 @@
+{game_entity
+	(include "/properties/stuff_small.ext")
+	{props "steel" "construction" "spread_items"}
+	{collider "stuff.construction"}
+	{Extension "flashlight.mdl"}
+	{extender "stuff"
+		{item "flashlight"}
+	}
+        	{extender "light"
+		{lamp "2"}
+		{lightfx "light_boat"}
+	}
+}

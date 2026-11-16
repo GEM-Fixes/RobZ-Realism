@@ -1,0 +1,7 @@
+{actor
+	(include "/properties/stuff_small.ext")
+	{extender "stuff"
+		{item "8_kaska_soldat_ruminia"}
+	}
+	{Extension "rom_helmet2.mdl"}
+}

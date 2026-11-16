@@ -1,0 +1,6 @@
+{material bump
+	{diffuse "$/model/skr/bakelit_dark"}
+	{specular "$/model/skr/bakelit_sp"}
+	{color "229 229 229 152"}
+	{blend none}
+}

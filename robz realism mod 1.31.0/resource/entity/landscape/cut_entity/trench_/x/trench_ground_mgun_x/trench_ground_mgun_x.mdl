@@ -1,0 +1,14 @@
+;Exported by: gals
+;Date:        Tue Jul 25 15:45:34 2006
+;File:        D:\-Projects1_5-\-3DWork-\trench\trench15_1a.max
+{Skeleton
+	{bone "trench_ground_mgun_x"
+		{parameters "CommonMesh;Ground;"}
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	0.3
+		}
+		{VolumeView "trench_ground_mgun_x.ply" {Ground} {DecalTarget}}
+	}
+}

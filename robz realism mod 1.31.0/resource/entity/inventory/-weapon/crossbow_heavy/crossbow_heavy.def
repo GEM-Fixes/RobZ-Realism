@@ -1,0 +1,8 @@
+{entity
+	(include "/properties/stuff_small.ext")
+	{extension "crossbow_heavy.mdl"}
+	{extender "stuff"
+		{item "crossbow"}
+	}
+;	{ignoresaturation 1}
+}

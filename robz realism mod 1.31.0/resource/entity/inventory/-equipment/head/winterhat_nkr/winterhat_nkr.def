@@ -1,0 +1,7 @@
+{Actor
+        (include "/properties/stuff_small.ext")
+	{extender "stuff"
+		{item "winterhat_nkr"}
+	}
+	{Extension "kor_winterhat.mdl"}
+}

@@ -1,0 +1,9 @@
+{actor
+	(include "/properties/stuff_small.ext")
+	{extension "type38ex.mdl"}
+	{props "flag"}
+	{extender "stuff"
+		{item "type38ex"}
+	}
+	{nogroupmesh 1}
+}

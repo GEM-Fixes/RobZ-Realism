@@ -1,0 +1,96 @@
+;Exported by: Administrator
+;Date:        Thu Sep 27 22:55:43 2012
+;File:        C:\Documents and Settings\Administrator\My Documents\3dsMax\scenes\native\spear.max
+{Skeleton
+	{bone "spear"
+		{parameters "CommonMesh;ID=rifle;"}
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "spear.ply"}
+		{bone "handle"
+			{Matrix34
+				-0.0153253	-0.99988	0.0021658
+				0.991141	-0.0154772	-0.131908
+				0.131924	0.000124043	0.99126
+				2.86701	0.862961	0.784079
+			}
+		}
+		{bone "foresight3"
+			{Matrix34
+				0.999998	0	0.00208665
+				-0.00208662	0.000124885	0.999998
+				0	-1	0.000124888
+				15.8018	0.0105307	-0.326451
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 17.126 5.90551 1.9685}
+	{Bone "spear"}
+	{Matrix34
+		0.999998	0	0.00208551
+		0	1	-0.000123416
+		-0.00208774	0.000126008	0.999999
+		7.42187	-0.323287	-0.142983
+	}
+}
+{Volume "select"
+	{Box 19.685 7.87402 3.93701}
+	{Bone "spear"}
+	{Matrix34
+		0.999998	0	0.00208551
+		0	1	-0.000123416
+		-0.00208774	0.000126008	0.999999
+		7.5041	-0.326598	-0.228301
+	}
+}
+{Extender "preview"
+	{"Stuff_primary"
+		{camera
+			{origin 8.64242	-4.89721	30.1146}
+			{lookat 7.98669	-2.0741	12.9229}
+			{fov 40.7792}
+			{horizon 167.665}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 10.9765	-1.93696	-0.0299664}
+			}
+			{"1"
+				{type directional}
+				{direction -0.078331	0.197779	-0.452491}
+			}
+			{"2"
+				{type point}
+				{position 4.02369	-1.89617	0.0571013}
+			}
+		}
+	}
+	{"Stuff"
+		{camera
+			{origin 8.53146	-4.73688	29.4651}
+			{lookat 7.90095	-2.02235	12.9347}
+			{fov 34.645}
+			{horizon 179.664}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 10.9698	-1.93694	-0.158408}
+			}
+			{"1"
+				{type directional}
+				{direction -0.078331	0.197779	-0.452491}
+			}
+			{"2"
+				{type point}
+				{position 4.02369	-1.89617	0.0571013}
+			}
+		}
+	}
+}

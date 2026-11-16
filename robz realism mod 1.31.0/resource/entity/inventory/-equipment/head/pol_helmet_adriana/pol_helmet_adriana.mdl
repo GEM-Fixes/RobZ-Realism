@@ -1,0 +1,74 @@
+;Exported by: ой
+;Date:        Sun Apr 06 09:39:50 2014
+;File:        D:\Documents\3dsmax\scenes\Helmets\helmet_poland_wz16.max
+{Skeleton
+	{bone "helmet_adriana"
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{bone "body"
+			{Matrix34
+				-0.969329	0	-0.245768
+				0	-1	0
+				-0.245768	0	0.969329
+				-0.126369	-0.00401521	2.8476
+			}
+			{VolumeView "body.ply"}
+			{bone "remen"
+				{Matrix34
+					-0.993942	0	-0.109903
+					0	-1	0
+					-0.109903	0	0.993942
+					0.293096	0.0147511	2.49502
+				}
+				{VolumeView "remen.ply"}
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 5.31496 3.54331 4.72441}
+	{Bone "body"}
+	{Matrix34
+		-0.969329	0	-0.245768
+		-0.245768	0	0.969329
+		0	1	0
+		-0.223775	0.0693326	0.825578
+	}
+}
+{Volume "select"
+	{Box 5.51181 3.74016 4.92126}
+	{Bone "body"}
+	{Matrix34
+		-0.969329	0	-0.245768
+		-0.245768	0	0.969329
+		0	1	0
+		-0.223775	0.075633	0.825578
+	}
+}
+{Extender "preview"
+	{"Stuff"
+		{camera
+			{origin 9.6814	-8.25522	4.09624}
+			{lookat 1.51386	-1.24217	2.82222}
+			{fov 22.6199}
+			{horizon -3.3864}
+		}
+		{lights
+			{"0"
+				{type directional}
+				{direction -0.171162	0.146829	-0.446256}
+			}
+			{"1"
+				{type directional}
+				{direction -0.189277	0.266067	0.378659}
+			}
+			{"2"
+				{type directional}
+				{direction -0.105484	-0.229601	-0.431458}
+			}
+		}
+	}
+}

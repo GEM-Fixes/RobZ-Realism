@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "base"}
+	{bump "04___default_normal_opengl"}
+	{specular "04___default_specular"}
+	{color "229 229 229 25"}
+	{blend test}
+}

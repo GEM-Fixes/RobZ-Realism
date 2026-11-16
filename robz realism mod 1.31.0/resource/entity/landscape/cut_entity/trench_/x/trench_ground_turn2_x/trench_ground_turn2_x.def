@@ -1,0 +1,5 @@
+{
+	(include "/properties/trench.inc")
+	{Extension "trench_ground_turn2_x.mdl"}
+
+}

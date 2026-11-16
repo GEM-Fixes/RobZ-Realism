@@ -1,0 +1,138 @@
+;Exported by: Kislov_A
+;Date:        Wed Jan 28 17:24:00 2009
+;File:        E:\Black\Design doc\Art\Models\Technics\Корабельные Орудия\ДШК_platform\DSHK_platform.max
+{Skeleton
+	{bone revolute "basis"
+		{Matrix34
+			1	0	0
+			0	-1	0
+			0	0	1
+			0	0	0
+		}
+		{bone revolute "body"
+			{parameters "ID=body;"}
+			{Position -0.0849495	-0.0462274	22.155161}
+			{VolumeView "body.ply"}
+			{bone "turret"
+				{parameters "ID=turret;"}
+				{VolumeView "turret.ply"}
+				{bone revolute "gun_rot"
+					{parameters "ID=Gun;"}
+					{limits -35 35}
+					{speed 0.4}
+					{Matrix34
+						1	0	0
+						0	0	-1
+						0	1	0
+						8.34468	0.306842	2.41203
+					}
+					{VolumeView "gun_rot.ply"}
+					{bone "gun"
+						{parameters "ID=Gun;"}
+						{Position 0.316252	-0.966886	0.827394}
+						{VolumeView "gun.ply"}
+						{bone "fx_shell"
+							{Matrix34
+								0	0	-1
+								-0.468948	-0.883226	0
+								-0.883226	0.468948	0
+								0.342882	-3.16435	-1.86852
+							}
+						}
+						{bone revolute "foresight3"
+							{parameters "Vis;"}
+							 {limits -30 30}
+							{Matrix34
+								0.882133	-0.470985	-0.00382353
+								-0.00801389	-0.00689197	-0.999944
+								0.470932	0.882114	-0.00985408
+								24.3007	-16.1391	-1.16074
+							}
+						}
+						{bone "shooter00"
+							{parameters "Vis;"}
+							{Matrix34
+								0.882133	-0.470985	-0.00382353
+								-0.00801389	-0.00689197	-0.999944
+								0.470932	0.882114	-0.00985408
+								24.7034	-16.3428	-1.16074
+							}
+						}
+					}
+					{bone "visor"
+						{parameters "Vis;"}
+						{Matrix34
+							0.886918	-0.461927	0
+							0	0	-1
+							0.461927	0.886918	0
+							7.67331	-12.687	-0.274946
+						}
+					}
+				}
+			}
+			{bone "emit1"
+				{parameters "Group=crew;"}
+				{Matrix34
+					0	1	0
+					-1	0	0
+					0	0	1
+					-14.3022	0.308496	-0.134457
+				}
+				{visibility 0}
+			}
+			{bone "gunner"
+				{Position 0.104699	-0.1643	-19.6986}
+			}
+		}
+	}
+}
+{Volume "body"
+	{Cylinder 10.0684 1.2579}
+	{Bone "body"}
+	{Matrix34
+		0	1	0
+		-1	0	0
+		0	0	1
+		0.152899	-0.0268755	-0.925496
+	}
+}
+{Volume "gun_rot1"
+	{Polyhedron "gun_rot1.vol"}
+	{Bone "gun_rot"}
+	{Matrix34
+		-0.0151128	-0.0638069	-0.997848
+		0.99981	-0.0132534	-0.014295
+		-0.0123127	-0.997874	0.0639951
+		5.8319	5.92567	-0.961019
+	}
+}
+{Volume "gun_rot"
+	{Polyhedron "gun_rot.vol"}
+	{Bone "gun_rot"}
+	{Matrix34
+		-0.00930203	0.0108559	-0.999898
+		0.99989	0.0116456	-0.00917552
+		0.0115448	-0.999873	-0.010963
+		0.44332	0.0854492	-0.0713701
+	}
+}
+{Volume "gun"
+	{Polyhedron "gun.vol"}
+	{Bone "gun"}
+	{Matrix34
+		0.970329	-0.241788	0
+		-0.241788	-0.970329	0
+		0	0	-1
+		10.2189	-8.54227	0.82625
+	}
+}
+{Volume "turret"
+	{Polyhedron "turret.vol"}
+	{Bone "turret"}
+	{Matrix34
+		0	-1	0
+		1	0	0
+		0	0	1
+		6.84282	0.00675106	-3.5131
+	}
+}

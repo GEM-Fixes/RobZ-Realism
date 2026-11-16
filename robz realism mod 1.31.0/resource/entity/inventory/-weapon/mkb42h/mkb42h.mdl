@@ -1,0 +1,89 @@
+;Exported by: dpostnikov
+;Date:        Sat Jul 11 14:21:11 2020
+;File:        C:\Users\dpostnikov\Documents\3dsmax\scenes\mkb42h.max
+{Skeleton
+	{bone "mkb42h"
+		{parameters "CommonMesh;"}
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	1
+		}
+		{VolumeView "mkb42h.ply"}
+		{bone "foresight3"
+			{Position 13.7281	1.69554	-0.0387851}
+		}
+		{bone "handle"
+			{Matrix34
+				1	0	0
+				0	0	-1
+				0	1	0
+				1.84803	0.400423	0.446291
+			}
+		}
+		{bone "fxshell"
+			{Matrix34
+				0	0	1
+				0	1	0
+				-1	0	0
+				3.53816	1.76829	0.0596014
+			}
+		}
+	}
+}
+{Volume "body"
+	{Box 20 2.9 0.85}
+	{Bone "mkb42h"}
+	{Position 3.14385	1.02358	-0.0546146}
+}
+{Volume "select"
+	{Box 20.5 6 1}
+	{Bone "mkb42h"}
+	{Position 3.44946	0.0795069	-0.055115}
+}
+{Extender "preview"
+	{"Stuff_primary"
+		{camera
+			{origin 4.02124	-4.15711	23.4109}
+			{lookat 3.62485	-2.54026	13.5579}
+			{fov 45}
+			{horizon 174.956}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 3.58747	28.9101	7.59465}
+			}
+			{"1"
+				{type point}
+				{position 3.58746	2.16262	25.95}
+			}
+			{"2"
+				{type directional}
+				{direction -0.00503225	0.494215	-0.0756686}
+			}
+		}
+	}
+	{"Stuff"
+		{camera
+			{origin 4.24562	-6.96709	21.5138}
+			{lookat 3.15862	-0.563369	-0.14299}
+			{fov 45}
+			{horizon -172.307}
+		}
+		{lights
+			{"0"
+				{type point}
+				{position 3.56347	30.0658	7.27253}
+			}
+			{"1"
+				{type directional}
+				{direction -0.0101697	0.498574	-0.0363347}
+			}
+			{"2"
+				{type point}
+				{position 3.56347	-2.04094	25.9709}
+			}
+		}
+	}
+}

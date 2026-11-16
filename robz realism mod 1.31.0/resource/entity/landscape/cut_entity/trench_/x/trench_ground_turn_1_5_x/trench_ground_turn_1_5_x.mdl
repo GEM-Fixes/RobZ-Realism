@@ -1,0 +1,14 @@
+;Exported by: klimenko
+;Date:        Thu Jan 25 18:57:54 2007
+;File:        D:\-Project-\-3DWork-\trench\trench17_turn_sm11.max
+{Skeleton
+	{bone "trench_ground_turn"
+		{parameters "CommonMesh;Ground;"}
+		{Orientation
+			1	0	0
+			0	-1	0
+			0	0	0.3
+		}
+		{VolumeView "trench_ground_turn.ply" {Ground} {DecalTarget}}
+	}
+}

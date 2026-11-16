@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "helmet1"}
+       	{bump "helmet1"}
+	{specular "helmet1"}
+	{color "229 229 229 76"}
+	{blend none}
+}

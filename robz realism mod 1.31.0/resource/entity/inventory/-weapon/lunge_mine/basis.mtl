@@ -1,0 +1,4 @@
+{material bump
+	{diffuse "mine_stick"}
+	{blend test}
+}
