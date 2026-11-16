@@ -1,0 +1,6 @@
+{material bump
+	{diffuse "$/humanskin/fin/fin_winter2"}
+	{specular "$/humanskin/rus_officer_winter_spec"}
+	{color "230 230 230 25"}
+	{blend test}
+}

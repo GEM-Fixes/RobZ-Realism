@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "$/humanskin/fin/fin_com"}
+	{blend none}
+}

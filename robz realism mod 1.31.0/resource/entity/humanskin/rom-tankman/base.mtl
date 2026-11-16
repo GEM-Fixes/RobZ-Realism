@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "$/humanskin/rom/uniform"}
+	{blend none}
+}

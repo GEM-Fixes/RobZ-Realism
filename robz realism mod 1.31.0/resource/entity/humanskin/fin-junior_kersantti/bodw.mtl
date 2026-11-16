@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/humanskin/fin/fin_winter"}
+	{bump "$/humanskin/fin/fin_winter_nm"}
+	{specular "$/humanskin/fin/fin_winter_sp"}
+	{color "255 255 255 50"}
+	{blend none}
+}

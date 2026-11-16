@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "$/humanskin/finnish/cavalry/uniform"}
+	{blend none}
+}

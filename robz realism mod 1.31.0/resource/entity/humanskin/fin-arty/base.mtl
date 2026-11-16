@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "$/humanskin/finnish/artillery/uniform summer"}
+	{blend none}
+}

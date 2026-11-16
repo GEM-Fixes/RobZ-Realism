@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "ita_tankman"}
+	{bump "ita_tankman_b"}
+	{specular "ita_tankman_s"}
+	{color "229 229 229 152"}
+	{blend test}
+}

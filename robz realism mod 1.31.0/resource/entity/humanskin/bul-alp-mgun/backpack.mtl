@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "$/humanskin/ita/alpini backpack"}
+	{blend none}
+}

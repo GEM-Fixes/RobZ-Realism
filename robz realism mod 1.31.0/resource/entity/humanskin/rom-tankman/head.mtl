@@ -1,0 +1,4 @@
+{material bump
+	{diffuse "$/humanskin/face2/face"}
+	{blend none}
+}
