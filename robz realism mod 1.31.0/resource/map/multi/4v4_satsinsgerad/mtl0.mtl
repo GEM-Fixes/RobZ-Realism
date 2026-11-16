@@ -1,0 +1,7 @@
+{material
+	{layer bump
+	}
+	{layer bump
+		{bump "/texture/land/grass/forestfloor1_nm"}
+	}
+}

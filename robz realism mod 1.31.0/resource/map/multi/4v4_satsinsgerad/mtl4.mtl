@@ -1,0 +1,9 @@
+{material
+	{layer bump
+		{diffuse "/texture/land/_reighstag/crash_brick"}
+	}
+	{layer bump
+		{diffuse "/texture/land/dirt/clay_2"}
+		{bump "/texture/land/dirt/clay_2_nm"}
+	}
+}
