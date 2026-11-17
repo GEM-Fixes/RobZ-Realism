@@ -1,5 +1,5 @@
 {mission
-	{Environment "multi/multi_01"}
+
 	{Entity "map_point" 0x802d
 		{Position 1237.62 -5686.7}
 		{xform zl 91.35}

@@ -50,7 +50,7 @@
 	}
 	{#+ particleview
 		{generator
-			{totalparticles 8}
+
 			{emissionarea
 				{radius 0.1 0.1}
 				{alpha0 0}

@@ -7976,4 +7976,289 @@
 		{"water" "Water"}
 		{"winterhat" "Field cap"}
 	}
+	{"human"
+		{"mp"
+			{"rus"
+				{"ap_miner" "<c(c3baae)>combat engineer (AP mines)"}
+				{"at_miner" "<c(c3baae)>combat engineer (AT mines)"}
+				{"at_rifle" "<c(c3baae)>AT-Rifle infantry"}
+				{"at_rifle2" "<c(c3baae)>AT-Rifle support infantry"}
+				{"bazooker" "<c(c3baae)>AT infantry"}
+				{"bazooker2" "<c(c3baae)>AT support infantry"}
+				{"elite" "<c(c3baae)>marine"}
+				{"elite2" "<c(c3baae)>marine"}
+				{"elite3" "<c(c3baae)>marine"}
+				{"elite5" "<c(c3baae)>guards rifle"}
+				{"elite6" "<c(c3baae)>guards rifle"}
+				{"flamer" "<c(c3baae)>flamethrower infantry"}
+				{"flamer2" "<c(c3baae)>flamethrower support infantry"}
+				{"home_guard" "<c(c3baae)>partisan"}
+				{"home_guard2" "<c(c3baae)>partisan"}
+				{"mgun" "<c(c3baae)>machine gunner"}
+				{"oficer" "<c(c3baae)>officer"}
+				{"rifle" "<c(c3baae)>rifleman"}
+				{"rifle2" "<c(c3baae)>assault rifleman"}
+				{"rifle3" "<c(c3baae)>rifleman"}
+				{"saper" "<c(c3baae)>mine disposal expert"}
+				{"smg" "<c(c3baae)>SMG infantry"}
+				{"smg2" "<c(c3baae)>assault SMG infantry"}
+				{"smg3" "<c(c3baae)>shock infantry"}
+				{"sniper" "<c(c3baae)>sniper"}
+				{"sniper2" "<c(c3baae)>guards sniper"}
+				{"sturmovik" "<c(c3baae)>red guard"}
+				{"sturmovik2" "<c(c3baae)>red guard"}
+				{"sturmovik3" "<c(c3baae)>red guard"}
+				{"sturmovik4" "<c(c3baae)>red guard"}
+				{"sturmovik4b" "<c(c3baae)>red guard"}
+				{"sturmovik5" "<c(c3baae)>red guard"}
+				{"sturmovik5b" "<c(c3baae)>red guard"}
+				{"sturmovik6" "<c(c3baae)>red guard"}
+				{"sturmovik6b" "<c(c3baae)>red guard"}
+				{"squadleader" "<c(c3baae)>squad leader"}
+				{"squadleader2" "<c(c3baae)>assault squad leader"}
+			}
+			{"usa"
+				{"ap_miner" "<c(c3baae)>combat engineer (AP mines)"}
+				{"at_miner" "<c(c3baae)>combat engineer (AT mines)"}
+				{"bazooker" "<c(c3baae)>AT infantry"}
+				{"bazooker2" "<c(c3baae)>AT support infantry"}
+				{"elite" "<c(c3baae)>airborne"}
+				{"elite2" "<c(c3baae)>airborne"}
+				{"elite3" "<c(c3baae)>airborne"}
+				{"elite5" "<c(c3baae)>U.S. Marine"}
+				{"elite6" "<c(c3baae)>U.S. Marine"}
+				{"flamer" "<c(c3baae)>flamethrower infantry"}
+				{"flamer2" "<c(c3baae)>flamethrower support infantry"}
+				{"home_guard" "<c(c3baae)>conscript"}
+				{"home_guard2" "<c(c3baae)>conscript"}
+				{"mgun" "<c(c3baae)>machine gunner"}
+				{"mgun2" "<c(c3baae)>machine gunner"}
+				{"oficer" "<c(c3baae)>officer"}
+				{"rifle" "<c(c3baae)>rifleman"}
+				{"rifle2" "<c(c3baae)>assault rifleman"}
+				{"saper" "<c(c3baae)>mine disposal expert"}
+				{"smg" "<c(c3baae)>SMG infantry"}
+				{"smg2" "<c(c3baae)>assault SMG infantry"}
+				{"sniper" "<c(c3baae)>sniper"}
+				{"shotgun" "<c(c3baae)>shotgun trooper"}
+				{"sturmovik" "<c(c3baae)>ranger"}
+				{"sturmovik2" "<c(c3baae)>ranger"}
+				{"sturmovik3" "<c(c3baae)>ranger"}
+				{"sturmovik4" "<c(c3baae)>ranger"}
+				{"sturmovik4b" "<c(c3baae)>ranger"}
+				{"sturmovik5" "<c(c3baae)>ranger"}
+				{"sturmovik5b" "<c(c3baae)>ranger"}
+				{"sturmovik6" "<c(c3baae)>ranger"}
+				{"sturmovik6b" "<c(c3baae)>ranger"}
+				{"squadleader" "<c(c3baae)>squad leader"}
+				{"squadleader2" "<c(c3baae)>assault squad leader"}
+			}
+			{"ger"
+				{"ap_miner" "<c(c3baae)>combat engineer (AP mines)"}
+				{"at_miner" "<c(c3baae)>combat engineer (AT mines)"}
+				{"at_rifle" "<c(c3baae)>AT-Rifle rifleman"}
+				{"at_rifle2" "<c(c3baae)>AT-Rifle support infantry"}
+				{"bazooker" "<c(c3baae)>AT infantry"}
+				{"bazooker2" "<c(c3baae)>AT support infantry"}
+				{"bazooker3" "<c(c3baae)>AT infantry"}
+				{"elite" "<c(c3baae)>paratrooper"}
+				{"elite2" "<c(c3baae)>paratrooper"}
+				{"elite3" "<c(c3baae)>paratrooper"}
+				{"elite5" "<c(c3baae)>brandenburger"}
+				{"elite6" "<c(c3baae)>brandenburger"}
+				{"flamer" "<c(c3baae)>flamethrower infantry"}
+				{"flamer2" "<c(c3baae)>flamethrower support infantry"}
+				{"home_guard" "<c(c3baae)>volkssturm"}
+				{"home_guard2" "<c(c3baae)>volkssturm"}
+				{"mgun" "<c(c3baae)>machine gunner"}
+				{"oficer" "<c(c3baae)>officer"}
+				{"rifle" "<c(c3baae)>rifleman"}
+				{"rifle2" "<c(c3baae)>assault rifleman"}
+				{"saper" "<c(c3baae)>mine disposal expert"}
+				{"smg" "<c(c3baae)>SMG infantry"}
+				{"smg2" "<c(c3baae)>assault SMG infantry"}
+				{"sniper" "<c(c3baae)>sniper"}
+				{"sniper2" "<c(c3baae)>veteran sniper"}
+				{"sturmovik" "<c(c3baae)>panzergrenadier"}
+				{"sturmovik2" "<c(c3baae)>panzergrenadier"}
+				{"sturmovik3" "<c(c3baae)>panzergrenadier"}
+				{"sturmovik4" "<c(c3baae)>panzergrenadier"}
+				{"sturmovik4b" "<c(c3baae)>panzergrenadier"}
+				{"sturmovik5" "<c(c3baae)>panzergrenadier"}
+				{"sturmovik5b" "<c(c3baae)>panzergrenadier"}
+				{"sturmovik6" "<c(c3baae)>panzergrenadier"}
+				{"sturmovik6b" "<c(c3baae)>panzergrenadier"}
+				{"squadleader" "<c(c3baae)>squad leader"}
+				{"squadleader2" "<c(c3baae)>assault squad leader"}
+			}
+			{"eng"
+				{"ap_miner" "<c(c3baae)>combat engineer (AP mines)"}
+				{"at_miner" "<c(c3baae)>combat engineer (AT mines)"}
+				{"at_rifle" "<c(c3baae)>AT-Rifle infantry"}
+				{"at_rifle2" "<c(c3baae)>AT-Rifle support infantry"}
+				{"bazooker" "<c(c3baae)>AT infantry"}
+				{"bazooker2" "<c(c3baae)>AT support infantry"}
+				{"elite" "<c(c3baae)>commando"}
+				{"elite2" "<c(c3baae)>commando"}
+				{"elite3" "<c(c3baae)>commando"}
+				{"elite5" "<c(c3baae)>anzac"}
+				{"elite6" "<c(c3baae)>anzac"}
+				{"flamer" "<c(c3baae)>flamethrower infantry"}
+				{"flamer2" "<c(c3baae)>flamethrower support infantry"}
+				{"mgun" "<c(c3baae)>machine gunner"}
+				{"mgun2" "<c(c3baae)>machine gunner"}
+				{"oficer" "<c(c3baae)>officer"}
+				{"rifle" "<c(c3baae)>rifleman"}
+				{"rifle2" "<c(c3baae)>assault rifleman"}
+				{"rifle3" "<c(c3baae)>rifleman"}
+				{"saper" "<c(c3baae)>mine disposal expert"}
+				{"saper2" "<c(c3baae)>royal engineer"}
+				{"saper3" "<c(c3baae)>royal engineer"}
+				{"smg" "<c(c3baae)>SMG infantry"}
+				{"smg2" "<c(c3baae)>assault SMG infantry"}
+				{"smg3" "<c(c3baae)>SMG infantry"}
+				{"sniper" "<c(c3baae)>sniper"}
+				{"sturmovik" "<c(c3baae)>SAS soldier"}
+				{"sturmovik2" "<c(c3baae)>SAS soldier"}
+				{"sturmovik3" "<c(c3baae)>SAS soldier"}
+				{"sturmovik4" "<c(c3baae)>SAS soldier"}
+				{"sturmovik4b" "<c(c3baae)>SAS soldier"}
+				{"sturmovik4c" "<c(c3baae)>SAS soldier"}
+				{"sturmovik5" "<c(c3baae)>SAS soldier"}
+				{"sturmovik5b" "<c(c3baae)>SAS soldier"}
+				{"sturmovik6" "<c(c3baae)>SAS soldier"}
+				{"sturmovik6b" "<c(c3baae)>SAS soldier"}
+				{"squadleader" "<c(c3baae)>squad leader"}
+				{"squadleader2" "<c(c3baae)>assault squad leader"}
+			}
+			{"jap"
+				{"at_miner" "<c(c3baae)>combat engineer (AP mines)"}
+				{"ap_miner" "<c(c3baae)>combat engineer (AT mines)"}
+				{"at_rifle" "<c(c3baae)>AT-Rifle infantry"}
+				{"at_rifle2" "<c(c3baae)>AT-Rifle support infantry"}
+				{"bazooker" "<c(c3baae)>AT infantry"}
+				{"bazooker2" "<c(c3baae)>AT support infantry"}
+				{"bazooker3" "<c(c3baae)>AT infantry"}
+				{"elite" "<c(c3baae)>paratrooper"}
+				{"elite2" "<c(c3baae)>paratrooper"}
+				{"elite3" "<c(c3baae)>paratrooper"}
+				{"flamer" "<c(c3baae)>flamethrower infantry"}
+				{"flamer2" "<c(c3baae)>flamethrower support infantry"}
+				{"home_guard" "<c(c3baae)>recruit"}
+				{"home_guard2" "<c(c3baae)>recruit"}
+				{"kamikaze" "<c(c3baae)>kamikaze"}
+				{"mgun" "<c(c3baae)>machine gunner"}
+				{"oficer" "<c(c3baae)>officer"}
+				{"rifle" "<c(c3baae)>rifleman"}
+				{"rifle2" "<c(c3baae)>assault rifleman"}
+				{"saper" "<c(c3baae)>mine disposal expert"}
+				{"smg" "<c(c3baae)>SMG infantry"}
+				{"smg2" "<c(c3baae)>assault SMG infantry"}
+				{"sniper" "<c(c3baae)>sniper"}
+				{"sturmovik" "<c(c3baae)>SNLF soldier"}
+				{"sturmovik2" "<c(c3baae)>SNLF soldier"}
+				{"sturmovik3" "<c(c3baae)>SNLF soldier"}
+				{"sturmovik4" "<c(c3baae)>SNLF soldier"}
+				{"sturmovik4b" "<c(c3baae)>SNLF soldier"}
+				{"sturmovik5" "<c(c3baae)>SNLF soldier"}
+				{"sturmovik5b" "<c(c3baae)>SNLF soldier"}
+				{"sturmovik6" "<c(c3baae)>SNLF soldier"}
+				{"sturmovik6b" "<c(c3baae)>SNLF soldier"}
+				{"squadleader" "<c(c3baae)>squad leader"}
+				{"squadleader2" "<c(c3baae)>assault squad leader"}
+			}
+			{"ger2"
+				{"ap_miner" "<c(c3baae)>combat engineer (AP mines)"}
+				{"at_miner" "<c(c3baae)>combat engineer (AT mines)"}
+				{"at_rifle" "<c(c3baae)>AT-Rifle rifleman"}
+				{"at_rifle2" "<c(c3baae)>AT-Rifle support infantry"}
+				{"bazooker" "<c(c3baae)>AT infantry"}
+				{"bazooker2" "<c(c3baae)>AT support infantry"}
+				{"bazooker3" "<c(c3baae)>AT infantry"}
+				{"elite" "<c(c3baae)>jäger"}
+				{"elite2" "<c(c3baae)>jäger"}
+				{"elite3" "<c(c3baae)>jäger"}
+				{"elite4" "<c(c3baae)>strafbataillon infantry"}
+				{"elite5" "<c(c3baae)>strafbataillon infantry"}
+				{"elite6" "<c(c3baae)>strafbataillon infantry"}
+				{"flamer" "<c(c3baae)>flamethrower infantry"}
+				{"flamer2" "<c(c3baae)>flamethrower support infantry"}
+				{"mgun" "<c(c3baae)>machine gunner"}
+				{"oficer" "<c(c3baae)>officer"}
+				{"oficer2" "<c(c3baae)>veteran officer"}
+				{"rifle" "<c(c3baae)>rifleman"}
+				{"rifle2" "<c(c3baae)>stosstrupp infantry"}
+				{"saper" "<c(c3baae)>mine disposal expert"}
+				{"smg" "<c(c3baae)>SMG infantry"}
+				{"smg2" "<c(c3baae)>stosstrupp SMG infantry"}
+				{"sniper" "<c(c3baae)>sniper"}
+				{"sturmovik" "<c(c3baae)>gebirgsjäger"}
+				{"sturmovik2" "<c(c3baae)>gebirgsjäger"}
+				{"sturmovik3" "<c(c3baae)>gebirgsjäger"}
+				{"sturmovik4" "<c(c3baae)>gebirgsjäger"}
+				{"sturmovik4b" "<c(c3baae)>gebirgsjäger"}
+				{"sturmovik5" "<c(c3baae)>gebirgsjäger"}
+				{"sturmovik5b" "<c(c3baae)>gebirgsjäger"}
+				{"sturmovik6" "<c(c3baae)>gebirgsjäger"}
+				{"sturmovik6b" "<c(c3baae)>gebirgsjäger"}
+				{"squadleader" "<c(c3baae)>squad leader"}
+				{"squadleader2" "<c(c3baae)>stosstrupp squad leader"}
+			}
+		}
+	}
+	{"squad"
+		{"smgs2(ger)" "SMG"}
+		{"stormtroopers(ger)" "Panzergrenadiere"}
+		{"hero1_ger" "Veteran Sniper"}
+	}
+	{"entity"
+		{"how_aa(eng)" "3.7-Inch QF AA"}
+		{"how_b(eng)" "QF 25-pdr"}
+		{"how_a(ger)" "sFH 18"}
+		{"how_aa(ger)" "FlaK 37"}
+		{"how_b(ger)" "le. FH 18 M"}
+		{"how_a(jap)" "150mm Type 96"}
+		{"how_aa(jap)" "75mm Type 4 AA Gun"}
+		{"how_b(jap)" "105mm Type 91"}
+		{"how_a(rus)" "D1"}
+		{"how_aa(rus)" "61-K M1939"}
+		{"how_b(rus)" "M-30"}
+		{"how_a(usa)" "M114"}
+		{"how_aa(usa)" "40mm M1 Bofors L/60"}
+		{"how_b(usa)" "M2A1 L"}
+		{"how_a(ger2)" "sFH 18"}
+		{"how_aa(ger2)" "FlaK 37"}
+		{"how_b(ger2)" "le. FH 18 M"}
+		{"how_pak1(ger2)" "PaK 36"}
+		{"how_pak2(ger2)" "PaK 38"}
+		{"how_pak3(ger2)" "PaK 40"}
+		{"steyr_rso" "Steyr RSO"}
+		{"afp" "MFP type D"}
+		{"305mm" "Coastal battery"}
+		{"armor_barge" "Armor Barge"}
+		{"svarka_move" "Welding apparatus"}
+		{"do-24t" "Do-24"}
+		{"do-24t_1" "Do-24"}
+		{"lg40" "LG40"}
+	}
+	{"ammo"
+		{"flaermow ammo" "Flare gun ammo"}
+	}
+	{"weapon"
+		{"37mm_flak36" "37mm FlaK 36"}
+		{"75mm_kwk40(l46)" "75mm KwK 40 L/46"}
+		{"75mm_lg40" "75mm LG40"}
+		{"150mm_sig33_how" "150mm sIG 33"}
+		{"g41b" "G41"}
+		{"panzerfaust60" "Panzerfaust 60"}
+		{"305mm_gun" "305mm"}
+		{"flaermow" "Flare gun"}
+		{"uber_browning" ".50 cal M2HB"}
+	}
+	{"stuff"
+		{"dynamite_clockwork" "Dynamite"}
+		{"wirecutters" "Wire-cutters"}
+		{"rad" "Strange crate"}
+		{"spade_inv" "Shovel"}
+	}
 }

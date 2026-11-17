@@ -65,7 +65,7 @@
     {Locomotion ("locomotion")
     	{TurnRadius 6}
     	{MaxSpeed   36}
-	)
+
 	{maxSpeedAtMaxTurn 12}
     }
 	{FuelBag

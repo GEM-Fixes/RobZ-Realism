@@ -1596,4 +1596,13 @@
 		{"zis_30" "<c(c3baae)>light tank destroyer</c>"}
 		{"zsu37" "<c(c3baae)>AA tank</c>"}
 	}
+	{"squad"
+		{"elites(eng)" "This elite squad of dedicated commandos is equipped with weapons with silencers, and light machine guns. These are some of the best trained soldiers we have available, and they will fight with steadfast dedication for the Commonwealth."}
+		{"riflemans(eng)" "This squad is a balanced fighting force that combines rifles and other small arms, along with a light machine gun, to provide fire support. While they are equipped with the firepower necessary to advance upon the enemy, you may find that they are better served in a defensive role. The machine gun can suppress and splinter enemy infantry formations, while riflemen pick off their targets. This squad provides a solid backbone for any fighting force."}
+		{"smgs(eng)" "Armed with rifles and submachine guns, these infantrymen are equipped to assault enemy positions. Their loadout also makes them ideal for close-quarter combat and urban fighting. They lack machine guns for suppressive fire, so it may be important to provide some additional fire support to cover their advance."}
+		{"stormtroopers(eng)" "This squad of elite infantry comes armed to the teeth with the finest weaponry available. Though they come at a high price, these highly skilled veterans are even equipped to deal with any armored threats they may encounter. With stamina and endurance that puts other infantrymen to shame, they will serve the Commonwealth with distinction!"}
+		{"storm_mech_eng" "This mechanized squad of our best infantry provides the perfect combination of firepower and mobility, capable of breaking through enemy lines and deliver a devastating blow to our enemies. Use the halftrack to support your infantry after they have been deployed and to rapidly bring any needed reinforcements to the front lines. Don't give the enemy a chance to recover -- pursue them relentlessly and seal your victory!"}
+		{"tankmans(usa)" "This pair of tank crews are only lightly armed but are well-suited for crewing your armored vehicles and field guns. Use them to replace the losses you have suffered in combat and re-man your equipment. They are not suited for infantry combat and can't capture points."}
+		{"hero1_ger" "The \"Veteran Sniper\" is a well-trained and highly skilled marksman. His deeds in service to the Fatherland are numerous and have earned him many awards. This long and distinguished service has made him a valued figure in the Wehrmacht and he now serves his country by passing on his knowledge to new soldiers. However, in urgent situations this highly experienced officer won't hesitate to serve his Fatherland on the front lines!"}
+	}
 }

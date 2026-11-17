@@ -1,0 +1,77 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc"  scale(0.5))
+	{props "light" "-turret" "vision_lev00" "sdkfz303"}
+
+	{collider "goliath"}
+	{patherId "tank.light"}
+       
+	{extender "enumerator"}
+          
+	; --- Godny hitbox armor (ported from GodnyMod: sdkfz303.def) ---
+	{volume "body"
+		{tags "inbody"}	;обработка повреждений
+		{component "body"}
+		{thickness 5
+			{front	10}
+		;	{rear	5}
+		;	{top	5}
+		;	{bottom	5}
+		}
+	}
+	; --- end Godny hitbox armor ---
+	("armor_light" turret(10 5 5 5) body(10 5 5 5))
+
+	{sensor
+		{visor "main"
+			{vision "none"}
+		}
+		{visor "driver"
+
+			{vision "none"}
+		}
+	}
+	
+	{placer
+		{crew 0}
+		{place "driver" remove}
+	}
+       
+	{extender "inventory"
+		{box
+			{item "ammo goliath" 1}
+			{item "plant" 3}
+		}
+	}
+	
+	{Weaponry
+		{place "charge"
+			{weapon "weapon goliath" filling "ammo goliath" 1}
+			{gunner "driver"}
+			{charger "driver"}
+		}
+	}
+
+	{mass 150}
+	{Chassis
+		("tank_trace" fx("tracks_sm") step(0.3) len(1))
+		{Locomotion ("locomotion")
+			{maxspeed 18}
+			{StartTime 3}
+			{TurnStart 0.8}
+			{TurnTime 3}
+		}
+        {FuelBag
+	  		{volume 12}	; liters
+	  		{rate	3}   	; liters per kilometer
+	  		{remain 12}
+	  		{fuel "fuel"}
+		}
+		{speed
+        	{Normal  18}
+        	{Slow  18}
+    	}
+	}
+	{Extension "sdkfz303.mdl"}
+	{tag "sdkfz303"}
+}

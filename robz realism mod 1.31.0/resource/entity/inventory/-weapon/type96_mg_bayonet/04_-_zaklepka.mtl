@@ -2,6 +2,6 @@
 	{diffuse "$/model/skr/metal8"}
 	{specular "$/model/skr/metal3_sp"}
 	{color "229 229 229 25"}
-	{blend none}
+
 	{blend none}
 }

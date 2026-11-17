@@ -20,7 +20,7 @@
 	}
 	{#+ particleview
 		{generator
-			{totalparticles 4}
+
 			{emissionarea
 				{radius 1 1}
 				{alpha0 0 5}
@@ -97,7 +97,7 @@
 	}
 	{#+ particleview
 		{generator
-			{totalparticles 8}
+
 			{emissionarea
 				{radius 0.1 0.1}
 				{alpha0 0}

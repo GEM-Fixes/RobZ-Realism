@@ -1089,4 +1089,8 @@
 			{"steamclan" "Community"}
 		}
 	}
+	{"mp"
+		{"msg_searching" "Searching session..."}
+		{"msg_client_blocked" "You were blocked on this host"}
+	}
 }

@@ -1,5 +1,5 @@
 {mission
-	{Environment "multi/multi_01"}
+
 	{Entity "flag_point_frontlines" 0xc000
 		{Position 632.51 -96.22 22.86}
 		{Extender "map_point"

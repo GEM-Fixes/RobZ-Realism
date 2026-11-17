@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "pz38t_tur_dif"}
+	{bump "pz38t_tur_nm"}
+	{specular "pz38t_tur_sp"}
+	{color "229 229 229 25"}
+	{blend none}
+}

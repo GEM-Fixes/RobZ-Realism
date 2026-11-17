@@ -27,7 +27,7 @@
 			{vision "none"}
 		}
 		{visor "driver"
-			{vision "tank_driver"}
+
 			{vision "none"}
 		}
 	}

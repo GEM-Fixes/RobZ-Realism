@@ -55,7 +55,7 @@
 		{volume 20}
 	}
 	{thunder
-		{enable}
+
 		{color 0xff686c73}
 	}
 	{video_overlay

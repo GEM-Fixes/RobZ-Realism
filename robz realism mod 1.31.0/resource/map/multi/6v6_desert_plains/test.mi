@@ -7451,7 +7451,7 @@
 			{item "cap_ita_early" {cell 2 7}{user "head"}}
 		}
 	}
-	{Environment "multi_desert/multi_05"}
+	{Environment "multi/multi_05"}
 	{Helpers
 		{reinforcements
 			{scoreTotal 0}

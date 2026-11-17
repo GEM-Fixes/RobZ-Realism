@@ -1322,4 +1322,13 @@
 	{"fail_minimum_memory" "Cannot allocate required video memory.\nThis may cause memory errors during the game.\nIf your video card meets the minimum requirements listed in the User Guide,\nanother application may be preventing the game from allocating enough video memory.\nDo you want to run the game anyway?"}
 	{"steam_overlay_warning" "Steam Overlay is enabled. It may cause game freeze on your system."}
 	{"steam_overlay_operation_warning" "This action require Steam Overlay enabled."}
+	{"options"
+		{"video"
+			{"alphatocoverage" "Soft alpha"}
+			{"alphatocoverage#desc" "Enables soft edges on flora and blend effect on semi-transparent objects. May reduce performance noticeably. Strongly affected by your anti-aliasing strength."}
+		}
+	}
+	{"save_load_game"
+		{"load_invalid_mods_failed" "This save file is linked to mod(s) that is not installed. It cannot be loaded."}
+	}
 }

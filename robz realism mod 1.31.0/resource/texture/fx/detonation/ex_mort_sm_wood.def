@@ -28,7 +28,7 @@
 	}
 	{#+ particleview
 		{generator
-			{totalparticles 1}
+
 			{emissionarea
 				{radius 1 1}
 				{alpha0 0 10}
@@ -57,7 +57,7 @@
 	}
 	{#+ particleview
 		{generator
-			{totalparticles 4}
+
 			{emissionarea
 				{radius 1 1}
 				{alpha0 0}
@@ -311,7 +311,7 @@
 	}
 	{particleview
 		{generator
-			{totalparticles 3}
+
 			{emissionarea
 				{radius 0.1}
 				{alpha0 0}
@@ -350,7 +350,7 @@
 	}
 	{particleview
 		{generator
-			{totalparticles 10}
+
 			{emissionarea
 				{radius 3 3}
 				{alpha0 0}
@@ -412,7 +412,7 @@
 	}
 	{particleview
 		{generator
-			{totalparticles 60}
+
 			{emissionarea
 				{radius 5 3}
 				{alpha0 0 5}
@@ -504,7 +504,7 @@
 	}
 	{particleview
 		{generator
-			{totalparticles 20}
+
 			{emissionarea
 				{radius 5 5}
 				{alpha0 0 5}
@@ -562,7 +562,7 @@
 	}
 	{particleview
 		{generator
-			{totalparticles 40}
+
 			{emissionarea
 				{radius 2 2}
 				{alpha0 0}
@@ -639,7 +639,7 @@
 	}
 	{particleview
 		{generator
-			{totalparticles 60}
+
 			{emissionarea
 				{radius 10 5}
 				{alpha0 0 5}
@@ -731,7 +731,7 @@
 	}
 	{particleview
 		{generator
-			{totalparticles 0}
+
 			{emissionarea
 				{radius 0.1 0.1}
 				{alpha0 0}
