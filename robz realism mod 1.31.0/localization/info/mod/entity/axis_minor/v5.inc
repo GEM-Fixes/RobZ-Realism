@@ -1,0 +1,5 @@
+; info.lng mod part: info/entity/* keys of vehicle/gun cards, side axis_minor, button v5 "Tank destroyers"
+; mod part, buy-list order (units read order); above each key: [new|changed] card, cost, contents, tags, units file:line, notes
+; -- group f4 --
+; [new] card "zrinyi1" cost 500 lvl 1 | soldiers axm_hun_tankman x3, axm_hun_tankcommander | tags 44 medium | units/axis_minor/vehicles.set:101
+{"zrinyi1" "Following the success of assault guns on the World War II Eastern Front, the Hungarians developed their own model, based on the chassis of the Turan tank. There were two designs, the 44M Zrinyi I, incorporated a long 43M 75mm gun, but it did not pass the prototype stage. The 40/43M Zrinyi II was armed with a 40M 105mm L/20 howitzer.The Zrinyi II design was a traditional infantry support vehicle. The Zrinyi I was hoped to fulfill an anti-tank role.Between 40 and 66 Zrinyi II units were produced between August 1943 and July 1944 and a single Zrinyi I prototype. There is only one surviving Zrinyi II in the Kubinka tank museum near Moscow."}

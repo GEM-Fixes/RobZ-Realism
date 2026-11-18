@@ -2849,8 +2849,8 @@ desc.lng	desc/squad/how_aa(usmc)	desc/squad	unsure	how_aa appears in a units fil
 desc.lng	desc/squad/m8_howitzer_usmc	desc/squad	dead	no MP card m8_howitzer_usmc (units files read with macros), no {info}, no literal use
 desc.lng	desc/squad/how_b(usmc)	desc/squad	unsure	how_b appears in a units file whose macros do not resolve standalone
 desc.lng	desc/squad/how_a(usmc)	desc/squad	unsure	how_a appears in a units file whose macros do not resolve standalone
-desc.lng	desc/squad/longtom_155mm(usmc)	desc/squad	dead	no MP card longtom_155mm(usmc) (units files read with macros), no {info}, no literal use
-desc.lng	desc/squad/m115(usmc)	desc/squad	dead	no MP card m115(usmc) (units files read with macros), no {info}, no literal use
+desc.lng	desc/squad/longtom_155mm(usmc)	desc/squad	kept	MISKEYED: MP card is bare-named "longtom_155mm", the engine looks up desc/squad/longtom_155mm; rename the key to show this text
+desc.lng	desc/squad/m115(usmc)	desc/squad	kept	MISKEYED: MP card is bare-named "m115", the engine looks up desc/squad/m115; rename the key to show this text
 desc.lng	desc/squad/m4halftrack_usmc	desc/squad	dead	no MP card m4halftrack_usmc (units files read with macros), no {info}, no literal use
 desc.lng	desc/squad/np_t19_usmc	desc/squad	dead	no MP card np_t19_usmc (units files read with macros), no {info}, no literal use
 desc.lng	desc/squad/m7_usmc	desc/squad	dead	no MP card m7_usmc (units files read with macros), no {info}, no literal use
@@ -3237,7 +3237,7 @@ desc.lng	desc/squad/hero_jap_chi_to	desc/squad	kept	MP card hero_jap_chi_to
 desc.lng	desc/squad/hero_jap_guard(jap)	desc/squad	kept	MP card hero_jap_guard(jap)
 desc.lng	desc/squad/hero_dual_type41	desc/squad	kept	MP card hero_dual_type41
 desc.lng	desc/squad/hero_rus_at_squad	desc/squad	kept	MP card hero_rus_at_squad
-desc.lng	desc/squad/hero5_rus(rus)	desc/squad	unsure	hero5_rus appears in a units file whose macros do not resolve standalone
+desc.lng	desc/squad/hero5_rus(rus)	desc/squad	kept	MISKEYED: MP card is bare-named "hero5_rus", the engine looks up desc/squad/hero5_rus; rename the key to show this text
 desc.lng	desc/squad/hero_rus_isu152	desc/squad	kept	MP card hero_rus_isu152
 desc.lng	desc/squad/hero_rus_t34	desc/squad	kept	MP card hero_rus_t34
 desc.lng	desc/squad/hero_rus_is1	desc/squad	kept	MP card hero_rus_is1
@@ -6270,7 +6270,7 @@ info.lng	info/squad/Bersaglieri(axis_minor)	info/squad	kept	MP card bersaglieri(
 info.lng	info/squad/Sissi(axis_minor)	info/squad	kept	MP card sissi(axis_minor)
 info.lng	info/squad/Hungarian_Assualt_Infantry(axis_minor)	info/squad	kept	MP card hungarian_assualt_infantry(axis_minor)
 info.lng	info/squad/Alpini(axis_minor)	info/squad	kept	MP card alpini(axis_minor)
-info.lng	info/squad/Bersaglieri_Motorcycle(axis_minor)	info/squad	dead	no MP card bersaglieri_motorcycle(axis_minor) (units files read with macros), no {info}, no literal use
+info.lng	info/squad/Bersaglieri_Motorcycle(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "bersaglieri_motorcycle", the engine looks up info/squad/bersaglieri_motorcycle; rename the key to show this text
 info.lng	info/squad/Bersaglieri_Mot(axis_minor)	info/squad	kept	MP card bersaglieri_mot(axis_minor)
 info.lng	info/squad/Paracadutisti(axis_minor)	info/squad	kept	MP card paracadutisti(axis_minor)
 info.lng	info/squad/tankcrew(axis_minor)	info/squad	kept	MP card tankcrew(axis_minor)
@@ -6300,63 +6300,63 @@ info.lng	info/squad/officer(axis_minor)	info/squad	kept	MP card officer(axis_min
 info.lng	info/squad/SissiSP(axis_minor)	info/squad	kept	MP card sissisp(axis_minor)
 info.lng	info/squad/white_death(axis_minor)	info/squad	kept	MP card white_death(axis_minor)
 info.lng	info/squad/Elite_Resita(axis_minor)	info/squad	kept	MP card elite_resita(axis_minor)
-info.lng	info/squad/hungarian_mobile_unit(axis_minor)	info/squad	dead	no MP card hungarian_mobile_unit(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/Recon_in_Force(axis_minor)	info/squad	dead	no MP card recon_in_force(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/guard_the_flanks(axis_minor)	info/squad	dead	no MP card guard_the_flanks(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/vet_td(axis_minor)	info/squad	dead	no MP card vet_td(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/big_gun(axis_minor)	info/squad	dead	no MP card big_gun(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/tiger_ace_hun(axis_minor)	info/squad	dead	no MP card tiger_ace_hun(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/karlthor(axis_minor)	info/squad	dead	no MP card karlthor(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/as423(axis_minor)	info/squad	dead	no MP card as423(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/fiat626_inf(axis_minor)	info/squad	dead	no MP card fiat626_inf(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/fiat626_art(axis_minor)	info/squad	dead	no MP card fiat626_art(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/botond(axis_minor)	info/squad	dead	no MP card botond(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/ammo_box_axm_inf(axis_minor)	info/squad	dead	no MP card ammo_box_axm_inf(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/ammo_box_axm_art(axis_minor)	info/squad	dead	no MP card ammo_box_axm_art(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/ammo_box_axm_special(axis_minor)	info/squad	dead	no MP card ammo_box_axm_special(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/bredasafat77_stan(axis_minor)	info/squad	dead	no MP card bredasafat77_stan(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/bredaM31(axis_minor)	info/squad	dead	no MP card bredam31(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/sgrw_34(axis_minor)	info/squad	unsure	sgrw_34 appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/sgrw_42(axis_minor)	info/squad	dead	no MP card sgrw_42(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/Brixia45_seq(axis_minor)	info/squad	dead	no MP card brixia45_seq(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/Brixia45_seqx2(axis_minor)	info/squad	dead	no MP card brixia45_seqx2(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/Brixia45_seqx3(axis_minor)	info/squad	dead	no MP card brixia45_seqx3(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/22(axis_minor)	info/squad	dead	no MP card 22(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/37mm_bofors(axis_minor)	info/squad	dead	no MP card 37mm_bofors(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/Resita_seq(axis_minor)	info/squad	dead	no MP card resita_seq(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/Resita_seqx2(axis_minor)	info/squad	dead	no MP card resita_seqx2(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/m149(axis_minor)	info/squad	dead	no MP card m149(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/fiataa35(axis_minor)	info/squad	dead	no MP card fiataa35(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/csaba40m(axis_minor)	info/squad	dead	no MP card csaba40m(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/csaba39m(axis_minor)	info/squad	dead	no MP card csaba39m(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/panhard_rom(axis_minor)	info/squad	dead	no MP card panhard_rom(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/Lancia1ZM(axis_minor)	info/squad	dead	no MP card lancia1zm(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/ab41(axis_minor)	info/squad	dead	no MP card ab41(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/m15_contraereo(axis_minor)	info/squad	dead	no MP card m15_contraereo(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/nimrod(axis_minor)	info/squad	dead	no MP card nimrod(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/L35LF(axis_minor)	info/squad	dead	no MP card l35lf(axis_minor) (units files read with macros), no {info}, no literal use
+info.lng	info/squad/hungarian_mobile_unit(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "hungarian_mobile_unit", the engine looks up info/squad/hungarian_mobile_unit; rename the key to show this text
+info.lng	info/squad/Recon_in_Force(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "recon_in_force", the engine looks up info/squad/recon_in_force; rename the key to show this text
+info.lng	info/squad/guard_the_flanks(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "guard_the_flanks", the engine looks up info/squad/guard_the_flanks; rename the key to show this text
+info.lng	info/squad/vet_td(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "vet_td", the engine looks up info/squad/vet_td; rename the key to show this text
+info.lng	info/squad/big_gun(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "big_gun", the engine looks up info/squad/big_gun; rename the key to show this text
+info.lng	info/squad/tiger_ace_hun(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "tiger_ace_hun", the engine looks up info/squad/tiger_ace_hun; rename the key to show this text
+info.lng	info/squad/karlthor(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "karlthor", the engine looks up info/squad/karlthor; rename the key to show this text
+info.lng	info/squad/as423(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "as423", the engine looks up info/squad/as423; rename the key to show this text
+info.lng	info/squad/fiat626_inf(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "fiat626_inf", the engine looks up info/squad/fiat626_inf; rename the key to show this text
+info.lng	info/squad/fiat626_art(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "fiat626_art", the engine looks up info/squad/fiat626_art; rename the key to show this text
+info.lng	info/squad/botond(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "botond", the engine looks up info/squad/botond; rename the key to show this text
+info.lng	info/squad/ammo_box_axm_inf(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "ammo_box_axm_inf", the engine looks up info/squad/ammo_box_axm_inf; rename the key to show this text
+info.lng	info/squad/ammo_box_axm_art(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "ammo_box_axm_art", the engine looks up info/squad/ammo_box_axm_art; rename the key to show this text
+info.lng	info/squad/ammo_box_axm_special(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "ammo_box_axm_special", the engine looks up info/squad/ammo_box_axm_special; rename the key to show this text
+info.lng	info/squad/bredasafat77_stan(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "bredasafat77_stan", the engine looks up info/squad/bredasafat77_stan; rename the key to show this text
+info.lng	info/squad/bredaM31(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "bredam31", the engine looks up info/squad/bredam31; rename the key to show this text
+info.lng	info/squad/sgrw_34(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "sgrw_34", the engine looks up info/squad/sgrw_34; rename the key to show this text
+info.lng	info/squad/sgrw_42(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "sgrw_42", the engine looks up info/squad/sgrw_42; rename the key to show this text
+info.lng	info/squad/Brixia45_seq(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "brixia45_seq", the engine looks up info/squad/brixia45_seq; rename the key to show this text
+info.lng	info/squad/Brixia45_seqx2(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "brixia45_seqx2", the engine looks up info/squad/brixia45_seqx2; rename the key to show this text
+info.lng	info/squad/Brixia45_seqx3(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "brixia45_seqx3", the engine looks up info/squad/brixia45_seqx3; rename the key to show this text
+info.lng	info/squad/22(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "22", the engine looks up info/squad/22; rename the key to show this text
+info.lng	info/squad/37mm_bofors(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "37mm_bofors", the engine looks up info/squad/37mm_bofors; rename the key to show this text
+info.lng	info/squad/Resita_seq(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "resita_seq", the engine looks up info/squad/resita_seq; rename the key to show this text
+info.lng	info/squad/Resita_seqx2(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "resita_seqx2", the engine looks up info/squad/resita_seqx2; rename the key to show this text
+info.lng	info/squad/m149(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "m149", the engine looks up info/squad/m149; rename the key to show this text
+info.lng	info/squad/fiataa35(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "fiataa35", the engine looks up info/squad/fiataa35; rename the key to show this text
+info.lng	info/squad/csaba40m(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "csaba40m", the engine looks up info/squad/csaba40m; rename the key to show this text
+info.lng	info/squad/csaba39m(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "csaba39m", the engine looks up info/squad/csaba39m; rename the key to show this text
+info.lng	info/squad/panhard_rom(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "panhard_rom", the engine looks up info/squad/panhard_rom; rename the key to show this text
+info.lng	info/squad/Lancia1ZM(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "lancia1zm", the engine looks up info/squad/lancia1zm; rename the key to show this text
+info.lng	info/squad/ab41(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "ab41", the engine looks up info/squad/ab41; rename the key to show this text
+info.lng	info/squad/m15_contraereo(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "m15_contraereo", the engine looks up info/squad/m15_contraereo; rename the key to show this text
+info.lng	info/squad/nimrod(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "nimrod", the engine looks up info/squad/nimrod; rename the key to show this text
+info.lng	info/squad/L35LF(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "l35lf", the engine looks up info/squad/l35lf; rename the key to show this text
 info.lng	info/squad/l335(axis_minor)	info/squad	dead	no MP card l335(axis_minor) (units files read with macros), no {info}, no literal use
 info.lng	info/squad/l335c(axis_minor)	info/squad	dead	no MP card l335c(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/m1139_seq(axis_minor)	info/squad	dead	no MP card m1139_seq(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/m1139_seqx2(axis_minor)	info/squad	dead	no MP card m1139_seqx2(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/m7518_seq(axis_minor)	info/squad	dead	no MP card m7518_seq(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/m7518_seqx2(axis_minor)	info/squad	dead	no MP card m7518_seqx2(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/bt42(axis_minor)	info/squad	dead	no MP card bt42(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/toldi1(axis_minor)	info/squad	dead	no MP card toldi1(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/toldi2(axis_minor)	info/squad	dead	no MP card toldi2(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/zrinyi2(axis_minor)	info/squad	dead	no MP card zrinyi2(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/turan1(axis_minor)	info/squad	dead	no MP card turan1(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/turan2(axis_minor)	info/squad	dead	no MP card turan2(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/turan3(axis_minor)	info/squad	dead	no MP card turan3(axis_minor) (units files read with macros), no {info}, no literal use
+info.lng	info/squad/m1139_seq(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "m1139_seq", the engine looks up info/squad/m1139_seq; rename the key to show this text
+info.lng	info/squad/m1139_seqx2(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "m1139_seqx2", the engine looks up info/squad/m1139_seqx2; rename the key to show this text
+info.lng	info/squad/m7518_seq(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "m7518_seq", the engine looks up info/squad/m7518_seq; rename the key to show this text
+info.lng	info/squad/m7518_seqx2(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "m7518_seqx2", the engine looks up info/squad/m7518_seqx2; rename the key to show this text
+info.lng	info/squad/bt42(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "bt42", the engine looks up info/squad/bt42; rename the key to show this text
+info.lng	info/squad/toldi1(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "toldi1", the engine looks up info/squad/toldi1; rename the key to show this text
+info.lng	info/squad/toldi2(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "toldi2", the engine looks up info/squad/toldi2; rename the key to show this text
+info.lng	info/squad/zrinyi2(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "zrinyi2", the engine looks up info/squad/zrinyi2; rename the key to show this text
+info.lng	info/squad/turan1(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "turan1", the engine looks up info/squad/turan1; rename the key to show this text
+info.lng	info/squad/turan2(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "turan2", the engine looks up info/squad/turan2; rename the key to show this text
+info.lng	info/squad/turan3(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "turan3", the engine looks up info/squad/turan3; rename the key to show this text
 info.lng	info/squad/t34_3_fin(axis_minor)	info/squad	dead	no MP card t34_3_fin(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/pz6e_hungarian(axis_minor)	info/squad	dead	no MP card pz6e_hungarian(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/panther5g_hungarian(axis_minor)	info/squad	dead	no MP card panther5g_hungarian(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/tacam_t60(axis_minor)	info/squad	dead	no MP card tacam_t60(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/tacam_r2(axis_minor)	info/squad	dead	no MP card tacam_r2(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/3ro(axis_minor)	info/squad	dead	no MP card 3ro(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/zrinyi1(axis_minor)	info/squad	dead	no MP card zrinyi1(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/m9053(axis_minor)	info/squad	dead	no MP card m9053(axis_minor) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/turan3_vet(axis_minor)	info/squad	dead	no MP card turan3_vet(axis_minor) (units files read with macros), no {info}, no literal use
+info.lng	info/squad/pz6e_hungarian(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "pz6e_hungarian", the engine looks up info/squad/pz6e_hungarian; rename the key to show this text
+info.lng	info/squad/panther5g_hungarian(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "panther5g_hungarian", the engine looks up info/squad/panther5g_hungarian; rename the key to show this text
+info.lng	info/squad/tacam_t60(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "tacam_t60", the engine looks up info/squad/tacam_t60; rename the key to show this text
+info.lng	info/squad/tacam_r2(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "tacam_r2", the engine looks up info/squad/tacam_r2; rename the key to show this text
+info.lng	info/squad/3ro(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "3ro", the engine looks up info/squad/3ro; rename the key to show this text
+info.lng	info/squad/zrinyi1(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "zrinyi1", the engine looks up info/squad/zrinyi1; rename the key to show this text
+info.lng	info/squad/m9053(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "m9053", the engine looks up info/squad/m9053; rename the key to show this text
+info.lng	info/squad/turan3_vet(axis_minor)	info/squad	kept	MISKEYED: MP card is bare-named "turan3_vet", the engine looks up info/squad/turan3_vet; rename the key to show this text
 info.lng	info/squad/aufklarer(ger)	info/squad	dead	no MP card aufklarer(ger) (units files read with macros), no {info}, no literal use
 info.lng	info/squad/landesschutzen(ger)	info/squad	dead	no MP card landesschutzen(ger) (units files read with macros), no {info}, no literal use
 info.lng	info/squad/ita_frei(ger)	info/squad	dead	no MP card ita_frei(ger) (units files read with macros), no {info}, no literal use
@@ -6501,62 +6501,62 @@ info.lng	info/squad/elites_giretsu_drop(jap)	info/squad	dead	no MP card elites_g
 info.lng	info/squad/stormtroopers_drop(jap)	info/squad	dead	no MP card stormtroopers_drop(jap) (units files read with macros), no {info}, no literal use
 info.lng	info/squad/elite_tankmans(jap)	info/squad	unsure	elite_tankmans appears in a units file whose macros do not resolve standalone
 info.lng	info/squad/vehic_supporter(jap)	info/squad	kept	MP card vehic_supporter(jap)
-info.lng	info/squad/type97(jap)	info/squad	unsure	type97 appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/ho-ha3mgun(jap)	info/squad	unsure	ho-ha3mgun appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/ss-ki(jap)	info/squad	dead	no MP card ss-ki(jap) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/isuzutx40(jap)	info/squad	unsure	isuzutx40 appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/isuzutx40art(jap)	info/squad	unsure	isuzutx40art appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/isuzutx40_eng(jap)	info/squad	unsure	isuzutx40_eng appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/ammo_box_jap_inf(jap)	info/squad	dead	no MP card ammo_box_jap_inf(jap) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/ammo_box_jap_art(jap)	info/squad	dead	no MP card ammo_box_jap_art(jap) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/ammo_box_jap_special(jap)	info/squad	dead	no MP card ammo_box_jap_special(jap) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/type92_stan(jap)	info/squad	dead	no MP card type92_stan(jap) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/type2_20mm(jap)	info/squad	unsure	type2_20mm appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/isuzutx40_aa(jap)	info/squad	unsure	isuzutx40_aa appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/pak47(jap)	info/squad	unsure	pak47 appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/t90_75m(jap)	info/squad	unsure	t90_75m appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/t90_75m_towed(jap)	info/squad	dead	no MP card t90_75m_towed(jap) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/t4_75mm_towed(jap)	info/squad	dead	no MP card t4_75mm_towed(jap) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/type41_mountaingun(jap)	info/squad	dead	no MP card type41_mountaingun(jap) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/type97mortar(jap)	info/squad	dead	no MP card type97mortar(jap) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/isuzutx40_mort(jap)	info/squad	unsure	isuzutx40_mort appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/type_97_150mm(jap)	info/squad	unsure	type_97_150mm appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/type4_200mm(jap)	info/squad	unsure	type4_200mm appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/type4_200mm_towed(jap)	info/squad	dead	no MP card type4_200mm_towed(jap) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/t91_105m(jap)	info/squad	unsure	t91_105m appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/t91_105mm_towed(jap)	info/squad	dead	no MP card t91_105mm_towed(jap) (units files read with macros), no {info}, no literal use
+info.lng	info/squad/type97(jap)	info/squad	kept	MISKEYED: MP card is bare-named "type97", the engine looks up info/squad/type97; rename the key to show this text
+info.lng	info/squad/ho-ha3mgun(jap)	info/squad	kept	MISKEYED: MP card is bare-named "ho-ha3mgun", the engine looks up info/squad/ho-ha3mgun; rename the key to show this text
+info.lng	info/squad/ss-ki(jap)	info/squad	kept	MISKEYED: MP card is bare-named "ss-ki", the engine looks up info/squad/ss-ki; rename the key to show this text
+info.lng	info/squad/isuzutx40(jap)	info/squad	kept	MISKEYED: MP card is bare-named "isuzutx40", the engine looks up info/squad/isuzutx40; rename the key to show this text
+info.lng	info/squad/isuzutx40art(jap)	info/squad	kept	MISKEYED: MP card is bare-named "isuzutx40art", the engine looks up info/squad/isuzutx40art; rename the key to show this text
+info.lng	info/squad/isuzutx40_eng(jap)	info/squad	kept	MISKEYED: MP card is bare-named "isuzutx40_eng", the engine looks up info/squad/isuzutx40_eng; rename the key to show this text
+info.lng	info/squad/ammo_box_jap_inf(jap)	info/squad	kept	MISKEYED: MP card is bare-named "ammo_box_jap_inf", the engine looks up info/squad/ammo_box_jap_inf; rename the key to show this text
+info.lng	info/squad/ammo_box_jap_art(jap)	info/squad	kept	MISKEYED: MP card is bare-named "ammo_box_jap_art", the engine looks up info/squad/ammo_box_jap_art; rename the key to show this text
+info.lng	info/squad/ammo_box_jap_special(jap)	info/squad	kept	MISKEYED: MP card is bare-named "ammo_box_jap_special", the engine looks up info/squad/ammo_box_jap_special; rename the key to show this text
+info.lng	info/squad/type92_stan(jap)	info/squad	kept	MISKEYED: MP card is bare-named "type92_stan", the engine looks up info/squad/type92_stan; rename the key to show this text
+info.lng	info/squad/type2_20mm(jap)	info/squad	kept	MISKEYED: MP card is bare-named "type2_20mm", the engine looks up info/squad/type2_20mm; rename the key to show this text
+info.lng	info/squad/isuzutx40_aa(jap)	info/squad	kept	MISKEYED: MP card is bare-named "isuzutx40_aa", the engine looks up info/squad/isuzutx40_aa; rename the key to show this text
+info.lng	info/squad/pak47(jap)	info/squad	kept	MISKEYED: MP card is bare-named "pak47", the engine looks up info/squad/pak47; rename the key to show this text
+info.lng	info/squad/t90_75m(jap)	info/squad	kept	MISKEYED: MP card is bare-named "t90_75m", the engine looks up info/squad/t90_75m; rename the key to show this text
+info.lng	info/squad/t90_75m_towed(jap)	info/squad	kept	MISKEYED: MP card is bare-named "t90_75m_towed", the engine looks up info/squad/t90_75m_towed; rename the key to show this text
+info.lng	info/squad/t4_75mm_towed(jap)	info/squad	kept	MISKEYED: MP card is bare-named "t4_75mm_towed", the engine looks up info/squad/t4_75mm_towed; rename the key to show this text
+info.lng	info/squad/type41_mountaingun(jap)	info/squad	kept	MISKEYED: MP card is bare-named "type41_mountaingun", the engine looks up info/squad/type41_mountaingun; rename the key to show this text
+info.lng	info/squad/type97mortar(jap)	info/squad	kept	MISKEYED: MP card is bare-named "type97mortar", the engine looks up info/squad/type97mortar; rename the key to show this text
+info.lng	info/squad/isuzutx40_mort(jap)	info/squad	kept	MISKEYED: MP card is bare-named "isuzutx40_mort", the engine looks up info/squad/isuzutx40_mort; rename the key to show this text
+info.lng	info/squad/type_97_150mm(jap)	info/squad	kept	MISKEYED: MP card is bare-named "type_97_150mm", the engine looks up info/squad/type_97_150mm; rename the key to show this text
+info.lng	info/squad/type4_200mm(jap)	info/squad	kept	MISKEYED: MP card is bare-named "type4_200mm", the engine looks up info/squad/type4_200mm; rename the key to show this text
+info.lng	info/squad/type4_200mm_towed(jap)	info/squad	kept	MISKEYED: MP card is bare-named "type4_200mm_towed", the engine looks up info/squad/type4_200mm_towed; rename the key to show this text
+info.lng	info/squad/t91_105m(jap)	info/squad	kept	MISKEYED: MP card is bare-named "t91_105m", the engine looks up info/squad/t91_105m; rename the key to show this text
+info.lng	info/squad/t91_105mm_towed(jap)	info/squad	kept	MISKEYED: MP card is bare-named "t91_105mm_towed", the engine looks up info/squad/t91_105mm_towed; rename the key to show this text
 info.lng	info/squad/type96_150mm_towed(jap)	info/squad	dead	no MP card type96_150mm_towed(jap) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/type_89_towed(jap)	info/squad	dead	no MP card type_89_towed(jap) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/ho-ni2(jap)	info/squad	unsure	ho-ni2 appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/ho-ro(jap)	info/squad	unsure	ho-ro appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/ha-to(jap)	info/squad	unsure	ha-to appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/type93scout(jap)	info/squad	unsure	type93scout appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/ha-go_seq(jap)	info/squad	dead	no MP card ha-go_seq(jap) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/ha-go_seqx2(jap)	info/squad	dead	no MP card ha-go_seqx2(jap) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/ke-nu(jap)	info/squad	unsure	ke-nu appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/chi-ha57(jap)	info/squad	unsure	chi-ha57 appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/chi-ha47(jap)	info/squad	unsure	chi-ha47 appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/ss-d(jap)	info/squad	unsure	ss-d appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/chi-he(jap)	info/squad	unsure	chi-he appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/ho-i(jap)	info/squad	unsure	ho-i appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/chi-nu(jap)	info/squad	unsure	chi-nu appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/chi-ha120(jap)	info/squad	unsure	chi-ha120 appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/chi-to(jap)	info/squad	unsure	chi-to appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/chi-ri(jap)	info/squad	unsure	chi-ri appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/ho-ni1(jap)	info/squad	unsure	ho-ni1 appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/ho-ni_3(jap)	info/squad	unsure	ho-ni_3 appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/hero1_jap(jap)	info/squad	unsure	hero1_jap appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/hero2_jap(jap)	info/squad	unsure	hero2_jap appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/heronew1_jap(jap)	info/squad	unsure	heronew1_jap appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/heronew3_jap(jap)	info/squad	unsure	heronew3_jap appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/hero_dual_type41(jap)	info/squad	dead	no MP card hero_dual_type41(jap) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/heronew2_jap(jap)	info/squad	unsure	heronew2_jap appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/hero8_jap(jap)	info/squad	unsure	hero8_jap appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/hero6_jap(jap)	info/squad	unsure	hero6_jap appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/hero7_jap(jap)	info/squad	unsure	hero7_jap appears in a units file whose macros do not resolve standalone
-info.lng	info/squad/hero_jap_chi_to(jap)	info/squad	dead	no MP card hero_jap_chi_to(jap) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/hero_jap_elite_aa(jap)	info/squad	dead	no MP card hero_jap_elite_aa(jap) (units files read with macros), no {info}, no literal use
-info.lng	info/squad/hero9_jap(jap)	info/squad	unsure	hero9_jap appears in a units file whose macros do not resolve standalone
+info.lng	info/squad/type_89_towed(jap)	info/squad	kept	MISKEYED: MP card is bare-named "type_89_towed", the engine looks up info/squad/type_89_towed; rename the key to show this text
+info.lng	info/squad/ho-ni2(jap)	info/squad	kept	MISKEYED: MP card is bare-named "ho-ni2", the engine looks up info/squad/ho-ni2; rename the key to show this text
+info.lng	info/squad/ho-ro(jap)	info/squad	kept	MISKEYED: MP card is bare-named "ho-ro", the engine looks up info/squad/ho-ro; rename the key to show this text
+info.lng	info/squad/ha-to(jap)	info/squad	kept	MISKEYED: MP card is bare-named "ha-to", the engine looks up info/squad/ha-to; rename the key to show this text
+info.lng	info/squad/type93scout(jap)	info/squad	kept	MISKEYED: MP card is bare-named "type93scout", the engine looks up info/squad/type93scout; rename the key to show this text
+info.lng	info/squad/ha-go_seq(jap)	info/squad	kept	MISKEYED: MP card is bare-named "ha-go_seq", the engine looks up info/squad/ha-go_seq; rename the key to show this text
+info.lng	info/squad/ha-go_seqx2(jap)	info/squad	kept	MISKEYED: MP card is bare-named "ha-go_seqx2", the engine looks up info/squad/ha-go_seqx2; rename the key to show this text
+info.lng	info/squad/ke-nu(jap)	info/squad	kept	MISKEYED: MP card is bare-named "ke-nu", the engine looks up info/squad/ke-nu; rename the key to show this text
+info.lng	info/squad/chi-ha57(jap)	info/squad	kept	MISKEYED: MP card is bare-named "chi-ha57", the engine looks up info/squad/chi-ha57; rename the key to show this text
+info.lng	info/squad/chi-ha47(jap)	info/squad	kept	MISKEYED: MP card is bare-named "chi-ha47", the engine looks up info/squad/chi-ha47; rename the key to show this text
+info.lng	info/squad/ss-d(jap)	info/squad	kept	MISKEYED: MP card is bare-named "ss-d", the engine looks up info/squad/ss-d; rename the key to show this text
+info.lng	info/squad/chi-he(jap)	info/squad	kept	MISKEYED: MP card is bare-named "chi-he", the engine looks up info/squad/chi-he; rename the key to show this text
+info.lng	info/squad/ho-i(jap)	info/squad	kept	MISKEYED: MP card is bare-named "ho-i", the engine looks up info/squad/ho-i; rename the key to show this text
+info.lng	info/squad/chi-nu(jap)	info/squad	kept	MISKEYED: MP card is bare-named "chi-nu", the engine looks up info/squad/chi-nu; rename the key to show this text
+info.lng	info/squad/chi-ha120(jap)	info/squad	kept	MISKEYED: MP card is bare-named "chi-ha120", the engine looks up info/squad/chi-ha120; rename the key to show this text
+info.lng	info/squad/chi-to(jap)	info/squad	kept	MISKEYED: MP card is bare-named "chi-to", the engine looks up info/squad/chi-to; rename the key to show this text
+info.lng	info/squad/chi-ri(jap)	info/squad	kept	MISKEYED: MP card is bare-named "chi-ri", the engine looks up info/squad/chi-ri; rename the key to show this text
+info.lng	info/squad/ho-ni1(jap)	info/squad	kept	MISKEYED: MP card is bare-named "ho-ni1", the engine looks up info/squad/ho-ni1; rename the key to show this text
+info.lng	info/squad/ho-ni_3(jap)	info/squad	kept	MISKEYED: MP card is bare-named "ho-ni_3", the engine looks up info/squad/ho-ni_3; rename the key to show this text
+info.lng	info/squad/hero1_jap(jap)	info/squad	kept	MISKEYED: MP card is bare-named "hero1_jap", the engine looks up info/squad/hero1_jap; rename the key to show this text
+info.lng	info/squad/hero2_jap(jap)	info/squad	kept	MISKEYED: MP card is bare-named "hero2_jap", the engine looks up info/squad/hero2_jap; rename the key to show this text
+info.lng	info/squad/heronew1_jap(jap)	info/squad	kept	MISKEYED: MP card is bare-named "heronew1_jap", the engine looks up info/squad/heronew1_jap; rename the key to show this text
+info.lng	info/squad/heronew3_jap(jap)	info/squad	kept	MISKEYED: MP card is bare-named "heronew3_jap", the engine looks up info/squad/heronew3_jap; rename the key to show this text
+info.lng	info/squad/hero_dual_type41(jap)	info/squad	kept	MISKEYED: MP card is bare-named "hero_dual_type41", the engine looks up info/squad/hero_dual_type41; rename the key to show this text
+info.lng	info/squad/heronew2_jap(jap)	info/squad	kept	MISKEYED: MP card is bare-named "heronew2_jap", the engine looks up info/squad/heronew2_jap; rename the key to show this text
+info.lng	info/squad/hero8_jap(jap)	info/squad	kept	MISKEYED: MP card is bare-named "hero8_jap", the engine looks up info/squad/hero8_jap; rename the key to show this text
+info.lng	info/squad/hero6_jap(jap)	info/squad	kept	MISKEYED: MP card is bare-named "hero6_jap", the engine looks up info/squad/hero6_jap; rename the key to show this text
+info.lng	info/squad/hero7_jap(jap)	info/squad	kept	MISKEYED: MP card is bare-named "hero7_jap", the engine looks up info/squad/hero7_jap; rename the key to show this text
+info.lng	info/squad/hero_jap_chi_to(jap)	info/squad	kept	MISKEYED: MP card is bare-named "hero_jap_chi_to", the engine looks up info/squad/hero_jap_chi_to; rename the key to show this text
+info.lng	info/squad/hero_jap_elite_aa(jap)	info/squad	kept	MISKEYED: MP card is bare-named "hero_jap_elite_aa", the engine looks up info/squad/hero_jap_elite_aa; rename the key to show this text
+info.lng	info/squad/hero9_jap(jap)	info/squad	kept	MISKEYED: MP card is bare-named "hero9_jap", the engine looks up info/squad/hero9_jap; rename the key to show this text
 info.lng	info/squad/otsu-gata_koho	info/squad	kept	MP card otsu-gata_koho
 info.lng	info/squad/ki-gata_koho	info/squad	kept	MP card ki-gata_koho
 info.lng	info/squad/super_officer_jap	info/squad	kept	MP card super_officer_jap

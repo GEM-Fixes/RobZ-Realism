@@ -1,0 +1,114 @@
+file	old key	new key	action	note
+desc.lng	desc/squad/longtom_155mm(usmc)	desc/squad/longtom_155mm	renamed	
+desc.lng	desc/squad/m115(usmc)	desc/squad/m115	renamed	
+desc.lng	desc/squad/hero5_rus(rus)	desc/squad/hero5_rus	merged_side_text_wins	bare key kept, its text replaced by the name(side) text; name(side) key removed (owner 2026-11-18)
+info.lng	info/squad/Bersaglieri_Motorcycle(axis_minor)	info/squad/Bersaglieri_Motorcycle	renamed	
+info.lng	info/squad/hungarian_mobile_unit(axis_minor)	info/squad/hungarian_mobile_unit	renamed	
+info.lng	info/squad/Recon_in_Force(axis_minor)	info/squad/Recon_in_Force	renamed	
+info.lng	info/squad/guard_the_flanks(axis_minor)	info/squad/guard_the_flanks	renamed	
+info.lng	info/squad/vet_td(axis_minor)	info/squad/vet_td	renamed	
+info.lng	info/squad/big_gun(axis_minor)	info/squad/big_gun	renamed	
+info.lng	info/squad/tiger_ace_hun(axis_minor)	info/squad/tiger_ace_hun	renamed	
+info.lng	info/squad/karlthor(axis_minor)	info/squad/karlthor	renamed	
+info.lng	info/squad/as423(axis_minor)	info/squad/as423	renamed	
+info.lng	info/squad/fiat626_inf(axis_minor)	info/squad/fiat626_inf	renamed	
+info.lng	info/squad/fiat626_art(axis_minor)	info/squad/fiat626_art	renamed	
+info.lng	info/squad/botond(axis_minor)	info/squad/botond	renamed	
+info.lng	info/squad/ammo_box_axm_inf(axis_minor)	info/squad/ammo_box_axm_inf	renamed	
+info.lng	info/squad/ammo_box_axm_art(axis_minor)	info/squad/ammo_box_axm_art	renamed	
+info.lng	info/squad/ammo_box_axm_special(axis_minor)	info/squad/ammo_box_axm_special	renamed	
+info.lng	info/squad/bredasafat77_stan(axis_minor)	info/squad/bredasafat77_stan	renamed	
+info.lng	info/squad/bredaM31(axis_minor)	info/squad/bredaM31	renamed	
+info.lng	info/squad/sgrw_34(axis_minor)	info/squad/sgrw_34	renamed	
+info.lng	info/squad/sgrw_42(axis_minor)	info/squad/sgrw_42	renamed	
+info.lng	info/squad/Brixia45_seq(axis_minor)	info/squad/Brixia45_seq	renamed	
+info.lng	info/squad/Brixia45_seqx2(axis_minor)	info/squad/Brixia45_seqx2	renamed	
+info.lng	info/squad/Brixia45_seqx3(axis_minor)	info/squad/Brixia45_seqx3	renamed	
+info.lng	info/squad/22(axis_minor)	info/squad/22	renamed	
+info.lng	info/squad/37mm_bofors(axis_minor)	info/squad/37mm_bofors	renamed	
+info.lng	info/squad/Resita_seq(axis_minor)	info/squad/resita_seq	renamed	
+info.lng	info/squad/Resita_seqx2(axis_minor)	info/squad/resita_seqx2	renamed	
+info.lng	info/squad/m149(axis_minor)	info/squad/m149	renamed	
+info.lng	info/squad/fiataa35(axis_minor)	info/squad/fiataa35	renamed	
+info.lng	info/squad/csaba40m(axis_minor)	info/squad/csaba40m	renamed	
+info.lng	info/squad/csaba39m(axis_minor)	info/squad/csaba39m	renamed	
+info.lng	info/squad/panhard_rom(axis_minor)	info/squad/panhard_rom	renamed	
+info.lng	info/squad/Lancia1ZM(axis_minor)	info/squad/Lancia1ZM	renamed	
+info.lng	info/squad/ab41(axis_minor)	info/squad/ab41	renamed	
+info.lng	info/squad/m15_contraereo(axis_minor)	info/squad/m15_contraereo	renamed	
+info.lng	info/squad/nimrod(axis_minor)	info/squad/nimrod	renamed	
+info.lng	info/squad/L35LF(axis_minor)	info/squad/L35LF	renamed	
+info.lng	info/squad/m1139_seq(axis_minor)	info/squad/m1139_seq	renamed	
+info.lng	info/squad/m1139_seqx2(axis_minor)	info/squad/m1139_seqx2	renamed	
+info.lng	info/squad/m7518_seq(axis_minor)	info/squad/m7518_seq	renamed	
+info.lng	info/squad/m7518_seqx2(axis_minor)	info/squad/m7518_seqx2	renamed	
+info.lng	info/squad/bt42(axis_minor)	info/squad/bt42	renamed	
+info.lng	info/squad/toldi1(axis_minor)	info/squad/toldi1	renamed	
+info.lng	info/squad/toldi2(axis_minor)	info/squad/toldi2	renamed	
+info.lng	info/squad/zrinyi2(axis_minor)	info/squad/zrinyi2	renamed	
+info.lng	info/squad/turan1(axis_minor)	info/squad/turan1	renamed	
+info.lng	info/squad/turan2(axis_minor)	info/squad/turan2	renamed	
+info.lng	info/squad/turan3(axis_minor)	info/squad/turan3	renamed	
+info.lng	info/squad/pz6e_hungarian(axis_minor)	info/squad/pz6e_hungarian	renamed	
+info.lng	info/squad/panther5g_hungarian(axis_minor)	info/squad/panther5g_hungarian	renamed	
+info.lng	info/squad/tacam_t60(axis_minor)	info/squad/tacam_t60	renamed	
+info.lng	info/squad/tacam_r2(axis_minor)	info/squad/tacam_r2	renamed	
+info.lng	info/squad/3ro(axis_minor)	info/squad/3ro	renamed	
+info.lng	info/squad/zrinyi1(axis_minor)	info/squad/zrinyi1	renamed	
+info.lng	info/squad/m9053(axis_minor)	info/squad/m9053	renamed	
+info.lng	info/squad/turan3_vet(axis_minor)	info/squad/turan3_vet	renamed	
+info.lng	info/squad/type97(jap)	info/squad/type97	renamed	
+info.lng	info/squad/ho-ha3mgun(jap)	info/squad/ho-ha3mgun	renamed	
+info.lng	info/squad/ss-ki(jap)	info/squad/ss-ki	renamed	
+info.lng	info/squad/isuzutx40(jap)	info/squad/isuzutx40	renamed	
+info.lng	info/squad/isuzutx40art(jap)	info/squad/isuzutx40art	renamed	
+info.lng	info/squad/isuzutx40_eng(jap)	info/squad/isuzutx40_eng	renamed	
+info.lng	info/squad/ammo_box_jap_inf(jap)	info/squad/ammo_box_jap_inf	renamed	
+info.lng	info/squad/ammo_box_jap_art(jap)	info/squad/ammo_box_jap_art	renamed	
+info.lng	info/squad/ammo_box_jap_special(jap)	info/squad/ammo_box_jap_special	renamed	
+info.lng	info/squad/type92_stan(jap)	info/squad/type92_stan	renamed	
+info.lng	info/squad/type2_20mm(jap)	info/squad/type2_20mm	renamed	
+info.lng	info/squad/isuzutx40_aa(jap)	info/squad/isuzutx40_aa	renamed	
+info.lng	info/squad/pak47(jap)	info/squad/pak47	renamed	
+info.lng	info/squad/t90_75m(jap)	info/squad/t90_75m	renamed	
+info.lng	info/squad/t90_75m_towed(jap)	info/squad/t90_75m_towed	renamed	
+info.lng	info/squad/t4_75mm_towed(jap)	info/squad/t4_75mm_towed	renamed	
+info.lng	info/squad/type41_mountaingun(jap)	info/squad/type41_mountaingun	renamed	
+info.lng	info/squad/type97mortar(jap)	info/squad/type97mortar	renamed	
+info.lng	info/squad/isuzutx40_mort(jap)	info/squad/isuzutx40_mort	renamed	
+info.lng	info/squad/type_97_150mm(jap)	info/squad/type_97_150mm	renamed	
+info.lng	info/squad/type4_200mm(jap)	info/squad/type4_200mm	renamed	
+info.lng	info/squad/type4_200mm_towed(jap)	info/squad/type4_200mm_towed	renamed	
+info.lng	info/squad/t91_105m(jap)	info/squad/t91_105m	renamed	
+info.lng	info/squad/t91_105mm_towed(jap)	info/squad/t91_105mm_towed	renamed	
+info.lng	info/squad/type_89_towed(jap)	info/squad/type_89_towed	renamed	
+info.lng	info/squad/ho-ni2(jap)	info/squad/ho-ni2	renamed	
+info.lng	info/squad/ho-ro(jap)	info/squad/ho-ro	renamed	
+info.lng	info/squad/ha-to(jap)	info/squad/ha-to	renamed	
+info.lng	info/squad/type93scout(jap)	info/squad/type93scout	renamed	
+info.lng	info/squad/ha-go_seq(jap)	info/squad/ha-go_seq	renamed	
+info.lng	info/squad/ha-go_seqx2(jap)	info/squad/ha-go_seqx2	renamed	
+info.lng	info/squad/ke-nu(jap)	info/squad/ke-nu	renamed	
+info.lng	info/squad/chi-ha57(jap)	info/squad/chi-ha57	renamed	
+info.lng	info/squad/chi-ha47(jap)	info/squad/chi-ha47	renamed	
+info.lng	info/squad/ss-d(jap)	info/squad/ss-d	renamed	
+info.lng	info/squad/chi-he(jap)	info/squad/chi-he	renamed	
+info.lng	info/squad/ho-i(jap)	info/squad/ho-i	renamed	
+info.lng	info/squad/chi-nu(jap)	info/squad/chi-nu	renamed	
+info.lng	info/squad/chi-ha120(jap)	info/squad/chi-ha120	renamed	
+info.lng	info/squad/chi-to(jap)	info/squad/chi-to	renamed	
+info.lng	info/squad/chi-ri(jap)	info/squad/chi-ri	renamed	
+info.lng	info/squad/ho-ni1(jap)	info/squad/ho-ni1	renamed	
+info.lng	info/squad/ho-ni_3(jap)	info/squad/ho-ni_3	renamed	
+info.lng	info/squad/hero1_jap(jap)	info/squad/hero1_jap	merged_side_text_wins	bare key kept, its text replaced by the name(side) text; name(side) key removed (owner 2026-11-18)
+info.lng	info/squad/hero2_jap(jap)	info/squad/hero2_jap	merged_side_text_wins	bare key kept, its text replaced by the name(side) text; name(side) key removed (owner 2026-11-18)
+info.lng	info/squad/heronew1_jap(jap)	info/squad/heronew1_jap	merged_side_text_wins	bare key kept, its text replaced by the name(side) text; name(side) key removed (owner 2026-11-18)
+info.lng	info/squad/heronew3_jap(jap)	info/squad/heronew3_jap	merged_side_text_wins	bare key kept, its text replaced by the name(side) text; name(side) key removed (owner 2026-11-18)
+info.lng	info/squad/hero_dual_type41(jap)	info/squad/hero_dual_type41	merged_side_text_wins	bare key kept, its text replaced by the name(side) text; name(side) key removed (owner 2026-11-18)
+info.lng	info/squad/heronew2_jap(jap)	info/squad/heronew2_jap	merged_side_text_wins	bare key kept, its text replaced by the name(side) text; name(side) key removed (owner 2026-11-18)
+info.lng	info/squad/hero8_jap(jap)	info/squad/hero8_jap	merged_side_text_wins	bare key kept, its text replaced by the name(side) text; name(side) key removed (owner 2026-11-18)
+info.lng	info/squad/hero6_jap(jap)	info/squad/hero6_jap	merged_side_text_wins	bare key kept, its text replaced by the name(side) text; name(side) key removed (owner 2026-11-18)
+info.lng	info/squad/hero7_jap(jap)	info/squad/hero7_jap	merged_side_text_wins	bare key kept, its text replaced by the name(side) text; name(side) key removed (owner 2026-11-18)
+info.lng	info/squad/hero_jap_chi_to(jap)	info/squad/hero_jap_chi_to	merged_side_text_wins	bare key kept, its text replaced by the name(side) text; name(side) key removed (owner 2026-11-18)
+info.lng	info/squad/hero_jap_elite_aa(jap)	info/squad/hero_jap_elite_aa	merged_side_text_wins	bare key kept, its text replaced by the name(side) text; name(side) key removed (owner 2026-11-18)
+info.lng	info/squad/hero9_jap(jap)	info/squad/hero9_jap	merged_side_text_wins	bare key kept, its text replaced by the name(side) text; name(side) key removed (owner 2026-11-18)

@@ -1449,8 +1449,6 @@
 {"np_m5cannon_43_usmc" "M5 AT gun"}
 {"np_m5cannon_usmc" "M5 AT gun"}
 {"m8_howitzer_usmc" "M8 Howitzer"}
-{"longtom_155mm(usmc)" "Longtom 155m Howitzer"}
-{"m115(usmc)" "M115 203mm howitzer"}
 {"m4halftrack_usmc" "M4 mortar carrier"}
 {"np_t19_usmc" "T19 105mm HMC"}
 {"m7_usmc" "M7 Priest"}

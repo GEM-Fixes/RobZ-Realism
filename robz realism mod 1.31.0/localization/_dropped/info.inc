@@ -1,63 +1,9 @@
 ; info.lng: parked dead keys (lngsplit dead), full group path below the file prefix
 ; included by nothing: include this file inside {tags of the parent to bring them back
 {"squad"
-{"Bersaglieri_Motorcycle(axis_minor)" "Bersaglieri motorcycle fireteam for rapid reconnaissance and swift point holds. Includes SA 500 motorcycle with a rifleman, two SMG troopers, and an LMG gunner with assistant. Employ hit‑and‑run tactics."}
-{"hungarian_mobile_unit(axis_minor)" "Hungarian mobile group—includes Turán III, Botond transport, tank crew, and assault infantry (riflemen, Panzerfaust operators, SMG/LMG team). Use speed and armor to break lines and seize ground. Assault elements exhibit notably high stamina."}
-{"Recon_in_Force(axis_minor)" "Aggressive scouting package—includes 39M Csaba and 40M Csaba armored cars with veteran crews. Harass infantry and light vehicles; avoid drawn‑out fights with heavier armor."}
-{"guard_the_flanks(axis_minor)" "Static defense package—includes 75mm Resita AT gun, Breda‑Safat AA mount, 120mm mortar, and support crew. Anchors a sector against vehicles and infantry—site carefully and protect from raids."}
-{"vet_td(axis_minor)" "Veteran Italian M9053 tank destroyer with elite crew. Long‑range anti‑armor platform—ambush from cover and relocate to avoid counter‑fire."}
-{"big_gun(axis_minor)" "Veteran Italian 149/40 heavy gun detachment. High‑explosive fire for breaking fortifications and dense infantry; vulnerable to counter‑battery—keep screened."}
-{"tiger_ace_hun(axis_minor)" "Hungarian Tiger Ace with elite crew. Dominates armor duels at range; avoid isolation and protect flanks to sustain pressure."}
-{"karlthor(axis_minor)" "Karl‑Gerät heavy mortar ‘Thor’ with specialist crews. Devastating siege fire; extremely valuable and slow—operate from depth with ample security."}
-{"as423(axis_minor)" "AS.42 Sahariana patrol truck mounting a 47mm. Fast desert‑born raider—excellent mobility and harassment; avoid direct duels with armor."}
-{"fiat626_inf(axis_minor)" "Fiat 626 transport for infantry logistics and redeployments. Unarmed and vulnerable—keep off the line of fire."}
-{"fiat626_art(axis_minor)" "Fiat 626 artillery hauler for heavy munitions and crews. Unarmed; use behind cover and routes out of observation."}
-{"botond(axis_minor)" "38/42M Botond light truck—quick troop and ammo mover. Ideal for fast flanks and point captures; fragile under fire."}
-{"ammo_box_axm_inf(axis_minor)" "Infantry ammo crate—resupplies small arms and light/medium mortars (Brixia 45mm, 81mm), including HE/smoke/WP/illum bombs. Site under cover near infantry positions."}
-{"ammo_box_axm_art(axis_minor)" "Heavy ammo crate (Artillery)—resupplies cannons, autocannons and heavy mortars (120mm), including HE/smoke/WP/illum bombs; also feeds AT/AA/tank guns (e.g., 75mm Resita, 40mm Nimród). Keep rearward and concealed."}
-{"ammo_box_axm_special(axis_minor)" "Special ammo crate—resupplies special cannon rounds on eligible vehicle/towed guns (e.g., HEAT/APCR/WP). Does not refill mortar bombs—use Infantry/Artillery crates for mortars."}
-{"bredasafat77_stan(axis_minor)" "Breda‑Safat AA mount for low‑altitude air defense and anti‑infantry fire. Thinly protected; relocate often to avoid counter‑battery."}
-{"bredaM31(axis_minor)" "Breda M31 HMG on mount—sustained anti‑infantry fire and light vehicle harassment. Requires cover and ammo support."}
-{"sgrw_42(axis_minor)" "120mm heavy mortar with long reach (HE/smoke/WP/illum). Anchor for area denial and suppression; protect from counter‑fire. Resupply: Heavy ammo crate (Artillery)."}
-{"Brixia45_seq(axis_minor)" "Brixia 45mm light mortar—rapid light HE/smoke for close support and screening. Use to cover assaults, not to destroy fortifications. Resupply: Infantry ammo crate."}
-{"Brixia45_seqx2(axis_minor)" "Brixia 45mm light mortar—rapid light HE/smoke for close support and screening. Use to cover assaults, not to destroy fortifications. Resupply: Infantry ammo crate. Sequence-buy: two mortars."}
-{"Brixia45_seqx3(axis_minor)" "Brixia 45mm light mortar—rapid light HE/smoke for close support and screening. Use to cover assaults, not to destroy fortifications. Resupply: Infantry ammo crate. Sequence-buy: three mortars."}
-{"22(axis_minor)" "20/77 autocannon platform for anti‑infantry and light armor. Effective vs soft‑skins and aircraft at close ranges; avoid tanks."}
-{"37mm_bofors(axis_minor)" "37mm Bofors AA/AT—high rate AA and useful vs light armor. Site with fields of fire; reposition to avoid counter‑battery."}
-{"Resita_seq(axis_minor)" "75mm Resita AT gun—high penetration for medium/heavy armor. Strong static anchor; conceal, fire, and shift positions."}
-{"Resita_seqx2(axis_minor)" "75mm Resita AT gun—high penetration for medium/heavy armor. Strong static anchor; conceal, fire, and shift positions. Sequence-buy: two guns."}
-{"m149(axis_minor)" "Semovente da 149/40—mobile heavy gun for long‑range HE. Devastates fortifications; keep distance and spot with scouts."}
-{"fiataa35(axis_minor)" "Fiat Dovunque M35 with 20mm—mobile AA/AI mount. Rapid response to low flyers and soft targets; avoid tank duels."}
-{"csaba40m(axis_minor)" "40M Csaba armored car—fast scout with autocannon/ MG. Ideal for reconnaissance, flanks and light skirmishing."}
-{"csaba39m(axis_minor)" "39M Csaba armored car—early variant scout with MG/autocannon. Use speed and terrain to probe and harass."}
-{"panhard_rom(axis_minor)" "AMD‑35 Panhard—speedy recon car with 25mm. Effective vs infantry and light armor; avoid heavier AFVs."}
-{"Lancia1ZM(axis_minor)" "Lancia 1ZM—early armored car with twin MGs. Suited for patrols and point security; vulnerable to AT fire."}
-{"ab41(axis_minor)" "Autoblindo AB41—balanced scout with 20mm. Good road speed and flexibility; best in reconnaissance and screening roles."}
-{"m15_contraereo(axis_minor)" "Semovente M15/42 Contraereo—self‑propelled AA with dual mounts. Strong anti‑air and AI volume; keep moving to survive."}
-{"nimrod(axis_minor)" "40M Nimród—SPAA with potent 40mm, doubles as light TD vs soft skins. Excellent against planes; avoid medium tanks head‑on."}
-{"L35LF(axis_minor)" "L35 Lanciafiamme—flamethrower tankette for point‑blank assaults. Devastating in urban/trench fighting; extremely fragile."}
 {"l335(axis_minor)" "L3/35 tankette—very light armor and MG armament. Recon and harassment only; avoid AT threats entirely."}
 {"l335c(axis_minor)" "L35/c variant—improved tankette configuration. Similar limitations; rely on speed and stealth over armor."}
-{"m1139_seq(axis_minor)" "M11/39 light tank—37mm hull gun with limited turret MG. Fire support for infantry; favor flanking due to restricted turret armament."}
-{"m1139_seqx2(axis_minor)" "M11/39 light tank—37mm hull gun with limited turret MG. Fire support for infantry; favor flanking due to restricted turret armament. Sequence-buy: two tanks."}
-{"m7518_seq(axis_minor)" "M5/18 light tank—short‑barrel 75mm for strong HE support; limited AT. Pair with dedicated AT assets."}
-{"m7518_seqx2(axis_minor)" "M5/18 light tank—short‑barrel 75mm for strong HE support; limited AT. Pair with dedicated AT assets. Sequence-buy: two tanks."}
-{"bt42(axis_minor)" "BT‑42 assault gun—howitzer on BT chassis. Heavy HE for bunker busting; very vulnerable to AT—strike and reposition."}
-{"toldi1(axis_minor)" "Toldi I—light tank with modest gun and armor. Scout and screen; avoid direct fights with mediums."}
-{"toldi2(axis_minor)" "Toldi IIa—improved light tank; still reconnaissance‑focused. Use mobility and vision rather than armor."}
-{"zrinyi2(axis_minor)" "Zrínyi II—assault gun with 105mm HE. Infantry support specialist; keep flanks covered and avoid tank destroyers."}
-{"turan1(axis_minor)" "Turán I—medium tank, 40mm gun. Balanced infantry support; struggles vs late‑war armor—flank or bring AT support."}
-{"turan2(axis_minor)" "Turán II—medium tank, 75mm short gun. Improved HE for support; limited AP—avoid heavy armor frontally."}
-{"turan3(axis_minor)" "Turán III—upgunned medium with 75mm long gun. Decent AP and HE; best at mid‑range fights and flanking shots."}
 {"t34_3_fin(axis_minor)" "Captured T‑34/85—well‑rounded medium with strong 85mm gun. Versatile; use angling and mobility to dictate engagements."}
-{"pz6e_hungarian(axis_minor)" "Tiger I—heavy tank with powerful 88mm and strong frontal armor. Engage at range, protect flanks, avoid artillery."}
-{"panther5g_hungarian(axis_minor)" "Panther G—fast, accurate 75mm long gun with sloped armor. Snipe at mid‑to‑long range; keep transmissions safe."}
-{"tacam_t60(axis_minor)" "TACAM T‑60—open‑top TD; ambush role with captured gun. Fragile—use camo, distance, and quick relocations."}
-{"tacam_r2(axis_minor)" "TACAM R‑2—open‑top TD with better chassis stability. Ambush mediums at range; avoid HE and strafing."}
-{"3ro(axis_minor)" "Lancia 3RO gun truck—mobile platform for support weapons. Soft target; employ standoff and cover."}
-{"zrinyi1(axis_minor)" "Zrínyi I—assault gun with higher velocity AT capability. Flexible but flank‑vulnerable; fight from cover."}
-{"m9053(axis_minor)" "Semovente 90/53—long‑range AT SPG with excellent penetration. Paper‑thin protection; prioritize first‑shot kills."}
-{"turan3_vet(axis_minor)" "Turán III (veteran)—improved crew performance and handling. Leverage range and flanking for consistent outcomes."}
 {"aufklarer(ger)" "A team of four recon troops in an unarmed Kubel VW82 car, armed with 2 MP40 submachineguns and 2 G43 semi-automatic rifles. Use these troops to quickly recce a portion of the battlefield or to hold points until reinforcements arrive."}
 {"landesschutzen(ger)" "Landesschutzen were soldiers were too old or unfit for front line service. These troops were meant to provide internal security. This squad comes with 16 soldiers, with only 1 ZB vz. 30 MG. They are primarily suited for defending an entrenched location. Soldiers are skill 2."}
 {"ita_frei(ger)" "The Bersaglieri were a veteran Italian force of marksmen. This high-tier squad of 9 Italian volunteers consists of veteran riflemen and an MG34 team, and are great for defending a flank or other position."}
@@ -78,24 +24,7 @@
 {"elites_giretsu(jap)" "These 15 Giretsu paratroopers are the cream-of-the-crop of the IJA. With 8 skill, they come with 1 RPG and 2 MG teams."}
 {"elites_giretsu_drop(jap)" "A paradroppable squad of 15 apex Giretsu marine paratroopers."}
 {"stormtroopers_drop(jap)" "A paradroppable version of 12 elite SNLF paratrooper marines."}
-{"ss-ki(jap)" "SS-Ki engineer flamethrower vehicle - clears bunkers and obstacles; thin armor and open to AT fire."}
-{"ammo_box_jap_inf(jap)" "Infantry ammo crate - resupplies small arms. Static and vulnerable; site near cover."}
-{"ammo_box_jap_art(jap)" "Artillery ammo crate - resupplies guns. Keep concealed and disperse to reduce risk."}
-{"ammo_box_jap_special(jap)" "Special ammo crate - resupplies specialist units. Protect and reposition as needed."}
-{"type92_stan(jap)" "Type 92 HMG - towed heavy machine-gun for sustained suppressive fire. Anchor lanes of approach."}
-{"t90_75m_towed(jap)" "75mm Type 90 field gun package - towed with transport. Site carefully and protect while deploying."}
-{"t4_75mm_towed(jap)" "75mm Type 4 gun package - towed AA/AT piece with mover. Strong long-range fire; static once emplaced."}
-{"type41_mountaingun(jap)" "Type 41 75mm mountain gun - light howitzer for mobile fire support. Quick to emplace; keep screened."}
-{"type97mortar(jap)" "Type 97 mortar - indirect fire support. Area denial and suppression; protect from raids."}
-{"type4_200mm_towed(jap)" "200mm Type 4 rocket package - towed launcher with transport. Set up under concealment; relocate after firing."}
-{"t91_105mm_towed(jap)" "105mm Type 91 howitzer package - towed with transport. Emplace with overlapping fields and cover."}
 {"type96_150mm_towed(jap)" "150mm Type 96 howitzer package - heavy indirect fire with mover. Slow to deploy; protect from air and raids."}
-{"type_89_towed(jap)" "155mm Type 89 howitzer package - very heavy siege fire with transport. Site carefully; long setup time."}
-{"ha-go_seq(jap)" "Ha-Go light tank - fast scout and infantry support. Strong vs soft targets; avoid direct fights with mediums."}
-{"ha-go_seqx2(jap)" "Ha-Go light tank - fast scout and infantry support. Strong vs soft targets; avoid direct fights with mediums. Sequence-buy: two tanks."}
-{"hero_dual_type41(jap)" "Dual Type 41 75mm mountain guns package. Flexible light artillery—rapid to emplace; protect with infantry screens."}
-{"hero_jap_chi_to(jap)" "Chi-Ri package—late-war medium with strong gun and crew efficiency. Best at mid-to-long range; protect flanks."}
-{"hero_jap_elite_aa(jap)" "Elite 75mm Type 4 AA package with support vehicle. Strong AA coverage and credible AT; site as a static sector anchor."}
 {"rifleman(hun)" "A  Hungarian infantrymen armed with a few anti-personnel grenades and a FEG 35M rifle. These riflemen are most effective at long and medium ranges. In close combat, they become easy prey for enemy submachine gunners and assault squads."}
 {"mg(hun)" "A soldier armed with a Solothurn 31M light machine gun can suppress enemy at long and medium ranges over a long period of time. Hidden in a firing position of made of sandbags, Hungarian machine gunners become nearly invincible to small arms, and gain significantly in firing accuracy and dispersion."}
 {"elite-smg(hun)" "A Sub-machine gunner which is armed with a Danuvia 43M submachine gun, anti-personnel, anti-tank and Molotov Coctails. This submachine gunner can be used in both defence and offence and can effectively fight enemy infantry at close and medium ranges."}

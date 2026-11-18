@@ -155,10 +155,10 @@
 
 {"hero6_jap"        ("v5-tank" c(400) v1(chi-he) 		t(all hero 43 44 45) s(jap) n1(3) n2(1) g(h7) b(hero)) {level 1} {cost 5.0} {fore -1}}		;800secc
 
-{"hero7_jap"        ("2v" c(540) c1(ho-ha3mgun) c2(type4_200mm_elite) 	t(all hero artillery 43 44 45) s(jap) n1(vehicle_supporter:2) n2(vehicle_supporter:2) g(h8) b(hero)) {level 1} {cost 5.0} {fore 0.0}}
+{"hero7_jap"        ("2v" c(540) c1(ho-ha3mgun) c2(type4_200mm_elite) 	t(all hero artillery 43 44 45) s(jap) n1(vehicle_supporter:2) n2(jap_elite_vehicle_supporter:2) g(h8) b(hero)) {level 1} {cost 5.0} {fore 0.0}}
 
 {"hero_jap_chi_to"  ("v1" c(720) c1(chi-ri_2) 		t(all hero 44 45) s(jap) n1(tankman:4) n2(tankman2:1) g(h10) b(hero)) {level 1} {cost 8.0} {fore -1.083}}		;1500sec
 
-{"hero_jap_elite_aa"("v41" c(800) c1(ss-ki) c2(type4_75mm_elite) t(all hero 44 45) s(jap) n1(elite_vehicle_supporter:2) n2(jap_teishin_type2rifle_apminer:0) g(h5) b(hero)) {level 1} {cost 10.0} {fore -0.5}}
+{"hero_jap_elite_aa"("v41" c(800) c1(ss-ki) c2(type4_75mm_elite) t(all hero 44 45) s(jap) n1(jap_elite_vehicle_supporter:2) n2(jap_teishin_type2rifle_apminer:0) g(h5) b(hero)) {level 1} {cost 10.0} {fore -0.5}}
 
 {"hero9_jap"  	    ("v1" c(1200) c1(ho-ri_1) 		t(all hero 44 45 sheavy) s(jap) n1(tankman:3) n2(tankman2:1) g(h9) b(hero)) {level 1} {cost 12.0} {fore -0.567}}		;1880sec

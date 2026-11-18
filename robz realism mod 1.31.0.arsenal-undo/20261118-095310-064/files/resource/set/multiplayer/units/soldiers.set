@@ -1,0 +1,2822 @@
+;all levels past 124 need changing on the google sheets document
+
+(define "level_0"     
+        {tags   "level_0 %side soldier"}
+        {cp     -10.0}
+        {score  1000.0}
+        {basic}
+        {breed}
+        {cw 100.0}
+    )
+{"mp/axis_minor/axm_fin_officer" ("level_0" side(axis_minor))}
+{"mp/ger/ger_officer" ("level_0" side(ger))}
+{"mp/eng/eng_officer" ("level_0" side(eng))}
+{"mp/ger_ss/ss_officer" ("level_0" side(ger_ss))}
+{"mp/ger2/ost_officer" ("level_0" side(ger2))}
+{"mp/jap/jap_officer" ("level_0" side(jap))}
+{"mp/rus/rus_officer" ("level_0" side(rus))}
+{"mp/rus_guard/guard_officer" ("level_0" side(rus_guard))}
+{"mp/usa/usa_officer" ("level_0" side(usa))}
+(define "level_1"     
+        {tags   "level_1 %side soldier"}
+        {cp     -15.0}
+        {score  1500.0}
+        {basic}
+        {breed}
+        {cw 100.0}
+    )
+{"mp/ger2/ost_officer2" ("level_1" side(ger2))}
+(define "level_2"     
+        {tags   "level_2 %side soldier"}
+        {cp     0.2}
+        {score  8.0}
+        {basic}
+        {breed}
+        {cw 0.2}
+    )
+{"mp/axis_minor/axm_bul_at_rifle_assist" ("level_2" side(axis_minor))}
+{"mp/axis_minor/axm_rom_bazooker_assist" ("level_2" side(axis_minor))}
+{"mp/axis_minor/axm_hun_smg_danuvia" ("level_2" side(axis_minor))}
+{"mp/axis_minor/axm_hun_smg_ppsh" ("level_2" side(axis_minor))}
+
+{"mp/ger_ss/ss_kosaken_smg" ("level_2" side(ger_ss))}
+{"mp/ger_ss/ss_ssvt_sl" ("level_2" side(ger_ss))}
+(define "level_3"     
+        {tags   "level_3 %side soldier"}
+        {cp     0.2}
+        {score  10.0}
+        {basic}
+        {breed}
+        {cw 0.2}
+    )
+
+
+
+
+(define "level_4"     
+        {tags   "level_4 %side soldier"}
+        {cp     0.2}
+        {score  40.0}
+        {basic}
+        {breed}
+        {cw 0.2}
+    )
+
+{"mp/axis_minor/axm_fin_pio_flamer" ("level_4" side(axis_minor))}
+{"mp/axis_minor/axm_fin_pio_smg" ("level_4" side(axis_minor))}
+{"mp/axis_minor/axm_hun_assualt_flamer" ("level_4" side(axis_minor))}
+{"mp/ger/ger_flamer" ("level_4" side(ger))}
+{"mp/ger_ss/ss_sturmpio_flamer" ("level_4" side(ger))}
+{"mp/ger/ger_pzgren_pio_flamer" ("level_4" side(ger))}
+{"mp/eng/eng_flamer" ("level_4" side(eng))}
+{"mp/eng/eng_pioneer_flamer" ("level_4" side(eng))}
+{"mp/ger_ss/ss_flamer" ("level_4" side(ger_ss))}
+{"mp/ger2/ost_flamer" ("level_4" side(ger2))}
+{"mp/jap/jap_flamer" ("level_4" side(jap))}
+{"mp/rus/rus_flamer" ("level_4" side(rus))}
+{"mp/rus/rus_shock_flame" ("level_4" side(rus))}
+{"mp/rus_guard/guards_shock_flame" ("level_4" side(rus_guard))}
+{"mp/rus_guard/guard_elite_guards_shock_flame" ("level_4" side(rus_guard))}
+{"mp/usa/usa_engineer_flamer" ("level_4" side(usa))}
+{"mp/usa/usa_flamer" ("level_4" side(usa))}
+(define "level_5"     
+        {tags   "level_5 %side soldier"}
+        {cp     0.2}
+        {score  15.0}
+        {basic}
+        {breed}
+        {cw 0.2}
+    )
+{"mp/ger/ger_volksgren_grenadier" ("level_5" side(ger))}
+
+(define "level_6"     
+        {tags   "level_6 %side soldier"}
+        {cp     0.2}
+        {score  9.0}
+        {basic}
+        {breed}
+        {cw 0.2}
+    )
+
+{"mp/rus/rus_partisan_smg" ("level_6" side(rus))}
+(define "level_7"     
+        {tags   "level_7 %side soldier"}
+        {cp     0.2}
+        {score  5.0}
+        {basic}
+        {breed}
+        {cw 0.2}
+    )
+{"mp/ger/ger_volkssturm_smg_faustpatrone" ("level_7" side(ger))}
+{"mp/ger/ger_volkssturm_smg_panzerfaust" ("level_7" side(ger))}
+{"mp/ger2/ost_straf_mp28" ("level_7" side(ger2))}
+{"mp/jap/jap_charger_smg_type100" ("level_7" side(jap))}
+{"mp/jap/jap_charger_smg_type100_44" ("level_7" side(jap))}
+(define "level_8"     
+        {tags   "level_8 %side soldier"}
+        {cp     0.2}
+        {score  6.0}
+        {basic}
+        {breed}
+        {cw 0.2}
+    )
+{"mp/ger2/ost_straf_ppsh" ("level_8" side(ger2))}
+(define "level_9"     
+        {tags   "level_9 %side soldier"}
+        {cp     0.2}
+        {score  7.0}
+        {basic}
+        {breed}
+        {cw 0.2}
+    )
+{"mp/rus/rus_partisan_mp38" ("level_9" side(rus))}
+(define "level_10"     
+        {tags   "level_10 %side soldier"}
+        {cp     0.25}
+        {score  7.0}
+        {basic}
+        {breed}
+        {cw 0.25}
+    )
+{"mp/ger/ger_volksgren_mg_asst" ("level_10" side(ger))}
+
+
+{"mp/ger/ger_volksgren_pzfst" ("level_10" side(ger))}
+
+{"mp/ger/ger_volksgren_rifle" ("level_10" side(ger))}
+{"mp/ger_ss/ss_kosaken_mg_asst" ("level_10" side(ger_ss))}
+{"mp/ger_ss/ss_kosaken_rifle" ("level_10" side(ger_ss))}
+{"mp/ger_ss/ss_ssvt_mg_asst" ("level_10" side(ger_ss))}
+{"mp/ger_ss/ss_ssvt_rifle" ("level_10" side(ger_ss))}
+{"mp/ger_ss/ss_ssvt_sl_asst" ("level_10" side(ger_ss))}
+{"mp/jap/jap_mg3_asst" ("level_10" side(jap))}
+{"mp/rus/rus_partisan_at" ("level_10" side(rus))}
+{"mp/rus/rus_partisan_rifle" ("level_10" side(rus))}
+(define "level_11"     
+        {tags   "level_11 %side soldier"}
+        {cp     0.25}
+        {score  6.0}
+        {basic}
+        {breed}
+        {cw 0.25}
+    )
+{"mp/ger/ger_volkssturm_rifle_faustpatrone" ("level_11" side(ger))}
+{"mp/ger/ger_volkssturm_rifle_panzerfaust" ("level_11" side(ger))}
+{"mp/jap/jap_charger_rifle" ("level_11" side(jap))}
+{"mp/jap/jap_charger_throwgun" ("level_11" side(jap))}
+
+{"mp/jap/jap_kamikaze" ("level_11" side(jap))}
+(define "level_12"     
+        {tags   "level_12 %side soldier"}
+        {cp     0.29}
+        {score  9.0}
+        {basic}
+        {breed}
+        {cw 0.29}
+    )
+{"mp/ger/ger_volksgren_sa" ("level_12" side(ger))}
+(define "level_13"     
+        {tags   "level_13 %side soldier"}
+        {cp     0.5}
+        {score  25.0}
+        {basic}
+        {breed}
+        {cw 0.5}
+    )
+{"mp/axis_minor/axm_bul_miner_ap" ("level_13" side(axis_minor))}
+{"mp/axis_minor/axm_rom_minedisposal" ("level_13" side(axis_minor))}
+{"mp/ger/ger_ap_miner" ("level_13" side(ger))}
+{"mp/eng/eng_ap_miner" ("level_13" side(eng))}
+{"mp/ger_ss/ss_ap_miner" ("level_13" side(ger_ss))}
+{"mp/ger2/ost_ap_miner" ("level_13" side(ger2))}
+{"mp/jap/jap_ap_miner" ("level_13" side(jap))}
+{"mp/jap/jap_saper" ("level_13" side(jap))}
+{"mp/rus/rus_ap_miner" ("level_13" side(rus))}
+{"mp/usa/usa_ap_miner" ("level_13" side(usa))}
+{"mp/usa/usa_saper" ("level_13" side(usa))}
+{"mp/eng/eng_saper" ("level_13" side(eng))}
+{"mp/ger/ger_saper" ("level_13" side(ger))}
+{"mp/eng/eng_saper2" ("level_13" side(eng))}
+{"mp/ger_ss/ss_saper" ("level_13" side(ger_ss))}
+{"mp/rus/rus_saper" ("level_13" side(rus))}
+{"mp/rus_guard/guard_ap_miner" ("level_13" side(rus_guard))}
+(define "level_14"     
+        {tags   "level_14 %side soldier"}
+        {cp     0.5}
+        {score  37.5}
+        {basic}
+        {breed}
+        {cw 0.5}
+    )
+
+{"mp/eng/eng_at_miner" ("level_14" side(eng))}
+{"mp/axis_minor/axm_bul_miner_at" ("level_14" side(axis_minor))}
+{"mp/ger/ger_at_miner" ("level_14" side(ger))}
+{"mp/ger_ss/ss_at_miner" ("level_14" side(ger_ss))}
+{"mp/ger2/ost_at_miner" ("level_14" side(ger2))}
+{"mp/jap/jap_at_miner" ("level_14" side(jap))}
+{"mp/rus/rus_at_miner" ("level_14" side(rus))}
+{"mp/usa/usa_at_miner" ("level_14" side(usa))}
+{"mp/rus_guard/guard_at_miner" ("level_14" side(rus_guard))}
+(define "level_15"     
+        {tags   "level_15 %side soldier"}
+        {cp     0.5}
+        {score  200.0}
+        {basic}
+        {breed}
+        {cw 0.5}
+    )
+{"mp/axis_minor/axm_bul_radioman" ("level_15" side(axis_minor))}
+{"mp/ger/ger_radioman_mortar" ("level_15" side(ger))}
+{"mp/ger2/ost_radioman" ("level_15" side(ger2))}
+(define "level_16"     
+        {tags   "level_16 %side soldier"}
+        {cp     0.5}
+        {score  10.0}
+        {basic}
+        {breed}
+        {cw 0.5}
+    )
+
+
+{"mp/jap/jap_rifle_grenadier" ("level_16" side(jap))}
+
+(define "level_18"     
+        {tags   "level_18 %side soldier"}
+        {cp     0.5}
+        {score  110.0}
+        {basic}
+        {breed}
+        {cw 0.5}
+    )
+
+
+(define "level_19"     
+        {tags   "level_19 %side soldier"}
+        {cp     0.5}
+        {score  80.0}
+        {basic}
+        {breed}
+        {cw 0.5}
+    )
+
+(define "level_20"     
+        {tags   "level_20 %side soldier"}
+        {cp     4.55}
+        {score  100.0}
+        {basic}
+        {breed}
+        {cw 0.5}
+    )
+
+{"mp/ger/ger_sniper_vet" ("level_20" side(ger))}
+{"mp/ger_ss/ss_vet_sniper" ("level_20" side(ger_ss))}
+
+{"mp/rus/rus_vetsniper" ("level_20" side(rus))}
+
+
+
+
+
+(define "level_21"     
+        {tags   "level_21 %side soldier"}
+        {cp     0.5}
+        {score  150.0}
+        {basic}
+        {breed}
+        {cw 0.5}
+    )
+
+(define "level_22"     
+        {tags   "level_22 %side soldier"}
+        {cp     0.5}
+        {score  15.0}
+        {basic}
+        {breed}
+        {cw 0.5}
+    )
+
+(define "level_23"     
+        {tags   "level_23 %side soldier"}
+        {cp     0.58}
+        {score  30.0}
+        {basic}
+        {breed}
+        {cw 0.58}
+    )
+{"mp/axis_minor/axm_bul_at_rifle" ("level_23" side(axis_minor))}
+(define "level_24"     
+        {tags   "level_24 %side soldier"}
+        {cp     0.58}
+        {score  11.0}
+        {basic}
+        {breed}
+        {cw 0.58}
+    )
+{"mp/axis_minor/axm_hun_squadleader_smg" ("level_24" side(axis_minor))}
+{"mp/rus/rus_at_rifleassist" ("level_24" side(rus))}
+{"mp/rus/rus_bazookerassist" ("level_24" side(rus))}
+{"mp/rus/rus_flamerassist" ("level_24" side(rus))}
+{"mp/rus/rus_sapper_sl" ("level_24" side(rus))}
+
+{"mp/rus/rus_sapper_smg2" ("level_24" side(rus))}
+{"mp/rus/rus_smg" ("level_24" side(rus))}
+{"mp/rus/rus_smg2" ("level_24" side(rus))}
+{"mp/rus/rus_smg2_43" ("level_24" side(rus))}
+{"mp/rus_guard/guard_recon_smg" ("level_24" side(rus_guard))}
+{"mp/usa/usa_smg" ("level_24" side(usa))}
+(define "level_25"     
+        {tags   "level_25 %side soldier"}
+        {cp     0.58}
+        {score  12.0}
+        {basic}
+        {breed}
+        {cw 0.58}
+    )
+{"mp/axis_minor/axm_rom_smg" ("level_25" side(axis_minor))}
+
+{"mp/rus_guard/guard_recon_smg2" ("level_25" side(rus_guard))}
+(define "level_26"     
+        {tags   "level_26 %side soldier"}
+        {cp     0.58}
+        {score  45.0}
+        {basic}
+        {breed}
+        {cw 0.58}
+    )
+{"mp/jap/jap_at_rifle" ("level_26" side(jap))}
+{"mp/rus/rus_at_rifle" ("level_26" side(rus))}
+(define "level_27"     
+        {tags   "level_27 %side soldier"}
+        {cp     0.58}
+        {score  10.0}
+        {basic}
+        {breed}
+        {cw 0.58}
+    )
+{"mp/jap/jap_at_rifleassist" ("level_27" side(jap))}
+{"mp/jap/jap_smg" ("level_27" side(jap))}
+{"mp/jap/jap_smg2" ("level_27" side(jap))}
+{"mp/jap/jap_smg2b" ("level_27" side(jap))}
+{"mp/jap/jap_smg3" ("level_27" side(jap))}
+{"mp/jap/jap_smgb" ("level_27" side(jap))}
+{"mp/jap/jap_squadleader" ("level_27" side(jap))}
+{"mp/jap/jap_squadleader2" ("level_27" side(jap))}
+{"mp/jap/jap_type4_atassist" ("level_27" side(jap))}
+(define "level_28"     
+        {tags   "level_28 %side soldier"}
+        {cp     0.58}
+        {score  20.0}
+        {basic}
+        {breed}
+        {cw 0.58}
+    )
+{"mp/usa/usa_armor_rifle_grenadier" ("level_28" side(usa))}
+{"mp/usa/usa_engineer_grenadier" ("level_28" side(usa))}
+{"mp/usa/usa_rifle_grenadier" ("level_28" side(usa))}
+(define "level_29"     
+        {tags   "level_29 %side soldier"}
+        {cp     0.6}
+        {score  8.0}
+        {basic}
+        {breed}
+        {cw 0.6}
+    )
+{"mp/axis_minor/axm_bul_mgun_assist" ("level_29" side(axis_minor))}
+{"mp/axis_minor/axm_bul_rifle" ("level_29" side(axis_minor))}
+{"mp/axis_minor/axm_hun_rifle" ("level_29" side(axis_minor))}
+{"mp/axis_minor/axm_hun_rifle3" ("level_29" side(axis_minor))}
+{"mp/axis_minor/axm_rom_mgunassist" ("level_29" side(axis_minor))}
+{"mp/axis_minor/axm_rom_rifle" ("level_29" side(axis_minor))}
+{"mp/ger_ss/ss_fallschirm_mg_asst" ("level_29" side(ger_ss))}
+{"mp/ger_ss/ss_fallschirm_rifle" ("level_29" side(ger_ss))}
+{"mp/ger2/ost_recon_pzfst" ("level_29" side(ger2))}
+{"mp/ger2/ost_recon_rifle" ("level_29" side(ger2))}
+{"mp/jap/jap_flamerassist" ("level_29" side(jap))}
+{"mp/jap/jap_rifle" ("level_29" side(jap))}
+{"mp/jap/jap_rifle2" ("level_29" side(jap))}
+{"mp/jap/jap_rifle2b" ("level_29" side(jap))}
+{"mp/jap/jap_rifleb" ("level_29" side(jap))}
+{"mp/rus/rus_mgun_asst" ("level_29" side(rus))}
+{"mp/rus/rus_rifle" ("level_29" side(rus))}
+{"mp/rus/rus_sapper_rifle1" ("level_29" side(rus))}
+{"mp/rus/rus_sapper_rifle4" ("level_29" side(rus))}
+{"mp/rus/rus_sapper_rifle2" ("level_29" side(rus))}
+{"mp/rus/rus_sapper_rifle3" ("level_29" side(rus))}
+{"mp/rus_guard/guard_recon_rifle" ("level_29" side(rus_guard))}
+{"mp/jap/light_mortar_asst" ("level_29" side(jap))}
+{"mp/ger/ger_light_mortar_assist" ("level_29" side(ger))}
+{"mp/eng/eng_light_mortar_assist" ("level_29" side(eng))}
+{"mp/ger_ss/ss_light_mortar_assist" ("level_29" side(ger_ss))}
+{"mp/ger2/ost_light_mortar_assist" ("level_29" side(ger2))}
+
+
+
+{"mp/jap/mgun_ammo" ("level_29" side(jap))}
+{"mp/jap/mgun_asst" ("level_29" side(jap))}
+{"mp/jap/mgun2_ammo" ("level_29" side(jap))}
+{"mp/jap/mgun2_asst" ("level_29" side(jap))}
+{"mp/jap/mgun3_ammo" ("level_29" side(jap))}
+{"mp/jap/mgun3_asst" ("level_29" side(jap))}
+{"mp/jap/otsu_mg_ammo" ("level_29" side(jap))}
+{"mp/jap/otsu_mg_asst" ("level_29" side(jap))}
+{"mp/jap/otsu_rifle" ("level_29" side(jap))}
+{"mp/jap/otsu_sa" ("level_29" side(jap))}
+{"mp/jap/otsu_sl" ("level_29" side(jap))}
+(define "level_30"     
+        {tags   "level_30 %side soldier"}
+        {cp     0.6}
+        {score  12.0}
+        {basic}
+        {breed}
+        {cw 0.6}
+    )
+{"mp/eng/eng_mg_assist_canada" ("level_30" side(eng))}
+{"mp/eng/eng_rifleman_canada" ("level_30" side(eng))}
+{"mp/eng/eng_squadleader_can" ("level_30" side(eng))}
+{"mp/eng/eng_squadleader_scot" ("level_30" side(eng))}
+{"mp/usa/usa_mgun2_asst" ("level_30" side(usa))}
+{"mp/usa/usa_mgun_asst" ("level_30" side(usa))}
+{"mp/usa/usa_rifle" ("level_30" side(usa))}
+{"mp/usa/usa_rifle3" ("level_30" side(usa))}
+(define "level_31"     
+        {tags   "level_31 %side soldier"}
+        {cp     0.6}
+        {score  0.0}
+        {basic}
+        {breed}
+        {cw 0.6}
+    )
+{"mp/ger2/ost_straf_mauzer" ("level_31" side(ger2))}
+(define "level_32"     
+        {tags   "level_32 %side soldier"}
+        {cp     0.6}
+        {score  20.0}
+        {basic}
+        {breed}
+        {cw 0.6}
+    )
+{"mp/rus/rus_bazooker" ("level_32" side(rus))}
+{"mp/usa/usa_bazooker" ("level_32" side(usa))}
+{"mp/usa/usa_rifle_at" ("level_32" side(usa))}
+(define "level_33"     
+        {tags   "level_33 %side soldier"}
+        {cp     0.68}
+        {score  45.0}
+        {basic}
+        {breed}
+        {cw 0.68}
+    )
+{"mp/axis_minor/axm_rom_bazooker" ("level_33" side(axis_minor))}
+(define "level_34"     
+        {tags   "level_34 %side soldier"}
+        {cp     0.68}
+        {score  12.0}
+        {basic}
+        {breed}
+        {cw 0.68}
+    )
+{"mp/ger2/ost_recon_sa" ("level_34" side(ger2))}
+{"mp/rus/rus_rifle_sa" ("level_34" side(rus))}
+
+{"mp/usa/usa_bazookerassist" ("level_34" side(usa))}
+{"mp/usa/usa_engineer" ("level_34" side(usa))}
+{"mp/usa/usa_engineer2" ("level_34" side(usa))}
+{"mp/usa/usa_engineer3" ("level_34" side(usa))}
+{"mp/usa/usa_engineer4" ("level_34" side(usa))}
+(define "level_35"     
+        {tags   "level_35 %side soldier"}
+        {cp     0.7}
+        {score  14.0}
+        {basic}
+        {breed}
+        {cw 0.7}
+    )
+{"mp/ger/ger_volksgren_stg44" ("level_35" side(ger))}
+{"mp/ger/ger_volksgren_pzfst2" ("level_35" side(ger))}
+
+(define "level_36"     
+        {tags   "level_36 %side soldier"}
+        {cp     0.7}
+        {score  20.0}
+        {basic}
+        {breed}
+        {cw 0.7}
+    )
+{"mp/ger_ss/ss_kosaken_mg" ("level_36" side(ger_ss))}
+{"mp/ger_ss/ss_ssvt_mg" ("level_36" side(ger_ss))}
+{"mp/jap/jap_mgun" ("level_36" side(jap))}
+{"mp/jap/jap_mgun2" ("level_36" side(jap))}
+{"mp/jap/jap_mgun3" ("level_36" side(jap))}
+
+{"mp/rus/rus_partisan_mg" ("level_36" side(rus))}
+(define "level_37"     
+        {tags   "level_37 %side soldier"}
+        {cp     0.82}
+        {score  35.0}
+        {basic}
+        {breed}
+        {cw 0.82}
+    )
+{"mp/ger/ger_volksgren_mg" ("level_37" side(ger))}
+(define "level_38"     
+        {tags   "level_38 %side soldier"}
+        {cp     0.97}
+        {score  12.0}
+        {basic}
+        {breed}
+        {cw 0.97}
+    )
+{"mp/axis_minor/axm_bul_smg" ("level_38" side(axis_minor))}
+{"mp/axis_minor/axm_bul_squadleader" ("level_38" side(axis_minor))}
+{"mp/axis_minor/axm_hun_assualt_pzf" ("level_38" side(axis_minor))}
+{"mp/axis_minor/axm_ita_alpini_smg" ("level_38" side(axis_minor))}
+{"mp/axis_minor/axm_rom_squadleader" ("level_38" side(axis_minor))}
+{"mp/ger/ger_flamerassist" ("level_38" side(ger))}
+{"mp/ger2/ost_recon_sl" ("level_38" side(ger2))}
+
+{"mp/rus/rus_shock_sl_smg" ("level_38" side(rus))}
+{"mp/rus/rus_shock_smg" ("level_38" side(rus))}
+{"mp/rus/rus_shock_smg2" ("level_38" side(rus))}
+{"mp/rus/rus_shock_smg3" ("level_38" side(rus))}
+{"mp/rus_guard/guard_at_rifleassist" ("level_38" side(rus_guard))}
+{"mp/usa/usa_squadleader" ("level_38" side(usa))}
+(define "level_39"     
+        {tags   "level_39 %side soldier"}
+        {cp     0.97}
+        {score  50.0}
+        {basic}
+        {breed}
+        {cw 0.97}
+    )
+{"mp/axis_minor/axm_fin_at_rifle" ("level_39" side(axis_minor))}
+{"mp/ger/ger_at_rifle" ("level_39" side(ger))}
+(define "level_40"     
+        {tags   "level_40 %side soldier"}
+        {cp     0.97}
+        {score  9.0}
+        {basic}
+        {breed}
+        {cw 0.97}
+    )
+{"mp/axis_minor/axm_fin_at_rifleassist" ("level_40" side(axis_minor))}
+{"mp/axis_minor/axm_fin_pio_rifle" ("level_40" side(axis_minor))}
+{"mp/axis_minor/axm_fin_pio_rifle_dynamite" ("level_40" side(axis_minor))}
+{"mp/axis_minor/axm_hun_assualt_mgun_assist" ("level_40" side(axis_minor))}
+{"mp/axis_minor/axm_hun_assualt_rifle" ("level_40" side(axis_minor))}
+
+{"mp/axis_minor/axm_ita_alpini_mgun_assist" ("level_40" side(axis_minor))}
+{"mp/axis_minor/axm_ita_alpini_rifle" ("level_40" side(axis_minor))}
+{"mp/axis_minor/axm_ita_alpini_rifle2" ("level_40" side(axis_minor))}
+
+
+{"mp/ger/ger_grenadier_mg_asst" ("level_40" side(ger))}
+{"mp/ger/ger_grenadier_ober_44" ("level_40" side(ger))}
+{"mp/ger/ger_grenadier_pzfst" ("level_40" side(ger))}
+{"mp/ger/ger_grenadier_rifle_44" ("level_40" side(ger))}
+{"mp/ger/ger_panzerfaust" ("level_40" side(ger))}
+{"mp/ger/ger_pzgren_pio1" ("level_40" side(ger))}
+{"mp/ger/ger_pzgren_pio2" ("level_40" side(ger))}
+{"mp/ger/ger_pzgren_pio3" ("level_40" side(ger))}
+{"mp/ger_ss/ss_sturmpio1" ("level_40" side(ger_ss))}
+{"mp/ger_ss/ss_sturmpio2" ("level_40" side(ger_ss))}
+{"mp/ger_ss/ss_sturmpio3" ("level_40" side(ger_ss))}
+{"mp/ger_ss/ss_sturmpio_mg_asst" ("level_40" side(ger_ss))}
+{"mp/rus/rus_marine_mgassist" ("level_40" side(rus))}
+{"mp/rus/rus_marine_rifle" ("level_40" side(rus))}
+{"mp/rus/rus_shock_mg_asst" ("level_40" side(rus))}
+{"mp/rus/rus_shock_sl" ("level_40" side(rus))}
+
+
+{"mp/rus/rus_shock_rifle" ("level_40" side(rus))}
+{"mp/usa/usa_marine_barassist" ("level_40" side(usa))}
+{"mp/usa/usa_marine_rifle" ("level_40" side(usa))}
+{"mp/usa/usa_marine_shotgun" ("level_40" side(usa))}
+(define "level_41"     
+        {tags   "level_41 %side soldier"}
+        {cp     0.97}
+        {score  11.0}
+        {basic}
+        {breed}
+        {cw 0.97}
+    )
+{"mp/ger/ger_at_rifleassist" ("level_41" side(ger))}
+{"mp/eng/eng_at_rifle_assist" ("level_41" side(eng))}
+{"mp/eng/eng_bazooker_assist" ("level_41" side(eng))}
+{"mp/eng/eng_flamer_assist" ("level_41" side(eng))}
+{"mp/usa/usa_flamerassist" ("level_41" side(usa))}
+(define "level_42"     
+        {tags   "level_42 %side soldier"}
+        {cp     0.97}
+        {score  25.0}
+        {basic}
+        {breed}
+        {cw 0.97}
+    )
+{"mp/ger/ger_grenadier_rifle_grenadier" ("level_42" side(ger))}
+{"mp/eng/eng_rifle_grenadier" ("level_42" side(eng))}
+{"mp/eng/eng_anzac_rifle_grenadier" ("level_42" side(eng))}
+{"mp/ger_ss/ss_grenadier_rifle_grenadier3" ("level_42" side(ger_ss))}
+{"mp/usa/usa_marine_grenadier" ("level_42" side(usa))}
+(define "level_43"     
+        {tags   "level_43 %side soldier"}
+        {cp     0.97}
+        {score  33.0}
+        {basic}
+        {breed}
+        {cw 0.97}
+    )
+{"mp/eng/eng_at_rifle" ("level_43" side(eng))}
+{"mp/eng/eng_anzac_at_rifle" ("level_43" side(eng))}
+(define "level_44"     
+        {tags   "level_44 %side soldier"}
+        {cp     0.97}
+        {score  13.0}
+        {basic}
+        {breed}
+        {cw 0.97}
+    )
+{"mp/eng/eng_pioneer_1trench" ("level_44" side(eng))}
+{"mp/eng/eng_pioneer_3trench" ("level_44" side(eng))}
+{"mp/eng/eng_pioneer_ap_miner" ("level_44" side(eng))}
+{"mp/eng/eng_pioneer_at_miner" ("level_44" side(eng))}
+{"mp/eng/eng_pioneer_minedisposal" ("level_44" side(eng))}
+{"mp/eng/eng_pioneer_sl" ("level_44" side(eng))}
+{"mp/eng/eng_mgun_asst" ("level_44" side(eng))}
+{"mp/eng/eng_rifleman_smoke" ("level_44" side(eng))}
+{"mp/rus/rus_squadleader2_43" ("level_44" side(rus))}
+{"mp/usa/usa_armor_squadleader" ("level_44" side(usa))}
+{"mp/rus/rus_squadleader_smg" ("level_44" side(rus))}
+{"mp/rus_guard/guard_recon_sl" ("level_44" side(rus_guard))}
+(define "level_45"     
+        {tags   "level_45 %side soldier"}
+        {cp     1.56}
+        {score  35.0}
+        {basic}
+        {breed}
+        {cw 0.97}
+    )
+{"mp/jap/jap_sniper_type97" ("level_45" side(jap))}
+{"mp/jap/jap_sniper_type99" ("level_45" side(jap))}
+{"mp/usa/usa_sniper" ("level_45" side(usa))}
+{"mp/jap/elite_ig2_scoped" ("level_45" side(jap))}
+(define "level_46"     
+        {tags   "level_46 %side soldier"}
+        {cp     0.97}
+        {score  23.0}
+        {basic}
+        {breed}
+        {cw 0.97}
+    )
+{"mp/usa/usa_engineer_at" ("level_46" side(usa))}
+(define "level_47"     
+        {tags   "level_47 %side soldier"}
+        {cp     7}
+        {score  100.0}
+        {basic}
+        {breed}
+        {cw 1.0}
+    )
+{"mp/axis_minor/axm_fin_elite_sniper" ("level_47" side(axis_minor))}
+{"mp/rus_guard/guard_sniper_elite" ("level_47" side(rus_guard))}
+(define "level_48"     
+        {tags   "level_48 %side soldier"}
+        {cp     1.09}
+        {score  13.0}
+        {basic}
+        {breed}
+        {cw 1.09}
+    )
+{"mp/ger/ger_grenadier_sa_44" ("level_48" side(ger))}
+{"mp/rus/rus_marine_svt" ("level_48" side(rus))}
+{"mp/rus/rus_shock_sa" ("level_48" side(rus))}
+{"mp/usa/usa_armor_rifle" ("level_48" side(usa))}
+{"mp/usa/usa_engineer_squadleader" ("level_48" side(usa))}
+(define "level_49"     
+        {tags   "level_49 %side soldier"}
+        {cp     1.09}
+        {score  50.0}
+        {basic}
+        {breed}
+        {cw 1.09}
+    )
+{"mp/ger/ger_pzgren_panzershreck" ("level_49" side(ger))}
+{"mp/ger/ger_pzgren_pio_at" ("level_49" side(ger))}
+{"mp/eng/eng_bazooker" ("level_49" side(eng))}
+{"mp/eng/eng_pioneer_at" ("level_49" side(eng))}
+{"mp/eng/eng_rifle_piat" ("level_49" side(eng))}
+(define "level_50"     
+        {tags   "level_50 %side soldier"}
+        {cp     1.11}
+        {score  30.0}
+        {basic}
+        {breed}
+        {cw 1.11}
+    )
+{"mp/axis_minor/axm_rom_mgun" ("level_50" side(axis_minor))}
+
+{"mp/eng/eng_mg_canada" ("level_50" side(eng))}
+{"mp/rus/rus_mgun" ("level_50" side(rus))}
+{"mp/jap/otsu_mg" ("level_50" side(jap))}
+(define "level_51"     
+        {tags   "level_51 %side soldier"}
+        {cp     1.11}
+        {score  16.0}
+        {basic}
+        {breed}
+        {cw 1.11}
+    )
+{"mp/ger/ger_volksgren_sl_stg" ("level_51" side(ger))}
+(define "level_52"     
+        {tags   "level_52 %side soldier"}
+        {cp     1.11}
+        {score  20.0}
+        {basic}
+        {breed}
+        {cw 1.11}
+    )
+{"mp/usa/usa_armor_mgun" ("level_52" side(usa))}
+{"mp/usa/usa_mgun" ("level_52" side(usa))}
+(define "level_53"     
+        {tags   "level_53 %side soldier"}
+        {cp     1.24}
+        {score  40.0}
+        {basic}
+        {breed}
+        {cw 1.24}
+    )
+{"mp/ger2/ost_recon_mg" ("level_53" side(ger2))}
+(define "level_54"     
+        {tags   "level_54 %side soldier"}
+        {cp     1.32}
+        {score  50.0}
+        {basic}
+        {breed}
+        {cw 1.32}
+    )
+{"mp/axis_minor/axm_bul_mgun" ("level_54" side(axis_minor))}
+{"mp/usa/usa_mgun2" ("level_54" side(usa))}
+(define "level_55"     
+        {tags   "level_55 %side infantry man"}
+        {cp     1.34}
+        {score  10.0}
+        {basic}
+        {breed}
+        {cw 1.34}
+    )
+{"mp/ger/ger_fusilier_mg_asst" ("level_55" side(ger))}
+{"mp/ger/ger_fusilier_pzfst_sa" ("level_55" side(ger))}
+{"mp/ger/ger_jager_pzfst" ("level_55" side(ger))}
+{"mp/ger/ger_jager_mg_asst" ("level_55" side(ger))}
+
+{"mp/ger/ger_pzgren_rifle" ("level_55" side(ger))}
+{"mp/ger_ss/ss_gebirgs_mg_asst" ("level_55" side(ger_ss))}
+{"mp/ger_ss/ss_gebirgs_pzfst" ("level_55" side(ger_ss))}
+{"mp/ger_ss/ss_gebirgs_pzfst_ber" ("level_55" side(ger_ss))}
+{"mp/ger_ss/ss_gebirgs_rifle" ("level_55" side(ger_ss))}
+{"mp/ger_ss/ss_grenadier_mg_asst" ("level_55" side(ger_ss))}
+{"mp/ger_ss/ss_grenadier_pzfst" ("level_55" side(ger_ss))}
+{"mp/ger_ss/ss_grenadier_rifle" ("level_55" side(ger_ss))}
+{"mp/ger_ss/ss_pzgren_mg_asst" ("level_55" side(ger_ss))}
+{"mp/ger_ss/ss_pzgren_pzfst" ("level_55" side(ger_ss))}
+{"mp/ger2/ost_mgun_asst" ("level_55" side(ger2))}
+
+{"mp/ger2/ost_rifle_single" ("level_55" side(ger2))}
+{"mp/jap/elite_ig1_ammo" ("level_55" side(jap))}
+{"mp/jap/jap_kanoe_shidan_type38" ("level_55" side(jap))}
+{"mp/jap/jap_kanoeshidan_type38rifle" ("level_55" side(jap))}
+{"mp/jap/jap_kanoeshidan_type99rifle" ("level_55" side(jap))}
+{"mp/jap/jap_kanoeshidan_rifle_apminer" ("level_55" side(jap))}
+{"mp/rus_guard/guard_sapper_rifle1" ("level_55" side(rus_guard))}
+{"mp/rus_guard/guard_sapper_rifle2" ("level_55" side(rus_guard))}
+{"mp/rus_guard/guard_sapper_rifle3" ("level_55" side(rus_guard))}
+{"mp/rus_guard/guard_sapper_rifle4" ("level_55" side(rus_guard))}
+{"mp/rus_guard/guard_sapper_rifle5" ("level_55" side(rus_guard))}
+{"mp/jap/elite_ig1_ammo" ("level_55" side(jap))}
+{"mp/jap/elite_ig1h_ammo" ("level_55" side(jap))}
+{"mp/jap/elite_ig1h_asst" ("level_55" side(jap))}
+{"mp/jap/ki_at_grenade" ("level_55" side(jap))}
+{"mp/jap/ki_at_stick" ("level_55" side(jap))}
+{"mp/jap/ki_rifle" ("level_55" side(jap))}
+{"mp/jap/ki_smoke" ("level_55" side(jap))}
+{"mp/jap/teishin_type97_atr_asst" ("level_55" side(jap))}
+(define "level_56"     
+        {tags   "level_56 %side soldier"}
+        {cp     1.34}
+        {score  37.5}
+        {basic}
+        {breed}
+        {cw 1.34}
+    )
+{"mp/ger/ger_panzerschreck" ("level_56" side(ger))}
+{"mp/ger_ss/ss_panzershreck" ("level_56" side(ger_ss))}
+{"mp/ger2/ost_panzershreck" ("level_56" side(ger2))}
+{"mp/jap/jap_kanoeshidan_at" ("level_56" side(jap))}
+(define "level_57"     
+        {tags   "level_57 %side soldier"}
+        {cp     1.34}
+        {score  15.0}
+        {basic}
+        {breed}
+        {cw 1.34}
+    )
+
+{"mp/eng/eng_rifle_scot" ("level_57" side(eng))}
+(define "level_58"     
+        {tags   "level_58 %side soldier"}
+        {cp     1.34}
+        {score  25.5}
+        {basic}
+        {breed}
+        {cw 1.34}
+    )
+{"mp/rus_guard/guard_bazooker" ("level_58" side(rus_guard))}
+(define "level_59"     
+        {tags   "level_59 %side soldier"}
+        {cp     2.05}
+        {score  28.0}
+        {basic}
+        {breed}
+        {cw 1.44}
+    )
+{"mp/axis_minor/axm_fin_sniper" ("level_59" side(axis_minor))}
+
+(define "level_60"     
+        {tags   "level_60 %side soldier"}
+        {cp     1.44}
+        {score  14.0}
+        {basic}
+        {breed}
+        {cw 1.44}
+    )
+{"mp/axis_minor/axm_hun_assualt_squadleader" ("level_60" side(axis_minor))}
+{"mp/axis_minor/axm_fin_pio_squadleader" ("level_60" side(axis_minor))}
+{"mp/axis_minor/axm_ita_alpini_squadleader" ("level_60" side(axis_minor))}
+{"mp/axis_minor/axm_ita_bersaglieri_smg" ("level_60" side(axis_minor))}
+{"mp/ger/ger_grenadier_smg" ("level_60" side(ger))}
+{"mp/ger/ger_jager_smg" ("level_60" side(ger))}
+{"mp/ger/ger_panzerschreckassist" ("level_60" side(ger))}
+{"mp/ger/ger_pzgren_pio_sl" ("level_60" side(ger))}
+{"mp/ger/ger_pzgren_smg_panzerfaust" ("level_60" side(ger))}
+{"mp/ger/ger_squadleader_mp40" ("level_60" side(ger))}
+{"mp/ger_ss/ss_at_rifleassist" ("level_60" side(ger_ss))}
+{"mp/ger_ss/ss_flamerassist" ("level_60" side(ger_ss))}
+{"mp/ger_ss/ss_grenadier_sl" ("level_60" side(ger_ss))}
+
+{"mp/ger_ss/ss_grenadier_smg" ("level_60" side(ger_ss))}
+{"mp/ger_ss/ss_panzershreckassist" ("level_60" side(ger_ss))}
+{"mp/ger_ss/ss_sturmgren_mg_asst" ("level_60" side(ger_ss))}
+{"mp/ger_ss/ss_sturmgren_sa" ("level_60" side(ger_ss))}
+{"mp/ger2/ost_at_rifleassist" ("level_60" side(ger2))}
+{"mp/ger2/ost_flamerassist" ("level_60" side(ger2))}
+{"mp/ger2/ost_panzershreckassist" ("level_60" side(ger2))}
+
+{"mp/ger2/ost_smg" ("level_60" side(ger2))}
+{"mp/ger2/ost_smg2" ("level_60" side(ger2))}
+{"mp/ger2/ost_smg3" ("level_60" side(ger2))}
+{"mp/rus_guard/guard_sapper_smg" ("level_60" side(rus_guard))}
+
+{"mp/rus_guard/guard_sl" ("level_60"side(rus_guard))}
+{"mp/rus_guard/guard_smg" ("level_60" side(rus_guard))}
+{"mp/usa/usa_marine_sgt" ("level_60" side(usa))}
+(define "level_61"     
+        {tags   "level_61 %side soldier"}
+        {cp     2.05}
+        {score  40.0}
+        {basic}
+        {breed}
+        {cw 1.44}
+    )
+{"mp/axis_minor/axm_ita_alpini_sniper" ("level_61" side(axis_minor))}
+{"mp/ger_ss/ss_sturmgren_sa_scope" ("level_61" side(ger_ss))}
+{"mp/ger2/ost_sniper" ("level_61" side(ger2))}
+{"mp/rus/rus_sniper_mosin" ("level_61" side(rus))}
+{"mp/rus/rus_sniper_svtscoped" ("level_61" side(rus))}
+{"mp/usa/usa_82ndairborne_sniper" ("level_61" side(usa))}
+{"mp/usa/usa_raiderdemo" ("level_61" side(usa))}
+(define "level_62"     
+        {tags   "level_62 %side soldier"}
+        {cp     1.44}
+        {score  15.0}
+        {basic}
+        {breed}
+        {cw 1.44}
+    )
+{"mp/ger/ger_fusilier_sl" ("level_62" side(ger))}
+
+
+
+{"mp/ger_ss/ss_gebirgs_smg" ("level_62" side(ger_ss))}
+{"mp/rus_guard/guard_sapper_smg2" ("level_62" side(rus_guard))}
+
+{"mp/rus_guard/guard_smg2" ("level_62" side(rus_guard))}
+{"mp/usa/usa_raider" ("level_62" side(usa))}
+{"mp/jap/elite_ig3b_type2" ("level_62" side(jap))}
+{"mp/jap/elite_ig4_type2" ("level_62" side(jap))}
+{"mp/jap/ig_light_mortar" ("level_62" side(jap))}
+{"mp/jap/ig_light_mortar_asst" ("level_62" side(jap))}
+
+(define "level_63"     
+        {tags   "level_63 %side soldier"}
+        {cp     1.44}
+        {score  12.0}
+        {basic}
+        {breed}
+        {cw 1.44}
+    )
+
+{"mp/ger/ger_pzgren_mp40" ("level_63" side(ger))}
+{"mp/eng/eng_smg" ("level_63" side(eng))}
+{"mp/eng/eng_smg_wp" ("level_63" side(eng))}
+{"mp/eng/eng_squadleader" ("level_63" side(eng))}
+{"mp/jap/jap_kanoeshidan_type100_44" ("level_63" side(jap))}
+{"mp/rus_guard/guard_bazookerassist" ("level_63" side(rus_guard))}
+{"mp/rus_guard/guard_piatassist" ("level_63" side(rus_guard))}
+(define "level_64"     
+        {tags   "level_64 %side soldier"}
+        {cp     1.44}
+        {score  55.0}
+        {basic}
+        {breed}
+        {cw 1.44}
+    )
+{"mp/ger_ss/ss_at_rifle" ("level_64" side(ger_ss))}
+{"mp/ger2/ost_at_rifle" ("level_64" side(ger2))}
+{"mp/ger2/ost_at_rifle_ptrd" ("level_64" side(ger2))}
+(define "level_65"     
+        {tags   "level_65 %side soldier"}
+        {cp     1.44}
+        {score  30.0}
+        {basic}
+        {breed}
+        {cw 1.44}
+    )
+{"mp/ger2/ost_rifle_grenadier" ("level_65" side(ger2))}
+{"mp/usa/usa_elite_grenadier" ("level_65" side(usa))}
+{"mp/usa/usa_raidergren" ("level_65" side(usa))}
+(define "level_66"     
+        {tags   "level_66 %side soldier"}
+        {cp     1.44}
+        {score  20.0}
+        {basic}
+        {breed}
+        {cw 1.44}
+    )
+{"mp/jap/jap_light_mortar" ("level_66" side(jap))}
+{"mp/ger2/ost_light_mortar" ("level_66" side(ger2))}
+{"mp/eng/eng_light_mortar" ("level_66" side(eng))}
+{"mp/ger_ss/ss_light_mortar" ("level_66" side(ger_ss))}
+(define "level_67"     
+        {tags   "level_67 %side soldier"}
+        {cp     1.44}
+        {score  70.0}
+        {basic}
+        {breed}
+        {cw 1.44}
+    )
+{"mp/rus_guard/guard_at_rifle" ("level_67" side(rus_guard))}
+(define "level_68"     
+        {tags   "level_68 %side soldier"}
+        {cp     1.54}
+        {score  15.0}
+        {basic}
+        {breed}
+        {cw 1.54}
+    )
+{"mp/ger/ger_fusilier_pzfst" ("level_68" side(ger))}
+{"mp/ger/ger_fusilier_sa" ("level_68" side(ger))}
+{"mp/ger/ger_fusilier_sl_asst" ("level_68" side(ger))}
+{"mp/ger/ger_jager_sa" ("level_68" side(ger))}
+{"mp/ger/ger_pzgren_g43" ("level_68" side(ger))}
+{"mp/ger/ger_pzgren_g43_2" ("level_68" side(ger))}
+{"mp/ger/ger_pzgren_mg34assist" ("level_68" side(ger))}
+{"mp/ger/ger_pzgren_panzerfaust" ("level_68" side(ger))}
+{"mp/ger_ss/ss_grenadier_sa" ("level_68" side(ger_ss))}
+{"mp/ger_ss/ss_grenadier_sa_44" ("level_68" side(ger_ss))}
+{"mp/ger_ss/ss_pzgren_pzfst_sa" ("level_68" side(ger_ss))}
+
+{"mp/rus_guard/guard_sa" ("level_68" side(rus_guard))}
+{"mp/usa/usa_82ndairborne_barassist" ("level_68" side(usa))}
+{"mp/usa/usa_82ndairborne_carbine" ("level_68" side(usa))}
+{"mp/usa/usa_82ndairborne_mgassist" ("level_68" side(usa))}
+{"mp/usa/usa_82ndairborne_rifle" ("level_68" side(usa))}
+{"mp/usa/usa_raiderasst" ("level_68" side(usa))}
+(define "level_69"     
+        {tags   "level_69 %side soldier"}
+        {cp     1.54}
+        {score  14.0}
+        {basic}
+        {breed}
+        {cw 1.54}
+    )
+{"mp/rus_guard/guard_mg_asst" ("level_69" side(rus_guard))}
+{"mp/rus_guard/guard_rifle" ("level_69" side(rus_guard))}
+(define "level_70"     
+        {tags   "level_70 %side soldier"}
+        {cp     1.54}
+        {score  52.5}
+        {basic}
+        {breed}
+        {cw 1.54}
+    )
+{"mp/rus_guard/guard_piat" ("level_70" side(rus_guard))}
+{"mp/jap/teishin_type97_atr" ("level_70" side(jap))}
+(define "level_71"     
+        {tags   "level_71 %side soldier"}
+        {cp     1.56}
+        {score  35.0}
+        {basic}
+        {breed}
+        {cw 1.56}
+    )
+{"mp/axis_minor/axm_fin_pio_mgun" ("level_71" side(axis_minor))}
+{"mp/eng/eng_pioneer_mg" ("level_71" side(eng))}
+{"mp/ger_ss/ss_sturmpio_at" ("level_71" side(ger_ss))}
+{"mp/ger_ss/ss_sturmpio_mg" ("level_71" side(ger_ss))}
+{"mp/rus/rus_marine_mg" ("level_71" side(rus))}
+{"mp/rus/rus_shock_mg" ("level_71" side(rus))}
+(define "level_72"     
+        {tags   "level_72 %side soldier"}
+        {cp     1.56}
+        {score  45.0}
+        {basic}
+        {breed}
+        {cw 1.56}
+    )
+{"mp/axis_minor/axm_fin_sissi_mgun" ("level_72" side(axis_minor))}
+(define "level_73"     
+        {tags   "level_73 %side soldier"}
+        {cp     1.56}
+        {score  18.0}
+        {basic}
+        {breed}
+        {cw 1.56}
+    )
+{"mp/ger/ger_grenadier_stg" ("level_73" side(ger))}
+{"mp/ger/ger_sturmgren_sg44" ("level_73" side(ger))}
+{"mp/ger/ger_sturmgren_sg44_pzfst" ("level_73" side(ger))}
+
+{"mp/ger2/ost_recon_sl_stg" ("level_73" side(ger2))}
+(define "level_74"     
+        {tags   "level_74 %side soldier"}
+        {cp     1.56}
+        {score  24.0}
+        {basic}
+        {breed}
+        {cw 1.56}
+    )
+{"mp/usa/usa_marine_bar" ("level_74" side(usa))}
+(define "level_75"     
+        {tags   "level_75 %side soldier"}
+        {cp     1.61}
+        {score  9.0}
+        {basic}
+        {breed}
+        {cw 1.61}
+    )
+{"mp/ger_ss/ss_panzerfaust" ("level_75" side(ger_ss))}
+{"mp/ger2/ost_panzerfaust" ("level_75" side(ger2))}
+(define "level_76"     
+        {tags   "level_76 %side soldier"}
+        {cp     1.72}
+        {score  45.0}
+        {basic}
+        {breed}
+        {cw 1.72}
+    )
+{"mp/axis_minor/axm_hun_assualt_mgun" ("level_76" side(axis_minor))}
+{"mp/axis_minor/axm_ita_alpini_mgun" ("level_76" side(axis_minor))}
+
+(define "level_77"     
+        {tags   "level_77 %side soldier"}
+        {cp     1.73}
+        {score  11.0}
+        {basic}
+        {breed}
+        {cw 1.73}
+    )
+{"mp/axis_minor/axm_fin_kaukopartio_mgun_assist" ("level_77" side(axis_minor))}
+{"mp/axis_minor/axm_fin_kaukopartio_rifle" ("level_77" side(axis_minor))}
+{"mp/ger2/ost_jager_mg_asst" ("level_77" side(ger2))}
+{"mp/ger2/ost_jager_pzfst" ("level_77" side(ger2))}
+
+{"mp/jap/jap_elite_takasago_rifle" ("level_77" side(jap))}
+{"mp/jap/jap_elite_takasago_rifle2" ("level_77" side(jap))}
+{"mp/rus/rus_bsf_marine" ("level_77" side(rus))}
+{"mp/rus/rus_bsf_marine_mg_asst" ("level_77" side(rus))}
+{"mp/rus_guard/guards_shock_mg_asst" ("level_77" side(rus_guard))}
+{"mp/rus_guard/guards_shock_rifle" ("level_77" side(rus_guard))}
+{"mp/jap/elite_takasago_mgun_ammo" ("level_77" side(jap))}
+{"mp/jap/elite_takasago_mgun_asst" ("level_77" side(jap))}
+(define "level_78"     
+        {tags   "level_78 %side soldier"}
+        {cp     1.73}
+        {score  18.0}
+        {basic}
+        {breed}
+        {cw 1.73}
+    )
+{"mp/eng/eng_commando_bren_assist" ("level_78" side(eng))}
+{"mp/eng/eng_commando_carbine" ("level_78" side(eng))}
+{"mp/eng/eng_commando_silence_carbine" ("level_78" side(eng))}
+{"mp/eng/eng_paratrooper_carbine" ("level_78" side(eng))}
+{"mp/usa/usa_nightfighter_carbine" ("level_78" side(usa))}
+(define "level_79"     
+        {tags   "level_79 %side soldier"}
+        {cp     1.73}
+        {score  40.0}
+        {basic}
+        {breed}
+        {cw 1.73}
+    )
+{"mp/usa/usa_ranger_bazooka" ("level_79" side(usa))}
+{"mp/usa/usa_ranger_recoiless" ("level_79" side(usa))}
+(define "level_80"     
+        {tags   "level_80 %side soldier"}
+        {cp     1.81}
+        {score  55.0}
+        {basic}
+        {breed}
+        {cw 1.81}
+    )
+{"mp/ger/ger_grenadier_mg" ("level_80" side(ger))}
+{"mp/ger/ger_grenadier_mg_39" ("level_80" side(ger))}
+(define "level_81"     
+        {tags   "level_81 %side soldier"}
+        {cp     1.93}
+        {score  16.0}
+        {basic}
+        {breed}
+        {cw 1.93}
+    )
+
+{"mp/axis_minor/axm_fin_kaukopartio_smg" ("level_81" side(axis_minor))}
+{"mp/ger2/ost_squadleader" ("level_81" side(ger2))}
+{"mp/rus_guard/guards_shock_smg2" ("level_81" side(rus_guard))}
+{"mp/rus_guard/guard_elite_guard_sl" ("level_81" side(rus_guard))}
+{"mp/rus_guard/guard_elite_guard_smg" ("level_81" side(rus_guard))}
+{"mp/usa/usa_devil_brigade_sl" ("level_81" side(usa))}
+(define "level_82"     
+        {tags   "level_82 %side soldier"}
+        {cp     1.93}
+        {score  13.0}
+        {basic}
+        {breed}
+        {cw 1.93}
+    )
+{"mp/eng/eng_commando_cpl_smg" ("level_82" side(eng))}
+{"mp/eng/eng_commando_silencesmg" ("level_82" side(eng))}
+{"mp/eng/eng_commando_sl" ("level_82" side(eng))}
+{"mp/eng/eng_commando_smg" ("level_82" side(eng))}
+{"mp/eng/eng_paratrooper_smg" ("level_82" side(eng))}
+{"mp/eng/eng_paratroopr_em2" ("level_82" side(eng))}
+{"mp/jap/jap_elite_takasago_smg2" ("level_82" side(jap))}
+{"mp/usa/usa_elite_sgt" ("level_82" side(usa))}
+(define "level_83"     
+        {tags   "level_83 %side soldier"}
+        {cp     1.93}
+        {score  49.0}
+        {basic}
+        {breed}
+        {cw 1.93}
+    )
+{"mp/eng/eng_paratrooper_lightmortar" ("level_83" side(eng))}
+(define "level_84"     
+        {tags   "level_84 %side soldier"}
+        {cp     2.77}
+        {score  45.0}
+        {basic}
+        {breed}
+        {cw 1.93}
+    )
+{"mp/eng/eng_sniper" ("level_84" side(eng))}
+{"mp/rus_guard/guard_sniper_mosin" ("level_84" side(rus_guard))}
+{"mp/rus_guard/guard_sniper_svtscope" ("level_84" side(rus_guard))}
+{"mp/usa/usa_ranger_sniper" ("level_84" side(usa))}
+(define "level_85"     
+        {tags   "level_85 %side soldier"}
+        {cp     1.93}
+        {score  17.0}
+        {basic}
+        {breed}
+        {cw 1.93}
+    )
+{"mp/ger_ss/ss_fallschirm_sl_asst_smg" ("level_85" side(ger_ss))}
+
+{"mp/rus_guard/guards_shock_smg3" ("level_85" side(rus_guard))}
+
+{"mp/rus_guard/guard_elite_guard_smg2" ("level_85" side(rus_guard))}
+{"mp/rus_guard/guard_sapper_sl" ("level_85" side(rus_guard))}
+{"mp/usa/usa_nightfighter_leader" ("level_85" side(usa))}
+{"mp/usa/usa_raiderchad" ("level_85" side(usa))}
+(define "level_86"     
+        {tags   "level_86 %side soldier"}
+        {cp     1.93}
+        {score  35.0}
+        {basic}
+        {breed}
+        {cw 1.93}
+    )
+{"mp/usa/usa_devil_brigade_grenadier" ("level_86" side(usa))}
+{"mp/usa/usa_paramarine_grenadier" ("level_86" side(usa))}
+{"mp/usa/usa_ranger_grenadier" ("level_86" side(usa))}
+(define "level_87"     
+        {tags   "level_87 %side soldier"}
+        {cp     1.93}
+        {score  39.0}
+        {basic}
+        {breed}
+        {cw 1.93}
+    )
+{"mp/usa/usa_paramarine_boys" ("level_87" side(usa))}
+(define "level_88"     
+        {tags   "level_88 %side soldier"}
+        {cp     2.0}
+        {score  30.0}
+        {basic}
+        {breed}
+        {cw 2.0}
+    )
+
+(define "level_89"     
+        {tags   "level_89 %side soldier"}
+        {cp     2.0}
+        {score  150.0}
+        {basic}
+        {breed}
+        {cw 2.0}
+    )
+
+(define "level_90"     
+        {tags   "level_90 %side soldier"}
+        {cp     2.0}
+        {score  100.0}
+        {basic}
+        {breed}
+        {cw 2.0}
+    )
+
+(define "level_91"     
+        {tags   "level_91 %side soldier"}
+        {cp     2.0}
+        {score  18.0}
+        {basic}
+        {breed}
+        {cw 2.0}
+    )
+{"mp/ger2/ost_pzgren_pzfaust_g43" ("level_91" side(ger2))}
+{"mp/rus/rus_bsf_marine2" ("level_91" side(rus))}
+{"mp/rus_guard/guards_shock_sa" ("level_91" side(rus_guard))}
+
+{"mp/rus_guard/guard_elite_guard_sa" ("level_91" side(rus_guard))}
+{"mp/usa/usa_devil_brigade_demo" ("level_91" side(usa))}
+{"mp/usa/usa_devil_brigade_rifle" ("level_91" side(usa))}
+{"mp/usa/usa_paramarine" ("level_91" side(usa))}
+{"mp/usa/usa_paramarine2" ("level_91" side(usa))}
+{"mp/usa/usa_paramarine3_asst" ("level_91" side(usa))}
+{"mp/usa/usa_paramarineb" ("level_91" side(usa))}
+{"mp/usa/usa_ranger_barassist" ("level_91" side(usa))}
+{"mp/usa/usa_ranger_bazookaassist" ("level_91" side(usa))}
+{"mp/usa/usa_ranger_carbine" ("level_91" side(usa))}
+{"mp/usa/usa_ranger_garand" ("level_91" side(usa))}
+{"mp/usa/usa_ranger_mgassist" ("level_91" side(usa))}
+{"mp/usa/usa_ranger_sgt" ("level_91" side(usa))}
+{"mp/usa/usa_ranger_springfield" ("level_91" side(usa))}
+{"mp/usa/usa_ranger_springfield2" ("level_91" side(usa))}
+(define "level_92"     
+        {tags   "level_92 %side soldier"}
+        {cp     2.0}
+        {score  16.0}
+        {basic}
+        {breed}
+        {cw 2.0}
+    )
+{"mp/rus_guard/guard_elite_guard_rifle" ("level_92" side(rus_guard))}
+(define "level_93"     
+        {tags   "level_93 %side soldier"}
+        {cp     2.0}
+        {score  75.0}
+        {basic}
+        {breed}
+        {cw 2.0}
+    )
+{"mp/usa/usa_devil_brigade_radio" ("level_93" side(usa))}
+(define "level_94"     
+        {tags   "level_94 %side soldier"}
+        {cp     2.05}
+        {score  20.0}
+        {basic}
+        {breed}
+        {cw 2.05}
+    )
+
+
+{"mp/ger2/ost_jager_smg" ("level_94" side(ger2))}
+{"mp/ger/ger_fusilier_stg" ("level_94" side(ger))}
+{"mp/ger/ger_pzgren_sl" ("level_94" side(ger))}
+{"mp/ger/ger_jager_sl_stg" ("level_94" side(ger))}
+{"mp/ger/ger_jager_sl_stg_asst" ("level_94" side(ger))}
+{"mp/ger/f" ("level_94" side(ger))}
+{"mp/ger/ger_jager_stg" ("level_94" side(ger))}
+{"mp/ger/ger_pzgren_stg_panzerfaust" ("level_94" side(ger))}
+{"mp/ger/ger_sturmgren_sl_asst" ("level_94" side(ger))}
+{"mp/ger/ger_squadleader_sg44" ("level_94" side(ger))}
+{"mp/ger_ss/ss_grenadier_stg" ("level_94" side(ger_ss))}
+{"mp/ger_ss/ss_pzgren_sl_stg" ("level_94" side(ger_ss))}
+{"mp/ger_ss/ss_pzgren_stg" ("level_94" side(ger_ss))}
+{"mp/ger_ss/ss_ss_sturmgren_stg" ("level_94" side(ger_ss))}
+{"mp/ger_ss/ss_sturmgren_sl" ("level_94" side(ger_ss))}
+{"mp/ger_ss/ss_sturmgren_sl_asst" ("level_94" side(ger_ss))}
+{"mp/ger_ss/ss_sturmgren_smg" ("level_94" side(ger_ss))}
+{"mp/ger_ss/ss_sturmgren_stg_pzf" ("level_94" side(ger_ss))}
+{"mp/ger_ss/ss_sturmpio4" ("level_94" side(ger_ss))}
+{"mp/ger_ss/ss_sturmpio_sl" ("level_94" side(ger_ss))}
+
+{"mp/ger2/ost_stg" ("level_94" side(ger2))}
+(define "level_95"     
+        {tags   "level_95 %side soldier"}
+        {cp     2.05}
+        {score  40.0}
+        {basic}
+        {breed}
+        {cw 2.05}
+    )
+{"mp/eng/eng_mgun_assist_scot" ("level_95" side(eng))}
+{"mp/eng/eng_mgun_scot" ("level_95" side(eng))}
+{"mp/ger_ss/ss_gebirgs_mg" ("level_95" side(ger_ss))}
+{"mp/jap/jap_kanoeshidan_mg" ("level_95" side(jap))}
+{"mp/rus_guard/guard_mg" ("level_95" side(rus_guard))}
+(define "level_96"     
+        {tags   "level_96 %side soldier"}
+        {cp     2.05}
+        {score  28.0}
+        {basic}
+        {breed}
+        {cw 2.05}
+    )
+{"mp/usa/usa_82ndairborne_bar" ("level_96" side(usa))}
+{"mp/usa/usa_raiderbar" ("level_96" side(usa))}
+(define "level_97"     
+        {tags   "level_97 %side soldier"}
+        {cp     2.14}
+        {score  12.0}
+        {basic}
+        {breed}
+        {cw 2.14}
+    )
+{"mp/axis_minor/axm_fin_sissi_mgun_assist" ("level_97" side(axis_minor))}
+{"mp/axis_minor/axm_fin_sissi_mgun_assist_vision" ("level_97" side(axis_minor))}
+{"mp/axis_minor/axm_fin_sissi_rifle" ("level_97" side(axis_minor))}
+{"mp/axis_minor/axm_fin_sissi_rifle_vision" ("level_97" side(axis_minor))}
+{"mp/ger/ger_fallschirm_mg_asst" ("level_97" side(ger))}
+{"mp/ger/ger_fallschirm_mg_asst_39" ("level_97" side(ger))}
+{"mp/ger/ger_fallschirm_rifle" ("level_97" side(ger))}
+{"mp/ger_ss/ss_tk_pzgren_mg_asst" ("level_97" side(ger_ss))}
+{"mp/ger_ss/ss_tk_pzgren_pzfst" ("level_97" side(ger_ss))}
+{"mp/ger_ss/ss_tk_pzgren_rifle" ("level_97" side(ger_ss))}
+
+{"mp/jap/jap_snlf_mg_asst" ("level_97" side(jap))}
+
+{"mp/jap/jap_teishin_type2rifle" ("level_97" side(jap))}
+{"mp/jap/jap_teishin_type2rifle_apminer" ("level_97" side(jap))}
+
+{"mp/jap/jap_teishin_type100_44_apminer" ("level_97" side(jap))}
+
+{"mp/rus/rus_para_mg_asst" ("level_97" side(rus))}
+{"mp/rus/rus_para_rifle" ("level_97" side(rus))}
+{"mp/rus_guard/guard_elite_guards_shock_mg2_asst" ("level_97" side(rus_guard))}
+{"mp/rus_guard/guard_elite_guards_shock_mg_asst" ("level_97" side(rus_guard))}
+{"mp/rus_guard/guard_elite_guards_shock_rifle" ("level_97" side(rus_guard))}
+{"mp/jap/elite_mgun_ammo" ("level_97" side(jap))}
+{"mp/jap/elite_mgun_asst" ("level_97" side(jap))}
+{"mp/jap/ki_sa" ("level_97" side(jap))}
+{"mp/jap/ki_sl" ("level_97" side(jap))}
+(define "level_98"     
+        {tags   "level_98 %side soldier"}
+        {cp     2.14}
+        {score  21.0}
+        {basic}
+        {breed}
+        {cw 2.14}
+    )
+{"mp/axis_minor/axm_ita_paratrooper_mgun_assist" ("level_98" side(axis_minor))}
+{"mp/axis_minor/axm_ita_paratrooper_rifle" ("level_98" side(axis_minor))}
+{"mp/eng/eng_sas_bren2_assist" ("level_98" side(eng))}
+{"mp/eng/eng_sas_piat_assist" ("level_98" side(eng))}
+{"mp/eng/eng_sas_rifle1" ("level_98" side(eng))}
+
+(define "level_99"     
+        {tags   "level_99 %side soldier"}
+        {cp     2.14}
+        {score  42.5}
+        {basic}
+        {breed}
+        {cw 2.14}
+    )
+
+{"mp/jap/jap_snlf_at2" ("level_99" side(jap))}
+(define "level_100"     
+        {tags   "level_100 %side soldier"}
+        {cp     2.23}
+        {score  50.0}
+        {basic}
+        {breed}
+        {cw 2.23}
+    )
+{"mp/axis_minor/axm_ita_bersaglieri_mgun" ("level_100" side(axis_minor))}
+{"mp/ger_ss/ss_pzgren_mg" ("level_100" side(ger_ss))}
+{"mp/ger_ss/ss_sturmgren_mg" ("level_100" side(ger_ss))}
+{"mp/ger2/ost_mgun" ("level_100" side(ger2))}
+{"mp/usa/usa_82ndairborne_mg" ("level_100" side(usa))}
+(define "level_101"     
+        {tags   "level_101 %side soldier"}
+        {cp     2.34}
+        {score  60.0}
+        {basic}
+        {breed}
+        {cw 2.34}
+    )
+{"mp/ger/ger_fusilier_mg" ("level_101" side(ger))}
+{"mp/ger/ger_jager_mg" ("level_101" side(ger))}
+{"mp/ger/ger_pzgren_mg34" ("level_101" side(ger))}
+{"mp/ger/ger_pzgren_mg42" ("level_101" side(ger))}
+{"mp/ger_ss/ss_grenadier_mg" ("level_101" side(ger_ss))}
+{"mp/ger_ss/ss_grenadier_mg_39" ("level_101" side(ger_ss))}
+(define "level_102"     
+        {tags   "level_102 %side soldier"}
+        {cp     2.44}
+        {score  18.0}
+        {basic}
+        {breed}
+        {cw 2.44}
+    )
+
+{"mp/axis_minor/axm_fin_kaukopartio_squadleader" ("level_102" side(axis_minor))}
+{"mp/axis_minor/axm_fin_sissi_smg" ("level_102" side(axis_minor))}
+{"mp/axis_minor/axm_fin_sissi_smg_vision" ("level_102" side(axis_minor))}
+{"mp/axis_minor/axm_fin_sissi_squadleader" ("level_102" side(axis_minor))}
+{"mp/axis_minor/axm_fin_sissi_squadleader_vision" ("level_102" side(axis_minor))}
+{"mp/axis_minor/axm_ita_paratrooper_smg" ("level_102" side(axis_minor))}
+{"mp/axis_minor/axm_ita_paratrooper_squadleader" ("level_102" side(axis_minor))}
+{"mp/ger/ger_fallschirm_sl" ("level_102" side(ger))}
+{"mp/ger/ger_gebirgsjager_smg" ("level_102" side(ger))}
+{"mp/ger_ss/ss_tk_pzgren_sl" ("level_102" side(ger_ss))}
+{"mp/rus_guard/guard_elite_guards_shock_smg2" ("level_102" side(rus_guard))}
+{"mp/usa/usa_elite_101st_para_sgt" ("level_102" side(usa))}
+{"mp/usa/usa_paramarine_sgt" ("level_102" side(usa))}
+(define "level_103"     
+        {tags   "level_103 %side soldier"}
+        {cp     2.44}
+        {score  40.0}
+        {basic}
+        {breed}
+        {cw 2.44}
+    )
+{"mp/ger/ger_fallschirm_grenadier" ("level_103" side(ger))}
+{"mp/ger_ss/ss_fallschirm_grenadier" ("level_103" side(ger_ss))}
+{"mp/usa/usa_elite_101st_para_grenadier" ("level_103" side(usa))}
+(define "level_104"     
+        {tags   "level_104 %side soldier"}
+        {cp     3.34}
+        {score  50.0}
+        {basic}
+        {breed}
+        {cw 2.44}
+    )
+{"mp/ger/ger_fallschirm_sniper" ("level_104" side(ger))}
+{"mp/ger/ger_sniper_g43" ("level_104" side(ger))}
+{"mp/ger/ger_sniper_mauzer" ("level_104" side(ger))}
+{"mp/ger_ss/ss_g43scope_sniper" ("level_104" side(ger_ss))}
+{"mp/ger_ss/ss_sniper_mauser" ("level_104" side(ger_ss))}
+(define "level_105"     
+        {tags   "level_105 %side infantry man"}
+        {cp     2.44}
+        {score  14.0}
+        {basic}
+        {breed}
+        {cw 2.44}
+    )
+{"mp/eng/eng_paratrooper_cpl_smg" ("level_105" side(eng))}
+{"mp/eng/eng_paratrooper_sic" ("level_105" side(eng))}
+{"mp/eng/eng_sas_2ic" ("level_105" side(eng))}
+{"mp/eng/eng_sas_cpl" ("level_105" side(eng))}
+{"mp/jap/jap_snlf_atassist" ("level_105" side(jap))}
+{"mp/jap/jap_snlf_type100_44" ("level_105" side(jap))}
+
+
+
+(define "level_106"     
+        {tags   "level_106 %side soldier"}
+        {cp     2.44}
+        {score  42.0}
+        {basic}
+        {breed}
+        {cw 2.44}
+    )
+{"mp/eng/eng_sas_at_rifle" ("level_106" side(eng))}
+(define "level_107"     
+        {tags   "level_107 %side soldier"}
+        {cp     2.44}
+        {score  19.0}
+        {basic}
+        {breed}
+        {cw 2.44}
+    )
+{"mp/ger_ss/ss_fallschirm_sl" ("level_107" side(ger_ss))}
+{"mp/rus/rus_para_sl" ("level_107" side(rus))}
+{"mp/rus/rus_para_smg3" ("level_107" side(rus))}
+
+{"mp/rus_guard/guard_elite_guards_shock_sl_smg" ("level_107" side(rus_guard))}
+{"mp/rus_guard/guard_elite_guards_shock_smg3" ("level_107" side(rus_guard))}
+(define "level_108"     
+        {tags   "level_108 %side soldier"}
+        {cp     2.49}
+        {score  21.0}
+        {basic}
+        {breed}
+        {cw 2.49}
+    )
+{"mp/ger/ger_gebirgsjager_mg_asst" ("level_108" side(ger))}
+{"mp/ger/ger_gebirgsjager_pzfst_sa" ("level_108" side(ger))}
+{"mp/ger_ss/ss_tk_pzgren_pzfst60_sa" ("level_108" side(ger_ss))}
+{"mp/ger_ss/ss_tk_pzgren_sa" ("level_108" side(ger_ss))}
+
+{"mp/rus/rus_para_sa" ("level_108" side(rus))}
+
+{"mp/rus_guard/guard_elite_guards_shock_sa" ("level_108" side(rus_guard))}
+{"mp/rus_guard/guard_elite_guards_shock_sl" ("level_108" side(rus_guard))}
+{"mp/usa/usa_elite_101st_para" ("level_108" side(usa))}
+{"mp/usa/usa_elite_101st_para3b_asst" ("level_108" side(usa))}
+{"mp/usa/usa_elite_101st_para3_asst" ("level_108" side(usa))}
+{"mp/usa/usa_elite_101st_para4" ("level_108" side(usa))}
+{"mp/usa/usa_elite_101st_parab" ("level_108" side(usa))}
+(define "level_109"     
+        {tags   "level_109 %side soldier"}
+        {cp     2.49}
+        {score  57.5}
+        {basic}
+        {breed}
+        {cw 2.49}
+    )
+{"mp/eng/eng_sas_piat" ("level_109" side(eng))}
+{"mp/eng/eng_sas_bran_assist" ("level_109" side(eng))}
+(define "level_110"     
+        {tags   "level_110 %side soldier"}
+        {cp     2.55}
+        {score  13.0}
+        {basic}
+        {breed}
+        {cw 2.55}
+    )
+{"mp/ger/ger_gd_pzgren_mg_asst" ("level_110" side(ger))}
+{"mp/ger_ss/ss_lssah_pzgren_pzfst" ("level_110" side(ger_ss))}
+
+(define "level_111"     
+        {tags   "level_111 %side soldier"}
+        {cp     2.55}
+        {score  45.0}
+        {basic}
+        {breed}
+        {cw 2.55}
+    )
+{"mp/ger_ss/ss_lssah_pzgren_at" ("level_111" side(ger_ss))}
+(define "level_112"     
+        {tags   "level_112 %side soldier"}
+        {cp     2.56}
+        {score  42.5}
+        {basic}
+        {breed}
+        {cw 2.56}
+    )
+{"mp/axis_minor/axm_fin_kaukopartio_mgun" ("level_112" side(axis_minor))}
+{"mp/eng/eng_commando_bren" ("level_112" side(eng))}
+{"mp/eng/eng_paratrooper_bren" ("level_112" side(eng))}
+{"mp/jap/jap_elite_takasago_lmg" ("level_112" side(jap))}
+{"mp/rus/rus_bsf_marine3" ("level_112" side(rus))}
+(define "level_113"     
+        {tags   "level_113 %side soldier"}
+        {cp     2.56}
+        {score  22.0}
+        {basic}
+        {breed}
+        {cw 2.56}
+    )
+
+{"mp/ger2/ost_jager_sa" ("level_113" side(ger2))}
+{"mp/ger2/ost_jager_sl_stg" ("level_113" side(ger2))}
+{"mp/ger2/ost_jager_sl_stg_asst" ("level_113" side(ger2))}
+
+
+(define "level_114"     
+        {tags   "level_114 %side soldier"}
+        {cp     2.56}
+        {score  32.0}
+        {basic}
+        {breed}
+        {cw 2.56}
+    )
+{"mp/usa/usa_ranger_bar" ("level_114" side(usa))}
+{"mp/usa/usa_ranger_bar2" ("level_114" side(usa))}
+(define "level_115"     
+        {tags   "level_115 %side soldier"}
+        {cp     2.77}
+        {score  52.5}
+        {basic}
+        {breed}
+        {cw 2.77}
+    )
+{"mp/ger2/ost_jager_mg" ("level_115" side(ger2))}
+=
+{"mp/rus_guard/guard_elite_guard_mg" ("level_115" side(rus_guard))}
+{"mp/usa/usa_devil_brigade_mg" ("level_115" side(usa))}
+{"mp/usa/usa_ranger_mg" ("level_115" side(usa))}
+(define "level_116"     
+        {tags   "level_116 %side soldier"}
+        {cp     2.97}
+        {score  55.0}
+        {basic}
+        {breed}
+        {cw 2.97}
+    )
+{"mp/ger/ger_gd_pzgren_sa_scope" ("level_116" side(ger))}
+{"mp/ger2/ost_pzgren_g43scope" ("level_116" side(ger2))}
+{"mp/ger2/ost_pzgren_g43_pzfaust" ("level_116" side(ger2))}
+(define "level_117"     
+        {tags   "level_117 %side soldier"}
+        {cp     2.99}
+        {score  22.0}
+        {basic}
+        {breed}
+        {cw 2.99}
+    )
+{"mp/ger/ger_gd_pzgren_pzfst_sa" ("level_117" side(ger))}
+
+(define "level_118"     
+        {tags   "level_118 %side soldier"}
+        {cp     3.09}
+        {score  45.0}
+        {basic}
+        {breed}
+        {cw 3.09}
+    )
+{"mp/axis_minor/axm_fin_sissi_mgun_vision" ("level_118" side(axis_minor))}
+
+{"mp/eng/eng_sas_bren2" ("level_118" side(eng))}
+{"mp/ger_ss/ss_tk_pzgren_mg" ("level_118" side(ger_ss))}
+{"mp/ger_ss/ss_tk_pzgren_mg_39" ("level_118" side(ger_ss))}
+{"mp/jap/jap_snlf_mg" ("level_118" side(jap))}
+(define "level_119"     
+        {tags   "level_119 %side soldier"}
+        {cp     3.09}
+        {score  24.0}
+        {basic}
+        {breed}
+        {cw 3.09}
+    )
+{"mp/ger/ger_fallschirm_pzfst_stg" ("level_119" side(ger))}
+{"mp/ger/ger_fallschirm_sl_asst_fg_44" ("level_119" side(ger))}
+{"mp/ger/ger_gebirgsjager_sl_asst_stg" ("level_119" side(ger))}
+{"mp/ger/ger_gebirgsjager_sl_stg" ("level_119" side(ger))}
+{"mp/ger/ger_gebirgsjager_stg" ("level_119" side(ger))}
+{"mp/ger_ss/ss_tk_pzgren_pzfst_stg" ("level_119" side(ger_ss))}
+(define "level_120"     
+        {tags   "level_120 %side soldier"}
+        {cp     3.09}
+        {score  36.0}
+        {basic}
+        {breed}
+        {cw 3.09}
+    )
+{"mp/usa/usa_elite_101st_para3" ("level_120" side(usa))}
+(define "level_121"     
+        {tags   "level_121 %side soldier"}
+        {cp     3.34}
+        {score  55.0}
+        {basic}
+        {breed}
+        {cw 3.34}
+    )
+{"mp/axis_minor/axm_ita_paratrooper_mgun" ("level_121" side(axis_minor))}
+{"mp/rus/rus_para_mg" ("level_121" side(rus))}
+{"mp/rus_guard/guard_elite_guards_shock_mg" ("level_121" side(rus_guard))}
+{"mp/rus_guard/guard_elite_guards_shock_mg2" ("level_121" side(rus_guard))}
+
+{"mp/usa/usa_elite_101st_para3b" ("level_121" side(usa))}
+
+
+(define "level_122"     
+        {tags   "level_122 %side soldier"}
+        {cp     3.4}
+        {score  15.0}
+        {basic}
+        {breed}
+        {cw 3.4}
+    )
+{"mp/ger2/ost_fallschirm_mg_asst" ("level_122" side(ger2))}
+(define "level_123"     
+        {tags   "level_123 %side soldier"}
+        {cp     3.51}
+        {score  65.0}
+        {basic}
+        {breed}
+        {cw 3.51}
+    )
+{"mp/ger/ger_fallschirm_fg_43" ("level_123" side(ger))}
+{"mp/ger/ger_fallschirm_mg" ("level_123" side(ger))}
+{"mp/ger/ger_fallschirm_mg_39" ("level_123" side(ger))}
+{"mp/ger/ger_gebirgsjager_mg" ("level_123" side(ger))}
+{"mp/ger_ss/ss_fallschirm_mg" ("level_123" side(ger_ss))}
+(define "level_124"     
+        {tags   "level_124 %side soldier"}
+        {cp     3.64}
+        {score  26.0}
+        {basic}
+        {breed}
+        {cw 3.64}
+    )
+
+{"mp/ger2/ost_jager_stg" ("level_124" side(ger2))}
+{"mp/ger/ger_gd_pzgren_pzfst_stg" ("level_124" side(ger))}
+{"mp/ger/ger_gd_pzgren_sl_asst_stg" ("level_124" side(ger))}
+{"mp/ger/ger_gd_pzgren_sl_stg" ("level_124" side(ger))}
+{"mp/ger_ss/ss_lssah_pzgren_pzfst_stg" ("level_124" side(ger_ss))}
+{"mp/ger_ss/ss_lssah_pzgren_sl_stg" ("level_124" side(ger_ss))}
+(define "level_125"     
+        {tags   "level_125 %side soldier"}
+        {cp     3.93}
+        {score  57.5}
+        {basic}
+        {breed}
+        {cw 3.93}
+    )
+{"mp/ger2/ost_pzgren_mg34" ("level_125" side(ger2))}
+(define "level_126"     
+        {tags   "level_126 %side soldier"}
+        {cp     4.09}
+        {score  55.0}
+        {basic}
+        {breed}
+        {cw 4.09}
+    )
+{"mp/ger2/ost_fallschirm_grenadier" ("level_126" side(ger2))}
+(define "level_127"     
+        {tags   "level_127 %side soldier"}
+        {cp     5.19}
+        {score  65.0}
+        {basic}
+        {breed}
+        {cw 4.09}
+    )
+{"mp/ger2/ost_fallschirm_sniper" ("level_127" side(ger2))}
+(define "level_128"     
+        {tags   "level_128 %side soldier"}
+        {cp     4.14}
+        {score  67.5}
+        {basic}
+        {breed}
+        {cw 4.14}
+    )
+{"mp/ger/ger_gd_pzgren_mg" ("level_128" side(ger))}
+{"mp/ger_ss/ss_lssah_pzgren_mg" ("level_128" side(ger_ss))}
+{"mp/ger_ss/ss_lssah_pzgren_mg_39" ("level_128" side(ger_ss))}
+(define "level_129"     
+        {tags   "level_129 %side soldier"}
+        {cp     4.81}
+        {score  30.0}
+        {basic}
+        {breed}
+        {cw 4.81}
+    )
+{"mp/ger2/ost_fallschirm_pzfst_fg" ("level_129" side(ger2))}
+{"mp/ger2/ost_fallschirm_sl" ("level_129" side(ger2))}
+{"mp/ger2/ost_fallschirm_sl_asst_fg_44" ("level_129" side(ger2))}
+(define "level_130"     
+        {tags   "level_130 %side soldier"}
+        {cp     5.0}
+        {score  200.0}
+        {basic}
+        {breed}
+        {cw 5.0}
+    )
+{"mp/eng/eng_radioman_airstrike" ("level_130" side(eng))}
+{"mp/usa/usa_radioman_mortar" ("level_130" side(usa))}
+{"mp/rus/rus_radioman_mortar" ("level_130" side(rus))}
+
+
+(define "level_131"     
+        {tags   "level_131 %side soldier"}
+        {cp     5.0}
+        {score  450.0}
+        {basic}
+        {breed}
+        {cw 5.0}
+    )
+{"mp/usa/usa_radioman_105" ("level_131" side(usa))}
+(define "level_132"     
+        {tags   "level_132 %side soldier"}
+        {cp     5.0}
+        {score  550.0}
+        {basic}
+        {breed}
+        {cw 5.0}
+    )
+{"mp/usa/usa_radioman_155" ("level_132" side(usa))}
+(define "level_133"     
+        {tags   "level_133 %side soldier"}
+        {cp     5.0}
+        {score  700.0}
+        {basic}
+        {breed}
+        {cw 5.0}
+    )
+{"mp/usa/usa_radioman_240" ("level_133" side(usa))}
+(define "level_134"     
+        {tags   "level_134 %side soldier"}
+        {cp     5.47}
+        {score  72.5}
+        {basic}
+        {breed}
+        {cw 5.47}
+    )
+{"mp/ger2/ost_fallschirm_mg" ("level_134" side(ger2))}
+(define "level_135"     
+        {tags   "level_135 %side soldier"}
+        {cp     0.5}
+        {score  50.0}
+        {basic}
+        {breed}
+        {cw 0.5}
+    )
+
+
+(define "level_136"     
+        {tags   "level_136 %side soldier"}
+        {cp     -15}
+        {score  1500.0}
+        {basic}
+        {breed}
+        {cw 150}
+    )
+{"mp/jap/super_officer" ("level_136" side(jap))}
+
+
+
+;-----extra levels
+(define "level_137"     
+        {tags   "level_137 %side soldier"}
+        {cp     1.09}
+        {score  12.0}
+        {basic}
+        {breed}
+        {cw 1.09}
+    )
+
+{"mp/usa/usa_armor_rifle" ("level_137" side(usa))}
+
+
+(define "level_138"     
+        {tags   "level_138 %side soldier"}
+        {cp     0.58}
+        {score  11.0}
+        {basic}
+        {breed}
+        {cw 0.58}
+    )
+
+{"mp/ger/ger_volksgren_sl_smg" ("level_138" side(ger))}
+
+(define "level_139"     
+        {tags   "level_139 %side soldier"}
+        {cp     0.58}
+        {score  11.0}
+        {basic}
+        {breed}
+        {cw 0.58}
+    )
+
+{"mp/ger/ger_volksgren_sl_asst" ("level_139" side(ger))}
+
+(define "level_140"     
+        {tags   "level_140 %side soldier"}
+        {cp     0.2}
+        {score  8.0}
+        {basic}
+        {breed}
+        {cw 0.2}
+    )
+{"mp/ger/ger_volksgren_smg" ("level_140" side(ger))}
+
+(define "level_141"     
+        {tags   "level_141 %side soldier"}
+        {cp     0.25}
+        {score  8.0}
+        {basic}
+        {breed}
+        {cw 0.25}
+    )
+{"mp/ger/ger_volksgren_mg_asst2" ("level_141" side(ger))}
+
+
+(define "level_142"     
+        {tags   "level_142 %side soldier"}
+        {cp     0.25}
+        {score  9.0}
+        {basic}
+        {breed}
+        {cw 0.25}
+    )
+{"mp/ger/ger_volksgren_mg_asst3" ("level_142" side(ger))}
+
+(define "level_143"     
+        {tags   "level_143 %side infantry man"}
+        {cp     1.34}
+        {score  9.0}
+        {basic}
+        {breed}
+        {cw 1.34}
+    )
+{"mp/ger/ger_pzgren_pio_mg_asst" ("level_143" side(ger))}
+
+(define "level_144"     
+        {tags   "level_144 %side soldier"}
+        {cp     1.54}
+        {score  10.0}
+        {basic}
+        {breed}
+        {cw 1.54}
+    )
+
+{"mp/ger/ger_pzgren_mg42assist" ("level_144" side(ger))}
+{"mp/ger/ger_pzgren2ic" ("level_144" side(ger))}
+
+(define "level_145"     
+        {tags   "level_145 %side soldier"}
+        {cp     2.49}
+        {score  12.0}
+        {basic}
+        {breed}
+        {cw 2.49}
+    )
+{"mp/ger/ger_gebirgsjager_mg_asst" ("level_145" side(ger))}
+
+(define "level_146"     
+        {tags   "level_146 %side soldier"}
+        {cp     0.97}
+        {score  13.0}
+        {basic}
+        {breed}
+        {cw 0.97}
+    )
+
+{"mp/usa/usa_marine_barassist" ("level_146" side(usa))}
+{"mp/usa/usa_marine_rifle" ("level_146" side(usa))}
+
+
+(define "level_146"     
+        {tags   "level_146 %side soldier"}
+        {cp     2.49}
+        {score  43.0}
+        {basic}
+        {breed}
+        {cw 2.49}
+    )
+
+{"mp/usa/usa_elite_101st_para4" ("level_146" side(usa))}
+
+(define "level_147"     
+        {tags   "level_147 %side soldier"}
+        {cp     2.49}
+        {score  32.0}
+        {basic}
+        {breed}
+        {cw 2.49}
+    )
+
+{"mp/usa/usa_paramarine3" ("level_147" side(usa))}
+
+(define "level_148"     
+        {tags   "level_148 %side soldier"}
+        {cp     0.58}
+        {score  13.0}
+        {basic}
+        {breed}
+        {cw 0.58}
+    )
+
+{"mp/rus/rus_sapper_smg" ("level_148" side(rus))}
+
+
+(define "level_149"     
+        {tags   "level_149 %side soldier"}
+        {cp     0.97}
+        {score  13.0}
+        {basic}
+        {breed}
+        {cw 0.97}
+    )
+
+{"mp/rus/rus_shock_smg3" ("level_149" side(rus))}
+
+(define "level_150"     
+        {tags   "level_150 %side soldier"}
+        {cp     0.97}
+        {score  12.0}
+        {basic}
+        {breed}
+        {cw 0.97}
+    )
+
+{"mp/eng/eng_squadleader2" ("level_150" side(eng))}
+
+
+(define "level_151"     
+        {tags   "level_151 %side soldier"}
+        {cp     0.97}
+        {score  13.0}
+        {basic}
+        {breed}
+        {cw 0.97}
+    )
+
+
+
+{"mp/eng/eng_rifleman" ("level_151" side(eng))}
+
+(define "level_152"     
+        {tags   "level_152 %side soldier"}
+        {cp     0.97}
+        {score  15.0}
+        {basic}
+        {breed}
+        {cw 0.97}
+    )
+
+
+{"mp/eng/eng_squadleader_asst" ("level_152" side(eng))}
+
+
+
+(define "level_153"     
+        {tags   "level_153 %side soldier"}
+        {cp     1.44}
+        {score  11.0}
+        {basic}
+        {breed}
+        {cw 1.44}
+    )
+
+
+{"mp/eng/eng_smg" ("level_153" side(eng))}
+{"mp/eng/eng_smg_wp" ("level_153" side(eng))}
+
+
+
+(define "level_154"     
+        {tags   "level_154 %side soldier"}
+        {cp     1.11}
+        {score  35.0}
+        {basic}
+        {breed}
+        {cw 1.11}
+    )
+
+{"mp/eng/eng_mgun" ("level_154" side(eng))}
+
+(define "level_155"     
+        {tags   "level_155 %side soldier"}
+        {cp     1.11}
+        {score  45.0}
+        {basic}
+        {breed}
+        {cw 1.11}
+    )
+
+{"mp/jap/jap_teishin_mg" ("level_155" side(jap))}
+{"mp/jap/jap_snlf_mg_type99" ("level_155" side(jap))}
+
+(define "level_156"     
+        {tags   "level_156 %side soldier"}
+        {cp     2.14}
+        {score  14.0}
+        {basic}
+        {breed}
+        {cw 2.14}
+    )
+
+{"mp/jap/jap_teishin_type100_44_apminer" ("level_156" side(jap))}
+
+(define "level_157"     
+        {tags   "level_157 %side soldier"}
+        {cp     0.7}
+        {score  11.0}
+        {basic}
+        {breed}
+        {cw 0.7}
+    )
+
+{"mp/jap/jap_mg_asst" ("level_157" side(jap))}
+
+(define "level_158"     
+        {tags   "level_158 %side infantry man"}
+        {cp     2.44}
+        {score  12.0}
+        {basic}
+        {breed}
+        {cw 2.44}
+    )
+
+{"mp/jap/jap_snlf_rifle_type99" ("level_158" side(jap))}
+
+
+
+
+(define "level_159"     
+        {tags   "level_159 %side soldier"}
+        {cp     2.14}
+        {score  57.5}
+        {basic}
+        {breed}
+        {cw 2.14}
+    )
+{"mp/jap/jap_snlf_at" ("level_159" side(jap))}
+
+
+
+
+(define "level_160"     
+        {tags   "level_160 %side soldier"}
+        {cp     1.44}
+        {score  15.0}
+        {basic}
+        {breed}
+        {cw 1.44}
+    )
+
+{"mp/ger2/ost_sl_asst" ("level_160" side(ger2))}
+
+
+
+(define "level_162"     
+        {tags   "level_162 %side soldier"}
+        {cp     2.05}
+        {score  22.0}
+        {basic}
+        {breed}
+        {cw 2.05}
+    )
+
+
+{"mp/ger2/ost_squadleader2" ("level_162" side(ger2))}
+
+(define "level_163"     
+        {tags   "level_163 %side infantry man"}
+        {cp     1.34}
+        {score  15.0}
+        {basic}
+        {breed}
+        {cw 1.34}
+    )
+
+{"mp/ger2/ost_rifle2" ("level_163" side(ger2))}
+
+
+
+(define "level_164"     
+        {tags   "level_164 %side soldier"}
+        {cp     0.2}
+        {score  11.0}
+        {basic}
+        {breed}
+        {cw 0.2}
+    )
+
+{"mp/ger_ss/ss_kosaken_sl" ("level_164" side(ger_ss))}
+{"mp/ger_ss/ss_kosaken_sl_asst" ("level_164" side(ger_ss))}
+
+
+
+(define "level_165"     
+        {tags   "level_165 %side soldier"}
+        {cp     1.44}
+        {score  10.0}
+        {basic}
+        {breed}
+        {cw 1.44}
+    )
+
+{"mp/ger_ss/ss_grenadier_sl_asst_44" ("level_165" side(ger_ss))}
+
+
+
+
+
+(define "level_166"     
+        {tags   "level_166 %side soldier"}
+        {cp     1.44}
+        {score  15.0}
+        {basic}
+        {breed}
+        {cw 1.44}
+    )
+
+{"mp/ger_ss/ss_sturmgren_sa" ("level_166" side(ger_ss))}
+
+
+(define "level_167"     
+        {tags   "level_167 %side soldier"}
+        {cp     2.05}
+        {score  14.0}
+        {basic}
+        {breed}
+        {cw 2.05}
+    )
+{"mp/ger_ss/ss_sturmgren_smg" ("level_167" side(ger_ss))}
+
+
+
+(define "level_169"     
+        {tags   "level_169 %side soldier"}
+        {cp     1.44}
+        {score  10.0}
+        {basic}
+        {breed}
+        {cw 1.44}
+    )
+
+{"mp/ger_ss/ss_gebirgs_sl_asst_k98" ("level_169" side(ger_ss))}
+
+
+(define "level_170"     
+        {tags   "level_170 %side infantry man"}
+        {cp     1.34}
+        {score  15.0}
+        {basic}
+        {breed}
+        {cw 1.34}
+    )
+{"mp/ger_ss/ss_gebirgs_sl" ("level_170" side(ger_ss))}
+{"mp/ger_ss/ss_gebirgs_pzfst_ber" ("level_170" side(ger_ss))}
+{"mp/ger_ss/ss_gebirgs_sl_asst" ("level_170" side(ger_ss))}
+
+
+
+
+(define "level_171"     
+        {tags   "level_171 %side soldier"}
+        {cp     2.05}
+        {score  18.0}
+        {basic}
+        {breed}
+        {cw 2.05}
+    )
+
+{"mp/ger_ss/ss_sturmpio4" ("level_171" side(ger_ss))}
+
+
+(define "level_172"     
+        {tags   "level_172 %side soldier"}
+        {cp     1.54}
+        {score  10.0}
+        {basic}
+        {breed}
+        {cw 1.54}
+    )
+
+{"mp/ger_ss/ss_pzgren_sl_asst_pzfst" ("level_172" side(ger_ss))}
+
+
+(define "level_173"     
+        {tags   "level_173 %side soldier"}
+        {cp     2.49}
+        {score  50.0}
+        {basic}
+        {breed}
+        {cw 2.49}
+    )
+
+{"mp/ger_ss/ss_tk_pzgren_sl_asst" ("level_173" side(ger_ss))}
+
+
+
+(define "level_174"     
+        {tags   "level_174 %side soldier"}
+        {cp     2.99}
+        {score  55.0}
+        {basic}
+        {breed}
+        {cw 2.99}
+    )
+
+{"mp/ger_ss/ss_lssah_pzgren_sl_asst_sa" ("level_174" side(ger_ss))}
+
+
+(define "level_175"     
+        {tags   "level_175 %side soldier"}
+        {cp     2.55}
+        {score  22.0}
+        {basic}
+        {breed}
+        {cw 2.55}
+    )
+
+{"mp/ger_ss/ss_lssah_pzgren_pzfst60_sa" ("level_175" side(ger_ss))}
+{"mp/ger_ss/ss_lssah_pzgren_pzfst" ("level_175" side(ger_ss))}
+
+
+
+
+(define "level_176"     
+        {tags   "level_176 %side soldier"}
+        {cp     1.93}
+        {score  12.0}
+        {basic}
+        {breed}
+        {cw 1.93}
+    )
+{"mp/ger_ss/ss_fallschirm_smg" ("level_176" side(ger_ss))}
+
+
+
+(define "level_177"     
+        {tags   "level_177 %side infantry man"}
+        {cp     1.34}
+        {score  10.0}
+        {basic}
+        {breed}
+        {cw 1.34}
+    )
+
+
+{"mp/ger2/ost_rifle_pzfst" ("level_177" side(ger2))}
+
+
+(define "level_177"     
+        {tags   "level_177 %side soldier"}
+        {cp     1.93}
+        {score  26.0}
+        {basic}
+        {breed}
+        {cw 1.93}
+    )
+
+{"mp/ger2/ost_pzgren_sl" ("level_177" side(ger2))}
+{"mp/ger2/ost_pzgren_slassist" ("level_177" side(ger2))}
+{"mp/ger2/ost_pzgren_sg44_pzfuast" ("level_177" side(ger2))}
+
+
+
+(define "level_178"     
+        {tags   "level_178 %side soldier"}
+        {cp     1.73}
+        {score  20.0}
+        {basic}
+        {breed}
+        {cw 1.73}
+    )
+{"mp/ger2/ost_pzgren_mgassist" ("level_178" side(ger2))}
+{"mp/ger2/ost_pzgren_pzfaust_rifle" ("level_178" side(ger2))}
+{"mp/ger2/ost_pzgren_smg_pzfaust" ("level_178" side(ger2))}
+
+
+
+(define "level_179"  
+        {tags   "level_179 %side soldier"}
+        {cp     2.44}
+        {score  17.0}
+        {basic}
+        {breed}
+        {cw 2.44}
+    )
+  
+{"mp/rus_guard/guards_shock_sl_smg" ("level_179" side(rus_guard))}
+
+
+(define "level_180"   
+        {tags   "level_180 %side soldier"}
+        {cp     2.49}
+        {score  18}
+        {basic}
+        {breed}
+        {cw 2.49}
+    )
+
+{"mp/rus_guard/guards_shock_sl" ("level_180" side(rus_guard))}
+(define "level_181"     
+        {tags   "level_181 %side soldier"}
+        {cp     2.77}
+        {score  42.5}
+        {basic}
+        {breed}
+        {cw 2.77}
+    )
+
+{"mp/rus_guard/guards_shock_mg" ("level_181" side(rus_guard))}
+
+
+
+(define "level_182"     
+        {tags   "level_182 %side soldier"}
+        {cp     2.0}
+        {score  16.0}
+        {basic}
+        {breed}
+        {cw 2.0}
+    )
+
+{"mp/rus_guard/guard_elite_guard_mg_asst" ("level_182" side(rus_guard))}
+
+
+
+
+
+(define "level_183"     
+        {tags   "level_183 %side soldier"}
+        {cp     0.97}
+        {score  10.0}
+        {basic}
+        {breed}
+        {cw 0.97}
+    )
+
+{"mp/axis_minor/axm_ita_bersaglieri_rifle2" ("level_183" side(axis_minor))}
+{"mp/axis_minor/axm_ita_bersaglieri_rifle" ("level_183" side(axis_minor))}
+{"mp/axis_minor/axm_ita_bersaglieri_mgun_assist" ("level_183" side(axis_minor))}
+
+
+
+
+(define "level_183"     
+        {tags   "level_183 %side soldier"}
+        {cp     0.97}
+        {score  12.0}
+        {basic}
+        {breed}
+        {cw 0.97}
+    )
+
+{"mp/axis_minor/axm_hun_assualt_smg" ("level_183" side(axis_minor))}
+
+
+
+
+(define "tankman"     
+        {tags   "tankman %side soldier"}
+        {cp     0}
+        {score  0}
+        {basic}
+        {breed}
+        {cw 1.0}
+    )
+
+{"mp/axis_minor/axm_bul_tankman" ("tankman" side(axis_minor))}
+{"mp/axis_minor/axm_fin_tankman" ("tankman" side(axis_minor))}
+{"mp/axis_minor/axm_hun_tankman" ("tankman" side(axis_minor))}
+{"mp/axis_minor/axm_ita_tankman" ("tankman" side(axis_minor))}
+{"mp/axis_minor/axm_rom_tankman" ("tankman" side(axis_minor))}
+{"mp/ger/tankman" ("tankman" side(ger))}
+{"mp/eng/tankman" ("tankman" side(eng))}
+{"mp/ger_ss/tankman" ("tankman" side(ger_ss))}
+{"mp/jap/tankman" ("tankman" side(jap))}
+{"mp/rus/tankman" ("tankman" side(rus))}
+{"mp/rus_guard/tankman" ("tankman" side(rus_guard))}
+{"mp/usa/tankman" ("tankman" side(usa))}
+{"mp/ger_ss/elite_tankman" ("tankman" side(ger_ss))}
+{"mp/ger2/tankman2" ("tankman" side(ger2))}
+
+
+{"mp/axis_minor/axm_fin_tank_commander" ("tankman" side(axis_minor))}
+{"mp/ger2/tankman" ("tankman" side(ger2))}
+{"mp/ger/tankman2" ("tankman" side(ger))}
+{"mp/ger_ss/tankman2" ("tankman" side(ger_ss))}
+{"mp/jap/tankman2" ("tankman" side(jap))}
+{"mp/rus_guard/tankman2" ("tankman" side(rus_guard))}
+{"mp/usa/tankman2" ("tankman" side(usa))}
+{"mp/eng/tankman2" ("tankman" side(eng))}
+{"mp/rus/tankman2" ("tankman" side(rus))}
+
+{"mp/axis_minor/axm_hun_elite_tankman" ("tankman" side(axis_minor))}
+{"mp/eng/eng_elite_tankman" ("tankman" side(eng))}
+{"mp/rus/rus_elite_tankman" ("tankman" side(rus))}
+{"mp/rus_guard/guard_elite_tankman" ("tankman" side(rus_guard))}
+{"mp/ger/elite_tankman2" ("tankman" side(ger))}
+{"mp/ger2/ost_elite_tankman2" ("tankman" side(ger2))}
+
+{"mp/axis_minor/axm_hun_vet_tankman" ("tankman" side(axis_minor))}
+{"mp/eng/vet_tankman" ("tankman" side(eng))}
+{"mp/ger_ss/vet_tankman" ("tankman" side(ger_ss))}
+{"mp/rus/vet_tankman" ("tankman" side(rus))}
+{"mp/usa/vet_tankman" ("tankman" side(usa))}
+{"mp/axis_minor/axm_ita_vettankman" ("tankman" side(axis_minor))}
+{"mp/ger/vet_tankman2" ("tankman" side(ger))}
+{"mp/rus_guard/vet_tankman2" ("tankman" side(rus_guard))}
+
+{"mp/axis_minor/axm_ita_vettankcommander" ("tankman" side(axis_minor))}
+{"mp/axis_minor/axm_rom_vet_tankman" ("tankman" side(axis_minor))}
+{"mp/ger/vet_tankman" ("tankman" side(ger))}
+{"mp/rus_guard/vet_tankman" ("tankman" side(rus_guard))}
+{"mp/eng/vet_tankman2" ("tankman" side(eng))}
+{"mp/ger_ss/vet_tankman2" ("tankman" side(ger_ss))}
+{"mp/rus/vet_tankman2" ("tankman" side(rus))}
+
+{"mp/ger/elite_tankman" ("tankman" side(ger))}
+{"mp/ger2/ost_elite_tankman" ("tankman" side(ger2))}
+
+{"mp/axis_minor/axm_bul_tankcommander" ("tankman" side(axis_minor))}
+{"mp/axis_minor/axm_hun_tankcommander" ("tankman" side(axis_minor))}
+{"mp/axis_minor/axm_ita_tankcommander" ("tankman" side(axis_minor))}
+{"mp/axis_minor/axm_rom_tankcommander" ("tankman" side(axis_minor))}
+{"mp/ger_ss/elite_tankman2" ("tankman" side(ger_ss))}
+
+{"mp/axis_minor/axm_hun_elite_tankcommander" ("tankman" side(axis_minor))}
+{"mp/eng/eng_elite_tankcommander" ("tankman" side(eng))}
+{"mp/rus/rus_elite_tankcommander" ("tankman" side(rus))}
+{"mp/rus_guard/guard_elite_tankcommander" ("tankman" side(rus_guard))}
+{"mp/axis_minor/axm_hun_vet_tankcommander" ("tankman" side(axis_minor))}
+{"mp/usa/vet_tankman2" ("tankman" side(usa))}
+
+(define "vehicle_support"     
+        {tags   "vehicle_support %side soldier"}
+        {cp     0}
+        {score  0}
+        {basic}
+        {breed}
+        {cw 1.0}
+    )
+
+{"mp/ger2/vehicle_supporter" ("vehicle_support" side(ger2))}
+{"mp/ger/vet_vehicle_supporter" ("vehicle_support" side(ger))}
+{"mp/jap/jap_elite_vehicle_supporter" ("vehicle_support" side(jap))}
+{"mp/ger/elite_vehicle_supporter" ("vehicle_support" side(jap))}
+{"mp/axis_minor/axm_rom_vehicle_supporter" ("vehicle_support" side(axis_minor))}
+{"mp/jap/vehicle_supporter" ("vehicle_support" side(jap))}
+{"mp/axis_minor/axm_bul_vehicle_supporter" ("vehicle_support" side(axis_minor))}
+{"mp/axis_minor/axm_fin_vehicle_supporter" ("vehicle_support" side(axis_minor))}
+{"mp/axis_minor/axm_ger_vehicle_supporter" ("vehicle_support" side(axis_minor))}
+{"mp/axis_minor/axm_hun_vehicle_supporter" ("vehicle_support" side(axis_minor))}
+{"mp/axis_minor/axm_ita_vehicle_supporter" ("vehicle_support" side(axis_minor))}
+{"mp/ger/vehicle_supporter" ("vehicle_support" side(ger))}
+{"mp/eng/vehicle_supporter" ("vehicle_support" side(eng))}
+{"mp/ger_ss/ss_support" ("vehicle_support" side(ger_ss))}
+{"mp/ger2/ost_support" ("vehicle_support" side(ger2))}
+{"mp/rus/vehicle_supporter" ("vehicle_support" side(rus))}
+{"mp/rus_guard/vehicle_supporter" ("vehicle_support" side(rus_guard))}
+{"mp/usa/vehicle_supporter" ("vehicle_support" side(usa))}
+{"mp/axis_minor/axm_rom_elite_vehicle_supporter" ("vehicle_support" side(axis_minor))}
+
+
+
+(define "das_reich"     
+        {tags   "level_183 %side soldier"}
+        {cp     1.0}
+        {score  15.0}
+        {basic}
+        {breed}
+        {cw 1.0}
+    )
+
+
+{"mp/ger_ss/dr_pzgren_mg" ("das_reich" side(ger_ss))}
+{"mp/ger_ss/dr_pzgren_mg_39" ("das_reich" side(ger_ss))}
+{"mp/ger_ss/dr_pzgren_mg_asst" ("das_reich" side(ger_ss))}
+{"mp/ger_ss/dr_pzgren_pzfst" ("das_reich" side(ger_ss))}
+{"mp/ger_ss/dr_pzgren_pzfst_stg" ("das_reich" side(ger_ss))}
+{"mp/ger_ss/dr_pzgren_pzfst60_sa" ("das_reich" side(ger_ss))}
+{"mp/ger_ss/dr_pzgren_rifle" ("das_reich" side(ger_ss))}
+{"mp/ger_ss/dr_pzgren_sa" ("das_reich" side(ger_ss))}
+{"mp/ger_ss/dr_pzgren_sa_41" ("das_reich" side(ger_ss))}
+{"mp/ger_ss/dr_pzgren_sl" ("das_reich" side(ger_ss))}
+{"mp/ger_ss/dr_pzgren_sl_asst" ("das_reich" side(ger_ss))}
+{"mp/ger_ss/dr_pzgren_smg" ("das_reich" side(ger_ss))}
+{"mp/ger_ss/dr_pzgren_stg" ("das_reich" side(ger_ss))}
+
+
+(define "light_mortar"     
+        {tags   "level_184 %side soldier"}
+        {cp     1.0}
+        {score  94.0}
+        {basic}
+        {breed}
+        {cw 1.0}
+    )
+
+{"mp/ger/ger_light_mortar" ("light_mortar" side(ger))}
+{"mp/ger_ss/ss_light_mortar" ("light_mortar" side(ger_ss))}
+{"mp/ger2/ost_light_mortar" ("light_mortar" side(ger2))}
+
+
+(define "light_mortar_eng"     
+        {tags   "level_184 %side soldier"}
+        {cp     1.0}
+        {score  124.0}
+        {basic}
+        {breed}
+        {cw 1.0}
+    )
+{"mp/eng/eng_light_mortar" ("light_mortar_eng" side(eng))}
+
+(define "level_185"     
+        {tags   "level_185 %side soldier"}
+        {cp     1.0}
+        {score  50.0}
+        {basic}
+        {breed}
+        {cw 1.0}
+    )
+{"mp/ger2/ost_saper" ("level_185" side(ger2))}
+{"mp/ger2/ost_at_miner" ("level_185" side(ger2))}
+
+(define "level_186"     
+        {tags   "level_186 %side soldier"}
+        {cp     1.0}
+        {score  37.5}
+        {basic}
+        {breed}
+        {cw 1.0}
+    )
+
+{"mp/ger2/ost_ap_miner" ("level_186" side(ger2))}
+
+
+
+
+(define "level_187"     
+        {tags   "level_187 %side soldier"}
+        {cp     1.0}
+        {score  25.0}
+        {basic}
+        {breed}
+        {cw 1.0}
+    )
+
+{"mp/ger2/ost_tankman" ("level_187" side(ger2))}
+{"mp/ger2/ost_tankman2" ("level_187" side(ger2))}
+
+(define "level_188"     
+        {tags   "level_188 %side soldier"}
+        {cp     1.0}
+        {score  16.0}
+        {basic}
+        {breed}
+        {cw 1.0}
+    )
+
+{"mp/ger_ss/ss_tankman2" ("level_188" side(ger_ss))}
+{"mp/ger_ss/ss_tankman" ("level_188" side(ger_ss))}
+
+
+(define "level_189"     
+        {tags   "level_189 %side soldier"}
+        {cp     1.0}
+        {score  100.0}
+        {basic}
+        {breed}
+        {cw 1.0}
+    )
+
+{"mp/ger_ss/ss_vet_tankman2" ("level_189" side(ger_ss))}
+{"mp/ger/ger_vet_tankman2_single" ("level_189" side(ger))}
+{"mp/eng/eng_vet_tankman2_single" ("level_189" side(eng))}
+{"mp/usa/usa_vet_tankman2_single" ("level_189" side(usa))}
+{"mp/rus/rus_vet_tankman2_single" ("level_189" side(rus))}
+{"mp/axis_minor/axm_rom_vet_tankman2_single" ("level_189" side(axis_minor))}
+{"mp/rus_guard/rus_guard_vet_tankman2_single" ("level_189" side(rus_guard))}
+
+
+(define "level_190"     
+        {tags   "level_190 %side soldier"}
+        {cp     1.0}
+        {score  12.5}
+        {basic}
+        {breed}
+        {cw 1.0}
+    )
+
+
+{"mp/ger_ss/ss_vehicle_supporter" ("level_190" side(ger_ss))}
+{"mp/ger/ger_vehicle_supporter_single" ("level_190" side(ger))}
+{"mp/eng/vehicle_supporter_single" ("level_190" side(eng))}
+{"mp/usa/vehicle_supporter_single" ("level_190" side(usa))}
+{"mp/rus/vehicle_supporter_single" ("level_190" side(rus))}
+{"mp/jap/vehicle_supporter_single" ("level_190" side(jap))}
+{"mp/axis_minor/axm_bul_vehicle_supporter_single" ("level_190" side(axis_minor))}
+
+(define "level_191"     
+        {tags   "level_191 %side soldier"}
+        {cp     2.55}
+        {score  20.0}
+        {basic}
+        {breed}
+        {cw 2.55}
+    )
+
+
+{"mp/ger_ss/ss_lssah_pzgren_at2" ("level_191" side(ger_ss))}
+{"mp/ger_ss/ss_lssah_pzgren_mg_asst" ("level_191" side(ger_ss))}
+
+
+
+(define "level_192"     
+        {tags   "level_191 %side soldier"}
+        {cp     2.55}
+        {score  45.0}
+        {basic}
+        {breed}
+        {cw 2.55}
+    )
+
+
+{"mp/ger/ger_pzgren_pio_mg" ("level_192" side(ger))}
+
+(define "level_193"     
+        {tags   "level_193 %side soldier"}
+        {cp     2.55}
+        {score  40.0}
+        {basic}
+        {breed}
+        {cw 2.55}
+    )
+
+
+{"mp/eng/eng_anzac_mg" ("level_193" side(eng))}
+
+
+(define "level_194"     
+        {tags   "level_194 %side soldier"}
+        {cp     0.6}
+        {score  15.0}
+        {basic}
+        {breed}
+        {cw 0.6}
+    )
+{"mp/eng/eng_anzac_rifle" ("level_194" side(eng))}
+{"mp/eng/eng_anzac_mg_assist" ("level_194" side(eng))}
+
+(define "level_195"     
+        {tags   "level_195 %side soldier"}
+        {cp     1.44}
+        {score  15.0}
+        {basic}
+        {breed}
+        {cw 1.44}
+    )
+
+{"mp/eng/eng_anzac_smg" ("level_195" side(eng))}
+{"mp/eng/eng_anzac_smg_thompson" ("level_195" side(eng))}
+
+
+(define "level_196"     
+        {tags   "level_196 %side soldier"}
+        {cp     1.44}
+        {score  17.0}
+        {basic}
+        {breed}
+        {cw 1.44}
+    )
+
+{"mp/eng/eng_anzac_sl" ("level_196" side(eng))}
+
+
+(define "level_197"     
+        {tags   "level_197 %side soldier"}
+        {cp     1.0}
+        {score  14.0}
+        {basic}
+        {breed}
+        {cw 1.0}
+    )
+
+{"mp/usa/usa_tankman2_single" ("level_197" side(usa))}
+{"mp/usa/usa_tankman_single" ("level_197" side(usa))}
+{"mp/ger/ger_tankman2_single" ("level_197" side(ger))}
+{"mp/ger/ger_tankman_single" ("level_197" side(ger))}
+{"mp/eng/eng_tankman_single" ("level_197" side(eng))}
+{"mp/eng/eng_tankman2_single" ("level_197" side(eng))}
+{"mp/usa/usa_tankman_single" ("level_197" side(usa))}
+{"mp/rus/rus_tankman_single" ("level_197" side(rus))}
+{"mp/jap/jap_tankman_single" ("level_197" side(jap))}
+{"mp/jap/jap_tankman2_single" ("level_197" side(jap))}
+{"mp/axis_minor/axm_hun_tankmancommander_single" ("level_197" side(axis_minor))}
+{"mp/axis_minor/axm_hun_tankman_single" ("level_197" side(axis_minor))}
+
+(define "level_198"     
+        {tags   "level_198 %side soldier"}
+        {cp     1.0}
+        {score  17.5}
+        {basic}
+        {breed}
+        {cw 1.0}
+    )
+{"mp/rus_guard/vehicle_supporter_single" ("level_198" side(rus_guard))}
+
+
+(define "level_199"     
+        {tags   "level_199 %side soldier"}
+        {cp     1.0}
+        {score  18.0}
+        {basic}
+        {breed}
+        {cw 1.0}
+    )
+
+{"mp/rus_guard/rus_guard_tankman_single" ("level_199" side(rus_guard))}
+{"mp/rus_guard/rus_guard_tankman2_single" ("level_199" side(rus_guard))}
