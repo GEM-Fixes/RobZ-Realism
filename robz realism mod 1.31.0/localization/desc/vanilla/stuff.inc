@@ -212,3 +212,5 @@
 {"rad" "Strange crate"}
 ; [vanilla] stuff special/spade_inv | weight 100
 {"spade_inv" "Shovel"}
+; [vanilla] stuff grenade/02 grenade_at/n73at.grenade
+{"n73at" "AT grenade N73"}

@@ -28,6 +28,9 @@
 ; -- group soldier_9 --
 ; [changed] card "snipers(eng)" cost 105 lvl 1 | soldiers eng_sniper | tags infantry all sniper inf_only 39 40 41 42 43 44 45 | units/eng/squads_42-45.set:81
 {"snipers(eng)" "SMLE Sniper"}
+; -- group soldier_10 --
+; [new] card "officers_40(eng)" cost 0 lvl 1 | soldiers eng_officer x4 | tags infantry all officer inf_only 39 40 41 42 43 44 45 | units/eng/squads_42-45.set:84
+{"officers_40(eng)" "Officer"}
 ; -- group soldier_1 --
 ; [new] card "riflemans2_40(eng)" cost 11 lvl 1 | soldiers rifle_40 | tags infantry 39 40 41 | units/eng/squads_40-41.set:44
 {"riflemans2_40(eng)" "SMLE Rifleman"}

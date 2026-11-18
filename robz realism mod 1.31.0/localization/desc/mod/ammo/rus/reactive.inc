@@ -7,7 +7,7 @@
 ; [new] stuff reactive/mortar81/mortar82.rus.fg.ammo | weight 70 | used by bm37, bm37_vet
 {"mortar82 rus fg" "82-mm O-832 (HE)"}
 ; [new] stuff reactive/mortar81/mortar82.rus.wp.ammo | weight 70 | used by bm37, bm37_vet
-{"mortar82 rus wp" "82-mm D-832 (Smoke, Phosporus)"}
+{"mortar82 rus wp" "82-mm D-832 (Smoke, Phosphorus)"}
 ; [new] stuff reactive/mortar120/mortar120.rus.fg.ammo | weight 70 | used by pm38, pm38_vet
 {"mortar120 rus fg" "120-mm F-843 (HE)"}
 ; [new] stuff reactive/mortar120/mortar120.rus.hefg.ammo | weight 70 | used by pm38, pm38_vet

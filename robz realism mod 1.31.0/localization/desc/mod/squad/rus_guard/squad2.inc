@@ -31,3 +31,5 @@
 ; -- group soldier_10 --
 ; [new] card "officers(rus_guard)" cost 0 lvl 1 | soldiers guard_officer x4 | tags infantry all officer inf_only 39 40 41 42 43 44 45 | units/rus_guard/squads_43-45.set:81
 {"officers(rus_guard)" "Officer"}
+; [new] card "officers_40(rus_guard)" cost 0 lvl 1 | soldiers guard_officer x4 | tags infantry all officer inf_only 39 40 41 42 43 44 45 | units/rus_guard/squads_43-45.set:82
+{"officers_40(rus_guard)" "Officer"}

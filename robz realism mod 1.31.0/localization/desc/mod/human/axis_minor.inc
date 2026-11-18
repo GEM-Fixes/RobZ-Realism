@@ -153,7 +153,7 @@
 ; [new] first in card "Bulgarian_Infantry(axis_minor)" axis_minor/squad1 cost 75 | units/axis_minor/squads.set:8
 {"axm_bul_rifle" "<c(c3baae)>Strelets"}
 ; [new] not in any buy-list card
-{"axm_bul_smg" "<c(c3baae)>Atomatchik"}
+{"axm_bul_smg" "<c(c3baae)>Avtomatchik"}
 ; [new] first in card "Bulgarian_Infantry(axis_minor)" axis_minor/squad1 cost 75 | units/axis_minor/squads.set:8
 {"axm_bul_squadleader" "<c(c3baae)>Vodac na Otdelenie"}
 ; [new] not in any buy-list card

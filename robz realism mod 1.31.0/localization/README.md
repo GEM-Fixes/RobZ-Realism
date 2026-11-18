@@ -66,6 +66,9 @@ Earlier steps are listed in `_dropped/renamed-keys.tsv`.
 - Soldier names (`desc/human`): `<c(c3baae)>Name`, no space after the tag, capital first letter.
 - Weapon names with stats (`desc/weapon`): `Name<c(ffffff)>\n Range - <c(colour)>160 m<c(ffffff)>\n Penetration AP - ...`;
   order Range, Penetration, Barrage, Rate of fire, Reloading time, Cycling rate, Muzzle velocity, Accuracy.
+  The value colours are a rating in 7 steps from red (lowest) to green (highest), set per weapon type and ammo type;
+  the full scales are in `STATS.md`. No font or size tags (`<f(..)>`, `<s(..)>`) in weapon names; only the slot labels in
+  `weapon/type.inc` carry `<f(arial_hq)>`, as vanilla does.
 - Squad names that differ only by year carry the year: `Grenadier squad 1944`.
 - Info texts (`info/`): 1 or 2 plain sentences, 180 characters as the aim, 240 at most. First what the unit is
   (kind, size, main weapons), then what it is good for or its weak point. No lists, no line breaks, no colour tags.

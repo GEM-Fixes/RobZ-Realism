@@ -53,4 +53,4 @@
 {"cromwell_mk_vii_seqx2(eng)" "<c(00ff04)>2x Cruiser Mk.VIII Cromwell VII"}
 ; -- button v22, group c155 --
 ; [new] card "long_tom(eng)" cost 1000 lvl 1 | soldiers vehicle_supporter x2 | vehicles longtom_155mm | tags all artillery heavyart heavy 43 44 45 | units/eng/vehicles_45.set:54 | {info longtom_155mm}; also under usa/v22; cards long_tom(eng), longtom_155mm(usa); copy of longtom_155mm (with crew)
-{"longtom_155mm" "Longtom 155m Howitzer"}
+{"longtom_155mm" "Longtom 155mm Howitzer"}

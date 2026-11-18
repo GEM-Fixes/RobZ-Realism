@@ -99,7 +99,7 @@
 ; [new] stuff ammo/magazines/lsm26_mag.ammo | cal 7.7x56mm | weight 5 | used by lsm26
 {"lsm26_mag" "Lahti-Saloranta M/26 Magazine"}
 ; [new] stuff ammo/magazines/gabauer_belt.ammo | cal 8x56mm | weight 1 | used by gebauer, gebauer_optic
-{"gabauer_belt" "Gabauer MG Ammo Belt"}
+{"gabauer_belt" "Gebauer MG Ammo Belt"}
 ; [new] stuff ammo/magazines/bredam38_belt.ammo | cal 8x59mmR | weight 1 | used by breda_38, breda_38_optic, breda_38_x2
 {"bredam38_belt" "Breda Modello 38 MG Ammo Belt"}
 ; [new] stuff ammo/magazines/ravelli_belt.ammo | cal 6.5x52mm | weight 1 | used by fiat_14

@@ -57,7 +57,7 @@
 {"tunnel"
 {"action" "Build a tunnel 300m in length to appear behind the enemy. One directional, enter one side building point and go to the other, then exit. (to place: hold right mouse button and drag in the OPPOSITE direction you want it to face)"}
 }
-{"tree_line" "Camoflaged Trees"}
+{"tree_line" "Camouflaged Trees"}
 {"tree_line"
 {"action" "Build a line of 5 trees with camoflauged positions up high. (to place: hold right mouse button and drag in the direction you want it to face)"}
 }

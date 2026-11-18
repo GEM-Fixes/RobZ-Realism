@@ -48,6 +48,9 @@
 {"snipers(ger)" "Karabiner 98k Sniper"}
 ; [new] card "sniper3(ger)" cost 105 lvl 1 | soldiers ger_sniper_g43 | tags infantry all sniper inf_only 43 44 45 | units/ger/squads_44.set:179
 {"sniper3(ger)" "G43 Sniper"}
+; -- group soldier_10 --
+; [new] card "officers_40(ger)" cost 0 lvl 1 | soldiers ger_officer x4 | tags infantry all officer inf_only 39 40 41 42 43 44 45 | units/ger/squads_44.set:184
+{"officers_40(ger)" "Officer"}
 ; -- group radio_1 --
 ; [new] card "radioman_mortar(ger)" cost 250 lvl 1 | soldiers ger_radioman_mortar | tags infantry all mortar 39 40 41 42 43 44 45 | units/ger/squads_44.set:191
 {"radioman_mortar(ger)" "Radioman mortar call-in"}

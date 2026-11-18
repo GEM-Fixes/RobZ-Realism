@@ -35,3 +35,6 @@
 ; -- group soldier_9 --
 ; [changed] card "snipers(ger2)" cost 109 lvl 8 | soldiers ost_sniper | tags infantry all 44 45 sniper_only inf_only | units/ger2/squads.set:59
 {"snipers(ger2)" "Karabiner 98k Jäger Sniper"}
+; -- group soldier_10 --
+; [new] card "officers_40(ger2)" cost 0 lvl 1 | soldiers ost_officer x4 | tags infantry all officer inf_only 39 40 41 42 43 44 45 | units/ger2/squads.set:62
+{"officers_40(ger2)" "Officer"}

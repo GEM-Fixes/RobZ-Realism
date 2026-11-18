@@ -1,8 +1,6 @@
 ; desc/stuff/* of stuff grenade : keys this mod changed or added
 ; mod part
 ; changed from vanilla
-; [changed] stuff grenade/02 grenade_at/n73at.grenade
-{"n73at" "AT granade N73"}
 ; [changed] stuff grenade/01 grenade_ap/f1.grenade
 {"f1" "F1 grenade"}
 ; [changed] stuff grenade/01 grenade_ap/m24.grenade

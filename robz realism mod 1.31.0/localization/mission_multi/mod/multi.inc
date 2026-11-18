@@ -252,7 +252,7 @@
 {"name" "8P <c(D3D3D3)>Q</c> <c(D3D3D3)>S</c> Satsinsgerad <e(shadow)><c(00ff0aff)>4v4</c> (RMP)"}
 }
 {"4v4_stanlingrad_2"
-{"name" "8P <c(D3D3D3)>Q</c> <c(D3D3D3)>S</c> Stanlingrad 2 <e(shadow)><c(00ff0aff)>4v4</c> (RMP)"}
+{"name" "8P <c(D3D3D3)>Q</c> <c(D3D3D3)>S</c> Stalingrad 2 <e(shadow)><c(00ff0aff)>4v4</c> (RMP)"}
 }
 {"4x4_gsm_bigdeserttown_remix"
 {"name" "8P <c(D3D3D3)>Q</c> <c(D3D3D3)>S</c> Gsm Bigdeserttown Remix <e(shadow)><c(00ff0aff)>4x4</c> (RMP)"}
@@ -393,7 +393,7 @@
 {"name" "10P <c(D3D3D3)>Q</c> <c(D3D3D3)>S</c> Outskirts Moscow <e(shadow)><c(00ff0aff)>5v5</c> (RMP)"}
 }
 {"5v5_road_to_bagstogne_day"
-{"name" "10P <c(D3D3D3)>Q</c> <c(D3D3D3)>S</c> Road To Bagstogne Day <e(shadow)><c(00ff0aff)>5v5</c> (RMP)"}
+{"name" "10P <c(D3D3D3)>Q</c> <c(D3D3D3)>S</c> Road To Bastogne Day <e(shadow)><c(00ff0aff)>5v5</c> (RMP)"}
 }
 {"5v5_shattered"
 {"name" "10P <c(D3D3D3)>Q</c> <c(D3D3D3)>S</c> Shattered <e(shadow)><c(00ff0aff)>5v5</c> (RMP)"}

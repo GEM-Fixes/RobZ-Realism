@@ -123,7 +123,7 @@
 ; [new] no buy-list card names this key
 {"how_b(usmc)" "M2A1L 105mm Howitzer"}
 ; [new] no buy-list card names this key
-{"how_a(usmc)" "M114 155m Howitzer"}
+{"how_a(usmc)" "M114 155mm Howitzer"}
 ; [new] no buy-list card names this key | only on card "lvt4" without a buy button (units/vehicles_x.set:111), not in any buy list
 {"lvt4" "LVT-4(A)"}
 ; [new] no buy-list card names this key
@@ -418,3 +418,5 @@
 {"mg42_lafette_ss" "<c(FF5733)>MG42 lafette"}
 ; [new] no buy-list card names this key
 {"np_pak40_ss(ger_ss)" "<c(FF5733)>75mm PaK 40"}
+; [new] no buy-list card names this key
+{"mg34_lafette_ss" "MG 34 Lafette"}

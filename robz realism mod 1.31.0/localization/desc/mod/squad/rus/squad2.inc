@@ -31,6 +31,9 @@
 {"snipers(rus)" "Mosin Sniper team"}
 ; [new] card "snipers3(rus)" cost 180 lvl 1 | soldiers rus_sniper_svtscoped x2 | tags infantry all sniper inf_only 40 41 42 43 44 45 | units/rus/squads_43-45.set:102
 {"snipers3(rus)" "SVT-40 Sniper team"}
+; -- group soldier_10 --
+; [new] card "officers_40(rus)" cost 0 lvl 1 | soldiers rus_officer x4 | tags infantry all officer inf_only 39 40 41 42 43 44 45 | units/rus/squads_43-45.set:105
+{"officers_40(rus)" "Officer"}
 ; -- group radio_1 --
 ; [new] card "radioman_mortar(rus)" cost 200 lvl 1 | soldiers rus_radioman_mortar | tags infantry all mortar 39 40 41 42 43 44 45 | units/rus/squads_43-45.set:107
 {"radioman_mortar(rus)" "Radioman mortar call-in"}

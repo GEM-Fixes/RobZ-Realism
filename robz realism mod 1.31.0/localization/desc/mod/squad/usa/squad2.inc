@@ -45,6 +45,9 @@
 ; -- group soldier_9 --
 ; [changed] card "snipers(usa)" cost 83 lvl 1 | soldiers usa_sniper | tags infantry all sniper inf_only 39 40 41 42 43 44 45 | units/usa/squads_43-45.set:112
 {"snipers(usa)" "M1903A4 marksman"}
+; -- group soldier_10 --
+; [new] card "officers_40(usa)" cost 0 lvl 1 | soldiers usa_officer x4 | tags infantry all officer inf_only 39 40 41 42 43 44 45 | units/usa/squads_43-45.set:115
+{"officers_40(usa)" "Officer"}
 ; -- group radio_1 --
 ; [new] card "radioman_mortar(usa)" cost 200 lvl 1 | soldiers usa_radioman_mortar | tags infantry all mortar 39 40 41 42 43 44 45 | units/usa/squads_43-45.set:118
 {"radioman_mortar(usa)" "Radioman mortar call-in"}

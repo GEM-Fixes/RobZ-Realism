@@ -79,5 +79,9 @@
 ; [new] card "elites_42(rus)" cost 142 lvl 1 | soldiers elite x4, elite2 x3, elite3, elite_mg_asst | tags infantry 42 | units/rus/squads_41-42.set:24
 ; ToE:
 {"elites_42(rus)" "Marine squad 1942"}
+; -- group soldier_3 --
+; [new] card "vehic_supporter_41(rus)" cost 40 lvl 1 | soldiers vehicle_supporter_41 x2 | tags infantry 39 40 41 42 | units/rus/squads_41-42.set:50
+{"vehic_supporter_41(rus)" "Support crew"}
+; -- group squad_5 --
 ; [new] card "storm_mech(rus)" cost 400 | units/rus/squads_41-42.set:38 | card commented out
 {"storm_mech(rus)" "Mechanized Red Guards"}

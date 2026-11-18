@@ -45,6 +45,8 @@
 ; -- group soldier_10 --
 ; [new] card "officers(ger_ss)" cost 0 lvl 1 | soldiers ss_officer x4 | tags infantry all officer inf_only 39 40 41 42 43 44 45 | units/ger/squads_44.set:186
 {"officers(ger_ss)" "SS Officer"}
+; [new] card "officers_40(ger_ss)" cost 0 lvl 1 | soldiers ss_officer x4 | tags infantry all officer inf_only 39 40 41 42 43 44 45 | units/ger/squads_44.set:187
+{"officers_40(ger_ss)" "SS Officer"}
 ; -- group soldier_sa --
 ; [new] card "grenadier_sa_41(ger_ss)" cost 15 lvl 1 | soldiers grenadier_sa_41 | tags infantry 41 42 | units/ger/squads_42.set:80
 {"grenadier_sa_41(ger_ss)" "G41 grenadier"}

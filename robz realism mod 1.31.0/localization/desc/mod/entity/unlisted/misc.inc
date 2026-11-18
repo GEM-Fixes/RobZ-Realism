@@ -1,6 +1,14 @@
 ; desc.lng mod part: desc/entity/* keys no buy-list card names, no .def (source order)
 ; mod part, source order; above each key: [new|changed] and why no buy-list card names it
 ; [new] no buy-list card names this key
+{"how_aa(ger_ss)" "FlaK 37"}
+; [new] no buy-list card names this key
+{"how_b(ger_ss)" "le. FH 18 M"}
+; [new] no buy-list card names this key
+{"how_a(ger_ss)" "sFH 18"}
+; [new] no buy-list card names this key
+{"how_aa_2(ger)" "FlaK 37"}
+; [new] no buy-list card names this key
 {"smoke_seq1" "Smoke Barrage"}
 ; [new] no buy-list card names this key
 {"smoke_seq2" "Smoke Barrage"}

@@ -55,6 +55,8 @@
 ; -- group soldier_10 --
 ; [changed] card "officers(jap)" cost 0 lvl 1 | soldiers jap_officer x4 | tags infantry all officer inf_only 39 40 41 42 43 44 45 | units/jap/squads_44-45.set:109
 {"officers(jap)" "officer"}
+; [new] card "officers_40(jap)" cost 0 lvl 1 | soldiers jap_officer x4 | tags infantry all officer inf_only 39 40 41 42 43 44 45 | units/jap/squads_44-45.set:110
+{"officers_40(jap)" "Officer"}
 ; -- group soldier_6 --
 ; [new] card "mg2(jap)" cost 36 lvl 1 | soldiers mgun2 | tags infantry all inf_only 39 40 41 42 43 44 45 | units/jap/squads_42-43.set:72
 {"mg2(jap)" "Type 96 Machine gunner"}
