@@ -22,11 +22,11 @@
 ; [changed] card "jagdtiger" cost 2750 lvl 1 | soldiers tankman x3, tankman2 | tags sheavy 44 45 | units/ger/vehicles_44.set:144
 {"jagdtiger" "Panzerjäger Tiger Ausf. B 'Jagdtiger'"}
 ; -- group f6 --
-; [changed] card "stug3g" cost 550 lvl 1 | soldiers tankman2, tankman x3 | tags medium 44 45 43 | units/vehicles_x.set:41 | also under ger_ss/v5; cards stug3g, stug3g_ss, stug3g_seq, stug3g_seqx2
+; [changed] card "stug3g" cost 550 lvl 1 | soldiers tankman2, tankman x3 | tags medium 44 45 43 | units/vehicles_x.set:41 | also under ger_ss/v5; cards stug3g, stug3g_ss(ger_ss), stug3g_seq(ger), stug3g_seqx2(ger)
 {"stug3g" "StuG III Ausf. G"}
 ; -- group f5 --
-; [new] card "stug3f_8" cost 600 lvl 1 | soldiers tankman x3, tankman2 | tags medium 43 42 | units/ger/vehicles_43.set:114 | also under ger_ss/v5; cards stug3f_8, stug3f_8_ss
+; [new] card "stug3f_8" cost 600 lvl 1 | soldiers tankman x3, tankman2 | tags medium 43 42 | units/ger/vehicles_43.set:114 | also under ger_ss/v5; cards stug3f_8, stug3f_8_ss(ger_ss)
 {"stug3f_8" "StuG III Ausf. F/8"}
 ; -- group f3 --
-; [new] card "stug3e" cost 375 lvl 1 | soldiers tankman x3, tankman2 | tags medium 42 41 | units/ger/vehicles_42.set:102 | also under ger_ss/v5; cards stug3e, stug3e_ss
+; [new] card "stug3e" cost 375 lvl 1 | soldiers tankman x3, tankman2 | tags medium 42 41 | units/ger/vehicles_42.set:102 | also under ger_ss/v5; cards stug3e, stug3e_ss(ger_ss)
 {"stug3e" "StuG III Ausf. E"}

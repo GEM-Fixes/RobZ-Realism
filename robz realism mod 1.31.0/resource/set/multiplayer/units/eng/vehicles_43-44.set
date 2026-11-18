@@ -5,8 +5,8 @@
 {"willysmb_eng"     ("vs" c(30) t(all 42 43 44 45 inf_only) s(eng) n(3) g(b1) sc(105)  b(v1) cw(0) cp(2)) {level 1} {cost 105} {fore 0.0}}		;30sec
 {"dodgewc55"        ("vs" c(30) t(all 41 42 43 44 45) 	s(eng) n(4) g(b2) sc(225) b(v1) cw(0) cp(2)) {level 1} {cost 225} {fore -3.0}}		;120sec
 {"m3_eng_single"           ("vs" c(60) t(all 42 43 44 45) 	s(eng) n(2) g(b3) sc(175)  b(v1) cw(0) cp(5)) {level 1} {cost 175} {fore -3.0}}			;240sec
-{"universal_carrier_seq" ("vs_seq" c(10) t(all 40 41 42 43 44 45) i(4)	v1(universal_carrier) s(eng) n(2) g(b4) sc(125)  b(v1) cw(0) cp(2.5)) {level 1} {cost 125} {fore -17.0}}	;180sec
-{"universal_carrier_seqx2"  ("vs2_seq" c(10) t(all 40 41 42 43 44 45)  v1(universal_carrier) v2(universal_carrier) i(4) 	s(eng) n(2) g(b4) sc(187)  b(v1) cw(0) cp(2.5)) {level 1} {cost 187} {fore -17.0}}	;180sec
+{"universal_carrier_seq(eng)" ("vs_seq" c(10) t(all 40 41 42 43 44 45) i(4)	v1(universal_carrier) s(eng) n(2) g(b4) sc(125)  b(v1) cw(0) cp(2.5)) {level 1} {cost 125} {fore -17.0}}	;180sec
+{"universal_carrier_seqx2(eng)"  ("vs2_seq" c(10) t(all 40 41 42 43 44 45)  v1(universal_carrier) v2(universal_carrier) i(4) 	s(eng) n(2) g(b4) sc(187)  b(v1) cw(0) cp(2.5)) {level 1} {cost 187} {fore -17.0}}	;180sec
 {"churchill_kangaroo" ("vs" c(680) t(all heavy 44 45) 	s(eng) n(2) g(b5) sc(450) b(v1) cw(0) cp(5)) {level 1} {cost 450} {fore 0.0}}		;680sec
 
 {"bedford"	    ("vs" c(0) t(all 40 41 42 43 44 45) 	s(eng) n(2) g(b6) sc(100)  b(v1) cw(0) cp(2)) {level 1} {cost 100} {fore 0.0}}			;0sec
@@ -66,8 +66,8 @@
 
 {"mk2daimler"       ("v" c(10) t(all 43 44 45) 	s(eng) n1(2) n2(1) g(d3) sc(200) b(v3) cw(0) cp(5)) {level 1} {cost 200} {fore -29.0}}	;300sec
 
-{"staghound_seq"       	("v_seq" c(10) t(all 42 43 44 45) i(3) v1(staghound)	s(eng) n1(3) n2(1) g(d31) sc(250) b(v3) cw(0) cp(5)) {level 1} {cost 250} {fore -41.0}}	;420sec
-{"staghound_seqx2"  ("v2_seq" c(10) t(all 42 43 44 45) v1(staghound) v2(staghound) i(3) 	s(eng) n1(3) n2(1) g(d31) sc(365) b(v3) cw(0) cp(5)) {level 1} {cost 365} {fore -41.0}}	;420sec
+{"staghound_seq(eng)"       	("v_seq" c(10) t(all 42 43 44 45) i(3) v1(staghound)	s(eng) n1(3) n2(1) g(d31) sc(250) b(v3) cw(0) cp(5)) {level 1} {cost 250} {fore -41.0}}	;420sec
+{"staghound_seqx2(eng)"  ("v2_seq" c(10) t(all 42 43 44 45) v1(staghound) v2(staghound) i(3) 	s(eng) n1(3) n2(1) g(d31) sc(365) b(v3) cw(0) cp(5)) {level 1} {cost 365} {fore -41.0}}	;420sec
 {"staghound_mk3"    ("v" c(10) t(all 45) 			s(eng) n1(3) n2(1) g(d32) sc(370) b(v3) cw(0) cp(5)) {level 1} {cost 370} {fore -51.9}}	;519sec
 
 {"m3stuart_eng"     ("v" c(10) t(all 43 44 45) 	s(eng) n1(3) n2(1) g(d8) sc(280) b(v3) cw(0) cp(5)) {level 1} {cost 280} {fore -45.0}}	;460sec
@@ -89,10 +89,10 @@
 
 {"mk6"       	    ("v" c(10) t(all medium 44 45) 	s(eng) n1(3) n2(1) g(e1) sc(280) b(v4) cw(0) cp(15)) {level 1} {cost 280} {fore -47.0}}	;480sec
 
-{"cromwell_mk_iv_seq"   ("v_seq" c(10) t(all medium 44 45) v1(cromwell_mk_iv)   i(2) 	s(eng) n1(3) n2(1) g(e2) sc(342) b(v4) cw(0) cp(15)) {level 1} {cost 342} {fore -74.0}}	;750sec
-{"cromwell_mk_iv_seqx2"  ("v2_seq" c(10) t(all medium 44 45) v1(cromwell_mk_iv) v2(cromwell_mk_iv) i(2) 	s(eng) n1(3) n2(1) g(e2) sc(513) b(v4) cw(0) cp(15)) {level 1} {cost 513} {fore -74.0}}	;750sec
-{"cromwell_mk_vii_seq"  ("v_seq" c(10) t(all medium 44 45)  v1(cromwell_mk_vii) i(1) 	s(eng) n1(3) n2(1) g(e2) sc(430) b(v4) cw(0) cp(15)) {level 1} {cost 430} {fore -81.0}}	;820sec
-{"cromwell_mk_vii_seqx2"  ("v2_seq" c(10) t(all medium 44 45) v1(cromwell_mk_vii) v2(cromwell_mk_vii) i(1) 	s(eng) n1(3) n2(1) g(e2) sc(645) b(v4) cw(0) cp(15)) {level 1} {cost 645} {fore -81.0}}	;820sec
+{"cromwell_mk_iv_seq(eng)"   ("v_seq" c(10) t(all medium 44 45) v1(cromwell_mk_iv)   i(2) 	s(eng) n1(3) n2(1) g(e2) sc(342) b(v4) cw(0) cp(15)) {level 1} {cost 342} {fore -74.0}}	;750sec
+{"cromwell_mk_iv_seqx2(eng)"  ("v2_seq" c(10) t(all medium 44 45) v1(cromwell_mk_iv) v2(cromwell_mk_iv) i(2) 	s(eng) n1(3) n2(1) g(e2) sc(513) b(v4) cw(0) cp(15)) {level 1} {cost 513} {fore -74.0}}	;750sec
+{"cromwell_mk_vii_seq(eng)"  ("v_seq" c(10) t(all medium 44 45)  v1(cromwell_mk_vii) i(1) 	s(eng) n1(3) n2(1) g(e2) sc(430) b(v4) cw(0) cp(15)) {level 1} {cost 430} {fore -81.0}}	;820sec
+{"cromwell_mk_vii_seqx2(eng)"  ("v2_seq" c(10) t(all medium 44 45) v1(cromwell_mk_vii) v2(cromwell_mk_vii) i(1) 	s(eng) n1(3) n2(1) g(e2) sc(645) b(v4) cw(0) cp(15)) {level 1} {cost 645} {fore -81.0}}	;820sec
 {"cromwell_mk_vi"   ("v" c(10) t(all medium 44 45) 	s(eng) n1(3) n2(1) g(e3) sc(405) b(v4) cw(0) cp(15)) {level 1} {cost 405} {fore -74.0}}	;750sec
 {"cromwell_mk_viii" ("v" c(10) t(all medium 44 45) 	s(eng) n1(3) n2(1) g(e3) sc(500) b(v4) cw(0) cp(15)) {level 1} {cost 500} {fore -81.0}}	;820sec
 
@@ -128,16 +128,16 @@
 
 ;   Button Hero   
 
-{"hero2_eng"        ("v1" c(60) c1(dodge) 	t(all hero 41 42 43 44 45) s(eng) n1(eng_saper2:3) n2(eng_saper2:3) g(h1) b(hero)) {level 1} {cost 1.0} {fore -0.5}}
+{"hero2(eng)"        ("v1" c(60) c1(dodge) 	t(all hero 41 42 43 44 45) s(eng) n1(eng_saper2:3) n2(eng_saper2:3) g(h1) b(hero)) {level 1} {cost 1.0} {fore -0.5}}
 
-{"hero3_eng"        ("i8" c(90)		t(all hero 44 45) s(eng) n1(eng_anzac_sl:1) n2(eng_anzac_mg:2) n3(eng_anzac_mg_assist:2) n4(eng_anzac_smg:2) n5(eng_anzac_rifle:1) n6(eng_anzac_at_rifle:1) n7(eng_anzac_rifle_grenadier:1) n8(eng_anzac_smg_thompson:2) g(h10) b(hero)) {level 1} {cost 2.0} {fore -0.5}}
+{"hero3(eng)"        ("i8" c(90)		t(all hero 44 45) s(eng) n1(eng_anzac_sl:1) n2(eng_anzac_mg:2) n3(eng_anzac_mg_assist:2) n4(eng_anzac_smg:2) n5(eng_anzac_rifle:1) n6(eng_anzac_at_rifle:1) n7(eng_anzac_rifle_grenadier:1) n8(eng_anzac_smg_thompson:2) g(h10) b(hero)) {level 1} {cost 2.0} {fore -0.5}}
 
-{"hero_eng_wasp"    ("v1" c(360) c1(wasp) 	t(all hero 41 42 43 44 45 flamethrower) s(eng) n1(vehicle_supporter:2) n2(eng_saper1:0) g(h2) b(hero)) {level 1} {cost 2.0} {fore 0.0}}
+{"hero_wasp(eng)"    ("v1" c(360) c1(wasp) 	t(all hero 41 42 43 44 45 flamethrower) s(eng) n1(vehicle_supporter:2) n2(eng_saper1:0) g(h2) b(hero)) {level 1} {cost 2.0} {fore 0.0}}
 
 
 
-{"hero_staghound_e1"("v1" c(300) c1(staghound_e1) t(all hero 44 45) s(eng) n1(tankman:3) n2(vet_tankman2:1) g(h22) b(hero)) {level 1} {cost 3.0} {fore -0.5}}
-;{"heronew3_eng"	    ("v1" c(600) c1(m4a4_tulip)	t(all hero 45) s(eng) n1(tankman2:4) n2(vet_tankman:1) g(h5) b(hero)) {level 1} {cost 3.0} {fore -0.3}} ;780sec
+{"hero_staghound_e1(eng)"("v1" c(300) c1(staghound_e1) t(all hero 44 45) s(eng) n1(tankman:3) n2(vet_tankman2:1) g(h22) b(hero)) {level 1} {cost 3.0} {fore -0.5}}
+;{"heronew3(eng)"	    ("v1" c(600) c1(m4a4_tulip)	t(all hero 45) s(eng) n1(tankman2:4) n2(vet_tankman:1) g(h5) b(hero)) {level 1} {cost 3.0} {fore -0.3}} ;780sec
 
 
 ;{"25_lb_smoke_8x3" ("v1" c(300) c1(84_smoke_off_map) t(all hero 44 45) s(eng) g(gjgh) b(hero)) {level 1} {cost 3.0} {fore 0.0}} ;6 mins
@@ -151,19 +151,19 @@
 {"smoke_seq5"        ("v_seq" c(300) t(all medium 44 45) v1(84_smoke_off_map) s(eng) n1(0) n2(0) g(gjgh) i(90) sc(100) b(hero) cw(0) cp(2)) {level 1} {cost 0} {fore -0.0}}	; 25 mins
 {"smoke_seq6"        ("v_seq" c(300) t(all medium 44 45) v1(84_smoke_off_map) s(eng) n1(0) n2(0) g(gjgh) i(90) sc(100) b(hero) cw(0) cp(2)) {level 1} {cost 0} {fore -0.0}}	; 30 mins
 
-{"heronew2_eng"     ("v1" c(480) c1(cromwell_mk_vi) t(all hero 44 45) s(eng) n1(tankman:3) n2(vet_tankman2:1) g(h23) b(hero)) {level 1} {cost 4.0} {fore -0.4375}} ;690sec
+{"heronew2(eng)"     ("v1" c(480) c1(cromwell_mk_vi) t(all hero 44 45) s(eng) n1(tankman:3) n2(vet_tankman2:1) g(h23) b(hero)) {level 1} {cost 4.0} {fore -0.4375}} ;690sec
 
-{"hero8_eng"        ("v1" c(600) c1(churchill_avre) t(all hero 44 45) s(eng) n1(tankman:3) n2(vet_tankman2:1) g(h7) b(hero)) {level 1} {cost 4.0} {fore -0.867}} ;1120sec
+{"hero8(eng)"        ("v1" c(600) c1(churchill_avre) t(all hero 44 45) s(eng) n1(tankman:3) n2(vet_tankman2:1) g(h7) b(hero)) {level 1} {cost 4.0} {fore -0.867}} ;1120sec
 
-{"hero_airstrike_eng" ("i1" c(400)	t(all hero 44 45) s(eng) n1(eng_radioman_airstrike:1) g(h1) b(hero)) {level 1} {cost 4.0} {fore -0.5}}
+{"hero_airstrike(eng)" ("i1" c(400)	t(all hero 44 45) s(eng) n1(eng_radioman_airstrike:1) g(h1) b(hero)) {level 1} {cost 4.0} {fore -0.5}}
 
-{"hero6_eng"        ("v1" c(900) c1(churchill_crocodile) t(all hero 44 45 flamethrower) s(eng) n1(tankman:3) n2(vet_tankman2:1) g(h4) b(hero)) {level 1} {cost 5.0} {fore -0.34}} ; 1210sec
+{"hero6(eng)"        ("v1" c(900) c1(churchill_crocodile) t(all hero 44 45 flamethrower) s(eng) n1(tankman:3) n2(vet_tankman2:1) g(h4) b(hero)) {level 1} {cost 5.0} {fore -0.34}} ; 1210sec
 
 ("squad_with5types" side(eng) name(hero_eng_para) c(500) g(h3) c1(eng_paratrooper_cpl_smg:3) c2(eng_paratrooper_sic:3) c3(eng_paratrooper_bren:9) c4(eng_paratrooper_carbine:12) c5(eng_paratroopr_em2:3) b(hero) t(all hero 40 41 42 43 44 45) level(1) cost(7.0) f(0))
 
-{"hero7_eng"        ("2v" c(720) c1(m3_eng) c2(pdr25_vet) 	t(all hero artillery 40 41 42 43 44 45) s(eng) n1(vehicle_supporter:2) n2(vehicle_supporter:2) g(h6) b(hero)) {level 1} {cost 3.0} {fore -0.5}}
+{"hero7(eng)"        ("2v" c(720) c1(m3_eng) c2(pdr25_vet) 	t(all hero artillery 40 41 42 43 44 45) s(eng) n1(vehicle_supporter:2) n2(vehicle_supporter:2) g(h6) b(hero)) {level 1} {cost 3.0} {fore -0.5}}
 
-{"hero_firefly_eng" ("v1" c(1000) c1(m4a4_firefly_tulip) t(all hero 44 45) s(eng) n1(vet_tankman:4) n2(vet_tankman2:1) g(h9) b(hero)) {level 1} {cost 9.0} {fore -0.88}} ;1880sec
+{"hero_firefly(eng)" ("v1" c(1000) c1(m4a4_firefly_tulip) t(all hero 44 45) s(eng) n1(vet_tankman:4) n2(vet_tankman2:1) g(h9) b(hero)) {level 1} {cost 9.0} {fore -0.88}} ;1880sec
 
-{"hero_eng_churchill" ("v32_eng" c(700) v1(churchill_mk_vii) v2(churchill_mk_vii) v3(churchill_mk_v_cs) t(all 44 45 hero) s(eng) n1(tankman:3) n2(vet_tankman2:1) g(h10) b(hero)) {level 1} {cost 10.0} {fore -0.90}} ;1210sec
+{"hero_churchill(eng)" ("v32_eng" c(700) v1(churchill_mk_vii) v2(churchill_mk_vii) v3(churchill_mk_v_cs) t(all 44 45 hero) s(eng) n1(tankman:3) n2(vet_tankman2:1) g(h10) b(hero)) {level 1} {cost 10.0} {fore -0.90}} ;1210sec
 

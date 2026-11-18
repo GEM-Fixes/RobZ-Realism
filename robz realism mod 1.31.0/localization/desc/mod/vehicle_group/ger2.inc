@@ -1,5 +1,8 @@
 ; desc.lng mod part: desc/squad/* keys of cards that group several entities (vehicles with soldiers, copies of units), side ger2
 ; mod part, buy-list order (units read order); above each key: [new|changed] card, cost, contents, tags, units file:line, notes
+; -- button squad1, group squad_7 --
+; [new] card "storm_mech_ost(ger2)" cost 182 lvl 12 | soldiers ost_jager_sa x3, ost_jager_stg, ost_jager_smg x2 | vehicles sdkfz250_1 | tags all 44 45 inf_only | units/ger2/squads.set:21
+{"storm_mech_ost(ger2)" "Mechanized Gebirgsjäger"}
 ; -- button v2, group c3 --
 ; [new] card "2cm_flak38_ger2" cost 200 lvl 1 | soldiers vehicle_supporter x2 | vehicles 2cm_flak38 | tags all 44 45 | units/ger2/vehicles_all.set:29 | copy of 2cm_flak38 (with crew)
 {"2cm_flak38_ger2" "20mm FlaK 38"}

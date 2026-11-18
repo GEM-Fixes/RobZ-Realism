@@ -50,7 +50,7 @@
 
 ;------------------------------stormtrooper halftrack |||| vet 3/4----------------------------------------------
 
-;{"storm_mech_ger"      ("vb6" c(180) c1(sdkfz251_1) 	t(all inf_only 44 45)	s(ger) n1(sturmovik4:2) n2(sturmovik6:2) n3(sturmovik3:2) n4(sturmovik:2) n5(sturmovik2:2) n6(sturmovik:0) g(squad_5) b(squad1)) {level 1} {cost 300} {fore 1.0}}
+;{"storm_mech(ger)"      ("vb6" c(180) c1(sdkfz251_1) 	t(all inf_only 44 45)	s(ger) n1(sturmovik4:2) n2(sturmovik6:2) n3(sturmovik3:2) n4(sturmovik:2) n5(sturmovik2:2) n6(sturmovik:0) g(squad_5) b(squad1)) {level 1} {cost 300} {fore 1.0}}
 
 ;------------------------------AP and AT miners, sappers || vet 2-----------------------------------------------
 

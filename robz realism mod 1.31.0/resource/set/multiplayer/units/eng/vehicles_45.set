@@ -128,24 +128,24 @@
 
 ;°°°Button Hero°°°
 
-{"hero2_eng"        ("v1" c(120) c1(dodge) 	t(all hero 41 42 43 44 45) s(eng) n1(saper2:3) n2(saper3:3) g(h1) b(hero)) {level 1} {cost 1.0} {fore -0.5}}
-{"hero_eng_wasp"    ("v1" c(120) c1(wasp) 	t(all hero 41 42 43 44 45) s(eng) n1(vehicle_supporter:2) n2(saper3:0) g(h2) b(hero)) {level 1} {cost 2.0} {fore -0.5}}
+{"hero2(eng)"        ("v1" c(120) c1(dodge) 	t(all hero 41 42 43 44 45) s(eng) n1(saper2:3) n2(saper3:3) g(h1) b(hero)) {level 1} {cost 1.0} {fore -0.5}}
+{"hero_wasp(eng)"    ("v1" c(120) c1(wasp) 	t(all hero 41 42 43 44 45) s(eng) n1(vehicle_supporter:2) n2(saper3:0) g(h2) b(hero)) {level 1} {cost 2.0} {fore -0.5}}
 
-{"hero_staghound_e1"("v1" c(300) c1(staghound_e1) t(all hero 44 45) s(eng) n1(tankman:3) n2(tankman2:1) g(h22) b(hero)) {level 1} {cost 4.0} {fore -0.5}}
+{"hero_staghound_e1(eng)"("v1" c(300) c1(staghound_e1) t(all hero 44 45) s(eng) n1(tankman:3) n2(tankman2:1) g(h22) b(hero)) {level 1} {cost 4.0} {fore -0.5}}
 ; [removed - unit not in 1.30.10] {"heronew3_eng"	    ("v1" c(600) c1(m4a4_tulip)	t(all hero 45) s(eng) n1(tankman:4) n2(tankman2:1) g(h5) b(hero)) {level 1} {cost 5.0} {fore -0.5}}
-{"heronew2_eng"     ("v1" c(480) c1(cromwell_mk_vi) t(all hero 44 45) s(eng) n1(tankman:3) n2(tankman2:1) g(h23) b(hero)) {level 1} {cost 4.0} {fore -0.5}}
-{"hero8_eng"        ("v1" c(720) c1(churchill_avre) t(all hero 44 45) s(eng) n1(tankman:3) n2(tankman2:1) g(h7) b(hero)) {level 1} {cost 5.0} {fore -0.5}}
+{"heronew2(eng)"     ("v1" c(480) c1(cromwell_mk_vi) t(all hero 44 45) s(eng) n1(tankman:3) n2(tankman2:1) g(h23) b(hero)) {level 1} {cost 4.0} {fore -0.5}}
+{"hero8(eng)"        ("v1" c(720) c1(churchill_avre) t(all hero 44 45) s(eng) n1(tankman:3) n2(tankman2:1) g(h7) b(hero)) {level 1} {cost 5.0} {fore -0.5}}
 ("squad_with5types" side(eng) name(hero_eng_para) c(330) g(h3) c1(para_cpl:3) c2(para_2ic:3) c3(para2:9) c4(para4:12) c5(para5:3) b(hero) t(all hero 40 41 42 43 44 45) level(1) cost(6) f(-0.5))
-{"hero6_eng"        ("v1" c(600) c1(churchill_crocodile) t(all hero 44 45) s(eng) n1(tankman:3) n2(tankman2:1) g(h4) b(hero)) {level 1} {cost 7.0} {fore -0.5}}
+{"hero6(eng)"        ("v1" c(600) c1(churchill_crocodile) t(all hero 44 45) s(eng) n1(tankman:3) n2(tankman2:1) g(h4) b(hero)) {level 1} {cost 7.0} {fore -0.5}}
 
 
-{"hero7_eng"        ("v2" c(720) c1(pdr25_vet) 	t(all hero artillery 40 41 42 43 44 45) s(eng) n1(vehicle_supporter:2) n2(tankman2:0) g(h6) b(hero)) {level 1} {cost 7.0} {fore -0.5}}
-{"hero_firefly_eng" ("v1" c(720) c1(m4a4_firefly_tulip) t(all hero 44 45) s(eng) n1(vet_tankman:4) n2(vet_tankman2:1) g(h9) b(hero)) {level 1} {cost 10.0} {fore -0.5}}
+{"hero7(eng)"        ("v2" c(720) c1(pdr25_vet) 	t(all hero artillery 40 41 42 43 44 45) s(eng) n1(vehicle_supporter:2) n2(tankman2:0) g(h6) b(hero)) {level 1} {cost 7.0} {fore -0.5}}
+{"hero_firefly(eng)" ("v1" c(720) c1(m4a4_firefly_tulip) t(all hero 44 45) s(eng) n1(vet_tankman:4) n2(vet_tankman2:1) g(h9) b(hero)) {level 1} {cost 10.0} {fore -0.5}}
 ; [removed - unit not in 1.30.10] {"hero9_eng"        ("v1" c(1080) c1(black_prince)  t(all postwar hero) s(eng) n1(tankman:3) n2(tankman2:1) g(h8) b(hero)) {level 1} {cost 14.0} {fore -0.5}}
-{"hero_eng_churchill" ("v2" c(650) c1(churchill_mk_vii)  t(all 44 45 hero) s(eng) n1(tankman:3) n2(tankman2:1) g(h10) b(hero)) {level 1} {cost 11.0} {fore -0.5}}
+{"hero_churchill(eng)" ("v2" c(650) c1(churchill_mk_vii)  t(all 44 45 hero) s(eng) n1(tankman:3) n2(tankman2:1) g(h10) b(hero)) {level 1} {cost 11.0} {fore -0.5}}
 
-;{"hero1_eng"       ("i1" c(120)		t(all hero) s(eng) n1(scout:1) g(h1) b(hero)) {level 1} {cost 1.0} {fore -0.5}}
-;{"heronew1_eng"    ("i3" c(120)		t(all hero) s(eng) n1(rifle3:4) n2(smg3:3) n3(mgun2:1) g(h1) b(hero)) {level 1} {cost 1.0} {fore -0.5}}
-;{"hero3_eng"       ("i3" c(240)		t(all hero) s(eng) n1(elite4:4) n2(elite5:5) n3(elite6:1) g(h2) b(hero)) {level 1} {cost 2.0} {fore -0.5}}
-;{"hero4_eng"       ("v4" c(360) c1(m3_eng) 	t(all hero) s(eng) n1(elite:5) n2(elite2:2) n3(elite3:2) n4(elite_at:1) g(h2) b(hero)) {level 1} {cost 3.0} {fore -0.5}}
-;{"hero5_eng"       ("i2" c(480)		t(all hero) s(eng) n1(radioman:1) n2(smg:2) g(h3) b(hero)) {level 1} {cost 4.0} {fore -0.5}}
+;{"hero1(eng)"       ("i1" c(120)		t(all hero) s(eng) n1(scout:1) g(h1) b(hero)) {level 1} {cost 1.0} {fore -0.5}}
+;{"heronew1(eng)"    ("i3" c(120)		t(all hero) s(eng) n1(rifle3:4) n2(smg3:3) n3(mgun2:1) g(h1) b(hero)) {level 1} {cost 1.0} {fore -0.5}}
+;{"hero3(eng)"       ("i3" c(240)		t(all hero) s(eng) n1(elite4:4) n2(elite5:5) n3(elite6:1) g(h2) b(hero)) {level 1} {cost 2.0} {fore -0.5}}
+;{"hero4(eng)"       ("v4" c(360) c1(m3_eng) 	t(all hero) s(eng) n1(elite:5) n2(elite2:2) n3(elite3:2) n4(elite_at:1) g(h2) b(hero)) {level 1} {cost 3.0} {fore -0.5}}
+;{"hero5(eng)"       ("i2" c(480)		t(all hero) s(eng) n1(radioman:1) n2(smg:2) g(h3) b(hero)) {level 1} {cost 4.0} {fore -0.5}}

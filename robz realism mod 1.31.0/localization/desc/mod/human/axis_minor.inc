@@ -4,23 +4,23 @@
 ; new
 ; [new] first in card "Sissi(axis_minor)" axis_minor/squad1 cost 159 | units/axis_minor/squads.set:23
 {"axm_fin_sissi_mgun" "<c(c3baae)>Konekiväärimies"}
-; [new] first in card "SissiSP(axis_minor)" axis_minor/hero cost 1 | units/axis_minor/vehicles.set:123
+; [new] first in card "hero_sissisp(axis_minor)" axis_minor/hero cost 1 | units/axis_minor/vehicles.set:123
 {"axm_fin_sissi_mgun_vision" "<c(c3baae)>Sissi Konekiväärimies"}
 ; [new] first in card "Sissi(axis_minor)" axis_minor/squad1 cost 159 | units/axis_minor/squads.set:23
 {"axm_fin_sissi_mgun_assist" "<c(c3baae)>Konekiväärin Apulainen"}
-; [new] first in card "SissiSP(axis_minor)" axis_minor/hero cost 1 | units/axis_minor/vehicles.set:123
+; [new] first in card "hero_sissisp(axis_minor)" axis_minor/hero cost 1 | units/axis_minor/vehicles.set:123
 {"axm_fin_sissi_mgun_assist_vision" "<c(c3baae)>Sissi Konekiväärin Apulainen"}
 ; [new] first in card "Sissi(axis_minor)" axis_minor/squad1 cost 159 | units/axis_minor/squads.set:23
 {"axm_fin_sissi_rifle" "<c(c3baae)>Kiväärimies"}
-; [new] first in card "SissiSP(axis_minor)" axis_minor/hero cost 1 | units/axis_minor/vehicles.set:123
+; [new] first in card "hero_sissisp(axis_minor)" axis_minor/hero cost 1 | units/axis_minor/vehicles.set:123
 {"axm_fin_sissi_rifle_vision" "<c(c3baae)>Sissi Kiväärimies"}
 ; [new] first in card "Sissi(axis_minor)" axis_minor/squad1 cost 159 | units/axis_minor/squads.set:23
 {"axm_fin_sissi_smg" "<c(c3baae)>Alivisaaliluodikkotulen Käyttäjä"}
-; [new] first in card "SissiSP(axis_minor)" axis_minor/hero cost 1 | units/axis_minor/vehicles.set:123
+; [new] first in card "hero_sissisp(axis_minor)" axis_minor/hero cost 1 | units/axis_minor/vehicles.set:123
 {"axm_fin_sissi_smg_vision" "<c(c3baae)>Sissi Alivisaaliluodikkotulen Käyttäjä"}
 ; [new] not in any buy-list card
 {"axm_fin_sissi_squadleader" "<c(c3baae)>Joukkueenjohtaja"}
-; [new] first in card "SissiSP(axis_minor)" axis_minor/hero cost 1 | units/axis_minor/vehicles.set:123 | in 2 cards
+; [new] first in card "hero_sissisp(axis_minor)" axis_minor/hero cost 1 | units/axis_minor/vehicles.set:123 | in 2 cards
 {"axm_fin_sissi_squadleader_vision" "<c(c3baae)>Sissi Joukkueenjohtaja"}
 ; [new] first in card "finnish_sniper(axis_minor)" axis_minor/squad2 cost 90 | units/axis_minor/squads.set:89
 {"axm_fin_sniper" "<c(c3baae)>Tarkka-Ampuja"}
@@ -32,23 +32,23 @@
 {"axm_fin_vehicle_supporter" "<c(c3baae)>Tukihenkilöstö"}
 ; [new] first in card "Hungarian_Assualt_Infantry(axis_minor)" axis_minor/squad1 cost 186 | units/axis_minor/squads.set:25
 {"axm_hun_assualt_flamer" "<c(c3baae)>Támadó Lángszóró"}
-; [new] first in card "hungarian_mobile_unit" axis_minor/hero cost 12 | units/axis_minor/vehicles.set:132 | in 3 cards
+; [new] first in card "hero_hungarian_mobile_unit(axis_minor)" axis_minor/hero cost 12 | units/axis_minor/vehicles.set:132 | in 3 cards
 {"axm_hun_assualt_mgun" "<c(c3baae)>Tohamgépfegyveres"}
 ; [new] first in card "Hungarian_Assualt_Infantry(axis_minor)" axis_minor/squad1 cost 186 | units/axis_minor/squads.set:25 | in 2 cards
 {"axm_hun_assualt_mgun_assist" "<c(c3baae)>Géppuska Segéd"}
-; [new] first in card "hungarian_mobile_unit" axis_minor/hero cost 12 | units/axis_minor/vehicles.set:132 | in 3 cards
+; [new] first in card "hero_hungarian_mobile_unit(axis_minor)" axis_minor/hero cost 12 | units/axis_minor/vehicles.set:132 | in 3 cards
 {"axm_hun_assualt_pzf" "<c(c3baae)>Támadó Páncélgránátos"}
-; [new] first in card "hungarian_mobile_unit" axis_minor/hero cost 12 | units/axis_minor/vehicles.set:132 | in 2 cards
+; [new] first in card "hero_hungarian_mobile_unit(axis_minor)" axis_minor/hero cost 12 | units/axis_minor/vehicles.set:132 | in 2 cards
 {"axm_hun_assualt_rifle" "<c(c3baae)>Támadó Puska"}
 ; [new] first in card "Hungarian_Assualt_Infantry(axis_minor)" axis_minor/squad1 cost 186 | units/axis_minor/squads.set:25 | in 2 cards
 {"axm_hun_assualt_smg" "<c(c3baae)>Rohamgépfegyver"}
-; [new] first in card "hungarian_mobile_unit" axis_minor/hero cost 12 | units/axis_minor/vehicles.set:132 | in 2 cards
+; [new] first in card "hero_hungarian_mobile_unit(axis_minor)" axis_minor/hero cost 12 | units/axis_minor/vehicles.set:132 | in 2 cards
 {"axm_hun_assualt_squadleader" "<c(c3baae)>Támadó Szakaszvezető"}
 ; [new] first in card "hungarian_smg_squad(axis_minor)" axis_minor/squad1 cost 84 | units/axis_minor/squads.set:10 | in 2 cards
 {"axm_hun_squadleader_smg" "<c(c3baae)>Támadó Szakaszvezető"}
-; [new] first in card "tiger_ace_hun" axis_minor/hero cost 16 | units/axis_minor/vehicles.set:152
+; [new] first in card "hero_tiger_ace_hun(axis_minor)" axis_minor/hero cost 16 | units/axis_minor/vehicles.set:152
 {"axm_hun_elite_tankcommander" "<c(c3baae)>Harckocsikapitány [Elite]"}
-; [new] first in card "tiger_ace_hun" axis_minor/hero cost 16 | units/axis_minor/vehicles.set:152
+; [new] first in card "hero_tiger_ace_hun(axis_minor)" axis_minor/hero cost 16 | units/axis_minor/vehicles.set:152
 {"axm_hun_elite_tankman" "<c(c3baae)>Harckocsizó [Elite]"}
 ; [new] first in card "turan3_vet" axis_minor/v6 cost 650 | units/axis_minor/vehicles.set:110
 {"axm_hun_vet_tankman" "<c(c3baae)>Harckocsizó [Veteran]"}
@@ -57,11 +57,11 @@
 ; [new] first in card "csaba40m" axis_minor/v3 cost 220 | units/axis_minor/vehicles.set:56 | in 14 cards
 {"axm_hun_tankcommander" "<c(c3baae)>Tüzérparancsnok"}
 ; [new] first in card "csaba40m" axis_minor/v3 cost 220 | units/axis_minor/vehicles.set:56 | in 14 cards
-{"axm_hun_tankman" "<c(c3baae)>tankember"}
+{"axm_hun_tankman" "<c(c3baae)>Tankember"}
 ; [new] first in card "tankcrew(axis_minor)" axis_minor/squad1 cost 70 | units/axis_minor/squads.set:36
 {"axm_hun_tankcommander_single" "<c(c3baae)>Tüzérparancsnok"}
 ; [new] first in card "tankcrew(axis_minor)" axis_minor/squad1 cost 70 | units/axis_minor/squads.set:36
-{"axm_hun_tankman_single" "<c(c3baae)>tankember"}
+{"axm_hun_tankman_single" "<c(c3baae)>Tankember"}
 ; [new] first in card "botond" axis_minor/v1 cost 75 | units/axis_minor/vehicles.set:11 | in 2 cards
 {"axm_hun_vehicle_supporter" "<c(c3baae)>Támogató Csapat"}
 ; [new] first in card "Alpini(axis_minor)" axis_minor/squad1 cost 215 | units/axis_minor/squads.set:27 | in 2 cards
@@ -80,18 +80,18 @@
 {"axm_ita_alpini_squadleader" "<c(c3baae)>Caposquadra Alpini"}
 ; [new] first in card "Bersaglieri(axis_minor)" axis_minor/squad1 cost 158 | units/axis_minor/squads.set:21 | in 3 cards
 {"axm_ita_bersaglieri_mgun" "<c(c3baae)>Mitragliere Bersaglier"}
-; [new] first in card "Elite_Resita(axis_minor)" axis_minor/hero cost 3 | units/axis_minor/vehicles.set:127 | in 5 cards
+; [new] first in card "hero_elite_resita(axis_minor)" axis_minor/hero cost 3 | units/axis_minor/vehicles.set:127 | in 5 cards
 {"axm_ita_bersaglieri_mgun_assist" "<c(c3baae)>Assistente Mitragliere Bersaglier"}
-; [new] first in card "Elite_Resita(axis_minor)" axis_minor/hero cost 3 | units/axis_minor/vehicles.set:127 | in 5 cards
+; [new] first in card "hero_elite_resita(axis_minor)" axis_minor/hero cost 3 | units/axis_minor/vehicles.set:127 | in 5 cards
 {"axm_ita_bersaglieri_rifle" "<c(c3baae)>Fuciliero Bersaglier"}
 ; [new] first in card "Bersaglieri(axis_minor)" axis_minor/squad1 cost 158 | units/axis_minor/squads.set:21
 {"axm_ita_bersaglieri_rifle2" "<c(c3baae)>Fuciliero Bersaglier"}
-; [new] first in card "Elite_Resita(axis_minor)" axis_minor/hero cost 3 | units/axis_minor/vehicles.set:127 | in 4 cards
+; [new] first in card "hero_elite_resita(axis_minor)" axis_minor/hero cost 3 | units/axis_minor/vehicles.set:127 | in 4 cards
 {"axm_ita_bersaglieri_smg" "<c(c3baae)>Mitragliere Bersaglier"}
 ; [new] first in card "Paracadutisti(axis_minor)" axis_minor/squad1 cost 311 | units/axis_minor/squads.set:34 | in 2 cards
 {"axm_ita_paratrooper_mgun" "<c(c3baae)>Mitragliere Paracadutista"}
 ; [new] first in card "Paracadutisti(axis_minor)" axis_minor/squad1 cost 311 | units/axis_minor/squads.set:34 | in 2 cards
-{"axm_ita_paratrooper_mgun_assist" "<c(c3baae)>Assistente Mitragliere Paracadutista "}
+{"axm_ita_paratrooper_mgun_assist" "<c(c3baae)>Assistente Mitragliere Paracadutista"}
 ; [new] first in card "Paracadutisti(axis_minor)" axis_minor/squad1 cost 311 | units/axis_minor/squads.set:34
 {"axm_ita_paratrooper_rifle" "<c(c3baae)>Fucile Paracadutista"}
 ; [new] first in card "Paracadutisti(axis_minor)" axis_minor/squad1 cost 311 | units/axis_minor/squads.set:34
@@ -100,9 +100,9 @@
 {"axm_ita_paratrooper_squadleader" "<c(c3baae)>Paracadutista Caposquadra"}
 ; [new] first in card "m149" axis_minor/v2 cost 1100 | units/axis_minor/vehicles.set:51 | in 13 cards
 {"axm_ita_tankcommander" "<c(c3baae)>Comandante di Carro Armato"}
-; [new] first in card "vet_td" axis_minor/hero cost 8 | units/axis_minor/vehicles.set:147
+; [new] first in card "hero_vet_td(axis_minor)" axis_minor/hero cost 8 | units/axis_minor/vehicles.set:147
 {"axm_ita_vettankcommander" "<c(c3baae)>Comandante di Carro Armato [Veteran]"}
-; [new] first in card "vet_td" axis_minor/hero cost 8 | units/axis_minor/vehicles.set:147
+; [new] first in card "hero_vet_td(axis_minor)" axis_minor/hero cost 8 | units/axis_minor/vehicles.set:147
 {"axm_ita_vettankman" "<c(c3baae)>Uomo del Carro Armato[Veteran]"}
 ; [new] first in card "m149" axis_minor/v2 cost 1100 | units/axis_minor/vehicles.set:51 | in 12 cards
 {"axm_ita_tankman" "<c(c3baae)>Uomo del Carro Armato"}
@@ -130,7 +130,7 @@
 {"axm_rom_tankman" "<c(c3baae)>Omul Tancului"}
 ; [new] first in card "sgrw_34" axis_minor/v2 cost 320 | units/axis_minor/vehicles.set:21 | in 5 cards
 {"axm_rom_vehicle_supporter" "<c(c3baae)>Echipa de Suport"}
-; [new] first in card "Elite_Resita(axis_minor)" axis_minor/hero cost 3 | units/axis_minor/vehicles.set:127
+; [new] first in card "hero_elite_resita(axis_minor)" axis_minor/hero cost 3 | units/axis_minor/vehicles.set:127
 {"axm_rom_elite_vehicle_supporter" "<c(c3baae)>Echipa de Suport [Elite]"}
 ; [new] not in any buy-list card
 {"axm_rom_vet_tankman" "<c(c3baae)>Tanchist [Veteran]"}
@@ -168,7 +168,7 @@
 {"axm_fin_at_rifle" "<c(c3baae)>Panssarintorjunta Kiväärimies"}
 ; [new] first in card "Boys_AT_Rifle(axis_minor)" axis_minor/squad2 cost 66 | units/axis_minor/squads.set:74
 {"axm_fin_at_rifleassist" "<c(c3baae)>Avustaja Panssarintorjunta Kiväärimies"}
-; [new] first in card "white_death(axis_minor)" axis_minor/hero cost 2 | units/axis_minor/vehicles.set:125
+; [new] first in card "hero_white_death(axis_minor)" axis_minor/hero cost 2 | units/axis_minor/vehicles.set:125
 {"axm_fin_elite_sniper" "<c(c3baae)>Tarkka-ampuja [Elite]"}
 ; [new] first in card "fin_kaukopartio(axis_minor)" axis_minor/squad1 cost 148 | units/axis_minor/squads.set:18
 {"axm_fin_kaukopartio_mgun" "<c(c3baae)>Konekiväärimies Kaukopartio"}

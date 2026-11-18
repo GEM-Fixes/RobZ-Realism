@@ -30,9 +30,9 @@
 ; [new] card "churchill_mk_ix" cost 650 lvl 1 | soldiers tankman x3, tankman2 | tags all heavy 44 45 | units/eng/vehicles_43-44.set:110
 {"churchill_mk_ix" "Churchill Mk.IX"}
 ; -- group e2 --
-; [new] card "cromwell_mk_iv" cost 380 lvl 1 | soldiers tankman x3, tankman2 | tags all medium 44 45 | units/vehicles_x.set:28 | cards cromwell_mk_iv, cromwell_mk_iv_seq, cromwell_mk_iv_seqx2
+; [new] card "cromwell_mk_iv" cost 380 lvl 1 | soldiers tankman x3, tankman2 | tags all medium 44 45 | units/vehicles_x.set:28 | cards cromwell_mk_iv, cromwell_mk_iv_seq(eng), cromwell_mk_iv_seqx2(eng)
 {"cromwell_mk_iv" "Cruiser Mk.VIII Cromwell IV"}
-; [changed] card "cromwell_mk_vii" cost 430 lvl 1 | soldiers tankman x3, tankman2 | tags all medium 44 45 | units/vehicles_x.set:29 | cards cromwell_mk_vii, cromwell_mk_vii_seq, cromwell_mk_vii_seqx2
+; [changed] card "cromwell_mk_vii" cost 430 lvl 1 | soldiers tankman x3, tankman2 | tags all medium 44 45 | units/vehicles_x.set:29 | cards cromwell_mk_vii, cromwell_mk_vii_seq(eng), cromwell_mk_vii_seqx2(eng)
 {"cromwell_mk_vii" "Cruiser Mk.VIII Cromwell VII"}
 ; -- group e0 --
 ; [new] card "m3grant" cost 380 lvl 1 | soldiers tankman x3, tankman2 | tags all 43 medium arcade 42 41 | units/eng/vehicles_45.set:88
@@ -51,7 +51,7 @@
 {"crusaderi" "Crusader Mk.I"}
 ; -- group e2 --
 ; [new] card "crusaderics" cost 400 lvl 1 | soldiers tankman x3, tankman2 | tags 42 41 | units/eng/vehicles_42.set:64
-{"crusaderics" "Crusader Mk.I  CS"}
+{"crusaderics" "Crusader Mk.I CS"}
 ; -- group e3 --
 ; [new] card "crusaderii" cost 325 lvl 1 | soldiers tankman x3, tankman2 | tags 42 41 | units/eng/vehicles_42.set:65
 {"crusaderii" "Crusader Mk.II"}

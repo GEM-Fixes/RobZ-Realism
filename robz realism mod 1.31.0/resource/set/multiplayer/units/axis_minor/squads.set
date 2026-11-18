@@ -26,7 +26,7 @@
 
 ("squad_with7types" side(axis_minor) name(Alpini) c(60) g(squad_10) c1(axm_ita_alpini_rifle:4) c2(axm_ita_alpini_smg:2) c3(axm_ita_alpini_mgun:1) c4(axm_ita_alpini_mgun_assist:1) c5(axm_ita_alpini_rifle2:3) c6(axm_ita_alpini_squadleader:1) c7(axm_ita_alpini_sniper:1) b(squad1) t(all inf_only 44 45) level(1) cost(215) f(1.0))
 
-{"Bersaglieri_Motorcycle"  ("bers_mot" c(60) c1(guzzi-sa500) n1(axm_ita_bersaglieri_rifle) n2(axm_ita_bersaglieri_smg:2) n3(axm_ita_bersaglieri_mgun) n4(axm_ita_bersaglieri_mgun_assist)  t(all hero 44 45) s(axis_minor) g(squad_mot) b(squad1)) {level 1} {cost 215} {fore 0.0}}
+{"bersaglieri_motorcycle(axis_minor)"  ("bers_mot" c(60) c1(guzzi-sa500) n1(axm_ita_bersaglieri_rifle) n2(axm_ita_bersaglieri_smg:2) n3(axm_ita_bersaglieri_mgun) n4(axm_ita_bersaglieri_mgun_assist)  t(all hero 44 45) s(axis_minor) g(squad_mot) b(squad1)) {level 1} {cost 215} {fore 0.0}}
 
 ("squad_with5types_vehicle" side(axis_minor) name(Bersaglieri_Mot) c(30) g(squad_11) v1(fiat35) c1(axm_ita_vehicle_supporter:2) c2(axm_ita_bersaglieri_rifle:3) c3(axm_ita_bersaglieri_mgun_assist:1) c4(axm_ita_bersaglieri_smg:4) c5(axm_bersaglieri_mgun:2) b(squad1) t(all inf_only 44 45) level(1) cost(174) f(0.0))
 

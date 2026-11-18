@@ -32,17 +32,17 @@
 {"ost_panzershreckassist" "<c(c3baae)>Panzerschreck Jäger asst."}
 ; [new] first in card "bazooker3(ger2)" ger2/squad2 cost 103 | units/ger2/squads.set:47 | in 2 cards
 {"ost_panzershreck" "<c(c3baae)>Panzerschreck Jäger"}
-; [new] first in card "hero4_ost" ger2/hero cost 2 | units/ger2/vehicles_all.set:125
+; [new] first in card "hero4_ost(ger2)" ger2/hero cost 2 | units/ger2/vehicles_all.set:125
 {"ost_straf_mauzer" "<c(c3baae)>Strafbataillon Schütze"}
-; [new] first in card "hero4_ost" ger2/hero cost 2 | units/ger2/vehicles_all.set:125
+; [new] first in card "hero4_ost(ger2)" ger2/hero cost 2 | units/ger2/vehicles_all.set:125
 {"ost_straf_ppsh" "<c(c3baae)>Strafbataillon Schütze"}
-; [new] first in card "hero4_ost" ger2/hero cost 2 | units/ger2/vehicles_all.set:125
+; [new] first in card "hero4_ost(ger2)" ger2/hero cost 2 | units/ger2/vehicles_all.set:125
 {"ost_straf_mp28" "<c(c3baae)>Strafbataillon Schütze"}
 ; [new] not in any buy-list card
 {"elite_tankman" "<c(c3baae)>Panzerbesatzung [Elite]"}
-; [new] first in card "hero_ost_stug" ger2/hero cost 8 | units/ger2/vehicles_all.set:138
+; [new] first in card "hero_ost_stug(ger2)" ger2/hero cost 8 | units/ger2/vehicles_all.set:138
 {"ost_elite_tankman" "<c(c3baae)>Panzerbesatzung [Elite]"}
-; [new] first in card "hero_ost_stug" ger2/hero cost 8 | units/ger2/vehicles_all.set:138
+; [new] first in card "hero_ost_stug(ger2)" ger2/hero cost 8 | units/ger2/vehicles_all.set:138
 {"ost_elite_tankman2" "<c(c3baae)>Panzerbesatzung Kommandant [Elite]"}
 ; [new] not in any buy-list card
 {"elite_tankman2" "<c(c3baae)>Panzerbesatzung Kommandant [Elite]"}
@@ -114,7 +114,7 @@
 {"ost_mgun_asst" "<c(c3baae)>Jäger MG asst."}
 ; [new] first in card "officers(ger2)" ger2/squad2 cost 0 | units/ger2/squads.set:61 | in 2 cards
 {"ost_officer" "<c(c3baae)>Jäger Hauptmann"}
-; [new] first in card "hero1_ost" ger2/hero cost 12 | units/ger2/vehicles_all.set:127
+; [new] first in card "hero1_ost(ger2)" ger2/hero cost 12 | units/ger2/vehicles_all.set:127
 {"ost_officer2" "<c(c3baae)>Jäger Hauptmann [Veteran]"}
 ; [new] first in card "home_guards(ger2)" ger2/squad1 cost 56 | units/ger2/squads.set:4 | in 2 cards
 {"ost_recon_mg" "<c(c3baae)>Leichter Aufklärer MG-schütze"}
@@ -164,7 +164,7 @@
 {"ost_pzgren_sl" "<c(c3baae)>Jäger Gruppenführer [Unteroffizier]"}
 ; [new] first in card "stormtroopers(ger2)" ger2/squad1 cost 315 | units/ger2/squads.set:17
 {"ost_pzgren_slassist" "<c(c3baae)>Jäger SL asst. [Obergefreiter]"}
-; [new] first in card "hero5_ost" ger2/hero cost 3 | units/ger2/vehicles_all.set:131
+; [new] first in card "hero5_ost(ger2)" ger2/hero cost 3 | units/ger2/vehicles_all.set:131
 {"ost_pzgren_g43_pzfaust" "<c(c3baae)>Jäger"}
 ; [new] first in card "stormtroopers(ger2)" ger2/squad1 cost 315 | units/ger2/squads.set:17 | in 2 cards
 {"ost_pzgren_smg_pzfaust" "<c(c3baae)>Jäger"}
@@ -186,5 +186,5 @@
 {"ost_tankman" "<c(c3baae)>Panzerbesatzung [Veteran]"}
 ; [new] first in card "tankmans(ger2)" ger2/squad2 cost 125 | units/ger2/squads.set:41
 {"ost_tankman2" "<c(c3baae)>Panzerbesatzung Kommandant [Veteran]"}
-; [new] first in card "hero9_ost" ger2/hero cost 13 | units/ger2/vehicles_all.set:143
+; [new] first in card "hero9_ost(ger2)" ger2/hero cost 13 | units/ger2/vehicles_all.set:143
 {"ost_support" "<c(c3baae)>Jäger Kanonier"}

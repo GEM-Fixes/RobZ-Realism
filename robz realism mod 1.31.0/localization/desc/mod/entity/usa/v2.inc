@@ -12,5 +12,5 @@
 ; [new] card "np_m5cannon" cost 400 lvl 1 | soldiers vehicle_supporter x2 | tags all medium 44 45 | units/usa/vehicles_43-45.set:42 | cards np_m5cannon, np_m5cannon_towed
 {"np_m5cannon" "M5 AT gun"}
 ; -- group c1 --
-; [new] card "50_browning_m2hb" cost 180 lvl 1 | soldiers vehicle_supporter x2 | tags all 42 43 44 45 | units/vehicles_x.set:19 | cards 50_browning_m2hb, 50_browning_m2hb_seq, 50_browning_m2hb_seqx2
+; [new] card "50_browning_m2hb" cost 180 lvl 1 | soldiers vehicle_supporter x2 | tags all 42 43 44 45 | units/vehicles_x.set:19 | cards 50_browning_m2hb, 50_browning_m2hb_seq(usa), 50_browning_m2hb_seqx2(usa)
 {"50_browning_m2hb" ".50 cal M2HB Browning M2 tripod"}

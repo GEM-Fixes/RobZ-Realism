@@ -95,12 +95,12 @@
 
 ;°°°Button Hero°°°
 
-{"hero3_rus"        ("v1" c(240) c1(gaz67)   	t(hero 43) s(rus) n1(sniper2:2) n2(tankman2:0) g(h1) b(hero)) {level 1} {cost 1.0} {fore -0.5}}
+{"hero3(rus)"        ("v1" c(240) c1(gaz67)   	t(hero 43) s(rus) n1(sniper2:2) n2(tankman2:0) g(h1) b(hero)) {level 1} {cost 1.0} {fore -0.5}}
 
-{"hero5_rus"        ("i2" c(240)		t(hero 43) s(rus) n1(rifle3:30) n2(smg2:3) g(h2) b(hero)) {level 1} {cost 2.0} {fore -0.5}}
+{"hero5(rus)"        ("i2" c(240)		t(hero 43) s(rus) n1(rifle3:30) n2(smg2:3) g(h2) b(hero)) {level 1} {cost 2.0} {fore -0.5}}
 
-{"hero_rus_isu152"  ("v1" c(600) c1(isu152) 	t(hero 43) s(rus) n1(tankman:4) n2(tankman2:1) g(h5) b(hero)) {level 1} {cost 8.0} {fore -0.5}}
+{"hero_isu152(rus)"  ("v1" c(600) c1(isu152) 	t(hero 43) s(rus) n1(tankman:4) n2(tankman2:1) g(h5) b(hero)) {level 1} {cost 8.0} {fore -0.5}}
 
-{"hero_orgel"  	    ("v31" c(960) c1(bm13) 	t(hero artillery rocket 43) s(rus) n(vehicle_supporter:2) g(h10) b(hero)) {level 1} {cost 16.0} {fore -0.5}}
-{"hero_t34platoon"  ("v32" c(400) c1(t34_2) 	t(hero 43) s(rus) n1(tankman:3) n2(tankman:1) g(h9) b(hero)) {level 1} {cost 8.0} {fore -0.5}}
-{"hero9_rus"  	    ("v2" c(1200) c1(203b4) 	t(hero artillery heavyart 43) s(rus) n1(vehicle_supporter:2) n2(tankman2:0) g(h8) b(hero)) {level 1} {cost 20.0} {fore -0.5}}
+{"hero_orgel(rus)"  	    ("v31" c(960) c1(bm13) 	t(hero artillery rocket 43) s(rus) n(vehicle_supporter:2) g(h10) b(hero)) {level 1} {cost 16.0} {fore -0.5}}
+{"hero_t34platoon(rus)"  ("v32" c(400) c1(t34_2) 	t(hero 43) s(rus) n1(tankman:3) n2(tankman:1) g(h9) b(hero)) {level 1} {cost 8.0} {fore -0.5}}
+{"hero9(rus)"  	    ("v2" c(1200) c1(203b4) 	t(hero artillery heavyart 43) s(rus) n1(vehicle_supporter:2) n2(tankman2:0) g(h8) b(hero)) {level 1} {cost 20.0} {fore -0.5}}

@@ -46,7 +46,7 @@
 
 ;------------------------------stormtrooper halftrack |||| vet 3/4----------------------------------------------
 
-{"storm_mech_usa"      ("vb3_usa" c(380) c1(m3_usa) 	t(all inf_only 42 43 44 45) 	  s(usa) n1(6) n2(2) n3(2) 		g(squad_5) b(squad1)) {level 1} {cost 414} {fore 1.0}}
+{"storm_mech(usa)"      ("vb3_usa" c(380) c1(m3_usa) 	t(all inf_only 42 43 44 45) 	  s(usa) n1(6) n2(2) n3(2) 		g(squad_5) b(squad1)) {level 1} {cost 414} {fore 1.0}}
 
 
 

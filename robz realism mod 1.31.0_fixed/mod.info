@@ -1,7 +1,0 @@
-{Mod
-	{Name "Robz Realism mod 1.31.0 (as2 fix)"}
-	{Desc "as2 fix patch for Robz Realism mod 1.31.0. Delete this folder to undo."}
-	{MinGameVersion "3.262"}
-	{MaxGameVersion "3.262"}
-	{Require "robz realism mod 1.31.0"}
-}

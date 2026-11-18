@@ -55,21 +55,29 @@
 {"elite_tankmans(rus)" "Veteran tank crew"}
 ; -- group partisan --
 ; [new] card "home_guards_41(rus)" cost 85 lvl 1 | soldiers home_guard x5, home_guard2 x2, home_guard3 x2, home_guard_mg | tags infantry 41 | units/rus/squads_41-42.set:5
-{"home_guards_41(rus)" "Partisan"}
+; ToE:
+{"home_guards_41(rus)" "Partisan 1941"}
 ; [new] card "home_guards_42(rus)" cost 80 lvl 1 | soldiers home_guard x3, home_guard2 x3, home_guard3 x2, home_guard_mg | tags infantry 42 | units/rus/squads_41-42.set:6
-{"home_guards_42(rus)" "Partisan"}
+; ToE:
+{"home_guards_42(rus)" "Partisan 1942"}
 ; -- group squad_1 --
 ; [new] card "conscripts(rus)" cost 70 lvl 1 | soldiers conscript_rifle x6, conscript_smg x4 | tags infantry all inf_only 41 42 | units/rus/squads_41-42.set:7
 {"conscripts(rus)" "Reservists"}
 ; -- group squad_3 --
 ; [new] card "riflemans_41(rus)" cost 123 lvl 1 | soldiers squadleader_41, rifle_41 x6, smg_41 x2, mgun_41, mgun_asst_41 | tags infantry 41 | units/rus/squads_41-42.set:14
-{"riflemans_41(rus)" "Rifle squad"}
+; ToE:
+{"riflemans_41(rus)" "Rifle squad 1941"}
 ; [new] card "riflemans_42(rus)" cost 109 lvl 1 | soldiers squadleader_41, rifle_41 x3, smg_41 x3, mgun_41, mgun_asst_41 | tags infantry 42 | units/rus/squads_41-42.set:15
-{"riflemans_42(rus)" "Rifle squad"}
+; ToE:
+{"riflemans_42(rus)" "Rifle squad 1942"}
 ; [new] card "smg3(rus)" cost 150 lvl 1 | soldiers smg3 x7, flamer3 | tags infantry all inf_only 42 43 44 45 | units/rus/squads_41-42.set:19
 {"smg3(rus)" "Shock Troops"}
 ; -- group squad_5 --
 ; [new] card "elites_40(rus)" cost 166 lvl 1 | soldiers elite_40 x6, elite2_40 x3, elite3_40, elite_mg_asst | tags infantry 40 41 | units/rus/squads_41-42.set:23
-{"elites_40(rus)" "Marine squad"}
+; ToE:
+{"elites_40(rus)" "Marine squad 1940"}
 ; [new] card "elites_42(rus)" cost 142 lvl 1 | soldiers elite x4, elite2 x3, elite3, elite_mg_asst | tags infantry 42 | units/rus/squads_41-42.set:24
-{"elites_42(rus)" "Marine squad"}
+; ToE:
+{"elites_42(rus)" "Marine squad 1942"}
+; [new] card "storm_mech(rus)" cost 400 | units/rus/squads_41-42.set:38 | card commented out
+{"storm_mech(rus)" "Mechanized Red Guards"}

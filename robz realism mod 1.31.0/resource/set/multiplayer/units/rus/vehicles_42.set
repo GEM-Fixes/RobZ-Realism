@@ -86,9 +86,9 @@
 
 ;°°°Button Hero°°°
 
-{"hero5_rus"        ("i2" c(240)		t(hero 42) s(rus) n1(rifle3:30) n2(smg2:3) g(h2) b(hero)) {level 1} {cost 2.0} {fore -0.5}}
+{"hero5(rus)"        ("i2" c(240)		t(hero 42) s(rus) n1(rifle3:30) n2(smg2:3) g(h2) b(hero)) {level 1} {cost 2.0} {fore -0.5}}
 
 ; [removed - unit not in 1.30.10] {"hero8_rus"        ("v1" c(600) c1(kv2) 	t(hero 42) s(rus) n1(tankman:3) n2(tankman2:1) g(h5) b(hero)) {level 1} {cost 8.0} {fore -0.5}}
 
-{"hero_orgel"  	    ("v31" c(960) c1(bm13) 	t(hero artillery rocket 42) s(rus) n(vehicle_supporter:2) g(h10) b(hero)) {level 1} {cost 16.0} {fore -0.5}}
-{"hero9_rus"  	    ("v2" c(1200) c1(203b4) 	t(hero artillery heavyart 42) s(rus) n1(vehicle_supporter:2) n2(tankman2:0) g(h8) b(hero)) {level 1} {cost 20.0} {fore -0.5}}
+{"hero_orgel(rus)"  	    ("v31" c(960) c1(bm13) 	t(hero artillery rocket 42) s(rus) n(vehicle_supporter:2) g(h10) b(hero)) {level 1} {cost 16.0} {fore -0.5}}
+{"hero9(rus)"  	    ("v2" c(1200) c1(203b4) 	t(hero artillery heavyart 42) s(rus) n1(vehicle_supporter:2) n2(tankman2:0) g(h8) b(hero)) {level 1} {cost 20.0} {fore -0.5}}

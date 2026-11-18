@@ -108,7 +108,7 @@
 {"eng_pioneer_3trench" "<c(c3baae)>Pioneer"}
 ; [new] first in card "pioneers(eng)" eng/squad1 cost 306 | units/eng/squads_42-45.set:6
 {"eng_pioneer_sl" "<c(c3baae)>Pioneer Section Leader [Cpl]"}
-; [new] first in card "hero_airstrike_eng" eng/hero cost 4 | units/eng/vehicles_43-44.set:158
+; [new] first in card "hero_airstrike(eng)" eng/hero cost 4 | units/eng/vehicles_43-44.set:158
 {"eng_radioman_airstrike" "<c(c3baae)>Forward Air controller"}
 ; [new] first in card "riflemans(eng)" eng/squad1 cost 163 | units/eng/squads_42-45.set:11 | in 4 cards
 {"eng_rifleman_smoke" "<c(c3baae)>Rifleman"}
@@ -128,25 +128,25 @@
 {"eng_rifleman_canada" "<c(c3baae)>Canadian Rifleman"}
 ; [new] first in card "sappers(eng)" eng/squad1 cost 70 | units/eng/squads_42-45.set:39
 {"eng_saper" "<c(c3baae)>Sapper"}
-; [new] first in card "hero2_eng" eng/hero cost 1 | units/eng/vehicles_43-44.set:131
+; [new] first in card "hero2(eng)" eng/hero cost 1 | units/eng/vehicles_43-44.set:131
 {"eng_saper2" "<c(c3baae)>Royal Engineer"}
 ; [new] first in card "smgs2(eng)" eng/squad2 cost 14 | units/eng/squads_42-45.set:55
 {"eng_smg_wp" "<c(c3baae)>Rifleman"}
-; [new] first in card "hero3_eng" eng/hero cost 2 | units/eng/vehicles_43-44.set:133
+; [new] first in card "hero3(eng)" eng/hero cost 2 | units/eng/vehicles_43-44.set:133
 {"eng_anzac_sl" "<c(c3baae)>9th Div Section Leader [CPL]"}
-; [new] first in card "hero3_eng" eng/hero cost 2 | units/eng/vehicles_43-44.set:133
-{"eng_anzac_smg" "<c(c3baae)>9th Div Assault Rifleman "}
-; [new] first in card "hero3_eng" eng/hero cost 2 | units/eng/vehicles_43-44.set:133
-{"eng_anzac_smg_thompson" "<c(c3baae)>9th Div Assault Rifleman "}
-; [new] first in card "hero3_eng" eng/hero cost 2 | units/eng/vehicles_43-44.set:133
+; [new] first in card "hero3(eng)" eng/hero cost 2 | units/eng/vehicles_43-44.set:133
+{"eng_anzac_smg" "<c(c3baae)>9th Div Assault Rifleman"}
+; [new] first in card "hero3(eng)" eng/hero cost 2 | units/eng/vehicles_43-44.set:133
+{"eng_anzac_smg_thompson" "<c(c3baae)>9th Div Assault Rifleman"}
+; [new] first in card "hero3(eng)" eng/hero cost 2 | units/eng/vehicles_43-44.set:133
 {"eng_anzac_rifle" "<c(c3baae)>9th Div Rifleman"}
-; [new] first in card "hero3_eng" eng/hero cost 2 | units/eng/vehicles_43-44.set:133
+; [new] first in card "hero3(eng)" eng/hero cost 2 | units/eng/vehicles_43-44.set:133
 {"eng_anzac_at_rifle" "<c(c3baae)>9th Div Rifleman"}
-; [new] first in card "hero3_eng" eng/hero cost 2 | units/eng/vehicles_43-44.set:133
+; [new] first in card "hero3(eng)" eng/hero cost 2 | units/eng/vehicles_43-44.set:133
 {"eng_anzac_rifle_grenadier" "<c(c3baae)>9th Div Rifleman"}
-; [new] first in card "hero3_eng" eng/hero cost 2 | units/eng/vehicles_43-44.set:133
+; [new] first in card "hero3(eng)" eng/hero cost 2 | units/eng/vehicles_43-44.set:133
 {"eng_anzac_mg" "<c(c3baae)>9th Div Bren gunner"}
-; [new] first in card "hero3_eng" eng/hero cost 2 | units/eng/vehicles_43-44.set:133
+; [new] first in card "hero3(eng)" eng/hero cost 2 | units/eng/vehicles_43-44.set:133
 {"eng_anzac_mg_assist" "<c(c3baae)>9th Div Brenn Gunner asst."}
 ; [new] first in card "smgs2_40(eng)" eng/squad2 cost 9 | units/eng/squads_40-41.set:46
 {"smg_40" "<c(c3baae)>Rifleman"}
@@ -202,7 +202,7 @@
 {"vehicle_supporter_40" "<c(c3baae)>Support Crew"}
 ; [new] first in card "cometa34_elite_gun" eng/v6 cost 950 | units/eng/vehicles_43-44.set:125 | in 4 cards
 {"vet_tankman" "<c(c3baae)>Tank Crew [Veteran]"}
-; [new] first in card "hero_staghound_e1" eng/hero cost 3 | units/eng/vehicles_43-44.set:139 | in 6 cards
+; [new] first in card "hero_staghound_e1(eng)" eng/hero cost 3 | units/eng/vehicles_43-44.set:139 | in 6 cards
 {"vet_tankman2" "<c(c3baae)>Tank Commander [Veteran]"}
 ; [new] first in card "elite_tankmans(eng)" eng/squad1 cost 100 | units/eng/squads_42-45.set:47
 {"eng_vet_tankman2_single" "<c(c3baae)>Tank Commander [Veteran]"}

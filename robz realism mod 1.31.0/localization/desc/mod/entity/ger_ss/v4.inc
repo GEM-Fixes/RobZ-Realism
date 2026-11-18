@@ -10,10 +10,10 @@
 ; [changed] card "pz4g_ss" cost 480 lvl 1 | soldiers tankman x3, tankman2 | vehicles pz4g | tags medium all 43 44 | units/ger_ss/vehicles_44.set:119 | {info pz4g}; also under ger/v4; cards pz4g_ss, pz4g; copy of pz4g (with crew)
 {"pz4g" "PzKpfw IV Ausf. G"}
 ; -- group e16 --
-; [new] card "pz5a_ss" cost 1450 lvl 1 | soldiers tankman x4, tankman2 | vehicles pz5a | tags heavy all 43 44 | units/ger_ss/vehicles_44.set:121 | {info pz5a}; also under ger/v4; cards pz5a_ss, pz5a; copy of pz5a (with crew)
+; [new] card "pz5a_ss(ger_ss)" cost 1450 lvl 1 | soldiers tankman x4, tankman2 | vehicles pz5a | tags heavy all 43 44 | units/ger_ss/vehicles_44.set:121 | {info pz5a}; also under ger/v4; cards pz5a_ss(ger_ss), pz5a; copy of pz5a (with crew)
 {"pz5a" "PzKpfw V Panther Ausf. A"}
 ; -- group e17 --
-; [new] card "pz6h_ss" cost 1300 lvl 1 | soldiers tankman x3, tankman2 | vehicles pz6h | tags heavy all 43 44 | units/ger_ss/vehicles_44.set:123 | {info pz6h}; also under ger/v4; cards pz6h_ss, pz6h; copy of pz6h (with crew)
+; [new] card "pz6h_ss(ger_ss)" cost 1300 lvl 1 | soldiers tankman x3, tankman2 | vehicles pz6h | tags heavy all 43 44 | units/ger_ss/vehicles_44.set:123 | {info pz6h}; also under ger/v4; cards pz6h_ss(ger_ss), pz6h; copy of pz6h (with crew)
 {"pz6h" "PzKpfw VI Tiger Ausf. H"}
 ; -- group e19 --
 ; [new] card "pz6bh_ss" cost 2550 lvl 1 | soldiers tankman x4, tankman2 | vehicles pz6bh_ss | tags sheavy all 44 45 heavy | units/ger_ss/vehicles_44.set:125 | {info pz6bh_ss}

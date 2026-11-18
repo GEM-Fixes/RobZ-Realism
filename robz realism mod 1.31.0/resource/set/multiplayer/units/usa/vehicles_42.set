@@ -73,7 +73,7 @@
 
 ;°°°Button Hero°°°
 
-{"hero1_usa"        ("v0" c(120) c1(m8_howitzer) 	t(all 42 hero) s(usa) n1(elite:2) g(h1) b(hero)) {level 1} {cost 2.0} {fore -0.5}}
+{"hero1(usa)"        ("v0" c(120) c1(m8_howitzer) 	t(all 42 hero) s(usa) n1(elite:2) g(h1) b(hero)) {level 1} {cost 2.0} {fore -0.5}}
 ; [removed - unit not in 1.30.10] {"hero11_usa"	    ("i4" c(400)			t(all 42 hero) s(usa) n1(rifle:24) n2(rifle_grenadier:3) n3(mgun:6) n4(squadleader:3) g(h5) b(hero)) {level 1} {cost 4.0} {fore -0.5}}
-{"hero10_usa"	    ("v51" c(450) c1(81mm_brandt_usa) c2(m1_57mm) c3(30_browning_m1919a4) t(all 42 hero) s(usa) n1(vehicle_supporter:2) g(h7) b(hero)) {level 1} {cost 6.0} {fore -0.5}}
-{"m7_hero"  	    ("v2" c(760) c1(m7) 		t(all artillery 42 hero) s(usa) n1(tankman:4) n2(tankman2:0) g(h9) b(hero)) {level 1} {cost 13.0} {fore -0.5}}
+{"hero10(usa)"	    ("v51" c(450) c1(81mm_brandt_usa) c2(m1_57mm) c3(30_browning_m1919a4) t(all 42 hero) s(usa) n1(vehicle_supporter:2) g(h7) b(hero)) {level 1} {cost 6.0} {fore -0.5}}
+{"hero_m7_hero(usa)"  	    ("v2" c(760) c1(m7) 		t(all artillery 42 hero) s(usa) n1(tankman:4) n2(tankman2:0) g(h9) b(hero)) {level 1} {cost 13.0} {fore -0.5}}

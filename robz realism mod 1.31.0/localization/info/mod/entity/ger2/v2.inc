@@ -2,10 +2,10 @@
 ; mod part, buy-list order (units read order); above each key: [new|changed] card, cost, contents, tags, units file:line, notes
 ; -- group c8 --
 ; [new] card "pak36_ger2" cost 150 lvl 1 | soldiers vehicle_supporter x2 | tags all 40 41 42 43 44 45 | units/ger2/vehicles_all.set:34
-{"pak36_ger2" "The PaK 36 being a small-calibre weapon, it was found to be inadequate against allied medium and heavy tanks. Still, the gun was effective against the most common light tanks. During the initial phases of Operation Barbarossa the PaK 36 could still penetrate the majority of Soviet tanks at ranges up to 1000m from the front."}
+{"pak36_ger2" "The PaK 36 is a small-calibre anti-tank gun, effective against the most common light tanks but inadequate against Allied medium and heavy tanks."}
 ; -- group c9 --
 ; [new] card "pak38_ger2" cost 230 lvl 1 | soldiers vehicle_supporter x2 | tags all 40 41 42 43 44 45 | units/ger2/vehicles_all.set:35
-{"pak38_ger2" "The 50mm PaK 38 was the successor to the 37mm PaK 36, and the predecessor to the 75mm PaK 40. When the Soviets introduced their T-34, the PaK 38 was one of the few anti-tank guns capable of penetrating its armor at the time. Though this weapon was replaced by the PaK 40 and other more-powerful anti-tank weapons, the PaK 38 remained in useful service until the end of the war."}
+{"pak38_ger2" "The 50mm PaK 38 is the successor to the 37mm PaK 36 and one of the few early guns able to penetrate the T-34. Though replaced by the PaK 40, it stays useful to the end of the war."}
 ; -- group c10 --
 ; [new] card "pak40_ger2" cost 470 lvl 1 | soldiers vehicle_supporter x2 | tags all medium 42 43 44 45 | units/ger2/vehicles_all.set:37
-{"pak40_ger2" "The first guns of this type appeared during the spring of 1942, on the Eastern Front. The PaK 40 was designed to take on tanks and armored vehicles, however, its fairly large calibre and the availability of high-explosive rounds allowed it to be used to suppress weapon emplacements, demolish light fortifications and eliminate enemy personnel. Its accuracy and effective range exceed that of the Soviet ZIS-3 field artillery gun."}
+{"pak40_ger2" "The PaK 40 is an anti-tank gun whose large calibre and HE rounds also let it hit emplacements, light fortifications and infantry. Its accuracy and range exceed the Soviet ZIS-3."}

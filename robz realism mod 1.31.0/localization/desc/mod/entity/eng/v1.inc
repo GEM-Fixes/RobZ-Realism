@@ -19,7 +19,7 @@
 ; [new] card "ammo_box_eng_special" cost 150 lvl 1 | soldiers vehicle_supporter x2 | tags all 43 44 45 | units/eng/vehicles_43-44.set:20
 {"ammo_box_eng_special" "Special-shell ammunition crate (UK)"}
 ; -- group b4 --
-; [changed] card "universal_carrier" cost 125 lvl 1 | soldiers vehicle_supporter x2 | tags all 40 41 42 43 44 45 | units/vehicles_x.set:26 | cards universal_carrier, universal_carrier_seq, universal_carrier_seqx2
+; [changed] card "universal_carrier" cost 125 lvl 1 | soldiers vehicle_supporter x2 | tags all 40 41 42 43 44 45 | units/vehicles_x.set:26 | cards universal_carrier, universal_carrier_seq(eng), universal_carrier_seqx2(eng)
 {"universal_carrier" "Universal Carrier"}
 ; -- group a1 --
 ; [changed] card "bedford_inf" cost 50 lvl 1 | soldiers vehicle_supporter x2 | tags inf_only | units/eng/vehicles_45.set:9

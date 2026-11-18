@@ -59,3 +59,5 @@
 {"elites_42(jap)" "Teishin Paratrooper section"}
 ; [new] card "stormtroopers_42(jap)" cost 325 lvl 1 | soldiers sturmovik x4, sturmovik2 x2, sturmovik3, sturmovik4 x5, sturmovik6b x3 | tags infantry 42 43 | units/jap/squads_42-43.set:30
 {"stormtroopers_42(jap)" "SNLF Paratroopers section"}
+; [new] card "storm_mech(jap)" cost 375 | units/jap/squads_42-43.set:34 | card commented out
+{"storm_mech(jap)" "Mechanized SNLF"}

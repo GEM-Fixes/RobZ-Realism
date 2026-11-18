@@ -19,10 +19,10 @@
 ; [new] card "t96_150mm_towed" cost 750 lvl 1 | soldiers vehicle_supporter x4 | vehicles ss-ki, type96_150mm | tags all artillery heavyart 42 43 44 45 | units/jap/vehicles_all.set:52
 {"t96_150mm_towed" "150mm Type 96 w/ SS-Ki"}
 ; -- button v3, group d2 --
-; [new] card "ha-go_seq" cost 160 lvl 1 | soldiers tankman x2, tankman2 | vehicles ha-go | tags all light 42 43 44 45 | units/jap/vehicles_all.set:63 | copy of ha-go (with crew)
-{"ha-go_seq" "<c(FF5733)>Ha-Go"}
-; [new] card "ha-go_seqx2" cost 240 lvl 1 | soldiers tankman x4, tankman2 x2 | vehicles ha-go x2 | tags all light 42 43 44 45 | units/jap/vehicles_all.set:64
-{"ha-go_seqx2" "<c(00ff04)>2x Ha-Go"}
+; [new] card "ha-go_seq(jap)" cost 160 lvl 1 | soldiers tankman x2, tankman2 | vehicles ha-go | tags all light 42 43 44 45 | units/jap/vehicles_all.set:63 | copy of ha-go (with crew)
+{"ha-go_seq(jap)" "<c(FF5733)>Ha-Go"}
+; [new] card "ha-go_seqx2(jap)" cost 240 lvl 1 | soldiers tankman x4, tankman2 x2 | vehicles ha-go x2 | tags all light 42 43 44 45 | units/jap/vehicles_all.set:64
+{"ha-go_seqx2(jap)" "<c(00ff04)>2x Ha-Go"}
 ; -- button squad1, group squad_5 --
 ; [new] card "elites_42_drop(jap)" cost 400 lvl 1 | soldiers elite x6, elite2 x3, elite3 x2, elite4 x4, a | vehicles airborne_spawner | tags infantry 42 43 only-one | units/jap/squads_42-43.set:26
 {"elites_42_drop(jap)" "Paradropped Teishin section"}

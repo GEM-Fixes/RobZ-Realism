@@ -35,7 +35,7 @@
 
 ;------------------------------stormtrooper halftrack |||| vet 3/4----------------------------------------------
 
-;{"storm_mech_rus"      ("vb3" c(380) c1(m3) 		t(all inf_only 45) 		     s(rus) n1(6) n2(2) n3(2) 		g(squad_5) b(squad1)) {level 1} {cost 400} {fore 1.0}}
+;{"storm_mech(rus)"      ("vb3" c(380) c1(m3) 		t(all inf_only 45) 		     s(rus) n1(6) n2(2) n3(2) 		g(squad_5) b(squad1)) {level 1} {cost 400} {fore 1.0}}
 
 ;------------------------------AP and AT miners, sappers || vet 2-----------------------------------------------
 

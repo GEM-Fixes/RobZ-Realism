@@ -28,9 +28,9 @@
 {"ss_panzershreckassist" "<c(c3baae)>SS-Panzerschreck Schütze asst."}
 ; [new] first in card "bazooker3(ger_ss)" ger_ss/squad2 cost 69 | units/ger/squads_44.set:131
 {"ss_panzerfaust" "<c(c3baae)>SS-Panzerfaust infantry"}
-; [new] first in card "tiger_ace" ger_ss/hero cost 16 | units/ger_ss/vehicles_44.set:182 | in 2 cards
+; [new] first in card "hero_tiger_ace(ger_ss)" ger_ss/hero cost 16 | units/ger_ss/vehicles_44.set:182 | in 2 cards
 {"elite_tankman" "<c(c3baae)>SS-Panzerbesatzung [Elite]"}
-; [new] first in card "tiger_ace" ger_ss/hero cost 16 | units/ger_ss/vehicles_44.set:182 | in 2 cards
+; [new] first in card "hero_tiger_ace(ger_ss)" ger_ss/hero cost 16 | units/ger_ss/vehicles_44.set:182 | in 2 cards
 {"elite_tankman2" "<c(c3baae)>SS-Panzerbesatzung Kommandant [Elite]"}
 ; [new] first in card "elites_44(ger_ss)" ger_ss/squad1 cost 246 | units/ger/squads_44.set:78 | in 2 cards
 {"ss_fallschirm_smg" "<c(c3baae)>SS-Fallschirmjäger"}
@@ -114,9 +114,9 @@
 {"ss_grenadier_smg" "<c(c3baae)>SS-Grenadier"}
 ; [new] first in card "grenadiers_44(ger_ss)" ger_ss/squad1 cost 184 | units/ger/squads_44.set:28 | in 3 cards
 {"ss_grenadier_stg" "<c(c3baae)>SS-Grenadier"}
-; [new] first in card "5_cm_granatwerfer_36_ss" ger_ss/v22 cost 110 | units/ger_ss/vehicles_44.set:57
+; [new] first in card "5_cm_granatwerfer_36_ss(ger_ss)" ger_ss/v22 cost 110 | units/ger_ss/vehicles_44.set:57
 {"ss_light_mortar" "<c(c3baae)>5cm GrW.36 SS-Schütze"}
-; [new] first in card "5_cm_granatwerfer_36_ss" ger_ss/v22 cost 110 | units/ger_ss/vehicles_44.set:57
+; [new] first in card "5_cm_granatwerfer_36_ss(ger_ss)" ger_ss/v22 cost 110 | units/ger_ss/vehicles_44.set:57
 {"ss_light_mortar_assist" "<c(c3baae)>5cm GrW.36 SS-Schütze asst."}
 ; [new] first in card "lssah_pzgrens_44(ger_ss)" ger_ss/squad1 cost 377 | units/ger/squads_44.set:68 | in 2 cards
 {"ss_lssah_pzgren_at" "<c(c3baae)>SS-Panzergrenadier Panzerschreck Schütze 'LSSAH'"}
@@ -234,9 +234,9 @@
 {"ss_sturmpio3" "<c(c3baae)>SS-Sturmpioneer"}
 ; [new] first in card "sturmpios(ger_ss)" ger_ss/squad1 cost 249 | units/ger/squads_44.set:42
 {"ss_sturmpio4" "<c(c3baae)>SS-Sturmpioneer"}
-; [new] first in card "stuh42_ss" ger_ss/v2 cost 600 | units/ger_ss/vehicles_44.set:52 | in 52 cards
+; [new] first in card "stuh42_ss(ger_ss)" ger_ss/v2 cost 600 | units/ger_ss/vehicles_44.set:52 | in 52 cards
 {"tankman" "<c(c3baae)>SS Panzerbesatzung"}
-; [new] first in card "stuh42_ss" ger_ss/v2 cost 600 | units/ger_ss/vehicles_44.set:52 | in 54 cards
+; [new] first in card "stuh42_ss(ger_ss)" ger_ss/v2 cost 600 | units/ger_ss/vehicles_44.set:52 | in 54 cards
 {"tankman2" "<c(c3baae)>SS Panzerbesatzung Kommandant"}
 ; [new] first in card "tankmans(ger_ss)" ger_ss/squad1 cost 80 | units/ger/squads_44.set:99
 {"ss_tankman" "<c(c3baae)>SS Panzerbesatzung"}
@@ -268,33 +268,33 @@
 {"vehicle_supporter" "<c(c3baae)>SS-Kanonier"}
 ; [new] first in card "vehic_supporter(ger_ss)" ger_ss/squad1 cost 25 | units/ger/squads_44.set:96
 {"ss_vehicle_supporter" "<c(c3baae)>SS-Kanonier"}
-; [new] first in card "hero_ss_das_reich" ger_ss/hero cost 3 | units/ger_ss/vehicles_44.set:168
+; [new] first in card "hero_ss_das_reich(ger_ss)" ger_ss/hero cost 3 | units/ger_ss/vehicles_44.set:168
 {"dr_pzgren_mg" "<c(c3baae)>SS-Panzergrenadier MG-schütze 'Das Reich'"}
 ; [new] not in any buy-list card
 {"dr_pzgren_mg_39" "<c(c3baae)>SS-Panzergrenadier MG-schütze 'Das Reich'"}
-; [new] first in card "hero_ss_das_reich" ger_ss/hero cost 3 | units/ger_ss/vehicles_44.set:168
+; [new] first in card "hero_ss_das_reich(ger_ss)" ger_ss/hero cost 3 | units/ger_ss/vehicles_44.set:168
 {"dr_pzgren_mg_asst" "<c(c3baae)>SS-Panzergrenadier MG asst. 'Das Reich'"}
-; [new] first in card "hero_ss_das_reich" ger_ss/hero cost 3 | units/ger_ss/vehicles_44.set:168
+; [new] first in card "hero_ss_das_reich(ger_ss)" ger_ss/hero cost 3 | units/ger_ss/vehicles_44.set:168
 {"dr_pzgren_pzfst" "<c(c3baae)>SS-Panzergrenadier 'Das Reich'"}
-; [new] first in card "hero_ss_das_reich" ger_ss/hero cost 3 | units/ger_ss/vehicles_44.set:168
+; [new] first in card "hero_ss_das_reich(ger_ss)" ger_ss/hero cost 3 | units/ger_ss/vehicles_44.set:168
 {"dr_pzgren_pzfst_stg" "<c(c3baae)>SS-Panzergrenadier 'Das Reich'"}
-; [new] first in card "hero_ss_das_reich" ger_ss/hero cost 3 | units/ger_ss/vehicles_44.set:168
+; [new] first in card "hero_ss_das_reich(ger_ss)" ger_ss/hero cost 3 | units/ger_ss/vehicles_44.set:168
 {"dr_pzgren_pzfst60_sa" "<c(c3baae)>SS-Panzergrenadier 'Das Reich'"}
-; [new] first in card "hero_ss_das_reich" ger_ss/hero cost 3 | units/ger_ss/vehicles_44.set:168
+; [new] first in card "hero_ss_das_reich(ger_ss)" ger_ss/hero cost 3 | units/ger_ss/vehicles_44.set:168
 {"dr_pzgren_rifle" "<c(c3baae)>SS-Panzergrenadier 'Das Reich'"}
-; [new] first in card "hero_ss_das_reich" ger_ss/hero cost 3 | units/ger_ss/vehicles_44.set:168
+; [new] first in card "hero_ss_das_reich(ger_ss)" ger_ss/hero cost 3 | units/ger_ss/vehicles_44.set:168
 {"dr_pzgren_sa" "<c(c3baae)>SS-Panzergrenadier 'Das Reich'"}
 ; [new] not in any buy-list card
 {"dr_pzgren_sa_41" "<c(c3baae)>SS-Panzergrenadier 'Das Reich'"}
-; [new] first in card "hero_ss_das_reich" ger_ss/hero cost 3 | units/ger_ss/vehicles_44.set:168
+; [new] first in card "hero_ss_das_reich(ger_ss)" ger_ss/hero cost 3 | units/ger_ss/vehicles_44.set:168
 {"dr_pzgren_sl" "<c(c3baae)>SS-Panzergrenadier Gruppenführer 'Das Reich' [Unterscharführer]"}
-; [new] first in card "hero_ss_das_reich" ger_ss/hero cost 3 | units/ger_ss/vehicles_44.set:168
+; [new] first in card "hero_ss_das_reich(ger_ss)" ger_ss/hero cost 3 | units/ger_ss/vehicles_44.set:168
 {"dr_pzgren_sl_asst" "<c(c3baae)>SS-Panzergrenadier SL asst. 'Das Reich' [Rottenführer]"}
 ; [new] not in any buy-list card
 {"dr_pzgren_smg" "<c(c3baae)>SS-Panzergrenadier 'Das Reich'"}
 ; [new] not in any buy-list card
 {"dr_pzgren_stg" "<c(c3baae)>SS-Panzergrenadier 'Das Reich'"}
-; [new] first in card "hero_ss_sdkfz251_16" ger_ss/hero cost 2 | units/ger_ss/vehicles_44.set:165 | in 6 cards
+; [new] first in card "hero_ss_sdkfz251_16(ger_ss)" ger_ss/hero cost 2 | units/ger_ss/vehicles_44.set:165 | in 6 cards
 {"ss_support" "<c(c3baae)>SS-Kanonier"}
 ; [new] first in card "pz4h_vet" ger_ss/v6 cost 725 | units/ger_ss/vehicles_44.set:148 | in 7 cards
 {"vet_tankman" "<c(c3baae)>SS Panzerbesatzung [Veteran]"}
@@ -302,5 +302,5 @@
 {"vet_tankman2" "<c(c3baae)>SS Panzerbesatzung Kommandant [Veteran]"}
 ; [new] first in card "elite_tankmans(ger_ss)" ger_ss/squad1 cost 100 | units/ger/squads_44.set:102
 {"ss_vet_tankman2" "<c(c3baae)>SS Panzerbesatzung Kommandant [Veteran]"}
-; [new] first in card "hero_ss_sniper" ger_ss/hero cost 1 | units/ger_ss/vehicles_44.set:161
+; [new] first in card "hero_ss_sniper(ger_ss)" ger_ss/hero cost 1 | units/ger_ss/vehicles_44.set:161
 {"ss_vet_sniper" "<c(c3baae)>Scharfschütze [Veteran]"}

@@ -79,6 +79,6 @@
 
 ;°°°Button Hero°°°
 
-{"hero2_eng"        ("v1" c(120) c1(dodge) 	t(hero 42) s(eng) n1(saper2:3) n2(saper3:3) g(h1) b(hero)) {level 1} {cost 1.0} {fore -0.5}}
+{"hero2(eng)"        ("v1" c(120) c1(dodge) 	t(hero 42) s(eng) n1(saper2:3) n2(saper3:3) g(h1) b(hero)) {level 1} {cost 1.0} {fore -0.5}}
 
-{"hero7_eng"        ("v2" c(720) c1(pdr25_vet) 	t(hero artillery 42) s(eng) n1(vehicle_supporter:2) n2(tankman2:0) g(h6) b(hero)) {level 1} {cost 9.0} {fore -0.5}}
+{"hero7(eng)"        ("v2" c(720) c1(pdr25_vet) 	t(hero artillery 42) s(eng) n1(vehicle_supporter:2) n2(tankman2:0) g(h6) b(hero)) {level 1} {cost 9.0} {fore -0.5}}

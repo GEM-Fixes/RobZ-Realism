@@ -284,11 +284,11 @@ SplitTestValues = { 1, 2, 3, 5, 10 }   -- each value is tried twice
 BotGuide = {
   usa = {
     w = {
-      ["specialinf(usa)"] = 2.5, ["elites(usa)"] = 1.8, ["elites_101st(usa)"] = 1.6, ["storm_mech_usa"] = 1.6,
+      ["specialinf(usa)"] = 2.5, ["elites(usa)"] = 1.8, ["elites_101st(usa)"] = 1.6, ["storm_mech(usa)"] = 1.6,
       ["elite_101st_para3b(usa)"] = 2.5, ["elite3b(usa)"] = 1.6, ["mg2(usa)"] = 1.5,
       ["stormtrooper5(usa)"] = 2.0, ["stormtrooper_at(usa)"] = 2.0,
-      ["browning_30cal"] = 1.6, ["30_browning_m1919a4_seq"] = 1.6, ["30_browning_m1919a4_seqx2"] = 1.6,
-      ["browning_m2hb"] = 1.6, ["50_browning_m2hb_seq"] = 1.6, ["50_browning_m2hb_seqx2"] = 1.6, ["maxson"] = 1.6,
+      ["browning_30cal"] = 1.6, ["30_browning_m1919a4_seq(usa)"] = 1.6, ["30_browning_m1919a4_seqx2(usa)"] = 1.6,
+      ["browning_m2hb"] = 1.6, ["50_browning_m2hb_seq(usa)"] = 1.6, ["50_browning_m2hb_seqx2(usa)"] = 1.6, ["maxson"] = 1.6,
       ["60mm_brandt_usa"] = 2.0, ["np_m5cannon"] = 1.3,
       ["m8grayhound"] = 0.5, ["m20"] = 0.2, ["m3stuart_early"] = 1.5, ["m5a1"] = 1.5, ["m24"] = 1.5, ["m8"] = 2.5,
       ["m4sherman"] = 1.8, ["m4a1"] = 1.8, ["m4a3e2_jumbo"] = 2.5, ["m4a3e2_jumbo_76"] = 2.5, ["m36"] = 2.0, ["m36b1"] = 2.0,
@@ -309,7 +309,7 @@ BotGuide = {
   ger2 = {
     w = {
       ["home_guards(ger2)"] = 0.2, ["riflemans(ger2)"] = 2.2, ["smgs(ger2)"] = 2.0, ["elites_para(ger2)"] = 1.8,
-      ["storm_mech_ost"] = 1.6, ["at_rifles2(ger2)"] = 2.0, ["bazookers(ger2)"] = 1.8, ["bazooker3(ger2)"] = 1.8,
+      ["storm_mech_ost(ger2)"] = 1.6, ["at_rifles2(ger2)"] = 2.0, ["bazookers(ger2)"] = 1.8, ["bazooker3(ger2)"] = 1.8,
       ["snipers(ger2)"] = 1.5, ["pz1b_ger2"] = 2.0, ["sdkfz234_ger2"] = 2.0, ["t34_2_ger"] = 2.2, ["pzkpfw756"] = 2.5,
       ["pz5g_ger2"] = 1.6, ["hetzer_ger2"] = 0.4, ["pz4j_ger2"] = 0.4,
     },
@@ -336,7 +336,7 @@ BotGuide = {
       ["smgs(rus)"] = 0.8, ["smgsv2(rus)"] = 0.8, ["smgsv3(rus)"] = 0.8, ["smgsv4(rus)"] = 0.8, ["smgsv5(rus)"] = 0.8,
       ["elites(rus)"] = 1.6, ["elites_40(rus)"] = 1.6, ["elites_42(rus)"] = 1.6, ["smg3(rus)"] = 1.4, ["shock(rus)"] = 1.2,
       ["at_rifles(rus)"] = 1.6, ["at_riflesv2(rus)"] = 1.6, ["bazookers(rus)"] = 1.8,
-      ["maxim_1910_30"] = 1.8, ["maxim_1910_30_seq"] = 1.8, ["maxim_1910_30_seqx2"] = 1.8, ["dshk_stank"] = 1.6, ["dshk_zenit"] = 1.6,
+      ["maxim_1910_30"] = 1.8, ["maxim_1910_30_seq(rus)"] = 1.8, ["maxim_1910_30_seqx2(rus)"] = 1.8, ["dshk_stank"] = 1.6, ["dshk_zenit"] = 1.6,
       ["bm_37"] = 1.3, ["t60"] = 2.5, ["bt7_37_1"] = 1.6, ["bt7a"] = 1.4,
       ["t34_42"] = 2.8, ["t34_0"] = 2.8, ["t34_41"] = 2.8, ["t34_1"] = 2.8, ["kv1s"] = 1.6, ["kv85"] = 1.6, ["kv1"] = 1.4, ["su76"] = 0.3,
       ["is2"] = 2.2, ["is122"] = 1.8, ["isu122"] = 1.6, ["bs3_towed(rus)"] = 1.8,
@@ -344,7 +344,7 @@ BotGuide = {
     must = {
       -- open with two rifle squads (one leads, one follows), then an MG for the line and something against vehicles
       { names = { "riflemans_42(rus)", "riflemans_41(rus)", "riflemansv4(rus)", "riflemansv5(rus)", "riflemans(rus)", "riflemansv2(rus)", "riflemansv3(rus)" }, after = 0, count = 2 },
-      { names = { "maxim_1910_30", "maxim_1910_30_seq", "mgs2(rus)", "mgs2_41(rus)" }, after = 60, count = 1 },
+      { names = { "maxim_1910_30", "maxim_1910_30_seq(rus)", "mgs2(rus)", "mgs2_41(rus)" }, after = 60, count = 1 },
       { names = { "at_riflesv2(rus)", "at_rifles(rus)", "bazookers(rus)" }, after = 90, count = 1 },
     },
     comp = { inf = 1.2, tank = 1.4, td = 0.45 },   -- cheap, big squads: lean on numbers; T-34/76s over SU-76s
@@ -353,8 +353,8 @@ BotGuide = {
     w = {
       ["specialinf_rifle(rus_guard)"] = 2.0, ["specialinf(rus_guard)"] = 1.8, ["elite_guards(rus_guard)"] = 1.6,
       ["guards_shock(rus_guard)"] = 1.4, ["at_rifles(rus_guard)"] = 1.8, ["bazookers(rus_guard)"] = 1.8,
-      ["sg43_goryunov_guard"] = 1.6, ["dshk_stank_guard"] = 1.6, ["dshk_zenit_guard"] = 1.6,
-      ["t60_guard"] = 2.2, ["t34_2_guard"] = 2.6, ["t34_3_guard"] = 2.6, ["is2_guard"] = 2.0, ["isu122_guard"] = 1.6, ["su76_guard"] = 0.3,
+      ["sg43_goryunov_guard(rus_guard)"] = 1.6, ["dshk_stank_guard(rus_guard)"] = 1.6, ["dshk_zenit_guard(rus_guard)"] = 1.6,
+      ["t60_guard(rus_guard)"] = 2.2, ["t34_2_guard"] = 2.6, ["t34_3_guard"] = 2.6, ["is2_guard"] = 2.0, ["isu122_guard"] = 1.6, ["su76_guard"] = 0.3,
       ["recons(rus_guard)"] = 0.5,
     },
     must = { { names = { "at_rifles(rus_guard)", "bazookers(rus_guard)" }, after = 90, count = 1 } },

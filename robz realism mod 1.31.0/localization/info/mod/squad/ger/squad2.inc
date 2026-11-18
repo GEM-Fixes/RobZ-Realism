@@ -11,36 +11,36 @@
 {"grenadier_stg(ger)" "A single infantryman armed with a fully automatic StG44 assault rifle."}
 ; -- group soldier_4 --
 ; [changed] card "at_rifles(ger)" cost 92 lvl 1 | soldiers ger_at_rifle, ger_at_rifleassist | tags infantry all inf_only 40 41 42 43 44 45 | units/ger/squads_44.set:125
-{"at_rifles(ger)" "An anti-tank rifle team with a PzB39. Good for taking out light vehicles and as a heavy sniper rifle. Even though this rifle packs a terrifying punch, more well-armoured tanks easily bounce its shells."}
+{"at_rifles(ger)" "Two-man anti-tank rifle team with a PzB39, good against light vehicles and as a heavy sniper rifle. Better armoured tanks easily bounce its shells."}
 ; -- group soldier_5 --
 ; [new] card "bazooker3(ger)" cost 62 lvl 1 | soldiers ger_panzerfaust x2 | tags infantry all inf_only 44 45 | units/ger/squads_44.set:135
-{"bazooker3(ger)" "Two panzerfaust crew armed with 4 Panzerfaust 60s. Suitable for taking out a tank then dying in the blast of the explosion."}
+{"bazooker3(ger)" "Two-man Panzerfaust team with 4 Panzerfaust 60s. Suitable for taking out a tank, then dying in the blast of the explosion."}
 ; [new] card "stormtrooper5(ger)" cost 103 lvl 1 | soldiers ger_pzgren_panzershreck, ger_pzgren_mp40 | tags infantry all inf_only 43 44 45 | units/ger/squads_44.set:137
-{"stormtrooper5(ger)" "This team of anti-tank rocket-launcher infantrymen is armed with a Panzerschreck and they are trained to destroy tanks in close combat using armor-piercing rockets. They are capable of destroying even the heaviest armored vehicles -- provided they can find a weakness to exploit. Beware of the armored skirts on some vehicles, as they greatly reduce the effectiveness of these shaped-charge rounds."}
+{"stormtrooper5(ger)" "Two-man Panzerschreck team that destroys tanks at close range, even the heaviest if it finds a weak spot. Armored skirts greatly reduce the effect of its shaped-charge rockets."}
 ; -- group soldier_6 --
 ; [new] card "mg2(ger)" cost 62 lvl 1 | soldiers ger_grenadier_mg_39, ger_grenadier_mg_asst | tags infantry all inf_only 39 40 41 42 43 44 45 | units/ger/squads_44.set:141
-{"mg2(ger)" "A MG 34 fire team with sandbags. Has 4 weapon skill."}
+{"mg2(ger)" "An MG 34 fire team of 2 with sandbags and weapon skill 4."}
 ; [changed] card "mgs2(ger)" cost 62 lvl 1 | soldiers ger_grenadier_mg, ger_grenadier_mg_asst | tags infantry all inf_only 42 43 44 45 | units/ger/squads_44.set:145
-{"mgs2(ger)" "A MG 42 fire team with sandbags. Has 4 weapon skill."}
+{"mgs2(ger)" "An MG 42 fire team of 2 with sandbags and weapon skill 4."}
 ; -- group squad_4 --
 ; [new] card "elite3(ger)" cost 94 lvl 1 | soldiers ger_fallschirm_fg_43, ger_fallschirm_rifle x2 | tags infantry all inf_only 43 44 45 | units/ger/squads_44.set:151
-{"elite3(ger)" "A FG 42 fire team. Only one sandbag, the others were lost when Hans broke his leg on dropping. Has 7 weapon skill."}
+{"elite3(ger)" "An FG 42 fire team of 3 with weapon skill 7. It has only one sandbag, as the rest were lost when Hans broke his leg on the drop."}
 ; [new] card "stormtrooper6_39(ger)" cost 81 lvl 1 | soldiers ger_pzgren_mg34, ger_pzgren_mg34assist x2 | tags infantry all inf_only 39 40 41 42 43 44 45 | units/ger/squads_44.set:155
-{"stormtrooper6_39(ger)" "A MG 34 fire team with sandbags. The mediocrity of their weapon is compensated by their shooting skill. Has 5 weapon skill."}
+{"stormtrooper6_39(ger)" "An MG 34 fire team of 3 with sandbags and weapon skill 5. Their shooting skill makes up for the mediocre weapon."}
 ; [new] card "stormtrooper6(ger)" cost 81 lvl 1 | soldiers ger_pzgren_mg42, ger_pzgren_mg42assist x2 | tags infantry all inf_only 42 43 44 45 | units/ger/squads_44.set:157
-{"stormtrooper6(ger)" "A MG 42 fire team with sandbags. Great for locking down a point or dying to a mortar shell. Has 5 weapon skill."}
+{"stormtrooper6(ger)" "An MG 42 fire team of 3 with sandbags and weapon skill 5. Great for locking down a point or dying to a mortar shell."}
 ; [new] card "gd_pzgren_mg(ger)" cost 140 lvl 1 | soldiers ger_gd_pzgren_mg, ger_gd_pzgren_mg_asst x2 | tags infantry all inf_only 43 44 45 | units/ger/squads_44.set:159
-{"gd_pzgren_mg(ger)" "A MG 42 fire team with sandbags. This is the 250-round belt-fed version. Has 8 weapon skill."}
+{"gd_pzgren_mg(ger)" "An MG 42 fire team of 3 with the 250-round belt-fed version, sandbags and weapon skill 8."}
 ; [new] card "fallschirm_mg_39(ger)" cost 118 lvl 1 | soldiers ger_fallschirm_mg_39, ger_fallschirm_mg_asst_39 x2 | tags infantry all inf_only 39 40 41 42 43 44 45 | units/ger/squads_44.set:161
-{"fallschirm_mg_39(ger)" "A MG 34 fire team with sandbags. Only one sandbag, the others were lost when Hans broke his leg on dropping. Has 7 weapon skill."}
+{"fallschirm_mg_39(ger)" "An MG 34 fire team of 3 with weapon skill 7. It has only one sandbag, as the rest were lost when Hans broke his leg on the drop."}
 ; [new] card "fallschirm_mg(ger)" cost 131 lvl 1 | soldiers ger_fallschirm_mg, ger_fallschirm_mg_asst_39 x2 | tags infantry all inf_only 42 43 44 45 | units/ger/squads_44.set:162
-{"fallschirm_mg(ger)" "A MG 42 fire team with sandbags. This is the 250-round belt-fed version. Only one sandbag, the others were lost when Hans broke his leg on dropping. Has 7 weapon skill."}
+{"fallschirm_mg(ger)" "An MG 42 fire team of 3 with the 250-round belt-fed version and weapon skill 7. It has only one sandbag, as the rest were lost when Hans broke his leg on the drop."}
 ; -- group soldier_9 --
 ; [new] card "sniper3(ger)" cost 105 lvl 1 | soldiers ger_sniper_g43 | tags infantry all sniper inf_only 43 44 45 | units/ger/squads_44.set:179
-{"sniper3(ger)" "This well-trained marksman is armed with a scoped rifle and is capable of eliminating enemy infantry with precision, at long range. He relies on stealth to avoid detection while seeking to eliminate his targets. Use him to take out enemy officers or other important targets before engaging general infantry. This model sports a G43 for increased firerate and increased ability to miss every shot."}
+{"sniper3(ger)" "Well-trained marksman with a scoped G43 who kills infantry at long range and relies on stealth. The G43 gives a faster rate of fire and a better chance to miss every shot."}
 ; -- group soldier_10 --
 ; [changed] card "officers(ger)" cost 0 lvl 1 | soldiers ger_officer x4 | tags infantry all officer inf_only 39 40 41 42 43 44 45 | units/ger/squads_44.set:183
-{"officers(ger)" "This experienced field officer is capable of supporting your troops by spotting enemy units from afar with his binoculars. Use his skill in locating enemy units through the fog of war, so that your other units can engage or avoid them as necessary. The officer also reduces your current CP by 20 which allows you to field a bigger army."}
+{"officers(ger)" "Experienced field officer who spots enemy units through the fog of war with his binoculars. He also reduces your current CP by 20, letting you field a bigger army."}
 ; -- group radio_1 --
 ; [new] card "radioman_mortar(ger)" cost 250 lvl 1 | soldiers ger_radioman_mortar | tags infantry all mortar 39 40 41 42 43 44 45 | units/ger/squads_44.set:191
-{"radioman_mortar(ger)" "Do you envy the Americans? Here is a mortar call-in you poor thing."}
+{"radioman_mortar(ger)" "A radioman who calls in mortar fire, for anyone who envies the Americans their mortar call-in."}

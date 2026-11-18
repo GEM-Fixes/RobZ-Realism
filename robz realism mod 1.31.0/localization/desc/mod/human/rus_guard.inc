@@ -31,7 +31,7 @@
 ; [new] first in card "elite_guards_shock(rus_guard)" rus_guard/squad1 cost 259 | units/rus_guard/squads_43-45.set:32
 {"guard_elite_guards_shock_sa" "<c(c3baae)>Elitnyy Gvardeehc Shturmovik SL asst. [Efreitor]"}
 ; [new] first in card "elite_guards_shock(rus_guard)" rus_guard/squad1 cost 259 | units/rus_guard/squads_43-45.set:32
-{"guard_elite_guards_shock_sl" "<c(c3baae)>Elitnyy Gvardeehc Shturmovik Komandir Otdeleniya  [Senior Sergeant]"}
+{"guard_elite_guards_shock_sl" "<c(c3baae)>Elitnyy Gvardeehc Shturmovik Komandir Otdeleniya [Senior Sergeant]"}
 ; [new] first in card "elite_guards_shock_assault(rus_guard)" rus_guard/squad1 cost 186 | units/rus_guard/squads_43-45.set:30
 {"guard_elite_guards_shock_sl_smg" "<c(c3baae)>Elitnyy Gvardeehc Shturmovik Komandir Otdeleniya [Senior Sergeant]"}
 ; [new] first in card "elite_guards_shock_assault(rus_guard)" rus_guard/squad1 cost 186 | units/rus_guard/squads_43-45.set:30
@@ -54,9 +54,9 @@
 {"guard_bazookerassist" "<c(c3baae)>Gvardeehc Bazooka Broneboyshik asst."}
 ; [new] first in card "bazookers_piat(rus_guard)" rus_guard/squad2 cost 129 | units/rus_guard/squads_43-45.set:70
 {"guard_piatassist" "<c(c3baae)>Gvardeehc PIAT Broneboyshik asst."}
-; [new] first in card "hero_guard_t34_3" rus_guard/hero cost 9 | units/rus_guard/vehicles_43-45.set:113 | in 2 cards
+; [new] first in card "hero_guard_t34_3(rus_guard)" rus_guard/hero cost 9 | units/rus_guard/vehicles_43-45.set:113 | in 2 cards
 {"elite_tankman" "<c(c3baae)>Gvardeehc Tankist [Elite]"}
-; [new] first in card "hero_guard_t34_3" rus_guard/hero cost 9 | units/rus_guard/vehicles_43-45.set:113 | in 2 cards
+; [new] first in card "hero_guard_t34_3(rus_guard)" rus_guard/hero cost 9 | units/rus_guard/vehicles_43-45.set:113 | in 2 cards
 {"elite_tankman2" "<c(c3baae)>Gvardeehc Tankist Komandir [Senior Lieutenant] [Elite]"}
 ; [new] not in any buy-list card
 {"flamer" "<c(c3baae)>Gvardeehc Ognemetchik"}
@@ -134,19 +134,19 @@
 {"scout" "<c(c3baae)>Osnaz"}
 ; [new] first in card "snipers(rus_guard)" rus_guard/squad2 cost 210 | units/rus_guard/squads_43-45.set:78
 {"guard_sniper_mosin" "<c(c3baae)>Gvardeehc Snayper"}
-; [new] first in card "hero_guard1" rus_guard/hero cost 3 | units/rus_guard/vehicles_43-45.set:105
+; [new] first in card "hero_guard1(rus_guard)" rus_guard/hero cost 3 | units/rus_guard/vehicles_43-45.set:105
 {"guard_sniper_elite" "<c(c3baae)>Gvardeehc Snayper [Ace]"}
 ; [new] first in card "snipers3(rus_guard)" rus_guard/squad2 cost 210 | units/rus_guard/squads_43-45.set:79
 {"guard_sniper_svtscope" "<c(c3baae)>Gvardeehc Snayper"}
-; [new] first in card "t34m_guard" rus_guard/v1 cost 300 | units/rus_guard/vehicles_43-45.set:15 | in 23 cards
+; [new] first in card "t34m_guard(rus_guard)" rus_guard/v1 cost 300 | units/rus_guard/vehicles_43-45.set:15 | in 23 cards
 {"tankman" "<c(c3baae)>Gvardeehc Tankist"}
 ; [new] first in card "tankmans(rus_guard)" rus_guard/squad1 cost 90 | units/rus_guard/squads_43-45.set:46
 {"rus_guard_tankman_single" "<c(c3baae)>Gvardeehc Tankist"}
-; [new] first in card "t34m_guard" rus_guard/v1 cost 300 | units/rus_guard/vehicles_43-45.set:15 | in 21 cards
+; [new] first in card "t34m_guard(rus_guard)" rus_guard/v1 cost 300 | units/rus_guard/vehicles_43-45.set:15 | in 21 cards
 {"tankman2" "<c(c3baae)>Gvardeehc Tankist Komandir [Junior Sergeant]"}
 ; [new] first in card "tankmans(rus_guard)" rus_guard/squad1 cost 90 | units/rus_guard/squads_43-45.set:46
 {"rus_guard_tankman2_single" "<c(c3baae)>Gvardeehc Tankist Komandir [Junior Sergeant]"}
-; [new] first in card "m72_guard" rus_guard/v1 cost 105 | units/rus_guard/vehicles_43-45.set:6 | in 40 cards
+; [new] first in card "m72_guard(rus_guard)" rus_guard/v1 cost 105 | units/rus_guard/vehicles_43-45.set:6 | in 40 cards
 {"vehicle_supporter" "<c(c3baae)>Gvardeehc Raschot Orudiya"}
 ; [new] first in card "vehic_supporter(rus_guard)" rus_guard/squad1 cost 35 | units/rus_guard/squads_43-45.set:44
 {"vehicle_supporter_single" "<c(c3baae)>Gvardeehc Raschot Orudiya"}

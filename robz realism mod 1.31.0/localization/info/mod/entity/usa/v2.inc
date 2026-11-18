@@ -2,17 +2,17 @@
 ; mod part, buy-list order (units read order); above each key: [new|changed] card, cost, contents, tags, units file:line, notes
 ; -- group c1 --
 ; [new] card "browning_30cal" cost 110 lvl 1 | soldiers vehicle_supporter x2 | tags all 42 43 44 45 | units/usa/vehicles_43-45.set:31
-{"browning_30cal" "The M1919 Browning is a .30 caliber medium machine gun that was widely used during the 20th century, especially during World War II. The M1919A4 was used in both fixed and flexible mounts, by infantry and on vehicles. It was also widely exported after World War II and continues to be used in small numbers around the world. Two variants were developed specifically for vehicular use, the M1919A5, with an extended charging handle, and the M1919A4E1, a sub-variant of the M1919A4 refitted with an extended charging handle."}
+{"browning_30cal" "The M1919A4 Browning is a .30 caliber medium machine gun, used by infantry and on vehicles in fixed and flexible mounts."}
 ; [new] card "browning_m2hb" cost 150 lvl 1 | soldiers vehicle_supporter x2 | tags all 42 43 44 45 | units/usa/vehicles_43-45.set:32
-{"browning_m2hb" "The M2 Machine Gun or Browning .50 Caliber Machine Gun is a heavy machine gun designed toward the end of World War I by John Browning. The Browning .50 caliber machine gun has been used extensively as a vehicle weapon and for aircraft armament by the United States from the 1930s to the present."}
+{"browning_m2hb" "The Browning M2 is a .50 caliber heavy machine gun designed by John Browning, also widely used on vehicles and aircraft."}
 ; -- group c6 --
 ; [new] card "np_m5cannon" cost 400 lvl 1 | soldiers vehicle_supporter x2 | tags all medium 44 45 | units/usa/vehicles_43-45.set:42
-{"np_m5cannon" "In late 1940, US engineers undertook the project to adapt the 3-inch anti-aircraft gun T9 to an anti-tank role. The result was named the M5, and it entered service with the US Army in December 1942. Thanks to the high muzzle velocity of its round and its excellent armor penetration capabilities, this gun succeeded in replacing the early AT guns which were quickly becoming ineffective against new German tanks."}
+{"np_m5cannon" "The M5 is a US 3-inch anti-tank gun adapted from the T9 anti-aircraft gun. Its high muzzle velocity and excellent armor penetration make it effective against newer German tanks."}
 ; -- group c13 --
 ; [changed] card "m8_howitzer" cost 320 lvl 1 | soldiers vehicle_supporter x2 | tags artillery all 42 43 44 45 | units/usa/vehicles_43-45.set:45
-{"m8_howitzer" "These light field howitzers were in service with the US Army from 1930. They were designed to make dismantling and transportation as simple as possible, since they were expected to be delivered by airborne gliders. Being relatively small in size, this modified 75mm gun was intended to offer direct fire support to airborne units and it outperformed its counterparts in terms of mobility and fire rate."}
+{"m8_howitzer" "This light 75mm field howitzer gives direct fire support to airborne units and breaks down for delivery by glider. It outperforms its counterparts in mobility and fire rate."}
 ; -- group c1 --
 ; [new] card "30_browning_m1919a4" cost 110 lvl 1 | soldiers vehicle_supporter x2 | tags all 42 43 44 45 | units/vehicles_x.set:18
-{"30_browning_m1919a4" "The M1919 Browning is a .30 caliber medium machine gun that was widely used during the 20th century, especially during World War II. The M1919A4 was used in both fixed and flexible mounts, by infantry and on vehicles. It was also widely exported after World War II and continues to be used in small numbers around the world. Two variants were developed specifically for vehicular use, the M1919A5, with an extended charging handle, and the M1919A4E1, a sub-variant of the M1919A4 refitted with an extended charging handle."}
+{"30_browning_m1919a4" "The M1919A4 Browning is a .30 caliber medium machine gun, used by infantry and on vehicles in fixed and flexible mounts."}
 ; [new] card "50_browning_m2hb" cost 180 lvl 1 | soldiers vehicle_supporter x2 | tags all 42 43 44 45 | units/vehicles_x.set:19
-{"50_browning_m2hb" "The M2 Machine Gun or Browning .50 Caliber Machine Gun is a heavy machine gun designed toward the end of World War I by John Browning. The Browning .50 caliber machine gun has been used extensively as a vehicle weapon and for aircraft armament by the United States from the 1930s to the present."}
+{"50_browning_m2hb" "The Browning M2 is a .50 caliber heavy machine gun designed by John Browning, also widely used on vehicles and aircraft."}

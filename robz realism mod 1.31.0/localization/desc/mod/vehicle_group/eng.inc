@@ -9,10 +9,10 @@
 ; [new] card "stormtroopers_drop(eng)" cost 302 lvl 1 | soldiers eng_sas_cpl, eng_sas_2ic, eng_sas_bran_assist, eng_sas_at_rifle, eng_sas_bren2 x2, eng_sas_bren2_assist x2, eng_sas_rifle1 x2 | vehicles airborne_spawner | tags infantry all inf_only 43 44 45 41 42 only-one | units/eng/squads_42-45.set:31
 {"stormtroopers_drop(eng)" "Paradropped SAS section"}
 ; -- button v1, group b4 --
-; [new] card "universal_carrier_seq" cost 125 lvl 1 | soldiers vehicle_supporter x2 | vehicles universal_carrier | tags all 40 41 42 43 44 45 | units/eng/vehicles_43-44.set:8 | copy of universal_carrier (with crew)
-{"universal_carrier_seq" "<c(FF5733)>Universal Carrier"}
-; [new] card "universal_carrier_seqx2" cost 187 lvl 1 | soldiers vehicle_supporter x4 | vehicles universal_carrier x2 | tags all 40 41 42 43 44 45 | units/eng/vehicles_43-44.set:9
-{"universal_carrier_seqx2" "<c(00ff04)>2x Universal Carrier"}
+; [new] card "universal_carrier_seq(eng)" cost 125 lvl 1 | soldiers vehicle_supporter x2 | vehicles universal_carrier | tags all 40 41 42 43 44 45 | units/eng/vehicles_43-44.set:8 | copy of universal_carrier (with crew)
+{"universal_carrier_seq(eng)" "<c(FF5733)>Universal Carrier"}
+; [new] card "universal_carrier_seqx2(eng)" cost 187 lvl 1 | soldiers vehicle_supporter x4 | vehicles universal_carrier x2 | tags all 40 41 42 43 44 45 | units/eng/vehicles_43-44.set:9
+{"universal_carrier_seqx2(eng)" "<c(00ff04)>2x Universal Carrier"}
 ; -- button v2, group c11 --
 ; [new] card "qf17_towed" cost 685 lvl 1 | soldiers vehicle_supporter x4 | vehicles m3_eng, qf17 | tags all medium 44 45 | units/eng/vehicles_43-44.set:36
 {"qf17_towed" "QF 17-pdr w/ M3"}
@@ -38,19 +38,19 @@
 ; [new] card "land_mattress_towed" cost 735 lvl 1 | soldiers vehicle_supporter x4 | vehicles m3_eng, land_mattress | tags all artillery heavyart rocket 44 45 | units/eng/vehicles_43-44.set:59
 {"land_mattress_towed" "Land Mattress w/ M3"}
 ; -- button v3, group d31 --
-; [new] card "staghound_seq" cost 250 lvl 1 | soldiers tankman x3, tankman2 | vehicles staghound | tags all 42 43 44 45 | units/eng/vehicles_43-44.set:69 | copy of staghound (with crew)
-{"staghound_seq" "<c(FF5733)>Staghound Mk.I"}
-; [new] card "staghound_seqx2" cost 365 lvl 1 | soldiers tankman x6, tankman2 x2 | vehicles staghound x2 | tags all 42 43 44 45 | units/eng/vehicles_43-44.set:70
-{"staghound_seqx2" "<c(00ff04)>2x Staghound Mk.I"}
+; [new] card "staghound_seq(eng)" cost 250 lvl 1 | soldiers tankman x3, tankman2 | vehicles staghound | tags all 42 43 44 45 | units/eng/vehicles_43-44.set:69 | copy of staghound (with crew)
+{"staghound_seq(eng)" "<c(FF5733)>Staghound Mk.I"}
+; [new] card "staghound_seqx2(eng)" cost 365 lvl 1 | soldiers tankman x6, tankman2 x2 | vehicles staghound x2 | tags all 42 43 44 45 | units/eng/vehicles_43-44.set:70
+{"staghound_seqx2(eng)" "<c(00ff04)>2x Staghound Mk.I"}
 ; -- button v4, group e2 --
-; [new] card "cromwell_mk_iv_seq" cost 342 lvl 1 | soldiers tankman x3, tankman2 | vehicles cromwell_mk_iv | tags all medium 44 45 | units/eng/vehicles_43-44.set:92 | copy of cromwell_mk_iv (with crew)
-{"cromwell_mk_iv_seq" "<c(FF5733)>Cruiser Mk.VIII Cromwell IV"}
-; [new] card "cromwell_mk_iv_seqx2" cost 513 lvl 1 | soldiers tankman x6, tankman2 x2 | vehicles cromwell_mk_iv x2 | tags all medium 44 45 | units/eng/vehicles_43-44.set:93
-{"cromwell_mk_iv_seqx2" "<c(00ff04)>2x Cruiser Mk.VIII Cromwell IV"}
-; [new] card "cromwell_mk_vii_seq" cost 430 lvl 1 | soldiers tankman x3, tankman2 | vehicles cromwell_mk_vii | tags all medium 44 45 | units/eng/vehicles_43-44.set:94 | copy of cromwell_mk_vii (with crew)
-{"cromwell_mk_vii_seq" "<c(FF5733)>Cruiser Mk.VIII Cromwell VII"}
-; [new] card "cromwell_mk_vii_seqx2" cost 645 lvl 1 | soldiers tankman x6, tankman2 x2 | vehicles cromwell_mk_vii x2 | tags all medium 44 45 | units/eng/vehicles_43-44.set:95
-{"cromwell_mk_vii_seqx2" "<c(00ff04)>2x Cruiser Mk.VIII Cromwell VII"}
+; [new] card "cromwell_mk_iv_seq(eng)" cost 342 lvl 1 | soldiers tankman x3, tankman2 | vehicles cromwell_mk_iv | tags all medium 44 45 | units/eng/vehicles_43-44.set:92 | copy of cromwell_mk_iv (with crew)
+{"cromwell_mk_iv_seq(eng)" "<c(FF5733)>Cruiser Mk.VIII Cromwell IV"}
+; [new] card "cromwell_mk_iv_seqx2(eng)" cost 513 lvl 1 | soldiers tankman x6, tankman2 x2 | vehicles cromwell_mk_iv x2 | tags all medium 44 45 | units/eng/vehicles_43-44.set:93
+{"cromwell_mk_iv_seqx2(eng)" "<c(00ff04)>2x Cruiser Mk.VIII Cromwell IV"}
+; [new] card "cromwell_mk_vii_seq(eng)" cost 430 lvl 1 | soldiers tankman x3, tankman2 | vehicles cromwell_mk_vii | tags all medium 44 45 | units/eng/vehicles_43-44.set:94 | copy of cromwell_mk_vii (with crew)
+{"cromwell_mk_vii_seq(eng)" "<c(FF5733)>Cruiser Mk.VIII Cromwell VII"}
+; [new] card "cromwell_mk_vii_seqx2(eng)" cost 645 lvl 1 | soldiers tankman x6, tankman2 x2 | vehicles cromwell_mk_vii x2 | tags all medium 44 45 | units/eng/vehicles_43-44.set:95
+{"cromwell_mk_vii_seqx2(eng)" "<c(00ff04)>2x Cruiser Mk.VIII Cromwell VII"}
 ; -- button v22, group c155 --
-; [new] card "long_tom(eng)" cost 1000 lvl 1 | soldiers vehicle_supporter x2 | vehicles longtom_155mm | tags all artillery heavyart heavy 43 44 45 | units/eng/vehicles_45.set:54 | renamed from "desc/squad/longtom_155mm(usmc)"; {info longtom_155mm}; also under usa/v22; cards long_tom(eng), longtom_155mm(usa); copy of longtom_155mm (with crew)
+; [new] card "long_tom(eng)" cost 1000 lvl 1 | soldiers vehicle_supporter x2 | vehicles longtom_155mm | tags all artillery heavyart heavy 43 44 45 | units/eng/vehicles_45.set:54 | {info longtom_155mm}; also under usa/v22; cards long_tom(eng), longtom_155mm(usa); copy of longtom_155mm (with crew)
 {"longtom_155mm" "Longtom 155m Howitzer"}

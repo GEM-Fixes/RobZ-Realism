@@ -94,25 +94,25 @@
 {"usa_marine_bar" "<c(c3baae)>U.S. Marine Automatic Rifleman"}
 ; [new] first in card "specialinf(usa)" usa/squad1 cost 211 | units/usa/squads_43-45.set:20 | in 2 cards
 {"usa_marine_barassist" "<c(c3baae)>U.S. Marine Automatic Rifleman asst."}
-; [new] first in card "hero_usa_raiders" usa/hero cost 7 | units/usa/vehicles_43-45.set:137
+; [new] first in card "hero_raiders(usa)" usa/hero cost 7 | units/usa/vehicles_43-45.set:137
 {"usa_raider" "<c(c3baae)>U.S. Marine Raider"}
-; [new] first in card "hero_usa_raiders" usa/hero cost 7 | units/usa/vehicles_43-45.set:137
+; [new] first in card "hero_raiders(usa)" usa/hero cost 7 | units/usa/vehicles_43-45.set:137
 {"usa_raiderasst" "<c(c3baae)>U.S. Marine Raider Automatic Rifleman asst."}
-; [new] first in card "hero_usa_raiders" usa/hero cost 7 | units/usa/vehicles_43-45.set:137
+; [new] first in card "hero_raiders(usa)" usa/hero cost 7 | units/usa/vehicles_43-45.set:137
 {"usa_raiderchad" "<c(c3baae)>U.S. Marine Raider [Sgt]"}
-; [new] first in card "hero_usa_raiders" usa/hero cost 7 | units/usa/vehicles_43-45.set:137
+; [new] first in card "hero_raiders(usa)" usa/hero cost 7 | units/usa/vehicles_43-45.set:137
 {"usa_raiderbar" "<c(c3baae)>U.S. Marine Raider Automatic Rifleman"}
-; [new] first in card "hero_usa_raiders" usa/hero cost 7 | units/usa/vehicles_43-45.set:137
+; [new] first in card "hero_raiders(usa)" usa/hero cost 7 | units/usa/vehicles_43-45.set:137
 {"usa_raiderdemo" "<c(c3baae)>U.S. Marine Raider Demolition"}
-; [new] first in card "hero_usa_raiders" usa/hero cost 7 | units/usa/vehicles_43-45.set:137
+; [new] first in card "hero_raiders(usa)" usa/hero cost 7 | units/usa/vehicles_43-45.set:137
 {"usa_raidergren" "<c(c3baae)>U.S. Marine Raider Grenadier"}
 ; [new] first in card "hero_usa_m3_carbine(usa)" usa/hero cost 2 | units/usa/vehicles_43-45.set:126
 {"usa_nightfighter_carbine" "<c(c3baae)>U.S. Marine Night Fighter"}
 ; [new] first in card "hero_usa_m3_carbine(usa)" usa/hero cost 2 | units/usa/vehicles_43-45.set:126
 {"usa_nightfighter_leader" "<c(c3baae)>U.S. Marine Night Fighter Leader"}
-; [new] first in card "fury_hero" usa/hero cost 8 | units/usa/vehicles_43-45.set:140
+; [new] first in card "hero_fury_hero(usa)" usa/hero cost 8 | units/usa/vehicles_43-45.set:140
 {"elite_tankman" "<c(c3baae)>Tank Crew [Cpl] [Elite]"}
-; [new] first in card "fury_hero" usa/hero cost 8 | units/usa/vehicles_43-45.set:140
+; [new] first in card "hero_fury_hero(usa)" usa/hero cost 8 | units/usa/vehicles_43-45.set:140
 {"elite_tankman2" "<c(c3baae)>Tank Commander [SSgt] [Elite]"}
 ; [new] first in card "engineers(usa)" usa/squad1 cost 271 | units/usa/squads_43-45.set:16
 {"usa_engineer" "<c(c3baae)>Combat Engineer"}
@@ -222,9 +222,9 @@
 {"usa_tankman2_single" "<c(c3baae)>Tank Commander [Sgt]"}
 ; [new] first in card "vehic_supporter(usa)" usa/squad1 cost 25 | units/usa/squads_43-45.set:63
 {"vehicle_supporter_single" "<c(c3baae)>Support Crew"}
-; [new] first in card "hero8_usa" usa/hero cost 10 | units/usa/vehicles_43-45.set:141 | in 3 cards
+; [new] first in card "hero8(usa)" usa/hero cost 10 | units/usa/vehicles_43-45.set:141 | in 3 cards
 {"vet_tankman" "<c(c3baae)>Tank Crew [Veteran]"}
-; [new] first in card "hero8_usa" usa/hero cost 10 | units/usa/vehicles_43-45.set:141 | in 3 cards
+; [new] first in card "hero8(usa)" usa/hero cost 10 | units/usa/vehicles_43-45.set:141 | in 3 cards
 {"vet_tankman2" "<c(c3baae)>Tank Commander [Sgt] [Veteran]"}
 ; [new] first in card "elite_tankmans(usa)" usa/squad1 cost 100 | units/usa/squads_43-45.set:67
 {"usa_vet_tankman2_single" "<c(c3baae)>Tank Commander [Sgt] [Veteran]"}

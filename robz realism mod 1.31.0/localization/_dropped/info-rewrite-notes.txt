@@ -1,0 +1,125 @@
+== a-ger ==
+squad/ger2/squad1.inc stormtroopers(ger2): CONTRADICTION old text says 12 men, card lists 10; written as 10. Old text says MG42 team, card soldier is ost_pzgren_mg34; written as MG34 [I from soldier id].
+squad/ger2/squad1.inc elites_para(ger2): CONTRADICTION old text says 12 men, card lists 10; written as 10. Old says 3 rifle-grenadiers, card has fallschirm_grenadier x2; number dropped.
+squad/ger_ss/squad1.inc gebirgs_44(ger_ss): CONTRADICTION old text says 10 men (1 TK, 3 k98, 1 STG44, 5 MP40s), card lists 9 (sl, sl_asst_k98, pzfst x2, rifle x3, mg, mg_asst) with no stg/smg ids; written as 9 with TK vz. 37, K98 rifles and 2 Panzerfausts, per-weapon counts dropped.
+squad/ger_ss/squad1.inc elites_44(ger_ss): CONTRADICTION old text (copy of the Fallschirmjager 44 text) says 10 men with sniper, FG42s, STG44, Panzerfausts; card lists 12 (sl, sl_asst_smg, smg x2, rifle x4, mg x2, mg_asst x2); written as 12 with 2 MG42s, rifles and SMGs only. Context line also carries a stray '607' entry, not counted.
+squad/ger_ss/squad1.inc ssvts_44(ger_ss): context line has a stray '1206' soldier entry (not counted, 9 real men matches the text); old text's 1 Panzerfaust has no pzfst soldier id in the card - kept, unsure.
+squad/ger_ss/squad1.inc gebirgs_42(ger_ss): context line has a stray '06' soldier entry (not counted, 11 real men matches the text).
+squad/ger/squad1.inc elite_tankmans(ger): old text says 'this pair of tank crews', card lists 1 soldier (ger_vet_tankman2_single); 'pair' dropped, written as 'veteran tank crew' with no count.
+squad/ger2/squad2.inc tankmans(ger2): CONTRADICTION old text says 'pair', card lists 5 (ost_tankman2, ost_tankman x4); written as crew of 5.
+squad/ger2/squad2.inc bazookers(ger2): old text says Panzerschreck, card soldier is ost_panzerfaust x2 (the ger Panzerfaust card uses the same id pattern); weapon name dropped, written as anti-tank team with shaped-charge rockets - unsure which weapon.
+squad/ger/squad1.inc home_guards(ger): old text says 8 K98, 2 MP3008, 2 Panzerfaust 30; card ids are rifle x6, smg x4, all 10 with faustpatrone or panzerfaust; per-weapon counts dropped, size 10 kept.
+squad/ger/squad1.inc grenadiers_42(ger): card has grenadier_sa_41 (likely 1 G41) but old text says 8 k98 and no G41; old weapons kept, unsure.
+squad/ger/squad1.inc fusiliers_43(ger): card has fusilier_sa x2 but old text says 1 G43; old weapons kept, unsure.
+squad/ger_ss/squad1.inc grenadiers_42(ger_ss): old text says 2 G41s but card has no sa_41 ids (rifle x5, rifle_grenadier); old weapons kept, unsure.
+squad/ger/squad2.inc officers(ger): card lists ger_officer x4, text describes one officer; kept singular, unsure what x4 means.
+squad/ger2/squad2.inc officers(ger2): card lists ost_officer x4, text says one officer plus 2 StG44 jaeger bodyguards (3 men); kept text, unsure.
+squad/ger_ss/squad1.inc lssah_pzgrens_44(ger_ss): 184 chars, over the 180 target (under 240) to keep the same pattern as the 41/42/43 variants.
+
+== b-minor ==
+squad/eng/squad1.inc	elite_tankmans(eng)	contradiction: old text says 'This pair of tank crews', card lists 1 soldier (eng_vet_tankman2_single); new text says single veteran crewman
+squad/rus_guard/squad1.inc	elite_guards(rus_guard)	old weapon list ends '1x.' with the weapon name missing; card has guard_elite_guard_mg, so new text says 'a machine gunner' (no gun model)
+squad/rus_guard/squad2.inc	officers(rus_guard)	unsure: old text says at most 3 officers can be purchased, card lists guard_officer x4; kept '3' because x4 on officer cards may not be the purchase limit
+squad/axis_minor/squad2.inc	officer(axis_minor)	unsure: card lists axm_fin_officer x4, text describes one officer; same x4 on officers(eng) and officers(rus), kept singular in all three
+squad/eng/squad2.inc	stormtrooper5(eng)	card soldiers are eng_sas_piat*, old text does not say SAS; left SAS out (not stated in old text)
+squad/axis_minor/squad1.inc	hungarian_assualt_infantry(axis_minor)	old text says 'Panzerfausts' (plural) but card has 1 axm_hun_assualt_pzf; kept plural (one soldier may carry several)
+squad/axis_minor/squad2.inc	breda30_para(axis_minor)	unsure what 'coordinate with rifle elements for obscuration' means in game; kept as 'best coordinated with rifle elements for obscuration'
+squad/axis_minor/v2.inc	22	card tags include 'mortar' on a 20/77 autocannon card; text left alone, tag looks odd
+squad/rus_guard/squad1.inc	sapper_squad(rus_guard)	dropped the long deployables and grenade counts (stat dump); kept AP/AT mines, satchel charges, hedgehog, mine detector
+squad/rus_guard/squad1.inc	*	all rus_guard squad texts: dropped grenade/first-aid counts as stat dumps, kept size, skill and main weapons
+
+== c-japusa ==
+squad/jap/squad1.inc	home_guards(jap)	text said 16 men, card lists 15 (8+4+3); text said only bolt-action rifles, card has 7 jap_charger_smg_type100 soldiers -> wrote 15, 'some Type 100 SMGs'
+squad/jap/squad1.inc	home_guards_throwgun(jap)	text said 16 men, card lists jap_charger_throwgun x15 -> wrote 15
+squad/jap/squad1.inc	riflemans_t96(jap)	text said 15 soldiers, card lists 16 (SL, 3+4 rifles, 2 smg, mgun2, asst, 3 ammo, grenadier) -> wrote 16; same for riflemans_t96_2, riflemans_t96_3, riflemans, riflemans_2, riflemans_3
+squad/jap/squad1.inc	riflemans_t96_4(jap)	left alone (fits); data: lists light_mortar_asst x6 where riflemans_4(jap) lists jap_light_mortar_asst x6 - check the unit name
+squad/jap/squad1.inc	stormtroopers(jap)	text said 'a Type 4 AT launcher' and 'Type 100 SMGs', card lists jap_snlf_at x2 and one jap_snlf_type100_44 -> wrote 2 launchers, a Type 100 SMG; size 11 from card; unsure both AT men carry the Type 4
+squad/jap/squad2.inc	officers(jap)	text describes one officer, card lists jap_officer x4 -> wrote 'a team of 4'; unsure if CP -20 is per officer, kept it unspecific
+squad/usa/squad2.inc	officers(usa)	same as officers(jap): text one officer, card usa_officer x4
+squad/jap/v3.inc	type93scout	left alone; text calls it 'Type 92 armored car', card is type93scout - check which name is right
+squad/jap/v1.inc	*	all dash-style vehicle texts (v1-v5 and unlisted ho-ha3mgun, ss-ki) left alone as they meet 1-2 sentences, <=180 chars, no typos; only chi-to changed (Excel -> Excels). Say if they should be turned into full prose
+squad/usa/squad1.inc	smgs(usa)	text said 11 M1 Garands (13 weapons for 12 men), card lists usa_armor_rifle x10 -> wrote 10; context line also carries a stray '04' token in the soldier list
+squad/usa/squad1.inc	specialinf(usa)	text said 12-man, card lists 13 (sgt, 4 rifle, grenadier, 3 bar, 3 barassist, shotgun) -> wrote 13 and added the shotgun from usa_marine_shotgun
+squad/usa/squad1.inc	paramarines(usa)	card has usa_paramarine_boys, text names no Boys rifle; kept text weapons, unsure
+squad/usa/squad1.inc	stormtroopers_heavy(usa)	text says 1 Bazooka, card lists usa_ranger_bazooka x2; kept 1, unsure if one is a loader
+squad/usa/squad1.inc	devils_brigade(usa)	text weapons add up to 14 for 12 men (9 Garands, 2 M2, LMG, Thompson, GL); card has 3 demo, radio, 2 grenadiers, mg, 4 rifles; kept text weapons, unsure
+squad/usa/squad1.inc	stormtroopers(usa)	'M1093 Springfield' fixed to M1903 (also stormtroopers_heavy)
+squad/usa/squad2.inc	stormtrooper_at(usa)	text said a team, card lists 1 soldier usa_ranger_recoiless -> wrote one infantryman; dropped first person and the 'rockets' wording for a recoilless rifle
+squad/usa/squad2.inc	mgs2(usa)	text said a single infantryman, card lists 3 (usa_mgun, asst, rifle) -> wrote 3-man fire team
+squad/usa/squad2.inc	radioman_mortar(usa)	old text is a joke with no facts (also radioman_105, _155, _240); new text built only from card name, tags and the calibre in the old text; owner may want better wording
+squad/usa/squad2.inc	elite3b(usa)	left alone (fits) though its 'Has 5 weapon skill.' differs from the reworded BAR team texts
+squad/unlisted.inc	*	no context counts for unlisted keys; facts kept from the old texts only
+
+== d-hero ==
+hero/axis_minor.inc recon_in_force | old text says veteran crews; card lists axm_hun_tankman (regular) - 'veteran' dropped
+hero/axis_minor.inc guard_the_flanks | old text names one Resita and one Breda-Safat; card lists resita x2 and bredasafat77_stan x2 - counts from card
+hero/axis_minor.inc vet_td | old text says elite crew; card lists axm_ita_vettankman (veteran) - written as veteran
+hero/axis_minor.inc elite_resita(axis_minor) | old text omits the 4 Bersaglieri soldiers in the card; added
+hero/axis_minor.inc hungarian_mobile_unit | old text says one Turan III and one Botond and an SMG team; card lists turan3 x2, botond x2 and 20 assault infantry with mgun, no SMG id - counts from card, high-stamina remark dropped
+hero/axis_minor_entity.inc karlthor | old text says '60mm (24 in)' shell; 24 in is 600mm - written as 600mm [I]
+hero/eng.inc hero7_eng | old text says a pair of 25pdr howitzers; card lists one pdr25_vet plus m3_eng - written as one 25pdr with an M3
+hero/eng.inc hero3_eng | old text is only division history; squad contents taken from the card (eng_anzac_* ids), SMG count assumes eng_anzac_smg is an SMG [I]
+hero/eng.inc heronew3_eng, hero1_eng, heronew1_eng, hero4_eng, hero5_eng | cards commented out; rewritten from old text only
+hero/ger.inc hero6_ger | old text describes Panzergrenadiere with Panzerfausts/StG44; card has only 5 tank crew - infantry dropped
+hero/ger.inc hero10_ger | old text says Pz IV Ausf. J; card vehicle id is pz4h (Ausf. H?) - variant left out, check which model pz4h is [T]
+hero/ger.inc panther_hero | old text says very elite crew and has crude jokes; card lists vet_tankman - written as veteran, jokes dropped
+hero/ger.inc hero_ger_tiger2_ace | old text says '8mm KwK 43'; KwK 43 is 8.8cm - written as 8.8cm [I]
+hero/ger2.inc hero2_ost | old text spells 'panzershreck'; written as Panzerschreck (spelling fix of a weapon name)
+hero/ger2.inc hero4_ost | old text says K98s and MP40s; card ids are ost_straf_mauzer x18, ost_straf_ppsh x6, ost_straf_mp28 x6 - SMGs left unnamed
+hero/ger2.inc hero1_ost | old text says one officer plus 4 StG44 jaeger bodyguards (5 men); card lists ost_officer2 x4 only - written as officer group of 4, bodyguards dropped [T]
+hero/ger2.inc hero7_ost | old text describes a radio operator with flares and 2 MP40 jaegers; card delivers pzkpfw38t_aufk with 4 tankmen - text replaced by a bare vehicle line, needs a proper description [T]
+hero/ger2.inc hero5_ost | old text says 4 jaegers with an MG42 per halftrack; card lists 12 soldiers (6 per halftrack) with ost_pzgren_mg34 x2 - counts from card
+hero/ger2.inc hero11_ost | old text says elite tank crew; card lists tankman x3, tankman2 (regular) - written as crew of 4
+hero/ger2.inc hero8_ost | old text says veteran tankmen; card lists tankman x3, tankman2 (regular) - 'veteran' dropped
+hero/ger2.inc hero3_ost | old name 'SdKfz/234 3' normalised to 'SdKfz 234/3'
+hero/jap.inc hero_jap_guard(jap) | old text says 2 MGs; card lists jap_kanoeshidan_mg x3 - written as 3 MGs; card also lists a bare id 3002; skill numbers dropped
+hero/jap.inc hero6_jap | old text says one Chi-He hero tank; card lists chi-he x5 with 20 crew - written as five tanks
+hero/jap.inc hero_jap_elite_aa | old text says one gun package with one support vehicle; card lists type4_75mm_elite x2 and ss-ki x2 - written as two of each
+hero/jap.inc super_officer_jap | left as is; old text says one senior officer, card lists super_officer x4 [I]
+hero/jap.inc banzai_1..banzai_16 | 'cooldown tier' read as the time a free buy unlocks; sequence wording rewritten, check meaning [I]; card soldiers list bare ids 302/303/9002/9003
+hero/rus.inc heronew2_rus | card vehicle t34m written as 'T-34M'; check what t34m is (tractor?) [I]
+hero/rus.inc hero3_rus | card adds a gaz67 and a tankman2 not in old text; GAZ-67 added
+hero/usa.inc hero_usa_log | old text names two ammo crates and a GMC truck; card lists gmc_art, gmc_inf, ammo_box_us_special - kept old wording, check it matches [I]
+hero/usa.inc hero_usa_m3_carbine(usa) | old text says two 3-man teams (6); card lists 3 leaders + 6 carbines (9) - written as three 3-man teams; skill numbers dropped
+hero/usa.inc hero7_usa | old text says two Sherman 76s; card lists m4a3_75 x3 and m4a3e8 x2 - written as five Shermans
+hero/usa.inc hero8_usa | card adds np_willys50 x2, np_willysat, 6 vehicle_supporter and a paratrooper not in old text; written as 'three Willys jeeps' [I]
+hero/usa.inc hero_usa_m12 | old text says battle-hardened crew; card lists tankman x2, tankman2 (regular) - dropped
+hero/usa.inc hero_usa_raiders | 24 raiders over 2 LVT4s written as 12 per vehicle [I]; skill numbers dropped
+vehicle_group/axis_minor.inc brixia45_seqx2, brixia45_seqx3, m1139_seqx2, m7518_seqx2 | old text says 'Sequence-buy: two/three mortars/tanks'; card lists one vehicle - written as 'sequence-buy xN card with one ...' [T]
+vehicle_group/axis_minor.inc bersaglieri_motorcycle | old text says one SA 500 with 5 men; card lists guzzi-sa500 x7 and 11 soldiers - counts from card
+vehicle_group/axis_minor.inc motorized_hungarian_rifles(axis_minor) | left as is; old text mentions an LMG element, card has no mgun id (axm_hun_rifle3 x2?) [I]
+vehicle_group/ger.inc pzgren_mech(ger) | old text says 7 panzergrenadiers; card lists 9 plus a vehicle_supporter - written as 9
+vehicle_group/ger.inc sgrw_34, sgrw_42 | keys are shared by cards on other sides (ger_ss, axis_minor); check no other part rewrites them differently
+vehicle_group/ger2.inc storm_mech_ost | old text says 4 jaegers; card lists 6 (ost_jager_sa x3, stg, smg x2) - written as 6
+vehicle_group/usa.inc paramarines_drop(usa) | old text says 12-man with 12 weapons; card lists 11 soldiers - written as 11, per-weapon counts other than LMGs dropped
+
+== e-entity ==
+entity/axis_minor/v1.inc botond: card is the Hungarian Botond truck but the old text describes the Opel Blitz; new text drops the Blitz name.
+entity/axis_minor/v4.inc toldi1, toldi2: same old text for both cards, no fact tells them apart; both get the same sentence.
+entity/axis_minor/v4.inc turan1, turan2, turan3: all three had the same history text; each new text keeps the version the key names (I 40 mm, II short 75 mm, III long 75 mm KwK L/43 prototype) [I].
+entity/axis_minor/v4.inc zrinyi2 + v5.inc zrinyi1: shared text; split by key (II 105mm howitzer, I long 75mm prototype) [I].
+entity/eng/v1.inc churchill_kangaroo: old text is only a joke line; new text keeps its meaning (troop carrier, hard to destroy), unsure it says enough.
+entity/eng/v22.inc m7_eng says mass-produced since April 1943, usa/v22 m7 says April 1942; dates dropped from both.
+entity/eng/v22.inc bl72: old text never names the gun; kept nameless, did not add 7.2-inch from the key.
+entity/ger/v2.inc pak44: old text says 'The 88mm PaK 44 is a 128mm' gun; new text uses 128mm.
+entity/ger/v2.inc pak43: dropped first-person 'our superior German engineers'.
+entity/ger/v4.inc sdkfz182b: typo 'its-70 ton' fixed to 70-ton.
+entity/ger/v5.inc np_sdkfz234_4: context says also under ger/v3 while the part is ger/v5 (context only, no text change from it).
+entity/ger2/v1.inc kfz15_gun: card name suggests an armed car, old text names no weapon; none added.
+entity/ger2/v3.inc pz1b_ger2: old text says Pz.I mass produced since July 1943 (historically wrong); date dropped.
+entity/ger_ss/v4.inc pz5a: old text has typo 'summer of 194'; the history was dropped, and the main gun is not named in the old text.
+entity/ger_ss/v5.inc flammpz38: dropped the Lebensraum / Aryan girls joke line.
+entity/ger_ss/v5.inc stug4g: old text was 1 sentence under 180 but past tense with a stray comma; rewritten anyway.
+entity/unlisted.inc sgrw42_ger2: key says sGrW 42 (120mm) but text is the 81mm sGrW 34 text; kept 81mm, left the name out.
+entity/unlisted.inc flak37_ger2: key says FlaK 37 but text describes the 88mm FlaK 18; kept FlaK 18.
+entity/unlisted.inc m19: dropped 'This is a World War II game you morons'; kept anachronism as a 1945 fact.
+entity/unlisted.inc t34_3_ger2: old text gives no model name; written as 'This T-34 model'.
+entity/unlisted.inc m4a1_76w: name 'M4A1 76mm' taken from the old text's opening fragment.
+entity/usa/v1.inc m3_usa: eight soldiers is the passenger compartment, card crew is 2 vehicle_supporter (not a contradiction, kept).
+entity/usa/v2.inc m8_howitzer: the old text never names the howitzer M8; kept nameless.
+entity/usa/v22.inc 60mm_brandt_usa: dropped the 'useless' and 'plastic dildos' joke; kept short range and easy concealment.
+entity/usa/v22.inc 4_2_inch_mortar_m_2: card under usa and key says M2, old text calls it the British Ordnance ML 4.2-inch; kept the text's British name.
+entity/usa/v4.inc m4sherman, m4a1: same history text for both; the old text names no gun, so none added; m4a1 named M4A1 Sherman from the key.
+entity/usa/v4.inc m4a3e2_jumbo_76: old text says built with 75 mm, often re-armed with 76 mm; key _76 used to state the 76-mm gun [I].
+Left alone (already fit): eng 303_bren_tripod, 303_vickers_mkiv; ger mg34_lafette, mg42_lafette ('A MG' kept), pz3_m_flamer, marder_3m; ger2 np_sdkfz8, sdkfz7_2; eng/ger/jap/rus/usa ammo boxes except ammo_box_eng_art (3 sentences); bl45; m115, m115_vet (past tense but 1 short sentence).
+

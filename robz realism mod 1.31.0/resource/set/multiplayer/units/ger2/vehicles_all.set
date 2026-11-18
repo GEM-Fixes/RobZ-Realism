@@ -119,29 +119,29 @@
 
 ;   Button Hero   
 
-{"hero2_ost"		("i2" c(120)					t(all 44 45 hero) s(ger2) n1(ost_panzershreck:2) n2(ost_panzershreckassist:2) g(h2) b(hero)) {level 1} {cost 1.0} {fore -0.5}}
-{"hero_ost_raketenwerfer" ("v31" c(270) c1(raketenwerfer) 	t(all 44 45 hero) s(ger2) n(vehicle_supporter:2)  g(h4) b(hero)) {level 1} {cost 2.0} {fore -0.5}}
+{"hero2_ost(ger2)"		("i2" c(120)					t(all 44 45 hero) s(ger2) n1(ost_panzershreck:2) n2(ost_panzershreckassist:2) g(h2) b(hero)) {level 1} {cost 1.0} {fore -0.5}}
+{"hero_ost_raketenwerfer(ger2)" ("v31" c(270) c1(raketenwerfer) 	t(all 44 45 hero) s(ger2) n(vehicle_supporter:2)  g(h4) b(hero)) {level 1} {cost 2.0} {fore -0.5}}
 
-{"hero4_ost"		("i3" c(240)						t(all 44 45 hero) s(ger2) n1(ost_straf_ppsh:6) n2(ost_straf_mauzer:18) n3(ost_straf_mp28:6) g(h3) b(hero)) {level 1} {cost 2.0} {fore -0.5}}
+{"hero4_ost(ger2)"		("i3" c(240)						t(all 44 45 hero) s(ger2) n1(ost_straf_ppsh:6) n2(ost_straf_mauzer:18) n3(ost_straf_mp28:6) g(h3) b(hero)) {level 1} {cost 2.0} {fore -0.5}}
 
-{"hero1_ost"		("i2" c(600)					t(all 44 45 hero officer super_officer) s(ger2) n1(ost_officer2:4) g(h3) b(hero)) {level 1} {cost 12.0} {fore 0.0}}
+{"hero1_ost(ger2)"		("i2" c(600)					t(all 44 45 hero officer super_officer) s(ger2) n1(ost_officer2:4) g(h3) b(hero)) {level 1} {cost 12.0} {fore 0.0}}
 
 
-{"hero7_ost"		("v1" c(480) c1(pzkpfw38t_aufk)		t(all 44 45 hero) s(ger2) n1(tankman:3) n2(tankman2:1) g(h8) b(hero)) {level 1} {cost 4.0} {fore -0.5}}																																					  
-{"hero5_ost"		("v24" c(180) c1(sdkfz250_11)	t(all 44 45 hero) s(ger2) n1(ost_pzgren_sg44_pzfuast:2) n2(ost_pzgren_g43_pzfaust:2) n3(ost_pzgren_smg_pzfaust:1) n4(ost_pzgren_mg34:1) g(h6) b(hero)) {level 1} {cost 3.0} {fore -0.5}}
+{"hero7_ost(ger2)"		("v1" c(480) c1(pzkpfw38t_aufk)		t(all 44 45 hero) s(ger2) n1(tankman:3) n2(tankman2:1) g(h8) b(hero)) {level 1} {cost 4.0} {fore -0.5}}																																					  
+{"hero5_ost(ger2)"		("v24" c(180) c1(sdkfz250_11)	t(all 44 45 hero) s(ger2) n1(ost_pzgren_sg44_pzfuast:2) n2(ost_pzgren_g43_pzfaust:2) n3(ost_pzgren_smg_pzfaust:1) n4(ost_pzgren_mg34:1) g(h6) b(hero)) {level 1} {cost 3.0} {fore -0.5}}
 
-{"hero3_ost"		("v1" c(280) c1(sdkfz234_3)		t(all 44 45 hero) s(ger2) n1(tankman:2) n2(tankman2:1) g(h5) b(hero)) {level 1} {cost 3.0} {fore -0.71}} ;480sec
+{"hero3_ost(ger2)"		("v1" c(280) c1(sdkfz234_3)		t(all 44 45 hero) s(ger2) n1(tankman:2) n2(tankman2:1) g(h5) b(hero)) {level 1} {cost 3.0} {fore -0.71}} ;480sec
 
-{"hero6_ost"		("v1" c(360) c1(sdkfz234_4)		t(all 45 hero) s(ger2) n1(tankman:2) n2(tankman2:1) g(h7) b(hero)) {level 1} {cost 5.0} {fore -0.875}} ;675sec
+{"hero6_ost(ger2)"		("v1" c(360) c1(sdkfz234_4)		t(all 45 hero) s(ger2) n1(tankman:2) n2(tankman2:1) g(h7) b(hero)) {level 1} {cost 5.0} {fore -0.875}} ;675sec
 
-{"hero8_ost"		("v3" c(600) c1(t34_3_ger2)		t(all 44 45 hero) s(ger2) n1(tankman:3) n2(tankman2:1) n3(ost_rifle:4) g(h9) b(hero)) {level 1} {cost 4.0} {fore -1.0}}	;1200sec
-{"hero_ost_stug"	("v1" c(720) c1(stug3g_ace)		t(all 44 45 hero) s(ger2) n1(ost_elite_tankman2:1) n2(ost_elite_tankman:3) g(h10) b(hero)) {level 1} {cost 8.0} {fore -0.736}} ;1250sec
-{"hero10_ost"		("v1" c(600) c1(sdkfz8)			t(all 44 45 hero) s(ger2) n1(tankman:3) n2(tankman2:1) g(h11) b(hero)) {level 1} {cost 8.0} {fore -0.867}} ;1120sec
+{"hero8_ost(ger2)"		("v3" c(600) c1(t34_3_ger2)		t(all 44 45 hero) s(ger2) n1(tankman:3) n2(tankman2:1) n3(ost_rifle:4) g(h9) b(hero)) {level 1} {cost 4.0} {fore -1.0}}	;1200sec
+{"hero_ost_stug(ger2)"	("v1" c(720) c1(stug3g_ace)		t(all 44 45 hero) s(ger2) n1(ost_elite_tankman2:1) n2(ost_elite_tankman:3) g(h10) b(hero)) {level 1} {cost 8.0} {fore -0.736}} ;1250sec
+{"hero10_ost(ger2)"		("v1" c(600) c1(sdkfz8)			t(all 44 45 hero) s(ger2) n1(tankman:3) n2(tankman2:1) g(h11) b(hero)) {level 1} {cost 8.0} {fore -0.867}} ;1120sec
 
-{"hero11_ost"		("v1" c(720) c1(brummbar)		t(all 44 45 hero) s(ger2) n1(tankman:3) n2(tankman2:1) g(h13) b(hero)) {level 1} {cost 10.0} {fore -0.694}} ;1220sec
+{"hero11_ost(ger2)"		("v1" c(720) c1(brummbar)		t(all 44 45 hero) s(ger2) n1(tankman:3) n2(tankman2:1) g(h13) b(hero)) {level 1} {cost 10.0} {fore -0.694}} ;1220sec
 
-{"hero9_ost"		("2v" c(720) c1(np_sdkfz8) c2(swg41)			t(all 44 45 artillery hero) s(ger2) n1(ost_support:2) n2(ost_support:2) g(h12) b(hero)) {level 1} {cost 13.0} {fore -0.5}}
+{"hero9_ost(ger2)"		("2v" c(720) c1(np_sdkfz8) c2(swg41)			t(all 44 45 artillery hero) s(ger2) n1(ost_support:2) n2(ost_support:2) g(h12) b(hero)) {level 1} {cost 13.0} {fore -0.5}}
 
-{"hero12_ost"		("v1" c(1400) c1(jagdtiger_ger2)t(all 44 45 hero sheavy) s(ger2) n1(tankman:3) n2(tankman2:1) g(h14) b(hero)) {level 1} {cost 20.0} {fore -0.54}} ;2160sec
+{"hero12_ost(ger2)"		("v1" c(1400) c1(jagdtiger_ger2)t(all 44 45 hero sheavy) s(ger2) n1(tankman:3) n2(tankman2:1) g(h14) b(hero)) {level 1} {cost 20.0} {fore -0.54}} ;2160sec
 
 

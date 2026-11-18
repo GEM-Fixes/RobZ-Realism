@@ -17,7 +17,7 @@
 ; [new] no buy-list card names this key
 {"longtom_155mm(usa)" "Long tom"}
 ; [new] no buy-list card names this key
-{"cruisermk1" "Cruiser Mk.I "}
+{"cruisermk1" "Cruiser Mk.I"}
 ; [new] no buy-list card names this key
 {"cruisermk3" "Cruiser Mk.III"}
 ; [new] no buy-list card names this key
@@ -31,9 +31,9 @@
 ; [new] no buy-list card names this key
 {"sturmpz1" "150mm sIG 33 auf Pzkpfw I Ausf. B"}
 ; [new] no buy-list card names this key
-{"Resita_seq" "<c(FF5733)>Resita"}
+{"resita_seq" "<c(FF5733)>Resita"}
 ; [new] no buy-list card names this key
-{"Resita_seqx2" "<c(00ff04)>Resita"}
+{"resita_seqx2" "<c(00ff04)>Resita"}
 ; [new] no buy-list card names this key
 {"m7518_seq" "<c(FF5733)>m7518"}
 ; [new] no buy-list card names this key
@@ -43,11 +43,11 @@
 ; [new] no buy-list card names this key
 {"m1139_seqx2" "<c(00ff04)>m1139"}
 ; [new] no buy-list card names this key
-{"Brixia45_seq" "<c(FF5733)>Brixia45"}
+{"brixia45_seq" "<c(FF5733)>Brixia45"}
 ; [new] no buy-list card names this key
-{"Brixia45_seqx2" "<c(00ff04)>Brixia45"}
+{"brixia45_seqx2" "<c(00ff04)>Brixia45"}
 ; [new] no buy-list card names this key
-{"Brixia45_seqx3" "<c(4311eb)>Brixia45"}
+{"brixia45_seqx3" "<c(4311eb)>Brixia45"}
 ; [changed] no buy-list card names this key
 {"flak-38-1" "20mm FlaK 38"}
 ; [new] no buy-list card names this key

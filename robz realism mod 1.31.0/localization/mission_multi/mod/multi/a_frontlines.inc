@@ -32,13 +32,13 @@
 {"2v2_city_edge"
 {"name" "<c(FF0000)>Q</c> <c(00ff0aff)>S</c> City Edge <e(shadow)><c(00ff0aff)>2v2</c> (GSM)"}
 }
-{"2v2_The_Hill_138"
+{"2v2_the_hill_138"
 {"name" "<c(FFA500)>Q</c> <c(00ff0aff)>S</c> The Hill 138 <e(shadow)><c(00ff0aff)>2v2</c> (GSM)"}
 }
 {"3v3_dead_hils"
 {"name" "<c(FFA500)>Q</c> <c(00ff0aff)>S</c> Dead Hills <e(shadow)><c(00ff0aff)>3v3</c> (GSM)"}
 }
-{"3v3_Railway_Crossings"
+{"3v3_railway_crossings"
 {"name" "<c(FF0000)>Q</c> <c(00ff0aff)>S</c> Railway Crossings <e(shadow)><c(00ff0aff)>3v3</c> (GSM)"}
 }
 {"3v3_winter_station"

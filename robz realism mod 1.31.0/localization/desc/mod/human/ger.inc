@@ -32,9 +32,9 @@
 {"ger_panzerschreckassist" "<c(c3baae)>Panzerschreck Schütze asst."}
 ; [new] first in card "bazooker3(ger)" ger/squad2 cost 62 | units/ger/squads_44.set:135
 {"ger_panzerfaust" "<c(c3baae)>Panzerfaust Schütze"}
-; [new] first in card "hero_ger_tiger2_ace" ger/hero cost 20 | units/ger/vehicles_44.set:175
+; [new] first in card "hero_tiger2_ace(ger)" ger/hero cost 20 | units/ger/vehicles_44.set:175
 {"elite_tankman" "<c(c3baae)>Panzerbesatzung [Elite]"}
-; [new] first in card "hero_ger_tiger2_ace" ger/hero cost 20 | units/ger/vehicles_44.set:175
+; [new] first in card "hero_tiger2_ace(ger)" ger/hero cost 20 | units/ger/vehicles_44.set:175
 {"elite_tankman2" "<c(c3baae)>Panzerbesatzung Kommandant [Elite]"}
 ; [new] first in card "elite3_42(ger)" ger/squad2 cost 70 | units/ger/squads_42.set:102
 {"fallschirm_fg_42" "<c(c3baae)>Fallschirmjäger"}
@@ -294,11 +294,11 @@
 {"ger_vehicle_supporter_single" "<c(c3baae)>Kanonier"}
 ; [new] first in card "pak38_elite" ger/hero cost 3 | units/ger/vehicles_44.set:149
 {"elite_vehicle_supporter" "<c(c3baae)>Kanonier [Elite]"}
-; [new] first in card "hero_mg42_ger" ger/hero cost 1 | units/ger/vehicles_44.set:148
+; [new] first in card "hero_mg42(ger)" ger/hero cost 1 | units/ger/vehicles_44.set:148
 {"vet_vehicle_supporter" "<c(c3baae)>Kanonier [Veteran]"}
-; [new] first in card "hero8_ger" ger/hero cost 14 | units/ger/vehicles_44.set:172 | in 2 cards
+; [new] first in card "hero8(ger)" ger/hero cost 14 | units/ger/vehicles_44.set:172 | in 2 cards
 {"vet_tankman" "<c(c3baae)>Panzerbesatzung [Veteran]"}
-; [new] first in card "hero8_ger" ger/hero cost 14 | units/ger/vehicles_44.set:172 | in 2 cards
+; [new] first in card "hero8(ger)" ger/hero cost 14 | units/ger/vehicles_44.set:172 | in 2 cards
 {"vet_tankman2" "<c(c3baae)>Panzerbesatzung Kommandant [Veteran]"}
 ; [new] first in card "elite_tankmans(ger)" ger/squad1 cost 100 | units/ger/squads_44.set:103
 {"ger_vet_tankman2_single" "<c(c3baae)>Panzerbesatzung Kommandant [Veteran]"}

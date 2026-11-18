@@ -5,7 +5,7 @@
 			{value "43"}
 		}
 		{commandPoints "*=%cp"}
-		{unitLimits "flamethrower=3;officer=2;super_officer=1;sniper_h_g=10;sniper_h_ss=20;sp=1;heavyaa=2;only-one=1,super_persh=1"};
+		{unitLimits "flamethrower=3;officer=2;super_officer=1;sniper_h_g=10;sniper_h_ss=20;sp=1;heavyaa=2;only-one=1;super_persh=1"};
 		{chargeFactors
 			{value "*=1"}
 		}

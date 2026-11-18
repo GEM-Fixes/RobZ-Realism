@@ -53,12 +53,14 @@
 {"radioman_mortar(ger)" "Radioman mortar call-in"}
 ; -- group soldier_stg --
 ; [new] card "grenadier_stg_43(ger)" cost 16 lvl 1 | soldiers grenadier_stg_43 | tags infantry 43 | units/ger/squads_43.set:89
+; ToE:
 {"grenadier_stg_43(ger)" "MP43 grenadier"}
 ; -- group soldier_sa --
 ; [new] card "grenadier_sa_41(ger)" cost 13 lvl 1 | soldiers grenadier_sa_41 | tags infantry 41 42 | units/ger/squads_42.set:81
 {"grenadier_sa_41(ger)" "G41 grenadier"}
 ; -- group soldier_stg --
 ; [new] card "grenadier_stg_42(ger)" cost 16 lvl 1 | soldiers grenadier_stg_42 | tags infantry 42 | units/ger/squads_42.set:85
+; ToE:
 {"grenadier_stg_42(ger)" "MKb42(H) grenadier"}
 ; -- group squad_4 --
 ; [new] card "elite3_42(ger)" cost 70 lvl 1 | soldiers fallschirm_fg_42, fallschirm_rifle_39 x2 | tags infantry 42 | units/ger/squads_42.set:102

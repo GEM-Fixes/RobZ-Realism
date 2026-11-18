@@ -172,7 +172,7 @@
 {"rus_smg2_43" "<c(c3baae)>Motoavtomatchik"}
 ; [new] first in card "snipers(rus)" rus/squad2 cost 180 | units/rus/squads_43-45.set:101
 {"rus_sniper_mosin" "<c(c3baae)>Snayper"}
-; [new] first in card "hero3_rus" rus/hero cost 1 | units/rus/vehicles_44-45.set:122
+; [new] first in card "hero3(rus)" rus/hero cost 1 | units/rus/vehicles_44-45.set:122
 {"rus_vetsniper" "<c(c3baae)>Snayper [Veteran]"}
 ; [new] first in card "snipers3(rus)" rus/squad2 cost 180 | units/rus/squads_43-45.set:102
 {"rus_sniper_svtscoped" "<c(c3baae)>Snayper"}

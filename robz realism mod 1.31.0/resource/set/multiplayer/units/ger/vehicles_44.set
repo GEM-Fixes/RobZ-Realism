@@ -22,11 +22,11 @@
 
 ;   Button 2    support weapons
 
-{"mg34_lafette_seq"     ("vs_seq" c(10) t(44) 	i(20) v1(mg34_lafette)	s(ger) n(2) g(c1) sc(130) b(v2) cw(2) cp(5)) {level 1} {cost 130} {fore -2.0}}			;30sec
-{"mg34_lafette_seqx2"     ("vs2_seq" c(10) t(44) v1(mg34_lafette) v2(mg34_lafette)	i(20)	s(ger) n(2) g(c1) sc(195) b(v2) cw(2) cp(5)) {level 1} {cost 195} {fore -2.0}}			;30sec
+{"mg34_lafette_seq(ger)"     ("vs_seq" c(10) t(44) 	i(20) v1(mg34_lafette)	s(ger) n(2) g(c1) sc(130) b(v2) cw(2) cp(5)) {level 1} {cost 130} {fore -2.0}}			;30sec
+{"mg34_lafette_seqx2(ger)"     ("vs2_seq" c(10) t(44) v1(mg34_lafette) v2(mg34_lafette)	i(20)	s(ger) n(2) g(c1) sc(195) b(v2) cw(2) cp(5)) {level 1} {cost 195} {fore -2.0}}			;30sec
 
-{"mg42_lafette_seq"     ("vs_seq" c(10) t(44) v1(mg42_lafette)	i(21)	s(ger) n(2) g(c2) sc(150) b(v2) cw(2) cp(5)) {level 1} {cost 150} {fore -2.0}}			;30sec
-{"mg42_lafette_seqx2"     ("vs2_seq" c(10) t(44) v1(mg42_lafette) v2(mg42_lafette)	i(21)	s(ger) n(2) g(c2) sc(225) b(v2) cw(2) cp(5)) {level 1} {cost 225} {fore -2.0}}			;30sec
+{"mg42_lafette_seq(ger)"     ("vs_seq" c(10) t(44) v1(mg42_lafette)	i(21)	s(ger) n(2) g(c2) sc(150) b(v2) cw(2) cp(5)) {level 1} {cost 150} {fore -2.0}}			;30sec
+{"mg42_lafette_seqx2(ger)"     ("vs2_seq" c(10) t(44) v1(mg42_lafette) v2(mg42_lafette)	i(21)	s(ger) n(2) g(c2) sc(225) b(v2) cw(2) cp(5)) {level 1} {cost 225} {fore -2.0}}			;30sec
 
 
 {"2cm_flak38"       ("vs" c(30) t(44) 		s(ger) n(2) g(c3) sc(200) b(v2) cw(2) cp(5)) {level 1} {cost 200} {fore -4.0}}			;150sec
@@ -39,16 +39,16 @@
 
 {"pak38"            ("vs" c(10) t(44) 		s(ger) n(2) g(c9) sc(180) b(v2) cw(2) cp(5)) {level 1} {cost 180} {fore -14.0}}		;150sec
 
-{"np_pak40_seq"         ("vs_seq" c(20) t(medium 44) 	v1(np_pak40) s(ger) n(2) g(c10) i(2) sc(400) b(v2) cw(2) cp(10)) {level 1} {cost 400} {fore -19.0}}		;400sec
-{"np_pak40_seqx2"   	("vs2_seq" c(20) t(medium 44)	v1(np_pak40) v2(np_pak40) s(ger) n(2) g(c10) i(2) sc(600) b(v2) cw(2) cp(10)) {level 1} {cost 600} {fore -19.0}}		;400sec
+{"np_pak40_seq(ger)"         ("vs_seq" c(20) t(medium 44) 	v1(np_pak40) s(ger) n(2) g(c10) i(2) sc(400) b(v2) cw(2) cp(10)) {level 1} {cost 400} {fore -19.0}}		;400sec
+{"np_pak40_seqx2(ger)"   	("vs2_seq" c(20) t(medium 44)	v1(np_pak40) v2(np_pak40) s(ger) n(2) g(c10) i(2) sc(600) b(v2) cw(2) cp(10)) {level 1} {cost 600} {fore -19.0}}		;400sec
 ("how" side(ger) name(np_pak40_towed) c(20) c1(sdkfz251_1_late) c2(np_pak40) t(medium 44) g(c10) b(v2) level(1) cost(475) f(-19.0))	;400sec
 
 ("how" side(ger) name(pak43_towed) c(60) c1(np_sdkfz8) c2(pak43) t(heavy 44) g(c11) b(v2) level(1) cost(940) f(-19.0))		;1200sec
 
 ("how" side(ger) name(flak36a_towed) c(60) c1(np_sdkfz8) c2(flak36a) t(medium artillery 44) g(c12) b(v2) level(1) cost(700) f(-14.0))			;900sec
 
-{"75mm_leig18_seq"    ("vs_seq" v1(75mm_leig18) i(123123) c(60) t(artillery 44) s(ger) n(2) g(c13) sc(16) b(v2) cw(2) cp(5)) {level 1} {cost 310} {fore -1.0}}		;120sec
-{"75mm_leig18_seq2"    ("vs_seq" v1(75mm_leig18)i(123123) c(60) t(artillery 44) s(ger) n(2) g(c13) sc(16) b(v2) cw(2) cp(5)) {level 1} {cost 210} {fore -1.0}}	;120sec
+{"75mm_leig18_seq(ger)"    ("vs_seq" v1(75mm_leig18) i(123123) c(60) t(artillery 44) s(ger) n(2) g(c13) sc(16) b(v2) cw(2) cp(5)) {level 1} {cost 310} {fore -1.0}}		;120sec
+{"75mm_leig18_seq2(ger)"    ("vs_seq" v1(75mm_leig18)i(123123) c(60) t(artillery 44) s(ger) n(2) g(c13) sc(16) b(v2) cw(2) cp(5)) {level 1} {cost 210} {fore -1.0}}	;120sec
 
 {"15_cm_sig33"      ("vs" c(60) t(artillery 44) s(ger) n(2) g(c133) sc(750) b(v2) cw(2) cp(15)) {level 1} {cost 750} {fore -9.0}}		;600sec
 ("how" side(ger) name(15_cm_sig33_towed) c(60) c1(np_sdkfz8) c2(15_cm_sig33) t(artillery 44) g(c133) b(v2) level(1) cost(840) f(-9.0))		;600sec
@@ -113,8 +113,8 @@
 
 {"pz3n"             ("v" c(10) t(medium 44) 		s(ger) n1(3) n2(1) g(e8) sc(370) b(v4) cw(0) cp(15)) {level 1} {cost 370} {fore -62.0}}	;630sec
 
-{"pz4h_seq"          ("v_seq" c(10) t(all 44 45 medium) v1(pz4h)	s(ger) n1(4) n2(1) g(e14) i(61) sc(500) b(v4) cw(0) cp(20)) {level 1} {cost 500} {fore -94.0}}	;950sec
-{"pz4h_seqx2"        ("v_seq" c(10) t(all medium 44 45) v1(pz4h)s(ger) n1(4) n2(1) g(e14) i(61) sc(500) b(v4) cw(0) cp(20)) {level 1} {cost 400} {fore -94.0}}	;950sec
+{"pz4h_seq(ger)"          ("v_seq" c(10) t(all 44 45 medium) v1(pz4h)	s(ger) n1(4) n2(1) g(e14) i(61) sc(500) b(v4) cw(0) cp(20)) {level 1} {cost 500} {fore -94.0}}	;950sec
+{"pz4h_seqx2(ger)"        ("v_seq" c(10) t(all medium 44 45) v1(pz4h)s(ger) n1(4) n2(1) g(e14) i(61) sc(500) b(v4) cw(0) cp(20)) {level 1} {cost 400} {fore -94.0}}	;950sec
 
 {"pz5g"             ("v" c(60) t(44 heavy) 			s(ger) n1(4) n2(1) g(e16) sc(1325) b(v4) cw(0) cp(30)) {level 1} {cost 1325} {fore -24.0}}	;1500sec
 
@@ -130,8 +130,8 @@
 
 {"hetzer"           ("v_com" c(10) t(medium 44) 	s(ger) n1(3) n2(1) g(f1) sc(600) b(v5) cw(0) cp(15)) {level 1} {cost 600} {fore -87.0}} 	;880sec
 
-{"stug3g_seq"           ("v_seq_com" c(10) t(medium 44) v1(stug3g) s(ger) n1(3) n2(1) g(f6) i(1) sc(550) b(v5) cw(0) cp(15)) {level 1} {cost 550} {fore -94.0}} 	;950sec
-{"stug3g_seqx2"         ("v2_seq_com" c(10) t(medium 44) v1(stug3g) v2(stug3g) s(ger) n1(3) n2(1) g(f6) i(1) sc(825) b(v5) cw(0) cp(15)) {level 1} {cost 825} {fore -94.0}}	;950sec
+{"stug3g_seq(ger)"           ("v_seq_com" c(10) t(medium 44) v1(stug3g) s(ger) n1(3) n2(1) g(f6) i(1) sc(550) b(v5) cw(0) cp(15)) {level 1} {cost 550} {fore -94.0}} 	;950sec
+{"stug3g_seqx2(ger)"         ("v2_seq_com" c(10) t(medium 44) v1(stug3g) v2(stug3g) s(ger) n1(3) n2(1) g(f6) i(1) sc(825) b(v5) cw(0) cp(15)) {level 1} {cost 825} {fore -94.0}}	;950sec
 
 {"jagdpanzer_iv_l48" ("v" c(10) t(medium 44)	s(ger) n1(3) n2(1) g(f12) sc(500) b(v5) cw(0) cp(20)) {level 1} {cost 500} {fore -94.0}} 	;950sec
 {"jagdpanzer_iv"    ("v" c(60) t(heavy 44)	s(ger) n1(3) n2(1) g(f13) sc(1100) b(v5) cw(0) cp(30)) {level 1} {cost 1100} {fore -24.0}} 	;1500sec
@@ -145,9 +145,9 @@
 
 ;   Button Hero   
 
-{"hero_mg42_ger"        ("v1" c(120) c1(mg42_lafette_vet)		t(all hero 44) s(ger) n1(vet_vehicle_supporter:2) g(h1) b(hero)) {level 1} {cost 1.0} {fore -0.5}}
+{"hero_mg42(ger)"        ("v1" c(120) c1(mg42_lafette_vet)		t(all hero 44) s(ger) n1(vet_vehicle_supporter:2) g(h1) b(hero)) {level 1} {cost 1.0} {fore -0.5}}
 {"pak38_elite"	    ("2v" c(200) c1(pak38_elite) c2(ammo_box_ger_art) n1(elite_vehicle_supporter:2) n2(vehicle_supporter:2) t(all hero 41 42 43 44) s(ger) g(pak38_elite) b(hero)) {level 1}  {cost 3.0} {fore -0.5}} ;300sec
-{"hero3_ger"        ("v31" c(120) c1(sdkfz303) 		t(all hero 44) s(ger) n(vehicle_supporter:1) g(h1321) b(hero)) {level 1} {cost 2.0} {fore -0.5}}
+{"hero3(ger)"        ("v31" c(120) c1(sdkfz303) 		t(all hero 44) s(ger) n(vehicle_supporter:1) g(h1321) b(hero)) {level 1} {cost 2.0} {fore -0.5}}
 
 
 {"kblitz"	    ("v1" c(345) c1(kblitz)		t(all hero 44) s(ger) n1(tankman:3) n2(tankman2:1) g(kblitz) b(hero)) {level 1} {cost 4.0} {fore -0.65}} ;570sec
@@ -159,17 +159,17 @@ c7(ger_volksgren_sa:3) c8(ger_volksgren_rifle:6) c9(ger_volksgren_mg:2) c10(ger_
 level(1) cost(3) f(-0.5))
 
 
-{"heronew2_ger"	    ("v1" c(345) c1(marder_3m)		t(all hero 44) s(ger) n1(tankman:3) n2(tankman2:1) g(h2) b(hero)) {level 1} {cost 4.0} {fore -0.65}} ;690sec
+{"heronew2(ger)"	    ("v1" c(345) c1(marder_3m)		t(all hero 44) s(ger) n1(tankman:3) n2(tankman2:1) g(h2) b(hero)) {level 1} {cost 4.0} {fore -0.65}} ;690sec
 
-{"hero6_ger"	    ("v1" c(880) c1(stuh42) 		t(all hero 44) s(ger) n1(tankman:4) n2(tankman2:1) g(h5) b(hero)) {level 1} {cost 5.0} {fore 0.0}} ;880sec
-{"hero10_ger"	    ("v2" c(633) c1(pz4h)		t(all hero 44) s(ger) n1(tankman:4) n2(tankman2:1) g(h6) b(hero)) {level 1}  {cost 6.0} {fore -0.5}} ;950sec
+{"hero6(ger)"	    ("v1" c(880) c1(stuh42) 		t(all hero 44) s(ger) n1(tankman:4) n2(tankman2:1) g(h5) b(hero)) {level 1} {cost 5.0} {fore 0.0}} ;880sec
+{"hero10(ger)"	    ("v2" c(633) c1(pz4h)		t(all hero 44) s(ger) n1(tankman:4) n2(tankman2:1) g(h6) b(hero)) {level 1}  {cost 6.0} {fore -0.5}} ;950sec
 
-{"flak18_hero"      ("v41" c(600) c1(np_sdkfz8) c2(flak18a) 		t(all hero artillery 44) s(ger) n1(vehicle_supporter:2) n2(tankman2:0) g(h8) b(hero)) {level 1} {cost 7.0} {fore -0.5}}
-{"heronew3_ger"	    ("2v" c(900) c1(np_sdkfz8) c2(pak44) t(all hero 44) s(ger) n1(vehicle_supporter:2) n2(vehicle_supporter:2) g(h7) b(hero)) {level 1} {cost 9.0} {fore -0.5}}
+{"hero_flak18_hero(ger)"      ("v41" c(600) c1(np_sdkfz8) c2(flak18a) 		t(all hero artillery 44) s(ger) n1(vehicle_supporter:2) n2(tankman2:0) g(h8) b(hero)) {level 1} {cost 7.0} {fore -0.5}}
+{"heronew3(ger)"	    ("2v" c(900) c1(np_sdkfz8) c2(pak44) t(all hero 44) s(ger) n1(vehicle_supporter:2) n2(vehicle_supporter:2) g(h7) b(hero)) {level 1} {cost 9.0} {fore -0.5}}
 
-{"hero7_ger"        ("v229" c(540) c1(nebelwerfer41_2) c2(sdkfz251_1_late) n1(vehicle_supporter:2) n2(ger_pzgren_pio_sl) n3(ger_pzgren_pio1) n4(ger_pzgren_pio2) n5(ger_pzgren_pio3) n6(ger_pzgren_pio_flamer) n7(ger_pzgren_pio_mg:2) n8(ger_pzgren_pio_mg_asst) n9(ger_pzgren_pio_at)	t(all hero artillery rocket 44) s(ger) g(h4) b(hero)) {level 1} {cost 6.0} {fore -0.5}}
+{"hero7(ger)"        ("v229" c(540) c1(nebelwerfer41_2) c2(sdkfz251_1_late) n1(vehicle_supporter:2) n2(ger_pzgren_pio_sl) n3(ger_pzgren_pio1) n4(ger_pzgren_pio2) n5(ger_pzgren_pio3) n6(ger_pzgren_pio_flamer) n7(ger_pzgren_pio_mg:2) n8(ger_pzgren_pio_mg_asst) n9(ger_pzgren_pio_at)	t(all hero artillery rocket 44) s(ger) g(h4) b(hero)) {level 1} {cost 6.0} {fore -0.5}}
 
-{"hero8_ger"        ("v1" c(950) c1(veteran_tiger) 	t(hero 44) s(ger) n1(vet_tankman:4) n2(vet_tankman2:1) g(h10) b(hero)) {level 1} {cost 14.0} {fore -0.99}} ;1890sec
-{"panther_hero"     ("v1" c(1100) c1(pz5g_veteran) 	t(hero 44) s(ger) n1(vet_tankman:4) n2(vet_tankman2:1) g(h11) b(hero)) {level 1} {cost 14.0} {fore -0.718}} ;1890sec
-{"hero9_ger"        ("v1" c(1000) c1(sturmtiger) 	t(artillery hero 44) s(ger) n1(tankman:3) n2(tankman2:1) g(h12) b(hero)) {level 1} {cost 14.0} {fore -0.5}} ;1890sec
-{"hero_ger_tiger2_ace"     ("v1" c(1600) c1(pz6bh_ace) 	t(sheavy hero 44) s(ger) n1(elite_tankman:4) n2(elite_tankman2:1) g(h13) b(hero)) {level 1} {cost 20.0} {fore -0.35}} ;2160sec
+{"hero8(ger)"        ("v1" c(950) c1(veteran_tiger) 	t(hero 44) s(ger) n1(vet_tankman:4) n2(vet_tankman2:1) g(h10) b(hero)) {level 1} {cost 14.0} {fore -0.99}} ;1890sec
+{"hero_panther_hero(ger)"     ("v1" c(1100) c1(pz5g_veteran) 	t(hero 44) s(ger) n1(vet_tankman:4) n2(vet_tankman2:1) g(h11) b(hero)) {level 1} {cost 14.0} {fore -0.718}} ;1890sec
+{"hero9(ger)"        ("v1" c(1000) c1(sturmtiger) 	t(artillery hero 44) s(ger) n1(tankman:3) n2(tankman2:1) g(h12) b(hero)) {level 1} {cost 14.0} {fore -0.5}} ;1890sec
+{"hero_tiger2_ace(ger)"     ("v1" c(1600) c1(pz6bh_ace) 	t(sheavy hero 44) s(ger) n1(elite_tankman:4) n2(elite_tankman2:1) g(h13) b(hero)) {level 1} {cost 20.0} {fore -0.35}} ;2160sec

@@ -120,16 +120,16 @@
 ;---------------------------Hero------------------------------
 
 
-("squad_with5types" side(axis_minor) name(SissiSP) c(150) g(h1) c1(axm_fin_sissi_squadleader_vision:1) c2(axm_fin_sissi_mgun_vision:1) c3(axm_fin_sissi_mgun_assist_vision:1) c4(axm_fin_sissi_smg_vision:2) c5(axm_fin_sissi_rifle_vision:4) b(hero) t(all hero 43 44 45) level(1) cost(1) f(0.25));120
+("squad_with5types" side(axis_minor) name(hero_sissisp) c(150) g(h1) c1(axm_fin_sissi_squadleader_vision:1) c2(axm_fin_sissi_mgun_vision:1) c3(axm_fin_sissi_mgun_assist_vision:1) c4(axm_fin_sissi_smg_vision:2) c5(axm_fin_sissi_rifle_vision:4) b(hero) t(all hero 43 44 45) level(1) cost(1) f(0.25));120
 
-("squad_with1types" side(axis_minor) name(white_death) c(200) g(h1) c1(axm_fin_elite_sniper:1)  b(hero) t(all hero 43 44 45) level(1) cost(2) f(-0.5))
+("squad_with1types" side(axis_minor) name(hero_white_death) c(200) g(h1) c1(axm_fin_elite_sniper:1)  b(hero) t(all hero 43 44 45) level(1) cost(2) f(-0.5))
 
-("squad_with5types_vehicle" side(axis_minor) name(Elite_Resita) c(60) g(h155) v1(elite_resita) c1(axm_rom_elite_vehicle_supporter:2) c2(axm_ita_bersaglieri_rifle:0) c3(axm_ita_bersaglieri_mgun_assist:0) c4(axm_ita_bersaglieri_smg:0) c5(axm_bersaglieri_mgun:0) b(hero) t(all hero 44 45) level(1) cost(3) f(-15.0)) 
+("squad_with5types_vehicle" side(axis_minor) name(hero_elite_resita) c(60) g(h155) v1(elite_resita) c1(axm_rom_elite_vehicle_supporter:2) c2(axm_ita_bersaglieri_rifle:0) c3(axm_ita_bersaglieri_mgun_assist:0) c4(axm_ita_bersaglieri_smg:0) c5(axm_bersaglieri_mgun:0) b(hero) t(all hero 44 45) level(1) cost(3) f(-15.0)) 
 
-{"Recon_in_Force"  ("v232" c(320) c1(csaba39m) c2(csaba40m)  n1(axm_hun_tankman:3) n2(axm_hun_tankcommander:1)  t(all hero 44 45) s(axis_minor) g(h15) b(hero)) {level 1} {cost 3.0} {fore -0.125}} ;360
+{"hero_recon_in_force(axis_minor)"  ("v232" c(320) c1(csaba39m) c2(csaba40m)  n1(axm_hun_tankman:3) n2(axm_hun_tankcommander:1)  t(all hero 44 45) s(axis_minor) g(h15) b(hero)) {level 1} {cost 3.0} {fore -0.125}} ;360
 
 
-{"hungarian_mobile_unit"  ("v236" c(180) c1(turan3) c2(botond) n1(axm_hun_tankman:4) n2(axm_hun_tankcommander:1) n3(axm_hun_assualt_rifle:4)  n4(axm_hun_assualt_pzf:3) n5(axm_hun_assualt_squadleader:1) n6(axm_hun_assualt_mgun:2)    t(all hero 44 45) s(axis_minor) g(h15) b(hero)) {level 1} {cost 12.0} {fore -3.65}} ;540
+{"hero_hungarian_mobile_unit(axis_minor)"  ("v236" c(180) c1(turan3) c2(botond) n1(axm_hun_tankman:4) n2(axm_hun_tankcommander:1) n3(axm_hun_assualt_rifle:4)  n4(axm_hun_assualt_pzf:3) n5(axm_hun_assualt_squadleader:1) n6(axm_hun_assualt_mgun:2)    t(all hero 44 45) s(axis_minor) g(h15) b(hero)) {level 1} {cost 12.0} {fore -3.65}} ;540
 
 
 
@@ -142,14 +142,14 @@
 
  
 
-{"guard_the_flanks"  ("v221" c(540) c1(Resita) c2(bredasafat77_stan) c3(sgrw_42) n1(axm_rom_vehicle_supporter:2) t(all hero 44 45) s(axis_minor) g(h15) b(hero)) {level 1} {cost 10.0} {fore -0.111}} ;600
+{"hero_guard_the_flanks(axis_minor)"  ("v221" c(540) c1(Resita) c2(bredasafat77_stan) c3(sgrw_42) n1(axm_rom_vehicle_supporter:2) t(all hero 44 45) s(axis_minor) g(h15) b(hero)) {level 1} {cost 10.0} {fore -0.111}} ;600
  
-{"vet_td"  ("v1" c(540) c1(m9053_vet)  n1(axm_ita_vettankman:3) n2(axm_ita_vettankcommander:1) t(all hero 44 45) s(axis_minor) g(h15) b(hero)) {level 1} {cost 8.0} {fore -1.92}}
+{"hero_vet_td(axis_minor)"  ("v1" c(540) c1(m9053_vet)  n1(axm_ita_vettankman:3) n2(axm_ita_vettankcommander:1) t(all hero 44 45) s(axis_minor) g(h15) b(hero)) {level 1} {cost 8.0} {fore -1.92}}
 
 
-{"big_gun"  ("v1" c(540) c1(m149_vet)  n1(axm_ita_tankman:3) n2(axm_ita_tankcommander:1) t(all hero 44 45) s(axis_minor) g(h15) b(hero)) {level 1} {cost 8.0} {fore -1.92}}
+{"hero_big_gun(axis_minor)"  ("v1" c(540) c1(m149_vet)  n1(axm_ita_tankman:3) n2(axm_ita_tankcommander:1) t(all hero 44 45) s(axis_minor) g(h15) b(hero)) {level 1} {cost 8.0} {fore -1.92}}
 
-{"tiger_ace_hun"        ("v1" c(950) c1(pz6e_ace) 	t(all hero 44 45) s(axis_minor) n1(axm_hun_elite_tankman:4) n2(axm_hun_elite_tankcommander:1) g(h14) b(hero)) {level 1} {cost 16.0} {fore -0.99}} ;2000sec
+{"hero_tiger_ace_hun(axis_minor)"        ("v1" c(950) c1(pz6e_ace) 	t(all hero 44 45) s(axis_minor) n1(axm_hun_elite_tankman:4) n2(axm_hun_elite_tankcommander:1) g(h14) b(hero)) {level 1} {cost 16.0} {fore -0.99}} ;2000sec
 
 
 {"karlthor"     ("v1" c(540) c1(karlthor) 	t(sheavy hero 44) s(axis_minor) n1(axm_ger_vehicle_supporter:5) n2(axm_ita_tankcommander:0) g(h15) b(hero)) {level 1} {cost 12.0} {fore -1.22}} ;1200

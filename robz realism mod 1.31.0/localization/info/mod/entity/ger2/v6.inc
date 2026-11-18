@@ -2,10 +2,10 @@
 ; mod part, buy-list order (units read order); above each key: [new|changed] card, cost, contents, tags, units file:line, notes
 ; -- group e9 --
 ; [new] card "pz6e_ger2" cost 1400 lvl 1 | soldiers tankman x4, tankman2 | tags all 44 45 heavy | units/ger2/vehicles_all.set:113
-{"pz6e_ger2" "This unit entered service with the German army in 1942 and was considered the best tank right up until the end of 1943. Soviet 45mm guns could not penetrate the Tiger's armor, even at point-blank range, while its 88mm gun was able to destroy any tank of that time."}
+{"pz6e_ger2" "The Tiger carries an 88mm gun able to destroy any tank of its time, and armor that Soviet 45mm guns cannot pierce even at point-blank range."}
 ; -- group e10 --
 ; [new] card "pz5g_ger2" cost 1450 lvl 1 | soldiers tankman x4, tankman2 | tags all 44 45 heavy | units/ger2/vehicles_all.set:115
-{"pz5g_ger2" "The Ausf. G Panther version was created as a response to the Soviet T34, and entered mass production in March 1944. Its relatively good manoeuvrability and a long-barrelled 75mm gun made this tank a dangerous adversary. Its insufficient side protection was compensated for by its excellent frontal armor."}
+{"pz5g_ger2" "The Panther Ausf. G, a response to the Soviet T34, combines good manoeuvrability with a long-barrelled 75mm gun. Its excellent frontal armor makes up for weak side protection."}
 ; -- group e11 --
 ; [new] card "pz6bh_ger2" cost 2750 lvl 1 | soldiers tankman x4, tankman2 | tags all 44 45 sheavy | units/ger2/vehicles_all.set:117
-{"pz6bh_ger2" "This unit entered service with the Wehrmacht in 1944. Its turret-mounted 88mm long-barrelled gun was capable of destroying any enemy tank from a long distance. Combined with excellent armor, this made the King Tiger the most powerful tank of WWII. The Pz VI Ausf.B was almost invulnerable to enemy guns, but its 70 ton weight had a negative impact on its mobility."}
+{"pz6bh_ger2" "The King Tiger (Pz VI Ausf. B) has a long-barrelled 88mm gun that destroys any enemy tank at long range and armor almost no gun can pierce. Its 70-ton weight hurts its mobility."}

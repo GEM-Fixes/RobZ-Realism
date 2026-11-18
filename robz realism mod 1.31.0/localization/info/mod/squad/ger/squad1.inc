@@ -2,80 +2,82 @@
 ; mod part, buy-list order (units read order); above each key: [new|changed] card, cost, contents, tags, units file:line, notes
 ; -- group squad_1 --
 ; [changed] card "home_guards(ger)" cost 84 lvl 1 | soldiers ger_volkssturm_rifle_faustpatrone x4, ger_volkssturm_smg_faustpatrone x2, ger_volkssturm_rifle_panzerfaust x2, ger_volkssturm_smg_panzerfaust x2 | tags infantry all inf_only 44 45 | units/ger/squads_44.set:4
-{"home_guards(ger)" "The Volkssturm squad is a 10-man squad with poorly trained troops. This squad is armed with 8 K98 rifles, 2 MP3008 SMGs and 2 Panzerfaust 30 AT weapons. All squadmembers are skill 1. Fit for cheap infantry with AT."}
+{"home_guards(ger)" "Poorly trained Volkssturm squad of 10 with K98 rifles, MP3008 SMGs and Panzerfausts, all skill 1. Fit for cheap infantry with AT."}
 ; -- group squad_2 --
 ; [new] card "volksgrens(ger)" cost 112 lvl 1 | soldiers ger_volksgren_sl_smg, ger_volksgren_sl_asst, ger_volksgren_mg, ger_volksgren_mg_asst, ger_volksgren_rifle, ger_volksgren_pzfst x2, ger_volksgren_grenadier | tags infantry all inf_only 44 45 | units/ger/squads_44.set:8
-{"volksgrens(ger)" "The Volksgrenadier squad is a low tier riflesquad with 1 MG42, 5 rifles and 2 MP40s. The squad has 8 men total. Includes 2 Panzerfausts. Soldiers are skill 2 except SL and SL asst. which are skill 3."}
+{"volksgrens(ger)" "Low tier Volksgrenadier rifle squad of 8 with 1 MG42, 5 rifles, 2 MP40s and 2 Panzerfausts. Soldiers are skill 2, the leader and his assistant skill 3."}
 ; [new] card "volksgrens_sturm(ger)" cost 110 lvl 1 | soldiers ger_volksgren_sl_stg, ger_volksgren_sl_asst, ger_volksgren_stg44 x3, ger_volksgren_pzfst2 x2, ger_volksgren_smg, ger_volksgren_sa | tags infantry all inf_only 44 45 | units/ger/squads_44.set:10
-{"volksgrens_sturm(ger)" "The Volksgrenadier sturm squad is a low tier assault squad with 6 STG44s, 1 G43 and 2 MP40s. The squad has 9 men total. Includes 2 Panzerfausts. Soldiers are skill 2 except SL and SL asst. which are skill 3."}
+{"volksgrens_sturm(ger)" "Low tier Volksgrenadier sturm squad of 9 with 6 STG44s, 1 G43, 2 MP40s and 2 Panzerfausts. Soldiers are skill 2, the leader and his assistant skill 3."}
 ; [new] card "volksgrens_heavy(ger)" cost 134 lvl 1 | soldiers ger_volksgren_sl_stg, ger_volksgren_sl_asst, ger_volksgren_stg44, ger_volksgren_pzfst2 x2, ger_volksgren_mg x2, ger_volksgren_mg_asst2, ger_volksgren_mg_asst3 | tags infantry all inf_only 44 45 | units/ger/squads_44.set:12
-{"volksgrens_heavy(ger)" "The Volksgrenadier heavy sturm squad is a low tier infantry squad with 2 MG42s, 4 STG44s, 1 G43 and 2 MP40s. The squad has 9 men total. Includes 2 Panzerfausts. Soldiers are skill 2 except SL and SL asst. which are skill 3."}
+{"volksgrens_heavy(ger)" "Low tier Volksgrenadier heavy sturm squad of 9 with 2 MG42s, 4 STG44s, 1 G43, 2 MP40s and 2 Panzerfausts. Soldiers are skill 2, the leader and his assistant skill 3."}
 ; -- group squad_22 --
 ; [new] card "sturmgrens_44(ger)" cost 134 lvl 1 | soldiers ger_squadleader_sg44, ger_sturmgren_sl_asst, ger_sturmgren_sg44 x4, ger_sturmgren_sg44_pzfst x2 | tags infantry all inf_only 44 45 | units/ger/squads_44.set:20
 {"sturmgrens_44(ger)" "The Sturmgrenadier squad is a regular trained assault squad with 8 STG44 assault rifles. Soldiers are skill 4."}
 ; -- group squad_33 --
 ; [new] card "grenadiers_44(ger)" cost 152 lvl 1 | soldiers ger_squadleader_mp40, ger_grenadier_ober_44, ger_grenadier_sa_44, ger_grenadier_rifle_44, ger_grenadier_rifle_grenadier, ger_grenadier_pzfst x2, ger_grenadier_mg, ger_grenadier_mg_asst | tags infantry all inf_only 44 45 | units/ger/squads_44.set:26
-{"grenadiers_44(ger)" "The Grenadier squad is a regular trained infantry squad with 1 MG42, 5 k98 rifles, 2 G43s and 1 MP40. The squad has 9 men total. Includes 2 Panzerfausts. Soldiers are skill 4."}
+{"grenadiers_44(ger)" "Regular trained Grenadier squad of 9 with 1 MG42, 5 K98 rifles, 2 G43s, 1 MP40 and 2 Panzerfausts. Soldiers are skill 4."}
 ; [new] card "fusiliers_44(ger)" cost 180 lvl 1 | soldiers ger_fusilier_sl, ger_fusilier_sl_asst, ger_fusilier_stg x2, ger_fusilier_sa, ger_fusilier_pzfst_sa, ger_fusilier_pzfst, ger_fusilier_mg, ger_fusilier_mg_asst | tags infantry all inf_only 44 45 | units/ger/squads_44.set:38
-{"fusiliers_44(ger)" "The Fusilier squad is a higher than regular trained infantry squad with 1 MG42, 4 k98 rifles, 1 G43, 2 STG44s and 1 MP40. Includes 2 Panzerfausts. The squad has 9 men total. Soldiers are skill 5"}
+{"fusiliers_44(ger)" "Higher than regular trained Fusilier squad of 9 with 1 MG42, 4 K98 rifles, 1 G43, 2 STG44s, 1 MP40 and 2 Panzerfausts. Soldiers are skill 5."}
 ; [new] card "jagers_44(ger)" cost 197 lvl 1 | soldiers ger_jager_sl_stg, ger_jager_sl_stg_asst, ger_jager_stg, ger_jager_smg x3, ger_jager_sa, ger_jager_pzfst, ger_jager_mg, ger_jager_mg_asst | tags infantry all inf_only 44 45 | units/ger/squads_44.set:40
-{"jagers_44(ger)" "The Jager squad is a higher than regular trained infantry squad with 1 MG42, 2 k98 rifles, 1 g43, 3 MP40s and 3 STG44s. The squad has 10 men total. Includes 1 Panzerfaust. Soldiers are skill 5."}
+{"jagers_44(ger)" "Higher than regular trained Jager squad of 10 with 1 MG42, 2 K98 rifles, 1 G43, 3 MP40s, 3 STG44s and 1 Panzerfaust. Soldiers are skill 5."}
 ; -- group squad_34 --
 ; [new] card "pzgren_pios(ger)" cost 223 lvl 1 | soldiers ger_pzgren_pio_sl, ger_pzgren_pio1, ger_pzgren_pio2, ger_pzgren_pio3, ger_pzgren_pio_flamer, ger_pzgren_pio_mg x2, ger_pzgren_pio_mg_asst x2, ger_pzgren_pio_at | tags infantry all inf_only 44 45 | units/ger/squads_44.set:46
-{"pzgren_pios(ger)" "The Panzergrenadier pioneer squad is a higher than regular trained infantry squad with 2 MG42s, 5 k98 rifles, 1 Panzerschreck operator, 1 flamethrower and 1 MP40. The squad has 10 men total. Soldiers are skill 4 except SL which is skill 5."}
+{"pzgren_pios(ger)" "Higher than regular trained Panzergrenadier pioneer squad of 10 with 2 MG42s, 5 K98 rifles, 1 Panzerschreck, 1 flamethrower and 1 MP40. Soldiers are skill 4, the leader skill 5."}
 ; [new] card "stormtroopers_44(ger)" cost 226 lvl 1 | soldiers ger_pzgren_sl, ger_pzgren2ic, ger_pzgren_stg_panzerfaust, ger_pzgren_g43, ger_pzgren_smg_panzerfaust, ger_pzgren_mg42 x2, ger_pzgren_mg42assist x2 | tags infantry all inf_only 44 45 | units/ger/squads_44.set:48
-{"stormtroopers_44(ger)" "The Panzergrenadier squad is a higher than regular trained infantry squad with 2 MG42s, 3 k98 rifles, 2 G43s and 2 STG44s. The squad has 9 men total. Includes 2 Panzerfausts. Soldiers are skill 5."}
+{"stormtroopers_44(ger)" "Higher than regular trained Panzergrenadier squad of 9 with 2 MG42s, 3 K98 rifles, 2 G43s, 2 STG44s and 2 Panzerfausts. Soldiers are skill 5."}
 ; -- group squad_5 --
 ; [new] card "grenadiers_elite(ger)" cost 336 lvl 1 | soldiers ger_gd_pzgren_sl_stg, ger_gd_pzgren_sl_asst_stg, ger_gd_pzgren_pzfst_stg, ger_gd_pzgren_sa_scope, ger_gd_pzgren_pzfst_sa, ger_gd_pzgren_mg x2, ger_gd_pzgren_mg_asst x2 | tags infantry all inf_only 44 45 | units/ger/squads_44.set:54
-{"grenadiers_elite(ger)" "The Elite Panzergrenadier 'Grossdeutschland' squad is a battle hardened elite squad with 2 MG42s, 2 k98 rifles, 1 G43, 1 G43 sniper rifle and 3 STG44s. The squad has 9 men total. Includes 3 Panzerfausts. Soldiers are skill 6."}
+{"grenadiers_elite(ger)" "Battle hardened Elite Panzergrenadier 'Grossdeutschland' squad of 9 with 2 MG42s, 2 K98 rifles, 1 G43, 1 G43 sniper rifle, 3 STG44s and 3 Panzerfausts. Soldiers are skill 6."}
 ; [new] card "gebirgsjager_44(ger)" cost 254 lvl 1 | soldiers ger_gebirgsjager_sl_stg, ger_gebirgsjager_sl_asst_stg, ger_gebirgsjager_stg x2, ger_gebirgsjager_smg x3, ger_gebirgsjager_pzfst_sa, ger_gebirgsjager_mg, ger_gebirgsjager_mg_asst | tags infantry all inf_only 44 45 | units/ger/squads_44.set:74
-{"gebirgsjager_44(ger)" "The Gebirgsjager squad is a elite trained squad with 1 MG42, 1 k98 rifle, 1 G43, 3 MP40s and 4 STG44s. The squad has 10 men total. Includes 1 Panzerfaust. Soldiers are skill 7."}
+{"gebirgsjager_44(ger)" "Elite trained Gebirgsjager squad of 10 with 1 MG42, 1 K98 rifle, 1 G43, 3 MP40s, 4 STG44s and 1 Panzerfaust. Soldiers are skill 7."}
 ; [new] card "elites_44(ger)" cost 373 lvl 1 | soldiers ger_fallschirm_sl, ger_fallschirm_sl_asst_fg_44, ger_fallschirm_sniper, ger_fallschirm_grenadier x2, ger_fallschirm_pzfst_stg, ger_fallschirm_mg x2, ger_fallschirm_mg_asst x2 | tags infantry all inf_only 44 45 | units/ger/squads_44.set:76
-{"elites_44(ger)" "The Fallschirmjager squad is a elite trained squad with 2 MG42s, 3 k98 rifles, 1 STG44, 1 k98 sniper rifle, 2 FG42s and 1 MP40. The squad has 10 men total. Includes 2 Panzerfausts. Soldiers are skill 7."}
+{"elites_44(ger)" "Elite trained Fallschirmjager squad of 10 with 2 MG42s, 3 K98 rifles, 1 STG44, 1 K98 sniper rifle, 2 FG42s, 1 MP40 and 2 Panzerfausts. Soldiers are skill 7."}
 ; -- group soldier_3 --
 ; [new] card "vehic_supporter(ger)" cost 25 lvl 1 | soldiers ger_vehicle_supporter_single x2 | tags infantry all inf_only 39 40 41 42 43 44 45 | units/ger/squads_44.set:97
-{"vehic_supporter(ger)" "This pair of support crew are only lightly armed but are well-suited for crewing your armored vehicles and field guns. Use them to replace the losses you have suffered in combat and re-man your equipment. They are not suited for infantry combat and can't capture points."}
+{"vehic_supporter(ger)" "A lightly armed pair of support crew for manning armored vehicles and field guns and replacing losses. They are not suited for infantry combat and can't capture points."}
 ; [new] card "elite_tankmans(ger)" cost 100 lvl 1 | soldiers ger_vet_tankman2_single | tags infantry all inf_only tankmans 39 40 41 42 43 44 45 | units/ger/squads_44.set:103
-{"elite_tankmans(ger)" "This pair of tank crews are only lightly armed but are well-suited for crewing your armored vehicles and field guns. Use them to replace the losses you have suffered in combat and re-man your equipment. They are not suited for infantry combat and can't capture points. They are the best of the Wehrmacht so use them wisely!"}
+{"elite_tankmans(ger)" "Lightly armed veteran tank crew, the best of the Wehrmacht, for manning armored vehicles and field guns and replacing losses. It can't fight as infantry or capture points."}
 ; -- group squad_3 --
 ; [new] card "grenadiers_43(ger)" cost 176 lvl 1 | soldiers squadleader, grenadier_ober, grenadier_sa, grenadier_rifle x4, grenadier_rifle_grenadier, grenadier_mg, grenadier_mg_asst | tags infantry 43 | units/ger/squads_43.set:13
-{"grenadiers_43(ger)" "The Grenadier squad is a regular trained infantry squad with 1 MG42, 7 k98 rifles, 1 G43 and 1 MP40. The squad has 10 men total. Soldiers are skill 4."}
+{"grenadiers_43(ger)" "Regular trained Grenadier squad of 10 with 1 MG42, 7 K98 rifles, 1 G43 and 1 MP40. Soldiers are skill 4."}
 ; [new] card "fusiliers_43(ger)" cost 188 lvl 1 | soldiers fusilier_sl, fusilier_sl_asst, fusilier_smg, fusilier_sa x2, fusilier_rifle x3, fusilier_mg, fusilier_mg_asst | tags infantry 43 | units/ger/squads_43.set:19
-{"fusiliers_43(ger)" "The Fusilier squad is a higher than regular trained infantry squad with 1 MG42, 6 k98 rifles, 1 G43 and 2 MP40s. The squad has 10 men total. Soldiers are skill 5."}
+{"fusiliers_43(ger)" "Higher than regular trained Fusilier squad of 10 with 1 MG42, 6 K98 rifles, 1 G43 and 2 MP40s. Soldiers are skill 5."}
 ; [new] card "jagers_43(ger)" cost 201 lvl 1 | soldiers jager_sl_smg, jager_sl_smg_asst, jager_smg x3, jager_sa, jager_rifle x3, jager_mg, jager_mg_asst | tags infantry 43 | units/ger/squads_43.set:21
-{"jagers_43(ger)" "The Jager squad is a higher than regular trained infantry squad with 1 MG42, 4 k98 rifles, 1 g43 and 5 MP40s. The squad has 11 men total. Soldiers are skill 5."}
+{"jagers_43(ger)" "Higher than regular trained Jager squad of 11 with 1 MG42, 4 K98 rifles, 1 G43 and 5 MP40s. Soldiers are skill 5."}
 ; [new] card "stormtroopers_43(ger)" cost 225 lvl 1 | soldiers sturmovik_sl_40, sturmovik_sl_asst, sturmovik2 x3, sturmovik4, sturmovik6 x2, sturmovik6b x2 | tags infantry 43 | units/ger/squads_43.set:25
-{"stormtroopers_43(ger)" "The Panzergrenadier squad is a higher than regular trained infantry squad with 2 MG42s, 4 k98 rifles, 3 G43s and 1 MP40. The squad has 10 men total. Soldiers are skill 5."}
+{"stormtroopers_43(ger)" "Higher than regular trained Panzergrenadier squad of 10 with 2 MG42s, 4 K98 rifles, 3 G43s and 1 MP40. Soldiers are skill 5."}
 ; -- group squad_5 --
 ; [new] card "grenadiers_elite_43(ger)" cost 300 lvl 1 | soldiers gd_pzgren_sl_smg, gd_pzgren_sl_asst, gd_pzgren_sa_scope, gd_pzgren_sa x2, gd_pzgren_rifle, gd_pzgren_mg x2, gd_pzgren_mg_asst x2 | tags infantry 43 | units/ger/squads_43.set:29
-{"grenadiers_elite_43(ger)" "The Elite Panzergrenadier 'Grossdeutschland' squad is a battle hardened elite squad with 2 MG42s, 4 k98 rifles, 2 G43s, 1 G43 sniper rifle and 1 MP40. The squad has 10 men total. Soldiers are skill 6."}
+{"grenadiers_elite_43(ger)" "Battle hardened Elite Panzergrenadier 'Grossdeutschland' squad of 10 with 2 MG42s, 4 K98 rifles, 2 G43s, 1 G43 sniper rifle and 1 MP40. Soldiers are skill 6."}
 ; [new] card "gebirgsjager_43(ger)" cost 257 lvl 1 | soldiers gebirgsjager_sl_smg, gebirgsjager_sl_asst_smg, gebirgsjager_smg x3, gebirgsjager_sa x2, gebirgsjager_rifle x2, gebirgsjager_mg, gebirgsjager_mg_asst | tags infantry 43 | units/ger/squads_43.set:45
-{"gebirgsjager_43(ger)" "The Gebirgsjager squad is a elite trained squad with 1 MG42, 3 k98 rifles, 2 G43s and 5 MP40s. The squad has 11 men total. Soldiers are skill 7."}
+{"gebirgsjager_43(ger)" "Elite trained Gebirgsjager squad of 11 with 1 MG42, 3 K98 rifles, 2 G43s and 5 MP40s. Soldiers are skill 7."}
 ; [new] card "elites_43(ger)" cost 349 lvl 1 | soldiers fallschirm_sl_40, fallschirm_sl_asst_fg_43, fallschirm_sniper, fallschirm_fg_43, fallschirm_sa, fallschirm_grenadier x2, fallschirm_mg x2, fallschirm_mg_asst x2 | tags infantry 43 | units/ger/squads_43.set:47
-{"elites_43(ger)" "The Fallschirmjager squad is a elite trained squad with 2 MG42s, 4 k98 rifles, 1 G43, 1 k98 sniper rifle, 2 FG42s and 1 MP40. The squad has 11 men total. Soldiers are skill 7."}
+{"elites_43(ger)" "Elite trained Fallschirmjager squad of 11 with 2 MG42s, 4 K98 rifles, 1 G43, 1 K98 sniper rifle, 2 FG42s and 1 MP40. Soldiers are skill 7."}
 ; -- group squad_3 --
 ; [new] card "grenadiers_42(ger)" cost 176 lvl 1 | soldiers squadleader, grenadier_ober, grenadier_sa_41, grenadier_rifle x4, grenadier_rifle_grenadier, grenadier_mg, grenadier_mg_asst | tags infantry 42 | units/ger/squads_42.set:13
-{"grenadiers_42(ger)" "The Grenadier squad is a regular trained infantry squad with 1 MG42, 8 k98 rifles and 1 MP40. The squad has 10 men total. Soldiers are skill 4."}
+{"grenadiers_42(ger)" "Regular trained Grenadier squad of 10 with 1 MG42, 8 K98 rifles and 1 MP40. Soldiers are skill 4."}
 ; [new] card "fusiliers_42(ger)" cost 188 lvl 1 | soldiers fusilier_sl, fusilier_sl_asst, fusilier_sa_41 x2, fusilier_rifle x4, fusilier_mg, fusilier_mg_asst | tags infantry 42 | units/ger/squads_42.set:19
-{"fusiliers_42(ger)" "The Fusilier squad is a higher than regular trained infantry squad with 1 MG42, 6 k98 rifles, 2 G41s and 1 MP40. The squad has 10 men total. Soldiers are skill 5."}
+{"fusiliers_42(ger)" "Higher than regular trained Fusilier squad of 10 with 1 MG42, 6 K98 rifles, 2 G41s and 1 MP40. Soldiers are skill 5."}
 ; [new] card "jagers_42(ger)" cost 202 lvl 1 | soldiers jager_sl_smg, jager_sl_smg_asst, jager_sa_41 x2, jager_rifle x5, jager_mg, jager_mg_asst | tags infantry 42 | units/ger/squads_42.set:21
-{"jagers_42(ger)" "The Jager squad is a higher than regular trained infantry squad with 1 MG42, 6 k98 rifles, 2 g41s and 2 MP40s. The squad has 11 men total. Soldiers are skill 5."}
+{"jagers_42(ger)" "Higher than regular trained Jager squad of 11 with 1 MG42, 6 K98 rifles, 2 G41s and 2 MP40s. Soldiers are skill 5."}
 ; [new] card "stormtroopers_42(ger)" cost 225 lvl 1 | soldiers sturmovik_sl_40, sturmovik_sl_asst, sturmovik2_41 x3, sturmovik4, sturmovik6 x2, sturmovik6b x2 | tags infantry 42 | units/ger/squads_42.set:25
-{"stormtroopers_42(ger)" "The Panzergrenadier squad is a higher than regular trained infantry squad with 2 MG42s, 4 k98 rifles, 3 G41s and 1 MP40. The squad has 10 men total. Soldiers are skill 5."}
+{"stormtroopers_42(ger)" "Higher than regular trained Panzergrenadier squad of 10 with 2 MG42s, 4 K98 rifles, 3 G41s and 1 MP40. Soldiers are skill 5."}
 ; -- group squad_5 --
 ; [new] card "gebirgsjager_42(ger)" cost 258 lvl 1 | soldiers gebirgsjager_sl_smg, gebirgsjager_sl_asst_smg, gebirgsjager_sa_41 x3, gebirgsjager_rifle x4, gebirgsjager_mg, gebirgsjager_mg_asst | tags infantry 42 | units/ger/squads_42.set:41
-{"gebirgsjager_42(ger)" "The Gebirgsjager squad is a elite trained squad with 1 MG42, 5 k98 rifles, 3 G41s and 2 MP40s. The squad has 11 men total. Soldiers are skill 7."}
+{"gebirgsjager_42(ger)" "Elite trained Gebirgsjager squad of 11 with 1 MG42, 5 K98 rifles, 3 G41s and 2 MP40s. Soldiers are skill 7."}
 ; [new] card "elites_42(ger)" cost 337 lvl 1 | soldiers fallschirm_sl_40, fallschirm_sl_asst_fg_42, fallschirm_sniper, fallschirm_sa_41, fallschirm_rifle_39, fallschirm_grenadier x2, fallschirm_mg x2, fallschirm_mg_asst_39 x2 | tags infantry 42 | units/ger/squads_42.set:43
-{"elites_42(ger)" "The Fallschirmjager squad is a elite trained squad with 2 MG42s, 5 k98 rifles, 1 G41, 1 k98 sniper rifle, 1 FG42 and 1 MP40. The squad has 11 men total. Soldiers are skill 7."}
+{"elites_42(ger)" "Elite trained Fallschirmjager squad of 11 with 2 MG42s, 5 K98 rifles, 1 G41, 1 K98 sniper rifle, 1 FG42 and 1 MP40. Soldiers are skill 7."}
 ; -- group squad_3 --
 ; [new] card "grenadiers_40(ger)" cost 161 lvl 1 | soldiers squadleader, grenadier_ober, grenadier_rifle x6, grenadier_mg_39, grenadier_mg_asst | tags infantry 40 41 | units/ger/squads_41.set:14
-{"grenadiers_40(ger)" "The Grenadier squad is a regular trained infantry squad with 1 MG34, 8 k98 rifles and 1 MP40. The squad has 10 men total. Soldiers are skill 4."}
+{"grenadiers_40(ger)" "Regular trained Grenadier squad of 10 with 1 MG34, 8 K98 rifles and 1 MP40. Soldiers are skill 4."}
 ; [new] card "fusiliers_40(ger)" cost 182 lvl 1 | soldiers fusilier_sl, fusilier_sl_asst, fusilier_rifle x6, fusilier_mg_39, fusilier_mg_asst | tags infantry 40 41 | units/ger/squads_41.set:18
-{"fusiliers_40(ger)" "The Fusilier squad is a higher than regular trained infantry squad with 1 MG34, 8 k98 rifles and 1 MP40. The squad has 10 men total. Soldiers are skill 5."}
+{"fusiliers_40(ger)" "Higher than regular trained Fusilier squad of 10 with 1 MG34, 8 K98 rifles and 1 MP40. Soldiers are skill 5."}
 ; [new] card "stormtroopers_41(ger)" cost 217 lvl 1 | soldiers sturmovik_sl_40, sturmovik_sl_asst, sturmovik2_41 x3, sturmovik4, sturmovik6_39 x2, sturmovik6b x2 | tags infantry 41 | units/ger/squads_41.set:22
-{"stormtroopers_41(ger)" "The Panzergrenadier squad is a higher than regular trained infantry squad with 2 MG34s, 4 k98 rifles, 3 G41s and 1 MP40. The squad has 10 men total. Soldiers are skill 5."}
+{"stormtroopers_41(ger)" "Higher than regular trained Panzergrenadier squad of 10 with 2 MG34s, 4 K98 rifles, 3 G41s and 1 MP40. Soldiers are skill 5."}
 ; -- group squad_5 --
 ; [new] card "gebirgsjager_41(ger)" cost 254 lvl 1 | soldiers gebirgsjager_sl_smg, gebirgsjager_sl_asst_smg, gebirgsjager_sa_41 x3, gebirgsjager_rifle x4, gebirgsjager_mg_41, gebirgsjager_mg_asst | tags infantry 41 | units/ger/squads_41.set:38
-{"gebirgsjager_41(ger)" "The Gebirgsjager squad is a elite trained squad with 1 MG34, 5 k98 rifles, 3 G41s and 2 MP40s. The squad has 11 men total. Soldiers are skill 7."}
+{"gebirgsjager_41(ger)" "Elite trained Gebirgsjager squad of 11 with 1 MG34, 5 K98 rifles, 3 G41s and 2 MP40s. Soldiers are skill 7."}
 ; [new] card "elites_41(ger)" cost 317 lvl 1 | soldiers fallschirm_sl_40, fallschirm_sl_asst_smg, fallschirm_sniper, fallschirm_sa_41, fallschirm_rifle_39 x3, fallschirm_mg_39 x2, fallschirm_mg_asst_39 x2 | tags infantry 41 | units/ger/squads_41.set:40
-{"elites_41(ger)" "The Fallschirmjager squad is a elite trained squad with 2 MG34s, 5 k98 rifles, 1 G41, 1 k98 sniper rifle and 2 MP40s. The squad has 11 men total. Soldiers are skill 7."}
+{"elites_41(ger)" "Elite trained Fallschirmjager squad of 11 with 2 MG34s, 5 K98 rifles, 1 G41, 1 K98 sniper rifle and 2 MP40s. Soldiers are skill 7."}
+; [new] card "storm_mech(ger)" cost 300 | units/ger/squads_40.set:21 | card commented out; cards storm_mech(ger), storm_mech(ger), storm_mech(ger), storm_mech(ger)
+{"storm_mech(ger)" "This mechanized squad of our best infantry provides the perfect combination of firepower and mobility, capable of breaking through enemy lines and deliver a devastating blow to our enemies. Use the halftrack to support your infantry after they have been deployed and to rapidly bring any needed reinforcements to the front lines. Don't give the enemy a chance to recover -- pursue them relentlessly and seal your victory!"}

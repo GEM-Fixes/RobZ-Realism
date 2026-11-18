@@ -36,8 +36,8 @@
 {"jap_teishin_type2rifle" "<c(c3baae)>Teishin Kutei"}
 ; [new] first in card "elites_ig(jap)" jap/squad1 cost 252 | units/jap/squads_44-45.set:30 | in 2 cards
 {"jap_kanoeshidan_rifle_apminer" "<c(c3baae)>Teishin Kutei"}
-; [new] first in card "super_officer_jap" jap/hero cost 3 | units/jap/vehicles_all.set:143
-{"super_officer" "Rikugun-shōshō (Officer)"}
+; [new] first in card "hero_super_officer(jap)" jap/hero cost 3 | units/jap/vehicles_all.set:143
+{"super_officer" "<c(c3baae)>Rikugun-shōshō (Officer)"}
 ; [new] first in card "elites(jap)" jap/squad1 cost 254 | units/jap/squads_44-45.set:36 | in 3 cards
 {"teishin_type97_atr" "<c(c3baae)>Teishin Kutei"}
 ; [new] first in card "elites(jap)" jap/squad1 cost 254 | units/jap/squads_44-45.set:36 | in 3 cards
@@ -49,7 +49,7 @@
 ; [new] not in any buy-list card
 {"elite_ig1_ammo" "<c(c3baae)>Konoe Shidan"}
 ; [new] first in card "elites_ig(jap)" jap/squad1 cost 252 | units/jap/squads_44-45.set:30
-{"jap_kanoeShidan_type38rifle" "<c(c3baae)>Konoe Shidan"}
+{"jap_kanoeshidan_type38rifle" "<c(c3baae)>Konoe Shidan"}
 ; [new] first in card "elites_ig(jap)" jap/squad1 cost 252 | units/jap/squads_44-45.set:30 | in 2 cards
 {"jap_kanoeshidan_type99rifle" "<c(c3baae)>Konoe Shidan"}
 ; [new] not in any buy-list card
@@ -154,30 +154,30 @@
 {"jap_snlf_mg_asst" "<c(c3baae)>Yokosuka SNLF Kutei KeiKikanju-te asst."}
 ; [new] first in card "riflemans_t96(jap)" jap/squad1 cost 163 | units/jap/squads_44-45.set:14 | in 8 cards
 {"jap_squadleader" "<c(c3baae)>Hohei Hancho"}
-; [new] first in card "otsu-gata_koho" jap/hero cost 3 | units/jap/vehicles_all.set:140
+; [new] first in card "hero_otsu-gata_koho(jap)" jap/hero cost 3 | units/jap/vehicles_all.set:140
 {"otsu_sl" "<c(c3baae)>Otsu Hohei"}
 ; [new] not in any buy-list card
 {"otsu_sa" "<c(c3baae)>Otsu Hohei"}
-; [new] first in card "otsu-gata_koho" jap/hero cost 3 | units/jap/vehicles_all.set:140
+; [new] first in card "hero_otsu-gata_koho(jap)" jap/hero cost 3 | units/jap/vehicles_all.set:140
 {"otsu_mg" "<c(c3baae)>Otsu Hohei"}
-; [new] first in card "otsu-gata_koho" jap/hero cost 3 | units/jap/vehicles_all.set:140
+; [new] first in card "hero_otsu-gata_koho(jap)" jap/hero cost 3 | units/jap/vehicles_all.set:140
 {"otsu_mg_asst" "<c(c3baae)>Otsu Hohei"}
-; [new] first in card "otsu-gata_koho" jap/hero cost 3 | units/jap/vehicles_all.set:140
+; [new] first in card "hero_otsu-gata_koho(jap)" jap/hero cost 3 | units/jap/vehicles_all.set:140
 {"otsu_mg_ammo" "<c(c3baae)>Otsu Hohei"}
-; [new] first in card "otsu-gata_koho" jap/hero cost 3 | units/jap/vehicles_all.set:140
+; [new] first in card "hero_otsu-gata_koho(jap)" jap/hero cost 3 | units/jap/vehicles_all.set:140
 {"otsu_rifle" "<c(c3baae)>Otsu Hohei"}
-; [new] first in card "ki-gata_koho" jap/hero cost 2 | units/jap/vehicles_all.set:141
-{"ki_sa" "<c(c3baae)>ki Hohei"}
-; [new] first in card "ki-gata_koho" jap/hero cost 2 | units/jap/vehicles_all.set:141
-{"ki_sl" "<c(c3baae)>ki Hohei"}
-; [new] first in card "ki-gata_koho" jap/hero cost 2 | units/jap/vehicles_all.set:141
-{"ki_smoke" "<c(c3baae)>ki Hohei"}
-; [new] first in card "ki-gata_koho" jap/hero cost 2 | units/jap/vehicles_all.set:141
-{"ki_at_grenade" "<c(c3baae)>ki Hohei"}
-; [new] first in card "ki-gata_koho" jap/hero cost 2 | units/jap/vehicles_all.set:141
-{"ki_at_stick" "<c(c3baae)>ki Hohei"}
-; [new] first in card "ki-gata_koho" jap/hero cost 2 | units/jap/vehicles_all.set:141
-{"ki_rifle" "<c(c3baae)>ki Hohei"}
+; [new] first in card "hero_ki-gata_koho(jap)" jap/hero cost 2 | units/jap/vehicles_all.set:141
+{"ki_sa" "<c(c3baae)>Ki Hohei"}
+; [new] first in card "hero_ki-gata_koho(jap)" jap/hero cost 2 | units/jap/vehicles_all.set:141
+{"ki_sl" "<c(c3baae)>Ki Hohei"}
+; [new] first in card "hero_ki-gata_koho(jap)" jap/hero cost 2 | units/jap/vehicles_all.set:141
+{"ki_smoke" "<c(c3baae)>Ki Hohei"}
+; [new] first in card "hero_ki-gata_koho(jap)" jap/hero cost 2 | units/jap/vehicles_all.set:141
+{"ki_at_grenade" "<c(c3baae)>Ki Hohei"}
+; [new] first in card "hero_ki-gata_koho(jap)" jap/hero cost 2 | units/jap/vehicles_all.set:141
+{"ki_at_stick" "<c(c3baae)>Ki Hohei"}
+; [new] first in card "hero_ki-gata_koho(jap)" jap/hero cost 2 | units/jap/vehicles_all.set:141
+{"ki_rifle" "<c(c3baae)>Ki Hohei"}
 ; [new] first in card "home_guards_throwgun(jap)" jap/squad1 cost 105 | units/jap/squads_44-45.set:6
 {"jap_charger_throwgun" "<c(c3baae)>Kirikomi Tai"}
 ; [new] first in card "smgs(jap)" jap/squad1 cost 157 | units/jap/squads_44-45.set:10

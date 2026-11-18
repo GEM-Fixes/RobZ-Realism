@@ -28,7 +28,10 @@ The file path mirrors the key path.
 | `desc/entity/<model>` of a buy-list vehicle | `desc/mod/entity/<side>/<button>.inc`; in a hero card -> `hero/<side>_entity.inc` |
 | `desc/entity/<model>` no buy-list card names | `desc/mod/entity/unlisted/<class>.inc` (class = the entity's folder: tank_heavy, cannon, car...) |
 | desc squad key that no buy-list card names | `desc/mod/squad/unlisted.inc` |
-| `desc/weapon`, `desc/ammo`, `desc/stuff`, `desc/container` | `desc/mod/weapon.inc`, `ammo.inc`, `stuff.inc`, `container.inc` |
+| `desc/weapon/<name>` | `desc/mod/weapon/<nation>/<kind>.inc` (kind = folder under `set/stuff`: gun, mgun, rifle, smg, pistol...; no nation in the data -> `common`) |
+| `desc/ammo/<name>` | `desc/mod/ammo/<nation>/<kind>.inc` (shell, reactive, ammo, bazooka) |
+| `desc/stuff/<name>` | `desc/mod/stuff/<kind>.inc` (head, body, grenade, equipment...) |
+| `desc/container`, `desc/weapon/type` | `desc/mod/container.inc`, `desc/mod/weapon/type.inc` |
 | `info/squad/<card>` of an infantry card | `info/mod/squad/<side>/<button>.inc`, in buy-list order |
 | `info/squad/<card>` of a card under the hero button (any name) | `info/mod/hero/<side>.inc` |
 | `info/squad/<card>` of a card that groups entities (vehicle + soldiers, copies of units) | `info/mod/vehicle_group/<side>.inc` |
@@ -46,16 +49,33 @@ Each squad, hero, vehicle_group and entity part has:
 - one line above each key: `[new|changed]`, card name, cost, contents, tags, units file:line, notes
   (`also under <side>/<button>`, `card commented out`, `copy of <unit>`).
 
-Mis-keyed texts: a key written `name(side)` whose card has no `(side)` probably never shows in game, because the
-game looks up the bare card name. 100 of these were renamed to the bare name (`renamed from "<old>"` in the context
-line; full list in `_dropped/renamed-keys.tsv`). 13 more had a bare key with another text (12 Japanese hero cards in
-`info`, `hero5_rus` in `desc`): the bare key now carries the `name(side)` text and the `name(side)` copy is removed.
-The replaced bare-key texts are in the pre-split copy under `robz realism mod 1.31.0.arsenal-undo/lngsplit-20261118`.
+Weapon, ammo and item parts have a line above each key too: the stuff file, calibre, weight, and for ammo the
+weapons that use it (for a weapon, the ammo it takes). Vanilla parts carry the same lines, marked `[vanilla]`.
+A `; ToE:` line above a squad key is a place for table-of-organisation numbers; it stays with its key on a re-split.
+
+## Card names
+Every buy-list card that takes its name from a `desc/squad` key is named `name(side)`, lower case; a card under the
+hero button also starts with `hero` (`hero1(eng)`, `hero_banzai_7(jap)`). The card in `resource/set/multiplayer/units`,
+its `desc/squad` and `info/squad` keys, its button picture and the bot lists were renamed together (306 cards; old and
+new names in `_dropped/card-renames.tsv`, which also lists every card left alone and why).
+Not renamed: cards named after a vehicle model (the game takes their name from `desc/entity/<model>`, a new name would
+lose it), cards built by the `how` macros, and 21 cards whose new name could clash (reason in the tsv).
+Earlier steps are listed in `_dropped/renamed-keys.tsv`.
+
+## Text forms
+- Soldier names (`desc/human`): `<c(c3baae)>Name`, no space after the tag, capital first letter.
+- Weapon names with stats (`desc/weapon`): `Name<c(ffffff)>\n Range - <c(colour)>160 m<c(ffffff)>\n Penetration AP - ...`;
+  order Range, Penetration, Barrage, Rate of fire, Reloading time, Cycling rate, Muzzle velocity, Accuracy.
+- Squad names that differ only by year carry the year: `Grenadier squad 1944`.
+- Info texts (`info/`): 1 or 2 plain sentences, 180 characters as the aim, 240 at most. First what the unit is
+  (kind, size, main weapons), then what it is good for or its weak point. No lists, no line breaks, no colour tags.
+- Only `-` as dash and hyphen, straight quotes, single spaces.
 
 ## Rules for writing groups
 1. A parent `.lng` holds no text keys: only `{tags`, groups and includes.
 2. A part file is a flat list for one group: `{"key" "text"}`, one per line, no indent.
    A small sub-group (4 keys or fewer) may be written whole inside its parent's part: `{"name"` / its keys / `}`.
+   Exception: the two credits texts (`credits_1c`, `credits_dms`) span many lines, as the game writes them.
 3. No group is opened twice. If a group needs a new part, add one include line for it in the parent.
 4. Keys in lower case. One key once: a second copy overrides the first and logs `Localization key redefinition`.
 5. UTF-8 without BOM, CRLF line ends, no trailing spaces. Comments start with `;` and are ASCII.
@@ -70,5 +90,7 @@ Only `dead` keys were moved to `_dropped/*.inc`. To bring one back, move its lin
 The ammo, weapon and item verdicts are the least certain. Delete `_dropped/` once you have looked through it.
 
 ## Tool
-Made with ARSENAL `tools/lngsplit` (`split`, `dead`, `join --compare`). The files before the split are in
-`robz realism mod 1.31.0.arsenal-undo/lngsplit-20261118/localization`.
+Made with ARSENAL `tools/lngsplit` (`split`, `dead`, `join --compare`), `tools/lngstd` (text forms),
+`tools/cardrename` (card names) and checked with `tools/lnglayout` (these rules as a lint).
+Copies from before each step are under `robz realism mod 1.31.0.arsenal-undo/`: `lngsplit-20261118` (before the split),
+`lngstd-20261118` (before the regroup and text forms), `cardrename-20261118` (files the card rename changed).

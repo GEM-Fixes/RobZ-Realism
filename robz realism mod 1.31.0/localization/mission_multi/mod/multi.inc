@@ -53,7 +53,7 @@
 {"1v1_gazala"
 {"name" "2P <c(00ff0aff)>Q</c> <c(00ff0aff)>S</c> Gazala <e(shadow)><c(00ff0aff)>1v1</c> (GSM)"}
 }
-{"1v1_Hemeroulle_1219"
+{"1v1_hemeroulle_1219"
 {"name" "2P <c(00ff0aff)>Q</c> <c(00ff0aff)>S</c> Hemeroulle 1219 <e(shadow)><c(00ff0aff)>1v1</c> (GSM)"}
 }
 {"1v1_nikolaev"
@@ -80,13 +80,13 @@
 {"2v2_mamayev_kurgan"
 {"name" "4P <c(FFFF00)>Q</c> <c(00ff0aff)>S</c> Mamayev Kurgan <e(shadow)><c(00ff0aff)>2v2</c> (NIL)"}
 }
-{"2v2_Spaetburgunder"
+{"2v2_spaetburgunder"
 {"name" "4P <c(FFFF00)>Q</c> <c(00ff0aff)>S</c> Spaetburgunder <e(shadow)><c(00ff0aff)>2v2</c> (GSM)"}
 }
-{"2v2_Arad"
+{"2v2_arad"
 {"name" "4P <c(00ff0aff)>Q</c> <c(00ff0aff)>S</c> Arad <e(shadow)><c(00ff0aff)>2v2</c> (GSM)"}
 }
-{"2v2_Arad-somme"
+{"2v2_arad-somme"
 {"name" "4P <c(00ff0aff)>Q</c> <c(00ff0aff)>S</c> Arad-Somme <e(shadow)><c(00ff0aff)>2v2</c> (GSM)"}
 }
 {"2v2_bastogne"
@@ -98,7 +98,7 @@
 {"2v2_docklands"
 {"name" "4P <c(FFFF00)>Q</c> <c(00ff0aff)>S</c> Docklands <e(shadow)><c(00ff0aff)>2v2</c> (GSM)"}
 }
-{"3v3_Medvedovka"
+{"3v3_medvedovka"
 {"name" "6P <c(00ff0aff)>Q</c> <c(00ff0aff)>S</c> Medvedovka <e(shadow)><c(00ff0aff)>3v3</c> (GSM)"}
 }
 {"2v2_advance2"
@@ -110,7 +110,7 @@
 {"2v2_heilshoop_remix"
 {"name" "4P <c(FFFF00)>Q</c> <c(00ff0aff)>S</c> Heilshoop R <e(shadow)><c(00ff0aff)>2v2</c> (GSM)"}
 }
-{"2v2_St._Lo_remix"
+{"2v2_st._lo_remix"
 {"name" "4P <c(FFFF00)>Q</c> <c(00ff0aff)>S</c> Saint Lo R <e(shadow)><c(00ff0aff)>2v2</c> (GSM)"}
 }
 {"2v2_lakeland2"
@@ -143,22 +143,22 @@
 {"3v3_summer_fields"
 {"name" "6P <c(FFFF00)>Q</c> <c(00ff0aff)>S</c> Summer Fields <e(shadow)><c(FF0000)>1v1</c> (GSM)"}
 }
-{"3v3_Tessel"
+{"3v3_tessel"
 {"name" "6P <c(FFA500)>Q</c> <c(00ff0aff)>S</c> Tessel <e(shadow)><c(FF0000)>2v2</c> (GSM)"}
 }
-{"3v3_Tessel_remix"
+{"3v3_tessel_remix"
 {"name" "6P <c(FFA500)>Q</c> <c(00ff0aff)>S</c> Tessel R <e(shadow)><c(FF0000)>2v2</c> (GSM)"}
 }
 {"3v3_big_desert_town_remix"
 {"name" "6P <c(00ff0aff)>Q</c> <c(00ff0aff)>S</c> Big Desert Town R <e(shadow)><c(00ff0aff)>3v3</c> (GSM)"}
 }
-{"3v3_Bir_Hacheim"
+{"3v3_bir_hacheim"
 {"name" "6P <c(FFA500)>Q</c> <c(00ff0aff)>S</c> Bir Hacheim <e(shadow)><c(FF0000)>2v2</c> (GSM)"}
 }
-{"3v3_Brettevillette"
+{"3v3_brettevillette"
 {"name" "6P <c(FF0000)>Q</c> <c(00ff0aff)>S</c> Brettevillette <e(shadow)><c(FF0000)>2v2</c> (GSM)"}
 }
-{"3v3_Brettevillette_remix"
+{"3v3_brettevillette_remix"
 {"name" "6P <c(FF0000)>Q</c> <c(00ff0aff)>S</c> Brettevillette R <e(shadow)><c(FF0000)>2v2</c> (GSM)"}
 }
 {"3v3_river"
@@ -170,7 +170,7 @@
 {"3v3_general_winter_remix"
 {"name" "6P <c(FFFF00)>Q</c> <c(00ff0aff)>S</c> General Winter R <e(shadow)><c(FF0000)>2v2</c> (GSM)"}
 }
-{"3v3_Wetland_remix"
+{"3v3_wetland_remix"
 {"name" "6P <c(FF0000)>Q</c> <c(00ff0aff)>S</c> Wetland R <e(shadow)><c(FF0000)>1v1</c> (GSM)"}
 }
 {"3v3_alexandria"
@@ -278,7 +278,7 @@
 {"4v4_creek"
 {"name" "8P <c(FFFF00)>Q</c> <c(00ff0aff)>S</c> Creek <e(shadow)><c(FF0000)>1v1</c> (GSM)"}
 }
-{"4v4_Ga'an"
+{"4v4_ga'an"
 {"name" "8P <c(FFA500)>Q</c> <c(00ff0aff)>S</c> Ga'an <e(shadow)><c(FF0000)>3v3</c> (GSM)"}
 }
 {"4v4_to_berlin"
@@ -320,10 +320,10 @@
 {"4v4_country_roads"
 {"name" "8P <c(FFA500)>Q</c> <c(00ff0aff)>S</c> Country Roads <e(shadow)><c(00ff0aff)>4v4</c> (GSM)"}
 }
-{"4v4_Warfare11"
+{"4v4_warfare11"
 {"name" "8P <c(00ff0aff)>Q</c> <c(00ff0aff)>S</c> Warfare11 <e(shadow)><c(FF0000)>3v3</c> (WAR)"}
 }
-{"4v4_Warfare11_remix"
+{"4v4_warfare11_remix"
 {"name" "8P <c(00ff0aff)>Q</c> <c(00ff0aff)>S</c> Warfare11 R <e(shadow)><c(FF0000)>3v3</c> (WAR)"}
 }
 {"4v4_ostwind2"
@@ -332,13 +332,13 @@
 {"4v4_ostwind2_remix"
 {"name" "8P <c(FF0000)>Q</c> <c(00ff0aff)>S</c> Ostwind R2 <e(shadow)><c(FF0000)>2v2</c> (GSM)"}
 }
-{"4v4_Poland"
+{"4v4_poland"
 {"name" "8P <c(FFA500)>Q</c> <c(00ff0aff)>S</c> Poland <e(shadow)><c(FF0000)>3v3</c> (GSM)"}
 }
-{"4v4_Russia"
+{"4v4_russia"
 {"name" "8P <c(FFA500)>Q</c> <c(00ff0aff)>S</c> Russia <e(shadow)><c(FF0000)>2v2</c> (GSM)"}
 }
-{"4v4_Ukraine"
+{"4v4_ukraine"
 {"name" "8P <c(FFA500)>Q</c> <c(00ff0aff)>S</c> Ukraine <e(shadow)><c(FF0000)>2v2</c> (GSM)"}
 }
 {"4v4_desert_hills"
@@ -347,7 +347,7 @@
 {"4v4_desert_hills_remix"
 {"name" "8P <c(FFA500)>Q</c> <c(FFFF00)>S</c> Desert Hills R <e(shadow)><c(FF0000)>3v3</c> (GSM)"}
 }
-{"4v4_Roadway"
+{"4v4_roadway"
 {"name" "8P <c(00ff0aff)>Q</c> <c(00ff0aff)>S</c> Roadway <e(shadow)><c(FF0000)>2v2</c> (GSM)"}
 }
 {"4v4_town_remix"
@@ -365,7 +365,7 @@
 {"5v5_bumpkin88"
 {"name" "10P <c(D3D3D3)>Q</c> <c(D3D3D3)>S</c> Bumpkin88 <e(shadow)><c(00ff0aff)>5v5</c> (RMP)"}
 }
-{"5v5_Castle"
+{"5v5_castle"
 {"name" "10P <c(D3D3D3)>Q</c> <c(D3D3D3)>S</c> Castle <e(shadow)><c(00ff0aff)>5v5</c> (DaS)"}
 }
 {"5v5_bumpkin_ring"
@@ -375,7 +375,7 @@
 {"name" "10P <c(D3D3D3)>Q</c> <c(D3D3D3)>S</c> Frozenriver Winterwar <e(shadow)><c(00ff0aff)>3v3</c> (RMP)"}
 }
 {"6v6_rhein"
-{"name" "12P <c(D3D3D3)>Q</c> <c(D3D3D3)>S</c> Rhein <e(shadow)><c(00ff0aff)>4v4</c>(DaS) "}
+{"name" "12P <c(D3D3D3)>Q</c> <c(D3D3D3)>S</c> Rhein <e(shadow)><c(00ff0aff)>4v4</c>(DaS)"}
 }
 {"5v5_suburb_remixed"
 {"name" "10P <c(D3D3D3)>Q</c> <c(D3D3D3)>S</c> Suburb Remixed <e(shadow)><c(00ff0aff)>3v3</c> (VAN)"}

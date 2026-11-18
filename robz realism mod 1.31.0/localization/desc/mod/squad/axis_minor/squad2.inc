@@ -17,10 +17,10 @@
 {"danuvia(axis_minor)" "Danuvia SMG"}
 ; -- group squad_22 --
 ; [new] card "AP_Miners(axis_minor)" cost 100 lvl 1 | soldiers axm_bul_miner_ap x4 | tags infantry all inf_only 44 45 | units/axis_minor/squads.set:60
-{"AP_Miners(axis_minor)" "AP miners"}
+{"ap_miners(axis_minor)" "AP miners"}
 ; -- group squad_23 --
 ; [new] card "AT_Miners(axis_minor)" cost 100 lvl 1 | soldiers axm_bul_miner_at x4 | tags infantry all inf_only 44 45 | units/axis_minor/squads.set:61
-{"AT_Miners(axis_minor)" "AT miners"}
+{"at_miners(axis_minor)" "AT miners"}
 ; -- group squad_24 --
 ; [new] card "solothurn_31m(axis_minor)" cost 46 lvl 1 | soldiers axm_hun_assualt_mgun, axm_hun_assualt_mgun_assist | tags infantry all inf_only 44 45 | units/axis_minor/squads.set:65
 {"solothurn_31m(axis_minor)" "Solothurn 31m"}
@@ -38,10 +38,10 @@
 {"breda30_para(axis_minor)" "Paracadutisti breda30"}
 ; -- group squad_28 --
 ; [new] card "Boys_AT_Rifle(axis_minor)" cost 66 lvl 1 | soldiers axm_fin_at_rifle, axm_fin_at_rifleassist | tags infantry all inf_only 44 45 | units/axis_minor/squads.set:74
-{"Boys_AT_Rifle(axis_minor)" "Boys AT rifle"}
+{"boys_at_rifle(axis_minor)" "Boys AT rifle"}
 ; -- group squad_29 --
 ; [new] card "pzb_at_Rifle(axis_minor)" cost 101 lvl 1 | soldiers axm_bul_at_rifle, axm_bul_at_rifle_assist | tags infantry all inf_only 44 45 | units/axis_minor/squads.set:76
-{"pzb_at_Rifle(axis_minor)" "pzb AT rifle"}
+{"pzb_at_rifle(axis_minor)" "pzb AT rifle"}
 ; -- group squad_30 --
 ; [new] card "panzerfaust(axis_minor)" cost 52 lvl 1 | soldiers axm_hun_assualt_pzf x2 | tags infantry all inf_only 44 45 | units/axis_minor/squads.set:81
 {"panzerfaust(axis_minor)" "panzerfaust"}
@@ -50,7 +50,7 @@
 {"panzershreck(axis_minor)" "panzershreck"}
 ; -- group squad_32 --
 ; [new] card "Radioman(axis_minor)" cost 200 lvl 1 | soldiers axm_bul_radioman | tags infantry all inf_only 44 45 | units/axis_minor/squads.set:85
-{"Radioman(axis_minor)" "Radioman"}
+{"radioman(axis_minor)" "Radioman"}
 ; -- group squad_33 --
 ; [new] card "flamers(axis_minor)" cost 83 lvl 1 | soldiers axm_fin_pio_flamer, axm_fin_kaukopartio_rifle | tags infantry all inf_only 44 45 | units/axis_minor/squads.set:87
 {"flamers(axis_minor)" "flamers"}

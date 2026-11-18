@@ -25,5 +25,5 @@
 ; [new] card "np_ml20_towed_guard" cost 1025 lvl 1 | soldiers vehicle_supporter x4 | vehicles t34m, np_ml20 | tags artillery heavyart heavy 43 44 45 | units/rus_guard/vehicles_43-45.set:57
 {"np_ml20_towed_guard" "ML20 w/ T34M"}
 ; -- button v22, group c17 --
-; [new] card "203b4_guard" cost 1300 lvl 1 | soldiers vehicle_supporter x2 | vehicles 203b4 | tags all artillery heavyart heavy 43 44 45 | units/rus_guard/vehicles_43-45.set:59 | copy of 203b4 (with crew)
-{"203b4_guard" "203mm B-4"}
+; [new] card "203b4_guard(rus_guard)" cost 1300 lvl 1 | soldiers vehicle_supporter x2 | vehicles 203b4 | tags all artillery heavyart heavy 43 44 45 | units/rus_guard/vehicles_43-45.set:59 | copy of 203b4 (with crew)
+{"203b4_guard(rus_guard)" "203mm B-4"}

@@ -7,6 +7,7 @@
 		(include "info/mod/squad/ger/squad1.inc")
 		(include "info/mod/squad/ger/squad2.inc")
 		(include "info/mod/squad/ger/v22.inc")
+		(include "info/mod/squad/rus/squad1.inc")
 		(include "info/mod/squad/rus/squad2.inc")
 		(include "info/mod/squad/eng/squad1.inc")
 		(include "info/mod/squad/eng/squad2.inc")

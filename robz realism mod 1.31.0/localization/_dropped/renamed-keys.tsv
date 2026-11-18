@@ -112,3 +112,4 @@ info.lng	info/squad/hero7_jap(jap)	info/squad/hero7_jap	merged_side_text_wins	ba
 info.lng	info/squad/hero_jap_chi_to(jap)	info/squad/hero_jap_chi_to	merged_side_text_wins	bare key kept, its text replaced by the name(side) text; name(side) key removed (owner 2026-11-18)
 info.lng	info/squad/hero_jap_elite_aa(jap)	info/squad/hero_jap_elite_aa	merged_side_text_wins	bare key kept, its text replaced by the name(side) text; name(side) key removed (owner 2026-11-18)
 info.lng	info/squad/hero9_jap(jap)	info/squad/hero9_jap	merged_side_text_wins	bare key kept, its text replaced by the name(side) text; name(side) key removed (owner 2026-11-18)
+desc.lng	desc/squad/morser18(ger_ss)	desc/squad/morser18	not_renamed_other_text	bare key text "21 cm Morser 18 w/ Sd.Kfz. 8"

@@ -54,4 +54,4 @@
 
 ;°°°Button Hero°°°
 
-{"hero7_eng"        ("v2" c(720) c1(pdr25_vet) 	t(hero artillery 40) s(eng) n1(vehicle_supporter:2) n2(tankman2:0) g(h6) b(hero)) {level 1} {cost 9.0} {fore -0.5}}
+{"hero7(eng)"        ("v2" c(720) c1(pdr25_vet) 	t(hero artillery 40) s(eng) n1(vehicle_supporter:2) n2(tankman2:0) g(h6) b(hero)) {level 1} {cost 9.0} {fore -0.5}}

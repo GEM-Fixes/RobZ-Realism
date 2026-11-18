@@ -89,5 +89,5 @@
 ;°°°Button Hero°°°
 
 ; [removed - unit not in 1.30.10] {"hero1_ger"        ("i1" c(120)			t(hero 41) s(ger) n1(sniper2_early:1) g(h1) b(hero)) {level 1} {cost 1.0} {fore -0.5}}
-{"hero7_ger"        ("v1" c(480) c1(nebelwerfer41) 	t(hero artillery rocket 41) s(ger) n1(vehicle_supporter:2) n2(tankman2:0) g(h4) b(hero)) {level 1} {cost 4.0} {fore -0.5}}
-{"flak18_hero"      ("v2" c(650) c1(flak18a) 		t(hero artillery 41) s(ger) n1(vehicle_supporter:2) n2(tankman2:0) g(h8) b(hero)) {level 1} {cost 10.0} {fore -0.5}}
+{"hero7(ger)"        ("v1" c(480) c1(nebelwerfer41) 	t(hero artillery rocket 41) s(ger) n1(vehicle_supporter:2) n2(tankman2:0) g(h4) b(hero)) {level 1} {cost 4.0} {fore -0.5}}
+{"hero_flak18_hero(ger)"      ("v2" c(650) c1(flak18a) 		t(hero artillery 41) s(ger) n1(vehicle_supporter:2) n2(tankman2:0) g(h8) b(hero)) {level 1} {cost 10.0} {fore -0.5}}

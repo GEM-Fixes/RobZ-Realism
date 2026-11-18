@@ -18,7 +18,7 @@
 
 ("squad_with7types" side(ger2) name(elites_para) c(0) g(squad_6) c1(ost_fallschirm_sl:1) c2(ost_fallschirm_sl_asst_fg_44:1) c3(ost_fallschirm_sniper:1) c4(ost_fallschirm_grenadier:2) c5(ost_fallschirm_pzfst_fg:1) c6(ost_fallschirm_mg:2) c7(ost_fallschirm_mg_asst:2) b(squad1) t(all inf_only 44 45) level(1) cost(374) f(1.0))
 
-{"storm_mech_ost"		("vb3" c(1) c1(sdkfz250_1) 	t(all 44 45 inf_only) s(ger2) n1(3) n2(1) n3(2) g(squad_7) b(squad1)) {level 12} {cost 182} {fore -159.0}}
+{"storm_mech_ost(ger2)"		("vb3" c(1) c1(sdkfz250_1) 	t(all 44 45 inf_only) s(ger2) n1(3) n2(1) n3(2) g(squad_7) b(squad1)) {level 12} {cost 182} {fore -159.0}}
 
 
 

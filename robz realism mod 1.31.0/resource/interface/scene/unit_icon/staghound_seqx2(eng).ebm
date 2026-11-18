@@ -1,0 +1,6 @@
+{bitmap
+	{frame "staghound_00.tga"}
+	{frame "staghound_01.tga"}
+	{frame "staghound_02.tga"}
+	{frame "staghound_03.tga"}
+}
