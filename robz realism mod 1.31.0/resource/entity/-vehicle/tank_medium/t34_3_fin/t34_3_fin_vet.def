@@ -73,7 +73,7 @@
            			 {item "ammo bullet85_rus ap" 30}
            			 {item "ammo bullet85_rus fg" 26}
            			 {item "ammo bullet85_rus apcr" 5}
-           			 {item "ammo 7x54" 2000}
+           			 {item "ammo dt29_mag" 1890}
 		}
 	}
 	{Weaponry

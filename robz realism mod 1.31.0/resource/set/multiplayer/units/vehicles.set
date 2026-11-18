@@ -428,7 +428,7 @@
 )
 (define "light_mortar_eng"
     ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content " mp/%s/eng_light_mortar:1 mp/%s/eng_light_mortar_assist:2 "}
+    {content " mp/%s/eng_light_mortar:1 mp/%s/eng_light_mortar_assist:1 "}
 )
 
 (define "light_mortar_ss"

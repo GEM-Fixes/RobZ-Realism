@@ -1,0 +1,10 @@
+; info/squad/*(usmc) : keys this mod changed or added
+; mod part
+; changed from vanilla
+; new
+{"ap_miners(usmc)" "This team of specialists arrives with a full complement of anti-personnel mines which can be placed to provide the perfect defense against advancing infantry. Deploy them along likely routes of enemy advance or use them to secure a vulnerable flank from enemy attack."}
+{"at_miners(usmc)" "This team of specialists arrives with a full complement of anti-tank mines which can be deployed to thwart advances made by enemy vehicles. Place them along roads or other likely routes of enemy advance. In some cases, a mine might only disable a vehicle, so be prepared to finish off any enemy vehicles which get disabled by your mines."}
+{"sappers(usmc)" "This team of specialists is equipped with mine detectors and is trained in mine disposal. They are the most effective way of clearing enemy minefields. Once mines have been detected, they can be re-deployed for use against their former owners. However, these soldiers are vulnerable whilst searching for mines, so take measures to protect them."}
+{"tankmans(usmc)" "This pair of tank crews are only lightly armed but are well-suited for crewing your armored vehicles and field guns. Use them to replace the losses you have suffered in combat and re-man your equipment. They are not suited for infantry combat and can't capture points."}
+{"vehic_supporter(usmc)" "This pair of support crew are only lightly armed but are well-suited for crewing your armored vehicles and field guns. Use them to replace the losses you have suffered in combat and re-man your equipment. They are not suited for infantry combat and can't capture points."}
+{"elite_tankmans(usmc)" "This veteran pair of support crew are only lightly armed but are well-suited for crewing your armored vehicles and field guns. Use them to replace the losses you have suffered in combat and re-man your equipment. They are not suited for infantry combat and can't capture points."}

@@ -270,8 +270,7 @@
     )
 
 {"mp/ger/ger_sniper_vet" ("level_20" side(ger))}
-{"mp/ger/ss_vet_sniper" ("level_20" side(ger_ss))}
-
+{"mp/ger_ss/ss_vet_sniper" ("level_20" side(ger_ss))}
 
 {"mp/rus/rus_vetsniper" ("level_20" side(rus))}
 
@@ -395,7 +394,6 @@
 {"mp/ger2/ost_recon_rifle" ("level_29" side(ger2))}
 {"mp/jap/jap_flamerassist" ("level_29" side(jap))}
 {"mp/jap/jap_rifle" ("level_29" side(jap))}
-{"mp/jap/jap__type99_at" ("level_29" side(jap))}
 {"mp/jap/jap_rifle2" ("level_29" side(jap))}
 {"mp/jap/jap_rifle2b" ("level_29" side(jap))}
 {"mp/jap/jap_rifleb" ("level_29" side(jap))}
@@ -406,7 +404,7 @@
 {"mp/rus/rus_sapper_rifle2" ("level_29" side(rus))}
 {"mp/rus/rus_sapper_rifle3" ("level_29" side(rus))}
 {"mp/rus_guard/guard_recon_rifle" ("level_29" side(rus_guard))}
-{"mp/jap/light_mortar_assist" ("level_29" side(jap))}
+{"mp/jap/light_mortar_asst" ("level_29" side(jap))}
 {"mp/ger/ger_light_mortar_assist" ("level_29" side(ger))}
 {"mp/eng/eng_light_mortar_assist" ("level_29" side(eng))}
 {"mp/ger_ss/ss_light_mortar_assist" ("level_29" side(ger_ss))}

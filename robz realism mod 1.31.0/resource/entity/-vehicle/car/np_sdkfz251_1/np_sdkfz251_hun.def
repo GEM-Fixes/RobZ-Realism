@@ -111,7 +111,7 @@
 			{mask "weapon mgun"}
 		}
 		{Box
-			{item "brandflasche" "grenade" 10}
+			{item "molotov_coctail" "grenade" 10}
 			{item "hungarian_36m" "grenade" 25}
 			{item "smoke" "grenade" 10}
 			{item "bandage" 10}

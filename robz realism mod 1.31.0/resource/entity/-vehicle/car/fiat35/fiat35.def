@@ -84,7 +84,7 @@
 			{item "dynamite" }
 			{item "can" }
 			{item "repair_kit" }
-			{item "ammo_box_inf_ita" 5}
+			{item "ammo_box_inf_axm" 2}
 			{item "oto42flam" "grenade" 20}
 			{item "ccm34smoke" "grenade" 20 }
 			{item "OTO_mod35" "grenade" 30 }
