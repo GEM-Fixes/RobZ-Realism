@@ -9,9 +9,7 @@
 		{head "jap_army_helmet2_net"}
 	}
 	{perks
-		("breed_body" health(400%) regen_health(100%) stamina(200%) regen_stamina(125%) vision("mp_soldier") speed(0.9))
-		("drive_level_6")
-		("skills_mgun_6" rocket(1))
+		("soldier_mgun_6" rocket(1) body(hardy) sight(soldier))
 		{"stealth"}
 	}
 	("breed_vet" table(elite))

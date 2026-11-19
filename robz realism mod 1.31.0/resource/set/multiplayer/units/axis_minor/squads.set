@@ -84,7 +84,7 @@
 
 ("squad_1" side(axis_minor) name(Radioman) member1(axm_bul_radioman:1) charge(0) tags(all inf_only 44 45) group(squad_32) button(squad2) level(1) cost(200) fore(1))
 
-("squad_2" side(axis_minor) name(flamers) member1(axm_fin_pio_flamer:1) member2(axm_fin_kaukopartio_rifle:1) charge(150) tags(all inf_only 44 45) group(squad_33) button(squad2) level(1) cost(83) fore(0.0))
+("squad_2" side(axis_minor) name(flamers) member1(axm_fin_kaukopartio_flamer:1) member2(axm_fin_kaukopartio_rifle:1) charge(150) tags(all inf_only 44 45) group(squad_33) button(squad2) level(1) cost(83) fore(0.0))
 
 ("squad_1" side(axis_minor) name(finnish_sniper) member1(axm_fin_sniper:1) charge(150) tags(all inf_only 44 45) group(squad_34) button(squad2) level(1) cost(90) fore(1.0))
 

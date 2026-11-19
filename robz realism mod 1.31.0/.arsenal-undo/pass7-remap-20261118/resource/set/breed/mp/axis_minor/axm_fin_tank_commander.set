@@ -1,0 +1,21 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "fin-tankcom"}
+	{portrait "fin_soldier4"}
+	{icon "tankman"}
+	{icon_priority 0}
+	{nationality fin}
+	{armors
+		{head "cap_fin_m36_tank_officer"}
+	}
+	{tags "tankman2"}
+	{perks
+		("crew_2" body(normal_line))
+		{"tankgun" lvl_4}
+	}
+	("breed_vet" table(crew))
+	{inventory
+		("pistol_valter_32")
+		{in_hands 0}
+	}
+}

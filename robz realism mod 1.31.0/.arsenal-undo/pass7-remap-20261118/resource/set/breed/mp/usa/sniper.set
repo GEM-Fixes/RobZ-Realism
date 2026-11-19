@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-soldier1"}
+	{portrait "usa_soldier4"}
+	{nationality usa}
+	{icon "sniper"}
+	{icon_priority 5}
+	{armors
+		{head "helmet4_usa"}
+	}
+	{perks
+		("breed_body" health(150%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_sniper") speed(0.9))
+		("drive_level_4")
+		("skills_rifle_4" rocket(1))
+		("perks_sniper")
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_m1903a4")
+		{item "bandage" 3}
+		("give" item(grenade m61) count(2))
+		{in_hands 0}
+	}
+}

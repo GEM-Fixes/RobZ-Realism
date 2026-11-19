@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-camo-bar"}
+	{portrait usa_elite2}
+	{icon elite}
+	{icon_priority 3}
+	{nationality usa}
+	{armors
+		{body us_marine_haversack}
+		{head helmet_marine_usa}
+	}
+	{perks
+		("soldier_rifle_5" rocket(1) body(line))
+		{"tankgun" lvl_4}
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "bandage" 5}
+		("give" item(grenade m61) count(2))
+		("give_1_or_2" item(smoke grenade))
+		("give_chance" item(m15_smoke grenade) chance(50))
+		{item "bar_rifle" filling "bar_mag ammo" 20}
+		{item "bar_mag ammo" 240}
+		{in_hands 4}
+	}
+}

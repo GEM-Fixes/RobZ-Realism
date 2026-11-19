@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-zelt-rfl"}
+	{portrait "ger2_elite1"}
+	{icon "rifleman"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{body ammo_ger3}
+		{head helmet_ger_m40_camo_foliage}
+	}
+	{perks
+		("soldier_mgun_5" rocket(1) body(line))
+	}
+	("breed_vet" table(elite_start2))
+	{inventory
+		("rifle_mauzer_vet")
+		{item "ammo mg_mauser belt" 600}
+		{item "bandage" 3}
+		{item "sandbag_kit"}
+		{in_hands 0}
+	}
+}

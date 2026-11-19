@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-sco-late-smg2"}
+	{portrait "rus_elite3"}
+	{nationality rus}
+	{icon "smg3"}
+	{icon_priority 1}
+	{armors
+		{body body_armor}
+		{head helmet_rus_ssh40_cover_camo}
+	}
+	{perks
+		("soldier_smg_5" rocket(1) body(line))
+	}
+	("breed_vet" table(start5))
+	{inventory
+		("smg_pps43")
+		{item "bandage" 3}
+		("give" item(grenade f1) count(2))
+		("give_chance" item(grenade molotov_coctail) chance(25))
+		("give" item(grenade smoke) count(2))
+		{item "ru_backpack_meshok"}
+		{in_hands 0}
+	}
+}

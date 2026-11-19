@@ -1,0 +1,20 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-tank-cpl"}
+	{portrait "usa_tankman"}
+	{nationality usa}
+	{icon "tankman"}
+	{icon_priority 0}
+	{armors
+		{head tankhelmet_usa}
+	}
+	{perks
+		("crew_3" body(elite_line))
+		{"tankgun" lvl_8}
+	}
+	("breed_vet" table(crew))
+	{inventory
+		("pistol_colt_21")
+		{in_hands 0}
+	}
+}

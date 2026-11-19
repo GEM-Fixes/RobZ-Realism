@@ -9,9 +9,7 @@
 		{head helmet_heer_camo}
 	}
 	{perks
-		("breed_body" health(400%) regen_health(100%) stamina(200%) regen_stamina(125%) vision("mp_soldier") speed(0.9))
-		("drive_level_7")
-		("skills_smg_7" rocket(7))
+		("soldier_smg_7" rocket(7) body(line) sight(soldier))
 	}
 	("breed_vet" table(elite_start2))
 	{inventory

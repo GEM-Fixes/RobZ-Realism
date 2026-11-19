@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-smock2mix-stg44-nco"}
+	{portrait "ger_soldier2"}
+	{icon "smg"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{head fieldcap_ger_heer}
+	}
+	{perks
+		("soldier_smg_3" rocket(2) body(line))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_sg44")
+		{item "bandage" 3}
+		("give" item(grenade m24) count(2))
+		{item "small_shovel" 1}
+		("give" item(smoke grenade) count(2))
+		{in_hands 0}
+	}
+}

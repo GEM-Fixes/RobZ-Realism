@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-inf-pvt"}
+	{portrait "eng_soldier2"}
+	{nationality eng}
+	{icon "bazooker"}
+	{icon_priority 3}
+	{armors
+		{head helmet2_eng}
+	}
+	{perks
+		("soldier_rifle_4" rocket(4) body(line))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_em3")
+		{item "ammo bren_mag" 56}
+		{item "bandage" 3}
+		("give" item(grenade mk1) count(1))
+		("give" item(grenade n73at) count(1))
+		{item "weapon piatrocket" 0.2 1 filled}
+		{item "ammo piatrocket" 5}
+		{in_hands 0}
+	}
+}

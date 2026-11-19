@@ -184,6 +184,7 @@
 {"axm_fin_officer" "<c(c3baae)>Upseeri"}
 ; [new] first in card "fin_pioneer(axis_minor)" axis_minor/squad1 cost 220 | units/axis_minor/squads.set:14 | in 2 cards
 {"axm_fin_pio_flamer" "<c(c3baae)>Pioneeri Liekinheitin"}
+{"axm_fin_kaukopartio_flamer" "<c(c3baae)>Liekinheitin Kaukopartio"}
 ; [new] first in card "fin_pioneer(axis_minor)" axis_minor/squad1 cost 220 | units/axis_minor/squads.set:14
 {"axm_fin_pio_mgun" "<c(c3baae)>Pioneeri Konekiväärimies"}
 ; [new] first in card "fin_pioneer(axis_minor)" axis_minor/squad1 cost 220 | units/axis_minor/squads.set:14

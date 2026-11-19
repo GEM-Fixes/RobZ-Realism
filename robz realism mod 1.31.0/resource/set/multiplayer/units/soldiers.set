@@ -72,6 +72,7 @@
 )
 
 {"mp/axis_minor/axm_fin_pio_flamer" ("level_4_v2" side(axis_minor))}
+{"mp/axis_minor/axm_fin_kaukopartio_flamer" ("level_4_v2" side(axis_minor))}
 {"mp/axis_minor/axm_fin_pio_smg" ("level_4_v2" side(axis_minor))}
 {"mp/axis_minor/axm_hun_assualt_flamer" ("level_4_v2" side(axis_minor))}
 {"mp/ger/ger_flamer" ("level_4_v2" side(ger))}

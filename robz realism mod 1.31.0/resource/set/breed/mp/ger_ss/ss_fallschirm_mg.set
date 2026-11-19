@@ -10,7 +10,7 @@
 		{head helmet_ger_m38_cover}
 	}
 	{perks
-		("soldier_mgun_3" rocket(2) body(hardy) sight(soldier))
+		("soldier_mgun_7" rocket(6) body(hardy) sight(soldier))
 		{"avoidance" lvl_1}
 		{"stealth"}
 	}

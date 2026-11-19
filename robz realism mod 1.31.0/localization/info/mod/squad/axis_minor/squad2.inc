@@ -52,7 +52,7 @@
 ; [new] card "Radioman(axis_minor)" cost 200 lvl 1 | soldiers axm_bul_radioman | tags infantry all inf_only 44 45 | units/axis_minor/squads.set:85
 {"radioman(axis_minor)" "Bulgarian radioman calls periodic mortar strikes on flare mark; relocate between salvos."}
 ; -- group squad_33 --
-; [new] card "flamers(axis_minor)" cost 83 lvl 1 | soldiers axm_fin_pio_flamer, axm_fin_kaukopartio_rifle | tags infantry all inf_only 44 45 | units/axis_minor/squads.set:87
+; [new] card "flamers(axis_minor)" cost 83 lvl 1 | soldiers axm_fin_kaukopartio_flamer, axm_fin_kaukopartio_rifle | tags infantry all inf_only 44 45 | units/axis_minor/squads.set:87
 {"flamers(axis_minor)" "Finnish flamethrower team of 2, a flamer with a rifle escort, terrifying at point-blank range for clearing bunkers and rooms. The flamer must be kept out of direct fire."}
 ; -- group squad_34 --
 ; [new] card "finnish_sniper(axis_minor)" cost 90 lvl 1 | soldiers axm_fin_sniper | tags infantry all inf_only 44 45 | units/axis_minor/squads.set:89

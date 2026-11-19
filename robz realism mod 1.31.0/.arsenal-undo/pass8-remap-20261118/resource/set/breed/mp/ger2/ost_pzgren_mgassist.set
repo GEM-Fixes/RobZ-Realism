@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-geb-rfl"}
+	{portrait "ger2_soldier5"}
+	{nationality ger2}
+	{icon "stormtrooper6b"}
+	{icon_priority 4}
+	{armors
+		{head helmet_heer_camo}
+	}
+	{perks
+		("breed_body" health(400%) regen_health(100%) stamina(200%) regen_stamina(125%) vision("mp_soldier") speed(0.9))
+		("drive_level_7")
+		("skills_mgun_7" rocket(1))
+	}
+	("breed_vet" table(elite_start2))
+	{inventory
+		("rifle_mauzer_vet")
+		{item "ammo mg_mauser belt" 600}
+		{item "small_shovel" 1}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

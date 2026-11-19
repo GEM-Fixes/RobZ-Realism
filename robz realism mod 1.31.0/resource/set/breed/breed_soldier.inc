@@ -31,7 +31,7 @@
 ;   6      5 5 5 6 5   5 6 5 5 5   5 5 6 5 5   6 5 5 5 5   
 ;   7      6 6 6 7 6   6 7 6 6 6   6 6 7 6 6   7 6 6 6 6   
 ;
-;   A soldier with his own stamina regeneration writes the three parts himself:
+;   Stamina and health regeneration are 100% for everyone but the charge troops. A soldier who needs his own writes the three parts himself:
 ;     ("breed_body" ...his values...)  ("drive_level_5")  ("skills_rifle_5" rocket(1))
 ;   Charge troops, tank crews and vehicle supporters have their own tables at the end.
 ;   Included from breed_macros.inc. Written by E:/arsenal-tmp/robz-toe/apply/soldier-remap.js; change a number here to rebalance a level.

@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-cav2-rfl-ober"}
+	{portrait "ger_soldier2"}
+	{icon "rifleman"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{head helmet_heer_camo}
+	}
+	{perks
+		("soldier_smg_6" rocket(1) body(line))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_mauzer")
+		{item "ammo mg_mauser drum" 50}
+		{item "bandage" 3}
+		("give" item(grenade m24) count(2))
+		("give_chance" item(grenade m24x5) chance(25))
+		("give" item(smoke grenade) count(1))
+		{item "sandbag_kit"}
+		{in_hands 0}
+	}
+}

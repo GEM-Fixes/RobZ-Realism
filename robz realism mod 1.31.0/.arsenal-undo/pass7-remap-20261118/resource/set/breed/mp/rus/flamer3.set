@@ -1,0 +1,21 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-smguner"}
+	{portrait "rus_elite3"}
+	{nationality rus}
+	{icon "flamer3"}
+	{icon_priority 3}
+	{armors
+		{body body_armor}
+		{head fieldcap1_rus}
+	}
+	{perks
+		("soldier_smg_3" rocket(1) body(line))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "flame_thrower"}
+		{item "balloon" filling "fuel" 80}
+		{in_hands 0}
+	}
+}

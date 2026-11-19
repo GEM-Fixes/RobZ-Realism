@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-geb-smg"}
+	{portrait "ger_soldier4"}
+	{icon "elite2"}
+	{icon_priority 4}
+	{nationality ger}
+	{armors
+		{body ammo_ger3}
+		{head fieldcap_ger_geb}
+	}
+	{perks
+		("breed_body" health(400%) regen_health(100%) stamina(200%) regen_stamina(125%) vision("mp_soldier") speed(0.9))
+		("drive_level_7")
+		("skills_smg_7" rocket(6))
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("smg_sg44")
+		{item "bandage" 5}
+		("give" item(grenade m24) count(2))
+		("give" item(smoke grenade) count(2))
+		{in_hands 0}
+	}
+}

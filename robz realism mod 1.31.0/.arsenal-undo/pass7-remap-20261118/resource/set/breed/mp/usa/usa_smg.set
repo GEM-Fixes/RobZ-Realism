@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "us_bazooker"}
+	{portrait "usa_soldier2"}
+	{nationality usa}
+	{icon "smg"}
+	{icon_priority 1}
+	{armors
+		{head helmet4_usa}
+	}
+	{perks
+		("soldier_smg_3" rocket(1) body(line))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_thompson")
+		{item "bandage" 3}
+		("give" item(grenade m61) count(2))
+		;{item "grenade n73at" 1}
+		;{item "smoke grenade" 1}
+		{in_hands 0}
+	}
+}

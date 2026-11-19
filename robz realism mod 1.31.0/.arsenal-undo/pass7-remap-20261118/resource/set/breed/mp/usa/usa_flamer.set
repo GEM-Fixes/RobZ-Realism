@@ -1,0 +1,22 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "us_flamer_hp"}
+	{portrait usa_soldier2}
+	{icon flamer}
+	{icon_priority 3}
+	{nationality usa}
+	{armors
+		{head helmet1_usa}
+	}
+	{perks
+		("soldier_smg_3" rocket(1) body(line))
+		{"avoidance" lvl_1}
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "flame_thrower"}
+		{item "balloon" filling "fuel" 24}
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

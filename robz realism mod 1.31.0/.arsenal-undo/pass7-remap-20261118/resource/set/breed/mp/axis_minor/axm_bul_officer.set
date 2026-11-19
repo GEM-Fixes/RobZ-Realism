@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "bul-officer"}
+	{portrait "bul_officer"}
+	{icon "officer"}
+	{icon_priority 6}
+	{tags "officer"}
+	{nationality bul}
+	{armors
+		{head cap2_bul}
+	}
+	{tags "officer"}
+	{perks
+		("breed_body" health(200%) regen_health(100%) stamina(150%) regen_stamina(100%) vision("mp_officer") speed(0.9))
+		("drive_level_5")
+		("skills_pistol_5" rocket(1))
+		("perks_officer")
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "valter" filled}
+		{item "ammo walther_mag" 40}
+		{item "knife_ger"}
+		{item "binocular"}
+		{in_hands 0}
+	}
+}

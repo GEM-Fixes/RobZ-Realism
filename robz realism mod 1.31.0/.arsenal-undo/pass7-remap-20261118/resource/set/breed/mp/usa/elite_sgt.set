@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-82nd-smg-ssgt"}
+	{portrait "usa_elite1"}
+	{nationality usa}
+	{icon "elite2"}
+	{icon_priority 4}
+	{armors
+		{head helmet_usa_para_nco}
+	}
+	{perks
+		("soldier_smg_6" rocket(1) body(line))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_thompson")
+		{item "bandage" 5}
+		("give" item(grenade m61) count(2))
+		;{item "grenade n73at" 1}
+		("give_1_or_2" item(smoke grenade))
+		("give_chance" item(m15_smoke grenade) chance(50))
+		("give" item(grenade satchel) count(1))
+		{in_hands 0}
+	}
+}

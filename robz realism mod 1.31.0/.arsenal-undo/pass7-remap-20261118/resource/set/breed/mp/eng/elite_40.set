@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-commando"}
+	{portrait "eng_elite1"}
+	{nationality eng}
+	{icon "elite"}
+	{icon_priority 3}
+	{armors
+		{head beret_eng_comm}
+	}
+	{perks
+		("soldier_smg_6" rocket(1) body(line))
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("kit_smg" gun(sten_v_silencer) ammo(sten_mag) rounds(128))
+		{item "bandage" 5}
+		("give" item(grenade mk1) count(2))
+		("give" item(grenade n73at) count(1))
+		("give_chance" item(n77_smoke grenade) chance(25))
+		("give" item(smoke grenade) count(1))
+		("give" item(mine antitank) count(1))
+		{in_hands 0}
+	}
+}

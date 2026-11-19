@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-reg2nco-smg"}
+	{portrait "ger_soldier3"}
+	{icon "stormtrooper"}
+	{icon_priority 3}
+	{nationality ger}
+	{armors
+		{head helmet_ger_m40}
+	}
+	{perks
+		("soldier_smg_6" rocket(1) body(line))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_mp40")
+		{item "bandage" 5}
+		("give" item(grenade m24) count(2))
+		("give_chance" item(grenade m24x5) chance(25))
+		("give" item(smoke grenade) count(2))
+		{in_hands 0}
+	}
+}

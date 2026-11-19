@@ -1,0 +1,22 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "jap_army_nco"}
+	{portrait "jap_soldier4"}
+	{nationality jap}
+	{icon "elite"}
+	{icon_priority 3}
+	{armors
+		{head "jap_army_helmet4"}
+	}
+	{perks
+		("soldier_rifle_5" rocket(1) body(hardy))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "type89_grenadelauncher" filled}
+		("rifle_type44_carbine")
+		{item "ammo 5cm_grenade fg" 8}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

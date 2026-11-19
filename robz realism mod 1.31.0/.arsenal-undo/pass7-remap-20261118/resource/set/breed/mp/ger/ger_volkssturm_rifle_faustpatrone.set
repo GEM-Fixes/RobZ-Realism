@@ -1,0 +1,21 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-volkssturm"}
+	{portrait "ger_soldier1"}
+	{nationality ger}
+	{icon "home_guard"}
+	{icon_priority 0}
+	{armors
+		{head fieldcap_ger}
+	}
+	{perks
+		("soldier_rifle_1" rocket(1) body(line))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_mauzer")
+		{item "bandage" 3}
+		{item "faustpatrone_30 weapon" 0 1 filled}
+		{in_hands 0}
+	}
+}

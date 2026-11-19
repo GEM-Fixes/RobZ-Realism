@@ -1,0 +1,31 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-pioneer"}
+	{portrait "ger_soldier7"}
+	{icon "rifleman"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{head waffen_helmet_camo}
+	}
+	{perks
+		("soldier_smg_4" rocket(3) body(hardy))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_sg44")
+		{item "bandage" 3}
+		("give" item(grenade m24) count(2))
+		("give" item(mine antitank) count(3))
+		{item "sandbag_kit" 1}
+		{item "mine s_mine" 6}
+		{item "trench_spade" 1}
+		;{item "dynamite_ladung" 1}
+		;{item "mine antitank" 1}
+		;{item "grenade m24" 2}
+		;{item "trench_spade" 1}
+		;{item "sandbag_kit" 3}
+		;{item "hedgehog_kit" 1}
+		{in_hands 0}
+	}
+}

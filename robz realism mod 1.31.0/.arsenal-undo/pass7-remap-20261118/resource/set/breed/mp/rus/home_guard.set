@@ -1,0 +1,20 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-partisan2"}
+	{portrait "rus_soldier1"}
+	{nationality rus}
+	{icon "home_guard"}
+	{icon_priority 0}
+	{armors
+		{head "cap_rus_partisan2"}
+	}
+	{perks
+		("soldier_rifle_1" rocket(1) body(line))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("kit_rifle" gun(mosin) ammo(mosin_clip) rounds(30))
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

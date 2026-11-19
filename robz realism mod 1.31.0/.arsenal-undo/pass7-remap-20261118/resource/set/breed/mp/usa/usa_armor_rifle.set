@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-soldier1"}
+	{portrait "usa_soldier2"}
+	{nationality usa}
+	{icon "rifleman"}
+	{icon_priority 1}
+	{armors
+		{head "helmet4_usa"}
+	}
+	{perks
+		("soldier_rifle_3" rocket(1) body(line))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_garand")
+		{item "bandage" 3}
+		("give" item(grenade m61) count(1))
+		("give_chance" item(m15_smoke grenade) chance(50))
+		{item "sandbag_kit" 1}
+		{in_hands 0}
+	}
+}

@@ -10,7 +10,7 @@
 		{head helmet_ger_m38_cover}
 	}
 	{perks
-		("soldier_mgun_3" rocket(1) body(hardy) sight(soldier))
+		("soldier_rifle_3" rocket(1) body(hardy) sight(soldier))
 	}
 	("breed_vet" table(standard))
 	{inventory

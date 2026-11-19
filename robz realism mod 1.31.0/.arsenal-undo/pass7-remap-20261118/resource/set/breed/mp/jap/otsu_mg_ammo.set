@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "jap_army_lmg2"}
+	{portrait "jap_soldier2"}
+	{nationality jap}
+	{icon "mg"}
+	{icon_priority 2}
+	{armors
+		{head "jap_army_helmet11"}
+	}
+	{perks
+		("soldier_rifle_3" rocket(1) body(hardy))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("kit_rifle" gun(type38rifle_bayonet) ammo(arisaka6-5_clip) rounds(180))
+		{item "bandage" 3}
+		("give" item(mine antipersonnel) count(2))
+		{item "trench_spade"}
+		{item "tunnel_spade"}
+		{in_hands 0}
+	}
+}

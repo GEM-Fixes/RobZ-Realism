@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "jap_army_lmg1"}
+	{portrait "jap_soldier2"}
+	{nationality jap}
+	{icon "at_rifle"}
+	{icon_priority 3}
+	{armors
+		{head jap_army_helmet8}
+	}
+	{perks
+		("soldier_rifle_1" rocket(1) body(hardy))
+	}
+	("breed_vet" table(standard))
+	{inventory
+
+		{item "type_97_antitank" filled}
+		("smg_type100smg")
+		{item "bandage" 3}
+		("give" item(grenade type3at_a) count(1))
+		{item "ammo ptr" 15}
+		{item "ammo ptr fg" 20}
+		{in_hands 0}
+
+
+	}
+}

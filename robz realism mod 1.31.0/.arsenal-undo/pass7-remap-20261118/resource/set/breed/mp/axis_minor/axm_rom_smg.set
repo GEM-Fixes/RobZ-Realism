@@ -1,0 +1,22 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rom-rifleman"}
+	{portrait "rom_soldier1"}
+	{icon "smgs2"}
+	{icon_priority 0}
+	{nationality rom}
+	{armors
+		{head "8_kaska_soldat_ruminia"}
+	}
+	{perks
+		("soldier_smg_3" rocket(1) body(line))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_orita")
+		{item "bandage" 3}
+		("give" item(m24 grenade) count(1))
+		("give" item(m24x5 grenade) count(1))
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{behaviour soldier}
+	{skin "fin-inf"}
+	{portrait "fin_soldier3"}
+	{icon "flamers"}
+	{icon_priority 1}
+	{nationality fin}
+	{armors
+		{head helmet_fin_m16}
+	}
+	{perks
+		("soldier_smg_6" rocket(1) body(line) sight(soldier))
+		{"avoidance" lvl_1}
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "flame_thrower"}
+		{item "balloon" filling "fuel" 40}
+		{item "luger" filled}
+		{item "ammo walther_mag" 40}
+
+		{in_hands 0}
+	}
+}

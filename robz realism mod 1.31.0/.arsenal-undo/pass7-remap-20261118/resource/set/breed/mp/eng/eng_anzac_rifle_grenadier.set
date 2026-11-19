@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng_t3"}
+	{portrait "eng_elite2"}
+	{nationality anzac}
+	{icon "elite5"}
+	{icon_priority 3}
+	{armors
+		{head fieldcap_eng}
+	}
+	{perks
+		("soldier_rifle_4" rocket(1) body(line))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_em3")
+		{item "em3_mark1" filled}
+		{item "ammo rifle_grenade" 6 1}
+		{item "ammo bren_mag" 56}
+		{item "bandage" 3}
+		{item "sandbag_kit" 1}
+		{in_hands 2}
+	}
+
+}
