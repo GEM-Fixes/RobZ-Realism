@@ -1,0 +1,12 @@
+{
+ "tool": "pricecalc",
+ "tag": "pricecalc-20261119b",
+ "changed": [
+  "resource/set/multiplayer/units/soldiers.set",
+  "resource/set/multiplayer/units/ger/squads_44.set",
+  "resource/set/multiplayer/units/ger2/squads.set",
+  "resource/set/multiplayer/units/ger_ss/vehicles_45.set"
+ ],
+ "created": [],
+ "setPrices": false
+}

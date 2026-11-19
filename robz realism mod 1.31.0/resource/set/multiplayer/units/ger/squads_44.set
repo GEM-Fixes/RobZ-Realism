@@ -6,13 +6,13 @@
 
 ;------------------------------volks, VT infantry || vet 2--------------------------------------------------------
 
-;{price {rule squad} {members 191} {cost 191}}
+;{price {rule squad} {members 197} {cost 197}}
 ("squad_7" side(ger) name(volksgrens) member1(ger_volksgren_sl_smg:1) member2(ger_volksgren_sl_asst:1) member3(ger_volksgren_mg:1) member4(ger_volksgren_mg_asst:1) member5(ger_volksgren_rifle:1) member6(ger_volksgren_pzfst:2) member7(ger_volksgren_grenadier:1) charge(0) tags(all inf_only 44 45) group(squad_2) button(squad1) level(1) cost(112) fore(1.0))
 
-;{price {rule squad} {members 233.82} {cost 234}}
+;{price {rule squad} {members 239.82} {cost 240}}
 ("squad_6" side(ger) name(volksgrens_sturm) member1(ger_volksgren_sl_stg:1) member2(ger_volksgren_sl_asst:1) member3(ger_volksgren_stg44:3) member4(ger_volksgren_pzfst2:2) member5(ger_volksgren_smg:1) member6(ger_volksgren_sa:1) charge(60) tags(all inf_only 44 45) group(squad_2) button(squad1) level(1) cost(110) fore(1.0))
 
-;{price {rule squad} {members 250.35} {cost 250}}
+;{price {rule squad} {members 256.35} {cost 256}}
 ("squad_7" side(ger) name(volksgrens_heavy) member1(ger_volksgren_sl_stg:1) member2(ger_volksgren_sl_asst:1) member3(ger_volksgren_stg44:1) member4(ger_volksgren_pzfst2:2) member5(ger_volksgren_mg:2) member6(ger_volksgren_mg_asst2:1) member7(ger_volksgren_mg_asst3:1) charge(60) tags(all inf_only 44 45) group(squad_2) button(squad1) level(1) cost(134) fore(1.0))
 
 ;{price {rule squad} {members 88.7} {cost 89}}
@@ -23,18 +23,18 @@
 
 ;------------------------------german sturm-infantry || vet 4---------------------------------------------------
 
-;{price {rule squad} {members 292.31} {cost 292}}
+;{price {rule squad} {members 302.31} {cost 302}}
 ("squad_4" side(ger) name(sturmgrens_44) member1(ger_squadleader_sg44:1) member2(ger_sturmgren_sl_asst:1) member3(ger_sturmgren_sg44:4) member4(ger_sturmgren_sg44_pzfst:2) charge(60) tags(all inf_only 44 45) group(squad_22) button(squad1) level(1) cost(134) fore(1.0))
 
-;{price {rule squad} {add "251"} {members 308.31} {cost 358}}
+;{price {rule squad} {add "251"} {members 318.31} {cost 368}}
 ("squad_5_vehicle" side(ger) name(sturmgrens_44_mech) vehicle1(np_sdkfz251_1_late) member1(vehicle_supporter:2) member2(ger_squadleader_sg44:1) member3(ger_sturmgren_sl_asst:1) member4(ger_sturmgren_sg44:4) member5(ger_sturmgren_sg44_pzfst:2) charge(60) tags(all inf_only 44 45) group(squad_22) button(squad1) level(1) cost(223) fore(0.0))
 
 ;------------------------------regular/veteran squad || vet 4/5-----------------------------------------------------------
 
-;{price {rule squad} {members 198.5} {cost 199}}
+;{price {rule squad} {members 208.5} {cost 209}}
 ("squad_8" side(ger) name(grenadiers_44) member1(ger_squadleader_mp40:1) member2(ger_grenadier_ober_44:1) member3(ger_grenadier_sa_44:1) member4(ger_grenadier_rifle_44:1) member5(ger_grenadier_rifle_grenadier:1) member6(ger_grenadier_pzfst:2) member7(ger_grenadier_mg:1) member8(ger_grenadier_mg_asst:1) charge(60) tags(all inf_only 44 45) group(squad_33) button(squad1) level(1) cost(152) fore(1.0))
 
-;{price {rule squad} {members 232.65} {cost 233}}
+;{price {rule squad} {members 239.65} {cost 240}}
 ("squad_8" side(ger_ss) name(grenadiers_44) member1(ss_grenadier_sl:1) member2(ss_grenadier_sl_asst_44:1) member3(ss_grenadier_stg:1) member4(ss_grenadier_sa_44:2) member5(ss_grenadier_pzfst:1) member6(ss_grenadier_mg:1) member7(ss_grenadier_mg_asst:1) member8(ss_grenadier_rifle_grenadier3:1) charge(0) tags(all inf_only 44 45) group(squad_3) button(squad1) level(1) cost(184) fore(1.0))
 
 ;{price {rule squad} {members 239.33} {cost 239}}
@@ -71,33 +71,33 @@
 
 ;------------------------------german elite panzergrenadiere ||| vet 6------------------------------------------
 
-;{price {rule squad} {members 366.05} {cost 366}}
+;{price {rule squad} {members 373.05} {cost 373}}
 ("squad_7" side(ger) name(grenadiers_elite) member1(ger_gd_pzgren_sl_stg:1) member2(ger_gd_pzgren_sl_asst_stg:1) member3(ger_gd_pzgren_pzfst_stg:1) member4(ger_gd_pzgren_sa_scope:1) member5(ger_gd_pzgren_pzfst_sa:1) member6(ger_gd_pzgren_mg:2) member7(ger_gd_pzgren_mg_asst:2) charge(60) tags(all inf_only 44 45) group(squad_5) button(squad1) level(1) cost(336) fore(1.0))
 
 ;------------------------------german SS pzgren ||| vet 5----------------------------------------------------
 
-;{price {rule squad} {members 258.8} {cost 259}}
+;{price {rule squad} {members 265.8} {cost 266}}
 ("squad_7" side(ger_ss) name(pzgrens_44) member1(ss_pzgren_sl_stg:1) member2(ss_pzgren_sl_asst_pzfst:1) member3(ss_pzgren_stg:1) member4(ss_pzgren_pzfst_sa:1) member5(ss_pzgren_pzfst:1) member6(ss_pzgren_mg:2) member7(ss_pzgren_mg_asst:2) charge(60) tags(all inf_only 44 45) group(squad_55) button(squad1) level(1) cost(205) fore(1.0))
 
-;{price {rule squad} {add "251"} {members 274.8} {cost 325}}
+;{price {rule squad} {add "251"} {members 281.8} {cost 332}}
 ("squad_8_vehicle" side(ger_ss) name(pzgren_mech) vehicle1(np_sdkfz251_1_late) member1(vehicle_supporter:2) member2(ss_pzgren_sl_stg:1) member3(ss_pzgren_sl_asst_pzfst:1) member4(ss_pzgren_stg:1) member5(ss_pzgren_pzfst_sa:1) member6(ss_pzgren_pzfst:1) member7(ss_pzgren_mg:2) member8(ss_pzgren_mg_asst:2) charge(60) tags(all inf_only 44 45) group(squad_55) button(squad1) level(1) cost(272) fore(0.0))
 
 ;------------------------------german SS TK pzgren |||| vet 6------------------------------------------------------
 
-;{price {rule squad} {members 381.2} {cost 381}}
+;{price {rule squad} {members 395.2} {cost 395}}
 ("squad_9" side(ger_ss) name(tk_pzgrens_44) member1(ss_tk_pzgren_sl:1) member2(ss_tk_pzgren_sl_asst:1) member3(ss_tk_pzgren_pzfst_stg:1) member4(ss_tk_pzgren_sa:1) member5(ss_tk_pzgren_pzfst60_sa:1) member6(ss_tk_pzgren_pzfst:1) member7(ss_tk_pzgren_rifle:1) member8(ss_tk_pzgren_mg:2) member9(ss_tk_pzgren_mg_asst:2) charge(60) tags(all inf_only 44 45) group(squad_5) button(squad1) level(1) cost(295) fore(1.0))
 
 ;------------------------------german SS LSSAH pzgren |||| vet 7------------------------------------------------------
 
-;{price {rule squad} {members 448.65} {cost 449}}
+;{price {rule squad} {members 462.65} {cost 463}}
 ("squad_9" side(ger_ss) name(lssah_pzgrens_44) member1(ss_lssah_pzgren_sl_stg:1) member2(ss_lssah_pzgren_sl_asst_sa:1) member3(ss_lssah_pzgren_pzfst_stg:1) member4(ss_lssah_pzgren_pzfst:1) member5(ss_lssah_pzgren_pzfst60_sa:1) member6(ss_lssah_pzgren_mg:2) member7(ss_lssah_pzgren_mg_asst:2) member8(ss_lssah_pzgren_at:1) member9(ss_lssah_pzgren_at2:1) charge(60) tags(all inf_only 44 45) group(squad_5) button(squad1) level(1) cost(377) fore(1.0))
 
-;{price {rule squad} {add "251"} {members 456.65} {cost 507}}
+;{price {rule squad} {add "251"} {members 470.65} {cost 521}}
 ("squad_10_vehicle" side(ger_ss) name(lssah_mech) vehicle1(np_sdkfz251_1_late) member01(vehicle_supporter:1) member02(ss_lssah_pzgren_sl_asst_sa:1) member03(ss_lssah_pzgren_sl_stg:1) member04(ss_lssah_pzgren_pzfst_stg:1) member05(ss_lssah_pzgren_pzfst:1) member06(ss_lssah_pzgren_pzfst60_sa:1) member07(ss_lssah_pzgren_mg:2) member08(ss_lssah_pzgren_mg_asst:2) member09(ss_lssah_pzgren_at:1) member10(ss_lssah_pzgren_at2:1) charge(60) tags(all inf_only 44 45) group(squad_5) button(squad1) level(1) cost(391) fore(1.0))
 
 ;------------------------------german gebirgs and fallschirmj ger |||| vet 7------------------------------------
 
-;{price {rule squad} {members 257.55} {cost 258}}
+;{price {rule squad} {members 264.55} {cost 265}}
 ("squad_7" side(ger) name(gebirgsjager_44) member1(ger_gebirgsjager_sl_stg:1) member2(ger_gebirgsjager_sl_asst_stg:1) member3(ger_gebirgsjager_stg:2) member4(ger_gebirgsjager_smg:3) member5(ger_gebirgsjager_pzfst_sa:1) member6(ger_gebirgsjager_mg:1) member7(ger_gebirgsjager_mg_asst:1) charge(60) tags(all inf_only 44 45) group(squad_5) button(squad1) level(1) cost(254) fore(1.0))
 
 ;{price {rule squad} {members 395.95} {cost 396}}

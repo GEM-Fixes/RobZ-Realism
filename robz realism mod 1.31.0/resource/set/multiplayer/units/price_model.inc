@@ -62,7 +62,7 @@
 	{weapon_group "radio" {label "Radio"} {skill "rifle"} {sole 1}
 		{tier "60" {label "call-in 60 [I] sheet Radio row 1 = calibre, row 2 = MP; cp = sheet singles Radio"}
 			{mp 20 20 20 20 20 20 20 20 20 20}
-			{cp 5 5 5 5 5 5 5 5 5 5}
+			{cp 2 2 2 2 2 2 2 2 2 2}	; owner 2026-11-19: the 60 mm call-in keeps the mod's CP 2; 5 is the sheet value of the bigger call-ins
 			{items
 				"mortar_60_flaregun"	; [I] call-in flare gun, calibre 60 in the name -> sheet Radio 60
 			}
@@ -109,10 +109,8 @@
 				"carcano_m91_scoped"	; [I] stuff rifle/sniper/carcano_m91_scoped; the only tier of the sheet class
 				"em2"	; [I] stuff rifle/sniper/em2; the only tier of the sheet class
 				"em2_vet"	; [I] stuff rifle/sniper/em2_vet; the only tier of the sheet class
-				"fg42_sc"	; [I] stuff rifle/fg42_sc (scoped name); the only tier of the sheet class
 				"g43_scope"	; [I] stuff rifle/g43_scope (scoped name); the only tier of the sheet class
 				"m1903a4"	; [I] stuff rifle/sniper/m1903a4; the only tier of the sheet class
-				"m3_carbine"	; [I] stuff rifle/sniper/m3_carbine; the only tier of the sheet class
 				"mauzer_s"	; [I] stuff rifle/sniper/mauzer_s; the only tier of the sheet class
 				"mauzer_s_vet"	; [I] stuff rifle/sniper/mauzer_s_vet; the only tier of the sheet class
 				"mosin_s"	; [I] stuff rifle/sniper/mosin_s; the only tier of the sheet class
@@ -301,6 +299,7 @@
 			{items
 				"bar_rifle"	; [I] stuff rifle/bar_rifle (automatic rifle (BAR / FG42 / Johnson LMG)); the only tier of the sheet class
 				"fg42_rifle"	; [I] stuff rifle/fg42_rifle (automatic rifle (BAR / FG42 / Johnson LMG)); the only tier of the sheet class
+				"fg42_sc"	; owner 2026-11-19: an auto rifle (scoped FG42), not a sniper rifle
 			}
 		}
 		{tier "undetermined" {as "medium"}
@@ -333,6 +332,13 @@
 				"mkb42"	; [I] sheet carbines high "stg"
 				"mp43"	; [I] sheet carbines high "stg"
 				"sg44"	; [I] sheet carbines high "stg"
+			}
+		}
+		{tier "special" {label "Special (owner 2026-11-19: M3 carbine is a special carbine) [I] tables = its earlier sniper tables until the owner sets them"}
+			{mp 30 30 50 55 60 70 72.5 75 77.5 80}
+			{cp 0.58 0.7 1.11 1.56 2.05 2.77 3.34 3.93 4.55 5.19}
+			{items
+				"m3_carbine"	; owner 2026-11-19: special carbine (stuff rifle/sniper/m3_carbine)
 			}
 		}
 		{tier "undetermined" {as "medium"}
@@ -479,7 +485,6 @@
 			{cp 0.4 0.4 0.7 1.14 1.61 2.11 2.63 3.17 3.73 4.3}
 			{items
 				"faustpatrone_30 weapon"	; [I] sheet pzf low "faust"
-				"panzerfaust weapon"	; owner rule: panzerfaust = pzf low
 				"panzerfaust_30 weapon"	; [I] sheet pzf low "faust"
 			}
 		}
@@ -494,6 +499,7 @@
 			{mp 5 9 11 13 15 15 15 15 15 15}
 			{cp 0.4 0.4 0.7 1.14 1.61 2.11 2.63 3.17 3.73 4.3}
 			{items
+				"panzerfaust weapon"	; owner 2026-11-19: Panzerfaust 100 (stuff bazooka/panzerfaust, entity panzerfaust100) = pzf high
 			}
 		}
 		{tier "undetermined" {as "medium"}
@@ -1017,7 +1023,7 @@
 	; anti-tank grenades and charges (owner rule): ranked by the armour they defeat, score = max(energy x strongest single blast layer, penetration x cumulative damage)
 	;   energy 5 = the engine multiplies blast energy by 5 against armour (g_energyperblastwave). cuts 30 60 100 [I]: tier 1 light armour, 2 light tanks, 3 medium tanks, 4 heavy tanks
 	{throwable_score {groups "at_grenade" "bundle_charge"} {mode "armor"} {energy 5} {penetration 1} {cuts 30 60 100}}
-	{throwable_price {mp_per_tier 0.05} {cp_per_tier 0.05}}	; owner rule: 0.05 per tier per throwable, on MP and on CP
+	{throwable_price {mp_per_tier 0.05} {cp_per_tier 0.01}}	; owner rule: MP 0.05 per tier per throwable; CP 0.01 (a fifth of the earlier 0.05, owner 2026-11-19)
 
 	; ---- spellings of one item (same stuff file): {alias "model name" "other spelling" ...} ----
 	{alias "ammo bar_mag" "bar_mag ammo"}
