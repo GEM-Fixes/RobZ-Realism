@@ -194,7 +194,7 @@
 		{Locomotion ("locomotion")
 			{MaxSpeed	28}
 			{maxSpeedAtMaxTurn 4}
-			{StartTime	42}
+			{StartTime	45}
 			{TurnTime	22.4}
 			{TurnStart  2}
 			{BrakeTime  2}

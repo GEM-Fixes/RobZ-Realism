@@ -2,7 +2,7 @@
 	{filling "bullet75_hun"}
 	{fireSound "gun/50to76_cal/75mm_kwk42"}
 	{reloadSound "gun_r01"}
-	{rechargeTime 6.8}
+	{rechargeTime 5.95}
 	("accuracy_high_210m")
 	("range_long")
 	{range 210 210}

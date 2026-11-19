@@ -2,7 +2,7 @@
 	{filling "bullet75 ger"}
 	{fireSound "gun/50to76_cal/75mm_pak40"}
 	{reloadSound "gun_r03"}
-	{rechargeTime 4}
+	{rechargeTime 3}
 	("range_long")
 	{range 220 220}
 

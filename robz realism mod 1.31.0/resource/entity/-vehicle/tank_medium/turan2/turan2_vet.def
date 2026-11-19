@@ -99,16 +99,16 @@
 	{Chassis
 		("tank_trace" fx("tracks_mid") step(0.52) len(1))
 		{Locomotion ("locomotion")
-			{MaxSpeed   32}
-			{maxSpeedAtMaxTurn 11}
-			{StartTime 30}
+			{MaxSpeed   30}
+			{maxSpeedAtMaxTurn 4}
+			{StartTime 38.25}
 			{TurnStart  1.7}
-			{TurnTime 18}
+			{TurnTime 17.1}
 			{TurnRadius 8}
 			{TurnStop   0.7}
 			{BrakeTime  1.5}
 			{StopTime   2.5}
-			{Gears 0.1 0.25 0.75}
+			{Gears 0.13 0.23 0.33 1}
 			{RearGears  0.15}
 		}
 		{FuelBag
@@ -124,7 +124,10 @@
 	}
 	{Extension "turan2.mdl"}
 	{bone "turret"
-		{speed 0.0045}
+		{speed 0.0013}
+	}
+	{bone "mantlet"
+		{speed 0.0092}
 	}
 ;("ger_1_sight")
 }

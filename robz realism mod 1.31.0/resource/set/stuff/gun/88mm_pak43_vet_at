@@ -1,0 +1,4 @@
+{from "88mm_pak43_vet"		; "pak43 vet" AT cannon (x0.80 of 11)
+	{rechargeTime 8.8}
+	("accuracy_max_10m_he")
+}

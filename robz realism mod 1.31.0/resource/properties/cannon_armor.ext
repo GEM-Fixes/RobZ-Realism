@@ -175,6 +175,18 @@
 		{TurnRadius	3}
 	}
 )
+; loco_medium_elite: {locomotion {FallSlope} {MaxSpeed} {StartTime} {TurnTime} ..}
+;   e.g. ("loco_medium_elite")
+(define "loco_medium_elite"
+	{locomotion
+		("loco_params")
+		{FallSlope  60}
+		{MaxSpeed	8}
+		{StartTime	3}
+		{TurnTime	12.8}
+		{TurnRadius	3}
+	}
+)
 
 ; loco_massive: {locomotion {FallSlope} {MaxSpeed} {StartTime} {TurnTime} ..}
 ;   e.g. ("loco_massive")
@@ -210,6 +222,18 @@
 		{MaxSpeed	5}
 		{StartTime	5}
 		{TurnTime	22.5}
+		{TurnRadius	3}
+	}
+)
+; loco_big_elite: {locomotion {FallSlope} {MaxSpeed} {StartTime} {TurnTime} ..}
+;   e.g. ("loco_big_elite")
+(define "loco_big_elite"
+	{locomotion
+		("loco_params")
+		{FallSlope  60}
+		{MaxSpeed	5}
+		{StartTime	5}
+		{TurnTime	20}
 		{TurnRadius	3}
 	}
 )

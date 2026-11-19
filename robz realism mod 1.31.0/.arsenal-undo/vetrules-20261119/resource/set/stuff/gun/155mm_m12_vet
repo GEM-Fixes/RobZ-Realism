@@ -1,0 +1,6 @@
+{from "155mm_m12"		; "m12_gmc"
+	("range_heavy_howitzer_us_vet")
+	{recoveryTime 13.8}
+	{rechargeTime 13.8}
+	{range 650 650}
+}

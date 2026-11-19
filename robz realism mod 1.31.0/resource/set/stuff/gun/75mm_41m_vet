@@ -2,7 +2,7 @@
 	{filling "bullet75_hun"}
 	{fireSound "gun/50to76_cal/75mm_kwk40"}
 	{reloadSound "gun_r03"}
-	{rechargeTime 5.5}
+	{rechargeTime 6.8}
 	("range_medium")
 	("caliber_medium")
 	("speed" s(425))

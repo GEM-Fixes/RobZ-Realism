@@ -1,6 +1,6 @@
 {from "155mm_longtom"		; "155mm_gpf"
 	("range_heavy_howitzer_us_vet")
 	{range 790 790}
-	{recoveryTime 13.8}
-	{rechargeTime 13.8}
+	{recoveryTime 12}
+	{rechargeTime 12}
 }

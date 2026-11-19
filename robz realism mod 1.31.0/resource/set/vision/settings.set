@@ -47,8 +47,10 @@
 	{cannon_02_vet    			actor  "vision_cannon_low_vet"}
 	{cannon_03     				actor  "vision_cannon_medium"}
 	{cannon_03_vet     			actor  "vision_cannon_medium_vet"}
+	{cannon_03_elite   			actor  "vision_cannon_medium_elite"}
 	{cannon_04     				actor  "vision_cannon_high"}
 	{cannon_04_vet     			actor  "vision_cannon_high_vet"}
+	{cannon_04_elite   			actor  "vision_cannon_high_elite"}
 	{cannon_05     				actor  "vision_cannon_maximum"}
 	{cannon_05_vet    			actor  "vision_cannon_maximum_vet"}
 	{paradrop_spawner			actor  "vision_vehicle_paradrop"}

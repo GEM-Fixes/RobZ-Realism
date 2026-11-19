@@ -232,16 +232,16 @@
 	{Chassis
 		("tank_trace" fx("tracks_mid") step(0.52) len(0.56))
 		{Locomotion ("locomotion")
-			{MaxSpeed	28}
+			{MaxSpeed	26}
 			{maxSpeedAtMaxTurn 3.5}
 			{StartTime	12}
-			{TurnTime	22}
+			{TurnTime	20.8}
 			{TurnStart  1.9}
 			{BrakeTime  2}
 			{StopTime   3}
 			{TurnRadius 10}
 			{TurnStop   0.8}
-			{Gears      0.18 0.26 0.36 1.0}
+			{Gears      0.16 0.24 0.31 1.0}
 			{RearGears  0.2}
 		}
 		{FuelBag
@@ -251,8 +251,8 @@
 			{fuel "fuel"}
 		}
 		{speed
-			{Normal  28}
-			{Slow  28}
+			{Normal  26}
+			{Slow  26}
 		}
 	}
 	{bone "turret_mgun"
@@ -261,10 +261,10 @@
 		{terminator}
 	}
 	{bone "turret"
-		{speed 0.0030}
+		{speed 0.0027}
 	}
 	{bone "gun_rot"
-		{speed 0.0010}
+		{speed 0.0009}
 	}
 }
 

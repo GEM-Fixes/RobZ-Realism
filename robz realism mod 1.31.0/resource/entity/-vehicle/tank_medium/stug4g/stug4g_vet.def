@@ -118,7 +118,7 @@
 			{MaxSpeed	 28}
 			{maxSpeedAtMaxTurn 4}
 			{StartTime	  38}
-			{TurnTime  	  16}
+			{TurnTime  	  17.1}
 			{TurnStart  1.4}
 			{BrakeTime    1}
 			{StopTime     2}

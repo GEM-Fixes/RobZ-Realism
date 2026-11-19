@@ -62,14 +62,14 @@
 		{Locomotion ("locomotion")
 			{maxspeed   29}
 			{maxSpeedAtMaxTurn 6}
-			{StartTime  30}
+			{StartTime  25.5}
 			{TurnStart  1}
-			{TurnTime   17}
+			{TurnTime   15.3}
 			{TurnRadius 9}
 			{TurnStop   0.5}
 			{BrakeTime  1}
 			{StopTime   2}
-			{Gears  0.1 0.2 0.3 1}
+			{Gears  0.13 0.23 0.33 1}
 			{RearGears   0.25}
 		}
 		{FuelBag
@@ -84,5 +84,11 @@
 		}
 	}
 	{Extension "m9053.mdl"}
+	{bone "turret"
+		{speed 0.0041}
+	}
+	{bone "gun_rot"
+		{speed 0.0022}
+	}
 
 }

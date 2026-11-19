@@ -93,14 +93,14 @@
 		{Locomotion ("locomotion")
 			{MaxSpeed	31}
 			{maxSpeedAtMaxTurn 13}
-			{StartTime 24}
-			{TurnTime 16}
+			{StartTime 20.4}
+			{TurnTime 14.4}
 			{TurnStart  1.5}
 			{BrakeTime  1.5}
 			{StopTime   2.5}
 			{TurnRadius 9}
 			{TurnStop   0.7}
-			{Gears      0.1 0.25 0.75}
+			{Gears      0.13 0.28 0.655}
 			{RearGears  0.15}
 		}
 		{FuelBag
@@ -116,10 +116,10 @@
 	}
 	{Extension "t34-85_fin.mdl"}
 	{bone "gun_rot"
-		{speed 0.003}
+		{speed 0.0007}
 	}
 	{bone "turret"
-		{speed 0.01}
+		{speed 0.0044}
 	}
 ;("turret_speed_medium")
 ;("rus_2_sight")

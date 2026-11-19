@@ -1,2 +1,4 @@
 {from "149mm_obice"    ; "obice149a"
+	{recoveryTime 11.73}
+	{rechargeTime 11.73}
 }

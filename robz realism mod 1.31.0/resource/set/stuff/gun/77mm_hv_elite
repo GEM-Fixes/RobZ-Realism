@@ -1,4 +1,5 @@
 {from "77mm_hv"		; "comet"
+	{rechargeTime 6.16}
 	{range 240 240}
 	("damage_215" at20(147) at100(137) at170(126) at215(116) at250(106) max(240))
 	{parameters "apds"

@@ -1,0 +1,6 @@
+{from "105mm_m2a1"		; "m7_priest"
+	("range_medium_howitzer_us_vet")
+	{range 380 380}
+	{recoveryTime 9.6}
+	{rechargeTime 9.6}
+}

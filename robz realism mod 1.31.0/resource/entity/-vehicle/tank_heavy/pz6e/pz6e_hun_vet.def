@@ -118,14 +118,14 @@
 		{Locomotion ("locomotion")
 			{MaxSpeed	25}
 			{maxSpeedAtMaxTurn 9}
-			{StartTime 36}
-			{TurnTime 24}
+			{StartTime 30.6}
+			{TurnTime 21.6}
 			{TurnStart  2}
 			{BrakeTime  2}
 			{StopTime   3}
 			{TurnRadius 11}
 			{TurnStop   1}
-			{Gears  0.1 0.2 0.75}
+			{Gears  0.13 0.23 0.73}
 			{RearGears  0.43}
 		}
 		{FuelBag
@@ -145,6 +145,11 @@
 		{speed 0.03}
 		{terminator}
 	}
-	("turret_speed_medium_low")
+	{bone "turret"
+		{speed 0.0021}
+	}
+	{bone "gun_rot"
+		{speed 0.0102}
+	}
 	("ger_2-5x_sight")
 }

@@ -62,7 +62,7 @@
 	{firing 1.15}
 )
 
-; cannon: {cannon_01} {cannon_02} {cannon_02_vet} {cannon_03} {cannon_03_vet} {cannon_04} +3 more
+; cannon: {cannon_01} {cannon_02} {cannon_02_vet} {cannon_03} {cannon_03_vet} {cannon_04} +5 more
 ;   e.g. ("cannon")
 (define "cannon"
 	{cannon_01 1	;minimum
@@ -90,6 +90,11 @@
 		{visible 1.08}
 		{still 1.08}
 	}
+	{cannon_03_elite 0.96	;medium elite
+		{firing 1.04}
+		{visible 0.96}
+		{still 0.96}
+	}
 	{cannon_04 1.3	;high
 		{firing 1.4}
 		{visible 1.3}
@@ -99,6 +104,11 @@
 		{firing 1.26}
 		{visible 1.17}
 		{still 1.17}
+	}
+	{cannon_04_elite 1.04	;high elite
+		{firing 1.12}
+		{visible 1.04}
+		{still 1.04}
 	}
 	{cannon_05 1.7	;maximum
 		{firing 2.0}

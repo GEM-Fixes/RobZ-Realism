@@ -1,0 +1,16 @@
+{from "76mm_mk4"		; 17pdr, achilles, archer, TDs
+	{rechargeTime 8.0}
+	{range 250 250}
+	("accuracy_max_high_250m_17pdr")
+	("damage_215" at20(161) at100(145) at170(131) at215(118) at250(107) max(250))
+	{parameters "apc"
+		("damage_215" at20(169) at100(148) at170(130) at215(114) at250(100) max(250))
+	}
+	{parameters "apcbc"
+		("damage_215" at20(174) at100(163) at170(150) at215(137) at250(126) max(250))	;no explosive filler so matches up to panther
+	}							;even with less muzzle velocity
+	{parameters "apds"
+		("damage_215" at20(280) at100(256) at170(233) at215(213) at250(193) max(250))
+	}
+}
+

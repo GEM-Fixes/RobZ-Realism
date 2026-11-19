@@ -1,0 +1,31 @@
+{from "pattern gun"	; "zrinyi1"
+	{filling "bullet75_hun"}
+	{fireSound "gun/50to76_cal/75mm_kwk42"}
+	{reloadSound "gun_r01"}
+	{rechargeTime 6.8}
+	("accuracy_high_210m")
+	("range_long")
+	{range 210 210}
+
+
+	("speed_all" speed(750) apcr(930) fg(570) heat(450))
+	("caliber_medium")
+	{projectileDamage 132}
+	("damage_170" at20(135) at100(123) at170(109) at215(97) at250(86) max(200))
+	{parameters "apc"
+		("damage_170" at20(135) at100(123) at170(109) at215(97) at250(86) max(200))
+	}
+	{parameters "heatb"
+		("damage_heat" damage(87) max(200))
+	}
+	{parameters "heatc"
+		("damage_heat" damage(100) max(200))
+	}
+	{parameters "apcr"
+		("damage_170" at20(176) at100(154) at170(130) at215(109) at250(92) max(200))
+	}
+	{parameters "fg"
+		{range 190 190}
+	}
+
+}

@@ -115,14 +115,14 @@
 		{Locomotion ("locomotion")
 			{MaxSpeed	 28}
 			{maxSpeedAtMaxTurn 4}
-			{StartTime	  45}
-			{TurnTime  	  19}
+			{StartTime	  38.25}
+			{TurnTime  	  17.1}
 			{TurnStart  1.4}
 			{BrakeTime    1}
 			{StopTime     2}
 			{TurnRadius   8}
 			{TurnStop   0.8}
-			{Gears  0.1 0.2 0.3 1}
+			{Gears  0.13 0.23 0.33 1}
 			{RearGears 0.28}
 		}
 		{FuelBag
@@ -138,7 +138,10 @@
 	}
 	{Extension "turan3_vet.mdl"}
 	{bone "turret"
-		{speed 0.0045}
+		{speed 0.0031}
+	}
+	{bone "mantlet"
+		{speed 0.0092}
 	}
 ;("ger_4_sight")
 }

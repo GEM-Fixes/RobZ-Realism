@@ -1,0 +1,5 @@
+{from "75mm_dt_2"		; "elite resita arty mode" (x0.60 of 7)
+	{curve "gun_heavy"}
+	{rechargeTime 4.2}
+	{recoveryTime 4.2}
+}

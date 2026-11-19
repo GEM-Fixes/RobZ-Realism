@@ -1,0 +1,3 @@
+resource/set/stuff/gun/88mm_pak43_vet_at
+resource/set/stuff/gun/75mm_dt_2_elite
+resource/set/stuff/gun/88mm_oqfmk2_2_vet

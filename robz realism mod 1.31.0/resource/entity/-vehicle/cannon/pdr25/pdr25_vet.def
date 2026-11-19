@@ -67,7 +67,7 @@
 		}
 		{place "gun1_2"
 			{type "gun_change_direct"}
-			{weapon "88mm_oqfmk2_2"}
+			{weapon "88mm_oqfmk2_2_vet"}
 			{basic}
 			{rotate}
 			{charger "gunner"}

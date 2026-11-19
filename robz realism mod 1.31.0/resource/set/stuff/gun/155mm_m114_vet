@@ -1,6 +1,6 @@
 {from "155mm_m114"		; "155mm_m114"
 	("range_heavy_howitzer_us_vet")
 	{range 500 500}
-	{recoveryTime 13.8}
-	{rechargeTime 13.8}
+	{recoveryTime 12}
+	{rechargeTime 12}
 }

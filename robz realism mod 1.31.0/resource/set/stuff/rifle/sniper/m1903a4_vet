@@ -1,14 +1,8 @@
-{from "pattern sniper_rifle"
+{from "m1903a4"
 	{special
-		{mode aim}
 		{PrepareTime 2.5}
-		{PrepareCursor "aimed_shot"}
-		{accuracy 2.5}
-		{throw_off}
 	}
 	{recoveryTime 1.05}
-	{rechargeTime 7.5}
 	{range 150 150}
-	{tag "bolt"}	; bolt-action cycling animation
 	{tag "bolt_r105"}	; bolt animation speed class (recoveryTime 1.05s)
 }

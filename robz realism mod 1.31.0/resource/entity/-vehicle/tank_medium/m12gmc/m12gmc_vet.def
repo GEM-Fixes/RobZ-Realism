@@ -176,14 +176,14 @@
 		{Locomotion ("locomotion")
 			{MaxSpeed   22}
 			{maxSpeedAtMaxTurn 4.5}
-			{StartTime  30}
+			{StartTime  25.5}
 			{TurnStart  1.8}
-			{TurnTime   17}
+			{TurnTime   15.3}
 			{TurnRadius 9}
 			{TurnStop   0.8}
 			{BrakeTime  1.5}
 			{StopTime   2.5}
-			{Gears  0.1 0.2 0.3 1}
+			{Gears  0.13 0.23 0.33 1}
 			{RearGears  0.3}
 		}
 		{FuelBag
@@ -202,11 +202,11 @@
 
 	{bone "mantlet"
 		{limits -15 15}
-		{speed 0.0005}
+		{speed 0.0006}
 	}
 	{bone "gun_rot"
 		{limits -5 50}
-		{speed 0.0005}
+		{speed 0.0007}
 	}
 	(mod "mp"
 		{brain

@@ -1,0 +1,4 @@
+{from "88mm_oqfmk2_2"		; "pdr25 vet" direct mode (x0.60 of 9.5)
+	{curve "gun_medium"}
+	{rechargeTime 5.7}
+}

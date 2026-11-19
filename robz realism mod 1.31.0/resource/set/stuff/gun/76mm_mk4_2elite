@@ -1,5 +1,5 @@
 {from "76mm_mk4"		; 17pdr, achilles, archer, TDs
-	{rechargeTime 8.0}
+	{rechargeTime 5.6}
 	{range 250 250}
 	("accuracy_max_high_250m_17pdr")
 	("damage_215" at20(161) at100(145) at170(131) at215(118) at250(107) max(250))
