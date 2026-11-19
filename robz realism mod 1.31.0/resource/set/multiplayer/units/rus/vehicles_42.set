@@ -86,6 +86,7 @@
 
 ;°°°Button Hero°°°
 
+;{price {rule squad} {members 269.1} {cost 269}}
 ("unit_infantry_sided_members2" side(rus) name(hero5) member1(rifle3:30) member2(smg2:3) charge(240) tags(hero 42) group(h2) button(hero) level(1) cost(2.0) fore(-0.5))
 
 ; [removed - unit not in 1.30.10] {"hero8_rus"        ("v1" c(600) c1(kv2) 	t(hero 42) s(rus) n1(tankman:3) n2(tankman2:1) g(h5) b(hero)) {level 1} {cost 8.0} {fore -0.5}}

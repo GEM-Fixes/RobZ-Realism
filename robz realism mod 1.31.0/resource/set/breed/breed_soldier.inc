@@ -10,7 +10,7 @@
 ;   body  = line, or hardy for the health bump of the SS (ger_ss) and Japan (jap).
 ;   sight = how far he sees: soldier, officer or sniper (the vision preset mp_<sight>).
 ;   The AT rifle skill of an AT rifle man or his assistant is written in the breed and equals his level.
-;   Veterancy table (in the breed): standard up to level 5, elite from level 6; start-rank tables stay as the breed has them.
+;   Veterancy (in the breed): ("breed_vet" table(T) start(N)); table standard up to level 5, elite from level 6; start(3) keeps its table.
 ;
 ;   level  health line / hardy   stamina   speed   tank  vehicle  cannon
 ;   1      100% / 150%         75%       0.9     0.75  1        0.8

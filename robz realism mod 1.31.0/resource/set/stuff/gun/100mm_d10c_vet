@@ -1,18 +1,6 @@
 {from "100mm_d10c"		; "su100"
-
 	{rechargeTime 13.6}
-
-	{range 250 250}
-
 	("accuracy_max_vet")
-	("damage_215" at20(210) at100(188) at170(164) at215(144) at250(126) max(250))
-	{parameters "aphe"
-		{cursorReloading "cannon_reload_aphe"}
-	}
-	{parameters "aphebc"
-		("damage_215" at20(241) at100(211) at170(185) at215(161) at250(141) max(250))
-		{cursorReloading "cannon_reload_aphebc"}
-	}
 	{parameters "fg"
 		{range 250 250}
 	}

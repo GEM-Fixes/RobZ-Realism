@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-regnco-stg44"}
+	{portrait "ger_soldier7"}
+	{icon "smg"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{body ammo_ger3}
+		{head waffen_fieldcap_camo}
+	}
+	{perks
+		("soldier_smg_6" rocket(5) body(hardy) sight(soldier))
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("smg_sg44")
+		{item "bandage" 3}
+		("give" item(grenade m24) count(2))
+		("give" item(grenade m24x5) count(1))
+		("give" item(smoke grenade) count(2))
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,20 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-tankman"}
+	{portrait eng_tankman}
+	{icon tankman}
+	{icon_priority 0}
+	{nationality eng}
+	{armors
+		{head beret_eng1}
+	}
+	{perks
+		("crew_2" body(normal_line) sight(soldier))
+	}
+	("breed_vet" table(crew))
+	{inventory
+		("pistol_webley")
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

@@ -2,33 +2,43 @@
 ;같캳quads같�
 ;------------------------------assault infantry || vet 2/3/4--------------------------------------------------------
 
+;{price {rule squad} {members 151.51} {cost 152}}
 ("squad_3" side(usa) name(smgs) member1(squadleader2:1) member2(rifle2:6) member3(smg2:5) charge(0) tags(all inf_only 39 40 41 42 43 44 45) group(squad_2) button(squad1) level(1) cost(141) fore(1.0))
 
 ;------------------------------regular squad || vet 2/3/4-----------------------------------------------------------
 
+;{price {rule squad} {members 163.53} {cost 164}}
 ("squad_3" side(usa) name(riflemans) member1(squadleader:1) member2(rifle:10) member3(mgun:1) charge(0) tags(all inf_only 39 40 41 42 43 44 45) group(squad_3) button(squad1) level(1) cost(164) fore(1.0))
+;{price {rule squad} {members 170.4} {cost 170}}
 ("squad_3" side(usa) name(riflemans_bar) member1(squadleader:1) member2(rifle:9) member3(mgun:2) charge(0) tags(all inf_only 39 40 41 42 43 44 45) group(squad_3) button(squad1) level(1) cost(174) fore(1.0))
 
 ;------------------------------marine squad ||| vet 4-----------------------------------------------------------
 
+;{price {rule squad} {members 170.33} {cost 170}}
 ("squad_3" side(usa) name(specialinf) member1(elite4_sgt:1) member2(elite5:10) member3(elite6:1) charge(210) tags(all inf_only 42 43 44 45) group(squad_6) button(squad1) level(1) cost(186) fore(1.0))
 
 ;------------------------------airborne squads ||| vet 5-----------------------------------------------------------
 
+;{price {rule squad} {members 281.3} {cost 281}}
 ("squad_6" side(usa) name(elites) member1(elite_sgt:1) member2(elite:3) member3(elitec:1) member4(eliteb:5) member5(elite3:1) member6(elite3b:1) charge(300) tags(all inf_only 42 43 44 45) group(squad_5) button(squad1) level(1) cost(242) fore(1.0))
+;{price {rule squad} {add "para"} {members 281.3} {cost 331}}
 ("squad_6_vehicle" side(usa) name(elites_drop) vehicle1(airborne_spawner) member1(elite_sgt:1) member2(elite:3) member3(elitec:1) member4(eliteb:5) member5(elite3:1) member6(elite3b:1) charge(900) tags(all inf_only 42 43 44 45 only-one) group(squad_5) button(squad1) level(1) cost(342) fore(1.0))
 
 ;------------------------------paramarines |||| vet 6-----------------------------------------------------------
 
+;{price {rule squad} {members 214.5} {cost 215}}
 ("squad_5" side(usa) name(paramarines) member1(paramarine_sgt:1) member2(paramarine2:1) member3(paramarine:3) member4(paramarineb:5) member5(paramarine3:2) charge(360) tags(all inf_only 42 43 44) group(squad_5) button(squad1) level(1) cost(251) fore(1.0))
+;{price {rule squad} {add "para"} {members 214.5} {cost 265}}
 ("squad_5_vehicle" side(usa) name(paramarines_drop) vehicle1(airborne_spawner) member1(paramarine_sgt:1) member2(paramarine2:1) member3(paramarine:3) member4(paramarineb:5) member5(paramarine3:2) charge(900) tags(all inf_only 42 43 44 only-one) group(squad_5) button(squad1) level(1) cost(351) fore(1.0))
 
 ;------------------------------stormtroopers |||| vet 6---------------------------------------------------------
 
+;{price {rule squad} {members 231.81} {cost 232}}
 ("squad_5" side(usa) name(stormtroopers) member1(sturmovik_sgt:1) member2(sturmovik:1) member3(sturmovik2:2) member4(sturmovik5:1) member5(sturmovik4:5) charge(360) tags(all inf_only 42 43 44 45) group(squad_5) button(squad1) level(1) cost(244) fore(1.0))
 
 ;------------------------------devil's brigade |||| vet 6-------------------------------------------------------
 
+;{price {rule squad} {members 435.38} {cost 435}}
 ("squad_6" side(usa) name(devils_brigade) member1(devil_brigade_sl:1) member2(devil_brigade_demo:3) member3(devil_brigade_radio:1) member4(devil_brigade_grenadier:2) member5(devil_brigade_mg:1) member6(devil_brigade_rifle:4) charge(360) tags(all inf_only 42 43 44) group(squad_5) button(squad1) level(10) cost(225) fore(1.0))
 
 ;------------------------------stormtrooper halftrack |||| vet 3/4----------------------------------------------
@@ -37,69 +47,93 @@
 
 ;------------------------------AP and AT miners, sappers || vet 2-----------------------------------------------
 
+;{price {rule squad} {members 48} {cost 48}}
 ("squad_1" side(usa) name(ap_miners) member1(ap_miner:4) charge(0) tags(all inf_only engineers mines 39 40 41 42 43 44 45) group(squad_7) button(squad1) level(20) cost(100) fore(0))
 
+;{price {rule squad} {members 48} {cost 48}}
 ("squad_1" side(usa) name(at_miners) member1(at_miner:4) charge(0) tags(all inf_only engineers mines 39 40 41 42 43 44 45) group(squad_8) button(squad1) level(25) cost(150) fore(0))
 
+;{price {rule squad} {members 40} {cost 40}}
 ("squad_1" side(usa) name(sappers) member1(saper:2) charge(0) tags(all inf_only engineers 39 40 41 42 43 44 45) group(squad_9) button(squad1) level(1) cost(50) fore(0))
 
 ;------------------------------tank and support crews || vet 2--------------------------------------------------
 
+;{price {rule squad} {members 20} {cost 20}}
 ("squad_1" side(usa) name(vehic_supporter) member1(vehicle_supporter:2) charge(0) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_3) button(squad1) level(1) cost(40) fore(-1.0))
 
+;{price {rule squad} {members 12} {cost 12}}
 ("squad_2" side(usa) name(tankmans) member1(tankman2:1) member2(tankman:4) charge(0) tags(all inf_only tankmans 39 40 41 42 43 44 45) group(soldier_3) button(squad1) level(1) cost(70) fore(-1.0))
 
+;{price {rule squad} {members 14} {cost 14}}
 ("squad_2" side(usa) name(elite_tankmans) member1(vet_tankman2:1) member2(vet_tankman:4) charge(0) tags(all inf_only tankmans 39 40 41 42 43 44 45) group(soldier_3) button(squad1) level(1) cost(120) fore(-1.0))
 
 ;같캳ingle Soldiers같�
 
 ;------------------------------rifleman and smg || vet 2--------------------------------------------------------
 
+;{price {rule single} {members 13.13} {mult 1.15} {cost 15}}
 ("squad_1" side(usa) name(riflemans2) member1(rifle:1) charge(5) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_1) button(squad2) level(1) cost(11) fore(1.0))
 
+;{price {rule single} {members 12.13} {mult 1.15} {cost 14}}
 ("squad_1" side(usa) name(rifle3) member1(rifle3:1) charge(30) tags(all inf_only 42 43 44 45) group(soldier_sa) button(squad2) level(1) cost(11) fore(1.0))
 
+;{price {rule single} {members 12.1} {mult 1.15} {cost 14}}
 ("squad_1" side(usa) name(smgs2) member1(smg:1) charge(5) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_2) button(squad2) level(1) cost(10) fore(1.0))
 
 ;------------------------------AT rifles and bazookas || vet 2--------------------------------------------------
 
+;{price {rule squad} {members 24.3} {cost 24}}
 ("squad_1" side(usa) name(shotguns) member1(shotgun:2) charge(15) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_4) button(squad2) level(1) cost(60) fore(1.0))
 
+;{price {rule squad} {members 33.15} {cost 33}}
 ("squad_2" side(usa) name(bazookers) member1(bazooker:1) member2(bazooker2:1) charge(0) tags(all inf_only 42 43 44 45) group(soldier_5) button(squad2) level(1) cost(100) fore(1.0))
 
+;{price {rule squad} {members 58.15} {cost 58}}
 ("squad_2" side(usa) name(stormtrooper5) member1(sturmovik5:1) member2(sturmovik5b:1) charge(0) tags(all inf_only 42 43 44 45) group(soldier_5) button(squad2) level(1) cost(150) fore(1.0))
 
 ;------------------------------MG infantry || vet 2-------------------------------------------------------------
 
+;{price {rule single} {members 20} {mult 1.15} {cost 23}}
 ("squad_1" side(usa) name(mgs2) member1(mgun:1) charge(60) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_6) button(squad2) level(1) cost(30) fore(1.0))
+;{price {rule single} {members 35} {mult 1.15} {cost 40}}
 ("squad_1" side(usa) name(mg2) member1(mgun2:1) charge(90) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_6) button(squad2) level(1) cost(45) fore(1.0))
 
 ;------------------------------elite3
 
+;{price {rule squad} {members 37.3} {cost 37}}
 ("squad_2" side(usa) name(elite6) member1(elite6:1) member2(elite5:1) charge(200) tags(all inf_only 42 43 44 45) group(squad_4) button(squad2) level(1) cost(44) fore(0.9))
 
+;{price {rule squad} {members 44.53} {cost 45}}
 ("squad_2" side(usa) name(elite3) member1(elite3:1) member2(elite:1) charge(230) tags(all inf_only 42 43 44 45) group(squad_4) button(squad2) level(1) cost(51) fore(0.9))
+;{price {rule squad} {members 66.53} {cost 67}}
 ("squad_2" side(usa) name(elite3b) member1(elite3b:1) member2(elite:1) charge(230) tags(all inf_only 42 43 44 45) group(squad_4) button(squad2) level(1) cost(71) fore(0.9))
 
 ;------------------------------paramarine |||||| vet 6---------------------------------------------
 
+;{price {rule squad} {members 36.33} {cost 36}}
 ("squad_2" side(usa) name(paramarine3) member1(paramarine3:1) member2(paramarine:1) charge(260) tags(all inf_only 42 43 44) group(squad_4) button(squad2) level(1) cost(76) fore(0.9))
 
 ;------------------------------------------------
 
+;{price {rule squad} {members 50.35} {cost 50}}
 ("squad_2" side(usa) name(stormtrooper6) member1(sturmovik6:1) member2(sturmovik6b:1) charge(260) tags(all inf_only 42 43 44 45) group(squad_4) button(squad2) level(1) cost(58) fore(0.9))
 
 ;------------------------------flamer, sniper and officer || vet2/3/4----------------------------------------------
 
+;{price {rule squad} {members 52.15} {cost 52}}
 ("squad_2" side(usa) name(flamers) member1(flamer:1) member2(flamer2:1) charge(150) tags(all flamethrower inf_only 39 40 41 42 43 44 45) group(soldier_8) button(squad2) level(1) cost(75) fore(0))
 
+;{price {rule single} {members 55.1} {mult 1.5} {cost 83}}
 ("squad_1" side(usa) name(snipers) member1(sniper:1) charge(150) tags(all sniper inf_only 39 40 41 42 43 44 45) group(soldier_9) button(squad2) level(1) cost(60) fore(0))
 
+;{price {rule single} {members 0.25} {mult 1.15} {cost 0}}
 ("squad_1" side(usa) name(officers) member1(oficer:1) charge(150) tags(all officer inf_only 39 40 41 42 43 44 45) group(soldier_10) button(squad2) level(1) cost(200) fore(0))
 
 
+;{price {rule single} {members 55.1} {mult 1.5} {cost 83}}
 ("squad_1" side(usa) name(snipers_d) member1(sniper:1) charge(0) tags(sniper_duell) group(soldier_12) button(squad2) level(1) cost(100) fore(0))
 
+;{price {rule single} {members 200} {mult 1.15} {cost 230}}
 ("squad_1" side(usa) name(radioman_mortar) member1(radioman_mortar:1) charge(300) tags(all mortar 39 40 41 42 43 44 45) group(radio_1) button(squad2) level(1) cost(300) fore(1.0))
 ("squad_1" side(usa) name(radioman_105) member1(radioman_105:1) charge(400) tags(all mortar 39 40 41 42 43 44 45) group(radio_1) button(squad2) level(1) cost(450) fore(1.0))
 ("squad_1" side(usa) name(radioman_155) member1(radioman_155:1) charge(750) tags(all mortar 39 40 41 42 43 44 45) group(radio_1) button(squad2) level(1) cost(550) fore(1.0))

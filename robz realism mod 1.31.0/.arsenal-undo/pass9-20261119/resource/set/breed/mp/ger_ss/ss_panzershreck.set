@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-smock2-rfl"}
+	{portrait "ger_soldier6"}
+	{icon "stormtrooper2"}
+	{icon_priority 4}
+	{nationality ger}
+	{armors
+		{head waffen_helmet_camo}
+	}
+	{perks
+		("soldier_rifle_6" rocket(6) body(hardy) sight(soldier))
+		{"at_rifle" lvl_6}
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("at_panzershreck")
+		("pistol_valter")
+		{item "bandage" 5}
+		("give" item(hohlladung grenade) count(1))
+		{in_hands 0}
+	}
+}

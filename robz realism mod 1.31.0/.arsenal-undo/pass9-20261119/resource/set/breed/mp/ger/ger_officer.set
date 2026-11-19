@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-officer"}
+	{portrait ger_officer}
+	{icon officer}
+	{icon_priority 6}
+	{tags "officer"}
+	{nationality ger}
+	{armors
+		{head cap_ger_off}
+	}
+	{perks
+		("soldier_pistol_5" rocket(4) body(line) sight(officer))
+		("perks_officer")
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("pistol_luger")
+		{item "knife_ger"}
+		{item "binocular"}
+		{item "bandage" 3}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

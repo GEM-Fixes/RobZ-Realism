@@ -1,17 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "rus-partisan1"}
-	{portrait "rus_soldier1"}
-	{nationality rus}
-	{icon "home_guard2"}
-	{icon_priority 0}
-	{armors
-		{head "cap_rus_partisan"}
-	}
+	("breed_look" skin(rus-partisan1) portrait(rus_soldier1) icon(home_guard2) priority(0) nation(rus))
+	("breed_armor" head(cap_rus_partisan))
 	{perks
 		("soldier_smg_1" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		("kit_smg" gun(mp38) ammo(mp40_mag) rounds(96))
 		{item "bandage" 3}

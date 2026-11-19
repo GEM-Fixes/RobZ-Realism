@@ -1,18 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "rus-smg"}
-	{portrait "rus_soldier2"}
-	{nationality rus}
-	{icon "sapper"}
-	{icon_priority 3}
-	{armors
-		{body soviet_pack}
-		{head helmet1_rus}
-	}
+	("breed_look" skin(rus-smg) portrait(rus_soldier2) icon(sapper) priority(3) nation(rus))
+	("breed_armor_vest" vest(soviet_pack) head(helmet1_rus))
 	{perks
 		("soldier_smg_2" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		("smg_ppsh41")
 		{item "mine_detector"}

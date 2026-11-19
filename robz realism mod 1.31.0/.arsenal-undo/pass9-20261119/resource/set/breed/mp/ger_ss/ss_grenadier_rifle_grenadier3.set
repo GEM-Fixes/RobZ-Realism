@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-reg2-rfl"}
+	{portrait "ger_soldier7"}
+	{icon "rifleman"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{body ammo_ger3}
+		{head waffen_helmet_camo}
+	}
+	{perks
+		("soldier_rifle_5" rocket(4) body(hardy) sight(soldier))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_mauzer")
+		{item "ammo mg_mauser drum" 50}
+		{item "bandage" 3}
+		{item "k98_gewehrgranat" 1 filling "k98_grenade fg" 1}
+		{item "k98_grenade fg" 6 1}
+		{item "k98_grenade ap" 1 1}
+		("give_chance" item(k98_grenade ap3) chance(50))
+		{item "sandbag_kit"}
+		{in_hands 0}
+	}
+}

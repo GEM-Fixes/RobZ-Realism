@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng_t3"}
+	{portrait "eng_elite2"}
+	{nationality anzac}
+	{icon "elite4"}
+	{icon_priority 3}
+	{armors
+		{head fieldcap_eng}
+	}
+	{perks
+		("soldier_smg_5" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "thompson_50" filling "thompson_drum" 50}
+		{item "thompson_drum" 150}
+		{item "bandage" 5}
+		("give" item(grenade mk1) count(4))
+		("give" item(grenade n73at) count(2))
+		("give" item(smoke grenade) count(2))
+		("give" item(mine antitank) count(1))
+		{in_hands 0}
+	}
+}

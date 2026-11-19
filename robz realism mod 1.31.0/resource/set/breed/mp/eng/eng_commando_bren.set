@@ -1,17 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "eng-commando"}
-	{portrait "eng_elite1"}
-	{nationality eng}
-	{icon "elite3"}
-	{icon_priority 3}
-	{armors
-		{head cap_eng_com}
-	}
+	("breed_look" skin(eng-commando) portrait(eng_elite1) icon(elite3) priority(3) nation(eng))
+	("breed_armor" head(cap_eng_com))
 	{perks
 		("soldier_mgun_6" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(elite))
+	("breed_vet" table(elite) start(1))
 	{inventory
 		("mgun_bren")
 		{item "bandage" 5}

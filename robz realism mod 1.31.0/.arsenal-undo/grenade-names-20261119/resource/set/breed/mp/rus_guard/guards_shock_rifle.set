@@ -1,0 +1,20 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(rus-sco-late-rfl) portrait(rus_elite3) icon(smg3) priority(1) nation(rus))
+	("breed_armor_vest" vest(body_armor) head(helmet_rus_ssh40_cover_camo))
+	{perks
+		("soldier_rifle_4" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(3))
+	{inventory
+		("rifle_mosin_vet")
+		{item "ammo dp27_mag" 47}
+		{item "bandage" 3}
+		("give" item(grenade f1) count(2))
+		("give_chance" item(grenade molotov_coctail) chance(25))
+		("give" item(grenade rpg40) count(1))
+		("give" item(smoke grenade) count(1))
+		{item "ru_backpack_meshok"}
+		{in_hands 0}
+	}
+}

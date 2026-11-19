@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-reg-rfl"}
+	{portrait "ger_soldier3"}
+	{nationality ger}
+	{icon "radioman"}
+	{icon_priority 5}
+	{armors
+		{head "radioman_hat"}
+	}
+	{perks
+		("soldier_smg_4" rocket(3) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "mp40" filled}
+		{item "mortar_flaergun" filled}
+		{item "ammo mp40_mag" 192}
+		{item "ammo mortar_flaer" 5}
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

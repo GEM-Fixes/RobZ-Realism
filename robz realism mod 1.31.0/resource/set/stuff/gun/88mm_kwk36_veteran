@@ -9,7 +9,4 @@
 	{parameters "heat"
 		("damage_heat" damage(110) max(240))
 	}
-	{parameters "fg"
-		{range 240 240}
-	}
 }

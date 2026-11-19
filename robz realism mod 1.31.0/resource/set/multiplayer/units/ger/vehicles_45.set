@@ -42,6 +42,7 @@
 ("unit_vehicle_supporters" side(ger) name(2cm_flakvierling38) breed(vehicle_supporter) crew(4) charge(30) tags(45) group(c4) button(v2) score(250) weight(2) points(5) level(1) cost(250) fore(-4.0))			;150sec
 ("unit_vehicle_supporters" side(ger) name(37mm_flak_36) breed(vehicle_supporter) crew(2) charge(30) tags(45) group(c5) button(v2) score(300) weight(2) points(5) level(1) cost(300) fore(-5.0))			;180sec
 
+;{price {rule squad} {members 54.4} {cost 54}}
 ("unit_light_mortar" side(ger) name(light_mortar_ger) breed1(ger_light_mortar) breed2(ger_light_mortar_assist) charge(10) tags(all 45 mortar) group(c56) button(v2) level(1) cost(150) fore(-2.0))		;30sec
 ("unit_vehicle_supporters" side(ger) name(sgrw_34) breed(vehicle_supporter) crew(2) charge(10) tags(45 mortar) group(c6) button(v2) score(320) weight(2) points(5) level(1) cost(320) fore(-2.0))		;30sec
 ("unit_vehicle_supporters" side(ger) name(sgrw_42) breed(vehicle_supporter) crew(2) charge(60) tags(45 mortar) group(c7) button(v2) score(670) weight(2) points(10) level(1) cost(670) fore(-9.0))		;600sec

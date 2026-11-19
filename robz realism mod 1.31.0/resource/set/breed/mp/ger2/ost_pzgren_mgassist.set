@@ -1,17 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "ger-geb-rfl"}
-	{portrait "ger2_soldier5"}
-	{nationality ger2}
-	{icon "stormtrooper6b"}
-	{icon_priority 4}
-	{armors
-		{head helmet_heer_camo}
-	}
+	("breed_look" skin(ger-geb-rfl) portrait(ger2_soldier5) icon(stormtrooper6b) priority(4) nation(ger2))
+	("breed_armor" head(helmet_heer_camo))
 	{perks
 		("soldier_mgun_7" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(elite_start2))
+	("breed_vet" table(elite) start(2))
 	{inventory
 		("rifle_mauzer_vet")
 		{item "ammo mg_mauser belt" 600}

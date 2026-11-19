@@ -1,17 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "usa-soldier1"}
-	{portrait "usa_soldier2"}
-	{nationality usa}
-	{icon "bazooker"}
-	{icon_priority 3}
-	{armors
-		{head helmet4_usa}
-	}
+	("breed_look" skin(usa-soldier1) portrait(usa_soldier2) icon(bazooker) priority(3) nation(usa))
+	("breed_armor" head(helmet4_usa))
 	{perks
 		("soldier_rifle_3" rocket(3) body(line) sight(soldier))
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		("rifle_garand")
 		{item "bandage" 3}

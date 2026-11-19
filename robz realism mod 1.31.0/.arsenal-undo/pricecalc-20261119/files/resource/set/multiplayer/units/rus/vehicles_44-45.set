@@ -1,0 +1,146 @@
+;----- Soviet Union -----
+
+
+;   Button 1
+
+("unit_vehicle_supporters" side(rus) name(m72) breed(vehicle_supporter) crew(2) charge(0) tags(all 44 45) group(b1) button(v1) score(95) weight(0) points(0) level(1) cost(95) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(rus) name(gaz67b) breed(vehicle_supporter) crew(3) charge(30) tags(all 44 45) group(b2) button(v1) score(105) weight(0) points(0) level(1) cost(105) fore(0.0))		;30sec
+("unit_vehicle_supporters" side(rus) name(m3a1scout) breed(vehicle_supporter) crew(2) charge(10) tags(all 44 45) group(b3) button(v1) score(160) weight(0) points(5) level(1) cost(160) fore(-23.0))	;240sec
+("unit_vehicle_supporters" side(rus) name(m3_rus_single) breed(vehicle_supporter) crew(2) charge(10) tags(all 44 45) group(b3) button(v1) score(184) weight(0) points(5) level(1) cost(184) fore(-23.0))	;240sec
+
+("unit_vehicle_supporters" side(rus) name(zis5) breed(vehicle_supporter) crew(2) charge(0) tags(all 44 45) group(b5) button(v1) score(100) weight(0) points(0) level(1) cost(100) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(rus) name(zis5art) breed(vehicle_supporter) crew(2) charge(0) tags(all 44 45) group(b6) button(v1) score(300) weight(0) points(0) level(1) cost(300) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(rus) name(zis5eng) breed(vehicle_supporter) crew(2) charge(0) tags(all 44 45) group(b7) button(v1) score(250) weight(0) points(0) level(1) cost(250) fore(0.0))		;0sec
+
+("unit_tank" side(rus) name(t34m_single) breed1(tankman) breed2(tankman2) crew1(1) crew2(1) charge(60) tags(deminer all 43 44 45) group(b66) button(v1) score(300) weight(0) points(5) level(1) cost(300) fore(-19)) 		;1200sec
+
+("unit_vehicle_supporters" side(rus) name(ammo_box_rus_inf) breed(vehicle_supporter) crew(2) charge(0) tags(all 44 45) group(b8) button(v1) score(30) weight(0) points(0) level(1) cost(30) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(rus) name(ammo_box_rus_art) breed(vehicle_supporter) crew(2) charge(0) tags(all 44 45) group(b9) button(v1) score(75) weight(0) points(0) level(1) cost(75) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(rus) name(ammo_box_rus_special) breed(vehicle_supporter) crew(2) charge(300) tags(all 44 45) group(b10) button(v1) score(150) weight(0) points(0) level(1) cost(150) fore(0.0))		;0sec
+
+
+
+
+;   Button 2
+
+("unit_vehicle_supporters" side(rus) name(ds39_degtyaryov) breed(vehicle_supporter) crew(2) charge(10) tags(all 44 45) group(c2) button(v2) score(95) weight(2) points(5) level(1) cost(95) fore(-2.0))		;30sec
+
+("unit_vehicle_supporters_sequence_sided" side(rus) name(maxim_1910_30_seq) vehicle1(maxim_1910_30) crew(2) charge(10) tags(all 44 45) group(c3) button(v2) icon(5) score(120) weight(2) points(5) level(1) cost(120) fore(-2.0))		;30sec
+("unit_vehicles_supporters_sequence_sided" side(rus) name(maxim_1910_30_seqx2) vehicle1(maxim_1910_30) vehicle2(maxim_1910_30) crew(2) charge(10) tags(all 44 45) group(c3) button(v2) icon(5) score(180) weight(2) points(5) level(1) cost(180) fore(-2.0))	;30sec
+
+("unit_vehicle_supporters" side(rus) name(dshk_stank) breed(vehicle_supporter) crew(2) charge(10) tags(all 44 45) group(c5) button(v2) score(160) weight(2) points(5) level(1) cost(160) fore(-8.0))		;30sec
+("unit_vehicle_supporters" side(rus) name(dshk_zenit) breed(vehicle_supporter) crew(2) charge(10) tags(all 44 45) group(c6) button(v2) score(190) weight(2) points(5) level(1) cost(190) fore(-8.0))		;30sec
+
+("unit_vehicle_supporters" side(rus) name(m42) breed(vehicle_supporter) crew(2) charge(10) tags(all 44 45) group(c99) button(v2) score(150) weight(2) points(5) level(1) cost(150) fore(-2.0))	;30sec
+("unit_vehicle_supporters" side(rus) name(m43) breed(vehicle_supporter) crew(2) charge(60) tags(artillery 44 45) group(c999) button(v2) score(300) weight(2) points(5) level(1) cost(350) fore(-1.0))	;120sec
+
+("unit_vehicle_supporters_sequence_sided" side(rus) name(zis3_seq) vehicle1(zis3) crew(2) charge(20) tags(artillery all 44 45) group(c10) button(v2) icon(2) score(255) weight(2) points(10) level(1) cost(255) fore(-14.0))	;300sec
+("unit_vehicles_supporters_sequence_sided" side(rus) name(zis3_seqx2) vehicle1(zis3) vehicle2(zis3) crew(2) charge(20) tags(artillery all 44 45) group(c10) button(v2) icon(2) score(382) weight(2) points(10) level(1) cost(382) fore(-14.0))	;300sec
+("unit_howitzer_tractor" side(rus) name(zis3_towed) vehicle1(m3_rus) vehicle2(zis3) breed1(vehicle_supporter) breed2(vehicle_supporter) charge(20) tags(artillery all 43 44 45) group(c10) button(v2) level(1) cost(352) fore(-14.0))		;300sec
+
+("unit_vehicle_supporters" side(rus) name(zis2) breed(vehicle_supporter) crew(2) charge(20) tags(all medium 44 45) group(c11) button(v2) score(325) weight(2) points(10) level(1) cost(325) fore(-19.0))	;400sec
+("unit_howitzer_tractor" side(rus) name(zis2_towed) vehicle1(m3_rus) vehicle2(zis2) breed1(vehicle_supporter) breed2(vehicle_supporter) charge(20) tags(all medium 44 45) group(c11) button(v2) level(1) cost(422) fore(-19.0))	;400sec
+
+("unit_howitzer_tractor" side(rus) name(np_52k_43_towed) vehicle1(t34m) vehicle2(np_52k_43) breed1(vehicle_supporter) breed2(vehicle_supporter) charge(30) tags(medium 43 44 45) group(c12) button(v2) level(1) cost(550) fore(-19.0))	;600sec
+("unit_howitzer_tractor" side(rus) name(bs3_towed) vehicle1(t34m) vehicle2(bs3) breed1(vehicle_supporter) breed2(vehicle_supporter) charge(60) tags(all heavy 44 45) group(c13) button(v2) level(1) cost(875) fore(-19.0))	;1200sec
+
+("unit_tank" side(rus) name(su122) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(60) tags(artillery all 44 45) group(c18) button(v2) score(550) weight(0) points(10) level(1) cost(550) fore(-17.67))	;1120sec
+("unit_tank" side(rus) name(kv2) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(120) tags(all heavy 44 45) group(c21) button(v2) score(650) weight(0) points(15) level(1) cost(650) fore(-5.916))	;830sec
+("unit_tank" side(rus) name(su152) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(120) tags(artillery all heavy 44 45) group(c19) button(v2) score(750) weight(0) points(15) level(1) cost(750) fore(-8.33))	;1120sec
+("unit_tank" side(rus) name(isu152) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(120) tags(artillery all heavy 44 45) group(c20) button(v2) score(900) weight(0) points(20) level(1) cost(900) fore(-8.33))	;1120sec
+
+;   Button support 2    artillery guns
+
+("unit_vehicle_supporters_sequence_sided" side(rus) name(bm_37_seq) vehicle1(bm_37) crew(2) charge(10) tags(all 44 45 mortar) group(c7) button(v22) icon(1) score(350) weight(2) points(5) level(1) cost(350) fore(-2.0))	;30sec
+("unit_vehicles_supporters_sequence_sided" side(rus) name(bm_37_seqx2) vehicle1(bm_37) vehicle2(bm_37) crew(2) charge(10) tags(all 44 45 mortar) group(c7) button(v22) icon(1) score(525) weight(2) points(5) level(1) cost(525) fore(-2.0))	;30sec
+
+("unit_vehicle_supporters" side(rus) name(pm_38) breed(vehicle_supporter) crew(2) charge(60) tags(all 44 45 mortar) group(c8) button(v22) score(690) weight(2) points(10) level(1) cost(690) fore(-9.0))	;600sec
+
+("unit_vehicle_supporters" side(rus) name(m30_1938) breed(vehicle_supporter) crew(2) charge(60) tags(artillery 43 44 45) group(c10) button(v22) score(500) weight(0) points(15) level(1) cost(500) fore(-9.0))	;600sec
+("unit_howitzer_tractor" side(rus) name(m30_1938_towed) vehicle1(m3_rus) vehicle2(m30_1938) breed1(vehicle_supporter) breed2(vehicle_supporter) charge(60) tags(artillery 43 44 45) group(c15) button(v22) level(1) cost(597) fore(-9.0))			;600sec
+
+("unit_howitzer_tractor" side(rus) name(d1_towed) vehicle1(t34m) vehicle2(d1) breed1(vehicle_supporter) breed2(vehicle_supporter) charge(60) tags(artillery heavyart heavy 43 44 45) group(c16) button(v22) level(1) cost(875) fore(-19.0))			;1200sec
+
+("unit_howitzer_tractor" side(rus) name(np_ml20_towed) vehicle1(t34m) vehicle2(np_ml20) breed1(vehicle_supporter) breed2(vehicle_supporter) charge(60) tags(artillery heavyart heavy 43 44 45) group(c22) button(v22) level(1) cost(1025) fore(-19.0))	;1200sec
+
+("unit_vehicle_supporters" side(rus) name(280br5) breed(vehicle_supporter) crew(2) charge(60) tags(all artillery heavyart heavy 44 45) group(c17) button(v22) score(1600) weight(2) points(25) level(1) cost(1600) fore(-19.0)) ;1200sec
+
+("unit_vehicle_supporters" side(rus) name(bm_8_24) breed(vehicle_supporter) crew(2) charge(60) tags(artillery heavyart rocket 44 45) group(c22) button(v22) score(500) weight(0) points(10) level(1) cost(500) fore(-16.0)) ;900sec
+("unit_vehicle_supporters" side(rus) name(bm8-48) breed(vehicle_supporter) crew(2) charge(60) tags(artillery heavyart rocket 44 45) group(c23) button(v22) score(650) weight(0) points(10) level(1) cost(650) fore(-16.0)) ;900sec
+("unit_vehicle_supporters" side(rus) name(bm13) breed(vehicle_supporter) crew(2) charge(60) tags(artillery heavyart rocket 44 45) group(c24) button(v22) score(850) weight(0) points(20) level(1) cost(850) fore(-21.0)) ;1200sec
+("unit_vehicle_supporters" side(rus) name(np_bm31) breed(vehicle_supporter) crew(2) charge(60) tags(artillery heavyart rocket 44 45) group(c25) button(v22) score(1450) weight(0) points(20) level(1) cost(1450) fore(-21.0)) ;1200sec
+
+;   Button 3
+
+("unit_vehicle_supporters" side(rus) name(gazaaa4m) breed(vehicle_supporter) crew(3) charge(30) tags(all 44 45) group(d1) button(v3) score(180) weight(0) points(5) level(1) cost(180) fore(-2.0))	;90sec
+
+("unit_tank" side(rus) name(ba64) breed1(tankman) breed2(tankman2) crew1(1) crew2(1) charge(10) tags(all 44 45) group(d2) button(v3) score(130) weight(0) points(5) level(1) cost(130) fore(-31))	;320sec
+
+("unit_tank" side(rus) name(t26) breed1(tankman) breed2(tankman2) crew1(2) crew2(1) charge(10) tags(all 44 45) group(d5) button(v3) score(150) weight(0) points(5) level(1) cost(150) fore(-43))  ;440sec
+
+("unit_tank" side(rus) name(bt5) breed1(tankman) breed2(tankman2) crew1(2) crew2(1) charge(10) tags(all 44 45) group(d6) button(v3) score(190) weight(0) points(5) level(1) cost(190) fore(-43))	;440sec
+
+("unit_tank" side(rus) name(t60) breed1(tankman) breed2(tankman2) crew1(1) crew2(1) charge(10) tags(all 44 45) group(d9) button(v3) score(210) weight(0) points(5) level(1) cost(210) fore(-41))	;420sec
+("unit_tank" side(rus) name(t70) breed1(tankman) breed2(tankman2) crew1(1) crew2(1) charge(10) tags(all 44 45) group(d10) button(v3) score(230) weight(0) points(5) level(1) cost(230) fore(-43))	;440sec
+
+("unit_tank" side(rus) name(bt7a) breed1(tankman) breed2(tankman2) crew1(2) crew2(1) charge(10) tags(all 44 45) group(d7) button(v3) score(300) weight(0) points(10) level(1) cost(300) fore(-52.0)) ;530sec
+
+;   Button 4
+
+("unit_tank" side(rus) name(grant_m3r) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(all 44 45 medium) group(e1) button(v4) score(270) weight(0) points(15) level(1) cost(270) fore(-67.0))	;680sec
+
+("unit_tank_sequence_sided" side(rus) name(t34_2_seq) vehicle1(t34_2) crew1(3) crew2(1) charge(10) tags(all medium 44 45) group(e4) button(v4) icon(3) score(350) weight(0) points(10) level(1) cost(350) fore(-74.0))	;750sec
+("unit_tanks_sequence_sided" side(rus) name(t34_2_seqx2) vehicle1(t34_2) vehicle2(t34_2) crew1(3) crew2(1) charge(10) tags(all medium 44 45) group(e4) button(v4) icon(3) score(525) weight(0) points(10) level(1) cost(525) fore(-74.0))	;750sec
+
+("unit_tank" side(rus) name(ot34_2) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(750) tags(all medium 44 45 flamethrower) group(e4) button(v4) score(520) weight(0) points(10) level(1) cost(520) fore(0.0))		;750sec
+
+("unit_tank" side(rus) name(t34_1) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(750) tags(all medium 44 45) group(e5) button(v4) score(500) weight(0) points(10) level(1) cost(500) fore(0.0))		;750sec
+
+("unit_tank_sequence_sided" side(rus) name(t34_3_seq) vehicle1(t34_3) crew1(3) crew2(1) charge(60) tags(all medium 44 45) group(e6) button(v4) icon(4) score(625) weight(0) points(10) level(1) cost(625) fore(-18.5))	;1170sec
+("unit_tanks_sequence_sided" side(rus) name(t34_3_seqx2) vehicle1(t34_3) vehicle2(t34_3) crew1(3) crew2(1) charge(60) tags(all medium 44 45) group(e6) button(v4) icon(4) score(937) weight(0) points(10) level(1) cost(937) fore(-18.5))	;1170sec
+
+("unit_tank" side(rus) name(kv1) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(60) tags(all heavy 44 45) group(e9) button(v4) score(525) weight(0) points(15) level(1) cost(525) fore(-11.5))	;750sec
+
+("unit_tank" side(rus) name(kv8_41) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(900) tags(all heavy 44 45 flamethrower) group(e11) button(v4) score(550) weight(0) points(15) level(1) cost(550) fore(0.0))	;900sec
+
+("unit_tank" side(rus) name(kv85) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(300) tags(all heavy 44 45) group(e12) button(v4) score(750) weight(0) points(25) level(1) cost(750) fore(-3.13))	;1240sec
+("unit_tank" side(rus) name(is1) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(540) tags(all heavy 44 45) group(e13) button(v4) score(900) weight(0) points(25) level(1) cost(900) fore(-1.77))	;1500sec
+("unit_tank" side(rus) name(is2) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(850) tags(all sheavy 44 45) group(e14) button(v4) score(1800) weight(0) points(25) level(1) cost(1800) fore(-1.54))	;2160sec
+
+;   Button 5
+
+("unit_tank" side(rus) name(su76) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(all medium 44 45) group(f1) button(v5) score(280) weight(0) points(5) level(1) cost(280) fore(-57.0))	;580		;750
+("unit_tank" side(rus) name(su85) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(60) tags(all medium 44 45) group(f3) button(v5) score(500) weight(0) points(10) level(1) cost(500) fore(-15.33))	;980
+
+("unit_tank" side(rus) name(isu122) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(800) tags(all heavy 44 45) group(f4) button(v5) score(1300) weight(0) points(25) level(1) cost(1300) fore(-1.5))	;2000
+("unit_tank" side(rus) name(su100) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(850) tags(all heavy 44 45) group(f5) button(v5) score(1500) weight(0) points(25) level(1) cost(1500) fore(-1.505))	;2130
+
+
+
+
+;   Button Hero
+("unit_vehicle_members_sided" side(rus) name(hero3) vehicle1(gaz67) member1(rus_vetsniper:2) member2(tankman2:0) charge(240) tags(all hero 44 45 sniper_h_g) group(h1) button(hero) level(1) cost(1.0) fore(-0.5))
+
+("unit_infantry_sided_members3" side(rus) name(hero_at_squad) member1(rus_at_rifle:1) member2(rus_at_rifleassist:1) member3(rus_at_rifle_ptrs:2) charge(120) tags(all hero 44 45) group(h9) button(hero) level(1) cost(1.0) fore(-1.5))
+
+("unit_infantry_sided_members6" side(rus) name(hero5) member1(rus_squadleader_smg:3) member2(rus_rifle_sa:6) member3(rus_rifle:6) member4(rus_smg:9) member5(rus_mgun_asst:3) member6(rus_mgun:3) charge(120) tags(all hero 44 45) group(h2) button(hero) level(1) cost(3.0) fore(-0.5))
+
+("unit_vehicle_pair_sided_vehicles2_members2" side(rus) name(hero_stalins_gamble) vehicle1(t60) vehicle2(t70) member1(tankman:1) member2(tankman2:1) charge(360) tags(all hero 44 45) group(h1416) button(hero) level(1) cost(4.0) fore(0.0)) ;360 sec
+
+("unit_vehicles1_members2_sided" side(rus) name(hero_t34platoon) vehicle1(t34_2) member1(tankman:3) member2(tankman2:1) charge(400) tags(all hero 44 45) group(h6) button(hero) level(1) cost(6.0) fore(-0.875)) ;750 sec
+
+("unit_vehicle_members_sided" side(rus) name(hero_t34) vehicle1(t34_3) member1(tankman:3) member2(tankman2:1) charge(750) tags(all hero 44 45) group(h3) button(hero) level(1) cost(4.0) fore(-0.4)) ;1050sec
+
+("unit_vehicle_members_sided" side(rus) name(hero_orgel) vehicle1(bm13) member1(vehicle_supporter:2) member2(vehicle_supporter:0) charge(600) tags(all hero artillery rocket 44 45) group(h10) button(hero) level(1) cost(7.0) fore(-1.2)) ;1200 sec
+
+("unit_vehicle_pair_sided" side(rus) name(heronew2) vehicle1(t34m) vehicle2(bs3) member1(vehicle_supporter:2) member2(vehicle_supporter:2) charge(900) tags(all hero 44 45) group(h4) button(hero) level(1) cost(7.0) fore(-0.5))
+
+("unit_vehicles1_members3_sided" side(rus) name(hero7) vehicle1(ot34_2) member1(tankman:3) member2(tankman:1) member3(rus_shock_smg:4) charge(750) tags(all hero 44 45 flamethrower) group(h7) button(hero) level(1) cost(5.0) fore(0))
+
+("unit_vehicle_members_sided" side(rus) name(hero_isu152) vehicle1(isu122) member1(tankman:3) member2(tankman2:1) charge(800) tags(all hero 44 45 sheavy) group(h5) button(hero) level(1) cost(8.0) fore(-1.5)) ;2000 sec
+
+("unit_vehicles2_members1_sided" side(rus) name(hero_d1) vehicle1(d1) vehicle2(t34m) member1(vehicle_supporter:2) charge(800) tags(all hero 44 45) group(h8) button(hero) level(1) cost(12.0) fore(-0.5))
+
+("unit_two_vehicles_members_sided" side(rus) name(hero_is1) vehicle1(is1) member1(tankman:3) member2(tankman2:1) charge(800) tags(all hero 44 45) group(h9) button(hero) level(1) cost(12.0) fore(-0.8)) ;1440 sec
+
+("unit_two_vehicles_members_sided" side(rus) name(hero9) vehicle1(203b4) member1(vehicle_supporter:2) member2(tankman2:0) charge(1200) tags(all hero artillery heavyart 44 45) group(h11) button(hero) level(1) cost(17.0) fore(-0.5))

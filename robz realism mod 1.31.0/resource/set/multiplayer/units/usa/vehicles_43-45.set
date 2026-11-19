@@ -121,8 +121,10 @@
 
 ("unit_vehicles3_members1_sided_3" side(usa) name(hero_log) vehicle1(gmc_art) vehicle2(gmc_inf) vehicle3(ammo_box_us_special) member1(vehicle_supporter:2) charge(180) tags(all 42 43 44 45 hero) group(h1) button(hero) level(1) cost(1.0) fore(-0.5))
 
+;{price {rule squad} {members 197.62} {cost 198}}
 ("squad_6" side(usa) name(hero_usa_rifles) member1(usa_squadleader:1) member2(usa_rifle:3) member3(usa_rifle_grenadier:3) member4(usa_mgun:2) member5(usa_mgun_asst:2) member6(usa_bazooker:1) charge(90) tags(all inf_only 39 40 41 42 43 44 45) group(h2) button(hero) level(1) cost(2) fore(-0.5))
 
+;{price {rule squad} {members 638.85} {cost 639}}
 ("squad_2" side(usa) name(hero_usa_m3_carbine) member1(usa_nightfighter_leader:3) member2(usa_nightfighter_carbine:6) charge(720) tags(all inf_only 39 40 41 42 43 44 45) group(h2561) button(hero) level(1) cost(2) fore(0.0))
 
 {"hero1(usa)"        ("v1" c(120) c1(airborne_spawner_m8_howitzer) 	t(all 42 43 44 45 hero) s(usa) n1(usa_82ndairborne_carbine:2) g(h1654) b(hero)) {level 1} {cost 2.0} {fore -0.5}}

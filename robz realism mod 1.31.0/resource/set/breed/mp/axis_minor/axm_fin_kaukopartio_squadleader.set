@@ -1,24 +1,20 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "fin-camo2-svt"}
-	{portrait "fin_elite1"}
-	{icon "elite-smg"}
-	{icon_priority 1}
-	{nationality fin}
+	("breed_look" skin(fin-camo2-svt) portrait(fin_elite1) icon(elite-smg) priority(1) nation(fin))
 	{armors
-	;{head helmet_fin_m38}
+		;{head helmet_fin_m38}
 	}
 	{perks
 		("soldier_smg_7" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(elite))
+	("breed_vet" table(elite) start(1))
 	{inventory
 		("smg_suomi_m31")
 		{item "bandage" 4}
 		("give" item(grenade m24) count(2))
 		("give" item(kasapanos_2kg) count(1))
 		("give" item(kasapanos_4kg) count(1))
-		("give" item(smoke grenade) count(3))
+		("give" item(grenade smoke) count(3))
 		{in_hands 0}
 
 	}

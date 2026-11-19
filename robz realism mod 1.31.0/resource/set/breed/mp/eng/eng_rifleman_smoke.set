@@ -1,13 +1,7 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "eng-inf-pvt"}
-	{portrait eng_soldier2}
-	{icon rifleman}
-	{icon_priority 1}
-	{nationality eng}
-	{armors
-		{head helmet2_eng}
-	}
+	("breed_look" skin(eng-inf-pvt) portrait(eng_soldier2) icon(rifleman) priority(1) nation(eng))
+	("breed_armor" head(helmet2_eng))
 	{perks
 		("soldier_rifle_4" rocket(1) body(line) sight(soldier))
 	}
@@ -30,7 +24,7 @@
 		("give" item(grenade mk1) count(1))
 		{item "sandbag_kit"}
 		("give" item(grenade n73at) count(1))
-		("give_chance" item(n77_smoke grenade) chance(25))
+		("give_chance" item(grenade n77_smoke) chance(25))
 		{in_hands 0}
 	}
 }

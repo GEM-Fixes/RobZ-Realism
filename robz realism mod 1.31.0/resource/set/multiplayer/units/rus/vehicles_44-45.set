@@ -123,6 +123,7 @@
 
 ("unit_infantry_sided_members3" side(rus) name(hero_at_squad) member1(rus_at_rifle:1) member2(rus_at_rifleassist:1) member3(rus_at_rifle_ptrs:2) charge(120) tags(all hero 44 45) group(h9) button(hero) level(1) cost(1.0) fore(-1.5))
 
+;{price {rule squad} {members 515.37} {cost 515}}
 ("unit_infantry_sided_members6" side(rus) name(hero5) member1(rus_squadleader_smg:3) member2(rus_rifle_sa:6) member3(rus_rifle:6) member4(rus_smg:9) member5(rus_mgun_asst:3) member6(rus_mgun:3) charge(120) tags(all hero 44 45) group(h2) button(hero) level(1) cost(3.0) fore(-0.5))
 
 ("unit_vehicle_pair_sided_vehicles2_members2" side(rus) name(hero_stalins_gamble) vehicle1(t60) vehicle2(t70) member1(tankman:1) member2(tankman2:1) charge(360) tags(all hero 44 45) group(h1416) button(hero) level(1) cost(4.0) fore(0.0)) ;360 sec

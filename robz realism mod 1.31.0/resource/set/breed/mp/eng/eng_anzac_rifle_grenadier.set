@@ -1,17 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "eng_t3"}
-	{portrait "eng_elite2"}
-	{nationality anzac}
-	{icon "elite5"}
-	{icon_priority 3}
-	{armors
-		{head fieldcap_eng}
-	}
+	("breed_look" skin(eng_t3) portrait(eng_elite2) icon(elite5) priority(3) nation(anzac))
+	("breed_armor" head(fieldcap_eng))
 	{perks
 		("soldier_rifle_4" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		("rifle_em3")
 		{item "em3_mark1" filled}

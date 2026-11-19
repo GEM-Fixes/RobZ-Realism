@@ -1,0 +1,17 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(waffen-pioneer) portrait(ger_soldier2) icon(sapper) priority(3) nation(ger))
+	("breed_armor" head(waffen_helmet_camo))
+	{perks
+		("soldier_smg_4" rocket(3) body(hardy) sight(soldier))
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		("smg_mp40")
+		{item "mine_detector"}
+		("give" item(dynamite_ladung) count(2))
+		("give" item(hohlladung grenade) count(1))
+		{item "trench_spade"}
+		{in_hands 0}
+	}
+}

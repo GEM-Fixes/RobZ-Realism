@@ -1,17 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "ger-smock2-smg"}
-	{portrait "ger_soldier3"}
-	{icon "stormtrooper5b"}
-	{icon_priority 3}
-	{nationality ger}
-	{armors
-		{head helmet_heer_camo}
-	}
+	("breed_look" skin(ger-smock2-smg) portrait(ger_soldier3) icon(stormtrooper5b) priority(3) nation(ger))
+	("breed_armor" head(helmet_heer_camo))
 	{perks
 		("soldier_smg_6" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(elite))
+	("breed_vet" table(elite) start(1))
 	{inventory
 		("smg_mp40")
 		{item "bandage" 5}

@@ -1,17 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "eng-inf-pvt"}
-	{portrait "eng_soldier3"}
-	{nationality eng}
-	{icon "radioman"}
-	{icon_priority 5}
-	{armors
-		{head cap_eng_radiohead}
-	}
+	("breed_look" skin(eng-inf-pvt) portrait(eng_soldier3) icon(radioman) priority(5) nation(eng))
+	("breed_armor" head(cap_eng_radiohead))
 	{perks
 		("soldier_smg_3" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		{item "sten_mk2" filled}
 		{item "airstrike_rp3_flaregun" filled}

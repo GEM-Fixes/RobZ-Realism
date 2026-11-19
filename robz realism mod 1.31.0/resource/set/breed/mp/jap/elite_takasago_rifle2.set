@@ -1,24 +1,18 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "jap_army_sturmovik"}
-	{portrait "jap_elite1"}
-	{nationality jap}
-	{icon "elite2"}
-	{icon_priority 0}
-	{armors
-		{head "jap_army_helmet2_net"}
-	}
+	("breed_look" skin(jap_army_sturmovik) portrait(jap_elite1) icon(elite2) priority(0) nation(jap))
+	("breed_armor" head(jap_army_helmet2_net))
 	{perks
 		("soldier_rifle_6" rocket(1) body(hardy) sight(soldier))
 		{"stealth"}
 	}
-	("breed_vet" table(elite))
+	("breed_vet" table(elite) start(1))
 	{inventory
 		("rifle_type99rifle_bayonet")
 		{item "bandage" 5}
 		("give" item(grenade type97) count(3))
 		("give" item(grenade type3at_a) count(1))
-		("give" item(smoke grenade) count(1))
+		("give" item(grenade smoke) count(1))
 		("give" item(dynamite) count(1))
 		{item "knife_japan" 1}
 		{in_hands 0}

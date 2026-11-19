@@ -1,17 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "rus-smguner"}
-	{portrait "rus_soldier2"}
-	{nationality rus}
-	{icon "smg"}
-	{icon_priority 1}
-	{armors
-		{head "helmet1_rus"}
-	}
+	("breed_look" skin(rus-smguner) portrait(rus_soldier2) icon(smg) priority(1) nation(rus))
+	("breed_armor" head(helmet1_rus))
 	{perks
 		("support_1" body(normal_line) sight(soldier))
 	}
-	("breed_vet" table(crew_start3))
+	("breed_vet" table(crew) start(3))
 	{inventory
 		("rifle_mosin")
 		{item "bandage" 3}

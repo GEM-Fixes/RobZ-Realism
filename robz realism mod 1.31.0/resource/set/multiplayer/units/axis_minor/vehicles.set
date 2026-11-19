@@ -120,8 +120,10 @@
 ;---------------------------Hero------------------------------
 
 
+;{price {rule squad} {members 162.6} {cost 163}}
 ("squad_5" side(axis_minor) name(hero_sissisp) member1(axm_fin_sissi_squadleader_vision:1) member2(axm_fin_sissi_mgun_vision:1) member3(axm_fin_sissi_mgun_assist_vision:1) member4(axm_fin_sissi_smg_vision:2) member5(axm_fin_sissi_rifle_vision:4) charge(150) tags(all hero 43 44 45) group(h1) button(hero) level(1) cost(1) fore(0.25));120
 
+;{price {rule single} {members 80} {mult 1.5} {cost 120}}
 ("squad_1" side(axis_minor) name(hero_white_death) member1(axm_fin_elite_sniper:1) charge(200) tags(all hero 43 44 45) group(h1) button(hero) level(1) cost(2) fore(-0.5))
 
 ("squad_5_vehicle" side(axis_minor) name(hero_elite_resita) vehicle1(elite_resita) member1(axm_rom_elite_vehicle_supporter:2) member2(axm_ita_bersaglieri_rifle:0) member3(axm_ita_bersaglieri_mgun_assist:0) member4(axm_ita_bersaglieri_smg:0) member5(axm_bersaglieri_mgun:0) charge(60) tags(all hero 44 45) group(h155) button(hero) level(1) cost(3) fore(-15.0))

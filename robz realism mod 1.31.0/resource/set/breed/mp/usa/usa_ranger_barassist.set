@@ -1,18 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "usa-ranger-bar"}
-	{portrait "usa_soldier5"}
-	{nationality usa}
-	{icon "stormtrooper2"}
-	{icon_priority 4}
-	{armors
-		{head "helmet_usa_ranger"}
-		{body us_haversack_shovel}
-	}
+	("breed_look" skin(usa-ranger-bar) portrait(usa_soldier5) icon(stormtrooper2) priority(4) nation(usa))
+	("breed_armor_vest" vest(us_haversack_shovel) head(helmet_usa_ranger))
 	{perks
 		("soldier_rifle_6" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(elite))
+	("breed_vet" table(elite) start(1))
 	{inventory
 		("rifle_garand")
 		{item "ammo bar_mag" 240}

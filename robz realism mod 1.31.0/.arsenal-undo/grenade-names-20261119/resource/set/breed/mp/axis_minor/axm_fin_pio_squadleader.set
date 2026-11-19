@@ -1,0 +1,20 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(fin-sum-inf-rfl) portrait(fin_soldier2) icon(rifleman) priority(0) nation(fin))
+	("breed_armor" head(helmet_fin_m16))
+	{perks
+		("soldier_smg_5" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		("smg_suomi_m31")
+		{item "bandage" 3}
+		("give" item(grenade m24) count(2))
+		("give" item(kasapanos_2kg) count(1))
+		("give" item(smoke grenade) count(1))
+
+		{in_hands 0}
+	}
+
+
+}

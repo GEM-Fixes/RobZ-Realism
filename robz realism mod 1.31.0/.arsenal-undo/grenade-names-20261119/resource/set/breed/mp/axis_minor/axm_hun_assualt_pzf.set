@@ -1,0 +1,19 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(hun_elite2) portrait(hun_elite3) icon(stormtrooper3) priority(3) nation(hun))
+	("breed_armor" head(helmet1_hun))
+	{perks
+		("soldier_smg_4" rocket(4) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		("kit_smg" gun(danuvia_39m) ammo(9x25) rounds(190))
+		{item "grenade hungarian_42m" 3}
+		{item "panzerfaust_60 weapon" filled}
+		{item "panzerfaust_60 weapon" filled}
+		{item "bandage" 4}
+		("give" item(smoke grenade) count(2))
+		{in_hands 0}
+
+	}
+}

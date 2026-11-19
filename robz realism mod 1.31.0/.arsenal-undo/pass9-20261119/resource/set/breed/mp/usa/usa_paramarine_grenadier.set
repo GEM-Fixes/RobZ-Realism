@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-paramarine-pvt"}
+	{portrait "usa_elite2"}
+	{nationality usa}
+	{icon "elite5"}
+	{icon_priority 4}
+	{armors
+		{body ammo_us2}
+		{head helmet_marine_usa}
+	}
+	{perks
+		("soldier_rifle_6" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("rifle_garand")
+		{item "bandage" 5}
+		{item "garand_grenade" filling "ammo m1garand_grenade fg" 1}
+		{item "m1garand_grenade fg" 5 1}
+		{item "m1garand_grenade ap" 1 1}
+		{item "m1garand_grenade wp" 0.2 1}
+		{item "sandbag_kit" 1}
+		{in_hands 3}
+	}
+}

@@ -1,20 +1,13 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "rus_tankman_hp"}
-	{portrait "rus_tankman"}
-	{nationality rus}
-	{icon "tankman"}
-	{icon_priority 1}
-	{armors
-		{head rw_cap}
-	}
+	("breed_look" skin(rus_tankman_hp) portrait(rus_tankman) icon(tankman) priority(1) nation(rus))
+	("breed_armor" head(rw_cap))
 	{perks
 		("crew_4" body(elite_line) sight(officer))
 	}
-	("breed_vet" table(crew))
+	("breed_vet" table(crew) start(1))
 	{inventory
-		{item "pps43" filling "ammo pps43_mag" 35}
-		{item "ammo pps43_mag" 210}
+		("kit_loaded" gun(pps43) ammo(ammo pps43_mag) loaded(35) spare(210))
 		{item "bandage" 5}
 		("give" item(grenade f1) count(2))
 		("give" item(grenade rpg43) count(1))

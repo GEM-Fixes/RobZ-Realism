@@ -1,17 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "ita-ber-mgun"}
-	{portrait "ita_soldier4"}
-	{nationality ita}
-	{icon "mg"}
-	{icon_priority 3}
-	{armors
-		{head helmet_ita_m33_bersaglieri}
-	}
+	("breed_look" skin(ita-ber-mgun) portrait(ita_soldier4) icon(mg) priority(3) nation(ita))
+	("breed_armor" head(helmet_ita_m33_bersaglieri))
 	{perks
 		("soldier_mgun_5" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		{item "breda_30" filled}
 		{item  "breda_mag" 160}

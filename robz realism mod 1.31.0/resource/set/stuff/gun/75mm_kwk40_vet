@@ -3,9 +3,6 @@
 	("accuracy_high_210m")
 	{range 210 210}
 	("damage_170" at20(133) at100(121) at170(107) at215(95) at250(85) max(210))
-	{parameters "apcbc"
-		("damage_170" at20(133) at100(121) at170(107) at215(95) at250(85) max(210))
-	}
 	{parameters "heatb"
 		("damage_heat" damage(87) max(210))
 	}

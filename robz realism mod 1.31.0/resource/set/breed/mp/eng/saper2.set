@@ -1,17 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "eng-engineer"}
-	{portrait "eng_elite3"}
-	{nationality eng}
-	{icon "sapper2"}
-	{icon_priority 3}
-	{armors
-		{head "helmet2_eng"}
-	}
+	("breed_look" skin(eng-engineer) portrait(eng_elite3) icon(sapper2) priority(3) nation(eng))
+	("breed_armor" head(helmet2_eng))
 	{perks
 		("soldier_smg_3" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		("smg_sten_mk2")
 		("give" item(mine antitank) count(6))

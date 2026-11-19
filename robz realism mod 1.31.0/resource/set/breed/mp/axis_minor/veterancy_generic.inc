@@ -7,7 +7,7 @@
 ;   older numbers
 ;   its (mod "mp") set equals vet_standard
 ;   (mod "mp") set: 24/60/108/168/240, differs from the outer 48/96/288/576/960
-;   e.g. ("vet_standard_old")   from a breed: ("breed_vet" table(standard_old))
+;   e.g. ("vet_standard_old")   from a breed: ("breed_vet" table(standard_old) start(1))
 (define "vet_standard_old"
 	{"lvl_1" 48
 	}

@@ -1,20 +1,13 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "rus-sco-late-rfl"}
-	{portrait "rus_soldier5"}
-	{nationality rus}
-	{icon "stormtrooper2"}
-	{icon_priority 1}
-	{armors
-		{head helmet_rus_para_goggles}
-	}
+	("breed_look" skin(rus-sco-late-rfl) portrait(rus_soldier5) icon(stormtrooper2) priority(1) nation(rus))
+	("breed_armor" head(helmet_rus_para_goggles))
 	{perks
 		("soldier_mgun_7" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(elite))
+	("breed_vet" table(elite) start(1))
 	{inventory
-		{item "dt" filling "ammo dt29_mag" 60}
-		{item "ammo dt29_mag" 240}
+		("kit_loaded" gun(dt) ammo(ammo dt29_mag) loaded(60) spare(240))
 		{item "bandage" 5}
 		("give" item(grenade f1) count(2))
 		{item "ru_roll"}

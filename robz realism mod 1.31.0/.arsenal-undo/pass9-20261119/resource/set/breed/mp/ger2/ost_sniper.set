@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-smock2-rfl"}
+	{portrait "ger2_soldier4"}
+	{nationality ger}
+	{icon "sniper"}
+	{icon_priority 5}
+	{armors
+		{head helmet_ger_m40_grass}
+	}
+	{perks
+		("soldier_rifle_7" rocket(6) body(line) sight(sniper))
+		("perks_sniper")
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("rifle_mauzer_s_vet")
+		{item "ammo mauser_clip fg" 20}
+		{item "bandage" 5}
+		;{item "smoke_paradrop_ammo grenade" 1}
+		{item "plant" 3}
+		{item "knife_ger"}
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,87 @@
+;   Squads
+;------------------------------assault infantry || vet 2/3/4--------------------------------------------------------
+
+("squad_6" side(eng) name(smgs) member1(eng_squadleader2:1) member2(eng_squadleader_asst:1) member3(eng_rifleman:3) member4(eng_smg:3) member5(eng_mgun:1) member6(eng_mgun_asst:1) charge(0) tags(all inf_only 42 43 44 45) group(squad_2) button(squad1) level(1) cost(147) fore(1.0))
+
+("squad_9" side(eng) name(pioneers) member1(eng_pioneer_sl:1) member2(eng_pioneer_flamer:1) member3(eng_pioneer_mg:1) member4(eng_pioneer_at:1) member5(eng_pioneer_ap_miner:1) member6(eng_pioneer_at_miner:1) member7(eng_pioneer_1trench:4) member8(eng_pioneer_minedisposal:1) member9(eng_pioneer_3trench:1) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) level(1) cost(306) fore(1.0))
+
+;------------------------------regular squad || vet 2/3/4-----------------------------------------------------------
+
+("squad_4" side(eng) name(riflemans_can) member1(eng_squadleader_can:1) member2(eng_rifleman_canada:7) member3(eng_mg_canada:1) member4(eng_mg_assist_canada:1) charge(60) tags(all inf_only 40 41 42 43 44 45) group(squad_3) button(squad1) level(1) cost(147) fore(1.0))
+("squad_7" side(eng) name(riflemans) member1(eng_squadleader:1) member2(eng_squadleader_asst:1) member3(eng_rifleman_smoke:4) member4(eng_rifle_grenadier:1) member5(eng_mgun:1) member6(eng_mgun_asst:1) member7(eng_rifle_piat:1) charge(0) tags(all inf_only 42 43 44 45) group(squad_3) button(squad1) level(1) cost(163) fore(1.0))
+("squad_6" side(eng) name(riflemans_at) member1(eng_squadleader:1) member2(eng_squadleader_asst:1) member3(eng_rifleman_smoke:5) member4(eng_bazooker:1) member5(eng_mgun:1) member6(eng_mgun_asst:1) charge(0) tags(all inf_only 43 44 45) group(squad_3) button(squad1) level(1) cost(184) fore(1.0))
+("squad_4" side(eng) name(riflemans_scot) member1(eng_squadleader_scot:1) member2(eng_rifle_scot:7) member3(eng_mgun_scot:1) member4(eng_mgun_assist_scot:1) charge(60) tags(all inf_only 40 41 42 43 44 45) group(squad_3) button(squad1) level(1) cost(175) fore(1.0))
+
+("squad_7_vehicle" side(eng) name(mech_rifles) vehicle1(m3_eng) member1(eng_squadleader:1) member2(eng_squadleader_asst:1) member3(eng_rifleman_smoke:4) member4(eng_rifle_grenadier:1) member5(eng_mgun:1) member6(eng_mgun_asst:1) member7(eng_rifle_piat:1) charge(10) tags(all inf_only 42 43 44 45) group(squad_33) button(squad1) level(5) cost(208) fore(-23.0)) ;240sec
+
+;------------------------------commandos squads ||| vet 5-----------------------------------------------------------
+
+("squad_4" side(eng) name(elites_40) member1(eng_commando_cpl_smg:1) member2(eng_commando_silencesmg:3) member3(eng_commando_silence_carbine:4) member4(eng_commando_bren:2) charge(60) tags(40 41 42) group(squad_5) button(squad1) level(1) cost(215) fore(1.0))
+
+("squad_6" side(eng) name(elites) member1(eng_commando_cpl_smg:1) member2(eng_commando_sl:1) member3(eng_commando_smg:2) member4(eng_commando_carbine:2) member5(eng_commando_bren:2) member6(eng_commando_bren_assist:2) charge(60) tags(all inf_only 43 44 45) group(squad_5) button(squad1) level(1) cost(215) fore(1.0))
+
+;------------------------------stormtroopers para/SAS |||| vet 6 and 7---------------------------------------------------------
+
+("squad_6" side(eng) name(paratroopers) member1(eng_paratrooper_cpl_smg:1) member2(eng_paratrooper_sic:1) member3(eng_paratrooper_bren:3) member4(eng_paratrooper_carbine:2) member5(eng_paratrooper_smg:2) member6(eng_paratrooper_lightmortar:1) charge(60) tags(all inf_only 40 41 42 43 44 45) group(squad_5) button(squad1) level(1) cost(237) fore(1.0))
+
+("squad_7" side(eng) name(stormtroopers) member1(eng_sas_cpl:1) member2(eng_sas_2ic:1) member3(eng_sas_bran_assist:1) member4(eng_sas_at_rifle:1) member5(eng_sas_bren2:2) member6(eng_sas_bren2_assist:2) member7(eng_sas_rifle1:2) charge(60) tags(all inf_only 43 44 45) group(squad_5) button(squad1) level(1) cost(302) fore(1.0))
+
+("squad_6_vehicle" side(eng) name(paratroopers_drop) vehicle1(airborne_spawner) member1(eng_paratrooper_cpl_smg:1) member2(eng_paratrooper_sic:1) member3(eng_paratrooper_bren:3) member4(eng_paratrooper_carbine:2) member5(eng_paratrooper_smg:2) member6(eng_paratrooper_lightmortar:1) charge(900) tags(all inf_only 40 41 42 43 44 45) group(squad_5) button(squad1) level(1) cost(237) fore(0.5))
+
+("squad_7_vehicle" side(eng) name(stormtroopers_drop) vehicle1(airborne_spawner) member1(eng_sas_cpl:1) member2(eng_sas_2ic:1) member3(eng_sas_bran_assist:1) member4(eng_sas_at_rifle:1) member5(eng_sas_bren2:2) member6(eng_sas_bren2_assist:2) member7(eng_sas_rifle1:2) charge(900) tags(all inf_only 43 44 45) group(squad_5) button(squad1) level(1) cost(302) fore(0.5))
+
+;------------------------------AP and AT miners, sappers || vet 2-----------------------------------------------
+
+("squad_1" side(eng) name(ap_miners) member1(eng_ap_miner:4) charge(0) tags(all inf_only engineers mines 39 40 41 42 43 44 45) group(squad_7) button(squad1) level(20) cost(100) fore(0))
+
+("squad_1" side(eng) name(at_miners) member1(eng_at_miner:4) charge(0) tags(all inf_only engineers mines 39 40 41 42 43 44 45) group(squad_8) button(squad1) level(25) cost(150) fore(0))
+
+("squad_1" side(eng) name(sappers) member1(eng_saper:2) charge(0) tags(all inf_only engineers 39 40 41 42 43 44 45) group(squad_9) button(squad1) level(1) cost(70) fore(0))
+
+;------------------------------tank and support crews || vet 2--------------------------------------------------
+
+("squad_1" side(eng) name(vehic_supporter) member1(vehicle_supporter_single:2) charge(0) tags(all inf_only 42 43 44 45) group(soldier_3) button(squad1) level(1) cost(25) fore(-1.0))
+
+("squad_2" side(eng) name(tankmans) member1(eng_tankman2_single:1) member2(eng_tankman_single:4) charge(0) tags(all inf_only tankmans 39 40 41 42 43 44 45) group(soldier_3) button(squad1) level(1) cost(70) fore(-1.0))
+
+("squad_1" side(eng) name(elite_tankmans) member1(eng_vet_tankman2_single:1) charge(0) tags(all inf_only tankmans 39 40 41 42 43 44 45) group(soldier_3) button(squad1) level(1) cost(100) fore(-1.0))
+
+;   Single Soldiers
+
+;------------------------------rifleman and smg || vet 2--------------------------------------------------------
+
+("squad_1" side(eng) name(riflemans2) member1(eng_rifleman_smoke:1) charge(10) tags(all inf_only 42 43 44 45) group(soldier_1) button(squad2) level(1) cost(17) fore(1.0))
+
+("squad_1" side(eng) name(smgs2) member1(eng_smg_wp:1) charge(10) tags(all inf_only 42 43 44 45) group(soldier_2) button(squad2) level(1) cost(14) fore(1.0))
+
+;------------------------------AT rifles and bazookas || vet 2--------------------------------------------------
+
+("squad_2" side(eng) name(at_rifles) member1(eng_at_rifle:1) member2(eng_at_rifle_assist:1) charge(0) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_4) button(squad2) level(1) cost(66) fore(1.0))
+
+("squad_2" side(eng) name(bazookers) member1(eng_bazooker:1) member2(eng_bazooker_assist:1) charge(0) tags(all inf_only 43 44 45) group(soldier_5) button(squad2) level(1) cost(122) fore(1.0))
+
+("squad_2" side(eng) name(stormtrooper5) member1(eng_sas_piat:1) member2(eng_sas_piat_assist:1) charge(0) tags(all inf_only 42 43 44 45) group(soldier_5) button(squad2) level(1) cost(143) fore(1.0))
+
+;------------------------------MG infantry || vet 2-------------------------------------------------------------
+
+("squad_2" side(eng) name(mgs2) member1(eng_mgun:1) member2(eng_mgun_asst:1) charge(60) tags(all inf_only 42 43 44 45) group(soldier_6) button(squad2) level(1) cost(62) fore(1.0))
+
+;------------------------------elite3
+
+("squad_2" side(eng) name(elite3) member1(eng_commando_bren:1) member2(eng_commando_carbine:2) charge(60) tags(all inf_only 40 41 42 43 44 45) group(squad_4) button(squad2) level(1) cost(91) fore(1.0))
+
+;------------------------------------------------
+
+("squad_2" side(eng) name(stormtrooper6) member1(eng_sas_bren2:1) member2(eng_sas_bren2_assist:2) charge(60) tags(all inf_only 40 41 42 43 44 45) group(squad_4) button(squad2) level(1) cost(105) fore(1.0))
+
+;------------------------------flamer, sniper and officer || vet2/3/4----------------------------------------------
+
+("squad_2" side(eng) name(flamers) member1(eng_flamer:1) member2(eng_flamer_assist:1) charge(60) tags(all flamer inf_only 39 40 41 42 43 44 45) group(soldier_8) button(squad2) level(1) cost(71) fore(1.0))
+
+("squad_1" side(eng) name(snipers) member1(eng_sniper:1) charge(60) tags(all sniper inf_only 39 40 41 42 43 44 45) group(soldier_9) button(squad2) level(1) cost(105) fore(1.0))
+
+("squad_1_x4_sequence" side(eng) name(officers) member1(eng_officer:1) charge(1) tags(all officer inf_only 39 40 41 42 43 44 45) group(soldier_10) button(squad2) icon(10002) level(1) cost(0) fore(-599.0)) ;10 minutes
+("squad_1_x4_sequence" side(eng) name(officers_40) member1(eng_officer:1) charge(1800) tags(all officer inf_only 39 40 41 42 43 44 45) group(soldier_10) button(squad2) icon(10002) level(1) cost(0) fore(-2399.0)) ;40 minutes
+
+
+("squad_1" side(eng) name(snipers_d) member1(eng_sniper:1) charge(0) tags(sniper_duell) group(soldier_12) button(squad2) level(1) cost(105) fore(1.0))

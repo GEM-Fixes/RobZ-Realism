@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-com"}
+	{portrait rus_officer}
+	{icon officer}
+	{icon_priority 6}
+	{tags "officer"}
+	{nationality rus}
+	{armors
+		{head cap3_rus}
+	}
+	{perks
+		("soldier_pistol_3" rocket(1) body(line) sight(officer))
+		("perks_officer")
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("kit_pistol" gun(tt) ammo(tt_mag) rounds(32))
+		{item "knife_rus"}
+		{item "binocular"}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

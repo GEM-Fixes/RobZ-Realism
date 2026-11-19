@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-smguner"}
+	{portrait "rus_soldier3"}
+	{nationality rus}
+	{icon "radioman"}
+	{icon_priority 5}
+	{armors
+		{head "radioman_hat"}
+	}
+	{perks
+		("soldier_smg_2" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "ppsh" filled}
+		{item "mortar_flaergun" filled}
+		{item "ammo ppsh_mag" 142}
+		{item "ammo mortar_flaer" 5}
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,19 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(us_com) portrait(usa_officer) icon(officer) priority(6) nation(usa))
+	("breed_armor" head(cap1_usa))
+	{tags "officer"}
+	{perks
+		("soldier_pistol_5" rocket(1) body(line) sight(officer))
+		("perks_officer")
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		("pistol_colt_21")
+		;{item "smoke_paradrop_ammo_heavy grenade" 2}
+		{item "knife_union"}
+		{item "binocular"}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

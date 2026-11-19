@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-fj-rifleman"}
+	{portrait "ger_elite1"}
+	{icon "elite3"}
+	{icon_priority 4}
+	{nationality ger}
+	{armors
+		;{body ammo_ger2}
+		{head helmet_ger_m38_cover}
+	}
+	{perks
+		("soldier_mgun_7" rocket(6) body(hardy) sight(soldier))
+		{"avoidance" lvl_1}
+		{"stealth"}
+	}
+	("breed_vet" table(start5))
+	{inventory
+		("mgun_mg34")
+		{item "bandage" 5}
+		{item "sandbag_kit"}
+		{item "barrel_case"}
+		{in_hands 0}
+	}
+}

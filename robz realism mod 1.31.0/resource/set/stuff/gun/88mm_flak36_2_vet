@@ -1,15 +1,8 @@
-{from "pattern gun2_art"		; "flak36"
-	{filling "bullet88 ger fg" 6}
-	{fireSound "gun/85to100_cal/88mm_flak41"}
-	{reloadSound "gun_r04"}
+{from "88mm_flak36_2"		; "flak36"
 	{recoveryTime 7.6}
 	{rechargeTime 7.6}
-	{burst {min 6} {noaiming}}
-
-	("speed_lowarc" mps(820))
 	("range_arty_lowarc")
 	{range 490 490}
 	{gravity 12}
-	("zeroing_6")
 }
 

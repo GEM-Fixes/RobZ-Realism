@@ -1,17 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "eng-scot-pvt"}
-	{portrait "eng_soldier2"}
-	{nationality eng}
-	{icon "mg"}
-	{icon_priority 2}
-	{armors
-		{head cap_eng_tamoshanter}
-	}
+	("breed_look" skin(eng-scot-pvt) portrait(eng_soldier2) icon(mg) priority(2) nation(eng))
+	("breed_armor" head(cap_eng_tamoshanter))
 	{perks
 		("soldier_mgun_5" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		("mgun_bren")
 		{item "bandage" 3}

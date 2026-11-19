@@ -1,18 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "rus-sco-late-rfl"}
-	{portrait "rus_elite3"}
-	{nationality rus}
-	{icon "smg3"}
-	{icon_priority 1}
-	{armors
-		{body body_armor}
-		{head helmet_rus_ssh40_cover_camo}
-	}
+	("breed_look" skin(rus-sco-late-rfl) portrait(rus_elite3) icon(smg3) priority(1) nation(rus))
+	("breed_armor_vest" vest(body_armor) head(helmet_rus_ssh40_cover_camo))
 	{perks
 		("soldier_mgun_4" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		("rifle_mosin")
 		{item "ammo dp27_mag" 141}

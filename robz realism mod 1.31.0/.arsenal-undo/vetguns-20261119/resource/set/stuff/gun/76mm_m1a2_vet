@@ -1,0 +1,16 @@
+{from "76mm_m5"		; "m4 vet"
+	{rechargeTime 7.22}
+	("accuracy_high_210m_10m_he")
+	{range 210 210}
+	("damage_170" at20(155) at100(133) at170(110) at215(90) at250(74) max(210))
+	{parameters "apcbc"
+		("damage_170" at20(122) at100(115) at170(106) at215(98) at250(91) max(210))
+	}
+	{parameters "hvap" ;using the T4 HVAP ammunition
+		("damage_170" at20(223) at100(182) at170(149) at215(122) at250(99) max(210))
+	}
+	{parameters "fg"
+		{range 200 200}
+	}
+}
+

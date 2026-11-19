@@ -1,0 +1,161 @@
+
+
+
+
+;----------------------- b1 Transport and Porcurement  ----------------------
+
+("unit_vehicle_supporters" side(axis_minor) name(as423) breed(axm_ita_vehicle_supporter) crew(4) charge(60) tags(all 42 43 44 45) group(b1) button(v1) score(120) weight(0) points(6) level(1) cost(120) fore(-2.0))
+
+("unit_vehicle_supporters" side(axis_minor) name(fiat626_inf) breed(axm_bul_vehicle_supporter) crew(2) charge(0) tags(44) group(b2) button(v1) score(100) weight(0) points(8) level(1) cost(100) fore(-0.0))
+("unit_vehicle_supporters" side(axis_minor) name(fiat626_art) breed(axm_bul_vehicle_supporter) crew(2) charge(0) tags(44) group(b3) button(v1) score(300) weight(0) points(8) level(1) cost(300) fore(-0.0))
+("unit_vehicle_supporters" side(axis_minor) name(botond) breed(axm_hun_vehicle_supporter) crew(2) charge(10) tags(44 medium) group(b4) button(v1) score(75) weight(0) points(5) level(1) cost(75) fore(-0.0))
+
+("unit_vehicle_supporters" side(axis_minor) name(ammo_box_axm_inf) breed(axm_bul_vehicle_supporter) crew(2) charge(0) tags(44) group(b5) button(v1) score(50) weight(0) points(5) level(1) cost(50) fore(-0.0))
+("unit_vehicle_supporters" side(axis_minor) name(ammo_box_axm_art) breed(axm_bul_vehicle_supporter) crew(2) charge(0) tags(44) group(b6) button(v1) score(75) weight(0) points(5) level(1) cost(75) fore(-0.0))
+("unit_vehicle_supporters" side(axis_minor) name(ammo_box_axm_special) breed(axm_bul_vehicle_supporter) crew(2) charge(0) tags(44) group(b7) button(v1) score(100) weight(0) points(5) level(1) cost(100) fore(-0.0))
+
+
+;----------------------- b2 Support Weapons  ----------------------
+("unit_vehicle_supporters" side(axis_minor) name(bredasafat77_stan) breed(axm_ita_vehicle_supporter) crew(2) charge(10) tags(44) group(c1) button(v2) score(75) weight(0) points(5) level(1) cost(75) fore(-2.0))
+("unit_vehicle_supporters" side(axis_minor) name(bredaM31) breed(axm_ita_vehicle_supporter) crew(2) charge(10) tags(44) group(c2) button(v2) score(100) weight(0) points(5) level(1) cost(100) fore(-2.0))
+("unit_vehicle_supporters" side(axis_minor) name(sgrw_34) breed(axm_rom_vehicle_supporter) crew(2) charge(10) tags(44 mortar) group(c3) button(v2) score(320) weight(0) points(8) level(1) cost(320) fore(-2.0))
+("unit_vehicle_supporters" side(axis_minor) name(sgrw_42) breed(axm_rom_vehicle_supporter) crew(2) charge(60) tags(44 mortar) group(c4) button(v2) score(650) weight(0) points(13) level(1) cost(650) fore(-9.0))
+;{"solothurn_hun"   ("vs_hun" c(60) t(44 medium) s(axis_minor) n(2)  g(c5) sc(120) b(v2) cw(0) cp(8)) {level 1} {cost 120} {fore -1.0}};120
+
+("unit_vehicle_supporters_sequence" side(axis_minor) name(Brixia45_seq) vehicle1(brixia45) breed(axm_ita_vehicle_supporter) crew1(2) charge(10) tags(all medium 44 45) group(c6) button(v2) icon(12) score(100) weight(0) points(5) level(1) cost(100) fore(-0.0))	;750sec
+("unit_vehicle_supporters_sequence" side(axis_minor) name(Brixia45_seqx2) vehicle1(brixia45) breed(axm_ita_vehicle_supporter) crew1(2) charge(10) tags(all medium 44 45) group(c6) button(v2) icon(12) score(75) weight(0) points(5) level(1) cost(75) fore(-0.0))	;750sec
+("unit_vehicle_supporters_sequence" side(axis_minor) name(Brixia45_seqx3) vehicle1(brixia45) breed(axm_ita_vehicle_supporter) crew1(2) charge(10) tags(all medium 44 45) group(c6) button(v2) icon(12) score(50) weight(0) points(5) level(1) cost(50) fore(-0.0))	;750sec
+
+
+("unit_vehicle_supporters" side(axis_minor) name(22) breed(axm_ita_vehicle_supporter) crew(2) charge(30) tags(all 44 mortar) group(c7) button(v2) score(170) weight(0) points(8) level(1) cost(170) fore(-5.0));180
+
+("unit_vehicle_supporters" side(axis_minor) name(37mm_bofors) breed(axm_fin_vehicle_supporter) crew(2) charge(10) tags(44) group(c8) button(v2) score(180) weight(0) points(9) level(1) cost(180) fore(-14.0))
+
+;{"44m_buzoganyveto"   ("vs_hun" c(90) t(44) s(axis_minor) n(1)  g(c9) sc(120) b(v2) cw(0) cp(9)) {level 1} {cost 120} {fore -5.67}};600
+
+("unit_vehicle_supporters_sequence" side(axis_minor) name(resita_seq) vehicle1(resita) breed(axm_rom_vehicle_supporter) crew1(2) charge(10) tags(all medium 44 45) group(c10) button(v2) icon(345) score(300) weight(0) points(10) level(1) cost(300) fore(-38.0))	;390
+("unit_vehicles_supporters_sequence" side(axis_minor) name(resita_seqx2) vehicle1(resita) vehicle2(resita) crew1(2) charge(10) tags(all medium 44 45) group(c10) button(v2) icon(345) score(500) weight(0) points(10) level(1) cost(500) fore(-38.0))	;390
+
+("unit_howitzer_tractor_vehicles2" side(axis_minor) name(cannone9053) vehicle1(k50_tractor) vehicle2(cannone9053) breed1(axm_ita_vehicle_supporter) breed2(axm_ita_vehicle_supporter) charge(60) tags(44) group(c13) button(v2) level(1) cost(750) fore(-14.0));900
+
+("unit_vehicle_supporters" side(axis_minor) name(skoda_75mm_gebirgskanone) breed(axm_ita_vehicle_supporter) crew(2) charge(30) tags(all 44 mortar) group(c7) button(v2) score(320) weight(0) points(8) level(1) cost(320) fore(-5.0));180
+
+
+
+("unit_howitzer_tractor" side(axis_minor) name(flak36a_fin) vehicle1(t20) vehicle2(flak36a_fin) breed1(axm_fin_vehicle_supporter) breed2(axm_fin_vehicle_supporter) charge(60) tags(44) group(c90) button(v2) level(1) cost(700) fore(-17.0));1080
+("unit_howitzer_tractor_vehicles2" side(axis_minor) name(pak43_towed_hun) vehicle1(k50_tractor) vehicle2(pak43) breed1(axm_hun_vehicle_supporter) breed2(axm_hun_vehicle_supporter) charge(60) tags(heavy 44) group(c11) button(v2) level(1) cost(850) fore(-19.0))		;1200sec
+
+("unit_howitzer_tractor" side(axis_minor) name(155mm_mle1917) vehicle1(t20) vehicle2(155mm_mle1917) breed1(axm_fin_vehicle_supporter) breed2(axm_fin_vehicle_supporter) charge(60) tags(44) group(c12) button(v2) level(1) cost(650) fore(-10.0));1080
+("unit_howitzer_tractor_vehicles2" side(axis_minor) name(obice14940) vehicle1(k50_tractor) vehicle2(obice14940) breed1(axm_ita_vehicle_supporter) breed2(axm_ita_vehicle_supporter) charge(60) tags(44) group(c11) button(v2) level(1) cost(750) fore(-19.0))
+("unit_howitzer_tractor_vehicles2" side(axis_minor) name(obice210) vehicle1(k50_tractor) vehicle2(obice210) breed1(axm_ita_vehicle_supporter) breed2(axm_ita_vehicle_supporter) charge(60) tags(44) group(c14) button(v2) level(1) cost(900) fore(-19.0))
+("unit_tank" side(axis_minor) name(m149) breed1(axm_ita_tankman) breed2(axm_ita_tankcommander) crew1(3) crew2(1) charge(60) tags(44 medium) group(c15) button(v2) score(1100) weight(0) points(17) level(1) cost(1100) fore(-20.0))
+
+;----------------------- b3 light support vehicles  ----------------------
+
+("unit_tank" side(axis_minor) name(fiataa35) breed1(axm_ita_tankman) breed2(axm_ita_tankcommander) crew1(3) crew2(1) charge(10) tags(44) group(d15) button(v3) score(160) weight(0) points(12) level(1) cost(160) fore(-17.0));180
+("unit_tank" side(axis_minor) name(csaba40m) breed1(axm_hun_tankman) breed2(axm_hun_tankcommander) crew1(3) crew2(1) charge(10) tags(44) group(d16) button(v3) score(220) weight(0) points(12) level(1) cost(220) fore(-31.0))
+("unit_tank" side(axis_minor) name(csaba39m) breed1(axm_hun_tankman) breed2(axm_hun_tankcommander) crew1(3) crew2(1) charge(10) tags(44) group(d17) button(v3) score(280) weight(0) points(10) level(1) cost(280) fore(-37.0))
+("unit_tank" side(axis_minor) name(Lancia1ZM) breed1(axm_ita_tankman) breed2(axm_ita_tankcommander) crew1(3) crew2(1) charge(10) tags(44) group(d19) button(v3) score(140) weight(0) points(10) level(1) cost(140) fore(-30.0))
+("unit_tank" side(axis_minor) name(panhard_rom) breed1(axm_rom_tankman) breed2(axm_rom_tankcommander) crew1(3) crew2(1) charge(10) tags(44) group(d18) button(v3) score(180) weight(0) points(10) level(1) cost(180) fore(-35.0))
+("unit_tank" side(axis_minor) name(ab41) breed1(axm_ita_tankman) breed2(axm_ita_tankcommander) crew1(3) crew2(1) charge(10) tags(44) group(d20) button(v3) score(190) weight(0) points(10) level(1) cost(190) fore(-30.0))
+
+("unit_tank" side(axis_minor) name(m15_contraereo) breed1(axm_ita_tankman) breed2(axm_ita_tankcommander) crew1(1) crew2(1) charge(30) tags(44 medium) group(d21) button(v3) score(290) weight(0) points(14) level(1) cost(290) fore(-13))
+("unit_tank" side(axis_minor) name(nimrod) breed1(axm_hun_tankman) breed2(axm_hun_tankcommander) crew1(4) crew2(1) charge(30) tags(44 medium) group(d22) button(v3) score(320) weight(0) points(18) level(1) cost(320) fore(-13.0))
+
+
+("unit_tank" side(axis_minor) name(L35LF) breed1(axm_ita_tankman) breed2(axm_ita_tankcommander) crew1(1) crew2(1) charge(900) tags(44) group(d23) button(v3) score(350) weight(0) points(15) level(1) cost(350) fore(-0.0))
+;{"l335"      ("v_ita" c(10) t(44) s(axis_minor) n1(1) n2(1) g(d24) sc(210) b(v3) cw(0) cp(10)) {level 1} {cost 210} {fore -31.0}}
+;{"l335c"      ("v_ita" c(10) t(44) s(axis_minor) n1(1) n2(1) g(d25) sc(220) b(v3) cw(0) cp(10)) {level 1} {cost 220} {fore -37.0}}
+;----------------------- b4 tank support  ----------------------
+
+
+
+("unit_tank_sequence" side(axis_minor) name(m1139_seq) vehicle1(m1139) breed1(axm_ita_tankman) breed2(axm_ita_tankCommander) crew1(2) crew2(1) charge(10) tags(44 medium) group(e1) button(v4) icon(4) score(260) weight(0) points(10) level(1) cost(260) fore(-48.0))
+("unit_tank_sequence" side(axis_minor) name(m1139_seqx2) vehicle1(m1139) breed1(axm_ita_tankman) breed2(axm_ita_tankCommander) crew1(2) crew2(1) charge(10) tags(44 medium) group(e1) button(v4) icon(4) score(200) weight(0) points(10) level(1) cost(200) fore(-48.0))
+
+("unit_tank_sequence" side(axis_minor) name(m7518_seq) vehicle1(m7518) breed1(axm_ita_tankman) breed2(axm_ita_tankCommander) crew1(2) crew2(1) charge(10) tags(44 medium) group(e2) button(v4) icon(5) score(280) weight(0) points(10) level(1) cost(280) fore(-48.0))
+("unit_tank_sequence" side(axis_minor) name(m7518_seqx2) vehicle1(m7518) breed1(axm_ita_tankman) breed2(axm_ita_tankCommander) crew1(2) crew2(1) charge(10) tags(44 medium) group(e2) button(v4) icon(5) score(215) weight(0) points(10) level(1) cost(215) fore(-48.0))
+
+
+
+("unit_tank" side(axis_minor) name(bt42) breed1(axm_fin_tankman) breed2(axm_fin_tank_commander) crew1(3) crew2(1) charge(60) tags(44) group(e3) button(v4) score(320) weight(0) points(14) level(1) cost(320) fore(-8.0));270
+
+
+("unit_tank" side(axis_minor) name(toldi1) breed1(axm_hun_tankman) breed2(axm_hun_tankcommander) crew1(2) crew2(1) charge(10) tags(44) group(e4) button(v4) score(250) weight(0) points(14) level(1) cost(250) fore(-36.0))
+("unit_tank" side(axis_minor) name(toldi2) breed1(axm_hun_tankman) breed2(axm_hun_tankcommander) crew1(2) crew2(1) charge(10) tags(44) group(e5) button(v4) score(260) weight(0) points(14) level(1) cost(260) fore(-52.0))
+("unit_tank" side(axis_minor) name(zrinyi2) breed1(axm_hun_tankman) breed2(axm_hun_tankcommander) crew1(3) crew2(1) charge(10) tags(44 medium) group(e6) button(v4) score(550) weight(0) points(14) level(1) cost(550) fore(-94.0))
+("unit_tank" side(axis_minor) name(turan1) breed1(axm_hun_tankman) breed2(axm_hun_tankcommander) crew1(4) crew2(1) charge(10) tags(44 medium) group(e7) button(v4) score(375) weight(0) points(15) level(1) cost(375) fore(-64.0))
+("unit_tank" side(axis_minor) name(turan2) breed1(axm_hun_tankman) breed2(axm_hun_tankcommander) crew1(4) crew2(1) charge(10) tags(44 medium) group(e8) button(v4) score(425) weight(0) points(16) level(1) cost(425) fore(-84.0))
+("unit_tank" side(axis_minor) name(turan3) breed1(axm_hun_tankman) breed2(axm_hun_tankcommander) crew1(4) crew2(1) charge(10) tags(44 medium) group(e9) button(v4) score(500) weight(0) points(18) level(1) cost(500) fore(-94.0))
+;{"t34_3_fin"      ("v_fin" c(60) t(44 medium) s(axis_minor) n1(4) n2(1) g(e10) sc(750) b(v4) cw(0) cp(20)) {level 1} {cost 750} {fore -18.5}}
+
+("unit_tank" side(axis_minor) name(pz6e_hungarian) breed1(axm_hun_tankman) breed2(axm_hun_tankcommander) crew1(4) crew2(1) charge(600) tags(44 heavy) group(e11) button(v4) score(1500) weight(0) points(30) level(1) cost(1500) fore(-1.92))
+("unit_tank" side(axis_minor) name(panther5g_hungarian) breed1(axm_hun_tankman) breed2(axm_hun_tankcommander) crew1(4) crew2(1) charge(60) tags(44 heavy) group(e12) button(v4) score(1500) weight(0) points(30) level(1) cost(1500) fore(-24.0))
+;----------------------- b5 tank destroyers  ----------------------
+
+
+("unit_tank" side(axis_minor) name(tacam_t60) breed1(axm_rom_tankman) breed2(axm_rom_tankcommander) crew1(2) crew2(1) charge(10) tags(44) group(f1) button(v5) score(320) weight(0) points(10) level(1) cost(290) fore(-51.0));520
+("unit_tank" side(axis_minor) name(tacam_r2) breed1(axm_rom_tankman) breed2(axm_rom_tankcommander) crew1(2) crew2(1) charge(10) tags(44) group(f2) button(v5) score(340) weight(0) points(12) level(1) cost(300) fore(-53.0));540
+
+("unit_vehicle_supporters" side(axis_minor) name(3ro) breed(axm_ita_vehicle_supporter) crew(4) charge(10) tags(44) group(f3) button(v5) score(500) weight(0) points(15) level(1) cost(700) fore(-94.0))
+("unit_tank" side(axis_minor) name(zrinyi1) breed1(axm_hun_tankman) breed2(axm_hun_tankcommander) crew1(3) crew2(1) charge(10) tags(44 medium) group(f4) button(v5) score(500) weight(0) points(18) level(1) cost(500) fore(-94.0))
+("unit_tank" side(axis_minor) name(m9053) breed1(axm_ita_tankman) breed2(axm_ita_tankcommander) crew1(3) crew2(1) charge(60) tags(44 medium) group(f5) button(v5) score(850) weight(0) points(18) level(1) cost(850) fore(-17.0));1080
+
+
+
+
+;----------------------- b6 veteren units  ----------------------
+
+
+("unit_tank" side(axis_minor) name(turan3_vet) breed1(axm_hun_vet_tankman) breed2(axm_hun_vet_tankcommander) crew1(4) crew2(1) charge(1130) tags(44 medium) group(g1) button(v6) score(750) weight(0) points(24) level(1) cost(650) fore(0.0))
+;{"zrinyi2"   ("v_hun" c(10) t(44 medium) s(axis_minor) n1(3) n2(1) g(e14) sc(27.5) b(v5) cw(0) cp(20)) {level 1} {cost 750} {fore -94.0}}
+;{"m9053"     ("v_ita" c(10) t(44 medium) s(axis_minor) n1(3) n2(1) g(e14) sc(27.5) b(v5) cw(0) cp(10)) {level 1} {cost 1000} {fore -97.0}}
+
+
+
+
+
+
+
+;---------------------------Hero------------------------------
+
+
+("squad_5" side(axis_minor) name(hero_sissisp) member1(axm_fin_sissi_squadleader_vision:1) member2(axm_fin_sissi_mgun_vision:1) member3(axm_fin_sissi_mgun_assist_vision:1) member4(axm_fin_sissi_smg_vision:2) member5(axm_fin_sissi_rifle_vision:4) charge(150) tags(all hero 43 44 45) group(h1) button(hero) level(1) cost(1) fore(0.25));120
+
+("squad_1" side(axis_minor) name(hero_white_death) member1(axm_fin_elite_sniper:1) charge(200) tags(all hero 43 44 45) group(h1) button(hero) level(1) cost(2) fore(-0.5))
+
+("squad_5_vehicle" side(axis_minor) name(hero_elite_resita) vehicle1(elite_resita) member1(axm_rom_elite_vehicle_supporter:2) member2(axm_ita_bersaglieri_rifle:0) member3(axm_ita_bersaglieri_mgun_assist:0) member4(axm_ita_bersaglieri_smg:0) member5(axm_bersaglieri_mgun:0) charge(60) tags(all hero 44 45) group(h155) button(hero) level(1) cost(3) fore(-15.0))
+
+("unit_vehicles2_members2_sided" side(axis_minor) name(hero_recon_in_force) vehicle1(csaba39m) vehicle2(csaba40m) member1(axm_hun_tankman:3) member2(axm_hun_tankcommander:1) charge(320) tags(all hero 44 45) group(h15) button(hero) level(1) cost(3.0) fore(-0.125)) ;360
+
+
+("unit_vehicles2_members6_sided" side(axis_minor) name(hero_hungarian_mobile_unit) vehicle1(turan3) vehicle2(botond) member1(axm_hun_tankman:4) member2(axm_hun_tankcommander:1) member3(axm_hun_assualt_rifle:4) member4(axm_hun_assualt_pzf:3) member5(axm_hun_assualt_squadleader:1) member6(axm_hun_assualt_mgun:2) charge(180) tags(all hero 44 45) group(h15) button(hero) level(1) cost(12.0) fore(-3.65)) ;540
+
+
+
+
+
+;{"toldi1_rocket"  ("v1" c(300) c1(toldi1_rocket)  n1(axm_hun_tankman:3) n2(axm_hun_tankcomander:1) t(all hero 44 45) s(axis_minor) g(h15) b(hero)) {level 1} {cost 3.0} {fore -0.6}} ;480
+
+
+
+
+
+
+("unit_vehicles3_members1_sided_2" side(axis_minor) name(hero_guard_the_flanks) vehicle1(Resita) vehicle2(bredasafat77_stan) vehicle3(sgrw_42) member1(axm_rom_vehicle_supporter:2) charge(540) tags(all hero 44 45) group(h15) button(hero) level(1) cost(10.0) fore(-0.111)) ;600
+
+("unit_vehicle_members_sided" side(axis_minor) name(hero_vet_td) vehicle1(m9053_vet) member1(axm_ita_vettankman:3) member2(axm_ita_vettankcommander:1) charge(540) tags(all hero 44 45) group(h15) button(hero) level(1) cost(8.0) fore(-1.92))
+
+
+("unit_vehicle_members_sided" side(axis_minor) name(hero_big_gun) vehicle1(m149_vet) member1(axm_ita_tankman:3) member2(axm_ita_tankcommander:1) charge(540) tags(all hero 44 45) group(h15) button(hero) level(1) cost(8.0) fore(-1.92))
+
+("unit_vehicle_members_sided" side(axis_minor) name(hero_tiger_ace_hun) vehicle1(pz6e_ace) member1(axm_hun_elite_tankman:4) member2(axm_hun_elite_tankcommander:1) charge(950) tags(all hero 44 45) group(h14) button(hero) level(1) cost(16.0) fore(-0.99)) ;2000sec
+
+
+("unit_vehicle_members" side(axis_minor) name(karlthor) vehicle1(karlthor) member1(axm_ger_vehicle_supporter:5) member2(axm_ita_tankcommander:0) charge(540) tags(sheavy hero 44) group(h15) button(hero) level(1) cost(12.0) fore(-1.22)) ;1200
+
+
+
+
+
+

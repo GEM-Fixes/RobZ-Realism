@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "jap_army_squadleader"}
+	{portrait "jap_soldier3"}
+	{nationality jap}
+	{icon "squadleader"}
+	{icon_priority 2}
+	{armors
+		{head japarmy_cap_hohei2}
+	}
+	{perks
+		("soldier_smg_4" rocket(1) body(hardy) sight(soldier))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_type100smg")
+		{item "bandage" 3}
+		("give" item(grenade type97) count(2))
+		("give" item(grenade type3at_a) count(2))
+		("give" item(smoke grenade) count(2))
+		{in_hands 0}
+	}
+}

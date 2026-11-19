@@ -1,17 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "jap_army_giretu"}
-	{portrait "jap_elite1"}
-	{nationality jap}
-	{icon "elite3"}
-	{icon_priority 3}
-	{armors
-		{head jap_army_helmet_para}
-	}
+	("breed_look" skin(jap_army_giretu) portrait(jap_elite1) icon(elite3) priority(3) nation(jap))
+	("breed_armor" head(jap_army_helmet_para))
 	{perks
 		("soldier_mgun_7" rocket(1) body(hardy) sight(soldier))
 	}
-	("breed_vet" table(elite))
+	("breed_vet" table(elite) start(1))
 	{inventory
 		("kit_mgun" gun(type99_mg) ammo(type99_mag) rounds(240))
 		{item "bandage" 5}

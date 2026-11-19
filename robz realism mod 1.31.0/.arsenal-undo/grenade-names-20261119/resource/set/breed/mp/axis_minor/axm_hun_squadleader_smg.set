@@ -1,0 +1,17 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(hun_officer) portrait(hun_squadleader) icon(squadleader) priority(2) nation(hun))
+	("breed_armor" head(helmet1_hun))
+	{perks
+		("soldier_smg_3" rocket(2) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		("kit_smg" gun(danuvia_43m) ammo(9x25) rounds(160))
+		{item "bandage" 4}
+		{item "grenade hungarian_42m" 4}
+		("give" item(smoke grenade) count(2))
+
+		{in_hands 0}
+	}
+}

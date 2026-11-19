@@ -1,0 +1,18 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(rom-rifleman) portrait(rom_soldier1) icon(riflemans2) priority(0) nation(rom))
+	("breed_armor" head(8_kaska_soldat_ruminia))
+	{perks
+		("soldier_rifle_3" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		("kit_rifle" gun(zb_24rifle) ammo(7x57) rounds(120))
+		{item "bandage" 5}
+		("give" item(m24 grenade) count(2))
+		("give" item(m24x5 grenade) count(1))
+		{item "small_shovel" 1}
+
+		{in_hands 0}
+	}
+}

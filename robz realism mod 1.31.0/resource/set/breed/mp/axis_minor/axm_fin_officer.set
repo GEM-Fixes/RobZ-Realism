@@ -1,19 +1,13 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "fin-sum-inf-officer"}
-	{portrait "fin_officer"}
-	{nationality fin}
-	{icon "oficer"}
-	{icon_priority 2}
-	{armors
-		{head "cap_fin_officer"}
-	}
+	("breed_look" skin(fin-sum-inf-officer) portrait(fin_officer) icon(oficer) priority(2) nation(fin))
+	("breed_armor" head(cap_fin_officer))
 	{tags "officer"}
 	{perks
 		("soldier_pistol_5" rocket(1) body(line) sight(officer))
 		("perks_officer")
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		("pistol_luger")
 		{item "knife_ger"}

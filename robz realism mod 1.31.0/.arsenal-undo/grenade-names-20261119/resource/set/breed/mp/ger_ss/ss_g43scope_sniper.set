@@ -1,0 +1,18 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(waffen-smock2-g43) portrait(ger_soldier4) icon(sniper) priority(5) nation(ger))
+	("breed_armor" head(helmet_ger_m40_grass))
+	{perks
+		("soldier_rifle_6" rocket(5) body(hardy) sight(sniper))
+		("perks_sniper")
+	}
+	("breed_vet" table(elite) start(1))
+	{inventory
+		("kit_loaded" gun(g43_scope) ammo(ammo g43_mag) loaded(10) spare(60))
+		{item "bandage" 5}
+		;{item "smoke_paradrop_ammo grenade" 1}
+		{item "plant" 3}
+		{item "knife_ger"}
+		{in_hands 0}
+	}
+}

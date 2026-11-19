@@ -1,23 +1,16 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "bul-officer"}
-	{portrait "bul_officer"}
-	{icon "officer"}
-	{icon_priority 6}
+	("breed_look" skin(bul-officer) portrait(bul_officer) icon(officer) priority(6) nation(bul))
+	("breed_armor" head(cap2_bul))
 	{tags "officer"}
-	{nationality bul}
-	{armors
-		{head cap2_bul}
-	}
 	{tags "officer"}
 	{perks
 		("soldier_pistol_5" rocket(1) body(line) sight(officer))
 		("perks_officer")
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
-		{item "valter" filled}
-		{item "ammo walther_mag" 40}
+		("kit_pistol" gun(valter) ammo(walther_mag) rounds(40))
 		{item "knife_ger"}
 		{item "binocular"}
 		{in_hands 0}

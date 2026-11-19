@@ -1,22 +1,16 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "eng-officer"}
-	{portrait eng_officer}
-	{icon officer}
-	{icon_priority 6}
+	("breed_look" skin(eng-officer) portrait(eng_officer) icon(officer) priority(6) nation(eng))
+	("breed_armor" head(cap_eng_off))
 	{tags "officer"}
-	{nationality eng}
-	{armors
-		{head cap_eng_off}
-	}
 	{perks
 		("soldier_pistol_5" rocket(1) body(line) sight(officer))
 		("perks_officer")
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		("pistol_webley")
-		;{item "smoke_paradrop_ammo_heavy grenade" 2}
+		;{item "grenade smoke_paradrop_ammo_heavy" 2}
 		{item "knife_union"}
 		{item "binocular"}
 		{item "bandage" 5}

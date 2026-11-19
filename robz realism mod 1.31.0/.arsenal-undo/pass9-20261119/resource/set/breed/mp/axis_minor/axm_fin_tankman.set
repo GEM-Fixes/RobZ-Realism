@@ -1,0 +1,21 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "fin-tankman"}
+	{portrait "fin_soldier2"}
+	{icon "tankman"}
+	{icon_priority 0}
+	{nationality fin}
+	{armors
+		{head "cap_fin_m36_tank"}
+	}
+	{perks
+		("crew_1" body(normal_line) sight(soldier))
+	}
+	("breed_vet" table(crew))
+
+	{inventory
+		("kit_smg" gun(suomi_m31r) ammo(ppsh_mag) rounds(160))
+
+		{in_hands 0}
+	}
+}

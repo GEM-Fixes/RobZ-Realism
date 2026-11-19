@@ -1,0 +1,21 @@
+{from "75mm_pak39"		; "hetzer_ger2"
+	{rechargeTime 5.95}
+	("accuracy_high_210m")
+	{range 210 210}
+	("damage_170" at20(135) at100(123) at170(109) at215(97) at250(86) max(210))
+	{parameters "apc"
+		("damage_170" at20(135) at100(123) at170(109) at215(97) at250(86) max(210))
+	}
+	{parameters "heatb"
+		("damage_heat" damage(87) max(210))
+	}
+	{parameters "heatc"
+		("damage_heat" damage(100) max(210))
+	}
+	{parameters "apcr"
+		("damage_170" at20(176) at100(154) at170(130) at215(109) at250(92) max(210))
+	}
+	{parameters "fg"
+		{range 190 190}
+	}
+}

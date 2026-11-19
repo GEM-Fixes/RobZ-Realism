@@ -1,17 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "ger-straf-rfl"}
-	{portrait "ger2_elite2"}
-	{nationality ger2}
-	{icon "elite5"}
-	{icon_priority 3}
-	{armors
-		{head "fieldcap_ger"}
-	}
+	("breed_look" skin(ger-straf-rfl) portrait(ger2_elite2) icon(elite5) priority(3) nation(ger2))
+	("breed_armor" head(fieldcap_ger))
 	{perks
 		("soldier_rifle_1" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		("rifle_mauzer")
 		{item "bandage" 3}

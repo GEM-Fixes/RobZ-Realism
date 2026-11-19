@@ -1,0 +1,21 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "jap_army_mc"}
+	{portrait "jap_soldier2"}
+	{nationality jap}
+	{icon "smg"}
+	{icon_priority 1}
+	{armors
+		{head "jap_army_helmet3"}
+	}
+	{perks
+		("support_2" body(elite_hardy) sight(soldier))
+	}
+	("breed_vet" table(crew))
+	{inventory
+		("rifle_type44_carbine")
+		{item "bandage" 3}
+		;{item "grenade type97" 1}
+		{in_hands 0}
+	}
+}

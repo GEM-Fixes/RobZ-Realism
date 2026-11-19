@@ -1,23 +1,15 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "waffen-smock2-g43"}
-	{portrait "ger_soldier7"}
-	{icon "rifleman"}
-	{icon_priority 1}
-	{nationality ger}
-	{armors
-		{body ammo_ger3}
-		{head waffen_helmet_camo}
-	}
+	("breed_look" skin(waffen-smock2-g43) portrait(ger_soldier7) icon(rifleman) priority(1) nation(ger))
+	("breed_armor_vest" vest(ammo_ger3) head(waffen_helmet_camo))
 	{perks
 		("soldier_rifle_5" rocket(5) body(hardy) sight(soldier))
 		{"aimedshot"}
 		{"telescope"}
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
-		{item "g43_scope" filling "ammo g43_mag" 10}
-		{item "ammo g43_mag" 20}
+		("kit_loaded" gun(g43_scope) ammo(ammo g43_mag) loaded(10) spare(20))
 		{item "ammo mauser_clip" 60}
 		{item "ammo mg_mauser drum" 50}
 		{item "bandage" 3}

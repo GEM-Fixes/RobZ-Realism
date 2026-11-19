@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "bul-inf-mgun"}
+	{portrait "bul_soldier4"}
+	{nationality bul}
+	{icon "radioman"}
+	{icon_priority 5}
+	{armors
+		{head "radioman_hat"}
+	}
+	{perks
+		("soldier_smg_2" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "mp40" filled}
+		{item "mortar_flaergun" filled}
+		{item "ammo mp40_mag" 192}
+		{item "ammo mortar_flaer" 5}
+		{item "bandage" 3}
+		{in_hands 0}
+
+	}
+}

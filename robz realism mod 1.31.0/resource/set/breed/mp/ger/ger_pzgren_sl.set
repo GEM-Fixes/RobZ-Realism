@@ -1,23 +1,17 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "ger-smock2-stg44-nco"}
-	{portrait "ger_soldier3"}
-	{icon "stormtrooper"}
-	{icon_priority 3}
-	{nationality ger}
-	{armors
-		{head helmet_heer_camo}
-	}
+	("breed_look" skin(ger-smock2-stg44-nco) portrait(ger_soldier3) icon(stormtrooper) priority(3) nation(ger))
+	("breed_armor" head(helmet_heer_camo))
 	{perks
 		("soldier_smg_6" rocket(5) body(line) sight(soldier))
 	}
-	("breed_vet" table(elite))
+	("breed_vet" table(elite) start(1))
 	{inventory
 		("smg_sg44")
 		{item "bandage" 5}
 		("give" item(grenade m24) count(2))
 		("give_chance" item(grenade m24x5) chance(25))
-		("give" item(smoke grenade) count(2))
+		("give" item(grenade smoke) count(2))
 		{in_hands 0}
 	}
 }

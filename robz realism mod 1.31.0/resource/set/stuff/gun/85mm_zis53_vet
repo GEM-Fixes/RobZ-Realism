@@ -1,16 +1,9 @@
 {from "85mm_zis53"		; "t34_3"
-
 	{rechargeTime 7.82}
-
 	{range 220 220}
-
 	("damage_215" at20(145) at100(125) at170(107) at215(92) at250(78) max(220))
-	{parameters "aphe"
-		{cursorReloading "cannon_reload_aphe"}
-	}
 	{parameters "aphebc"
 		("damage_215" at20(142) at100(123) at170(105) at215(91) at250(81) max(220))
-		{cursorReloading "cannon_reload_aphebc"}
 	}
 	{parameters "apcr"
 		("damage_215" at20(190) at100(145) at170(111) at215(86) at250(64) max(220))

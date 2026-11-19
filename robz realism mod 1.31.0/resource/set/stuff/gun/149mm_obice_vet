@@ -1,11 +1,2 @@
-{from "pattern gun_art"    ; "obice149a"
-	{filling "bullet149_ita" 3}
-	{fireSound "gun/howitzer/150mm_sfh18"}
-	{reloadSound "gun_r04"}
-	("range_heavy_howitzer")
-	{recoveryTime 13.8}
-	{rechargeTime 13.8}
-	{range 710 710}
-
-
+{from "149mm_obice"    ; "obice149a"
 }

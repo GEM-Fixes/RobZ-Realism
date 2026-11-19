@@ -1,19 +1,13 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "ita-tankcom"}
-	{portrait "ita_tankman"}
-	{icon "tankman2"}
-	{icon_priority 0}
+	("breed_look" skin(ita-tankcom) portrait(ita_tankman) icon(tankman2) priority(0) nation(ita))
+	("breed_armor" head(helmet_ita_tank))
 	{tags "tankman2"}
-	{nationality ita}
-	{armors
-		{head helmet_ita_tank}
-	}
 	{tags "tankman2"}
 	{perks
 		("crew_3" body(vet_line) sight(soldier))
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		("kit_pistol" gun(glisenti) ammo(9x19c) rounds(35))
 		{in_hands 0}

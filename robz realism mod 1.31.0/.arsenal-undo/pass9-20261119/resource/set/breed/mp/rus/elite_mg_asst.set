@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-mar2-mgun"}
+	{portrait "rus_elite1"}
+	{nationality rus}
+	{icon "elite"}
+	{icon_priority 3}
+	{armors
+		{body mochila_urss}
+		{head cap2_rus}
+	}
+	{perks
+		("soldier_mgun_4" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_mosin")
+		{item "ammo dp27_mag" 141}
+		{item "bandage" 5}
+		("give" item(grenade f1) count(2))
+		{in_hands 0}
+	}
+}

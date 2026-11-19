@@ -1,17 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "fin-inf-rfl"}
-	{portrait "fin_soldier3"}
-	{nationality fin}
-	{icon "at_rifle"}
-	{icon_priority 1}
-	{armors
-		{head helmet_fin_m16}
-	}
+	("breed_look" skin(fin-inf-rfl) portrait(fin_soldier3) icon(at_rifle) priority(1) nation(fin))
+	("breed_armor" head(helmet_fin_m16))
 	{perks
 		("soldier_rifle_3" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		("kit_smg" gun(suomi_m31) ammo(ppsh_mag) rounds(213))
 		{item "ammo ptr" 50}

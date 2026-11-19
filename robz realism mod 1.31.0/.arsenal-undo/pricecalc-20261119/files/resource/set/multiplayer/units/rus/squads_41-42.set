@@ -1,0 +1,103 @@
+; ported from Robz realism mod 1.28.6 (year presets)
+;같캳quads같�
+;------------------------------home guards | vet 1--------------------------------------------------------------
+
+("squad_4" side(rus) name(home_guards_41) member1(home_guard:5) member2(home_guard2:2) member3(home_guard3:2) member4(home_guard_mg:1) charge(60) tags(41) group(partisan) button(squad1) level(1) cost(85) fore(1.0))
+("squad_4" side(rus) name(home_guards_42) member1(home_guard:3) member2(home_guard2:3) member3(home_guard3:2) member4(home_guard_mg:1) charge(60) tags(42) group(partisan) button(squad1) level(1) cost(80) fore(1.0))
+("squad_2" side(rus) name(conscripts) member1(conscript_rifle:6) member2(conscript_smg:4) charge(15) tags(all inf_only 41 42) group(squad_1) button(squad1) level(1) cost(70) fore(1.0))
+
+;------------------------------regular squad || vet 2/3-----------------------------------------------------------
+
+;("squad_with2types" side(rus) name(riflemans_only_41) c(0) g(squad_3) c1(squadleader_41:1) c2(rifle_41:10) b(squad1) t(41) level(1) cost(91) f(1.0))
+;("squad_with2types" side(rus) name(riflemans_only_42) c(0) g(squad_3) c1(squadleader_41:1) c2(rifle_41:8) b(squad1) t(42) level(1) cost(75) f(1.0))
+
+("squad_5" side(rus) name(riflemans_41) member1(squadleader_41:1) member2(rifle_41:6) member3(smg_41:2) member4(mgun_41:1) member5(mgun_asst_41:1) charge(0) tags(41) group(squad_3) button(squad1) level(1) cost(123) fore(1.0))
+("squad_5" side(rus) name(riflemans_42) member1(squadleader_41:1) member2(rifle_41:3) member3(smg_41:3) member4(mgun_41:1) member5(mgun_asst_41:1) charge(0) tags(42) group(squad_3) button(squad1) level(1) cost(109) fore(1.0))
+
+;------------------------------shock troops ||| vet 3-----------------------------------------------------------
+
+("squad_2" side(rus) name(smg3) member1(smg3:7) member2(flamer3:1) charge(0) tags(all inf_only 42 43 44 45) group(squad_3) button(squad1) level(1) cost(150) fore(1.0))
+
+;------------------------------elite squads ||| vet 3/4-----------------------------------------------------------
+
+("squad_4" side(rus) name(elites_40) member1(elite_40:6) member2(elite2_40:3) member3(elite3_40:1) member4(elite_mg_asst:1) charge(180) tags(40 41) group(squad_5) button(squad1) level(1) cost(166) fore(1.0))
+("squad_4" side(rus) name(elites_42) member1(elite:4) member2(elite2:3) member3(elite3:1) member4(elite_mg_asst:1) charge(180) tags(42) group(squad_5) button(squad1) level(1) cost(142) fore(1.0))
+
+;------------------------------guards rifle |||| vet 5----------------------------------------------------------
+
+;("squad_with6types" side(rus) name(specialinf_41) c(300) g(rus_guard) c1(guard_sl:1) c2(guard_smg_41:2) c3(guard_sa:1) c4(guard_rifle:5) c5(guard_mg:1) c6(guard_mg_asst:1) b(squad1) t(41) level(1) cost(187) f(1.0))
+;("squad_with6types" side(rus) name(specialinf_42) c(300) g(rus_guard) c1(guard_sl:1) c2(guard_smg_41:3) c3(guard_sa:1) c4(guard_rifle:2) c5(guard_mg:1) c6(guard_mg_asst:1) b(squad1) t(42) level(1) cost(162) f(1.0))
+
+;------------------------------stormtroopers |||| vet 6---------------------------------------------------------
+
+;("squad_with4types" side(rus) name(stormtroopers_41) c(360) g(squad_5) c1(sturmovik_41:4) c2(sturmovik2_40:2) c3(sturmovik3_40:1) c4(sturmovik4b_40:4) b(squad1) t(41) level(1) cost(300) f(1.0))
+;("squad_with4types" side(rus) name(stormtroopers_42) c(360) g(squad_5) c1(sturmovik_41:3) c2(sturmovik2_40:2) c3(sturmovik3_42:1) c4(sturmovik4b_40:3) b(squad1) t(42) level(1) cost(268) f(1.0))
+
+;------------------------------stormtrooper halftrack |||| vet 3/4----------------------------------------------
+
+;{"storm_mech(rus)"      ("vb3" c(380) c1(m3) 		t(all inf_only 45) 		     s(rus) n1(6) n2(2) n3(2) 		g(squad_5) b(squad1)) {level 1} {cost 400} {fore 1.0}}
+
+;------------------------------AP and AT miners, sappers || vet 2-----------------------------------------------
+
+("squad_1" side(rus) name(ap_miners) member1(ap_miner:4) charge(0) tags(all inf_only engineers mines 39 40 41 42 43 44 45) group(squad_7) button(squad1) level(20) cost(100) fore(0))
+
+("squad_1" side(rus) name(at_miners) member1(at_miner:4) charge(0) tags(all inf_only engineers mines 39 40 41 42 43 44 45) group(squad_8) button(squad1) level(25) cost(150) fore(0))
+
+("squad_1" side(rus) name(sappers) member1(saper:2) charge(0) tags(all inf_only engineers 39 40 41 42 43 44 45) group(squad_9) button(squad1) level(1) cost(50) fore(0))
+
+;------------------------------tank and support crews || vet 2--------------------------------------------------
+
+("squad_1" side(rus) name(vehic_supporter_41) member1(vehicle_supporter_41:2) charge(0) tags(39 40 41 42) group(soldier_3) button(squad1) level(1) cost(40) fore(-1.0))
+
+("squad_2" side(rus) name(tankmans) member1(tankman2_41:1) member2(tankman_41:4) charge(0) tags(all inf_only tankmans 39 40 41 42 43 44 45) group(soldier_3) button(squad1) level(1) cost(70) fore(-1.0))
+
+("squad_2" side(rus) name(elite_tankmans) member1(vet_tankman2:1) member2(vet_tankman:4) charge(0) tags(all inf_only tankmans 39 40 41 42 43 44 45) group(soldier_3) button(squad1) level(1) cost(120) fore(-1.0))
+
+;같캳ingle Soldiers같�
+
+;------------------------------rifleman and smg || vet 2--------------------------------------------------------
+
+("squad_1" side(rus) name(riflemans2) member1(rifle_41:1) charge(0) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_1) button(squad2) level(1) cost(8) fore(1.0))
+
+("squad_1" side(rus) name(rifle_sa) member1(rifle_sa:1) charge(30) tags(all inf_only 40 41 42 43 44 45) group(soldier_sa) button(squad2) level(1) cost(10) fore(1.0))
+
+("squad_1" side(rus) name(smgs2) member1(smg_41:1) charge(0) tags(all inf_only 41 42 43 44 45) group(soldier_2) button(squad2) level(1) cost(10) fore(1.0))
+
+;------------------------------AT rifles and bazookas || vet 2--------------------------------------------------
+
+("squad_2" side(rus) name(at_rifles) member1(at_rifle:1) member2(at_rifle2:1) charge(0) tags(all inf_only 41 42 43 44 45) group(soldier_4) button(squad2) level(1) cost(120) fore(1.0))
+
+("squad_2" side(rus) name(bazookers) member1(bazooker:1) member2(bazooker2:1) charge(300) tags(all inf_only 42 43 44 45) group(soldier_5) button(squad2) level(1) cost(100) fore(1.0))
+
+;("squad_with2types" side(rus) name(stormtrooper5) c1(sturmovik5_42:1) c2(sturmovik5b_42:1) c(0) g(soldier_5) b(squad2) t(all inf_only 42 43 44 45) level(1) cost(130) f(1.0))
+
+;------------------------------MG infantry || vet 2-------------------------------------------------------------
+
+("squad_1" side(rus) name(mgs2_41) member1(mgun_41:1) charge(90) tags(39 40 41 42) group(soldier_6) button(squad2) level(1) cost(36) fore(1.0))
+
+;------------------------------elite3
+("squad_2" side(rus) name(elite3_40) member1(elite3_40:1) member2(elite_40:2) charge(200) tags(40 41) group(squad_4) button(squad2) level(1) cost(67) fore(1.0))
+("squad_2" side(rus) name(elite3) member1(elite3:1) member2(elite:2) charge(200) tags(all inf_only 42 43 44 45) group(squad_4) button(squad2) level(1) cost(67) fore(1.0))
+
+;("squad_with2types" side(rus) name(elite6) c(230) g(squad_4) c1(guard_mg:1) c2(guard_mg_asst:2) b(squad2) t(all inf_only 41 42 43 44 45) level(1) cost(78) f(1.0))
+
+;------------------------------------------------
+
+;("squad_with2types" side(rus) name(stormtrooper2_40) c(260) g(squad_4) c1(sturmovik2_40:1) c2(sturmovik6c_40:2) b(squad2) t(40 41 42) level(1) cost(93) f(1.0))
+
+;------------------------------------------------
+
+;("squad_with2types" side(rus) name(stormtrooper6_40) c(260) g(squad_4) c1(sturmovik6:1) c2(sturmovik6b_40:2) b(squad2) t(40 41 42) level(1) cost(89) f(1.0))
+
+;------------------------------flamer, sniper and officer || vet2/3/4----------------------------------------------
+
+("squad_2" side(rus) name(flamers) member1(flamer:1) member2(flamer2:1) charge(150) tags(all flamethrower inf_only 39 40 41 42 43 44 45) group(soldier_8) button(squad2) level(1) cost(75) fore(0))
+
+("squad_1" side(rus) name(snipers) member1(sniper:2) charge(150) tags(all sniper inf_only 39 40 41 42 43 44 45) group(soldier_9) button(squad2) level(1) cost(100) fore(0))
+("squad_1" side(rus) name(snipers3) member1(sniper3:2) charge(150) tags(all sniper inf_only 40 41 42 43 44 45) group(soldier_9) button(squad2) level(1) cost(140) fore(0))
+
+("squad_1" side(rus) name(officers) member1(oficer:1) charge(150) tags(all officer inf_only 39 40 41 42 43 44 45) group(soldier_10) button(squad2) level(1) cost(200) fore(0))
+
+("squad_1" side(rus) name(snipers_d) member1(sniper:1) charge(0) tags(sniper_duell) group(soldier_12) button(squad2) level(1) cost(100) fore(0))
+
+("squad_1" side(rus) name(radioman_mortar) member1(radioman_mortar:1) charge(300) tags(all mortar 39 40 41 42 43 44 45) group(radio_1) button(squad2) level(1) cost(250) fore(1.0))

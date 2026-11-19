@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-inf-pvt"}
+	{portrait "eng_soldier2"}
+	{nationality eng}
+	{icon "smg"}
+	{icon_priority 1}
+	{armors
+		{head "helmet2_eng"}
+	}
+	{perks
+		("soldier_smg_4" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_sten_mk2")
+		{item "bandage" 3}
+		("give" item(grenade mk1) count(2))
+		("give_chance" item(grenade n73at) chance(25))
+		("give" item(smoke grenade) count(1))
+		("give_chance" item(n77_smoke grenade) chance(25))
+		{in_hands 0}
+	}
+}

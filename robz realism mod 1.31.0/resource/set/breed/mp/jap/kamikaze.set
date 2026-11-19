@@ -1,20 +1,13 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "jap_army_kamikaze"}
-	{portrait "jap_elite2"}
-	{nationality jap}
-	{icon "kamikaze"}
-	{icon_priority 0}
-	{armors
-		{head "hachimaki_1"}
-		{body "kamikaze_bomb"}
-	}
+	("breed_look" skin(jap_army_kamikaze) portrait(jap_elite2) icon(kamikaze) priority(0) nation(jap))
+	("breed_armor_vest" vest(kamikaze_bomb) head(hachimaki_1))
 	{tags "stealth"}
 	{perks
 		("soldier_charge_5" speed(1.1))
 		{"stealth"}
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		("kit_smg" gun(type100smg) ammo(type100_mag) rounds(60))
 		{item "grenade type99at" 1}

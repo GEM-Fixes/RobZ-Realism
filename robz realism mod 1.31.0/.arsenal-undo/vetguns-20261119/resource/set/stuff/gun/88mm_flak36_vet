@@ -1,0 +1,18 @@
+{from "88mm_flak37"		; "flak37"
+	{rechargeTime 7.6}
+	{range 240 240}
+	("accuracy_maximum_240m_vet")
+	("damage_215" at20(161) at100(146) at170(132) at215(120) at250(109) max(240))
+	{parameters "apc"
+		("damage_215" at20(161) at100(146) at170(132) at215(120) at250(109) max(240))
+	}
+	{parameters "apcr"
+		("damage_215" at20(220) at100(200) at170(179) at215(160) at250(143) max(240))
+	}
+	{parameters "heat"
+		("damage_heat" damage(110) max(240))
+	}
+	{parameters "fg"
+		{range 240 240}
+	}
+}

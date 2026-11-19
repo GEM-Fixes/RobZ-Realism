@@ -1,8 +1,6 @@
 {from "45mm_20k"		; "ba11", "m37", "t26", "t70"
 	{rechargeTime 4.25}
-
 	{range 180 180}
-
 	("damage_170" at20(62) at100(45) at170(35) at215(29) at250(26) max(180))
 	{parameters "apcr"
 		("damage_170" at20(103) at100(64) at170(40) at215(21) at250(17) max(180))
@@ -10,6 +8,5 @@
 	{parameters "fg"
 		{range 160 160}
 	}
-	("accuracy_minimum")
 }
 

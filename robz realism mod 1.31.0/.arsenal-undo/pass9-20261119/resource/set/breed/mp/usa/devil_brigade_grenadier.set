@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-devil-pvt"}
+	{portrait "usa_elite4"}
+	{nationality usa}
+	{icon "devil_brigade2"}
+	{icon_priority 4}
+	{armors
+		{head "helmet4_usa"}
+	}
+	{perks
+		("soldier_rifle_6" rocket(1) body(line) sight(soldier))
+		{"stealth"}
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("rifle_garand")
+		("pistol_colt")
+		{item "bandage" 5}
+		{item "garand_grenade" filling "ammo m1garand_grenade fg" 1}
+		{item "m1garand_grenade fg" 5 1}
+		{item "m1garand_grenade ap" 1 1}
+		{item "m1garand_grenade wp" 0.2 1}
+		{in_hands 5}
+	}
+}

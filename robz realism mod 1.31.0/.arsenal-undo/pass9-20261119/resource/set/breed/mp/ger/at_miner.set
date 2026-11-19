@@ -1,0 +1,22 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-reg-pioneer"}
+	{portrait "ger_soldier2"}
+	{nationality ger}
+	{icon "at_miner"}
+	{icon_priority 3}
+	{armors
+		{head helmet_ger_m40_fge}
+	}
+	{perks
+		("soldier_smg_4" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_mp40")
+		("give" item(mine antitank) count(7))
+		{item "hedgehog_kit" 1}
+		("give" item(hohlladung grenade) count(1))
+		{in_hands 0}
+	}
+}

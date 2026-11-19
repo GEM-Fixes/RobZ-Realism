@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-officer"}
+	{portrait "ger2_officer"}
+	{nationality ger2}
+	{icon "officer"}
+	{icon_priority 6}
+	{armors
+		{head cap_ger_off}
+	}
+	{tags "officer"}
+	{perks
+		("soldier_smg_6" rocket(1) body(line) sight(officer))
+		("perks_officer")
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("kit_smg" gun(mp41) ammo(mp40_mag) rounds(64))
+		{item "knife_ger"}
+		{item "binocular"}
+		{in_hands 0}
+	}
+}

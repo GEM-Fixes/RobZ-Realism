@@ -47,6 +47,7 @@
 
 ;   Button support 2    artillery guns
 
+;{price {rule squad} {members 54.4} {cost 54}}
 ("unit_light_mortar" side(ger2) name(5_cm_granatwerfer_36_ger2) breed1(ost_light_mortar) breed2(ost_light_mortar_assist) charge(10) tags(all 44 45 mortar) group(c5) button(v22) level(1) cost(110) fore(-2.0))		;30sec
 ("unit_vehicle_supporters" side(ger2) name(sgrw_34_vet) breed(vehicle_supporter) crew(2) charge(10) tags(44 45 mortar) group(c6) button(v22) score(420) weight(2) points(5) level(1) cost(420) fore(-2.0))		;30sec
 ("unit_vehicle_supporters" side(ger2) name(sgrw_42_vet) breed(vehicle_supporter) crew(2) charge(60) tags(44 45 mortar) group(c7) button(v22) score(770) weight(2) points(10) level(1) cost(770) fore(-9.0))	;600sec
@@ -119,9 +120,11 @@
 
 ;   Button Hero
 
+;{price {rule squad} {members 126.3} {cost 126}}
 ("unit_infantry_sided_members2" side(ger2) name(hero2_ost) member1(ost_panzershreck:2) member2(ost_panzershreckassist:2) charge(120) tags(all 44 45 hero) group(h2) button(hero) level(1) cost(1.0) fore(-0.5))
 ("unit_vehicles1_members1_sided" side(ger2) name(hero_ost_raketenwerfer) vehicle1(raketenwerfer) member(vehicle_supporter:2) charge(270) tags(all 44 45 hero) group(h4) button(hero) level(1) cost(2.0) fore(-0.5))
 
+;{price {rule squad} {members 265.2} {cost 265}}
 ("unit_infantry_sided_members3" side(ger2) name(hero4_ost) member1(ost_straf_ppsh:6) member2(ost_straf_mauzer:18) member3(ost_straf_mp28:6) charge(240) tags(all 44 45 hero) group(h3) button(hero) level(1) cost(2.0) fore(-0.5))
 
 {"hero1_ost(ger2)"		("i2" c(600)					t(all 44 45 hero officer super_officer) s(ger2) n1(ost_officer2:4) g(h3) b(hero)) {level 1} {cost 12.0} {fore 0.0}}

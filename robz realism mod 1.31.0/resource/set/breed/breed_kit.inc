@@ -629,7 +629,7 @@
 ; ==== items by count or by chance (grenades, mines, explosives) ====
 ;   ("give" item(grenade m24) count(2))                 always 2
 ;   ("give_chance" item(grenade m24x5) chance(25))      one, with that chance in percent; otherwise none
-;   ("give_1_or_2" item(smoke grenade))                 one, and a 50% chance of a second
+;   ("give_1_or_2" item(grenade smoke))                 one, and a 50% chance of a second
 ;   item = the item's tag words as the game looks them up, e.g. grenade f1, smoke grenade, hohlladung grenade.
 ;   chance is one of: 12 (12.5%), 25, 37 (37.5%), 50. The game has no chance field; it draws the amount as
 ;   whole number of (centre + a random part within +/- spread + 0.5), so each chance is a fixed centre and spread:
@@ -639,6 +639,17 @@
 ;     37      0.25 1         1 in 37.5%
 ;     50      0.5 0.5        1 in 50%
 ;     1 or 2  1.5 0.5        1 in 50%, 2 in 50%
+
+; kit_loaded: a weapon with a part-filled or special magazine in it, plus spare magazines of the same kind
+;   gun - weapon item
+;   ammo - full item name of what is loaded and carried (e.g. ammo g43_mag)
+;   loaded - rounds in the weapon
+;   spare - rounds carried
+;   e.g. ("kit_loaded" gun(g43) ammo(ammo g43_mag) loaded(10) spare(20))
+(define "kit_loaded"
+	{item "%gun" filling "%ammo" %loaded}
+	{item "%ammo" %spare}
+)
 
 ; give: a fixed number of one item
 ;   item - tag words of the item
@@ -686,7 +697,7 @@
 
 ; give_1_or_2: one of an item, and a 50% chance of a second
 ;   item - tag words of the item
-;   e.g. ("give_1_or_2" item(smoke grenade))
+;   e.g. ("give_1_or_2" item(grenade smoke))
 (define "give_1_or_2"
 	{item "%item" 1.5 0.5}
 )

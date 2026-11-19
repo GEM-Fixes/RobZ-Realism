@@ -1,22 +1,16 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "jap_army_officer"}
-	{portrait "jap_officer"}
-	{nationality jap}
-	{icon "officer"}
-	{icon_priority 6}
-	{armors
-		{head "japarmy_officer_cap1"}
-	}
+	("breed_look" skin(jap_army_officer) portrait(jap_officer) icon(officer) priority(6) nation(jap))
+	("breed_armor" head(japarmy_officer_cap1))
 	{tags "officer"}
 	{perks
 		("soldier_pistol_3" rocket(1) body(hardy) sight(officer))
 		("perks_officer")
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		("kit_pistol" gun(nambu) ammo(nambu_mag) rounds(32))
-		("give" item(smoke_paradrop_ammo_heavy grenade) count(5))
+		("give" item(grenade smoke_paradrop_ammo_heavy) count(5))
 		{item "knife_japan"}
 		{item "binocular"}
 		{in_hands 0}

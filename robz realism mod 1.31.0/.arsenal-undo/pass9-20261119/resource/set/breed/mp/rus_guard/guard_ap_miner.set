@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-smg"}
+	{portrait rus_soldier2}
+	{icon ap_miner}
+	{icon_priority 3}
+	{nationality rus}
+	{armors
+		{body "sovet-mesh"}
+		{head helmet1_rus}
+	}
+	{perks
+		("soldier_smg_2" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_ppsh41")
+		("give" item(mine antipersonnel) count(25))
+		{item "barbwire_kit"}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

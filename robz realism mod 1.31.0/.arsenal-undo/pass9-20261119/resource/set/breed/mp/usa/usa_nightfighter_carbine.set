@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-marine-pvt"}
+	{portrait "usa_elite2"}
+	{nationality usa}
+	{icon "elite5"}
+	{icon_priority 3}
+	{armors
+		{head helmet_marine_usa}
+	}
+	{perks
+		("soldier_rifle_6" rocket(1) body(line) sight(soldier))
+		("perks_sniper")
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("kit_rifle" gun(m3_carbine) ammo(m2carbine_mag) rounds(240))
+		{item "bandage" 5}
+		("give" item(grenade m61) count(1))
+		("give" item(smoke grenade) count(2))
+		{in_hands 0}
+	}
+}

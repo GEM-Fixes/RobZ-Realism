@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-101st-rfl"}
+	{portrait "usa_elite1"}
+	{nationality usa}
+	{icon "elite_para"}
+	{icon_priority 4}
+	{armors
+		{head helmet_usa_para}
+	}
+	{perks
+		("soldier_rifle_7" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("rifle_garand")
+		{item "bandage" 5}
+		("give" item(grenade m61) count(2))
+		("give" item(smoke grenade) count(2))
+		("give_chance" item(m15_smoke grenade) chance(50))
+		("give" item(grenade satchel) count(1))
+		{item "knife_union"}
+		{in_hands 0}
+	}
+}

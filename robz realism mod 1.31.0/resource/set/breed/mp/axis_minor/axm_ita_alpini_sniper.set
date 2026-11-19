@@ -1,19 +1,13 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "ita-alp-rfl"}
-	{portrait "ita_soldier5"}
-	{icon "sniper"}
-	{icon_priority 5}
-	{nationality ita}
-	{armors
-		{head helmet_ita_m33_alpini}
-	}
+	("breed_look" skin(ita-alp-rfl) portrait(ita_soldier5) icon(sniper) priority(5) nation(ita))
+	("breed_armor" head(helmet_ita_m33_alpini))
 	{tags "sniper"}
 	{perks
 		("soldier_rifle_4" rocket(1) body(line) sight(sniper))
 		("perks_sniper")
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		("kit_rifle" gun(carcano_m91_scoped) ammo(6x52) rounds(160))
 		("kit_pistol" gun(beretta_m1934) ammo(9x17) rounds(35))

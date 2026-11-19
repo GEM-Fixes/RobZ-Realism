@@ -1,0 +1,23 @@
+{from "152mm_ml20a"		; "isu-152"
+
+	{rechargeTime 19.55}
+
+	{range 220 220}
+	("damage_215" at20(140) at100(125) at170(117) at215(100) at250(93) max(220))
+	{parameters "aphebc"
+		("damage_215" at20(140) at100(125) at170(117) at215(100) at250(93) max(220))
+		{cursorReloading "cannon_reload_aphebc"}
+	}
+	{parameters "heat"
+		("damage_heat" damage(190) max(220))
+	}
+	("accuracy_grazinghowitzer_220m_anti_far")
+	(mod "mp"
+		{tag "prepare"}
+		{Special
+			{Mode aim}
+			{PrepareTime 0.1}
+			{PrepareCursor "cannon_shot"}
+		}
+	)
+}

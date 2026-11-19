@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(ger-reg-pioneer) portrait(ger_soldier2) icon(smg) priority(1) nation(ger))
+	("breed_armor" head(helmet_ger_m40_fge))
+	{perks
+		("soldier_rifle_4" rocket(4) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		("rifle_mauzer")
+		{item "bandage" 3}
+		{item "mine s_mine" 14}
+		{item "sandbag_kit" 2}
+		("give" item(grenade m24) count(2))
+		{item "panzerfaust_60 weapon" filled}
+		("give" item(dynamite_ladung) count(2))
+		("give" item(smoke grenade) count(1))
+		;{item "hohlladung grenade"}
+		;{item "ammo panzershreck" 3}
+		;{item "sandbag_kit" 3}
+		;{item "dynamite_ladung" 1}
+		{in_hands 0}
+	}
+}

@@ -1,18 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "us_mgun"}
-	{portrait usa_soldier2}
-	{icon at_miner}
-	{icon_priority 3}
-	{nationality usa}
-	{armors
-		{body ammo_us2}
-		{head helmet4_usa}
-	}
+	("breed_look" skin(us_mgun) portrait(usa_soldier2) icon(at_miner) priority(3) nation(usa))
+	("breed_armor_vest" vest(ammo_us2) head(helmet4_usa))
 	{perks
 		("soldier_smg_3" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		("smg_m3a")
 		("give" item(mine antitank) count(8))

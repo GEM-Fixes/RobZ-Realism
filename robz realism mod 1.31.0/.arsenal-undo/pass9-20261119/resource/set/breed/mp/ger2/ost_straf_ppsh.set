@@ -1,0 +1,21 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-straf-rfl"}
+	{portrait "ger2_elite2"}
+	{nationality ger2}
+	{icon "elite4"}
+	{icon_priority 3}
+	{armors
+		{head "fieldcap_ger"}
+	}
+	{perks
+		("soldier_smg_1" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_ppsh")
+		{item "bandage" 3}
+		("give" item(dynamite_ladung) count(1))
+		{in_hands 0}
+	}
+}

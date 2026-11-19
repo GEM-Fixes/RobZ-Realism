@@ -1,0 +1,17 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(ger-smock2-smg-nco) portrait(ger2_soldier3) icon(squadleader) priority(2) nation(ger))
+	("breed_armor" head(fieldcap_ger_heer))
+	{perks
+		("soldier_smg_5" rocket(4) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(2))
+	{inventory
+		("smg_mp40")
+		{item "bandage" 5}
+		("give" item(grenade m24) count(2))
+		("give" item(grenade m24x5) count(1))
+		("give" item(smoke grenade) count(2))
+		{in_hands 0}
+	}
+}

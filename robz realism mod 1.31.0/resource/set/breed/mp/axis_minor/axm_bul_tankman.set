@@ -1,17 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "bul-tankman"}
-	{portrait "bul_tankman"}
-	{icon "tankman"}
-	{icon_priority 0}
-	{nationality bul}
-	{armors
-		{head helmet_ita_tank}
-	}
+	("breed_look" skin(bul-tankman) portrait(bul_tankman) icon(tankman) priority(0) nation(bul))
+	("breed_armor" head(helmet_ita_tank))
 	{perks
 		("crew_1" body(normal_line) sight(soldier))
 	}
-	("breed_vet" table(crew))
+	("breed_vet" table(crew) start(1))
 	{inventory
 		("pistol_valter_32")
 		{in_hands 0}

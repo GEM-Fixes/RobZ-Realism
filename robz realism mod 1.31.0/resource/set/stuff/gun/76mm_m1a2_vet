@@ -1,4 +1,4 @@
-{from "76mm_m5"		; "m4 vet"
+{from "76mm_m1a2"		; "m4 vet"
 	{rechargeTime 7.22}
 	("accuracy_high_210m_10m_he")
 	{range 210 210}

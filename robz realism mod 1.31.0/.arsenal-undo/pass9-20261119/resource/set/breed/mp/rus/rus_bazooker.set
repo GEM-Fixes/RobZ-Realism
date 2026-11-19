@@ -1,0 +1,22 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-smg"}
+	{portrait rus_soldier2}
+	{icon bazooker}
+	{icon_priority 3}
+	{nationality rus}
+	{armors
+		{head fieldcap_rus}
+	}
+	{perks
+		("soldier_rifle_3" rocket(3) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "weapon bazooka" filled}
+		{item "bandage" 3}
+		("give" item(grenade rpg40) count(1))
+		{item "ammo bazooka" 9}
+		{in_hands 0}
+	}
+}

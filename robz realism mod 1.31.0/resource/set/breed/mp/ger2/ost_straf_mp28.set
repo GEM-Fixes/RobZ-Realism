@@ -1,21 +1,15 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "ger-straf-rfl"}
-	{portrait "ger2_elite2"}
-	{nationality ger2}
-	{icon "elite6"}
-	{icon_priority 3}
-	{armors
-		{head "fieldcap_ger"}
-	}
+	("breed_look" skin(ger-straf-rfl) portrait(ger2_elite2) icon(elite6) priority(3) nation(ger2))
+	("breed_armor" head(fieldcap_ger))
 	{perks
 		("soldier_smg_1" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		("kit_smg" gun(mp28) ammo(mp28_mag) rounds(180))
 		{item "bandage" 3}
-		("give" item(hohlladung grenade) count(1))
+		("give" item(grenade hohlladung) count(1))
 		{in_hands 0}
 	}
 }

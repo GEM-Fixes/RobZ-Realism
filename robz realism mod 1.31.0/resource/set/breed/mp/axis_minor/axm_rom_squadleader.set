@@ -1,21 +1,15 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "rom-smg"}
-	{portrait "rom_sailor1"}
-	{icon "squadleader"}
-	{icon_priority 2}
-	{nationality rom}
-	{armors
-		{head "8_kaska_soldat_ruminia"}
-	}
+	("breed_look" skin(rom-smg) portrait(rom_sailor1) icon(squadleader) priority(2) nation(rom))
+	("breed_armor" head(8_kaska_soldat_ruminia))
 	{perks
 		("soldier_smg_4" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		("smg_orita")
-		("give" item(m24 grenade) count(1))
-		("give" item(m24x5 grenade) count(1))
+		("give" item(grenade m24) count(1))
+		("give" item(grenade m24x5) count(1))
 		{in_hands 0}
 	}
 }

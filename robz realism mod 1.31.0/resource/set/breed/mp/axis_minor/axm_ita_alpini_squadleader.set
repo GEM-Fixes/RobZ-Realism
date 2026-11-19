@@ -1,17 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "ita-officer"}
-	{portrait "ita_officer"}
-	{icon "squadleader"}
-	{icon_priority 2}
-	{nationality ita}
-	{armors
-		{head helmet_ita_m33_alpini}
-	}
+	("breed_look" skin(ita-officer) portrait(ita_officer) icon(squadleader) priority(2) nation(ita))
+	("breed_armor" head(helmet_ita_m33_alpini))
 	{perks
 		("soldier_smg_5" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		("kit_smg" gun(mab_38a) ammo(mab_38a_mag) rounds(160))
 		{item "bandage" 4}

@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-engineer"}
+	{portrait "eng_soldier2"}
+	{nationality eng}
+	{icon "rifleman"}
+	{icon_priority 1}
+	{armors
+		{head "helmet2_eng"}
+	}
+	{perks
+		("soldier_rifle_4" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_em3")
+		{item "bandage" 3}
+		("give" item(grenade mk1) count(2))
+		("give" item(mine antipersonnel) count(7))
+		{item "mine_detector" 1}
+		{item "hedgehog_kit" 1}
+		{item "sandbag_kit" 4}
+		{in_hands 0}
+	}
+}

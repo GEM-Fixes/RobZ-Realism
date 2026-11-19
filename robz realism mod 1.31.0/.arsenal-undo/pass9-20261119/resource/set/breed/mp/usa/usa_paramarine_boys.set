@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-paramarine-pvt"}
+	{portrait "usa_elite2"}
+	{nationality usa}
+	{icon "elite5"}
+	{icon_priority 4}
+	{armors
+		{body ammo_us2}
+		{head helmet_marine_usa}
+	}
+	{perks
+		("soldier_rifle_6" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("rifle_m1a1_carbine")
+		{item "bandage" 5}
+		("give" item(grenade m61) count(2))
+		;{item "grenade n73at" 1}
+		("give" item(smoke grenade) count(1))
+		{item "ammo ptr" 15}
+		{item "boyes" filled}
+		{in_hands 0}
+	}
+}

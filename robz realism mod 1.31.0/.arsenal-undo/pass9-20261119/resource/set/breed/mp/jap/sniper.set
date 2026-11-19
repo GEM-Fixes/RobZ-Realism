@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "jap_army_gilly"}
+	{portrait "jap_soldier4"}
+	{nationality jap}
+	{icon "sniper"}
+	{icon_priority 5}
+	{armors
+		{head "jap_army_helmet2_net"}
+	}
+	{perks
+		("soldier_rifle_5" rocket(1) body(hardy) sight(sniper))
+		("perks_sniper")
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("kit_rifle" gun(type99sniper) ammo(arisaka7-7_clip) rounds(60))
+		{item "bandage" 5}
+		;{item "smoke_paradrop_ammo grenade" 1}
+		{item "plant" 3}
+		{item "knife_japan"}
+		{in_hands 0}
+	}
+}

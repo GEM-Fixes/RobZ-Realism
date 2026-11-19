@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-devil-sgt"}
+	{portrait "usa_elite4"}
+	{nationality usa}
+	{icon "devil_brigade2"}
+	{icon_priority 4}
+	{armors
+		{head "helmet4_usa"}
+	}
+	{perks
+		("soldier_smg_7" rocket(1) body(line) sight(soldier))
+		{"stealth"}
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("smg_thompson")
+		("pistol_colt")
+		{item "bandage" 5}
+		("give" item(grenade m61) count(2))
+		("give_1_or_2" item(smoke grenade))
+		("give_chance" item(m15_smoke grenade) chance(50))
+		{in_hands 0}
+	}
+}

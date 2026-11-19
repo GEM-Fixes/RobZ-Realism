@@ -1,0 +1,18 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(eng-scout-sgt) portrait(eng_soldier5) icon(stormtrooper) priority(4) nation(eng))
+	("breed_armor" head(beret_eng_sas))
+	{perks
+		("soldier_smg_7" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(elite) start(1))
+	{inventory
+		("smg_sten_v")
+		{item "bandage" 5}
+		("give" item(grenade mk1) count(2))
+		("give" item(grenade n73at) count(1))
+		("give" item(smoke grenade) count(2))
+		("give" item(n77_smoke grenade) count(1))
+		{in_hands 0}
+	}
+}

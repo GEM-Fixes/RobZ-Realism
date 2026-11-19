@@ -1,0 +1,96 @@
+; ported from Robz realism mod 1.28.6 (year presets)
+;같캳quads같�
+;------------------------------home guards | vet 1--------------------------------------------------------------
+
+("squad_2" side(jap) name(home_guards_42) member1(charger_rifle:8) member2(charger_smg:7) charge(15) tags(42 43) group(squad_1) button(squad1) level(1) cost(125) fore(1.0))
+
+;------------------------------assault infantry || vet 2/3/4--------------------------------------------------------
+
+("squad_4" side(jap) name(smgs_42) member1(squadleader2:1) member2(rifle2:1) member3(rifle2b:3) member4(smg2:10) charge(60) tags(42 43) group(squad_2) button(squad1) level(1) cost(140) fore(1.0))
+
+;------------------------------regular squad || vet 2/3/4-----------------------------------------------------------
+
+("squad_5" side(jap) name(riflemans_t96_42) member1(squadleader:1) member2(rifle:4) member3(rifleb:7) member4(smg:2) member5(mgun2:1) charge(0) tags(42 43) group(squad_3) button(squad1) level(1) cost(160) fore(1.0))
+
+("squad_5" side(jap) name(riflemans_42) member1(squadleader:1) member2(rifle:4) member3(rifleb:7) member4(smg:2) member5(mgun:1) charge(0) tags(42 43) group(squad_3) button(squad1) level(1) cost(160) fore(1.0))
+
+;------------------------------imperial guards ||| --------------------------------------------------------------
+
+("squad_5" side(jap) name(elites_ig_42) member1(elite_ig1:4) member2(elite_ig1b:6) member3(elite_ig2:2) member4(elite_ig3:2) member5(elite_ig4:1) charge(60) tags(42 43) group(squad_55) button(squad1) level(1) cost(250) fore(1.0))
+
+;------------------------------elite squads ||| vet 3/4-----------------------------------------------------------
+
+("squad_4" side(jap) name(elites_42_takasago) member1(elite_takasago_rifle:4) member2(elite_takasago_rifle2:4) member3(elite_takasago_smg:5) member4(elite_takasago_lmg:2) charge(360) tags(42 43) group(squad_5) button(squad1) level(1) cost(275) fore(1.0))
+
+("squad_4" side(jap) name(elites_42) member1(elite:6) member2(elite2:3) member3(elite3:2) member4(elite4:4) charge(360) tags(42 43) group(squad_5) button(squad1) level(1) cost(300) fore(1.0))
+("squad_6_vehicle" side(jap) name(elites_42_drop) vehicle1(airborne_spawner) member1(elite:6) member2(elite2:3) member3(elite3:2) member4(elite4:4) member5(a:0) member6(a:0) charge(900) tags(42 43 only-one) group(squad_5) button(squad1) level(1) cost(400) fore(1.0))
+
+;------------------------------stormtroopers |||| vet 6---------------------------------------------------------
+
+("squad_5" side(jap) name(stormtroopers_42) member1(sturmovik:4) member2(sturmovik2:2) member3(sturmovik3:1) member4(sturmovik4:5) member5(sturmovik6b:3) charge(360) tags(42 43) group(squad_5) button(squad1) level(1) cost(325) fore(1.0))
+
+;------------------------------stormtrooper halftrack |||| vet 3/4----------------------------------------------
+
+;{"storm_mech(jap)"      ("vb3" c(380) c1(ho-ha3mgun) 	t(all inf_only 39 40 41 42 43 44 45) s(jap) n1(6) n2(2) n3(2) 		g(squad_5) b(squad1)) {level 1} {cost 375} {fore 1.0}}
+
+;------------------------------AP and AT miners, sappers || vet 2-----------------------------------------------
+
+("squad_1" side(jap) name(ap_miners) member1(ap_miner:4) charge(0) tags(all inf_only engineers mines 39 40 41 42 43 44 45) group(squad_7) button(squad1) level(20) cost(100) fore(0))
+
+("squad_1" side(jap) name(at_miners) member1(at_miner:4) charge(0) tags(all inf_only engineers mines 39 40 41 42 43 44 45) group(squad_8) button(squad1) level(25) cost(150) fore(0))
+
+("squad_1" side(jap) name(sappers) member1(saper:2) charge(0) tags(all inf_only engineers 39 40 41 42 43 44 45) group(squad_9) button(squad1) level(1) cost(50) fore(0))
+
+;------------------------------tank and support crews || vet 2--------------------------------------------------
+
+("squad_1" side(jap) name(vehic_supporter) member1(vehicle_supporter:2) charge(0) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_3) button(squad1) level(1) cost(40) fore(-1.0))
+
+("squad_2" side(jap) name(tankmans) member1(tankman2:1) member2(tankman:4) charge(0) tags(all inf_only tankmans 39 40 41 42 43 44 45) group(soldier_3) button(squad1) level(1) cost(70) fore(-1.0))
+
+;같캳ingle Soldiers같�
+
+;------------------------------rifleman and smg || vet 2--------------------------------------------------------
+
+("squad_1" side(jap) name(riflemans2b) member1(rifleb:1) charge(0) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_1) button(squad2) level(1) cost(9) fore(1.0))
+("squad_1" side(jap) name(riflemans2) member1(rifle:1) charge(0) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_1) button(squad2) level(1) cost(9) fore(1.0))
+
+("squad_1" side(jap) name(smgs2) member1(smg:1) charge(0) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_2) button(squad2) level(1) cost(9) fore(1.0))
+("squad_1" side(jap) name(smg3) member1(smg3:1) charge(30) tags(all inf_only 42 43 44 45) group(soldier_99) button(squad2) level(1) cost(12) fore(1.0))
+
+;------------------------------Kamikaze & type 89 mortar-------------------------------------------------------------------------
+
+("squad_1" side(jap) name(type89mortarinf) member1(light_mortar:1) charge(180) tags(all inf_only 42 43 44 45) group(soldier_89) button(squad2) level(1) cost(90) fore(1.0))
+("squad_1" side(jap) name(kamikaze) member1(kamikaze:2) charge(0) tags(all inf_only 42 43 44 45) group(soldier_5) button(squad2) level(1) cost(50) fore(1.0))
+
+;------------------------------AT rifles and bazookas || vet 2--------------------------------------------------
+
+("squad_2" side(jap) name(at_rifles) member1(at_rifle:1) member2(at_rifle2:1) charge(0) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_4) button(squad2) level(1) cost(100) fore(1.0))
+
+;------------------------------MG infantry || vet 2-------------------------------------------------------------
+
+("squad_1" side(jap) name(mg3) member1(mgun3:1) charge(30) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_6) button(squad2) level(1) cost(32) fore(1.0))
+("squad_1" side(jap) name(mg2) member1(mgun2:1) charge(60) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_6) button(squad2) level(1) cost(36) fore(1.0))
+("squad_1" side(jap) name(mgs2) member1(mgun:1) charge(90) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_6) button(squad2) level(1) cost(36) fore(1.0))
+
+;------------------------------elite3
+
+("squad_2" side(jap) name(elite_ig2) member1(elite_ig2:1) member2(elite_ig1:3) charge(230) tags(all inf_only 39 40 41 42 43 44 45) group(squad_4) button(squad2) level(1) cost(96) fore(0.9))
+
+("squad_2" side(jap) name(elite3) member1(elite_takasago_lmg:1) member2(elite_takasago_rifle2:3) charge(260) tags(all inf_only 39 40 41 42 43 44 45) group(squad_4) button(squad2) level(1) cost(103) fore(0.9))
+
+;------------------------------------------------
+
+("squad_2" side(jap) name(stormtrooper6) member1(sturmovik6:1) member2(sturmovik6b:3) charge(300) tags(all inf_only 40 41 42 43 44 45) group(squad_4) button(squad2) level(1) cost(123) fore(0.9))
+
+;------------------------------flamer, sniper and officer || vet2/3/4----------------------------------------------
+
+("squad_2" side(jap) name(flamers) member1(flamer:1) member2(flamer2:1) charge(150) tags(all flamethrower inf_only 39 40 41 42 43 44 45) group(soldier_8) button(squad2) level(1) cost(75) fore(0))
+
+("squad_1" side(jap) name(snipers2) member1(sniper2:1) charge(90) tags(all sniper inf_only 39 40 41 42 43 44 45) group(soldier_9) button(squad2) level(1) cost(40) fore(0))
+("squad_1" side(jap) name(snipers) member1(sniper:1) charge(90) tags(all sniper inf_only 39 40 41 42 43 44 45) group(soldier_9) button(squad2) level(1) cost(60) fore(0))
+
+("squad_1" side(jap) name(officers) member1(oficer:1) charge(150) tags(all officer inf_only 39 40 41 42 43 44 45) group(soldier_10) button(squad2) level(1) cost(200) fore(0))
+
+
+("squad_1" side(jap) name(snipers_d) member1(sniper:1) charge(0) tags(sniper_duell) group(soldier_12) button(squad2) level(1) cost(100) fore(0))
+

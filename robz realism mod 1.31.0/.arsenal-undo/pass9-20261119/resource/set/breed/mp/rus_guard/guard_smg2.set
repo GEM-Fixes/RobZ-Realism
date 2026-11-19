@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-smguner"}
+	{portrait "rus_elite2"}
+	{nationality rus}
+	{icon "elite4"}
+	{icon_priority 3}
+	{armors
+		{body ammo_rus}
+		{head helmet1_rus}
+	}
+	{perks
+		("soldier_smg_3" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard_start3))
+	{inventory
+		("smg_pps43")
+		{item "bandage" 5}
+		("give" item(grenade f1) count(2))
+		("give_chance" item(grenade molotov_coctail) chance(25))
+		("give_chance" item(grenade rpg43) chance(25))
+		("give_chance" item(grenade rpg40) chance(25))
+		("give" item(smoke grenade) count(1))
+		{in_hands 0}
+	}
+}

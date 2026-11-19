@@ -1,12 +1,7 @@
 {from "50mm_pak38"		; "pak38"
 	{rechargeTime 4}
-
 	{range 200 200}
 	("damage_170" at20(97) at100(79) at170(62) at215(49) at250(38) max(200))
-	{parameters "apc"
-		("damage_170" at20(97) at100(79) at170(62) at215(49) at250(38) max(200))
-		{cursorReloading "cannon_reload_apc"}
-	}
 	{parameters "apcr"
 		("damage_170" at20(150) at100(108) at170(72) at215(48) at250(32) max(200))
 	}

@@ -1,17 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "jap_army_mc"}
-	{portrait "jap_soldier2"}
-	{nationality jap}
-	{icon "smg"}
-	{icon_priority 1}
-	{armors
-		{head "jap_army_helmet3"}
-	}
+	("breed_look" skin(jap_army_mc) portrait(jap_soldier2) icon(smg) priority(1) nation(jap))
+	("breed_armor" head(jap_army_helmet3))
 	{perks
 		("support_1" body(normal_hardy) sight(soldier))
 	}
-	("breed_vet" table(crew))
+	("breed_vet" table(crew) start(1))
 	{inventory
 		("rifle_type44_carbine")
 		{item "bandage" 3}

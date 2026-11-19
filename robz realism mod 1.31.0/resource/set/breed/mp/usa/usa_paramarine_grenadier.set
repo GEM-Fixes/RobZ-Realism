@@ -1,18 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "usa-paramarine-pvt"}
-	{portrait "usa_elite2"}
-	{nationality usa}
-	{icon "elite5"}
-	{icon_priority 4}
-	{armors
-		{body ammo_us2}
-		{head helmet_marine_usa}
-	}
+	("breed_look" skin(usa-paramarine-pvt) portrait(usa_elite2) icon(elite5) priority(4) nation(usa))
+	("breed_armor_vest" vest(ammo_us2) head(helmet_marine_usa))
 	{perks
 		("soldier_rifle_6" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(elite))
+	("breed_vet" table(elite) start(1))
 	{inventory
 		("rifle_garand")
 		{item "bandage" 5}

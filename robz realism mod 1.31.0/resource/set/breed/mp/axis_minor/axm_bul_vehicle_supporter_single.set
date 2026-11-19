@@ -1,17 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "bul-inf-smg"}
-	{portrait "bul_soldier2"}
-	{nationality bul}
-	{icon "smg"}
-	{icon_priority 0}
-	{armors
-		{head helmet1_bul}
-	}
+	("breed_look" skin(bul-inf-smg) portrait(bul_soldier2) icon(smg) priority(0) nation(bul))
+	("breed_armor" head(helmet1_bul))
 	{perks
 		("support_1" body(normal_line) sight(soldier))
 	}
-	("breed_vet" table(crew))
+	("breed_vet" table(crew) start(1))
 
 	{inventory
 		("rifle_mauzer")

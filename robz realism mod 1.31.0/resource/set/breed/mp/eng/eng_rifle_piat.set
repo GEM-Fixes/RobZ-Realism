@@ -1,17 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "eng-inf-pvt"}
-	{portrait "eng_soldier2"}
-	{nationality eng}
-	{icon "bazooker"}
-	{icon_priority 3}
-	{armors
-		{head helmet2_eng}
-	}
+	("breed_look" skin(eng-inf-pvt) portrait(eng_soldier2) icon(bazooker) priority(3) nation(eng))
+	("breed_armor" head(helmet2_eng))
 	{perks
 		("soldier_rifle_4" rocket(4) body(line) sight(soldier))
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		("rifle_em3")
 		{item "ammo bren_mag" 56}

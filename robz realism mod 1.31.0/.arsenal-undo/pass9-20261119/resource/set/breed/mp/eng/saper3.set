@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-engineer"}
+	{portrait "eng_elite3"}
+	{nationality eng}
+	{icon "sapper3"}
+	{icon_priority 3}
+	{armors
+		{head "helmet2_eng"}
+	}
+	{perks
+		("soldier_smg_3" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_sten_mk2")
+		("give" item(mine antipersonnel) count(15))
+		{item "barbwire_kit" 1}
+		("give" item(dynamite) count(1))
+		{item "repair_kit" 1}
+		{item "trench_spade"}
+		{in_hands 0}
+	}
+}

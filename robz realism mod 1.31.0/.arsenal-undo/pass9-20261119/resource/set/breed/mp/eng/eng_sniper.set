@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-scout-cpl"}
+	{portrait eng_soldier4}
+	{icon sniper}
+	{icon_priority 5}
+	{nationality eng}
+	{armors
+		{head helmet_eng_mk3c}
+	}
+	{perks
+		("soldier_rifle_6" rocket(1) body(line) sight(sniper))
+		("perks_sniper")
+	}
+	("breed_vet" table(elite))
+	{inventory
+		{item "ammo british303_clip" 100}
+		{item "bandage" 5}
+		{item "plant" 3}
+		{item "em2_vet" filling "british303_clip ammo" 10}
+		{in_hands 3}
+	}
+}

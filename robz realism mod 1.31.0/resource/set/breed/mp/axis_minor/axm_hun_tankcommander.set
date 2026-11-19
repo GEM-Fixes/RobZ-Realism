@@ -1,18 +1,12 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "hun_tankman2"}
-	{portrait "hun_tankman"}
-	{nationality hun}
-	{icon "tankman"}
-	{icon_priority 0}
-	{armors
-		{head "fieldcap3_hun"}
-	}
+	("breed_look" skin(hun_tankman2) portrait(hun_tankman) icon(tankman) priority(0) nation(hun))
+	("breed_armor" head(fieldcap3_hun))
 	{tags "tankman2"}
 	{perks
 		("crew_2" body(normal_line) sight(soldier))
 	}
-	("breed_vet" table(crew))
+	("breed_vet" table(crew) start(1))
 
 	{inventory
 		("kit_smg" gun(danuvia_39m) ammo(9x25) rounds(80))

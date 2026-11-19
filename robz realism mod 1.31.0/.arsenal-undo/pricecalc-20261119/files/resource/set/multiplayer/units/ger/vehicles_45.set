@@ -1,0 +1,146 @@
+; ported from Robz realism mod 1.28.6 (year presets)
+;----- Germany -----
+
+
+
+
+;같캧nfantry only같�
+
+("unit_vehicle_supporters" side(ger) name(blitz3_6inf) breed(vehicle_supporter) crew(2) charge(60) tags(inf_only) group(a1) button(v1) score(50) weight(0) points(0) level(1) cost(50) fore(1.0))	;0sec
+
+
+
+
+;같캛utton 1같�
+
+("unit_vehicle_supporters" side(ger) name(r12_34) breed(vehicle_supporter) crew(2) charge(0) tags(45) group(b1) button(v1) score(100) weight(0) points(0) level(1) cost(100) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(ger) name(r12) breed(vehicle_supporter) crew(2) charge(0) tags(45) group(b1) button(v1) score(125) weight(0) points(0) level(1) cost(125) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(ger) name(kubel_mgun_34) breed(vehicle_supporter) crew(3) charge(30) tags(45) group(b2) button(v1) score(140) weight(0) points(0) level(1) cost(140) fore(0.0))		;30sec
+("unit_vehicle_supporters" side(ger) name(kubel_mgun) breed(vehicle_supporter) crew(3) charge(30) tags(45) group(b2) button(v1) score(160) weight(0) points(0) level(1) cost(160) fore(0.0))		;30sec
+("unit_vehicle_supporters" side(ger) name(schwimmwagen) breed(vehicle_supporter) crew(3) charge(30) tags(45) group(b3) button(v1) score(160) weight(0) points(0) level(1) cost(160) fore(0.0))		;30sec
+("unit_vehicle_supporters" side(ger) name(np_sdkfz250_1) breed(vehicle_supporter) crew(4) charge(10) tags(45) group(b4) button(v1) score(125) weight(0) points(0) level(1) cost(125) fore(-17.0))	;180sec
+("unit_vehicle_supporters" side(ger) name(np_sdkfz251_1_late) breed(vehicle_supporter) crew(2) charge(10) tags(45) group(b5) button(v1) score(130) weight(0) points(0) level(1) cost(130) fore(-17.0))	;180sec
+("unit_vehicle_supporters" side(ger) name(sdkfz251_1_late) breed(vehicle_supporter) crew(2) charge(10) tags(45) group(b5) button(v1) score(150) weight(0) points(0) level(1) cost(150) fore(-17.0))	;180sec
+("unit_vehicle_supporters" side(ger) name(np_sdkfz8) breed(vehicle_supporter) crew(2) charge(0) tags(45) group(b6) button(v1) score(100) weight(0) points(0) level(1) cost(100) fore(0.0))		;0sec
+
+("unit_vehicle_supporters" side(ger) name(blitz3_6) breed(vehicle_supporter) crew(2) charge(0) tags(45) group(b7) button(v1) score(100) weight(0) points(0) level(1) cost(100) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(ger) name(blitz3_6art) breed(vehicle_supporter) crew(2) charge(0) tags(45) group(b8) button(v1) score(300) weight(0) points(0) level(1) cost(300) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(ger) name(blitz3_6eng) breed(vehicle_supporter) crew(2) charge(0) tags(45) group(b9) button(v1) score(250) weight(0) points(0) level(1) cost(250) fore(0.0))		;0sec
+
+("unit_vehicle_supporters" side(ger) name(ammo_box_ger_inf) breed(vehicle_supporter) crew(2) charge(0) tags(45) group(b10) button(v1) score(25) weight(0) points(0) level(1) cost(25) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(ger) name(ammo_box_ger_art) breed(vehicle_supporter) crew(2) charge(0) tags(45) group(b11) button(v1) score(75) weight(0) points(0) level(1) cost(75) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(ger) name(ammo_box_ger_special) breed(vehicle_supporter) crew(2) charge(300) tags(45) group(b12) button(v1) score(100) weight(0) points(0) level(1) cost(100) fore(0.0))		;0sec
+
+
+
+
+;같캛utton 2같� support weapons
+
+("unit_vehicle_supporters" side(ger) name(mg34_lafette) breed(vehicle_supporter) crew(2) charge(10) tags(45) group(c1) button(v2) score(150) weight(2) points(5) level(1) cost(150) fore(-2.0))			;30sec
+("unit_vehicle_supporters" side(ger) name(mg42_lafette) breed(vehicle_supporter) crew(2) charge(10) tags(45) group(c2) button(v2) score(180) weight(2) points(5) level(1) cost(180) fore(-2.0))			;30sec
+("unit_vehicle_supporters" side(ger) name(2cm_flak38) breed(vehicle_supporter) crew(2) charge(30) tags(45) group(c3) button(v2) score(200) weight(2) points(5) level(1) cost(200) fore(-4.0))			;150sec
+("unit_vehicle_supporters" side(ger) name(2cm_flakvierling38) breed(vehicle_supporter) crew(4) charge(30) tags(45) group(c4) button(v2) score(250) weight(2) points(5) level(1) cost(250) fore(-4.0))			;150sec
+("unit_vehicle_supporters" side(ger) name(37mm_flak_36) breed(vehicle_supporter) crew(2) charge(30) tags(45) group(c5) button(v2) score(300) weight(2) points(5) level(1) cost(300) fore(-5.0))			;180sec
+
+("unit_light_mortar" side(ger) name(light_mortar_ger) breed1(ger_light_mortar) breed2(ger_light_mortar_assist) charge(10) tags(all 45 mortar) group(c56) button(v2) level(1) cost(150) fore(-2.0))		;30sec
+("unit_vehicle_supporters" side(ger) name(sgrw_34) breed(vehicle_supporter) crew(2) charge(10) tags(45 mortar) group(c6) button(v2) score(320) weight(2) points(5) level(1) cost(320) fore(-2.0))		;30sec
+("unit_vehicle_supporters" side(ger) name(sgrw_42) breed(vehicle_supporter) crew(2) charge(60) tags(45 mortar) group(c7) button(v2) score(670) weight(2) points(10) level(1) cost(670) fore(-9.0))		;600sec
+
+("unit_vehicle_supporters" side(ger) name(pak38) breed(vehicle_supporter) crew(2) charge(10) tags(45) group(c9) button(v2) score(180) weight(2) points(5) level(1) cost(180) fore(-14.0))		;150sec
+("unit_vehicle_supporters" side(ger) name(np_pak40) breed(vehicle_supporter) crew(2) charge(20) tags(medium 45) group(c10) button(v2) score(400) weight(2) points(10) level(1) cost(400) fore(-19.0))		;400sec
+
+("unit_vehicle_supporters" side(ger) name(pak43) breed(vehicle_supporter) crew(2) charge(60) tags(heavy 45) group(c11) button(v2) score(850) weight(2) points(20) level(1) cost(850) fore(-19.0))		;1200sec
+("unit_vehicle_supporters" side(ger) name(pak44) breed(vehicle_supporter) crew(2) charge(60) tags(artillery heavy 45) group(c11) button(v2) score(950) weight(2) points(20) level(1) cost(950) fore(-19.0))		;1200sec
+
+("unit_howitzer" side(ger) name(how_aa) vehicle2(flak36a) charge(60) tags(medium 45) group(c12) button(v2) level(1) cost(700) fore(-14.0))			;900sec
+
+("unit_vehicle_supporters" side(ger) name(75mm_leig18) breed(vehicle_supporter) crew(2) charge(60) tags(artillery 45) group(c13) button(v2) score(320) weight(2) points(5) level(1) cost(320) fore(-1.0))		;120sec
+("unit_vehicle_supporters" side(ger) name(15_cm_sig33) breed(vehicle_supporter) crew(2) charge(60) tags(artillery 45) group(c133) button(v2) score(750) weight(2) points(15) level(1) cost(750) fore(-9.0))		;600sec
+("unit_tank" side(ger) name(stuh42) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(10) tags(medium 45) group(c14) button(v2) score(600) weight(0) points(20) level(1) cost(600) fore(-69.0)) 	;700sec
+("unit_tank" side(ger) name(brummbar_early) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(60) tags(medium 45) group(c15) button(v2) score(1000) weight(0) points(20) level(1) cost(1000) fore(-14.0)) 	;900sec
+
+;같캛utton support 2같� artillery guns
+
+("unit_vehicle_supporters" side(ger) name(flak18a) breed(vehicle_supporter) crew(2) charge(60) tags(artillery 45) group(cc1) button(v22) score(600) weight(2) points(15) level(1) cost(600) fore(-14.0)) 	;900sec
+
+("unit_howitzer" side(ger) name(how_b) vehicle2(lefh18) charge(60) tags(artillery 45) group(cc2) button(v22) level(1) cost(500) fore(-14.0))				;900sec
+("unit_howitzer" side(ger) name(how_a) vehicle2(sfh18) charge(60) tags(artillery heavyart heavy 45) group(cc3) button(v22) level(1) cost(750) fore(-19.0))		;1200sec
+("unit_howitzer" side(ger) name(morser18) vehicle2(morser18) charge(60) tags(artillery heavyart heavy 45) group(cc4) button(v22) level(1) cost(1150) fore(-19.0)) 	;1200sec
+
+("unit_vehicle_supporters" side(ger) name(nebelwerfer41) breed(vehicle_supporter) crew(2) charge(60) tags(artillery rocket 45) group(cc5) button(v22) score(450) weight(2) points(15) level(1) cost(450) fore(-14.0))	;900sec
+("unit_vehicle_supporters" side(ger) name(nebelwerfer42) breed(vehicle_supporter) crew(2) charge(60) tags(artillery heavyart rocket 45) group(cc6) button(v22) score(1100) weight(2) points(15) level(1) cost(1100) fore(-14.0))	;900sec
+("unit_vehicle_supporters" side(ger) name(np_sdkfz251_1w) breed(vehicle_supporter) crew(3) charge(60) tags(artillery heavyart rocket 45) group(cc7) button(v22) score(1500) weight(0) points(15) level(1) cost(1500) fore(-19.0))	;1200sec
+
+("unit_vehicle_supporters" side(ger) name(np_sdkfz250_7) breed(vehicle_supporter) crew(4) charge(10) tags(45 mortar) group(d3) button(v22) score(370) weight(0) points(10) level(1) cost(370) fore(-31.0))		;320sec
+("unit_tank" side(ger) name(grille) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(60) tags(artillery 45) group(cc12) button(v22) score(850) weight(0) points(15) level(1) cost(850) fore(-14.0))			;900sec
+("unit_tank" side(ger) name(wespe) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(60) tags(artillery 45) group(cc8) button(v22) score(800) weight(0) points(15) level(1) cost(800) fore(-14.0))	;900sec
+("unit_tank" side(ger) name(hummel) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(60) tags(artillery heavyart heavy 45) group(cc9) button(v22) score(1150) weight(0) points(20) level(1) cost(1150) fore(-19.0))	;1200sec
+("unit_tank" side(ger) name(sdkfz4) breed1(tankman) breed2(tankman2) crew1(2) crew2(0) charge(60) tags(artillery heavyart rocket 45) group(cc10) button(v22) score(650) weight(0) points(20) level(1) cost(650) fore(-19.0))	;1200sec
+("unit_tank" side(ger) name(karlthor) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(600) tags(artillery heavyart heavy 45) group(cc11) button(v22) score(1600) weight(0) points(20) level(1) cost(1600) fore(-1.0))	;1200sec
+
+;같캛utton 3같�
+
+("unit_vehicle_supporters" side(ger) name(np_sdkfz250_10) breed(vehicle_supporter) crew(4) charge(10) tags(45) group(d1) button(v3) score(200) weight(0) points(0) level(1) cost(200) fore(-23.0))		;240sec
+("unit_vehicle_supporters" side(ger) name(np_sdkfz251_10) breed(vehicle_supporter) crew(4) charge(10) tags(45) group(d2) button(v3) score(200) weight(0) points(0) level(1) cost(200) fore(-23.0))		;240sec
+("unit_vehicle_supporters" side(ger) name(np_sdkfz250_9) breed(vehicle_supporter) crew(3) charge(10) tags(45) group(d4) button(v3) score(210) weight(0) points(5) level(1) cost(210) fore(-31.0))		;320sec
+("unit_vehicle_supporters" side(ger) name(np_sdkfz251_17) breed(vehicle_supporter) crew(3) charge(10) tags(45) group(d5) button(v3) score(220) weight(0) points(5) level(1) cost(220) fore(-31.0))		;320sec
+("unit_vehicle_supporters" side(ger) name(np_sdkfz251_9) breed(vehicle_supporter) crew(3) charge(10) tags(45) group(d6) button(v3) score(280) weight(0) points(5) level(1) cost(280) fore(-31.0))		;320sec
+("unit_tank" side(ger) name(pz2l) breed1(tankman) breed2(tankman2) crew1(2) crew2(1) charge(10) tags(45) group(d12) button(v3) score(250) weight(0) points(5) level(1) cost(250) fore(-41.0))	;420sec
+("unit_tank" side(ger) name(np_sdkfz234_1) breed1(tankman) breed2(tankman2) crew1(2) crew2(1) charge(10) tags(45) group(d15) button(v3) score(250) weight(0) points(5) level(1) cost(250) fore(-41.0))	;420sec
+("unit_tank" side(ger) name(sdkfz234) breed1(tankman) breed2(tankman2) crew1(2) crew2(1) charge(10) tags(45) group(d16) button(v3) score(300) weight(0) points(10) level(1) cost(300) fore(-45.0))	;460sec
+("unit_tank" side(ger) name(np_sdkfz234_3) breed1(tankman) breed2(tankman2) crew1(2) crew2(1) charge(10) tags(45) group(d17) button(v3) score(350) weight(0) points(5) level(1) cost(350) fore(-45.0))	;460sec
+("unit_tank" side(ger) name(np_sdkfz234_4) breed1(tankman) breed2(tankman2) crew1(2) crew2(1) charge(10) tags(45) group(d18) button(v3) score(500) weight(0) points(10) level(1) cost(500) fore(-49.0))	;500sec
+
+("unit_tank" side(ger) name(welberwind) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(30) tags(45) group(d19) button(v3) score(300) weight(0) points(10) level(1) cost(300) fore(-16.3))	;520sec
+("unit_tank" side(ger) name(ostwind) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(30) tags(45) group(d20) button(v3) score(350) weight(0) points(10) level(1) cost(350) fore(-18.3))	;580sec
+
+;같캛utton 4같�
+
+("unit_tank" side(ger) name(pz4h) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(10) tags(44 45 medium) group(e14) button(v4) score(550) weight(0) points(20) level(1) cost(550) fore(-65.0))	;660sec
+("unit_tank" side(ger) name(pz4j) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(10) tags(44 45 medium) group(e15) button(v4) score(500) weight(0) points(20) level(1) cost(500) fore(-65.0))		;660sec
+
+("unit_tank" side(ger) name(pz5g) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(60) tags(44 45 heavy) group(e16) button(v4) score(1500) weight(0) points(30) level(1) cost(1500) fore(-19.0))	;1200sec
+
+("unit_tank" side(ger) name(pz6e) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(600) tags(44 45 heavy) group(e17) button(v4) score(1250) weight(0) points(30) level(1) cost(1250) fore(-1.0))  	;1200sec
+
+("unit_tank" side(ger) name(sdkfz182b) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(120) tags(44 45 sheavy) group(e19) button(v4) score(2200) weight(0) points(40) level(1) cost(2200) fore(-14.0)) 	;1800sec
+("unit_tank" side(ger) name(pz6bh) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(120) tags(44 45 sheavy) group(e19) button(v4) score(2750) weight(0) points(40) level(1) cost(2750) fore(-14.0)) 	;1800sec
+; [removed - unit not in 1.30.10] {"maus"             ("v" c(900) t(postwar sheavy maus) 	s(ger) n1(5) n2(1) g(e20) sc(225.00) b(v4) cw(0) cp(45)) {level 1} {cost 4500} {fore -1.0}} 	;1800sec
+
+;같캛utton 5같�
+
+("unit_tank" side(ger) name(marder_3m) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(medium 44 45) group(f0) button(v5) score(500) weight(0) points(12) level(1) cost(500) fore(-59.0)) 	;600sec
+
+("unit_tank_commander_first" side(ger) name(hetzer) breed1(tankman2) breed2(tankman) crew1(3) crew2(1) charge(10) tags(medium 44 45) group(f1) button(v5) score(650) weight(0) points(15) level(1) cost(650) fore(-69.0)) 	;700sec
+("unit_tank_commander_first" side(ger) name(flammpz38) breed1(tankman2) breed2(tankman) crew1(3) crew2(1) charge(700) tags(medium 44 45) group(flame) button(v5) score(500) weight(0) points(15) level(1) cost(500) fore(0.0)) 	;700sec
+
+("unit_tank_commander_first" side(ger) name(stug3g) breed1(tankman2) breed2(tankman) crew1(3) crew2(1) charge(10) tags(medium 44 45) group(f6) button(v5) score(550) weight(0) points(15) level(1) cost(550) fore(-75.0)) 	;760sec
+("unit_tank_commander_first" side(ger) name(stug4g) breed1(tankman2) breed2(tankman) crew1(3) crew2(1) charge(10) tags(medium 44 45) group(f7) button(v5) score(550) weight(0) points(15) level(1) cost(550) fore(-75.0)) 	;760sec
+("unit_tank" side(ger) name(nashorn) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(60) tags(heavy 44 45) group(f9) button(v5) score(1400) weight(0) points(30) level(1) cost(1400) fore(-26.0))  	;1620sec
+
+("unit_tank" side(ger) name(jagdpanzer_iv_l48) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(medium 44 45) group(f12) button(v5) score(500) weight(0) points(20) level(1) cost(500) fore(-75.0)) 	;760sec
+("unit_tank" side(ger) name(jagdpanzer_iv) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(60) tags(heavy 44 45) group(f13) button(v5) score(1100) weight(0) points(30) level(1) cost(1100) fore(-19.0)) 	;1200sec
+("unit_tank" side(ger) name(jagdpanther) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(850) tags(heavy 44 45) group(f14) button(v5) score(1950) weight(0) points(30) level(1) cost(1950) fore(-1.0)) 	;1700sec
+("unit_tank" side(ger) name(elefant) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(850) tags(sheavy 44 45) group(f15) button(v5) score(2100) weight(0) points(40) level(1) cost(2100) fore(-1.0)) 	;1700sec
+
+("unit_tank" side(ger) name(jagdtiger) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(900) tags(sheavy 44 45) group(f16) button(v5) score(2400) weight(0) points(40) level(1) cost(2400) fore(-1.0)) 	;1800sec
+
+
+
+
+;같캛utton Hero같�
+
+; [removed - unit not in 1.30.10] {"hero1_ger"        ("i1" c(120)			t(hero 45) s(ger) n1(sniper2:1) g(h1) b(hero)) {level 1} {cost 1.0} {fore -0.5}}
+("unit_vehicle_members_sided" side(ger) name(hero3) vehicle1(sdkfz303) member1(tankman:0) member2(tankman2:0) charge(120) tags(hero 45) group(h1) button(hero) level(1) cost(1.0) fore(-0.5))
+("unit_vehicle_members_sided" side(ger) name(heronew2) vehicle1(marder_3m) member1(tankman:3) member2(tankman2:1) charge(360) tags(hero 45) group(h2) button(hero) level(1) cost(4.0) fore(-0.5))
+
+("unit_vehicle_members_sided" side(ger) name(hero7) vehicle1(nebelwerfer41) member1(vehicle_supporter:2) member2(tankman2:0) charge(480) tags(hero artillery rocket 45) group(h4) button(hero) level(1) cost(4.0) fore(-0.5))
+("unit_vehicle_members_sided" side(ger) name(hero6) vehicle1(stuh42) member1(tankman:4) member2(tankman2:1) charge(600) tags(hero 45) group(h5) button(hero) level(1) cost(5.0) fore(-0.5))
+("unit_two_vehicles_members_sided" side(ger) name(hero10) vehicle1(pz4j) member1(tankman:4) member2(tankman2:1) charge(650) tags(hero 45) group(h6) button(hero) level(1) cost(10.0) fore(-0.5))
+
+("unit_vehicle_pair_sided" side(ger) name(heronew3) vehicle1(steyr_rso) vehicle2(pak43) member1(vehicle_supporter:2) member2(vehicle_supporter:2) charge(900) tags(hero 45) group(h7) button(hero) level(1) cost(9.0) fore(-0.5))
+("unit_two_vehicles_members_sided" side(ger) name(hero_flak18_hero) vehicle1(flak18a) member1(vehicle_supporter:2) member2(tankman2:0) charge(650) tags(hero artillery 45) group(h8) button(hero) level(1) cost(10.0) fore(-0.5))
+("unit_vehicle_members_sided" side(ger) name(hero8) vehicle1(veteran_tiger) member1(vet_tankman:4) member2(vet_tankman2:1) charge(1140) tags(hero 45) group(h10) button(hero) level(1) cost(13.0) fore(-0.5))
+("unit_vehicle_members_sided" side(ger) name(hero_panther_hero) vehicle1(pz5g_veteran) member1(vet_tankman:4) member2(vet_tankman2:1) charge(1200) tags(hero 45) group(h11) button(hero) level(1) cost(16.0) fore(-0.5))
+("unit_vehicle_members_sided" side(ger) name(hero9) vehicle1(sturmtiger) member1(tankman:3) member2(tankman2:1) charge(1000) tags(hero 45) group(h12) button(hero) level(1) cost(16.0) fore(-0.5))
+("unit_vehicle_members_sided" side(ger) name(hero_tiger2_ace) vehicle1(pz6bh_ace) member1(elite_tankman:4) member2(elite_tankman2:1) charge(1500) tags(hero 44) group(h13) button(hero) level(1) cost(20.0) fore(-0.5))

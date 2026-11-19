@@ -1,13 +1,8 @@
 {from "em2"
 	{special
-		{mode aim}
 		{PrepareTime 2.5}
-		{PrepareCursor "aimed_shot"}
-		{accuracy 2.5}
-		{throw_off}
 	}
 	{recoveryTime 0.75}
-	{rechargeTime 7.5}
 	{range 150 150}
 	{tag "bolt_r075"}	; bolt animation speed class (recoveryTime 0.75s)
 }

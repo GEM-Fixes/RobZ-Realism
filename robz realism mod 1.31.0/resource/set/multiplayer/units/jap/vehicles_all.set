@@ -96,54 +96,89 @@
 
 
 ("unit_infantry_sided_members2" side(jap) name(hero1) member1(jap__type99_at:4) member2(jap_rifle:8) charge(30) tags(all 44 45 hero) group(h1) button(hero) level(1) cost(1.0) fore(-2.0))
+;{price {rule squad} {members 36} {cost 36}}
 ("unit_infantry_sided" side(jap) name(hero2) member1(jap_kamikaze:6) charge(30) tags(all 44 45 hero) group(h1) button(hero) level(1) cost(1.0) fore(-3.0))
 
 ;banzai sequence
+;{price {rule sequence} {members 105.75} {step 1} {of 31} {percent 100} {base 105.75} {cost 106} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_1) c(30) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(5) f(0.0))	;30 sec (its based on cooldown only for seq, for startup cooldown)
 
+;{price {rule sequence} {members 105.75} {step 2} {of 31} {percent 90} {base 105.75} {cost 95} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_2) c(900) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-89.0))	;15 mins
+;{price {rule sequence} {members 105.75} {step 3} {of 31} {percent 90} {base 105.75} {cost 95} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_3) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-89.0))	;15 mins
 
+;{price {rule sequence} {members 105.75} {step 4} {of 31} {percent 80} {base 105.75} {cost 85} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_4) c(900) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-179.0))	;30 mins
+;{price {rule sequence} {members 105.75} {step 5} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_5) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-179.0))	;30 mins
+;{price {rule sequence} {members 105.75} {step 6} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_6) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-179.0))	;30 mins
+;{price {rule sequence} {members 105.75} {step 7} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_7) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-179.0))	;30 mins
 
+;{price {rule sequence} {members 105.75} {step 8} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_8) c(900) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-269.0))	;45 mins
+;{price {rule sequence} {members 105.75} {step 9} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_9) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-269.0))	;45 mins
+;{price {rule sequence} {members 105.75} {step 10} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_10) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-269.0))	;45 mins
+;{price {rule sequence} {members 105.75} {step 11} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_11) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-269.0))	;45 mins
+;{price {rule sequence} {members 105.75} {step 12} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_12) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-269.0))	;45 mins
+;{price {rule sequence} {members 105.75} {step 13} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_13) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-269.0))	;45 mins
+;{price {rule sequence} {members 105.75} {step 14} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_14) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-269.0))	;45 mins
+;{price {rule sequence} {members 105.75} {step 15} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_15) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-269.0))	;45 mins
 
+;{price {rule sequence} {members 105.75} {step 16} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_16) c(900) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-359.0))	;60 mins
+;{price {rule sequence} {members 105.75} {step 17} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_17) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-359.0))	;60 mins
+;{price {rule sequence} {members 105.75} {step 18} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_18) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-359.0))	;60 mins
+;{price {rule sequence} {members 105.75} {step 19} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_19) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-359.0))	;60 mins
+;{price {rule sequence} {members 105.75} {step 20} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_20) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-359.0))	;60 mins
+;{price {rule sequence} {members 105.75} {step 21} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_21) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-359.0))	;60 mins
+;{price {rule sequence} {members 105.75} {step 22} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_22) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-359.0))	;60 mins
+;{price {rule sequence} {members 105.75} {step 23} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_23) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-359.0))	;60 mins
+;{price {rule sequence} {members 105.75} {step 24} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_24) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-359.0))	;60 mins
+;{price {rule sequence} {members 105.75} {step 25} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_25) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-359.0))	;60 mins
+;{price {rule sequence} {members 105.75} {step 26} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_26) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-359.0))	;60 mins
+;{price {rule sequence} {members 105.75} {step 27} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_27) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-359.0))	;60 mins
+;{price {rule sequence} {members 105.75} {step 28} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_28) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-359.0))	;60 mins
+;{price {rule sequence} {members 105.75} {step 29} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_29) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-359.0))	;60 mins
+;{price {rule sequence} {members 105.75} {step 30} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_30) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-359.0))	;60 mins
+;{price {rule sequence} {members 105.75} {step 31} {of 31} {percent 70} {base 105.75} {cost 74} {avg 76.74}}
 ("i_seq_with3types" side(jap) name(hero_banzai_31) c(0) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(0) f(-359.0))	;60 mins
 
 ;else
 
 {"hero_otsu-gata_koho(jap)"        ("i5" c(120)		t(all 44 45 hero) s(jap) n1(otsu_sl:1) n2(otsu_sa:1) n2(otsu_mg:1) n3(otsu_mg_asst:1) n4(otsu_mg_ammo:3) n5(otsu_rifle:3) g(h111) b(hero)) {level 1} {cost 3.0} {fore -2.0}}
+;{price {rule squad} {members 156.05} {cost 156}}
 ("unit_infantry_sided_members6" side(jap) name(hero_ki-gata_koho) member1(ki_sl:1) member2(ki_sa:1) member3(ki_smoke:4) member4(ki_at_grenade:2) member5(ki_at_stick:2) member6(ki_rifle:5) charge(30) tags(all 44 45 hero) group(h1222) button(hero) level(1) cost(2.0) fore(-2.0))
 
+;{price {rule squad} {members 6000} {cost 6000}}
 ("unit_infantry_sided" side(jap) name(hero_super_officer) member1(super_officer:4) charge(10) tags(all 44 45 hero officer super_officer) group(h12222) button(hero) level(1) cost(3.0) fore(-179.0));	30 minutes
 
 ("unit_vehicle_members_sided" side(jap) name(heronew1) vehicle1(ss-d) member1(tankman:3) member2(tankman2:1) charge(360) tags(all 44 45 hero) group(h1) button(hero) level(1) cost(2.0) fore(0.0))
 
+;{price {rule squad} {members 332.85} {cost 333}}
 ("squad_with6types" side(jap) name(hero_jap_guard) c(300) g(h2) c1(elite_ig1h:6) c3(jap_kanoeshidan_mg:3) c4(jap_kanoeshidan_type100_44:2) c5(jap_kanoeshidan_at:2) c6(jap_kanoeshidan_type99rifle:2) b(hero) t(all 44 45 hero) level(1) cost(3) f(0.0))
 
 ("unit_vehicle_members_sided" side(jap) name(heronew3) vehicle1(type_97_150mm) member1(vehicle_supporter:2) member2(tankman2:0) charge(360) tags(all hero 42 43 44 45 mortar) group(h4) button(hero) level(1) cost(4.0) fore(-0.5))

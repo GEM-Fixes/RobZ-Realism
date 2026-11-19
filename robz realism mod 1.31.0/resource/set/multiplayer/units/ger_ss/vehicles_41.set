@@ -28,6 +28,7 @@
 ("unit_vehicle_supporters_noinfo_sided" side(ger_ss) name(2cm_flakvierling38_ss) vehicle1(2cm_flakvierling38) crew(4) charge(30) tags(all 39 40 41 42 43 44 45) group(c4) button(v2) level(1) cost(250) fore(-4.0))	;150sec
 ("unit_vehicle_supporters_noinfo_sided" side(ger_ss) name(37mm_flak_36_ss) vehicle1(37mm_flak_36) crew(2) charge(30) tags(all 39 40 41 42 43 44 45) group(c5) button(v2) level(1) cost(300) fore(-5.0))	;180sec
 
+;{price {rule squad} {members 54.4} {cost 54}}
 ("unit_light_mortar_sided" side(ger_ss) name(5_cm_granatwerfer_36_ss) charge(10) tags(all 41 mortar) group(c56) button(v2) level(1) cost(150) fore(-2.0))		;30sec
 ("unit_vehicle_supporters_info_sided" side(ger_ss) name(sgrw_34_ss) vehicle1(sgrw_34) crew(2) charge(10) tags(all 39 40 41 42 43 44 45 mortar) group(c6) button(v2) level(1) cost(320) fore(-2.0))		;30sec
 
@@ -86,6 +87,7 @@
 
 ;°°°Button Hero°°°
 
+;{price {rule single} {members 72.5} {mult 1.5} {cost 109}}
 ("unit_infantry_sided" side(ger_ss) name(hero_ss_sniper) member1(sniper2_early:1) charge(120) tags(all hero 41 42 43 44 45) group(h1) button(hero) level(1) cost(1.0) fore(-0.5))
 ("unit_vehicle_pair_sided" side(ger_ss) name(hero_ss_2cmflak) vehicle1(np_sdkfz251_1) vehicle2(2cm_flak38) member1(vehicle_supporter:4) member2(vehicle_supporter:0) charge(120) tags(all hero 41 42 43 44 45) group(h1) button(hero) level(1) cost(2.0) fore(-0.5))
 

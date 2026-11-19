@@ -1,0 +1,18 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(usa-paramarine-sgt) portrait(usa_elite2) icon(elite4) priority(5) nation(usa))
+	("breed_armor_vest" vest(ammo_us2) head(helmet_marine_usa))
+	{perks
+		("soldier_smg_6" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(elite) start(1))
+	{inventory
+		("smg_m50reising")
+		{item "bandage" 5}
+		("give" item(grenade m61) count(2))
+		;{item "grenade n73at" 1}
+		("give_1_or_2" item(smoke grenade))
+		("give_chance" item(m15_smoke grenade) chance(50))
+		{in_hands 0}
+	}
+}

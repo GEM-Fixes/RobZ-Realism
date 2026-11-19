@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-smock2-smg"}
+	{portrait "ger_soldier3"}
+	{icon "stormtrooper5"}
+	{icon_priority 3}
+	{nationality ger}
+	{armors
+		{head helmet_heer_camo}
+	}
+	{perks
+		("soldier_rifle_6" rocket(6) body(line) sight(soldier))
+	}
+	("breed_vet" table(elite))
+	{inventory
+		{item "weapon panzershreck" filled}
+		{item "bandage" 5}
+		("give" item(grenade hohlladung) count(1))
+		{item "ammo panzershreck" 7}
+		("pistol_valter")
+		{in_hands 0}
+	}
+}

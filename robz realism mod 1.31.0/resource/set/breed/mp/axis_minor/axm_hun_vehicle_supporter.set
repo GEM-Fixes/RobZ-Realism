@@ -1,17 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "hun_vehicle_supporter"}
-	{portrait "hun_soldier1"}
-	{nationality hun}
-	{icon "smgs2"}
-	{icon_priority 0}
-	{armors
-		{head "helmet1_hun"}
-	}
+	("breed_look" skin(hun_vehicle_supporter) portrait(hun_soldier1) icon(smgs2) priority(0) nation(hun))
+	("breed_armor" head(helmet1_hun))
 	{perks
 		("support_1" body(normal_line) sight(soldier))
 	}
-	("breed_vet" table(crew))
+	("breed_vet" table(crew) start(1))
 
 	{inventory
 		("kit_smg" gun(danuvia_39m) ammo(9x25) rounds(80))

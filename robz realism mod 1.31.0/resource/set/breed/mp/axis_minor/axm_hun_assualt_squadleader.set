@@ -1,23 +1,16 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "hun_elite2"}
-	{portrait "hun_elite3"}
-	{icon "stormtrooper3"}
-	{icon_priority 3}
-	{nationality hun}
-	{armors
-
-		{head "helmet1_hun"}
-	}
+	("breed_look" skin(hun_elite2) portrait(hun_elite3) icon(stormtrooper3) priority(3) nation(hun))
+	("breed_armor" head(helmet1_hun))
 	{perks
 		("soldier_smg_5" rocket(4) body(line) sight(soldier))
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		("kit_smg" gun(danuvia_39m) ammo(9x25) rounds(190))
 		{item "bandage" 4}
 		("give" item(grenade f1) count(3))
-		("give" item(smoke grenade) count(2))
+		("give" item(grenade smoke) count(2))
 		{in_hands 0}
 
 	}

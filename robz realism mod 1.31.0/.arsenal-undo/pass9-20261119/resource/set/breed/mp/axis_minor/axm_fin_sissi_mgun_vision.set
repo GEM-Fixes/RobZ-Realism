@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "fin-inf-svt"}
+	{portrait "fin_soldier3"}
+	{nationality fin}
+	{icon "mg"}
+	{icon_priority 0}
+	{armors
+		{head "cap_fin_m36"}
+	}
+	{perks
+		("soldier_mgun_7" rocket(1) body(line) sight(officer))
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("kit_mgun" gun(lsm26) ammo(LSM26_mag) rounds(320))
+		{item "luger" filled}
+		{item "ammo walther_mag" 40}
+		{item "bandage" 2}
+		{item "sandbag_kit" 1}
+		{in_hands 0}
+	}
+}

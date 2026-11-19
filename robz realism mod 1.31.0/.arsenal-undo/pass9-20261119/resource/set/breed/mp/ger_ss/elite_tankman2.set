@@ -1,0 +1,20 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger_ss_elite_tankcom"}
+	{portrait ger_tankman}
+	{icon tankman}
+	{icon_priority 2}
+	{nationality ger2}
+	{armors
+		{head tank_cap1_ger}
+	}
+	{perks
+		("crew_4" body(elite_hardy) sight(soldier))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_mp40_96")
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

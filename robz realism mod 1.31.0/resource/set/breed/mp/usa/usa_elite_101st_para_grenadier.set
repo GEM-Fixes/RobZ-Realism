@@ -1,17 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "usa-101st-rfl-sgt"}
-	{portrait "usa_elite1"}
-	{nationality usa}
-	{icon "elite_para"}
-	{icon_priority 4}
-	{armors
-		{head helmet_usa_para}
-	}
+	("breed_look" skin(usa-101st-rfl-sgt) portrait(usa_elite1) icon(elite_para) priority(4) nation(usa))
+	("breed_armor" head(helmet_usa_para))
 	{perks
 		("soldier_rifle_7" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(elite))
+	("breed_vet" table(elite) start(1))
 	{inventory
 		("rifle_garand")
 		{item "bandage" 5}

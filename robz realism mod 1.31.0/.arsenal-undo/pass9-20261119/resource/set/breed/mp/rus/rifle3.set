@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-smg"}
+	{portrait "rus_soldier2"}
+	{nationality rus}
+	{icon "rifleman"}
+	{icon_priority 1}
+	{armors
+		{body ammo_rus}
+		{head fieldcap_rus}
+	}
+	{perks
+		("soldier_rifle_2" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_mosin")
+		{item "bandage" 3}
+		("give" item(grenade f1) count(1))
+		("give_chance" item(grenade molotov_coctail) chance(25))
+		{in_hands 0}
+	}
+}

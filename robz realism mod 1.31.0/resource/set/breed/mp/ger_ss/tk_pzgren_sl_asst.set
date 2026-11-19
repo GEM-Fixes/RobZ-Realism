@@ -1,25 +1,19 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "waffen-tk-rfl-rot"}
-	{portrait "ger_soldier6"}
-	{icon "rifleman"}
-	{icon_priority 3}
-	{nationality ger}
-	{armors
-		{head waffen_helmet_totenkopf}
-	}
+	("breed_look" skin(waffen-tk-rfl-rot) portrait(ger_soldier6) icon(rifleman) priority(3) nation(ger))
+	("breed_armor" head(waffen_helmet_totenkopf))
 	{perks
 		("soldier_smg_6" rocket(1) body(hardy) sight(soldier))
 		{"aimedshot"}
 		{"telescope"}
 	}
-	("breed_vet" table(elite_start2))
+	("breed_vet" table(elite) start(2))
 	{inventory
 		("rifle_mauzer_s")
 		{item "ammo mg_mauser drum" 50}
 		{item "bandage" 5}
 		("give" item(grenade m24) count(2))
-		("give" item(smoke grenade) count(2))
+		("give" item(grenade smoke) count(2))
 		{in_hands 0}
 	}
 }

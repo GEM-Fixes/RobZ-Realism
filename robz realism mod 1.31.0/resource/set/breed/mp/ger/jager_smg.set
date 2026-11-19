@@ -1,24 +1,17 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "ger-cav2-smg"}
-	{portrait "ger_soldier2"}
-	{icon "smg"}
-	{icon_priority 1}
-	{nationality ger}
-	{armors
-		{body ammo_ger3}
-		{head helmet_ger_m40}
-	}
+	("breed_look" skin(ger-cav2-smg) portrait(ger_soldier2) icon(smg) priority(1) nation(ger))
+	("breed_armor_vest" vest(ammo_ger3) head(helmet_ger_m40))
 	{perks
 		("soldier_smg_5" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		("smg_mp40")
 		{item "bandage" 3}
 		("give" item(grenade m24) count(2))
 		("give_chance" item(grenade m24x5) chance(25))
-		("give" item(smoke grenade) count(1))
+		("give" item(grenade smoke) count(1))
 		{in_hands 0}
 	}
 }

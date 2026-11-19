@@ -1,19 +1,13 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "ger-para-rfl"}
-	{portrait "ger_elite1"}
-	{icon "elite"}
-	{icon_priority 4}
-	{nationality ger}
-	{armors
-		{head helmet_ger_m38_cover}
-	}
+	("breed_look" skin(ger-para-rfl) portrait(ger_elite1) icon(elite) priority(4) nation(ger))
+	("breed_armor" head(helmet_ger_m38_cover))
 	{perks
 		("soldier_rifle_7" rocket(7) body(line) sight(soldier))
 		{"avoidance" lvl_1}
 		{"stealth"}
 	}
-	("breed_vet" table(start5))
+	("breed_vet" table(elite) start(5))
 	{inventory
 		("rifle_mauzer_vet_120")
 		{item "bandage" 5}

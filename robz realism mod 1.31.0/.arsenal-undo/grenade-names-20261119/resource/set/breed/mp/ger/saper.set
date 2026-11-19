@@ -1,0 +1,17 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(ger-reg-pioneer) portrait(ger_soldier2) icon(sapper) priority(3) nation(ger))
+	("breed_armor" head(helmet_ger_m40_fge))
+	{perks
+		("soldier_smg_4" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		("smg_mp40")
+		{item "mine_detector"}
+		("give" item(dynamite_ladung) count(2))
+		("give" item(hohlladung grenade) count(1))
+		{item "trench_spade"}
+		{in_hands 0}
+	}
+}

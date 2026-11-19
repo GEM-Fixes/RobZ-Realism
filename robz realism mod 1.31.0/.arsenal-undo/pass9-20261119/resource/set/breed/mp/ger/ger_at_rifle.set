@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-reg-rfl"}
+	{portrait "ger_soldier2"}
+	{nationality ger}
+	{icon "at_rifle"}
+	{icon_priority 3}
+	{armors
+		{head helmet_ger_m40}
+	}
+	{perks
+		("soldier_rifle_5" rocket(4) body(line) sight(soldier))
+		{"at_rifle" lvl_5}
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "pzb39" filled}
+		{item "bandage" 3}
+		("give" item(hohlladung grenade) count(1))
+		{item "ammo ptr" 35}
+		{in_hands 0}
+	}
+}

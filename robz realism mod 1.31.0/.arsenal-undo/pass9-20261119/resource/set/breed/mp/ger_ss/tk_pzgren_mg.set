@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-tk2-mgun"}
+	{portrait "ger_soldier6"}
+	{icon "mg"}
+	{icon_priority 3}
+	{nationality ger}
+	{armors
+		{head waffen_helmet_totenkopf}
+	}
+	{perks
+		("soldier_mgun_5" rocket(1) body(hardy) sight(soldier))
+	}
+	("breed_vet" table(standard_start2))
+	{inventory
+		("mgun_mg42_inf_250")
+		("pistol_valter")
+		{item "bandage" 5}
+		{item "sandbag_kit"}
+		{item "barrel_case"}
+		{in_hands 0}
+	}
+}

@@ -34,6 +34,7 @@
 ("unit_vehicle_supporters_noinfo_sided" side(ger_ss) name(2cm_flakvierling38_ss) vehicle1(2cm_flakvierling38) crew(4) charge(30) tags(all 39 40 41 42 43 44 45) group(c4) button(v2) level(1) cost(250) fore(-4.0))	;150sec
 ("unit_vehicle_supporters_noinfo_sided" side(ger_ss) name(37mm_flak_36_ss) vehicle1(37mm_flak_36) crew(2) charge(30) tags(all 39 40 41 42 43 44 45) group(c5) button(v2) level(1) cost(300) fore(-5.0))	;180sec
 
+;{price {rule squad} {members 54.4} {cost 54}}
 ("unit_light_mortar_sided" side(ger_ss) name(5_cm_granatwerfer_36_ss) charge(10) tags(all 45 mortar) group(c56) button(v2) level(1) cost(150) fore(-2.0))		;30sec
 ("unit_vehicle_supporters_info_sided" side(ger_ss) name(sgrw_34_ss) vehicle1(sgrw_34) crew(2) charge(10) tags(all 39 40 41 42 43 44 45 mortar) group(c6) button(v2) level(1) cost(320) fore(-2.0))		;30sec
 ("unit_vehicle_supporters_info_sided" side(ger_ss) name(sgrw_42_ss) vehicle1(sgrw_42) crew(2) charge(60) tags(all 42 43 44 45 mortar) group(c7) button(v2) level(1) cost(670) fore(-9.0))			;600sec
@@ -122,7 +123,9 @@
 
 ;°°°Button Hero°°°
 
+;{price {rule single} {members 72.5} {mult 1.5} {cost 109}}
 ("unit_infantry_sided" side(ger_ss) name(hero_ss_sniper) member1(sniper2:1) charge(120) tags(all hero 41 42 43 44 45) group(h0) button(hero) level(1) cost(1.0) fore(-0.5))
+;{price {rule squad} {members 207.65} {cost 208}}
 ("squad_8" side(ger_ss) name(hero_ss_grenadier) member1(grenadier_sl:1) member2(grenadier_sl_asst:1) member3(grenadier_stg:1) member4(grenadier_rifle_grenadier:1) member5(grenadier_sa:1) member6(grenadier_pzfst:2) member7(grenadier_mg:1) member8(grenadier_mg_asst:1) charge(90) tags(all hero 44 45) group(h1) button(hero) level(1) cost(2) fore(-0.5))
 
 ;{"heronew1(ger)"     ("i2" c(120)			t(all hero 42 43 44 45) s(ger) n1(bazooker3:2) n2(rifle:4) g(h1) b(hero)) {level 1} {cost 1.0} {fore -0.5}}

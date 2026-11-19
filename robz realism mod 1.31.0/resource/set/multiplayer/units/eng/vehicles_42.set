@@ -22,6 +22,7 @@
 ("unit_vehicle_supporters" side(eng) name(303_bren_tripod) breed(vehicle_supporter) crew(2) charge(10) tags(all 42) group(c1) button(v2) score(100) weight(2) points(5) level(1) cost(100) fore(-2.0))		;30sec
 ("unit_vehicle_supporters" side(eng) name(303_vickers_mkiv) breed(vehicle_supporter) crew(2) charge(10) tags(all 42) group(c2) button(v2) score(125) weight(2) points(5) level(1) cost(125) fore(-2.0))		;30sec
 ("unit_vehicle_supporters" side(eng) name(oerlikon) breed(vehicle_supporter) crew(1) charge(30) tags(all 42) group(c3) button(v2) score(170) weight(2) points(5) level(1) cost(170) fore(-4.0))			;150sec
+;{price {rule squad} {members 49.05} {cost 49}}
 ("unit_light_mortar_2" side(eng) name(light_mortar_eng) charge(10) tags(all 42 mortar) group(c4) button(v2) level(1) cost(170) fore(-2.0))		;30sec
 ("unit_vehicle_supporters" side(eng) name(ml_3_inch_mk_ii) breed(vehicle_supporter) crew(2) charge(10) tags(all 42 mortar) group(c5) button(v2) score(340) weight(2) points(5) level(1) cost(340) fore(-2.0))		;30sec
 ("unit_vehicle_supporters" side(eng) name(4_2_inch_mk_ii) breed(vehicle_supporter) crew(2) charge(60) tags(all 42 mortar) group(c6) button(v2) score(620) weight(2) points(10) level(1) cost(620) fore(-9.0))	;600sec

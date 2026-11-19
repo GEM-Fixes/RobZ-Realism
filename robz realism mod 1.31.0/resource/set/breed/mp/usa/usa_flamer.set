@@ -1,18 +1,12 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "us_flamer_hp"}
-	{portrait usa_soldier2}
-	{icon flamer}
-	{icon_priority 3}
-	{nationality usa}
-	{armors
-		{head helmet1_usa}
-	}
+	("breed_look" skin(us_flamer_hp) portrait(usa_soldier2) icon(flamer) priority(3) nation(usa))
+	("breed_armor" head(helmet1_usa))
 	{perks
 		("soldier_smg_3" rocket(1) body(line) sight(soldier))
 		{"avoidance" lvl_1}
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		{item "flame_thrower"}
 		{item "balloon" filling "fuel" 24}

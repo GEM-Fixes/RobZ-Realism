@@ -1,12 +1,6 @@
 {from "122mm_d25"      ; "is-2"
 	{rechargeTime 16.15}
 	("accuracy_max_vet_anti_far")
-	{range 250 250}
-	("damage_215" at20(201) at100(179) at170(158) at215(141) at250(125) max(250))
-	{parameters "aphebc"
-		("damage_215" at20(206) at100(183) at170(162) at215(144) at250(129) max(250))
-		{cursorReloading "cannon_reload_aphebc"}
-	}
 	{parameters "fg"
 		{range 250 250}
 	}

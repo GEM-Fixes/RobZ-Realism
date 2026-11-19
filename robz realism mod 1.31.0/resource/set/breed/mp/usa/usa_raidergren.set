@@ -1,18 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "usa-camo-carbine"}
-	{portrait usa_elite2}
-	{icon elite5}
-	{icon_priority 3}
-	{nationality usa}
-	{armors
-		{body us_marine_haversack}
-		{head helmet_marine_usa}
-	}
+	("breed_look" skin(usa-camo-carbine) portrait(usa_elite2) icon(elite5) priority(3) nation(usa))
+	("breed_armor_vest" vest(us_marine_haversack) head(helmet_marine_usa))
 	{perks
 		("soldier_rifle_5" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(standard))
+	("breed_vet" table(standard) start(1))
 	{inventory
 		("rifle_garand")
 		{item "bandage" 5}

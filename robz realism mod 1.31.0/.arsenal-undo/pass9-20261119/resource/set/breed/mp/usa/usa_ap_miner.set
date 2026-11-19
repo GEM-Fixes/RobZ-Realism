@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "us_mgun"}
+	{portrait usa_soldier2}
+	{icon ap_miner}
+	{icon_priority 3}
+	{nationality usa}
+	{armors
+		{body ammo_us2}
+		{head helmet4_usa}
+	}
+	{perks
+		("soldier_smg_3" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_m3a")
+		("give" item(mine antipersonnel) count(32))
+		{item "barbwire_kit"}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

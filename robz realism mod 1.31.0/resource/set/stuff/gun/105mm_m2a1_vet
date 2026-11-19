@@ -1,12 +1,6 @@
-{from "pattern gun_art"		; "m7_priest"
-	{filling "bullet105 us" 4}
-	{fireSound "gun/howitzer/105mm_m2a1"}
-	{reloadSound "gun_r05"}
+{from "105mm_m2a1"		; "m7_priest"
 	("range_medium_howitzer_us_vet")
 	{range 380 380}
-	{parameters "heat"
-		("damage_heat" damage(115) max(380))
-	}
 	{recoveryTime 9.6}
 	{rechargeTime 9.6}
 }

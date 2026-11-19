@@ -1,24 +1,18 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "usa-devil-pvt"}
-	{portrait "usa_elite4"}
-	{nationality usa}
-	{icon "devil_brigade"}
-	{icon_priority 4}
-	{armors
-		{head "helmet4_usa"}
-	}
+	("breed_look" skin(usa-devil-pvt) portrait(usa_elite4) icon(devil_brigade) priority(4) nation(usa))
+	("breed_armor" head(helmet4_usa))
 	{perks
 		("soldier_rifle_6" rocket(1) body(line) sight(soldier))
 		{"stealth"}
 	}
-	("breed_vet" table(elite))
+	("breed_vet" table(elite) start(1))
 	{inventory
 		("rifle_garand")
 		("pistol_colt")
 		{item "bandage" 5}
 		("give" item(grenade m61) count(2))
-		("give" item(smoke grenade) count(1))
+		("give" item(grenade smoke) count(1))
 		("kit_pistol" gun(mortar_60_flaregun) ammo(mortar_60_flare) rounds(5))
 		{in_hands 0}
 	}

@@ -1,17 +1,11 @@
 (include "/set/breed/breed_macros.inc")
 {breed
-	{skin "fin-inf-officer"}
-	{portrait "fin_sailor1"}
-	{nationality fin}
-	{icon "squadleader"}
-	{icon_priority 2}
-	{armors
-		{head "cap_fin_m36_officer"}
-	}
+	("breed_look" skin(fin-inf-officer) portrait(fin_sailor1) icon(squadleader) priority(2) nation(fin))
+	("breed_armor" head(cap_fin_m36_officer))
 	{perks
 		("soldier_smg_7" rocket(1) body(line) sight(soldier))
 	}
-	("breed_vet" table(elite))
+	("breed_vet" table(elite) start(1))
 	{inventory
 		("smg_suomi_m31")
 
@@ -19,7 +13,7 @@
 		("give" item(grenade m24) count(2))
 		("give" item(kasapanos_2kg) count(1))
 		("give" item(kasapanos_4kg) count(1))
-		("give" item(smoke grenade) count(1))
+		("give" item(grenade smoke) count(1))
 		{item "knife_fin" 1}
 		{item "small_inf_shovel"}
 		{item "ammo_box_inf_fin"}

@@ -1,11 +1,7 @@
 {from "90mm_m3"		; "m26"
 	{rechargeTime 9.77}
-
 	{range 240 240}
 	("damage_215" at20(172) at100(159) at170(148) at215(137) at250(127) max(240))
-	{parameters "apc"
-		("damage_215" at20(172) at100(159) at170(148) at215(137) at250(127) max(240))
-	}
 	{parameters "hvap"
 		("damage_215" at20(314) at100(278) at170(246) at215(218) at250(193) max(240))
 	}

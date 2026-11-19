@@ -59,6 +59,7 @@
 
 ;   Button support 2    artillery guns
 
+;{price {rule squad} {members 54.4} {cost 54}}
 ("unit_light_mortar" side(ger) name(light_mortar_ger) breed1(ger_light_mortar) breed2(ger_light_mortar_assist) charge(10) tags(all 44 mortar) group(c56) button(v22) level(1) cost(110) fore(-2.0))		;30sec
 
 ("unit_vehicle_supporters_info" side(ger) name(sgrw_34_ger) vehicle1(sgrw_34) crew(2) charge(10) tags(all 39 40 41 42 43 44 45 mortar) group(c6) button(v22) level(1) cost(320) fore(-2.0))		;30sec

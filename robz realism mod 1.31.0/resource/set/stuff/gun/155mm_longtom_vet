@@ -1,10 +1,6 @@
-{from "pattern gun_art"		; "155mm_gpf"
-	{filling "bullet155 us" 3}
-	{fireSound "gun/howitzer/155mm_gpf"}
-	{reloadSound "gun_r04"}
+{from "155mm_longtom"		; "155mm_gpf"
 	("range_heavy_howitzer_us_vet")
 	{range 790 790}
-	{projectileDamage 150}
 	{recoveryTime 13.8}
 	{rechargeTime 13.8}
 }

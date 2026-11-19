@@ -1,0 +1,20 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(ger-para-fg) portrait(ger_elite1) icon(elite3) priority(4) nation(ger))
+	("breed_armor" head(helmet_ger_m38_cover))
+	{perks
+		("soldier_rifle_7" rocket(7) body(line) sight(soldier))
+		{"avoidance" lvl_1}
+		{"stealth"}
+	}
+	("breed_vet" table(elite) start(5))
+	{inventory
+		("rifle_fg42_rifle")
+		{item "bandage" 5}
+		("give" item(grenade m39) count(2))
+		("give" item(grenade pwm1) count(1))
+		("give" item(smoke grenade) count(1))
+		{item "panzerfaust weapon" 0 1 filled}
+		{in_hands 0}
+	}
+}
