@@ -131,7 +131,7 @@
 	{breed}
 	{cw 0.2}
 )
-;{price {class "rifle_grenades"} {tier "medium"} {item "k98_gewehrgranat"} {skill 2} {vet_start 1} {skill_eff 2} {weapon 10} {addon 0} {kit 8} {extras 0} {mp 18} {cp 0.4} {cw 0.4}}
+;{price {class "rifle_grenades"} {tier "medium"} {item "k98_gewehrgranat"} {skill 2} {vet_start 1} {skill_eff 2} {weapon 10} {addon 0} {kit 0} {extras 0} {mp 10} {cp 0.4} {cw 0.4}}
 {"mp/ger/ger_volksgren_grenadier" ("level_5_v2" side(ger))}
 
 (define "level_6_v2"
@@ -153,9 +153,9 @@
 	{breed}
 	{cw 0.2}
 )
-;{price {class "smg"} {tier "low"} {item "mp3008"} {skill 1} {vet_start 1} {skill_eff 1} {weapon 7} {addon 3} {kit 0} {extras 0} {mp 10} {cp 0.4} {cw 0.4}}
+;{price {class "smg"} {tier "low"} {item "mp3008"} {skill 1} {vet_start 1} {skill_eff 1} {weapon 7} {addon 0.75} {kit 0} {extras 0} {mp 7.75} {cp 0.4} {cw 0.4}}
 {"mp/ger/ger_volkssturm_smg_faustpatrone" ("level_7_v2" side(ger))}
-;{price {class "carbines"} {tier "low"} {item "vsg"} {skill 1} {vet_start 1} {skill_eff 1} {weapon 10} {addon 4} {kit 0} {extras 0} {mp 14} {cp 0.4} {cw 0.4}}
+;{price {class "carbines"} {tier "low"} {item "vsg"} {skill 1} {vet_start 1} {skill_eff 1} {weapon 10} {addon 1} {kit 0} {extras 0} {mp 11} {cp 0.4} {cw 0.4}}
 {"mp/ger/ger_volkssturm_smg_panzerfaust" ("level_7_v2" side(ger))}
 ;{price {class "smg"} {tier "medium"} {item "mp28"} {skill 1} {vet_start 1} {skill_eff 1} {weapon 7} {addon 0} {kit 0} {extras 0} {throwable_mp 0.2} {throwable_cp 0.04} {mp 7.2} {cp 0.44} {cw 0.44}}
 {"mp/ger2/ost_straf_mp28" ("level_7_v2" side(ger2))}
@@ -191,14 +191,14 @@
 	{breed}
 	{cw 0.25}
 )
-;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 1} {vet_start 1} {skill_eff 1} {weapon 7} {addon 0} {kit 8} {extras 0} {throwable_mp 0.1} {throwable_cp 0.02} {mp 15.1} {cp 0.42} {cw 0.42}}
+;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 1} {vet_start 1} {skill_eff 1} {weapon 7} {addon 0} {kit 0} {extras 0} {throwable_mp 0.1} {throwable_cp 0.02} {mp 7.1} {cp 0.42} {cw 0.42}}
 {"mp/ger/ger_volksgren_mg_asst" ("level_10_v2" side(ger))}
 
 
-;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 2} {vet_start 1} {skill_eff 2} {weapon 8} {addon 9} {kit 8} {extras 0} {throwable_mp 0.1} {throwable_cp 0.02} {mp 25.1} {cp 0.42} {cw 0.42}}
+;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 2} {vet_start 1} {skill_eff 2} {weapon 8} {addon 2.25} {kit 0} {extras 0} {throwable_mp 0.1} {throwable_cp 0.02} {mp 10.35} {cp 0.42} {cw 0.42}}
 {"mp/ger/ger_volksgren_pzfst" ("level_10_v2" side(ger))}
 
-;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 2} {vet_start 1} {skill_eff 2} {weapon 8} {addon 6} {kit 8} {extras 0} {throwable_mp 0.1} {throwable_cp 0.02} {mp 22.1} {cp 0.42} {cw 0.42}}
+;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 2} {vet_start 1} {skill_eff 2} {weapon 8} {addon 1.5} {kit 0} {extras 0} {throwable_mp 0.1} {throwable_cp 0.02} {mp 9.6} {cp 0.42} {cw 0.42}}
 {"mp/ger/ger_volksgren_rifle" ("level_10_v2" side(ger))}
 ;{price {class "rifles"} {tier "low"} {item "mosin"} {skill 1} {vet_start 1} {skill_eff 1} {weapon 7} {addon 0} {kit 0} {extras 0} {throwable_mp 0.1} {throwable_cp 0.02} {mp 7.1} {cp 0.42} {cw 0.42}}
 {"mp/ger_ss/ss_kosaken_mg_asst" ("level_10_v2" side(ger_ss))}
@@ -224,9 +224,9 @@
 	{breed}
 	{cw 0.25}
 )
-;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 1} {vet_start 1} {skill_eff 1} {weapon 7} {addon 3} {kit 0} {extras 0} {mp 10} {cp 0.4} {cw 0.4}}
+;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 1} {vet_start 1} {skill_eff 1} {weapon 7} {addon 0.75} {kit 0} {extras 0} {mp 7.75} {cp 0.4} {cw 0.4}}
 {"mp/ger/ger_volkssturm_rifle_faustpatrone" ("level_11_v2" side(ger))}
-;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 1} {vet_start 1} {skill_eff 1} {weapon 7} {addon 3} {kit 0} {extras 0} {mp 10} {cp 0.4} {cw 0.4}}
+;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 1} {vet_start 1} {skill_eff 1} {weapon 7} {addon 0.75} {kit 0} {extras 0} {mp 7.75} {cp 0.4} {cw 0.4}}
 {"mp/ger/ger_volkssturm_rifle_panzerfaust" ("level_11_v2" side(ger))}
 ;{price {class "rifles"} {tier "low"} {item "type38rifle_bayonet"} {skill 1} {vet_start 1} {skill_eff 1} {weapon 7} {addon 0} {kit 0} {extras 0} {throwable_mp 0.05} {throwable_cp 0.01} {mp 7.05} {cp 0.41} {cw 0.41}}
 {"mp/jap/jap_charger_rifle" ("level_11_v2" side(jap))}
@@ -243,7 +243,7 @@
 	{breed}
 	{cw 0.29}
 )
-;{price {class "rifles"} {tier "high"} {item "g43"} {skill 2} {vet_start 1} {skill_eff 2} {weapon 9} {addon 7} {kit 8} {extras 0} {throwable_mp 0.1} {throwable_cp 0.02} {mp 24.1} {cp 0.42} {cw 0.42}}
+;{price {class "rifles"} {tier "high"} {item "g43"} {skill 2} {vet_start 1} {skill_eff 2} {weapon 9} {addon 1.75} {kit 0} {extras 0} {throwable_mp 0.1} {throwable_cp 0.02} {mp 10.85} {cp 0.42} {cw 0.42}}
 {"mp/ger/ger_volksgren_sa" ("level_12_v2" side(ger))}
 ; level_13: buy-card fields, {tags "level_13 %side soldier"} {cp} {score} {basic} {breed} {cw}
 ;   side - text in {tags}
@@ -532,15 +532,15 @@
 {"mp/axis_minor/axm_hun_rifle3" ("level_29" side(axis_minor))}
 ;{price {class "rifles"} {tier "low"} {item "zb_24rifle"} {skill 2} {vet_start 1} {skill_eff 2} {weapon 8} {addon 0} {kit 0} {extras 0} {throwable_mp 0.3} {throwable_cp 0.06} {mp 8.3} {cp 0.46} {cw 0.46}}
 {"mp/axis_minor/axm_rom_mgunassist" ("level_29" side(axis_minor))}
-;{price {class "rifles"} {tier "low"} {item "zb_24rifle"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 9} {addon 0} {kit 8} {extras 0} {throwable_mp 0.3} {throwable_cp 0.06} {mp 17.3} {cp 0.66} {cw 0.66}}
+;{price {class "rifles"} {tier "low"} {item "zb_24rifle"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 9} {addon 0} {kit 0} {extras 0} {throwable_mp 0.3} {throwable_cp 0.06} {mp 9.3} {cp 0.66} {cw 0.66}}
 {"mp/axis_minor/axm_rom_rifle" ("level_29" side(axis_minor))}
 ;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 9} {addon 0} {kit 0} {extras 0} {mp 9} {cp 0.6} {cw 0.6}}
 {"mp/ger_ss/ss_fallschirm_mg_asst" ("level_29" side(ger_ss))}
 ;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 9} {addon 0} {kit 0} {extras 0} {throwable_mp 0.4} {throwable_cp 0.08} {mp 9.4} {cp 0.68} {cw 0.68}}
 {"mp/ger_ss/ss_fallschirm_rifle" ("level_29" side(ger_ss))}
-;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 9} {addon 11} {kit 0} {extras 0} {throwable_mp 0.2} {throwable_cp 0.04} {mp 20.2} {cp 0.64} {cw 0.64}}
+;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 9} {addon 2.75} {kit 0} {extras 0} {throwable_mp 0.2} {throwable_cp 0.04} {mp 11.95} {cp 0.64} {cw 0.64}}
 {"mp/ger2/ost_recon_pzfst" ("level_29" side(ger2))}
-;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 9} {addon 7} {kit 0} {extras 0} {throwable_mp 0.2} {throwable_cp 0.04} {mp 16.2} {cp 0.64} {cw 0.64}}
+;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 9} {addon 1.75} {kit 0} {extras 0} {throwable_mp 0.2} {throwable_cp 0.04} {mp 10.95} {cp 0.64} {cw 0.64}}
 {"mp/ger2/ost_recon_rifle" ("level_29" side(ger2))}
 ;{price {class "smg"} {tier "low"} {item "type100smg"} {skill 2} {vet_start 1} {skill_eff 2} {weapon 8} {addon 0} {kit 0} {extras 0} {throwable_mp 0.15} {throwable_cp 0.03} {mp 8.15} {cp 0.43} {cw 0.43}}
 {"mp/jap/jap_flamerassist" ("level_29" side(jap))}
@@ -554,7 +554,7 @@
 {"mp/jap/jap_rifleb" ("level_29" side(jap))}
 ;{price {class "rifles"} {tier "low"} {item "mosin"} {skill 2} {vet_start 1} {skill_eff 2} {weapon 8} {addon 0} {kit 0} {extras 0} {throwable_mp 0.05} {throwable_cp 0.01} {mp 8.05} {cp 0.41} {cw 0.41}}
 {"mp/rus/rus_mgun_asst" ("level_29" side(rus))}
-;{price {class "rifles"} {tier "low"} {item "mosin"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 9} {addon 0} {kit 8} {extras 0} {throwable_mp 0.0625} {throwable_cp 0.0125} {mp 17.06} {cp 0.61} {cw 0.61}}
+;{price {class "rifles"} {tier "low"} {item "mosin"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 9} {addon 0} {kit 0} {extras 0} {throwable_mp 0.0625} {throwable_cp 0.0125} {mp 9.06} {cp 0.61} {cw 0.61}}
 {"mp/rus/rus_rifle" ("level_29" side(rus))}
 ;{price {class "rifles"} {tier "low"} {item "mosin"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 9} {addon 0} {kit 0} {extras 0} {throwable_mp 0.1} {throwable_cp 0.02} {mp 9.1} {cp 0.62} {cw 0.62}}
 {"mp/rus/rus_sapper_rifle1" ("level_29" side(rus))}
@@ -632,7 +632,7 @@
 	{breed}
 	{cw 0.6}
 )
-;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 1} {vet_start 1} {skill_eff 1} {weapon 7} {addon 3} {kit 0} {extras 0} {mp 10} {cp 0.4} {cw 0.4}}
+;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 1} {vet_start 1} {skill_eff 1} {weapon 7} {addon 0.75} {kit 0} {extras 0} {mp 7.75} {cp 0.4} {cw 0.4}}
 {"mp/ger2/ost_straf_mauzer" ("level_31_v2" side(ger2))}
 (define "level_32_v2"
 	{tags   "level_32 %side soldier"}
@@ -669,9 +669,9 @@
 	{breed}
 	{cw 0.68}
 )
-;{price {class "rifles"} {tier "high"} {item "g43"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 13} {addon 8} {kit 0} {extras 0} {throwable_mp 0.225} {throwable_cp 0.045} {mp 21.23} {cp 0.73} {cw 0.73}}
+;{price {class "rifles"} {tier "high"} {item "g43"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 13} {addon 2} {kit 0} {extras 0} {throwable_mp 0.225} {throwable_cp 0.045} {mp 15.23} {cp 0.73} {cw 0.73}}
 {"mp/ger2/ost_recon_sa" ("level_34" side(ger2))}
-;{price {class "rifles"} {tier "high"} {item "svt40"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 13} {addon 0} {kit 8} {extras 0} {throwable_mp 0.0625} {throwable_cp 0.0125} {mp 21.06} {cp 0.69} {cw 0.69}}
+;{price {class "rifles"} {tier "high"} {item "svt40"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 13} {addon 0} {kit 0} {extras 0} {throwable_mp 0.0625} {throwable_cp 0.0125} {mp 13.06} {cp 0.69} {cw 0.69}}
 {"mp/rus/rus_rifle_sa" ("level_34" side(rus))}
 
 ;{price {class "rifles"} {tier "high"} {item "garand"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 13} {addon 0} {kit 0} {extras 0} {throwable_mp 0.15} {throwable_cp 0.03} {mp 13.15} {cp 0.71} {cw 0.71}}
@@ -692,9 +692,9 @@
 	{breed}
 	{cw 0.7}
 )
-;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 2} {vet_start 1} {skill_eff 2} {weapon 12} {addon 7} {kit 8} {extras 0} {throwable_mp 0.1875} {throwable_cp 0.0375} {mp 27.19} {cp 0.74} {cw 0.74}}
+;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 2} {vet_start 1} {skill_eff 2} {weapon 12} {addon 1.75} {kit 0} {extras 0} {throwable_mp 0.1875} {throwable_cp 0.0375} {mp 13.94} {cp 0.74} {cw 0.74}}
 {"mp/ger/ger_volksgren_stg44" ("level_35" side(ger))}
-;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 2} {vet_start 1} {skill_eff 2} {weapon 12} {addon 9} {kit 8} {extras 0} {throwable_mp 0.175} {throwable_cp 0.035} {mp 29.18} {cp 0.74} {cw 0.74}}
+;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 2} {vet_start 1} {skill_eff 2} {weapon 12} {addon 2.25} {kit 0} {extras 0} {throwable_mp 0.175} {throwable_cp 0.035} {mp 14.43} {cp 0.74} {cw 0.74}}
 {"mp/ger/ger_volksgren_pzfst2" ("level_35" side(ger))}
 
 (define "level_36"
@@ -729,7 +729,7 @@
 	{breed}
 	{cw 0.82}
 )
-;{price {class "mg"} {tier "high"} {item "mg42_inf"} {skill 2} {vet_start 1} {skill_eff 2} {weapon 35} {addon 0} {kit 8} {extras 0} {mp 43} {cp 0.87} {cw 0.87}}
+;{price {class "mg"} {tier "high"} {item "mg42_inf"} {skill 2} {vet_start 1} {skill_eff 2} {weapon 35} {addon 0} {kit 0} {extras 0} {mp 35} {cp 0.87} {cw 0.87}}
 {"mp/ger/ger_volksgren_mg" ("level_37_v2" side(ger))}
 ; level_38: buy-card fields, {tags "level_38 %side soldier"} {cp} {score} {basic} {breed} {cw}
 ;   side - text in {tags}
@@ -816,11 +816,11 @@
 
 ;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 9} {addon 0} {kit 0} {extras 0} {mp 9} {cp 0.6} {cw 0.6}}
 {"mp/ger/ger_grenadier_mg_asst" ("level_40" side(ger))}
-;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 10} {addon 10} {kit 0} {extras 0} {throwable_mp 0.2625} {throwable_cp 0.0525} {mp 20.26} {cp 1.39} {cw 1.39}}
+;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 10} {addon 2.5} {kit 0} {extras 0} {throwable_mp 0.2625} {throwable_cp 0.0525} {mp 12.76} {cp 1.39} {cw 1.39}}
 {"mp/ger/ger_grenadier_ober_44" ("level_40" side(ger))}
 ;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 4} {vet_start 1} {skill_eff 4} {weapon 9} {addon 13} {kit 0} {extras 0} {throwable_mp 0.2125} {throwable_cp 0.0425} {mp 22.21} {cp 1.01} {cw 1.01}}
 {"mp/ger/ger_grenadier_pzfst" ("level_40" side(ger))}
-;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 4} {vet_start 1} {skill_eff 4} {weapon 9} {addon 9} {kit 0} {extras 0} {throwable_mp 0.2125} {throwable_cp 0.0425} {mp 18.21} {cp 1.01} {cw 1.01}}
+;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 4} {vet_start 1} {skill_eff 4} {weapon 9} {addon 2.25} {kit 0} {extras 0} {throwable_mp 0.2125} {throwable_cp 0.0425} {mp 11.46} {cp 1.01} {cw 1.01}}
 {"mp/ger/ger_grenadier_rifle_44" ("level_40" side(ger))}
 ;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 4} {vet_start 1} {skill_eff 4} {weapon 9} {addon 9} {kit 0} {extras 0} {throwable_mp 0.45} {throwable_cp 0.09} {mp 18.45} {cp 1.06} {cw 1.06}}
 {"mp/ger/ger_panzerfaust" ("level_40" side(ger))}
@@ -1000,7 +1000,7 @@
 	{breed}
 	{cw 1.09}
 )
-;{price {class "rifles"} {tier "high"} {item "g43"} {skill 4} {vet_start 1} {skill_eff 4} {weapon 13} {addon 9} {kit 0} {extras 0} {throwable_mp 0.2125} {throwable_cp 0.0425} {mp 22.21} {cp 1.13} {cw 1.13}}
+;{price {class "rifles"} {tier "high"} {item "g43"} {skill 4} {vet_start 1} {skill_eff 4} {weapon 13} {addon 2.25} {kit 0} {extras 0} {throwable_mp 0.2125} {throwable_cp 0.0425} {mp 15.46} {cp 1.13} {cw 1.13}}
 {"mp/ger/ger_grenadier_sa_44" ("level_48" side(ger))}
 ;{price {class "rifles"} {tier "high"} {item "svt40"} {skill 4} {vet_start 1} {skill_eff 4} {weapon 13} {addon 0} {kit 0} {extras 0} {throwable_mp 0.15} {throwable_cp 0.03} {mp 13.15} {cp 1.12} {cw 1.12}}
 {"mp/rus/rus_marine_svt" ("level_48" side(rus))}
@@ -1041,7 +1041,7 @@
 
 ;{price {class "mg"} {tier "low"} {item "bren"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 30} {addon 0} {kit 0} {extras 0} {mp 30} {cp 1.11} {cw 1.11}}
 {"mp/eng/eng_mg_canada" ("level_50" side(eng))}
-;{price {class "mg"} {tier "low"} {item "dp"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 30} {addon 0} {kit 8} {extras 0} {mp 38} {cp 1.11} {cw 1.11}}
+;{price {class "mg"} {tier "low"} {item "dp"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 30} {addon 0} {kit 0} {extras 0} {mp 30} {cp 1.11} {cw 1.11}}
 {"mp/rus/rus_mgun" ("level_50" side(rus))}
 ;{price {class "mg"} {tier "low"} {item "type11_mg"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 30} {addon 0} {kit 0} {extras 0} {mp 30} {cp 1.11} {cw 1.11}}
 {"mp/jap/otsu_mg" ("level_50" side(jap))}
@@ -1056,7 +1056,7 @@
 	{breed}
 	{cw 1.11}
 )
-;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 16} {addon 0} {kit 8} {extras 0} {throwable_mp 0.3} {throwable_cp 0.06} {mp 24.3} {cp 1.17} {cw 1.17}}
+;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 16} {addon 0} {kit 0} {extras 0} {throwable_mp 0.3} {throwable_cp 0.06} {mp 16.3} {cp 1.17} {cw 1.17}}
 {"mp/ger/ger_volksgren_sl_stg" ("level_51_v2" side(ger))}
 (define "level_52_v2"
 	{tags   "level_52 %side soldier"}
@@ -1114,17 +1114,17 @@
 
 ;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 10} {addon 0} {kit 0} {extras 0} {throwable_mp 0.225} {throwable_cp 0.045} {mp 10.23} {cp 1.39} {cw 1.39}}
 {"mp/ger/ger_pzgren_rifle" ("level_55" side(ger))}
-;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 9} {addon 0} {kit 8} {extras 0} {throwable_mp 0.2} {throwable_cp 0.04} {mp 17.2} {cp 0.64} {cw 0.64}}
+;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 9} {addon 0} {kit 0} {extras 0} {throwable_mp 0.2} {throwable_cp 0.04} {mp 9.2} {cp 0.64} {cw 0.64}}
 {"mp/ger_ss/ss_gebirgs_mg_asst" ("level_55" side(ger_ss))}
 ;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 10} {addon 10} {kit 0} {extras 0} {throwable_mp 0.2} {throwable_cp 0.04} {mp 20.2} {cp 1.38} {cw 1.38}}
 {"mp/ger_ss/ss_gebirgs_pzfst" ("level_55" side(ger_ss))}
-;{price {class "smg"} {tier "high"} {item "mab_38a"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 15} {addon 8} {kit 8} {extras 0} {throwable_mp 0.35} {throwable_cp 0.07} {mp 31.35} {cp 1.51} {cw 1.51}}
+;{price {class "smg"} {tier "high"} {item "mab_38a"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 15} {addon 8} {kit 0} {extras 0} {throwable_mp 0.35} {throwable_cp 0.07} {mp 23.35} {cp 1.51} {cw 1.51}}
 {"mp/ger_ss/ss_gebirgs_pzfst_ber" ("level_55" side(ger_ss))}
-;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 10} {addon 0} {kit 8} {extras 0} {throwable_mp 0.2} {throwable_cp 0.04} {mp 18.2} {cp 1.38} {cw 1.38}}
+;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 10} {addon 0} {kit 0} {extras 0} {throwable_mp 0.2} {throwable_cp 0.04} {mp 10.2} {cp 1.38} {cw 1.38}}
 {"mp/ger_ss/ss_gebirgs_rifle" ("level_55" side(ger_ss))}
 ;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 9} {addon 0} {kit 0} {extras 0} {throwable_mp 0.2} {throwable_cp 0.04} {mp 9.2} {cp 0.64} {cw 0.64}}
 {"mp/ger_ss/ss_grenadier_mg_asst" ("level_55" side(ger_ss))}
-;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 10} {addon 15} {kit 0} {extras 0} {throwable_mp 0.2125} {throwable_cp 0.0425} {mp 25.21} {cp 1.38} {cw 1.38}}
+;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 10} {addon 3.75} {kit 0} {extras 0} {throwable_mp 0.2125} {throwable_cp 0.0425} {mp 13.96} {cp 1.38} {cw 1.38}}
 {"mp/ger_ss/ss_grenadier_pzfst" ("level_55" side(ger_ss))}
 ;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 10} {addon 0} {kit 0} {extras 0} {throwable_mp 0.2125} {throwable_cp 0.0425} {mp 10.21} {cp 1.38} {cw 1.38}}
 {"mp/ger_ss/ss_grenadier_rifle" ("level_55" side(ger_ss))}
@@ -1274,11 +1274,11 @@
 ;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 10} {addon 0} {kit 0} {extras 0} {throwable_mp 0.45} {throwable_cp 0.09} {mp 10.45} {cp 1.43} {cw 1.43}}
 {"mp/ger2/ost_panzershreckassist" ("level_60" side(ger2))}
 
-;{price {class "smg"} {tier "medium"} {item "mp40"} {skill 4} {vet_start 2} {skill_eff 5} {weapon 14} {addon 8} {kit 0} {extras 0} {throwable_mp 0.225} {throwable_cp 0.045} {mp 22.23} {cp 1.48} {cw 1.48}}
+;{price {class "smg"} {tier "medium"} {item "mp40"} {skill 4} {vet_start 2} {skill_eff 5} {weapon 14} {addon 2} {kit 0} {extras 0} {throwable_mp 0.225} {throwable_cp 0.045} {mp 16.23} {cp 1.48} {cw 1.48}}
 {"mp/ger2/ost_smg" ("level_60" side(ger2))}
-;{price {class "smg"} {tier "medium"} {item "mp41"} {skill 4} {vet_start 2} {skill_eff 5} {weapon 14} {addon 8} {kit 0} {extras 0} {throwable_mp 0.225} {throwable_cp 0.045} {mp 22.23} {cp 1.48} {cw 1.48}}
+;{price {class "smg"} {tier "medium"} {item "mp41"} {skill 4} {vet_start 2} {skill_eff 5} {weapon 14} {addon 2} {kit 0} {extras 0} {throwable_mp 0.225} {throwable_cp 0.045} {mp 16.23} {cp 1.48} {cw 1.48}}
 {"mp/ger2/ost_smg2" ("level_60" side(ger2))}
-;{price {class "smg"} {tier "medium"} {item "ppsh"} {skill 4} {vet_start 2} {skill_eff 5} {weapon 14} {addon 8} {kit 0} {extras 0} {throwable_mp 0.225} {throwable_cp 0.045} {mp 22.23} {cp 1.48} {cw 1.48}}
+;{price {class "smg"} {tier "medium"} {item "ppsh"} {skill 4} {vet_start 2} {skill_eff 5} {weapon 14} {addon 2} {kit 0} {extras 0} {throwable_mp 0.225} {throwable_cp 0.045} {mp 16.23} {cp 1.48} {cw 1.48}}
 {"mp/ger2/ost_smg3" ("level_60" side(ger2))}
 ;{price {class "smg"} {tier "high"} {item "pps43"} {skill 3} {vet_start 3} {skill_eff 5} {weapon 15} {addon 0} {kit 0} {extras 0} {throwable_mp 0.5} {throwable_cp 0.1} {mp 15.5} {cp 1.54} {cw 1.54}}
 {"mp/rus_guard/guard_sapper_smg" ("level_60" side(rus_guard))}
@@ -1299,7 +1299,7 @@
 )
 ;{price {class "snipers"} {tier "medium"} {item "carcano_m91_scoped"} {skill 4} {vet_start 1} {skill_eff 4} {weapon 55} {addon 0} {kit 0} {extras 0} {mp 55} {cp 1.56} {cw 0.97}}
 {"mp/axis_minor/axm_ita_alpini_sniper" ("level_61" side(axis_minor))}
-;{price {class "snipers"} {tier "medium"} {item "g43_scope"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 60} {addon 10} {kit 0} {extras 0} {throwable_mp 0.2125} {throwable_cp 0.0425} {mp 70.21} {cp 2.09} {cw 1.48}}
+;{price {class "snipers"} {tier "medium"} {item "g43_scope"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 60} {addon 5} {kit 0} {extras 0} {throwable_mp 0.2125} {throwable_cp 0.0425} {mp 65.21} {cp 2.09} {cw 1.48}}
 {"mp/ger_ss/ss_sturmgren_sa_scope" ("level_61" side(ger_ss))}
 ;{price {class "snipers"} {tier "medium"} {item "mauzer_s_vet"} {skill 7} {vet_start 1} {skill_eff 7} {weapon 72.5} {addon 0} {kit 0} {extras 0} {mp 72.5} {cp 3.34} {cw 2.44}}
 {"mp/ger2/ost_sniper" ("level_61" side(ger2))}
@@ -1445,7 +1445,7 @@
 {"mp/ger/ger_pzgren_panzerfaust" ("level_68" side(ger))}
 ;{price {class "rifles"} {tier "high"} {item "g43"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 15} {addon 0} {kit 0} {extras 0} {throwable_mp 0.2125} {throwable_cp 0.0425} {mp 15.21} {cp 1.58} {cw 1.58}}
 {"mp/ger_ss/ss_grenadier_sa" ("level_68" side(ger_ss))}
-;{price {class "rifles"} {tier "high"} {item "g43"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 15} {addon 10} {kit 0} {extras 0} {throwable_mp 0.2125} {throwable_cp 0.0425} {mp 25.21} {cp 1.58} {cw 1.58}}
+;{price {class "rifles"} {tier "high"} {item "g43"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 15} {addon 2.5} {kit 0} {extras 0} {throwable_mp 0.2125} {throwable_cp 0.0425} {mp 17.71} {cp 1.58} {cw 1.58}}
 {"mp/ger_ss/ss_grenadier_sa_44" ("level_68" side(ger_ss))}
 ;{price {class "rifles"} {tier "high"} {item "g43"} {skill 5} {vet_start 1} {skill_eff 6} {weapon 18} {addon 10} {kit 0} {extras 0} {throwable_mp 0.25} {throwable_cp 0.05} {mp 28.25} {cp 2.05} {cw 2.05}}
 {"mp/ger_ss/ss_pzgren_pzfst_sa" ("level_68" side(ger_ss))}
@@ -1524,11 +1524,11 @@
 	{breed}
 	{cw 1.56}
 )
-;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 4} {vet_start 1} {skill_eff 4} {weapon 18} {addon 9} {kit 0} {extras 0} {throwable_mp 0.2125} {throwable_cp 0.0425} {mp 27.21} {cp 1.6} {cw 1.6}}
+;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 4} {vet_start 1} {skill_eff 4} {weapon 18} {addon 2.25} {kit 0} {extras 0} {throwable_mp 0.2125} {throwable_cp 0.0425} {mp 20.46} {cp 1.6} {cw 1.6}}
 {"mp/ger/ger_grenadier_stg" ("level_73" side(ger))}
-;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 4} {vet_start 1} {skill_eff 4} {weapon 18} {addon 9} {kit 8} {extras 0} {throwable_mp 0.275} {throwable_cp 0.055} {mp 35.28} {cp 1.62} {cw 1.62}}
+;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 4} {vet_start 1} {skill_eff 4} {weapon 18} {addon 2.25} {kit 0} {extras 0} {throwable_mp 0.275} {throwable_cp 0.055} {mp 20.53} {cp 1.62} {cw 1.62}}
 {"mp/ger/ger_sturmgren_sg44" ("level_73" side(ger))}
-;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 4} {vet_start 1} {skill_eff 4} {weapon 18} {addon 13} {kit 16} {extras 0} {throwable_mp 0.275} {throwable_cp 0.055} {mp 47.28} {cp 1.62} {cw 1.62}}
+;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 4} {vet_start 1} {skill_eff 4} {weapon 18} {addon 3.25} {kit 0} {extras 0} {throwable_mp 0.275} {throwable_cp 0.055} {mp 21.53} {cp 1.62} {cw 1.62}}
 {"mp/ger/ger_sturmgren_sg44_pzfst" ("level_73" side(ger))}
 
 ;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 4} {vet_start 1} {skill_eff 4} {weapon 18} {addon 0} {kit 0} {extras 0} {throwable_mp 0.3} {throwable_cp 0.06} {mp 18.3} {cp 1.62} {cw 1.62}}
@@ -1582,7 +1582,7 @@
 {"mp/axis_minor/axm_fin_kaukopartio_rifle" ("level_77" side(axis_minor))}
 ;{price {class "rifles"} {tier "vet"} {item "mauzer_vet"} {skill 3} {vet_start 2} {skill_eff 4} {weapon 14} {addon 0} {kit 0} {extras 0} {mp 14} {cp 1.54} {cw 1.54}}
 {"mp/ger2/ost_jager_mg_asst" ("level_77" side(ger2))}
-;{price {class "rifles"} {tier "vet"} {item "mauzer_vet"} {skill 5} {vet_start 2} {skill_eff 6} {weapon 16} {addon 15} {kit 8} {extras 0} {throwable_mp 0.225} {throwable_cp 0.045} {mp 39.23} {cp 2.05} {cw 2.05}}
+;{price {class "rifles"} {tier "vet"} {item "mauzer_vet"} {skill 5} {vet_start 2} {skill_eff 6} {weapon 16} {addon 3.75} {kit 0} {extras 0} {throwable_mp 0.225} {throwable_cp 0.045} {mp 19.98} {cp 2.05} {cw 2.05}}
 {"mp/ger2/ost_jager_pzfst" ("level_77" side(ger2))}
 
 ;{price {class "rifles"} {tier "low"} {item "type38rifle_bayonet"} {skill 6} {vet_start 1} {skill_eff 6} {weapon 11} {addon 0} {kit 0} {extras 0} {throwable_mp 0.25} {throwable_cp 0.05} {mp 11.25} {cp 1.78} {cw 1.78}}
@@ -1795,7 +1795,7 @@
 	{breed}
 	{cw 2.0}
 )
-;{price {class "rifles"} {tier "high"} {item "g43"} {skill 7} {vet_start 2} {skill_eff 8} {weapon 22} {addon 15} {kit 8} {extras 0} {throwable_mp 0.2} {throwable_cp 0.04} {mp 45.2} {cp 3.03} {cw 3.03}}
+;{price {class "rifles"} {tier "high"} {item "g43"} {skill 7} {vet_start 2} {skill_eff 8} {weapon 22} {addon 15} {kit 0} {extras 0} {throwable_mp 0.2} {throwable_cp 0.04} {mp 37.2} {cp 3.03} {cw 3.03}}
 {"mp/ger2/ost_pzgren_pzfaust_g43" ("level_91" side(ger2))}
 ;{price {class "rifles"} {tier "high"} {item "svt40"} {skill 6} {vet_start 1} {skill_eff 6} {weapon 18} {addon 0} {kit 0} {extras 0} {throwable_mp 0.15} {throwable_cp 0.03} {mp 18.15} {cp 2.03} {cw 2.03}}
 {"mp/rus/rus_bsf_marine2" ("level_91" side(rus))}
@@ -1862,7 +1862,7 @@
 )
 
 
-;{price {class "smg"} {tier "medium"} {item "mp41"} {skill 5} {vet_start 2} {skill_eff 6} {weapon 16} {addon 10} {kit 8} {extras 0} {throwable_mp 0.275} {throwable_cp 0.055} {mp 34.28} {cp 1.98} {cw 1.98}}
+;{price {class "smg"} {tier "medium"} {item "mp41"} {skill 5} {vet_start 2} {skill_eff 6} {weapon 16} {addon 2.5} {kit 0} {extras 0} {throwable_mp 0.275} {throwable_cp 0.055} {mp 18.77} {cp 1.98} {cw 1.98}}
 {"mp/ger2/ost_jager_smg" ("level_94" side(ger2))}
 ;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 20} {addon 0} {kit 0} {extras 0} {throwable_mp 0.225} {throwable_cp 0.045} {mp 20.23} {cp 2.09} {cw 2.09}}
 {"mp/ger/ger_fusilier_stg" ("level_94" side(ger))}
@@ -1876,11 +1876,11 @@
 {"mp/ger/ger_jager_stg" ("level_94" side(ger))}
 ;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 20} {addon 10} {kit 0} {extras 0} {throwable_mp 0.225} {throwable_cp 0.045} {mp 30.23} {cp 2.09} {cw 2.09}}
 {"mp/ger/ger_pzgren_stg_panzerfaust" ("level_94" side(ger))}
-;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 20} {addon 10} {kit 16} {extras 0} {throwable_mp 0.275} {throwable_cp 0.055} {mp 46.28} {cp 2.11} {cw 2.11}}
+;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 20} {addon 2.5} {kit 0} {extras 0} {throwable_mp 0.275} {throwable_cp 0.055} {mp 22.78} {cp 2.11} {cw 2.11}}
 {"mp/ger/ger_sturmgren_sl_asst" ("level_94" side(ger))}
 ;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 20} {addon 0} {kit 0} {extras 0} {throwable_mp 0.35} {throwable_cp 0.07} {mp 20.35} {cp 2.12} {cw 2.12}}
 {"mp/ger/ger_squadleader_sg44" ("level_94" side(ger))}
-;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 20} {addon 10} {kit 0} {extras 0} {throwable_mp 0.2125} {throwable_cp 0.0425} {mp 30.21} {cp 2.09} {cw 2.09}}
+;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 20} {addon 2.5} {kit 0} {extras 0} {throwable_mp 0.2125} {throwable_cp 0.0425} {mp 22.71} {cp 2.09} {cw 2.09}}
 {"mp/ger_ss/ss_grenadier_stg" ("level_94" side(ger_ss))}
 ;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 6} {vet_start 1} {skill_eff 7} {weapon 24} {addon 0} {kit 0} {extras 0} {throwable_mp 0.4} {throwable_cp 0.08} {mp 24.4} {cp 3.17} {cw 3.17}}
 {"mp/ger_ss/ss_pzgren_sl_stg" ("level_94" side(ger_ss))}
@@ -1890,7 +1890,7 @@
 {"mp/ger_ss/ss_ss_sturmgren_stg" ("level_94" side(ger_ss))}
 ;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 6} {vet_start 1} {skill_eff 6} {weapon 22} {addon 0} {kit 0} {extras 0} {throwable_mp 0.4} {throwable_cp 0.08} {mp 22.4} {cp 2.64} {cw 2.64}}
 {"mp/ger_ss/ss_sturmgren_sl" ("level_94" side(ger_ss))}
-;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 6} {vet_start 1} {skill_eff 6} {weapon 22} {addon 10} {kit 0} {extras 0} {throwable_mp 0.2625} {throwable_cp 0.0525} {mp 32.26} {cp 2.61} {cw 2.61}}
+;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 6} {vet_start 1} {skill_eff 6} {weapon 22} {addon 5} {kit 0} {extras 0} {throwable_mp 0.2625} {throwable_cp 0.0525} {mp 27.26} {cp 2.61} {cw 2.61}}
 {"mp/ger_ss/ss_sturmgren_sl_asst" ("level_94" side(ger_ss))}
 ;{price {class "smg"} {tier "medium"} {item "mp40"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 14} {addon 0} {kit 0} {extras 0} {throwable_mp 0.2625} {throwable_cp 0.0525} {mp 14.26} {cp 1.49} {cw 1.49}}
 {"mp/ger_ss/ss_sturmgren_smg" ("level_94" side(ger_ss))}
@@ -1901,7 +1901,7 @@
 ;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 20} {addon 0} {kit 0} {extras 0} {throwable_mp 0.6} {throwable_cp 0.12} {mp 20.6} {cp 2.17} {cw 2.17}}
 {"mp/ger_ss/ss_sturmpio_sl" ("level_94" side(ger_ss))}
 
-;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 4} {vet_start 2} {skill_eff 5} {weapon 20} {addon 10} {kit 0} {extras 0} {throwable_mp 0.225} {throwable_cp 0.045} {mp 30.23} {cp 2.09} {cw 2.09}}
+;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 4} {vet_start 2} {skill_eff 5} {weapon 20} {addon 2.5} {kit 0} {extras 0} {throwable_mp 0.225} {throwable_cp 0.045} {mp 22.73} {cp 2.09} {cw 2.09}}
 {"mp/ger2/ost_stg" ("level_94" side(ger2))}
 (define "level_95"
 	{tags   "level_95 %side soldier"}
@@ -1915,7 +1915,7 @@
 {"mp/eng/eng_mgun_assist_scot" ("level_95" side(eng))}
 ;{price {class "mg"} {tier "low"} {item "bren"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 40} {addon 0} {kit 0} {extras 0} {mp 40} {cp 2.05} {cw 2.05}}
 {"mp/eng/eng_mgun_scot" ("level_95" side(eng))}
-;{price {class "mg"} {tier "low"} {item "zb30"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 40} {addon 0} {kit 8} {extras 0} {mp 48} {cp 2.05} {cw 2.05}}
+;{price {class "mg"} {tier "low"} {item "zb30"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 40} {addon 0} {kit 0} {extras 0} {mp 40} {cp 2.05} {cw 2.05}}
 {"mp/ger_ss/ss_gebirgs_mg" ("level_95" side(ger_ss))}
 ;{price {class "mg"} {tier "low"} {item "type99_mg"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 40} {addon 0} {kit 0} {extras 0} {throwable_mp 0.15} {throwable_cp 0.03} {mp 40.15} {cp 2.08} {cw 2.08}}
 {"mp/jap/jap_kanoeshidan_mg" ("level_95" side(jap))}
@@ -2280,11 +2280,11 @@
 	{cw 2.56}
 )
 
-;{price {class "rifles"} {tier "high"} {item "g43"} {skill 5} {vet_start 2} {skill_eff 6} {weapon 18} {addon 8} {kit 8} {extras 0} {throwable_mp 0.275} {throwable_cp 0.055} {mp 34.28} {cp 2.06} {cw 2.06}}
+;{price {class "rifles"} {tier "high"} {item "g43"} {skill 5} {vet_start 2} {skill_eff 6} {weapon 18} {addon 2} {kit 0} {extras 0} {throwable_mp 0.275} {throwable_cp 0.055} {mp 20.27} {cp 2.06} {cw 2.06}}
 {"mp/ger2/ost_jager_sa" ("level_113" side(ger2))}
-;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 6} {vet_start 2} {skill_eff 7} {weapon 24} {addon 0} {kit 8} {extras 0} {throwable_mp 0.4} {throwable_cp 0.08} {mp 32.4} {cp 3.17} {cw 3.17}}
+;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 6} {vet_start 2} {skill_eff 7} {weapon 24} {addon 0} {kit 0} {extras 0} {throwable_mp 0.4} {throwable_cp 0.08} {mp 24.4} {cp 3.17} {cw 3.17}}
 {"mp/ger2/ost_jager_sl_stg" ("level_113" side(ger2))}
-;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 6} {vet_start 2} {skill_eff 7} {weapon 24} {addon 8} {kit 8} {extras 0} {throwable_mp 0.325} {throwable_cp 0.065} {mp 40.33} {cp 3.16} {cw 3.16}}
+;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 6} {vet_start 2} {skill_eff 7} {weapon 24} {addon 2} {kit 0} {extras 0} {throwable_mp 0.325} {throwable_cp 0.065} {mp 26.33} {cp 3.16} {cw 3.16}}
 {"mp/ger2/ost_jager_sl_stg_asst" ("level_113" side(ger2))}
 
 
@@ -2327,9 +2327,9 @@
 )
 ;{price {class "snipers"} {tier "medium"} {item "g43_scope"} {skill 5} {vet_start 5} {skill_eff 8} {weapon 75} {addon 0} {kit 0} {extras 0} {throwable_mp 0.3} {throwable_cp 0.06} {mp 75.3} {cp 3.99} {cw 3.03}}
 {"mp/ger/ger_gd_pzgren_sa_scope" ("level_116" side(ger))}
-;{price {class "snipers"} {tier "medium"} {item "g43_scope"} {skill 7} {vet_start 2} {skill_eff 8} {weapon 75} {addon 8} {kit 8} {extras 0} {throwable_mp 0.2} {throwable_cp 0.04} {mp 91.2} {cp 3.97} {cw 3.01}}
+;{price {class "snipers"} {tier "medium"} {item "g43_scope"} {skill 7} {vet_start 2} {skill_eff 8} {weapon 75} {addon 2} {kit 0} {extras 0} {throwable_mp 0.2} {throwable_cp 0.04} {mp 77.2} {cp 3.97} {cw 3.01}}
 {"mp/ger2/ost_pzgren_g43scope" ("level_116" side(ger2))}
-;{price {class "rifles"} {tier "high"} {item "g43"} {skill 7} {vet_start 2} {skill_eff 8} {weapon 22} {addon 10} {kit 8} {extras 0} {throwable_mp 0.35} {throwable_cp 0.07} {mp 40.35} {cp 3.06} {cw 3.06}}
+;{price {class "rifles"} {tier "high"} {item "g43"} {skill 7} {vet_start 2} {skill_eff 8} {weapon 22} {addon 2.5} {kit 0} {extras 0} {throwable_mp 0.35} {throwable_cp 0.07} {mp 24.85} {cp 3.06} {cw 3.06}}
 {"mp/ger2/ost_pzgren_g43_pzfaust" ("level_116" side(ger2))}
 (define "level_117"
 	{tags   "level_117 %side soldier"}
@@ -2420,7 +2420,7 @@
 	{breed}
 	{cw 3.4}
 )
-;{price {class "rifles"} {tier "vet"} {item "mauzer_vet"} {skill 6} {vet_start 5} {skill_eff 9} {weapon 22} {addon 10} {kit 0} {extras 0} {mp 32} {cp 3.51} {cw 3.51}}
+;{price {class "rifles"} {tier "vet"} {item "mauzer_vet"} {skill 6} {vet_start 5} {skill_eff 9} {weapon 22} {addon 2.5} {kit 0} {extras 0} {mp 24.5} {cp 3.51} {cw 3.51}}
 {"mp/ger2/ost_fallschirm_mg_asst" ("level_122" side(ger2))}
 (define "level_123"
 	{tags   "level_123 %side soldier"}
@@ -2449,7 +2449,7 @@
 	{cw 3.64}
 )
 
-;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 5} {vet_start 2} {skill_eff 6} {weapon 22} {addon 10} {kit 8} {extras 0} {throwable_mp 0.275} {throwable_cp 0.055} {mp 40.28} {cp 2.62} {cw 2.62}}
+;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 5} {vet_start 2} {skill_eff 6} {weapon 22} {addon 2.5} {kit 0} {extras 0} {throwable_mp 0.275} {throwable_cp 0.055} {mp 24.78} {cp 2.62} {cw 2.62}}
 {"mp/ger2/ost_jager_stg" ("level_124" side(ger2))}
 ;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 5} {vet_start 5} {skill_eff 8} {weapon 26} {addon 10} {kit 0} {extras 0} {throwable_mp 0.3} {throwable_cp 0.06} {mp 36.3} {cp 3.7} {cw 3.7}}
 {"mp/ger/ger_gd_pzgren_pzfst_stg" ("level_124" side(ger))}
@@ -2469,7 +2469,7 @@
 	{breed}
 	{cw 3.93}
 )
-;{price {class "mg"} {tier "medium"} {item "mg34"} {skill 7} {vet_start 2} {skill_eff 8} {weapon 57.5} {addon 0} {kit 8} {extras 0} {mp 65.5} {cp 3.93} {cw 3.93}}
+;{price {class "mg"} {tier "medium"} {item "mg34"} {skill 7} {vet_start 2} {skill_eff 8} {weapon 57.5} {addon 0} {kit 0} {extras 0} {mp 57.5} {cp 3.93} {cw 3.93}}
 {"mp/ger2/ost_pzgren_mg34" ("level_125" side(ger2))}
 (define "level_126"
 	{tags   "level_126 %side soldier"}
@@ -2479,7 +2479,7 @@
 	{breed}
 	{cw 4.09}
 )
-;{price {class "rifle_grenades"} {tier "medium"} {item "k98_gewehrgranat"} {skill 7} {vet_start 5} {skill_eff 10} {weapon 55} {addon 10} {kit 0} {extras 0} {mp 65} {cp 5.19} {cw 5.19}}
+;{price {class "rifle_grenades"} {tier "medium"} {item "k98_gewehrgranat"} {skill 7} {vet_start 5} {skill_eff 10} {weapon 55} {addon 2.5} {kit 0} {extras 0} {mp 57.5} {cp 5.19} {cw 5.19}}
 {"mp/ger2/ost_fallschirm_grenadier" ("level_126" side(ger2))}
 (define "level_127"
 	{tags   "level_127 %side soldier"}
@@ -2513,11 +2513,11 @@
 	{breed}
 	{cw 4.81}
 )
-;{price {class "auto_rifle"} {tier "medium"} {item "fg42_rifle"} {skill 7} {vet_start 5} {skill_eff 10} {weapon 48} {addon 15} {kit 0} {extras 0} {throwable_mp 0.45} {throwable_cp 0.09} {mp 63.45} {cp 4.9} {cw 4.9}}
+;{price {class "auto_rifle"} {tier "medium"} {item "fg42_rifle"} {skill 7} {vet_start 5} {skill_eff 10} {weapon 48} {addon 3.75} {kit 0} {extras 0} {throwable_mp 0.45} {throwable_cp 0.09} {mp 52.2} {cp 4.9} {cw 4.9}}
 {"mp/ger2/ost_fallschirm_pzfst_fg" ("level_129" side(ger2))}
 ;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 7} {vet_start 5} {skill_eff 10} {weapon 30} {addon 0} {kit 0} {extras 0} {throwable_mp 0.5} {throwable_cp 0.1} {mp 30.5} {cp 4.91} {cw 4.91}}
 {"mp/ger2/ost_fallschirm_sl" ("level_129" side(ger2))}
-;{price {class "auto_rifle"} {tier "medium"} {item "fg42_sc"} {skill 6} {vet_start 5} {skill_eff 9} {weapon 44} {addon 15} {kit 0} {extras 0} {throwable_mp 0.5} {throwable_cp 0.1} {mp 59.5} {cp 4.32} {cw 4.32}}
+;{price {class "auto_rifle"} {tier "medium"} {item "fg42_sc"} {skill 6} {vet_start 5} {skill_eff 9} {weapon 44} {addon 3.75} {kit 0} {extras 0} {throwable_mp 0.5} {throwable_cp 0.1} {mp 48.25} {cp 4.32} {cw 4.32}}
 {"mp/ger2/ost_fallschirm_sl_asst_fg_44" ("level_129" side(ger2))}
 (define "level_130"
 	{tags   "level_130 %side soldier"}
@@ -2627,7 +2627,7 @@
 	{cw 0.58}
 )
 
-;{price {class "smg"} {tier "medium"} {item "mp40"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 12} {addon 0} {kit 8} {extras 0} {throwable_mp 0.3} {throwable_cp 0.06} {mp 20.3} {cp 0.64} {cw 0.64}}
+;{price {class "smg"} {tier "medium"} {item "mp40"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 12} {addon 0} {kit 0} {extras 0} {throwable_mp 0.3} {throwable_cp 0.06} {mp 12.3} {cp 0.64} {cw 0.64}}
 {"mp/ger/ger_volksgren_sl_smg" ("level_138" side(ger))}
 
 (define "level_139"
@@ -2639,7 +2639,7 @@
 	{cw 0.58}
 )
 
-;{price {class "smg"} {tier "medium"} {item "mp40"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 12} {addon 8} {kit 8} {extras 0} {throwable_mp 0.3} {throwable_cp 0.06} {mp 28.3} {cp 0.64} {cw 0.64}}
+;{price {class "smg"} {tier "medium"} {item "mp40"} {skill 3} {vet_start 1} {skill_eff 3} {weapon 12} {addon 2} {kit 0} {extras 0} {throwable_mp 0.3} {throwable_cp 0.06} {mp 14.3} {cp 0.64} {cw 0.64}}
 {"mp/ger/ger_volksgren_sl_asst" ("level_139" side(ger))}
 
 (define "level_140"
@@ -2650,7 +2650,7 @@
 	{breed}
 	{cw 0.2}
 )
-;{price {class "smg"} {tier "medium"} {item "mp40"} {skill 2} {vet_start 1} {skill_eff 2} {weapon 9} {addon 6} {kit 8} {extras 0} {throwable_mp 0.1875} {throwable_cp 0.0375} {mp 23.19} {cp 0.44} {cw 0.44}}
+;{price {class "smg"} {tier "medium"} {item "mp40"} {skill 2} {vet_start 1} {skill_eff 2} {weapon 9} {addon 1.5} {kit 0} {extras 0} {throwable_mp 0.1875} {throwable_cp 0.0375} {mp 10.69} {cp 0.44} {cw 0.44}}
 {"mp/ger/ger_volksgren_smg" ("level_140" side(ger))}
 
 (define "level_141"
@@ -2661,7 +2661,7 @@
 	{breed}
 	{cw 0.25}
 )
-;{price {class "smg"} {tier "medium"} {item "mp40"} {skill 1} {vet_start 1} {skill_eff 1} {weapon 7} {addon 0} {kit 8} {extras 0} {throwable_mp 0.1} {throwable_cp 0.02} {mp 15.1} {cp 0.42} {cw 0.42}}
+;{price {class "smg"} {tier "medium"} {item "mp40"} {skill 1} {vet_start 1} {skill_eff 1} {weapon 7} {addon 0} {kit 0} {extras 0} {throwable_mp 0.1} {throwable_cp 0.02} {mp 7.1} {cp 0.42} {cw 0.42}}
 {"mp/ger/ger_volksgren_mg_asst2" ("level_141" side(ger))}
 
 
@@ -2673,7 +2673,7 @@
 	{breed}
 	{cw 0.25}
 )
-;{price {class "rifles"} {tier "high"} {item "g43"} {skill 1} {vet_start 1} {skill_eff 1} {weapon 9} {addon 0} {kit 8} {extras 0} {throwable_mp 0.1} {throwable_cp 0.02} {mp 17.1} {cp 0.42} {cw 0.42}}
+;{price {class "rifles"} {tier "high"} {item "g43"} {skill 1} {vet_start 1} {skill_eff 1} {weapon 9} {addon 0} {kit 0} {extras 0} {throwable_mp 0.1} {throwable_cp 0.02} {mp 9.1} {cp 0.42} {cw 0.42}}
 {"mp/ger/ger_volksgren_mg_asst3" ("level_142" side(ger))}
 
 ; level_143: buy-card fields, {tags "level_143 %side infantry man"} {cp} {score} {basic} {breed} {cw}
@@ -2938,7 +2938,7 @@
 	{cw 1.44}
 )
 
-;{price {class "rifles"} {tier "high"} {item "g43"} {skill 3} {vet_start 2} {skill_eff 4} {weapon 13} {addon 10} {kit 0} {extras 0} {throwable_mp 0.225} {throwable_cp 0.045} {mp 23.23} {cp 1.14} {cw 1.14}}
+;{price {class "rifles"} {tier "high"} {item "g43"} {skill 3} {vet_start 2} {skill_eff 4} {weapon 13} {addon 2.5} {kit 0} {extras 0} {throwable_mp 0.225} {throwable_cp 0.045} {mp 15.73} {cp 1.14} {cw 1.14}}
 {"mp/ger2/ost_sl_asst" ("level_160" side(ger2))}
 
 
@@ -2968,7 +2968,7 @@
 	{cw 1.34}
 )
 
-;{price {class "rifles"} {tier "high"} {item "g43"} {skill 4} {vet_start 2} {skill_eff 5} {weapon 15} {addon 10} {kit 0} {extras 0} {throwable_mp 0.225} {throwable_cp 0.045} {mp 25.23} {cp 1.59} {cw 1.59}}
+;{price {class "rifles"} {tier "high"} {item "g43"} {skill 4} {vet_start 2} {skill_eff 5} {weapon 15} {addon 2.5} {kit 0} {extras 0} {throwable_mp 0.225} {throwable_cp 0.045} {mp 17.73} {cp 1.59} {cw 1.59}}
 {"mp/ger2/ost_rifle2" ("level_163" side(ger2))}
 
 
@@ -3001,7 +3001,7 @@
 	{cw 1.44}
 )
 
-;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 10} {addon 8} {kit 0} {extras 0} {throwable_mp 0.2125} {throwable_cp 0.0425} {mp 18.21} {cp 1.38} {cw 1.38}}
+;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 10} {addon 2} {kit 0} {extras 0} {throwable_mp 0.2125} {throwable_cp 0.0425} {mp 12.21} {cp 1.38} {cw 1.38}}
 {"mp/ger_ss/ss_grenadier_sl_asst_44" ("level_165" side(ger_ss))}
 
 
@@ -3043,7 +3043,7 @@
 	{cw 1.44}
 )
 
-;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 10} {addon 0} {kit 8} {extras 0} {throwable_mp 0.4} {throwable_cp 0.08} {mp 18.4} {cp 1.42} {cw 1.42}}
+;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 10} {addon 0} {kit 0} {extras 0} {throwable_mp 0.4} {throwable_cp 0.08} {mp 10.4} {cp 1.42} {cw 1.42}}
 {"mp/ger_ss/ss_gebirgs_sl_asst_k98" ("level_169" side(ger_ss))}
 
 
@@ -3058,11 +3058,11 @@
 	{breed}
 	{cw 1.34}
 )
-;{price {class "smg"} {tier "high"} {item "mab_38a"} {skill 6} {vet_start 1} {skill_eff 6} {weapon 17} {addon 0} {kit 8} {extras 0} {throwable_mp 0.4} {throwable_cp 0.08} {mp 25.4} {cp 2.01} {cw 2.01}}
+;{price {class "smg"} {tier "high"} {item "mab_38a"} {skill 6} {vet_start 1} {skill_eff 6} {weapon 17} {addon 0} {kit 0} {extras 0} {throwable_mp 0.4} {throwable_cp 0.08} {mp 17.4} {cp 2.01} {cw 2.01}}
 {"mp/ger_ss/ss_gebirgs_sl" ("level_170" side(ger_ss))}
-;{price {class "smg"} {tier "high"} {item "mab_38a"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 15} {addon 8} {kit 8} {extras 0} {throwable_mp 0.35} {throwable_cp 0.07} {mp 31.35} {cp 1.51} {cw 1.51}}
+;{price {class "smg"} {tier "high"} {item "mab_38a"} {skill 5} {vet_start 1} {skill_eff 5} {weapon 15} {addon 8} {kit 0} {extras 0} {throwable_mp 0.35} {throwable_cp 0.07} {mp 23.35} {cp 1.51} {cw 1.51}}
 {"mp/ger_ss/ss_gebirgs_pzfst_ber" ("level_170" side(ger_ss))}
-;{price {class "smg"} {tier "high"} {item "mab_38a"} {skill 6} {vet_start 1} {skill_eff 6} {weapon 17} {addon 0} {kit 8} {extras 0} {throwable_mp 0.4} {throwable_cp 0.08} {mp 25.4} {cp 2.01} {cw 2.01}}
+;{price {class "smg"} {tier "high"} {item "mab_38a"} {skill 6} {vet_start 1} {skill_eff 6} {weapon 17} {addon 0} {kit 0} {extras 0} {throwable_mp 0.4} {throwable_cp 0.08} {mp 17.4} {cp 2.01} {cw 2.01}}
 {"mp/ger_ss/ss_gebirgs_sl_asst" ("level_170" side(ger_ss))}
 
 
@@ -3167,7 +3167,7 @@
 )
 
 
-;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 4} {vet_start 2} {skill_eff 5} {weapon 10} {addon 15} {kit 0} {extras 0} {throwable_mp 0.225} {throwable_cp 0.045} {mp 25.23} {cp 1.39} {cw 1.39}}
+;{price {class "rifles"} {tier "low"} {item "mauzer"} {skill 4} {vet_start 2} {skill_eff 5} {weapon 10} {addon 3.75} {kit 0} {extras 0} {throwable_mp 0.225} {throwable_cp 0.045} {mp 13.98} {cp 1.39} {cw 1.39}}
 {"mp/ger2/ost_rifle_pzfst" ("level_177" side(ger2))}
 
 
@@ -3183,11 +3183,11 @@
 	{cw 1.93}
 )
 
-;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 7} {vet_start 2} {skill_eff 8} {weapon 26} {addon 0} {kit 8} {extras 0} {throwable_mp 0.3} {throwable_cp 0.06} {mp 34.3} {cp 3.7} {cw 3.7}}
+;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 7} {vet_start 2} {skill_eff 8} {weapon 26} {addon 0} {kit 0} {extras 0} {throwable_mp 0.3} {throwable_cp 0.06} {mp 26.3} {cp 3.7} {cw 3.7}}
 {"mp/ger2/ost_pzgren_sl" ("level_177" side(ger2))}
-;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 6} {vet_start 2} {skill_eff 7} {weapon 24} {addon 15} {kit 8} {extras 0} {throwable_mp 0.3} {throwable_cp 0.06} {mp 47.3} {cp 3.15} {cw 3.15}}
+;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 6} {vet_start 2} {skill_eff 7} {weapon 24} {addon 3.75} {kit 0} {extras 0} {throwable_mp 0.3} {throwable_cp 0.06} {mp 28.05} {cp 3.15} {cw 3.15}}
 {"mp/ger2/ost_pzgren_slassist" ("level_177" side(ger2))}
-;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 7} {vet_start 2} {skill_eff 8} {weapon 26} {addon 15} {kit 8} {extras 0} {throwable_mp 0.35} {throwable_cp 0.07} {mp 49.35} {cp 3.71} {cw 3.71}}
+;{price {class "carbines"} {tier "high"} {item "sg44"} {skill 7} {vet_start 2} {skill_eff 8} {weapon 26} {addon 3.75} {kit 0} {extras 0} {throwable_mp 0.35} {throwable_cp 0.07} {mp 30.1} {cp 3.71} {cw 3.71}}
 {"mp/ger2/ost_pzgren_sg44_pzfuast" ("level_177" side(ger2))}
 
 
@@ -3200,11 +3200,11 @@
 	{breed}
 	{cw 1.73}
 )
-;{price {class "rifles"} {tier "vet"} {item "mauzer_vet"} {skill 6} {vet_start 2} {skill_eff 7} {weapon 18} {addon 0} {kit 8} {extras 0} {mp 26} {cp 2.49} {cw 2.49}}
+;{price {class "rifles"} {tier "vet"} {item "mauzer_vet"} {skill 6} {vet_start 2} {skill_eff 7} {weapon 18} {addon 0} {kit 0} {extras 0} {mp 18} {cp 2.49} {cw 2.49}}
 {"mp/ger2/ost_pzgren_mgassist" ("level_178" side(ger2))}
-;{price {class "rifles"} {tier "vet"} {item "mauzer_vet"} {skill 7} {vet_start 2} {skill_eff 8} {weapon 20} {addon 15} {kit 8} {extras 0} {throwable_mp 0.2} {throwable_cp 0.04} {mp 43.2} {cp 3.03} {cw 3.03}}
+;{price {class "rifles"} {tier "vet"} {item "mauzer_vet"} {skill 7} {vet_start 2} {skill_eff 8} {weapon 20} {addon 15} {kit 0} {extras 0} {throwable_mp 0.2} {throwable_cp 0.04} {mp 35.2} {cp 3.03} {cw 3.03}}
 {"mp/ger2/ost_pzgren_pzfaust_rifle" ("level_178" side(ger2))}
-;{price {class "smg"} {tier "medium"} {item "mp41"} {skill 7} {vet_start 2} {skill_eff 8} {weapon 20} {addon 10} {kit 8} {extras 0} {throwable_mp 0.35} {throwable_cp 0.07} {mp 38.35} {cp 3.04} {cw 3.04}}
+;{price {class "smg"} {tier "medium"} {item "mp41"} {skill 7} {vet_start 2} {skill_eff 8} {weapon 20} {addon 2.5} {kit 0} {extras 0} {throwable_mp 0.35} {throwable_cp 0.07} {mp 22.85} {cp 3.04} {cw 3.04}}
 {"mp/ger2/ost_pzgren_smg_pzfaust" ("level_178" side(ger2))}
 
 

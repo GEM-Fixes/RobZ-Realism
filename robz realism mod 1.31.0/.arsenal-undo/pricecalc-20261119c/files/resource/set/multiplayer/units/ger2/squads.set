@@ -1,0 +1,86 @@
+
+;   Squads
+
+;{price {rule squad} {members 72.5} {cost 73}}
+("squad_3" side(ger2) name(home_guards) member1(ost_recon_sl:1) member2(ost_recon_pzfst:1) member3(ost_recon_mg:1) charge(0) tags(all 44 45 inf_only) group(squad_1) button(squad1) level(1) cost(56) fore(1.0))
+
+;{price {rule squad} {members 155.93} {cost 156}}
+("squad_5" side(ger2) name(home_guards2) member1(ost_recon_sl_stg:1) member2(ost_recon_sa:1) member3(ost_recon_pzfst:1) member4(ost_recon_rifle:1) member5(ost_recon_mg:2) charge(0) tags(all 44 45 inf_only) group(squad_1) button(squad1) level(1) cost(119) fore(1.0))
+
+
+;{price {rule squad} {members 236.78} {cost 237}}
+("squad_8" side(ger2) name(smgs) member1(ost_squadleader2:1) member2(ost_sl_asst:1) member3(ost_smg2:1) member4(ost_stg:1) member5(ost_smg3:2) member6(ost_rifle_pzfst:1) member7(ost_mgun:1) member8(ost_mgun_asst:1) charge(0) tags(all 44 45 inf_only) group(squad_2) button(squad1) level(1) cost(179) fore(1.0))
+
+;{price {rule squad} {members 244.55} {cost 245}}
+("squad_8" side(ger2) name(riflemans) member1(ost_squadleader:1) member2(ost_sl_asst:1) member3(ost_stg:1) member4(ost_rifle2:1) member5(ost_rifle_pzfst:2) member6(ost_rifle_grenadier:1) member7(ost_mgun:1) member8(ost_mgun_asst:1) charge(0) tags(all 44 45 inf_only) group(squad_3) button(squad1) level(1) cost(176) fore(1.0))
+
+
+
+;{price {rule squad} {members 365.86} {cost 366}}
+("squad_8" side(ger2) name(elites) member1(ost_jager_sl_stg:1) member2(ost_jager_sl_stg_asst:1) member3(ost_jager_stg:1) member4(ost_jager_smg:3) member5(ost_jager_sa:1) member6(ost_jager_pzfst:1) member7(ost_jager_mg:1) member8(ost_jager_mg_asst:1) charge(0) tags(all 44 45 inf_only 44 45) group(squad_4) button(squad1) level(1) cost(207) fore(1.0))
+
+;{price {rule squad} {members 476.75} {cost 477}}
+("squad_8" side(ger2) name(stormtroopers) member1(ost_pzgren_sl:1) member2(ost_pzgren_slassist:1) member3(ost_pzgren_sg44_pzfuast:1) member4(ost_pzgren_smg_pzfaust:2) member5(ost_pzgren_pzfaust_rifle:2) member6(ost_pzgren_g43scope:1) member7(ost_pzgren_mg34:1) member8(ost_pzgren_mgassist:1) charge(0) tags(all 44 45 inf_only) group(squad_6) button(squad1) level(8) cost(315) fore(1.0))
+
+;{price {rule squad} {members 572.65} {cost 573}}
+("squad_7" side(ger2) name(elites_para) member1(ost_fallschirm_sl:1) member2(ost_fallschirm_sl_asst_fg_44:1) member3(ost_fallschirm_sniper:1) member4(ost_fallschirm_grenadier:2) member5(ost_fallschirm_pzfst_fg:1) member6(ost_fallschirm_mg:2) member7(ost_fallschirm_mg_asst:2) charge(0) tags(all inf_only 44 45) group(squad_6) button(squad1) level(1) cost(374) fore(1.0))
+
+("unit_vehicles1_crews3_sided" side(ger2) name(storm_mech_ost) vehicle1(sdkfz250_1) crew1(3) crew2(1) crew3(2) charge(1) tags(all 44 45 inf_only) group(squad_7) button(squad1) level(12) cost(182) fore(-159.0))
+
+
+
+
+
+;{price {rule squad} {members 48.8} {cost 49}}
+("squad_1" side(ger2) name(ap_miners) member1(ost_ap_miner:4) charge(0) tags(all 44 45 inf_only engineers mines) group(squad_8) button(squad1) level(11) cost(150) fore(0))
+
+;{price {rule squad} {members 48.8} {cost 49}}
+("squad_1" side(ger2) name(at_miners) member1(ost_at_miner:4) charge(0) tags(all 44 45 inf_only engineers mines) group(squad_9) button(squad1) level(14) cost(200) fore(0))
+
+;{price {rule squad} {members 40.4} {cost 40}}
+("squad_1" side(ger2) name(sappers) member1(ost_saper:2) charge(0) tags(all 44 45 inf_only engineers) group(squad_10) button(squad1) level(1) cost(100) fore(0))
+
+
+
+;   Single Soldiers
+
+;{price {rule single} {members 10.23} {mult 1.15} {cost 12}}
+("squad_1" side(ger2) name(riflemans2) member1(ost_rifle_single:1) charge(0) tags(all 44 45 inf_only single) group(soldier_1) button(squad2) level(1) cost(16) fore(1.0))
+
+;{price {rule single} {members 22.23} {mult 1.15} {cost 26}}
+("squad_1" side(ger2) name(smgs2) member1(ost_smg:1) charge(0) tags(all 44 45 inf_only single) group(soldier_2) button(squad2) level(1) cost(16) fore(1.0))
+
+;{price {rule squad} {members 12} {cost 12}}
+("squad_2" side(ger2) name(tankmans) member1(ost_tankman2:1) member2(ost_tankman:4) charge(0) tags(all 44 45 inf_only tankmans) group(soldier_3) button(squad2) level(1) cost(125) fore(1.0))
+
+;{price {rule squad} {members 67.65} {cost 68}}
+("squad_2" side(ger2) name(at_rifles) member1(ost_at_rifle:1) member2(ost_at_rifleassist:1) charge(0) tags(all 44 45 inf_only) group(soldier_4) button(squad2) level(1) cost(104) fore(1.0))
+;{price {rule squad} {members 67.65} {cost 68}}
+("squad_2" side(ger2) name(at_rifles2) member1(ost_at_rifle_ptrd:1) member2(ost_at_rifleassist:1) charge(0) tags(all 44 45 inf_only) group(soldier_4) button(squad2) level(1) cost(104) fore(1.0))
+
+;{price {rule squad} {members 36.9} {cost 37}}
+("squad_1" side(ger2) name(bazookers) member1(ost_panzerfaust:2) charge(0) tags(all 44 45 inf_only) group(soldier_5) button(squad2) level(1) cost(78) fore(1.0))
+;{price {rule squad} {members 63.15} {cost 63}}
+("squad_2" side(ger2) name(bazooker3) member1(ost_panzershreck:1) member2(ost_panzershreckassist:1) charge(0) tags(all inf_only 44 45) group(soldier_55) button(squad2) level(1) cost(103) fore(1.0))
+
+;{price {rule squad} {members 78} {cost 78}}
+("squad_2" side(ger2) name(mgs2) member1(ost_mgun:1) member2(ost_mgun_asst:2) charge(0) tags(all 44 45 inf_only) group(soldier_6) button(squad2) level(1) cost(69) fore(1.0))
+
+
+
+;{price {rule squad} {members 88.4} {cost 88}}
+("squad_2" side(ger2) name(stormtroopers2) member1(ost_pzgren_pzfaust_g43:1) member2(ost_pzgren_pzfaust_rifle:1) charge(0) tags(all 44 45 inf_only) group(soldier_5) button(squad2) level(14) cost(125) fore(1.0))
+
+;{price {rule squad} {members 117.5} {cost 118}}
+("squad_2" side(ger2) name(stormtroopers3) member1(ost_pzgren_mg34:1) member2(ost_pzgren_mgassist:2) charge(0) tags(all 44 45 inf_only) group(soldier_6) button(squad2) level(21) cost(127) fore(0.9))
+
+;{price {rule squad} {members 52.35} {cost 52}}
+("squad_2" side(ger2) name(flamers) member1(ost_flamer:1) member2(ost_flamerassist:1) charge(0) tags(all 44 45 flamer inf_only) group(soldier_8) button(squad2) level(3) cost(81) fore(0))
+
+;{price {rule single} {members 72.5} {mult 1.5} {cost 109}}
+("squad_1" side(ger2) name(snipers) member1(ost_sniper:1) charge(0) tags(all 44 45 sniper_only inf_only) group(soldier_9) button(squad2) level(8) cost(109) fore(0))
+
+;{price {rule sequence} {members 0} {step 1} {of 2} {percent 100} {base 0} {cost 0} {avg 0}}
+("squad_1_x4_sequence" side(ger2) name(officers) member1(ost_officer:1) charge(1) tags(all officer inf_only 39 40 41 42 43 44 45) group(soldier_10) button(squad2) icon(10002) level(1) cost(0) fore(-599.0)) ;10 minutes
+;{price {rule sequence} {members 0} {step 2} {of 2} {percent 90} {base 0} {cost 0} {avg 0}}
+("squad_1_x4_sequence" side(ger2) name(officers_40) member1(ost_officer:1) charge(1800) tags(all officer inf_only 39 40 41 42 43 44 45) group(soldier_10) button(squad2) icon(10002) level(1) cost(0) fore(-2399.0)) ;40 minutes

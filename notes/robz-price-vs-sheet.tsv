@@ -1,0 +1,442 @@
+breed	sheet name	sheet mp	sheet cp	mod mp (score)	mod cp	mod cw	mod level	off in
+axis_minor/axm_bul_at_rifle_assist	axm_bul_at_rifleAssist	9	0.4	8	0.2	0.2	level_2_v2	mp cp cw
+axis_minor/axm_bul_mgun	axm_bul_mgun	40	1.32	50	1.32	1.32	level_54_v2	mp
+axis_minor/axm_bul_mgun_assist	axm_bul_mgunAssist	9	0.6	8	0.6	0.6	level_29	mp
+axis_minor/axm_bul_rifle	axm_bul_rifle	9	0.6	8	0.6	0.6	level_29	mp
+axis_minor/axm_bul_vehicle_supporter_single	axm_bul_vehicle_supporter	10	0.2	12.5	1	1	level_190	mp cp cw
+axis_minor/axm_fin_elite_sniper	axm_fin_elite_sniper	100	7	100	7	1	level_47_v2	cw
+axis_minor/axm_fin_kaukopartio_smg	axm_fin_kaukopartio_smg	18	2.44	16	1.93	1.93	level_81	mp cp cw
+axis_minor/axm_fin_kaukopartio_squadleader	axm_fin_kaukopartio_squadleader	16	1.93	18	2.44	2.44	level_102	mp cp cw
+axis_minor/axm_fin_officer	axm_fin_officer	1000	-10	1000	-10	100	level_0_v2	cw
+axis_minor/axm_fin_pio_flamer	axm_fin_pio_flamer	40	1.44	40	0.2	0.2	level_4_v2	cp cw
+axis_minor/axm_fin_sniper	axm_fin_sniper	28	2.05	28	2.05	1.44	level_59	cw
+axis_minor/axm_hun_assualt_flamer	axm_hun_assualt_flamer	40	1.44	40	0.2	0.2	level_4_v2	cp cw
+axis_minor/axm_hun_assualt_smg	axm_hun_assualt_smg	9	0.97	12	0.97	0.97	level_183	mp
+axis_minor/axm_hun_rifle	axm_hun_rifle	9	0.6	8	0.6	0.6	level_29	mp
+axis_minor/axm_hun_rifle3	axm_hun_rifle3	9	0.6	8	0.6	0.6	level_29	mp
+axis_minor/axm_hun_smg_danuvia	axm_hun_smg_danuvia	9	0.4	8	0.2	0.2	level_2_v2	mp cp cw
+axis_minor/axm_hun_smg_ppsh	axm_hun_smg_ppsh	9	0.4	8	0.2	0.2	level_2_v2	mp cp cw
+axis_minor/axm_hun_squadleader_smg	axm_hun_squadleader_smg	12	0.58	11	0.58	0.58	level_24_v2	mp
+axis_minor/axm_hun_tankman_single	axm_hun_tankman	10	0.5	14	1	1	level_197	mp cp cw
+axis_minor/axm_ita_alpini_sniper	axm_ita_alpini_sniper	60	2.05	40	2.05	1.44	level_61	mp cw
+axis_minor/axm_ita_bersaglieri_mgun_assist	axm_ita_bersaglieri_mgunAssist	9	0.97	12	0.97	0.97	level_183	mp
+axis_minor/axm_ita_bersaglieri_rifle	axm_ita_bersaglieri_rifle	9	0.97	12	0.97	0.97	level_183	mp
+axis_minor/axm_ita_bersaglieri_rifle2	axm_ita_bersaglieri_rifle2	9	0.97	12	0.97	0.97	level_183	mp
+axis_minor/axm_rom_mgunassist	axm_rom_mgunAssist	9	0.6	8	0.6	0.6	level_29	mp
+axis_minor/axm_rom_rifle	axm_rom_rifle	9	0.6	8	0.6	0.6	level_29	mp
+axis_minor/axm_rom_smg	axm_rom_smg	13	0.58	12	0.58	0.58	level_25_v2	mp
+eng/eng_at_miner	eng_at_miner	25	0.5	37.5	0.5	0.5	level_14_v2	mp
+eng/eng_flamer	eng_flamer	40	1.44	40	0.2	0.2	level_4_v2	cp cw
+eng/eng_mg_assist_canada	eng_mgAssist_canada	13	0.6	12	0.6	0.6	level_30_v2	mp
+eng/eng_mgun	eng_mgun	30	1.11	35	1.11	1.11	level_154	mp
+eng/eng_mgun_asst	eng_mgun_asst	15	1.34	13	0.97	0.97	level_44	mp cp cw
+eng/eng_officer	eng_officer	1000	-10	1000	-10	100	level_0_v2	cw
+eng/eng_pioneer_flamer	eng_pioneer_flamer	40	1.44	40	0.2	0.2	level_4_v2	cp cw
+eng/eng_radioman_airstrike	eng_radioman_airstrike	100	5	200	5	5	level_130	mp
+eng/eng_rifleman_canada	eng_rifleman_canada	13	0.6	12	0.6	0.6	level_30_v2	mp
+eng/eng_saper	eng_saper	25	25	25	0.5	0.5	level_13	cp cw
+eng/eng_saper2	eng_saper2	25	25	25	0.5	0.5	level_13	cp cw
+eng/eng_sas_bran_assist	eng_sas_branGunnerAssist	45	3.09	57.5	2.49	2.49	level_109	mp cp cw
+eng/eng_sas_cpl	eng_sas_cpl	21	2.14	14	2.44	2.44	level_105	mp cp cw
+eng/eng_smg	eng_smg	12	1.44	11	1.44	1.44	level_153	mp
+eng/eng_smg_wp	eng_smg_wp	12	1.44	11	1.44	1.44	level_153	mp
+eng/eng_sniper	eng_sniper	70	2.77	45	2.77	1.93	level_84	mp cw
+eng/eng_squadleader2	eng_squadleader2	11	0.97	12	0.97	0.97	level_150	mp
+eng/eng_squadleader_asst	eng_squadleader_asst	11	0.97	15	0.97	0.97	level_152	mp
+eng/eng_squadleader_can	eng_squadleader_can	13	0.6	12	0.6	0.6	level_30_v2	mp
+eng/eng_squadleader_scot	eng_squadleader_scot	13	0.6	12	0.6	0.6	level_30_v2	mp
+eng/vehicle_supporter_single	vehicle_supporter	10	0.2	12.5	1	1	level_190	mp cp cw
+ger/ger_fallschirm_grenadier	ger_fallschirm_grenadier	40	3.34	40	2.44	2.44	level_103	cp cw
+ger/ger_fallschirm_pzfst_stg	ger_fallschirm_pzfst_stg	20	2.49	24	3.09	3.09	level_119	mp cp cw
+ger/ger_fallschirm_sl_asst_fg_44	ger_fallschirm_sl_asst_fg_44	20	2.49	24	3.09	3.09	level_119	mp cp cw
+ger/ger_fallschirm_sniper	ger_fallschirm_sniper	72.5	3.34	50	3.34	2.44	level_104	mp cw
+ger/ger_flamer	ger_flamer	40	1.44	40	0.2	0.2	level_4_v2	cp cw
+ger/ger_fusilier_stg	ger_fusilier_stg	16	1.54	20	2.05	2.05	level_94	mp cp cw
+ger/ger_gd_pzgren_pzfst_stg	ger_gd_pzgren_pzfst_stg	22	2.99	26	3.64	3.64	level_124	mp cp cw
+ger/ger_gd_pzgren_sa_scope	ger_gd_pzgren_sa_scope	75	3.93	55	2.97	2.97	level_116	mp cp cw
+ger/ger_gd_pzgren_sl_asst_stg	ger_gd_pzgren_sl_asst_stg	22	2.99	26	3.64	3.64	level_124	mp cp cw
+ger/ger_gd_pzgren_sl_stg	ger_gd_pzgren_sl_stg	22	2.99	26	3.64	3.64	level_124	mp cp cw
+ger/ger_gebirgsjager_mg_asst	ger_gebirgsjager_mg_asst	21	2.49	12	2.49	2.49	level_145	mp
+ger/ger_gebirgsjager_sl_asst_stg	ger_gebirgsjager_sl_asst_stg	20	2.49	24	3.09	3.09	level_119	mp cp cw
+ger/ger_gebirgsjager_sl_stg	ger_gebirgsjager_sl_stg	20	2.49	24	3.09	3.09	level_119	mp cp cw
+ger/ger_gebirgsjager_stg	ger_gebirgsjager_stg	20	2.49	24	3.09	3.09	level_119	mp cp cw
+ger/ger_grenadier_stg	ger_grenadier_stg	14	1.09	18	1.56	1.56	level_73	mp cp cw
+ger/ger_jager_mg_asst	ger_jager_mg_asst	15	1.54	10	1.34	1.34	level_55	mp cp cw
+ger/ger_jager_sl_stg	ger_jager_sl_stg	16	1.54	20	2.05	2.05	level_94	mp cp cw
+ger/ger_jager_sl_stg_asst	ger_jager_sl_stg_asst	16	1.54	20	2.05	2.05	level_94	mp cp cw
+ger/ger_jager_stg	ger_jager_stg	16	1.54	20	2.05	2.05	level_94	mp cp cw
+ger/ger_officer	ger_officer	1000	-10	1000	-10	100	level_0_v2	cw
+ger/ger_pzgren2ic	ger_pzgren2ic	12	1.44	10	1.54	1.54	level_144	mp cp cw
+ger/ger_pzgren_mg42assist	ger_pzgren_mg42Assist	15	1.54	10	1.54	1.54	level_144	mp
+ger/ger_pzgren_pio_flamer	ger_pzgren_pio_flamer	40	1.44	40	0.2	0.2	level_4_v2	cp cw
+ger/ger_pzgren_pio_mg	ger_pzgren_pio_mg	45	1.72	45	2.55	2.55	level_192	cp cw
+ger/ger_pzgren_pio_mg_asst	ger_pzgren_pio_mg_asst	10	1.34	9	1.34	1.34	level_143	mp
+ger/ger_pzgren_sl	ger_pzgren_sl	15	1.54	20	2.05	2.05	level_94	mp cp cw
+ger/ger_pzgren_stg_panzerfaust	ger_pzgren_stg_panzerfaust	16	1.54	20	2.05	2.05	level_94	mp cp cw
+ger/ger_saper	ger_saper	#N/A	#N/A	25	0.5	0.5	level_13	sheet cell is #N/A
+ger/ger_sniper_g43	ger_sniper_g43	72.5	3.34	50	3.34	2.44	level_104	mp cw
+ger/ger_sniper_mauzer	ger_sniper_mauzer	72.5	3.34	50	3.34	2.44	level_104	mp cw
+ger/ger_sniper_vet	ger_sniper_vet	100	0.5	100	4.55	0.5	level_20_v2	cp
+ger/ger_squadleader_sg44	ger_squadleader_sg44	16	1.54	20	2.05	2.05	level_94	mp cp cw
+ger/ger_sturmgren_sg44	ger_sturmgren_sg44	14	1.09	18	1.56	1.56	level_73	mp cp cw
+ger/ger_sturmgren_sg44_pzfst	ger_sturmgren_sg44_pzfst	14	1.09	18	1.56	1.56	level_73	mp cp cw
+ger/ger_sturmgren_sl_asst	ger_sturmgren_sl_asst	14	1.09	20	2.05	2.05	level_94	mp cp cw
+ger/ger_volksgren_grenadier	ger_volksgren_grenadier	10	0.4	15	0.2	0.2	level_5_v2	mp cp cw
+ger/ger_volksgren_mg	ger_volksgren_mg	25	0.82	35	0.82	0.82	level_37_v2	mp
+ger/ger_volksgren_mg_asst	ger_volksgren_mg_asst	8	0.4	7	0.25	0.25	level_10_v2	mp cp cw
+ger/ger_volksgren_mg_asst2	ger_volksgren_mg_asst2	8	0.4	8	0.25	0.25	level_141	cp cw
+ger/ger_volksgren_mg_asst3	ger_volksgren_mg_asst3	8	0.4	9	0.25	0.25	level_142	mp cp cw
+ger/ger_volksgren_pzfst	ger_volksgren_pzfst	8	0.4	7	0.25	0.25	level_10_v2	mp cp cw
+ger/ger_volksgren_pzfst2	ger_volksgren_pzfst2	8	0.4	14	0.7	0.7	level_35	mp cp cw
+ger/ger_volksgren_rifle	ger_volksgren_rifle	8	0.4	7	0.25	0.25	level_10_v2	mp cp cw
+ger/ger_volksgren_sa	ger_volksgren_sa	9	0.4	9	0.29	0.29	level_12_v2	cp cw
+ger/ger_volksgren_sl_asst	ger_volksgren_sl_asst	13	0.58	11	0.58	0.58	level_139	mp
+ger/ger_volksgren_sl_smg	ger_volksgren_sl_smg	13	0.58	11	0.58	0.58	level_138	mp
+ger/ger_volksgren_sl_stg	ger_volksgren_sl_stg	12	0.68	16	1.11	1.11	level_51_v2	mp cp cw
+ger/ger_volksgren_smg	ger_volksgren_smg	10	0.4	8	0.2	0.2	level_140	mp cp cw
+ger/ger_volksgren_stg44	ger_volksgren_stg44	10	0.4	14	0.7	0.7	level_35	mp cp cw
+ger/ger_volkssturm_rifle_faustpatrone	ger_volkssturm_rifle_faustpatrone	7	0.4	6	0.25	0.25	level_11_v2	mp cp cw
+ger/ger_volkssturm_rifle_panzerfaust	ger_volkssturm_rifle_panzerfaust	7	0.4	6	0.25	0.25	level_11_v2	mp cp cw
+ger/ger_volkssturm_smg_faustpatrone	ger_volkssturm_smg_faustpatrone	7	0.4	5	0.2	0.2	level_7_v2	mp cp cw
+ger/ger_volkssturm_smg_panzerfaust	ger_volkssturm_smg_panzerfaust	7	0.4	5	0.2	0.2	level_7_v2	mp cp cw
+ger2/ost_ap_miner	ost_ap_miner	25	0.5	37.5	1	1	level_186	mp cp cw
+ger2/ost_at_miner	ost_at_miner	37.5	0.5	50	1	1	level_185	mp cp cw
+ger2/ost_fallschirm_grenadier	ost_fallschirm_grenadier	55	5.19	55	4.09	4.09	level_126	cp cw
+ger2/ost_fallschirm_pzfst_fg	ost_fallschirm_pzfst_fg	26	4.04	30	4.81	4.81	level_129	mp cp cw
+ger2/ost_fallschirm_sl	ost_fallschirm_sl	26	4.04	30	4.81	4.81	level_129	mp cp cw
+ger2/ost_fallschirm_sl_asst_fg_44	ost_fallschirm_sl_asst_fg_44	26	4.04	30	4.81	4.81	level_129	mp cp cw
+ger2/ost_fallschirm_sniper	ost_fallschirm_sniper	80	5.19	65	5.19	4.09	level_127	mp cw
+ger2/ost_flamer	ost_flamer	40	1.44	40	0.2	0.2	level_4_v2	cp cw
+ger2/ost_jager_sa	ost_jager_sa	18	2	22	2.56	2.56	level_113	mp cp cw
+ger2/ost_jager_sl_stg	ost_jager_sl_stg	18	2	22	2.56	2.56	level_113	mp cp cw
+ger2/ost_jager_sl_stg_asst	ost_jager_sl_stg_asst	18	2	22	2.56	2.56	level_113	mp cp cw
+ger2/ost_jager_smg	ost_jager_smg	16	1.93	20	2.05	2.05	level_94	mp cp cw
+ger2/ost_jager_stg	ost_jager_stg	18	2	26	3.64	3.64	level_124	mp cp cw
+ger2/ost_officer	ost_officer	1000	-10	1000	-10	100	level_0_v2	cw
+ger2/ost_officer2	ost_officer2	800	-8	1500	-15	100	level_1_v2	mp cp cw
+ger2/ost_panzerfaust	ost_panzerfaust	8	1.61	9	1.61	1.61	level_75	mp
+ger2/ost_pzgren_g43_pzfaust	ost_pzgren_g43_pzfaust	75	3.93	55	2.97	2.97	level_116	mp cp cw
+ger2/ost_pzgren_g43scope	ost_pzgren_g43scope	75	3.93	55	2.97	2.97	level_116	mp cp cw
+ger2/ost_pzgren_mgassist	ost_pzgren_mgAssist	11	1.73	20	1.73	1.73	level_178	mp
+ger2/ost_pzgren_pzfaust_rifle	ost_pzgren_pzfaust_rifle	11	1.73	20	1.73	1.73	level_178	mp
+ger2/ost_pzgren_sg44_pzfuast	ost_pzgren_sg44_pzfuast	18	2	26	1.93	1.93	level_177	mp cp cw
+ger2/ost_pzgren_sl	ost_pzgren_sl	16	1.93	26	1.93	1.93	level_177	mp
+ger2/ost_pzgren_slassist	ost_pzgren_slAssist	16	1.93	26	1.93	1.93	level_177	mp
+ger2/ost_pzgren_smg_pzfaust	ost_pzgren_smg_pzfaust	16	1.93	20	1.73	1.73	level_178	mp cp cw
+ger2/ost_radioman	ost_radioman	200	126	200	0.5	0.5	level_15_v2	cp cw
+ger2/ost_recon_mg	ost_recon_mg	35	1.24	40	1.24	1.24	level_53_v2	mp
+ger2/ost_recon_pzfst	ost_recon_pzfst	9	0.6	8	0.6	0.6	level_29	mp
+ger2/ost_recon_rifle	ost_recon_rifle	9	0.6	8	0.6	0.6	level_29	mp
+ger2/ost_recon_sa	ost_recon_sa	13	0.68	12	0.68	0.68	level_34	mp
+ger2/ost_recon_sl_stg	ost_recon_sl_stg	14	1.09	18	1.56	1.56	level_73	mp cp cw
+ger2/ost_rifle2	ost_rifle2	10	1.34	15	1.34	1.34	level_163	mp
+ger2/ost_rifle_pzfst	ost_rifle_pzfst	10	1.34	26	1.93	1.93	level_177	mp cp cw
+ger2/ost_saper	ost_saper	50	50	50	1	1	level_185	cp cw
+ger2/ost_sl_asst	ost_sl_asst	14	1.44	15	1.44	1.44	level_160	mp
+ger2/ost_sniper	ost_sniper	60	2.05	40	2.05	1.44	level_61	mp cw
+ger2/ost_squadleader2	ost_squadleader2	16	1.54	22	2.05	2.05	level_162	mp cp cw
+ger2/ost_stg	ost_stg	16	1.54	20	2.05	2.05	level_94	mp cp cw
+ger2/ost_straf_mauzer	ost_straf_mauzer	0	0	0	0.6	0.6	level_31_v2	cp cw
+ger2/ost_straf_mp28	ost_straf_mp28	7	0.4	5	0.2	0.2	level_7_v2	mp cp cw
+ger2/ost_straf_ppsh	ost_straf_ppsh	7	0.4	6	0.2	0.2	level_8_v2	mp cp cw
+ger_ss/ss_fallschirm_grenadier	ss_fallschirm_grenadier	40	3.34	40	2.44	2.44	level_103	cp cw
+ger_ss/ss_fallschirm_mg_asst	ss_fallschirm_mg_asst	9	0.6	8	0.6	0.6	level_29	mp
+ger_ss/ss_fallschirm_rifle	ss_fallschirm_rifle	9	0.6	8	0.6	0.6	level_29	mp
+ger_ss/ss_fallschirm_smg	ss_fallschirm_smg	17	1.93	12	1.93	1.93	level_176	mp
+ger_ss/ss_flamer	ss_flamer	40	1.44	40	0.2	0.2	level_4_v2	cp cw
+ger_ss/ss_g43scope_sniper	ss_g43Scope_sniper	72.5	3.34	50	3.34	2.44	level_104	mp cw
+ger_ss/ss_gebirgs_pzfst_ber	ss_gebirgs_pzfst_ber	10	1.34	15	1.34	1.34	level_170	mp
+ger_ss/ss_gebirgs_sl	ss_gebirgs_sl	15	1.44	15	1.34	1.34	level_170	cp cw
+ger_ss/ss_gebirgs_sl_asst	ss_gebirgs_sl_asst	15	1.44	15	1.34	1.34	level_170	cp cw
+ger_ss/ss_gebirgs_sl_asst_k98	ss_gebirgs_sl_asst_k98	15	1.44	10	1.44	1.44	level_169	mp
+ger_ss/ss_grenadier_sl_asst_44	ss_grenadier_sl_asst_44	14	1.44	10	1.44	1.44	level_165	mp
+ger_ss/ss_grenadier_stg	ss_grenadier_stg	16	1.54	20	2.05	2.05	level_94	mp cp cw
+ger_ss/ss_kosaken_mg_asst	ss_kosaken_mg_asst	8	0.4	7	0.25	0.25	level_10_v2	mp cp cw
+ger_ss/ss_kosaken_rifle	ss_kosaken_rifle	8	0.4	7	0.25	0.25	level_10_v2	mp cp cw
+ger_ss/ss_kosaken_sl	ss_kosaken_sl	9	0.4	11	0.2	0.2	level_164	mp cp cw
+ger_ss/ss_kosaken_sl_asst	ss_kosaken_sl_asst	9	0.4	11	0.2	0.2	level_164	mp cp cw
+ger_ss/ss_kosaken_smg	ss_kosaken_smg	9	0.4	8	0.2	0.2	level_2_v2	mp cp cw
+ger_ss/ss_lssah_pzgren_at2	ss_lssah_pzgren_at2	13	2.55	20	2.55	2.55	level_191	mp
+ger_ss/ss_lssah_pzgren_mg_asst	ss_lssah_pzgren_mg_asst	13	2.55	20	2.55	2.55	level_191	mp
+ger_ss/ss_lssah_pzgren_pzfst	ss_lssah_pzgren_pzfst	13	2.55	22	2.55	2.55	level_175	mp
+ger_ss/ss_lssah_pzgren_pzfst60_sa	ss_lssah_pzgren_pzfst60_sa	13	2.55	22	2.55	2.55	level_175	mp
+ger_ss/ss_lssah_pzgren_pzfst_stg	ss_lssah_pzgren_pzfst_stg	22	2.99	26	3.64	3.64	level_124	mp cp cw
+ger_ss/ss_lssah_pzgren_sl_asst_sa	ss_lssah_pzgren_sl_asst_sa	22	2.99	55	2.99	2.99	level_174	mp
+ger_ss/ss_lssah_pzgren_sl_stg	ss_lssah_pzgren_sl_stg	22	2.99	26	3.64	3.64	level_124	mp cp cw
+ger_ss/ss_officer	ss_officer	1000	-10	1000	-10	100	level_0_v2	cw
+ger_ss/ss_panzerfaust	ss_panzerfaust	8	1.61	9	1.61	1.61	level_75	mp
+ger_ss/ss_pzgren_sl_asst_pzfst	ss_pzgren_sl_asst_pzfst	15	1.54	10	1.54	1.54	level_172	mp
+ger_ss/ss_pzgren_sl_stg	ss_pzgren_sl_stg	16	1.54	20	2.05	2.05	level_94	mp cp cw
+ger_ss/ss_pzgren_stg	ss_pzgren_stg	16	1.54	20	2.05	2.05	level_94	mp cp cw
+ger_ss/ss_saper	ss_saper	25	25	25	0.5	0.5	level_13	cp cw
+ger_ss/ss_sniper_mauser	ss_sniper_mauser	72.5	3.34	50	3.34	2.44	level_104	mp cw
+ger_ss/ss_ss_sturmgren_stg	ss_ss_sturmgren_stg	16	1.54	20	2.05	2.05	level_94	mp cp cw
+ger_ss/ss_ssvt_mg_asst	ss_ssvt_mg_asst	8	0.4	7	0.25	0.25	level_10_v2	mp cp cw
+ger_ss/ss_ssvt_rifle	ss_ssvt_rifle	8	0.4	7	0.25	0.25	level_10_v2	mp cp cw
+ger_ss/ss_ssvt_sl	ss_ssvt_sl	9	0.4	8	0.2	0.2	level_2_v2	mp cp cw
+ger_ss/ss_ssvt_sl_asst	ss_ssvt_sl_asst	8	0.4	7	0.25	0.25	level_10_v2	mp cp cw
+ger_ss/ss_sturmgren_sa	ss_sturmgren_sa	14	1.44	15	1.44	1.44	level_166	mp
+ger_ss/ss_sturmgren_sa_scope	ss_sturmgren_sa_scope	60	2.05	40	2.05	1.44	level_61	mp cw
+ger_ss/ss_sturmgren_sl	ss_sturmgren_sl	16	1.54	20	2.05	2.05	level_94	mp cp cw
+ger_ss/ss_sturmgren_sl_asst	ss_sturmgren_sl_asst	16	1.54	20	2.05	2.05	level_94	mp cp cw
+ger_ss/ss_sturmgren_smg	ss_sturmgren_smg	16	1.54	14	2.05	2.05	level_167	mp cp cw
+ger_ss/ss_sturmgren_stg_pzf	ss_sturmgren_stg_pzf	16	1.54	20	2.05	2.05	level_94	mp cp cw
+ger_ss/ss_sturmpio4	ss_sturmpio4	16	1.54	18	2.05	2.05	level_171	mp cp cw
+ger_ss/ss_sturmpio_sl	ss_sturmpio_sl	16	1.54	20	2.05	2.05	level_94	mp cp cw
+ger_ss/ss_tk_pzgren_pzfst_stg	ss_tk_pzgren_pzfst_stg	20	2.49	24	3.09	3.09	level_119	mp cp cw
+ger_ss/ss_tk_pzgren_sl_asst	ss_tk_pzgren_sl_asst	21	2.49	50	2.49	2.49	level_173	mp
+jap/elite_ig2_scoped	elite_ig2_scoped	55	1.56	35	1.56	0.97	level_45	mp cw
+jap/jap_at_rifleassist	jap_at_rifleAssist	11	0.58	10	0.58	0.58	level_27_v2	mp
+jap/jap_charger_rifle	jap_charger_rifle	7	0.4	6	0.25	0.25	level_11_v2	mp cp cw
+jap/jap_charger_smg_type100	jap_charger_smg_type100	7	0.4	5	0.2	0.2	level_7_v2	mp cp cw
+jap/jap_charger_smg_type100_44	jap_charger_smg_type100_44	7	0.4	5	0.2	0.2	level_7_v2	mp cp cw
+jap/jap_flamer	jap_flamer	40	1.44	40	0.2	0.2	level_4_v2	cp cw
+jap/jap_flamerassist	jap_flamerAssist	9	0.6	8	0.6	0.6	level_29	mp
+jap/jap_kamikaze	jap_kamikaze	7	0.4	6	0.25	0.25	level_11_v2	mp cp cw
+jap/jap_mg3_asst	jap_mg3_asst	8	0.4	7	0.25	0.25	level_10_v2	mp cp cw
+jap/jap_mg_asst	jap_mg_asst	20	0.7	11	0.7	0.7	level_157	mp
+jap/jap_officer	jap_officer	1000	-10	1000	-10	100	level_0_v2	cw
+jap/jap_rifle	jap_rifle	9	0.6	8	0.6	0.6	level_29	mp
+jap/jap_rifle2	jap_rifle2	9	0.6	8	0.6	0.6	level_29	mp
+jap/jap_rifle2b	jap_rifle2b	9	0.6	8	0.6	0.6	level_29	mp
+jap/jap_rifle_grenadier	jap_rifle_grenadier	10	10	10	0.5	0.5	level_16_v2	cp cw
+jap/jap_rifleb	jap_rifleb	9	0.6	8	0.6	0.6	level_29	mp
+jap/jap_smg	jap_smg	11	0.58	10	0.58	0.58	level_27_v2	mp
+jap/jap_smg2	jap_smg2	11	0.58	10	0.58	0.58	level_27_v2	mp
+jap/jap_smg2b	jap_smg2b	11	0.58	10	0.58	0.58	level_27_v2	mp
+jap/jap_smg3	jap_smg3	11	0.58	10	0.58	0.58	level_27_v2	mp
+jap/jap_smgb	jap_smgb	11	0.58	10	0.58	0.58	level_27_v2	mp
+jap/jap_sniper_type97	jap_sniper_type97	55	1.56	35	1.56	0.97	level_45	mp cw
+jap/jap_sniper_type99	jap_sniper_type99	55	1.56	35	1.56	0.97	level_45	mp cw
+jap/jap_snlf_at	jap_snlf_at	42.5	2.14	57.5	2.14	2.14	level_159	mp
+jap/jap_snlf_rifle_type99	jap_snlf_rifle_type99	12	2.14	12	2.44	2.44	level_158	cp cw
+jap/jap_squadleader	jap_squadleader	11	0.58	10	0.58	0.58	level_27_v2	mp
+jap/jap_squadleader2	jap_squadleader2	11	0.58	10	0.58	0.58	level_27_v2	mp
+jap/jap_teishin_type100_44_apminer	jap_teishin_type100_44_apMiner	14	2.44	14	2.14	2.14	level_156	cp cw
+jap/jap_type4_atassist	jap_type4_atAssist	11	0.58	10	0.58	0.58	level_27_v2	mp
+jap/mgun2_ammo	mgun2_ammo	9	0.6	8	0.6	0.6	level_29	mp
+jap/mgun2_asst	mgun2_asst	9	0.6	8	0.6	0.6	level_29	mp
+jap/mgun_ammo	mgun_ammo	9	0.6	8	0.6	0.6	level_29	mp
+jap/mgun_asst	mgun_asst	9	0.6	8	0.6	0.6	level_29	mp
+jap/otsu_mg_ammo	otsu_mg_ammo	9	0.6	8	0.6	0.6	level_29	mp
+jap/otsu_mg_asst	otsu_mg_asst	9	0.6	8	0.6	0.6	level_29	mp
+jap/otsu_rifle	otsu_rifle	9	0.6	8	0.6	0.6	level_29	mp
+jap/otsu_sa	otsu_sa	9	0.6	8	0.6	0.6	level_29	mp
+jap/otsu_sl	otsu_sl	9	0.6	8	0.6	0.6	level_29	mp
+jap/vehicle_supporter_single	vehicle_supporter	15	0.2	12.5	1	1	level_190	mp cp cw
+rus/rus_at_rifleassist	rus_at_rifleAssist	12	0.58	11	0.58	0.58	level_24_v2	mp
+rus/rus_bazookerassist	rus_bazookerAssist	12	0.58	11	0.58	0.58	level_24_v2	mp
+rus/rus_flamer	rus_flamer	40	1.44	40	0.2	0.2	level_4_v2	cp cw
+rus/rus_flamerassist	rus_flamerAssist	12	0.58	11	0.58	0.58	level_24_v2	mp
+rus/rus_mgun_asst	rus_mgun_asst	9	0.6	8	0.6	0.6	level_29	mp
+rus/rus_officer	rus_officer	1000	-10	1000	-10	100	level_0_v2	cw
+rus/rus_partisan_at	rus_partisan_at	8	0.4	7	0.25	0.25	level_10_v2	mp cp cw
+rus/rus_partisan_mp38	rus_partisan_mp38	8	0.4	7	0.2	0.2	level_9_v2	mp cp cw
+rus/rus_partisan_rifle	rus_partisan_rifle	8	0.4	7	0.25	0.25	level_10_v2	mp cp cw
+rus/rus_partisan_smg	rus_partisan_smg	10	0.4	9	0.2	0.2	level_6_v2	mp cp cw
+rus/rus_radioman_mortar	rus_radioman_mortar	100	100	200	5	5	level_130	mp cp cw
+rus/rus_rifle	rus_rifle	9	0.6	8	0.6	0.6	level_29	mp
+rus/rus_rifle_sa	rus_rifle_sa	13	0.68	12	0.68	0.68	level_34	mp
+rus/rus_saper	rus_saper	25	25	25	0.5	0.5	level_13	cp cw
+rus/rus_sapper_rifle1	rus_sapper_rifle1	9	0.6	8	0.6	0.6	level_29	mp
+rus/rus_sapper_rifle2	rus_sapper_rifle2	9	0.6	8	0.6	0.6	level_29	mp
+rus/rus_sapper_rifle3	rus_sapper_rifle3	9	0.6	8	0.6	0.6	level_29	mp
+rus/rus_sapper_rifle4	rus_sapper_rifle4	13	0.58	8	0.6	0.6	level_29	mp cp cw
+rus/rus_sapper_sl	rus_sapper_sl	12	0.58	11	0.58	0.58	level_24_v2	mp
+rus/rus_sapper_smg	rus_sapper_smg	12	0.58	13	0.58	0.58	level_148	mp
+rus/rus_sapper_smg2	rus_sapper_smg2	12	0.58	11	0.58	0.58	level_24_v2	mp
+rus/rus_shock_flame	rus_shock_flame	40	1.44	40	0.2	0.2	level_4_v2	cp cw
+rus/rus_shock_sl	rus_shock_sl	12	0.97	9	0.97	0.97	level_40	mp
+rus/rus_shock_smg3	rus_shock_smg3	12	0.97	13	0.97	0.97	level_149	mp
+rus/rus_smg	rus_smg	12	0.58	11	0.58	0.58	level_24_v2	mp
+rus/rus_smg2	rus_smg2	12	0.58	11	0.58	0.58	level_24_v2	mp
+rus/rus_smg2_43	rus_smg2_43	12	0.58	11	0.58	0.58	level_24_v2	mp
+rus/rus_sniper_mosin	rus_sniper_mosin	60	2.05	40	2.05	1.44	level_61	mp cw
+rus/rus_sniper_svtscoped	rus_sniper_svtScoped	60	2.05	40	2.05	1.44	level_61	mp cw
+rus/rus_vetsniper	rus_vetSniper	100	100	100	4.55	0.5	level_20_v2	cp cw
+rus/vehicle_supporter_single	vehicle_supporter	10	0.2	12.5	1	1	level_190	mp cp cw
+rus_guard/guard_ap_miner	guard_ap_miner	25	25	25	0.5	0.5	level_13	cp cw
+rus_guard/guard_at_miner	guard_at_miner	37.5	37.5	37.5	0.5	0.5	level_14_v2	cp cw
+rus_guard/guard_elite_guard_mg_asst	guard_elite_guard_mg_asst	18	2	16	2	2	level_182	mp
+rus_guard/guard_elite_guard_smg	guard_elite_guard_smg	17	1.93	16	1.93	1.93	level_81	mp
+rus_guard/guard_elite_guards_shock_flame	guard_elite_guards_shock_flame	40	1.44	40	0.2	0.2	level_4_v2	cp cw
+rus_guard/guard_officer	guard_officer	1000	-10	1000	-10	100	level_0_v2	cw
+rus_guard/guard_recon_rifle	guard_recon_rifle	9	0.6	8	0.6	0.6	level_29	mp
+rus_guard/guard_recon_smg	guard_recon_smg	12	0.58	11	0.58	0.58	level_24_v2	mp
+rus_guard/guard_recon_smg2	guard_recon_smg2	13	0.58	12	0.58	0.58	level_25_v2	mp
+rus_guard/guard_sl	guard_sl	15	1.44	14	1.44	1.44	level_60	mp
+rus_guard/guard_sniper_elite	guard_sniper_elite	100	7	100	7	1	level_47_v2	cw
+rus_guard/guard_sniper_mosin	guard_sniper_mosin	70	2.77	45	2.77	1.93	level_84	mp cw
+rus_guard/guard_sniper_svtscope	guard_sniper_svtScope	70	2.77	45	2.77	1.93	level_84	mp cw
+rus_guard/guards_shock_flame	guards_shock_flame	40	1.44	40	0.2	0.2	level_4_v2	cp cw
+rus_guard/guards_shock_mg	guards_shock_mg	52.5	2.77	42.5	2.77	2.77	level_181	mp
+rus_guard/guards_shock_sl	guards_shock_sl	21	2.49	18	2.49	2.49	level_180	mp
+rus_guard/guards_shock_sl_smg	guards_shock_sl_smg	19	2.44	17	2.44	2.44	level_179	mp
+rus_guard/vehicle_supporter_single	vehicle_supporter	10	0.2	17.5	1	1	level_198	mp cp cw
+usa/usa_82ndairborne_sniper	usa_82ndAirborne_sniper	60	2.05	40	2.05	1.44	level_61	mp cw
+usa/usa_armor_rifle	usa_armor_rifle	13	1.09	12	1.09	1.09	level_137	mp
+usa/usa_armor_squadleader	usa_armor_squadleader	13	0.68	13	0.97	0.97	level_44	cp cw
+usa/usa_bazookerassist	usa_bazookerAssist	13	0.68	12	0.68	0.68	level_34	mp
+usa/usa_devil_brigade_grenadier	usa_devil_brigade_grenadier	35	2.77	35	1.93	1.93	level_86	cp cw
+usa/usa_devil_brigade_radio	usa_devil_brigade_radio	20	2	75	2	2	level_93	mp
+usa/usa_elite_101st_para3b	usa_elite_101st_para3b	21	2.49	55	3.34	3.34	level_121	mp cp cw
+usa/usa_elite_101st_para3b_asst	usa_elite_101st_para3b_asst	55	3.34	21	2.49	2.49	level_108	mp cp cw
+usa/usa_elite_101st_para4	usa_elite_101st_para4	21	2.49	43	2.49	2.49	level_146	mp
+usa/usa_elite_101st_para_grenadier	usa_elite_101st_para_grenadier	40	3.34	40	2.44	2.44	level_103	cp cw
+usa/usa_engineer	usa_engineer	13	0.68	12	0.68	0.68	level_34	mp
+usa/usa_engineer2	usa_engineer2	13	0.68	12	0.68	0.68	level_34	mp
+usa/usa_engineer3	usa_engineer3	13	0.68	12	0.68	0.68	level_34	mp
+usa/usa_engineer4	usa_engineer4	13	0.68	12	0.68	0.68	level_34	mp
+usa/usa_engineer_flamer	usa_engineer_flamer	40	1.44	40	0.2	0.2	level_4_v2	cp cw
+usa/usa_flamer	usa_flamer	40	1.44	40	0.2	0.2	level_4_v2	cp cw
+usa/usa_marine_barassist	usa_marine_barAssist	9	0.97	43	2.49	2.49	level_146	mp cp cw
+usa/usa_marine_rifle	usa_marine_rifle	9	0.97	43	2.49	2.49	level_146	mp cp cw
+usa/usa_mgun2	usa_mgun2	40	1.32	50	1.32	1.32	level_54_v2	mp
+usa/usa_mgun2_asst	usa_mgun2_asst	13	0.6	12	0.6	0.6	level_30_v2	mp
+usa/usa_mgun_asst	usa_mgun_asst	13	0.6	12	0.6	0.6	level_30_v2	mp
+usa/usa_officer	usa_officer	1000	-10	1000	-10	100	level_0_v2	cw
+usa/usa_paramarine3	usa_paramarine3	18	2	32	2.49	2.49	level_147	mp cp cw
+usa/usa_paramarine_grenadier	usa_paramarine_grenadier	35	2.77	35	1.93	1.93	level_86	cp cw
+usa/usa_radioman_mortar	usa_radioman_mortar	100	5	200	5	5	level_130	mp
+usa/usa_raiderdemo	usa_raiderdemo	60	2.05	40	2.05	1.44	level_61	mp cw
+usa/usa_ranger_grenadier	usa_ranger_grenadier	35	2.77	35	1.93	1.93	level_86	cp cw
+usa/usa_ranger_sniper	usa_ranger_sniper	70	2.77	45	2.77	1.93	level_84	mp cw
+usa/usa_rifle	usa_rifle	13	0.6	12	0.6	0.6	level_30_v2	mp
+usa/usa_rifle3	usa_rifle3	13	0.6	12	0.6	0.6	level_30_v2	mp
+usa/usa_smg	usa_smg	55	0.58	11	0.58	0.58	level_24_v2	mp
+usa/usa_sniper	usa_sniper	55	1.56	35	1.56	0.97	level_45	mp cw
+usa/vehicle_supporter_single	vehicle_supporter	10	0.2	12.5	1	1	level_190	mp cp cw
+
+# sheet breeds not found in the mod
+axis_minor/axm_bul_tankCommander 30.0 / 2
+axis_minor/axm_bul_tankman 10.0 / 0.5
+axis_minor/axm_fin_tankCommander 30.0 / 0.5
+axis_minor/axm_fin_tankman 10.0 / 0.5
+axis_minor/axm_fin_vehicle_supporter 10.0 / 0.2
+axis_minor/axm_ger_vehicle_supporter 10.0 / 0.2
+axis_minor/axm_hun_elite_tankCommander 150 / 2
+axis_minor/axm_hun_elite_tankman 110 / 0.5
+axis_minor/axm_hun_tankCommander 30 / 2
+axis_minor/axm_hun_vehicle_supporter 10 / 0.2
+axis_minor/axm_hun_vet_tankCommander 100 / 2
+axis_minor/axm_hun_vet_tankman 80 / 0.5
+axis_minor/axm_ita_tankCommander 30 / 2
+axis_minor/axm_ita_tankman 10 / 0.5
+axis_minor/axm_ita_vehicle_supporter 10 / 0.2
+axis_minor/axm_ita_vetTankCommander 100 / 0.5
+axis_minor/axm_ita_vetTankman 80 / 2
+axis_minor/axm_rom_tankCommander 30 / 2
+axis_minor/axm_rom_tankman 10 / 0.5
+axis_minor/axm_rom_vehicle_supporter 10 / 0.5
+axis_minor/axm_rom_vetTankman 100 / 0.5
+ger/ger_elite_tankman 0.0 / 0
+ger/ger_elite_tankman2 0.0 / 0
+ger/tankman 10 / 0.5
+ger/tankman2 30 / 2
+ger/vehicle_supporter 10 / 0.2
+ger/vet_tankman 100 / 0.5
+ger/vet_tankman2 80 / 2
+ger/vet_vehicle_supporter 15 / 0.5
+eng/eng_elite_tankCommander 150.0 / 2
+eng/eng_elite_tankman 110.0 / 0.5
+eng/eng_sas_brenGunnerAssist2 21 / 2.14
+eng/tankman 10.0 / 0.5
+eng/tankman2 30.0 / 30.0
+eng/vet_tankman 80.0 / 0.5
+eng/vet_tankman2 100.0 / 2
+ger_ss/ss_fallschirm_pzfst_stg #N/A / #N/A
+ger_ss/ss_support 10.0 / 0.2
+ger_ss/tankman 10.0 / 0.5
+ger_ss/tankman2 30.0 / 2
+ger_ss/vet_tankman 80.0 / 0.5
+ger_ss/vet_tankman2 100.0 / 2
+ger2/ost_elite_tankman 150.0 / 0.5
+ger2/ost_elite_tankman2 110.0 / 2
+ger2/ost_support 10.0 / 0.2
+ger2/tankman 30.0 / 0.5
+ger2/tankman2 10.0 / 2
+jap/jap_elite_vehicle_supporter 100.0 / 0.5
+jap/jap_snlf_mgAssist 14 / 2.44
+jap/jap_snlf_smg_type99 12 / 2.14
+jap/jap_teishin_smg 14 / 2.44
+jap/tankman 10.0 / 0.5
+jap/tankman2 30.0 / 2
+rus/rus_elite_tankCommander 150 / 2
+rus/rus_elite_tankman 110.0 / 0.5
+rus/tankman 10.0 / 0.5
+rus/tankman2 30.0 / 30.0
+rus/vet_tankman 80.0 / 0.5
+rus/vet_tankman2 100.0 / 2
+rus_guard/guard_elite_tankCommander 150.0 / 2
+rus_guard/guard_elite_tankman 110.0 / 0.5
+rus_guard/tankman 10.0 / 0.5
+rus_guard/tankman2 30.0 / 2
+rus_guard/vet_tankman 100.0 / 0.5
+rus_guard/vet_tankman2 80.0 / 2
+usa/tankman 10.0 / 0.5
+usa/tankman2 30.0 / 2
+usa/vet_tankman 80.0 / 0.5
+usa/vet_tankman2 100.0 / 2
+ger_ss/elite_tankman 10.0 / 0.5
+ger_ss/elite_tankman2 30.0 / 2
+jap/light_mortar_assist 9 / 0.6
+jap/mgun3_ammo 9 / 0.6
+jap/mgun3_asst 9 / 0.6
+
+# mod breeds not in the sheet
+axis_minor/axm_rom_bazooker_assist	8	0.2	0.2
+axis_minor/axm_fin_kaukopartio_flamer	40	0.2	0.2
+axis_minor/axm_fin_pio_smg	40	0.2	0.2
+ger_ss/ss_sturmpio_flamer	40	0.2	0.2
+jap/jap_charger_throwgun	6	0.25	0.25
+ger_ss/ss_vet_sniper	100	4.55	0.5
+jap/light_mortar_asst	8	0.6	0.6
+ger/ger_light_mortar_assist	8	0.6	0.6
+eng/eng_light_mortar_assist	8	0.6	0.6
+ger_ss/ss_light_mortar_assist	8	0.6	0.6
+ger2/ost_light_mortar_assist	8	0.6	0.6
+eng/eng_anzac_rifle_grenadier	25	0.97	0.97
+eng/eng_anzac_at_rifle	33	0.97	0.97
+jap/jap_kanoe_shidan_type38	10	1.34	1.34
+axis_minor/axm_fin_pio_squadleader	14	1.44	1.44
+jap/ig_light_mortar	15	1.44	1.44
+jap/ig_light_mortar_asst	15	1.44	1.44
+ger2/ost_light_mortar	20	1.44	1.44
+eng/eng_light_mortar	20	1.44	1.44
+ger_ss/ss_light_mortar	20	1.44	1.44
+jap/jap_snlf_mg_asst	12	2.14	2.14
+eng/eng_sas_bren2_assist	21	2.14	2.14
+jap/super_officer	1500	-15	150
+jap/jap_teishin_mg	45	1.11	1.11
+jap/jap_snlf_mg_type99	45	1.11	1.11
+ger2/ost_tankman	25	1	1
+ger2/ost_tankman2	25	1	1
+ger_ss/ss_tankman2	16	1	1
+ger_ss/ss_tankman	16	1	1
+ger_ss/ss_vet_tankman2	100	1	1
+ger/ger_vet_tankman2_single	100	1	1
+eng/eng_vet_tankman2_single	100	1	1
+usa/usa_vet_tankman2_single	100	1	1
+rus/rus_vet_tankman2_single	100	1	1
+axis_minor/axm_rom_vet_tankman2_single	100	1	1
+rus_guard/rus_guard_vet_tankman2_single	100	1	1
+ger_ss/ss_vehicle_supporter	12.5	1	1
+ger/ger_vehicle_supporter_single	12.5	1	1
+eng/eng_anzac_mg	40	2.55	2.55
+eng/eng_anzac_rifle	15	0.6	0.6
+eng/eng_anzac_mg_assist	15	0.6	0.6
+eng/eng_anzac_smg	15	1.44	1.44
+eng/eng_anzac_smg_thompson	15	1.44	1.44
+eng/eng_anzac_sl	17	1.44	1.44
+usa/usa_tankman2_single	14	1	1
+usa/usa_tankman_single	14	1	1
+ger/ger_tankman2_single	14	1	1
+ger/ger_tankman_single	14	1	1
+eng/eng_tankman_single	14	1	1
+eng/eng_tankman2_single	14	1	1
+rus/rus_tankman_single	14	1	1
+jap/jap_tankman_single	14	1	1
+jap/jap_tankman2_single	14	1	1
+axis_minor/axm_hun_tankmancommander_single	14	1	1
+rus_guard/rus_guard_tankman_single	18	1	1
+rus_guard/rus_guard_tankman2_single	18	1	1

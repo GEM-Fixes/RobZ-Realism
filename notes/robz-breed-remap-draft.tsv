@@ -1,0 +1,1188 @@
+side	breed	role	on cards	main weapon	level now	proposed call	skills now>new	rocket now>new	body now>new	drive now>new	note
+axis_minor	axm_bul_at_rifle	line	1			(no weapon skill found: keep as is)					
+axis_minor	axm_bul_at_rifle_assist	asst	1	mp40	4	("soldier_smg_4" rocket(1) body(line))	44254>44234	2>1			assists nobody on a card: kept at own level
+axis_minor	axm_bul_mgun	line	1	zb_vz26	3	("soldier_mgun_3" rocket(1) body(line))	11322>22323		200/100/0.9>150/100/0.9	0.8/1/1>0.75/1/0.8	
+axis_minor	axm_bul_mgun_assist	asst	1	mauzer	2	("soldier_mgun_3" rocket(1) body(line))	11322>22323		200/100/0.9>150/100/0.9	0.8/1/1>0.75/1/0.8	same as axm_bul_mgun
+axis_minor	axm_bul_miner_ap	line	1	mannlicher_m1895	4	("soldier_rifle_4" rocket(1) body(line))	22142>43244		200/100/0.9>150/100/0.9	0.8/1/1>0.75/1/0.8	
+axis_minor	axm_bul_miner_at	line	1	mannlicher_m1895	4	("soldier_rifle_4" rocket(1) body(line))	22142>43244		200/100/0.9>150/100/0.9	0.8/1/1>0.75/1/0.8	
+axis_minor	axm_bul_officer	leader	0	valter	5	("soldier_pistol_5" rocket(1) body(line))	51112>55555		300/100/1>200/150/0.9	1/1/1>0.85/1/0.9	
+axis_minor	axm_bul_radioman	line	1	mp40	2	("soldier_smg_2" rocket(1) body(line))			300/100/0.9>150/100/0.9	0.8/1/1>0.75/1/0.8	
+axis_minor	axm_bul_rifle	line	1	mauzer	3	("soldier_rifle_3" rocket(1) body(line))	21132>22233			0.8/1/1>0.75/1/0.8	
+axis_minor	axm_bul_smg	line	0	mp40	3	("soldier_smg_3" rocket(1) body(line))	23112>23223			0.8/1/1>0.75/1/0.8	
+axis_minor	axm_bul_squadleader	leader	1	mp40	4	("soldier_smg_4" rocket(1) body(line))	34232>44234		200/100/0.9>150/100/0.9	0.8/1/1>0.75/1/0.8	
+axis_minor	axm_bul_tankcommander	crew	0	valter	4	("crew_<grade>")	44434	2	150/100/0.8	1.1/1/0.95	crew ladder: see draft
+axis_minor	axm_bul_tankman	crew	0	valter	4	("crew_<grade>")	44234	2	100/100/0.8	1/1/0.9	crew ladder: see draft
+axis_minor	axm_bul_vehicle_supporter	support	0	mauzer	2	("support_<grade>")	22424	2	150/100/0.9	0.85/1/1	crew ladder: see draft
+axis_minor	axm_bul_vehicle_supporter_single	support	1	mauzer	2	("support_<grade>")	22424	2	150/100/0.9	0.85/1/1	crew ladder: see draft
+axis_minor	axm_fin_at_rifle	line	1			(no weapon skill found: keep as is)					
+axis_minor	axm_fin_at_rifleassist	asst	1	suomi_m31	2	("soldier_smg_2" rocket(1) body(line))	22132>22112			0.8/1/1>0.75/1/0.8	assists nobody on a card: kept at own level
+axis_minor	axm_fin_elite_sniper	special	0			(no weapon skill found: keep as is)					
+axis_minor	axm_fin_kaukopartio_mgun	line	1	lsm26	6	("soldier_mgun_6" rocket(1) body(line))	33643>55655	3>1	200/150/0.9>350/200/0.9	0.9/1/1>0.95/1/1	
+axis_minor	axm_fin_kaukopartio_mgun_assist	asst	1	mosin_fin	6	("soldier_mgun_6" rocket(1) body(line))	33663>55655	3>1	250/150/0.9>350/200/0.9	0.9/1/1>0.95/1/1	same as axm_fin_kaukopartio_mgun
+axis_minor	axm_fin_kaukopartio_rifle	line	1	mosin_fin	6	("soldier_rifle_6" rocket(1) body(line))	33363>55565	3>1	200/150/0.9>350/200/0.9	0.9/1/1>0.95/1/1	
+axis_minor	axm_fin_kaukopartio_smg	line	1	suomi_m31	6	("soldier_smg_6" rocket(1) body(line))	36553>56555	3>1	200/150/0.9>350/200/0.9	0.9/1/1>0.95/1/1	
+axis_minor	axm_fin_kaukopartio_squadleader	leader	1	suomi_m31	7	("soldier_smg_7" rocket(1) body(line))	37553>67666	3>1	200/150/0.9>400/200/0.9	0.9/1/1>0.95/1/1	
+axis_minor	axm_fin_officer	leader	1	luger	5	("soldier_pistol_5" rocket(1) body(line))	51112>55555		300/100/1>200/150/0.9	1/1/1>0.85/1/0.9	
+axis_minor	axm_fin_pio_flamer	line	1	luger	2	("soldier_pistol_2" rocket(1) body(line))	23242>22222		250/100/0.9>150/100/0.9	0.8/1/1>0.75/1/0.8	
+axis_minor	axm_fin_pio_mgun	line	1	lsm26	4	("soldier_mgun_4" rocket(1) body(line))	13442>43434		200/100/0.9>150/100/0.9	0.8/1/1>0.75/1/0.8	
+axis_minor	axm_fin_pio_rifle	line	1	mosin_fin	4	("soldier_rifle_4" rocket(1) body(line))	11142>43244			0.8/1/1>0.75/1/0.8	
+axis_minor	axm_fin_pio_rifle_dynamite	line	1	mosin_fin	4	("soldier_rifle_4" rocket(1) body(line))	11142>43244			0.8/1/1>0.75/1/0.8	
+axis_minor	axm_fin_pio_smg	line	1	suomi_m31	4	("soldier_smg_4" rocket(1) body(line))	14112>44234			0.8/1/1>0.75/1/0.8	
+axis_minor	axm_fin_pio_squadleader	leader	1	suomi_m31	5	("soldier_smg_5" rocket(1) body(line))	15142>45334		150/100/0.9>200/150/0.9	0.8/1/1>0.85/1/0.9	
+axis_minor	axm_fin_sissi_mgun	line	1	lsm26	7	("soldier_mgun_7" rocket(1) body(line))	15762>66766		200/100/0.9>400/200/0.9	0.8/1/1>0.95/1/1	
+axis_minor	axm_fin_sissi_mgun_assist	asst	1	mosin_fin	7	("soldier_mgun_7" rocket(1) body(line))	11772>66766		200/100/0.9>400/200/0.9	0.8/1/1>0.95/1/1	same as axm_fin_sissi_mgun
+axis_minor	axm_fin_sissi_mgun_assist_vision	asst	0	mosin_fin	7	("soldier_rifle_7" rocket(1) body(line))	11772>66676		200/100/1.1>400/200/0.9	0.8/1/1>0.95/1/1	assists nobody on a card: kept at own level
+axis_minor	axm_fin_sissi_mgun_vision	line	0	lsm26	7	("soldier_mgun_7" rocket(1) body(line))	11732>66766		200/100/1.1>400/200/0.9	0.8/1/1>0.95/1/1	
+axis_minor	axm_fin_sissi_rifle	line	1	mosin_fin	7	("soldier_rifle_7" rocket(1) body(line))	15572>66676		150/100/0.9>400/200/0.9	0.8/1/1>0.95/1/1	
+axis_minor	axm_fin_sissi_rifle_vision	line	0	mosin_fin	7	("soldier_rifle_7" rocket(1) body(line))	15572>66676		150/100/1.1>400/200/0.9	0.8/1/1>0.95/1/1	
+axis_minor	axm_fin_sissi_smg	line	1	suomi_m31	7	("soldier_smg_7" rocket(1) body(line))	27552>67666	3>1	150/100/0.9>400/200/0.9	0.8/1/1>0.95/1/1	
+axis_minor	axm_fin_sissi_smg_vision	line	0	suomi_m31	7	("soldier_smg_7" rocket(1) body(line))	27552>67666	3>1	150/100/1.1>400/200/0.9	0.8/1/1>0.95/1/1	
+axis_minor	axm_fin_sissi_squadleader	leader	0	suomi_m31	7	("soldier_smg_7" rocket(1) body(line))	37552>67666	3>1	200/100/0.9>400/200/0.9	0.8/1/1>0.95/1/1	
+axis_minor	axm_fin_sissi_squadleader_vision	leader	1	suomi_m31	7	("soldier_smg_7" rocket(1) body(line))	37552>67666	3>1	200/100/1.1>400/200/0.9	0.8/1/1>0.95/1/1	
+axis_minor	axm_fin_sniper	special	1			(no weapon skill found: keep as is)					
+axis_minor	axm_fin_tankman	crew	0	suomi_m31r	4	("crew_<grade>")	44234	2	100/100/0.8	1/1/0.9	crew ladder: see draft
+axis_minor	axm_fin_tank_commander	crew	0	valter	4	("crew_<grade>")	44434	2	150/100/0.8	1.1/1/0.95	crew ladder: see draft
+axis_minor	axm_fin_vehicle_supporter	support	0	mosin_fin	2	("support_<grade>")	22424	2	150/100/0.9	0.85/1/1	crew ladder: see draft
+axis_minor	axm_ger_vehicle_supporter	support	0	mauzer	2	("support_<grade>")	22424	2	150/100/0.9	0.85/1/1	crew ladder: see draft
+axis_minor	axm_hun_assualt_flamer	line	1			(no weapon skill found: keep as is)					
+axis_minor	axm_hun_assualt_mgun	line	1	solothurn_31m	4	("soldier_mgun_4" rocket(3) body(line))	44444>43434	4>3	200/200/0.9>150/100/0.9	1/1/1>0.75/1/0.8	
+axis_minor	axm_hun_assualt_mgun_assist	asst	1	feg_35m	4	("soldier_mgun_4" rocket(1) body(line))	44444>43434	4>1	200/200/0.9>150/100/0.9	1/1/1>0.75/1/0.8	same as axm_hun_assualt_mgun
+axis_minor	axm_hun_assualt_pzf	line	1	danuvia_39m	4	("soldier_smg_4" rocket(4) body(line))	44444>44234		200/200/0.9>150/100/0.9	1/1/1>0.75/1/0.8	
+axis_minor	axm_hun_assualt_rifle	line	1	feg_43m	4	("soldier_rifle_4" rocket(3) body(line))	44444>43244	4>3	200/200/0.9>150/100/0.9	1/1/1>0.75/1/0.8	
+axis_minor	axm_hun_assualt_smg	line	1	danuvia_39m	4	("soldier_smg_4" rocket(3) body(line))	44444>44234	4>3	200/200/0.9>150/100/0.9	1/1/1>0.75/1/0.8	
+axis_minor	axm_hun_assualt_squadleader	leader	1	danuvia_39m	5	("soldier_smg_5" rocket(4) body(line))	45444>45334		350/200/0.9>200/150/0.9	1/1/1>0.85/1/0.9	
+axis_minor	axm_hun_elite_tankcommander	crew	0	frommer_37m	6	("crew_<grade>")	62112	1	100/100/0.8	1.15/1.15/1	crew ladder: see draft
+axis_minor	axm_hun_elite_tankman	crew	0	frommer_37m	2	("crew_<grade>")	22112	1	100/100/0.8	1.15/1.15/1	crew ladder: see draft
+axis_minor	axm_hun_rifle	line	1	feg_35m	2	("soldier_rifle_2" rocket(1) body(line))	21122>11122			0.8/1/1>0.75/1/0.8	
+axis_minor	axm_hun_rifle3	line	1	feg_43m	2	("soldier_rifle_2" rocket(1) body(line))	21122>11122			0.8/1/1>0.75/1/0.8	
+axis_minor	axm_hun_smg_danuvia	line	1	danuvia_39m	3	("soldier_smg_3" rocket(2) body(line))	23112>23223	1>2		0.8/1/1>0.75/1/0.8	
+axis_minor	axm_hun_smg_ppsh	line	1	ppsh	2	("soldier_smg_2" rocket(1) body(line))				0.8/1/1>0.75/1/0.8	
+axis_minor	axm_hun_squadleader_smg	leader	1	danuvia_43m	3	("soldier_smg_3" rocket(2) body(line))	33232>23223	1>2	200/100/0.9>150/100/0.9	0.8/1/1>0.75/1/0.8	
+axis_minor	axm_hun_tankcommander	crew	0	danuvia_39m	4	("crew_<grade>")	44434	2	150/100/0.8	1.1/1/0.95	crew ladder: see draft
+axis_minor	axm_hun_tankcommander_single	crew	1	danuvia_39m	4	("crew_<grade>")	44434	2	150/100/0.8	1.1/1/0.95	crew ladder: see draft
+axis_minor	axm_hun_tankman	crew	0	frommer_37m	4	("crew_<grade>")	44234	2	100/100/0.8	1/1/0.9	crew ladder: see draft
+axis_minor	axm_hun_tankman_single	crew	1	frommer_37m	4	("crew_<grade>")	44234	2	100/100/0.8	1/1/0.9	crew ladder: see draft
+axis_minor	axm_hun_vehicle_supporter	support	0	danuvia_39m	2	("support_<grade>")	22424	2	150/100/0.9	0.85/1/1	crew ladder: see draft
+axis_minor	axm_hun_vet_tankcommander	crew	0	frommer_37m	6	("crew_<grade>")	62412	1	100/100/0.8	1.15/1.15/1	crew ladder: see draft
+axis_minor	axm_hun_vet_tankman	crew	0	frommer_37m	2	("crew_<grade>")	22412	1	100/100/0.8	1.15/1.15/1	crew ladder: see draft
+axis_minor	axm_ita_alpini_mgun	line	1	breda_30	4	("soldier_mgun_4" rocket(1) body(line))	11432>43434		200/100/0.9>150/100/0.9	0.8/1/1>0.75/1/0.8	
+axis_minor	axm_ita_alpini_mgun_assist	asst	1	m9138_carcano	4	("soldier_mgun_4" rocket(1) body(line))	23442>43434			0.8/1/1>0.75/1/0.8	same as axm_ita_alpini_mgun
+axis_minor	axm_ita_alpini_rifle	line	1	m9138_carcano	4	("soldier_rifle_4" rocket(1) body(line))	21342>43244		200/100/0.9>150/100/0.9	0.8/1/1>0.75/1/0.8	
+axis_minor	axm_ita_alpini_rifle2	line	1	carcano_m91	4	("soldier_rifle_4" rocket(1) body(line))	23342>43244			0.8/1/1>0.75/1/0.8	
+axis_minor	axm_ita_alpini_smg	line	1	mab_38a	4	("soldier_smg_4" rocket(1) body(line))	24232>44234			0.8/1/1>0.75/1/0.8	
+axis_minor	axm_ita_alpini_sniper	special	1	beretta_m1934	2	("soldier_pistol_2" rocket(1) body(line))	22452>22222		350/150/1>150/100/0.9	1/1/1>0.75/1/0.8	
+axis_minor	axm_ita_alpini_squadleader	leader	1	mab_38a	5	("soldier_smg_5" rocket(1) body(line))	35232>45334		200/100/0.9>200/150/0.9	0.8/1/1>0.85/1/0.9	
+axis_minor	axm_ita_bersaglieri_mgun	line	1	breda_30	5	("soldier_mgun_5" rocket(1) body(line))	14542>43534		200/100/0.9>200/150/0.9	0.8/1/1>0.85/1/0.9	
+axis_minor	axm_ita_bersaglieri_mgun_assist	asst	1	carcano_m91	5	("soldier_mgun_5" rocket(1) body(line))	13552>43534		200/100/0.9>200/150/0.9	0.8/1/1>0.85/1/0.9	same as axm_ita_bersaglieri_mgun
+axis_minor	axm_ita_bersaglieri_rifle	line	1	carcano_m91	5	("soldier_rifle_5" rocket(1) body(line))	24452>43354		200/100/0.9>200/150/0.9	0.8/1/1>0.85/1/0.9	
+axis_minor	axm_ita_bersaglieri_rifle2	line	1	m38_carcano	5	("soldier_rifle_5" rocket(1) body(line))	24452>43354		200/100/0.9>200/150/0.9	0.8/1/1>0.85/1/0.9	
+axis_minor	axm_ita_bersaglieri_smg	line	1	mab_38a	5	("soldier_smg_5" rocket(1) body(line))	25342>45334		200/100/0.9>200/150/0.9	0.8/1/1>0.85/1/0.9	
+axis_minor	axm_ita_paratrooper_mgun	line	1	breda_30	7	("soldier_mgun_7" rocket(1) body(line))	33773>66766	3>1	200/150/0.9>400/200/0.9	0.9/1/1>0.95/1/1	
+axis_minor	axm_ita_paratrooper_mgun_assist	asst	1	scottix	7	("soldier_mgun_7" rocket(1) body(line))	33773>66766	3>1	200/150/0.9>400/200/0.9	0.9/1/1>0.95/1/1	same as axm_ita_paratrooper_mgun
+axis_minor	axm_ita_paratrooper_rifle	line	1	scottix	7	("soldier_rifle_7" rocket(1) body(line))	33573>66676	3>1	250/150/0.9>400/200/0.9	0.9/1/1>0.95/1/1	
+axis_minor	axm_ita_paratrooper_smg	line	1	mab_38a	7	("soldier_smg_7" rocket(1) body(line))	37453>67666	3>1	200/150/0.9>400/200/0.9	0.9/1/1>0.95/1/1	
+axis_minor	axm_ita_paratrooper_squadleader	leader	1	mab_38a	7	("soldier_smg_7" rocket(1) body(line))	37473>67666	3>1	200/150/0.9>400/200/0.9	0.9/1/1>0.95/1/1	
+axis_minor	axm_ita_tankcommander	crew	0	glisenti	2	("crew_<grade>")	22412	1	150/100/0.8	1.1/1/0.95	crew ladder: see draft
+axis_minor	axm_ita_tankman	crew	0	bodeo_m1889	2	("crew_<grade>")	22212	1	100/100/0.8	1/1/0.9	crew ladder: see draft
+axis_minor	axm_ita_vehicle_supporter	support	1	mab_38a	2	("support_<grade>")	22424	2	150/100/0.9	0.85/1/1	crew ladder: see draft
+axis_minor	axm_ita_vettankcommander	crew	0	glisenti	2	("crew_<grade>")	22412	1	150/100/0.8	1.1/1/0.95	crew ladder: see draft
+axis_minor	axm_ita_vettankman	crew	0	bodeo_m1889	2	("crew_<grade>")	22412	1	100/100/0.8	1/1/0.9	crew ladder: see draft
+axis_minor	axm_rom_bazooker	rocket	1	panzershreck	3	("soldier_rocket_3" rocket(3) body(line))	32112>22233		200/100/0.9>150/100/0.9	0.8/1/1>0.75/1/0.8	
+axis_minor	axm_rom_bazooker_assist	asst	1	orita	2	("soldier_rocket_3" rocket(1) body(line))	32112>22233	3>1	200/100/0.9>150/100/0.9	0.8/1/1>0.75/1/0.8	same as axm_rom_bazooker
+axis_minor	axm_rom_elite_vehicle_supporter	support	0	orita	5	("support_<grade>")	55554	2	100/100/0.8	1.15/1.15/1	crew ladder: see draft
+axis_minor	axm_rom_mgun	line	1	zb_30lmg	3	("soldier_mgun_3" rocket(1) body(line))	21332>22323			0.8/1/1>0.75/1/0.8	
+axis_minor	axm_rom_mgunassist	asst	1	zb_24rifle	3	("soldier_mgun_3" rocket(1) body(line))	21332>22323			0.8/1/1>0.75/1/0.8	same as axm_rom_mgun
+axis_minor	axm_rom_minedisposal	line	1	orita	3	("soldier_smg_3" rocket(1) body(line))	43112>23223			1/1/1>0.75/1/0.8	
+axis_minor	axm_rom_rifle	line	1	zb_24rifle	3	("soldier_rifle_3" rocket(1) body(line))	21132>22233			0.8/1/1>0.75/1/0.8	
+axis_minor	axm_rom_smg	line	1	orita	3	("soldier_smg_3" rocket(1) body(line))	23112>23223			0.8/1/1>0.75/1/0.8	
+axis_minor	axm_rom_squadleader	leader	1	orita	4	("soldier_smg_4" rocket(1) body(line))	34242>44234		200/100/0.9>150/100/0.9	0.8/1/1>0.75/1/0.8	
+axis_minor	axm_rom_tankcommander	crew	0	steyer_pistol_1912	4	("crew_<grade>")	44434	2	150/100/0.8	1.1/1/0.95	crew ladder: see draft
+axis_minor	axm_rom_tankman	crew	0	orita	4	("crew_<grade>")	44234	2	100/100/0.8	1/1/0.9	crew ladder: see draft
+axis_minor	axm_rom_vehicle_supporter	support	0	orita	2	("support_<grade>")	22424	2	150/100/0.9	0.85/1/1	crew ladder: see draft
+axis_minor	axm_rom_vet_tankcommander	crew	0	orita	5	("crew_<grade>")	45634	2	150/100/0.8	1.2/1.2/1	crew ladder: see draft
+axis_minor	axm_rom_vet_tankcommander_single	crew	1	orita	5	("crew_<grade>")	45634	2	150/100/0.8	1.2/1.2/1	crew ladder: see draft
+axis_minor	axm_rom_vet_tankman	crew	0	orita	5	("crew_<grade>")	45634	2	150/100/0.8	1.2/1.2/1	crew ladder: see draft
+eng	ap_miner	line	1	sten_mk2	3	("soldier_smg_3" rocket(1) body(line))	23222>23223			0.8/1/1>0.75/1/0.8	
+eng	at_miner	line	1	sten_mk2	3	("soldier_smg_3" rocket(1) body(line))				0.8/1/1>0.75/1/0.8	
+eng	at_rifle	line	1	sten_mk2	3	("soldier_smg_3" rocket(1) body(line))	23243>23223	2>1		0.8/1/1>0.75/1/0.8	
+eng	at_rifle2	line	1	sten_mk2	2	("soldier_smg_2" rocket(1) body(line))	22233>22112			0.8/1/1>0.75/1/0.8	
+eng	elite2	line	1	em3_vet	6	("soldier_rifle_6" rocket(1) body(line))	66666>55565	6>1	350/150/0.9>350/200/0.9	0.9/1/1>0.95/1/1	
+eng	elite2_40	line	1	de_lisle	6	("soldier_rifle_6" rocket(1) body(line))	66666>55565	6>1	350/150/0.9>350/200/0.9	0.9/1/1>0.95/1/1	
+eng	elite3	line	1	bren	6	("soldier_mgun_6" rocket(1) body(line))	66666>55655	6>1	350/150/0.9>350/200/0.9	0.9/1/1>0.95/1/1	
+eng	elite_40	line	1	sten_v_silencer	6	("soldier_smg_6" rocket(1) body(line))	66666>56555	6>1	350/150/0.9>350/200/0.9	0.9/1/1>0.95/1/1	
+eng	elite_cpl	line	1	sten_v	7	("soldier_smg_7" rocket(1) body(line))	77777>67666	7>1	350/150/0.9>400/200/0.9	0.9/1/1>0.95/1/1	
+eng	elite_tankman	crew	0	webley	4	("crew_<grade>")	44523	1	100/100/0.8	1.15/1.15/1	crew ladder: see draft
+eng	elite_tankman2	crew	0	sten_mk2	4	("crew_<grade>")	44723	1	150/100/0.8	1.2/1.2/1	crew ladder: see draft
+eng	eng_anzac_at_rifle	line	0	em3	4	("soldier_rifle_4" rocket(1) body(line))	33343>43244	3>1	250/200/0.9>150/100/0.9	0.9/1/1>0.75/1/0.8	
+eng	eng_anzac_mg	line	0	bren	4	("soldier_mgun_4" rocket(1) body(line))	33433>43434	3>1	250/200/0.9>150/100/0.9	0.9/1/1>0.75/1/0.8	
+eng	eng_anzac_mg_assist	asst	0	em3	4	("soldier_rifle_4" rocket(1) body(line))	33443>43244	3>1	250/200/0.9>150/100/0.9	0.9/1/1>0.75/1/0.8	assists nobody on a card: kept at own level
+eng	eng_anzac_rifle	line	0	em3	4	("soldier_rifle_4" rocket(1) body(line))	33343>43244	3>1	250/200/0.9>150/100/0.9	0.9/1/1>0.75/1/0.8	
+eng	eng_anzac_rifle_grenadier	line	0	em3	4	("soldier_rifle_4" rocket(1) body(line))	33343>43244	3>1	250/200/0.9>150/100/0.9	0.9/1/1>0.75/1/0.8	
+eng	eng_anzac_sl	leader	0	thompson_50	5	("soldier_smg_5" rocket(1) body(line))	35333>45334	3>1	250/200/0.9>200/150/0.9	0.9/1/1>0.85/1/0.9	
+eng	eng_anzac_smg	line	0	owen_gun	4	("soldier_smg_4" rocket(1) body(line))	34333>44234	3>1	250/200/0.9>150/100/0.9	0.9/1/1>0.75/1/0.8	
+eng	eng_anzac_smg_thompson	line	0	thompson_50	4	("soldier_smg_4" rocket(1) body(line))	34333>44234	3>1	250/200/0.9>150/100/0.9	0.9/1/1>0.75/1/0.8	
+eng	eng_ap_miner	line	1	sten_mk2	3	("soldier_smg_3" rocket(1) body(line))	23222>23223			0.8/1/1>0.75/1/0.8	
+eng	eng_at_miner	line	1	sten_mk2	3	("soldier_smg_3" rocket(1) body(line))				0.8/1/1>0.75/1/0.8	
+eng	eng_at_rifle	line	1			(no weapon skill found: keep as is)					
+eng	eng_at_rifle_assist	asst	1	sten_mk2	2	("soldier_smg_2" rocket(1) body(line))	22233>22112			0.8/1/1>0.75/1/0.8	assists nobody on a card: kept at own level
+eng	eng_bazooker	line	1	sten_mk2	3	("soldier_smg_3" rocket(3) body(line))		4>3		0.8/1/1>0.75/1/0.8	
+eng	eng_bazooker_assist	asst	1	sten_mk2	3	("soldier_smg_3" rocket(1) body(line))		4>1		0.8/1/1>0.75/1/0.8	assists nobody on a card: kept at own level
+eng	eng_commando_bren	line	1	bren	6	("soldier_mgun_6" rocket(1) body(line))	66666>55655	6>1	350/150/0.9>350/200/0.9	0.9/1/1>0.95/1/1	
+eng	eng_commando_bren_assist	asst	1	em3_vet	6	("soldier_mgun_6" rocket(1) body(line))	66666>55655	6>1	350/150/0.9>350/200/0.9	0.9/1/1>0.95/1/1	same as eng_commando_bren
+eng	eng_commando_carbine	line	1	em3_vet	6	("soldier_rifle_6" rocket(1) body(line))	66666>55565	6>1	350/150/0.9>350/200/0.9	0.9/1/1>0.95/1/1	
+eng	eng_commando_cpl_smg	line	1	sten_v	7	("soldier_smg_7" rocket(1) body(line))	77777>67666	7>1	350/150/0.9>400/200/0.9	0.9/1/1>0.95/1/1	
+eng	eng_commando_silencesmg	line	1	sten_v_silencer	6	("soldier_smg_6" rocket(1) body(line))	66666>56555	6>1	350/150/0.9>350/200/0.9	0.9/1/1>0.95/1/1	
+eng	eng_commando_silence_carbine	line	1	de_lisle	6	("soldier_rifle_6" rocket(1) body(line))	66666>55565	6>1	350/150/0.9>350/200/0.9	0.9/1/1>0.95/1/1	
+eng	eng_commando_sl	leader	1	sten_v	7	("soldier_smg_7" rocket(1) body(line))	77777>67666	7>1	350/150/0.9>400/200/0.9	0.9/1/1>0.95/1/1	
+eng	eng_commando_smg	line	1	sten_v	6	("soldier_smg_6" rocket(1) body(line))	66666>56555	6>1	350/150/0.9>350/200/0.9	0.9/1/1>0.95/1/1	
+eng	eng_flamer	line	1			(no weapon skill found: keep as is)					
+eng	eng_flamer_assist	asst	1	sten_mk2	3	("soldier_smg_3" rocket(1) body(line))				0.8/1/1>0.75/1/0.8	assists nobody on a card: kept at own level
+eng	eng_light_mortar	rocket	0	mortar_mkvii	1	("soldier_rocket_1" rocket(1) body(line))	22254>11112		150/100/0.9>100/75/0.9	0.8/1/1>0.75/1/0.8	
+eng	eng_light_mortar_assist	asst	0	em3	5	("soldier_rifle_5" rocket(1) body(line))	22254>43354		150/100/0.9>200/150/0.9	0.8/1/1>0.85/1/0.9	assists nobody on a card: kept at own level
+eng	eng_mgun	line	1	bren	4	("soldier_mgun_4" rocket(1) body(line))	22424>43434			0.8/1/1>0.75/1/0.8	
+eng	eng_mgun_assist_scot	asst	1	em3	5	("soldier_mgun_5" rocket(1) body(line))	33555>43534	2>1	150/100/0.9>200/150/0.9	0.8/1/1>0.85/1/0.9	same as eng_mgun_scot
+eng	eng_mgun_asst	asst	1	em3	4	("soldier_mgun_4" rocket(1) body(line))	22444>43434			0.8/1/1>0.75/1/0.8	same as eng_mgun
+eng	eng_mgun_scot	line	1	bren	5	("soldier_mgun_5" rocket(1) body(line))	33535>43534	2>1	150/100/0.9>200/150/0.9	0.8/1/1>0.85/1/0.9	
+eng	eng_mg_assist_canada	asst	1	em3	3	("soldier_mgun_3" rocket(1) body(line))	22333>22323			0.8/1/1>0.75/1/0.8	same as eng_mg_canada
+eng	eng_mg_canada	line	1	bren	3	("soldier_mgun_3" rocket(1) body(line))				0.8/1/1>0.75/1/0.8	
+eng	eng_officer	leader	1	webley	5	("soldier_pistol_5" rocket(1) body(line))	55444>55555	3>1	250/150/1>200/150/0.9	1/1/1>0.85/1/0.9	
+eng	eng_paratrooper_bren	line	1	bren	6	("soldier_mgun_6" rocket(1) body(line))	66666>55655	6>1	400/200/0.9>350/200/0.9	1/1/1>0.95/1/1	
+eng	eng_paratrooper_carbine	line	1	em3_vet	6	("soldier_rifle_6" rocket(1) body(line))	66666>55565	6>1	400/200/0.9>350/200/0.9	1/1/1>0.95/1/1	
+eng	eng_paratrooper_cpl_smg	line	1	sten_v	7	("soldier_smg_7" rocket(1) body(line))	77777>67666	7>1		1/1/1>0.95/1/1	
+eng	eng_paratrooper_lightmortar	line	1	sten_v	6	("soldier_smg_6" rocket(6) body(line))	66666>56555		400/200/0.9>350/200/0.9	1/1/1>0.95/1/1	
+eng	eng_paratrooper_sic	line	1	sten_v	7	("soldier_smg_7" rocket(1) body(line))	77777>67666	7>1		1/1/1>0.95/1/1	
+eng	eng_paratrooper_smg	line	1	sten_v	6	("soldier_smg_6" rocket(1) body(line))	66666>56555	6>1	400/200/0.9>350/200/0.9	1/1/1>0.95/1/1	
+eng	eng_paratroopr_em2	line	0			(no weapon skill found: keep as is)					
+eng	eng_pioneer_1trench	line	1	em3	4	("soldier_rifle_4" rocket(1) body(line))	22244>43244	2>1		0.8/1/1>0.75/1/0.8	
+eng	eng_pioneer_3trench	line	1	em3	4	("soldier_rifle_4" rocket(1) body(line))	22244>43244	2>1		0.8/1/1>0.75/1/0.8	
+eng	eng_pioneer_ap_miner	line	1	em3	4	("soldier_rifle_4" rocket(1) body(line))	22244>43244	2>1		0.8/1/1>0.75/1/0.8	
+eng	eng_pioneer_at	line	1	em3	4	("soldier_rifle_4" rocket(4) body(line))	22244>43244			0.8/1/1>0.75/1/0.8	
+eng	eng_pioneer_at_miner	line	1	em3	4	("soldier_rifle_4" rocket(1) body(line))	22244>43244	2>1		0.8/1/1>0.75/1/0.8	
+eng	eng_pioneer_flamer	line	1			(no weapon skill found: keep as is)					
+eng	eng_pioneer_mg	line	1	bren	4	("soldier_mgun_4" rocket(1) body(line))	22434>43434	2>1		0.8/1/1>0.75/1/0.8	
+eng	eng_pioneer_minedisposal	line	1	em3	4	("soldier_rifle_4" rocket(1) body(line))	22244>43244	2>1		0.8/1/1>0.75/1/0.8	
+eng	eng_pioneer_sl	leader	1	em3	4	("soldier_rifle_5" rocket(1) body(line))	33344>43354	3>1	150/100/0.9>200/150/0.9	0.8/1/1>0.85/1/0.9	leader: squad is 4, so 4 > 5
+eng	eng_radioman_airstrike	line	0	sten_mk2	3	("soldier_smg_3" rocket(1) body(line))				0.8/1/1>0.75/1/0.8	
+eng	eng_rifleman	line	1	em3	4	("soldier_rifle_4" rocket(1) body(line))	22244>43244			0.8/1/1>0.75/1/0.8	
+eng	eng_rifleman_canada	line	1	em3	3	("soldier_rifle_3" rocket(1) body(line))				0.8/1/1>0.75/1/0.8	
+eng	eng_rifleman_smoke	line	1	em3	4	("soldier_rifle_4" rocket(1) body(line))	22244>43244			0.8/1/1>0.75/1/0.8	
+eng	eng_rifle_grenadier	line	1	em3	4	("soldier_rifle_4" rocket(1) body(line))	22244>43244			0.8/1/1>0.75/1/0.8	
+eng	eng_rifle_piat	line	1	em3	4	("soldier_rifle_4" rocket(4) body(line))	22244>43244			0.8/1/1>0.75/1/0.8	
+eng	eng_rifle_scot	line	1	em3	5	("soldier_rifle_5" rocket(1) body(line))	33355>43354	2>1	150/100/0.9>200/150/0.9	0.8/1/1>0.85/1/0.9	
+eng	eng_saper	line	1	sten_mk2	3	("soldier_smg_3" rocket(1) body(line))				0.8/1/1>0.75/1/0.8	
+eng	eng_saper2	line	0	sten_mk2	3	("soldier_smg_3" rocket(1) body(line))				0.8/1/1>0.75/1/0.8	
+eng	eng_sas_2ic	line	1	sten_v	7	("soldier_smg_7" rocket(1) body(line))	77777>67666	7>1		1/1/1>0.95/1/1	
+eng	eng_sas_at_rifle	line	1	sten_v	7	("soldier_smg_7" rocket(1) body(line))	77777>67666	7>1		1/1/1>0.95/1/1	
+eng	eng_sas_bran_assist	asst	1	sten_v	7	("soldier_mgun_7" rocket(7) body(line))	77777>66766			1/1/1>0.95/1/1	same as eng_sas_bren2
+eng	eng_sas_bren2	line	1	bren	7	("soldier_mgun_7" rocket(1) body(line))	77777>66766	7>1		1/1/1>0.95/1/1	
+eng	eng_sas_bren2_assist	asst	1	em3_vet	7	("soldier_mgun_7" rocket(1) body(line))	77777>66766	7>1		1/1/1>0.95/1/1	same as eng_sas_bren2
+eng	eng_sas_cpl	line	1	sten_v	7	("soldier_smg_7" rocket(1) body(line))	77777>67666	7>1		1/1/1>0.95/1/1	
+eng	eng_sas_piat	line	1	sten_v	7	("soldier_smg_7" rocket(7) body(line))	77777>67666			1/1/1>0.95/1/1	
+eng	eng_sas_piat_assist	asst	1	sten_v	7	("soldier_smg_7" rocket(1) body(line))	77777>67666	7>1		1/1/1>0.95/1/1	assists nobody on a card: kept at own level
+eng	eng_sas_rifle1	line	1	em3_vet	7	("soldier_rifle_7" rocket(1) body(line))	77777>66676	7>1		1/1/1>0.95/1/1	
+eng	eng_smg	line	1	sten_mk2	4	("soldier_smg_4" rocket(1) body(line))	24223>44234			0.8/1/1>0.75/1/0.8	
+eng	eng_smg_wp	line	1	sten_mk2	4	("soldier_smg_4" rocket(1) body(line))	24223>44234			0.8/1/1>0.75/1/0.8	
+eng	eng_sniper	special	1			(no weapon skill found: keep as is)					
+eng	eng_squadleader	leader	1	sten_v	5	("soldier_smg_5" rocket(1) body(line))	45345>45334	2>1	200/100/0.9>200/150/0.9	0.8/1/1>0.85/1/0.9	
+eng	eng_squadleader2	leader	1	sten_v	5	("soldier_smg_5" rocket(1) body(line))	45345>45334	2>1	200/100/0.9>200/150/0.9	0.8/1/1>0.85/1/0.9	
+eng	eng_squadleader_asst	asst	1	em3	5	("soldier_smg_5" rocket(1) body(line))	44355>45334	2>1	200/100/0.9>200/150/0.9	0.8/1/1>0.85/1/0.9	same as eng_squadleader
+eng	eng_squadleader_can	leader	1	em3	3	("soldier_rifle_4" rocket(1) body(line))	34234>43244	2>1	200/100/0.9>150/100/0.9	0.8/1/1>0.75/1/0.8	leader: squad is 3, so 3 > 4
+eng	eng_squadleader_scot	leader	1	em3	5	("soldier_rifle_6" rocket(1) body(line))	55455>55565	4>1	200/100/0.9>350/200/0.9	0.8/1/1>0.95/1/1	leader: squad is 5, so 5 > 6
+eng	eng_tankman2_single	crew	1	webley	3	("crew_<grade>")	33223	1	100/100/0.8	1/1/1	crew ladder: see draft
+eng	eng_tankman_single	crew	1	webley	3	("crew_<grade>")	33223	1	100/100/0.8	1/1/1	crew ladder: see draft
+eng	eng_vet_tankman2_single	crew	1	sten_mk2	3	("crew_<grade>")	33423	1	150/100/0.8	1.2/1.2/1.1	crew ladder: see draft
+eng	flamer	line	1			(no weapon skill found: keep as is)					
+eng	flamer2	line	1	sten_mk2	3	("soldier_smg_3" rocket(1) body(line))				0.8/1/1>0.75/1/0.8	
+eng	mgun2	line	1	bren	3	("soldier_mgun_3" rocket(1) body(line))				0.8/1/1>0.75/1/0.8	
+eng	mgun_40	line	1	bren	3	("soldier_mgun_3" rocket(1) body(line))				0.8/1/1>0.75/1/0.8	
+eng	mgun_scot	line	1	bren	5	("soldier_mgun_5" rocket(1) body(line))	33535>43534	2>1	150/100/0.9>200/150/0.9	0.8/1/1>0.85/1/0.9	
+eng	oficer	line	1	webley	5	("soldier_pistol_5" rocket(1) body(line))	55444>55555	3>1	250/150/1>200/150/0.9	1/1/1>0.85/1/0.9	
+eng	para	line	1	sten_v	6	("soldier_smg_6" rocket(1) body(line))	66666>56555	6>1	400/200/0.9>350/200/0.9	1/1/1>0.95/1/1	
+eng	para2	line	1	bren	6	("soldier_mgun_6" rocket(1) body(line))	66666>55655	6>1	400/200/0.9>350/200/0.9	1/1/1>0.95/1/1	
+eng	para4	line	1	em3_vet	6	("soldier_rifle_6" rocket(1) body(line))	66666>55565	6>1	400/200/0.9>350/200/0.9	1/1/1>0.95/1/1	
+eng	para_2ic	line	1	sten_v	7	("soldier_smg_7" rocket(1) body(line))	77777>67666	7>1		1/1/1>0.95/1/1	
+eng	para_cpl	line	1	sten_v	7	("soldier_smg_7" rocket(1) body(line))	77777>67666	7>1		1/1/1>0.95/1/1	
+eng	para_mortar	line	1	sten_v	6	("soldier_smg_6" rocket(6) body(line))	66666>56555		400/200/0.9>350/200/0.9	1/1/1>0.95/1/1	
+eng	rifle2_40	line	1	em3	3	("soldier_rifle_3" rocket(1) body(line))				0.8/1/1>0.75/1/0.8	
+eng	rifle3	line	1	em3	3	("soldier_rifle_3" rocket(1) body(line))				0.8/1/1>0.75/1/0.8	
+eng	rifle_40	line	1	em3	3	("soldier_rifle_3" rocket(1) body(line))				0.8/1/1>0.75/1/0.8	
+eng	rifle_scot	line	1	em3	5	("soldier_rifle_5" rocket(1) body(line))	33355>43354	2>1	150/100/0.9>200/150/0.9	0.8/1/1>0.85/1/0.9	
+eng	saper	line	1	sten_mk2	3	("soldier_smg_3" rocket(1) body(line))				0.8/1/1>0.75/1/0.8	
+eng	saper2	line	0	sten_mk2	3	("soldier_smg_3" rocket(1) body(line))				0.8/1/1>0.75/1/0.8	
+eng	saper3	line	0	sten_mk2	3	("soldier_smg_3" rocket(1) body(line))				0.8/1/1>0.75/1/0.8	
+eng	smg2_40	line	1	sten_mk2	3	("soldier_smg_3" rocket(1) body(line))				0.8/1/1>0.75/1/0.8	
+eng	smg_40	line	1	sten_mk2	3	("soldier_smg_3" rocket(1) body(line))				0.8/1/1>0.75/1/0.8	
+eng	sniper	special	1			(no weapon skill found: keep as is)					
+eng	squadleader2_40	leader	1	em3_mark1	4	("soldier_rifle_4" rocket(1) body(line))	33344>43244	2>1	200/100/0.9>150/100/0.9	0.8/1/1>0.75/1/0.8	
+eng	squadleader_40	leader	1	em3	3	("soldier_rifle_4" rocket(1) body(line))	34234>43244	2>1	200/100/0.9>150/100/0.9	0.8/1/1>0.75/1/0.8	leader: squad is 3, so 3 > 4
+eng	squadleader_can	leader	1	em3	3	("soldier_rifle_4" rocket(1) body(line))	34234>43244	2>1	200/100/0.9>150/100/0.9	0.8/1/1>0.75/1/0.8	leader: squad is 3, so 3 > 4
+eng	squadleader_scot	leader	1	em3	5	("soldier_rifle_6" rocket(1) body(line))	55455>55565	4>1	200/100/0.9>350/200/0.9	0.8/1/1>0.95/1/1	leader: squad is 5, so 5 > 6
+eng	sturmovik	line	1	sten_v	7	("soldier_smg_7" rocket(1) body(line))	77777>67666	7>1		1/1/1>0.95/1/1	
+eng	sturmovik2	line	1	bren	7	("soldier_mgun_7" rocket(1) body(line))	77777>66766	7>1		1/1/1>0.95/1/1	
+eng	sturmovik3	line	1	sten_v	7	("soldier_smg_7" rocket(7) body(line))	77777>67666			1/1/1>0.95/1/1	
+eng	sturmovik4	line	1	sten_v	7	("soldier_smg_7" rocket(1) body(line))	77777>67666	7>1		1/1/1>0.95/1/1	
+eng	sturmovik6	line	1	bren	7	("soldier_mgun_7" rocket(1) body(line))	77777>66766	7>1		1/1/1>0.95/1/1	
+eng	sturmovik6b	line	1	em3_vet	7	("soldier_rifle_7" rocket(1) body(line))	77777>66676	7>1		1/1/1>0.95/1/1	
+eng	sturmovik_cpl	line	1	sten_v	7	("soldier_smg_7" rocket(1) body(line))	77777>67666	7>1		1/1/1>0.95/1/1	
+eng	tankman	crew	1	webley	3	("crew_<grade>")	33223	1	100/100/0.8	1/1/0.8	crew ladder: see draft
+eng	tankman2	crew	1	sten_mk2	3	("crew_<grade>")	33323	1	150/100/0.8	1/1/0.8	crew ladder: see draft
+eng	vehicle_supporter	support	0	sten_mk2	2	("support_<grade>")	32424	1	150/100/0.9	1/1/1	crew ladder: see draft
+eng	vehicle_supporter_40	support	1	sten_mk2	2	("support_<grade>")	32323	1	150/100/0.9	1/1/1	crew ladder: see draft
+eng	vehicle_supporter_single	support	1	sten_mk2	2	("support_<grade>")	32424	1	150/100/0.9	1/1/1	crew ladder: see draft
+eng	vet_tankman	crew	1	sten_mk2	3	("crew_<grade>")	33323	1	150/100/0.8	1/1/0.8	crew ladder: see draft
+eng	vet_tankman2	crew	1	sten_mk2	3	("crew_<grade>")	33423	1	150/100/0.8	1.2/1.2/1.1	crew ladder: see draft
+ger	ap_miner	line	4	mp40	4	("soldier_smg_4" rocket(1) body(line))		2>1			
+ger	at_miner	line	4	mp40	4	("soldier_smg_4" rocket(1) body(line))		2>1			
+ger	at_rifle	line	4			(no weapon skill found: keep as is)					
+ger	at_rifle2	line	4	mp40	4	("soldier_smg_4" rocket(1) body(line))	44254>44234	2>1			
+ger	bazooker	rocket	1	panzershreck	5	("soldier_rocket_5" rocket(5) body(line))	43244>43354		150/100/0.9>200/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger	bazooker2	line	1	mauzer	4	("soldier_rifle_4" rocket(1) body(line))		5>1			
+ger	elite_tankman	crew	0	valter	5	("crew_<grade>")	55534	2	100/100/0.8	1.15/1.15/1	crew ladder: see draft
+ger	elite_tankman2	crew	0	mp40	5	("crew_<grade>")	45734	2	150/100/0.8	1.2/1.2/1	crew ladder: see draft
+ger	elite_vehicle_supporter	support	0	mauzer	5	("support_<grade>")	55554	2	100/100/0.8	1.15/1.15/1	crew ladder: see draft
+ger	fallschirm_fg_42	line	1	fg42_rifle	7	("soldier_rifle_7" rocket(1) body(line))	77777>66676	7>1			
+ger	fallschirm_fg_43	line	1	fg42_rifle	7	("soldier_rifle_7" rocket(1) body(line))	77777>66676	7>1			
+ger	fallschirm_grenadier	line	2	mauzer_vet	7	("soldier_rifle_7" rocket(1) body(line))	77777>66676	7>1			
+ger	fallschirm_mg	line	2	mg42_inf_250	7	("soldier_mgun_7" rocket(1) body(line))	77777>66766	7>1			
+ger	fallschirm_mg_39	line	4	mg34	7	("soldier_mgun_7" rocket(1) body(line))	77777>66766	7>1			
+ger	fallschirm_mg_asst	asst	1	mauzer	7	("soldier_mgun_7" rocket(1) body(line))	77777>66766	7>1			same as fallschirm_mg
+ger	fallschirm_mg_asst_39	asst	4	mauzer	7	("soldier_mgun_7" rocket(1) body(line))	77777>66766	7>1			same as fallschirm_mg_39
+ger	fallschirm_rifle	line	1	mauzer_vet	7	("soldier_rifle_7" rocket(1) body(line))	77777>66676	7>1			
+ger	fallschirm_rifle_39	line	3	mauzer_vet	7	("soldier_rifle_7" rocket(1) body(line))	77777>66676	7>1			
+ger	fallschirm_sa	line	1	g43	7	("soldier_rifle_7" rocket(1) body(line))	77777>66676	7>1			
+ger	fallschirm_sa_41	line	2	g41	7	("soldier_rifle_7" rocket(1) body(line))	77777>66676	7>1			
+ger	fallschirm_sl_40	leader	4	mp40	7	("soldier_smg_7" rocket(1) body(line))	77777>67666	7>1			
+ger	fallschirm_sl_asst_fg_42	asst	1	fg42_rifle	7	("soldier_smg_7" rocket(1) body(line))	77777>67666	7>1			same as fallschirm_sl_40
+ger	fallschirm_sl_asst_fg_43	asst	1	fg42_rifle	7	("soldier_smg_7" rocket(1) body(line))	77777>67666	7>1			same as fallschirm_sl_40
+ger	fallschirm_sl_asst_smg	asst	2	mp40	7	("soldier_smg_7" rocket(1) body(line))	77777>67666	7>1			same as fallschirm_sl_40
+ger	fallschirm_sniper	special	4			(no weapon skill found: keep as is)					
+ger	flamer	line	5			(no weapon skill found: keep as is)					
+ger	flamer2	line	4	mp40	4	("soldier_smg_4" rocket(1) body(line))		2>1			
+ger	fusilier_mg	line	2	mg42_inf	5	("soldier_mgun_5" rocket(1) body(line))	53545>43534	2>1		0.75/1/0.8>0.85/1/0.9	
+ger	fusilier_mg_39	line	2	mg34	5	("soldier_mgun_5" rocket(1) body(line))	53545>43534	2>1		0.75/1/0.8>0.85/1/0.9	
+ger	fusilier_mg_asst	asst	4	mauzer	5	("soldier_mgun_5" rocket(1) body(line))	43555>43534	2>1		0.75/1/0.8>0.85/1/0.9	same as fusilier_mg_39
+ger	fusilier_rifle	line	4	mauzer	5	("soldier_rifle_5" rocket(1) body(line))	43255>43354	3>1		0.75/1/0.8>0.85/1/0.9	
+ger	fusilier_sa	line	1	g43	5	("soldier_rifle_5" rocket(1) body(line))	43255>43354	3>1		0.75/1/0.8>0.85/1/0.9	
+ger	fusilier_sa_41	line	1	g41	5	("soldier_rifle_5" rocket(1) body(line))	43255>43354	3>1		0.75/1/0.8>0.85/1/0.9	
+ger	fusilier_sl	leader	4	mp40	5	("soldier_smg_6" rocket(1) body(line))	55455>56555	4>1	200/100/0.9>350/200/0.9	0.85/1/0.9>0.95/1/1	leader: squad is 5, so 5 > 6
+ger	fusilier_sl_asst	asst	4	mauzer	5	("soldier_smg_5" rocket(1) body(line))	54455>45334	4>1		0.75/1/0.8>0.85/1/0.9	same as fusilier_sl
+ger	fusilier_smg	line	1	mp40	5	("soldier_smg_5" rocket(1) body(line))	45235>45334	3>1		0.75/1/0.8>0.85/1/0.9	
+ger	gd_pzgren_mg	line	1	mg42_inf_250	5	("soldier_mgun_5" rocket(1) body(line))	43555>43534	4>1			
+ger	gd_pzgren_mg_asst	asst	1	mauzer	5	("soldier_mgun_5" rocket(1) body(line))	43555>43534	4>1			same as gd_pzgren_mg
+ger	gd_pzgren_rifle	line	1	mauzer_vet	5	("soldier_rifle_5" rocket(1) body(line))	43355>43354	4>1			
+ger	gd_pzgren_sa	line	1	g43	5	("soldier_rifle_5" rocket(1) body(line))	43355>43354	4>1			
+ger	gd_pzgren_sa_scope	line	1	g43_scope	5	("soldier_rifle_5" rocket(1) body(line))	43355>43354	4>1			
+ger	gd_pzgren_sl_asst	asst	1	mauzer_vet	5	("soldier_smg_5" rocket(1) body(line))	43355>45334	4>1			same as gd_pzgren_sl_smg
+ger	gd_pzgren_sl_smg	leader	1	mp40	5	("soldier_smg_6" rocket(1) body(line))	45335>56555	4>1	200/150/0.9>350/200/0.9	0.85/1/0.9>0.95/1/1	leader: squad is 5, so 5 > 6
+ger	gebirgsjager_mg	line	2	mg42_inf_250	7	("soldier_mgun_7" rocket(1) body(line))	77777>66766	7>1	400/225/1>400/200/0.9		
+ger	gebirgsjager_mg_41	line	1	mg34	7	("soldier_mgun_7" rocket(1) body(line))	77777>66766	7>1	400/225/1>400/200/0.9		
+ger	gebirgsjager_mg_asst	asst	3	mauzer	7	("soldier_mgun_7" rocket(1) body(line))	77777>66766	7>1	400/225/1>400/200/0.9		same as gebirgsjager_mg
+ger	gebirgsjager_rifle	line	3	mauzer_vet	7	("soldier_rifle_7" rocket(1) body(line))	77777>66676	7>1	400/225/1>400/200/0.9		
+ger	gebirgsjager_sa	line	1	g43	7	("soldier_rifle_7" rocket(1) body(line))	77777>66676	7>1	400/225/1>400/200/0.9		
+ger	gebirgsjager_sa_41	line	2	g41	7	("soldier_rifle_7" rocket(1) body(line))	77777>66676	7>1	400/225/1>400/200/0.9		
+ger	gebirgsjager_sl_asst_smg	asst	3	mp40	7	("soldier_smg_7" rocket(1) body(line))	77777>67666	7>1	400/225/1>400/200/0.9		same as gebirgsjager_sl_smg
+ger	gebirgsjager_sl_smg	leader	3	mp40	7	("soldier_smg_7" rocket(1) body(line))	77777>67666	7>1	400/225/1>400/200/0.9		
+ger	gebirgsjager_smg	line	1	mp40	7	("soldier_smg_7" rocket(1) body(line))	77777>67666	7>1	400/225/1>400/200/0.9		
+ger	ger_ap_miner	line	1	mp40	4	("soldier_smg_4" rocket(3) body(line))		2>3			
+ger	ger_at_miner	line	1	mp40	4	("soldier_smg_4" rocket(3) body(line))		2>3			
+ger	ger_at_rifle	line	1			(no weapon skill found: keep as is)					
+ger	ger_at_rifleassist	asst	1	mp40	4	("soldier_smg_4" rocket(1) body(line))	44254>44234	2>1			assists nobody on a card: kept at own level
+ger	ger_elite_tankman	crew	0	valter	5	("crew_<grade>")	55534	2	100/100/0.8	1.15/1.15/1	crew ladder: see draft
+ger	ger_elite_tankman2	crew	0	mp40	5	("crew_<grade>")	45734	2	150/100/0.8	1.2/1.2/1	crew ladder: see draft
+ger	ger_fallschirm_fg_43	line	1	fg42_rifle	7	("soldier_rifle_7" rocket(6) body(line))	77777>66676	7>6			
+ger	ger_fallschirm_grenadier	line	1	mauzer_vet	7	("soldier_rifle_7" rocket(6) body(line))	77777>66676	7>6			
+ger	ger_fallschirm_mg	line	1	mg42_inf_250	7	("soldier_mgun_7" rocket(6) body(line))	77777>66766	7>6			
+ger	ger_fallschirm_mg_39	line	1	mg34	7	("soldier_mgun_7" rocket(6) body(line))	77777>66766	7>6			
+ger	ger_fallschirm_mg_asst	asst	1	mauzer	7	("soldier_mgun_7" rocket(1) body(line))	77777>66766	7>1			same as ger_fallschirm_mg
+ger	ger_fallschirm_mg_asst_39	asst	1	mauzer	7	("soldier_mgun_7" rocket(1) body(line))	77777>66766	7>1			same as ger_fallschirm_mg_39
+ger	ger_fallschirm_pzfst_stg	line	1	sg44	7	("soldier_smg_7" rocket(7) body(line))	77777>67666				
+ger	ger_fallschirm_rifle	line	1	mauzer_vet	7	("soldier_rifle_7" rocket(6) body(line))	77777>66676	7>6			
+ger	ger_fallschirm_sl	leader	1	mp40	7	("soldier_smg_7" rocket(6) body(line))	77777>67666	7>6			
+ger	ger_fallschirm_sl_asst_fg_44	asst	1	fg42_rifle	7	("soldier_smg_7" rocket(7) body(line))	77777>67666				same as ger_fallschirm_sl
+ger	ger_fallschirm_sniper	special	1			(no weapon skill found: keep as is)					
+ger	ger_flamer	line	0			(no weapon skill found: keep as is)					
+ger	ger_flamerassist	asst	1	mp40	4	("soldier_smg_4" rocket(1) body(line))		2>1			assists nobody on a card: kept at own level
+ger	ger_fusilier_mg	line	1	mg42_inf	5	("soldier_mgun_5" rocket(4) body(line))	53545>43534	2>4		0.75/1/0.8>0.85/1/0.9	
+ger	ger_fusilier_mg_asst	asst	1	mauzer	5	("soldier_mgun_5" rocket(1) body(line))	43555>43534	2>1		0.75/1/0.8>0.85/1/0.9	same as ger_fusilier_mg
+ger	ger_fusilier_pzfst	line	1	mauzer	5	("soldier_rifle_5" rocket(5) body(line))	43255>43354			0.75/1/0.8>0.85/1/0.9	
+ger	ger_fusilier_pzfst_sa	line	1	g43	5	("soldier_rifle_5" rocket(5) body(line))	43255>43354	3>5		0.75/1/0.8>0.85/1/0.9	
+ger	ger_fusilier_sa	line	1	g43	5	("soldier_rifle_5" rocket(4) body(line))	43255>43354	3>4		0.75/1/0.8>0.85/1/0.9	
+ger	ger_fusilier_sl	leader	1	mp40	5	("soldier_smg_6" rocket(5) body(line))	55455>56555	4>5	200/100/0.9>350/200/0.9	0.85/1/0.9>0.95/1/1	leader: squad is 5, so 5 > 6
+ger	ger_fusilier_sl_asst	asst	1	mauzer	5	("soldier_smg_5" rocket(1) body(line))	54455>45334	4>1		0.75/1/0.8>0.85/1/0.9	same as ger_fusilier_sl
+ger	ger_fusilier_stg	line	1	sg44	5	("soldier_smg_5" rocket(4) body(line))	45235>45334	3>4		0.75/1/0.8>0.85/1/0.9	
+ger	ger_gd_pzgren_mg	line	1	mg42_inf_250	5	("soldier_mgun_5" rocket(4) body(line))	43555>43534				
+ger	ger_gd_pzgren_mg_asst	asst	1	mauzer	5	("soldier_mgun_5" rocket(1) body(line))	43555>43534	4>1			same as ger_gd_pzgren_mg
+ger	ger_gd_pzgren_pzfst_sa	line	1	g43	5	("soldier_rifle_5" rocket(5) body(line))	43355>43354				
+ger	ger_gd_pzgren_pzfst_stg	line	1	sg44	5	("soldier_smg_5" rocket(5) body(line))	45335>45334				
+ger	ger_gd_pzgren_sa_scope	line	1	g43_scope	5	("soldier_rifle_5" rocket(4) body(line))	43355>43354				
+ger	ger_gd_pzgren_sl_asst_stg	asst	1	sg44	5	("soldier_smg_5" rocket(5) body(line))	45335>45334				same as ger_gd_pzgren_sl_stg
+ger	ger_gd_pzgren_sl_stg	leader	1	sg44	5	("soldier_smg_6" rocket(5) body(line))	45335>56555	4>5	200/150/0.9>350/200/0.9	0.85/1/0.9>0.95/1/1	leader: squad is 5, so 5 > 6
+ger	ger_gebirgsjager_mg	line	1	mg42_inf_250	7	("soldier_mgun_7" rocket(6) body(line))	77777>66766	7>6	400/225/1>400/200/0.9		
+ger	ger_gebirgsjager_mg_asst	asst	1	mauzer	7	("soldier_mgun_7" rocket(1) body(line))	77777>66766	7>1	400/225/1>400/200/0.9		same as ger_gebirgsjager_mg
+ger	ger_gebirgsjager_pzfst_sa	line	1	g43	7	("soldier_rifle_7" rocket(7) body(line))	77777>66676		400/225/1>400/200/0.9		
+ger	ger_gebirgsjager_sl_asst_stg	asst	1	sg44	7	("soldier_smg_7" rocket(1) body(line))	77777>67666	7>1	400/225/1>400/200/0.9		same as ger_gebirgsjager_sl_stg
+ger	ger_gebirgsjager_sl_stg	leader	1	sg44	7	("soldier_smg_7" rocket(6) body(line))	77777>67666	7>6	400/225/1>400/200/0.9		
+ger	ger_gebirgsjager_smg	line	1	mp40	7	("soldier_smg_7" rocket(6) body(line))	77777>67666	7>6	400/225/1>400/200/0.9		
+ger	ger_gebirgsjager_stg	line	1	sg44	7	("soldier_smg_7" rocket(6) body(line))	77777>67666	7>6	400/225/1>400/200/0.9		
+ger	ger_grenadier_mg	line	1	mg42_inf	4	("soldier_mgun_4" rocket(3) body(line))		2>3			
+ger	ger_grenadier_mg_39	line	1	mg34	4	("soldier_mgun_4" rocket(3) body(line))		2>3			
+ger	ger_grenadier_mg_asst	asst	1	mauzer	4	("soldier_mgun_4" rocket(1) body(line))	43444>43434	2>1			same as ger_grenadier_mg
+ger	ger_grenadier_ober_44	line	1	mauzer	5	("soldier_rifle_5" rocket(5) body(line))	54455>43354	3>5	200/100/0.9>200/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger	ger_grenadier_pzfst	line	1	mauzer	4	("soldier_rifle_4" rocket(4) body(line))					
+ger	ger_grenadier_rifle_44	line	1	mauzer	4	("soldier_rifle_4" rocket(4) body(line))		2>4			
+ger	ger_grenadier_rifle_grenadier	line	1	mauzer	4	("soldier_rifle_4" rocket(3) body(line))		2>3			
+ger	ger_grenadier_sa_44	line	1	g43	4	("soldier_rifle_4" rocket(4) body(line))		2>4			
+ger	ger_grenadier_smg	line	1	mp40	4	("soldier_smg_4" rocket(3) body(line))		2>3			
+ger	ger_grenadier_stg	line	1	sg44	4	("soldier_smg_4" rocket(4) body(line))		2>4			
+ger	ger_jager_mg	line	1	mg42_inf	5	("soldier_mgun_5" rocket(4) body(line))	53545>43534	2>4		0.75/1/0.8>0.85/1/0.9	
+ger	ger_jager_mg_asst	asst	1	mauzer	5	("soldier_mgun_5" rocket(1) body(line))	43555>43534	2>1		0.75/1/0.8>0.85/1/0.9	same as ger_jager_mg
+ger	ger_jager_pzfst	line	1	mauzer	5	("soldier_rifle_5" rocket(5) body(line))	43255>43354			0.75/1/0.8>0.85/1/0.9	
+ger	ger_jager_sa	line	1	g43	5	("soldier_rifle_5" rocket(4) body(line))	43255>43354	3>4		0.75/1/0.8>0.85/1/0.9	
+ger	ger_jager_sl_stg	leader	1	sg44	5	("soldier_smg_6" rocket(5) body(line))	55455>56555	4>5	200/100/0.9>350/200/0.9	0.85/1/0.9>0.95/1/1	leader: squad is 5, so 5 > 6
+ger	ger_jager_sl_stg_asst	asst	1	sg44	5	("soldier_smg_5" rocket(1) body(line))	55455>45334	4>1	200/100/0.9>200/150/0.9		same as ger_jager_sl_stg
+ger	ger_jager_smg	line	1	mp40	5	("soldier_smg_5" rocket(4) body(line))	45235>45334	3>4		0.75/1/0.8>0.85/1/0.9	
+ger	ger_jager_stg	line	1	sg44	5	("soldier_smg_5" rocket(4) body(line))	45235>45334	3>4		0.75/1/0.8>0.85/1/0.9	
+ger	ger_light_mortar	rocket	0	mortar_legrw_36	2	("soldier_rocket_2" rocket(2) body(line))	43254>11122				
+ger	ger_light_mortar_assist	asst	0	mauzer	5	("soldier_rifle_5" rocket(1) body(line))	43254>43354	2>1	150/100/0.9>200/150/0.9	0.75/1/0.8>0.85/1/0.9	assists nobody on a card: kept at own level
+ger	ger_officer	leader	1	luger	5	("soldier_pistol_5" rocket(4) body(line))		5>4	250/100/1>200/150/0.9		
+ger	ger_panzerfaust	line	1	mauzer	4	("soldier_rifle_4" rocket(4) body(line))		5>4			
+ger	ger_panzerschreck	rocket	1	panzershreck	5	("soldier_rocket_5" rocket(5) body(line))	43244>43354		150/100/0.9>200/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger	ger_panzerschreckassist	asst	1	mauzer	4	("soldier_rocket_5" rocket(1) body(line))	43244>43354	5>1	150/100/0.9>200/150/0.9	0.75/1/0.8>0.85/1/0.9	same as ger_panzerschreck
+ger	ger_pzgren2ic	line	1	mauzer	5	("soldier_rifle_5" rocket(4) body(line))	54455>43354				
+ger	ger_pzgren_g43	line	1	g43	5	("soldier_rifle_5" rocket(4) body(line))	54455>43354				
+ger	ger_pzgren_g43_2	line	0	g43	5	("soldier_rifle_5" rocket(1) body(line))	54455>43354	4>1			
+ger	ger_pzgren_mg34	line	1	mg34	5	("soldier_mgun_5" rocket(4) body(line))	54545>43534				
+ger	ger_pzgren_mg34assist	asst	1	mauzer	4	("soldier_mgun_5" rocket(1) body(line))	54545>43534	4>1			same as ger_pzgren_mg34
+ger	ger_pzgren_mg42	line	1	mg42_inf	5	("soldier_mgun_5" rocket(4) body(line))	54545>43534				
+ger	ger_pzgren_mg42assist	asst	1	mauzer	5	("soldier_mgun_5" rocket(1) body(line))	54555>43534	4>1			same as ger_pzgren_mg42
+ger	ger_pzgren_mp40	line	1	mp40	5	("soldier_smg_5" rocket(4) body(line))	55445>45334	6>4			
+ger	ger_pzgren_panzerfaust	line	0	mauzer	4	("soldier_rifle_4" rocket(4) body(line))	55445>43244	5>4	200/150/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+ger	ger_pzgren_panzershreck	rocket	1	panzershreck	6	("soldier_rocket_6" rocket(6) body(line))	55445>55565		200/150/0.9>350/200/0.9	0.85/1/0.9>0.95/1/1	
+ger	ger_pzgren_pio1	line	1	mauzer	4	("soldier_rifle_4" rocket(4) body(line))					
+ger	ger_pzgren_pio2	line	1	mauzer	4	("soldier_rifle_4" rocket(3) body(line))		2>3		0.85/1/0.9>0.75/1/0.8	
+ger	ger_pzgren_pio3	line	1	mauzer	4	("soldier_rifle_4" rocket(3) body(line))		2>3		0.85/1/0.9>0.75/1/0.8	
+ger	ger_pzgren_pio_at	rocket	1	panzershreck	4	("soldier_rocket_4" rocket(4) body(line))					
+ger	ger_pzgren_pio_flamer	line	1			(no weapon skill found: keep as is)					
+ger	ger_pzgren_pio_mg	line	1	mg42_inf	4	("soldier_mgun_4" rocket(3) body(line))		2>3			
+ger	ger_pzgren_pio_mg_asst	asst	1	mauzer	4	("soldier_mgun_4" rocket(1) body(line))	43444>43434	2>1			same as ger_pzgren_pio_mg
+ger	ger_pzgren_pio_sl	leader	1	mp40	5	("soldier_smg_5" rocket(4) body(line))	45345>45334	2>4	200/100/0.9>200/150/0.9		
+ger	ger_pzgren_rifle	line	0	mauzer	5	("soldier_rifle_5" rocket(1) body(line))	54455>43354	4>1			
+ger	ger_pzgren_sl	leader	1	sg44	5	("soldier_smg_6" rocket(5) body(line))	55445>56555	4>5	200/150/0.9>350/200/0.9	0.85/1/0.9>0.95/1/1	leader: squad is 5, so 5 > 6
+ger	ger_pzgren_smg_panzerfaust	line	1	mp40	4	("soldier_smg_4" rocket(4) body(line))	54455>44234	5>4	200/150/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+ger	ger_pzgren_stg_panzerfaust	line	1	sg44	5	("soldier_smg_5" rocket(5) body(line))	55445>45334				
+ger	ger_radioman_mortar	line	1	mp40	4	("soldier_smg_4" rocket(3) body(line))		2>3			
+ger	ger_saper	line	1	mp40	4	("soldier_smg_4" rocket(3) body(line))		2>3		0.85/1/0.9>0.75/1/0.8	
+ger	ger_sniper_g43	special	1	g43_scope	6	("soldier_rifle_6" rocket(5) body(line))	43264>55565	2>5	350/150/1>350/200/0.9	0.75/1/0.8>0.95/1/1	
+ger	ger_sniper_mauzer	special	1			(no weapon skill found: keep as is)					
+ger	ger_sniper_vet	special	0			(no weapon skill found: keep as is)					
+ger	ger_squadleader_mp40	leader	1	mp40	5	("soldier_smg_5" rocket(4) body(line))	55345>45334	2>4	200/100/0.9>200/150/0.9		
+ger	ger_squadleader_sg44	leader	1	sg44	5	("soldier_smg_5" rocket(4) body(line))	55345>45334	2>4	200/100/0.9>200/150/0.9		
+ger	ger_sturmgren_sg44	line	1	sg44	4	("soldier_smg_4" rocket(4) body(line))		2>4			
+ger	ger_sturmgren_sg44_pzfst	line	1	sg44	4	("soldier_smg_4" rocket(4) body(line))					
+ger	ger_sturmgren_sl_asst	asst	1	sg44	5	("soldier_smg_5" rocket(5) body(line))	45234>45334	2>5	150/100/0.9>200/150/0.9	0.75/1/0.8>0.85/1/0.9	same as ger_squadleader_sg44
+ger	ger_support	support	0	mauzer	2	("support_<grade>")	22424	2	150/100/0.9	0.85/1/1	crew ladder: see draft
+ger	ger_tankman2_single	crew	1	mp40	5	("crew_<grade>")	55535	1	150/100/0.8	1.15/1.15/1.1	crew ladder: see draft
+ger	ger_tankman_single	crew	1	valter	5	("crew_<grade>")	54335	1	100/100/0.8	1.1/1.1/1.05	crew ladder: see draft
+ger	ger_vehicle_supporter	support	0	mauzer	2	("support_<grade>")	22424	2	150/100/0.9	0.85/1/1	crew ladder: see draft
+ger	ger_vehicle_supporter_single	support	1	mauzer	3	("support_<grade>")	33534	2	150/100/0.9	0.85/1.05/1.05	crew ladder: see draft
+ger	ger_vet_tankman2_single	crew	1	mp40	5	("crew_<grade>")	55635	1	150/100/0.8	1.15/1.15/1.1	crew ladder: see draft
+ger	ger_volksgren_grenadier	line	1	mauzer	2	("soldier_rifle_2" rocket(1) body(line))		2>1	100/75/0.9>150/100/0.9		
+ger	ger_volksgren_mg	line	1	mg42_inf	2	("soldier_mgun_2" rocket(1) body(line))		2>1	100/75/0.9>150/100/0.9		
+ger	ger_volksgren_mg_asst	asst	1	mauzer	2	("soldier_mgun_2" rocket(1) body(line))	11222>21212		100/75/0.9>150/100/0.9		same as ger_volksgren_mg
+ger	ger_volksgren_mg_asst2	asst	1	mp40	2	("soldier_mgun_2" rocket(1) body(line))	12212>21212		100/75/0.9>150/100/0.9		same as ger_volksgren_mg
+ger	ger_volksgren_mg_asst3	asst	1	g43	2	("soldier_mgun_2" rocket(1) body(line))	11222>21212		100/75/0.9>150/100/0.9		same as ger_volksgren_mg
+ger	ger_volksgren_pzfst	line	1	mauzer	2	("soldier_rifle_2" rocket(2) body(line))			100/75/0.9>150/100/0.9		
+ger	ger_volksgren_pzfst2	line	1	sg44	2	("soldier_smg_2" rocket(2) body(line))	12112>22112		100/75/0.9>150/100/0.9		
+ger	ger_volksgren_rifle	line	1	mauzer	2	("soldier_rifle_2" rocket(2) body(line))			100/75/0.9>150/100/0.9		
+ger	ger_volksgren_sa	line	1	g43	2	("soldier_rifle_2" rocket(2) body(line))		1>2	100/75/0.9>150/100/0.9		
+ger	ger_volksgren_sl_asst	asst	1	mp40	3	("soldier_smg_3" rocket(3) body(line))	13123>23223	1>3	100/75/0.9>150/100/0.9		same as ger_volksgren_sl_stg
+ger	ger_volksgren_sl_smg	leader	1	mp40	3	("soldier_smg_3" rocket(2) body(line))	13123>23223	1>2	100/75/0.9>150/100/0.9		
+ger	ger_volksgren_sl_stg	leader	1	sg44	3	("soldier_smg_3" rocket(2) body(line))	13123>23223	1>2	100/75/0.9>150/100/0.9		
+ger	ger_volksgren_smg	line	1	mp40	2	("soldier_smg_2" rocket(2) body(line))	12112>22112	1>2	100/75/0.9>150/100/0.9		
+ger	ger_volksgren_stg44	line	1	sg44	2	("soldier_smg_2" rocket(2) body(line))	12112>22112	1>2	100/75/0.9>150/100/0.9		
+ger	ger_volkssturm_rifle_faustpatrone	line	1	mauzer	1	("soldier_rifle_1" rocket(1) body(line))		2>1	100/75/0.8>100/75/0.9	0.75/0.8/0.8>0.75/1/0.8	
+ger	ger_volkssturm_rifle_panzerfaust	line	1	mauzer	1	("soldier_rifle_1" rocket(1) body(line))		2>1	100/75/0.8>100/75/0.9	0.75/0.8/0.8>0.75/1/0.8	
+ger	ger_volkssturm_smg_faustpatrone	line	1	mp3008	1	("soldier_smg_1" rocket(1) body(line))		2>1	100/75/0.8>100/75/0.9	0.75/0.8/0.8>0.75/1/0.8	
+ger	ger_volkssturm_smg_panzerfaust	line	1	vsg	1	("soldier_rifle_1" rocket(1) body(line))		2>1	100/75/0.8>100/75/0.9	0.75/0.8/0.8>0.75/1/0.8	
+ger	grenadier_mg	line	2	mg42_inf	4	("soldier_mgun_4" rocket(1) body(line))		2>1			
+ger	grenadier_mg_39	line	4	mg34	4	("soldier_mgun_4" rocket(1) body(line))		2>1			
+ger	grenadier_mg_asst	asst	4	mauzer	4	("soldier_mgun_4" rocket(1) body(line))	43444>43434	2>1			same as grenadier_mg_39
+ger	grenadier_ober	line	4	mauzer	5	("soldier_rifle_5" rocket(1) body(line))	54455>43354	3>1	200/100/0.9>200/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger	grenadier_rifle	line	4	mauzer	4	("soldier_rifle_4" rocket(1) body(line))		2>1			
+ger	grenadier_rifle_grenadier	line	2	mauzer	4	("soldier_rifle_4" rocket(1) body(line))		2>1			
+ger	grenadier_sa	line	1	g43	4	("soldier_rifle_4" rocket(1) body(line))		2>1			
+ger	grenadier_sa_41	line	2	g41	4	("soldier_rifle_4" rocket(1) body(line))		2>1			
+ger	grenadier_smg	line	4	mp40	4	("soldier_smg_4" rocket(1) body(line))		2>1			
+ger	grenadier_stg_42	line	1	mkb42	4	("soldier_smg_4" rocket(1) body(line))		2>1			
+ger	grenadier_stg_43	line	1	mp43	4	("soldier_smg_4" rocket(1) body(line))		2>1			
+ger	jager_mg	line	2	mg42_inf	5	("soldier_mgun_5" rocket(1) body(line))	53545>43534	2>1		0.75/1/0.8>0.85/1/0.9	
+ger	jager_mg_asst	asst	2	mauzer	5	("soldier_mgun_5" rocket(1) body(line))	43555>43534	2>1		0.75/1/0.8>0.85/1/0.9	same as jager_mg
+ger	jager_rifle	line	2	mauzer	5	("soldier_rifle_5" rocket(1) body(line))	43255>43354	3>1		0.75/1/0.8>0.85/1/0.9	
+ger	jager_sa	line	1	g43	5	("soldier_rifle_5" rocket(1) body(line))	43255>43354	3>1		0.75/1/0.8>0.85/1/0.9	
+ger	jager_sa_41	line	1	g41	5	("soldier_rifle_5" rocket(1) body(line))	43255>43354	3>1		0.75/1/0.8>0.85/1/0.9	
+ger	jager_sl_smg	leader	2	mp40	5	("soldier_smg_6" rocket(1) body(line))	55455>56555	4>1	200/100/0.9>350/200/0.9	0.85/1/0.9>0.95/1/1	leader: squad is 5, so 5 > 6
+ger	jager_sl_smg_asst	asst	2	mp40	5	("soldier_smg_5" rocket(1) body(line))	55455>45334	4>1	200/100/0.9>200/150/0.9		same as jager_sl_smg
+ger	jager_smg	line	1	mp40	5	("soldier_smg_5" rocket(1) body(line))	45235>45334	3>1		0.75/1/0.8>0.85/1/0.9	
+ger	oficer	line	4	luger	5	("soldier_pistol_5" rocket(1) body(line))		5>1	250/100/1>200/150/0.9		
+ger	radioman_mortar	line	4	mp40	4	("soldier_smg_4" rocket(1) body(line))		2>1			
+ger	saper	line	4	mp40	4	("soldier_smg_4" rocket(1) body(line))		2>1		0.85/1/0.9>0.75/1/0.8	
+ger	sniper	special	4			(no weapon skill found: keep as is)					
+ger	sniper3	special	2	g43_scope	6	("soldier_rifle_6" rocket(1) body(line))	43264>55565	2>1	350/150/1>350/200/0.9	0.75/1/0.8>0.95/1/1	
+ger	squadleader	leader	4	mp40	5	("soldier_smg_5" rocket(1) body(line))	55345>45334	2>1	200/100/0.9>200/150/0.9		
+ger	sturmovik2	line	1	g43	5	("soldier_rifle_5" rocket(1) body(line))	54455>43354	4>1			
+ger	sturmovik2_41	line	2	g41	5	("soldier_rifle_5" rocket(1) body(line))	54455>43354	4>1			
+ger	sturmovik4	line	4	mauzer	5	("soldier_rifle_5" rocket(1) body(line))	54455>43354	4>1			
+ger	sturmovik5	rocket	1	panzershreck	6	("soldier_rocket_6" rocket(6) body(line))	55445>55565		200/150/0.9>350/200/0.9	0.85/1/0.9>0.95/1/1	
+ger	sturmovik5b	line	1	mp40	5	("soldier_smg_5" rocket(1) body(line))	55445>45334	6>1			
+ger	sturmovik6	line	2	mg42_inf	5	("soldier_mgun_5" rocket(1) body(line))	54545>43534	4>1			
+ger	sturmovik6b	line	4	mauzer	5	("soldier_rifle_5" rocket(1) body(line))	54555>43354	4>1			
+ger	sturmovik6_39	line	4	mg34	5	("soldier_mgun_5" rocket(1) body(line))	54545>43534	4>1			
+ger	sturmovik_sl_40	leader	4	mp40	5	("soldier_smg_6" rocket(1) body(line))	55445>56555	4>1	200/150/0.9>350/200/0.9	0.85/1/0.9>0.95/1/1	leader: squad is 5, so 5 > 6
+ger	sturmovik_sl_asst	asst	4	mauzer	5	("soldier_smg_5" rocket(1) body(line))	54455>45334	4>1			same as sturmovik_sl_40
+ger	tankman	crew	4	valter	4	("crew_<grade>")	44234	2	100/100/0.8	1/1/0.9	crew ladder: see draft
+ger	tankman2	crew	4	mp40	4	("crew_<grade>")	44434	2	150/100/0.8	1.1/1/0.95	crew ladder: see draft
+ger	vehicle_supporter	support	5	mauzer	2	("support_<grade>")	22424	2	150/100/0.9	0.85/1/1	crew ladder: see draft
+ger	vet_tankman	crew	4	valter	5	("crew_<grade>")	55434	2	100/100/0.8	1.15/1.15/1	crew ladder: see draft
+ger	vet_tankman2	crew	4	mp40	5	("crew_<grade>")	45634	2	150/100/0.8	1.2/1.2/1	crew ladder: see draft
+ger	vet_vehicle_supporter	support	0	mauzer	4	("support_<grade>")	33644	2	150/100/0.9	1/1/1	crew ladder: see draft
+ger2	ost_ap_miner	line	1	mp40	4	("soldier_smg_4" rocket(3) body(line))		2>3			
+ger2	ost_at_miner	line	1	mp40	4	("soldier_smg_4" rocket(3) body(line))		2>3			
+ger2	ost_at_rifle	line	1			(no weapon skill found: keep as is)					
+ger2	ost_at_rifleassist	asst	1	mp40	4	("soldier_smg_4" rocket(1) body(line))	44254>44234	2>1			assists nobody on a card: kept at own level
+ger2	ost_at_rifle_ptrd	line	1			(no weapon skill found: keep as is)					
+ger2	ost_elite_tankman	crew	0	valter	5	("crew_<grade>")	55534	2	100/100/0.8	1.15/1.15/1	crew ladder: see draft
+ger2	ost_elite_tankman2	crew	0	mp40	5	("crew_<grade>")	45734	2	150/100/0.8	1.2/1.2/1	crew ladder: see draft
+ger2	ost_fallschirm_grenadier	line	1	mauzer_vet	7	("soldier_rifle_7" rocket(7) body(line))	77777>66676				
+ger2	ost_fallschirm_mg	line	1	mg42_inf_250	7	("soldier_mgun_7" rocket(6) body(line))	77777>66766	7>6			
+ger2	ost_fallschirm_mg_asst	asst	1	mauzer_vet	7	("soldier_mgun_7" rocket(7) body(line))	77777>66766				same as ost_fallschirm_mg
+ger2	ost_fallschirm_pzfst_fg	line	1	fg42_rifle	7	("soldier_rifle_7" rocket(7) body(line))	77777>66676				
+ger2	ost_fallschirm_sl	leader	1	sg44	7	("soldier_smg_7" rocket(6) body(line))	77777>67666	7>6			
+ger2	ost_fallschirm_sl_asst_fg_44	asst	1	fg42_sc	7	("soldier_smg_7" rocket(7) body(line))	77777>67666				same as ost_fallschirm_sl
+ger2	ost_fallschirm_sniper	special	1			(no weapon skill found: keep as is)					
+ger2	ost_flamer	line	1			(no weapon skill found: keep as is)					
+ger2	ost_flamerassist	asst	1	mp40	4	("soldier_smg_4" rocket(1) body(line))		2>1			assists nobody on a card: kept at own level
+ger2	ost_jager_mg	line	1	mg42_inf	5	("soldier_mgun_5" rocket(4) body(line))	53545>43534	2>4		0.75/1/0.8>0.85/1/0.9	
+ger2	ost_jager_mg_asst	asst	1	mauzer_vet	5	("soldier_mgun_5" rocket(1) body(line))	43555>43534	2>1		0.75/1/0.8>0.85/1/0.9	same as ost_jager_mg
+ger2	ost_jager_pzfst	line	1	mauzer_vet	5	("soldier_rifle_5" rocket(5) body(line))	43255>43354			0.75/1/0.8>0.85/1/0.9	
+ger2	ost_jager_sa	line	1	g43	5	("soldier_rifle_5" rocket(5) body(line))	43255>43354	3>5		0.75/1/0.8>0.85/1/0.9	
+ger2	ost_jager_sl_stg	leader	1	sg44	5	("soldier_smg_6" rocket(5) body(line))	55455>56555	4>5	200/150/0.9>350/200/0.9	0.85/1/0.9>0.95/1/1	leader: squad is 5, so 5 > 6
+ger2	ost_jager_sl_stg_asst	asst	1	sg44	5	("soldier_smg_5" rocket(5) body(line))	55455>45334	4>5			same as ost_jager_sl_stg
+ger2	ost_jager_smg	line	1	mp41	5	("soldier_smg_5" rocket(5) body(line))	45235>45334	3>5		0.75/1/0.8>0.85/1/0.9	
+ger2	ost_jager_stg	line	1	sg44	5	("soldier_smg_5" rocket(5) body(line))	45235>45334	3>5		0.75/1/0.8>0.85/1/0.9	
+ger2	ost_light_mortar	rocket	0	mortar_legrw_36	2	("soldier_rocket_2" rocket(2) body(line))	43254>11122				
+ger2	ost_light_mortar_assist	asst	0	mauzer	5	("soldier_rifle_5" rocket(1) body(line))	43254>43354	2>1	150/100/0.9>200/150/0.9	0.75/1/0.8>0.85/1/0.9	assists nobody on a card: kept at own level
+ger2	ost_mgun	line	1	mg42_inf	4	("soldier_mgun_4" rocket(3) body(line))		2>3			
+ger2	ost_mgun_asst	asst	1	mauzer	4	("soldier_mgun_4" rocket(1) body(line))	43444>43434	2>1			same as ost_mgun
+ger2	ost_officer	leader	1	luger	5	("soldier_pistol_5" rocket(4) body(line))		5>4	250/100/1>200/150/0.9		
+ger2	ost_officer2	leader	0	mp41	6	("soldier_smg_6" rocket(1) body(line))	66666>56555	6>1	500/200/1>350/200/0.9	1/1/1>0.95/1/1	
+ger2	ost_panzerfaust	line	1	mauzer	4	("soldier_rifle_4" rocket(4) body(line))		5>4			
+ger2	ost_panzershreck	rocket	1	panzershreck	5	("soldier_rocket_5" rocket(5) body(line))	43244>43354		150/100/0.9>200/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger2	ost_panzershreckassist	asst	1	mauzer	4	("soldier_rocket_5" rocket(1) body(line))	43244>43354	5>1	150/100/0.9>200/150/0.9	0.75/1/0.8>0.85/1/0.9	same as ost_panzershreck
+ger2	ost_pzgren_g43scope	line	1	g43_scope	7	("soldier_rifle_7" rocket(7) body(line))	77777>66676		400/225/1>400/200/0.9	1/1/1>0.95/1/1	
+ger2	ost_pzgren_g43_pzfaust	line	0	g43	7	("soldier_rifle_7" rocket(7) body(line))	77777>66676		400/225/1>400/200/0.9	1/1/1>0.95/1/1	
+ger2	ost_pzgren_mg34	line	1	mg34	7	("soldier_mgun_7" rocket(6) body(line))	77777>66766	7>6	400/225/1>400/200/0.9	1/1/1>0.95/1/1	
+ger2	ost_pzgren_mgassist	asst	1	mauzer_vet	7	("soldier_mgun_7" rocket(1) body(line))	77777>66766	7>1	400/225/1>400/200/0.9	1/1/1>0.95/1/1	same as ost_pzgren_mg34
+ger2	ost_pzgren_pzfaust_g43	line	1	g43	7	("soldier_rifle_7" rocket(7) body(line))	77777>66676		400/225/1>400/200/0.9	1/1/1>0.95/1/1	
+ger2	ost_pzgren_pzfaust_rifle	line	1	mauzer_vet	7	("soldier_rifle_7" rocket(7) body(line))	77777>66676		400/225/1>400/200/0.9	1/1/1>0.95/1/1	
+ger2	ost_pzgren_sg44_pzfuast	line	1	sg44	7	("soldier_smg_7" rocket(7) body(line))	77777>67666		400/225/1>400/200/0.9	1/1/1>0.95/1/1	
+ger2	ost_pzgren_sl	leader	1	sg44	7	("soldier_smg_7" rocket(6) body(line))	77777>67666	7>6	400/225/1>400/200/0.9	1/1/1>0.95/1/1	
+ger2	ost_pzgren_slassist	asst	1	sg44	7	("soldier_mgun_7" rocket(7) body(line))	77777>66766		400/225/1>400/200/0.9	1/1/1>0.95/1/1	same as ost_pzgren_mg34
+ger2	ost_pzgren_smg_pzfaust	line	1	mp41	7	("soldier_smg_7" rocket(7) body(line))	77777>67666		400/225/1>400/200/0.9	1/1/1>0.95/1/1	
+ger2	ost_radioman	line	0	mp40	4	("soldier_smg_4" rocket(1) body(line))		2>1			
+ger2	ost_recon_mg	line	1	mg42_inf	3	("soldier_mgun_3" rocket(2) body(line))	32333>22323				
+ger2	ost_recon_pzfst	line	1	mauzer	3	("soldier_rifle_3" rocket(3) body(line))	32233>22233				
+ger2	ost_recon_rifle	line	1	mauzer	3	("soldier_rifle_3" rocket(3) body(line))	32233>22233	2>3			
+ger2	ost_recon_sa	line	1	g43	3	("soldier_rifle_3" rocket(3) body(line))	32233>22233	2>3			
+ger2	ost_recon_sl	leader	1	mp40	4	("soldier_smg_4" rocket(3) body(line))	44334>44234	2>3	200/100/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+ger2	ost_recon_sl_stg	leader	1	sg44	4	("soldier_smg_4" rocket(3) body(line))	44334>44234	2>3	200/100/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+ger2	ost_rifle2	line	1	g43	4	("soldier_rifle_4" rocket(4) body(line))	43344>43244	2>4			
+ger2	ost_rifle_grenadier	line	1	mauzer	4	("soldier_rifle_4" rocket(3) body(line))	43344>43244	2>3			
+ger2	ost_rifle_pzfst	line	1	mauzer	4	("soldier_rifle_4" rocket(4) body(line))	43344>43244				
+ger2	ost_rifle_single	line	1	mauzer	4	("soldier_rifle_4" rocket(3) body(line))	43344>43244	2>3			
+ger2	ost_saper	line	1	mp40	4	("soldier_smg_4" rocket(3) body(line))		2>3		0.85/1/0.9>0.75/1/0.8	
+ger2	ost_sl_asst	asst	1	g43	4	("soldier_smg_5" rocket(5) body(line))	43244>45334	2>5	150/100/0.9>200/150/0.9	0.75/1/0.8>0.85/1/0.9	same as ost_squadleader2
+ger2	ost_smg	line	1	mp40	4	("soldier_smg_4" rocket(4) body(line))		2>4			
+ger2	ost_smg2	line	1	mp41	4	("soldier_smg_4" rocket(4) body(line))		2>4			
+ger2	ost_smg3	line	1	ppsh	4	("soldier_smg_4" rocket(4) body(line))		2>4			
+ger2	ost_sniper	special	1			(no weapon skill found: keep as is)					
+ger2	ost_squadleader	leader	1	mp40	5	("soldier_smg_5" rocket(4) body(line))	55345>45334	2>4	200/125/0.9>200/150/0.9		
+ger2	ost_squadleader2	leader	1	sg44	5	("soldier_smg_5" rocket(4) body(line))	55345>45334	2>4	200/125/0.9>200/150/0.9		
+ger2	ost_stg	line	1	sg44	4	("soldier_smg_4" rocket(4) body(line))		2>4			
+ger2	ost_straf_mauzer	line	0	mauzer	1	("soldier_rifle_1" rocket(1) body(line))	11111>11112		100/100/0.9>100/75/0.9	0.9/1/1>0.75/1/0.8	
+ger2	ost_straf_mp28	line	0	mp28	1	("soldier_smg_1" rocket(1) body(line))	11111>11112		100/100/0.9>100/75/0.9	0.9/1/1>0.75/1/0.8	
+ger2	ost_straf_ppsh	line	0	ppsh	1	("soldier_smg_1" rocket(1) body(line))	11111>11112		100/100/0.9>100/75/0.9	0.9/1/1>0.75/1/0.8	
+ger2	ost_support	support	0	mauzer	4	("support_<grade>")	33644	2	150/100/0.9	1/1/1	crew ladder: see draft
+ger2	ost_tankman	crew	1	valter	5	("crew_<grade>")	55434	2	100/100/0.8	1/1/0.8	crew ladder: see draft
+ger2	ost_tankman2	crew	1	mp40	5	("crew_<grade>")	45634	2	150/100/0.8	1/1/0.8	crew ladder: see draft
+ger2	tankman	crew	0	valter	5	("crew_<grade>")	55434	2	100/100/0.8	1/1/0.8	crew ladder: see draft
+ger2	tankman2	crew	0	mp40	5	("crew_<grade>")	45634	2	150/100/0.8	1/1/0.8	crew ladder: see draft
+ger2	vehicle_supporter	support	0	mauzer	4	("support_<grade>")	33644	2	150/100/0.9	1/1/1	crew ladder: see draft
+ger_ss	ap_miner	line	3	mp40	4	("soldier_smg_4" rocket(1) body(hardy))		2>1	150/100/0.9>200/100/0.9		
+ger_ss	at_miner	line	3	mp40	4	("soldier_smg_4" rocket(1) body(hardy))		2>1	150/100/0.9>200/100/0.9		
+ger_ss	at_rifle	line	3			(no weapon skill found: keep as is)					
+ger_ss	at_rifle2	line	3	mp40	4	("soldier_smg_4" rocket(1) body(hardy))	44254>44234	2>1	150/100/0.9>200/100/0.9		
+ger_ss	bazooker	rocket	1	panzershreck	6	("soldier_rocket_6" rocket(6) body(hardy))	63355>55565				
+ger_ss	bazooker2	line	1	mauzer	6	("soldier_rifle_6" rocket(1) body(hardy))	53365>55565	6>1			
+ger_ss	dr_pzgren_mg	line	0	mg42_inf_250	5	("soldier_mgun_5" rocket(1) body(hardy))	43554>43534	4>1	200/150/0.9>300/150/0.9		
+ger_ss	dr_pzgren_mg_39	line	0	mg34	5	("soldier_mgun_5" rocket(1) body(hardy))	43554>43534	4>1	200/150/0.9>300/150/0.9		
+ger_ss	dr_pzgren_mg_asst	asst	0	mauzer_vet	5	("soldier_rifle_5" rocket(1) body(hardy))	43554>43354	4>1	200/150/0.9>300/150/0.9		assists nobody on a card: kept at own level
+ger_ss	dr_pzgren_pzfst	line	0	mauzer_vet	5	("soldier_rifle_5" rocket(5) body(hardy))			200/150/0.9>300/150/0.9		
+ger_ss	dr_pzgren_pzfst60_sa	line	0	g43	5	("soldier_rifle_5" rocket(5) body(hardy))			200/150/0.9>300/150/0.9		
+ger_ss	dr_pzgren_pzfst_stg	line	0	sg44	5	("soldier_smg_5" rocket(5) body(hardy))			200/150/0.9>300/150/0.9		
+ger_ss	dr_pzgren_rifle	line	0	mauzer_vet	5	("soldier_rifle_5" rocket(1) body(hardy))		4>1	200/150/0.9>300/150/0.9		
+ger_ss	dr_pzgren_sa	line	0	g43	5	("soldier_rifle_5" rocket(1) body(hardy))		4>1	200/150/0.9>300/150/0.9		
+ger_ss	dr_pzgren_sa_41	line	0	g41	5	("soldier_rifle_5" rocket(1) body(hardy))		4>1	200/150/0.9>300/150/0.9		
+ger_ss	dr_pzgren_sl	leader	0	mp40	5	("soldier_smg_5" rocket(1) body(hardy))		4>1	200/150/0.9>300/150/0.9		
+ger_ss	dr_pzgren_sl_asst	asst	0			(no weapon skill found: keep as is)					
+ger_ss	dr_pzgren_smg	line	0	mp40	5	("soldier_smg_5" rocket(1) body(hardy))		4>1	200/150/0.9>300/150/0.9		
+ger_ss	dr_pzgren_stg	line	0	sg44	5	("soldier_smg_5" rocket(1) body(hardy))		4>1	200/150/0.9>300/150/0.9		
+ger_ss	elite_tankman	crew	0	valter	7	("crew_<grade>")	75646	1	100/100/0.8	1.2/1.2/1.05	crew ladder: see draft
+ger_ss	elite_tankman2	crew	0	mp40	7	("crew_<grade>")	67746	1	150/100/0.8	1.25/1.25/1.1	crew ladder: see draft
+ger_ss	flamer	line	3			(no weapon skill found: keep as is)					
+ger_ss	flamer2	line	3	mp40	4	("soldier_smg_4" rocket(1) body(hardy))		2>1	150/100/0.9>200/100/0.9		
+ger_ss	gebirgs_mg	line	2	zb30	5	("soldier_mgun_5" rocket(1) body(hardy))		4>1	200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	gebirgs_mg_asst	asst	2	mauzer	5	("soldier_mgun_5" rocket(1) body(hardy))	43554>43534	4>1	200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	same as gebirgs_mg
+ger_ss	gebirgs_rifle	line	2	mauzer	5	("soldier_rifle_5" rocket(1) body(hardy))		4>1	200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	gebirgs_sl	leader	2	mp40	5	("soldier_smg_6" rocket(1) body(hardy))	45444>56555	4>1	200/150/0.9>400/200/0.9	0.75/1/0.8>0.95/1/1	leader: squad is 5, so 5 > 6
+ger_ss	gebirgs_sl_asst	asst	2	mp41	5	("soldier_smg_5" rocket(1) body(hardy))	45444>45334	4>1	200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	same as gebirgs_sl
+ger_ss	gebirgs_smg	line	1	mp41	5	("soldier_smg_5" rocket(1) body(hardy))		4>1	200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	grenadier_mg	line	2	mg42_inf	5	("soldier_mgun_5" rocket(1) body(hardy))		4>1	200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	grenadier_mg_39	line	3	mg34	5	("soldier_mgun_5" rocket(1) body(hardy))		4>1	200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	grenadier_mg_asst	asst	3	mauzer	5	("soldier_mgun_5" rocket(1) body(hardy))	43554>43534	4>1	200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	same as grenadier_mg_39
+ger_ss	grenadier_pzfst	line	0	mauzer	5	("soldier_rifle_5" rocket(5) body(hardy))			200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	grenadier_rifle	line	3	mauzer	5	("soldier_rifle_5" rocket(1) body(hardy))		4>1	200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	grenadier_rifle_grenadier	line	2	mauzer	5	("soldier_rifle_5" rocket(1) body(hardy))		4>1	200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	grenadier_sa	line	1	g43	5	("soldier_rifle_5" rocket(1) body(hardy))		4>1	200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	grenadier_sa_41	line	2	g41	5	("soldier_rifle_5" rocket(1) body(hardy))		4>1	200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	grenadier_sl	leader	3	mp40	5	("soldier_smg_6" rocket(1) body(hardy))	45334>56555	4>1	200/125/0.9>400/200/0.9	0.75/1/0.8>0.95/1/1	leader: squad is 5, so 5 > 6
+ger_ss	grenadier_sl_asst	asst	3	mauzer	5	("soldier_smg_5" rocket(1) body(hardy))	43354>45334	4>1	200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	same as grenadier_sl
+ger_ss	grenadier_smg	line	3	mp40	5	("soldier_smg_5" rocket(1) body(hardy))		4>1	200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	grenadier_stg	line	0	sg44	5	("soldier_smg_5" rocket(5) body(hardy))		4>5	200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	lssah_pzgren_at	rocket	1	panzershreck	5	("soldier_rocket_5" rocket(5) body(hardy))	53354>43354		200/150/0.9>300/150/0.9	0.95/1/1>0.85/1/0.9	
+ger_ss	lssah_pzgren_at2	line	1	mauzer_vet	5	("soldier_rifle_5" rocket(1) body(hardy))		5>1	200/150/0.9>300/150/0.9	0.95/1/1>0.85/1/0.9	
+ger_ss	lssah_pzgren_mg	line	2	mg42_inf_250	5	("soldier_mgun_5" rocket(1) body(hardy))	43554>43534	4>1	200/150/0.9>300/150/0.9		
+ger_ss	lssah_pzgren_mg_39	line	3	mg34	5	("soldier_mgun_5" rocket(1) body(hardy))	43554>43534	4>1	200/150/0.9>300/150/0.9		
+ger_ss	lssah_pzgren_mg_asst	asst	3	mauzer_vet	5	("soldier_mgun_5" rocket(1) body(hardy))	43554>43534	4>1	200/150/0.9>300/150/0.9		same as lssah_pzgren_mg_39
+ger_ss	lssah_pzgren_rifle	line	3	mauzer_vet	5	("soldier_rifle_5" rocket(1) body(hardy))		4>1	200/150/0.9>300/150/0.9		
+ger_ss	lssah_pzgren_sa	line	1	g43	5	("soldier_rifle_5" rocket(1) body(hardy))		4>1	200/150/0.9>300/150/0.9		
+ger_ss	lssah_pzgren_sa_41	line	2	g41	5	("soldier_rifle_5" rocket(1) body(hardy))		4>1	200/150/0.9>300/150/0.9		
+ger_ss	lssah_pzgren_sl_asst	asst	2			(no weapon skill found: keep as is)					
+ger_ss	lssah_pzgren_sl_asst_sa	asst	1	g43_scope	5	("soldier_smg_5" rocket(1) body(hardy))	43354>45334	4>1	200/150/0.9>300/150/0.9		same as lssah_pzgren_sl_smg
+ger_ss	lssah_pzgren_sl_smg	leader	3	mp40	5	("soldier_smg_6" rocket(1) body(hardy))	45444>56555	4>1	200/150/0.9>400/200/0.9	0.85/1/0.9>0.95/1/1	leader: squad is 5, so 5 > 6
+ger_ss	oficer	line	4	luger	5	("soldier_pistol_5" rocket(1) body(hardy))		5>1	250/100/1>300/150/0.9		
+ger_ss	pzgren_mg	line	2	mg42_inf	5	("soldier_mgun_5" rocket(1) body(hardy))		4>1	200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	pzgren_mg_39	line	1	mg34	5	("soldier_mgun_5" rocket(1) body(hardy))		4>1	200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	pzgren_mg_asst	asst	3	mauzer	5	("soldier_mgun_5" rocket(1) body(hardy))	43554>43534	4>1	200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	same as pzgren_mg
+ger_ss	pzgren_rifle	line	3	mauzer	5	("soldier_rifle_5" rocket(1) body(hardy))	43454>43354	4>1	200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	pzgren_sa	line	1	g43	5	("soldier_rifle_5" rocket(1) body(hardy))	43454>43354	4>1	200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	pzgren_sa_41	line	2	g41	5	("soldier_rifle_5" rocket(1) body(hardy))	43454>43354	4>1	200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	pzgren_sl_asst	asst	3	mauzer	5	("soldier_smg_5" rocket(1) body(hardy))	43454>45334	4>1	200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	same as pzgren_sl_smg
+ger_ss	pzgren_sl_smg	leader	3	mp40	5	("soldier_smg_6" rocket(1) body(hardy))	45434>56555	4>1	200/150/0.9>400/200/0.9	0.75/1/0.8>0.95/1/1	leader: squad is 5, so 5 > 6
+ger_ss	saper	line	3	mp40	4	("soldier_smg_4" rocket(1) body(hardy))		2>1	150/100/0.9>200/100/0.9	0.85/1/0.9>0.75/1/0.8	
+ger_ss	sniper	special	4			(no weapon skill found: keep as is)					
+ger_ss	sniper2	special	0			(no weapon skill found: keep as is)					
+ger_ss	sniper2_early	special	0			(no weapon skill found: keep as is)					
+ger_ss	sniper3	special	2	g43_scope	6	("soldier_rifle_6" rocket(1) body(hardy))	43264>55565	2>1	350/150/1>400/200/0.9	0.75/1/0.8>0.95/1/1	
+ger_ss	ssvt_mg	line	3	zb30	2	("soldier_mgun_2" rocket(1) body(hardy))			100/100/0.9>200/100/0.9		
+ger_ss	ssvt_mg_asst	asst	3	mauzer	1	("soldier_mgun_2" rocket(1) body(hardy))			100/100/0.9>200/100/0.9		same as ssvt_mg
+ger_ss	ssvt_pzfst	line	1	mauzer	2	("soldier_rifle_2" rocket(2) body(hardy))			100/100/0.9>200/100/0.9		
+ger_ss	ssvt_rifle	line	3	mauzer	2	("soldier_rifle_2" rocket(1) body(hardy))			100/100/0.9>200/100/0.9		
+ger_ss	ssvt_sl	leader	3	mp41	3	("soldier_smg_3" rocket(1) body(hardy))	23222>23223	2>1	150/125/0.9>200/100/0.9		
+ger_ss	ssvt_sl_asst	asst	3	mauzer	3	("soldier_smg_3" rocket(1) body(hardy))	22132>23223	2>1	150/125/0.9>200/100/0.9		same as ssvt_sl
+ger_ss	ss_ap_miner	line	1	mp40	4	("soldier_smg_4" rocket(3) body(hardy))		2>3	150/100/0.9>200/100/0.9		
+ger_ss	ss_at_miner	line	1	mp40	4	("soldier_smg_4" rocket(3) body(hardy))		2>3	150/100/0.9>200/100/0.9		
+ger_ss	ss_at_rifle	line	1			(no weapon skill found: keep as is)					
+ger_ss	ss_at_rifleassist	asst	1	mp40	4	("soldier_smg_4" rocket(1) body(hardy))	44254>44234	2>1	150/100/0.9>200/100/0.9		assists nobody on a card: kept at own level
+ger_ss	ss_fallschirm_grenadier	line	0	mauzer_vet	7	("soldier_rifle_7" rocket(1) body(hardy))	77777>66676	7>1	400/200/0.9>450/200/0.9		
+ger_ss	ss_fallschirm_mg	line	1	mg34	3	("soldier_mgun_3" rocket(2) body(hardy))	33333>22323	3>2	250/150/0.9>200/100/0.9		
+ger_ss	ss_fallschirm_mg_asst	asst	1	mauzer	3	("soldier_mgun_3" rocket(1) body(hardy))	22333>22323		150/100/0.9>200/100/0.9		same as ss_fallschirm_mg
+ger_ss	ss_fallschirm_pzfst_stg	line	0	sg44	7	("soldier_smg_7" rocket(7) body(hardy))	77777>67666		400/200/0.9>450/200/0.9		
+ger_ss	ss_fallschirm_rifle	line	1	mauzer	3	("soldier_rifle_3" rocket(2) body(hardy))		1>2	150/100/0.9>200/100/0.9		
+ger_ss	ss_fallschirm_sl	leader	1	mp40	4	("soldier_smg_4" rocket(3) body(hardy))	44444>44234	4>3	250/150/0.9>200/100/0.9		
+ger_ss	ss_fallschirm_sl_asst_smg	asst	1	mp40	3	("soldier_smg_4" rocket(4) body(hardy))	33333>44234	3>4	400/200/0.9>200/100/0.9	0.95/1/1>0.75/1/0.8	same as ss_fallschirm_sl
+ger_ss	ss_fallschirm_smg	line	1	mp40	3	("soldier_smg_3" rocket(2) body(hardy))		1>2	150/100/0.9>200/100/0.9		
+ger_ss	ss_flamer	line	1			(no weapon skill found: keep as is)					
+ger_ss	ss_flamerassist	asst	1	mp40	4	("soldier_smg_4" rocket(1) body(hardy))		2>1	150/100/0.9>200/100/0.9		assists nobody on a card: kept at own level
+ger_ss	ss_g43scope_sniper	special	1	g43_scope	6	("soldier_rifle_6" rocket(5) body(hardy))	43264>55565	2>5	350/150/1>400/200/0.9	0.75/1/0.8>0.95/1/1	
+ger_ss	ss_gebirgs_mg	line	1	zb30	5	("soldier_mgun_5" rocket(4) body(hardy))			200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_gebirgs_mg_asst	asst	1	mauzer	5	("soldier_mgun_5" rocket(1) body(hardy))	43554>43534	4>1	200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	same as ss_gebirgs_mg
+ger_ss	ss_gebirgs_pzfst	line	1	mauzer	5	("soldier_rifle_5" rocket(5) body(hardy))			200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_gebirgs_pzfst_ber	line	1	mab_38a	5	("soldier_smg_5" rocket(5) body(hardy))		4>5	200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_gebirgs_rifle	line	1	mauzer	5	("soldier_rifle_5" rocket(4) body(hardy))			200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_gebirgs_sl	leader	1	mab_38a	5	("soldier_smg_6" rocket(5) body(hardy))	45444>56555	4>5	200/150/0.9>400/200/0.9	0.75/1/0.8>0.95/1/1	leader: squad is 5, so 5 > 6
+ger_ss	ss_gebirgs_sl_asst	asst	1	mab_38a	5	("soldier_smg_5" rocket(1) body(hardy))	45444>45334	4>1	200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	same as ss_gebirgs_sl
+ger_ss	ss_gebirgs_sl_asst_k98	asst	1	mauzer	4	("soldier_smg_5" rocket(1) body(hardy))	45444>45334	4>1	200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	same as ss_gebirgs_sl
+ger_ss	ss_gebirgs_smg	line	1	mab_38a	5	("soldier_smg_5" rocket(4) body(hardy))			200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_grenadier_mg	line	1	mg42_inf	5	("soldier_mgun_5" rocket(4) body(hardy))			200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_grenadier_mg_39	line	1	mg34	5	("soldier_mgun_5" rocket(4) body(hardy))			200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_grenadier_mg_asst	asst	1	mauzer	5	("soldier_mgun_5" rocket(1) body(hardy))	43554>43534	4>1	200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	same as ss_grenadier_mg
+ger_ss	ss_grenadier_pzfst	line	1	mauzer	5	("soldier_rifle_5" rocket(5) body(hardy))			200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_grenadier_rifle	line	1	mauzer	5	("soldier_rifle_5" rocket(4) body(hardy))			200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_grenadier_rifle_grenadier3	line	1	mauzer	5	("soldier_rifle_5" rocket(4) body(hardy))			200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_grenadier_sa	line	1	g43	5	("soldier_rifle_5" rocket(4) body(hardy))			200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_grenadier_sa_44	line	1	g43	5	("soldier_rifle_5" rocket(5) body(hardy))		4>5	200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_grenadier_sl	leader	1	mp40	5	("soldier_smg_6" rocket(5) body(hardy))	45334>56555	4>5	200/125/0.9>400/200/0.9	0.75/1/0.8>0.95/1/1	leader: squad is 5, so 5 > 6
+ger_ss	ss_grenadier_sl_asst_44	asst	1	mauzer	5	("soldier_smg_5" rocket(5) body(hardy))	43354>45334	4>5	200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	same as ss_grenadier_sl
+ger_ss	ss_grenadier_smg	line	1	mp40	5	("soldier_smg_5" rocket(4) body(hardy))			200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_grenadier_stg	line	1	sg44	5	("soldier_smg_5" rocket(5) body(hardy))		4>5	200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_kosaken_mg	line	1	dp	2	("soldier_mgun_2" rocket(1) body(hardy))	11221>21212		100/100/0.9>200/100/0.9		
+ger_ss	ss_kosaken_mg_asst	asst	1	mosin	2	("soldier_mgun_2" rocket(1) body(hardy))	11221>21212		100/100/0.9>200/100/0.9		same as ss_kosaken_mg
+ger_ss	ss_kosaken_rifle	line	1	mosin	2	("soldier_rifle_2" rocket(1) body(hardy))	11121>11122		100/100/0.9>200/100/0.9		
+ger_ss	ss_kosaken_sl	leader	1	ppsh41	3	("soldier_smg_3" rocket(2) body(hardy))	23222>23223	1>2	100/100/0.9>200/100/0.9		
+ger_ss	ss_kosaken_sl_asst	asst	1	ppsh41	3	("soldier_smg_3" rocket(1) body(hardy))	23222>23223		100/100/0.9>200/100/0.9		same as ss_kosaken_sl
+ger_ss	ss_kosaken_smg	line	1	ppsh41	2	("soldier_smg_2" rocket(1) body(hardy))	12111>22112		100/100/0.9>200/100/0.9		
+ger_ss	ss_light_mortar	rocket	0	mortar_legrw_36	2	("soldier_rocket_2" rocket(2) body(hardy))	43254>11122		150/100/0.9>200/100/0.9		
+ger_ss	ss_light_mortar_assist	asst	0	mauzer	5	("soldier_rifle_5" rocket(1) body(hardy))	43254>43354	2>1	150/100/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	assists nobody on a card: kept at own level
+ger_ss	ss_lssah_pzgren_at	rocket	1	panzershreck	5	("soldier_rocket_5" rocket(5) body(hardy))	53354>43354		200/150/0.9>300/150/0.9	0.95/1/1>0.85/1/0.9	
+ger_ss	ss_lssah_pzgren_at2	line	1	mauzer_vet	5	("soldier_rifle_5" rocket(4) body(hardy))		5>4	200/150/0.9>300/150/0.9	0.95/1/1>0.85/1/0.9	
+ger_ss	ss_lssah_pzgren_mg	line	1	mg42_inf_250	5	("soldier_mgun_5" rocket(4) body(hardy))	43554>43534		200/150/0.9>300/150/0.9		
+ger_ss	ss_lssah_pzgren_mg_39	line	1	mg34	5	("soldier_mgun_5" rocket(4) body(hardy))	43554>43534		200/150/0.9>300/150/0.9		
+ger_ss	ss_lssah_pzgren_mg_asst	asst	1	mauzer_vet	5	("soldier_mgun_5" rocket(1) body(hardy))	43554>43534	4>1	200/150/0.9>300/150/0.9		same as ss_lssah_pzgren_mg
+ger_ss	ss_lssah_pzgren_pzfst	line	1	g43	5	("soldier_rifle_5" rocket(5) body(hardy))			200/150/0.9>300/150/0.9		
+ger_ss	ss_lssah_pzgren_pzfst60_sa	line	1	g43	5	("soldier_rifle_5" rocket(5) body(hardy))			200/150/0.9>300/150/0.9		
+ger_ss	ss_lssah_pzgren_pzfst_stg	line	1	sg44	5	("soldier_smg_5" rocket(5) body(hardy))			200/150/0.9>300/150/0.9		
+ger_ss	ss_lssah_pzgren_sl_asst_sa	asst	1	g43_scope	5	("soldier_smg_5" rocket(1) body(hardy))	43354>45334	4>1	200/150/0.9>300/150/0.9		same as ss_lssah_pzgren_sl_stg
+ger_ss	ss_lssah_pzgren_sl_stg	leader	1	sg44	5	("soldier_smg_6" rocket(5) body(hardy))	45444>56555	4>5	200/150/0.9>400/200/0.9	0.85/1/0.9>0.95/1/1	leader: squad is 5, so 5 > 6
+ger_ss	ss_officer	leader	1	luger	5	("soldier_pistol_5" rocket(4) body(hardy))		5>4	250/100/1>300/150/0.9		
+ger_ss	ss_panzerfaust	line	1	mauzer	5	("soldier_rifle_5" rocket(5) body(hardy))	43254>43354	6>5	150/100/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_panzershreck	rocket	1	panzershreck	6	("soldier_rocket_6" rocket(6) body(hardy))	63355>55565				
+ger_ss	ss_panzershreckassist	asst	1	mauzer	6	("soldier_rocket_6" rocket(1) body(hardy))	53365>55565	6>1			same as ss_panzershreck
+ger_ss	ss_pzgren_mg	line	1	mg42_inf	5	("soldier_mgun_5" rocket(4) body(hardy))			200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_pzgren_mg_asst	asst	1	mauzer	5	("soldier_mgun_5" rocket(1) body(hardy))	43554>43534	4>1	200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	same as ss_pzgren_mg
+ger_ss	ss_pzgren_pzfst	line	1	mauzer	5	("soldier_rifle_5" rocket(5) body(hardy))	43454>43354		200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_pzgren_pzfst_sa	line	1	g43	5	("soldier_rifle_5" rocket(5) body(hardy))	43454>43354		200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_pzgren_sl_asst_pzfst	asst	1	mauzer	5	("soldier_smg_5" rocket(5) body(hardy))	43454>45334		200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	same as ss_pzgren_sl_stg
+ger_ss	ss_pzgren_sl_stg	leader	1	sg44	5	("soldier_smg_6" rocket(5) body(hardy))	45434>56555		200/150/0.9>400/200/0.9	0.75/1/0.8>0.95/1/1	leader: squad is 5, so 5 > 6
+ger_ss	ss_pzgren_stg	line	1	sg44	5	("soldier_smg_5" rocket(4) body(hardy))	45434>45334		200/150/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_saper	line	1	mp40	4	("soldier_smg_4" rocket(3) body(hardy))		2>3	150/100/0.9>200/100/0.9	0.85/1/0.9>0.75/1/0.8	
+ger_ss	ss_sniper_mauser	special	1			(no weapon skill found: keep as is)					
+ger_ss	ss_ssvt_mg	line	1	zb30	2	("soldier_mgun_2" rocket(1) body(hardy))			100/100/0.9>200/100/0.9		
+ger_ss	ss_ssvt_mg_asst	asst	1	mauzer	1	("soldier_mgun_2" rocket(1) body(hardy))			100/100/0.9>200/100/0.9		same as ss_ssvt_mg
+ger_ss	ss_ssvt_rifle	line	1	mauzer	2	("soldier_rifle_2" rocket(1) body(hardy))			100/100/0.9>200/100/0.9		
+ger_ss	ss_ssvt_sl	leader	1	mp41	3	("soldier_smg_3" rocket(2) body(hardy))	23222>23223		150/125/0.9>200/100/0.9		
+ger_ss	ss_ssvt_sl_asst	asst	1	mauzer	3	("soldier_smg_3" rocket(1) body(hardy))	22132>23223	2>1	150/125/0.9>200/100/0.9		same as ss_ssvt_sl
+ger_ss	ss_ss_sturmgren_stg	line	1	sg44	5	("soldier_smg_5" rocket(5) body(hardy))		4>5	200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_sturmgren_mg	line	1	mg42_inf	5	("soldier_mgun_5" rocket(4) body(hardy))			200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_sturmgren_mg_asst	asst	1	mp40	5	("soldier_mgun_5" rocket(1) body(hardy))	45534>43534	4>1	200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	same as ss_sturmgren_mg
+ger_ss	ss_sturmgren_sa	line	1	g43	5	("soldier_rifle_5" rocket(4) body(hardy))			200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_sturmgren_sa_scope	line	1	g43_scope	5	("soldier_rifle_5" rocket(5) body(hardy))		4>5	200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_sturmgren_sl	leader	1	sg44	5	("soldier_smg_6" rocket(5) body(hardy))	45334>56555	4>5	200/125/0.9>400/200/0.9	0.75/1/0.8>0.95/1/1	leader: squad is 5, so 5 > 6
+ger_ss	ss_sturmgren_sl_asst	asst	1	sg44	5	("soldier_smg_5" rocket(5) body(hardy))		4>5	200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	same as ss_sturmgren_sl
+ger_ss	ss_sturmgren_smg	line	1	mp40	5	("soldier_smg_5" rocket(4) body(hardy))			200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_sturmgren_stg_pzf	line	1	sg44	5	("soldier_smg_5" rocket(5) body(hardy))		4>5	200/125/0.9>300/150/0.9	0.75/1/0.8>0.85/1/0.9	
+ger_ss	ss_sturmpio1	line	1	mauzer	4	("soldier_rifle_4" rocket(4) body(hardy))			150/100/0.9>200/100/0.9		
+ger_ss	ss_sturmpio2	line	1	mauzer	4	("soldier_rifle_4" rocket(3) body(hardy))		2>3	150/100/0.9>200/100/0.9	0.85/1/0.9>0.75/1/0.8	
+ger_ss	ss_sturmpio3	line	1	mauzer	4	("soldier_rifle_4" rocket(3) body(hardy))		2>3	150/100/0.9>200/100/0.9	0.85/1/0.9>0.75/1/0.8	
+ger_ss	ss_sturmpio4	line	1	sg44	4	("soldier_smg_4" rocket(3) body(hardy))		2>3	150/100/0.9>200/100/0.9		
+ger_ss	ss_sturmpio_at	rocket	1	panzershreck	4	("soldier_rocket_4" rocket(4) body(hardy))			150/100/0.9>200/100/0.9		
+ger_ss	ss_sturmpio_flamer	line	1			(no weapon skill found: keep as is)					
+ger_ss	ss_sturmpio_mg	line	1	mg42_inf	4	("soldier_mgun_4" rocket(3) body(hardy))		2>3	150/100/0.9>200/100/0.9		
+ger_ss	ss_sturmpio_mg_asst	asst	1	mauzer	4	("soldier_mgun_4" rocket(1) body(hardy))	43444>43434	2>1	150/100/0.9>200/100/0.9		same as ss_sturmpio_mg
+ger_ss	ss_sturmpio_sl	leader	1	sg44	5	("soldier_smg_5" rocket(4) body(hardy))	45345>45334	2>4	200/100/0.9>300/150/0.9		
+ger_ss	ss_support	support	0	mauzer	3	("support_<grade>")	33534	2	150/100/0.9	0.85/1.05/1.05	crew ladder: see draft
+ger_ss	ss_tankman	crew	1	valter	5	("crew_<grade>")	54335	1	100/100/0.8	1.1/1.1/1.05	crew ladder: see draft
+ger_ss	ss_tankman2	crew	1	mp40	5	("crew_<grade>")	55535	1	150/100/0.8	1.15/1.15/1.1	crew ladder: see draft
+ger_ss	ss_tk_pzgren_mg	line	1	mg42_inf_250	5	("soldier_mgun_5" rocket(4) body(hardy))	43554>43534		200/150/0.9>300/150/0.9		
+ger_ss	ss_tk_pzgren_mg_39	line	1	mg34	5	("soldier_mgun_5" rocket(4) body(hardy))	43554>43534		200/150/0.9>300/150/0.9		
+ger_ss	ss_tk_pzgren_mg_asst	asst	1	mauzer_vet	5	("soldier_mgun_5" rocket(1) body(hardy))	43554>43534	4>1	200/150/0.9>300/150/0.9		same as ss_tk_pzgren_mg
+ger_ss	ss_tk_pzgren_pzfst	line	1	mauzer_vet	5	("soldier_rifle_5" rocket(5) body(hardy))			200/150/0.9>300/150/0.9		
+ger_ss	ss_tk_pzgren_pzfst60_sa	line	1	g43	5	("soldier_rifle_5" rocket(5) body(hardy))			200/150/0.9>300/150/0.9		
+ger_ss	ss_tk_pzgren_pzfst_stg	line	1	sg44	5	("soldier_smg_5" rocket(5) body(hardy))			200/150/0.9>300/150/0.9		
+ger_ss	ss_tk_pzgren_rifle	line	1	mauzer_vet	5	("soldier_rifle_5" rocket(4) body(hardy))			200/150/0.9>300/150/0.9		
+ger_ss	ss_tk_pzgren_sa	line	1	g43	5	("soldier_rifle_5" rocket(4) body(hardy))			200/150/0.9>300/150/0.9		
+ger_ss	ss_tk_pzgren_sl	leader	1	mp40	5	("soldier_smg_6" rocket(5) body(hardy))	45334>56555	4>5	200/150/0.9>400/200/0.9	0.85/1/0.9>0.95/1/1	leader: squad is 5, so 5 > 6
+ger_ss	ss_tk_pzgren_sl_asst	asst	1			(no weapon skill found: keep as is)					
+ger_ss	ss_vehicle_supporter	support	1	mauzer	3	("support_<grade>")	33534	2	150/100/0.9	0.85/1.05/1.05	crew ladder: see draft
+ger_ss	ss_vet_sniper	special	0			(no weapon skill found: keep as is)					
+ger_ss	ss_vet_tankman2	crew	1	mp40	5	("crew_<grade>")	55635	1	150/100/0.8	1.15/1.15/1.1	crew ladder: see draft
+ger_ss	tankman	crew	3	valter	5	("crew_<grade>")	54335	1	100/100/0.8	1.1/1.1/1.05	crew ladder: see draft
+ger_ss	tankman2	crew	3	mp40	5	("crew_<grade>")	55535	1	150/100/0.8	1.15/1.15/1.1	crew ladder: see draft
+ger_ss	tk_pzgren_mg	line	2	mg42_inf_250	5	("soldier_mgun_5" rocket(1) body(hardy))	43554>43534	4>1	200/150/0.9>300/150/0.9		
+ger_ss	tk_pzgren_mg_39	line	3	mg34	5	("soldier_mgun_5" rocket(1) body(hardy))	43554>43534	4>1	200/150/0.9>300/150/0.9		
+ger_ss	tk_pzgren_mg_asst	asst	3	mauzer_vet	5	("soldier_mgun_5" rocket(1) body(hardy))	43554>43534	4>1	200/150/0.9>300/150/0.9		same as tk_pzgren_mg_39
+ger_ss	tk_pzgren_rifle	line	3	mauzer_vet	5	("soldier_rifle_5" rocket(1) body(hardy))		4>1	200/150/0.9>300/150/0.9		
+ger_ss	tk_pzgren_sa	line	1	g43	5	("soldier_rifle_5" rocket(1) body(hardy))		4>1	200/150/0.9>300/150/0.9		
+ger_ss	tk_pzgren_sa_41	line	2	g41	5	("soldier_rifle_5" rocket(1) body(hardy))		4>1	200/150/0.9>300/150/0.9		
+ger_ss	tk_pzgren_sl	leader	3	mp40	5	("soldier_smg_6" rocket(1) body(hardy))	45334>56555	4>1	200/150/0.9>400/200/0.9	0.85/1/0.9>0.95/1/1	leader: squad is 5, so 5 > 6
+ger_ss	tk_pzgren_sl_asst	asst	3			(no weapon skill found: keep as is)					
+ger_ss	vehicle_supporter	support	4	mauzer	3	("support_<grade>")	33534	2	150/100/0.9	0.85/1.05/1.05	crew ladder: see draft
+ger_ss	vet_tankman	crew	3	valter	5	("crew_<grade>")	54535	1	100/100/0.8	1.1/1.1/1.05	crew ladder: see draft
+ger_ss	vet_tankman2	crew	3	mp40	5	("crew_<grade>")	55635	1	150/100/0.8	1.15/1.15/1.1	crew ladder: see draft
+jap	ap_miner	line	1	type100smg	2	("soldier_smg_2" rocket(1) body(hardy))			150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	at_miner	line	1	type100smg	2	("soldier_smg_2" rocket(1) body(hardy))			150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	at_rifle	line	1	type100smg	2	("soldier_smg_2" rocket(1) body(hardy))	22132>22112		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	at_rifle2	line	1	type100smg	2	("soldier_smg_2" rocket(1) body(hardy))	22132>22112		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	charger_rifle	charge	1	type38rifle_bayonet	1	(own special values, kept)					kamikaze / charger / AT stick
+jap	charger_smg	charge	1	type100smg_bayonet	1	(own special values, kept)					kamikaze / charger / AT stick
+jap	elite	line	1	type2rifle	7	("soldier_rifle_7" rocket(1) body(hardy))	77777>66676	7>1	400/200/0.9>450/200/0.9	0.9/1/1>0.95/1/1	
+jap	elite2	line	1	type2rifle	7	("soldier_rifle_7" rocket(1) body(hardy))	77777>66676	7>1	400/200/0.9>450/200/0.9	0.9/1/1>0.95/1/1	
+jap	elite3	line	1	type99_mg	7	("soldier_mgun_7" rocket(1) body(hardy))	77777>66766	7>1	400/200/0.9>450/200/0.9	0.9/1/1>0.95/1/1	
+jap	elite4	line	1	type100smg	7	("soldier_smg_7" rocket(1) body(hardy))	77777>67666	7>1	400/200/0.9>450/200/0.9	0.9/1/1>0.95/1/1	
+jap	elite_ig1	line	1	type99rifle	5	("soldier_rifle_5" rocket(1) body(hardy))	33355>43354	3>1		0.9/1/1>0.85/1/0.9	
+jap	elite_ig1b	line	1	type38rifle	5	("soldier_rifle_5" rocket(1) body(hardy))	33355>43354	3>1		0.9/1/1>0.85/1/0.9	
+jap	elite_ig1h	line	0	type_4_rifle	5	("soldier_rifle_5" rocket(1) body(hardy))	33355>43354	3>1		0.9/1/1>0.85/1/0.9	
+jap	elite_ig1h_ammo	asst	0	type_4_rifle	5	("soldier_rifle_5" rocket(1) body(hardy))	33355>43354	3>1		0.9/1/1>0.85/1/0.9	assists nobody on a card: kept at own level
+jap	elite_ig1h_asst	asst	0	type_4_rifle	5	("soldier_rifle_5" rocket(1) body(hardy))	33555>43354	3>1		0.9/1/1>0.85/1/0.9	assists nobody on a card: kept at own level
+jap	elite_ig1_ammo	asst	0	type99rifle	5	("soldier_rifle_5" rocket(1) body(hardy))	33355>43354	3>1		0.9/1/1>0.85/1/0.9	assists nobody on a card: kept at own level
+jap	elite_ig2	line	1	type99_mg	5	("soldier_mgun_5" rocket(1) body(hardy))	33535>43534	3>1		0.9/1/1>0.85/1/0.9	
+jap	elite_ig2_scoped	special	0	type99_mg_scoped	5	("soldier_mgun_5" rocket(1) body(hardy))	33535>43534	3>1		0.9/1/1>0.85/1/0.9	
+jap	elite_ig3	line	1	type100smg	5	("soldier_smg_5" rocket(1) body(hardy))	35335>45334	3>1		0.9/1/1>0.85/1/0.9	
+jap	elite_ig3b_type2	line	0	type2smg	5	("soldier_smg_5" rocket(1) body(hardy))	35335>45334	3>1		0.9/1/1>0.85/1/0.9	
+jap	elite_ig4	line	1	type100smg	5	("soldier_smg_5" rocket(5) body(hardy))	35335>45334			0.9/1/1>0.85/1/0.9	
+jap	elite_ig4_type2	line	0	type2smg	5	("soldier_smg_5" rocket(5) body(hardy))	35335>45334			0.9/1/1>0.85/1/0.9	
+jap	elite_mgun_ammo	asst	0	type2rifle	7	("soldier_rifle_7" rocket(1) body(hardy))	55577>66676	5>1	400/200/0.9>450/200/0.9	0.9/1/1>0.95/1/1	assists nobody on a card: kept at own level
+jap	elite_mgun_asst	asst	0	type2rifle	7	("soldier_rifle_7" rocket(1) body(hardy))	77777>66676	7>1	400/200/0.9>450/200/0.9	0.9/1/1>0.95/1/1	assists nobody on a card: kept at own level
+jap	elite_takasago_lmg	line	1	type99_mg	6	("soldier_mgun_6" rocket(1) body(hardy))	64646>55655	4>1	350/225/0.9>400/200/0.9	1/1/1>0.95/1/1	
+jap	elite_takasago_mgun_ammo	asst	0	type99rifle_bayonet	6	("soldier_rifle_6" rocket(1) body(hardy))	64466>55565	4>1	350/225/0.9>400/200/0.9	1/1/1>0.95/1/1	assists nobody on a card: kept at own level
+jap	elite_takasago_mgun_asst	asst	0	type99rifle_bayonet	6	("soldier_rifle_6" rocket(1) body(hardy))	64666>55565	4>1	350/225/0.9>400/200/0.9	1/1/1>0.95/1/1	assists nobody on a card: kept at own level
+jap	elite_takasago_rifle	line	1	type38rifle_bayonet	6	("soldier_rifle_6" rocket(1) body(hardy))	64466>55565	4>1	350/225/0.9>400/200/0.9	1/1/1>0.95/1/1	
+jap	elite_takasago_rifle2	line	1	type99rifle_bayonet	6	("soldier_rifle_6" rocket(1) body(hardy))	64466>55565	4>1	350/225/0.9>400/200/0.9	1/1/1>0.95/1/1	
+jap	elite_takasago_smg	line	1	type100smg_bayonet	6	("soldier_smg_6" rocket(1) body(hardy))	66446>56555	4>1	350/225/0.9>400/200/0.9	1/1/1>0.95/1/1	
+jap	elite_vehicle_supporter	support	0	type44_carbine	5	("support_<grade>")	22552	1	150/100/0.9	1/1/1	crew ladder: see draft
+jap	flamer	line	1			(no weapon skill found: keep as is)					
+jap	flamer2	line	1	type100smg	2	("soldier_smg_2" rocket(1) body(hardy))			150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	ig_light_mortar	line	0	type89_grenadelauncher	5	("soldier_rifle_5" rocket(1) body(hardy))	33355>43354	3>1		0.9/1/1>0.85/1/0.9	
+jap	ig_light_mortar_asst	asst	0	type44_carbine	5	("soldier_rifle_5" rocket(1) body(hardy))	33355>43354	3>1		0.9/1/1>0.85/1/0.9	assists nobody on a card: kept at own level
+jap	jap_ap_miner	line	1	type100smg	2	("soldier_smg_2" rocket(1) body(hardy))			150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	jap_at_miner	line	1	type100smg	2	("soldier_smg_2" rocket(1) body(hardy))			150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	jap_at_rifle	line	1	type100smg	2	("soldier_smg_2" rocket(1) body(hardy))	22132>22112		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	jap_at_rifleassist	asst	1	type100smg	2	("soldier_smg_2" rocket(1) body(hardy))	22132>22112		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	assists nobody on a card: kept at own level
+jap	jap_charger_rifle	charge	1	type38rifle_bayonet	1	(own special values, kept)					kamikaze / charger / AT stick
+jap	jap_charger_smg_type100	charge	1	type100smg_bayonet	1	(own special values, kept)					kamikaze / charger / AT stick
+jap	jap_charger_smg_type100_44	charge	1	type100_44_bayonet	1	(own special values, kept)					kamikaze / charger / AT stick
+jap	jap_charger_throwgun	charge	1	throwable_gun	1	(own special values, kept)					kamikaze / charger / AT stick
+jap	jap_elite_takasago_lmg	line	1	type99_mg	6	("soldier_mgun_6" rocket(1) body(hardy))	64646>55655	4>1	350/225/0.9>400/200/0.9	1/1/1>0.95/1/1	
+jap	jap_elite_takasago_rifle	line	1	type38rifle_bayonet	6	("soldier_rifle_6" rocket(1) body(hardy))	64466>55565	4>1	350/225/0.9>400/200/0.9	1/1/1>0.95/1/1	
+jap	jap_elite_takasago_rifle2	line	1	type99rifle_bayonet	6	("soldier_rifle_6" rocket(1) body(hardy))	64466>55565	4>1	350/225/0.9>400/200/0.9	1/1/1>0.95/1/1	
+jap	jap_elite_takasago_smg2	line	1	type100_44_bayonet	6	("soldier_smg_6" rocket(1) body(hardy))	66446>56555	4>1	350/225/0.9>400/200/0.9	1/1/1>0.95/1/1	
+jap	jap_flamer	line	1			(no weapon skill found: keep as is)					
+jap	jap_flamerassist	asst	1	type100smg	2	("soldier_smg_2" rocket(1) body(hardy))			150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	assists nobody on a card: kept at own level
+jap	jap_kamikaze	charge	1	lunge_mine	1	(own special values, kept)					kamikaze / charger / AT stick
+jap	jap_kanoeshidan_at	line	1	type100smg	5	("soldier_smg_5" rocket(5) body(hardy))	35335>45334			0.9/1/1>0.85/1/0.9	
+jap	jap_kanoeshidan_mg	line	1	type99_mg	5	("soldier_mgun_5" rocket(1) body(hardy))	33535>43534	3>1		0.9/1/1>0.85/1/0.9	
+jap	jap_kanoeshidan_rifle_apminer	line	1	type99rifle	5	("soldier_rifle_5" rocket(1) body(hardy))	44456>43354	4>1		0.9/1/1>0.85/1/0.9	
+jap	jap_kanoeshidan_type100_44	line	1	type100_44	5	("soldier_smg_5" rocket(1) body(hardy))	35335>45334	3>1		0.9/1/1>0.85/1/0.9	
+jap	jap_kanoeShidan_type38rifle	line	0	type99rifle	5	("soldier_rifle_5" rocket(1) body(hardy))	33355>43354	3>1		0.9/1/1>0.85/1/0.9	
+jap	jap_kanoeshidan_type99rifle	line	1	type99rifle	5	("soldier_rifle_5" rocket(1) body(hardy))	33355>43354	3>1		0.9/1/1>0.85/1/0.9	
+jap	jap_kanoe_shidan_type38	line	0	type99rifle	5	("soldier_rifle_5" rocket(1) body(hardy))	33355>43354	3>1		0.9/1/1>0.85/1/0.9	
+jap	jap_light_mortar	line	1	type89_grenadelauncher	3	("soldier_rifle_3" rocket(1) body(hardy))	21132>22233		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	jap_mg3_asst	asst	1	type38rifle	3	("soldier_mgun_3" rocket(1) body(hardy))	21332>22323		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	same as jap_mgun3
+jap	jap_mgun	line	1	type99_mg	3	("soldier_mgun_3" rocket(1) body(hardy))	11312>22323		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	jap_mgun2	line	1	type96_mg	3	("soldier_mgun_3" rocket(1) body(hardy))	11312>22323		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	jap_mgun3	line	1	type11_mg	3	("soldier_mgun_3" rocket(1) body(hardy))	11312>22323		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	jap_mg_asst	asst	1	type99rifle	3	("soldier_mgun_3" rocket(1) body(hardy))	21332>22323		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	same as jap_mgun
+jap	jap_officer	leader	1	nambu	3	("soldier_pistol_3" rocket(1) body(hardy))		3>1	250/150/1>200/100/0.9	1/1/1>0.75/1/0.8	
+jap	jap_rifle	line	1	type99rifle	3	("soldier_rifle_3" rocket(1) body(hardy))	21132>22233		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	jap_rifle2	line	1	type99rifle_bayonet	3	("soldier_rifle_3" rocket(1) body(hardy))	21132>22233		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	jap_rifle2b	line	1	type38rifle_bayonet	3	("soldier_rifle_3" rocket(1) body(hardy))	21132>22233		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	jap_rifleb	line	1	type38rifle	3	("soldier_rifle_3" rocket(1) body(hardy))	21132>22233		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	jap_rifle_grenadier	line	1	type99rifle	3	("soldier_rifle_3" rocket(1) body(hardy))	21132>22233		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	jap_saper	line	1	type100smg	2	("soldier_smg_2" rocket(1) body(hardy))			250/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	jap_smg	line	1	type100smg	3	("soldier_smg_3" rocket(1) body(hardy))	23112>23223		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	jap_smg2	line	1	type100smg_bayonet	3	("soldier_smg_3" rocket(1) body(hardy))	23112>23223		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	jap_smg2b	line	1	type100_44_bayonet	3	("soldier_smg_3" rocket(1) body(hardy))	23112>23223		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	jap_smg3	line	1	type2smg	3	("soldier_smg_3" rocket(1) body(hardy))	23112>23223		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	jap_smgb	line	1	type100_44	3	("soldier_smg_3" rocket(1) body(hardy))	23112>23223		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	jap_sniper_type97	special	1			(no weapon skill found: keep as is)					
+jap	jap_sniper_type99	special	1			(no weapon skill found: keep as is)					
+jap	jap_snlf_at	line	1	type100smg	7	("soldier_smg_7" rocket(7) body(hardy))	77777>67666		400/200/0.9>450/200/0.9	1/1/1>0.95/1/1	
+jap	jap_snlf_at2	line	1	type100smg	7	("soldier_smg_7" rocket(7) body(hardy))	77777>67666		400/200/0.9>450/200/0.9	1/1/1>0.95/1/1	
+jap	jap_snlf_atassist	asst	1	type100smg	7	("soldier_smg_7" rocket(1) body(hardy))	77777>67666	7>1	400/200/0.9>450/200/0.9	1/1/1>0.95/1/1	assists nobody on a card: kept at own level
+jap	jap_snlf_mg	line	1	type99_mg	7	("soldier_mgun_7" rocket(1) body(hardy))	77777>66766	7>1	400/200/0.9>450/200/0.9	1/1/1>0.95/1/1	
+jap	jap_snlf_mg_asst	asst	1	type99rifle	7	("soldier_mgun_7" rocket(1) body(hardy))	55577>66766	5>1	400/200/0.9>450/200/0.9	1/1/1>0.95/1/1	same as jap_snlf_mg_type99
+jap	jap_snlf_mg_type99	line	1	type99_mg	7	("soldier_mgun_7" rocket(1) body(hardy))	77777>66766	7>1	400/200/0.9>450/200/0.9	1/1/1>0.95/1/1	
+jap	jap_snlf_rifle_type99	line	1	type99rifle	7	("soldier_rifle_7" rocket(1) body(hardy))	55577>66676	5>1	400/200/0.9>450/200/0.9	1/1/1>0.95/1/1	
+jap	jap_snlf_type100_44	line	1	type100_44	7	("soldier_smg_7" rocket(1) body(hardy))	77777>67666	7>1	400/200/0.9>450/200/0.9	1/1/1>0.95/1/1	
+jap	jap_squadleader	leader	1	type100smg	4	("soldier_smg_4" rocket(1) body(hardy))	44343>44234			0.8/1/1>0.75/1/0.8	
+jap	jap_squadleader2	leader	1	type100smg_bayonet	4	("soldier_smg_4" rocket(1) body(hardy))	34232>44234			0.8/1/1>0.75/1/0.8	
+jap	jap_tankman2_single	crew	1	type100smg	2	("crew_<grade>")	22312	1	150/100/0.8	1.15/1.15/1.15	crew ladder: see draft
+jap	jap_tankman_single	crew	1	nambu	2	("crew_<grade>")	22212	1	100/100/0.8	1.1/1.1/1.1	crew ladder: see draft
+jap	jap_teishin_mg	line	1	type99_mg	7	("soldier_mgun_7" rocket(1) body(hardy))	55777>66766	5>1	400/200/0.9>450/200/0.9	0.9/1/1>0.95/1/1	
+jap	jap_teishin_type100_44_apminer	line	1	type100_44	7	("soldier_smg_7" rocket(1) body(hardy))	57557>67666	5>1	400/200/0.9>450/200/0.9	0.9/1/1>0.95/1/1	
+jap	jap_teishin_type2rifle	line	1	type2rifle	7	("soldier_rifle_7" rocket(1) body(hardy))	77777>66676	7>1	400/200/0.9>450/200/0.9	0.9/1/1>0.95/1/1	
+jap	jap_teishin_type2rifle_apminer	line	1	type2rifle	7	("soldier_rifle_7" rocket(1) body(hardy))	55577>66676	5>1	400/200/0.9>450/200/0.9	0.9/1/1>0.95/1/1	
+jap	jap_type4_atassist	asst	1	type100smg	2	("soldier_smg_2" rocket(2) body(hardy))		3>2	150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	assists nobody on a card: kept at own level
+jap	kamikaze	charge	1	type100smg	2	(own special values, kept)					kamikaze / charger / AT stick
+jap	ki_at_grenade	line	0	type99rifle	5	("soldier_rifle_5" rocket(1) body(hardy))	33355>43354	3>1		0.9/1/1>0.85/1/0.9	
+jap	ki_at_stick	charge	0	type99rifle	5	(own special values, kept)					kamikaze / charger / AT stick
+jap	ki_rifle	line	0	type99rifle	5	("soldier_rifle_5" rocket(1) body(hardy))	33353>43354	3>1		0.9/1/1>0.85/1/0.9	
+jap	ki_sa	line	0	type99rifle	6	("soldier_rifle_6" rocket(1) body(hardy))	44466>55565	4>1	300/150/0.9>400/200/0.9	0.9/1/1>0.95/1/1	
+jap	ki_sl	leader	0	type99rifle	6	("soldier_rifle_6" rocket(1) body(hardy))	44466>55565	4>1	300/150/0.9>400/200/0.9	0.9/1/1>0.95/1/1	
+jap	ki_smoke	line	0	type99rifle	5	("soldier_rifle_5" rocket(1) body(hardy))	33353>43354	3>1		0.9/1/1>0.85/1/0.9	
+jap	light_mortar	line	1	type44_carbine	3	("soldier_rifle_3" rocket(1) body(hardy))	21132>22233		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	light_mortar_asst	asst	1	type44_carbine	3	("soldier_rifle_3" rocket(1) body(hardy))	21132>22233		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	assists nobody on a card: kept at own level
+jap	mgun	line	1	type99_mg	3	("soldier_mgun_3" rocket(1) body(hardy))	11312>22323		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	mgun2	line	1	type96_mg	3	("soldier_mgun_3" rocket(1) body(hardy))	11312>22323		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	mgun2_ammo	asst	1	type38rifle	3	("soldier_mgun_3" rocket(1) body(hardy))	21132>22323		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	same as jap_mgun2
+jap	mgun2_asst	asst	1	type38rifle	3	("soldier_mgun_3" rocket(1) body(hardy))	21332>22323		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	same as jap_mgun2
+jap	mgun3	line	1	type11_mg	3	("soldier_mgun_3" rocket(1) body(hardy))	11312>22323		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	mgun_ammo	asst	1	type99rifle	3	("soldier_mgun_3" rocket(1) body(hardy))	21132>22323		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	same as jap_mgun
+jap	mgun_asst	asst	1	type99rifle	3	("soldier_mgun_3" rocket(1) body(hardy))	21332>22323		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	same as jap_mgun
+jap	oficer	line	1	nambu	3	("soldier_pistol_3" rocket(1) body(hardy))		3>1	250/150/1>200/100/0.9	1/1/1>0.75/1/0.8	
+jap	otsu_mg	line	0	type11_mg	3	("soldier_mgun_3" rocket(1) body(hardy))	11312>22323		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	otsu_mg_ammo	asst	0	type38rifle_bayonet	3	("soldier_rifle_3" rocket(1) body(hardy))	11132>22233		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	assists nobody on a card: kept at own level
+jap	otsu_mg_asst	asst	0	type38rifle_bayonet	3	("soldier_rifle_3" rocket(1) body(hardy))	11332>22233		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	assists nobody on a card: kept at own level
+jap	otsu_rifle	line	0	type38rifle_bayonet	3	("soldier_rifle_3" rocket(1) body(hardy))	11132>22233		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	otsu_sa	line	0	type38rifle_bayonet	4	("soldier_rifle_4" rocket(1) body(hardy))	32243>43244	2>1	150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	otsu_sl	leader	0	type38rifle_bayonet	4	("soldier_rifle_4" rocket(1) body(hardy))	32243>43244	2>1	150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	rifle	line	1	type99rifle	3	("soldier_rifle_3" rocket(1) body(hardy))	21132>22233		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	rifle2	line	1	type99rifle_bayonet	2	("soldier_rifle_2" rocket(1) body(hardy))	21122>11122		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	rifle2b	line	1	type38rifle_bayonet	2	("soldier_rifle_2" rocket(1) body(hardy))	21122>11122		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	rifleb	line	1	type38rifle	3	("soldier_rifle_3" rocket(1) body(hardy))	21132>22233		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	saper	line	1	type100smg	2	("soldier_smg_2" rocket(1) body(hardy))			250/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	smg	line	1	type100smg	3	("soldier_smg_3" rocket(1) body(hardy))	23112>23223		150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	smg2	line	1	type100smg_bayonet	2	("soldier_smg_2" rocket(1) body(hardy))			150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	smg3	line	1	type2smg	2	("soldier_smg_2" rocket(1) body(hardy))			150/100/0.9>200/100/0.9	0.8/1/1>0.75/1/0.8	
+jap	sniper	special	1			(no weapon skill found: keep as is)					
+jap	sniper2	special	1			(no weapon skill found: keep as is)					
+jap	squadleader	leader	1	type100smg	4	("soldier_smg_4" rocket(1) body(hardy))	44343>44234			0.8/1/1>0.75/1/0.8	
+jap	squadleader2	leader	1	type100smg_bayonet	3	("soldier_smg_3" rocket(1) body(hardy))	33232>23223			0.8/1/1>0.75/1/0.8	
+jap	sturmovik	line	1	type100smg	7	("soldier_smg_7" rocket(1) body(hardy))	77777>67666	7>1	400/200/0.9>450/200/0.9	1/1/1>0.95/1/1	
+jap	sturmovik2	line	1	type99_mg	7	("soldier_mgun_7" rocket(1) body(hardy))	77777>66766	7>1	400/200/0.9>450/200/0.9	1/1/1>0.95/1/1	
+jap	sturmovik3	line	1	type100smg	7	("soldier_smg_7" rocket(7) body(hardy))	77777>67666		400/200/0.9>450/200/0.9	1/1/1>0.95/1/1	
+jap	sturmovik4	line	1	type99rifle	7	("soldier_rifle_7" rocket(1) body(hardy))	77777>66676	7>1	400/200/0.9>450/200/0.9	1/1/1>0.95/1/1	
+jap	sturmovik6	line	1	type99_mg	7	("soldier_mgun_7" rocket(1) body(hardy))	77777>66766	7>1	400/200/0.9>450/200/0.9	1/1/1>0.95/1/1	
+jap	sturmovik6b	line	1	type38rifle	7	("soldier_rifle_7" rocket(1) body(hardy))	77777>66676	7>1	400/200/0.9>450/200/0.9	1/1/1>0.95/1/1	
+jap	super_officer	leader	0	nambu	3	("soldier_pistol_3" rocket(1) body(hardy))		3>1	250/150/1>200/100/0.9	1/1/1>0.75/1/0.8	
+jap	tankman	crew	1	nambu	2	("crew_<grade>")	22212	1	100/100/0.8	1.1/1.1/1.1	crew ladder: see draft
+jap	tankman2	crew	1	type100smg	2	("crew_<grade>")	22312	1	150/100/0.8	1.15/1.15/1.15	crew ladder: see draft
+jap	teishin_type97_atr	line	1	type99rifle	7	("soldier_rifle_7" rocket(1) body(hardy))	77777>66676	7>1	400/200/0.9>450/200/0.9	0.9/1/1>0.95/1/1	
+jap	teishin_type97_atr_asst	asst	1	type99rifle	7	("soldier_mgun_7" rocket(1) body(hardy))	77777>66766	7>1	400/200/0.9>450/200/0.9	0.9/1/1>0.95/1/1	same as jap_teishin_mg
+jap	vehicle_supporter	support	1	type44_carbine	2	("support_<grade>")	22322	1	150/100/0.9	1/1/1	crew ladder: see draft
+jap	vehicle_supporter_single	support	1	type44_carbine	2	("support_<grade>")	22322	1	150/100/0.9	1/1/1	crew ladder: see draft
+rus	ap_miner	line	1	ppsh41	2	("soldier_smg_2" rocket(1) body(line))					
+rus	at_miner	line	1	ppsh41	2	("soldier_smg_2" rocket(1) body(line))					
+rus	at_rifle	line	1			(no weapon skill found: keep as is)					
+rus	at_rifle2	line	1	ppsh	2	("soldier_smg_2" rocket(1) body(line))	22132>22112				
+rus	bazooker	rocket	1	bazooka	3	("soldier_rocket_3" rocket(3) body(line))	22112>22233				
+rus	bazooker2	line	1	ppsh	2	("soldier_smg_2" rocket(1) body(line))		3>1			
+rus	conscript_rifle	line	1	mosin	1	("soldier_rifle_1" rocket(1) body(line))					
+rus	conscript_smg	line	1	ppsh	1	("soldier_smg_1" rocket(1) body(line))					
+rus	elite	line	1	mosin	4	("soldier_rifle_4" rocket(1) body(line))	33343>43244	3>1	200/150/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus	elite2	line	1	svt40	4	("soldier_rifle_4" rocket(1) body(line))	33343>43244	3>1	200/150/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus	elite2_40	line	1	svt40	4	("soldier_rifle_4" rocket(1) body(line))	33343>43244	3>1	200/150/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus	elite3	line	1	dp	4	("soldier_mgun_4" rocket(1) body(line))	33433>43434	3>1	200/150/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus	elite3_40	line	1	dp	4	("soldier_mgun_4" rocket(1) body(line))	33433>43434	3>1	200/150/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus	elite_40	line	1	mosin	4	("soldier_rifle_4" rocket(1) body(line))	33343>43244	3>1	200/150/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus	elite_mg_asst	asst	1	mosin	4	("soldier_mgun_4" rocket(1) body(line))	33443>43434	3>1	200/150/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	same as elite3_40
+rus	flamer	line	1			(no weapon skill found: keep as is)					
+rus	flamer2	line	1	ppsh	2	("soldier_smg_2" rocket(1) body(line))	22122>22112				
+rus	flamer3	line	1			(no weapon skill found: keep as is)					
+rus	home_guard	line	1	mosin	1	("soldier_rifle_1" rocket(1) body(line))				0.75/0.8/0.8>0.75/1/0.8	
+rus	home_guard2	line	1	ppsh	1	("soldier_smg_1" rocket(1) body(line))				0.75/0.8/0.8>0.75/1/0.8	
+rus	home_guard3	line	1	mp38	1	("soldier_smg_1" rocket(1) body(line))				0.75/0.8/0.8>0.75/1/0.8	
+rus	home_guard_mg	line	1	mg34	1	("soldier_mgun_1" rocket(1) body(line))				0.75/0.8/0.8>0.75/1/0.8	
+rus	mgun_41	line	1	dp	2	("soldier_mgun_2" rocket(1) body(line))	11212>21212				
+rus	mgun_asst_41	asst	1	mosin	2	("soldier_mgun_2" rocket(1) body(line))	21222>21212				same as mgun_41
+rus	oficer	line	1	tt	3	("soldier_pistol_3" rocket(1) body(line))		3>1	250/150/1>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus	radioman_mortar	line	1	ppsh	2	("soldier_smg_2" rocket(1) body(line))					
+rus	rifle3	line	0	mosin	2	("soldier_rifle_2" rocket(1) body(line))	21122>11122				
+rus	rifle_41	line	1	mosin	2	("soldier_rifle_2" rocket(1) body(line))	21122>11122				
+rus	rifle_sa	line	1	svt40	3	("soldier_rifle_3" rocket(1) body(line))	21132>22233				
+rus	rus_ap_miner	line	1	ppsh41	2	("soldier_smg_2" rocket(1) body(line))					
+rus	rus_at_miner	line	1	ppsh41	2	("soldier_smg_2" rocket(1) body(line))					
+rus	rus_at_rifle	line	1			(no weapon skill found: keep as is)					
+rus	rus_at_rifleassist	asst	1	ppsh	2	("soldier_smg_2" rocket(1) body(line))	22132>22112				assists nobody on a card: kept at own level
+rus	rus_bazooker	rocket	1	bazooka	3	("soldier_rocket_3" rocket(3) body(line))	22112>22233				
+rus	rus_bazookerassist	asst	1	ppsh	2	("soldier_rocket_3" rocket(1) body(line))	22112>22233	3>1			same as rus_bazooker
+rus	rus_bsf_marine	line	1	mosin	6	("soldier_rifle_6" rocket(1) body(line))		5>1		0.85/1/0.9>0.95/1/1	
+rus	rus_bsf_marine2	line	1	svt40	6	("soldier_rifle_6" rocket(1) body(line))		5>1		0.85/1/0.9>0.95/1/1	
+rus	rus_bsf_marine3	line	1	dp	6	("soldier_mgun_6" rocket(1) body(line))		5>1		0.85/1/0.9>0.95/1/1	
+rus	rus_bsf_marine_mg_asst	asst	1	mosin	6	("soldier_mgun_6" rocket(1) body(line))	55665>55655	5>1		0.85/1/0.9>0.95/1/1	same as rus_bsf_marine3
+rus	rus_elite_tankcommander	crew	0	pps43	5	("crew_<grade>")	45734	3	400/200/1	1.2/1.2/1.1	crew ladder: see draft
+rus	rus_elite_tankman	crew	0	ppsh41	3	("crew_<grade>")	33533	3	400/200/1	1.15/1.15/1.05	crew ladder: see draft
+rus	rus_flamer	line	1			(no weapon skill found: keep as is)					
+rus	rus_flamerassist	asst	1	ppsh	2	("soldier_smg_2" rocket(1) body(line))	22122>22112				assists nobody on a card: kept at own level
+rus	rus_marine_mg	line	1	dp	4	("soldier_mgun_4" rocket(1) body(line))	33433>43434	3>1	200/150/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus	rus_marine_mgassist	asst	1	mosin	4	("soldier_mgun_4" rocket(1) body(line))	33443>43434	3>1	200/150/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	same as rus_marine_mg
+rus	rus_marine_rifle	line	1	mosin	4	("soldier_rifle_4" rocket(1) body(line))	33343>43244	3>1	200/150/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus	rus_marine_svt	line	1	svt40	4	("soldier_rifle_4" rocket(1) body(line))	33343>43244	3>1	200/150/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus	rus_mgun	line	1	dp	3	("soldier_mgun_3" rocket(1) body(line))					
+rus	rus_mgun_asst	asst	1	mosin	3	("soldier_mgun_3" rocket(1) body(line))	21333>22323				same as rus_mgun
+rus	rus_officer	leader	1	tt	3	("soldier_pistol_3" rocket(1) body(line))		3>1	250/150/1>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus	rus_para_mg	line	0	dt	7	("soldier_mgun_7" rocket(1) body(line))	77777>66766	7>1		0.75/1/0.8>0.95/1/1	
+rus	rus_para_mg_asst	asst	0	mosin_vet	7	("soldier_rifle_7" rocket(1) body(line))	77777>66676	7>1		0.75/1/0.8>0.95/1/1	assists nobody on a card: kept at own level
+rus	rus_para_rifle	line	0	mosin_vet	7	("soldier_rifle_7" rocket(1) body(line))	77777>66676	7>1		0.75/1/0.8>0.95/1/1	
+rus	rus_para_sa	line	0	svt40	7	("soldier_rifle_7" rocket(1) body(line))	77777>66676	7>1		0.75/1/0.8>0.95/1/1	
+rus	rus_para_sl	leader	0	pps43	7	("soldier_smg_7" rocket(1) body(line))	77777>67666	7>1		0.75/1/0.8>0.95/1/1	
+rus	rus_para_smg3	line	0	pps43	7	("soldier_smg_7" rocket(1) body(line))	77777>67666	7>1		0.75/1/0.8>0.95/1/1	
+rus	rus_partisan_at	line	1	mauzer	1	("soldier_rifle_1" rocket(1) body(line))				0.75/0.8/0.8>0.75/1/0.8	
+rus	rus_partisan_mg	line	1	mg34	1	("soldier_mgun_1" rocket(1) body(line))				0.75/0.8/0.8>0.75/1/0.8	
+rus	rus_partisan_mp38	line	1	mp38	1	("soldier_smg_1" rocket(1) body(line))				0.75/0.8/0.8>0.75/1/0.8	
+rus	rus_partisan_rifle	line	1	mosin	1	("soldier_rifle_1" rocket(1) body(line))				0.75/0.8/0.8>0.75/1/0.8	
+rus	rus_partisan_smg	line	1	ppsh	1	("soldier_smg_1" rocket(1) body(line))				0.75/0.8/0.8>0.75/1/0.8	
+rus	rus_radioman_mortar	line	1	ppsh	2	("soldier_smg_2" rocket(1) body(line))					
+rus	rus_rifle	line	1	mosin	3	("soldier_rifle_3" rocket(1) body(line))	21133>22233				
+rus	rus_rifle_sa	line	1	svt40	3	("soldier_rifle_3" rocket(1) body(line))	21132>22233				
+rus	rus_saper	line	1	ppsh41	2	("soldier_smg_2" rocket(1) body(line))				0.85/1/0.9>0.75/1/0.8	
+rus	rus_sapper_rifle1	line	1	mosin	3	("soldier_rifle_3" rocket(1) body(line))	21132>22233	2>1		0.85/1/0.9>0.75/1/0.8	
+rus	rus_sapper_rifle2	line	1	mosin	3	("soldier_rifle_3" rocket(1) body(line))	21132>22233	2>1		0.85/1/0.9>0.75/1/0.8	
+rus	rus_sapper_rifle3	line	1	mosin	3	("soldier_rifle_3" rocket(1) body(line))	21132>22233	2>1		0.85/1/0.9>0.75/1/0.8	
+rus	rus_sapper_rifle4	line	1	mosin	3	("soldier_rifle_3" rocket(1) body(line))	21132>22233	2>1		0.85/1/0.9>0.75/1/0.8	
+rus	rus_sapper_sl	leader	1	pps43	4	("soldier_smg_4" rocket(1) body(line))	24223>44234	2>1		0.85/1/0.9>0.75/1/0.8	
+rus	rus_sapper_smg	line	1	pps43	3	("soldier_smg_3" rocket(1) body(line))	23112>23223	2>1		0.85/1/0.9>0.75/1/0.8	
+rus	rus_sapper_smg2	line	1	ppsh	3	("soldier_smg_3" rocket(1) body(line))	23112>23223	2>1		0.85/1/0.9>0.75/1/0.8	
+rus	rus_shock_flame	line	1			(no weapon skill found: keep as is)					
+rus	rus_shock_mg	line	1	dp	4	("soldier_mgun_4" rocket(1) body(line))	32423>43434	2>1	200/150/0.9>150/100/0.9		
+rus	rus_shock_mg_asst	asst	1	mosin	4	("soldier_mgun_4" rocket(1) body(line))	32443>43434	2>1	200/150/0.9>150/100/0.9		same as rus_shock_mg
+rus	rus_shock_rifle	line	1	mosin	4	("soldier_rifle_4" rocket(1) body(line))	32243>43244	2>1	200/150/0.9>150/100/0.9		
+rus	rus_shock_sa	line	1	svt40	4	("soldier_rifle_4" rocket(1) body(line))	32243>43244	2>1	200/150/0.9>150/100/0.9		
+rus	rus_shock_sl	leader	1	mosin	4	("soldier_rifle_5" rocket(1) body(line))	43344>43354	3>1		0.75/1/0.8>0.85/1/0.9	leader: squad is 4, so 4 > 5
+rus	rus_shock_sl_smg	leader	1	ppsh	4	("soldier_smg_5" rocket(1) body(line))	34223>45334	2>1		0.75/1/0.8>0.85/1/0.9	leader: squad is 4, so 4 > 5
+rus	rus_shock_smg	line	1	ppsh41	4	("soldier_smg_4" rocket(1) body(line))	34223>44234	2>1	200/150/0.9>150/100/0.9		
+rus	rus_shock_smg2	line	1	ppsh	4	("soldier_smg_4" rocket(1) body(line))	34223>44234	2>1	200/150/0.9>150/100/0.9		
+rus	rus_shock_smg3	line	1	pps43	4	("soldier_smg_4" rocket(1) body(line))	34223>44234	2>1	200/150/0.9>150/100/0.9		
+rus	rus_smg	line	1	ppsh	3	("soldier_smg_3" rocket(1) body(line))	23113>23223				
+rus	rus_smg2	line	1	ppsh	3	("soldier_smg_3" rocket(1) body(line))	23113>23223				
+rus	rus_smg2_43	line	1	pps43	3	("soldier_smg_3" rocket(1) body(line))	23113>23223				
+rus	rus_sniper_mosin	special	1			(no weapon skill found: keep as is)					
+rus	rus_sniper_svtscoped	special	1	svt40_s	5	("soldier_rifle_5" rocket(1) body(line))	22152>43354		350/150/1>200/150/0.9	0.75/1/0.8>0.85/1/0.9	
+rus	rus_squadleader2_43	leader	1	pps43	4	("soldier_smg_4" rocket(1) body(line))	44343>44234	2>1	200/100/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus	rus_squadleader_smg	leader	1	pps43	4	("soldier_smg_4" rocket(1) body(line))	44343>44234	2>1	200/100/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus	rus_tankman2_single	crew	1	ppsh41	3	("crew_<grade>")	33312	1	150/100/0.8	1.2/1.1/0.95	crew ladder: see draft
+rus	rus_tankman_single	crew	1	nagan	3	("crew_<grade>")	33212	1	100/100/0.8	1.1/1.1/0.9	crew ladder: see draft
+rus	rus_vetsniper	special	0			(no weapon skill found: keep as is)					
+rus	rus_vet_tankman2_single	crew	1	ppsh41	4	("crew_<grade>")	44512	1	150/100/0.8	1.1/1/0.95	crew ladder: see draft
+rus	saper	line	1	ppsh41	2	("soldier_smg_2" rocket(1) body(line))				0.85/1/0.9>0.75/1/0.8	
+rus	smg2	line	0	ppsh	3	("soldier_smg_3" rocket(1) body(line))	23113>23223				
+rus	smg3	line	1	ppsh41	4	("soldier_smg_4" rocket(1) body(line))	34223>44234	2>1	250/100/0.9>150/100/0.9		
+rus	smg_41	line	1	ppsh	2	("soldier_smg_2" rocket(1) body(line))					
+rus	sniper	special	1			(no weapon skill found: keep as is)					
+rus	sniper2	special	0			(no weapon skill found: keep as is)					
+rus	sniper3	special	1	svt40_s	5	("soldier_rifle_5" rocket(1) body(line))	22152>43354		350/150/1>200/150/0.9	0.75/1/0.8>0.85/1/0.9	
+rus	squadleader_41	leader	1	mosin	3	("soldier_rifle_3" rocket(1) body(line))	33232>22233		200/100/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus	tankman	crew	0	nagan	3	("crew_<grade>")	33212	1	100/100/0.8	1.1/1.1/0.9	crew ladder: see draft
+rus	tankman2	crew	0	ppsh41	3	("crew_<grade>")	33312	1	150/100/0.8	1.2/1.1/0.95	crew ladder: see draft
+rus	tankman2_41	crew	1	ppsh41	2	("crew_<grade>")	22212	1	150/100/0.8	1.1/1/0.95	crew ladder: see draft
+rus	tankman_41	crew	1	nagan	2	("crew_<grade>")	22212	1	100/100/0.8	1/1/0.9	crew ladder: see draft
+rus	vehicle_supporter	support	0	ppsh41	2	("support_<grade>")	22323	2	150/100/0.9	0.85/1/1	crew ladder: see draft
+rus	vehicle_supporter_41	support	1	ppsh41	2	("support_<grade>")	22212	1	150/100/0.9	0.85/1/1	crew ladder: see draft
+rus	vehicle_supporter_single	support	1	ppsh41	2	("support_<grade>")	22323	2	150/100/0.9	0.85/1/1	crew ladder: see draft
+rus	vet_tankman	crew	1	ppsh41	5	("crew_<grade>")	55555	5	200/100/0.9	1/1/0.9	crew ladder: see draft
+rus	vet_tankman2	crew	1	ppsh41	4	("crew_<grade>")	44512	1	150/100/0.8	1.1/1/0.95	crew ladder: see draft
+rus_guard	elite_tankman	crew	0	ppsh41	3	("crew_<grade>")	33533	3	400/200/1	1.15/1.15/1.05	crew ladder: see draft
+rus_guard	elite_tankman2	crew	0	pps43	5	("crew_<grade>")	45734	3	400/200/1	1.2/1.2/1.1	crew ladder: see draft
+rus_guard	guards_shock_flame	line	1			(no weapon skill found: keep as is)					
+rus_guard	guards_shock_mg	line	1	dp	4	("soldier_mgun_4" rocket(1) body(line))	32423>43434	2>1	250/150/0.9>150/100/0.9		
+rus_guard	guards_shock_mg_asst	asst	1	mosin_vet	4	("soldier_mgun_4" rocket(1) body(line))	32443>43434	2>1	250/150/0.9>150/100/0.9		same as guards_shock_mg
+rus_guard	guards_shock_rifle	line	1	mosin_vet	4	("soldier_rifle_4" rocket(1) body(line))	32243>43244	2>1	250/150/0.9>150/100/0.9		
+rus_guard	guards_shock_sa	line	1	svt40	4	("soldier_rifle_4" rocket(1) body(line))	32243>43244	2>1	250/150/0.9>150/100/0.9		
+rus_guard	guards_shock_sl	leader	1	svt40	4	("soldier_rifle_5" rocket(1) body(line))	43344>43354	3>1	250/150/0.9>200/150/0.9	0.75/1/0.8>0.85/1/0.9	leader: squad is 4, so 4 > 5
+rus_guard	guards_shock_sl_smg	leader	1	pps43	4	("soldier_smg_5" rocket(1) body(line))	34223>45334	2>1	250/150/0.9>200/150/0.9	0.75/1/0.8>0.85/1/0.9	leader: squad is 4, so 4 > 5
+rus_guard	guards_shock_smg2	line	1	ppsh	4	("soldier_smg_4" rocket(1) body(line))	34223>44234	2>1	250/150/0.9>150/100/0.9		
+rus_guard	guards_shock_smg3	line	1	pps43	4	("soldier_smg_4" rocket(1) body(line))	34223>44234	2>1	250/150/0.9>150/100/0.9		
+rus_guard	guard_ap_miner	line	1	ppsh41	2	("soldier_smg_2" rocket(1) body(line))					
+rus_guard	guard_at_miner	line	1	ppsh41	2	("soldier_smg_2" rocket(1) body(line))					
+rus_guard	guard_at_rifle	line	1			(no weapon skill found: keep as is)					
+rus_guard	guard_at_rifleassist	asst	1	ppsh	2	("soldier_smg_2" rocket(1) body(line))	22132>22112				assists nobody on a card: kept at own level
+rus_guard	guard_bazooker	rocket	1	bazooka	3	("soldier_rocket_3" rocket(3) body(line))	22112>22233				
+rus_guard	guard_bazookerassist	asst	1	ppsh	2	("soldier_rocket_3" rocket(1) body(line))	22112>22233	3>1			same as guard_bazooker
+rus_guard	guard_elite_guards_shock_flame	line	1			(no weapon skill found: keep as is)					
+rus_guard	guard_elite_guards_shock_mg	line	1	dt	4	("soldier_mgun_4" rocket(1) body(line))	32423>43434	2>1	250/150/0.9>150/100/0.9		
+rus_guard	guard_elite_guards_shock_mg2	line	1	mg34	4	("soldier_mgun_4" rocket(1) body(line))	32423>43434	2>1	250/150/0.9>150/100/0.9		
+rus_guard	guard_elite_guards_shock_mg2_asst	asst	1	mosin_vet	4	("soldier_mgun_4" rocket(1) body(line))	32443>43434	2>1	250/150/0.9>150/100/0.9		same as guard_elite_guards_shock_mg
+rus_guard	guard_elite_guards_shock_mg_asst	asst	1	mosin_vet	4	("soldier_mgun_4" rocket(1) body(line))	32443>43434	2>1	250/150/0.9>150/100/0.9		same as guard_elite_guards_shock_mg
+rus_guard	guard_elite_guards_shock_rifle	line	1	mosin_vet	4	("soldier_rifle_4" rocket(1) body(line))	32243>43244	2>1	250/150/0.9>150/100/0.9		
+rus_guard	guard_elite_guards_shock_sa	line	1	svt40	4	("soldier_rifle_4" rocket(1) body(line))	32243>43244	2>1	250/150/0.9>150/100/0.9		
+rus_guard	guard_elite_guards_shock_sl	leader	1	svt40	4	("soldier_rifle_5" rocket(1) body(line))	43344>43354	3>1	250/150/0.9>200/150/0.9	0.75/1/0.8>0.85/1/0.9	leader: squad is 4, so 4 > 5
+rus_guard	guard_elite_guards_shock_sl_smg	leader	1	pps43	4	("soldier_smg_5" rocket(1) body(line))	34223>45334	2>1	250/150/0.9>200/150/0.9	0.75/1/0.8>0.85/1/0.9	leader: squad is 4, so 4 > 5
+rus_guard	guard_elite_guards_shock_smg2	line	1	ppsh	4	("soldier_smg_4" rocket(1) body(line))	34223>44234	2>1	250/150/0.9>150/100/0.9		
+rus_guard	guard_elite_guards_shock_smg3	line	1	pps43	4	("soldier_smg_4" rocket(1) body(line))	34223>44234	2>1	250/150/0.9>150/100/0.9		
+rus_guard	guard_elite_guard_mg	line	1	dt	3	("soldier_mgun_3" rocket(1) body(line))	21333>22323		200/100/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus_guard	guard_elite_guard_mg_asst	asst	1	mosin_vet	3	("soldier_mgun_3" rocket(1) body(line))	21333>22323		200/100/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	same as guard_elite_guard_mg
+rus_guard	guard_elite_guard_rifle	line	1	mosin_vet	3	("soldier_rifle_3" rocket(1) body(line))	21133>22233		200/100/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus_guard	guard_elite_guard_sa	line	1	svt40	3	("soldier_rifle_3" rocket(1) body(line))	21133>22233		200/100/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus_guard	guard_elite_guard_sl	leader	1	ppsh41	3	("soldier_smg_4" rocket(1) body(line))	23233>44234	2>1	250/125/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	leader: squad is 3, so 3 > 4
+rus_guard	guard_elite_guard_smg	line	1	ppsh41	3	("soldier_smg_3" rocket(1) body(line))	23113>23223		200/100/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus_guard	guard_elite_guard_smg2	line	1	pps43	3	("soldier_smg_3" rocket(1) body(line))	23113>23223		200/100/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus_guard	guard_elite_tankcommander	crew	0	pps43	5	("crew_<grade>")	45734	3	400/200/1	1.2/1.2/1.1	crew ladder: see draft
+rus_guard	guard_elite_tankman	crew	0	ppsh41	3	("crew_<grade>")	33533	3	400/200/1	1.15/1.15/1.05	crew ladder: see draft
+rus_guard	guard_mg	line	1	dp	3	("soldier_mgun_3" rocket(1) body(line))	21333>22323		200/100/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus_guard	guard_mg_asst	asst	1	mosin_vet	3	("soldier_mgun_3" rocket(1) body(line))	21333>22323		200/100/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	same as guard_mg
+rus_guard	guard_officer	leader	1	tt	3	("soldier_pistol_3" rocket(1) body(line))		3>1	250/150/1>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus_guard	guard_piat	rocket	1	piatrocket	3	("soldier_rocket_3" rocket(3) body(line))	22112>22233				
+rus_guard	guard_piatassist	asst	1	ppsh	2	("soldier_rocket_3" rocket(1) body(line))	22112>22233	3>1			same as guard_piat
+rus_guard	guard_recon_rifle	line	1	mosin	3	("soldier_rifle_3" rocket(1) body(line))	21133>22233			0.85/1/0.9>0.75/1/0.8	
+rus_guard	guard_recon_sl	leader	1	pps43	4	("soldier_smg_4" rocket(1) body(line))	34224>44234	2>1		0.85/1/0.9>0.75/1/0.8	
+rus_guard	guard_recon_smg	line	1	ppsh	3	("soldier_smg_3" rocket(1) body(line))	23113>23223			0.85/1/0.9>0.75/1/0.8	
+rus_guard	guard_recon_smg2	line	1	pps43	3	("soldier_smg_3" rocket(1) body(line))	23113>23223			0.85/1/0.9>0.75/1/0.8	
+rus_guard	guard_rifle	line	1	mosin_vet	3	("soldier_rifle_3" rocket(1) body(line))	21133>22233		200/100/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus_guard	guard_sa	line	1	svt40	3	("soldier_rifle_3" rocket(1) body(line))	21133>22233		200/100/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus_guard	guard_sapper_rifle1	line	1	mosin	3	("soldier_rifle_3" rocket(1) body(line))	21132>22233	2>1		0.85/1/0.9>0.75/1/0.8	
+rus_guard	guard_sapper_rifle2	line	1	mosin	3	("soldier_rifle_3" rocket(1) body(line))	21132>22233	2>1		0.85/1/0.9>0.75/1/0.8	
+rus_guard	guard_sapper_rifle3	line	1	mosin	3	("soldier_rifle_3" rocket(1) body(line))	21132>22233	2>1		0.85/1/0.9>0.75/1/0.8	
+rus_guard	guard_sapper_rifle4	line	1	mosin	3	("soldier_rifle_3" rocket(1) body(line))	21132>22233	2>1		0.85/1/0.9>0.75/1/0.8	
+rus_guard	guard_sapper_rifle5	line	1	mosin	3	("soldier_rifle_3" rocket(1) body(line))	21132>22233	2>1		0.85/1/0.9>0.75/1/0.8	
+rus_guard	guard_sapper_sl	leader	1	pps43	4	("soldier_smg_4" rocket(1) body(line))	24223>44234	2>1		0.85/1/0.9>0.75/1/0.8	
+rus_guard	guard_sapper_smg	line	1	pps43	3	("soldier_smg_3" rocket(1) body(line))	23112>23223	2>1		0.85/1/0.9>0.75/1/0.8	
+rus_guard	guard_sapper_smg2	line	1	ppsh	3	("soldier_smg_3" rocket(1) body(line))	23112>23223	2>1		0.85/1/0.9>0.75/1/0.8	
+rus_guard	guard_sl	leader	1	ppsh41	3	("soldier_smg_4" rocket(1) body(line))	23233>44234	2>1	250/125/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	leader: squad is 3, so 3 > 4
+rus_guard	guard_smg	line	1	ppsh41	3	("soldier_smg_3" rocket(1) body(line))	23113>23223		200/100/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus_guard	guard_smg2	line	1	pps43	3	("soldier_smg_3" rocket(1) body(line))	23113>23223		200/100/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+rus_guard	guard_sniper_elite	special	0			(no weapon skill found: keep as is)					
+rus_guard	guard_sniper_mosin	special	1			(no weapon skill found: keep as is)					
+rus_guard	guard_sniper_svtscope	special	1	svt40_s_vet	4	("soldier_rifle_4" rocket(1) body(line))	22142>43244		350/150/1>150/100/0.9		
+rus_guard	rus_guard_tankman2_single	crew	1	pps43	5	("crew_<grade>")	55555	4	150/100/0.9	1.1/1/1	crew ladder: see draft
+rus_guard	rus_guard_tankman_single	crew	1	nagan	5	("crew_<grade>")	55325	2	150/100/0.9	1/1/1	crew ladder: see draft
+rus_guard	rus_guard_vet_tankman2_single	crew	1	pps43	6	("crew_<grade>")	66666	6	200/100/0.9	1.1/1/0.95	crew ladder: see draft
+rus_guard	tankman	crew	0	nagan	5	("crew_<grade>")	55325	2	150/100/0.9	1/1/1	crew ladder: see draft
+rus_guard	tankman2	crew	0	pps43	5	("crew_<grade>")	55555	4	150/100/0.9	1.1/1/1	crew ladder: see draft
+rus_guard	vehicle_supporter	support	0	mosin	2	("support_<grade>")	22323	2	150/100/0.9	0.85/1/1	crew ladder: see draft
+rus_guard	vehicle_supporter_single	support	1	mosin	2	("support_<grade>")	22323	2	150/100/0.9	0.85/1/1	crew ladder: see draft
+rus_guard	vet_tankman	crew	0	ppsh41	5	("crew_<grade>")	55555	5	200/100/0.9	1/1/0.9	crew ladder: see draft
+rus_guard	vet_tankman2	crew	0	pps43	6	("crew_<grade>")	66666	6	200/100/0.9	1.1/1/0.95	crew ladder: see draft
+usa	ap_miner	line	1	m3a	3	("soldier_smg_3" rocket(1) body(line))					
+usa	at_miner	line	1	m3a	3	("soldier_smg_3" rocket(1) body(line))					
+usa	bazooker	line	1	garand	3	("soldier_rifle_3" rocket(3) body(line))		4>3			
+usa	bazooker2	line	1	garand	3	("soldier_rifle_3" rocket(1) body(line))		4>1			
+usa	devil_brigade_demo	line	1	garand	6	("soldier_rifle_6" rocket(1) body(line))	66666>55565	6>1			
+usa	devil_brigade_grenadier	line	1	garand	6	("soldier_rifle_6" rocket(1) body(line))	66666>55565	6>1			
+usa	devil_brigade_mg	line	1	johnson_m1941_rifle	6	("soldier_rifle_6" rocket(1) body(line))	66666>55565	6>1			
+usa	devil_brigade_radio	line	1	garand	6	("soldier_rifle_6" rocket(1) body(line))	66666>55565	6>1			
+usa	devil_brigade_rifle	line	1	garand	6	("soldier_rifle_6" rocket(1) body(line))	66666>55565	6>1			
+usa	devil_brigade_sl	leader	1	thompson	6	("soldier_smg_7" rocket(1) body(line))	66666>67666	6>1	350/200/0.9>400/200/0.9		leader: squad is 6, so 6 > 7
+usa	elite	line	1	m1a1_carbine	5	("soldier_rifle_5" rocket(1) body(line))	44454>43354	4>1	250/150/0.9>200/150/0.9		
+usa	elite3	line	1	bar_rifle	5	("soldier_rifle_5" rocket(1) body(line))	44554>43354	4>1	250/150/0.9>200/150/0.9		
+usa	elite3b	line	1	browning_m19a6	5	("soldier_mgun_5" rocket(1) body(line))	44554>43534	4>1	250/150/0.9>200/150/0.9		
+usa	elite4_sgt	line	1	thompson	5	("soldier_smg_5" rocket(1) body(line))	35333>45334	3>1	250/150/0.9>200/150/0.9		
+usa	elite5	line	1	garand	4	("soldier_rifle_4" rocket(1) body(line))	33343>43244	3>1	200/150/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+usa	elite6	line	1	bar_rifle	4	("soldier_rifle_4" rocket(1) body(line))	33443>43244	3>1	200/150/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+usa	eliteb	line	1	garand	5	("soldier_rifle_5" rocket(1) body(line))	44454>43354	4>1	250/150/0.9>200/150/0.9		
+usa	elitec	line	1			(no weapon skill found: keep as is)					
+usa	elite_sgt	line	1	thompson	6	("soldier_smg_6" rocket(1) body(line))	46444>56555	4>1	300/150/0.9>350/200/0.9	0.85/1/0.9>0.95/1/1	
+usa	elite_tankman	crew	0	colt	4	("crew_<grade>")	44533	3	100/100/0.8	1.15/1.15/1.05	crew ladder: see draft
+usa	elite_tankman2	crew	0	m3a	4	("crew_<grade>")	44733	3	150/100/0.8	1.2/1.2/1.1	crew ladder: see draft
+usa	flamer	line	1			(no weapon skill found: keep as is)					
+usa	flamer2	line	1	m3a	3	("soldier_smg_3" rocket(1) body(line))	33223>23223				
+usa	mgun	line	1	bar_rifle	3	("soldier_rifle_3" rocket(1) body(line))	22333>22233				
+usa	mgun2	line	1	browning_m19a6	3	("soldier_mgun_3" rocket(1) body(line))	22333>22323				
+usa	oficer	line	1	colt	5	("soldier_pistol_5" rocket(1) body(line))	55444>55555	3>1	250/150/1>200/150/0.9		
+usa	paramarine	line	1	johnson	6	("soldier_rifle_6" rocket(1) body(line))		5>1			
+usa	paramarine2	line	1	m50reising	6	("soldier_smg_6" rocket(1) body(line))		5>1			
+usa	paramarine3	line	1	johnson_m1941_rifle	6	("soldier_rifle_6" rocket(1) body(line))	55665>55565	5>1			
+usa	paramarineb	line	1	garand	6	("soldier_rifle_6" rocket(1) body(line))		5>1			
+usa	paramarine_sgt	line	1	m50reising	6	("soldier_smg_6" rocket(1) body(line))		5>1			
+usa	radioman_mortar	line	1	m3a	3	("soldier_smg_3" rocket(1) body(line))	33223>23223				
+usa	rifle	line	1	garand	3	("soldier_rifle_3" rocket(1) body(line))					
+usa	rifle2	line	1	garand	3	("soldier_rifle_3" rocket(1) body(line))					
+usa	rifle3	line	1	m1_carbine	3	("soldier_rifle_3" rocket(1) body(line))					
+usa	saper	line	1	m3a	3	("soldier_smg_3" rocket(1) body(line))				0.85/1/0.9>0.75/1/0.8	
+usa	shotgun	line	1	m12_shotgun	3	("soldier_rifle_3" rocket(1) body(line))					
+usa	smg	line	1	thompson	3	("soldier_smg_3" rocket(1) body(line))					
+usa	smg2	line	1	thompson	3	("soldier_smg_3" rocket(1) body(line))					
+usa	sniper	special	1			(no weapon skill found: keep as is)					
+usa	squadleader	leader	1	thompson	4	("soldier_smg_4" rocket(1) body(line))	34334>44234	2>1	200/100/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+usa	squadleader2	leader	1	thompson	4	("soldier_smg_4" rocket(1) body(line))	34334>44234	2>1	200/100/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+usa	sturmovik	line	1	m1_carbine	6	("soldier_rifle_6" rocket(1) body(line))		5>1			
+usa	sturmovik2	line	1	bar_rifle	6	("soldier_rifle_6" rocket(1) body(line))	55665>55565	5>1			
+usa	sturmovik4	line	1	garand	6	("soldier_rifle_6" rocket(1) body(line))		5>1			
+usa	sturmovik5	line	1	m1_carbine	6	("soldier_rifle_6" rocket(6) body(line))					
+usa	sturmovik5b	line	1	m1_carbine	6	("soldier_rifle_6" rocket(1) body(line))		5>1			
+usa	sturmovik6	line	1	bar_rifle	6	("soldier_rifle_6" rocket(1) body(line))	55665>55565	5>1			
+usa	sturmovik6b	line	1	garand	6	("soldier_rifle_6" rocket(1) body(line))		5>1			
+usa	sturmovik_sgt	line	1	m1_carbine	6	("soldier_rifle_6" rocket(1) body(line))		5>1	400/200/0.9>350/200/0.9		
+usa	tankman	crew	1	colt	3	("crew_<grade>")	33223	2	100/100/0.8	1/1/0.9	crew ladder: see draft
+usa	tankman2	crew	1	m3a	3	("crew_<grade>")	33323	2	150/100/0.8	1.1/1/0.95	crew ladder: see draft
+usa	usa_82ndairborne_bar	line	1	bar_rifle	5	("soldier_rifle_5" rocket(1) body(line))	44554>43354	4>1	250/150/0.9>200/150/0.9		
+usa	usa_82ndairborne_barassist	asst	1	garand	5	("soldier_mgun_5" rocket(1) body(line))	44554>43534	4>1	250/150/0.9>200/150/0.9		same as usa_82ndairborne_mg
+usa	usa_82ndairborne_carbine	line	1	m1a1_carbine	5	("soldier_rifle_5" rocket(1) body(line))	44454>43354	4>1	250/150/0.9>200/150/0.9		
+usa	usa_82ndairborne_mg	line	1	browning_m19a6	5	("soldier_mgun_5" rocket(1) body(line))	44554>43534	4>1	250/150/0.9>200/150/0.9		
+usa	usa_82ndairborne_mgassist	asst	1	m1a1_carbine	5	("soldier_mgun_5" rocket(1) body(line))	44554>43534	4>1	250/150/0.9>200/150/0.9		same as usa_82ndairborne_mg
+usa	usa_82ndairborne_rifle	line	1	garand	5	("soldier_rifle_5" rocket(1) body(line))	44454>43354	4>1	250/150/0.9>200/150/0.9		
+usa	usa_82ndairborne_sniper	special	1			(no weapon skill found: keep as is)					
+usa	usa_ap_miner	line	1	m3a	3	("soldier_smg_3" rocket(1) body(line))					
+usa	usa_armor_mgun	line	1	bar_rifle	3	("soldier_rifle_3" rocket(1) body(line))	22333>22233				
+usa	usa_armor_rifle	line	1	garand	3	("soldier_rifle_3" rocket(1) body(line))					
+usa	usa_armor_rifle_grenadier	line	1	garand	3	("soldier_rifle_3" rocket(1) body(line))					
+usa	usa_armor_squadleader	leader	1	garand	4	("soldier_rifle_4" rocket(1) body(line))	33344>43244	2>1	200/100/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+usa	usa_at_miner	line	1	m3a	3	("soldier_smg_3" rocket(1) body(line))					
+usa	usa_bazooker	line	1	garand	3	("soldier_rifle_3" rocket(3) body(line))		4>3			
+usa	usa_bazookerassist	asst	1	garand	3	("soldier_rifle_3" rocket(1) body(line))		4>1			assists nobody on a card: kept at own level
+usa	usa_devil_brigade_demo	line	1	garand	6	("soldier_rifle_6" rocket(1) body(line))	66666>55565	6>1			
+usa	usa_devil_brigade_grenadier	line	1	garand	6	("soldier_rifle_6" rocket(1) body(line))	66666>55565	6>1			
+usa	usa_devil_brigade_mg	line	1	johnson_m1941_rifle	6	("soldier_rifle_6" rocket(1) body(line))	66666>55565	6>1			
+usa	usa_devil_brigade_radio	line	1	garand	6	("soldier_rifle_6" rocket(1) body(line))	66666>55565	6>1			
+usa	usa_devil_brigade_rifle	line	1	garand	6	("soldier_rifle_6" rocket(1) body(line))	66666>55565	6>1			
+usa	usa_devil_brigade_sl	leader	1	thompson	6	("soldier_smg_7" rocket(1) body(line))	66666>67666	6>1	350/200/0.9>400/200/0.9		leader: squad is 6, so 6 > 7
+usa	usa_elite_101st_para	line	1	m1a1_carbine	7	("soldier_rifle_7" rocket(1) body(line))		6>1			
+usa	usa_elite_101st_para3	line	1	bar_rifle	7	("soldier_rifle_7" rocket(1) body(line))	66776>66676	6>1			
+usa	usa_elite_101st_para3b	line	1	browning_m19a6	7	("soldier_mgun_7" rocket(1) body(line))		6>1			
+usa	usa_elite_101st_para3b_asst	asst	1	m1a1_carbine	7	("soldier_mgun_7" rocket(1) body(line))	66776>66766	6>1			same as usa_elite_101st_para3b
+usa	usa_elite_101st_para3_asst	asst	1	garand	7	("soldier_mgun_7" rocket(1) body(line))	66776>66766	6>1			same as usa_elite_101st_para3b
+usa	usa_elite_101st_para4	line	1	garand	7	("soldier_rifle_7" rocket(7) body(line))					
+usa	usa_elite_101st_parab	line	1	garand	7	("soldier_rifle_7" rocket(1) body(line))		6>1			
+usa	usa_elite_101st_para_grenadier	line	1	garand	7	("soldier_rifle_7" rocket(1) body(line))		6>1			
+usa	usa_elite_101st_para_sgt	line	1	thompson	7	("soldier_smg_7" rocket(1) body(line))		6>1			
+usa	usa_elite_grenadier	line	1	garand	5	("soldier_rifle_5" rocket(1) body(line))	44454>43354	4>1	250/150/0.9>200/150/0.9		
+usa	usa_elite_sgt	line	1	thompson	6	("soldier_smg_6" rocket(1) body(line))	46444>56555	4>1	300/150/0.9>350/200/0.9	0.85/1/0.9>0.95/1/1	
+usa	usa_engineer	line	1	garand	3	("soldier_rifle_3" rocket(1) body(line))				0.85/1/0.9>0.75/1/0.8	
+usa	usa_engineer2	line	1	garand	3	("soldier_rifle_3" rocket(1) body(line))				0.85/1/0.9>0.75/1/0.8	
+usa	usa_engineer3	line	1	garand	3	("soldier_rifle_3" rocket(1) body(line))				0.85/1/0.9>0.75/1/0.8	
+usa	usa_engineer4	line	1	garand	3	("soldier_rifle_3" rocket(1) body(line))				0.85/1/0.9>0.75/1/0.8	
+usa	usa_engineer_at	line	1	garand	3	("soldier_rifle_3" rocket(3) body(line))		4>3			
+usa	usa_engineer_flamer	line	1			(no weapon skill found: keep as is)					
+usa	usa_engineer_grenadier	line	1	garand	3	("soldier_rifle_3" rocket(1) body(line))					
+usa	usa_engineer_squadleader	leader	1	garand	4	("soldier_rifle_4" rocket(1) body(line))	33344>43244	2>1	200/100/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+usa	usa_flamer	line	1			(no weapon skill found: keep as is)					
+usa	usa_flamerassist	asst	1	m3a	3	("soldier_smg_3" rocket(1) body(line))	33223>23223				assists nobody on a card: kept at own level
+usa	usa_marine_bar	line	1	bar_rifle	4	("soldier_rifle_4" rocket(1) body(line))	33443>43244	3>1	200/150/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+usa	usa_marine_barassist	asst	1	garand	4	("soldier_rifle_4" rocket(1) body(line))	33443>43244	3>1	200/150/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	assists nobody on a card: kept at own level
+usa	usa_marine_grenadier	line	1	garand	4	("soldier_rifle_4" rocket(1) body(line))	33343>43244	3>1	200/150/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+usa	usa_marine_rifle	line	1	garand	4	("soldier_rifle_4" rocket(1) body(line))	33343>43244	3>1	200/150/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+usa	usa_marine_sgt	line	1	thompson	5	("soldier_smg_5" rocket(1) body(line))	35333>45334	3>1	250/150/0.9>200/150/0.9		
+usa	usa_marine_shotgun	line	1	m12_shotgun	4	("soldier_rifle_4" rocket(1) body(line))	33343>43244	3>1	200/150/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+usa	usa_mgun	line	1	bar_rifle	3	("soldier_rifle_3" rocket(1) body(line))	22333>22233				
+usa	usa_mgun2	line	1	browning_m19a6	3	("soldier_mgun_3" rocket(1) body(line))	22333>22323				
+usa	usa_mgun2_asst	asst	1	garand	3	("soldier_mgun_3" rocket(1) body(line))	22333>22323				same as usa_mgun2
+usa	usa_mgun_asst	asst	1	garand	3	("soldier_rifle_3" rocket(1) body(line))	22333>22233				assists nobody on a card: kept at own level
+usa	usa_nightfighter_carbine	line	0			(no weapon skill found: keep as is)					
+usa	usa_nightfighter_leader	leader	0			(no weapon skill found: keep as is)					
+usa	usa_officer	leader	1	colt	5	("soldier_pistol_5" rocket(1) body(line))	55444>55555	3>1	250/150/1>200/150/0.9		
+usa	usa_paramarine	line	1	johnson	6	("soldier_rifle_6" rocket(1) body(line))		5>1			
+usa	usa_paramarine2	line	1	m50reising	6	("soldier_smg_6" rocket(1) body(line))		5>1			
+usa	usa_paramarine3	line	1	johnson_m1941_rifle	6	("soldier_rifle_6" rocket(1) body(line))	55665>55565	5>1			
+usa	usa_paramarine3_asst	asst	1	johnson	6	("soldier_rifle_6" rocket(1) body(line))	55665>55565	5>1			assists nobody on a card: kept at own level
+usa	usa_paramarineb	line	1	garand	6	("soldier_rifle_6" rocket(1) body(line))		5>1			
+usa	usa_paramarine_boys	line	1	m1a1_carbine	6	("soldier_rifle_6" rocket(1) body(line))		5>1			
+usa	usa_paramarine_grenadier	line	1	garand	6	("soldier_rifle_6" rocket(1) body(line))		5>1			
+usa	usa_paramarine_sgt	line	1	m50reising	6	("soldier_smg_6" rocket(1) body(line))		5>1			
+usa	usa_radioman_105	line	1	m3a	3	("soldier_smg_3" rocket(1) body(line))	63223>23223				
+usa	usa_radioman_155	line	1	m3a	3	("soldier_smg_3" rocket(1) body(line))	33223>23223				
+usa	usa_radioman_240	line	1	m3a	3	("soldier_smg_3" rocket(1) body(line))	63223>23223				
+usa	usa_radioman_mortar	line	1	m3a	3	("soldier_smg_3" rocket(1) body(line))	33223>23223				
+usa	usa_raider	line	0	garand	5	("soldier_rifle_5" rocket(1) body(line))	44454>43354	4>1	250/150/0.9>200/150/0.9		
+usa	usa_raiderasst	asst	0	garand	5	("soldier_rifle_5" rocket(1) body(line))	44454>43354	4>1	250/150/0.9>200/150/0.9		assists nobody on a card: kept at own level
+usa	usa_raiderbar	line	0	bar_rifle	5	("soldier_rifle_5" rocket(1) body(line))	44154>43354	4>1	250/150/0.9>200/150/0.9		
+usa	usa_raiderchad	line	0	thompson_50	6	("soldier_smg_6" rocket(1) body(line))	46454>56555	4>1	250/150/0.9>350/200/0.9	0.85/1/0.9>0.95/1/1	
+usa	usa_raiderdemo	line	0	m3a	5	("soldier_smg_5" rocket(1) body(line))	45454>45334	4>1	250/150/0.9>200/150/0.9		
+usa	usa_raidergren	line	0	garand	5	("soldier_rifle_5" rocket(1) body(line))	33353>43354	3>1			
+usa	usa_ranger_bar	line	1	bar_rifle	6	("soldier_rifle_6" rocket(1) body(line))	55665>55565	5>1			
+usa	usa_ranger_bar2	line	1	bar_rifle	6	("soldier_rifle_6" rocket(1) body(line))	55665>55565	5>1			
+usa	usa_ranger_barassist	asst	1	garand	6	("soldier_rifle_6" rocket(1) body(line))	55665>55565	5>1			assists nobody on a card: kept at own level
+usa	usa_ranger_bazooka	line	1	m1_carbine	6	("soldier_rifle_6" rocket(6) body(line))					
+usa	usa_ranger_bazookaassist	asst	1	m1_carbine	6	("soldier_rifle_6" rocket(1) body(line))		5>1			assists nobody on a card: kept at own level
+usa	usa_ranger_carbine	line	1	m2_carbine	6	("soldier_rifle_6" rocket(1) body(line))		5>1			
+usa	usa_ranger_garand	line	1	garand	6	("soldier_rifle_6" rocket(1) body(line))		5>1			
+usa	usa_ranger_grenadier	line	1	garand	6	("soldier_rifle_6" rocket(1) body(line))		5>1			
+usa	usa_ranger_mg	line	1	browning_m19a6	6	("soldier_mgun_6" rocket(1) body(line))	55665>55655	5>1			
+usa	usa_ranger_mgassist	asst	1	garand	6	("soldier_mgun_6" rocket(1) body(line))	55565>55655	5>1			same as usa_ranger_mg
+usa	usa_ranger_recoiless	line	1	m1903	6	("soldier_rifle_6" rocket(6) body(line))					
+usa	usa_ranger_sgt	line	1	m1_carbine	6	("soldier_rifle_6" rocket(1) body(line))		5>1	400/200/0.9>350/200/0.9		
+usa	usa_ranger_sniper	special	1			(no weapon skill found: keep as is)					
+usa	usa_ranger_springfield	line	1	m1_carbine	6	("soldier_rifle_6" rocket(1) body(line))		5>1			
+usa	usa_ranger_springfield2	line	1	m1903	6	("soldier_rifle_6" rocket(1) body(line))		5>1			
+usa	usa_rifle	line	1	garand	3	("soldier_rifle_3" rocket(1) body(line))					
+usa	usa_rifle3	line	1	m1_carbine	3	("soldier_rifle_3" rocket(1) body(line))					
+usa	usa_rifle_at	line	1	garand	3	("soldier_rifle_3" rocket(3) body(line))		4>3			
+usa	usa_rifle_grenadier	line	1	garand	3	("soldier_rifle_3" rocket(1) body(line))					
+usa	usa_saper	line	1	m3a	3	("soldier_smg_3" rocket(1) body(line))				0.85/1/0.9>0.75/1/0.8	
+usa	usa_smg	line	1	thompson	3	("soldier_smg_3" rocket(1) body(line))					
+usa	usa_sniper	special	1			(no weapon skill found: keep as is)					
+usa	usa_squadleader	leader	1	thompson	4	("soldier_smg_4" rocket(1) body(line))	34334>44234	2>1	200/100/0.9>150/100/0.9	0.85/1/0.9>0.75/1/0.8	
+usa	usa_tankman2_single	crew	1	m3a	3	("crew_<grade>")	33323	2	150/100/0.8	1.1/1/0.95	crew ladder: see draft
+usa	usa_tankman_single	crew	1	colt	3	("crew_<grade>")	33223	2	100/100/0.8	1/1/0.9	crew ladder: see draft
+usa	usa_vet_tankman2_single	crew	1	m3a	3	("crew_<grade>")	33523	2	150/100/0.8	1.3/1.2/1.15	crew ladder: see draft
+usa	vehicle_supporter	support	1	m1_carbine	2	("support_<grade>")	22323	2	150/100/0.9	0.85/1/1	crew ladder: see draft
+usa	vehicle_supporter_single	support	1	m1_carbine	2	("support_<grade>")	22323	2	150/100/0.9	0.85/1/1	crew ladder: see draft
+usa	vet_tankman	crew	1	colt	3	("crew_<grade>")	33323	2	100/100/0.8	1.2/1.2/1.1	crew ladder: see draft
+usa	vet_tankman2	crew	1	m3a	3	("crew_<grade>")	33523	2	150/100/0.8	1.3/1.2/1.15	crew ladder: see draft

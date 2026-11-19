@@ -1,0 +1,429 @@
+group	kind	item	breeds	count	sides	tier	best_guess	reason
+ammo_bazooka	equip	ammo bazooka	16	84	rus rus_guard usa	flat		[I] stuff bazooka/bazooka.ammo
+ammo_bazooka	equip	ammo bazooka wp	10	10	usa	flat		[I] stuff bazooka/bazooka.wp.ammo
+ammo_box	equip	ammo_box_inf_fin	1	1	axis_minor	flat		[I] no stuff file found; group by name
+ammo_m18recoilless	equip	ammo m18recoilless	2	16	usa	flat		[I] stuff bazooka/m18recoilless.ammo
+ammo_m18recoilless	equip	ammo m18recoilless fg	2	6	usa	flat		[I] stuff bazooka/m18recoilless.fg.ammo
+ammo_m18recoilless	equip	ammo m18recoilless wp	2	2	usa	flat		[I] stuff bazooka/m18recoilless.wp.ammo
+ammo_mortar50	equip	ammo 5cm_grenade fg	5	56	jap	flat		[I] stuff reactive/5cm_grenade.fg.ammo
+ammo_mortar50	equip	ammo mortar50 eng fg	2	9	eng	flat		[I] stuff reactive/mortar50/mortar50.eng.fg.ammo
+ammo_mortar50	equip	ammo mortar50 eng sm	4	29	eng	flat		[I] stuff reactive/mortar50/mortar50.eng.sm.ammo
+ammo_mortar50	equip	ammo mortar50 eng wp	2	4	eng	flat		[I] stuff reactive/mortar50/mortar50.eng.wp.ammo
+ammo_mortar50	equip	ammo mortar50 ger fg	6	60	ger ger2 ger_ss	flat		[I] stuff reactive/mortar50/mortar50.ger.fg.ammo
+ammo_panzershreck	equip	ammo panzershreck	22	121	axis_minor ger ger2 ger_ss	flat		[I] stuff bazooka/panzershreck.ammo
+ammo_piatrocket	equip	ammo piatrocket	10	50	eng rus_guard	flat		[I] stuff bazooka/piatrocket.ammo
+ammo_ptr	equip	ammo ptr	35	760	axis_minor eng ger ger2 ger_ss jap rus rus_guard usa	flat		[I] stuff ammo/ptr.ammo
+ammo_ptr	equip	ammo ptr fg	4	60	jap	flat		[I] stuff ammo/ptr.fg.ammo
+ammo_small_arms	equip	ammo 10x20	2	60	axis_minor	flat		[I] stuff ammo/10x20.ammo
+ammo_small_arms	equip	ammo 6x52	6	1280	axis_minor	flat		[I] stuff ammo/6x52.ammo
+ammo_small_arms	equip	ammo 7x51	3	580	axis_minor	flat		[I] stuff ammo/7x51.ammo
+ammo_small_arms	equip	ammo 7x53	10	1105	axis_minor	flat		[I] stuff ammo/7x53.ammo
+ammo_small_arms	equip	ammo 7x57	4	750	axis_minor	flat		[I] stuff ammo/7x57.ammo
+ammo_small_arms	equip	ammo 8x50	2	145	axis_minor	flat		[I] stuff ammo/8x50.ammo
+ammo_small_arms	equip	ammo 8x56	2	560	axis_minor	flat		[I] stuff ammo/8x56.ammo
+ammo_small_arms	equip	ammo 9x17	9	315	axis_minor	flat		[I] stuff ammo/9x17.ammo
+ammo_small_arms	equip	ammo 9x19	10	1040	axis_minor	flat		[I] stuff ammo/9x19.ammo
+ammo_small_arms	equip	ammo 9x19c	2	70	axis_minor	flat		[I] stuff ammo/9x19c.ammo
+ammo_small_arms	equip	ammo 9x25	8	1130	axis_minor	flat		[I] stuff ammo/9x25.ammo
+ammo_small_arms	equip	ammo arisaka6-5_clip	30	2580	jap	flat		[I] stuff ammo/magazines/arisaka6-5_clip.ammo
+ammo_small_arms	equip	ammo arisaka7-7_clip	40	2680	jap	flat		[I] stuff ammo/magazines/arisaka7-7_clip.ammo
+ammo_small_arms	equip	ammo bar_mag	17	4080	usa	flat		[I] stuff ammo/magazines/bar_mag.ammo
+ammo_small_arms	equip	ammo breda_mag	4	960	axis_minor	flat		[I] stuff ammo/magazines/breda_mag.ammo
+ammo_small_arms	equip	ammo bren_mag	41	5768	eng	flat		[I] stuff ammo/magazines/bren_mag.ammo
+ammo_small_arms	equip	ammo british303_clip	42	2560	eng	flat		[I] stuff ammo/magazines/british303_clip.ammo
+ammo_small_arms	equip	ammo colt_mag	18	294	usa	flat		[I] stuff ammo/magazines/colt_mag.ammo
+ammo_small_arms	equip	ammo dp27_mag	39	4465	ger_ss rus rus_guard	flat		[I] stuff ammo/magazines/dp27_mag.ammo
+ammo_small_arms	equip	ammo dt29_mag	12	1740	rus rus_guard	flat		[I] stuff ammo/magazines/dt29_mag.ammo
+ammo_small_arms	equip	ammo fg42_mag	8	1280	ger ger2	flat		[I] stuff ammo/magazines/fg42_mag.ammo
+ammo_small_arms	equip	ammo g43_mag	47	1140	ger ger2 ger_ss	flat		[I] stuff ammo/magazines/g43_mag.mauser.ammo
+ammo_small_arms	equip	ammo garand_clip	51	4080	usa	flat		[I] stuff ammo/magazines/garand_clip.ammo
+ammo_small_arms	equip	ammo lsm26_mag	2	640	axis_minor	flat		[I] stuff ammo/magazines/lsm26_mag.ammo
+ammo_small_arms	equip	ammo m1941lmg_mag	5	1200	usa	flat		[I] stuff ammo/magazines/m1941lmg_mag.ammo
+ammo_small_arms	equip	ammo m1carbine_mag	21	1890	usa	flat		[I] stuff ammo/magazines/m1carbine_mag.ammo
+ammo_small_arms	equip	ammo m2carbine_mag	3	660	usa	flat		[I] stuff ammo/magazines/m2carbine_mag.ammo
+ammo_small_arms	equip	ammo m3a_mag	18	2912	usa	flat		[I] stuff ammo/magazines/m3a_mag.ammo
+ammo_small_arms	equip	ammo m50reising_mag	4	600	usa	flat		[I] stuff ammo/magazines/m50reising_mag.ammo
+ammo_small_arms	equip	ammo mab_38a_mag	10	1960	axis_minor ger_ss	flat		[I] stuff ammo/magazines/mab_38a_mag.ammo
+ammo_small_arms	equip	ammo mauser_clip	209	13660	axis_minor ger ger2 ger_ss rus	flat		[I] stuff ammo/magazines/mauser_clip.mauser.mauser_rifle.ammo
+ammo_small_arms	equip	ammo mauser_clip fg	5	100	ger ger2 ger_ss	flat		[I] stuff ammo/magazines/mauser_clip.mauser.mauser_rifle.fg.ammo
+ammo_small_arms	equip	ammo mauser_rifle mauser	1	120	axis_minor	flat		[I] no stuff file found; group by name
+ammo_small_arms	equip	ammo mg_mauser belt	48	25200	ger ger2 ger_ss	flat		[I] stuff ammo/magazines/mg_mauser.belt.ammo
+ammo_small_arms	equip	ammo mg_mauser drum	153	17850	ger ger2 ger_ss rus rus_guard	flat		[I] stuff ammo/magazines/mg_mauser.drum.ammo
+ammo_small_arms	equip	ammo mosin_clip	66	4260	ger_ss rus rus_guard	flat		[I] stuff ammo/magazines/mosin_clip.mosin54r.mosin_rifle.ammo
+ammo_small_arms	equip	ammo mosin_clip fg	4	280	axis_minor rus rus_guard	flat		[I] stuff ammo/magazines/mosin_clip.mosin54r.mosin_rifle.fg.ammo
+ammo_small_arms	equip	ammo mp28_mag	1	180	ger2	flat		[I] stuff ammo/magazines/mp28_mag.ammo
+ammo_small_arms	equip	ammo mp40_mag	103	18080	axis_minor ger ger2 ger_ss rus	flat		[I] stuff ammo/magazines/mp40_mag.ammo
+ammo_small_arms	equip	ammo nagant_clip	5	140	rus rus_guard	flat		[I] stuff ammo/magazines/nagant_clip.ammo
+ammo_small_arms	equip	ammo nambu_mag	5	144	jap	flat		[I] stuff ammo/magazines/nambu_mag.ammo
+ammo_small_arms	equip	ammo owen_mag	1	320	eng	flat		[I] stuff ammo/magazines/owen_mag.ammo
+ammo_small_arms	equip	ammo pps43_mag	25	4830	rus rus_guard	flat		[I] stuff ammo/magazines/pps43_mag.ammo
+ammo_small_arms	equip	ammo ppsh41_mag	30	4410	ger_ss rus rus_guard	flat		[I] stuff ammo/magazines/ppsh41_mag.ammo
+ammo_small_arms	equip	ammo ppsh_mag	38	6337	axis_minor ger2 rus rus_guard	flat		[I] stuff ammo/magazines/ppsh_mag.ppsh_ammo.ammo
+ammo_small_arms	equip	ammo rifle	2	140	eng	flat		[I] stuff ammo/rifle.ammo
+ammo_small_arms	equip	ammo shotgun	2	180	usa	flat		[I] stuff ammo/shotgun.ammo
+ammo_small_arms	equip	ammo solothurn31m_mag	2	360	axis_minor	flat		[I] stuff ammo/magazines/solothurn31m_mag.ammo
+ammo_small_arms	equip	ammo springfield_belt	10	3200	usa	flat		[I] stuff ammo/magazines/springfield_belt.ammo
+ammo_small_arms	equip	ammo springfield_clip	10	940	usa	flat		[I] stuff ammo/magazines/springfield_clip.ammo
+ammo_small_arms	equip	ammo sten_mag	54	8832	eng	flat		[I] stuff ammo/magazines/sten_mag.ammo
+ammo_small_arms	equip	ammo stg44_mag	49	8820	ger ger2 ger_ss	flat		[I] stuff ammo/magazines/stg44_mag.ammo
+ammo_small_arms	equip	ammo svt40_mag	17	340	rus rus_guard	flat		[I] stuff ammo/magazines/svt40_mag.mosin54r.ammo
+ammo_small_arms	equip	ammo thompson_m1a1_mag	13	1950	usa	flat		[I] stuff ammo/magazines/thompson_m1a1_mag.ammo
+ammo_small_arms	equip	ammo tt_mag	3	96	rus rus_guard	flat		[I] stuff ammo/magazines/tt_mag.ammo
+ammo_small_arms	equip	ammo type100_mag	43	7440	jap	flat		[I] stuff ammo/magazines/type100_mag.ammo
+ammo_small_arms	equip	ammo type2_mag	4	800	jap	flat		[I] stuff ammo/magazines/type2_mag.ammo
+ammo_small_arms	equip	ammo type96_mag	6	570	jap	flat		[I] stuff ammo/magazines/type96_mag.ammo
+ammo_small_arms	equip	ammo type99_mag	32	4020	jap	flat		[I] stuff ammo/magazines/type99_mag.ammo
+ammo_small_arms	equip	ammo walther_mag	86	1856	axis_minor ger ger2 ger_ss	flat		[I] stuff ammo/magazines/walther_mag.ammo
+ammo_small_arms	equip	ammo webley_clip	6	216	eng	flat		[I] stuff ammo/magazines/webley_clip.ammo
+ammo_small_arms	equip	ammo zb30_mag	10	2800	axis_minor ger_ss	flat		[I] stuff ammo/magazines/zb30_mag.ammo
+ammo_small_arms	equip	ammo zb_vz26_mag	2	240	axis_minor	flat		[I] stuff ammo/magazines/zb_vz26_mag.ammo
+ammo_small_arms	equip	bar_mag ammo	2	420	usa	flat		[I] stuff ammo/magazines/bar_mag.ammo
+ammo_small_arms	equip	breda_mag	2	320	axis_minor	flat		[I] stuff ammo/magazines/breda_mag.ammo
+ammo_small_arms	equip	garand_clip ammo	2	176	usa	flat		[I] stuff ammo/magazines/garand_clip.ammo
+ammo_small_arms	equip	lsm26_mag	5	1660	axis_minor	flat		[I] stuff ammo/magazines/lsm26_mag.ammo
+ammo_small_arms	equip	m3a_mag ammo	1	180	usa	flat		[I] stuff ammo/magazines/m3a_mag.ammo
+ammo_small_arms	equip	springfield_belt ammo	1	500	usa	flat		[I] stuff ammo/magazines/springfield_belt.ammo
+ammo_small_arms	equip	thompson_drum	3	450	eng usa	flat		[I] stuff ammo/magazines/thompson_drum.ammo
+ammo_type_4	equip	ammo type_4	8	42	jap	flat		[I] stuff bazooka/type_4.ammo
+ap_mine	equip	mine antipersonnel	55	526	axis_minor eng jap rus rus_guard usa	flat		[I] stuff explosive/antipersonnel.mine
+ap_mine	equip	mine s_mine	8	133	ger ger2 ger_ss	flat		[I] stuff explosive/s_mine.antipersonnel.mine
+at	weapon	weapon bazooka	7	6.38	rus rus_guard usa	low	low [I]	[I] sheet at low "m1 bazooka"
+at	weapon	weapon bazooka_m9	2	2	usa	medium	medium [I]	[I] sheet at medium "m9 bazooka"
+at	weapon	weapon m18recoilless	2	2	usa	medium	medium [I]	[I] sheet at medium "m18"
+at	weapon	weapon panzershreck	12	12	axis_minor ger ger2 ger_ss	high	high [I]	[I] sheet at high "panzershreck"
+at	weapon	weapon piatrocket	7	6.35	eng rus_guard	high	high [I]	[I] sheet at high "piat"
+at	weapon	weapon weapon type_4at	7	7	jap	medium	medium [I]	[I] sheet at medium "type 4 rocket"
+at_grenade	equip	breda42at	2	2	axis_minor	flat	computed tier 1 (score 25) [I]	[I] stuff grenade/02 grenade_at/breda42at.grenade
+at_grenade	equip	grenade hohlladung	53	53	axis_minor ger ger2 ger_ss	flat	computed tier 4 (score 140) [I]	[I] stuff grenade/02 grenade_at/hohlladung.grenade
+at_grenade	equip	grenade n73at	64	65	eng	flat	computed tier 2 (score 51) [I]	[I] stuff grenade/02 grenade_at/n73at.grenade
+at_grenade	equip	grenade pwm1	15	15	ger ger2 ger_ss	flat	computed tier 4 (score 150) [I]	[I] stuff grenade/02 grenade_at/pwm1.grenade
+at_grenade	equip	grenade rpg40	36	27.75	rus rus_guard	flat	computed tier 1 (score 25) [I]	[I] stuff grenade/02 grenade_at/rpg40.grenade
+at_grenade	equip	grenade rpg43	29	23.38	rus rus_guard	flat	computed tier 3 (score 75) [I]	[I] stuff grenade/02 grenade_at/rpg43.grenade
+at_grenade	equip	grenade type3at_a	72	92	jap	flat	computed tier 1 (score 25) [I]	[I] stuff grenade/02 grenade_at/type3at_a.grenade
+at_grenade	equip	grenade type99at	1	1	jap	flat	computed tier 1 (score 25) [I]	[I] stuff grenade/02 grenade_at/type99at.grenade
+at_mine	equip	mine antitank	42	188	axis_minor eng ger ger2 ger_ss jap rus rus_guard usa	flat		[I] stuff explosive/antitank.mine
+at_rifles	weapon	boyes	7	7	axis_minor eng usa	low	low [I]	[I] sheet at_rifles low "boys"
+at_rifles	weapon	ptrd	3	3	ger2 rus	medium	medium [I]	[I] sheet at_rifles medium "ptrd"
+at_rifles	weapon	ptrs	1	1	rus_guard	high	high [I]	[I] sheet at_rifles high "ptrs"
+at_rifles	weapon	pzb39	6	6	axis_minor ger ger2 ger_ss	medium	medium [I]	[I] sheet at_rifles medium "pzb"
+at_rifles	weapon	type_97_antitank	3	3	jap	medium	medium [I]	[I] sheet at_rifles medium "Type 97"
+auto_rifle	weapon	bar_rifle	13	13	usa	medium	medium [I]	[I] stuff rifle/bar_rifle (automatic rifle (BAR / FG42 / Johnson LMG)); the only tier of the sheet class
+auto_rifle	weapon	fg42_rifle	7	7	ger ger2	medium	medium [I]	[I] stuff rifle/fg42_rifle (automatic rifle (BAR / FG42 / Johnson LMG)); the only tier of the sheet class
+backpack	equip	barrel_case	50	50	ger ger2 ger_ss	flat		[I] stuff body/barrel_case
+backpack	equip	ita_pack1	4	4	axis_minor	flat		[I] stuff packs/ita_pack1
+backpack	equip	mg_backpack	1	1	axis_minor	flat		[I] stuff packs/mg_backpack
+backpack	equip	ru_backpack_meshok	18	18	rus_guard	flat		[I] stuff body/ru_backpack_meshok
+backpack	equip	ru_backpack_meshok2	9	9	rus	flat		[I] stuff body/ru_backpack_meshok2
+backpack	equip	ru_roll	6	6	rus	flat		[I] stuff body/ru_roll
+bandage	equip	bandage	1073	4216	axis_minor eng ger ger2 ger_ss jap rus rus_guard usa	flat		[I] stuff med/bandage
+barbwire_kit	equip	barbwire_kit	16	16	eng ger ger2 ger_ss jap rus rus_guard usa	flat		[I] stuff special/barbwire_kit
+binocular	equip	binocular	17	17	axis_minor eng ger ger2 ger_ss jap rus rus_guard usa	flat		[I] stuff special/binocular
+bundle_charge	equip	grenade m24x5	177	106.38	axis_minor ger ger2 ger_ss	flat	computed tier 2 (score 40) [I]	[I] stuff grenade/02 grenade_at/m24x5.grenade
+bundle_charge	equip	grenade rg42x3	9	9	rus	flat	computed tier 1 (score 25) [I]	[I] stuff grenade/02 grenade_at/rg42x3.grenade
+bundle_charge	equip	grenade satchel	20	34	eng rus rus_guard usa	flat	computed tier 4 (score 100) [I]	[I] stuff grenade/01 grenade_ap/satchel.grenade
+bundle_charge	equip	kasapanos_2kg	13	13	axis_minor	flat	computed tier 1 (score 25) [I]	[I] stuff grenade/kasapanos_2kg.grenade
+bundle_charge	equip	kasapanos_4kg	7	7	axis_minor	flat	computed tier 4 (score 120) [I]	[I] stuff grenade/kasapanos_4kg.grenade
+call_in_ammo	equip	ammo airstrike_rp3_flare	1	5	eng	flat		[I] stuff ammo/airstrike_rp3_flare.ammo
+call_in_ammo	equip	ammo artillery_105_flare	1	5	usa	flat		[I] stuff ammo/artillery_105_flare.ammo
+call_in_ammo	equip	ammo artillery_155_flare	1	5	usa	flat		[I] stuff ammo/artillery_155_flare.ammo
+call_in_ammo	equip	ammo artillery_240_flare	1	5	usa	flat		[I] stuff ammo/artillery_240_flare.ammo
+call_in_ammo	equip	ammo mortar_60_flare	1	5	usa	flat		[I] stuff ammo/mortar_60_flare.ammo
+call_in_ammo	equip	ammo mortar_flaer	9	45	axis_minor ger ger2 rus usa	flat		[I] stuff ammo/mortar_flaer.ammo
+camouflage	equip	plant	35	97	axis_minor eng ger ger2 ger_ss jap rus rus_guard	flat		[I] stuff special/plant
+camouflage	equip	tree	1	1	jap	flat		[I] stuff special/tree
+cap	equip	8_kaska_soldat_ruminia	10	10	axis_minor	flat		[I] armour slot head
+cap	equip	9_beret_tankist_ruminia	4	4	axis_minor	flat		[I] armour slot head
+cap	equip	beret_eng1	8	8	eng	flat		[I] armour slot head
+cap	equip	beret_eng_comm	6	6	eng	flat		[I] armour slot head
+cap	equip	beret_eng_para	2	2	eng	flat		[I] armour slot head
+cap	equip	beret_eng_sas	2	2	eng	flat		[I] armour slot head
+cap	equip	cap1_rus	3	3	rus	flat		[I] armour slot head
+cap	equip	cap1_usa	2	2	usa	flat		[I] armour slot head
+cap	equip	cap2_rus	11	11	rus	flat		[I] armour slot head
+cap	equip	cap3_rus	3	3	rus rus_guard	flat		[I] armour slot head
+cap	equip	cap_eng_com	7	7	eng	flat		[I] armour slot head
+cap	equip	cap_eng_off	2	2	eng	flat		[I] armour slot head
+cap	equip	cap_eng_radiohead	1	1	eng	flat		[I] armour slot head
+cap	equip	cap_eng_tamoshanter	7	7	eng	flat		[I] armour slot head
+cap	equip	cap_fin_m36	8	8	axis_minor	flat		[I] armour slot head
+cap	equip	cap_fin_m36_officer	2	2	axis_minor	flat		[I] armour slot head
+cap	equip	cap_fin_m36_tank	1	1	axis_minor	flat		[I] armour slot head
+cap	equip	cap_fin_m36_tank_officer	1	1	axis_minor	flat		[I] armour slot head
+cap	equip	cap_fin_officer	1	1	axis_minor	flat		[I] armour slot head
+cap	equip	cap_ger_off	6	6	ger ger2 ger_ss	flat		[I] armour slot head
+cap	equip	cap_rus_partisan	4	4	rus	flat		[I] armour slot head
+cap	equip	cap_rus_partisan2	5	5	rus	flat		[I] armour slot head
+cap	equip	fieldcap1_rus	11	11	rus rus_guard	flat		[I] armour slot head
+cap	equip	fieldcap3_hun	8	8	axis_minor	flat		[I] armour slot head
+cap	equip	fieldcap_eng	8	8	eng	flat		[I] armour slot head
+cap	equip	fieldcap_ger	7	7	ger ger2	flat		[I] armour slot head
+cap	equip	fieldcap_ger_geb	16	16	ger	flat		[I] armour slot head
+cap	equip	fieldcap_ger_heer	13	13	ger ger2	flat		[I] armour slot head
+cap	equip	fieldcap_hun	1	1	axis_minor	flat		[I] armour slot head
+cap	equip	fieldcap_rus	20	20	rus rus_guard	flat		[I] armour slot head
+cap	equip	hachimaki_1	1	1	jap	flat		[I] armour slot head
+cap	equip	japarmy_cap_hohei2	10	10	jap	flat		[I] armour slot head
+cap	equip	japarmy_cap_igcap1	3	3	jap	flat		[I] armour slot head
+cap	equip	japarmy_officer_cap1	3	3	jap	flat		[I] armour slot head
+cap	equip	radioman_hat	11	11	axis_minor ger ger2 rus usa	flat		[I] armour slot head
+cap	equip	rw_cap	12	12	rus rus_guard	flat		[I] armour slot head
+cap	equip	tank_cap1_ger	13	13	ger ger2 ger_ss	flat		[I] armour slot head
+cap	equip	tank_cap2_ger	6	6	ger ger2	flat		[I] armour slot head
+cap	equip	tank_cap2_ss	5	5	ger ger_ss	flat		[I] armour slot head
+cap	equip	usmc-cap1	1	1	usa	flat		[I] armour slot head
+cap	equip	waffen_fieldcap	4	4	ger_ss	flat		[I] armour slot head
+cap	equip	waffen_fieldcap_camo	5	5	ger_ss	flat		[I] armour slot head
+cap	equip	waffen_fieldcap_totenkopf	3	3	ger_ss	flat		[I] armour slot head
+carbines	weapon	m1_carbine	12	12	usa	low	low [I]	[I] sheet carbines low "m1 carbine"
+carbines	weapon	m1a1_carbine	9	9	usa	low	low [I]	[I] sheet carbines low "m1 carbine"
+carbines	weapon	m2_carbine	1	1	usa	medium	medium [I]	[I] sheet carbines medium "m2 carbine"
+carbines	weapon	mkb42	1	1	ger	high	high [I]	[I] sheet carbines high "stg"
+carbines	weapon	mp43	1	1	ger	high	high [I]	[I] sheet carbines high "stg"
+carbines	weapon	sg44	46	46	ger ger2 ger_ss	high	high [I]	[I] sheet carbines high "stg"
+carbines	weapon	type44_carbine	7	7	jap	low	low [I]	[I] sheet carbines low "type 44"
+carbines	weapon	vsg	1	1	ger	low	low [I]	[I] sheet carbines low "volksgewher"
+demolition_charge	equip	dynamite	52	67	axis_minor eng ger jap rus usa	flat		[I] stuff explosive/dynamite
+demolition_charge	equip	dynamite_ladung	12	23	ger ger2 ger_ss	flat		[I] stuff explosive/dynamite_ladung
+dummy_weapon	equip	lunge_mine	2	2	jap	flat		owner: dummy weapon (lunge_mine), breeds priced by {special}
+dummy_weapon	equip	throwable_gun	1	1	jap	flat		owner: dummy weapon (kamikaze), breeds priced by {special}
+flame	weapon	flame_thrower	15	15	axis_minor eng rus rus_guard usa	medium	medium [I]	[I] stuff flame/flame_thrower; the only tier of the sheet class
+flame	weapon	flame_thrower_g	9	9	ger ger2 ger_ss jap	medium	medium [I]	[I] stuff flame/flame_thrower_g; the only tier of the sheet class
+flame_fuel	equip	balloon	15	15	axis_minor eng rus rus_guard usa	flat		[I] stuff flame/balloon
+flame_fuel	equip	balloon_g	9	9	ger ger2 ger_ss jap	flat		[I] stuff flame/balloon_g
+frag_grenade	equip	breda35	10	16	axis_minor	flat	computed tier 2 (score 12.15) [I]	[I] stuff grenade/01 grenade_ap/breda35.grenade
+frag_grenade	equip	grenade f1	121	231	axis_minor rus rus_guard	flat	computed tier 1 (score 8.15) [I]	[I] stuff grenade/01 grenade_ap/f1.grenade
+frag_grenade	equip	grenade hungarian_36m	4	5	axis_minor	flat	computed tier 2 (score 12.15) [I]	[I] stuff grenade/01 grenade_ap/hungarian_36m.grenade
+frag_grenade	equip	grenade hungarian_42m	4	10	axis_minor	flat	computed tier 2 (score 12.15) [I]	[I] stuff grenade/01 grenade_ap/hungarian_42m.grenade
+frag_grenade	equip	grenade m24	277	528.5	axis_minor ger ger2 ger_ss	flat	computed tier 2 (score 12.15) [I]	[I] stuff grenade/01 grenade_ap/m24.grenade
+frag_grenade	equip	grenade m39	41	82	ger ger2 ger_ss	flat	computed tier 2 (score 12.25) [I]	[I] stuff grenade/01 grenade_ap/m39.grenade
+frag_grenade	equip	grenade m61	103	203	usa	flat	computed tier 1 (score 7.65) [I]	[I] stuff grenade/01 grenade_ap/m61.grenade
+frag_grenade	equip	grenade mk1	88	169	eng	flat	computed tier 1 (score 7.3) [I]	[I] stuff grenade/01 grenade_ap/mk1.grenade
+frag_grenade	equip	grenade oto_mod35	5	9	axis_minor	flat	computed tier 2 (score 12.15) [I]	[I] stuff grenade/01 grenade_ap/oto_mod35.grenade
+frag_grenade	equip	grenade type97	86	207	jap	flat	computed tier 1 (score 7.55) [I]	[I] stuff grenade/01 grenade_ap/type97.grenade
+frag_grenade	equip	grenade type99	10	19	jap	flat	computed tier 1 (score 8.15) [I]	[I] stuff grenade/01 grenade_ap/type99.grenade
+hedgehog_kit	equip	hedgehog_kit	21	21	eng ger ger2 ger_ss jap rus rus_guard usa	flat		[I] stuff special/hedgehog_kit
+helmet	equip	helmet1_bul	11	11	axis_minor	flat		[I] armour slot head
+helmet	equip	helmet1_hun	12	12	axis_minor	flat		[I] armour slot head
+helmet	equip	helmet1_rus	64	64	rus rus_guard	flat		[I] armour slot head
+helmet	equip	helmet1_usa	4	4	usa	flat		[I] armour slot head
+helmet	equip	helmet2_eng	58	58	eng	flat		[I] armour slot head
+helmet	equip	helmet2_usa	4	4	usa	flat		[I] armour slot head
+helmet	equip	helmet4_usa	34	34	usa	flat		[I] armour slot head
+helmet	equip	helmet_eng_mk3c	2	2	eng	flat		[I] armour slot head
+helmet	equip	helmet_eng_para_camo	25	25	eng	flat		[I] armour slot head
+helmet	equip	helmet_fin_m16	9	9	axis_minor	flat		[I] armour slot head
+helmet	equip	helmet_fin_m38	1	1	axis_minor	flat		[I] armour slot head
+helmet	equip	helmet_ger_m38_cover	41	41	ger ger2 ger_ss	flat		[I] armour slot head
+helmet	equip	helmet_ger_m40	66	66	axis_minor ger ger2	flat		[I] armour slot head
+helmet	equip	helmet_ger_m40_camo	4	4	ger2	flat		[I] armour slot head
+helmet	equip	helmet_ger_m40_camo_foliage	8	8	ger2	flat		[I] armour slot head
+helmet	equip	helmet_ger_m40_fge	23	23	ger ger2	flat		[I] armour slot head
+helmet	equip	helmet_ger_m40_grass	15	15	ger ger2 ger_ss	flat		[I] armour slot head
+helmet	equip	helmet_ger_m40_ss	23	23	ger ger_ss	flat		[I] armour slot head
+helmet	equip	helmet_heer_camo	81	81	ger ger2	flat		[I] armour slot head
+helmet	equip	helmet_ita_m33_alpini	7	7	axis_minor	flat		[I] armour slot head
+helmet	equip	helmet_ita_m33_bersaglieri	5	5	axis_minor	flat		[I] armour slot head
+helmet	equip	helmet_ita_m33_clean	1	1	axis_minor	flat		[I] armour slot head
+helmet	equip	helmet_ita_para	5	5	axis_minor	flat		[I] armour slot head
+helmet	equip	helmet_ita_tank	6	6	axis_minor	flat		[I] armour slot head
+helmet	equip	helmet_japmc	2	2	jap	flat		[I] armour slot head
+helmet	equip	helmet_japmc6	4	4	jap	flat		[I] armour slot head
+helmet	equip	helmet_japmc8	4	4	jap	flat		[I] armour slot head
+helmet	equip	helmet_japmc9	4	4	jap	flat		[I] armour slot head
+helmet	equip	helmet_marine_usa	30	30	usa	flat		[I] armour slot head
+helmet	equip	helmet_novice	19	19	usa	flat		[I] armour slot head
+helmet	equip	helmet_rus_para_goggles	6	6	rus	flat		[I] armour slot head
+helmet	equip	helmet_rus_ssh40_cover_camo	30	30	rus rus_guard	flat		[I] armour slot head
+helmet	equip	helmet_sniper_fin	1	1	axis_minor	flat		[I] armour slot head
+helmet	equip	helmet_usa_para	21	21	usa	flat		[I] armour slot head
+helmet	equip	helmet_usa_para_nco	3	3	usa	flat		[I] armour slot head
+helmet	equip	helmet_usa_ranger	21	21	usa	flat		[I] armour slot head
+helmet	equip	helmet_usa_ranger_nco	2	2	usa	flat		[I] armour slot head
+helmet	equip	jap_army_helmet11	10	10	jap	flat		[I] armour slot head
+helmet	equip	jap_army_helmet1_hatimaki	1	1	jap	flat		[I] armour slot head
+helmet	equip	jap_army_helmet2	2	2	jap	flat		[I] armour slot head
+helmet	equip	jap_army_helmet2_net	12	12	jap	flat		[I] armour slot head
+helmet	equip	jap_army_helmet3	5	5	jap	flat		[I] armour slot head
+helmet	equip	jap_army_helmet4	24	24	jap	flat		[I] armour slot head
+helmet	equip	jap_army_helmet5	8	8	jap	flat		[I] armour slot head
+helmet	equip	jap_army_helmet6	21	21	jap	flat		[I] armour slot head
+helmet	equip	jap_army_helmet6_hatimaki	1	1	jap	flat		[I] armour slot head
+helmet	equip	jap_army_helmet7	4	4	jap	flat		[I] armour slot head
+helmet	equip	jap_army_helmet8	2	2	jap	flat		[I] armour slot head
+helmet	equip	jap_army_helmet9	4	4	jap	flat		[I] armour slot head
+helmet	equip	jap_army_helmet_para	12	12	jap	flat		[I] armour slot head
+helmet	equip	tankhelmet_jap_old	4	4	jap	flat		[I] armour slot head
+helmet	equip	tankhelmet_rus	10	10	rus rus_guard	flat		[I] armour slot head
+helmet	equip	tankhelmet_usa	9	9	usa	flat		[I] armour slot head
+helmet	equip	waffen_helmet_camo	69	69	ger_ss	flat		[I] armour slot head
+helmet	equip	waffen_helmet_lssah	21	21	ger_ss	flat		[I] armour slot head
+helmet	equip	waffen_helmet_pe	13	13	ger_ss	flat		[I] armour slot head
+helmet	equip	waffen_helmet_totenkopf	28	28	ger_ss	flat		[I] armour slot head
+incendiary	equip	grenade molotov_coctail	60	23.75	axis_minor jap rus rus_guard	flat	computed tier 1 (score 8.4) [I]	[I] stuff grenade/02 grenade_at/molotov_coctail.grenade
+incendiary	equip	oto42flam	3	5	axis_minor	flat	computed tier 1 (score 8.4) [I]	[I] stuff grenade/02 grenade_at/oto42flam.grenade
+light_mortar	weapon	mortar_legrw_36	3	3	ger ger2 ger_ss	medium	medium [I]	owner rule: mortar_legrw_36 = light_mortar medium
+light_mortar	weapon	mortar_mkvii	3	3	eng	medium	medium [I]	owner rule: mortar_mkvii = light_mortar medium
+melee	equip	knife_fin	1	1	axis_minor	flat		[I] no stuff file found; group by name
+melee	equip	knife_ger	20	20	axis_minor ger ger2 ger_ss	flat		[I] stuff melee/knife_ger
+melee	equip	knife_japan	48	48	jap	flat		[I] stuff melee/knife_japan
+melee	equip	knife_rus	12	12	rus rus_guard	flat		[I] stuff melee/knife_rus
+melee	equip	knife_union	9	9	axis_minor eng usa	flat		[I] stuff melee/knife_union
+mg	weapon	breda_30	3	3	axis_minor	low	low [I]	[I] sheet mg low "breda30"
+mg	weapon	bren	15	15	eng	low	low [I]	[I] sheet mg low "bren"
+mg	weapon	browning_m19a6	6	6	usa	medium	medium [I]	[I] sheet mg medium "m1919a6"
+mg	weapon	dp	10	10	ger_ss rus rus_guard	low	low [I]	[I] sheet mg low "dp27"
+mg	weapon	dt	3	3	rus rus_guard	medium	medium [I]	[I] sheet mg medium "dt"
+mg	weapon	lsm26	4	4	axis_minor	low	low [I]	owner rule: lsm26 = mg low
+mg	weapon	mg34	21	21	ger ger2 ger_ss rus rus_guard	medium	medium [I]	[I] sheet mg medium "mg34"
+mg	weapon	mg42_inf	19	19	ger ger2 ger_ss	high	high [I]	[I] sheet mg high "mg42"
+mg	weapon	mg42_inf_250	12	12	ger ger2 ger_ss	high	high [I]	[I] sheet mg high "mg42"
+mg	weapon	solothurn_31m	1	1	axis_minor	low	low [I]	[I] sheet mg low "solothurn 31m"
+mg	weapon	type11_mg	3	3	jap	low	low [I]	[I] sheet mg low "type11"
+mg	weapon	type96_mg	2	2	jap	low	low [I]	owner rule: type96_mg = mg low
+mg	weapon	type99_mg	12	12	jap	low	low [I]	[I] sheet mg low "type 99"
+mg	weapon	type99_mg_scoped	1	1	jap	medium	medium [I]	[I] sheet mg medium "type 99 scoped"
+mg	weapon	type99rifle_bayonet_melee	1	1	jap	low	low [I]	[I] sheet mg low "type 99"
+mg	weapon	zb30	4	4	ger_ss	low	low [I]	[I] sheet mg low "zb30"
+mg	weapon	zb_30lmg	1	1	axis_minor	low	low [I]	[I] sheet mg low "zb30"
+mg	weapon	zb_vz26	1	1	axis_minor	low	low [I]	[I] sheet mg low "zb26"
+mine_detector	equip	mine_detector	21	21	axis_minor eng ger ger2 ger_ss jap rus rus_guard usa	flat		[I] stuff special/mine_detector
+pistol	weapon	beretta_m1934	3	3	axis_minor	flat	flat [I]	owner rule: pistols have no tiers (stuff pistol/beretta_m1934)
+pistol	weapon	bodeo_m1889	2	2	axis_minor	flat	flat [I]	owner rule: pistols have no tiers (stuff pistol/bodeo_m1889)
+pistol	weapon	colt	18	18	usa	flat	flat [I]	owner rule: pistols have no tiers (stuff pistol/colt)
+pistol	weapon	frommer_37m	6	6	axis_minor	flat	flat [I]	owner rule: pistols have no tiers (stuff pistol/frommer_37m)
+pistol	weapon	glisenti	2	2	axis_minor	flat	flat [I]	owner rule: pistols have no tiers (stuff pistol/glisenti)
+pistol	weapon	luger	11	11	axis_minor ger ger2 ger_ss	flat	flat [I]	owner rule: pistols have no tiers (stuff pistol/luger)
+pistol	weapon	nagan	5	5	rus rus_guard	flat	flat [I]	owner rule: pistols have no tiers (stuff pistol/nagan)
+pistol	weapon	nambu	5	5	jap	flat	flat [I]	owner rule: pistols have no tiers (stuff pistol/nambu)
+pistol	weapon	steyer_pistol_1912	1	1	axis_minor	flat	flat [I]	owner rule: pistols have no tiers (stuff pistol/steyer_pistol_1912)
+pistol	weapon	tt	3	3	rus rus_guard	flat	flat [I]	owner rule: pistols have no tiers (stuff pistol/tt)
+pistol	weapon	valter	75	75	axis_minor ger ger2 ger_ss	flat	flat [I]	owner rule: pistols have no tiers (stuff pistol/valter)
+pistol	weapon	webley	6	6	eng	flat	flat [I]	owner rule: pistols have no tiers (stuff pistol/webley)
+pzf	weapon	faustpatrone_30 weapon	2	0.5	ger	low	low [I]	[I] sheet pzf low "faust"
+pzf	weapon	panzerfaust weapon	25	18	ger ger2 ger_ss	low	low [I]	owner rule: panzerfaust = pzf low
+pzf	weapon	panzerfaust_30 weapon	18	9	ger ger2 ger_ss rus	low	low [I]	[I] sheet pzf low "faust"
+pzf	weapon	panzerfaust_60 weapon	45	30.75	axis_minor ger ger2 ger_ss	medium	medium [I]	[I] sheet pzf medium "60"
+radio	weapon	airstrike_rp3_flaregun	1	1	eng	81	81 [I]	owner rule: airstrike_rp3_flaregun = radio 81
+radio	weapon	artillery_105_flaregun	1	1	usa	105	105 [I]	[I] call-in flare gun, calibre 105 in the name -> sheet Radio 105
+radio	weapon	artillery_155_flaregun	1	1	usa	155	155 [I]	[I] call-in flare gun, calibre 155 in the name -> sheet Radio 155
+radio	weapon	artillery_240_flaregun	1	1	usa	240	240 [I]	[I] call-in flare gun, calibre 240 in the name -> sheet Radio 240
+radio	weapon	mortar_60_flaregun	1	1	usa	60	60 [I]	[I] call-in flare gun, calibre 60 in the name -> sheet Radio 60
+radio	weapon	mortar_flaergun	9	9	axis_minor ger ger2 rus usa	81	81 [I]	owner rule: mortar_flaergun = radio 81
+repair_kit	equip	repair_kit	2	2	eng	flat		[I] stuff special/repair_kit
+rifle_grenade_at	equip	ammo rifle_grenade_at	1	6	jap	flat		[I] stuff ammo/rifle_grenade_at.ammo
+rifle_grenade_at	equip	k98_grenade ap	8	12	ger ger2 ger_ss	flat		[I] stuff ammo/k98_grenade.ap.ammo
+rifle_grenade_at	equip	k98_grenade ap2	2	2.25	ger_ss	flat		[I] stuff ammo/k98_grenade.ap2.ammo
+rifle_grenade_at	equip	k98_grenade ap3	2	1.63	ger_ss	flat		[I] stuff ammo/k98_grenade.ap3.ammo
+rifle_grenade_at	equip	m1garand_grenade ap	11	11.5	usa	flat		[I] stuff ammo/m1garand_grenade.ap.ammo
+rifle_grenade_frag	equip	ammo rifle_grenade	3	37	eng	flat		[I] stuff ammo/rifle_grenade.ammo
+rifle_grenade_frag	equip	k98_grenade fg	10	63	ger ger2 ger_ss	flat		[I] stuff ammo/k98_grenade.fg.ammo
+rifle_grenade_frag	equip	m1garand_grenade fg	11	55	usa	flat		[I] stuff ammo/m1garand_grenade.fg.ammo
+rifle_grenade_wp	equip	m1garand_grenade wp	11	3.85	usa	flat		[I] stuff ammo/m1garand_grenade.wp.ammo
+rifle_grenades	weapon	garand_grenade	11	11	usa	medium	medium [I]	owner rule: rifle grenade launcher = medium unless {when_carried} (stuff rifle/garand_grenade)
+rifle_grenades	weapon	k98_gewehrgranat	10	10	ger ger2 ger_ss	medium	medium [I]	owner rule: rifle grenade launcher = medium unless {when_carried} (stuff rifle/k98_gewehrgranat)
+rifle_grenades	weapon	type89_grenadelauncher	3	3	jap	medium	medium [I]	owner rule: rifle grenade launcher = medium unless {when_carried} (stuff rifle/type89_grenadelauncher)
+rifles	weapon	carcano_m91	3	3	axis_minor	low	low [I]	[I] sheet rifles low "carcanno"
+rifles	weapon	de_lisle	2	2	eng	medium	medium [I]	owner rule: de_lisle = rifles medium
+rifles	weapon	em3	31	31	eng	medium	medium [I]	[I] sheet rifles medium "lee enfield"
+rifles	weapon	em3_mark1	3	3	eng	medium	medium [I]	[I] sheet rifles medium "lee enfield"
+rifles	weapon	em3_vet	8	8	eng	vet	vet [I]	[I] sheet rifles medium "lee enfield", name ends _vet -> vet rifles
+rifles	weapon	feg_35m	2	2	axis_minor	low	low [I]	[I] sheet rifles low "feg"
+rifles	weapon	feg_43m	2	2	axis_minor	low	low [I]	[I] sheet rifles low "feg"
+rifles	weapon	g41	11	11	ger ger_ss	high	high [I]	[I] sheet rifles high "g41"
+rifles	weapon	g43	37	37	ger ger2 ger_ss	high	high [I]	[I] sheet rifles high "g43"
+rifles	weapon	garand	53	53	usa	high	high [I]	[I] sheet rifles high "m1 garand"
+rifles	weapon	johnson	3	3	usa	high	high [I]	[I] sheet rifles high "johnson"
+rifles	weapon	johnson_m1941_rifle	4	4	usa	high	high [I]	[I] sheet rifles high "johnson"
+rifles	weapon	m1903	2	2	usa	low	low [I]	[I] sheet rifles low "springfield"
+rifles	weapon	m38_carcano	1	1	axis_minor	low	low [I]	[I] sheet rifles low "carcanno"
+rifles	weapon	m9138_carcano	2	2	axis_minor	low	low [I]	[I] sheet rifles low "carcanno"
+rifles	weapon	mannlicher_m1895	2	2	axis_minor	low	low [I]	[I] sheet rifles low "manlicher"
+rifles	weapon	mauzer	113	113	axis_minor ger ger2 ger_ss rus	low	low [I]	[I] sheet rifles low "kar98"
+rifles	weapon	mauzer_vet	28	28	ger ger2 ger_ss	vet	vet [I]	[I] sheet rifles low "kar98", name ends _vet -> vet rifles
+rifles	weapon	mosin	33	33	ger_ss rus rus_guard	low	low [I]	[I] sheet rifles low "mosin"
+rifles	weapon	mosin_fin	9	9	axis_minor	low	low [I]	[I] sheet rifles low "mosin"
+rifles	weapon	mosin_vet	11	11	rus rus_guard	vet	vet [I]	[I] sheet rifles low "mosin", name ends _vet -> vet rifles
+rifles	weapon	scottix	2	2	axis_minor	high	high [I]	owner rule: scottix = rifles high
+rifles	weapon	svt40	14	14	rus rus_guard	high	high [I]	[I] sheet rifles high "svt"
+rifles	weapon	type2rifle	6	6	jap	low	low [I]	[I] sheet rifles low "TERA"
+rifles	weapon	type38rifle	7	7	jap	low	low [I]	[I] sheet rifles low "type 38"
+rifles	weapon	type38rifle_bayonet	11	11	jap	low	low [I]	[I] sheet rifles low "type 38"
+rifles	weapon	type99rifle	23	23	jap	low	low [I]	[I] sheet rifles low "type 99"
+rifles	weapon	type99rifle_at	1	1	jap	low	low [I]	[I] sheet rifles low "type 99"
+rifles	weapon	type99rifle_bayonet	6	6	jap	low	low [I]	[I] sheet rifles low "type 99"
+rifles	weapon	type_4_rifle	3	3	jap	high	high [I]	[I] sheet rifles high "type4"
+rifles	weapon	zb_24rifle	2	2	axis_minor	low	low [I]	[I] sheet rifles low "zb24"
+sandbag_kit	equip	sandbag_kit	313	346	axis_minor eng ger ger2 ger_ss jap rus rus_guard usa	flat		[I] stuff special/sandbag_kit
+shovel	equip	small_inf_shovel	1	1	axis_minor	flat		[I] no stuff file found; group by name
+shovel	equip	small_shovel	44	46	axis_minor ger ger2 ger_ss rus	flat		[I] stuff special/small_shovel
+shovel	equip	spider_hole_spade	1	1	jap	flat		[I] stuff special/spider_hole_spade
+shovel	equip	trench_spade	36	43	axis_minor eng ger ger2 ger_ss jap rus rus_guard usa	flat		[I] stuff special/trench_spade
+shovel	equip	tunnel_spade	1	1	jap	flat		[I] stuff special/tunnel_spade
+smg	weapon	danuvia_39m	7	7	axis_minor	high	high [I]	[I] sheet smg high "danuavia"
+smg	weapon	danuvia_43m	1	1	axis_minor	high	high [I]	[I] sheet smg high "danuavia"
+smg	weapon	m12_shotgun	2	2	usa	medium	medium [I]	[I] sheet smg medium "m12 shotgun"
+smg	weapon	m3a	19	19	usa	medium	medium [I]	owner rule: m3a = smg medium
+smg	weapon	m50reising	4	4	usa	medium	medium [I]	[I] sheet smg medium "m50 reising"
+smg	weapon	mab_38a	10	10	axis_minor ger_ss	high	high [I]	[I] sheet smg high "mab38"
+smg	weapon	mp28	1	1	ger2	medium	medium [I]	[I] sheet smg medium "mp28"
+smg	weapon	mp3008	1	1	ger	low	low [I]	[I] sheet smg low "mp3008"
+smg	weapon	mp38	2	2	rus	medium	medium [I]	owner rule: mp38 = smg medium
+smg	weapon	mp40	92	92	axis_minor ger ger2 ger_ss	medium	medium [I]	[I] sheet smg medium "mp40"
+smg	weapon	mp41	8	8	ger2 ger_ss	medium	medium [I]	[I] sheet smg medium "mp41"
+smg	weapon	orita	9	9	axis_minor	medium	medium [I]	owner rule: orita = smg medium
+smg	weapon	owen_gun	1	1	eng	medium	medium [I]	[I] sheet smg medium "owen"
+smg	weapon	pps43	25	25	rus rus_guard	high	high [I]	[I] sheet smg high "pps43"
+smg	weapon	ppsh	28	28	axis_minor ger2 rus rus_guard	medium	medium [I]	[I] sheet smg medium "ppsh"
+smg	weapon	ppsh41	30	30	ger_ss rus rus_guard	medium	medium [I]	[I] sheet smg medium "ppsh"
+smg	weapon	sten_mk2	28	28	eng	low	low [I]	[I] sheet smg low "sten"
+smg	weapon	sten_v	24	24	eng	low	low [I]	[I] sheet smg low "sten"
+smg	weapon	sten_v_silencer	2	2	eng	low	low [I]	[I] sheet smg low "sten"
+smg	weapon	suomi_m31	9	9	axis_minor	high	high [I]	[I] sheet smg high "suomi"
+smg	weapon	suomi_m31r	1	1	axis_minor	high	high [I]	[I] sheet smg high "suomi"
+smg	weapon	thompson	13	13	usa	medium	medium [I]	owner rule: thompson = smg medium
+smg	weapon	thompson_50	3	3	eng usa	high	high [I]	[I] sheet smg high "thompson 50"
+smg	weapon	type100_44	4	4	jap	low	low [I]	[I] sheet smg low "type 100"
+smg	weapon	type100_44_bayonet	3	3	jap	low	low [I]	[I] sheet smg low "type 100"
+smg	weapon	type100smg	29	29	jap	low	low [I]	[I] sheet smg low "type 100"
+smg	weapon	type100smg_bayonet	7	7	jap	low	low [I]	[I] sheet smg low "type 100"
+smg	weapon	type2smg	4	4	jap	medium	medium [I]	[I] sheet smg medium "type 2"
+smoke_grenade	equip	grenade ccm34smoke	8	16	axis_minor	flat	computed tier 1 (score 5) [I]	[I] stuff grenade/00 grenade_smoke/ccm34smoke.grenade
+smoke_grenade	equip	grenade m15_smoke	48	22.75	usa	flat	computed tier 2 (score 11.2) [I]	[I] stuff grenade/00 grenade_smoke/m15_smoke.grenade
+smoke_grenade	equip	grenade n77_smoke	50	30.38	eng	flat	computed tier 2 (score 10.4) [I]	[I] stuff grenade/00 grenade_smoke/n77_smoke.grenade
+smoke_grenade	equip	grenade smoke	352	489.75	axis_minor eng ger ger2 ger_ss jap rus rus_guard usa	flat	computed tier 1 (score 6.4) [I]	[I] stuff grenade/00 grenade_smoke/smoke.grenade
+smoke_grenade	equip	grenade smoke_paradrop_ammo	1	1	eng	flat	computed tier 1 (score 6.4) [I]	[I] stuff grenade/00 grenade_smoke/smoke_paradrop_ammo.grenade
+smoke_grenade	equip	grenade smoke_paradrop_ammo_heavy	6	30	eng ger ger_ss jap rus usa	flat	computed tier 1 (score 6.4) [I]	[I] stuff grenade/00 grenade_smoke/smoke_paradrop_ammo_heavy.grenade
+smoke_grenade	equip	smoke_candle	3	6	jap	flat	computed tier 2 (score 15.4) [I]	[I] stuff grenade/00 grenade_smoke/smoke_candle.grenade
+snipers	weapon	carcano_m91_scoped	1	1	axis_minor	medium	medium [I]	[I] stuff rifle/sniper/carcano_m91_scoped; the only tier of the sheet class
+snipers	weapon	em2	2	2	eng	medium	medium [I]	[I] stuff rifle/sniper/em2; the only tier of the sheet class
+snipers	weapon	em2_vet	1	1	eng	medium	medium [I]	[I] stuff rifle/sniper/em2_vet; the only tier of the sheet class
+snipers	weapon	fg42_sc	1	1	ger2	medium	medium [I]	[I] stuff rifle/fg42_sc (scoped name); the only tier of the sheet class
+snipers	weapon	g43_scope	10	10	ger ger2 ger_ss	medium	medium [I]	[I] stuff rifle/g43_scope (scoped name); the only tier of the sheet class
+snipers	weapon	m1903a4	5	5	usa	medium	medium [I]	[I] stuff rifle/sniper/m1903a4; the only tier of the sheet class
+snipers	weapon	m3_carbine	2	2	usa	medium	medium [I]	[I] stuff rifle/sniper/m3_carbine; the only tier of the sheet class
+snipers	weapon	mauzer_s	11	11	ger ger2 ger_ss	medium	medium [I]	[I] stuff rifle/sniper/mauzer_s; the only tier of the sheet class
+snipers	weapon	mauzer_s_vet	5	5	ger ger2 ger_ss	medium	medium [I]	[I] stuff rifle/sniper/mauzer_s_vet; the only tier of the sheet class
+snipers	weapon	mosin_s	4	4	rus	medium	medium [I]	[I] stuff rifle/sniper/mosin_s; the only tier of the sheet class
+snipers	weapon	mosin_s_elite	2	2	axis_minor rus_guard	medium	medium [I]	[I] stuff rifle/sniper/mosin_s_elite; the only tier of the sheet class
+snipers	weapon	mosin_s_fin	1	1	axis_minor	medium	medium [I]	[I] stuff rifle/sniper/mosin_s_fin; the only tier of the sheet class
+snipers	weapon	mosin_s_vet	1	1	rus_guard	medium	medium [I]	[I] stuff rifle/sniper/mosin_s_vet; the only tier of the sheet class
+snipers	weapon	svt40_s	2	2	rus	medium	medium [I]	[I] stuff rifle/svt40_s (scoped name); the only tier of the sheet class
+snipers	weapon	svt40_s_vet	1	1	rus_guard	medium	medium [I]	[I] stuff rifle/svt40_s_vet (scoped name); the only tier of the sheet class
+snipers	weapon	type97sniper	2	2	jap	medium	medium [I]	[I] stuff rifle/sniper/type97sniper; the only tier of the sheet class
+snipers	weapon	type99sniper	2	2	jap	medium	medium [I]	[I] stuff rifle/sniper/type99sniper; the only tier of the sheet class
+vest	equip	ammo_ger2	6	6	ger ger2	flat		[I] armour slot body
+vest	equip	ammo_ger3	98	98	ger ger2 ger_ss	flat		[I] armour slot body
+vest	equip	ammo_rus	41	41	rus rus_guard	flat		[I] armour slot body
+vest	equip	ammo_us	5	5	usa	flat		[I] armour slot body
+vest	equip	ammo_us2	21	21	usa	flat		[I] armour slot body
+vest	equip	body_armor	34	34	axis_minor rus rus_guard	flat		[I] armour slot body
+vest	equip	garpun	2	2	axis_minor	flat		[I] armour slot body
+vest	equip	jelet_mac_gop_dark	1	1	rus_guard	flat		[I] stuff body/jelet_mac_gop_dark
+vest	equip	kamikaze_bomb	1	1	jap	flat		[I] armour slot body
+vest	equip	mgun_ammo	5	5	ger usa	flat		[I] armour slot body
+vest	equip	mochila_urss	15	15	rus	flat		[I] armour slot body
+vest	equip	sovet-mesh	6	6	rus rus_guard	flat		[I] armour slot body
+vest	equip	sovet_ammo1	3	3	rus	flat		[I] armour slot body
+vest	equip	soviet_pack	16	16	axis_minor rus rus_guard	flat		[I] armour slot body
+vest	equip	us_haversack_shovel	15	15	usa	flat		[I] armour slot body
+vest	equip	us_marine_haversack	7	7	usa	flat		[I] armour slot body

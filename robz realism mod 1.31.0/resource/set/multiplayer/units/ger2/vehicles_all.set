@@ -124,7 +124,7 @@
 ("unit_infantry_sided_members2" side(ger2) name(hero2_ost) member1(ost_panzershreck:2) member2(ost_panzershreckassist:2) charge(120) tags(all 44 45 hero) group(h2) button(hero) level(1) cost(1.0) fore(-0.5))
 ("unit_vehicles1_members1_sided" side(ger2) name(hero_ost_raketenwerfer) vehicle1(raketenwerfer) member(vehicle_supporter:2) charge(270) tags(all 44 45 hero) group(h4) button(hero) level(1) cost(2.0) fore(-0.5))
 
-;{price {rule squad} {members 265.2} {cost 265}}
+;{price {rule squad} {members 224.7} {cost 225}}
 ("unit_infantry_sided_members3" side(ger2) name(hero4_ost) member1(ost_straf_ppsh:6) member2(ost_straf_mauzer:18) member3(ost_straf_mp28:6) charge(240) tags(all 44 45 hero) group(h3) button(hero) level(1) cost(2.0) fore(-0.5))
 
 {"hero1_ost(ger2)"		("i2" c(600)					t(all 44 45 hero officer super_officer) s(ger2) n1(ost_officer2:4) g(h3) b(hero)) {level 1} {cost 12.0} {fore 0.0}}

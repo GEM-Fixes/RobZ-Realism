@@ -11,7 +11,7 @@
 ;{price {rule squad} {members 92.1} {cost 92}}
 ("squad_3" side(axis_minor) name(hungarian_smg_squad) member1(axm_hun_squadleader_smg:1) member2(axm_hun_smg_ppsh:4) member3(axm_hun_smg_danuvia:4) charge(30) tags(all inf_only 44 45) group(squad_2) button(squad1) level(1) cost(84) fore(1.0))
 
-;{price {rule squad} {members 171.9} {cost 172}}
+;{price {rule squad} {members 115.9} {cost 116}}
 ("squad_4" side(axis_minor) name(romanian_rifle_squad) member1(axm_rom_rifle:7) member2(axm_rom_squadleader:1) member3(axm_rom_mgun:1) member4(axm_rom_mgunassist:1) charge(30) tags(all inf_only 44 45) group(squad_4) button(squad1) level(1) cost(114) fore(1.0))
 
 ;{price {rule squad} {members 234.4} {cost 234}}
@@ -64,7 +64,7 @@
 ;{price {rule single} {members 10.1} {mult 1.15} {cost 12}}
 ("squad_1" side(axis_minor) name(carcano) member1(axm_ita_bersaglieri_rifle:1) charge(10) tags(all inf_only 44 45) group(squad_17) button(squad2) level(1) cost(13) fore(1.0))
 
-;{price {rule single} {members 17.3} {mult 1.15} {cost 20}}
+;{price {rule single} {members 9.3} {mult 1.15} {cost 11}}
 ("squad_1" side(axis_minor) name(zb_24rifle) member1(axm_rom_rifle:1) charge(10) tags(all inf_only 44 45) group(squad_18) button(squad2) level(1) cost(13) fore(1.0))
 
 ;{price {rule single} {members 12.2} {mult 1.15} {cost 14}}

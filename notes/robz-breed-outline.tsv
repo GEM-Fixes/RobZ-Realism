@@ -1,0 +1,630 @@
+step	file	line	kind	is	nearest macro / standard	how it differs
+kit	resource/set/breed/mp/axis_minor/axm_bul_mgun.set	18	outline	zb_vz26	zb_vz26 with zb_vz26_mag 120 (1 breed), the most used load of this weapon but under 4 uses	standard zb_vz26_mag 120 (1 uses)
+kit	resource/set/breed/mp/axis_minor/axm_bul_mgun_assist.set	18	outline	mauzer	mauzer with mauser_rifle mauser 120 (1 breed), standard is mauser_clip 60	standard mauser_clip 60 (106 uses)
+kit	resource/set/breed/mp/axis_minor/axm_bul_miner_ap.set	19	outline	mannlicher_m1895	mannlicher_m1895 with 8x50 120 (1 breed), no standard load	standard none
+kit	resource/set/breed/mp/axis_minor/axm_bul_miner_at.set	18	outline	mannlicher_m1895	mannlicher_m1895 with 8x50 25 (1 breed), no standard load	standard none
+kit	resource/set/breed/mp/axis_minor/axm_bul_rifle.set	18	outline	mauzer	mauzer with mauser_clip 120 (2 breeds), standard is 60 (+60)	standard mauser_clip 60 (106 uses)
+kit	resource/set/breed/mp/axis_minor/axm_bul_smg.set	18	outline	mp40	mp40 with mp40_mag 120 (1 breed), standard is 192 (-72)	standard mp40_mag 192 (73 uses)
+kit	resource/set/breed/mp/axis_minor/axm_bul_squadleader.set	18	outline	mp40	mp40 with mp40_mag 128 (1 breed), standard is 192 (-64)	standard mp40_mag 192 (73 uses)
+kit	resource/set/breed/mp/axis_minor/axm_bul_squadleader.set	21	outline	grenade m24x5	{item "grenade m24x5" 2} (1 breed), nearest at_grenade_m24x5_x0_1 = count 0 1	standard at_grenade_m24x5_x0_1 (57 uses)
+kit	resource/set/breed/mp/axis_minor/axm_fin_at_rifle.set	18	outline	boyes	boyes with ptr 50 (1 breed), no standard load	standard none
+kit	resource/set/breed/mp/axis_minor/axm_fin_at_rifleassist.set	18	outline	suomi_m31	suomi_m31 with ppsh_mag 213 (2 breeds), standard is 210 (+3)	standard ppsh_mag 210 (7 uses)
+kit	resource/set/breed/mp/axis_minor/axm_fin_kaukopartio_mgun.set	18	outline	lsm26	lsm26 with LSM26_mag 320 (2 breeds), the most used load of this weapon but under 4 uses	standard LSM26_mag 320 (2 uses)
+kit	resource/set/breed/mp/axis_minor/axm_fin_kaukopartio_rifle.set	29	outline	mine antipersonnel	{item "mine antipersonnel" 3} (1 breed), nearest mine_antipersonnel_x5 = count 5	standard mine_antipersonnel_x5 (18 uses)
+kit	resource/set/breed/mp/axis_minor/axm_fin_kaukopartio_smg.set	18	outline	suomi_m31	suomi_m31 with ppsh_mag 213 (2 breeds), standard is 210 (+3)	standard ppsh_mag 210 (7 uses)
+kit	resource/set/breed/mp/axis_minor/axm_fin_kaukopartio_squadleader.set	24	outline	smoke grenade	{item "smoke grenade" 3} (1 breed), nearest smoke_x1 = count 1	standard smoke_x1 (166 uses)
+kit	resource/set/breed/mp/axis_minor/axm_fin_sissi_mgun_assist_vision.set	19	outline	mosin_fin	mosin_fin with no ammo line (next: {item  "LSM26_mag" 400})	standard 7x53 120 (7 uses)
+kit	resource/set/breed/mp/axis_minor/axm_fin_sissi_mgun_vision.set	18	outline	lsm26	lsm26 with LSM26_mag 320 (2 breeds), the most used load of this weapon but under 4 uses	standard LSM26_mag 320 (2 uses)
+kit	resource/set/breed/mp/axis_minor/axm_fin_sissi_mgun_vision.set	20	outline	luger	luger followed by ammo it does not load ({item  "ammo 9x19" 40})	standard walther_mag 32 (6 uses)
+kit	resource/set/breed/mp/axis_minor/axm_fin_sniper.set	22	outline	mosin_s_fin	mosin_s_fin with 7x53 120 (1 breed), the most used load of this weapon but under 4 uses	standard 7x53 120 (1 uses)
+kit	resource/set/breed/mp/axis_minor/axm_fin_tankman.set	20	outline	suomi_m31r	suomi_m31r with ppsh_mag 142 (1 breed), the most used load of this weapon but under 4 uses	standard ppsh_mag 142 (1 uses)
+kit	resource/set/breed/mp/axis_minor/axm_fin_vehicle_supporter.set	20	outline	mosin_fin	mosin_fin with 7x53 25 (1 breed), standard is 120 (-95)	standard 7x53 120 (7 uses)
+kit	resource/set/breed/mp/axis_minor/axm_hun_assualt_mgun.set	19	outline	solothurn_31m	solothurn_31m with solothurn31m_mag 240 (1 breed), the most used load of this weapon but under 4 uses	standard solothurn31m_mag 240 (1 uses)
+kit	resource/set/breed/mp/axis_minor/axm_hun_assualt_mgun_assist.set	19	outline	feg_35m	feg_35m with 8x56 320 (1 breed), no standard load	standard none
+kit	resource/set/breed/mp/axis_minor/axm_hun_assualt_pzf.set	19	outline	danuvia_39m	danuvia_39m with 9x25 190 (3 breeds), no standard load	standard none
+kit	resource/set/breed/mp/axis_minor/axm_hun_assualt_rifle.set	19	outline	feg_43m	feg_43m with 7x57 190 (1 breed), no standard load	standard none
+kit	resource/set/breed/mp/axis_minor/axm_hun_assualt_rifle.set	23	outline	grenade molotov_coctail	{item "grenade molotov_coctail" 1} (2 breeds), nearest fire_molotov_coctail_x0_1 = count 0 1	standard fire_molotov_coctail_x0_1 (51 uses)
+kit	resource/set/breed/mp/axis_minor/axm_hun_assualt_smg.set	19	outline	danuvia_39m	danuvia_39m with 9x25 190 (3 breeds), no standard load	standard none
+kit	resource/set/breed/mp/axis_minor/axm_hun_assualt_squadleader.set	19	outline	danuvia_39m	danuvia_39m with 9x25 190 (3 breeds), no standard load	standard none
+kit	resource/set/breed/mp/axis_minor/axm_hun_rifle.set	18	outline	feg_35m	feg_35m with 8x56 240 (1 breed), no standard load	standard none
+kit	resource/set/breed/mp/axis_minor/axm_hun_rifle.set	22	outline	grenade molotov_coctail	{item "grenade molotov_coctail" 2} (1 breed), nearest fire_molotov_coctail_x0_1 = count 0 1	standard fire_molotov_coctail_x0_1 (51 uses)
+kit	resource/set/breed/mp/axis_minor/axm_hun_rifle3.set	18	outline	feg_43m	feg_43m with 7x57 320 (1 breed), no standard load	standard none
+kit	resource/set/breed/mp/axis_minor/axm_hun_rifle3.set	22	outline	grenade molotov_coctail	{item "grenade molotov_coctail" 1} (2 breeds), nearest fire_molotov_coctail_x0_1 = count 0 1	standard fire_molotov_coctail_x0_1 (51 uses)
+kit	resource/set/breed/mp/axis_minor/axm_hun_smg_danuvia.set	18	outline	danuvia_39m	danuvia_39m with 9x25 160 (1 breed), no standard load	standard none
+kit	resource/set/breed/mp/axis_minor/axm_hun_smg_danuvia.set	22	outline	grenade molotov_coctail	{item "grenade molotov_coctail"} (2 breeds), nearest fire_molotov_coctail_x0_1 = count 0 1	standard fire_molotov_coctail_x0_1 (51 uses)
+kit	resource/set/breed/mp/axis_minor/axm_hun_smg_ppsh.set	18	outline	ppsh	ppsh with ppsh_mag 240 (1 breed), standard is 142 (+98)	standard ppsh_mag 142 (18 uses)
+kit	resource/set/breed/mp/axis_minor/axm_hun_smg_ppsh.set	22	outline	grenade molotov_coctail	{item "grenade molotov_coctail"} (2 breeds), nearest fire_molotov_coctail_x0_1 = count 0 1	standard fire_molotov_coctail_x0_1 (51 uses)
+kit	resource/set/breed/mp/axis_minor/axm_hun_squadleader_smg.set	18	outline	danuvia_43m	danuvia_43m with 9x25 160 (1 breed), the most used load of this weapon but under 4 uses	standard 9x25 160 (1 uses)
+kit	resource/set/breed/mp/axis_minor/axm_hun_tankcommander.set	21	outline	danuvia_39m	danuvia_39m with 9x25 80 (3 breeds), no standard load	standard none
+kit	resource/set/breed/mp/axis_minor/axm_hun_tankcommander_single.set	21	outline	danuvia_39m	danuvia_39m with 9x25 80 (3 breeds), no standard load	standard none
+kit	resource/set/breed/mp/axis_minor/axm_hun_vehicle_supporter.set	20	outline	danuvia_39m	danuvia_39m with 9x25 80 (3 breeds), no standard load	standard none
+kit	resource/set/breed/mp/axis_minor/axm_ita_alpini_mgun.set	18	outline	breda_30	breda_30 with breda_mag 320 (1 breed), no standard load	standard none
+kit	resource/set/breed/mp/axis_minor/axm_ita_alpini_mgun.set	20	outline	beretta_m1934	beretta_m1934 with 9x17 35 (2 breeds), the most used load of this weapon but under 4 uses	standard 9x17 35 (2 uses)
+kit	resource/set/breed/mp/axis_minor/axm_ita_alpini_mgun_assist.set	18	outline	m9138_carcano	m9138_carcano with 7x51 180 (1 breed), no standard load	standard none
+kit	resource/set/breed/mp/axis_minor/axm_ita_alpini_rifle.set	18	outline	m9138_carcano	m9138_carcano with 7x51 160 (1 breed), no standard load	standard none
+kit	resource/set/breed/mp/axis_minor/axm_ita_alpini_rifle2.set	18	outline	carcano_m91	carcano_m91 with 6x52 160 (1 breed), standard is 240 (-80)	standard 6x52 240 (2 uses)
+kit	resource/set/breed/mp/axis_minor/axm_ita_alpini_smg.set	18	outline	mab_38a	mab_38a with mab_38a_mag 160 (2 breeds), standard is 200 (-40)	standard mab_38a_mag 200 (4 uses)
+kit	resource/set/breed/mp/axis_minor/axm_ita_alpini_smg.set	23	outline	ccm34smoke	{item "ccm34smoke" 1} (2 breeds), nearest smoke_ccm34smoke_x2 = count 2	standard smoke_ccm34smoke_x2 (4 uses)
+kit	resource/set/breed/mp/axis_minor/axm_ita_alpini_sniper.set	22	outline	carcano_m91_scoped	carcano_m91_scoped with 6x52 160 (1 breed), the most used load of this weapon but under 4 uses	standard 6x52 160 (1 uses)
+kit	resource/set/breed/mp/axis_minor/axm_ita_alpini_sniper.set	24	outline	beretta_m1934	beretta_m1934 with 9x17 160 (1 breed), standard is 35 (+125)	standard 9x17 35 (2 uses)
+kit	resource/set/breed/mp/axis_minor/axm_ita_alpini_squadleader.set	18	outline	mab_38a	mab_38a with mab_38a_mag 160 (2 breeds), standard is 200 (-40)	standard mab_38a_mag 200 (4 uses)
+kit	resource/set/breed/mp/axis_minor/axm_ita_bersaglieri_mgun.set	20	outline	beretta_m1934	beretta_m1934 with 9x17 35 (2 breeds), the most used load of this weapon but under 4 uses	standard 9x17 35 (2 uses)
+kit	resource/set/breed/mp/axis_minor/axm_ita_bersaglieri_mgun_assist.set	18	outline	carcano_m91	carcano_m91 with 6x52 240 (2 breeds), the most used load of this weapon but under 4 uses	standard 6x52 240 (2 uses)
+kit	resource/set/breed/mp/axis_minor/axm_ita_bersaglieri_rifle.set	18	outline	carcano_m91	carcano_m91 with 6x52 240 (2 breeds), the most used load of this weapon but under 4 uses	standard 6x52 240 (2 uses)
+kit	resource/set/breed/mp/axis_minor/axm_ita_bersaglieri_rifle2.set	18	outline	m38_carcano	m38_carcano with 7x51 240 (1 breed), the most used load of this weapon but under 4 uses	standard 7x51 240 (1 uses)
+kit	resource/set/breed/mp/axis_minor/axm_ita_bersaglieri_smg.set	18	outline	mab_38a	mab_38a with mab_38a_mag 240 (3 breeds), standard is 200 (+40)	standard mab_38a_mag 200 (4 uses)
+kit	resource/set/breed/mp/axis_minor/axm_ita_paratrooper_mgun.set	19	outline	breda_30	breda_30 with breda_mag 240 (1 breed), no standard load	standard none
+kit	resource/set/breed/mp/axis_minor/axm_ita_paratrooper_mgun_assist.set	19	outline	scottix	scottix with 6x52 240 (2 breeds), the most used load of this weapon but under 4 uses	standard 6x52 240 (2 uses)
+kit	resource/set/breed/mp/axis_minor/axm_ita_paratrooper_rifle.set	19	outline	scottix	scottix with 6x52 240 (2 breeds), the most used load of this weapon but under 4 uses	standard 6x52 240 (2 uses)
+kit	resource/set/breed/mp/axis_minor/axm_ita_paratrooper_smg.set	19	outline	mab_38a	mab_38a with mab_38a_mag 240 (3 breeds), standard is 200 (+40)	standard mab_38a_mag 200 (4 uses)
+kit	resource/set/breed/mp/axis_minor/axm_ita_paratrooper_squadleader.set	19	outline	mab_38a	mab_38a with mab_38a_mag 240 (3 breeds), standard is 200 (+40)	standard mab_38a_mag 200 (4 uses)
+kit	resource/set/breed/mp/axis_minor/axm_ita_paratrooper_squadleader.set	24	outline	ccm34smoke	{item "ccm34smoke" 4} (1 breed), nearest smoke_ccm34smoke_x2 = count 2	standard smoke_ccm34smoke_x2 (4 uses)
+kit	resource/set/breed/mp/axis_minor/axm_ita_tankcommander.set	21	outline	glisenti	glisenti with 9x19c 35 (2 breeds), the most used load of this weapon but under 4 uses	standard 9x19c 35 (2 uses)
+kit	resource/set/breed/mp/axis_minor/axm_ita_tankman.set	19	outline	Bodeo_m1889	Bodeo_m1889 with 10x20 30 (2 breeds), the most used load of this weapon but under 4 uses	standard 10x20 30 (2 uses)
+kit	resource/set/breed/mp/axis_minor/axm_ita_vehicle_supporter.set	20	outline	mab_38a	mab_38a with mab_38a_mag 128 (1 breed), standard is 200 (-72)	standard mab_38a_mag 200 (4 uses)
+kit	resource/set/breed/mp/axis_minor/axm_ita_vehicle_supporter.set	24	outline	ccm34smoke	{item "ccm34smoke" 1} (2 breeds), nearest smoke_ccm34smoke_x2 = count 2	standard smoke_ccm34smoke_x2 (4 uses)
+kit	resource/set/breed/mp/axis_minor/axm_ita_vettankcommander.set	21	outline	glisenti	glisenti with 9x19c 35 (2 breeds), the most used load of this weapon but under 4 uses	standard 9x19c 35 (2 uses)
+kit	resource/set/breed/mp/axis_minor/axm_ita_vettankman.set	19	outline	Bodeo_m1889	Bodeo_m1889 with 10x20 30 (2 breeds), the most used load of this weapon but under 4 uses	standard 10x20 30 (2 uses)
+kit	resource/set/breed/mp/axis_minor/axm_rom_bazooker.set	18	outline	weapon panzershreck	weapon panzershreck with no ammo line (next: {item "valter" filled})	standard panzershreck 7 (4 uses)
+kit	resource/set/breed/mp/axis_minor/axm_rom_bazooker.set	19	outline	valter	valter followed by ammo it does not load ({item  "ammo 9x19" 40})	standard walther_mag 16 (57 uses)
+kit	resource/set/breed/mp/axis_minor/axm_rom_bazooker_assist.set	20	outline	valter	valter followed by ammo it does not load ({item  "ammo 9x19" 40})	standard walther_mag 16 (57 uses)
+kit	resource/set/breed/mp/axis_minor/axm_rom_mgun.set	18	outline	zb_30lmg	zb_30lmg with zb30_mag 240 (1 breed), the most used load of this weapon but under 4 uses	standard zb30_mag 240 (1 uses)
+kit	resource/set/breed/mp/axis_minor/axm_rom_rifle.set	18	outline	zb_24rifle	zb_24rifle with 7x57 120 (1 breed), the most used load of this weapon but under 4 uses	standard 7x57 120 (1 uses)
+kit	resource/set/breed/mp/axis_minor/axm_rom_tankcommander.set	21	outline	steyer_pistol_1912	steyer_pistol_1912 with 9x19 40 (1 breed), the most used load of this weapon but under 4 uses	standard 9x19 40 (1 uses)
+kit	resource/set/breed/mp/eng/elite2.set	18	outline	em3_vet	em3_vet with british303_clip 50 (3 breeds), standard is 100 (-50)	standard british303_clip 100 (5 uses)
+kit	resource/set/breed/mp/eng/elite2_40.set	18	outline	de_lisle	de_lisle with rifle 70 (2 breeds), the most used load of this weapon but under 4 uses	standard rifle 70 (2 uses)
+kit	resource/set/breed/mp/eng/elite_40.set	18	outline	sten_v_silencer	sten_v_silencer with sten_mag 128 (2 breeds), the most used load of this weapon but under 4 uses	standard sten_mag 128 (2 uses)
+kit	resource/set/breed/mp/eng/eng_anzac_at_rifle.set	23	outline	boyes	boyes with ptr 25 (1 breed), no standard load	standard none
+kit	resource/set/breed/mp/eng/eng_anzac_mg_assist.set	18	outline	em3	em3 followed by ammo it does not load ({item "ammo bren_mag" 224})	standard british303_clip 50 (28 uses)
+kit	resource/set/breed/mp/eng/eng_anzac_rifle.set	18	outline	em3	em3 with british303_clip 100 (1 breed), standard is 50 (+50)	standard british303_clip 50 (28 uses)
+kit	resource/set/breed/mp/eng/eng_anzac_sl.set	21	outline	grenade mk1	{item "grenade mk1" 4} (3 breeds), nearest frag_mk1_x2 = count 2	standard frag_mk1_x2 (72 uses)
+kit	resource/set/breed/mp/eng/eng_anzac_sl.set	22	outline	grenade n73at	{item "grenade n73at" 2} (3 breeds), nearest at_grenade_n73at_x1 = count 1	standard at_grenade_n73at_x1 (48 uses)
+kit	resource/set/breed/mp/eng/eng_anzac_smg.set	18	outline	owen_gun	owen_gun with owen_mag 320 (1 breed), the most used load of this weapon but under 4 uses	standard owen_mag 320 (1 uses)
+kit	resource/set/breed/mp/eng/eng_anzac_smg.set	21	outline	grenade mk1	{item "grenade mk1" 4} (3 breeds), nearest frag_mk1_x2 = count 2	standard frag_mk1_x2 (72 uses)
+kit	resource/set/breed/mp/eng/eng_anzac_smg.set	22	outline	grenade n73at	{item "grenade n73at" 2} (3 breeds), nearest at_grenade_n73at_x1 = count 1	standard at_grenade_n73at_x1 (48 uses)
+kit	resource/set/breed/mp/eng/eng_anzac_smg_thompson.set	21	outline	grenade mk1	{item "grenade mk1" 4} (3 breeds), nearest frag_mk1_x2 = count 2	standard frag_mk1_x2 (72 uses)
+kit	resource/set/breed/mp/eng/eng_anzac_smg_thompson.set	22	outline	grenade n73at	{item "grenade n73at" 2} (3 breeds), nearest at_grenade_n73at_x1 = count 1	standard at_grenade_n73at_x1 (48 uses)
+kit	resource/set/breed/mp/eng/eng_ap_miner.set	20	outline	mine antipersonnel	{item "mine antipersonnel" 34} (1 breed), nearest mine_antipersonnel_x5 = count 5	standard mine_antipersonnel_x5 (18 uses)
+kit	resource/set/breed/mp/eng/eng_at_miner.set	20	outline	mine antitank	{item "mine antitank" 9} (1 breed), nearest mine_antitank_x1 = count 1	standard mine_antitank_x1 (15 uses)
+kit	resource/set/breed/mp/eng/eng_commando_bren_assist.set	18	outline	em3_vet	em3_vet with british303_clip 50 (3 breeds), standard is 100 (-50)	standard british303_clip 100 (5 uses)
+kit	resource/set/breed/mp/eng/eng_commando_carbine.set	18	outline	em3_vet	em3_vet with british303_clip 50 (3 breeds), standard is 100 (-50)	standard british303_clip 100 (5 uses)
+kit	resource/set/breed/mp/eng/eng_commando_silence_carbine.set	18	outline	de_lisle	de_lisle with rifle 70 (2 breeds), the most used load of this weapon but under 4 uses	standard rifle 70 (2 uses)
+kit	resource/set/breed/mp/eng/eng_commando_silencesmg.set	18	outline	sten_v_silencer	sten_v_silencer with sten_mag 128 (2 breeds), the most used load of this weapon but under 4 uses	standard sten_mag 128 (2 uses)
+kit	resource/set/breed/mp/eng/eng_light_mortar.set	18	outline	mortar_mkvii	mortar_mkvii with mortar50 eng fg 6 (1 breed), the most used load of this weapon but under 4 uses	standard mortar50 eng fg 6 (1 uses)
+kit	resource/set/breed/mp/eng/eng_paratroopr_em2.set	19	outline	em2	em2 with british303_clip 100 (1 breed), no standard load	standard none
+kit	resource/set/breed/mp/eng/eng_pioneer_1trench.set	22	outline	grenade satchel	{item "grenade satchel" 2} (3 breeds), nearest frag_satchel_x1 = count 1	standard frag_satchel_x1 (13 uses)
+kit	resource/set/breed/mp/eng/eng_pioneer_3trench.set	22	outline	mine antipersonnel	{item "mine antipersonnel" 7} (2 breeds), nearest mine_antipersonnel_x5 = count 5	standard mine_antipersonnel_x5 (18 uses)
+kit	resource/set/breed/mp/eng/eng_pioneer_ap_miner.set	22	outline	mine antipersonnel	{item "mine antipersonnel" 31} (1 breed), nearest mine_antipersonnel_x5 = count 5	standard mine_antipersonnel_x5 (18 uses)
+kit	resource/set/breed/mp/eng/eng_pioneer_minedisposal.set	22	outline	mine antipersonnel	{item "mine antipersonnel" 7} (2 breeds), nearest mine_antipersonnel_x5 = count 5	standard mine_antipersonnel_x5 (18 uses)
+kit	resource/set/breed/mp/eng/eng_rifleman_smoke.set	29	outline	em3	em3 with british303_clip 60 (1 breed), standard is 50 (+10)	standard british303_clip 50 (28 uses)
+kit	resource/set/breed/mp/eng/eng_rifleman_smoke.set	33	outline	grenade mk1	{item "grenade mk1"} (1 breed), nearest frag_mk1_x2 = count 2	standard frag_mk1_x2 (72 uses)
+kit	resource/set/breed/mp/eng/eng_sas_bran_assist.set	23	outline	weapon piatrocket	weapon piatrocket with piatrocket 5 (2 breeds), the most used load of this weapon but under 4 uses	standard piatrocket 5 (2 uses)
+kit	resource/set/breed/mp/eng/eng_smg_wp.set	22	outline	grenade n73at	{item "grenade n73at" 0 1} (1 breed), nearest at_grenade_n73at_x1 = count 1 (odd count form)	standard at_grenade_n73at_x1 (48 uses)
+kit	resource/set/breed/mp/eng/eng_squadleader.set	22	outline	grenade n73at	{item "grenade n73at" 0.25 1} (2 breeds), nearest at_grenade_n73at_x1 = count 1 (odd count form)	standard at_grenade_n73at_x1 (48 uses)
+kit	resource/set/breed/mp/eng/eng_squadleader2.set	22	outline	grenade n73at	{item "grenade n73at" 0.25 1} (2 breeds), nearest at_grenade_n73at_x1 = count 1 (odd count form)	standard at_grenade_n73at_x1 (48 uses)
+kit	resource/set/breed/mp/eng/saper2.set	20	outline	mine antitank	{item "mine antitank" 6} (3 breeds), nearest mine_antitank_x1 = count 1	standard mine_antitank_x1 (15 uses)
+kit	resource/set/breed/mp/eng/sniper.set	21	outline	em2	em2 with british303_clip 50 (1 breed), no standard load	standard none
+kit	resource/set/breed/mp/eng/squadleader2_40.set	18	outline	em3_mark1	em3_mark1 with rifle_grenade 25 (1 breed), the most used load of this weapon but under 4 uses	standard rifle_grenade 25 (1 uses)
+kit	resource/set/breed/mp/eng/sturmovik3.set	23	outline	weapon piatrocket	weapon piatrocket with piatrocket 5 (2 breeds), the most used load of this weapon but under 4 uses	standard piatrocket 5 (2 uses)
+kit	resource/set/breed/mp/ger/bazooker.set	18	outline	weapon panzershreck	weapon panzershreck with no ammo line (next: {item "bandage" 3})	standard panzershreck 7 (4 uses)
+kit	resource/set/breed/mp/ger/fallschirm_sa.set	20	outline	g43	g43 with g43_mag 20 (3 breeds), the most used load of this weapon but under 4 uses	standard g43_mag 20 (3 uses)
+kit	resource/set/breed/mp/ger/fallschirm_sa_41.set	20	outline	g41	g41 with mauser_clip 120 (1 breed), standard is 80 (+40)	standard mauser_clip 80 (10 uses)
+kit	resource/set/breed/mp/ger/fallschirm_sniper.set	22	outline	mauzer_s	mauzer_s with mauser_clip 120 (3 breeds), standard is 60 (+60)	standard mauser_clip 60 (8 uses)
+kit	resource/set/breed/mp/ger/ger_fallschirm_sniper.set	22	outline	mauzer_s	mauzer_s with mauser_clip 120 (3 breeds), standard is 60 (+60)	standard mauser_clip 60 (8 uses)
+kit	resource/set/breed/mp/ger/ger_light_mortar.set	19	outline	mortar_legrw_36	mortar_legrw_36 with mortar50 ger fg 12 (3 breeds), the most used load of this weapon but under 4 uses	standard mortar50 ger fg 12 (3 uses)
+kit	resource/set/breed/mp/ger/ger_panzerschreck.set	18	outline	weapon panzershreck	weapon panzershreck with no ammo line (next: {item "bandage" 3})	standard panzershreck 7 (4 uses)
+kit	resource/set/breed/mp/ger/ger_pzgren_panzershreck.set	18	outline	weapon panzershreck	weapon panzershreck with no ammo line (next: {item "bandage" 5})	standard panzershreck 7 (4 uses)
+kit	resource/set/breed/mp/ger/ger_pzgren_pio_at.set	18	outline	weapon panzershreck	weapon panzershreck with no ammo line (next: {item "bandage" 3})	standard panzershreck 7 (4 uses)
+kit	resource/set/breed/mp/ger/ger_volksgren_mg.set	20	outline	valter	valter with no ammo line (next: {item "small_shovel" 1})	standard walther_mag 16 (57 uses)
+kit	resource/set/breed/mp/ger/ger_volksgren_pzfst2.set	22	outline	grenade m24	{item "grenade m24" 1.5 0.5} (3 breeds), nearest frag_m24_x2 = count 2 (odd count form)	standard frag_m24_x2 (244 uses)
+kit	resource/set/breed/mp/ger/ger_volksgren_smg.set	21	outline	grenade m24	{item "grenade m24" 1.5 0.5} (3 breeds), nearest frag_m24_x2 = count 2 (odd count form)	standard frag_m24_x2 (244 uses)
+kit	resource/set/breed/mp/ger/ger_volksgren_stg44.set	21	outline	grenade m24	{item "grenade m24" 1.5 0.5} (3 breeds), nearest frag_m24_x2 = count 2 (odd count form)	standard frag_m24_x2 (244 uses)
+kit	resource/set/breed/mp/ger/ger_volkssturm_smg_faustpatrone.set	18	outline	mp3008	mp3008 with mp40_mag 192 (1 breed), the most used load of this weapon but under 4 uses	standard mp40_mag 192 (1 uses)
+kit	resource/set/breed/mp/ger/ger_volkssturm_smg_panzerfaust.set	18	outline	vsg	vsg with stg44_mag 180 (1 breed), the most used load of this weapon but under 4 uses	standard stg44_mag 180 (1 uses)
+kit	resource/set/breed/mp/ger/grenadier_stg_42.set	18	outline	mkb42	mkb42 with stg44_mag 180 (1 breed), the most used load of this weapon but under 4 uses	standard stg44_mag 180 (1 uses)
+kit	resource/set/breed/mp/ger/grenadier_stg_43.set	18	outline	mp43	mp43 with stg44_mag 180 (1 breed), the most used load of this weapon but under 4 uses	standard stg44_mag 180 (1 uses)
+kit	resource/set/breed/mp/ger/sturmovik5.set	18	outline	weapon panzershreck	weapon panzershreck with no ammo line (next: {item "bandage" 5})	standard panzershreck 7 (4 uses)
+kit	resource/set/breed/mp/ger2/ost_fallschirm_mg_asst.set	20	outline	mauzer_vet	mauzer_vet with mauser_clip 80 (1 breed), standard is 60 (+20)	standard mauser_clip 60 (20 uses)
+kit	resource/set/breed/mp/ger2/ost_fallschirm_sl_asst_fg_44.set	20	outline	fg42_sc	fg42_sc with fg42_mag 160 (1 breed), the most used load of this weapon but under 4 uses	standard fg42_mag 160 (1 uses)
+kit	resource/set/breed/mp/ger2/ost_fallschirm_sniper.set	22	outline	mauzer_s	mauzer_s with mauser_clip 120 (3 breeds), standard is 60 (+60)	standard mauser_clip 60 (8 uses)
+kit	resource/set/breed/mp/ger2/ost_light_mortar.set	19	outline	mortar_legrw_36	mortar_legrw_36 with mortar50 ger fg 12 (3 breeds), the most used load of this weapon but under 4 uses	standard mortar50 ger fg 12 (3 uses)
+kit	resource/set/breed/mp/ger2/ost_officer2.set	25	outline	mp41	mp41 with mp40_mag 64 (1 breed), standard is 192 (-128)	standard mp40_mag 192 (7 uses)
+kit	resource/set/breed/mp/ger2/ost_panzershreck.set	18	outline	weapon panzershreck	weapon panzershreck with no ammo line (next: {item "bandage" 3})	standard panzershreck 7 (4 uses)
+kit	resource/set/breed/mp/ger2/ost_rifle2.set	18	outline	g43	g43 with g43_mag 20 (3 breeds), the most used load of this weapon but under 4 uses	standard g43_mag 20 (3 uses)
+kit	resource/set/breed/mp/ger2/ost_sl_asst.set	18	outline	g43	g43 with g43_mag 20 (3 breeds), the most used load of this weapon but under 4 uses	standard g43_mag 20 (3 uses)
+kit	resource/set/breed/mp/ger2/ost_straf_mp28.set	18	outline	mp28	mp28 with mp28_mag 180 (1 breed), the most used load of this weapon but under 4 uses	standard mp28_mag 180 (1 uses)
+kit	resource/set/breed/mp/ger2/ost_straf_ppsh.set	21	outline	dynamite_ladung	{item "dynamite_ladung" 1} (1 breed), nearest explosive_dynamite_ladung_x2 = count 2	standard explosive_dynamite_ladung_x2 (11 uses)
+kit	resource/set/breed/mp/ger_ss/ss_fallschirm_mg_asst.set	19	outline	mauzer	mauzer with mauser_clip 90 (1 breed), standard is 60 (+30)	standard mauser_clip 60 (106 uses)
+kit	resource/set/breed/mp/ger_ss/ss_fallschirm_rifle.set	19	outline	mauzer	mauzer with mauser_clip 120 (2 breeds), standard is 60 (+60)	standard mauser_clip 60 (106 uses)
+kit	resource/set/breed/mp/ger_ss/ss_kosaken_sl.set	19	outline	ppsh41	ppsh41 with ppsh41_mag 142 (3 breeds), standard is 105 (+37)	standard ppsh41_mag 105 (16 uses)
+kit	resource/set/breed/mp/ger_ss/ss_kosaken_sl_asst.set	19	outline	ppsh41	ppsh41 with ppsh41_mag 142 (3 breeds), standard is 105 (+37)	standard ppsh41_mag 105 (16 uses)
+kit	resource/set/breed/mp/ger_ss/ss_kosaken_smg.set	19	outline	ppsh41	ppsh41 with ppsh41_mag 142 (3 breeds), standard is 105 (+37)	standard ppsh41_mag 105 (16 uses)
+kit	resource/set/breed/mp/ger_ss/ss_light_mortar.set	19	outline	mortar_legrw_36	mortar_legrw_36 with mortar50 ger fg 12 (3 breeds), the most used load of this weapon but under 4 uses	standard mortar50 ger fg 12 (3 uses)
+kit	resource/set/breed/mp/ger_ss/ss_sturmpio4.set	22	outline	mine antitank	{item "mine antitank" 3} (1 breed), nearest mine_antitank_x1 = count 1	standard mine_antitank_x1 (15 uses)
+kit	resource/set/breed/mp/ger_ss/ss_sturmpio_at.set	18	outline	weapon panzershreck	weapon panzershreck with no ammo line (next: {item "bandage" 3})	standard panzershreck 7 (4 uses)
+kit	resource/set/breed/mp/jap/elite3.set	18	outline	type99_mg	type99_mg with type99_mag 240 (2 breeds), standard is 180 (+60)	standard type99_mag 180 (10 uses)
+kit	resource/set/breed/mp/jap/elite4.set	18	outline	type100smg	type100smg with type100_mag 240 (1 breed), standard is 180 (+60)	standard type100_mag 180 (25 uses)
+kit	resource/set/breed/mp/jap/elite_ig1h.set	18	outline	type_4_rifle	type_4_rifle with arisaka7-7_clip 60 (3 breeds), the most used load of this weapon but under 4 uses	standard arisaka7-7_clip 60 (3 uses)
+kit	resource/set/breed/mp/jap/elite_ig1h_ammo.set	18	outline	type_4_rifle	type_4_rifle with arisaka7-7_clip 60 (3 breeds), the most used load of this weapon but under 4 uses	standard arisaka7-7_clip 60 (3 uses)
+kit	resource/set/breed/mp/jap/elite_ig1h_asst.set	18	outline	type_4_rifle	type_4_rifle with arisaka7-7_clip 60 (3 breeds), the most used load of this weapon but under 4 uses	standard arisaka7-7_clip 60 (3 uses)
+kit	resource/set/breed/mp/jap/elite_ig2_scoped.set	18	outline	type99_mg_scoped	type99_mg_scoped with type99_mag 180 (1 breed), the most used load of this weapon but under 4 uses	standard type99_mag 180 (1 uses)
+kit	resource/set/breed/mp/jap/jap_ap_miner.set	20	outline	mine antipersonnel	{item "mine antipersonnel" 32} (2 breeds), nearest mine_antipersonnel_x5 = count 5	standard mine_antipersonnel_x5 (18 uses)
+kit	resource/set/breed/mp/jap/jap_charger_smg_type100_44.set	18	outline	type100_44_bayonet	type100_44_bayonet with type100_mag 180 (3 breeds), the most used load of this weapon but under 4 uses	standard type100_mag 180 (3 uses)
+kit	resource/set/breed/mp/jap/jap_elite_takasago_smg2.set	19	outline	type100_44_bayonet	type100_44_bayonet with type100_mag 180 (3 breeds), the most used load of this weapon but under 4 uses	standard type100_mag 180 (3 uses)
+kit	resource/set/breed/mp/jap/jap_kanoeshidan_type100_44.set	18	outline	type100_44	type100_44 with type100_mag 180 (3 breeds), the most used load of this weapon but under 4 uses	standard type100_mag 180 (3 uses)
+kit	resource/set/breed/mp/jap/jap_mg3_asst.set	18	outline	type99rifle	type99rifle with arisaka7-7_clip 200 (1 breed), standard is 60 (+140)	standard arisaka7-7_clip 60 (23 uses)
+kit	resource/set/breed/mp/jap/jap_mgun2.set	18	outline	type96_mg	type96_mg with type96_mag 180 (2 breeds), the most used load of this weapon but under 4 uses	standard type96_mag 180 (2 uses)
+kit	resource/set/breed/mp/jap/jap_mgun3.set	18	outline	type11_mg	type11_mg with arisaka6-5_clip 180 (3 breeds), the most used load of this weapon but under 4 uses	standard arisaka6-5_clip 180 (3 uses)
+kit	resource/set/breed/mp/jap/jap_officer.set	20	outline	nambu	nambu with nambu_mag 32 (3 breeds), the most used load of this weapon but under 4 uses	standard nambu_mag 32 (3 uses)
+kit	resource/set/breed/mp/jap/jap_rifle_grenadier.set	21	outline	type99rifle_at	type99rifle_at with rifle_grenade_at 6 (1 breed), the most used load of this weapon but under 4 uses	standard rifle_grenade_at 6 (1 uses)
+kit	resource/set/breed/mp/jap/jap_smg2b.set	18	outline	type100_44_bayonet	type100_44_bayonet with type100_mag 180 (3 breeds), the most used load of this weapon but under 4 uses	standard type100_mag 180 (3 uses)
+kit	resource/set/breed/mp/jap/jap_smgb.set	18	outline	type100_44	type100_44 with type100_mag 180 (3 breeds), the most used load of this weapon but under 4 uses	standard type100_mag 180 (3 uses)
+kit	resource/set/breed/mp/jap/jap_sniper_type97.set	21	outline	type97sniper	type97sniper with arisaka6-5_clip 100 (1 breed), no standard load	standard none
+kit	resource/set/breed/mp/jap/jap_sniper_type99.set	21	outline	type99sniper	type99sniper with arisaka7-7_clip 100 (1 breed), no standard load	standard none
+kit	resource/set/breed/mp/jap/jap_snlf_at2.set	18	outline	weapon weapon type_4at	weapon weapon type_4at with no ammo line (next: {item "type100smg" filled})	standard type_4 5 (5 uses)
+kit	resource/set/breed/mp/jap/jap_snlf_mg_asst.set	22	outline	grenade type99	{item "grenade type99" 2} (3 breeds), nearest frag_type99_x1 = count 1	standard frag_type99_x1 (5 uses)
+kit	resource/set/breed/mp/jap/jap_snlf_rifle_type99.set	22	outline	grenade type99	{item "grenade type99" 2} (3 breeds), nearest frag_type99_x1 = count 1	standard frag_type99_x1 (5 uses)
+kit	resource/set/breed/mp/jap/jap_snlf_type100_44.set	18	outline	type100_44	type100_44 with type100_mag 180 (3 breeds), the most used load of this weapon but under 4 uses	standard type100_mag 180 (3 uses)
+kit	resource/set/breed/mp/jap/jap_snlf_type100_44.set	21	outline	grenade type99	{item "grenade type99" 4} (2 breeds), nearest frag_type99_x1 = count 1	standard frag_type99_x1 (5 uses)
+kit	resource/set/breed/mp/jap/jap_tankman2_single.set	19	outline	type100smg	type100smg with type100_mag 30 (2 breeds), standard is 180 (-150)	standard type100_mag 180 (25 uses)
+kit	resource/set/breed/mp/jap/jap_tankman_single.set	19	outline	nambu	nambu with nambu_mag 24 (2 breeds), standard is 32 (-8)	standard nambu_mag 32 (3 uses)
+kit	resource/set/breed/mp/jap/jap_teishin_mg.set	18	outline	type99_mg	type99_mg with type99_mag 240 (2 breeds), standard is 180 (+60)	standard type99_mag 180 (10 uses)
+kit	resource/set/breed/mp/jap/jap_teishin_type100_44_apminer.set	18	outline	type100_44	type100_44 with type100_mag 240 (1 breed), standard is 180 (+60)	standard type100_mag 180 (3 uses)
+kit	resource/set/breed/mp/jap/jap_type4_atassist.set	18	outline	weapon weapon type_4at	weapon weapon type_4at with no ammo line (next: {item "type100smg" filled})	standard type_4 5 (5 uses)
+kit	resource/set/breed/mp/jap/kamikaze.set	21	outline	type100smg	type100smg with type100_mag 60 (1 breed), standard is 180 (-120)	standard type100_mag 180 (25 uses)
+kit	resource/set/breed/mp/jap/light_mortar.set	20	outline	type89_grenadelauncher	type89_grenadelauncher with 5cm_grenade fg 8 (1 breed), the most used load of this weapon but under 4 uses	standard 5cm_grenade fg 8 (1 uses)
+kit	resource/set/breed/mp/jap/mgun2.set	18	outline	type96_mg	type96_mg with type96_mag 180 (2 breeds), the most used load of this weapon but under 4 uses	standard type96_mag 180 (2 uses)
+kit	resource/set/breed/mp/jap/mgun3.set	18	outline	type11_mg	type11_mg with arisaka6-5_clip 180 (3 breeds), the most used load of this weapon but under 4 uses	standard arisaka6-5_clip 180 (3 uses)
+kit	resource/set/breed/mp/jap/oficer.set	25	outline	nambu	nambu with nambu_mag 32 (3 breeds), the most used load of this weapon but under 4 uses	standard nambu_mag 32 (3 uses)
+kit	resource/set/breed/mp/jap/otsu_mg.set	18	outline	type11_mg	type11_mg with arisaka6-5_clip 180 (3 breeds), the most used load of this weapon but under 4 uses	standard arisaka6-5_clip 180 (3 uses)
+kit	resource/set/breed/mp/jap/otsu_mg_ammo.set	18	outline	type38rifle_bayonet	type38rifle_bayonet with arisaka6-5_clip 180 (2 breeds), standard is 60 (+120)	standard arisaka6-5_clip 60 (9 uses)
+kit	resource/set/breed/mp/jap/otsu_mg_asst.set	18	outline	type38rifle_bayonet	type38rifle_bayonet with arisaka6-5_clip 180 (2 breeds), standard is 60 (+120)	standard arisaka6-5_clip 60 (9 uses)
+kit	resource/set/breed/mp/jap/sniper.set	21	outline	type99sniper	type99sniper with arisaka7-7_clip 60 (1 breed), no standard load	standard none
+kit	resource/set/breed/mp/jap/sniper2.set	21	outline	type97sniper	type97sniper with arisaka6-5_clip 60 (1 breed), no standard load	standard none
+kit	resource/set/breed/mp/jap/sturmovik.set	21	outline	grenade type99	{item "grenade type99" 4} (2 breeds), nearest frag_type99_x1 = count 1	standard frag_type99_x1 (5 uses)
+kit	resource/set/breed/mp/jap/sturmovik4.set	21	outline	grenade type99	{item "grenade type99" 2} (3 breeds), nearest frag_type99_x1 = count 1	standard frag_type99_x1 (5 uses)
+kit	resource/set/breed/mp/jap/super_officer.set	20	outline	nambu	nambu with nambu_mag 32 (3 breeds), the most used load of this weapon but under 4 uses	standard nambu_mag 32 (3 uses)
+kit	resource/set/breed/mp/jap/tankman.set	19	outline	nambu	nambu with nambu_mag 24 (2 breeds), standard is 32 (-8)	standard nambu_mag 32 (3 uses)
+kit	resource/set/breed/mp/jap/tankman2.set	19	outline	type100smg	type100smg with type100_mag 30 (2 breeds), standard is 180 (-150)	standard type100_mag 180 (25 uses)
+kit	resource/set/breed/mp/rus/conscript_rifle.set	18	outline	mosin	mosin with mosin_clip 40 (1 breed), standard is 60 (-20)	standard mosin_clip 60 (30 uses)
+kit	resource/set/breed/mp/rus/home_guard.set	18	outline	mosin	mosin with mosin_clip 30 (2 breeds), standard is 60 (-30)	standard mosin_clip 60 (30 uses)
+kit	resource/set/breed/mp/rus/home_guard2.set	18	outline	ppsh	ppsh with ppsh_mag 71 (2 breeds), standard is 142 (-71)	standard ppsh_mag 142 (18 uses)
+kit	resource/set/breed/mp/rus/home_guard3.set	18	outline	mp38	mp38 with mp40_mag 96 (2 breeds), the most used load of this weapon but under 4 uses	standard mp40_mag 96 (2 uses)
+kit	resource/set/breed/mp/rus/home_guard_mg.set	18	outline	mg34	mg34 with mg_mauser drum 150 (2 breeds), standard is 300 (-150)	standard mg_mauser drum 300 (19 uses)
+kit	resource/set/breed/mp/rus/oficer.set	25	outline	tt	tt with tt_mag 32 (3 breeds), the most used load of this weapon but under 4 uses	standard tt_mag 32 (3 uses)
+kit	resource/set/breed/mp/rus/rus_ap_miner.set	21	outline	mine antipersonnel	{item "mine antipersonnel" 33} (1 breed), nearest mine_antipersonnel_x5 = count 5	standard mine_antipersonnel_x5 (18 uses)
+kit	resource/set/breed/mp/rus/rus_bazookerassist.set	22	outline	grenade rpg40	{item "grenade rpg40"} (2 breeds), nearest at_grenade_rpg40_x1 = count 1	standard at_grenade_rpg40_x1 (20 uses)
+kit	resource/set/breed/mp/rus/rus_elite_tankcommander.set	19	outline	pps43	other weapon form: {item "pps43" filling "ammo pps43_mag" 35}	standard pps43_mag 210 (14 uses)
+kit	resource/set/breed/mp/rus/rus_elite_tankman.set	19	outline	ppsh41	other weapon form: {item "ppsh41" filling "ammo ppsh41_mag" 35}	standard ppsh41_mag 105 (16 uses)
+kit	resource/set/breed/mp/rus/rus_officer.set	20	outline	tt	tt with tt_mag 32 (3 breeds), the most used load of this weapon but under 4 uses	standard tt_mag 32 (3 uses)
+kit	resource/set/breed/mp/rus/rus_partisan_at.set	18	outline	mauzer	mauzer with mauser_clip 30 (1 breed), standard is 60 (-30)	standard mauser_clip 60 (106 uses)
+kit	resource/set/breed/mp/rus/rus_partisan_mg.set	18	outline	mg34	mg34 with mg_mauser drum 150 (2 breeds), standard is 300 (-150)	standard mg_mauser drum 300 (19 uses)
+kit	resource/set/breed/mp/rus/rus_partisan_mp38.set	18	outline	mp38	mp38 with mp40_mag 96 (2 breeds), the most used load of this weapon but under 4 uses	standard mp40_mag 96 (2 uses)
+kit	resource/set/breed/mp/rus/rus_partisan_rifle.set	18	outline	mosin	mosin with mosin_clip 30 (2 breeds), standard is 60 (-30)	standard mosin_clip 60 (30 uses)
+kit	resource/set/breed/mp/rus/rus_partisan_smg.set	18	outline	ppsh	ppsh with ppsh_mag 71 (2 breeds), standard is 142 (-71)	standard ppsh_mag 142 (18 uses)
+kit	resource/set/breed/mp/rus/rus_sapper_rifle1.set	23	outline	mine antitank	{item "mine antitank" 6} (3 breeds), nearest mine_antitank_x1 = count 1	standard mine_antitank_x1 (15 uses)
+kit	resource/set/breed/mp/rus/rus_sapper_rifle2.set	23	outline	mine antipersonnel	{item "mine antipersonnel" 18} (2 breeds), nearest mine_antipersonnel_x5 = count 5	standard mine_antipersonnel_x5 (18 uses)
+kit	resource/set/breed/mp/rus/rus_sapper_smg.set	23	outline	mine antipersonnel	{item "mine antipersonnel" 16} (2 breeds), nearest mine_antipersonnel_x5 = count 5	standard mine_antipersonnel_x5 (18 uses)
+kit	resource/set/breed/mp/rus/rus_sniper_mosin.set	21	outline	mosin_s	mosin_s with mosin_clip 120 (2 breeds), no standard load	standard none
+kit	resource/set/breed/mp/rus/rus_sniper_svtscoped.set	21	outline	svt40_s	svt40_s with svt40_mag 20 (2 breeds), the most used load of this weapon but under 4 uses	standard svt40_mag 20 (2 uses)
+kit	resource/set/breed/mp/rus/rus_vetsniper.set	21	outline	mosin_s	mosin_s with mosin_clip 100 (2 breeds), no standard load	standard none
+kit	resource/set/breed/mp/rus/sniper.set	21	outline	mosin_s	mosin_s with mosin_clip 120 (2 breeds), no standard load	standard none
+kit	resource/set/breed/mp/rus/sniper2.set	21	outline	mosin_s	mosin_s with mosin_clip 100 (2 breeds), no standard load	standard none
+kit	resource/set/breed/mp/rus/sniper3.set	21	outline	svt40_s	svt40_s with svt40_mag 20 (2 breeds), the most used load of this weapon but under 4 uses	standard svt40_mag 20 (2 uses)
+kit	resource/set/breed/mp/rus/vet_tankman.set	19	outline	ppsh41	other weapon form: {item "ppsh41" filling "ammo ppsh41_mag" 35}	standard ppsh41_mag 105 (16 uses)
+kit	resource/set/breed/mp/rus_guard/elite_tankman.set	19	outline	ppsh41	other weapon form: {item "ppsh41" filling "ammo ppsh41_mag" 35}	standard ppsh41_mag 105 (16 uses)
+kit	resource/set/breed/mp/rus_guard/elite_tankman2.set	19	outline	pps43	other weapon form: {item "pps43" filling "ammo pps43_mag" 35}	standard pps43_mag 210 (14 uses)
+kit	resource/set/breed/mp/rus_guard/guard_ap_miner.set	21	outline	mine antipersonnel	{item "mine antipersonnel" 25} (1 breed), nearest mine_antipersonnel_x5 = count 5	standard mine_antipersonnel_x5 (18 uses)
+kit	resource/set/breed/mp/rus_guard/guard_elite_guard_rifle.set	25	outline	grenade rpg43	{item "grenade rpg43" 0.25 1} (3 breeds), nearest at_grenade_rpg43_x1 = count 1 (odd count form)	standard at_grenade_rpg43_x1 (18 uses)
+kit	resource/set/breed/mp/rus_guard/guard_elite_guard_sa.set	26	outline	grenade rpg43	{item "grenade rpg43" 0.25 1} (3 breeds), nearest at_grenade_rpg43_x1 = count 1 (odd count form)	standard at_grenade_rpg43_x1 (18 uses)
+kit	resource/set/breed/mp/rus_guard/guard_elite_guard_sl.set	25	outline	grenade rpg43	{item "grenade rpg43" 0.25 1} (3 breeds), nearest at_grenade_rpg43_x1 = count 1 (odd count form)	standard at_grenade_rpg43_x1 (18 uses)
+kit	resource/set/breed/mp/rus_guard/guard_elite_tankcommander.set	19	outline	pps43	other weapon form: {item "pps43" filling "ammo pps43_mag" 35}	standard pps43_mag 210 (14 uses)
+kit	resource/set/breed/mp/rus_guard/guard_elite_tankman.set	19	outline	ppsh41	other weapon form: {item "ppsh41" filling "ammo ppsh41_mag" 35}	standard ppsh41_mag 105 (16 uses)
+kit	resource/set/breed/mp/rus_guard/guard_officer.set	25	outline	tt	tt with tt_mag 32 (3 breeds), the most used load of this weapon but under 4 uses	standard tt_mag 32 (3 uses)
+kit	resource/set/breed/mp/rus_guard/guard_sapper_rifle1.set	23	outline	mine antitank	{item "mine antitank" 6} (3 breeds), nearest mine_antitank_x1 = count 1	standard mine_antitank_x1 (15 uses)
+kit	resource/set/breed/mp/rus_guard/guard_sapper_rifle2.set	23	outline	mine antipersonnel	{item "mine antipersonnel" 18} (2 breeds), nearest mine_antipersonnel_x5 = count 5	standard mine_antipersonnel_x5 (18 uses)
+kit	resource/set/breed/mp/rus_guard/guard_sapper_smg.set	23	outline	mine antipersonnel	{item "mine antipersonnel" 16} (2 breeds), nearest mine_antipersonnel_x5 = count 5	standard mine_antipersonnel_x5 (18 uses)
+kit	resource/set/breed/mp/rus_guard/guard_sniper_mosin.set	21	outline	mosin_s_vet	mosin_s_vet with mosin_clip 120 (1 breed), the most used load of this weapon but under 4 uses	standard mosin_clip 120 (1 uses)
+kit	resource/set/breed/mp/rus_guard/guard_sniper_svtscope.set	21	outline	svt40_s_vet	svt40_s_vet with svt40_mag 20 (1 breed), the most used load of this weapon but under 4 uses	standard svt40_mag 20 (1 uses)
+kit	resource/set/breed/mp/rus_guard/rus_guard_tankman2_single.set	19	outline	pps43	other weapon form: {item "pps43" filling "ammo pps43_mag" 35}	standard pps43_mag 210 (14 uses)
+kit	resource/set/breed/mp/rus_guard/rus_guard_vet_tankman2_single.set	19	outline	pps43	other weapon form: {item "pps43" filling "ammo pps43_mag" 35}	standard pps43_mag 210 (14 uses)
+kit	resource/set/breed/mp/rus_guard/tankman2.set	19	outline	pps43	other weapon form: {item "pps43" filling "ammo pps43_mag" 35}	standard pps43_mag 210 (14 uses)
+kit	resource/set/breed/mp/rus_guard/vet_tankman.set	19	outline	ppsh41	other weapon form: {item "ppsh41" filling "ammo ppsh41_mag" 35}	standard ppsh41_mag 105 (16 uses)
+kit	resource/set/breed/mp/rus_guard/vet_tankman2.set	19	outline	pps43	other weapon form: {item "pps43" filling "ammo pps43_mag" 35}	standard pps43_mag 210 (14 uses)
+kit	resource/set/breed/mp/usa/devil_brigade_radio.set	26	outline	mortar_flaergun	mortar_flaergun with mortar_flaer 5 (1 breed), the most used load of this weapon but under 4 uses	standard mortar_flaer 5 (1 uses)
+kit	resource/set/breed/mp/usa/paramarine.set	19	outline	johnson	johnson with springfield_clip 80 (3 breeds), the most used load of this weapon but under 4 uses	standard springfield_clip 80 (3 uses)
+kit	resource/set/breed/mp/usa/shotgun.set	18	outline	m12_shotgun	m12_shotgun with shotgun 90 (2 breeds), the most used load of this weapon but under 4 uses	standard shotgun 90 (2 uses)
+kit	resource/set/breed/mp/usa/usa_ap_miner.set	21	outline	mine antipersonnel	{item "mine antipersonnel" 32} (2 breeds), nearest mine_antipersonnel_x5 = count 5	standard mine_antipersonnel_x5 (18 uses)
+kit	resource/set/breed/mp/usa/usa_armor_rifle.set	21	outline	grenade m61	{item "grenade m61" 1} (3 breeds), nearest frag_m61_x2 = count 2	standard frag_m61_x2 (100 uses)
+kit	resource/set/breed/mp/usa/usa_devil_brigade_radio.set	26	outline	mortar_60_flaregun	mortar_60_flaregun with mortar_60_flare 5 (1 breed), the most used load of this weapon but under 4 uses	standard mortar_60_flare 5 (1 uses)
+kit	resource/set/breed/mp/usa/usa_elite_101st_para4.set	24	outline	weapon m18recoilless	weapon m18recoilless with m18recoilless 8 (2 breeds), the most used load of this weapon but under 4 uses	standard m18recoilless 8 (2 uses)
+kit	resource/set/breed/mp/usa/usa_engineer.set	22	outline	grenade satchel	{item "grenade satchel" 2} (3 breeds), nearest frag_satchel_x1 = count 1	standard frag_satchel_x1 (13 uses)
+kit	resource/set/breed/mp/usa/usa_engineer.set	23	outline	mine antitank	{item "mine antitank"} (1 breed), nearest mine_antitank_x1 = count 1	standard mine_antitank_x1 (15 uses)
+kit	resource/set/breed/mp/usa/usa_engineer2.set	22	outline	mine antipersonnel	{item "mine antipersonnel" 20} (1 breed), nearest mine_antipersonnel_x5 = count 5	standard mine_antipersonnel_x5 (18 uses)
+kit	resource/set/breed/mp/usa/usa_engineer3.set	22	outline	mine antitank	{item "mine antitank" 5} (1 breed), nearest mine_antitank_x1 = count 1	standard mine_antitank_x1 (15 uses)
+kit	resource/set/breed/mp/usa/usa_engineer4.set	22	outline	grenade satchel	{item "grenade satchel" 2} (3 breeds), nearest frag_satchel_x1 = count 1	standard frag_satchel_x1 (13 uses)
+kit	resource/set/breed/mp/usa/usa_engineer_at.set	21	outline	weapon bazooka	weapon bazooka with bazooka 4 (1 breed), the most used load of this weapon but under 4 uses	standard bazooka 4 (1 uses)
+kit	resource/set/breed/mp/usa/usa_marine_shotgun.set	18	outline	m12_shotgun	m12_shotgun with shotgun 90 (2 breeds), the most used load of this weapon but under 4 uses	standard shotgun 90 (2 uses)
+kit	resource/set/breed/mp/usa/usa_nightfighter_carbine.set	51	outline	m3_carbine	m3_carbine with m2carbine_mag 240 (2 breeds), the most used load of this weapon but under 4 uses	standard m2carbine_mag 240 (2 uses)
+kit	resource/set/breed/mp/usa/usa_nightfighter_carbine.set	54	outline	grenade m61	{item "grenade m61" 1} (3 breeds), nearest frag_m61_x2 = count 2	standard frag_m61_x2 (100 uses)
+kit	resource/set/breed/mp/usa/usa_nightfighter_leader.set	20	outline	m3_carbine	m3_carbine with m2carbine_mag 240 (2 breeds), the most used load of this weapon but under 4 uses	standard m2carbine_mag 240 (2 uses)
+kit	resource/set/breed/mp/usa/usa_nightfighter_leader.set	23	outline	grenade m61	{item "grenade m61" 1} (3 breeds), nearest frag_m61_x2 = count 2	standard frag_m61_x2 (100 uses)
+kit	resource/set/breed/mp/usa/usa_paramarine.set	19	outline	johnson	johnson with springfield_clip 80 (3 breeds), the most used load of this weapon but under 4 uses	standard springfield_clip 80 (3 uses)
+kit	resource/set/breed/mp/usa/usa_paramarine3_asst.set	19	outline	johnson	johnson with springfield_clip 80 (3 breeds), the most used load of this weapon but under 4 uses	standard springfield_clip 80 (3 uses)
+kit	resource/set/breed/mp/usa/usa_raider.set	24	outline	garand	other weapon form: {item "garand" filling "garand_clip ammo" 8}	standard garand_clip 80 (51 uses)
+kit	resource/set/breed/mp/usa/usa_raiderasst.set	24	outline	garand	other weapon form: {item "garand" filling "garand_clip ammo" 8}	standard garand_clip 80 (51 uses)
+kit	resource/set/breed/mp/usa/usa_raiderbar.set	24	outline	bar_rifle	other weapon form: {item "bar_rifle" filling "bar_mag ammo" 20}	standard bar_mag 240 (12 uses)
+kit	resource/set/breed/mp/usa/usa_raiderdemo.set	25	outline	dynamite	{item "dynamite" 3} (1 breed), nearest explosive_dynamite_x1 = count 1	standard explosive_dynamite_x1 (26 uses)
+kit	resource/set/breed/mp/usa/usa_raiderdemo.set	26	outline	m3a	other weapon form: {item "m3a" filling "m3a_mag ammo" 32}	standard m3a_mag 192 (8 uses)
+kit	resource/set/breed/mp/usa/usa_ranger_carbine.set	19	outline	m2_carbine	m2_carbine with m2carbine_mag 180 (1 breed), the most used load of this weapon but under 4 uses	standard m2carbine_mag 180 (1 uses)
+kit	resource/set/breed/mp/usa/usa_ranger_recoiless.set	18	outline	m1903	m1903 with springfield_clip 100 (2 breeds), the most used load of this weapon but under 4 uses	standard springfield_clip 100 (2 uses)
+kit	resource/set/breed/mp/usa/usa_ranger_recoiless.set	21	outline	weapon m18recoilless	weapon m18recoilless with m18recoilless 8 (2 breeds), the most used load of this weapon but under 4 uses	standard m18recoilless 8 (2 uses)
+kit	resource/set/breed/mp/usa/usa_ranger_sniper.set	29	outline	m1903a4	other weapon form: {item "m1903a4" filling "springfield_clip ammo" 5}	standard springfield_clip 100 (4 uses)
+kit	resource/set/breed/mp/usa/usa_ranger_springfield2.set	18	outline	m1903	m1903 with springfield_clip 100 (2 breeds), the most used load of this weapon but under 4 uses	standard springfield_clip 100 (2 uses)
+kit	resource/set/breed/mp/axis_minor/axm_bul_officer.set	26	outline	valter	valter followed by ammo it does not load ({item  "ammo 9x19" 40})	standard walther_mag 16 (57 uses)
+kit	resource/set/breed/mp/axis_minor/axm_bul_radioman.set	18	outline	mp40	mp40 with no ammo line (next: {item "mortar_flaergun" filled})	standard mp40_mag 192 (73 uses)
+kit	resource/set/breed/mp/axis_minor/axm_fin_pio_flamer.set	22	outline	luger	luger followed by ammo it does not load ({item  "ammo 9x19" 40})	standard walther_mag 32 (6 uses)
+kit	resource/set/breed/mp/axis_minor/axm_fin_pio_mgun.set	20	outline	luger	luger followed by ammo it does not load ({item  "ammo 9x19" 40})	standard walther_mag 32 (6 uses)
+kit	resource/set/breed/mp/axis_minor/axm_fin_sissi_mgun.set	20	outline	luger	luger followed by ammo it does not load ({item  "ammo 9x19" 40})	standard walther_mag 32 (6 uses)
+kit	resource/set/breed/mp/eng/eng_radioman_airstrike.set	18	outline	sten_mk2	sten_mk2 with no ammo line (next: {item "airstrike_rp3_flaregun" filled})	standard sten_mag 128 (28 uses)
+kit	resource/set/breed/mp/ger/ger_radioman_mortar.set	18	outline	mp40	mp40 with no ammo line (next: {item "mortar_flaergun" filled})	standard mp40_mag 192 (73 uses)
+kit	resource/set/breed/mp/ger/radioman_mortar.set	18	outline	mp40	mp40 with no ammo line (next: {item "mortar_flaergun" filled})	standard mp40_mag 192 (73 uses)
+kit	resource/set/breed/mp/ger2/ost_radioman.set	18	outline	mp40	mp40 with no ammo line (next: {item "mortar_flaergun" filled})	standard mp40_mag 192 (73 uses)
+kit	resource/set/breed/mp/rus/radioman_mortar.set	18	outline	ppsh	ppsh with no ammo line (next: {item "mortar_flaergun" filled})	standard ppsh_mag 142 (18 uses)
+kit	resource/set/breed/mp/rus/rus_bazooker.set	20	outline	grenade rpg40	{item "grenade rpg40"} (2 breeds), nearest at_grenade_rpg40_x1 = count 1	standard at_grenade_rpg40_x1 (20 uses)
+kit	resource/set/breed/mp/rus/rus_radioman_mortar.set	18	outline	ppsh	ppsh with no ammo line (next: {item "mortar_flaergun" filled})	standard ppsh_mag 142 (18 uses)
+kit	resource/set/breed/mp/usa/radioman_mortar.set	18	outline	m3a	m3a with no ammo line (next: {item "mortar_flaergun" filled})	standard m3a_mag 192 (8 uses)
+kit	resource/set/breed/mp/usa/usa_radioman_105.set	18	outline	m3a	m3a with no ammo line (next: {item "artillery_105_flaregun" filled})	standard m3a_mag 192 (8 uses)
+kit	resource/set/breed/mp/usa/usa_radioman_155.set	18	outline	m3a	m3a with no ammo line (next: {item "artillery_155_flaregun" filled})	standard m3a_mag 192 (8 uses)
+kit	resource/set/breed/mp/usa/usa_radioman_240.set	18	outline	m3a	m3a with no ammo line (next: {item "artillery_240_flaregun" filled})	standard m3a_mag 192 (8 uses)
+kit	resource/set/breed/mp/usa/usa_radioman_mortar.set	18	outline	m3a	m3a with no ammo line (next: {item "mortar_flaergun" filled})	standard m3a_mag 192 (8 uses)
+tiers	resource/set/breed/mp/axis_minor/axm_bul_mgun.set	14	outline	skills near skills_jap_1_1_3_1_1_2 (7 breeds)	rifle 2 vs 1	values
+tiers	resource/set/breed/mp/axis_minor/axm_bul_mgun_assist.set	14	outline	skills near skills_jap_1_1_3_1_1_2 (7 breeds)	rifle 2 vs 1	values
+tiers	resource/set/breed/mp/axis_minor/axm_bul_officer.set	14	outline	body near body_officer_s100 (4 breeds)	health 300% vs 250%	values
+tiers	resource/set/breed/mp/axis_minor/axm_bul_radioman.set	12	outline	body near body_regular (346 breeds)	health 300% vs 150%	values
+tiers	resource/set/breed/mp/axis_minor/axm_bul_squadleader.set	14	outline	skills near skills_4_4_2_3_2_4 (47 breeds)	no tier within 2 values (nearest skills_4_4_2_3_2_4, 3 values differ)	far
+tiers	resource/set/breed/mp/axis_minor/axm_fin_elite_sniper.set	16	outline	skills near skills_2_2_2_4_2_4 (7 breeds)	rifle 7 vs 4	values
+tiers	resource/set/breed/mp/axis_minor/axm_fin_kaukopartio_mgun.set	14	outline	skills near skills_3_3_3_4_3_3 (13 breeds)	mgun 6 vs 3	values
+tiers	resource/set/breed/mp/axis_minor/axm_fin_kaukopartio_mgun_assist.set	14	outline	skills near skills_3_3_3_4_3_3 (13 breeds)	mgun 6 vs 3, rifle 6 vs 4	values
+tiers	resource/set/breed/mp/axis_minor/axm_fin_kaukopartio_rifle.set	14	outline	skills near skills_3_3_3_4_3_3 (13 breeds)	rifle 6 vs 4	values
+tiers	resource/set/breed/mp/axis_minor/axm_fin_kaukopartio_smg.set	14	outline	skills near skills_3_3_3_4_3_3 (13 breeds)	no tier within 2 values (nearest skills_3_3_3_4_3_3, 3 values differ)	far
+tiers	resource/set/breed/mp/axis_minor/axm_fin_kaukopartio_squadleader.set	14	outline	skills near skills_3_3_3_4_3_3 (13 breeds)	no tier within 2 values (nearest skills_3_3_3_4_3_3, 3 values differ)	far
+tiers	resource/set/breed/mp/axis_minor/axm_fin_officer.set	13	outline	body near body_officer_s100 (4 breeds)	health 300% vs 250%	values
+tiers	resource/set/breed/mp/axis_minor/axm_fin_pio_flamer.set	15	outline	skills near skills_2_3_2_2_1_2 (4 breeds)	rifle 4 vs 2	values
+tiers	resource/set/breed/mp/axis_minor/axm_fin_pio_mgun.set	14	outline	skills near skills_rus_militia (11 breeds)	no tier within 2 values (nearest skills_rus_militia, 3 values differ)	far
+tiers	resource/set/breed/mp/axis_minor/axm_fin_pio_rifle.set	14	outline	skills near skills_rus_militia (11 breeds)	rifle 4 vs 1	values
+tiers	resource/set/breed/mp/axis_minor/axm_fin_pio_rifle_dynamite.set	14	outline	skills near skills_rus_militia (11 breeds)	rifle 4 vs 1	values
+tiers	resource/set/breed/mp/axis_minor/axm_fin_pio_smg.set	14	outline	skills near skills_rus_militia (11 breeds)	smg 4 vs 1	values
+tiers	resource/set/breed/mp/axis_minor/axm_fin_pio_squadleader.set	14	outline	skills near skills_rus_militia (11 breeds)	smg 5 vs 1, rifle 4 vs 1	values
+tiers	resource/set/breed/mp/axis_minor/axm_fin_sissi_mgun.set	14	outline	skills near skills_rus_militia (11 breeds)	no tier within 2 values (nearest skills_rus_militia, 3 values differ)	far
+tiers	resource/set/breed/mp/axis_minor/axm_fin_sissi_mgun_assist.set	14	outline	skills near skills_rus_militia (11 breeds)	mgun 7 vs 1, rifle 7 vs 1	values
+tiers	resource/set/breed/mp/axis_minor/axm_fin_sissi_mgun_assist_vision.set	12	outline	body near body_squadleader (73 breeds)	vision "mp_officer" vs "mp_soldier", speed 1.1 vs 0.9	values
+tiers	resource/set/breed/mp/axis_minor/axm_fin_sissi_mgun_assist_vision.set	14	outline	skills near skills_rus_militia (11 breeds)	mgun 7 vs 1, rifle 7 vs 1	values
+tiers	resource/set/breed/mp/axis_minor/axm_fin_sissi_mgun_vision.set	12	outline	body near body_squadleader (73 breeds)	vision "mp_officer" vs "mp_soldier", speed 1.1 vs 0.9	values
+tiers	resource/set/breed/mp/axis_minor/axm_fin_sissi_mgun_vision.set	14	outline	skills near skills_2_1_1_3_1_2 (17 breeds)	pistol 1 vs 2, mgun 7 vs 1	values
+tiers	resource/set/breed/mp/axis_minor/axm_fin_sissi_rifle.set	14	outline	skills near skills_rus_militia (11 breeds)	no tier within 2 values (nearest skills_rus_militia, 3 values differ)	far
+tiers	resource/set/breed/mp/axis_minor/axm_fin_sissi_rifle_vision.set	12	outline	body near body_regular (346 breeds)	vision "mp_officer" vs "mp_soldier", speed 1.1 vs 0.9	values
+tiers	resource/set/breed/mp/axis_minor/axm_fin_sissi_rifle_vision.set	14	outline	skills near skills_rus_militia (11 breeds)	no tier within 2 values (nearest skills_rus_militia, 3 values differ)	far
+tiers	resource/set/breed/mp/axis_minor/axm_fin_sissi_smg.set	14	outline	skills near skills_2_2_1_1_3_2 (9 breeds)	no tier within 2 values (nearest skills_2_2_1_1_3_2, 3 values differ)	far
+tiers	resource/set/breed/mp/axis_minor/axm_fin_sissi_smg_vision.set	12	outline	body near body_regular (346 breeds)	vision "mp_officer" vs "mp_soldier", speed 1.1 vs 0.9	values
+tiers	resource/set/breed/mp/axis_minor/axm_fin_sissi_smg_vision.set	14	outline	skills near skills_2_2_1_1_3_2 (9 breeds)	no tier within 2 values (nearest skills_2_2_1_1_3_2, 3 values differ)	far
+tiers	resource/set/breed/mp/axis_minor/axm_fin_sissi_squadleader.set	14	outline	skills near skills_jap_3_3_3_5_3_5 (12 breeds)	no tier within 2 values (nearest skills_jap_3_3_3_5_3_5, 3 values differ)	far
+tiers	resource/set/breed/mp/axis_minor/axm_fin_sissi_squadleader_vision.set	12	outline	body near body_squadleader (73 breeds)	vision "mp_officer" vs "mp_soldier", speed 1.1 vs 0.9	values
+tiers	resource/set/breed/mp/axis_minor/axm_fin_sissi_squadleader_vision.set	14	outline	skills near skills_jap_3_3_3_5_3_5 (12 breeds)	no tier within 2 values (nearest skills_jap_3_3_3_5_3_5, 3 values differ)	far
+tiers	resource/set/breed/mp/axis_minor/axm_hun_elite_tankcommander.set	15	outline	skills near skills_2_2_1_1_1_2 (28 breeds)	pistol 6 vs 2	values
+tiers	resource/set/breed/mp/axis_minor/axm_hun_squadleader_smg.set	14	outline	skills near skills_3_3_2_2_1_3 (11 breeds)	rifle 3 vs 2, melee 2 vs 3	values
+tiers	resource/set/breed/mp/axis_minor/axm_hun_vet_tankcommander.set	15	outline	skills near skills_axis_minor_2_2_4_1_1_2 (4 breeds)	pistol 6 vs 2	values
+tiers	resource/set/breed/mp/axis_minor/axm_ita_alpini_mgun.set	14	outline	skills near skills_2_1_1_3_1_2 (17 breeds)	pistol 1 vs 2, mgun 4 vs 1	values
+tiers	resource/set/breed/mp/axis_minor/axm_ita_alpini_mgun_assist.set	14	outline	skills near skills_2_3_1_1_1_2 (9 breeds)	mgun 4 vs 1, rifle 4 vs 1	values
+tiers	resource/set/breed/mp/axis_minor/axm_ita_alpini_rifle.set	14	outline	skills near skills_2_1_3_3_1_2 (7 breeds)	rifle 4 vs 3	values
+tiers	resource/set/breed/mp/axis_minor/axm_ita_alpini_rifle2.set	14	outline	skills near skills_2_3_1_1_1_2 (9 breeds)	mgun 3 vs 1, rifle 4 vs 1	values
+tiers	resource/set/breed/mp/axis_minor/axm_ita_alpini_smg.set	14	outline	skills near skills_2_2_2_3_1_3 (21 breeds)	smg 4 vs 2, melee 2 vs 3	values
+tiers	resource/set/breed/mp/axis_minor/axm_ita_alpini_sniper.set	17	outline	skills near skills_sniper_r5 (9 breeds)	mgun 4 vs 1	values
+tiers	resource/set/breed/mp/axis_minor/axm_ita_alpini_squadleader.set	14	outline	skills near skills_2_2_2_3_1_3 (21 breeds)	no tier within 2 values (nearest skills_2_2_2_3_1_3, 3 values differ)	far
+tiers	resource/set/breed/mp/axis_minor/axm_ita_bersaglieri_mgun.set	14	outline	skills near skills_rus_militia (11 breeds)	no tier within 2 values (nearest skills_rus_militia, 3 values differ)	far
+tiers	resource/set/breed/mp/axis_minor/axm_ita_bersaglieri_mgun_assist.set	14	outline	skills near skills_ger_ss_4_3_5_5_4_4 (21 breeds)	no tier within 2 values (nearest skills_ger_ss_4_3_5_5_4_4, 3 values differ)	far
+tiers	resource/set/breed/mp/axis_minor/axm_ita_bersaglieri_rifle.set	14	outline	skills near skills_sniper_r5 (9 breeds)	smg 4 vs 2, mgun 4 vs 1	values
+tiers	resource/set/breed/mp/axis_minor/axm_ita_bersaglieri_rifle2.set	14	outline	skills near skills_sniper_r5 (9 breeds)	smg 4 vs 2, mgun 4 vs 1	values
+tiers	resource/set/breed/mp/axis_minor/axm_ita_bersaglieri_smg.set	14	outline	skills near skills_2_1_3_3_1_2 (7 breeds)	smg 5 vs 1, rifle 4 vs 3	values
+tiers	resource/set/breed/mp/axis_minor/axm_ita_paratrooper_mgun.set	15	outline	skills near skills_3_3_3_4_3_3 (13 breeds)	mgun 7 vs 3, rifle 7 vs 4	values
+tiers	resource/set/breed/mp/axis_minor/axm_ita_paratrooper_mgun_assist.set	15	outline	skills near skills_3_3_3_4_3_3 (13 breeds)	mgun 7 vs 3, rifle 7 vs 4	values
+tiers	resource/set/breed/mp/axis_minor/axm_ita_paratrooper_rifle.set	15	outline	skills near skills_3_3_3_4_3_3 (13 breeds)	mgun 5 vs 3, rifle 7 vs 4	values
+tiers	resource/set/breed/mp/axis_minor/axm_ita_paratrooper_smg.set	15	outline	skills near skills_3_3_4_4_3_3 (6 breeds)	smg 7 vs 3, rifle 5 vs 4	values
+tiers	resource/set/breed/mp/axis_minor/axm_ita_paratrooper_squadleader.set	15	outline	skills near skills_3_3_4_4_3_3 (6 breeds)	smg 7 vs 3, rifle 7 vs 4	values
+tiers	resource/set/breed/mp/axis_minor/axm_rom_bazooker.set	14	outline	skills near skills_2_2_1_1_3_2 (9 breeds)	pistol 3 vs 2	values
+tiers	resource/set/breed/mp/axis_minor/axm_rom_bazooker_assist.set	14	outline	skills near skills_2_2_1_1_3_2 (9 breeds)	pistol 3 vs 2	values
+tiers	resource/set/breed/mp/axis_minor/axm_rom_elite_vehicle_supporter.set	14	outline	skills near skills_5_5_5_6_5_5 (22 breeds)	no tier within 2 values (nearest skills_5_5_5_6_5_5, 3 values differ)	far
+tiers	resource/set/breed/mp/axis_minor/axm_rom_minedisposal.set	15	outline	skills near skills_2_3_1_1_1_2 (9 breeds)	pistol 4 vs 2	values
+tiers	resource/set/breed/mp/axis_minor/axm_rom_squadleader.set	14	outline	skills near skills_3_4_2_2_2_3 (14 breeds)	no tier within 2 values (nearest skills_3_4_2_2_2_3, 3 values differ)	far
+tiers	resource/set/breed/mp/eng/at_rifle.set	14	outline	skills near skills_2_3_2_2_1_3 (24 breeds)	rifle 4 vs 2, rocket 2 vs 1	values
+tiers	resource/set/breed/mp/eng/elite_tankman.set	14	outline	skills near skills_2_3_2_2_1_3 (24 breeds)	no tier within 2 values (nearest skills_2_3_2_2_1_3, 3 values differ)	far
+tiers	resource/set/breed/mp/eng/elite_tankman2.set	13	outline	drive near drive_t12_v12_c11 (7 breeds)	cannon 1 vs 1.1	values
+tiers	resource/set/breed/mp/eng/elite_tankman2.set	14	outline	skills near skills_2_3_2_2_1_3 (24 breeds)	no tier within 2 values (nearest skills_2_3_2_2_1_3, 3 values differ)	far
+tiers	resource/set/breed/mp/eng/eng_anzac_sl.set	14	outline	skills near skills_3_3_3_3_3_3 (5 breeds)	smg 5 vs 3	values
+tiers	resource/set/breed/mp/eng/eng_anzac_smg.set	14	outline	skills near skills_3_3_3_3_3_3 (5 breeds)	smg 4 vs 3	values
+tiers	resource/set/breed/mp/eng/eng_anzac_smg_thompson.set	14	outline	skills near skills_3_3_3_3_3_3 (5 breeds)	smg 4 vs 3	values
+tiers	resource/set/breed/mp/eng/eng_at_rifle.set	14	outline	skills near skills_2_3_2_2_1_3 (24 breeds)	rifle 4 vs 2, rocket 2 vs 1	values
+tiers	resource/set/breed/mp/eng/eng_bazooker.set	14	outline	skills near skills_2_3_2_2_1_3 (24 breeds)	rocket 4 vs 1	values
+tiers	resource/set/breed/mp/eng/eng_bazooker_assist.set	14	outline	skills near skills_2_3_2_2_1_3 (24 breeds)	rocket 4 vs 1	values
+tiers	resource/set/breed/mp/eng/eng_light_mortar.set	14	outline	skills near skills_2_2_2_3_1_3 (21 breeds)	rifle 5 vs 3, melee 4 vs 3	values
+tiers	resource/set/breed/mp/eng/eng_light_mortar_assist.set	14	outline	skills near skills_2_2_2_3_1_3 (21 breeds)	rifle 5 vs 3, melee 4 vs 3	values
+tiers	resource/set/breed/mp/eng/eng_mgun.set	14	outline	skills near skills_support (10 breeds)	rocket 1 vs 2	values
+tiers	resource/set/breed/mp/eng/eng_mgun_assist_scot.set	14	outline	skills near skills_4_3_5_5_2_5 (5 breeds)	pistol 3 vs 4	values
+tiers	resource/set/breed/mp/eng/eng_mgun_asst.set	14	outline	skills near skills_support (10 breeds)	rifle 4 vs 2, rocket 1 vs 2	values
+tiers	resource/set/breed/mp/eng/eng_mgun_scot.set	14	outline	skills near skills_3_3_5_3_2_4 (4 breeds)	melee 5 vs 4	values
+tiers	resource/set/breed/mp/eng/eng_officer.set	16	outline	skills near skills_4_5_4_4_4_4 (8 breeds)	pistol 5 vs 4, rocket 3 vs 4	values
+tiers	resource/set/breed/mp/eng/eng_pioneer_at.set	14	outline	skills near skills_2_2_2_4_2_4 (7 breeds)	rocket 4 vs 2	values
+tiers	resource/set/breed/mp/eng/eng_pioneer_mg.set	14	outline	skills near skills_support (10 breeds)	rifle 3 vs 2	values
+tiers	resource/set/breed/mp/eng/eng_pioneer_sl.set	14	outline	skills near skills_3_3_3_4_3_3 (13 breeds)	melee 4 vs 3	values
+tiers	resource/set/breed/mp/eng/eng_rifle_grenadier.set	14	outline	skills near skills_2_2_2_4_2_4 (7 breeds)	rocket 1 vs 2	values
+tiers	resource/set/breed/mp/eng/eng_rifle_piat.set	14	outline	skills near skills_2_2_2_4_2_4 (7 breeds)	rocket 4 vs 2	values
+tiers	resource/set/breed/mp/eng/eng_rifle_scot.set	14	outline	skills near skills_jap_3_3_3_5_3_5 (12 breeds)	rocket 2 vs 3	values
+tiers	resource/set/breed/mp/eng/eng_rifleman.set	14	outline	skills near skills_2_2_2_4_2_4 (7 breeds)	rocket 1 vs 2	values
+tiers	resource/set/breed/mp/eng/eng_rifleman_smoke.set	14	outline	skills near skills_2_2_2_4_2_4 (7 breeds)	rocket 1 vs 2	values
+tiers	resource/set/breed/mp/eng/eng_smg.set	14	outline	skills near skills_2_3_2_2_1_3 (24 breeds)	smg 4 vs 3	values
+tiers	resource/set/breed/mp/eng/eng_smg_wp.set	14	outline	skills near skills_2_3_2_2_1_3 (24 breeds)	smg 4 vs 3	values
+tiers	resource/set/breed/mp/eng/eng_sniper.set	12	outline	body near body_sniper (25 breeds)	vision mp_sniper vs "mp_sniper", speed 1 vs 1.0 (text only, same number)	text only (joining changes the expanded text: case)
+tiers	resource/set/breed/mp/eng/eng_sniper.set	16	outline	skills near skills_3_3_3_4_2_4 (5 breeds)	rifle 6 vs 4	values
+tiers	resource/set/breed/mp/eng/eng_squadleader_asst.set	14	outline	skills near skills_4_4_1_5_2_4 (7 breeds)	mgun 3 vs 1, melee 5 vs 4	values
+tiers	resource/set/breed/mp/eng/eng_squadleader_can.set	14	outline	skills near skills_4_4_2_3_2_4 (47 breeds)	pistol 3 vs 4	values
+tiers	resource/set/breed/mp/eng/eng_vet_tankman2_single.set	14	outline	skills near skills_3_3_2_2_1_3 (11 breeds)	mgun 4 vs 2	values
+tiers	resource/set/breed/mp/eng/mgun_scot.set	14	outline	skills near skills_3_3_5_3_2_4 (4 breeds)	melee 5 vs 4	values
+tiers	resource/set/breed/mp/eng/rifle_scot.set	14	outline	skills near skills_jap_3_3_3_5_3_5 (12 breeds)	rocket 2 vs 3	values
+tiers	resource/set/breed/mp/eng/sniper.set	16	outline	skills near skills_3_3_3_4_2_4 (5 breeds)	rifle 6 vs 4	values
+tiers	resource/set/breed/mp/eng/squadleader_40.set	14	outline	skills near skills_4_4_2_3_2_4 (47 breeds)	pistol 3 vs 4	values
+tiers	resource/set/breed/mp/eng/squadleader_can.set	14	outline	skills near skills_4_4_2_3_2_4 (47 breeds)	pistol 3 vs 4	values
+tiers	resource/set/breed/mp/eng/tankman.set	13	outline	drive near drive_regular (370 breeds)	tank 1 vs 0.75	values
+tiers	resource/set/breed/mp/eng/tankman2.set	13	outline	drive near drive_regular (370 breeds)	tank 1 vs 0.75	values
+tiers	resource/set/breed/mp/eng/tankman2.set	14	outline	skills near skills_3_3_2_2_1_3 (11 breeds)	mgun 3 vs 2	values
+tiers	resource/set/breed/mp/eng/vehicle_supporter.set	14	outline	skills near skills_support (10 breeds)	pistol 3 vs 2, rocket 1 vs 2	values
+tiers	resource/set/breed/mp/eng/vehicle_supporter_40.set	14	outline	skills near skills_2_2_3_2_1_3 (4 breeds)	pistol 3 vs 2	values
+tiers	resource/set/breed/mp/eng/vehicle_supporter_single.set	14	outline	skills near skills_support (10 breeds)	pistol 3 vs 2, rocket 1 vs 2	values
+tiers	resource/set/breed/mp/eng/vet_tankman.set	13	outline	drive near drive_regular (370 breeds)	tank 1 vs 0.75	values
+tiers	resource/set/breed/mp/eng/vet_tankman.set	14	outline	skills near skills_3_3_2_2_1_3 (11 breeds)	mgun 3 vs 2	values
+tiers	resource/set/breed/mp/eng/vet_tankman2.set	14	outline	skills near skills_3_3_2_2_1_3 (11 breeds)	mgun 4 vs 2	values
+tiers	resource/set/breed/mp/ger/elite_tankman.set	14	outline	skills near skills_4_5_6_3_2_4 (6 breeds)	pistol 5 vs 4, mgun 5 vs 6	values
+tiers	resource/set/breed/mp/ger/elite_tankman2.set	14	outline	skills near skills_4_5_6_3_2_4 (6 breeds)	mgun 7 vs 6	values
+tiers	resource/set/breed/mp/ger/elite_vehicle_supporter.set	14	outline	skills near skills_5_5_5_6_5_5 (22 breeds)	no tier within 2 values (nearest skills_5_5_5_6_5_5, 3 values differ)	far
+tiers	resource/set/breed/mp/ger/gd_pzgren_sl_smg.set	15	outline	skills near skills_ger_ss_4_5_3_3_4_4 (19 breeds)	melee 5 vs 4	values
+tiers	resource/set/breed/mp/ger/ger_elite_tankman.set	14	outline	skills near skills_4_5_6_3_2_4 (6 breeds)	pistol 5 vs 4, mgun 5 vs 6	values
+tiers	resource/set/breed/mp/ger/ger_elite_tankman2.set	14	outline	skills near skills_4_5_6_3_2_4 (6 breeds)	mgun 7 vs 6	values
+tiers	resource/set/breed/mp/ger/ger_fusilier_pzfst.set	15	outline	skills near skills_4_3_2_5_3_5 (10 breeds)	rocket 5 vs 3	values
+tiers	resource/set/breed/mp/ger/ger_gd_pzgren_pzfst_sa.set	15	outline	skills near skills_ger_ss_4_3_3_5_5_4 (11 breeds)	melee 5 vs 4	values
+tiers	resource/set/breed/mp/ger/ger_gd_pzgren_pzfst_stg.set	15	outline	skills near skills_ger_ss_4_5_3_3_4_4 (19 breeds)	rocket 5 vs 4, melee 5 vs 4	values
+tiers	resource/set/breed/mp/ger/ger_gd_pzgren_sl_asst_stg.set	15	outline	skills near skills_ger_ss_4_5_3_3_4_4 (19 breeds)	rocket 5 vs 4, melee 5 vs 4	values
+tiers	resource/set/breed/mp/ger/ger_gd_pzgren_sl_stg.set	15	outline	skills near skills_ger_ss_4_5_3_3_4_4 (19 breeds)	melee 5 vs 4	values
+tiers	resource/set/breed/mp/ger/ger_grenadier_ober_44.set	14	outline	skills near skills_ger_5_4_4_5_4_5 (10 breeds)	rocket 3 vs 4	values
+tiers	resource/set/breed/mp/ger/ger_jager_pzfst.set	15	outline	skills near skills_4_3_2_5_3_5 (10 breeds)	rocket 5 vs 3	values
+tiers	resource/set/breed/mp/ger/ger_officer.set	13	outline	body near body_officer_bare (5 breeds)	stamina 100% vs 150%	values
+tiers	resource/set/breed/mp/ger/ger_officer.set	16	outline	skills near skills_5_5_5_6_5_5 (22 breeds)	rifle 5 vs 6	values
+tiers	resource/set/breed/mp/ger/ger_pzgren_mg42assist.set	14	outline	skills near skills_ger_5_4_4_5_4_5 (10 breeds)	mgun 5 vs 4	values
+tiers	resource/set/breed/mp/ger/ger_pzgren_panzerfaust.set	15	outline	skills near skills_ger_5_5_4_4_6_5 (4 breeds)	rocket 5 vs 6	values
+tiers	resource/set/breed/mp/ger/ger_pzgren_sl.set	14	outline	skills near skills_squadleader (10 breeds)	rifle 4 vs 5	values
+tiers	resource/set/breed/mp/ger/ger_pzgren_smg_panzerfaust.set	15	outline	skills near skills_ger_5_4_4_5_4_5 (10 breeds)	rocket 5 vs 4	values
+tiers	resource/set/breed/mp/ger/ger_pzgren_stg_panzerfaust.set	15	outline	skills near skills_ger_5_5_4_4_6_5 (4 breeds)	rocket 5 vs 6	values
+tiers	resource/set/breed/mp/ger/ger_sturmgren_sg44_pzfst.set	14	outline	skills near skills_4_4_2_3_2_4 (47 breeds)	rocket 4 vs 2	values
+tiers	resource/set/breed/mp/ger/ger_sturmgren_sl_asst.set	14	outline	skills near skills_4_4_2_3_2_4 (47 breeds)	smg 5 vs 4	values
+tiers	resource/set/breed/mp/ger/ger_tankman2_single.set	14	outline	skills near skills_5_5_5_6_5_5 (22 breeds)	rifle 3 vs 6, rocket 1 vs 5	values
+tiers	resource/set/breed/mp/ger/ger_tankman_single.set	14	outline	skills near skills_ger_5_4_4_5_4_5 (10 breeds)	no tier within 2 values (nearest skills_ger_5_4_4_5_4_5, 3 values differ)	far
+tiers	resource/set/breed/mp/ger/ger_vet_tankman2_single.set	14	outline	skills near skills_5_5_6_6_5_5 (10 breeds)	rifle 3 vs 6, rocket 1 vs 5	values
+tiers	resource/set/breed/mp/ger/ger_volksgren_mg.set	14	outline	skills near skills_ger_ss_2_1_2_1_1_2 (4 breeds)	rocket 2 vs 1	values
+tiers	resource/set/breed/mp/ger/ger_volksgren_mg_asst.set	14	outline	skills near skills_rus_militia (11 breeds)	mgun 2 vs 1, rifle 2 vs 1	values
+tiers	resource/set/breed/mp/ger/ger_volksgren_mg_asst2.set	14	outline	skills near skills_2_2_2_1_1_2 (6 breeds)	pistol 1 vs 2	values
+tiers	resource/set/breed/mp/ger/ger_volksgren_mg_asst3.set	14	outline	skills near skills_rus_militia (11 breeds)	mgun 2 vs 1, rifle 2 vs 1	values
+tiers	resource/set/breed/mp/ger/ger_volksgren_pzfst2.set	15	outline	skills near skills_ger_volkssturm (4 breeds)	smg 2 vs 1	values
+tiers	resource/set/breed/mp/ger/ger_volksgren_sa.set	14	outline	skills near skills_rus_militia (11 breeds)	rifle 2 vs 1	values
+tiers	resource/set/breed/mp/ger/ger_volksgren_sl_asst.set	14	outline	skills near skills_2_3_2_2_1_3 (24 breeds)	pistol 1 vs 2, mgun 1 vs 2	values
+tiers	resource/set/breed/mp/ger/ger_volksgren_sl_smg.set	14	outline	skills near skills_2_3_2_2_1_3 (24 breeds)	pistol 1 vs 2, mgun 1 vs 2	values
+tiers	resource/set/breed/mp/ger/ger_volksgren_sl_stg.set	14	outline	skills near skills_2_3_2_2_1_3 (24 breeds)	pistol 1 vs 2, mgun 1 vs 2	values
+tiers	resource/set/breed/mp/ger/ger_volksgren_smg.set	14	outline	skills near skills_2_2_1_1_1_2 (28 breeds)	pistol 1 vs 2	values
+tiers	resource/set/breed/mp/ger/ger_volksgren_stg44.set	14	outline	skills near skills_2_2_1_1_1_2 (28 breeds)	pistol 1 vs 2	values
+tiers	resource/set/breed/mp/ger/grenadier_ober.set	14	outline	skills near skills_ger_5_4_4_5_4_5 (10 breeds)	rocket 3 vs 4	values
+tiers	resource/set/breed/mp/ger/sturmovik6b.set	14	outline	skills near skills_ger_5_4_4_5_4_5 (10 breeds)	mgun 5 vs 4	values
+tiers	resource/set/breed/mp/ger/sturmovik_sl_40.set	14	outline	skills near skills_squadleader (10 breeds)	rifle 4 vs 5	values
+tiers	resource/set/breed/mp/ger/vet_tankman.set	14	outline	skills near skills_4_3_4_3_2_4 (7 breeds)	pistol 5 vs 4, smg 5 vs 3	values
+tiers	resource/set/breed/mp/ger/vet_vehicle_supporter.set	14	outline	skills near skills_3_3_3_4_2_4 (5 breeds)	mgun 6 vs 3	values
+tiers	resource/set/breed/mp/ger2/ost_elite_tankman.set	14	outline	skills near skills_4_5_6_3_2_4 (6 breeds)	pistol 5 vs 4, mgun 5 vs 6	values
+tiers	resource/set/breed/mp/ger2/ost_elite_tankman2.set	14	outline	skills near skills_4_5_6_3_2_4 (6 breeds)	mgun 7 vs 6	values
+tiers	resource/set/breed/mp/ger2/ost_jager_pzfst.set	15	outline	skills near skills_4_3_2_5_3_5 (10 breeds)	rocket 5 vs 3	values
+tiers	resource/set/breed/mp/ger2/ost_officer2.set	13	outline	body near body_crew_elite (6 breeds)	health 500% vs 400%, speed 1.0 vs 1 (text only)	values
+tiers	resource/set/breed/mp/ger2/ost_recon_mg.set	14	outline	skills near skills_2_2_3_3_1_3 (9 breeds)	pistol 3 vs 2, rocket 2 vs 1	values
+tiers	resource/set/breed/mp/ger2/ost_recon_pzfst.set	14	outline	skills near skills_2_2_2_3_1_3 (21 breeds)	pistol 3 vs 2, rocket 3 vs 1	values
+tiers	resource/set/breed/mp/ger2/ost_recon_rifle.set	14	outline	skills near skills_3_2_2_4_2_3 (8 breeds)	rifle 3 vs 4	values
+tiers	resource/set/breed/mp/ger2/ost_recon_sa.set	14	outline	skills near skills_3_2_2_4_2_3 (8 breeds)	rifle 3 vs 4	values
+tiers	resource/set/breed/mp/ger2/ost_recon_sl.set	14	outline	skills near skills_4_4_2_3_2_4 (47 breeds)	mgun 3 vs 2	values
+tiers	resource/set/breed/mp/ger2/ost_recon_sl_stg.set	14	outline	skills near skills_4_4_2_3_2_4 (47 breeds)	mgun 3 vs 2	values
+tiers	resource/set/breed/mp/ger2/ost_rifle2.set	14	outline	skills near skills_4_3_2_4_2_4 (12 breeds)	mgun 3 vs 2	values
+tiers	resource/set/breed/mp/ger2/ost_rifle_grenadier.set	14	outline	skills near skills_4_3_2_4_2_4 (12 breeds)	mgun 3 vs 2	values
+tiers	resource/set/breed/mp/ger2/ost_rifle_pzfst.set	14	outline	skills near skills_ger_ss_4_3_3_5_4_4 (31 breeds)	rifle 4 vs 5	values
+tiers	resource/set/breed/mp/ger2/ost_rifle_single.set	14	outline	skills near skills_4_3_2_4_2_4 (12 breeds)	mgun 3 vs 2	values
+tiers	resource/set/breed/mp/ger2/ost_sniper.set	16	outline	skills near skills_jap_3_3_3_5_3_5 (12 breeds)	no tier within 2 values (nearest skills_jap_3_3_3_5_3_5, 3 values differ)	far
+tiers	resource/set/breed/mp/ger2/ost_straf_mauzer.set	14	outline	skills near skills_rus_militia (11 breeds)	melee 1 vs 2	values
+tiers	resource/set/breed/mp/ger2/ost_straf_mp28.set	14	outline	skills near skills_rus_militia (11 breeds)	melee 1 vs 2	values
+tiers	resource/set/breed/mp/ger2/ost_straf_ppsh.set	14	outline	skills near skills_rus_militia (11 breeds)	melee 1 vs 2	values
+tiers	resource/set/breed/mp/ger2/ost_support.set	14	outline	skills near skills_3_3_3_4_2_4 (5 breeds)	mgun 6 vs 3	values
+tiers	resource/set/breed/mp/ger2/ost_tankman.set	14	outline	skills near skills_4_3_4_3_2_4 (7 breeds)	pistol 5 vs 4, smg 5 vs 3	values
+tiers	resource/set/breed/mp/ger2/tankman.set	14	outline	skills near skills_4_3_4_3_2_4 (7 breeds)	pistol 5 vs 4, smg 5 vs 3	values
+tiers	resource/set/breed/mp/ger2/vehicle_supporter.set	14	outline	skills near skills_3_3_3_4_2_4 (5 breeds)	mgun 6 vs 3	values
+tiers	resource/set/breed/mp/ger_ss/bazooker.set	14	outline	skills near skills_jap_3_3_3_5_3_5 (12 breeds)	pistol 6 vs 3, rocket 6 vs 3	values
+tiers	resource/set/breed/mp/ger_ss/bazooker2.set	14	outline	skills near skills_5_5_5_6_5_5 (22 breeds)	no tier within 2 values (nearest skills_5_5_5_6_5_5, 3 values differ)	far
+tiers	resource/set/breed/mp/ger_ss/dr_pzgren_pzfst_stg.set	15	outline	skills near skills_ger_ss_4_5_3_3_4_4 (19 breeds)	rocket 5 vs 4	values
+tiers	resource/set/breed/mp/ger_ss/elite_tankman.set	13	outline	drive near drive_t12_v12_c11 (7 breeds)	cannon 1.05 vs 1.1	values
+tiers	resource/set/breed/mp/ger_ss/elite_tankman.set	14	outline	skills near skills_elite_6 (33 breeds)	no tier within 2 values (nearest skills_elite_6, 4 values differ)	far
+tiers	resource/set/breed/mp/ger_ss/elite_tankman2.set	13	outline	drive near drive_t12_v12_c11 (7 breeds)	tank 1.25 vs 1.2, vehicle 1.25 vs 1.2	values
+tiers	resource/set/breed/mp/ger_ss/elite_tankman2.set	14	outline	skills near skills_elite_7 (115 breeds)	no tier within 2 values (nearest skills_elite_7, 4 values differ)	far
+tiers	resource/set/breed/mp/ger_ss/lssah_pzgren_at.set	14	outline	skills near skills_ger_ss_4_3_3_5_5_4 (11 breeds)	pistol 5 vs 4	values
+tiers	resource/set/breed/mp/ger_ss/pzgren_sl_smg.set	15	outline	skills near skills_ger_ss_4_5_3_3_4_4 (19 breeds)	mgun 4 vs 3	values
+tiers	resource/set/breed/mp/ger_ss/ss_kosaken_mg.set	15	outline	skills near skills_2_3_2_2_1_3 (24 breeds)	no tier within 2 values (nearest skills_2_3_2_2_1_3, 3 values differ)	far
+tiers	resource/set/breed/mp/ger_ss/ss_kosaken_mg_asst.set	15	outline	skills near skills_2_3_2_2_1_3 (24 breeds)	no tier within 2 values (nearest skills_2_3_2_2_1_3, 3 values differ)	far
+tiers	resource/set/breed/mp/ger_ss/ss_kosaken_rifle.set	15	outline	skills near skills_rus_militia (11 breeds)	rifle 2 vs 1, melee 1 vs 2	values
+tiers	resource/set/breed/mp/ger_ss/ss_kosaken_smg.set	15	outline	skills near skills_2_2_1_1_1_2 (28 breeds)	pistol 1 vs 2, melee 1 vs 2	values
+tiers	resource/set/breed/mp/ger_ss/ss_lssah_pzgren_at.set	14	outline	skills near skills_ger_ss_4_3_3_5_5_4 (11 breeds)	pistol 5 vs 4	values
+tiers	resource/set/breed/mp/ger_ss/ss_lssah_pzgren_pzfst_stg.set	14	outline	skills near skills_ger_ss_4_5_3_3_4_4 (19 breeds)	rocket 5 vs 4	values
+tiers	resource/set/breed/mp/ger_ss/ss_panzerfaust.set	14	outline	skills near skills_4_3_2_5_2_4 (6 breeds)	rocket 6 vs 2	values
+tiers	resource/set/breed/mp/ger_ss/ss_panzershreck.set	14	outline	skills near skills_jap_3_3_3_5_3_5 (12 breeds)	pistol 6 vs 3, rocket 6 vs 3	values
+tiers	resource/set/breed/mp/ger_ss/ss_panzershreckassist.set	14	outline	skills near skills_5_5_5_6_5_5 (22 breeds)	no tier within 2 values (nearest skills_5_5_5_6_5_5, 3 values differ)	far
+tiers	resource/set/breed/mp/ger_ss/ss_pzgren_pzfst.set	15	outline	skills near skills_ger_ss_4_3_3_5_5_4 (11 breeds)	mgun 4 vs 3	values
+tiers	resource/set/breed/mp/ger_ss/ss_pzgren_pzfst_sa.set	15	outline	skills near skills_ger_ss_4_3_3_5_5_4 (11 breeds)	mgun 4 vs 3	values
+tiers	resource/set/breed/mp/ger_ss/ss_pzgren_sl_asst_pzfst.set	15	outline	skills near skills_ger_ss_4_3_3_5_5_4 (11 breeds)	mgun 4 vs 3	values
+tiers	resource/set/breed/mp/ger_ss/ss_pzgren_sl_stg.set	15	outline	skills near skills_ger_ss_4_5_3_3_4_4 (19 breeds)	mgun 4 vs 3, rocket 5 vs 4	values
+tiers	resource/set/breed/mp/ger_ss/ss_pzgren_stg.set	15	outline	skills near skills_ger_ss_4_5_3_3_4_4 (19 breeds)	mgun 4 vs 3	values
+tiers	resource/set/breed/mp/ger_ss/ss_ssvt_rifle.set	15	outline	skills near skills_rus_militia (11 breeds)	rifle 2 vs 1	values
+tiers	resource/set/breed/mp/ger_ss/ss_ssvt_sl.set	14	outline	skills near skills_2_3_2_2_1_2 (4 breeds)	rocket 2 vs 1	values
+tiers	resource/set/breed/mp/ger_ss/ss_ssvt_sl_asst.set	14	outline	skills near skills_2_2_1_3_1_2 (12 breeds)	rocket 2 vs 1	values
+tiers	resource/set/breed/mp/ger_ss/ss_sturmgren_mg_asst.set	14	outline	skills near skills_ger_ss_4_5_3_3_4_4 (19 breeds)	mgun 5 vs 3	values
+tiers	resource/set/breed/mp/ger_ss/ss_tankman.set	14	outline	skills near skills_ger_5_4_4_5_4_5 (10 breeds)	no tier within 2 values (nearest skills_ger_5_4_4_5_4_5, 3 values differ)	far
+tiers	resource/set/breed/mp/ger_ss/ss_tankman2.set	14	outline	skills near skills_5_5_5_6_5_5 (22 breeds)	rifle 3 vs 6, rocket 1 vs 5	values
+tiers	resource/set/breed/mp/ger_ss/ss_tk_pzgren_pzfst_stg.set	15	outline	skills near skills_ger_ss_4_5_3_3_4_4 (19 breeds)	rocket 5 vs 4	values
+tiers	resource/set/breed/mp/ger_ss/ss_vet_tankman2.set	14	outline	skills near skills_5_5_6_6_5_5 (10 breeds)	rifle 3 vs 6, rocket 1 vs 5	values
+tiers	resource/set/breed/mp/ger_ss/ssvt_rifle.set	15	outline	skills near skills_rus_militia (11 breeds)	rifle 2 vs 1	values
+tiers	resource/set/breed/mp/ger_ss/ssvt_sl.set	14	outline	skills near skills_2_3_2_2_1_2 (4 breeds)	rocket 2 vs 1	values
+tiers	resource/set/breed/mp/ger_ss/ssvt_sl_asst.set	14	outline	skills near skills_2_2_1_3_1_2 (12 breeds)	rocket 2 vs 1	values
+tiers	resource/set/breed/mp/ger_ss/tankman.set	14	outline	skills near skills_ger_5_4_4_5_4_5 (10 breeds)	no tier within 2 values (nearest skills_ger_5_4_4_5_4_5, 3 values differ)	far
+tiers	resource/set/breed/mp/ger_ss/tankman2.set	14	outline	skills near skills_5_5_5_6_5_5 (22 breeds)	rifle 3 vs 6, rocket 1 vs 5	values
+tiers	resource/set/breed/mp/ger_ss/vet_tankman.set	14	outline	skills near skills_ger_5_4_5_4_4_5 (5 breeds)	rifle 3 vs 4, rocket 1 vs 4	values
+tiers	resource/set/breed/mp/ger_ss/vet_tankman2.set	14	outline	skills near skills_5_5_6_6_5_5 (10 breeds)	rifle 3 vs 6, rocket 1 vs 5	values
+tiers	resource/set/breed/mp/jap/elite_ig1h_asst.set	14	outline	skills near skills_jap_3_3_3_5_3_5 (12 breeds)	mgun 5 vs 3	values
+tiers	resource/set/breed/mp/jap/elite_ig2.set	14	outline	skills near skills_jap_3_3_3_5_3_5 (12 breeds)	mgun 5 vs 3, rifle 3 vs 5	values
+tiers	resource/set/breed/mp/jap/elite_ig2_scoped.set	14	outline	skills near skills_jap_3_3_3_5_3_5 (12 breeds)	mgun 5 vs 3, rifle 3 vs 5	values
+tiers	resource/set/breed/mp/jap/elite_ig3.set	14	outline	skills near skills_jap_3_3_3_5_3_5 (12 breeds)	smg 5 vs 3, rifle 3 vs 5	values
+tiers	resource/set/breed/mp/jap/elite_ig3b_type2.set	14	outline	skills near skills_jap_3_3_3_5_3_5 (12 breeds)	smg 5 vs 3, rifle 3 vs 5	values
+tiers	resource/set/breed/mp/jap/elite_ig4.set	14	outline	skills near skills_5_5_5_6_5_5 (22 breeds)	no tier within 2 values (nearest skills_5_5_5_6_5_5, 3 values differ)	far
+tiers	resource/set/breed/mp/jap/elite_ig4_type2.set	14	outline	skills near skills_5_5_5_6_5_5 (22 breeds)	no tier within 2 values (nearest skills_5_5_5_6_5_5, 3 values differ)	far
+tiers	resource/set/breed/mp/jap/elite_takasago_lmg.set	15	outline	skills near skills_jap_6_4_4_6_4_6 (5 breeds)	mgun 6 vs 4, rifle 4 vs 6	values
+tiers	resource/set/breed/mp/jap/elite_takasago_mgun_asst.set	15	outline	skills near skills_jap_6_4_4_6_4_6 (5 breeds)	mgun 6 vs 4	values
+tiers	resource/set/breed/mp/jap/elite_takasago_smg.set	15	outline	skills near skills_jap_6_4_4_6_4_6 (5 breeds)	smg 6 vs 4, rifle 4 vs 6	values
+tiers	resource/set/breed/mp/jap/elite_vehicle_supporter.set	14	outline	skills near skills_sniper_r5 (9 breeds)	mgun 5 vs 1	values
+tiers	resource/set/breed/mp/jap/jap_elite_takasago_lmg.set	15	outline	skills near skills_jap_6_4_4_6_4_6 (5 breeds)	mgun 6 vs 4, rifle 4 vs 6	values
+tiers	resource/set/breed/mp/jap/jap_elite_takasago_smg2.set	15	outline	skills near skills_jap_6_4_4_6_4_6 (5 breeds)	smg 6 vs 4, rifle 4 vs 6	values
+tiers	resource/set/breed/mp/jap/jap_kamikaze.set	13	outline	body near body_elite (72 breeds)	no tier within 2 values (nearest body_elite, 3 values differ)	far
+tiers	resource/set/breed/mp/jap/jap_kanoeshidan_at.set	14	outline	skills near skills_5_5_5_6_5_5 (22 breeds)	no tier within 2 values (nearest skills_5_5_5_6_5_5, 3 values differ)	far
+tiers	resource/set/breed/mp/jap/jap_kanoeshidan_mg.set	14	outline	skills near skills_jap_3_3_3_5_3_5 (12 breeds)	mgun 5 vs 3, rifle 3 vs 5	values
+tiers	resource/set/breed/mp/jap/jap_kanoeshidan_rifle_apminer.set	14	outline	skills near skills_usa_4_4_4_5_4_4 (9 breeds)	melee 6 vs 4	values
+tiers	resource/set/breed/mp/jap/jap_kanoeshidan_type100_44.set	14	outline	skills near skills_jap_3_3_3_5_3_5 (12 breeds)	smg 5 vs 3, rifle 3 vs 5	values
+tiers	resource/set/breed/mp/jap/jap_sniper_type97.set	12	outline	body near body_sniper (25 breeds)	vision mp_sniper vs "mp_sniper", speed 1 vs 1.0 (text only, same number)	text only (joining changes the expanded text: case)
+tiers	resource/set/breed/mp/jap/jap_sniper_type99.set	12	outline	body near body_sniper (25 breeds)	vision mp_sniper vs "mp_sniper", speed 1 vs 1.0 (text only, same number)	text only (joining changes the expanded text: case)
+tiers	resource/set/breed/mp/jap/jap_squadleader.set	14	outline	skills near skills_3_3_3_4_3_3 (13 breeds)	no tier within 2 values (nearest skills_3_3_3_4_3_3, 3 values differ)	far
+tiers	resource/set/breed/mp/jap/jap_squadleader2.set	14	outline	skills near skills_4_4_2_3_2_4 (47 breeds)	no tier within 2 values (nearest skills_4_4_2_3_2_4, 3 values differ)	far
+tiers	resource/set/breed/mp/jap/jap_tankman2_single.set	13	outline	drive near drive_crew_elite (11 breeds)	cannon 1.15 vs 1.0	values
+tiers	resource/set/breed/mp/jap/jap_tankman2_single.set	14	outline	skills near skills_2_2_1_1_1_2 (28 breeds)	mgun 3 vs 1	values
+tiers	resource/set/breed/mp/jap/jap_tankman_single.set	13	outline	drive near drive_crew_commander (8 breeds)	vehicle 1.1 vs 1, cannon 1.1 vs 0.95	values
+tiers	resource/set/breed/mp/jap/jap_teishin_mg.set	14	outline	skills near skills_jap_5_5_5_7_5_7 (4 breeds)	mgun 7 vs 5	values
+tiers	resource/set/breed/mp/jap/jap_teishin_type100_44_apminer.set	14	outline	skills near skills_usa_5_6_5_5_5_5 (4 breeds)	smg 7 vs 6, melee 7 vs 5	values
+tiers	resource/set/breed/mp/jap/kamikaze.set	14	outline	body near body_jap_charger (6 breeds)	health 300% vs 250%, speed 1.0 vs 0.95	values
+tiers	resource/set/breed/mp/jap/ki_rifle.set	14	outline	skills near skills_3_3_3_4_3_3 (13 breeds)	rifle 5 vs 4	values
+tiers	resource/set/breed/mp/jap/ki_sa.set	14	outline	skills near skills_jap_6_4_4_6_4_6 (5 breeds)	pistol 4 vs 6	values
+tiers	resource/set/breed/mp/jap/ki_sl.set	14	outline	skills near skills_jap_6_4_4_6_4_6 (5 breeds)	pistol 4 vs 6	values
+tiers	resource/set/breed/mp/jap/ki_smoke.set	14	outline	skills near skills_3_3_3_4_3_3 (13 breeds)	rifle 5 vs 4	values
+tiers	resource/set/breed/mp/jap/otsu_mg_ammo.set	14	outline	skills near skills_2_1_1_3_1_2 (17 breeds)	pistol 1 vs 2	values
+tiers	resource/set/breed/mp/jap/otsu_mg_asst.set	14	outline	skills near skills_jap_1_1_3_1_1_2 (7 breeds)	rifle 3 vs 1	values
+tiers	resource/set/breed/mp/jap/otsu_rifle.set	14	outline	skills near skills_2_1_1_3_1_2 (17 breeds)	pistol 1 vs 2	values
+tiers	resource/set/breed/mp/jap/squadleader.set	14	outline	skills near skills_3_3_3_4_3_3 (13 breeds)	no tier within 2 values (nearest skills_3_3_3_4_3_3, 3 values differ)	far
+tiers	resource/set/breed/mp/jap/squadleader2.set	14	outline	skills near skills_3_3_2_2_1_3 (11 breeds)	rifle 3 vs 2, melee 2 vs 3	values
+tiers	resource/set/breed/mp/jap/tankman.set	13	outline	drive near drive_crew_commander (8 breeds)	vehicle 1.1 vs 1, cannon 1.1 vs 0.95	values
+tiers	resource/set/breed/mp/jap/tankman2.set	13	outline	drive near drive_crew_elite (11 breeds)	cannon 1.15 vs 1.0	values
+tiers	resource/set/breed/mp/jap/tankman2.set	14	outline	skills near skills_2_2_1_1_1_2 (28 breeds)	mgun 3 vs 1	values
+tiers	resource/set/breed/mp/jap/vehicle_supporter.set	14	outline	skills near skills_rus_2_2_1_2_1_2 (4 breeds)	mgun 3 vs 1	values
+tiers	resource/set/breed/mp/jap/vehicle_supporter_single.set	14	outline	skills near skills_rus_2_2_1_2_1_2 (4 breeds)	mgun 3 vs 1	values
+tiers	resource/set/breed/mp/rus/flamer3.set	15	outline	skills near skills_2_3_1_1_1_3 (10 breeds)	rifle 3 vs 1	values
+tiers	resource/set/breed/mp/rus/mgun_41.set	15	outline	skills near skills_rus_militia (11 breeds)	mgun 2 vs 1	values
+tiers	resource/set/breed/mp/rus/mgun_asst_41.set	15	outline	skills near skills_2_1_1_2_1_2 (6 breeds)	mgun 2 vs 1	values
+tiers	resource/set/breed/mp/rus/rus_bsf_marine3.set	15	outline	skills near skills_5_5_6_6_5_5 (10 breeds)	rifle 5 vs 6	values
+tiers	resource/set/breed/mp/rus/rus_elite_tankcommander.set	14	outline	skills near skills_ger_ss_4_5_3_3_4_4 (19 breeds)	mgun 7 vs 3, rocket 3 vs 4	values
+tiers	resource/set/breed/mp/rus/rus_elite_tankman.set	14	outline	skills near skills_3_3_3_3_3_3 (5 breeds)	mgun 5 vs 3	values
+tiers	resource/set/breed/mp/rus/rus_sapper_sl.set	15	outline	skills near skills_3_4_2_2_2_3 (14 breeds)	pistol 2 vs 3	values
+tiers	resource/set/breed/mp/rus/rus_shock_sl.set	15	outline	skills near skills_ger_ss_4_3_3_5_4_4 (31 breeds)	rifle 4 vs 5, rocket 3 vs 4	values
+tiers	resource/set/breed/mp/rus/rus_squadleader2_43.set	14	outline	skills near skills_4_5_3_4_2_5 (4 breeds)	smg 4 vs 5, melee 3 vs 5	values
+tiers	resource/set/breed/mp/rus/rus_squadleader_smg.set	14	outline	skills near skills_4_5_3_4_2_5 (4 breeds)	smg 4 vs 5, melee 3 vs 5	values
+tiers	resource/set/breed/mp/rus/rus_tankman2_single.set	13	outline	drive near drive_crew_commander (8 breeds)	tank 1.2 vs 1.1, vehicle 1.1 vs 1	values
+tiers	resource/set/breed/mp/rus/rus_tankman2_single.set	14	outline	skills near skills_2_3_1_1_1_2 (9 breeds)	pistol 3 vs 2, mgun 3 vs 1	values
+tiers	resource/set/breed/mp/rus/rus_tankman_single.set	13	outline	drive near drive_veteran (225 breeds)	tank 1.1 vs 0.85, vehicle 1.1 vs 1	values
+tiers	resource/set/breed/mp/rus/rus_tankman_single.set	14	outline	skills near skills_3_3_2_2_1_3 (11 breeds)	rifle 1 vs 2, melee 2 vs 3	values
+tiers	resource/set/breed/mp/rus/rus_vet_tankman2_single.set	14	outline	skills near skills_2_2_1_1_1_2 (28 breeds)	no tier within 2 values (nearest skills_2_2_1_1_1_2, 3 values differ)	far
+tiers	resource/set/breed/mp/rus/rus_vetsniper.set	16	outline	skills near skills_usa_4_4_4_5_4_4 (9 breeds)	rifle 6 vs 5	values
+tiers	resource/set/breed/mp/rus/sniper2.set	16	outline	skills near skills_usa_4_4_4_5_4_4 (9 breeds)	rifle 6 vs 5	values
+tiers	resource/set/breed/mp/rus/squadleader_41.set	14	outline	skills near skills_3_3_2_2_1_3 (11 breeds)	rifle 3 vs 2, melee 2 vs 3	values
+tiers	resource/set/breed/mp/rus/tankman.set	13	outline	drive near drive_veteran (225 breeds)	tank 1.1 vs 0.85, vehicle 1.1 vs 1	values
+tiers	resource/set/breed/mp/rus/tankman.set	14	outline	skills near skills_3_3_2_2_1_3 (11 breeds)	rifle 1 vs 2, melee 2 vs 3	values
+tiers	resource/set/breed/mp/rus/tankman2.set	13	outline	drive near drive_crew_commander (8 breeds)	tank 1.2 vs 1.1, vehicle 1.1 vs 1	values
+tiers	resource/set/breed/mp/rus/tankman2.set	14	outline	skills near skills_2_3_1_1_1_2 (9 breeds)	pistol 3 vs 2, mgun 3 vs 1	values
+tiers	resource/set/breed/mp/rus/vet_tankman.set	14	outline	skills near skills_5_5_5_6_5_5 (22 breeds)	rifle 5 vs 6	values
+tiers	resource/set/breed/mp/rus/vet_tankman2.set	14	outline	skills near skills_2_2_1_1_1_2 (28 breeds)	no tier within 2 values (nearest skills_2_2_1_1_1_2, 3 values differ)	far
+tiers	resource/set/breed/mp/rus_guard/elite_tankman.set	14	outline	skills near skills_3_3_3_3_3_3 (5 breeds)	mgun 5 vs 3	values
+tiers	resource/set/breed/mp/rus_guard/elite_tankman2.set	14	outline	skills near skills_ger_ss_4_5_3_3_4_4 (19 breeds)	mgun 7 vs 3, rocket 3 vs 4	values
+tiers	resource/set/breed/mp/rus_guard/guard_elite_guard_sl.set	13	outline	body near body_h250_s150 (39 breeds)	stamina 125% vs 150%	values
+tiers	resource/set/breed/mp/rus_guard/guard_elite_guard_sl.set	15	outline	skills near skills_2_3_2_2_1_3 (24 breeds)	rifle 3 vs 2, rocket 2 vs 1	values
+tiers	resource/set/breed/mp/rus_guard/guard_elite_guards_shock_sl.set	15	outline	skills near skills_ger_ss_4_3_3_5_4_4 (31 breeds)	rifle 4 vs 5, rocket 3 vs 4	values
+tiers	resource/set/breed/mp/rus_guard/guard_elite_tankcommander.set	14	outline	skills near skills_ger_ss_4_5_3_3_4_4 (19 breeds)	mgun 7 vs 3, rocket 3 vs 4	values
+tiers	resource/set/breed/mp/rus_guard/guard_elite_tankman.set	14	outline	skills near skills_3_3_3_3_3_3 (5 breeds)	mgun 5 vs 3	values
+tiers	resource/set/breed/mp/rus_guard/guard_recon_sl.set	15	outline	skills near skills_3_4_2_2_2_3 (14 breeds)	melee 4 vs 3	values
+tiers	resource/set/breed/mp/rus_guard/guard_sapper_sl.set	15	outline	skills near skills_3_4_2_2_2_3 (14 breeds)	pistol 2 vs 3	values
+tiers	resource/set/breed/mp/rus_guard/guard_sl.set	13	outline	body near body_h250_s150 (39 breeds)	stamina 125% vs 150%	values
+tiers	resource/set/breed/mp/rus_guard/guard_sl.set	15	outline	skills near skills_2_3_2_2_1_3 (24 breeds)	rifle 3 vs 2, rocket 2 vs 1	values
+tiers	resource/set/breed/mp/rus_guard/guards_shock_sl.set	15	outline	skills near skills_ger_ss_4_3_3_5_4_4 (31 breeds)	rifle 4 vs 5, rocket 3 vs 4	values
+tiers	resource/set/breed/mp/rus_guard/rus_guard_tankman2_single.set	13	outline	drive near drive_elite (118 breeds)	tank 1.1 vs 0.95	values
+tiers	resource/set/breed/mp/rus_guard/rus_guard_tankman2_single.set	14	outline	skills near skills_squadleader (10 breeds)	mgun 5 vs 4	values
+tiers	resource/set/breed/mp/rus_guard/rus_guard_tankman_single.set	14	outline	skills near skills_5_5_3_4_2_5 (5 breeds)	rifle 2 vs 4	values
+tiers	resource/set/breed/mp/rus_guard/tankman.set	14	outline	skills near skills_5_5_3_4_2_5 (5 breeds)	rifle 2 vs 4	values
+tiers	resource/set/breed/mp/rus_guard/tankman2.set	13	outline	drive near drive_elite (118 breeds)	tank 1.1 vs 0.95	values
+tiers	resource/set/breed/mp/rus_guard/tankman2.set	14	outline	skills near skills_squadleader (10 breeds)	mgun 5 vs 4	values
+tiers	resource/set/breed/mp/rus_guard/vet_tankman.set	14	outline	skills near skills_5_5_5_6_5_5 (22 breeds)	rifle 5 vs 6	values
+tiers	resource/set/breed/mp/usa/elite4_sgt.set	14	outline	skills near skills_3_3_3_3_3_3 (5 breeds)	smg 5 vs 3	values
+tiers	resource/set/breed/mp/usa/elite_sgt.set	14	outline	skills near skills_4_5_4_4_4_4 (8 breeds)	smg 6 vs 5	values
+tiers	resource/set/breed/mp/usa/elite_tankman.set	14	outline	skills near skills_4_4_2_3_2_4 (47 breeds)	no tier within 2 values (nearest skills_4_4_2_3_2_4, 3 values differ)	far
+tiers	resource/set/breed/mp/usa/elite_tankman2.set	14	outline	skills near skills_4_4_2_3_2_4 (47 breeds)	no tier within 2 values (nearest skills_4_4_2_3_2_4, 3 values differ)	far
+tiers	resource/set/breed/mp/usa/squadleader.set	14	outline	skills near skills_4_4_2_3_2_4 (47 breeds)	pistol 3 vs 4, mgun 3 vs 2	values
+tiers	resource/set/breed/mp/usa/squadleader2.set	14	outline	skills near skills_4_4_2_3_2_4 (47 breeds)	pistol 3 vs 4, mgun 3 vs 2	values
+tiers	resource/set/breed/mp/usa/sturmovik5.set	15	outline	skills near skills_5_5_5_6_5_5 (22 breeds)	rocket 6 vs 5	values
+tiers	resource/set/breed/mp/usa/tankman.set	14	outline	skills near skills_3_4_2_2_2_3 (14 breeds)	smg 3 vs 4	values
+tiers	resource/set/breed/mp/usa/tankman2.set	14	outline	skills near skills_3_4_2_2_2_3 (14 breeds)	smg 3 vs 4, mgun 3 vs 2	values
+tiers	resource/set/breed/mp/usa/usa_elite_101st_para.set	14	outline	skills near skills_elite_6 (33 breeds)	rifle 7 vs 6	values
+tiers	resource/set/breed/mp/usa/usa_elite_101st_para3.set	14	outline	skills near skills_elite_6 (33 breeds)	mgun 7 vs 6, rifle 7 vs 6	values
+tiers	resource/set/breed/mp/usa/usa_elite_101st_para3_asst.set	14	outline	skills near skills_elite_6 (33 breeds)	mgun 7 vs 6, rifle 7 vs 6	values
+tiers	resource/set/breed/mp/usa/usa_elite_101st_para3b.set	14	outline	skills near skills_elite_6 (33 breeds)	mgun 7 vs 6	values
+tiers	resource/set/breed/mp/usa/usa_elite_101st_para3b_asst.set	14	outline	skills near skills_elite_6 (33 breeds)	mgun 7 vs 6, rifle 7 vs 6	values
+tiers	resource/set/breed/mp/usa/usa_elite_101st_para4.set	15	outline	skills near skills_elite_6 (33 breeds)	rifle 7 vs 6, rocket 7 vs 6	values
+tiers	resource/set/breed/mp/usa/usa_elite_101st_para_grenadier.set	14	outline	skills near skills_elite_6 (33 breeds)	rifle 7 vs 6	values
+tiers	resource/set/breed/mp/usa/usa_elite_101st_para_sgt.set	14	outline	skills near skills_elite_6 (33 breeds)	smg 7 vs 6	values
+tiers	resource/set/breed/mp/usa/usa_elite_101st_parab.set	14	outline	skills near skills_elite_6 (33 breeds)	rifle 7 vs 6	values
+tiers	resource/set/breed/mp/usa/usa_elite_sgt.set	14	outline	skills near skills_4_5_4_4_4_4 (8 breeds)	smg 6 vs 5	values
+tiers	resource/set/breed/mp/usa/usa_marine_sgt.set	14	outline	skills near skills_3_3_3_3_3_3 (5 breeds)	smg 5 vs 3	values
+tiers	resource/set/breed/mp/usa/usa_nightfighter_leader.set	15	outline	skills near skills_usa_4_4_4_5_4_4 (9 breeds)	smg 6 vs 4	values
+tiers	resource/set/breed/mp/usa/usa_officer.set	16	outline	skills near skills_4_5_4_4_4_4 (8 breeds)	pistol 5 vs 4, rocket 3 vs 4	values
+tiers	resource/set/breed/mp/usa/usa_radioman_105.set	14	outline	skills near skills_2_3_2_2_1_3 (24 breeds)	pistol 6 vs 2	values
+tiers	resource/set/breed/mp/usa/usa_radioman_240.set	14	outline	skills near skills_2_3_2_2_1_3 (24 breeds)	pistol 6 vs 2	values
+tiers	resource/set/breed/mp/usa/usa_raiderbar.set	15	outline	skills near skills_usa_4_4_4_5_4_4 (9 breeds)	mgun 1 vs 4	values
+tiers	resource/set/breed/mp/usa/usa_raiderchad.set	15	outline	skills near skills_usa_4_4_4_5_4_4 (9 breeds)	smg 6 vs 4	values
+tiers	resource/set/breed/mp/usa/usa_raiderdemo.set	15	outline	skills near skills_usa_4_4_4_5_4_4 (9 breeds)	smg 5 vs 4	values
+tiers	resource/set/breed/mp/usa/usa_raidergren.set	15	outline	skills near skills_3_3_3_4_3_3 (13 breeds)	rifle 5 vs 4	values
+tiers	resource/set/breed/mp/usa/usa_ranger_bazooka.set	15	outline	skills near skills_5_5_5_6_5_5 (22 breeds)	rocket 6 vs 5	values
+tiers	resource/set/breed/mp/usa/usa_ranger_recoiless.set	12	outline	body near body_h350_s200 (49 breeds)	vision mp_soldier vs "mp_soldier" (text only, same number)	text only (joining changes the expanded text: case)
+tiers	resource/set/breed/mp/usa/usa_ranger_recoiless.set	14	outline	skills near skills_5_5_5_6_5_5 (22 breeds)	rocket 6 vs 5	values
+tiers	resource/set/breed/mp/usa/usa_squadleader.set	14	outline	skills near skills_4_4_2_3_2_4 (47 breeds)	pistol 3 vs 4, mgun 3 vs 2	values
+tiers	resource/set/breed/mp/usa/usa_tankman2_single.set	14	outline	skills near skills_3_4_2_2_2_3 (14 breeds)	smg 3 vs 4, mgun 3 vs 2	values
+tiers	resource/set/breed/mp/usa/usa_tankman_single.set	14	outline	skills near skills_3_4_2_2_2_3 (14 breeds)	smg 3 vs 4	values
+tiers	resource/set/breed/mp/usa/usa_vet_tankman2_single.set	13	outline	drive near drive_t12_v12_c11 (7 breeds)	tank 1.3 vs 1.2, cannon 1.15 vs 1.1	values
+tiers	resource/set/breed/mp/usa/usa_vet_tankman2_single.set	14	outline	skills near skills_3_4_2_2_2_3 (14 breeds)	smg 3 vs 4, mgun 5 vs 2	values
+tiers	resource/set/breed/mp/usa/vet_tankman.set	14	outline	skills near skills_3_4_2_2_2_3 (14 breeds)	smg 3 vs 4, mgun 3 vs 2	values
+tiers	resource/set/breed/mp/usa/vet_tankman2.set	13	outline	drive near drive_t12_v12_c11 (7 breeds)	tank 1.3 vs 1.2, cannon 1.15 vs 1.1	values
+tiers	resource/set/breed/mp/usa/vet_tankman2.set	14	outline	skills near skills_3_4_2_2_2_3 (14 breeds)	smg 3 vs 4, mgun 5 vs 2	values
+vet	resource/set/breed/mp/axis_minor/veterancy_generic.inc	6	outline	vet_standard_old outer 48/96/288/576/960	mod "mp" 24/60/108/168/240	(mod "mp") numbers differ from the outer ones (not changed)
+vet	resource/set/breed/mp/axis_minor/veterancy_generic.inc	1	outline	axis_minor: 2 breeds whose table looks wrong for their name [I]	axm_ita_vettankcommander.set (crew name on vet_standard), axm_ita_vettankman.set (crew name on vet_standard)	heuristic on the file name, not changed
+vet	resource/set/breed/mp/ger_ss/veterancy_generic.inc	4	outline	vet_ss_start1 lvl_2: expected 72 (vet_elite minus 60)	84	number breaks its base table (not changed)
+vet	resource/set/breed/mp/ger_ss/veterancy_generic.inc	4	outline	vet_ss_start1 lvl_3: expected 156 (vet_elite minus 60)	180	number breaks its base table (not changed)
+vet	resource/set/breed/mp/ger_ss/veterancy_generic.inc	4	outline	vet_ss_start1 lvl_4: expected 252 (vet_elite minus 60)	288	number breaks its base table (not changed)
+vet	resource/set/breed/mp/ger_ss/veterancy_generic.inc	4	outline	vet_ss_start1 lvl_5: expected 360 (vet_elite minus 60)	384	number breaks its base table (not changed)
+vet	resource/set/breed/mp/ger_ss/veterancy_generic.inc	18	outline	vet_ss_start3 lvl_4: expected 96 (vet_elite minus 216)	108	number breaks its base table (not changed)
+vet	resource/set/breed/mp/ger_ss/veterancy_generic.inc	18	outline	vet_ss_start3 lvl_5: expected 204 (vet_elite minus 216)	180	number breaks its base table (not changed)
+vet	resource/set/breed/mp/ger_ss/veterancy_generic.inc	1	outline	ger_ss: 2 breeds whose table looks wrong for their name [I]	elite_tankman.set (crew name on vet_standard), elite_tankman2.set (crew name on vet_standard)	heuristic on the file name, not changed
+vet	resource/set/breed/mp/jap/veterancy_generic.inc	1	outline	jap: 12 breeds whose table looks wrong for their name [I]	elite_ig1.set (elite name on vet_standard), elite_ig1_ammo.set (elite name on vet_standard), elite_ig1b.set (elite name on vet_standard), elite_ig1h.set (elite name on vet_standard), elite_ig1h_ammo.set (elite name on vet_standard)	heuristic on the file name, not changed
+vet	resource/set/breed/mp/robz_vet.inc	34	outline	vet_standard_start2 lvl_4: expected 108 (vet_standard minus 60)	120	number breaks its base table (not changed)
+vet	resource/set/breed/mp/robz_vet.inc	34	outline	vet_standard_start2 lvl_5: expected 180 (vet_standard minus 60)	192	number breaks its base table (not changed)
+vet	resource/set/breed/mp/robz_vet.inc	49	outline	vet_standard_start3 lvl_4: expected 60 (vet_standard minus 108)	72	number breaks its base table (not changed)
+vet	resource/set/breed/mp/robz_vet.inc	49	outline	vet_standard_start3 lvl_5: expected 132 (vet_standard minus 108)	144	number breaks its base table (not changed)
+vet	resource/set/breed/mp/robz_vet.inc	148	outline	vet_crew_start3 lvl_4: expected 300 (vet_crew minus 1200)	96	number breaks its base table (not changed)
+vet	resource/set/breed/mp/robz_vet.inc	148	outline	vet_crew_start3 lvl_5: expected 600 (vet_crew minus 1200)	204	number breaks its base table (not changed)
+vet	resource/set/breed/mp/robz_vet.inc	148	outline	vet_crew_start3 outer -1/-1/0/96/204	mod "mp" -1/-1/0/180/360	(mod "mp") numbers differ from the outer ones (not changed)
+vet	resource/set/breed/mp/rus/veterancy_generic.inc	1	outline	rus: 7 breeds whose table looks wrong for their name [I]	elite.set (elite name on vet_standard), elite2.set (elite name on vet_standard), elite2_40.set (elite name on vet_standard), elite3.set (elite name on vet_standard), elite3_40.set (elite name on vet_standard)	heuristic on the file name, not changed
+vet	resource/set/breed/mp/usa/veterancy_generic.inc	1	outline	usa: 11 breeds whose table looks wrong for their name [I]	elite.set (elite name on vet_standard), elite3.set (elite name on vet_standard), elite3b.set (elite name on vet_standard), elite4_sgt.set (elite name on vet_standard), elite5.set (elite name on vet_standard)	heuristic on the file name, not changed
+vet	resource/set/breed/mp/eng/eng_rifleman_smoke.set	16	outline	literal {veterancy} block 2/5/9/14/20		not breed_vet: matches no vet_ table (not changed)
+vet	resource/set/breed/mp/ger_ss/ss_at_miner.set	16	outline	literal {veterancy} block 2/5/9/14/20		not breed_vet: matches no vet_ table (not changed)

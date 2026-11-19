@@ -1,0 +1,34 @@
+item	group	stuff	energy_kg	energy_parts	cumulative	fire_radius	range	fuse_s	ranking	score	tier	breeds
+breda35	frag_grenade	grenade/01 grenade_ap/breda35.grenade	1.8	1.3+0.5	0	0	27	4.5	general	12.15	2	10
+breda42at	at_grenade	grenade/02 grenade_at/breda42at.grenade	7	5+2	25	0	14	impact	armor	25	1	2
+grenade ccm34smoke	smoke_grenade	grenade/00 grenade_smoke/ccm34smoke.grenade	0		0	0	25	impact	general	5	1	8
+grenade f1	frag_grenade	grenade/01 grenade_ap/f1.grenade	1.1	1.1	0	0	22	3.5	general	8.15	1	121
+grenade hohlladung	at_grenade	grenade/02 grenade_at/hohlladung.grenade	6	4+2	140	0	8	impact	armor	140	4	53
+grenade hungarian_36m	frag_grenade	grenade/01 grenade_ap/hungarian_36m.grenade	1.8	1.3+0.5	0	0	27	4.5	general	12.15	2	4
+grenade hungarian_42m	frag_grenade	grenade/01 grenade_ap/hungarian_42m.grenade	1.8	1.3+0.5	0	0	27	4.5	general	12.15	2	4
+grenade m15_smoke	smoke_grenade	grenade/00 grenade_smoke/m15_smoke.grenade	0		0	6	26	impact	general	11.2	2	48
+grenade m24	frag_grenade	grenade/01 grenade_ap/m24.grenade	1.8	1.3+0.5	0	0	27	4.5	general	12.15	2	277
+grenade m24x5	bundle_charge	grenade/02 grenade_at/m24x5.grenade	7.1	5+2+0.1	40	0	12	1.5	armor	40	2	177
+grenade m39	frag_grenade	grenade/01 grenade_ap/m39.grenade	1.7	1.2+0.5	0	0	30	4.5	general	12.25	2	41
+grenade m61	frag_grenade	grenade/01 grenade_ap/m61.grenade	1.1	1.1	0	0	22	4.5	general	7.65	1	103
+grenade mk1	frag_grenade	grenade/01 grenade_ap/mk1.grenade	1.1	1.1	0	0	19	4	general	7.3	1	88
+grenade molotov_coctail	incendiary	grenade/02 grenade_at/molotov_coctail.grenade	0		0	4	22	impact	general	8.4	1	60
+grenade n73at	at_grenade	grenade/02 grenade_at/n73at.grenade	7	5+2	51	0	14	impact	armor	51	2	64
+grenade n77_smoke	smoke_grenade	grenade/00 grenade_smoke/n77_smoke.grenade	0		0	6	22	impact	general	10.4	2	50
+grenade oto_mod35	frag_grenade	grenade/01 grenade_ap/oto_mod35.grenade	1.8	1.3+0.5	0	0	27	4.5	general	12.15	2	5
+grenade pwm1	at_grenade	grenade/02 grenade_at/pwm1.grenade	7	5+2	150	0	14	impact	armor	150	4	15
+grenade rg42x3	bundle_charge	grenade/02 grenade_at/rg42x3.grenade	7.1	5+2+0.1	15	0	12	1.5	armor	25	1	9
+grenade rpg40	at_grenade	grenade/02 grenade_at/rpg40.grenade	7	5+2	25	0	14	impact	armor	25	1	36
+grenade rpg43	at_grenade	grenade/02 grenade_at/rpg43.grenade	7	5+2	75	0	14	impact	armor	75	3	29
+grenade satchel	bundle_charge	grenade/01 grenade_ap/satchel.grenade	21	20+1	0	0	12	10	armor	100	4	20
+grenade smoke	smoke_grenade	grenade/00 grenade_smoke/smoke.grenade	0		0	0	32	impact	general	6.4	1	352
+grenade smoke_paradrop_ammo	smoke_grenade	grenade/00 grenade_smoke/smoke_paradrop_ammo.grenade	0		0	0	32	impact	general	6.4	1	1
+grenade smoke_paradrop_ammo_heavy	smoke_grenade	grenade/00 grenade_smoke/smoke_paradrop_ammo_heavy.grenade	0		0	0	32	impact	general	6.4	1	6
+grenade type3at_a	at_grenade	grenade/02 grenade_at/type3at_a.grenade	7	5+2	20	0	14	impact	armor	25	1	72
+grenade type97	frag_grenade	grenade/01 grenade_ap/type97.grenade	1	1	0	0	24	4.5	general	7.55	1	86
+grenade type99	frag_grenade	grenade/01 grenade_ap/type99.grenade	1	1	0	0	27	4.5	general	8.15	1	10
+grenade type99at	at_grenade	grenade/02 grenade_at/type99at.grenade	7	5+2	20	0	6	0.01	armor	25	1	1
+kasapanos_2kg	bundle_charge	grenade/kasapanos_2kg.grenade	7	5+2	25	0	14	impact	armor	25	1	13
+kasapanos_4kg	bundle_charge	grenade/kasapanos_4kg.grenade	21	20+1	120	0	12	impact	armor	120	4	7
+oto42flam	incendiary	grenade/02 grenade_at/oto42flam.grenade	0		0	4	22	impact	general	8.4	1	3
+smoke_candle	smoke_grenade	grenade/00 grenade_smoke/smoke_candle.grenade	0		0	0	77	impact	general	15.4	2	3

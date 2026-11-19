@@ -25,30 +25,30 @@
 
 ;------------------------------regular squad || vet 2/3-----------------------------------------------------------
 
-;{price {rule sequence} {members 188.85} {step 1} {of 5} {percent 100} {base 188.85} {cost 189} {avg 162.4}}
+;{price {rule sequence} {members 140.85} {step 1} {of 5} {percent 100} {base 140.85} {cost 141} {avg 121.4}}
 ("squad_6_sequence" side(rus) name(riflemans) member1(rus_squadleader_smg:1) member2(rus_smg:3) member3(rus_rifle_sa:2) member4(rus_rifle:3) member5(rus_mgun:1) member6(rus_mgun_asst:1) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(8) level(1) cost(142) fore(1.0))
-;{price {rule sequence} {members 188.85} {step 2} {of 5} {percent 90} {base 188.85} {cost 170} {avg 162.4}}
+;{price {rule sequence} {members 140.85} {step 2} {of 5} {percent 90} {base 140.85} {cost 127} {avg 121.4}}
 ("squad_6_sequence" side(rus) name(riflemansv2) member1(rus_squadleader_smg:1) member2(rus_smg:3) member3(rus_rifle_sa:2) member4(rus_rifle:3) member5(rus_mgun:1) member6(rus_mgun_asst:1) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(8) level(1) cost(138) fore(1.0))
-;{price {rule sequence} {members 188.85} {step 3} {of 5} {percent 90} {base 188.85} {cost 170} {avg 162.4}}
+;{price {rule sequence} {members 140.85} {step 3} {of 5} {percent 90} {base 140.85} {cost 127} {avg 121.4}}
 ("squad_6_sequence" side(rus) name(riflemansv3) member1(rus_squadleader_smg:1) member2(rus_smg:3) member3(rus_rifle_sa:2) member4(rus_rifle:3) member5(rus_mgun:1) member6(rus_mgun_asst:1) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(8) level(1) cost(138) fore(1.0))
-;{price {rule sequence} {members 188.85} {step 4} {of 5} {percent 80} {base 188.85} {cost 151} {avg 162.4}}
+;{price {rule sequence} {members 140.85} {step 4} {of 5} {percent 80} {base 140.85} {cost 113} {avg 121.4}}
 ("squad_6_sequence" side(rus) name(riflemansv4) member1(rus_squadleader_smg:1) member2(rus_smg:3) member3(rus_rifle_sa:2) member4(rus_rifle:3) member5(rus_mgun:1) member6(rus_mgun_asst:1) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(8) level(1) cost(124) fore(1.0))
-;{price {rule sequence} {members 188.85} {step 5} {of 5} {percent 70} {base 188.85} {cost 132} {avg 162.4}}
+;{price {rule sequence} {members 140.85} {step 5} {of 5} {percent 70} {base 140.85} {cost 99} {avg 121.4}}
 ("squad_6_sequence" side(rus) name(riflemansv5) member1(rus_squadleader_smg:1) member2(rus_smg:3) member3(rus_rifle_sa:2) member4(rus_rifle:3) member5(rus_mgun:1) member6(rus_mgun_asst:1) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(8) level(1) cost(124) fore(1.0))
 
 
-;{price {rule sequence} {members 194.77} {step 1} {of 5} {percent 100} {base 194.77} {cost 195} {avg 167.4}}
+;{price {rule sequence} {members 130.77} {step 1} {of 5} {percent 100} {base 130.77} {cost 131} {avg 112.8}}
 ("squad_6_sequence" side(rus) name(riflemans_rifle) member1(rus_squadleader_smg:1) member2(rus_smg:1) member3(rus_rifle_sa:1) member4(rus_rifle:6) member5(rus_mgun:1) member6(rus_mgun_asst:1) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(9) level(1) cost(132) fore(1.0))
-;{price {rule sequence} {members 194.77} {step 2} {of 5} {percent 90} {base 194.77} {cost 175} {avg 167.4}}
+;{price {rule sequence} {members 130.77} {step 2} {of 5} {percent 90} {base 130.77} {cost 118} {avg 112.8}}
 ("squad_6_sequence" side(rus) name(riflemans_riflev2) member1(rus_squadleader_smg:1) member2(rus_smg:1) member3(rus_rifle_sa:1) member4(rus_rifle:6) member5(rus_mgun:1) member6(rus_mgun_asst:1) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(9) level(1) cost(115) fore(1.0))
-;{price {rule sequence} {members 194.77} {step 3} {of 5} {percent 90} {base 194.77} {cost 175} {avg 167.4}}
+;{price {rule sequence} {members 130.77} {step 3} {of 5} {percent 90} {base 130.77} {cost 118} {avg 112.8}}
 ("squad_6_sequence" side(rus) name(riflemans_riflev3) member1(rus_squadleader_smg:1) member2(rus_smg:1) member3(rus_rifle_sa:1) member4(rus_rifle:6) member5(rus_mgun:1) member6(rus_mgun_asst:1) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(9) level(1) cost(115) fore(1.0))
-;{price {rule sequence} {members 194.77} {step 4} {of 5} {percent 80} {base 194.77} {cost 156} {avg 167.4}}
+;{price {rule sequence} {members 130.77} {step 4} {of 5} {percent 80} {base 130.77} {cost 105} {avg 112.8}}
 ("squad_6_sequence" side(rus) name(riflemans_riflev4) member1(rus_squadleader_smg:1) member2(rus_smg:1) member3(rus_rifle_sa:1) member4(rus_rifle:6) member5(rus_mgun:1) member6(rus_mgun_asst:1) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(9) level(1) cost(103) fore(1.0))
-;{price {rule sequence} {members 194.77} {step 5} {of 5} {percent 70} {base 194.77} {cost 136} {avg 167.4}}
+;{price {rule sequence} {members 130.77} {step 5} {of 5} {percent 70} {base 130.77} {cost 92} {avg 112.8}}
 ("squad_6_sequence" side(rus) name(riflemans_riflev5) member1(rus_squadleader_smg:1) member2(rus_smg:1) member3(rus_rifle_sa:1) member4(rus_rifle:6) member5(rus_mgun:1) member6(rus_mgun_asst:1) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(9) level(1) cost(103) fore(1.0))
 
-;{price {rule squad} {add "truck"} {members 194.77} {cost 211}}
+;{price {rule squad} {add "truck"} {members 130.77} {cost 147}}
 ("squad_with7types_vehicle" side(rus) name(riflemans_rifle_mot) c(60) g(squad_2) v1(zis5) c1(rus_squadleader_smg:1) c2(rus_smg:1) c3(rus_rifle_sa:1) c4(rus_rifle:6) c5(rus_mgun:1) c6(rus_mgun_asst:1) b(squad1) t(all inf_only 43 44 45) level(1) cost(167) f(-1.0))
 
 ;------------------------------shock troops ||| vet 4-----------------------------------------------------------
@@ -105,10 +105,10 @@
 
 ;------------------------------rifleman and smg || vet 2--------------------------------------------------------
 
-;{price {rule single} {members 17.06} {mult 1.15} {cost 20}}
+;{price {rule single} {members 9.06} {mult 1.15} {cost 10}}
 ("squad_1" side(rus) name(riflemans2) member1(rus_rifle:1) charge(0) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_1) button(squad2) level(1) cost(9) fore(1.0))
 
-;{price {rule single} {members 21.06} {mult 1.15} {cost 24}}
+;{price {rule single} {members 13.06} {mult 1.15} {cost 15}}
 ("squad_1" side(rus) name(rifle_sa) member1(rus_rifle_sa:1) charge(30) tags(all inf_only 40 41 42 43 44 45) group(soldier_sa) button(squad2) level(1) cost(13) fore(1.0))
 
 ;{price {rule single} {members 12.1} {mult 1.15} {cost 14}}
@@ -126,7 +126,7 @@
 
 ;------------------------------MG infantry || vet 2-------------------------------------------------------------
 
-;{price {rule squad} {members 46.05} {cost 46}}
+;{price {rule squad} {members 38.05} {cost 38}}
 ("squad_2" side(rus) name(mgs2) member1(rus_mgun:1) member2(rus_mgun_asst:1) charge(90) tags(all inf_only 43 44 45) group(soldier_6) button(squad2) level(1) cost(45) fore(1.0))
 
 ;------------------------------elite3

@@ -714,10 +714,14 @@
 			"binocular"	; [I] stuff special/binocular
 		}
 	}
+	{group "scrape_shovel" {label "small shovel (digs a scrape): free, owner 2026-11-19"} {price 0}
+		{items
+			"small_shovel"	; stuff special/small_shovel, the item of interface/action/scrape.set
+		}
+	}
 	{group "shovel" {label "shovel / spade"} {price 8}	; [I] sheet "Shovel" 8
 		{items
 			"small_inf_shovel"	; [I] no stuff file found; group by name
-			"small_shovel"	; [I] stuff special/small_shovel
 			"spider_hole_spade"	; [I] stuff special/spider_hole_spade
 			"trench_spade"	; [I] stuff special/trench_spade
 			"tunnel_spade"	; [I] stuff special/tunnel_spade
