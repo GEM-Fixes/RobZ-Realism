@@ -123,7 +123,7 @@
 			{damping 0.95}
 		}
 		{visualizer
-			{stage initial 
+			{stage initial
 				{sprite "$/explosion/exp_muzzle_02"
 					{timer
 						{mode play }
@@ -175,7 +175,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{##+ sprite "$/smoke/smtanko"
 					{timer
 						{mode play }
@@ -257,7 +257,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/oskolki"
 					{scale 1
 						{linear
@@ -307,7 +307,7 @@
 			{damping 0.95}
 		}
 		{visualizer
-			{stage initial 
+			{stage initial
 				{sprite "$/explosion/exp_muzzle_01"
 					{timer
 						{mode play }
@@ -354,7 +354,7 @@
 			{damping 0.95}
 		}
 		{visualizer
-			{stage initial 
+			{stage initial
 				{sprite "$/flash/supershock"
 					{timer
 						{mode play }
@@ -406,7 +406,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{preturn 0 180}
 					{timer
@@ -492,7 +492,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_30"
 					{preturn 0 20}
 					{timer
@@ -579,7 +579,7 @@
 			{damping 0.995}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_30"
 					{timer
 						{mode play }
@@ -656,7 +656,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_30"
 					{preturn 0 20}
 					{timer
@@ -743,7 +743,7 @@
 			{damping 0.95}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_30"
 					{timer
 						{mode play }

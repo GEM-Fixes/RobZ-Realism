@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-tk2-stg44"}
+	{portrait "ger_soldier6"}
+	{icon "smg"}
+	{icon_priority 3}
+	{nationality ger}
+	{armors
+		{body ammo_ger3}
+		{head waffen_helmet_totenkopf}
+	}
+	{perks
+		("body_veteran")
+		("drive_veteran")
+		("breed_skills" pistol(4) smg(5) mgun(3) rifle(3) rocket(5) melee(4))
+	}
+	("breed_vet" table(ss_start3))
+	{inventory
+		("smg_sg44")
+		{item "bandage" 5}
+		("frag_m24_x2")
+		("at_grenade_m24x5")
+		("smoke_grenade")
+		{item "panzerfaust weapon" filled}
+		{in_hands 0}
+	}
+}

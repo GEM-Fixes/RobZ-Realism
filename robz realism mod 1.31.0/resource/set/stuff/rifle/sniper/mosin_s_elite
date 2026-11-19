@@ -1,7 +1,7 @@
 {from "mosin_s"
 	{special
 		{mode aim}
-		{PrepareTime 1.5}	
+		{PrepareTime 1.5}
 		{PrepareCursor "aimed_shot"}
 		{accuracy 2.5}
 		{throw_off}

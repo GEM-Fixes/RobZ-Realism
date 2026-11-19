@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "fin-sum-inf-rfl"}
+	{portrait "fin_soldier2"}
+	{nationality fin}
+	{icon "rifleman"}
+	{icon_priority 0}
+	{armors
+		{head helmet_fin_m16}
+	}
+	{perks
+		("body_regular")
+		("drive_t08_v10_c10")
+		("breed_skills" pistol(1) smg(1) mgun(1) rifle(4) rocket(1) melee(2))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_mosin_fin")
+		{item "bandage" 4}
+		("frag_m24_x1")
+		{item "sandbag_kit" 1}
+		{item "trench_spade" 2}
+		{in_hands 0}
+	}
+}

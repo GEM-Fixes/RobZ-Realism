@@ -7,11 +7,11 @@
 	}
 	{mass 1.2}
 	{entity "fg_20mm_zenite"}
-	{damage blastwave  
+	{damage blastwave
 		{energy 1.2}
 		{area 0.2 0.4}
 	}
-	{damage add blastwave  
+	{damage add blastwave
 		{energy 0.2}
 		{area 2.5 4.0}
 	}

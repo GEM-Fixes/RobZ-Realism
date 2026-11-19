@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "us_mgun"}
+	{portrait "usa_soldier2"}
+	{nationality usa}
+	{icon "shotgun"}
+	{icon_priority 3}
+	{armors
+		{head "usmc-cap1"}
+	}
+	{perks
+		("body_regular")
+		("drive_regular")
+		("skills_2_2_2_3_1_3")
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("kit_rifle" gun(m12_shotgun) ammo(shotgun) rounds(90))
+		{item "bandage" 3}
+		("frag_m61_x2")
+		;{item "grenade n73at" 1}
+		("smoke_x1")
+		{in_hands 0}
+	}
+}

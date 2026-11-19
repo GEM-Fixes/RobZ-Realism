@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "jap_army_rifle"}
+	{portrait "jap_soldier2"}
+	{nationality jap}
+	{icon "rifleman"}
+	{icon_priority 1}
+	{armors
+		{head "jap_army_helmet6"}
+	}
+	{perks
+		("body_regular")
+		("drive_t08_v10_c10")
+		("skills_2_1_3_3_1_2")
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_type99rifle")
+		{item "ammo type99_mag" 30}
+		{item "bandage" 3}
+		("frag_type97_x1")
+		;{item "grenade type3at" 1}
+		{item "sandbag_kit" 1}
+		("mine_antipersonnel_x2")
+		{in_hands 0}
+	}
+}

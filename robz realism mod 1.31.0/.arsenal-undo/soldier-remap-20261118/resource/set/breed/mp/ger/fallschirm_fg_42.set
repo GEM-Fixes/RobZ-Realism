@@ -1,0 +1,28 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-para-fg"}
+	{portrait "ger_elite1"}
+	{icon "elite3"}
+	{icon_priority 4}
+	{nationality ger}
+	{armors
+		{head helmet_ger_m38_cover}
+	}
+	{perks
+		("body_elite_bare")
+		("drive_elite")
+		("skills_elite_7")
+		{"avoidance" lvl_1}
+		{"stealth"}
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("rifle_fg42_rifle")
+		{item "bandage" 5}
+		("frag_m39_x2")
+		("at_grenade_m24x5")
+		("smoke_x1")
+		{item "sandbag_kit"}
+		{in_hands 0}
+	}
+}

@@ -13,10 +13,10 @@
 		{vision "moto_crew"}
 		{bone "visor2"}
 	}
-    {visor "view-around"
-        {vision "moto_around"}
-        {bone "basis"}
-    }
+	{visor "view-around"
+		{vision "moto_around"}
+		{bone "basis"}
+	}
 }
 
 {Placer
@@ -51,7 +51,7 @@
 {Chassis
 	{Locomotion ("locomotion")
 		{MaxSpeed	45	}
-	  	{maxSpeedAtMaxTurn 12}	
+		{maxSpeedAtMaxTurn 12}
 		{StartTime	10	}		; время разгона до макс. скорости с 0, seconds
 		{BrakeTime	2	}		; время торможения с макс. скорости до 0, seconds
 		{StopTime	4	}		; время остановки после отключения двигателя с макс. скорости до 0, seconds
@@ -61,7 +61,7 @@
 		{SteerOn	30}			; скорость поворота колес, градусов в секунду
 		{SteerOff	40}         ; скорость возврата колес в исх. состояние, градусов в секунду
 		{SplineRadius 2}		; ограничение радиуса поворота на сплайнах, метров
-	}	
+	}
 	{FuelBag
 		{volume 50 }	; liters
 		{rate	8 }   	; liters per kilometer
@@ -82,7 +82,7 @@
 		{charger "gunner"}
 		("abm_mgun")
 	}
-}  	
+}
 {Extension "bmw-r12.mdl"}
 {bone "gun_rot"
 	{limits -20 20}

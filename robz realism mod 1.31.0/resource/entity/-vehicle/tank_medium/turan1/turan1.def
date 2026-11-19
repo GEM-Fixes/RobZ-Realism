@@ -1,19 +1,14 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{props "medium" "turret_rotator" "vision_vehicle_medium" "muzzle_minimum"}
-	
-	{volume "body1"
-		{component "body"}
-		{tags "body"}
-	}
-	{volume "body2"
-		{component "body"}
-		{tags "body"}
-	}
+
+	("vol_body_part_component_first" name(body1))
+	("vol_body_part_component_first" name(body2))
 	{volume "engine"
 		{component "engine"}
-;		{thickness 15}
+	;		{thickness 15}
 	}
 	{Volume "gun"
 		{component "gun"}
@@ -27,14 +22,14 @@
 		{component "turret"}
 		{tags "turret"}
 	}
-	
+
 	("armor_medium" turret(50 25 25 10) body(50 30 50 22))
 	("armor_engine"  t(25 25 25 20))
 	("armor_mantlet" t(50))
 	{extender "enumerator"
 		{digit_folder "ger"}
 	}
-	
+
 	{sensor
 		{visor "hullmg"
 			{bone "foresight4"}
@@ -62,10 +57,10 @@
 	("seat_human" place(seat4) bone(seat04) door(emit4)  animation(armor))
 	{extender "inventory"
 		{box
-            			{item "bullet40_hun ap" 30}
+			{item "bullet40_hun ap" 30}
 			{item "bullet40_hun fg" 27}
-            			{item "ammo bullet40_hun apcr" 5}
-            			{item "ammo gabauer_belt" 3150}
+			{item "ammo bullet40_hun apcr" 5}
+			{item "ammo gabauer_belt" 3150}
 		}
 	}
 	{Weaponry
@@ -88,7 +83,7 @@
 			{weapon "gebauer_optic" filled}
 			{foresight "foresight5"}
 			("abm_mgun")
-            {basic}
+			{basic}
 		}
 	}
 	{mass 21000}
@@ -99,34 +94,34 @@
 			{maxSpeedAtMaxTurn 6}
 			{StartTime 	 35}
 			{TurnTime  	 15}
-    		{TurnStart 1.4}
-     		{BrakeTime   1} 
-    		{StopTime    2}
-     		{TurnRadius  8} 
-    		{TurnStop   0.7}
-     		{Gears  0.1 0.2 0.3 1}
-     		{RearGears 0.28}
+			{TurnStart 1.4}
+			{BrakeTime   1}
+			{StopTime    2}
+			{TurnRadius  8}
+			{TurnStop   0.7}
+			{Gears  0.1 0.2 0.3 1}
+			{RearGears 0.28}
 		}
 		{FuelBag
-			{volume 320 }	
-			{rate	24 }   
+			{volume 320 }
+			{rate	24 }
 			{remain 320 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  30}
-        	{Slow  30}
-    	}
+			{Normal  30}
+			{Slow  30}
+		}
 	}
 
 	{Extension "turan1.mdl"}
- 
-{bone "turret"
+
+	{bone "turret"
 		{speed 0.0036}
 	}
-	;{bone "gun_rot"
-		;{speed 0.0008}
-	;}
-	;("turret_speed_medium")
-	;("ger_1_sight")
+;{bone "gun_rot"
+;{speed 0.0008}
+;}
+;("turret_speed_medium")
+;("ger_1_sight")
 }

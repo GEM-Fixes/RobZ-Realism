@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-inf-lcpl"}
+	{portrait "eng_soldier3"}
+	{nationality eng}
+	{icon "squadleader2"}
+	{icon_priority 2}
+	{armors
+		{head helmet2_eng}
+	}
+	{perks
+		("body_squadleader")
+		("drive_t08_v10_c10")
+		("breed_skills" pistol(4) smg(4) mgun(3) rifle(5) rocket(2) melee(5))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_em3")
+		{item "ammo bren_mag" 56}
+		{item "bandage" 3}
+		("frag_mk1_x2")
+		("at_grenade_n73at_x1")
+		("smoke_x1")
+		("smoke_n77_x1")
+		{in_hands 0}
+	}
+}

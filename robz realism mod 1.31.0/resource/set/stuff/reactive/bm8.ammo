@@ -3,7 +3,7 @@
 	{inventory
 		{size 4 1}
 		{weight 100}
-	}	
+	}
 	{entity "bm8_ammo"}
 	{mass 36.05}
 	{view "bm8_ammo"

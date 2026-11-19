@@ -42,7 +42,7 @@
 		}
 		{offset 0 0 5}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/flash_g03a"
 					{timer
 						{mode play }
@@ -115,7 +115,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/grit"
 					{turn 1
 						{linear
@@ -170,7 +170,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_s01"
 					{timer
 						{mode play }
@@ -238,7 +238,7 @@
 			{damping 0.97}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_turb2"
 					{timer
 						{mode play }
@@ -297,7 +297,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4c"
 					{timer
 						{mode play }
@@ -376,7 +376,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/explosion/ground_exp"
 					{timer

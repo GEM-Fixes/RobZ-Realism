@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "jap_army_sturmovik"}
 	{portrait "jap_elite1"}
@@ -8,52 +9,19 @@
 		{head "jap_army_helmet2_net"}
 	}
 	{perks
-		{"health" "350%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "225%"
-		}
-		{"stamina_regeneration" "125%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	1.0
-		}
-		{"vehicle" 1.0
-		}
-		{"cannon" 1.0
-		}
-		{"stealth"
-		}
-		
-		{"pistol" lvl_6
-		}
-		{"smg" lvl_4
-		}
-		{"mgun" lvl_4
-		}
-		{"rifle" lvl_6
-		}
-		{"rocketlauncher" lvl_4
-		}
-		{"melee" lvl_6
-		}
+		("breed_body" health(400%) regen_health(100%) stamina(200%) regen_stamina(125%) vision("mp_soldier") speed(0.9))
+		("drive_level_6")
+		("skills_rifle_6" rocket(1))
+		{"stealth"}
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_elite")
-	}
+	("breed_vet" table(elite))
 	{inventory
-		{item "type99rifle_bayonet" filled}		
-		{item "ammo arisaka7-7_clip" 60}
+		("rifle_type99rifle_bayonet")
 		{item "bandage" 5}
-		{item "grenade type97" 3}
-		{item "grenade type3at_a" 1}
-		{item "smoke grenade" 1}
-		{item "dynamite" 1}
+		("give" item(grenade type97) count(3))
+		("give" item(grenade type3at_a) count(1))
+		("give" item(smoke grenade) count(1))
+		("give" item(dynamite) count(1))
 		{item "knife_japan" 1}
 		{in_hands 0}
 	}

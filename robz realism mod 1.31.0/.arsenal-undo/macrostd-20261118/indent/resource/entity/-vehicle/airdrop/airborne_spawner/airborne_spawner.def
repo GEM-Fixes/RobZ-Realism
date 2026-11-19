@@ -1,0 +1,228 @@
+;supports up to 34 drops
+{entity
+	(include "/properties/spawner.ext")
+	(include "/properties/selection/airdrop.inc" scale(4))
+	{collider "tank.light"}
+	{props "airborne_spawner" "amphibia" "vision_vehicle_paradrop"}
+	{targetClass "unknown"}
+	{targetSelector "tank_bullet"}
+	{patherId "airdrop"}
+
+	("armor_light" turret(1) body(1))
+	("armor_engine"  t(1))
+
+	{boarder
+		{anm "1"
+			{forward	{begin	"paratruper_flight" 0.219} {end "paratruper_flight"} {base "1" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.219} {base "1"  }}
+		}
+		{anm "2"
+			{forward	{begin	"paratruper_flight" 0.214} {end "paratruper_flight"} {base "2" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.214} {base "2"  }}
+		}
+		{anm "3"
+			{forward	{begin	"paratruper_flight" 0.209} {end "paratruper_flight"} {base "3" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.209} {base "3"  }}
+		}
+		{anm "4"
+			{forward	{begin	"paratruper_flight" 0.204} {end "paratruper_flight"} {base "4" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.204} {base "4"  }}
+		}
+		{anm "5"
+			{forward	{begin	"paratruper_flight" 0.199} {end "paratruper_flight"} {base "5" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.199} {base "5"  }}
+		}
+		{anm "6"
+			{forward	{begin	"paratruper_flight" 0.194} {end "paratruper_flight"} {base "6" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.194} {base "6"}}
+		}
+		{anm "7"
+			{forward	{begin	"paratruper_flight" 0.189} {end "paratruper_flight"} {base "7" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.189} {base "7"}}
+		}
+		{anm "8"
+			{forward	{begin	"paratruper_flight" 0.184} {end "paratruper_flight"} {base "8" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.184} {base "8"}}
+		}
+		{anm "9"
+			{forward	{begin	"paratruper_flight" 0.179} {end "paratruper_flight"} {base "9" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.179} {base "9"}}
+		}
+		{anm "10"
+			{forward	{begin	"paratruper_flight" 0.174} {end "paratruper_flight"} {base "10" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.174} {base "10"}}
+		}
+		{anm "11"
+			{forward	{begin	"paratruper_flight" 0.169} {end "paratruper_flight"} {base "11" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.169} {base "11"}}
+		}
+		{anm "12"
+			{forward	{begin	"paratruper_flight" 0.219} {end "paratruper_flight"} {base "12" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.219} {base "12"}}
+		}
+		{anm "13"
+			{forward	{begin	"paratruper_flight" 0.214} {end "paratruper_flight"} {base "13" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.214} {base "13"}}
+		}
+		{anm "14"
+			{forward	{begin	"paratruper_flight" 0.209} {end "paratruper_flight"} {base "14" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.209} {base "14"}}
+		}
+		{anm "15"
+			{forward	{begin	"paratruper_flight" 0.204} {end "paratruper_flight"} {base "15" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.204} {base "15"}}
+		}
+		{anm "16"
+			{forward	{begin	"paratruper_flight" 0.199} {end "paratruper_flight"} {base "16" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.199} {base "16"}}
+		}
+		{anm "17"
+			{forward	{begin	"paratruper_flight" 0.194} {end "paratruper_flight"} {base "17" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.194} {base "17"}}
+		}
+		{anm "18"
+			{forward	{begin	"paratruper_flight" 0.189} {end "paratruper_flight"} {base "18" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.189} {base "18"}}
+		}
+		{anm "19"
+			{forward	{begin	"paratruper_flight" 0.184} {end "paratruper_flight"} {base "19" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.184} {base "19"}}
+		}
+		{anm "20"
+			{forward	{begin	"paratruper_flight" 0.179} {end "paratruper_flight"} {base "20" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.179} {base "20"}}
+		}
+		{anm "21"
+			{forward	{begin	"paratruper_flight" 0.174} {end "paratruper_flight"} {base "21" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.174} {base "21"}}
+		}
+		{anm "22"
+			{forward	{begin	"paratruper_flight" 0.169} {end "paratruper_flight"} {base "22" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.169} {base "22"}}
+		}
+		{anm "23"
+			{forward	{begin	"paratruper_flight" 0.164} {end "paratruper_flight"} {base "23" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.164} {base "23"}}
+		}
+		{anm "24"
+			{forward	{begin	"paratruper_flight" 0.219} {end "paratruper_flight"} {base "24" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.219} {base "24"}}
+		}
+		{anm "25"
+			{forward	{begin	"paratruper_flight" 0.214} {end "paratruper_flight"} {base "25" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.214} {base "25"}}
+		}
+		{anm "26"
+			{forward	{begin	"paratruper_flight" 0.209} {end "paratruper_flight"} {base "26" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.209} {base "26"}}
+		}
+		{anm "27"
+			{forward	{begin	"paratruper_flight" 0.204} {end "paratruper_flight"} {base "27" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.204} {base "27"}}
+		}
+		{anm "28"
+			{forward	{begin	"paratruper_flight" 0.199} {end "paratruper_flight"} {base "28" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.199} {base "28"}}
+		}
+		{anm "29"
+			{forward	{begin	"paratruper_flight" 0.194} {end "paratruper_flight"} {base "29" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.194} {base "29"}}
+		}
+		{anm "30"
+			{forward	{begin	"paratruper_flight" 0.189} {end "paratruper_flight"} {base "30" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.189} {base "30"}}
+		}
+		{anm "31"
+			{forward	{begin	"paratruper_flight" 0.184} {end "paratruper_flight"} {base "31" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.184} {base "31"}}
+		}
+		{anm "32"
+			{forward	{begin	"paratruper_flight" 0.179} {end "paratruper_flight"} {base "32" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.179} {base "32"}}
+		}
+		{anm "33"
+			{forward	{begin	"paratruper_flight" 0.174} {end "paratruper_flight"} {base "33" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.174} {base "33"}}
+		}
+		{anm "34"
+			{forward	{begin	"paratruper_flight" 0.169} {end "paratruper_flight"} {base "34" -1000}}
+			{reverse 	{begin	"paratruper_flight" 0.169} {base "34"}}
+		}
+
+	}
+
+(define "crew_human"
+	{placer
+		{place "%place" {group "%group"} {linkbone "%bone"}}
+	}
+	{boarder
+		{door "%door"}
+		{link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+	}
+)
+
+		("crew_human" place(driver) bone(human1) door(human1) animation(1))
+		("crew_human" place(passenger2) bone(human2) door(human2) animation(2))
+		("crew_human" place(passenger3) bone(human3) door(human3) animation(3))
+		("crew_human" place(passenger4) bone(human4) door(human4) animation(4))
+		("crew_human" place(passenger5) bone(human5) door(human5) animation(5))
+		("crew_human" place(passenger6) bone(human6) door(human6) animation(6))
+		("crew_human" place(passenger7) bone(human7) door(human7) animation(7))
+		("crew_human" place(passenger8) bone(human8) door(human8) animation(8))
+		("crew_human" place(passenger9) bone(human9) door(human9) animation(9))
+		("crew_human" place(passenger10) bone(human10) door(human10) animation(10))
+		("crew_human" place(passenger11) bone(human11) door(human11) animation(11))
+		("crew_human" place(passenger12) bone(human12) door(human12) animation(12))
+		("crew_human" place(passenger13) bone(human13) door(human13) animation(13))
+		("crew_human" place(passenger14) bone(human14) door(human14) animation(14))
+		("crew_human" place(passenger15) bone(human15) door(human15) animation(15))
+		("crew_human" place(passenger16) bone(human16) door(human16) animation(16))
+		("crew_human" place(passenger17) bone(human17) door(human17) animation(17))
+		("crew_human" place(passenger18) bone(human18) door(human18) animation(18))
+		("crew_human" place(passenger19) bone(human19) door(human19) animation(19))
+		("crew_human" place(passenger20) bone(human20) door(human20) animation(20))
+		("crew_human" place(passenger21) bone(human21) door(human21) animation(21))
+		("crew_human" place(passenger22) bone(human22) door(human22) animation(22))
+		("crew_human" place(passenger23) bone(human23) door(human23) animation(23))
+		("crew_human" place(passenger24) bone(human24) door(human24) animation(24))
+		("crew_human" place(passenger25) bone(human25) door(human25) animation(25))
+		("crew_human" place(passenger26) bone(human26) door(human26) animation(26))
+		("crew_human" place(passenger27) bone(human27) door(human27) animation(27))
+		("crew_human" place(passenger28) bone(human28) door(human28) animation(28))
+		("crew_human" place(passenger29) bone(human29) door(human29) animation(29))
+		("crew_human" place(passenger30) bone(human30) door(human30) animation(30))
+		("crew_human" place(passenger31) bone(human31) door(human31) animation(31))
+		("crew_human" place(passenger32) bone(human32) door(human32) animation(32))
+		("crew_human" place(passenger33) bone(human33) door(human33) animation(33))
+		("crew_human" place(passenger34) bone(human34) door(human34) animation(34))
+
+
+	{extender "inventory"
+        {box
+			{size 1 1}
+			{clear}
+        }
+    }
+
+	{mass 1}
+
+	{Chassis
+		{Locomotion ("locomotion")
+				{maxspeed   		2000}
+				{maxSpeedAtMaxTurn 	2000}
+				{StartTime  		0.01}
+				{TurnTime    		0.01}
+				{TurnStart   		0.01}
+				{TurnRadius  		1}
+	    		{TurnStop    		0.01}
+				{BrakeTime   		0.01}
+				{StopTime    		0.01}
+     			{Gears       		1}
+				{RearGears   		1}
+		}
+	}
+
+	{Extension "airborne_spawner.mdl"}
+
+	{texmod "3"}
+}

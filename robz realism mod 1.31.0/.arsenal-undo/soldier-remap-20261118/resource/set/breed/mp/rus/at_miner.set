@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-smguner"}
+	{portrait "rus_soldier2"}
+	{nationality rus}
+	{icon "at_miner"}
+	{icon_priority 3}
+	{armors
+		{body "sovet-mesh"}
+		{head helmet1_rus}
+	}
+	{perks
+		("body_regular")
+		("drive_regular")
+		("skills_2_2_1_1_1_2")
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_ppsh41")
+		("mine_antitank_x7")
+		{item "hedgehog_kit" 1}
+		{in_hands 0}
+	}
+}

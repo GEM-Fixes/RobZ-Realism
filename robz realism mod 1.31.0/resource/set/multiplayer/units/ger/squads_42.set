@@ -2,7 +2,7 @@
 ;°°°Squads°°°
 ;------------------------------SSVT || vet 2--------------------------------------------------------
 
-("squad_with5types" side(ger_ss) name(ssvts_41) c(150) g(squad_1) c1(ssvt_sl:1) c2(ssvt_sl_asst:1) c3(ssvt_rifle:6) c4(ssvt_mg:1) c5(ssvt_mg_asst:1)  b(squad1) t(41 42 43) level(1) cost(133) f(1.0))
+("squad_5" side(ger_ss) name(ssvts_41) member1(ssvt_sl:1) member2(ssvt_sl_asst:1) member3(ssvt_rifle:6) member4(ssvt_mg:1) member5(ssvt_mg_asst:1) charge(150) tags(41 42 43) group(squad_1) button(squad1) level(1) cost(133) fore(1.0))
 
 ;------------------------------german sturm-infantry || vet 4---------------------------------------------------
 
@@ -10,39 +10,39 @@
 
 ;------------------------------regular squad || vet 2/3/4-----------------------------------------------------------
 
-("squad_with7types" side(ger) name(grenadiers_42) c(0) g(squad_3) c1(squadleader:1) c2(grenadier_ober:1) c3(grenadier_sa_41:1) c4(grenadier_rifle:4) c5(grenadier_rifle_grenadier:1) c6(grenadier_mg:1) c7(grenadier_mg_asst:1) b(squad1) t(42) level(1) cost(176) f(1.0))
+("squad_7" side(ger) name(grenadiers_42) member1(squadleader:1) member2(grenadier_ober:1) member3(grenadier_sa_41:1) member4(grenadier_rifle:4) member5(grenadier_rifle_grenadier:1) member6(grenadier_mg:1) member7(grenadier_mg_asst:1) charge(0) tags(42) group(squad_3) button(squad1) level(1) cost(176) fore(1.0))
 
-("squad_with6types" side(ger_ss) name(grenadiers_42) c(0) g(squad_3) c1(grenadier_sl:1) c2(grenadier_sl_asst:1) c3(grenadier_rifle:5) c4(grenadier_rifle_grenadier:1) c5(grenadier_mg:1) c6(grenadier_mg_asst:1) b(squad1) t(42) level(1) cost(196) f(1.0))
+("squad_6" side(ger_ss) name(grenadiers_42) member1(grenadier_sl:1) member2(grenadier_sl_asst:1) member3(grenadier_rifle:5) member4(grenadier_rifle_grenadier:1) member5(grenadier_mg:1) member6(grenadier_mg_asst:1) charge(0) tags(42) group(squad_3) button(squad1) level(1) cost(196) fore(1.0))
 
-("squad_with6types" side(ger_ss) name(gebirgs_42) c(0) g(squad_3) c1(gebirgs_sl:1) c2(gebirgs_sl_asst:1) c3(gebirgs_rifle:7) c4(gebirgs_mg:1) c5(gebirgs_mg_asst:1) b(squad1) t(42) level(1) cost(189) f(1.0))
+("squad_5" side(ger_ss) name(gebirgs_42) member1(gebirgs_sl:1) member2(gebirgs_sl_asst:1) member3(gebirgs_rifle:7) member4(gebirgs_mg:1) member5(gebirgs_mg_asst:1) charge(0) tags(42) group(squad_3) button(squad1) level(1) cost(189) fore(1.0))
 
-("squad_with6types" side(ger) name(fusiliers_42) c(0) g(squad_3) c1(fusilier_sl:1) c2(fusilier_sl_asst:1) c3(fusilier_sa_41:2) c4(fusilier_rifle:4) c5(fusilier_mg:1) c6(fusilier_mg_asst:1) b(squad1) t(42) level(1) cost(188) f(1.0))
+("squad_6" side(ger) name(fusiliers_42) member1(fusilier_sl:1) member2(fusilier_sl_asst:1) member3(fusilier_sa_41:2) member4(fusilier_rifle:4) member5(fusilier_mg:1) member6(fusilier_mg_asst:1) charge(0) tags(42) group(squad_3) button(squad1) level(1) cost(188) fore(1.0))
 
-("squad_with6types" side(ger) name(jagers_42) c(0) g(squad_3) c1(jager_sl_smg:1) c2(jager_sl_smg_asst:1) c3(jager_sa_41:2) c4(jager_rifle:5) c5(jager_mg:1) c6(jager_mg_asst:1) b(squad1) t(42) level(1) cost(202) f(1.0))
+("squad_6" side(ger) name(jagers_42) member1(jager_sl_smg:1) member2(jager_sl_smg_asst:1) member3(jager_sa_41:2) member4(jager_rifle:5) member5(jager_mg:1) member6(jager_mg_asst:1) charge(0) tags(42) group(squad_3) button(squad1) level(1) cost(202) fore(1.0))
 
 ;------------------------------german panzergrenadiere ||| vet 5------------------------------------------------
 
-("squad_with6types" side(ger) name(stormtroopers_42) c(0) g(squad_3) c1(sturmovik_sl_40:1) c2(sturmovik_sl_asst:1) c3(sturmovik2_41:3) c4(sturmovik4:1) c5(sturmovik6:2) c6(sturmovik6b:2) b(squad1) t(42) level(1) cost(225) f(1.0))
+("squad_6" side(ger) name(stormtroopers_42) member1(sturmovik_sl_40:1) member2(sturmovik_sl_asst:1) member3(sturmovik2_41:3) member4(sturmovik4:1) member5(sturmovik6:2) member6(sturmovik6b:2) charge(0) tags(42) group(squad_3) button(squad1) level(1) cost(225) fore(1.0))
 
 ;------------------------------german SS pzgren ||| vet 5----------------------------------------------------
 
-("squad_with6types" side(ger_ss) name(pzgrens_42) c(0) g(squad_5) c1(pzgren_sl_smg:1) c2(pzgren_sl_asst:1) c3(pzgren_sa_41:2) c4(pzgren_rifle:2) c5(pzgren_mg:2) c6(pzgren_mg_asst:2) b(squad1) t(42) level(1) cost(224) f(1.0))
+("squad_6" side(ger_ss) name(pzgrens_42) member1(pzgren_sl_smg:1) member2(pzgren_sl_asst:1) member3(pzgren_sa_41:2) member4(pzgren_rifle:2) member5(pzgren_mg:2) member6(pzgren_mg_asst:2) charge(0) tags(42) group(squad_5) button(squad1) level(1) cost(224) fore(1.0))
 
 ;------------------------------german SS TK pzgren |||| vet 6------------------------------------------------------
 
-("squad_with6types" side(ger_ss) name(tk_pzgrens_42) c(300) g(squad_5) c1(tk_pzgren_sl:1) c2(tk_pzgren_sl_asst:1) c3(tk_pzgren_sa_41:2) c4(tk_pzgren_rifle:3) c5(tk_pzgren_mg:2) c6(tk_pzgren_mg_asst:2) b(squad1) t(42) level(1) cost(284) f(1.0))
+("squad_6" side(ger_ss) name(tk_pzgrens_42) member1(tk_pzgren_sl:1) member2(tk_pzgren_sl_asst:1) member3(tk_pzgren_sa_41:2) member4(tk_pzgren_rifle:3) member5(tk_pzgren_mg:2) member6(tk_pzgren_mg_asst:2) charge(300) tags(42) group(squad_5) button(squad1) level(1) cost(284) fore(1.0))
 
 ;------------------------------german SS LSSAH pzgren |||| vet 7------------------------------------------------------
 
-("squad_with6types" side(ger_ss) name(lssah_pzgrens_42) c(360) g(squad_5) c1(lssah_pzgren_sl_smg:1) c2(lssah_pzgren_sl_asst:1) c3(lssah_pzgren_sa_41:2) c4(lssah_pzgren_rifle:3) c5(lssah_pzgren_mg:2) c6(lssah_pzgren_mg_asst:2) b(squad1) t(42) level(1) cost(320) f(1.0))
+("squad_6" side(ger_ss) name(lssah_pzgrens_42) member1(lssah_pzgren_sl_smg:1) member2(lssah_pzgren_sl_asst:1) member3(lssah_pzgren_sa_41:2) member4(lssah_pzgren_rifle:3) member5(lssah_pzgren_mg:2) member6(lssah_pzgren_mg_asst:2) charge(360) tags(42) group(squad_5) button(squad1) level(1) cost(320) fore(1.0))
 
 ;------------------------------german gebirgs and fallschirmjäger |||| vet 7------------------------------------
 
-("squad_with6types" side(ger) name(gebirgsjager_42) c(360) g(squad_5) c1(gebirgsjager_sl_smg:1) c2(gebirgsjager_sl_asst_smg:1) c3(gebirgsjager_sa_41:3) c4(gebirgsjager_rifle:4) c5(gebirgsjager_mg:1) c6(gebirgsjager_mg_asst:1) b(squad1) t(42) level(1) cost(258) f(1.0))
+("squad_6" side(ger) name(gebirgsjager_42) member1(gebirgsjager_sl_smg:1) member2(gebirgsjager_sl_asst_smg:1) member3(gebirgsjager_sa_41:3) member4(gebirgsjager_rifle:4) member5(gebirgsjager_mg:1) member6(gebirgsjager_mg_asst:1) charge(360) tags(42) group(squad_5) button(squad1) level(1) cost(258) fore(1.0))
 
-("squad_with8types" side(ger) name(elites_42) c(360) g(squad_5) c1(fallschirm_sl_40:1) c2(fallschirm_sl_asst_fg_42:1) c3(fallschirm_sniper:1) c4(fallschirm_sa_41:1) c5(fallschirm_rifle_39:1) c6(fallschirm_grenadier:2) c7(fallschirm_mg:2) c8(fallschirm_mg_asst_39:2) b(squad1) t(42) level(1) cost(337) f(1.0))
+("squad_8" side(ger) name(elites_42) member1(fallschirm_sl_40:1) member2(fallschirm_sl_asst_fg_42:1) member3(fallschirm_sniper:1) member4(fallschirm_sa_41:1) member5(fallschirm_rifle_39:1) member6(fallschirm_grenadier:2) member7(fallschirm_mg:2) member8(fallschirm_mg_asst_39:2) charge(360) tags(42) group(squad_5) button(squad1) level(1) cost(337) fore(1.0))
 
-("squad_with8types_vehicle" side(ger) name(elites_42_drop) c(900) g(squad_5) v1(airborne_spawner) c1(fallschirm_sl_40:1) c2(fallschirm_sl_asst_fg_42:1) c3(fallschirm_sniper:1) c4(fallschirm_sa_41:1) c5(fallschirm_rifle_39:1) c6(fallschirm_grenadier:2) c7(fallschirm_mg:2) c8(fallschirm_mg_asst_39:2) b(squad1) t(42 only-one) level(1) cost(437) f(1.0))
+("squad_8_vehicle" side(ger) name(elites_42_drop) vehicle1(airborne_spawner) member1(fallschirm_sl_40:1) member2(fallschirm_sl_asst_fg_42:1) member3(fallschirm_sniper:1) member4(fallschirm_sa_41:1) member5(fallschirm_rifle_39:1) member6(fallschirm_grenadier:2) member7(fallschirm_mg:2) member8(fallschirm_mg_asst_39:2) charge(900) tags(42 only-one) group(squad_5) button(squad1) level(1) cost(437) fore(1.0))
 
 ;------------------------------stormtrooper halftrack |||| vet 3/4----------------------------------------------
 
@@ -50,82 +50,82 @@
 
 ;------------------------------AP and AT miners, sappers || vet 2-----------------------------------------------
 
-("squad_with1types" side(ger_ss) name(ap_miners) c(0) g(squad_7) c1(ap_miner:4) b(squad1) t(all inf_only engineers mines 41 42 43 44 45) level(20) cost(100) f(0))
-("squad_with1types" side(ger) name(ap_miners) c(0) g(squad_7) c1(ap_miner:4) b(squad1) t(all inf_only engineers mines 39 40 41 42 43 44 45) level(20) cost(100) f(0))
+("squad_1" side(ger_ss) name(ap_miners) member1(ap_miner:4) charge(0) tags(all inf_only engineers mines 41 42 43 44 45) group(squad_7) button(squad1) level(20) cost(100) fore(0))
+("squad_1" side(ger) name(ap_miners) member1(ap_miner:4) charge(0) tags(all inf_only engineers mines 39 40 41 42 43 44 45) group(squad_7) button(squad1) level(20) cost(100) fore(0))
 
-("squad_with1types" side(ger_ss) name(at_miners) c(0) g(squad_8) c1(at_miner:4) b(squad1) t(all inf_only engineers mines 41 42 43 44 45) level(25) cost(150) f(0))
-("squad_with1types" side(ger) name(at_miners) c(0) g(squad_8) c1(at_miner:4) b(squad1) t(all inf_only engineers mines 39 40 41 42 43 44 45) level(25) cost(150) f(0))
+("squad_1" side(ger_ss) name(at_miners) member1(at_miner:4) charge(0) tags(all inf_only engineers mines 41 42 43 44 45) group(squad_8) button(squad1) level(25) cost(150) fore(0))
+("squad_1" side(ger) name(at_miners) member1(at_miner:4) charge(0) tags(all inf_only engineers mines 39 40 41 42 43 44 45) group(squad_8) button(squad1) level(25) cost(150) fore(0))
 
-("squad_with1types" side(ger_ss) name(sappers) c(0) g(squad_9) c1(saper:2) b(squad1) t(all inf_only engineers 41 42 43 44 45) level(1) cost(50) f(0))
-("squad_with1types" side(ger) name(sappers) c(0) g(squad_9) c1(saper:2) b(squad1) t(all inf_only engineers 39 40 41 42 43 44 45) level(1) cost(50) f(0))
+("squad_1" side(ger_ss) name(sappers) member1(saper:2) charge(0) tags(all inf_only engineers 41 42 43 44 45) group(squad_9) button(squad1) level(1) cost(50) fore(0))
+("squad_1" side(ger) name(sappers) member1(saper:2) charge(0) tags(all inf_only engineers 39 40 41 42 43 44 45) group(squad_9) button(squad1) level(1) cost(50) fore(0))
 
 ;------------------------------tank and support crews || vet 2--------------------------------------------------
 
-("squad_with1types" side(ger_ss) name(vehic_supporter) c(0) g(soldier_3) c1(vehicle_supporter:2) b(squad1) t(all inf_only 41 42 43 44 45) level(1) cost(50) f(-1.0))
-("squad_with1types" side(ger) name(vehic_supporter) c(0) g(soldier_3) c1(vehicle_supporter:2) b(squad1) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(40) f(-1.0))
+("squad_1" side(ger_ss) name(vehic_supporter) member1(vehicle_supporter:2) charge(0) tags(all inf_only 41 42 43 44 45) group(soldier_3) button(squad1) level(1) cost(50) fore(-1.0))
+("squad_1" side(ger) name(vehic_supporter) member1(vehicle_supporter:2) charge(0) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_3) button(squad1) level(1) cost(40) fore(-1.0))
 
-("squad_with2types" side(ger_ss) name(tankmans) c(0) g(soldier_3) c1(tankman2:1) c2(tankman:4) b(squad1) t(all inf_only tankmans 41 42 43 44 45) level(1) cost(80) f(-1.0))
-("squad_with2types" side(ger) name(tankmans) c(0) g(soldier_3) c1(tankman2:1) c2(tankman:4) b(squad1) t(all inf_only tankmans 39 40 41 42 43 44 45) level(1) cost(70) f(-1.0))
+("squad_2" side(ger_ss) name(tankmans) member1(tankman2:1) member2(tankman:4) charge(0) tags(all inf_only tankmans 41 42 43 44 45) group(soldier_3) button(squad1) level(1) cost(80) fore(-1.0))
+("squad_2" side(ger) name(tankmans) member1(tankman2:1) member2(tankman:4) charge(0) tags(all inf_only tankmans 39 40 41 42 43 44 45) group(soldier_3) button(squad1) level(1) cost(70) fore(-1.0))
 
-("squad_with2types" side(ger_ss) name(elite_tankmans) c(0) g(soldier_3) c1(vet_tankman2:1) c2(vet_tankman:4) b(squad1) t(all inf_only tankmans 41 42 43 44 45) level(1) cost(130) f(-1.0))
-("squad_with2types" side(ger) name(elite_tankmans) c(0) g(soldier_3) c1(vet_tankman2:1) c2(vet_tankman:4) b(squad1) t(all inf_only tankmans 39 40 41 42 43 44 45) level(1) cost(120) f(-1.0))
+("squad_2" side(ger_ss) name(elite_tankmans) member1(vet_tankman2:1) member2(vet_tankman:4) charge(0) tags(all inf_only tankmans 41 42 43 44 45) group(soldier_3) button(squad1) level(1) cost(130) fore(-1.0))
+("squad_2" side(ger) name(elite_tankmans) member1(vet_tankman2:1) member2(vet_tankman:4) charge(0) tags(all inf_only tankmans 39 40 41 42 43 44 45) group(soldier_3) button(squad1) level(1) cost(120) fore(-1.0))
 
 ;°°°Single Soldiers°°°
 
 ;------------------------------rifleman and smg || vet 2--------------------------------------------------------
 
-("squad_with1types" side(ger_ss) name(riflemans2) c(10) g(soldier_1) c1(grenadier_rifle:1) b(squad2) t(all inf_only 41 42 43 44 45) level(1) cost(14) f(1.0))
-("squad_with1types" side(ger) name(riflemans2) c(10) g(soldier_1) c1(grenadier_rifle:1) b(squad2) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(12) f(1.0))
+("squad_1" side(ger_ss) name(riflemans2) member1(grenadier_rifle:1) charge(10) tags(all inf_only 41 42 43 44 45) group(soldier_1) button(squad2) level(1) cost(14) fore(1.0))
+("squad_1" side(ger) name(riflemans2) member1(grenadier_rifle:1) charge(10) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_1) button(squad2) level(1) cost(12) fore(1.0))
 
-("squad_with1types" side(ger_ss) name(grenadier_sa_41) c(30) g(soldier_sa) c1(grenadier_sa_41:1) b(squad2) t(41 42) level(1) cost(15) f(1.0))
-("squad_with1types" side(ger) name(grenadier_sa_41) c(30) g(soldier_sa) c1(grenadier_sa_41:1) b(squad2) t(41 42) level(1) cost(13) f(1.0))
+("squad_1" side(ger_ss) name(grenadier_sa_41) member1(grenadier_sa_41:1) charge(30) tags(41 42) group(soldier_sa) button(squad2) level(1) cost(15) fore(1.0))
+("squad_1" side(ger) name(grenadier_sa_41) member1(grenadier_sa_41:1) charge(30) tags(41 42) group(soldier_sa) button(squad2) level(1) cost(13) fore(1.0))
 
-("squad_with1types" side(ger_ss) name(smgs2_40) c(10) g(soldier_2) c1(grenadier_smg:1) b(squad2) t(all inf_only 41 42 43 44 45) level(1) cost(14) f(1.0))
-("squad_with1types" side(ger) name(smgs2_40) c(10) g(soldier_2) c1(grenadier_smg:1) b(squad2) t(all inf_only 40 41 42 43 44 45) level(1) cost(12) f(1.0))
-("squad_with1types" side(ger) name(grenadier_stg_42) c(90) g(soldier_stg) c1(grenadier_stg_42:1) b(squad2) t(42) level(1) cost(16) f(1.0))
+("squad_1" side(ger_ss) name(smgs2_40) member1(grenadier_smg:1) charge(10) tags(all inf_only 41 42 43 44 45) group(soldier_2) button(squad2) level(1) cost(14) fore(1.0))
+("squad_1" side(ger) name(smgs2_40) member1(grenadier_smg:1) charge(10) tags(all inf_only 40 41 42 43 44 45) group(soldier_2) button(squad2) level(1) cost(12) fore(1.0))
+("squad_1" side(ger) name(grenadier_stg_42) member1(grenadier_stg_42:1) charge(90) tags(42) group(soldier_stg) button(squad2) level(1) cost(16) fore(1.0))
 
 ;------------------------------AT rifles and bazookas || vet 2--------------------------------------------------
 
-("squad_with2types" side(ger) name(at_rifles) c1(at_rifle:1) c2(at_rifle2:1) c(0) g(soldier_4) b(squad2) t(all inf_only 40 41 42 43 44 45) level(1) cost(100) f(1.0))
-("squad_with2types" side(ger_ss) name(at_rifles) c1(at_rifle:1) c2(at_rifle2:1) c(0) g(soldier_4) b(squad2) t(all inf_only 41 42 43 44 45) level(1) cost(100) f(1.0))
+("squad_2" side(ger) name(at_rifles) member1(at_rifle:1) member2(at_rifle2:1) charge(0) tags(all inf_only 40 41 42 43 44 45) group(soldier_4) button(squad2) level(1) cost(100) fore(1.0))
+("squad_2" side(ger_ss) name(at_rifles) member1(at_rifle:1) member2(at_rifle2:1) charge(0) tags(all inf_only 41 42 43 44 45) group(soldier_4) button(squad2) level(1) cost(100) fore(1.0))
 
 ;------------------------------MG infantry || vet 2-------------------------------------------------------------
 
-("squad_with2types" side(ger) name(mg2) c(90) g(soldier_6) c1(grenadier_mg_39:1) c2(grenadier_mg_asst:1) b(squad2) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(61) f(1.0))
-("squad_with2types" side(ger_ss) name(mg2) c(90) g(soldier_6) c1(grenadier_mg_39:1) c2(grenadier_mg_asst:1) b(squad2) t(all inf_only 41 42 43 44 45) level(1) cost(70) f(1.0))
+("squad_2" side(ger) name(mg2) member1(grenadier_mg_39:1) member2(grenadier_mg_asst:1) charge(90) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_6) button(squad2) level(1) cost(61) fore(1.0))
+("squad_2" side(ger_ss) name(mg2) member1(grenadier_mg_39:1) member2(grenadier_mg_asst:1) charge(90) tags(all inf_only 41 42 43 44 45) group(soldier_6) button(squad2) level(1) cost(70) fore(1.0))
 
-("squad_with2types" side(ger) name(mgs2) c(90) g(soldier_6) c1(grenadier_mg:1) c2(grenadier_mg_asst:1) b(squad2) t(all inf_only 42 43 44 45) level(1) cost(65) f(1.0))
-("squad_with2types" side(ger_ss) name(mgs2) c(90) g(soldier_6) c1(grenadier_mg:1) c2(grenadier_mg_asst:1) b(squad2) t(all inf_only 42 43 44 45) level(1) cost(74) f(1.0))
+("squad_2" side(ger) name(mgs2) member1(grenadier_mg:1) member2(grenadier_mg_asst:1) charge(90) tags(all inf_only 42 43 44 45) group(soldier_6) button(squad2) level(1) cost(65) fore(1.0))
+("squad_2" side(ger_ss) name(mgs2) member1(grenadier_mg:1) member2(grenadier_mg_asst:1) charge(90) tags(all inf_only 42 43 44 45) group(soldier_6) button(squad2) level(1) cost(74) fore(1.0))
 
 ;------------------------------elite3
 
-("squad_with2types" side(ger) name(elite3_42) c(300) g(squad_4) c1(fallschirm_fg_42:1) c2(fallschirm_rifle_39:2) b(squad2) t(42) level(1) cost(70) f(1.0))
+("squad_2" side(ger) name(elite3_42) member1(fallschirm_fg_42:1) member2(fallschirm_rifle_39:2) charge(300) tags(42) group(squad_4) button(squad2) level(1) cost(70) fore(1.0))
 
 ;------------------------------------------------
 
-("squad_with2types" side(ger) name(stormtrooper6_39) c(230) g(squad_4) c1(sturmovik6_39:1) c2(sturmovik6b:2) b(squad2) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(84) f(0.9))
-("squad_with2types" side(ger) name(stormtrooper6) c(230) g(squad_4) c1(sturmovik6:1) c2(sturmovik6b:2) b(squad2) t(all inf_only 42 43 44 45) level(1) cost(88) f(0.9))
-("squad_with2types" side(ger) name(fallschirm_mg_39) c(300) g(squad_4) c1(fallschirm_mg_39:1) c2(fallschirm_mg_asst_39:2) b(squad2) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(109) f(0.9))
-("squad_with2types" side(ger) name(fallschirm_mg) c(300) g(squad_4) c1(fallschirm_mg:1) c2(fallschirm_mg_asst_39:2) b(squad2) t(all inf_only 42 43 44 45) level(1) cost(113) f(0.9))
+("squad_2" side(ger) name(stormtrooper6_39) member1(sturmovik6_39:1) member2(sturmovik6b:2) charge(230) tags(all inf_only 39 40 41 42 43 44 45) group(squad_4) button(squad2) level(1) cost(84) fore(0.9))
+("squad_2" side(ger) name(stormtrooper6) member1(sturmovik6:1) member2(sturmovik6b:2) charge(230) tags(all inf_only 42 43 44 45) group(squad_4) button(squad2) level(1) cost(88) fore(0.9))
+("squad_2" side(ger) name(fallschirm_mg_39) member1(fallschirm_mg_39:1) member2(fallschirm_mg_asst_39:2) charge(300) tags(all inf_only 39 40 41 42 43 44 45) group(squad_4) button(squad2) level(1) cost(109) fore(0.9))
+("squad_2" side(ger) name(fallschirm_mg) member1(fallschirm_mg:1) member2(fallschirm_mg_asst_39:2) charge(300) tags(all inf_only 42 43 44 45) group(squad_4) button(squad2) level(1) cost(113) fore(0.9))
 
-("squad_with2types" side(ger_ss) name(tk_pzgren_mg_39) c(260) g(squad_4) c1(tk_pzgren_mg_39:1) c2(tk_pzgren_mg_asst:2) b(squad2) t(all inf_only 41 42 43 44 45) level(1) cost(96) f(0.9))
-("squad_with2types" side(ger_ss) name(tk_pzgren_mg) c(260) g(squad_4) c1(tk_pzgren_mg:1) c2(tk_pzgren_mg_asst:2) b(squad2) t(all inf_only 42 43 44 45) level(1) cost(99) f(0.9))
-("squad_with2types" side(ger_ss) name(lssah_pzgren_mg_39) c(300) g(squad_4) c1(lssah_pzgren_mg_39:1) c2(lssah_pzgren_mg_asst:2) b(squad2) t(all inf_only 41 42 43 44 45) level(1) cost(107) f(0.9))
-("squad_with2types" side(ger_ss) name(lssah_pzgren_mg) c(300) g(squad_4) c1(lssah_pzgren_mg:1) c2(lssah_pzgren_mg_asst:2) b(squad2) t(all inf_only 42 43 44 45) level(1) cost(111) f(0.9))
+("squad_2" side(ger_ss) name(tk_pzgren_mg_39) member1(tk_pzgren_mg_39:1) member2(tk_pzgren_mg_asst:2) charge(260) tags(all inf_only 41 42 43 44 45) group(squad_4) button(squad2) level(1) cost(96) fore(0.9))
+("squad_2" side(ger_ss) name(tk_pzgren_mg) member1(tk_pzgren_mg:1) member2(tk_pzgren_mg_asst:2) charge(260) tags(all inf_only 42 43 44 45) group(squad_4) button(squad2) level(1) cost(99) fore(0.9))
+("squad_2" side(ger_ss) name(lssah_pzgren_mg_39) member1(lssah_pzgren_mg_39:1) member2(lssah_pzgren_mg_asst:2) charge(300) tags(all inf_only 41 42 43 44 45) group(squad_4) button(squad2) level(1) cost(107) fore(0.9))
+("squad_2" side(ger_ss) name(lssah_pzgren_mg) member1(lssah_pzgren_mg:1) member2(lssah_pzgren_mg_asst:2) charge(300) tags(all inf_only 42 43 44 45) group(squad_4) button(squad2) level(1) cost(111) fore(0.9))
 
 ;------------------------------flamer, sniper and officer || vet2/3/4----------------------------------------------
 
-("squad_with2types" side(ger) name(flamers) c(150) g(soldier_8) c1(flamer:1) c2(flamer2:1) b(squad2) t(all flamethrower inf_only 39 40 41 42 43 44 45) level(1) cost(75) f(0))
-("squad_with2types" side(ger_ss) name(flamers) c(150) g(soldier_8) c1(flamer:1) c2(flamer2:1) b(squad2) t(all flamethrower inf_only 41 42 43 44 45) level(1) cost(75) f(0))
+("squad_2" side(ger) name(flamers) member1(flamer:1) member2(flamer2:1) charge(150) tags(all flamethrower inf_only 39 40 41 42 43 44 45) group(soldier_8) button(squad2) level(1) cost(75) fore(0))
+("squad_2" side(ger_ss) name(flamers) member1(flamer:1) member2(flamer2:1) charge(150) tags(all flamethrower inf_only 41 42 43 44 45) group(soldier_8) button(squad2) level(1) cost(75) fore(0))
 
-("squad_with1types" side(ger) name(snipers) c(150) g(soldier_9) c1(sniper:1) b(squad2) t(all sniper inf_only 39 40 41 42 43 44 45) level(1) cost(81) f(0))
-("squad_with1types" side(ger) name(sniper3) c(150) g(soldier_9) c1(sniper3:1) b(squad2) t(all sniper inf_only 43 44 45) level(1) cost(90) f(0))
-("squad_with1types" side(ger_ss) name(snipers) c(150) g(soldier_9) c1(sniper:1) b(squad2) t(all sniper inf_only 39 40 41 42 43 44 45) level(1) cost(81) f(0))
-("squad_with1types" side(ger_ss) name(sniper3) c(150) g(soldier_9) c1(sniper3:1) b(squad2) t(all sniper inf_only 43 44 45) level(1) cost(90) f(0))
+("squad_1" side(ger) name(snipers) member1(sniper:1) charge(150) tags(all sniper inf_only 39 40 41 42 43 44 45) group(soldier_9) button(squad2) level(1) cost(81) fore(0))
+("squad_1" side(ger) name(sniper3) member1(sniper3:1) charge(150) tags(all sniper inf_only 43 44 45) group(soldier_9) button(squad2) level(1) cost(90) fore(0))
+("squad_1" side(ger_ss) name(snipers) member1(sniper:1) charge(150) tags(all sniper inf_only 39 40 41 42 43 44 45) group(soldier_9) button(squad2) level(1) cost(81) fore(0))
+("squad_1" side(ger_ss) name(sniper3) member1(sniper3:1) charge(150) tags(all sniper inf_only 43 44 45) group(soldier_9) button(squad2) level(1) cost(90) fore(0))
 
-("squad_with1types" side(ger) name(officers) c(150) g(soldier_10) c1(oficer:1) b(squad2) t(all officer inf_only 39 40 41 42 43 44 45) level(1) cost(200) f(0))
-("squad_with1types" side(ger_ss) name(officers) c(150) g(soldier_10) c1(oficer:1) b(squad2) t(all officer inf_only 39 40 41 42 43 44 45) level(1) cost(200) f(0))
+("squad_1" side(ger) name(officers) member1(oficer:1) charge(150) tags(all officer inf_only 39 40 41 42 43 44 45) group(soldier_10) button(squad2) level(1) cost(200) fore(0))
+("squad_1" side(ger_ss) name(officers) member1(oficer:1) charge(150) tags(all officer inf_only 39 40 41 42 43 44 45) group(soldier_10) button(squad2) level(1) cost(200) fore(0))
 
-("squad_with1types" side(ger) name(snipers_d) c(0) g(soldier_12) c1(sniper:1) b(squad2) t(sniper_duell) level(1) cost(100) f(0))
+("squad_1" side(ger) name(snipers_d) member1(sniper:1) charge(0) tags(sniper_duell) group(soldier_12) button(squad2) level(1) cost(100) fore(0))
 
-("squad_with1types" side(ger) name(radioman_mortar) c(300) g(radio_1) c1(radioman_mortar:1) b(squad2) t(all mortar 39 40 41 42 43 44 45) level(1) cost(250) f(1.0))
+("squad_1" side(ger) name(radioman_mortar) member1(radioman_mortar:1) charge(300) tags(all mortar 39 40 41 42 43 44 45) group(radio_1) button(squad2) level(1) cost(250) fore(1.0))

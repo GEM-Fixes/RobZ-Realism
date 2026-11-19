@@ -1,13 +1,14 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
-    (include "/properties/tank.ext")
-    (include "/properties/selection/vehicle.inc"  scale(1.2))
-    {collider "tank.heavy"}
-    {props "medium" "-turret" "vision_vehicle_medium" "muzzle_large" "su85"}
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{collider "tank.heavy"}
+	{props "medium" "-turret" "vision_vehicle_medium" "muzzle_large" "su85"}
 	{tag "diesel_exhaust"}
-	
-    {extender "enumerator"}
 
-    ; --- Godny hitbox armor (ported from GodnyMod: su85.def) ---
+	{extender "enumerator"}
+
+	; --- Godny hitbox armor (ported from GodnyMod: su85.def) ---
 	{volume "body"	;прилив пушки
 		{tags "body"}
 		{component "body"}
@@ -21,8 +22,8 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 45
-		;	{front	45}
-		;	{rear	45}
+			;	{front	45}
+			;	{rear	45}
 			{top	0.1}	;внутренн€€ стенка
 			{bottom	15}
 		}
@@ -32,8 +33,8 @@
 		{component "body"}
 		{able {holed}}
 		{thickness 45
-		;	{front	45}
-		;	{rear	45}
+			;	{front	45}
+			;	{rear	45}
 			{top	20}
 			{bottom	20}
 			{right	0.1}	;внутренн€€ стенка
@@ -53,7 +54,7 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 75
-		;	{front	75}
+			;	{front	75}
 			{rear	0.1}	;внутренн€€ стенка
 		}
 	}
@@ -61,26 +62,17 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 45
-		;	{front	45}
+			;	{front	45}
 			{rear	0.1}	;внутренн€€ стенка
 			{top	20}
 		}
 	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "body"}
-	}
-	{Volume "hole_bod"
-		{able clear {hole}}
-		{component "body"}
-	}
-	{Volume "hole_bod2"
-		{able clear {hole}}
-		{component "body"}
-	}
+	("vol_body_hole_only" name(hole_man))
+	("vol_body_hole_only" name(hole_bod))
+	("vol_body_hole_only" name(hole_bod2))
 	{volume "mantlet"
 		{thickness 75
-		;	{front	75}
+			;	{front	75}
 			{rear	15}	;орудие дает небольшую броню
 		}
 	}
@@ -100,11 +92,11 @@
 	}
 	; --- end Godny hitbox armor ---
 	("armor_spa_light" armor(45 45 45 22))
-    ("armor_engine"  t(30 45 45 22))
-    ("armor_mantlet" t(75))
+	("armor_engine"  t(30 45 45 22))
+	("armor_mantlet" t(75))
 	("rus_2-5x_sight")
-    
-    ("crew_4_human_extended")
+
+	("crew_4_human_extended")
 	{boarder
 		{anm "driver"
 			{forward	{begin	"board_t34_driver"} {end "seat_gunner_stand"} {base "open_driver"}}
@@ -135,65 +127,65 @@
 			{reverse 	{end	"emit_tank_2"}}
 		}
 	}
-	
+
 	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
 	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor2))
 	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor1))
 	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor3))
 
-    {extender "inventory"
-        {box
-            {item "ammo bullet85 rus aphe" 19}
-            {item "ammo bullet85 rus fg" 20}
-            {item "ammo bullet85 rus apcr" 8}
-        }
-    }
-    {Weaponry
-        ("restore_ik_time")
-        {place "gun"
-            {RestoreIKAfterAim}
-            {weapon "85mm_d5s_vet" filling "ammo bullet85 rus aphebc" 1}
-            ("abm_veteran")
-        }
-;       {place "mgun"
-;           {weapon "ds" filled}
-;           {gunner "gunner2"}
-;           {charger "gunner2"}
-;           {LinkBone "mgun2"}
-;           {LinkAnimation "off"}
-;           {basic}
-;       }
-    }
+	{extender "inventory"
+		{box
+			{item "ammo bullet85 rus aphe" 19}
+			{item "ammo bullet85 rus fg" 20}
+			{item "ammo bullet85 rus apcr" 8}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "85mm_d5s_vet" filling "ammo bullet85 rus aphebc" 1}
+			("abm_veteran")
+		}
+	;       {place "mgun"
+	;           {weapon "ds" filled}
+	;           {gunner "gunner2"}
+	;           {charger "gunner2"}
+	;           {LinkBone "mgun2"}
+	;           {LinkAnimation "off"}
+	;           {basic}
+	;       }
+	}
 
-    {mass 29600}
-    {Chassis
-        ("tank_trace" fx("tracks_mid") step(0.52) len(0.28))
-        {Locomotion ("locomotion")
+	{mass 29600}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.52) len(0.28))
+		{Locomotion ("locomotion")
 			{maxspeed   36}
 			{maxSpeedAtMaxTurn 5}
 			{StartTime	       25.5}
 			{TurnTime	        13.5}
 			{TurnStart        1.5}
-    		{BrakeTime        4}
-     		{StopTime         1.5} 
-    		{TurnRadius         8} 
-    		{TurnStop         0.7} 
-    		{Gears      0.13 0.28 0.38 1.0}
-    		{RearGears       0.27}
+			{BrakeTime        4}
+			{StopTime         1.5}
+			{TurnRadius         8}
+			{TurnStop         0.7}
+			{Gears      0.13 0.28 0.38 1.0}
+			{RearGears       0.27}
 		}
-        {FuelBag
-            {volume 810 }
-            {rate   23 }
-            {remain 810 }
-            {fuel "fuel"}
-        }
+		{FuelBag
+			{volume 810 }
+			{rate   23 }
+			{remain 810 }
+			{fuel "fuel"}
+		}
 		{speed
-        	{Normal  36}
-        	{Slow  36}
-    	}
-    }
+			{Normal  36}
+			{Slow  36}
+		}
+	}
 
-    {Extension "su85.mdl"}
+	{Extension "su85.mdl"}
 
 	{bone "gun_rot2"
 		{speed 0.0012}

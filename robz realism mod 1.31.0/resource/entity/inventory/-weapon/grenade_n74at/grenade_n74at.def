@@ -3,7 +3,7 @@
 	{Extension "grenade_n74at.mdl"}
 	{extender "stuff"
 		{item "grenade n74at"}
-	}	
+	}
 	{nogroupmesh 1}
 	{props "grenade" "sticky_grenade" "contact"}
 	{volume "body"

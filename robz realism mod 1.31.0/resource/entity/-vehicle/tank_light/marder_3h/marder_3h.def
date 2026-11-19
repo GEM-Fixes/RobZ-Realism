@@ -1,25 +1,22 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.2))
 	{props "light" "-turret" "opened" "vision_vehicle_medium" "muzzle_medium_sides"}
-	
+
 	{extender "enumerator"
-			{digit_folder "ger2"}
+		{digit_folder "ger2"}
 	}
 
 	; --- Godny hitbox armor (ported from GodnyMod: marder_3h.def) ---
-	{volume "sticky"
-		{tags "grenade_fg_target"}
-		{able clear {contact} {touch}}
-		{component "sticky_body"}
-	}
+	("vol_sticky_grenade_target" name(sticky))
 	{Volume "body1"	;нижн€€ часть корпуса и гласис
 		{component "body"}
 		{tags "body"}
 		{able {holed}}
 		{thickness 15
 			{front	50}
-		;	{rear	15}
+			;	{rear	15}
 			{top	0.1}	;внутренн€€ стенка
 			{bottom	8}
 			{right	13}	;гласис
@@ -31,7 +28,7 @@
 		{able {holed}}
 		{thickness 15
 			{front	50}
-		;	{rear	15}
+			;	{rear	15}
 			{top	8}
 			{bottom	8}
 		}
@@ -40,8 +37,8 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 15
-		;	{front	15}
-		;	{rear	15}
+			;	{front	15}
+			;	{rear	15}
 			{top	8}
 			{bottom	8}
 		}
@@ -51,27 +48,21 @@
 		{tags "body"}
 		{able {holed}}
 		{thickness 11
-		;	{front	11}
-		;	{rear	11}
-		;	{top	11}
+			;	{front	11}
+			;	{rear	11}
+			;	{top	11}
 			{bottom	8}
 			{right	0.1}	;внутренн€€ стенка
 		}
 	}
 	{volume "mantlet"
 		{thickness 8
-		;	{front	8}
+			;	{front	8}
 			{rear	15}	;орудие дает небольшую броню
 		}
 	}
-	{Volume "hole_bod1"
-		{able clear {hole}}
-		{component "body"}
-	}
-	{Volume "hole_bod2"
-		{able clear {hole}}
-		{component "body"}
-	}
+	("vol_body_hole_only" name(hole_bod1))
+	("vol_body_hole_only" name(hole_bod2))
 	{volume "engine"
 		{thickness 10}
 	}
@@ -85,7 +76,7 @@
 	}
 	; --- end Godny hitbox armor ---
 	{component "sticky_body"}
-	
+
 	("armor_medium_custom" turret(10 10 10 10) body(50 15 15 15) body2(50 15 15 15) body3(15 15 15 15))
 	("armor_engine"  t(15 15 15 15))
 	("armor_mantlet" t(15))
@@ -94,7 +85,7 @@
 
 	("shield" args 15)
 	("crew_4_human")
-	
+
 	{boarder
 		{anm "driver"
 			{forward	{begin	"board_t34_driver"} {end "seat_gunner_stand"} {base "open_driver"}}
@@ -114,17 +105,7 @@
 		}
 	}
 
-	(define "crew_human"
-		{placer
-			{place "%place" {group "crew"} {linkbone "%place"} {turnoff {sensor} {shadow}}}
-		}
-		{boarder
-			{door "%door1"}
-			{door "%door2"}
-			{link "%door1" "%place" {anm "%place"} {forward putoff} {reverse puton}}
-			{link "%door2" "%place" {anm "%place"} {forward putoff} {reverse puton}}
-		}
-	)
+	(include "/properties/robz/crew.inc")
 
 	{placer
 		{place "driver" {group "crew"} {visor "driver"}}
@@ -137,8 +118,8 @@
 		{door "emit1"}
 		{link "emit0" "driver" {anm "driver"} {forward putoff} {reverse puton}}
 	}
-	("crew_human" place(commander)	door1(emit1))
-	("crew_human" place(gunner)	    door1(emit1))
+	("crew_human_two_doors" place(commander)	door1(emit1))
+	("crew_human_two_doors" place(gunner)	    door1(emit1))
 
 
 	{extender "inventory"
@@ -154,7 +135,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "75mm_pak40" filling "ammo bullet75 gerp apcbc" 1}	
+			{weapon "75mm_pak40" filling "ammo bullet75 gerp apcbc" 1}
 			("abm_medium")
 		}
 		{place "mgun1"
@@ -176,25 +157,25 @@
 			{maxspeed   24}
 			{maxSpeedAtMaxTurn 5}
 			{StartTime  25}
-			{TurnStart  1.7}			
+			{TurnStart  1.7}
 			{TurnTime   15}
-			{TurnRadius 10} 
-    			{TurnStop   0.9}
+			{TurnRadius 10}
+			{TurnStop   0.9}
 			{BrakeTime  1}
 			{StopTime   2}
 			{Gears      0.1 0.2 0.3 1}
-			{RearGears  0.3}		
+			{RearGears  0.3}
 		}
 		{FuelBag
-			{volume 220 }	
-			{rate	14 }   
+			{volume 220 }
+			{rate	14 }
 			{remain 220 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  24}
-        	{Slow  24}
-    	}
+			{Normal  24}
+			{Slow  24}
+		}
 		{DisableMoveWhileFiring}
 	}
 

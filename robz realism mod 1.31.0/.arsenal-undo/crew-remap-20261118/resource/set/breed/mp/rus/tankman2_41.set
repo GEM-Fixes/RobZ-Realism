@@ -1,0 +1,22 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus_tankman_hp"}
+	{portrait "rus_tankman"}
+	{nationality rus}
+	{icon "tankman"}
+	{icon_priority 1}
+	{armors
+		{head rw_cap}
+	}
+	{perks
+		("body_crew_commander")
+		("drive_t11_v10_c095")
+		("skills_2_2_2_1_1_2")
+		{"tankgun" lvl_3}
+	}
+	("breed_vet" table(crew))
+	{inventory
+		("smg_ppsh41")
+		{in_hands 0}
+	}
+}

@@ -4,7 +4,7 @@
 	{inventory
 		{size 4 3}
 		{weight 100}
-		;{fsm "hand-only"}
+	;{fsm "hand-only"}
 	}
 	{mass 50}
 }

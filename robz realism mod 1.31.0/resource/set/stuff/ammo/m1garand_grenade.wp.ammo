@@ -3,7 +3,7 @@
 	{tag "wp grenade wp_small"}
 
 	{view "garand_wp_ammo"
-		;{tail "grenade_tail" "tail"}
+	;{tail "grenade_tail" "tail"}
 	}
 	{damage fire
 		{radius 3}
@@ -18,5 +18,5 @@
 		{weight 20}
 		{size 2 1}
 	}
-  	{mass 0.025}
+	{mass 0.025}
 }

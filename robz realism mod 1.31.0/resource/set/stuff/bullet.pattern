@@ -19,7 +19,7 @@
 	{foresight "Foresight3"}
 	{speed 60}
 	{calibre 7.62}
-    {AimingTolerance 1}
+	{AimingTolerance 1}
 	{cursor "smg_on"}
 	{cursorReloading "smg_reload"}
 	{curve "bullet"}

@@ -1,7 +1,7 @@
 {game_entity
 	(include "/properties/construction.inc")
-	{Extension "kreslo.mdl"}	
-;	{props "big" "part"}
+	{Extension "kreslo.mdl"}
+	;	{props "big" "part"}
 	{props "steel" "big" "part"}
 	("armor_disable_damage_acc")
 	{collider "particle.small"}

@@ -3,6 +3,6 @@
 	{fireSound "gun/howitzer/155mm_gpf"}
 	{reloadSound "gun_r04"}
 	("range_heavy_howitzer")
-	{range 790 790}	
+	{range 790 790}
 	{projectileDamage 150}
 }

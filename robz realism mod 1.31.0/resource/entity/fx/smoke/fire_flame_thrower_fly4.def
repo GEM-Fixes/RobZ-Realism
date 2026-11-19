@@ -22,7 +22,7 @@
 			{nodependonwind}
 		}
 		{#+ visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smtanko"
 					{timer
 						{mode play }
@@ -110,7 +110,7 @@
 			{## nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_100"
 					{timer
 						{mode play }
@@ -246,7 +246,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smtanko"
 					{timer
 						{mode play }
@@ -334,7 +334,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/explosion/boom3"
 					{timer
 						{mode play }
@@ -429,7 +429,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/explosion/faerog"
 					{timer
 						{mode play }
@@ -529,7 +529,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/metal_drops1"
 					{timer
 						{mode play }

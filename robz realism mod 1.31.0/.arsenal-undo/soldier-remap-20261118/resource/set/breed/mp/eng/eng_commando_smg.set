@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-commando"}
+	{portrait "eng_elite1"}
+	{nationality eng}
+	{icon "elite"}
+	{icon_priority 3}
+	{armors
+		{head beret_eng_comm}
+	}
+	{perks
+		("body_eng_h350_s150")
+		("drive_t09_v10_c10")
+		("skills_elite_6")
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("smg_sten_v_128")
+		{item "bandage" 5}
+		("frag_mk1_x2")
+		("at_grenade_n73at_x1")
+		("smoke_n77_x0_1")
+		("smoke_x1")
+		("mine_antitank_x1")
+		{in_hands 0}
+	}
+}

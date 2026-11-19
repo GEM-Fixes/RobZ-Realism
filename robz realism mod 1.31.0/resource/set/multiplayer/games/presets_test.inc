@@ -1,4 +1,9 @@
 ; == STANDARD ==
+; test_44-45: {common {unitset} {commandPoints} {unitLimits} {balancingFactorBonus} ..} {bots {easy} {normal} {hard} {heroic}}
+;   cp - text in {commandPoints}
+;   start - {start}, [?]
+;   finish - {finish}, [?]
+;   e.g. ("test_44-45"   start(50000) finish(50000) cp(1000))
 (define "test_44-45"
 	{common
 		{unitset
@@ -13,26 +18,26 @@
 		{budgets
 			{vehicle
 				{mode "custom"}
-				{resource 
+				{resource
 					{start 		%start}
 					{finish 	%finish}
 					{growTime	1500}		; in seconds
 					{growTable 	"0.65 0.65 0.65 0.70 0.70 0.70 0.75 0.75 0.75 0.80 0.80 0.80 0.80 0.80 0.80 0.85 0.85 0.85 0.90 0.90 0.90 0.90 0.90 0.90 1.00"}
 					{payback
-						{cp 		"0		25		50 		60		70		80		90"}  
+						{cp 		"0		25		50 		60		70		80		90"}
 						{restore 	"1.50	1.25	0.75	0.50	0.40	0.30	0.20"}
 					}
-				} 
+				}
 				{buttons "squad1 squad2 v1 v2 v22 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12 sf"}
 			}
 			{hero
-				{resource 
+				{resource
 					{start 		1000}
-				} 
+				}
 				{buttons "hero"}
 				{tag "special"}
 			}
-		} 
+		}
 	}
 	{bots
 		{easy
@@ -63,7 +68,7 @@
 )
 
 {presets
-	{"s:test_44-45"	
+	{"s:test_44-45"
 		{gameMode "test"}
 		{unitMode "44-45"}
 		{specMode "all_normal"}

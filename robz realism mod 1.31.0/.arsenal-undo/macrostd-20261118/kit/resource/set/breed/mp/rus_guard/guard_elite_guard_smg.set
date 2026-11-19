@@ -1,0 +1,28 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-smguner"}
+	{portrait "rus_elite2"}
+	{nationality rus}
+	{icon "elite4"}
+	{icon_priority 3}
+	{armors
+		{body ammo_rus}
+		{head helmet1_rus}
+	}
+	{perks
+		("breed_body" health(200%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.85) vehicle(1) cannon(0.9))
+		("breed_skills" pistol(2) smg(3) mgun(1) rifle(1) rocket(1) melee(3))
+	}
+	("breed_vet" table(start5))
+	{inventory
+		{item "ppsh41" filled}
+		{item "ammo ppsh41_mag" 210}
+		{item "bandage" 5}
+		{item "grenade f1" 2}
+		{item "grenade molotov_coctail" 0 1}
+		{item "grenade rpg43" 1}
+		{item "smoke grenade" 1}
+		{in_hands 0}
+	}
+}

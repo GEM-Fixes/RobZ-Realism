@@ -1,13 +1,4 @@
+; same as the other 1 def here; body in browning_body.inc
 {game_entity
-	{Extension "30_browning_m1917a1_xx.mdl"}
-	{Volume "body"
-	}
-	{Volume "gun_rot"
-	}
-	{Volume "support01"
-	}
-	{Volume "support02"
-	}
-	{Volume "support03"
-	}
+	(include "browning_body.inc")
 }

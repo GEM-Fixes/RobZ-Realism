@@ -10,7 +10,7 @@
 	("caliber_large")
 	{projectileDamage 157}
 	{parameters "aphe"
-		("damage_215" a(157) b(133) c(113) d(96) e(81) range(220))
+		("damage_215" at20(157) at100(133) at170(113) at215(96) at250(81) max(220))
 	}
 
 	("accuracy_maximum")

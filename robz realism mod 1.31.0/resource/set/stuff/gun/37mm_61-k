@@ -4,19 +4,19 @@
 	{reloadSound "61k_reload"}
 	{rechargeTime 3.5}
 	("range_zenite_long")
-	
+
 	("speed" s(880))
 	("caliber_minimum")
 	("recoveryTime" r(170))
 	{projectileDamage 55}
-	("damage_170" a(60) b(42) c(33) d(24) e(16) range(170))
-	
+	("damage_170" at20(60) at100(42) at170(33) at215(24) at250(16) max(170))
+
 	{Automatic}
 	{burst
 		{short 2.5 1}
 		{long 7 2}
 	}
 	{RelaxationTime 0}
-	
+
 	("accuracy_zenite_high")
 }

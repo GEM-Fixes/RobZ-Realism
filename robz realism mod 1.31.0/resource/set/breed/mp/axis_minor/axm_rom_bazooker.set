@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "rom-smg"}
 	{portrait "rom_soldier1"}
@@ -8,48 +9,15 @@
 		{head "8_kaska_soldat_ruminia"}
 	}
 	{perks
-		{"health" "200%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "100%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.8
-		}
-		{"vehicle" 1.0
-		}
-		{"cannon" 1.0
-		}
-		
-		{"pistol" lvl_3
-		}
-		{"smg" lvl_2
-		}
-		{"mgun" lvl_1
-		}
-		{"rifle" lvl_1
-		}
-		{"rocketlauncher" lvl_3
-		}
-		{"melee" lvl_2
-		}
+		("soldier_rifle_3" rocket(3) body(line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(standard))
 	{inventory
 		{item "weapon panzershreck" filled}
 		{item "valter" filled}
-		{item  "ammo 9x19" 40}
+		{item "ammo walther_mag" 40}
 		{item "bandage" 3}
-		{item "grenade m24x5" 1}
+		("give" item(grenade m24x5) count(1))
 		{item "ammo panzershreck" 5}
 		{in_hands 0}
 	}

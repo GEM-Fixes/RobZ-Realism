@@ -7,5 +7,5 @@
 	{mass 2}
 	{entity "ammo_mortar81_d832"}
 	{detonationThickness 1}
-	
+
 }

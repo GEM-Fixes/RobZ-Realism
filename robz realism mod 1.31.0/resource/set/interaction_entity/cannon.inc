@@ -1,3 +1,5 @@
+; handle_ik: {on} x9
+;   e.g. ("handle_ik")
 (define "handle_ik"
 	{on ik begin "basis"
 		{if "wheel_teared"
@@ -34,76 +36,85 @@
 	{on ik end "turret_rotator"}
 )
 
-(define "damage_cannon_process_pierce" ;by Svoyak
-{if stuff "%staff"
-    {if volume "standl"
-        ;do nothing
-    else volume "standr"
-        ;do nothing
-    else volume "wheell"
-        ;do nothing
-    else volume "wheelr"
-        ;do nothing
-    else volume "gun"
-		{if rand (* %pierce_turret__gun_brake 0.5)
-			{components "gun" destroy}
-		else
-			{components "gun" break}
-		}
-    else
-        {burn fx "smoke_dead_tank3" fake}
-        {if rand %pierce_turret__crew_die
-            {kill_crew "commander"}
-            {kill_crew "driver1"}
-        else rand %pierce_turret__crew_die
-            {kill_crew "driver2"}
-            {kill_crew "gunner"}
-        else rand %pierce_turret__crew_die
-            {kill_crew "commander1"}
-        ;{damage_report "body" "component/crew_down"}
-        }
-
-        {if rand %pierce_turret__crew_contusion
-            {crew_throw_off up 2 1 dir 2 1 turn 0 180 forward 2 force}
-
-            {if operatable
-                {weapon_work "gun" 0}
-                {weapon_work "gun1_2" 0}
-                {tags add "contused"}
-                {delay 2
-                    {if not tagged "gun_brake"
-			{if "gun_mode"
-                        	{weapon_work "gun1_2" 1}
-			else
-                        	{weapon_work "gun" 1}
+; damage_cannon_process_pierce: by Svoyak (makes {if {if}})
+;   staff - text in {if}
+;   pierce_turret__gun_brake - {if}, [?]
+;   pierce_turret__crew_die - {if}, [?]
+;   pierce_turret__crew_contusion - {if}, [?]
+;   e.g. ("damage_cannon_process_pierce" staff(ptr) pierce_turret__crew_die(0) pierce_turret__gun_brake(0) pierce_turret__crew_contusion(0))
+(define "damage_cannon_process_pierce"
+	{if stuff "%staff"
+		{if volume "standl"
+			;do nothing
+			else volume "standr"
+			;do nothing
+			else volume "wheell"
+			;do nothing
+			else volume "wheelr"
+			;do nothing
+			else volume "gun"
+			{if rand (* %pierce_turret__gun_brake 0.5)
+				{components "gun" destroy}
+				else
+				{components "gun" break}
 			}
-                    }
-                    {tags remove "contused"}
-                }
-            }
-        }
-        {if rand %pierce_turret__gun_brake
-            {components "gun" break}
-        }
-    }
-}
+			else
+			{burn fx "smoke_dead_tank3" fake}
+			{if rand %pierce_turret__crew_die
+				{kill_crew "commander"}
+				{kill_crew "driver1"}
+				else rand %pierce_turret__crew_die
+				{kill_crew "driver2"}
+				{kill_crew "gunner"}
+				else rand %pierce_turret__crew_die
+				{kill_crew "commander1"}
+			;{damage_report "body" "component/crew_down"}
+			}
+
+			{if rand %pierce_turret__crew_contusion
+				{crew_throw_off up 2 1 dir 2 1 turn 0 180 forward 2 force}
+
+				{if operatable
+					{weapon_work "gun" 0}
+					{weapon_work "gun1_2" 0}
+					{tags add "contused"}
+					{delay 2
+						{if not tagged "gun_brake"
+							{if "gun_mode"
+								{weapon_work "gun1_2" 1}
+								else
+								{weapon_work "gun" 1}
+							}
+						}
+						{tags remove "contused"}
+					}
+				}
+			}
+			{if rand %pierce_turret__gun_brake
+				{components "gun" break}
+			}
+		}
+	}
 )
 
 {"cannon"
-;
-;	(define "tow_delay"
-;		{on spawn
-;			{if taggged "tow2"
-;				{delay 10{tags remove "tow2"}{chassis_work 1}
-;				}
-;			}
-;		}
-;	)
-;	(define "tow_delay"
-;		{delay 10{tags remove "tow2"}{chassis_work 1}}
-;		{tags remove "tow2"}
-;	)
-;
+	;
+	;	(define "tow_delay"
+	;		{on spawn
+	;			{if taggged "tow2"
+	;				{delay 10{tags remove "tow2"}{chassis_work 1}
+	;				}
+	;			}
+	;		}
+	;	)
+	;	(define "tow_delay"
+	;		{delay 10{tags remove "tow2"}{chassis_work 1}}
+	;		{tags remove "tow2"}
+	;	)
+	;
+	; tear_bone: {spawn "spheredust_small"} {component} {tear "piece_large_steel"} {impulse}
+	;   bone - text in {tear}
+	;   e.g. ("tear_bone" bone(turret))
 	(define "tear_bone"
 		{spawn	"spheredust_small"}
 		{component destroy}
@@ -113,83 +124,83 @@
 		}
 		{impulse up 0.3}
 	)
-	
-        {on pierce
-            ("damage_cannon_process_pierce"
-                staff(ptr)
-                pierce_turret__crew_die(0)
-                pierce_turret__gun_brake(0)
-                pierce_turret__crew_contusion(0)
-            )
-            ("damage_cannon_process_pierce"
-                staff(shell ap)
-                pierce_turret__crew_die(0.5)
-                pierce_turret__gun_brake(0.3)
-                pierce_turret__crew_contusion(1)
-            )
-			;{if volume "wheel"
-			;	{if stuff "shell"
-			;		{if not stuff "zenite"
-			;			{call "tear_wheel"}
-			;		}
-			;	}
-			;}
-			{if volume "turret"
-				{if stuff "shell_big" {if rand 0.3 ("tear_bone" bone(turret))}
+
+	{on pierce
+		("damage_cannon_process_pierce"
+			staff(ptr)
+			pierce_turret__crew_die(0)
+			pierce_turret__gun_brake(0)
+			pierce_turret__crew_contusion(0)
+		)
+		("damage_cannon_process_pierce"
+			staff(shell ap)
+			pierce_turret__crew_die(0.5)
+			pierce_turret__gun_brake(0.3)
+			pierce_turret__crew_contusion(1)
+		)
+		;{if volume "wheel"
+		;	{if stuff "shell"
+		;		{if not stuff "zenite"
+		;			{call "tear_wheel"}
+		;		}
+		;	}
+		;}
+		{if volume "turret"
+			{if stuff "shell_big" {if rand 0.3 ("tear_bone" bone(turret))}
 				else stuff "shell_verybig" {if rand 0.5 ("tear_bone" bone(turret))}
 				else stuff "shell_maximum" {if rand 0.8 ("tear_bone" bone(turret))}}
-			}
-			{if volume "turret1"
-				{if stuff "shell_big" {if rand 0.3 ("tear_bone" bone(turret1))}
+		}
+		{if volume "turret1"
+			{if stuff "shell_big" {if rand 0.3 ("tear_bone" bone(turret1))}
 				else stuff "shell_verybig" {if rand 0.5 ("tear_bone" bone(turret1))}
 				else stuff "shell_maximum" {if rand 0.8 ("tear_bone" bone(turret1))}}
-			}
-			{if volume "turret2"
-				{if stuff "shell_big" {if rand 0.3 ("tear_bone" bone(turret2))}
+		}
+		{if volume "turret2"
+			{if stuff "shell_big" {if rand 0.3 ("tear_bone" bone(turret2))}
 				else stuff "shell_verybig" {if rand 0.5 ("tear_bone" bone(turret2))}
 				else stuff "shell_maximum" {if rand 0.8 ("tear_bone" bone(turret2))}}
-			}
-			{if volume "turret3"
-				{if stuff "shell_big" {if rand 0.3 ("tear_bone" bone(turret3))}
+		}
+		{if volume "turret3"
+			{if stuff "shell_big" {if rand 0.3 ("tear_bone" bone(turret3))}
 				else stuff "shell_verybig" {if rand 0.5 ("tear_bone" bone(turret3))}
 				else stuff "shell_maximum" {if rand 0.8 ("tear_bone" bone(turret3))}}
-			}
-			{if volume "turret4"
-				{if stuff "shell_big" {if rand 0.3 ("tear_bone" bone(turret4))}
+		}
+		{if volume "turret4"
+			{if stuff "shell_big" {if rand 0.3 ("tear_bone" bone(turret4))}
 				else stuff "shell_verybig" {if rand 0.5 ("tear_bone" bone(turret4))}
 				else stuff "shell_maximum" {if rand 0.8 ("tear_bone" bone(turret4))}}
-			}
 		}
-		{on bullet_hit
-			{if volume "standl"
-				{if stuff "shell"
-					{if not stuff "zenite"
-						("tear_bone" bone(standl))
-						{tags add "standl_tear"}
-						{if tagged "standr_tear"
-							{tear "piece_medium_steel" bone "link1"
-								{impulse up 0 1}
-								{delete}
-							}
-						}
-					}
-				}
-			}
-			{if volume "standr"
-				{if stuff "shell"
-					{if not stuff "zenite"
-						("tear_bone" bone(standr))
-						{tags add "standr_tear"}
-						{if tagged "standl_tear"
-							{tear "piece_medium_steel" bone "link1"
-								{impulse up 0 1}
-								{delete}
-							}
+	}
+	{on bullet_hit
+		{if volume "standl"
+			{if stuff "shell"
+				{if not stuff "zenite"
+					("tear_bone" bone(standl))
+					{tags add "standl_tear"}
+					{if tagged "standr_tear"
+						{tear "piece_medium_steel" bone "link1"
+							{impulse up 0 1}
+							{delete}
 						}
 					}
 				}
 			}
 		}
+		{if volume "standr"
+			{if stuff "shell"
+				{if not stuff "zenite"
+					("tear_bone" bone(standr))
+					{tags add "standr_tear"}
+					{if tagged "standl_tear"
+						{tear "piece_medium_steel" bone "link1"
+							{impulse up 0 1}
+							{delete}
+						}
+					}
+				}
+			}
+		}
+	}
 	{on break_armor
 		{call "do_armor_break"}
 	}
@@ -200,13 +211,13 @@
 		{if name "blast"
 			{if volume "body"
 				{call "explosion"}
-			else volume "turret"
+				else volume "turret"
 				{call "explosion"}
 			}
 		}
 	}
 	{on blast_hit
-		{if min_energy 5 
+		{if min_energy 5
 			{if not linked
 				{impulse up 0.5 0.2 dir 1 0.2}
 			}
@@ -217,7 +228,7 @@
 					{crew_throw_off up 4 1 dir 5 1 turn 0 180 forward 2 force}
 				}
 			}
-		else min_energy 1.2
+			else min_energy 1.2
 			{if not linked
 				{impulse up 0.3 0.2 dir 0.7 0.2}
 			}
@@ -228,8 +239,8 @@
 					{crew_throw_off up 4 1 dir 5 1 turn 0 180 forward 2 force}
 				}
 			}
-		else min_energy 0.6
- 		 	{ani_play "hit"}
+			else min_energy 0.6
+			{ani_play "hit"}
 		}
 		;{if volume "wheel"
 		;	{if min_energy 2.5
@@ -254,7 +265,7 @@
 		{if volume "turret4"
 			{if min_energy 3 ("tear_bone" bone(turret4))}
 		}
-		
+
 		{if volume "standl"
 			{if min_energy 2.5
 				("tear_bone" bone(standl))
@@ -283,18 +294,21 @@
 	{on "cut_parts"
 		{add_view "smoke_dead_norm" "deathfx" "FXfire1"}
 		{view start "deathfx"}
-		(define "cut_part"
+		; cut_part_call: {tear "piece_medium_steel" {impulse} {call}}
+		;   %0 - {tear}, [?]
+		;   e.g. ("cut_part_call" args "part1")
+		(define "cut_part_call"
 			{tear "piece_medium_steel" bone %0
 				{impulse up 8 1 dir 5 2 cx 5 2 cy 5 2 rnd_dir 10 no_position}
 				{call "check_delete_part"}
 			}
 		)
-		("cut_part" args "part1")
-		("cut_part" args "part2")
-		("cut_part" args "part3")
-		("cut_part" args "part4")
-		("cut_part" args "part5")
-		("cut_part" args "part6")
+		("cut_part_call" args "part1")
+		("cut_part_call" args "part2")
+		("cut_part_call" args "part3")
+		("cut_part_call" args "part4")
+		("cut_part_call" args "part5")
+		("cut_part_call" args "part6")
 		{delay 14 {view stop "deathfx"}}
 	}
 	{on operatable on
@@ -310,7 +324,7 @@
 	}
 	{on fire "gun"
 		{ani_play "recoil"}
-        {view start "flashbarrel1"}
+		{view start "flashbarrel1"}
 		{view start "flashbarrel1s"}
 		{delay 0.15
 			{view pause "flashbarrel1"}
@@ -331,7 +345,7 @@
 	}
 	{on fire "gun1_2"
 		{ani_play "recoil"}
-        {view start "flashbarrel1"}
+		{view start "flashbarrel1"}
 		{view start "flashbarrel1s"}
 		{delay 0.15
 			{view pause "flashbarrel1"}
@@ -385,7 +399,7 @@
 						{set "crush" 1}
 						{call "explosion"}
 					}
-				else effector "big part"
+					else effector "big part"
 					{if effector_velocity 3
 						{component break}
 					}
@@ -419,6 +433,10 @@
 	}
 }
 {"bs3"
+	; wheel_tear_bs3: {set "wheel_teared"} {spawn "spheredust_small"} {component} {tear "piece_medium_steel"} x3 {impulse} {chassis_work}
+	;   wheel_1 - text in {tear}
+	;   wheel_2 - text in {tear}
+	;   e.g. ("wheel_tear_bs3" wheel_1(wheell1) wheel_2(wheell2))
 	(define "wheel_tear_bs3"
 		{set "wheel_teared" 1}
 		{spawn	"spheredust_small"}
@@ -507,7 +525,7 @@
 						{delete}
 					}
 				}
-			}	
+			}
 		}
 	}
 	{on blast_hit
@@ -532,7 +550,7 @@
 						{delete}
 					}
 				}
-			}	
+			}
 		}
 	}
 	{on "tear_wheel"
@@ -562,7 +580,7 @@
 					{set "crush" 1}
 					{call "explosion"}
 				}
-			else effector "armored_car"
+				else effector "armored_car"
 				{component destroy}
 				{if volume "body"
 					{set "crush" 1}
@@ -587,17 +605,17 @@
 			}
 			{if effector "tank"
 				{call "end"}
-			else effector "armored_car"
+				else effector "armored_car"
 				{call "end"}
 			}
 		}
 	}
 	{on blast_hit
-		{if min_energy 5 
+		{if min_energy 5
 			{call "end"}
-		else min_energy 1.2
+			else min_energy 1.2
 			{call "end"}
-		else min_energy 0.6
+			else min_energy 0.6
 			{call "end"}
 		}
 	}
@@ -644,7 +662,7 @@
 		{if tagged "full_auto_mode"
 			{tags remove "full_auto_mode"}
 			{damage_report "mgun" "Unit changed to burst mode"}
-		else
+			else
 			{tags add "full_auto_mode"}
 			{damage_report "mgun" "Unit changed to full auto mode"}
 		}
@@ -695,7 +713,7 @@
 	{on "explosion_blastwave" overload
 		{impulse up 0.2 dir 0.3}
 	}
-;	{on contact overload}
+	;	{on contact overload}
 	{on break
 		{if component "shield"
 			{call "explosion"}
@@ -713,7 +731,7 @@
 }
 {"no_exp_blast"
 	{on "explosion_blastwave" overload
-;		{impulse up 0.2 dir 0.3}
+	;		{impulse up 0.2 dir 0.3}
 	}
 	{on "explosion_sound" overload}
 }
@@ -730,10 +748,10 @@
 	}
 	{on fire "gun" overload
 		{ani_play "recoil"}
-       		{view start "dust"}
-        	{view start "flashbarrel1"}
+		{view start "dust"}
+		{view start "flashbarrel1"}
 		{view start "flashbarrel1s"}
-        	{view start "smkafire"}
+		{view start "smkafire"}
 		{delay 0.8
 			{view pause "flashbarrel1"}
 		}
@@ -743,9 +761,9 @@
 		{delay 1
 			{view pause "dust"}
 		}
-        	{delay 2.5
-            		{view stop "smkafire"}
-        	}
+		{delay 2.5
+			{view stop "smkafire"}
+		}
 		{blastwave c4 0.6 r0 3 r1 5 bone "Foresight1" offset 40 0 0}
 		{call "spawn_shell"}
 	}
@@ -755,18 +773,21 @@
 		{add_view "smoke_black" "deathfx2" "fx_smoke2"}
 		{view start "deathfx1"}
 		{view start "deathfx2"}
-		(define "cut_part"
+		; cut_part_piece_big_steel: {tear "piece_big_steel" {impulse} {call}}
+		;   %0 - {tear}, [?]
+		;   e.g. ("cut_part_piece_big_steel" args "part1")
+		(define "cut_part_piece_big_steel"
 			{tear "piece_big_steel" bone %0
 				{impulse up 8 1 dir 5 2 cx 5 2 cy 5 2 rnd_dir 10 no_position}
 				{call "check_delete_part"}
 			}
 		)
-		("cut_part" args "part1")
-		("cut_part" args "part2")
-		("cut_part" args "part3")
-		("cut_part" args "part4")
-		("cut_part" args "part5")
-		("cut_part" args "part6")
+		("cut_part_piece_big_steel" args "part1")
+		("cut_part_piece_big_steel" args "part2")
+		("cut_part_piece_big_steel" args "part3")
+		("cut_part_piece_big_steel" args "part4")
+		("cut_part_piece_big_steel" args "part5")
+		("cut_part_piece_big_steel" args "part6")
 		{delay 10 2 {view stop "deathfx1"}}
 		{delay 6 2 {view stop "deathfx2"}}
 	}
@@ -788,7 +809,7 @@
 		{if tagged "full_auto_mode"
 			{tags remove "full_auto_mode"}
 			{damage_report "mgun" "Unit changed to burst mode"}
-		else
+			else
 			{tags add "full_auto_mode"}
 			{damage_report "mgun" "Unit changed to full auto mode"}
 		}
@@ -802,7 +823,7 @@
 					{impulse up 0.5 0.5 dir 3 1.5 cx 1 1 cy 1 1 no_position}
 				}
 			}
-		else
+			else
 			{if min_energy 3.3
 				{call "explosion"}
 			}
@@ -817,7 +838,7 @@
 					{impulse up 0.5 0.5 dir 3 1.5 cx 1 1 cy 1 1 no_position}
 				}
 			}
-		else
+			else
 			{if min_energy 3.3
 				{call "explosion"}
 			}
@@ -859,26 +880,29 @@
 		{link_sound "rotate_turret" "vehicle/turret/light"}
 	}
 	{on fire "gun" overload
+		; fire_barrel: {call "fire_barrel%0"} {view} {delay} {ani_play "fire%0"} {delay}
+		;   %0 - text in a top-level string, text in {call}, text in {view}
+		;   e.g. ("fire_barrel" args 00)
 		(define "fire_barrel"
 			name "%0"
-				{call "fire_barrel%0"}
-				{view start "flashbarrel%0"}
-				{delay 0.42
-					{view pause "flashbarrel%0"}
+			{call "fire_barrel%0"}
+			{view start "flashbarrel%0"}
+			{delay 0.42
+				{view pause "flashbarrel%0"}
+			}
+			{ani_play "fire%0"}
+			{delay 0.12
+				{view start "smoke%0"}
+				{delay 5
+					{view pause "smoke%0"}
 				}
-				{ani_play "fire%0"}
-				{delay 0.12 
-					{view start "smoke%0"}
-					{delay 5
-						{view pause "smoke%0"}
-					}
-				}
+			}
 		)
-		
+
 		{if    ("fire_barrel" args 00)
-		  else ("fire_barrel" args 01)
-		  else ("fire_barrel" args 02)
-		  else ("fire_barrel" args 03)
+			else ("fire_barrel" args 01)
+			else ("fire_barrel" args 02)
+			else ("fire_barrel" args 03)
 		}
 
 		{if name "00"
@@ -923,7 +947,7 @@
 			{view pause "flashbarrel00"}
 		}
 		{ani_play "fire00"}
-		{delay 0.12 
+		{delay 0.12
 			{view start "smoke00"}
 			{delay 5
 				{view pause "smoke00"}
@@ -942,7 +966,7 @@
 		{add_view "smoke_zenit"			"smoke"			"foresight1"}
 		{add_view "zenit_gilz"			"shell"			"FXshell1"}
 		{call "update_gun"}
-		
+
 		{add_view	"human_linked_selection" "linked_selection" "visor"}
 		{view hide "linked_selection"}
 	}
@@ -976,7 +1000,7 @@
 	}
 	{on "__explosion"
 		{set "big_explosion" 0}
-		{if explosive_amount 50               
+		{if explosive_amount 50
 			{blastwave c4 10 r0 10 r1 25}
 			{blastwave c4 10 r0 10 r1 25}
 			{spawn "train_die" "basis"}
@@ -1010,7 +1034,7 @@
 		{add_view "circledust_norm2"	"zenite_dust"	"turret"}
 	}
 	{on fire "gun" overload
-        {view start "zenite_flash"}
+		{view start "zenite_flash"}
 		{ani_play "fire"}
 		{kill_delay "shell_off"}
 		{view start "zenite_shell"}
@@ -1082,13 +1106,13 @@
 		{call "update_gun"}
 	}
 	{on "fire_barrel00"
- 	   {spawn "cannon400_fire" "shooter00" x}
+		{spawn "cannon400_fire" "shooter00" x}
 	}
 	{on "fire_barrel01"
- 	   {spawn "cannon400_fire" "shooter01" x}
+		{spawn "cannon400_fire" "shooter01" x}
 	}
 	{on "fire_barrel02"
- 	   {spawn "cannon400_fire" "shooter02" x}
+		{spawn "cannon400_fire" "shooter02" x}
 	}
 }
 {"morser18"

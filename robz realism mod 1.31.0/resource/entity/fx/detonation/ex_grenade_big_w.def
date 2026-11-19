@@ -41,7 +41,7 @@
 		}
 		{offset 0 0 5}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/flash_g01"
 					{timer
 						{mode play }
@@ -126,7 +126,7 @@
 		}
 		{offset 0 0 5}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/flash_g03a"
 					{timer
 						{mode play }
@@ -255,7 +255,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04l"
 					{timer
 						{mode play }
@@ -315,7 +315,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/grit"
 					{turn 1
 						{linear
@@ -389,7 +389,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_s01"
 					{timer
 						{mode play }
@@ -491,7 +491,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04"
 					{timer
 						{mode play }
@@ -662,7 +662,7 @@
 			{## nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop_short"
 					{timer
 						{mode play }
@@ -810,7 +810,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop_short"
 					{timer
 						{mode play }
@@ -950,7 +950,7 @@
 			{## nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_30"
 					{timer
 						{mode play }
@@ -1007,7 +1007,7 @@
 			{## nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_30"
 					{timer
 						{mode play }
@@ -1052,7 +1052,7 @@
 		}
 		{offset 0 0 10}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/supershock"
 					{timer
 						{mode play }
@@ -1103,7 +1103,7 @@
 			{damping 0.98}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4cblue"
 					{timer
 						{mode play }
@@ -1178,7 +1178,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/ground_exp2a"
 					{timer
 						{mode play }
@@ -1241,7 +1241,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_turb"
 					{timer
 						{mode play }
@@ -1333,7 +1333,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_30"
 					{timer
 						{mode play }

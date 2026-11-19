@@ -1,0 +1,31 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-smock2-g43"}
+	{portrait "ger_soldier7"}
+	{icon "rifleman"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{body ammo_ger3}
+		{head waffen_helmet_camo}
+	}
+	{perks
+		("body_h200_s125")
+		("drive_regular")
+		("skills_ger_ss_4_3_3_5_4_4")
+		{"aimedshot"}
+		{"telescope"}
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "g43_scope" filling "ammo g43_mag" 10}
+		{item "ammo g43_mag" 20}
+		{item "ammo mauser_clip" 60}
+		{item "ammo mg_mauser drum" 50}
+		{item "bandage" 3}
+		("frag_m24_x2")
+		("at_grenade_m24x5_xm1_2")
+		{item "panzerfaust_60 weapon" 0.5 0.5 filled}
+		{in_hands 0}
+	}
+}

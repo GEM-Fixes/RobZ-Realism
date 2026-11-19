@@ -4,7 +4,7 @@
 	{fireSound	"mgun/ds_burst/"}
 	{reloadSound "dt"}
 	{rechargeTime 12}
-	
+
 	{mass 14}
 	("recoveryTime" r(800))
 	("burst_long")

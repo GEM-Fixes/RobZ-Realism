@@ -1,0 +1,7 @@
+{Extension "bm_37_xx.mdl"}
+{Volume "part1"
+}
+{Volume "part2"
+}
+{Volume "part3"
+}

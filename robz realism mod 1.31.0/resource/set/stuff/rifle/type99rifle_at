@@ -14,11 +14,11 @@
 	{burst
 		{short 1}
 		{Long 1}
-	}	
-	
+	}
+
 	{preloaded}
 	{mass 6}
-	
+
 	{fireSound "smg/beretta_burst/"}
 	{calibre 50}
 
@@ -28,14 +28,14 @@
 	{rechargeTime 12}
 	{reloadAnimBonus 7.5}
 	{curve "cumulative"}
-    	{projectileDamageTable {0 50} {75 50} {80 0}}
+	{projectileDamageTable {0 50} {75 50} {80 0}}
 	{projectileDamageThreshold 1}
 	{AimingTolerance 3}
 
 	{aimtype curved}
 
 	{spreading 5.5
-		;{SpreadXYRatio	1}
+	;{SpreadXYRatio	1}
 	}
 	{range 75 75}
 

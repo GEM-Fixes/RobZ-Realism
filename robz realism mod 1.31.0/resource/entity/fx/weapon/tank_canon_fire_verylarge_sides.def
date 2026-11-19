@@ -35,7 +35,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/oskolki"
 					{timer
 						{mode play }
@@ -86,7 +86,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/exp01"
 					{timer
 						{mode play }
@@ -145,7 +145,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/exp_muzzle_01"
 					{timer
 						{mode play }
@@ -224,7 +224,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/exp_muzzle_02"
 					{timer
 						{mode play }
@@ -303,7 +303,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/exp01"
 					{timer
 						{mode play }
@@ -362,7 +362,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/exp_muzzle_01"
 					{timer
 						{mode play }
@@ -441,7 +441,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/exp_muzzle_02"
 					{timer
 						{mode play }
@@ -519,7 +519,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/flash_bc"
 					{timer
 						{mode play }
@@ -641,7 +641,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -716,7 +716,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -791,7 +791,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -854,7 +854,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -917,7 +917,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -1006,7 +1006,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -1095,7 +1095,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -1184,7 +1184,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -1273,7 +1273,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -1362,7 +1362,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -1450,7 +1450,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -1538,7 +1538,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -1627,7 +1627,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -1686,7 +1686,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/exp_muzzle_02"
 					{timer
 						{mode play }
@@ -1765,7 +1765,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/exp_muzzle_02"
 					{timer
 						{mode play }
@@ -1846,7 +1846,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -1935,7 +1935,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }

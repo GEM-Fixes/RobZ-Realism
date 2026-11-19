@@ -2,8 +2,8 @@
 	(include "/properties/human.ext")
 	{Extension "human.mdl"}
 	(include "/properties/selection/human.inc")
-	
-	{Obstacle 
+
+	{Obstacle
 		{Circle2 {radius 6}}
 	}
 	{volume "spacer"
@@ -23,7 +23,7 @@
 	{Volume "Foot2L" {tags "no_target"}}
 
 	{Skeleton
-		{ViewVolume 
+		{ViewVolume
 			{center 0 0 18}
 			{extent 30 30 18}
 		}

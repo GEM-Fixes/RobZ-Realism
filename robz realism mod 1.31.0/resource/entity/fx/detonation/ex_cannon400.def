@@ -148,7 +148,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/explosion/bum2"
 					{timer
@@ -271,7 +271,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/exp01a"
 					{timer
 						{mode play }
@@ -334,7 +334,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/oskolki"
 					{light 1
 						{##+ linear
@@ -440,7 +440,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/grit"
 					{turn 1
 						{linear
@@ -575,7 +575,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/ground_exp2a"
 					{timer
 						{mode play }
@@ -762,7 +762,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04c"
 					{timer
 						{mode play }
@@ -895,7 +895,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04c"
 					{timer
 						{mode play }
@@ -976,7 +976,7 @@
 		}
 		{offset 0 0 80}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04b"
 					{timer
 						{mode play }
@@ -1056,7 +1056,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_turb2"
 					{timer
 						{mode play }
@@ -1112,7 +1112,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04b"
 					{timer
 						{mode play }
@@ -1221,7 +1221,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_100"
 					{scale 1
 						{linear
@@ -1355,7 +1355,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage initial 
+			{stage initial
 				{sprite "$/particle/pieces2"
 					{turn 1
 						{npower
@@ -1385,7 +1385,7 @@
 					}
 				}
 			}
-			{stage collided dying 
+			{stage collided dying
 				{flags killparticle ground }
 				{sprite "$/particle/pieces"
 					{visibility 1
@@ -1446,7 +1446,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/oskolki"
 					{scale 0.25 0.05}
 				}
@@ -1486,7 +1486,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/exp01"
 					{scale 1
 						{linear
@@ -1553,7 +1553,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{#+ sprite "$/explosion/bum"
 					{timer
@@ -1783,7 +1783,7 @@
 			}
 		}
 		{#+ visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal9"
 					{scale 1
 						{linear
@@ -1930,7 +1930,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/metal_drops1"
 					{scale 1
 						{linear
@@ -1984,7 +1984,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/particle/metal_drops2"
 					{timer
@@ -2047,7 +2047,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04b"
 					{timer
 						{mode play }
@@ -2144,7 +2144,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_turb2"
 					{timer
 						{mode play }
@@ -2195,7 +2195,7 @@
 			{damping 0.8}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_s01"
 					{scale 1
 						{npower
@@ -2279,7 +2279,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/smoke/smokesmal4b_50"
 					{timer
@@ -2358,7 +2358,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{##+ sprite "$/explosion/bum"
 					{timer
@@ -2569,7 +2569,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/explosion/bum2"
 					{timer
@@ -2693,7 +2693,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/explosion/bum2"
 					{timer
@@ -2817,7 +2817,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/explosion/bum2"
 					{timer
@@ -2941,7 +2941,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/flash/flash_g03"
 					{timer

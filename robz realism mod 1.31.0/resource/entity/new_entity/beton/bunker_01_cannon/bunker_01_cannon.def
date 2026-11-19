@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/building.inc")
 	{props "concrete" "burning"}
@@ -11,81 +12,21 @@
 		{place "gun_nest" "pak40"}
 
 	}
-	{Volume "body"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body10"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body11"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body12_r"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body13"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body14"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body15_r"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body2_r"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body3"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body4"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body5"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body6"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body7"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body8"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body9"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
+	("vol_body_visible" name(body) mm(50))
+	("vol_body_visible" name(body10) mm(50))
+	("vol_body_visible" name(body11) mm(50))
+	("vol_body_visible" name(body12_r) mm(50))
+	("vol_body_visible" name(body13) mm(50))
+	("vol_body_visible" name(body14) mm(50))
+	("vol_body_visible" name(body15_r) mm(50))
+	("vol_body_visible" name(body2_r) mm(50))
+	("vol_body_visible" name(body3) mm(50))
+	("vol_body_visible" name(body4) mm(50))
+	("vol_body_visible" name(body5) mm(50))
+	("vol_body_visible" name(body6) mm(50))
+	("vol_body_visible" name(body7) mm(50))
+	("vol_body_visible" name(body8) mm(50))
+	("vol_body_visible" name(body9) mm(50))
 	{Extender "land_patch"
 	}
 }

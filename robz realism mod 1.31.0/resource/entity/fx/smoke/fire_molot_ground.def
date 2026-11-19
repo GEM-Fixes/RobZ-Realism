@@ -46,7 +46,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/faerog2b"
 					{timer
 						{mode play }
@@ -125,7 +125,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04l"
 					{timer
 						{mode play }
@@ -180,7 +180,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/oskolki"
 					{timer
 						{mode play }
@@ -219,7 +219,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/explosion/faerog"
 					{timer
 						{mode play }
@@ -261,7 +261,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_loop"
 					{timer
 						{mode play }

@@ -9,7 +9,7 @@
 	{view "mortar_ammo"
 	}
 	{detonationThickness 1}
-	
+
 	{damage blastwave
 		{energy 2}
 		{area 2.5 6.5}

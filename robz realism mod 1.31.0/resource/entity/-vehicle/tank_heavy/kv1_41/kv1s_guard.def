@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {Entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
@@ -5,11 +6,8 @@
 	{collider "tank.heavy"}
 	{props "heavy" "turret_rotator" "vision_vehicle_high" "muzzle_medium" "kv1s"}
 	{tag "diesel_exhaust"}
-	
-	{Volume "body1"
-		{tags "body"}
-		{component "body"}
-	}
+
+	("vol_body_part" name(body1))
 	{Volume "body2"
 		{tags "body2"}
 		{component "body"}
@@ -18,14 +16,8 @@
 		{tags "body3"}
 		{component "body"}
 	}
-	{Volume "turret"
-		{tags "turret"}
-		{component "turret"}
-	}
-	{Volume "mantlet2"
-		{tags "turret"}
-		{component "turret"}
-	}
+	("vol_turret_part" name(turret))
+	("vol_turret_part" name(mantlet2))
 	{Volume "engine"
 		{tags "engine"}
 		{component "engine"}
@@ -82,7 +74,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "76mm_zis5_vet" filling "ammo bullet76 rus br350b" 1}	
+			{weapon "76mm_zis5_vet" filling "ammo bullet76 rus br350b" 1}
 			("abm_mgun")
 		}
 		{place "mgun2"
@@ -118,38 +110,38 @@
 			{maxSpeedAtMaxTurn 4}
 			{StartTime	34}
 			{TurnTime	19.8}
-			{TurnStart  1.9} 
-    		{BrakeTime  3.0}
-     		{StopTime   3.5} 
-    		{TurnRadius 10} 
-    		{TurnStop   1}
-		{Gears	0.13 0.23 0.33 1.0}
-		{RearGears 0.1 0.2} 
+			{TurnStart  1.9}
+			{BrakeTime  3.0}
+			{StopTime   3.5}
+			{TurnRadius 10}
+			{TurnStop   1}
+			{Gears	0.13 0.23 0.33 1.0}
+			{RearGears 0.1 0.2}
 		}
 		{FuelBag
-			{volume 600 }	
-			{rate	33 }   
+			{volume 600 }
+			{rate	33 }
 			{remain 600 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  30}
-        	{Slow  30}
-    	}
+			{Normal  30}
+			{Slow  30}
+		}
 	}
-	
+
 	{Extension "kv-1s.mdl"}
-	
+
 	{bone "turret"
 		{speed 0.002}
 	}
 	{bone "gun_rot"
 		{speed 0.001}
 	}
-	
-	;{bone "turret_mgun"
-	;	{limits -30 30}
-	;	{speed 0.03}
-	;	{terminator}
-	;}
+
+;{bone "turret_mgun"
+;	{limits -30 30}
+;	{speed 0.03}
+;	{terminator}
+;}
 }

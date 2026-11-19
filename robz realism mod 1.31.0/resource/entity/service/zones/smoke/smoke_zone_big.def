@@ -9,7 +9,7 @@
 		{sphere 178.053}
 		;{able {contact 0}}  ;{contact 1}{able clear}{density 0}{visible 1}
 		{bone "basis"}
-		;{material "dummy"}
+	;{material "dummy"}
 	}
 	{body
 		{proper body}

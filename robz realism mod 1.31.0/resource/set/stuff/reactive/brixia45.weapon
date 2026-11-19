@@ -1,14 +1,14 @@
 {weapon_bullet
 	{tag "mrl gun"}
 	{filling "ammo 5cm_grenade_brixia fg"}
-         ;{filling "ammo mortar81 ger"}
+	;{filling "ammo mortar81 ger"}
 
 	{fillingVisible "rocket"}
 
 	{fireSound "reactive/brixia"}
 	{foresight "foresight"}
-	
-	{spreading 
+
+	{spreading
 		{SpreadRadius 25}
 		{radiusFunction
 			0	0.6
@@ -20,14 +20,14 @@
 	{maxRange 150}
 	{rechargeTime 4}
 	{gravity 6}
-	
+
 	{projectileDamage 10}
 	{speed 220}
 	{AimingTolerance 0.9}
 	{projectileDamageTable {130 15}}
-        ;{ZeroingAccuracy 0.95 0.9 0.85}
+	;{ZeroingAccuracy 0.95 0.9 0.85}
 
-	
+
 	{aimtype curved}
 	{cursorReloading "cannon_reload_fg"}
 }

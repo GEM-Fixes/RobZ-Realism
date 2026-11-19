@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-engineer"}
+	{portrait "eng_elite3"}
+	{nationality eng}
+	{icon "sapper3"}
+	{icon_priority 3}
+	{armors
+		{head "helmet2_eng"}
+	}
+	{perks
+		("breed_body" health(150%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.8) vehicle(1.0) cannon(1.0))
+		("breed_skills" pistol(2) smg(3) mgun(2) rifle(2) rocket(1) melee(3))
+	}
+	("breed_vet" kind(1))
+	{inventory
+		{item "sten_mk2" filled}
+		{item "ammo sten_mag" 128}
+		{item "mine antipersonnel" 15}
+		{item "barbwire_kit" 1}
+		{item "dynamite" 1}
+		{item "repair_kit" 1}
+		{item "trench_spade"}
+		{in_hands 0}
+	}
+}

@@ -1,31 +1,4 @@
+; same as the other 1 def here; body in su76_body.inc
 {game_entity
-	{Extension "su76m_xx.mdl"}
-	{Volume "body1"
-	}
-	{Volume "body2"
-	}
-	{Volume "body3"
-	}
-	{Volume "body4"
-	}
-	{Volume "body5"
-	}
-	{Volume "body6"
-	}
-	{Volume "body7"
-	}
-	{Volume "body8"
-	}
-	{Volume "body9"
-	}
-	{Volume "body"
-	}
-	{Volume "engine"
-	}
-	{Volume "gun_rot"
-	}
-	{Volume "gun"
-	}
-	{Volume "mantlet"
-	}
+	(include "su76_body.inc")
 }

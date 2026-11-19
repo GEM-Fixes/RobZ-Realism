@@ -1,23 +1,4 @@
+; same as the other 1 def here; body in m10wolverine_body.inc
 {game_entity
-	{Extension "m10wolverine_xx.mdl"}
-	{Volume "body1"
-	}
-	{Volume "body2"
-	}
-	{Volume "engine"
-	}
-	{Volume "gun"
-	}
-	{Volume "inventory"
-	}
-	{Volume "mantlet"
-	}
-	{Volume "trackleft"
-	}
-	{Volume "trackright"
-	}
-	{Volume "turret8"
-	}
-	{Volume "turret"
-	}
+	(include "m10wolverine_body.inc")
 }

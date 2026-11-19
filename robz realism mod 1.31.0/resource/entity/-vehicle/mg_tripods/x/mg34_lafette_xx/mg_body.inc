@@ -1,0 +1,9 @@
+{Extension "mg34_lafette_xx.mdl"}
+{Volume "body"
+}
+{Volume "part1"
+}
+{Volume "part2"
+}
+{Volume "part3"
+}

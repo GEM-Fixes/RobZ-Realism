@@ -4,7 +4,7 @@
 	{fillingVisible "rocket"}
 	{fireSound "reactive/katyusha_burst"}
 	{foresight "foresight"}
-	("heavy_artillery")  
+	("heavy_artillery")
 
 	{spreading
 		{SpreadRadius 20}

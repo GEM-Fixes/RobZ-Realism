@@ -3,10 +3,10 @@
 	{inventory
 		{weight 100}
 		{fsm "belt"}
-	}	
+	}
 	{mass 1}
 	{throw
-		{spreading 
+		{spreading
 			{radiusTable {0 0} {7 3} {15 6} {25 9}}
 		}
 	}

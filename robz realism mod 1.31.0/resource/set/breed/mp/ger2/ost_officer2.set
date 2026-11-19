@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "ger-officer"}
 	{portrait "ger2_officer"}
@@ -9,47 +10,12 @@
 	}
 	{tags "officer"}
 	{perks
-		{"health" "500%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "200%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_officer"
-		}
-		{"speed" 1.0
-		}
-		{"field_glass"
-		}
-		{"tank"	1.0
-		}
-		{"vehicle" 1.0
-		}
-		{"cannon" 1.0
-		}
-		
-		{"pistol" lvl_6
-		}
-		{"smg" lvl_6
-		}
-		{"mgun" lvl_6
-		}
-		{"rifle" lvl_6
-		}
-		{"rocketlauncher" lvl_6
-		}
-		{"melee" "lvl_6"
-		}
+		("soldier_smg_6" rocket(1) body(line) sight(officer))
+		("perks_officer")
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(elite))
 	{inventory
-		{item "mp41" filled}
-		{item "ammo mp40_mag" 64}
+		("kit_smg" gun(mp41) ammo(mp40_mag) rounds(64))
 		{item "knife_ger"}
 		{item "binocular"}
 		{in_hands 0}

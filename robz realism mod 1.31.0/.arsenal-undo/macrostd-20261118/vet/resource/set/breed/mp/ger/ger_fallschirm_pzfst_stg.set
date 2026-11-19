@@ -1,0 +1,28 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-para-stg"}
+	{portrait "ger_elite1"}
+	{icon "elite"}
+	{icon_priority 4}
+	{nationality ger}
+	{armors
+		{head helmet_ger_m38_cover}
+	}
+	{perks
+		("breed_body" health(400%) regen_health(100%) stamina(200%) regen_stamina(100%) vision(mp_soldier) speed(0.9))
+		("breed_drive" tank(0.95) vehicle(1) cannon(1))
+		("breed_skills" pistol(7) smg(7) mgun(7) rifle(7) rocket(7) melee(7))
+		{"avoidance" lvl_1}
+		{"stealth"}
+	}
+	("breed_vet" kind(elite))
+	{inventory
+		{item "sg44" filled}
+		{item "ammo stg44_mag" 180}
+		{item "bandage" 5}
+		{item "grenade m39" 2}
+		{item "smoke grenade" 1}
+		{item "panzerfaust_30 weapon" filled}
+		{in_hands 0}
+	}
+}

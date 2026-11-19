@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "bul-inf-rfl"}
+	{portrait "bul_soldier2"}
+	{nationality bul}
+	{icon "ap_miner"}
+	{icon_priority 1}
+	{armors
+		{head helmet1_bul}
+	}
+
+	{perks
+		("breed_body" health(200%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.8) vehicle(1.0) cannon(1.0))
+		("breed_skills" pistol(2) smg(2) mgun(1) rifle(4) rocket(1) melee(2))
+	}
+	("breed_vet" kind(1))
+	{inventory
+		{item "mannlicher_m1895" filled}
+		{item  "ammo 8x50" 120}
+		{item "mine antipersonnel" 15}
+
+		{in_hands 0}
+
+	}
+}

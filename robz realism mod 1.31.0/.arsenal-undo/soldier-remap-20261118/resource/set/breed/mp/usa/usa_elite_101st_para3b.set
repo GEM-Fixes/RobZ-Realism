@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-101st-rfl"}
+	{portrait "usa_elite1"}
+	{nationality usa}
+	{icon "elite3"}
+	{icon_priority 4}
+	{armors
+		{head helmet_usa_para}
+	}
+	{perks
+		("body_elite")
+		("drive_elite")
+		("breed_skills" pistol(6) smg(6) mgun(7) rifle(6) rocket(6) melee(6))
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("mgun_browning_m19a6")
+		("rifle_m1a1_carbine")
+		{item "bandage" 5}
+		("frag_m61_x2")
+		;{item "sandbag_kit" 1}
+		{in_hands 0}
+	}
+}

@@ -109,7 +109,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_50"
 					{timer
 						{mode play }
@@ -165,7 +165,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_50"
 					{timer
 						{mode play }
@@ -246,7 +246,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage initial 
+			{stage initial
 				{sprite "$/flash/wave"
 					{timer
 						{mode play }
@@ -305,7 +305,7 @@
 			}
 		}
 		{visualizer
-			{stage initial 
+			{stage initial
 				{sprite "$/smoke/smokesmal4b"
 					{scale 1
 						{linear
@@ -331,7 +331,7 @@
 					}
 				}
 			}
-			{stage collided 
+			{stage collided
 				{sprite "$/flash/ripples_w2"
 					{timer
 						{mode play }
@@ -382,7 +382,7 @@
 			{damping 0.98}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_30"
 					{timer
 						{mode play }
@@ -433,7 +433,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/bum"
 					{timer
 						{mode play }
@@ -565,7 +565,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage initial 
+			{stage initial
 				{sprite "$/particle/bloodspot03"
 					{scale 0.065 0.035}
 					{turn 1
@@ -596,7 +596,7 @@
 					{preturn 90 90}
 				}
 			}
-			{stage collided 
+			{stage collided
 				{sprite "$/flash/ripples_w"
 					{timer
 						{mode play }

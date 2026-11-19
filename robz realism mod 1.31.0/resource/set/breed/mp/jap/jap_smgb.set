@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "jap_army_smg1"}
 	{portrait "jap_soldier2"}
@@ -8,49 +9,15 @@
 		{head "jap_army_helmet5"}
 	}
 	{perks
-		{"health" "150%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "100%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.8
-		}
-		{"vehicle" 1.0
-		}
-		{"cannon" 1.0
-		}
-		
-		{"pistol" lvl_2
-		}
-		{"smg" lvl_3
-		}
-		{"mgun" lvl_1
-		}
-		{"rifle" lvl_1
-		}
-		{"rocketlauncher" lvl_1
-		}
-		{"melee" lvl_2
-		}
+		("soldier_smg_3" rocket(1) body(hardy) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(standard))
 	{inventory
-		{item "type100_44" filled}
-		{item "ammo type100_mag" 180}
+		("kit_smg" gun(type100_44) ammo(type100_mag) rounds(180))
 		{item "bandage" 3}
-		{item "grenade type97" 2}
-		{item "grenade type3at_a" 1}
-		{item "smoke grenade" 0 1}
+		("give" item(grenade type97) count(2))
+		("give" item(grenade type3at_a) count(1))
+		("give_chance" item(smoke grenade) chance(25))
 		{in_hands 0}
 	}
 }

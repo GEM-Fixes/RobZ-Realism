@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/car.ext")
 	(include "/properties/selection/vehicle.inc"  scale(0.8))
@@ -9,29 +10,25 @@
 	{volume "shield"
 		{thickness 0.3}
 	}
-	{component "shield"	
+	{component "shield"
 		{RepairTime 20}
 	}
-	{Volume "Body"
-		{tags "body"}
-		{component "body"}
-		{thickness 4}
-	}
+	("vol_body_plate" name(Body) mm(4))
 	{extender "shield"
 		(mod "mp"
 			{on}
 		)
 	}
-	
+
 	("wheel" args "wheelright1")
 	("wheel" args "wheelleft1")
 	("wheel" args "wheelright2")
 	("wheel" args "wheelleft2")
-	
 
- 	("crew_human" place(driver) bone(driver) door(emit1) animation(driver))
+
+	("crew_human" place(driver) bone(driver) door(emit1) animation(driver))
 	("crew_human" place(commander) bone(commander) door(emit2) animation(commander))
- 	("crew_human" place(seat2) bone(seat02) door(emit4) animation(passenger1))
+	("crew_human" place(seat2) bone(seat02) door(emit4) animation(passenger1))
 	("crew_human" place(seat1) bone(seat01) door(emit3) animation(passenger2))
 
 
@@ -56,10 +53,10 @@
 
 	{extender "inventory"
 		{Box
-		{item  "ammo mg_mauser belt" 1000}
+			{item  "ammo mg_mauser belt" 1000}
 		}
 	}
-	{Weaponry	
+	{Weaponry
 		{place "mgun"
 			{type "mgun_main"}
 			{LinkBone "mgun"}
@@ -68,7 +65,7 @@
 			{charger "commander"}
 			{basic}
 		}
-	}  
+	}
 
 	{Extension "schwimmwagen.mdl"}
 
@@ -94,7 +91,7 @@
 		{waterline 0.7}
 		{switch
 			{terrain "water" "deep_water"}
-		}	
+		}
 	}
 	{mass 910}
 

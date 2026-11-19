@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-zelt-ss-smg"}
+	{portrait "ger_soldier7"}
+	{icon "smg"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{head waffen_helmet_pe}
+	}
+	{perks
+		("soldier_smg_6" rocket(1) body(hardy))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_mauzer")
+		{item "bandage" 3}
+		("frag_m24_x2")
+		("at_grenade_m24x5")
+		{item "small_shovel" 1}
+		("smoke_x2")
+		{in_hands 0}
+	}
+}

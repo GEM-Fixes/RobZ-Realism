@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "usa-101st-bar"}
 	{portrait "usa_elite1"}
@@ -8,48 +9,14 @@
 		{head helmet_usa_para}
 	}
 	{perks
-		{"health" "400%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "200%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.95
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 1
-		}
-		
-		{"pistol" lvl_6
-		}
-		{"smg" lvl_6
-		}
-		{"mgun" lvl_7
-		}
-		{"rifle" lvl_7
-		}
-		{"rocketlauncher" lvl_6
-		}
-		{"melee" lvl_6
-		}
+		("soldier_mgun_7" rocket(1) body(line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_elite")
-	}
+	("breed_vet" table(elite))
 	{inventory
-		{item "garand" filled}
-		{item "ammo garand_clip" 80}
+		("rifle_garand")
 		{item "ammo bar_mag" 240}
 		{item "bandage" 5}
-		{item "grenade m61" 2}
+		("give" item(grenade m61) count(2))
 		{item "sandbag_kit" 1}
 		{in_hands 0}
 	}

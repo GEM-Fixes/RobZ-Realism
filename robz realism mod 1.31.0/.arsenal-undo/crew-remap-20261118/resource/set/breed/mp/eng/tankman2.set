@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-tankcom"}
+	{portrait eng_tankman}
+	{icon tankman}
+	{icon_priority 1}
+	{nationality eng}
+	{armors
+		{head beret_eng1}
+	}
+	{perks
+		("body_crew_commander_bare")
+		("breed_drive" tank(1) vehicle(1) cannon(0.8))
+		("breed_skills" pistol(3) smg(3) mgun(3) rifle(2) rocket(1) melee(3))
+		{"tankgun" lvl_4}
+	}
+	("breed_vet" table(crew))
+	{inventory
+		("smg_sten_mk2")
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

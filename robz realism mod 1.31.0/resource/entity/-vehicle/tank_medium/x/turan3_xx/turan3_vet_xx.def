@@ -1,21 +1,4 @@
+; same as the other 1 def here; body in turan3_body.inc
 {game_entity
-	{Extension "turan3_xx.mdl"}
-	{Volume "body1"
-	}
-	{Volume "body2"
-	}
-	{Volume "body3"
-	}
-	{Volume "mantlet"
-	}
-	{Volume "part1"
-	}
-	{Volume "part2"
-	}
-	{Volume "trackright"
-	}
-	{Volume "turret1"
-	}
-	{Volume "turret2"
-	}
+	(include "turan3_body.inc")
 }

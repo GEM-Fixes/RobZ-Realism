@@ -1,0 +1,6 @@
+{from "breda_38" ;l3/35
+	{filling "ammo bredam38_belt" 48}
+	{reloadSound "breda30x2_reload"}
+                {rechargeTime 11}	
+	("recoveryTime" r(1100))
+}

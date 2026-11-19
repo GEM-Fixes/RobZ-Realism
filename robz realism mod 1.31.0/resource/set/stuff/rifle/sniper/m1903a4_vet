@@ -1,7 +1,7 @@
 {from "pattern sniper_rifle"
 	{special
 		{mode aim}
-		{PrepareTime 2.5}	
+		{PrepareTime 2.5}
 		{PrepareCursor "aimed_shot"}
 		{accuracy 2.5}
 		{throw_off}

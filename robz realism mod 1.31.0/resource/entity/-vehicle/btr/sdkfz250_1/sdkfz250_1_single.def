@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/armoredcar.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.0))
@@ -12,18 +13,14 @@
 		{on}
 	}
 	; --- Godny hitbox armor (ported from GodnyMod: sdkfz250_1.def) ---
-	{volume "sticky"
-		{tags "grenade_fg_target"}
-		{able clear {contact} {touch}}
-		{component "sticky_body"}
-	}
+	("vol_sticky_grenade_target" name(sticky))
 	{volume "body1"	;дно корпуса
 		{tags "body"}
 		{component "body"}
 		{able {holed}}
 		{thickness 8
 			{front	14.5}
-		;	{rear	8}
+			;	{rear	8}
 			{top	0.1}	;внутренняя стенка
 			{bottom	6}
 		}
@@ -34,7 +31,7 @@
 		{thickness 8
 			{front	14.5}
 			{rear	0.1}	;внутренняя стенка
-		;	{top	8}	;гласис
+			;	{top	8}	;гласис
 			{bottom	6}
 		}
 	}
@@ -43,7 +40,7 @@
 		{component "body"}
 		{able {holed}}
 		{thickness 8
-		;	{front	8}	;стенка мто
+			;	{front	8}	;стенка мто
 			{rear	0.1}	;внутренняя стенка
 			{top	6}
 			{bottom	6}
@@ -55,7 +52,7 @@
 		{able {holed}}
 		{thickness 8
 			{front	0.1}	;внутренняя стенка
-		;	{rear	8}
+			;	{rear	8}
 			{top	6}
 			{bottom	6}
 		}
@@ -75,10 +72,7 @@
 		{component "mgun_shield"}
 		{thickness 6}
 	}
-	{Volume "hole_bod"
-		{able clear {hole}}
-		{component "body"}
-	}
+	("vol_body_hole_only" name(hole_bod))
 	{volume "engine"
 		{thickness 10}
 	}
@@ -103,11 +97,7 @@
 	; --- end Godny hitbox armor ---
 	{component "sticky_body"}
 
-	{volume "body6"
-		{tags "body"}
-		{component "body"}
-		{thickness 15}
-	}
+	("vol_body_plate_lower" name(body6) mm(15))
 	{volume "engine1"
 		{tags "engine"}
 		{component "engine"}
@@ -184,7 +174,7 @@
 	}
 
 	{Extension "sdkfz250_1.mdl"}
-	
+
 	{bone "mgun_rot"
 		{limits -20 20}		;gun min right to max left
 	}

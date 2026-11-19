@@ -1,0 +1,28 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ita-para-smg"}
+	{portrait "ita_elite1"}
+	{icon "elite"}
+	{icon_priority 2}
+	{nationality ita}
+	{armors
+		{head helmet_ita_para}
+
+	}
+	{perks
+		("body_veteran")
+		("drive_t09_v10_c10")
+		("breed_skills" pistol(3) smg(7) mgun(4) rifle(7) rocket(3) melee(3))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("kit_smg" gun(mab_38a) ammo(mab_38a_mag) rounds(240))
+		{item "bandage" 4}
+		{item "breda35" 3}
+		{item "oto42flam" 2}
+		{item "ccm34smoke" 4}
+		{in_hands 0}
+
+
+	}
+}

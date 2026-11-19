@@ -24,7 +24,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{##+ sprite "$/smoke/smtanko"
 					{timer
 						{mode play }
@@ -125,7 +125,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smtanko"
 					{timer
 						{mode play }
@@ -214,7 +214,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{##+ sprite "$/smoke/smtanko"
 					{timer
 						{mode play }

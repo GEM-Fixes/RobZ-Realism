@@ -38,7 +38,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/flash_g03a"
 					{timer
 						{mode play }
@@ -88,7 +88,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace}
 				{sprite "$/flash/flashss2"
 					{timer

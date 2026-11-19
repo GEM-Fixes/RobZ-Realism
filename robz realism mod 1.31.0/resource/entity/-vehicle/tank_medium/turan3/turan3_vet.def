@@ -1,20 +1,12 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{props "medium" "turret_rotator" "vision_vehicle_medium" "muzzle_medium_sides"}
-	
-	{volume "body1"
-		{component "body"}
-		{tags "body"}
-	}
-	{volume "body2"
-		{component "body"}
-		{tags "body"}
-	}
-	{volume "body3"
-		{component "body"}
-		{tags "body"}
-	}
+
+	("vol_body_part_component_first" name(body1))
+	("vol_body_part_component_first" name(body2))
+	("vol_body_part_component_first" name(body3))
 	{volume "engine"
 		{component "engine"}
 		{tags "engine"}
@@ -40,13 +32,13 @@
 		{tags "kupola"}
 		{thickness 60}
 	}
-	
-        ("armor_medium" turret(50 30 30 10) body(80 30 20 22))
+
+	("armor_medium" turret(50 30 30 10) body(80 30 20 22))
 	("armor_engine"  t(30 30 20 22))
 	("armor_mantlet" t(50))
 
 	("shield" args 10)
-	
+
 	{extender "shield"
 		{on}
 	}
@@ -66,7 +58,7 @@
 	{extender "enumerator"
 		{digit_folder "ger"}
 	}
-	
+
 	{sensor
 		{visor "hullmg"
 			{bone "foresight4"}
@@ -87,10 +79,10 @@
 
 	{extender "inventory"
 		{box
-            	{item "ammo bullet75_hun ap" 50}
+			{item "ammo bullet75_hun ap" 50}
 			{item "ammo bullet75_hun fg" 27}
 			{item "ammo bullet75_hun apcr" 5}
-            		{item "ammo gabauer_belt" 1350}
+			{item "ammo gabauer_belt" 1350}
 
 		}
 	}
@@ -98,7 +90,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "75mm_43m_vet"  filling "ammo bullet75_hun ap" 1}	
+			{weapon "75mm_43m_vet"  filling "ammo bullet75_hun ap" 1}
 			("abm_veteran")
 		}
 		{place "mgun1"
@@ -114,39 +106,39 @@
 			{weapon "gebauer_optic" filled}
 			{foresight "foresight5"}
 			("abm_mgun")
-            			{basic}
+			{basic}
 		}
 	}
 	{mass 23500}
-        {Chassis
+	{Chassis
 		("tank_trace" fx("tracks_mid") step(0.52) len(0.21))
 		{Locomotion ("locomotion")
 			{MaxSpeed	 28}
 			{maxSpeedAtMaxTurn 4}
 			{StartTime	  45}
 			{TurnTime  	  19}
-    		{TurnStart  1.4} 
-    		{BrakeTime    1} 
-    		{StopTime     2} 
-    		{TurnRadius   8} 
-    		{TurnStop   0.8}
-     		{Gears  0.1 0.2 0.3 1}
-    		{RearGears 0.28}
+			{TurnStart  1.4}
+			{BrakeTime    1}
+			{StopTime     2}
+			{TurnRadius   8}
+			{TurnStop   0.8}
+			{Gears  0.1 0.2 0.3 1}
+			{RearGears 0.28}
 		}
 		{FuelBag
-			{volume 470 }	
-			{rate	36 }   
+			{volume 470 }
+			{rate	36 }
 			{remain 470 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  28}
-        	{Slow  28}
-    	}
+			{Normal  28}
+			{Slow  28}
+		}
 	}
 	{Extension "turan3_vet.mdl"}
 	{bone "turret"
-		{speed 0.0045} 
+		{speed 0.0045}
 	}
-	;("ger_4_sight")
+;("ger_4_sight")
 }

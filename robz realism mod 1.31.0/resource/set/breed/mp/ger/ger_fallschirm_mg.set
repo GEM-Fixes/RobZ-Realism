@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "ger-para-mgun"}
 	{portrait "ger_elite1"}
@@ -8,47 +9,13 @@
 		{head helmet_ger_m38_cover}
 	}
 	{perks
-		{"health" "400%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "200%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" mp_soldier
-		}
-		{"speed" 0.9
-		}
-		{"tank" 0.95
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 1
-		}
-		{"pistol" lvl_7
-		}
-		{"smg" lvl_7
-		}
-		{"mgun" lvl_7
-		}
-		{"rifle" lvl_7
-		}
-		{"rocketlauncher" lvl_7
-		}
-		{"melee" lvl_7
-		}
-		{"avoidance" lvl_1
-		}
+		("soldier_mgun_7" rocket(6) body(line) sight(soldier))
+		{"avoidance" lvl_1}
 		{"stealth"}
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_elite")
-	}
+	("breed_vet" table(elite))
 	{inventory
-		{item "mg42_inf_250" filled}
-		{item "ammo mg_mauser belt" 300}
+		("mgun_mg42_inf_250")
 		{item "bandage" 5}
 		{item "sandbag_kit"}
 		{item "barrel_case"}

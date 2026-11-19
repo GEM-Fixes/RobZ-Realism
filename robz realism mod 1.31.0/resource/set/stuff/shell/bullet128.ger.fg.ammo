@@ -6,7 +6,7 @@
 	("fg_medium" args 7.2)
 	("ger_he" args 1.4)
 	{mass 25}
-	
+
 	; anti-apc
 	{damage add blastwave
 		{energy 3.6}

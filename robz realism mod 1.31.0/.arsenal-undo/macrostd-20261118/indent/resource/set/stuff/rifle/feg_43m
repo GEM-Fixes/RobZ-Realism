@@ -1,0 +1,9 @@
+{from "pattern rifle"
+        {tag "autorifle"}
+	{filling "ammo 7x57" 5 30}
+	{entity "feg_43_m"}
+	{fireSound "rifle/mosin_shot/"}
+	{reloadSound "mosin_reload"}
+	{tag "bolt"}	; bolt-action cycling animation
+	{tag "bolt_r220"}	; bolt animation speed class (recoveryTime 2.20s)
+}

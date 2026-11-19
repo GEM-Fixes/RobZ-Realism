@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "rus_tankman_hp"}
 	{portrait "rus_tankman"}
@@ -8,50 +9,15 @@
 		{head tankhelmet_rus}
 	}
 	{perks
-		{"health" "400%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "200%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-        {"vision" "mp_officer"
-		}
-		{"speed" 1
-		}
-		{"tank"	1.15
-		}
-		{"vehicle" 1.15
-		}
-		{"cannon" 1.05
-		}
-		
-		{"pistol" lvl_3
-		}
-		{"smg" lvl_3
-		}
-		{"mgun" lvl_5
-		}
-		{"rifle" lvl_3
-		}
-		{"rocketlauncher" lvl_3
-		}
-		{"melee" lvl_3
-		}
-		{"tankgun" lvl_8
-		}
+		("crew_3" body(elite_line) sight(officer))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_tankcrew")
-	}
+	("breed_vet" table(crew))
 	{inventory
 		{item "ppsh41" filling "ammo ppsh41_mag" 35}
 		{item "ammo ppsh41_mag" 210}
 		{item "bandage" 5}
-		{item "grenade f1" 2}
-		{item "grenade rpg43" 1}
+		("give" item(grenade f1) count(2))
+		("give" item(grenade rpg43) count(1))
 		{in_hands 0}
 	}
 }

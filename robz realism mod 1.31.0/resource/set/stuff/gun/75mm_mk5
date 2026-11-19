@@ -4,14 +4,14 @@
 	{reloadSound "tankgun_r01"}
 	{rechargeTime 8}
 	("range_short")
-	
+
 	{range 190 190}
-	("speed_all" ap(619) apcr(619) fg(463) heat(619))
+	("speed_all" speed(619) apcr(619) fg(463) heat(619))
 	("caliber_medium")
 	{projectileDamage 94}
-	("damage_170" a(119) b(97) c(75) d(56) e(41) range(190))
+	("damage_170" at20(119) at100(97) at170(75) at215(56) at250(41) max(190))
 	{parameters "apcbc"
-		("damage_170" a(95) b(83) c(73) d(64) e(56) range(190))
+		("damage_170" at20(95) at100(83) at170(73) at215(64) at250(56) max(190))
 	}
 	{parameters "fg"
 		{range 170 170}

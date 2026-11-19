@@ -125,7 +125,7 @@
 			{stage "/texture/wound/concrete03.mtl" 0.75}
 		}
 	}
-	
+
 	{"wood"
 		{ricochet
 			{chance
@@ -188,9 +188,9 @@
 			{blast 1}
 		}
 	}
-	
+
 	{"flesh"		{physics {friction 1.0} {restitution 0.1}}}
-	{"sand"			
+	{"sand"
 		{physics {friction 7.0}	{restitution 0.1}}
 
 		{damage
@@ -227,7 +227,7 @@
 			{stage "/texture/wound/concrete03.mtl" 0.75}
 		}
 	}
-	{"ice"	
+	{"ice"
 		{ricochet
 			{chance
 				{0  1}
@@ -252,7 +252,7 @@
 		}
 		{physics {friction 0.5} {restitution 0.4}}
 	}
-	{"rock"     
+	{"rock"
 		{ricochet
 			{chance
 				{0	1}
@@ -265,8 +265,8 @@
 			}
 			{velocityDumping 0.4}
 			{gravityScale 1.2}
-		}   
- 		{physics {friction 1.0} {restitution 0.4}}
+		}
+		{physics {friction 1.0} {restitution 0.4}}
 	}
 	{"ground"
 		{ricochet
@@ -295,10 +295,10 @@
 			}
 			{velocityDumping 0.4}
 			{gravityScale 2}
-		}		
+		}
 		{physics {friction 3.0} {restitution 0.1}}
 	}
-	{"water" 
+	{"water"
 		{ricochet
 			{chance
 				{0  1}
@@ -321,7 +321,7 @@
 			}
 			{velocityDumping 0.2}
 			{gravityScale 3}
-		}       
+		}
 		{physics {friction 9.0} {restitution 0.0}}
 	}
 	{"underwater"   {physics {friction 9.0} {restitution 0.0}}}

@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-mgun"}
+	{portrait "usa_soldier2"}
+	{nationality usa}
+	{icon "mg2"}
+	{icon_priority 2}
+	{armors
+		{body mgun_ammo}
+		{head helmet_novice}
+	}
+	{perks
+		("body_regular")
+		("drive_regular")
+		("skills_2_2_3_3_1_3")
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("mgun_browning_m19a6")
+		{item "bandage" 3}
+		{item "sandbag_kit" 1}
+		{in_hands 0}
+	}
+}

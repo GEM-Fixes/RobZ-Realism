@@ -1,0 +1,258 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "turret_rotator" "vision_vehicle_high" "muzzle_large_sides" "m4a4_firefly"}
+
+	{extender "enumerator"}
+
+	; --- Godny hitbox armor (ported from GodnyMod: m4a4_firefly.def) ---
+	{volume "body1"	;нижн€€ часть корпуса
+		{component "body"}
+		{tags "body"}
+		{thickness 38.1
+			{front	50.8}	;трансмисси€
+			;	{rear	38.1}
+			{top	0.1}	;внутренн€€ стенка
+			{bottom	19.05}
+		}
+	}
+	{volume "body2"	;верхн€€ часть корпуса
+		{component "body"}
+		{tags "body"}
+		{able {holed}}
+		{thickness 38.1	;вертикальный борт
+			{front	50.8}
+			{rear	0.1}	;внутренн€€ стенка
+			{top	19.05}
+			{bottom	12.7}
+		}
+	}
+	{volume "body3"	;мто
+		{component "body"}
+		{tags "body"}
+		{thickness 38.1
+			{front	10}
+			;	{rear	38.1}
+			{top	19.05}
+			{bottom	12.7}
+		}
+	}
+	{volume "body4"	;нижн€€ задн€€ решетка мто
+		{component "body"}
+		{tags "body"}
+		{thickness 38.1
+			{front	0.1}	;внутренн€€ стенка
+			;	{rear	38.1}
+			{top	0.1}	;внутренн€€ стенка
+			{bottom	12.7}
+		}
+	}
+	{volume "body5"	;прилив правого люка
+		{component "body"}
+		{tags "body"}
+		{thickness 50.8
+			;	{front	50.8}
+			{rear	19.05}
+			{top	19.05}
+			{bottom	0.1}	;внутренн€€ стенка
+		}
+	}
+	{volume "body6"	;прилив левого люка
+		{component "body"}
+		{tags "body"}
+		{thickness 50.8
+			;	{front	50.8}
+			{rear	19.05}
+			{top	19.05}
+			{bottom	0.1}	;внутренн€€ стенка
+		}
+	}
+	{Volume "turret"
+		{tags "turret"}
+		{component "turret"}
+		{able {holed}}
+		{thickness 50.8
+			{front	76.2}
+			;	{rear	50.8}
+			{top	25.4}
+			{bottom	12.7}
+		}
+	}
+	{Volume "turret1"
+		{tags "turret"}
+		{component "turret"}
+		{able {holed}}
+		{thickness 38.1
+			;	{front	38.1}	;внутренн€€ стенка
+			{rear	0.1}	;внутренн€€ стенка
+			{top	25.4}
+			{bottom	12.7}
+		}
+	}
+	{Volume "hole_bod"
+		{able clear {hole}}
+		{component "body"}
+	}
+	{Volume "hole_bod1"
+		{able clear {hole}}
+		{component "body"}
+	}
+	{Volume "hole_bod2"
+		{able clear {hole}}
+		{component "body"}
+	}
+	{Volume "hole_man"
+		{able clear {hole}}
+		{component "turret"}
+	}
+	{Volume "mantlet"
+		{tags "gun"}
+		{component "gun"}
+		{thickness 89
+			;	{front	89}
+			{rear	15}	;орудие дает небольшую броню
+		}
+	}
+	{volume "engine"
+		{thickness 10}
+	}
+	{volume "zip1"
+		{component "zip1"}
+		{thickness 6
+			{front	0.1}	;внутренн€€ стенка
+		}
+	}
+	{volume "plate1"
+		{component "plate1"}
+		{thickness 25.4
+			{rear	12.7}
+		}
+	}
+	{volume "plate1"
+		{component "plate1"}
+		{thickness 25.4
+			{rear	12.7}
+		}
+	}
+	{volume "inventory2"	;права€ боеукладка
+		{thickness 0.1
+			{right	25}
+		}
+	}
+	; --- end Godny hitbox armor ---
+	{Volume "turret2"
+		{tags "turret"}
+		{component "turret"}
+	}
+	("armor_medium" turret(76 51 64 25) body(51 38 38 22) body2(51 38 38 22))
+	("armor_engine"  t(40 38 38 22))
+	("armor_mantlet" t(89))
+	("shield" args 10)
+	("eng_6x_sight")
+
+	{extender "shield"
+		{on}
+	}
+
+	{component "shieldl1" {tags "shield"}}
+	{component "shieldl2" {tags "shield"}}
+	{component "shieldr1" {tags "shield"}}
+	{component "shieldr2" {tags "shield"}}
+
+
+	("crew_4_human")
+
+	("gunner_visible")
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_Kv"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"} {end "pose_mgun_pz6"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_HighArmor"} {end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+
+
+	{extender "inventory"
+		{box
+			{item "ammo bullet76 eng apcbc" 45}
+			{item "ammo bullet76 eng fg" 32}
+			{item "ammo bullet76 eng apds" 4}
+			{item "ammo springfield_belt" 2500}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "76mm_mk4_vet" filling "ammo bullet76 eng apcbc" 1}
+			("abm_veteran")
+		}
+		{place "mgun2"
+			{type "mgun_coaxial"}
+			{weapon "browning_m19_optic" filled}
+			{foresight "foresight5"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	{Extension "m4a4_firefly.mdl"}
+
+	{mass 32500}
+	{Chassis
+		("tank_trace" fx("tracks_sm") step(0.3) len(0.6))
+		{Locomotion ("locomotion")
+			{maxspeed   32}
+			{maxSpeedAtMaxTurn 4.5}
+			{StartTime  28.9}
+			{TurnTime   16.2}
+			{TurnStart  1.6}
+			{TurnRadius 8}
+			{TurnStop   0.8}
+			{BrakeTime  1.5}
+			{StopTime   2.5}
+			{Gears   0.13 0.23 0.33 1}
+			{RearGears  0.27}
+		}
+		{FuelBag
+			{volume 660 }
+			{rate	35 }
+			{remain 660 }
+			{fuel "fuel"}
+		}
+		{speed
+			{Normal  32}
+			{Slow  32}
+		}
+	}
+	{bone "turret_mgun"
+		{limits -15 15}
+		{speed 0.03}
+		{terminator}
+	}
+	{bone "turret"
+		{speed 0.0042}
+	}
+	{bone "gun_rot"
+		{speed 0.0009}
+	}
+}
+

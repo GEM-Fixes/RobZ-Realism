@@ -5,7 +5,7 @@
 	{props "vehicle" "cannon" "wheeled" "flak" "barrel1" "turret" "turret_rotator" "round_sandbag4" "vision_cannon_high" "muzzle_large" "gun_mode_change"}
 	;{targetSelector "cannon_aa"}
 	{PatherID "cannon.large"}
-	
+
 	("armor_heavy")
 
 	{Volume "body1"
@@ -31,7 +31,7 @@
 	{Volume "turret"
 		{thickness 10}
 	}
-	{volume "shield_front"	
+	{volume "shield_front"
 		{thickness 15}
 	}
 	{Volume "gun"
@@ -64,7 +64,7 @@
 			{forward {end "pose_seat_cannon_right" 10}}
 		}
 	}
-	
+
 	{extender "inventory"
 		{box
 			{item "bullet90_ita ap" 20}
@@ -85,13 +85,13 @@
 			{Rotate}
 			("abm_howitzer")
 		}
-	}  	
+	}
 	{extender "cannon"
 		{animation
 			{aim "Cannon_flak41_gunlayer" ""}
 			{fire	"Cannon_flak41_gunlayer_fire-alert" "Cannon_flak41_gunlayer_fire-alert_1"}
 			{move "cannon_pak40_pusher_left" "cannon_pak40_pusher_right"}
-;			{reload  "" "cannon_flak41_charger"}
+			;			{reload  "" "cannon_flak41_charger"}
 			{switch "close"}
 		}
 		{move {obstacle "close"}}
@@ -105,7 +105,7 @@
 	}
 
 	{mass 7800}
-	
+
 	{bone "turret"
 		{speed 0.003}
 	}

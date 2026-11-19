@@ -23,7 +23,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/doski3"
 					{turn 1
 						{linear
@@ -62,7 +62,7 @@
 			{damping 0.9}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "/texture/fx/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }

@@ -7,7 +7,7 @@
 	{entity "ammo_mortar50_2inchhe"}
 	{view "ammo_mortar50_2inchhe"}
 	{detonationThickness 1}
-	
+
 	{damage blastwave
 		{energy 1.2}
 		{area 2 4.5}

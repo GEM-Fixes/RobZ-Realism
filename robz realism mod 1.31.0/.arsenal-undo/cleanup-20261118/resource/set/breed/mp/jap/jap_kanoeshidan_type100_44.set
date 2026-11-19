@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "jap_army_nco"}
+	{portrait "jap_soldier4"}
+	{nationality jap}
+	{icon "elite"}
+	{icon_priority 3}
+	{armors
+		{head "jap_army_helmet4"}
+	}
+	{perks
+		("soldier_smg_5" rocket(1) body(hardy))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("kit_smg" gun(type100_44) ammo(type100_mag) rounds(180))
+		{item "bandage" 5}
+		("frag_type97_x4")
+		("at_grenade_type3at_a_x2")
+		("mine_antipersonnel_x5")
+		("smoke_x1")
+		{item "knife_japan" 1}
+		{in_hands 0}
+	}
+}

@@ -5,14 +5,14 @@
 	{fireSound "rifle/m1carbine_shot"}
 	{reloadSound "m1carbine"}
 	{mass 16}
-	
+
 	{special
 		{mode aim}
-		{PrepareTime 0.8}	
+		{PrepareTime 0.8}
 		{PrepareCursor "aimed_shot"}
 		{accuracy 2.0}
 	}
-	
+
 	{burst
 		{short 3 0.5}
 		{Long 5 0.5}

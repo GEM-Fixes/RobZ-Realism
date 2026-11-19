@@ -1,164 +1,224 @@
 ;SDL
 ; Soldier types used by the 1941-1945 year lists that 1.30.10 does not define - from Robz realism mod 1.28.6
+; ap_miner: buy-card fields, {tags "ap_miner %side mine infantry man"} {cp} {score} {basic} {breed} {cw}
+;   side - text in {tags}
+;   e.g. ("ap_miner" side(eng))
 (define "ap_miner"
-    {tags   "ap_miner %side mine infantry man"}
-    {cp     1.0}
-    {score  1.00}
-    {basic}
-    {breed}
-    {cw 1.0}
+	{tags   "ap_miner %side mine infantry man"}
+	{cp     1.0}
+	{score  1.00}
+	{basic}
+	{breed}
+	{cw 1.0}
 )
+; at_miner: buy-card fields, {tags "at_miner %side mine infantry man"} {cp} {score} {basic} {breed} {cw}
+;   side - text in {tags}
+;   e.g. ("at_miner" side(eng))
 (define "at_miner"
-    {tags   "at_miner %side mine infantry man"}
-    {cp     1.0}
-    {score  1.00}
-    {basic}
-    {breed}
-    {cw 1.0}
+	{tags   "at_miner %side mine infantry man"}
+	{cp     1.0}
+	{score  1.00}
+	{basic}
+	{breed}
+	{cw 1.0}
 )
+; at_rifle: buy-card fields, {tags "at_rifle %side spec infantry man"} {cp} {score} {basic} {breed} {cw}
+;   side - text in {tags}
+;   e.g. ("at_rifle" side(eng))
 (define "at_rifle"
-    {tags   "at_rifle %side spec infantry man"}
-    {cp     1.0}
-    {score  1.50}
-    {basic}
-    {breed}
-    {cw 1.0}
+	{tags   "at_rifle %side spec infantry man"}
+	{cp     1.0}
+	{score  1.50}
+	{basic}
+	{breed}
+	{cw 1.0}
 )
+; vet_6: buy-card fields, {tags "vet_6 %side infantry man"} {cp} {score} {basic} {breed} {cw}
+;   side - text in {tags}
+;   e.g. ("vet_6" side(usa))
 (define "vet_6"
-    {tags   "vet_6 %side infantry man"}
-    {cp     1.50}
-    {score  1.50}
-    {basic}
-    {breed}
-    {cw 1.50}
+	{tags   "vet_6 %side infantry man"}
+	{cp     1.50}
+	{score  1.50}
+	{basic}
+	{breed}
+	{cw 1.50}
 )
+; vet_7: buy-card fields, {tags "vet_7 %side infantry man"} {cp} {score} {basic} {breed} {cw}
+;   side - text in {tags}
+;   e.g. ("vet_7" side(ger))
 (define "vet_7"
-    {tags   "vet_7 %side infantry man"}
-    {cp     1.75}
-    {score  1.75}
-    {basic}
-    {breed}
-    {cw 1.75}
+	{tags   "vet_7 %side infantry man"}
+	{cp     1.75}
+	{score  1.75}
+	{basic}
+	{breed}
+	{cw 1.75}
 )
+; flamer: buy-card fields, {tags "flamer %side spec infantry man"} {cp} {score} {basic} {breed} {cw}
+;   side - text in {tags}
+;   e.g. ("flamer" side(rus))
 (define "flamer"
-    {tags   "flamer %side spec infantry man"}
-    {cp     1.0}
-    {score  1.00}
-    {basic}
-    {breed}
-    {cw 1.0}
+	{tags   "flamer %side spec infantry man"}
+	{cp     1.0}
+	{score  1.00}
+	{basic}
+	{breed}
+	{cw 1.0}
 )
+; vet_3: buy-card fields, {tags "vet_3 %side infantry man"} {cp} {score} {basic} {breed} {cw}
+;   side - text in {tags}
+;   e.g. ("vet_3" side(jap))
 (define "vet_3"
-    {tags   "vet_3 %side infantry man"}
-    {cp     0.75}
-    {score  0.75}
-    {basic}
-    {breed}
-    {cw 0.75}
+	{tags   "vet_3 %side infantry man"}
+	{cp     0.75}
+	{score  0.75}
+	{basic}
+	{breed}
+	{cw 0.75}
 )
+; vet_5: buy-card fields, {tags "vet_5 %side infantry man"} {cp} {score} {basic} {breed} {cw}
+;   side - text in {tags}
+;   e.g. ("vet_5" side(ger))
 (define "vet_5"
-    {tags   "vet_5 %side infantry man"}
-    {cp     1.25}
-    {score  1.25}
-    {basic}
-    {breed}
-    {cw 1.25}
+	{tags   "vet_5 %side infantry man"}
+	{cp     1.25}
+	{score  1.25}
+	{basic}
+	{breed}
+	{cw 1.25}
 )
+; oficer: buy-card fields, {tags "oficer %side spec infantry man"} {cp} {score} {basic} {breed} {cw}
+;   side - text in {tags}
+;   e.g. ("oficer" side(eng))
 (define "oficer"
-    {tags   "oficer %side spec infantry man"}
-    {cp     -20.0}
-    {score  20.00}
-    {basic}
-    {breed}
-    {cw 10.0}
+	{tags   "oficer %side spec infantry man"}
+	{cp     -20.0}
+	{score  20.00}
+	{basic}
+	{breed}
+	{cw 10.0}
 )
+; saper: buy-card fields, {tags "saper %side mine infantry man"} {cp} {score} {basic} {breed} {cw}
+;   side - text in {tags}
+;   e.g. ("saper" side(eng))
 (define "saper"
-    {tags   "saper %side mine infantry man"}
-    {cp     1.0}
-    {score  1.00}
-    {basic}
-    {breed}
-    {cw 1.0}
+	{tags   "saper %side mine infantry man"}
+	{cp     1.0}
+	{score  1.00}
+	{basic}
+	{breed}
+	{cw 1.0}
 )
+; sniper: buy-card fields, {tags "sniper %side spec infantry man"} {cp} {score} {basic} {breed} {cw}
+;   side - text in {tags}
+;   e.g. ("sniper" side(ger_ss))
 (define "sniper"
-    {tags   "sniper %side spec infantry man"}
-    {cp     5.0}
-    {score  8.00}
-    {basic}
-    {breed}
-    {cw 2.0}
+	{tags   "sniper %side spec infantry man"}
+	{cp     5.0}
+	{score  8.00}
+	{basic}
+	{breed}
+	{cw 2.0}
 )
+; vet_4: buy-card fields, {tags "vet_4 %side infantry man"} {cp} {score} {basic} {breed} {cw}
+;   side - text in {tags}
+;   e.g. ("vet_4" side(ger))
 (define "vet_4"
-    {tags   "vet_4 %side infantry man"}
-    {cp     1.0}
-    {score  1.00}
-    {basic}
-    {breed}
-    {cw 1.00}
+	{tags   "vet_4 %side infantry man"}
+	{cp     1.0}
+	{score  1.00}
+	{basic}
+	{breed}
+	{cw 1.00}
 )
+; vehicle_supporter: buy-card fields, {tags "supporter %side infantry man"} {cp} {score} {basic} {breed} {cw}
+;   side - text in {tags}
+;   e.g. ("vehicle_supporter" side(eng))
 (define "vehicle_supporter"
-    {tags   "supporter %side infantry man"}
-    {cp     0.50}
-    {score  2.00}
-    {basic}
-    {breed}
-    {cw 0.25}
+	{tags   "supporter %side infantry man"}
+	{cp     0.50}
+	{score  2.00}
+	{basic}
+	{breed}
+	{cw 0.25}
 )
+; bazooker: buy-card fields, {tags "bazooker %side spec infantry man"} {cp} {score} {basic} {breed} {cw}
+;   side - text in {tags}
+;   e.g. ("bazooker" side(ger))
 (define "bazooker"
-    {tags   "bazooker %side spec infantry man"}
-    {cp     1.0}
-    {score  1.50}
-    {basic}
-    {breed}
-    {cw 1.0}
+	{tags   "bazooker %side spec infantry man"}
+	{cp     1.0}
+	{score  1.50}
+	{basic}
+	{breed}
+	{cw 1.0}
 )
+; radioman: buy-card fields, {tags "radioman %side spec infantry man"} {cp} {score} {basic} {breed} {cw}
+;   side - text in {tags}
+;   e.g. ("radioman" side(ger))
 (define "radioman"
-    {tags   "radioman %side spec infantry man"}
-    {cp     5.0}
-    {score  20.00}
-    {basic}
-    {breed}
-    {cw 1.0}
+	{tags   "radioman %side spec infantry man"}
+	{cp     5.0}
+	{score  20.00}
+	{basic}
+	{breed}
+	{cw 1.0}
 )
+; vet_2: buy-card fields, {tags "vet_2 %side infantry man"} {cp} {score} {basic} {breed} {cw}
+;   side - text in {tags}
+;   e.g. ("vet_2" side(ger_ss))
 (define "vet_2"
-    {tags   "vet_2 %side infantry man"}
-    {cp     0.50}
-    {score  0.50}
-    {basic}
-    {breed}
-    {cw 0.50}
+	{tags   "vet_2 %side infantry man"}
+	{cp     0.50}
+	{score  0.50}
+	{basic}
+	{breed}
+	{cw 0.50}
 )
+; vet_1: buy-card fields, {tags "vet_1 %side infantry man"} {cp} {score} {basic} {breed} {cw}
+;   side - text in {tags}
+;   e.g. ("vet_1" side(rus))
 (define "vet_1"
-    {tags   "vet_1 %side infantry man"}
-    {cp     0.25}
-    {score  0.25}
-    {basic}
-    {breed}
-    {cw 0.25}
+	{tags   "vet_1 %side infantry man"}
+	{cp     0.25}
+	{score  0.25}
+	{basic}
+	{breed}
+	{cw 0.25}
 )
+; kamikaze: buy-card fields, {tags "kamikaze %side spec infantry man"} {cp} {score} {basic} {breed} {cw}
+;   side - text in {tags}
+;   e.g. ("kamikaze" side(jap))
 (define "kamikaze"
-    {tags   "kamikaze %side spec infantry man"}
-    {cp     1.0}
-    {score  0.50}
-    {basic}
-    {breed}
-    {cw 0.25}
+	{tags   "kamikaze %side spec infantry man"}
+	{cp     1.0}
+	{score  0.50}
+	{basic}
+	{breed}
+	{cw 0.25}
 )
+; tankman2: buy-card fields, {tags "tankman %side crew man"} {cp} {score} {basic} {breed} {cw}
+;   side - text in {tags}
+;   e.g. ("tankman2" side(rus))
 (define "tankman2"
-    {tags   "tankman %side crew man"}
-    {cp     0.5}
-    {score  2.20}
-    {basic}
-    {breed}
-    {cw 0.5}
+	{tags   "tankman %side crew man"}
+	{cp     0.5}
+	{score  2.20}
+	{basic}
+	{breed}
+	{cw 0.5}
 )
+; shotgun: buy-card fields, {tags "smg %side infantry man"} {cp} {score} {basic} {breed} {cw}
+;   side - text in {tags}
+;   e.g. ("shotgun" side(usa))
 (define "shotgun"
-    {tags   "smg %side infantry man"}
-    {cp     1.5}
-    {score  1.50}
-    {basic}
-    {breed}
-    {cw 1.0}
+	{tags   "smg %side infantry man"}
+	{cp     1.5}
+	{score  1.50}
+	{basic}
+	{breed}
+	{cw 1.0}
 )
 {"mp/eng/ap_miner" ("ap_miner" side(eng))}
 {"mp/eng/at_miner" ("at_miner" side(eng))}

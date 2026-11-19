@@ -1,7 +1,7 @@
 {from "pattern grenade_ap"
 
-	
-		{tag "fg"}
+
+	{tag "fg"}
 	{special
 		{PrepareTime 4.5}
 		{PrepareCursor "grenade"}

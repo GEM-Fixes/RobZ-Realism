@@ -4,7 +4,7 @@
 	{entity "garand"}
 	{fireSound "rifle/m1_shot"}
 	{reloadSound "garand/m1"}
-	
+
 	{Automatic}
 	{recoveryTime 0.4}
 	{rechargeTime 10}

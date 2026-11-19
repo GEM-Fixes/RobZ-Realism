@@ -7,57 +7,24 @@ actor
 ("brain_vehicle")
 
 
-(define "accuracy_by_motion" ; 	spreading depending on the speed of "body", "gun" volumes
-	{AccuracyByMotion
-		{MaxLinearSpeed %max_linear}               ;km/h
-		{ByLinearSpeed %accuracy_by_linear}
-		{MaxAngularSpeed %max_angular}             ;deg/s
-		{ByAngularSpeed %accuracy_by_angular}
-		{DisorderTime %disorder_time}              ;s
-		{OrderTime %order_time}                    ;s
-	}
-)
-(define "abm_low"
-	("accuracy_by_motion"
-		max_linear(14) accuracy_by_linear(0.2)
-		max_angular(4) accuracy_by_angular(0.6)
-		disorder_time(1.2) order_time(2)
-	)
-)
-(define "abm_mgun"
+(include "/properties/robz/armor.inc")
+; abm_mgun_v2: calls "accuracy_by_motion"
+;   e.g. none (not called)
+(define "abm_mgun_v2"
 	("accuracy_by_motion"
 		max_linear(18) accuracy_by_linear(0.3)
 		max_angular(4) accuracy_by_angular(0.8)
 		disorder_time(1.2) order_time(2)
 	)
 )
-(define "abm_aa"
-    ("accuracy_by_motion"
-        max_linear(10) accuracy_by_linear(0.6)
-        max_angular(4) accuracy_by_angular(0.6)
-        disorder_time(0.5) order_time(0.9)
-    )
-)
-(define "abm_haa"
-    ("accuracy_by_motion"
-        max_linear(10) accuracy_by_linear(0.75)
-        max_angular(4) accuracy_by_angular(0.75)
-        disorder_time(1.6) order_time(1.5)
-    )
-)
-(define "abm_zenite"
-    ("accuracy_by_motion"
-        max_linear(10) accuracy_by_linear(0.5)
-        max_angular(4) accuracy_by_angular(0.8)
-        disorder_time(1.2) order_time(1.4)
-    )
-)
-(define "abm_medium"
-    ("accuracy_by_motion"
-        max_linear(21) accuracy_by_linear(0.5)
-        max_angular(4) accuracy_by_angular(0.65)
-        disorder_time(1.6) order_time(1.5)
-    )
+; abm_medium_v3: calls "accuracy_by_motion"
+;   e.g. none (not called)
+(define "abm_medium_v3"
+	("accuracy_by_motion"
+		max_linear(21) accuracy_by_linear(0.5)
+		max_angular(4) accuracy_by_angular(0.65)
+		disorder_time(1.6) order_time(1.5)
+	)
 )
 {hearingBias 4.5} ; in meters
 {collider "car"}
@@ -78,7 +45,7 @@ actor
 	{box
 		{Size 10 10}
 		{weight 10000}
-        {item "repair_kit"}
+		{item "repair_kit"}
 		{item "can" filling "fuel" 60}
 	}
 }
@@ -110,13 +77,16 @@ actor
 	{tags "explosive"}
 	{thickness 1}
 }
+; glass_volume: {volume {thickness} {tags}}
+;   %0 - {volume}, [?]
+;   e.g. none (not called)
 (define "glass_volume"
 	{volume %0
 		{thickness 0.1}
 		{tags "glass"}
 	}
-)	
-	
+)
+
 {component "body"
 	{RepairTime 25}
 	{tags "mover"}
@@ -142,7 +112,9 @@ actor
 	}
 }
 
-(define "locomotion"
+; locomotion_max_speed_at_max_turn: {MaxSpeed} {StartTime} {maxSpeedAtMaxTurn} {BrakeTime} {StopTime} {TurnRadius} +5 more
+;   e.g. ("locomotion_max_speed_at_max_turn")
+(define "locomotion_max_speed_at_max_turn"
 	{MaxSpeed	25	}		; максимальная скорость, kmph
 	{StartTime	24	}		; время разгона до макс. скорости с 0, seconds
 	{maxSpeedAtMaxTurn 15}
@@ -156,145 +128,175 @@ actor
 	{SplineRadius 1}		; ограничение радиуса поворота на сплайнах, метров
 )
 
-(define "armor_car"
+; armor_car_v2: {armor {setting}} {sensor {visor}}
+;   body_mm - {thickness}, mm, {value}, [?]
+;   k - {thickness}, mm, {value}, [?]
+;   bb - {thickness}, mm
+;   e.g. ("armor_car_v2" body_mm(15) k(%0) bb(0.5))
+(define "armor_car_v2"
 	{armor
 		{setting "body"
-			{thickness (* %b %k)}
+			{thickness (* %body_mm %k)}
 			{threshold
-				{blast 					
+				{blast
 					{value 5}
-				}								
-				{pierce 
+				}
+				{pierce
 					{value 3}
 				}
-			}						
-			;{durability 
-			;	{blast 					
+			}
+			;{durability
+			;	{blast
 			;		{value 1}
-			;	}			
+			;	}
 			;	{pierce
 			;		{value 20}
 			;	}
-			;}				
+			;}
 			{volumes "body*"}
 		}
 		{setting "body_back"
 			{thickness %bb}
 			{threshold
-				{blast 					
+				{blast
 					{value 5}
-				}								
-				{pierce 
+				}
+				{pierce
 					{value 1}
 				}
-			}						
-			{durability 
-				{blast 					
-					{value %b}
-				}			
+			}
+			{durability
+				{blast
+					{value %body_mm}
+				}
 				{pierce
 					{value 15}
 				}
-			}				
+			}
 			{volumes "bodyback*"}
 		}
 		{setting "engine"
-			{thickness (* 2.5 %b)}
-			{threshold								
-				{blast 					
+			{thickness (* 2.5 %body_mm)}
+			{threshold
+				{blast
 					{value 5}
 				}
-				{pierce 
+				{pierce
 					{value 3.5}
 				}
-			}						
-			{durability 		
-				{blast 					
-					{value %b}
-				}							
-				{pierce
-					{value (* 2.5 %b)}				
+			}
+			{durability
+				{blast
+					{value %body_mm}
 				}
-			}		
-			{whole_wound}		
+				{pierce
+					{value (* 2.5 %body_mm)}
+				}
+			}
+			{whole_wound}
 			{volumes "engine*"}
 		}
 		{setting "wheel"
 			{thickness 5}
 			{threshold
-				{blast 
+				{blast
 					{value 9}
-				}				
-				{pierce 
+				}
+				{pierce
 					{value 1}
 				}
-			}			
-			{durability 
-				{blast 
-					{value 10}
-				}				
-				{pierce 
+			}
+			{durability
+				{blast
 					{value 10}
 				}
-			}			
+				{pierce
+					{value 10}
+				}
+			}
 			{whole_wound}
 			{volumes "wheel*"}
 		}
 		{setting "cabin"
 			{thickness 3}
 			{threshold
-				{blast 
+				{blast
 					{value 1}
 				}
 			}
-			{durability 
-				{blast 					
-					{value (* %b %k)}
-				}			
-				{pierce					
-					{value (* %b 0.6)}
-				}			
+			{durability
+				{blast
+					{value (* %body_mm %k)}
+				}
+				{pierce
+					{value (* %body_mm 0.6)}
+				}
 			}
 			{volumes "cabin*"}
 		}
-			{setting "shields"
-				{thickness 5}
-				{threshold
-					{blast 					
-						{value 8}
-					}								
-					{pierce 
-						{value 7}
-					}
+		{setting "shields"
+			{thickness 5}
+			{threshold
+				{blast
+					{value 8}
 				}
-				{durability 
-					{blast 					
-						{value 17}
-					}			
-					{pierce
-						{value 22}
-					}
-				}				
-				{volumes "shield1*" "shiel2*" "shield3*"}
+				{pierce
+					{value 7}
+				}
 			}
+			{durability
+				{blast
+					{value 17}
+				}
+				{pierce
+					{value 22}
+				}
+			}
+			{volumes "shield1*" "shiel2*" "shield3*"}
 		}
-		{sensor
-			{visor "view-around"
-                {vision "moto_around"}
-				{bone "basis"}
-			}		
-			{visor "main"
-				{vision "vehicle_main"}
-			}		
+	}
+	{sensor
+		{visor "view-around"
+			{vision "moto_around"}
+			{bone "basis"}
 		}
+		{visor "main"
+			{vision "vehicle_main"}
+		}
+	}
 )
 
+; armor_light: calls "armor_car"
+;   %0 - k() of "armor_car"
+;   e.g. ("armor_light" args 0.5)
 (define "armor_light"
 	("armor_car" b(10) k(%0) bb(0.5))
 )
-(define "armor_medium"
-	("armor_car" b(15) k(%0) bb(0.5))
+; armor_medium_car_v2: calls "armor_car_v2"
+;   %0 - {thickness}, mm via "armor_car_v2", {value}, [?] via "armor_car_v2"
+;   e.g. ("armor_medium_car_v2" args 1.0)
+(define "armor_medium_car_v2"
+	("armor_car_v2" body_mm(15) k(%0) bb(0.5))
 )
+; armor_fuel: calls "armor_car"
+;   %0 - k() of "armor_car"
+;   e.g. none (not called)
 (define "armor_fuel"
 	("armor_car" b(10) k(%0) bb(6))
 )
+
+; ---- unused macros (macrostd): defined, never called ----
+; (define "abm_aa"
+; 	("accuracy_by_motion"
+; 		max_linear(10) accuracy_by_linear(0.6)
+; 		max_angular(4) accuracy_by_angular(0.6)
+; 		disorder_time(0.5) order_time(0.9)
+; 	)
+; )
+; (define "abm_haa"
+; 	("accuracy_by_motion"
+; 		max_linear(10) accuracy_by_linear(0.75)
+; 		max_angular(4) accuracy_by_angular(0.75)
+; 		disorder_time(1.6) order_time(1.5)
+; 	)
+; )

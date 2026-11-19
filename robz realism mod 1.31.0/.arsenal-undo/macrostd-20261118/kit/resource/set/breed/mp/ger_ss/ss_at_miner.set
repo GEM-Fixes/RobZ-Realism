@@ -1,0 +1,37 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-pioneer"}
+	{portrait ger_soldier2}
+	{icon at_miner}
+	{icon_priority 3}
+	{nationality ger}
+	{armors
+		{head waffen_helmet_camo}
+	}
+	{perks
+		("breed_body" health(150%) regen_health(100%) stamina(100%) regen_stamina(100%) vision(mp_soldier) speed(0.9))
+		("breed_drive" tank(0.75) vehicle(1) cannon(0.8))
+		("breed_skills" pistol(4) smg(4) mgun(2) rifle(3) rocket(2) melee(4))
+	}
+	{veterancy
+		{"lvl_1" 2
+		}
+		{"lvl_2" 5
+		}
+		{"lvl_3" 9
+		}
+		{"lvl_4" 14
+		}
+		{"lvl_5" 20
+		}
+	}
+	{inventory
+		{item "mp40" filled}
+		{item "ammo mp40_mag" 192}
+		{item "mine antitank" 7}
+		{item "hohlladung grenade"}
+		{item "hedgehog_kit"}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

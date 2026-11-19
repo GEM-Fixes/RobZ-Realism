@@ -3,8 +3,8 @@
 	{props "vehicle" "cannon" "cannon_small" "flak" "barrel1" "wheeled" "with_gun" "vision_cannon_low" "round_sandbag2" "muzzle_zenite" "turret" "turret_rotator"}
 	{collider "cannon_small"}
 	;{targetSelector "cannon_aa"}
-	
-	("wheel" args "wheelright")	
+
+	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
 
 	("armor_light")
@@ -17,7 +17,7 @@
 		{place "gunner" {UseVision 0}}
 		{place "commander" remove}
 	}
-	
+
 	{boarder
 		{anm "gunner"
 			{forward	{end "pose_oerlikon_charger" 10}}
@@ -26,19 +26,19 @@
 			{forward	{end "cannon_pak40_pusher_left" 10}}
 		}
 		{anm "seat1"
-;			{forward 	{end "seat_driver_car" 10}}
+			;			{forward 	{end "seat_driver_car" 10}}
 			{forward 	{end "cannon_pak40_pusher_left" 10}}
 		}
 		{link "driver1" "gunner"}
 		{link "seat1" "driver1"}
 		{link "seat1" "gunner"}
 	}
-	
+
 	{mass 307}
-	
+
 	{Extension "20_mm_breda_1935.mdl"}
 	(include "/properties/selection/vehicle.inc"  scale(0.7))
-	
+
 	{extender "cannon"
 		{animation
 			{move "cannon_pak40_pusher_left"}

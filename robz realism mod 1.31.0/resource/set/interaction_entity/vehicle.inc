@@ -22,6 +22,10 @@
 		}
 	}
 }
+; gun_mode_reloadtimer: {on {tags} {delay}} x2
+;   gun_reload - {delay}, s
+;   gun1_2_reload - {delay}, s
+;   e.g. ("gun_mode_reloadtimer" gun_reload(90) gun1_2_reload(60))
 (define "gun_mode_reloadtimer"
 	{on fire "gun"
 		{tags add "gun_reloading"}
@@ -36,68 +40,73 @@
 		}
 	}
 )
+; com_mode: {on "commander_hatch" {if}} {on {if}}
+;   mgun - name of {weapon_work}
+;   anm - name of {ani_wind}
+;   e.g. ("com_mode" anm(pose_mgun_pz6) mgun(mgun))
 (define "com_mode"
 	{on "commander_hatch"
-	{if tagged "com_mode"
-		{if tagged "hatch_mode_up"
-			{tags remove "hatch_mode_up"}
-			{tags add "hatch_mode_down"}
-			{damage_report "hatch" "component/hatch_mode_down"}
-			{if not tagged "commander_down"
-				{tags add "commander_down"}
-				{ani_play "open" -1 resume}
-				{with_linked_entity "gunner2" {ani_play "into_hatch_common"}}
-				{weapon_work "%mgun" 0}
-			}
-		else tagged "hatch_mode_down"
-			{tags remove "hatch_mode_down"}
-			{damage_report "hatch" "component/hatch_mode_active"}
-			{if tagged "commander_down"
-				{tags remove "commander_down"}
-				{ani_play "open" +1 resume}
-				{with_linked_entity "gunner2" {ani_play "into_hatch_common" -1}}
-				{delay 1.2
-					{if not tagged "commander_down"
-						{with_linked_entity "gunner2" {ani_wind "%anm" end}}
-						{weapon_work "%mgun" 1}
+		{if tagged "com_mode"
+			{if tagged "hatch_mode_up"
+				{tags remove "hatch_mode_up"}
+				{tags add "hatch_mode_down"}
+				{damage_report "hatch" "component/hatch_mode_down"}
+				{if not tagged "commander_down"
+					{tags add "commander_down"}
+					{ani_play "open" -1 resume}
+					{with_linked_entity "gunner2" {ani_play "into_hatch_common"}}
+					{weapon_work "%mgun" 0}
+				}
+				else tagged "hatch_mode_down"
+				{tags remove "hatch_mode_down"}
+				{damage_report "hatch" "component/hatch_mode_active"}
+				{if tagged "commander_down"
+					{tags remove "commander_down"}
+					{ani_play "open" +1 resume}
+					{with_linked_entity "gunner2" {ani_play "into_hatch_common" -1}}
+					{delay 1.2
+						{if not tagged "commander_down"
+							{with_linked_entity "gunner2" {ani_wind "%anm" end}}
+							{weapon_work "%mgun" 1}
+						}
 					}
 				}
-			}
-		else
-			{tags add "hatch_mode_up"}
-			{damage_report "hatch" "component/hatch_mode_up"}
-			{if tagged "commander_down"
-				{tags remove "commander_down"}
-				{with_linked_entity "gunner2" {ani_play "into_hatch_common" -1}}
-				{delay 1.2
-					{if not tagged "commander_down"
-						{with_linked_entity "gunner2" {ani_wind "%anm" end}}
-						{weapon_work "%mgun" 1}
+				else
+				{tags add "hatch_mode_up"}
+				{damage_report "hatch" "component/hatch_mode_up"}
+				{if tagged "commander_down"
+					{tags remove "commander_down"}
+					{with_linked_entity "gunner2" {ani_play "into_hatch_common" -1}}
+					{delay 1.2
+						{if not tagged "commander_down"
+							{with_linked_entity "gunner2" {ani_wind "%anm" end}}
+							{weapon_work "%mgun" 1}
+						}
 					}
 				}
 			}
 		}
 	}
-	}
 	{on bullet_hit
-	{if tagged "com_mode"
-		{if rand 0.8
-			{if not tagged "hatch_mode_up"
-				{if not tagged "hatch_mode_down"
-					{if not tagged "commander_down"
-						{tags add "commander_down"}
-						{with_linked_entity "gunner2" {ani_play "into_hatch_common"}}
-						{weapon_work "%mgun" 0}
-						{delay 1{weapon_work "%mgun" 0}}
-						{delay 10
-							{if not tagged "hatch_mode_down"
-								{if tagged "commander_down"
-									{tags remove "commander_down"}
-									{with_linked_entity "gunner2" {ani_play "into_hatch_common" -1}}
-									{delay 1.2
-										{if not tagged "commander_down"
-											{weapon_work "%mgun" 1}
-											{with_linked_entity "gunner2" {ani_wind "%anm" end}}
+		{if tagged "com_mode"
+			{if rand 0.8
+				{if not tagged "hatch_mode_up"
+					{if not tagged "hatch_mode_down"
+						{if not tagged "commander_down"
+							{tags add "commander_down"}
+							{with_linked_entity "gunner2" {ani_play "into_hatch_common"}}
+							{weapon_work "%mgun" 0}
+							{delay 1{weapon_work "%mgun" 0}}
+							{delay 10
+								{if not tagged "hatch_mode_down"
+									{if tagged "commander_down"
+										{tags remove "commander_down"}
+										{with_linked_entity "gunner2" {ani_play "into_hatch_common" -1}}
+										{delay 1.2
+											{if not tagged "commander_down"
+												{weapon_work "%mgun" 1}
+												{with_linked_entity "gunner2" {ani_wind "%anm" end}}
+											}
 										}
 									}
 								}
@@ -108,8 +117,9 @@
 			}
 		}
 	}
-	}
 )
+; smoke_launcher_3_sides: {on "smoke_launcher" {damage_report} {if}}
+;   e.g. ("smoke_launcher_3_sides")
 (define "smoke_launcher_3_sides"
 	{on "smoke_launcher"
 		;{spawn "smoke_launch_right1" "smoke_launcher_right" x}
@@ -131,198 +141,208 @@
 		{damage_report "smoke_launcher" "Smoke launched"}
 		{if tagged "smoke6_launched"
 			{damage_report "smoke_launcher" "Smoke grenades empty"}
-		else tagged "smoke5_launched"
+			else tagged "smoke5_launched"
 			{tags add "smoke6_launched"}
 			{tags remove "smoke5_launched"}
 			{spawn "smoke_launch_left3" "smoke_launcher_left" x}
-		else tagged "smoke4_launched"
+			else tagged "smoke4_launched"
 			{tags add "smoke5_launched"}
 			{tags remove "smoke4_launched"}
 			{spawn "smoke_launch_right3" "smoke_launcher_right" x}
-		else tagged "smoke3_launched"
+			else tagged "smoke3_launched"
 			{tags add "smoke4_launched"}
 			{tags remove "smoke3_launched"}
 			{spawn "smoke_launch_left2" "smoke_launcher_left" x}
-		else tagged "smoke2_launched"
+			else tagged "smoke2_launched"
 			{tags add "smoke3_launched"}
 			{tags remove "smoke2_launched"}
 			{spawn "smoke_launch_right2" "smoke_launcher_right" x}
-		else tagged "smoke1_launched"
+			else tagged "smoke1_launched"
 			{tags add "smoke2_launched"}
 			{tags remove "smoke1_launched"}
 			{spawn "smoke_launch_left1" "smoke_launcher_left" x}
-		else
+			else
 			{tags add "smoke1_launched"}
 			{spawn "smoke_launch_right1" "smoke_launcher_right" x}
 		}
 	}
 )
+; smoke_launch_center: {if {spawn}}
+;   e.g. ("smoke_launch_center")
 (define "smoke_launch_center"
 	{if rand 0.33
 		{spawn "smoke_launch_ger_turret" "turret" x}
-	else rand 0.33
+		else rand 0.33
 		{spawn "smoke_launch_ger_turret1" "turret" x}
-	else
+		else
 		{spawn "smoke_launch_ger_turret2" "turret" x}
 	}
 )
+; smoke_launch_center_hull: {if {spawn}}
+;   e.g. ("smoke_launch_center_hull")
 (define "smoke_launch_center_hull"
 	{if rand 0.33
 		{spawn "smoke_launch_ger_hull" "body" x}
-	else rand 0.33
+		else rand 0.33
 		{spawn "smoke_launch_ger_hull1" "body" x}
-	else
+		else
 		{spawn "smoke_launch_ger_hull2" "body" x}
 	}
 )
+; smoke_launcher_ger_turret: {on "smoke_launcher" {if}}
+;   e.g. ("smoke_launcher_ger_turret")
 (define "smoke_launcher_ger_turret"
 	{on "smoke_launcher"
-	  {if tagged "smoke_reloading"
-		{damage_report "smoke_launcher" "Smoke reloading..."}
-	  else
-		{damage_report "smoke_launcher" "Smoke launched"}
-		{if not tagged "smoke10_launched"
-			("smoke_launch_center")
-			{tags add "smoke_reloading"}
-			{delay 3.5
-				{tags remove "smoke_reloading"}
+		{if tagged "smoke_reloading"
+			{damage_report "smoke_launcher" "Smoke reloading..."}
+			else
+			{damage_report "smoke_launcher" "Smoke launched"}
+			{if not tagged "smoke10_launched"
+				("smoke_launch_center")
+				{tags add "smoke_reloading"}
+				{delay 3.5
+					{tags remove "smoke_reloading"}
+				}
+			}
+			{if tagged "smoke10_launched"
+				{damage_report "smoke_launcher" "Smoke grenades empty"}
+				else tagged "smoke9_launched"
+				{tags add "smoke10_launched"}
+				{tags remove "smoke9_launched"}
+				else tagged "smoke8_launched"
+				{tags add "smoke9_launched"}
+				{tags remove "smoke8_launched"}
+				else tagged "smoke7_launched"
+				{tags add "smoke8_launched"}
+				{tags remove "smoke7_launched"}
+				else tagged "smoke6_launched"
+				{tags add "smoke7_launched"}
+				{tags remove "smoke6_launched"}
+				else tagged "smoke5_launched"
+				{tags add "smoke6_launched"}
+				{tags remove "smoke5_launched"}
+				else tagged "smoke4_launched"
+				{tags add "smoke5_launched"}
+				{tags remove "smoke4_launched"}
+				else tagged "smoke3_launched"
+				{tags add "smoke4_launched"}
+				{tags remove "smoke3_launched"}
+				else tagged "smoke2_launched"
+				{tags add "smoke3_launched"}
+				{tags remove "smoke2_launched"}
+				else tagged "smoke1_launched"
+				{tags add "smoke2_launched"}
+				{tags remove "smoke1_launched"}
+				else
+				{tags add "smoke1_launched"}
 			}
 		}
-		{if tagged "smoke10_launched"
-			{damage_report "smoke_launcher" "Smoke grenades empty"}
-		else tagged "smoke9_launched"
-			{tags add "smoke10_launched"}
-			{tags remove "smoke9_launched"}
-		else tagged "smoke8_launched"
-			{tags add "smoke9_launched"}
-			{tags remove "smoke8_launched"}
-		else tagged "smoke7_launched"
-			{tags add "smoke8_launched"}
-			{tags remove "smoke7_launched"}
-		else tagged "smoke6_launched"
-			{tags add "smoke7_launched"}
-			{tags remove "smoke6_launched"}
-		else tagged "smoke5_launched"
-			{tags add "smoke6_launched"}
-			{tags remove "smoke5_launched"}
-		else tagged "smoke4_launched"
-			{tags add "smoke5_launched"}
-			{tags remove "smoke4_launched"}
-		else tagged "smoke3_launched"
-			{tags add "smoke4_launched"}
-			{tags remove "smoke3_launched"}
-		else tagged "smoke2_launched"
-			{tags add "smoke3_launched"}
-			{tags remove "smoke2_launched"}
-		else tagged "smoke1_launched"
-			{tags add "smoke2_launched"}
-			{tags remove "smoke1_launched"}
-		else
-			{tags add "smoke1_launched"}
-		}
-	  }
 	}
 )
+; smoke_launcher_ger_hull: {on "smoke_launcher" {if}}
+;   e.g. ("smoke_launcher_ger_hull")
 (define "smoke_launcher_ger_hull"
 	{on "smoke_launcher"
-	  {if tagged "smoke_reloading"
-		{damage_report "smoke_launcher" "Smoke reloading..."}
-	  else
-		{damage_report "smoke_launcher" "Smoke launched"}
-		{if not tagged "smoke10_launched"
-			("smoke_launch_center_hull")
-			{tags add "smoke_reloading"}
-			{delay 3.5
-				{tags remove "smoke_reloading"}
+		{if tagged "smoke_reloading"
+			{damage_report "smoke_launcher" "Smoke reloading..."}
+			else
+			{damage_report "smoke_launcher" "Smoke launched"}
+			{if not tagged "smoke10_launched"
+				("smoke_launch_center_hull")
+				{tags add "smoke_reloading"}
+				{delay 3.5
+					{tags remove "smoke_reloading"}
+				}
+			}
+			{if tagged "smoke10_launched"
+				{damage_report "smoke_launcher" "Smoke grenades empty"}
+				else tagged "smoke9_launched"
+				{tags add "smoke10_launched"}
+				{tags remove "smoke9_launched"}
+				else tagged "smoke8_launched"
+				{tags add "smoke9_launched"}
+				{tags remove "smoke8_launched"}
+				else tagged "smoke7_launched"
+				{tags add "smoke8_launched"}
+				{tags remove "smoke7_launched"}
+				else tagged "smoke6_launched"
+				{tags add "smoke7_launched"}
+				{tags remove "smoke6_launched"}
+				else tagged "smoke5_launched"
+				{tags add "smoke6_launched"}
+				{tags remove "smoke5_launched"}
+				else tagged "smoke4_launched"
+				{tags add "smoke5_launched"}
+				{tags remove "smoke4_launched"}
+				else tagged "smoke3_launched"
+				{tags add "smoke4_launched"}
+				{tags remove "smoke3_launched"}
+				else tagged "smoke2_launched"
+				{tags add "smoke3_launched"}
+				{tags remove "smoke2_launched"}
+				else tagged "smoke1_launched"
+				{tags add "smoke2_launched"}
+				{tags remove "smoke1_launched"}
+				else
+				{tags add "smoke1_launched"}
 			}
 		}
-		{if tagged "smoke10_launched"
-			{damage_report "smoke_launcher" "Smoke grenades empty"}
-		else tagged "smoke9_launched"
-			{tags add "smoke10_launched"}
-			{tags remove "smoke9_launched"}
-		else tagged "smoke8_launched"
-			{tags add "smoke9_launched"}
-			{tags remove "smoke8_launched"}
-		else tagged "smoke7_launched"
-			{tags add "smoke8_launched"}
-			{tags remove "smoke7_launched"}
-		else tagged "smoke6_launched"
-			{tags add "smoke7_launched"}
-			{tags remove "smoke6_launched"}
-		else tagged "smoke5_launched"
-			{tags add "smoke6_launched"}
-			{tags remove "smoke5_launched"}
-		else tagged "smoke4_launched"
-			{tags add "smoke5_launched"}
-			{tags remove "smoke4_launched"}
-		else tagged "smoke3_launched"
-			{tags add "smoke4_launched"}
-			{tags remove "smoke3_launched"}
-		else tagged "smoke2_launched"
-			{tags add "smoke3_launched"}
-			{tags remove "smoke2_launched"}
-		else tagged "smoke1_launched"
-			{tags add "smoke2_launched"}
-			{tags remove "smoke1_launched"}
-		else
-			{tags add "smoke1_launched"}
-		}
-	  }
 	}
 )
+; smoke_launcher_usa_turret: {on "smoke_launcher" {if}}
+;   e.g. ("smoke_launcher_usa_turret")
 (define "smoke_launcher_usa_turret"
 	{on "smoke_launcher"
-	  {if tagged "smoke_reloading"
-		{damage_report "smoke_launcher" "Smoke reloading..."}
-	  else
-		{damage_report "smoke_launcher" "Smoke launched"}
-		{if not tagged "smoke12_launched"
-			{spawn "smoke_launch_usa_turret" "turret" x}
-			{tags add "smoke_reloading"}
-			{delay 3
-				{tags remove "smoke_reloading"}
+		{if tagged "smoke_reloading"
+			{damage_report "smoke_launcher" "Smoke reloading..."}
+			else
+			{damage_report "smoke_launcher" "Smoke launched"}
+			{if not tagged "smoke12_launched"
+				{spawn "smoke_launch_usa_turret" "turret" x}
+				{tags add "smoke_reloading"}
+				{delay 3
+					{tags remove "smoke_reloading"}
+				}
+			}
+			{if tagged "smoke12_launched"
+				{damage_report "smoke_launcher" "Smoke grenades empty"}
+				else tagged "smoke11_launched"
+				{tags add "smoke12_launched"}
+				{tags remove "smoke11_launched"}
+				else tagged "smoke10_launched"
+				{tags add "smoke11_launched"}
+				{tags remove "smoke10_launched"}
+				else tagged "smoke9_launched"
+				{tags add "smoke10_launched"}
+				{tags remove "smoke9_launched"}
+				else tagged "smoke8_launched"
+				{tags add "smoke9_launched"}
+				{tags remove "smoke8_launched"}
+				else tagged "smoke7_launched"
+				{tags add "smoke8_launched"}
+				{tags remove "smoke7_launched"}
+				else tagged "smoke6_launched"
+				{tags add "smoke7_launched"}
+				{tags remove "smoke6_launched"}
+				else tagged "smoke5_launched"
+				{tags add "smoke6_launched"}
+				{tags remove "smoke5_launched"}
+				else tagged "smoke4_launched"
+				{tags add "smoke5_launched"}
+				{tags remove "smoke4_launched"}
+				else tagged "smoke3_launched"
+				{tags add "smoke4_launched"}
+				{tags remove "smoke3_launched"}
+				else tagged "smoke2_launched"
+				{tags add "smoke3_launched"}
+				{tags remove "smoke2_launched"}
+				else tagged "smoke1_launched"
+				{tags add "smoke2_launched"}
+				{tags remove "smoke1_launched"}
+				else
+				{tags add "smoke1_launched"}
 			}
 		}
-		{if tagged "smoke12_launched"
-			{damage_report "smoke_launcher" "Smoke grenades empty"}
-		else tagged "smoke11_launched"
-			{tags add "smoke12_launched"}
-			{tags remove "smoke11_launched"}
-		else tagged "smoke10_launched"
-			{tags add "smoke11_launched"}
-			{tags remove "smoke10_launched"}
-		else tagged "smoke9_launched"
-			{tags add "smoke10_launched"}
-			{tags remove "smoke9_launched"}
-		else tagged "smoke8_launched"
-			{tags add "smoke9_launched"}
-			{tags remove "smoke8_launched"}
-		else tagged "smoke7_launched"
-			{tags add "smoke8_launched"}
-			{tags remove "smoke7_launched"}
-		else tagged "smoke6_launched"
-			{tags add "smoke7_launched"}
-			{tags remove "smoke6_launched"}
-		else tagged "smoke5_launched"
-			{tags add "smoke6_launched"}
-			{tags remove "smoke5_launched"}
-		else tagged "smoke4_launched"
-			{tags add "smoke5_launched"}
-			{tags remove "smoke4_launched"}
-		else tagged "smoke3_launched"
-			{tags add "smoke4_launched"}
-			{tags remove "smoke3_launched"}
-		else tagged "smoke2_launched"
-			{tags add "smoke3_launched"}
-			{tags remove "smoke2_launched"}
-		else tagged "smoke1_launched"
-			{tags add "smoke2_launched"}
-			{tags remove "smoke1_launched"}
-		else
-			{tags add "smoke1_launched"}
-		}
-	  }
 	}
 )
 {"vehicle"
@@ -330,7 +350,7 @@
 	{on spawn
 		{add_view	"stop_signal"	"stop_signal"	"FXstop1"}
 		{add_view	"stop_signal"	"stop_signal"	"FXstop2"}
-		
+
 		{add_view 	"light_plafond_dim"		"redlight"			"FXlight1"}
 		{add_view 	"light_plafond_dim"		"redlight"			"FXlight2"}
 
@@ -341,7 +361,7 @@
 		{if tagged "diesel_exhaust"
 			{add_view	"exhaust_dark_big_startup_diesel"	"exhaust_start"	"FXsmoke1"}
 			{add_view	"exhaust_dark_big_startup_diesel"	"exhaust_start"	"FXsmoke2"}
-		else
+			else
 			{add_view	"exhaust_dark_big_startup"	"exhaust_start"	"FXsmoke1"}
 			{add_view	"exhaust_dark_big_startup"	"exhaust_start"	"FXsmoke2"}
 		}
@@ -357,13 +377,13 @@
 		{set "burn_fire" 0}
 		{set "engine_on" 1}
 		{delay 0.1
-		(mod "mp"
-			{if operatable
-				{play_sound "idle" 1}
-				{view start "exhaust2"}
-				{set "engine_running" 1}
-			}
-		)
+			(mod "mp"
+				{if operatable
+					{play_sound "idle" 1}
+					{view start "exhaust2"}
+					{set "engine_running" 1}
+				}
+			)
 		}
 	}
 	{on "init_gun"
@@ -372,7 +392,7 @@
 		{add_view	"flash_gun_big"		"flashbarrel5"	"Foresight5"}
 		{add_view	"flash_gun_big"		"flashbarrel6"	"Foresight6"}
 	}
-	
+
 	{on "stop_on"
 		{ani_stop "start"}
 		{ani_play "stop"}
@@ -391,7 +411,7 @@
 		{view pause "exhaust"}
 		{view start "exhaust2"}
 	}
-	
+
 	{on turn on
 		{call "stop_on"}
 		{play_sound "exhaust"}
@@ -408,153 +428,153 @@
 	{on "gun_mode"
 		{if tagged "gun_mode_unit"
 			{if work "gun"
-			    {if not tagged "gun_reloading"
-				{weapon_work "gun" 0}
-				{weapon_work "gun1_2" 0}
-				{if "gun_mode"
-					{damage_report "gun_mode" "Gun changing to direct-fire mode.."}
-					{set "gun_mode" 0}
-				else
-					{damage_report "gun_mode" "Gun changing to indirect-fire mode.."}
-					{set "gun_mode" 1}
-				}
-				{if not tagged "gun_changing"
-					{tags add "gun_changing"}
-					{damage_report "gun_changing" "5 secounds, weapon disabled"}
-					{delay 5
-						{tags remove "gun_changing"}
-						{if work "gun"
-							{if "gun_mode"
-								{damage_report "gun_mode" "Gun changed to indirect-fire mode"}
-								{weapon_work "gun" 0}
-								{weapon_work "gun1_2" 1}
-							else
-								{damage_report "gun_mode" "Gun changed to direct-fire mode"}
-								{weapon_work "gun" 1}
-								{weapon_work "gun1_2" 0}
+				{if not tagged "gun_reloading"
+					{weapon_work "gun" 0}
+					{weapon_work "gun1_2" 0}
+					{if "gun_mode"
+						{damage_report "gun_mode" "Gun changing to direct-fire mode.."}
+						{set "gun_mode" 0}
+						else
+						{damage_report "gun_mode" "Gun changing to indirect-fire mode.."}
+						{set "gun_mode" 1}
+					}
+					{if not tagged "gun_changing"
+						{tags add "gun_changing"}
+						{damage_report "gun_changing" "5 secounds, weapon disabled"}
+						{delay 5
+							{tags remove "gun_changing"}
+							{if work "gun"
+								{if "gun_mode"
+									{damage_report "gun_mode" "Gun changed to indirect-fire mode"}
+									{weapon_work "gun" 0}
+									{weapon_work "gun1_2" 1}
+									else
+									{damage_report "gun_mode" "Gun changed to direct-fire mode"}
+									{weapon_work "gun" 1}
+									{weapon_work "gun1_2" 0}
+								}
 							}
 						}
 					}
+					else
+					{damage_report "gun_mode" "Can't change while reloading"}
 				}
-			    else
-				{damage_report "gun_mode" "Can't change while reloading"}
-			    }
-			else
+				else
 				{damage_report "gun_mode" "Main gun is broken"}
 			}
-		else
+			else
 			{damage_report "gun_mode" "Direct/Indirect not available for this unit"}
 		}
 		{if tagged "gun_mode_unit_art"
 			{if work "gun"
-			    {if not tagged "gun_reloading"
-				{weapon_work "gun" 0}
-				{weapon_work "gun1_2" 0}
-				{if "gun_mode"
-					{damage_report "gun_mode" "Gun changing to indirect-fire mode.."}
-					{set "gun_mode" 0}
-				else
-					{damage_report "gun_mode" "Gun changing to direct-fire mode.."}
-					{set "gun_mode" 1}
-				}
-				{if not tagged "gun_changing"
-					{tags add "gun_changing"}
-					{damage_report "gun_changing" "5 secounds, weapon disabled"}
-					{delay 5
-						{tags remove "gun_changing"}
-						{if work "gun"
-							{if "gun_mode"
-								{damage_report "gun_mode" "Gun changed to direct-fire mode"}
-								{weapon_work "gun" 0}
-								{weapon_work "gun1_2" 1}
-							else
-								{damage_report "gun_mode" "Gun changed to indirect-fire mode"}
-								{weapon_work "gun" 1}
-								{weapon_work "gun1_2" 0}
+				{if not tagged "gun_reloading"
+					{weapon_work "gun" 0}
+					{weapon_work "gun1_2" 0}
+					{if "gun_mode"
+						{damage_report "gun_mode" "Gun changing to indirect-fire mode.."}
+						{set "gun_mode" 0}
+						else
+						{damage_report "gun_mode" "Gun changing to direct-fire mode.."}
+						{set "gun_mode" 1}
+					}
+					{if not tagged "gun_changing"
+						{tags add "gun_changing"}
+						{damage_report "gun_changing" "5 secounds, weapon disabled"}
+						{delay 5
+							{tags remove "gun_changing"}
+							{if work "gun"
+								{if "gun_mode"
+									{damage_report "gun_mode" "Gun changed to direct-fire mode"}
+									{weapon_work "gun" 0}
+									{weapon_work "gun1_2" 1}
+									else
+									{damage_report "gun_mode" "Gun changed to indirect-fire mode"}
+									{weapon_work "gun" 1}
+									{weapon_work "gun1_2" 0}
+								}
 							}
 						}
 					}
+					else
+					{damage_report "gun_mode" "Can't change while reloading"}
 				}
-			    else
-				{damage_report "gun_mode" "Can't change while reloading"}
-			    }
-			else
+				else
 				{damage_report "gun_mode" "Main gun is broken"}
 			}
-		else not tagged "gun_mode_unit"
+			else not tagged "gun_mode_unit"
 			{damage_report "gun_mode" "Direct/Indirect not available for this unit"}
 		}
 	}
 	{on "enginetoggle"
 		{if "transmission_destroyed"
 			{damage_report "internal" "<c(FF1F00)>Transmission is destroyed<c(FFFFFF)>"}
-		else not work "transmission"
+			else not work "transmission"
 			{damage_report "internal" "Transmission is broken"}
 		}
 		;{if stuff_filled "fuel" 0
 		;	{call "explosion"}
 		;}
 		{if work "engine"
-		{if work "hull"
-		{if work "transmission"
-			{if "engine_on"
-				;{if not stuff_filled "fuel" 0
-					{set "engine_on" 0}
-					{stop_sound "idle"}
-					{stop_sound "move"}
-					{view pause "exhaust2"}
-					{play_sound "engine_end"}
-					{chassis_work 0}
-				;}
-			else
-				{set "engine_on" 1}
-				{delay 1.5
-					{if work "engine"
-					{if work "hull"
-					{if work "transmission"
+			{if work "hull"
+				{if work "transmission"
+					{if "engine_on"
+						;{if not stuff_filled "fuel" 0
+						{set "engine_on" 0}
+						{stop_sound "idle"}
+						{stop_sound "move"}
+						{view pause "exhaust2"}
 						{play_sound "engine_end"}
-						{view start "exhaust_start"}
-						{delay 0.5
-							{view pause "exhaust_start"}
-						}
-						{if not stuff_filled "fuel" 0
-							{delay 1.5
-								{if work "engine"
-									{if "engine_on"
-										{if work "transmission"
-											{stop_sound "engine_end"}
-											{play_sound "exhaust"}
-											{view start "exhaust_start"}
-											{call "engine_idle"}
+						{chassis_work 0}
+						;}
+						else
+						{set "engine_on" 1}
+						{delay 1.5
+							{if work "engine"
+								{if work "hull"
+									{if work "transmission"
+										{play_sound "engine_end"}
+										{view start "exhaust_start"}
+										{delay 0.5
+											{view pause "exhaust_start"}
+										}
+										{if not stuff_filled "fuel" 0
+											{delay 1.5
+												{if work "engine"
+													{if "engine_on"
+														{if work "transmission"
+															{stop_sound "engine_end"}
+															{play_sound "exhaust"}
+															{view start "exhaust_start"}
+															{call "engine_idle"}
+														}
+													}
+												}
+											}
+											else
+											{delay 1 {stop_sound "engine_end"}}
 										}
 									}
 								}
 							}
-						else
-							{delay 1 {stop_sound "engine_end"}}
 						}
-					}
-					}
 					}
 				}
 			}
-		}
-		}
 		}
 	}
 	{on "engine_idle"
 		{delay 2
 			;{if not stuff_filled "fuel" 0
-				{if work "engine"
-					{if work "transmission"
-						{if work "trackleft" {if work "trackright" {chassis_work 1}}}
-						{view pause "exhaust_start"}
-						{play_sound "idle" 1}
-						{view start "exhaust2"}
-						{set "engine_running" 1}
-					}
+			{if work "engine"
+				{if work "transmission"
+					{if work "trackleft" {if work "trackright" {chassis_work 1}}}
+					{view pause "exhaust_start"}
+					{play_sound "idle" 1}
+					{view start "exhaust2"}
+					{set "engine_running" 1}
 				}
-			;}
+			}
+		;}
 		}
 	}
 	{on move on
@@ -566,17 +586,17 @@
 		{ani_stop "stop"}
 		{ani_play "start"}
 		{view pause "exhaust2"}
-		;{if not tagged "heavy_tower"
-		;	{damage_report "internal" "<c(FF1F00)>move detect<c(FFFFFF)>"}
-		;	{with_linked_entity "tow_link" {delay 0.5{call "update_towability"}}}
-		;}
-		;{if linked ;CAUSES CRASH WHILE IN DIRECT CONTROL
-		;	{with_effector 
-		;		{if "wheel_teared"
-		;			{delay 0.1{impulse up 0.3}}
-		;		}
-		;	}
-		;}
+	;{if not tagged "heavy_tower"
+	;	{damage_report "internal" "<c(FF1F00)>move detect<c(FFFFFF)>"}
+	;	{with_linked_entity "tow_link" {delay 0.5{call "update_towability"}}}
+	;}
+	;{if linked ;CAUSES CRASH WHILE IN DIRECT CONTROL
+	;	{with_effector
+	;		{if "wheel_teared"
+	;			{delay 0.1{impulse up 0.3}}
+	;		}
+	;	}
+	;}
 	}
 	{on move off
 		{stop_sound "move"}
@@ -609,32 +629,32 @@
 			{delay 1.5 "engine_stopped"
 				{stop_sound "engine"}
 				;{if not stuff_filled "fuel" 0
-					{if work "engine"
-						{if work "body"
-							{if "engine_on"
-								{if work "transmission"
-									{play_sound "idle" 1}
-									{if not "engine_running"
-										{set "engine_running" 1}
-									}
+				{if work "engine"
+					{if work "body"
+						{if "engine_on"
+							{if work "transmission"
+								{play_sound "idle" 1}
+								{if not "engine_running"
+									{set "engine_running" 1}
 								}
 							}
 						}
 					}
-				;}
+				}
+			;}
 			}
 			{delay 0.5 "engine_steam_stopped"
 				;{if not stuff_filled "fuel" 0
-					{if work "engine"
-						{if work "body"
-							{if "engine_on"
-								{if work "transmission"
-									{view start "exhaust2"}
-								}
+				{if work "engine"
+					{if work "body"
+						{if "engine_on"
+							{if work "transmission"
+								{view start "exhaust2"}
 							}
 						}
 					}
-				;}
+				}
+			;}
 			}
 		}
 	}
@@ -658,7 +678,7 @@
 			{view pause "exhaust2"}
 		}
 	}
-	
+
 	{on "engine destroyed"
 		{view pause "exhaust"}
 		{set "engine_running" 0}
@@ -678,16 +698,16 @@
 			{if "engine_on"
 				{call "engine stop view"}
 			}
-		else component "turret"
-;			{stat_notify break}
+			else component "turret"
+		;			{stat_notify break}
 		}
 		{if component "engine"
 			{call "engine stop view"}
 		}
 		{call "update_moveable"}
 		{call "break_light"}
-		;{call "engine fullstop"}
-		;{call "engine destroyed"}
+	;{call "engine fullstop"}
+	;{call "engine destroyed"}
 	}
 	{on repair
 		{call "update_moveable"}
@@ -716,13 +736,13 @@
 		{if not sunlight
 			{if operatable
 				{call "lights_on"}
-			else
+				else
 				{call "lights_off"}
 			}
 		}
 	}
-	
-; ---------- Snowman redlights -----------
+
+	; ---------- Snowman redlights -----------
 
 	{on "redlights_on"
 		{view start "redlight"}
@@ -735,12 +755,12 @@
 	{on "update_redlights"
 		{if operatable
 			{call "redlights_on"}
-		else
+			else
 			{call "redlights_off"}
 		}
 	}
-; -----------------------------------------
-	
+	; -----------------------------------------
+
 	{on operatable on
 		{if "internal_damage" {crew_emit}}
 		{call "update_lights"}
@@ -753,36 +773,42 @@
 		{if name "mgun"
 			{add_view "flash_gun_big"	"flashbarrel3"	"Foresight3"}
 			{add_view "shell_mgun"		"shell"			"fxshell"}
-		else
+			else
 			{view hide	"flashbarrel3"}
 			{view pause	"flashbarrel3"}
 			{view pause "shell"}
 		}
 	}
-(define "burst_stop"
-	{if not tagged "burst_stop_%mgun"
-		{tags add "burst_stop_%mgun"}
-		{delay 0.6 0.15
-			{weapon_work "%mgun" 0}
-			{delay 0.7 0.1
-				{weapon_work "%mgun" 1}
-				{tags remove "burst_stop_%mgun"}
+	; burst_stop: {if {tags} {delay}}
+	;   mgun - text in {if}, text in {tags}, name of {weapon_work}
+	;   e.g. ("burst_stop" mgun(mgun))
+	(define "burst_stop"
+		{if not tagged "burst_stop_%mgun"
+			{tags add "burst_stop_%mgun"}
+			{delay 0.6 0.15
+				{weapon_work "%mgun" 0}
+				{delay 0.7 0.1
+					{weapon_work "%mgun" 1}
+					{tags remove "burst_stop_%mgun"}
+				}
 			}
 		}
-	}
-)
-(define "burst_stop_short"
-	{if not tagged "burst_stop_%mgun"
-		{tags add "burst_stop_%mgun"}
-		{delay 0.3 0.1
-			{weapon_work "%mgun" 0}
-			{delay 0.7 0.1
-				{if not tagged "commander_down"{weapon_work "%mgun" 1}}
-				{tags remove "burst_stop_%mgun"}
+	)
+	; burst_stop_short: {if {tags} {delay}}
+	;   mgun - text in {if}, text in {tags}, name of {weapon_work}
+	;   e.g. ("burst_stop_short" mgun(mgun))
+	(define "burst_stop_short"
+		{if not tagged "burst_stop_%mgun"
+			{tags add "burst_stop_%mgun"}
+			{delay 0.3 0.1
+				{weapon_work "%mgun" 0}
+				{delay 0.7 0.1
+					{if not tagged "commander_down"{weapon_work "%mgun" 1}}
+					{tags remove "burst_stop_%mgun"}
+				}
 			}
 		}
-	}
-)
+	)
 
 	{on "burst_stop_mgun_short"
 		("burst_stop_short" mgun(mgun))
@@ -815,11 +841,11 @@
 		{if not tagged "full_auto_mode"
 			{if tagged "com_mode"
 				{call "burst_stop_mgun_short"}
-			else
+				else
 				{call "burst_stop_mgun"}
 			}
 		}
-		
+
 	}
 	{on fire "mgun1"
 		{view show  "flashbarrel4"}
@@ -869,16 +895,16 @@
 			{if effector_velocity 3
 				{if effector "airborne"
 					{call "contact_airborne"}
-				else effector "piece_big_stone"
+					else effector "piece_big_stone"
 					{component break}
 				}
 			}
 		}
-		;{if effector "cannon"
-		;	{if effector "wheel_teared"
-		;		{delay 0.1 {unlink_trailer}}
-		;	}
-		;}
+	;{if effector "cannon"
+	;	{if effector "wheel_teared"
+	;		{delay 0.1 {unlink_trailer}}
+	;	}
+	;}
 	}
 	{on "grenade_stick"
 		{with_effector
@@ -896,7 +922,7 @@
 					{set "contact_airborne_second" 0}
 				}
 			}
-		else "contact_airborne_second"
+			else "contact_airborne_second"
 			{call "explosion"}
 		}
 	}
@@ -904,12 +930,12 @@
 	{on "update_moveable"
 		{if work "body"
 			{view stop "smoke4"}
-		else
-			;{view start "smoke4"}
+			else
+		;{view start "smoke4"}
 		}
 		{if work "engine"
 			{call "check_work_mover"}
-		else
+			else
 			{chassis_work 0}
 		}
 	}
@@ -918,7 +944,7 @@
 			{if "engine_on"
 				{chassis_work 1}
 			}
-		else
+			else
 			{chassis_work 0}
 		}
 	}
@@ -939,39 +965,42 @@
 			{stop_sound "idle"}
 		}
 	}
+	; ammunition_loads2: {if {tags} {if}}
+	;   ammo - {if}, [?]
+	;   e.g. ("ammunition_loads2" ammo(250))
 	(define "ammunition_loads2"
 		{if explosive_amount (* %ammo 2.00)	;>200%
 			{tags add "ammo_overload"}{tags add "instant_explosion"}
-		else explosive_amount (* %ammo 1.75)	;>175%
+			else explosive_amount (* %ammo 1.75)	;>175%
 			{tags add "ammo_overload"}{tags add "instant_explosion"}
-		else explosive_amount (* %ammo 1.50)	;>150%
+			else explosive_amount (* %ammo 1.50)	;>150%
 			{tags add "ammo_overload"}{tags add "instant_explosion"}
-		else explosive_amount (* %ammo 1.25)	;>125%
+			else explosive_amount (* %ammo 1.25)	;>125%
 			{tags add "ammo_overload"}
-		else explosive_amount %ammo		;>100%
+			else explosive_amount %ammo		;>100%
 			{tags add "ammo_overload"}
-		else explosive_amount (* %ammo 0.9)	;>90%
+			else explosive_amount (* %ammo 0.9)	;>90%
 			{if rand 0.5{tags add "ammo_overload"}
-			else{tags add "ammo_normal_load"}}
-		else explosive_amount (* %ammo 0.75)	;>75%
+				else{tags add "ammo_normal_load"}}
+			else explosive_amount (* %ammo 0.75)	;>75%
 			{tags add "ammo_normal_load"}
-		else explosive_amount (* %ammo 0.5)	;>50%
+			else explosive_amount (* %ammo 0.5)	;>50%
 			{tags add "ammo_normal_load"}
-		else explosive_amount (* %ammo 0.25)	;>25%
+			else explosive_amount (* %ammo 0.25)	;>25%
 		}
 	)
 	{on "_explosion"
 		{if "light_tank"
 			("ammunition_loads2" ammo(250))
-		else "medium_tank"
+			else "medium_tank"
 			("ammunition_loads2" ammo(300))
-		else "heavy_tank"
+			else "heavy_tank"
 			("ammunition_loads2" ammo(360))
-		else not "train"
+			else not "train"
 			("ammunition_loads2" ammo(250))
 		}
-;		{call "__explosion"}
-;		{call "stat_break"}
+		;		{call "__explosion"}
+		;		{call "stat_break"}
 		{call "break_all"}
 		{stop_sound "transmission_break"}
 		{stop_sound "move"}
@@ -1014,7 +1043,7 @@
 		{kick_entity_manager}
 		{if "crush"
 			{start_sound "crush/medium/vehicle"}
-		else
+			else
 			{start_sound "crush/big/vehicle"}
 		}
 		{if not terrain_fx "bridge"
@@ -1035,7 +1064,7 @@
 	{on "explosion_sound"
 		{if "crush"
 			{start_sound "crush/medium/vehicle"}
-		else
+			else
 			{call "explosion_blastwave"}
 			{start_sound "crush/big/vehicle"}
 		}
@@ -1052,16 +1081,16 @@
 		{clear_inventory}
 		{call "engine fullstop"}
 	}
-	
+
 	{on "kill_crew"
 		{kill_crew}
 	}
-	
+
 	{on "_burn"
-        {if not tagged "burned"
+		{if not tagged "burned"
 			{if not able "exploded"
 				{damage_report "engine" "component/burn_engine"}
-            	{add_view		"smoke_dead_norm"	"burn_fire"		"FXfire1"}
+				{add_view		"smoke_dead_norm"	"burn_fire"		"FXfire1"}
 				{view start "burn_fire"}
 				{burn time 12}
 				{tags add "burned"}
@@ -1069,19 +1098,19 @@
 				{play_sound "flame" 1}
 				{view start "burn_fire"}
 				{set "burn_fire" 1}
-                {call "stat_break"}
+				{call "stat_break"}
 				{delay 4 2
-                	{call "check_burn_emit"}
-                }
-                ;{explosive 1}
+					{call "check_burn_emit"}
+				}
+				;{explosive 1}
 				{delay 10 2
-						{call "mp_destroy"}
-						{start_sound "crush/medium/metal"}
+					{call "mp_destroy"}
+					{start_sound "crush/medium/metal"}
 				}
 				{delay 10 2
 					{components "engine" break}
 					{start_sound "crush/medium/metal"}
-                    	{delay 5 4
+					{delay 5 4
 						{call "mp_destroy"}
 					}
 				}
@@ -1093,19 +1122,19 @@
 					{call "check_burn_emit"}
 					{if rand 0.5
 						{call "explosion"}
-					else
+						else
 						{able "burning" 0}
 					}
 				}
 			}
-    	}
+		}
 	}
 
 	{on "burn_emit"
 		{if not able "burning"
 			{able "burning" 1}
 			{set_heater}
-            {reset_manual_control}
+			{reset_manual_control}
 		}
 	}
 
@@ -1117,17 +1146,17 @@
 					{log "burn_engine"}
 					{call "fuel_fire"}
 				}
-			else volume "engine1"
+				else volume "engine1"
 				{if rand 0.3
-					{log "burn_engine"}				
+					{log "burn_engine"}
 					{call "fuel_fire"}
 				}
-			else
+				else
 				{burn volume fx "smoke_dead_small" time 5 1 fake even_law}
 			}
 		}
 	}
-	{on "stat_break"	
+	{on "stat_break"
 		{if not tagged "body_break"
 			{if not "notified_broken"
 				{set "notified_broken" 1}
@@ -1135,12 +1164,12 @@
 					{set "broken" 1}
 					{if "burn_fire"
 						{stat_notify break burned}
-				else
+						else
 						{stat_notify break}
 					}
 				}
 			}
-		}		
+		}
 	}
 
 	{on "leave_unit"
@@ -1148,30 +1177,30 @@
 			{if not tagged "abandoned"
 				{unlink_trailer}
 				{reset_manual_control}
-				
-				{if not tagged "emit_label"		
+
+				{if not tagged "emit_label"
 					{damage_report "body" "component/leave_unit"}
 					{tags add "emit_label"}
 					{crew_emit}
 				}
-				{delay 1		
+				{delay 1
 					{crew_emit}
 				}
-				{delay 2		
+				{delay 2
 					{crew_emit}
 				}
-				{delay 3		
+				{delay 3
 					{crew_emit}
 				}
 				;{call "burn_emit"}
-				
+
 				{delay 4	{if operatable {tags remove "emit_label"}}}
 				{delay 6	{if operatable {tags remove "emit_label"}}}
 				{delay 8	{if operatable {tags remove "emit_label"}}}
 				{delay 10	{if operatable {tags remove "emit_label"}}}
 				{delay 12	{if operatable {tags remove "emit_label"}}}
 				{delay 14	{if operatable {tags remove "emit_label"}}}
-	
+
 				{delay 15
 					{if not operatable
 						{tags add "abandoned"}
@@ -1189,18 +1218,23 @@
 						{damage_report "gun" "component/empty"}
 						{damage_report "turret" "component/empty"}
 						{damage_report "engine" "component/empty"}
-						
-						{delay 3 1					
+
+						{delay 3 1
 							{explosive 0}
 							{tags add "destroyed"}
 							{call "explosion"}
 						}
 					}
-				}			
+				}
 			}
 		}
 	}
 
+	; terrain_fx: {on {view} {delay}} {on {view}}
+	;   1_time_short - text in {view}
+	;   %0 - {on}, [?]
+	;   %1 - text in {view}
+	;   e.g. ("terrain_fx" args "mud"   mud)
 	(define "terrain_fx"
 		{on terrain_fx %0 enter
 			{view start "on_%1"}
@@ -1242,6 +1276,9 @@
 		{kill_delay "start_check_sinking"}
 		{kill_delay "check_sinking"}
 	}
+	; sink_terrain: {on {reset_manual_control} {able}} {on {reset_manual_control}}
+	;   %0 - text in {on}
+	;   e.g. ("sink_terrain" args swamp)
 	(define "sink_terrain"
 		{on terrain_pp "%0" enter
 			{reset_manual_control}
@@ -1249,10 +1286,10 @@
 		}
 		{on terrain_pp "%0" leave
 			{reset_manual_control}
-;			{able "sinking" 0} ;do not use this because of leaving terrain on stop
+		;			{able "sinking" 0} ;do not use this because of leaving terrain on stop
 		}
 	)
-;	("sink_terrain" args water)
+	;	("sink_terrain" args water)
 	("sink_terrain" args swamp)
 	{on "check_sinking"
 		{call "check_water_level"}
@@ -1280,19 +1317,19 @@
 	{on break
 		{if component "gun"
 			{call "update_gun"}
-                        {tags add "gun_brake"}
+			{tags add "gun_brake"}
 		}
 	}
 	{on repair
 		{if component "gun"
 			{call "update_gun"}
-                        {tags remove "gun_brake"}
+			{tags remove "gun_brake"}
 		}
 	}
 	{on "update_gun"
 		{if work "gun"
 			{weapon_work "gun" 1}
-		 else
+			else
 			{weapon_work "gun" 0}
 		}
 	}
@@ -1391,11 +1428,11 @@
 			{if not velocity 0.001
 				{view start "on_stead"}
 				{view pause "on_move"}
-			else
+				else
 				{view start "on_move"}
 				{view pause "on_stead"}
 			}
-		else
+			else
 			{view pause "on_stead"}
 			{view pause "on_move"}
 		}
@@ -1415,7 +1452,7 @@
 			{if "gun_mode"
 				{weapon_work "gun" 0}
 				{weapon_work "gun1_2" 1}
-			else
+				else
 				{weapon_work "gun" 1}
 				{weapon_work "gun1_2" 0}
 			}
@@ -1427,7 +1464,7 @@
 			{if "gun_mode"
 				{weapon_work "gun" 0}
 				{weapon_work "gun1_2" 1}
-			else
+				else
 				{weapon_work "gun" 1}
 				{weapon_work "gun1_2" 0}
 			}
@@ -1446,7 +1483,7 @@
 			{if "gun_mode"
 				{weapon_work "gun" 0}
 				{weapon_work "gun1_2" 1}
-			else
+				else
 				{weapon_work "gun" 1}
 				{weapon_work "gun1_2" 0}
 			}
@@ -1459,7 +1496,7 @@
 			{if "gun_mode"
 				{weapon_work "gun" 0}
 				{weapon_work "gun1_2" 1}
-			else
+				else
 				{weapon_work "gun" 1}
 				{weapon_work "gun1_2" 0}
 			}
@@ -1476,7 +1513,7 @@
 		{if tagged "full_auto_mode_coax"
 			{tags remove "full_auto_mode_coax"}
 			{damage_report "mgun" "Unit changed to burst mode"}
-		else
+			else
 			{tags add "full_auto_mode_coax"}
 			{damage_report "mgun" "Unit changed to full auto mode"}
 		}
@@ -1487,7 +1524,7 @@
 		{if tagged "full_auto_mode_coax"
 			{tags remove "full_auto_mode_coax"}
 			{damage_report "mgun" "Unit changed to burst mode"}
-		else
+			else
 			{tags add "full_auto_mode_coax"}
 			{damage_report "mgun" "Unit changed to full auto mode"}
 		}
@@ -1516,7 +1553,7 @@
 			{tags remove "full_auto_mode"}
 			{tags add "coax_burst_mode"}
 			{damage_report "mgun" "Unit changed to burst mode"}
-		else
+			else
 			{tags add "full_auto_mode"}
 			{tags remove "coax_burst_mode"}
 			{damage_report "mgun" "Unit changed to full auto mode"}
@@ -1528,13 +1565,13 @@
 		{if tagged "full_auto_mode"
 			{tags remove "full_auto_mode"}
 			{damage_report "mgun" "Unit changed to burst mode"}
-		else
+			else
 			{tags add "full_auto_mode"}
 			{damage_report "mgun" "Unit changed to full auto mode"}
 		}
 	}
 }
-{"ace_camo"	
+{"ace_camo"
 	{on spawn
 		{if not tagged "texmod_set"
 			{if tex_mod "1"
@@ -1542,7 +1579,7 @@
 				;{delay 0.1
 				;	{tex_mod "ace"}
 				;}
-			else
+				else
 				{tags add "texmod_set"}
 				{delay 0.1
 					{tex_mod "ace"}
@@ -1574,7 +1611,7 @@
 					{delay 0.1
 						{tex_mod "2a"}
 					}
-				else rand 0.33
+					else rand 0.33
 					{delay 0.1
 						{tex_mod "2b"}
 					}

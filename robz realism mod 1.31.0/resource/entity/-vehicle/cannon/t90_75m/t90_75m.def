@@ -1,28 +1,28 @@
 {game_entity
 	(include "/properties/cannon.ext")
 	{props "vehicle" "cannon" "wheeled" "round_sandbag2" "vision_cannon_high" "muzzle_medium" "big_weapons" "gun_mode_change"}
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: t90_75m.def) ---
-	
+
 	; --- end Godny hitbox armor ---
 	("armor_medium")
-	
+
 	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
 
 	("crew_wheeled_gun")
-	
-	{placer	
+
+	{placer
 		{place "commander" {visor "commander"} {useVision 0}}
-	}	
-	
+	}
+
 	{sensor
 		{Visor "commander"
 			{vision "moto_around"}
 			{bone "visor1"}
 		}
 	}
-	
+
 	{boarder
 		{anm "gunner"
 			{forward	{end "pose_pak40_gunlayer" 10}}
@@ -89,15 +89,15 @@
 		("loco_medium")
 	}
 	{bone "turret"
-        	{limits -25 25}
-       		 {speed 0.0007}
-    		}
+		{limits -25 25}
+		{speed 0.0007}
+	}
 	{bone "gun_rot"
 		{limits -8 43}
 		{speed 0.0005}
 	}
-    	{bone "basis"
-        	{limits}
-        	{speed 0.007}
-    	}
+	{bone "basis"
+		{limits}
+		{speed 0.007}
+	}
 }

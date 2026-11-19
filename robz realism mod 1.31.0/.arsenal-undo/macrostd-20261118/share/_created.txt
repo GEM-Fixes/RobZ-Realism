@@ -1,0 +1,7 @@
+resource/properties/robz/armor.inc
+resource/properties/robz/weapon.inc
+resource/properties/robz/interaction.inc
+resource/properties/robz/crew.inc
+resource/properties/robz/vehicle.inc
+resource/set/breed/mp/robz_vet.inc
+resource/properties/robz/volumes.inc

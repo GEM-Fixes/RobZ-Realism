@@ -1,0 +1,242 @@
+(include "/properties/tank.ext")
+(include "/properties/selection/vehicle.inc"  scale(1.2))
+{props "medium" "-turret" "turret_rotator" "vision_vehicle_high" "muzzle_medium"}
+
+{extender "enumerator"}
+
+("armor_medium_custom" turret(76 51 51 32) body(51 38 38 51) body2(51 38 38 25) body3(51 38 38 25) body4(38 38 38 25) body5(51 38 38 25))
+("armor_engine"  t(40 38 38 25))
+("armor_mantlet" t(76))
+("us_3x_sight")
+
+; --- Godny hitbox armor (ported from GodnyMod: grant_m3.def) ---
+{volume "body1"	;нижняя часть корпуса
+	{component "body"}
+	{tags "body"}
+	{thickness 38.1
+		{front	50.8}
+		;	{rear	38.1}
+		{top	25.4}	;крыша ходовой голая около орудийного спонсона
+		{bottom	12.7}
+	}
+}
+{volume "body2"	;правая верхняя часть корпуса со спонсоном
+	{component "body"}
+	{tags "body"}
+	{able {holed}}
+	{thickness 38.1
+		;	{front	38.1}
+		;	{rear	38.1}
+		{top	12.7}
+		{bottom	12.7}
+		{left	0.1}	;стык body2 и body3
+	}
+}
+{volume "body3"	;левая верхняя часть корпуса
+	{component "body"}
+	{tags "body"}
+	{thickness 38.1
+		{front	50.8}
+		;	{rear	38.1}
+		{top	12.7}
+		{bottom	12.7}
+		{right	0.1}	;стык body2 и body3
+	}
+}
+{volume "body4"	;передняя нижняя часть мехвода
+	{component "body"}
+	{tags "body"}
+	{thickness 38.1
+		;	{front	38.1}	;гласис
+		{rear	0.1}	;стык body3 и body4
+		{bottom	8}
+	}
+}
+{volume "body5"	;моторное верх
+	{component "body"}
+	{tags "body"}
+	{thickness 38.1
+		{front	0.1}	;стык body2 и body5
+		;	{rear	38.1}
+		{top	12.7}
+		{bottom	12.7}
+	}
+}
+{volume "turret"
+	{component "turret"}
+	{tags "turret"}
+	{thickness 38.1
+		{front	50.8}
+		;	{rear	38.1}
+		{top	25.4}
+		{bottom	12.7}
+		{right	38.1}	;наклонный лоб/маска орудия
+	}
+}
+{Volume "mantlet"
+	{tags "gun"}
+	{component "gun"}
+	{thickness 38.1
+		;	{front	38.1}
+		{rear	15}	;орудие дает небольшую броню
+		{top	12.7}
+		{bottom	12.7}
+	}
+}
+{Volume "hole_bod"	;дырка под орудие
+	{able clear {hole}}
+	{component "body"}
+}
+{volume "engine"
+	{thickness 10}
+}
+; --- end Godny hitbox armor ---
+("crew_inside_left")
+("crew_human" place(gunner)		door1(emit1) door2(emit2) visor(main))
+("crew_human" place(driver)		door1(emit1) door2(emit2) visor(driver))
+("crew_human" place(charger)	door1(emit1) door2(emit2) visor(mgun))
+("crew_human" place(commander)	door1(emit1) door2(emit2) visor(main-l))
+
+{sensor
+	{visor "driver"
+		{vision "tank_driver"}
+		{bone "visor1"}
+	}
+	{visor "main"
+		{vision "tank_main-m"}
+		{bone "visor2"}
+	}
+	{visor "main-l"
+		{vision "tank_main-l"}
+		{bone "visor3"}
+	}
+	{visor "mgun"
+		{vision "vehicle_top_mgun"}
+		{bone "visor4"}
+	}
+}
+
+{boarder
+	{anm "left"
+		{forward	{begin	"board_tank_left"}}
+		{reverse 	{end	"emit_tank_2_hold"}}
+	}
+	{anm "right"
+		{forward	{begin	"board_tank_right"}}
+		{reverse 	{end	"emit_tank_2_hold"}}
+	}
+	{anm "armor"
+		{forward	{begin	"board_HighArmor"} 	{end "seat_armor"}}
+		{reverse 	{end	"emit_tank_2"}}
+	}
+	{anm "armor1"
+		{forward	{begin	"board_HighArmor"} {end "seat_armor"}}
+		{reverse 	{end	"emit_body"}}
+	}
+}
+
+("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+
+{extender "inventory"
+	{box
+		{item "ammo bullet75 us ap" 50}
+		{item "ammo bullet75 us fg" 27}
+		{item "bullet37 us ap" 30}
+		{item "bullet37 us fg" 27}
+		{item "ammo springfield_belt" 2400}
+	}
+}
+{Weaponry
+	("restore_ik_time")
+	{place "gun"
+		{RestoreIKAfterAim}
+		{weapon "75mm_m3" filling "ammo bullet75 us ap" 1}
+		("abm_stabilized")
+	}
+	{place "gun2"
+		{type "secondary_main"}
+		{weapon "37mm_m5" filling "bullet37 us ap" 1}
+		{foresight "foresight2"}
+		{gunner "commander"}
+		{charger "commander"}
+		("abm_stabilized")
+		{basic}
+	}
+	{place "mgun"
+		{type "mgun_aa"}
+		{weapon "browning_m19" filled}
+		{foresight "foresight3"}
+		{gunner "commander"}
+		("abm_mgun")
+		{basic}
+	}
+	{place "mgun2"
+		{type "mgun_coaxial"}
+		{weapon "browning_m19_optic" filled}
+		{foresight "foresight5"}
+		{gunner "commander"}
+		{charger "commander"}
+		("abm_mgun")
+	}
+	{place "mgun1"
+		{type "mgun_hull"}
+		{weapon "browning_m19" filled}
+		{foresight "foresight4"}
+		{gunner "driver"}
+		{charger "driver"}
+		("abm_mgun")
+	}
+}
+
+{mass 28600}
+{Chassis
+	("tank_trace" fx("tracks_sm") step(0.3) len(0.65))
+	{Locomotion ("locomotion")
+		{maxspeed   26}
+		{maxSpeedAtMaxTurn 5}
+		{StartTime  40}
+		{TurnTime   19}
+		{TurnStart  1.8}
+		{TurnRadius 10}
+		{TurnStop   0.8}
+		{BrakeTime  1.5}
+		{StopTime   2.5}
+		{Gears   0.1 0.2 0.3 1}
+		{RearGears  0.3}
+	}
+	{FuelBag
+		{volume 660 }
+		{rate	33 }
+		{remain 660 }
+		{fuel "fuel"}
+	}
+	{speed
+		{Normal  26}
+		{Slow  26}
+	}
+}
+
+{Extension "grant_m3.mdl"}
+
+{bone "turret"
+	{speed 0.003}
+}
+{bone "gun2_rot"
+	{limits -9 9}
+	{speed 0.001}
+}
+{bone "gun_rot1"	; sponson traverse (Godny model)
+	{limits -15 15}
+	{speed 0.001}
+}
+{bone "gun_rot"	; sponson elevation (Godny model)
+	{limits -20 9}
+	{speed 0.001}
+}
+{bone "mgun"
+	{limits 10}
+}
+

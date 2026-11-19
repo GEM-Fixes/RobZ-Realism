@@ -2,11 +2,11 @@
 	(include "/properties/cannon.ext")
 	{props "vehicle" "cannon" "cannon_small" "wheeled" "vision_cannon_low" "muzzle_minimum" "medium_weapons"}
 	; --- Godny hitbox armor (ported from GodnyMod: m3cannon.def) ---
-	
+
 	; --- end Godny hitbox armor ---
 	("armor_light")
 	{collider "cannon_small"}
-	
+
 	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
 
@@ -31,12 +31,12 @@
 			{forward {end "pose_seat_cannon_right" 10}}
 		}
 	}
-	("us_3x_sight")
+	("us_3x_sight_no_visor1")
 	{extender "inventory"
 		{box
 			{item "bullet37 us ap" 6}
 			{item "bullet37 us fg" 5}
-			;{item "bullet37 apcr" 5}
+		;{item "bullet37 apcr" 5}
 		}
 	}
 	{Weaponry
@@ -52,7 +52,7 @@
 	{Extension "m3cannon.mdl"}
 	(include "/properties/selection/cannon.inc"  scale(0.7))
 	{bone "basis"
-	      {limits}
+		{limits}
 	}
 	{extender "cannon"
 		{animation

@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/armoredcar.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.1))
@@ -14,7 +15,7 @@
 		{component "body"}
 		{thickness 8
 			{front	11}
-		;	{rear	8}
+			;	{rear	8}
 			{top	6}
 			{bottom	5}
 			{right	0.1}	;плоскость на стыке body1 и body2
@@ -24,7 +25,7 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 8
-		;	{front	8}
+			;	{front	8}
 			{rear	0.1}	;плоскость на стыке body1 и body2
 			{top	6}
 			{bottom	5}
@@ -35,7 +36,7 @@
 		{component "body"}
 		{thickness 8
 			{front	0.1}
-		;	{rear	8}
+			;	{rear	8}
 			{top	6}
 			{bottom	5}
 		}
@@ -54,7 +55,7 @@
 		{tags "turret"}
 		{thickness 8
 			{front	11}
-		;	{rear	8}
+			;	{rear	8}
 			{top	6}
 			{bottom	5}
 		}
@@ -63,11 +64,7 @@
 		{thickness 10}
 	}
 	; --- end Godny hitbox armor ---
-	{volume "body"
-		{tags "body"}
-		{component "body"}
-		{thickness 15}
-	}
+	("vol_body_plate_lower" name(body) mm(15))
 	{volume "aa_shield"
 		{tags "aa_shield"}
 		{component "aa_shield"}
@@ -85,17 +82,17 @@
 	}
 	{sensor
 		{visor "top"
-			{vision "vehicle_top_mgun"} 
+			{vision "vehicle_top_mgun"}
 			{bone "mgun_rot"}
 		}
 	}
 
 
 	("armor_medium" args 1)
-		
-	
-	
-	
+
+
+
+
 	{component "turret"
 		{RepairTime 20}
 	}
@@ -114,8 +111,8 @@
 	}
 	{Weaponry
 		{place "mgun"
-			{type "mgun_main"}    
-			{weapon "type99_mg" filled}  
+			{type "mgun_main"}
+			{weapon "type99_mg" filled}
 			{gunner "gunner"}
 			{charger "gunner"}
 			{foresight "foresight3"}
@@ -130,7 +127,7 @@
 			{foresight "foresight4"}
 			("abm_mgun")
 			{basic}
- 		}
+		}
 		{place "mgun2"
 			{type "mgun_left"}
 			{weapon "type99_mg" filled}
@@ -148,8 +145,8 @@
 			("abm_mgun")
 		}
 
-	}  	
-	
+	}
+
 	("wheel" args "wheelright1")
 	("wheel" args "wheelleft1")
 	("wheel" args "wheelright2")
@@ -160,24 +157,24 @@
 	{Chassis
 		{Locomotion ("locomotion")
 			{maxspeed   38}
-	  		{maxSpeedAtMaxTurn 6}	
+			{maxSpeedAtMaxTurn 6}
 			{StartTime	25}
-			{BrakeTime	1.5}	
+			{BrakeTime	1.5}
 			{StopTime	3}
 			{TurnRadius	5}
-     			{Gears  0.1 0.2 0.3 1}
+			{Gears  0.1 0.2 0.3 1}
 			{RearGears  0.25}
 		}
 		{FuelBag
-			{volume 180 }	
-			{rate	10 }   
+			{volume 180 }
+			{rate	10 }
 			{remain 180 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  38}
-        	{Slow  38}
-    	}
+			{Normal  38}
+			{Slow  38}
+		}
 		("car_trace" fx("tracewheel04") step(0.08) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
 		("car_trace" fx("tracewheel04") step(0.08) wheell("wlr") wheelr("wrr") bonel("FXtraceL2") boner("FXtraceR2"))
 	}

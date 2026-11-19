@@ -2,7 +2,7 @@
 	{filling "ammo panzershreck" 1}
 	{inventory {noView}}
 	{foresight "foresight1"}
-    	{projectileDamageTable {0 160} {120 160} {125 0}}
+	{projectileDamageTable {0 160} {120 160} {125 0}}
 	{fireSound "reactive/bazooka_launch/"}
 	{mass 15}
 	{rechargeTime 5}

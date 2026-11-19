@@ -3,7 +3,7 @@
 	{filling "ammo mg_mauser" 250}
 	{rechargeTime 12}
 	{entity "mg34_st"}
-	
+
 	{traceFreq 5}
 	("recoveryTime" r(800))
 	("burst_medium")

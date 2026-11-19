@@ -45,7 +45,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_100"
 					{turn 1
 						{linear
@@ -147,7 +147,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/flare"
 					{turn 1
 						{linear
@@ -220,7 +220,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{#+ sprite "$/_bmp/smoke/smokeend_loop"
 					{turn 1
 						{linear
@@ -305,7 +305,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smtanko"
 					{scale 1
 						{linear
@@ -378,7 +378,7 @@
 			{damping 0.999}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/oskolki"
 					{scale 1
 						{linear
@@ -414,7 +414,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/explosion/faerog"
 					{turn 1
 						{linear
@@ -510,7 +510,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_loop"
 					{turn 1
 						{linear
@@ -595,7 +595,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/explosion/faerog"
 					{turn 1
 						{linear
@@ -669,7 +669,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/explosion/faerog"
 					{turn 1
 						{linear
@@ -740,7 +740,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/explosion/faerog"
 					{turn 1
 						{linear
@@ -814,7 +814,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{#+ sprite "$/smoke/smoke_g04c"
 					{turn 1
 						{linear

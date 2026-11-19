@@ -9,7 +9,7 @@
 	("caliber_maximum")
 	{range 250 250}
 	{projectileDamage 233}
-	("damage_215" a(233) b(205) c(181) d(159) e(140) range(250))
-	
+	("damage_215" at20(233) at100(205) at170(181) at215(159) at250(140) max(250))
+
 	("accuracy_max")
 }

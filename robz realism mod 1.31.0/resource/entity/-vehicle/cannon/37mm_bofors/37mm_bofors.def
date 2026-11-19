@@ -3,7 +3,7 @@
 	{props "vehicle" "cannon" "cannon_small" "wheeled" "vision_cannon_low" "muzzle_minimum"}
 	{collider "cannon_small"}
 	("armor_light")
-	
+
 	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
 
@@ -46,9 +46,9 @@
 	{mass 370}
 	{Extension "37mm_bofors.mdl"}
 	(include "/properties/selection/cannon.inc"  scale(0.7))
-;	{bone "basis"
-;	      {limits}
-;	}
+	;	{bone "basis"
+	;	      {limits}
+	;	}
 	{extender "cannon"
 		{animation
 			{switch "close"}
@@ -68,5 +68,5 @@
 	{bone "gun_rot"
 		{speed 0.001}
 	}
-	;("eng_1_sight")
+;("eng_1_sight")
 }

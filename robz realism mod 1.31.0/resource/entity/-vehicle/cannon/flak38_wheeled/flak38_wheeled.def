@@ -5,7 +5,7 @@
 	{collider "cannon_small"}
 
 	; --- Godny hitbox armor (ported from GodnyMod: flak38_wheeled.def) ---
-	
+
 	; --- end Godny hitbox armor ---
 	("armor_medium")
 
@@ -44,12 +44,12 @@
 			{weapon "20mm_flak38" filled}
 			("abm_zenite")
 		}
-	}  	
+	}
 	{mass 1500}
 	{Extension "flak38_wheeled.mdl"}
 	(include "/properties/selection/cannon.inc"  scale(0.7))
 	{bone "basis"
-	      {limits}
+		{limits}
 	}
 	{extender "cannon"
 		{animation
@@ -66,6 +66,6 @@
 		("loco_medium")
 	}
 	{bone "gun_rot"
-	      {limits -30 40}
+		{limits -30 40}
 	}
 }

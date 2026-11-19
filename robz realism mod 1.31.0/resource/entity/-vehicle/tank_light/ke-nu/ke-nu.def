@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.2))
@@ -5,7 +6,7 @@
 	{props "light" "turret_rotator" "vision_vehicle_low" "muzzle_small"}
 	{targetClass "light_tank"}
 	{patherId "tank.light"}
-	
+
 	{extender "enumerator"}
 
 	; --- Godny hitbox armor (ported from GodnyMod: ke-nu.def) ---
@@ -75,19 +76,16 @@
 		{tags "turret"}
 		{able {holed}}
 		{thickness 25
-		;	{front	25}
-		;	{rear	25}
+			;	{front	25}
+			;	{rear	25}
 			{top	10}
 			{bottom	10}
 		}
 	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "turret"}
-	}
+	("vol_turret_hole_only" name(hole_man))
 	{volume "mantlet"
 		{thickness 30
-		;	{front	30}
+			;	{front	30}
 			{rear	10}	;орудие дает небольшую броню
 		}
 	}
@@ -112,7 +110,7 @@
 			{RestoreIKAfterAim}
 			{weapon "57mm_type97" filling "ammo bullet57 jap aphe" 1}
 			{charger "gunner"}
-			("abm_low")
+			("abm_low_v4")
 		}
 		{place "mgun"
 			{type "mgun_rear"}
@@ -133,7 +131,7 @@
 		}
 	}
 
-	("crew_2_human")
+	("crew_2_human_inside_left")
 	("crew_human" place(commander)	door1(emit1) door2(emit2) visor(back))
 	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
 	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor1))
@@ -167,22 +165,22 @@
 			{TurnTime   14}
 			{TurnStart  1}
 			{TurnRadius 7}
-    		{TurnStop   0.6}
+			{TurnStop   0.6}
 			{BrakeTime  1.5}
 			{StopTime   2.5}
 			{Gears  0.1 0.2 0.3 1}
 			{RearGears  0.2}
 		}
 		{FuelBag
-			{volume 295 }	
-			{rate	10 }   
+			{volume 295 }
+			{rate	10 }
 			{remain 295 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  38}
-        	{Slow  38}
-    	}
+			{Normal  38}
+			{Slow  38}
+		}
 	}
 	{sensor
 		{visor "driver"

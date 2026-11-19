@@ -1,0 +1,243 @@
+;----- Extra -----
+
+{"airborne_spawner" 		("extra" t() sc(0) cw(0) cp(0))}
+{"airborne_spawner_m1_57mm"	("extra" t() sc(0) cw(0) cp(0))}
+{"airborne_spawner_m8_howitzer"	("extra" t() sc(0) cw(0) cp(0))}
+{"84_smoke_off_map"	("extra" t() sc(0) cw(0) cp(3))}
+;----- Seq -----
+
+{"m4a3e8"  		("extra" t() sc(500) cw(0) cp(15))}	;9
+{"m4a3_75"  		("extra" t() sc(350) cw(0) cp(15))}	;9
+{"m3_usa"  		("extra" t() sc(85) cw(0) cp(3))}	;9
+{"m3_rus"  		("extra" t() sc(97) cw(0) cp(3))}	;9
+{"m3_eng"  		("extra" t() sc(85) cw(0) cp(3))}	;9
+{"m3_eng_single"  	("extra" t() sc(175) cw(0) cp(3))}	;9
+{"m3_usa_single"  	("extra" t() sc(175) cw(0) cp(3))}	;9
+
+
+{"30_browning_m1919a4"  	("extra" t() sc(110) cw(0) cp(3))}	;9
+{"50_browning_m2hb"  	("extra" t() sc(150) cw(0) cp(3))}	;9
+
+
+{"m4a3m_eng_single"  	("extra" t() sc(350) cw(0) cp(3))}	;9
+{"m4a3m"  	        ("extra" t() sc(175) cw(0) cp(3))}	;9
+{"t34m"  	        ("extra" t() sc(150) cw(0) cp(3))}	;9
+
+{"universal_carrier"  		("extra" t() sc(125) cw(0) cp(2.5))}	;9
+{"staghound"  		("extra" t() sc(230) cw(0) cp(5))}	;9
+{"cromwell_mk_iv"  		("extra" t() sc(342) cw(0) cp(15))}	;9
+{"cromwell_mk_vii"  		("extra" t() sc(430) cw(0) cp(15))}	;9
+
+{"maxim_1910_30"  		("extra" t() sc(120) cw(2) cp(5))}	;9
+{"bm_37"  		("extra" t() sc(350) cw(2) cp(5))}	;9
+{"zis3"  		("extra" t() sc(255) cw(2) cp(10))}	;9
+{"t34_2"  		("extra" t() sc(350) cw(0) cp(10))}	;9
+{"t34_3"  		("extra" t() sc(625) cw(0) cp(10))}	;9
+
+{"zb53_stan"  			("extra" t() sc(130) cw(0) cp(5))}
+{"mg34_lafette"  		("extra" t() sc(130) cw(0) cp(5))}
+{"mg42_lafette"  		("extra" t() sc(150) cw(0) cp(5))}
+{"75mm_leig18"  		("extra" t() sc(310) cw(0) cp(10))}	
+{"stug3g"  		("extra" t() sc(550) cw(0) cp(15))}	;9
+{"np_pak40"  		("extra" t() sc(400) cw(2) cp(10))}	;9
+{"pz4h"  		("extra" t() sc(500) cw(0) cp(20))}	;9
+
+{"zgkw303f"  		("extra" t() sc(750) cw(0) cp(15))}	;9
+
+
+{"ha-go"  		("extra" t() sc(160) cw(0) cp(5))}	;9
+
+{"resita"  		("extra" t() sc(300) cw(2) cp(8))}	
+{"brixia45"  		("extra" t() sc(100) cw(0) cp(5))}	;9
+
+
+
+{"m1139"  		("extra" t() sc(260) cw(0) cp(7))}	;9
+{"m7518"  		("extra" t() sc(280) cw(0) cp(8))}	;9
+;   heroes   
+
+{"dodge"  		("extra" t() sc(100) cw(0) cp(0))}	;9
+{"staghound_e1"  		("extra" t() sc(350) cw(0) cp(5))}	;9
+{"wasp"  				("extra" t() sc(350) cw(0) cp(5))}	;9
+
+{"Elite_Resita"  		("extra" t() sc(500) cw(2) cp(5))}	
+{"toldi1_rocket"  		("extra" t() sc(500) cw(0) cp(10))}
+{"m149_vet"  		("extra" t() sc(1100) cw(0) cp(15))}
+{"m9053_vet"  		("extra" t() sc(850) cw(0) cp(18))}
+
+
+{"sdkfz303"        		("extra" t() sc(100) cw(0) cp(5))}		;0
+{"veteran_tiger"        ("extra" t() sc(1500) cw(0) cp(30))}	;7
+{"pz5g_ace"        		("extra" t() sc(1900) cw(0) cp(30))}	;7
+{"sturmtiger"        	("extra" t() sc(1500) cw(0) cp(30))}	;10
+{"pz6bh_ace"     		("extra" t() sc(3200) cw(0) cp(70))}	;10
+{"karlthor"     		("extra" t() sc(1600) cw(0) cp(25))}	;10
+
+{"pz5g_veteran"        	("extra" t() sc(2200) cw(0) cp(30))}	;7
+{"pz6e_ace"        	("extra" t() sc(2050) cw(0) cp(30))}	;7
+{"jagdpanther_vet"     	("extra" t() sc(1900) cw(0) cp(30))}	;7
+{"17cm_kanone"  	("extra" t() sc(1440) cw(0) cp(25))}
+{"kblitz"  	        ("extra" t() sc(600) cw(0) cp(15))}
+{"pak38_elite"  	("extra" t() sc(295) cw(0) cp(9))}
+{"mg42_lafette_vet"  	("extra" t() sc(200) cw(0) cp(7))}
+
+{"raketenwerfer"		("extra" t() sc(150) cw(0) cp(5))}
+{"np_sdkfz251_16"    	        ("extra" t() sc(300) cw(0) cp(5))}	;2
+{"sdkfz234_3"			("extra" t() sc(350) cw(0) cp(10))}	;2
+{"sdkfz250_11"			("extra" t() sc(530) cw(0) cp(5))}		;0
+{"sdkfz234_4"			("extra" t() sc(800) cw(0) cp(10))}	;3
+{"t34_3_ger2"			("extra" t() sc(900) cw(0) cp(15))}	;3
+{"swg41"			("extra" t() sc(1400) cw(0) cp(15))}	;5
+{"sdkfz8"			("extra" t() sc(1050) cw(0) cp(15))}	;7
+{"brummbar"			("extra" t() sc(1400) cw(0) cp(30))}	;6
+{"jagdtiger_ger2"		("extra" t() sc(2900) cw(0) cp(50))}	;10
+{"pzkpfw38t_aufk"		("extra" t() sc(400) cw(1) cp(5))}	;10
+
+
+
+{"pz3_l"		("extra" t() sc(290) cw(0) cp(15))}
+{"stug4g_vet"		("extra" t() sc(700) cw(0) cp(15))}
+{"stug3g_ace"		("extra" t() sc(950) cw(0) cp(15))}
+
+{"ho-ni_3"        	("extra" t() sc(340) cw(0) cp(10))}	;2
+{"type_97_150mm"        ("extra" t() sc(590) cw(0) cp(15))}	;3
+{"chi-ha120"        	("extra" t() sc(500) cw(0) cp(15))}	;3
+{"type4_75mm_elite"     ("extra" t() sc(1000) cw(0) cp(10))}	;5
+{"type4_200mm"        	("extra" t() sc(600) cw(0) cp(15))}	;5
+{"ho-ri_1"        	("extra" t() sc(1200) cw(0) cp(35))}	;9
+{"chi-ri_2"        	("extra" t() sc(775) cw(0) cp(25))}	;9
+{"ho-ha3mgun"        	("extra" t() sc(70) cw(0) cp(4))}	;9
+
+{"lvt4"      	        ("extra" t() sc(400) cw(0) cp(10))}	;6
+{"m4a3e8_fury"      	("extra" t() sc(1050) cw(0) cp(20))}	;6
+{"m36_vet"      	("extra" t() sc(1450) cw(0) cp(20))}	;6
+{"m4a3e2_jumbo_76_vet"  ("extra" t() sc(1400) cw(0) cp(30))}	;6
+{"m26_pershing_vet"     ("extra" t() sc(1850) cw(0) cp(30))}	;6
+{"m12gmc_vet"  		("extra" t() sc(1850) cw(0) cp(20))}
+{"m26e4"    		("extra" t() sc(2100) cw(0) cp(35))}	;6
+
+{"m4a4_firefly_tulip"   ("extra" t() sc(400) cw(0) cp(20))}	;6
+{"m4a4_firefly_vet"    	("extra" t() sc(1000) cw(0) cp(20))}	;6
+
+{"gaz67"  		("extra" t() sc(240) cw(0) cp(0))}	;9
+{"203b4"  		("extra" t() sc(1600) cw(0) cp(25))}
+
+
+{"universal_carrier_ptrs"       ("extra" t() sc(250) cw(0) cp(2.5))}	;13
+{"pm_38_vet"    		("extra" t() sc(1580) cw(0) cp(10))}	;13
+{"t34_3_elite"    		("extra" t() sc(1350) cw(0) cp(15))}	;8
+{"is2_elite"    		("extra" t() sc(2850) cw(0) cp(50))}	;20
+
+;random shit
+
+
+{"pz4j_vet"  			("extra" t() sc(675) cw(0) cp(15))}
+{"np_sdkfz250_1"  		("extra" t() sc(140) cw(0) cp(5))}
+
+{"sdkfz250_1"  			("extra" t() sc(50) cw(0) cp(5))}
+{"sdkfz251_1_late"  		("extra" t() sc(75) cw(0) cp(5))}
+{"sdkfz251_1_late_ss"  		("extra" t() sc(165) cw(0) cp(5))}
+{"np_sdkfz251_1_late"  		("extra" t() sc(50) cw(0) cp(5))}
+{"np_sdkfz8"  		        ("extra" t() sc(90) cw(0) cp(5))}
+
+{"sdkfz250_1_single"  		("extra" t() sc(140) cw(0) cp(5))}
+{"sdkfz251_1_late_single"       ("extra" t() sc(150) cw(0) cp(5))}
+{"sdkfz251_1_single"  		("extra" t() sc(140) cw(0) cp(5))}
+{"np_sdkfz8_single"  		("extra" t() sc(180) cw(0) cp(5))}
+
+{"schwimmwagen"  		("extra" t() sc(115) cw(0) cp(3))}
+
+{"sg43_goryunov"  			("extra" t() sc(160) cw(2) cp(5))}
+
+
+
+; SS variants
+
+
+{"pz3_m_ss"  		("extra" t() sc(300) cw(0) cp(15))}
+{"pz3n_ss"              ("extra" t() sc(380) cw(0) cp(15))}
+{"pz6bh_ss"  		("extra" t() sc(2550) cw(0) cp(40))}
+{"marder_3m_ss"  	("extra" t() sc(525) cw(0) cp(12))}
+{"hetzer_ss"  	        ("extra" t() sc(675) cw(0) cp(15))}
+{"nashorn_ss"  	        ("extra" t() sc(1350) cw(0) cp(25))}
+{"jagdpanzer_iv_l48_ss" ("extra" t() sc(535) cw(0) cp(20))}
+{"jagdpanzer_iv_ss"  	("extra" t() sc(1125) cw(0) cp(30))}
+{"jagdpanther_ss"  	("extra" t() sc(1800) cw(0) cp(30))}
+
+
+;   Towed   
+
+{"vickers"  			("extra" t() sc(525) cw(0) cp(10))}
+{"pdr25"  			("extra" t() sc(400) cw(0) cp(15))}
+{"pdr25_vet"  			("extra" t() sc(687) cw(0) cp(15))}
+{"bl6"  			("extra" t() sc(547) cw(0) cp(15))}
+{"bl45"  			("extra" t() sc(550) cw(0) cp(20))}
+{"bl72"  			("extra" t() sc(1100) cw(0) cp(25))}
+{"land_mattress"  		("extra" t() sc(650) cw(0) cp(20))}
+
+{"np_52k_43"  			("extra" t() sc(400) cw(2) cp(15))}
+{"bs3"  			("extra" t() sc(725) cw(2) cp(15))}
+{"np_52k_43_guard"  		("extra" t() sc(500) cw(2) cp(15))}
+{"bs3_guard"  			("extra" t() sc(850) cw(2) cp(20))}
+{"k61"  			("extra" t() sc(250) cw(0) cp(10))}
+{"m30_1938"  			("extra" t() sc(500) cw(0) cp(15))}
+{"d1"  				("extra" t() sc(725) cw(0) cp(20))}
+{"np_ml20"  			("extra" t() sc(875) cw(0) cp(25))}
+{"t20"  			("extra" t() sc(2.50) cw(0) cp(0))}
+
+{"bofors"  			("extra" t() sc(250) cw(0) cp(10))}
+{"m2a1l"  			("extra" t() sc(495) cw(0) cp(15))}
+{"m114"  			("extra" t() sc(720) cw(0) cp(20))}
+{"longtom_155mm"  		("extra" t() sc(725) cw(0) cp(25))}
+{"m115"  			("extra" t() sc(815) cw(0) cp(25))}
+{"m114_vet"  			("extra" t() sc(1120) cw(0) cp(20))}
+{"longtom_155mm_vet"  		("extra" t() sc(1320) cw(0) cp(25))}
+{"m115_vet"  			("extra" t() sc(1420) cw(0) cp(25))}
+{"gmc_cckw"  			("extra" t() sc(100) cw(0) cp(0))}
+
+{"pak43"  			("extra" t() sc(850) cw(2) cp(20))}
+{"pak44"  			("extra" t() sc(950) cw(2) cp(20))}
+{"flak18a"  			("extra" t() sc(700) cw(0) cp(15))}
+{"flak36a"  			("extra" t() sc(610) cw(0) cp(15))}
+{"lefh18"  			("extra" t() sc(400) cw(0) cp(15))}
+{"sfh18"  			("extra" t() sc(660) cw(0) cp(20))}
+{"morser18"  			("extra" t() sc(1150) cw(0) cp(25))}
+{"nebelwerfer41_2"  		("extra" t() sc(900) cw(0) cp(15))}
+{"steyr_rso"  			("extra" t() sc(1.00) cw(0) cp(0))}
+
+{"np_sdkfz251_10"  		("extra" t() sc(200) cw(0) cp(5))}
+{"np_sdkfz231"  		("extra" t() sc(235) cw(0) cp(5))}
+{"np_sdkfz234_1"  		("extra" t() sc(265) cw(0) cp(5))}
+{"np_sdkfz234_3"  		("extra" t() sc(315) cw(0) cp(5))}
+{"pz4g"  			("extra" t() sc(480) cw(0) cp(20))}
+{"pz5a"  			("extra" t() sc(1350) cw(0) cp(20))}
+{"pz6h"  			("extra" t() sc(1300) cw(0) cp(30))}
+{"flammpz38"  			("extra" t() sc(525) cw(0) cp(15))}
+{"stug3f"  			("extra" t() sc(450) cw(0) cp(15))}
+{"stug4g"  			("extra" t() sc(575) cw(0) cp(15))}
+
+{"flak37_ger2"			("extra" t() sc(325) cw(0) cp(10))}
+{"lefh18_ger2"			("extra" t() sc(400) cw(0) cp(15))}
+{"sfh18_ger2"			("extra" t() sc(700) cw(0) cp(20))}
+{"sdkfz7"			("extra" t() sc(275) cw(0) cp(0))}
+{"pak36_ger2"			("extra" t() sc(150) cw(0) cp(10))}
+{"pak38_ger2"			("extra" t() sc(230) cw(0) cp(15))}
+{"pak40_ger2"			("extra" t() sc(470) cw(0) cp(15))}
+
+
+
+{"flak36a_vet"  		("extra" t() sc(900) cw(0) cp(15))}
+{"pak43_vet"  			("extra" t() sc(950) cw(2) cp(20))}
+{"kfz15"			("extra" t() sc(125) cw(0) cp(0))}
+
+{"type4_75mm"  			("extra" t() sc(600) cw(0) cp(10))}
+{"t91_105m"  			("extra" t() sc(450) cw(0) cp(15))}
+{"type96_150mm"  		("extra" t() sc(650) cw(0) cp(20))}
+{"type_89"  			("extra" t() sc(780) cw(0) cp(20))}
+{"ss-ki"  			("extra" t() sc(100) cw(0) cp(3))}
+												
+{"obice14940"  			("extra" t() sc(750) cw(0) cp(20))}	
+{"155mm_mle1917"  		("extra" t() sc(650) cw(0) cp(20))}
+{"cannone9053"  		("extra" t() sc(750) cw(0) cp(10))}	
+{"obice210"  			("extra" t() sc(900) cw(0) cp(25))}		
+{"flak36a_fin"  		("extra" t() sc(700) cw(0) cp(15))}

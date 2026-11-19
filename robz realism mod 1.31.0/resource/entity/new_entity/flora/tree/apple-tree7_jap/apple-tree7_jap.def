@@ -1,10 +1,9 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tree.inc")
-	{props  "normal_light" "invisible_crown"}	
+	{props  "normal_light" "invisible_crown"}
 	{Extension "apple-tree7.mdl"}
-	{Volume "crown"
-		{able {visible 0}}
-	}
+	("vol_invisible" name(crown))
 	{Volume "bole"
 		{able {bullet 0}}
 	}

@@ -3,12 +3,12 @@
 	{filling "ammo 8cm_wurfgranate" 48}
 	{fillingVisible "rocket"}
 	{fireSound "reactive/katyusha_burst"}
-        ("heavy_artillery")
-       
-      	{recoveryTime 0.35}
+	("heavy_artillery")
+
+	{recoveryTime 0.35}
 	{aimtype direct}
 
-	{gravity 3}	
+	{gravity 3}
 	{burst {min 16} {noaiming}}
 	{spreading
 		{SpreadRadius 22}

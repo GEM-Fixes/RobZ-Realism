@@ -11,9 +11,9 @@
 		{material "steel"}
 
 	}
-{obstacleID "construction"}
-{collider "stuff"}
-{props "steel" "stuff" "collectable"}
-{simulation {able 1} {disableLinked 1}}
-{constrain ground}
+	{obstacleID "construction"}
+	{collider "stuff"}
+	{props "steel" "stuff" "collectable"}
+	{simulation {able 1} {disableLinked 1}}
+	{constrain ground}
 }

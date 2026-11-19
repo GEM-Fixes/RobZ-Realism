@@ -37,7 +37,7 @@
 {"zb53_stan"  			("extra" t() sc(130) cw(0) cp(5))}
 {"mg34_lafette"  		("extra" t() sc(130) cw(0) cp(5))}
 {"mg42_lafette"  		("extra" t() sc(150) cw(0) cp(5))}
-{"75mm_leig18"  		("extra" t() sc(310) cw(0) cp(10))}	
+{"75mm_leig18"  		("extra" t() sc(310) cw(0) cp(10))}
 {"stug3g"  		("extra" t() sc(550) cw(0) cp(15))}	;9
 {"np_pak40"  		("extra" t() sc(400) cw(2) cp(10))}	;9
 {"pz4h"  		("extra" t() sc(500) cw(0) cp(20))}	;9
@@ -47,20 +47,20 @@
 
 {"ha-go"  		("extra" t() sc(160) cw(0) cp(5))}	;9
 
-{"resita"  		("extra" t() sc(300) cw(2) cp(8))}	
+{"resita"  		("extra" t() sc(300) cw(2) cp(8))}
 {"brixia45"  		("extra" t() sc(100) cw(0) cp(5))}	;9
 
 
 
 {"m1139"  		("extra" t() sc(260) cw(0) cp(7))}	;9
 {"m7518"  		("extra" t() sc(280) cw(0) cp(8))}	;9
-;   heroes   
+;   heroes
 
 {"dodge"  		("extra" t() sc(100) cw(0) cp(0))}	;9
 {"staghound_e1"  		("extra" t() sc(350) cw(0) cp(5))}	;9
 {"wasp"  				("extra" t() sc(350) cw(0) cp(5))}	;9
 
-{"Elite_Resita"  		("extra" t() sc(500) cw(2) cp(5))}	
+{"Elite_Resita"  		("extra" t() sc(500) cw(2) cp(5))}
 {"toldi1_rocket"  		("extra" t() sc(500) cw(0) cp(10))}
 {"m149_vet"  		("extra" t() sc(1100) cw(0) cp(15))}
 {"m9053_vet"  		("extra" t() sc(850) cw(0) cp(18))}
@@ -165,7 +165,7 @@
 {"jagdpanther_ss"  	("extra" t() sc(1800) cw(0) cp(30))}
 
 
-;   Towed   
+;   Towed
 
 {"vickers"  			("extra" t() sc(525) cw(0) cp(10))}
 {"pdr25"  			("extra" t() sc(400) cw(0) cp(15))}
@@ -235,9 +235,9 @@
 {"type96_150mm"  		("extra" t() sc(650) cw(0) cp(20))}
 {"type_89"  			("extra" t() sc(780) cw(0) cp(20))}
 {"ss-ki"  			("extra" t() sc(100) cw(0) cp(3))}
-												
-{"obice14940"  			("extra" t() sc(750) cw(0) cp(20))}	
+
+{"obice14940"  			("extra" t() sc(750) cw(0) cp(20))}
 {"155mm_mle1917"  		("extra" t() sc(650) cw(0) cp(20))}
-{"cannone9053"  		("extra" t() sc(750) cw(0) cp(10))}	
-{"obice210"  			("extra" t() sc(900) cw(0) cp(25))}		
+{"cannone9053"  		("extra" t() sc(750) cw(0) cp(10))}
+{"obice210"  			("extra" t() sc(900) cw(0) cp(25))}
 {"flak36a_fin"  		("extra" t() sc(700) cw(0) cp(15))}

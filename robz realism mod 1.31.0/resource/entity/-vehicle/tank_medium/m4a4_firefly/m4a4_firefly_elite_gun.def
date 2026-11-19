@@ -1,17 +1,18 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{props "medium" "turret_rotator" "vision_vehicle_high" "muzzle_large_sides" "m4a4_firefly"}
 
 	{extender "enumerator"}
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: m4a4_firefly.def) ---
 	{volume "body1"	;нижн€€ часть корпуса
 		{component "body"}
 		{tags "body"}
 		{thickness 38.1
 			{front	50.8}	;трансмисси€
-		;	{rear	38.1}
+			;	{rear	38.1}
 			{top	0.1}	;внутренн€€ стенка
 			{bottom	19.05}
 		}
@@ -32,7 +33,7 @@
 		{tags "body"}
 		{thickness 38.1
 			{front	10}
-		;	{rear	38.1}
+			;	{rear	38.1}
 			{top	19.05}
 			{bottom	12.7}
 		}
@@ -42,7 +43,7 @@
 		{tags "body"}
 		{thickness 38.1
 			{front	0.1}	;внутренн€€ стенка
-		;	{rear	38.1}
+			;	{rear	38.1}
 			{top	0.1}	;внутренн€€ стенка
 			{bottom	12.7}
 		}
@@ -51,7 +52,7 @@
 		{component "body"}
 		{tags "body"}
 		{thickness 50.8
-		;	{front	50.8}
+			;	{front	50.8}
 			{rear	19.05}
 			{top	19.05}
 			{bottom	0.1}	;внутренн€€ стенка
@@ -61,7 +62,7 @@
 		{component "body"}
 		{tags "body"}
 		{thickness 50.8
-		;	{front	50.8}
+			;	{front	50.8}
 			{rear	19.05}
 			{top	19.05}
 			{bottom	0.1}	;внутренн€€ стенка
@@ -73,7 +74,7 @@
 		{able {holed}}
 		{thickness 50.8
 			{front	76.2}
-		;	{rear	50.8}
+			;	{rear	50.8}
 			{top	25.4}
 			{bottom	12.7}
 		}
@@ -83,33 +84,21 @@
 		{component "turret"}
 		{able {holed}}
 		{thickness 38.1
-		;	{front	38.1}	;внутренн€€ стенка
+			;	{front	38.1}	;внутренн€€ стенка
 			{rear	0.1}	;внутренн€€ стенка
 			{top	25.4}
 			{bottom	12.7}
 		}
 	}
-	{Volume "hole_bod"
-		{able clear {hole}}
-		{component "body"}
-	}
-	{Volume "hole_bod1"
-		{able clear {hole}}
-		{component "body"}
-	}
-	{Volume "hole_bod2"
-		{able clear {hole}}
-		{component "body"}
-	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "turret"}
-	}
+	("vol_body_hole_only" name(hole_bod))
+	("vol_body_hole_only" name(hole_bod1))
+	("vol_body_hole_only" name(hole_bod2))
+	("vol_turret_hole_only" name(hole_man))
 	{Volume "mantlet"
 		{tags "gun"}
 		{component "gun"}
 		{thickness 89
-		;	{front	89}
+			;	{front	89}
 			{rear	15}	;орудие дает небольшую броню
 		}
 	}
@@ -140,12 +129,9 @@
 		}
 	}
 	; --- end Godny hitbox armor ---
-	{Volume "turret2"
-		{tags "turret"}
-		{component "turret"}
-	}
+	("vol_turret_part" name(turret2))
 	("armor_medium" turret(76 51 64 25) body(51 38 38 22) body2(51 38 38 22))
-	("armor_engine"  t(40 38 38 22))		
+	("armor_engine"  t(40 38 38 22))
 	("armor_mantlet" t(89))
 	("shield" args 10)
 	("eng_6x_sight")
@@ -159,7 +145,7 @@
 	{component "shieldr1" {tags "shield"}}
 	{component "shieldr2" {tags "shield"}}
 
-	
+
 	("crew_4_human")
 
 	("gunner_visible")
@@ -214,7 +200,7 @@
 		}
 	}
 
-{Extension "m4a4_firefly.mdl"}
+	{Extension "m4a4_firefly.mdl"}
 
 	{mass 32500}
 	{Chassis
@@ -226,22 +212,22 @@
 			{TurnTime   18}
 			{TurnStart  1.6}
 			{TurnRadius 8}
-    		{TurnStop   0.8}
+			{TurnStop   0.8}
 			{BrakeTime  1.5}
 			{StopTime   2.5}
 			{Gears   0.1 0.2 0.3 1}
 			{RearGears  0.27}
 		}
 		{FuelBag
-			{volume 660 }	
-			{rate	35 }   
+			{volume 660 }
+			{rate	35 }
 			{remain 660 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  32}
-        	{Slow  32}
-    	}
+			{Normal  32}
+			{Slow  32}
+		}
 	}
 	{bone "turret_mgun"
 		{limits -15 15}

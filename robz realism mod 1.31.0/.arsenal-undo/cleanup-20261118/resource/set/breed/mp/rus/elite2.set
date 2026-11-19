@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-mar2-rfl"}
+	{portrait "rus_elite1"}
+	{nationality rus}
+	{icon "elite2"}
+	{icon_priority 3}
+	{armors
+		{body mochila_urss}
+		{head cap2_rus}
+	}
+	{perks
+		("soldier_rifle_4" rocket(1) body(line))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_svt40")
+		{item "ammo mosin_clip" 60}
+		{item "ammo dp27_mag" 47}
+		{item "bandage" 5}
+		("frag_f1_x2")
+		("at_grenade_rg42x3_x1")
+		{in_hands 0}
+	}
+}

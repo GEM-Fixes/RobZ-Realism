@@ -1,0 +1,9 @@
+{from "mp40"
+	{filling "ammo 9x19" 20 100}
+	{entity "fnab_m1943open"}
+	{fireSound	"smg/fnab_m1943_burst/"}
+	{reloadSound "m3a1_reload"}
+	("burst_medium")
+	("recoveryTime" r(400))
+	("speed" s(381))
+}

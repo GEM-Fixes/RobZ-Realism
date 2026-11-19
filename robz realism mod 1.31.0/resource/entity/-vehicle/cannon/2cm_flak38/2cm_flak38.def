@@ -43,12 +43,12 @@
 			{weapon "20mm_flak38" filling "bullet20 ger zenite ap" 30}
 			("abm_zenite")
 		}
-	}  	
+	}
 	{mass 1500}
-	
+
 	{Extension "2cm_flak38.mdl"}
 	(include "/properties/selection/cannon.inc"  scale(0.7))
-	
+
 	{extender "cannon"
 		{animation
 			{switch "close"}

@@ -1,0 +1,5 @@
+{Extension "qf6_x.mdl"}
+{Volume "wheelleft"
+}
+{Volume "wheelright"
+}

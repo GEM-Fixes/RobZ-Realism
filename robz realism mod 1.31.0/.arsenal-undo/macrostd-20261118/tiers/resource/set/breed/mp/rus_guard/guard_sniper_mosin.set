@@ -1,0 +1,28 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-smguner"}
+	{portrait "rus_soldier4"}
+	{nationality rus}
+	{icon "sniper"}
+	{icon_priority 5}
+	{armors
+		{head fieldcap1_rus}
+	}
+	{perks
+		("breed_body" health(350%) regen_health(100%) stamina(150%) regen_stamina(100%) vision("mp_sniper") speed(1.0))
+		{"stealth"}
+		{"telescope"}
+		("breed_drive" tank(0.75) vehicle(1) cannon(0.8))
+		("breed_skills" pistol(2) smg(2) mgun(1) rifle(4) rocket(1) melee(2))
+		{"aimedshot"}
+	}
+	("breed_vet" table(standard_start3))
+	{inventory
+		("kit_rifle" gun(mosin_s_vet) ammo(mosin_clip) rounds(120))
+		{item "bandage" 5}
+		;{item "smoke_paradrop_ammo grenade" 1}
+		{item "plant" 3}
+		{item "knife_rus"}
+		{in_hands 0}
+	}
+}

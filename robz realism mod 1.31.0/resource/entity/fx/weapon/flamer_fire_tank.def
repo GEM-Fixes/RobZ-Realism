@@ -24,7 +24,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/flashssp3"
 					{timer
 						{mode play }
@@ -93,7 +93,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/exp01"
 					{timer
 						{mode play }
@@ -165,7 +165,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04"
 					{timer
 						{mode play }
@@ -247,7 +247,7 @@
 			}
 		}
 		{visualizer
-			{stage initial 
+			{stage initial
 				{sprite "$/smoke/smtanko"
 					{timer
 						{mode play }
@@ -273,7 +273,7 @@
 					}
 				}
 			}
-			{stage collided 
+			{stage collided
 				{sprite "$/explosion/fireloop"
 					{timer
 						{mode play }

@@ -1,45 +1,4 @@
+; same as the other 1 def here; body in jagdpanther_body.inc
 {game_entity
-	{Extension "jagdpanther_xx.mdl"}
-	{Volume "body"
-	}
-	{Volume "body2"
-	}
-	{Volume "body3"
-	}
-	{Volume "engine"
-	}
-	{Volume "gun"
-	}
-	{Volume "mantlet"
-	}
-	{Volume "part1"
-	}
-	{Volume "part2"
-	}
-	{Volume "part3"
-	}
-	{Volume "part4"
-	}
-	{Volume "part5"
-	}
-	{Volume "part6"
-	}
-	{Volume "part7"
-	}
-	{Volume "shieldl2"
-	}
-	{Volume "shieldl4"
-	}
-	{Volume "shieldl5"
-	}
-	{Volume "shieldr3"
-	}
-	{Volume "shieldr4"
-	}
-	{Volume "shieldr6"
-	}
-	{Volume "trackleft"
-	}
-	{Volume "trackright"
-	}
+	(include "jagdpanther_body.inc")
 }

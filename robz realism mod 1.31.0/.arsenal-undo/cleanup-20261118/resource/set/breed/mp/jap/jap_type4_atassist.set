@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "jap_army_lmg1"}
+	{portrait "jap_soldier2"}
+	{nationality jap}
+	{icon "bazooker"}
+	{icon_priority 3}
+	{armors
+		{head "jap_army_helmet6"}
+	}
+	{perks
+		("soldier_smg_2" rocket(2) body(hardy))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "weapon weapon type_4at" filled}
+		("smg_type100smg")
+		{item "bandage" 3}
+		("at_grenade_type3at_a_x1")
+		{item "ammo type_4" 7}
+		{in_hands 0}
+	}
+}

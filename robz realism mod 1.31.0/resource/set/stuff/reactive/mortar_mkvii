@@ -12,10 +12,10 @@
 	{burst
 		{short 1}
 		{Long 1}
-	}	
+	}
 	{preloaded}
 	{mass 4.8}
-	
+
 	{spreading 18
 	}
 	{aimRange 130}
@@ -33,7 +33,7 @@
 	{DisableRicochet}
 	{foresight "Foresight3"}
 
-       	{projectileDamage 10}
+	{projectileDamage 10}
 	{AimingTolerance 0.1}
 	{projectileDamageTable {90 10}}
 	{projectileDamageThreshold 1}

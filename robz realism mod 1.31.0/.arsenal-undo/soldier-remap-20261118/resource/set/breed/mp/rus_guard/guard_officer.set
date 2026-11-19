@@ -1,0 +1,30 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-com"}
+	{portrait "rus_officer"}
+	{nationality rus}
+	{icon "officer"}
+	{icon_priority 6}
+	{armors
+		{head cap3_rus}
+	}
+	{tags "officer"}
+	{perks
+		("body_officer")
+		{"field_glass"}
+		("drive_veteran")
+		{"pistol" lvl_3}
+		{"smg" lvl_3}
+		{"mgun" lvl_3}
+		{"rifle" lvl_3}
+		{"rocketlauncher" lvl_3}
+		{"melee" "lvl_3"}
+	}
+	("breed_vet" table(standard_start3))
+	{inventory
+		("kit_pistol" gun(tt) ammo(tt_mag) rounds(32))
+		{item "knife_rus"}
+		{item "binocular"}
+		{in_hands 0}
+	}
+}

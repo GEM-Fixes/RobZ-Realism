@@ -2,18 +2,18 @@
 	{rechargeTime 5.6}
 	("accuracy_high_210m")
 	{range 210 210}
-	("damage_170" a(146) b(133) c(118) d(105) e(93) range(210))
+	("damage_170" at20(146) at100(133) at170(118) at215(105) at250(93) max(210))
 	{parameters "apcbc"
-		("damage_170" a(146) b(133) c(118) d(105) e(93) range(210))
+		("damage_170" at20(146) at100(133) at170(118) at215(105) at250(93) max(210))
 	}
 	{parameters "heatb"
-		("damage_heat" a(87) range(210))
+		("damage_heat" damage(87) max(210))
 	}
 	{parameters "heatc"
-		("damage_heat" a(100) range(210))
+		("damage_heat" damage(100) max(210))
 	}
 	{parameters "apcr"
-        	("damage_170" a(195) b(170) c(144) d(121) e(102) range(210))
+		("damage_170" at20(195) at100(170) at170(144) at215(121) at250(102) max(210))
 	}
 	{parameters "fg"
 		{range 190 190}

@@ -19,7 +19,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4ba"
 					{timer
 						{mode play }
@@ -72,7 +72,7 @@
 				}
 			}
 		}
-                {notifyowner}
+		{notifyowner}
 	}
 
 }

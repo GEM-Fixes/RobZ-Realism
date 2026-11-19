@@ -1,0 +1,22 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-ssvtnco-smg"}
+	{portrait "ger_soldier7"}
+	{icon "smg"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{head waffen_fieldcap}
+	}
+	{perks
+		("soldier_smg_3" rocket(1) body(hardy))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_mp41")
+		{item "bandage" 3}
+		("frag_m24_x2")
+		("smoke_x2")
+		{in_hands 0}
+	}
+}

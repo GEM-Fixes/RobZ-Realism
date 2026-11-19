@@ -2,7 +2,7 @@
 	{filling "bullet20 zenite" 80}
 	{RechargeTime 10}
 	("recoveryTime" r(1800))
-	
+
 	("accuracy_zenite_low")
 	{spreading 1
 		{SpreadPower	1}

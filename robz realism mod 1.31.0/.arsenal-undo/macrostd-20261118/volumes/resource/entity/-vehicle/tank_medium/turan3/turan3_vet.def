@@ -1,0 +1,152 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "turret_rotator" "vision_vehicle_medium" "muzzle_medium_sides"}
+
+	{volume "body1"
+		{component "body"}
+		{tags "body"}
+	}
+	{volume "body2"
+		{component "body"}
+		{tags "body"}
+	}
+	{volume "body3"
+		{component "body"}
+		{tags "body"}
+	}
+	{volume "engine"
+		{component "engine"}
+		{tags "engine"}
+	}
+	{Volume "gun"
+		{component "gun"}
+		{tags "gun"}
+	}
+	{Volume "mantlet"
+		{component "mantlet"}
+		{tags "mantlet"}
+	}
+	{Volume "turret1"
+		{component "turret"}
+		{tags "turret"}
+	}
+	{Volume "turret2"
+		{component "turret"}
+		{tags "turret"}
+	}
+	{Volume "kupola"
+		{component "kupola"}
+		{tags "kupola"}
+		{thickness 60}
+	}
+
+	("armor_medium" turret(50 30 30 10) body(80 30 20 22))
+	("armor_engine"  t(30 30 20 22))
+	("armor_mantlet" t(50))
+
+	("shield" args 10)
+
+	{extender "shield"
+		{on}
+	}
+	{component "shieldl1" {tags "shield"}}
+	{component "shieldl2" {tags "shield"}}
+	{component "shieldl3" {tags "shield"}}
+	{component "shieldl4" {tags "shield"}}
+	{component "shieldl5" {tags "shield"}}
+	{component "shieldl6" {tags "shield"}}
+	{component "shieldr1" {tags "shield"}}
+	{component "shieldr2" {tags "shield"}}
+	{component "shieldr3" {tags "shield"}}
+	{component "shieldr4" {tags "shield"}}
+	{component "shieldr5" {tags "shield"}}
+	{component "shieldr6" {tags "shield"}}
+	{component "shieldr7" {tags "shield"}}
+	{extender "enumerator"
+		{digit_folder "ger"}
+	}
+
+	{sensor
+		{visor "hullmg"
+			{bone "foresight4"}
+			{vision "tank_driver"}
+		}
+	}
+	("crew_5_human")
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+	}
+
+	{extender "inventory"
+		{box
+			{item "ammo bullet75_hun ap" 50}
+			{item "ammo bullet75_hun fg" 27}
+			{item "ammo bullet75_hun apcr" 5}
+			{item "ammo gabauer_belt" 1350}
+
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "75mm_43m_vet"  filling "ammo bullet75_hun ap" 1}
+			("abm_veteran")
+		}
+		{place "mgun1"
+			{type "mgun_hull"}
+			{weapon "gebauer" filled}
+			{foresight "foresight4"}
+			{gunner "gunner3"}
+			{charger "gunner3"}
+			("abm_mgun")
+		}
+		{place "mgun2"
+			{type "mgun_coaxial"}
+			{weapon "gebauer_optic" filled}
+			{foresight "foresight5"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+	{mass 23500}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.52) len(0.21))
+		{Locomotion ("locomotion")
+			{MaxSpeed	 28}
+			{maxSpeedAtMaxTurn 4}
+			{StartTime	  45}
+			{TurnTime  	  19}
+			{TurnStart  1.4}
+			{BrakeTime    1}
+			{StopTime     2}
+			{TurnRadius   8}
+			{TurnStop   0.8}
+			{Gears  0.1 0.2 0.3 1}
+			{RearGears 0.28}
+		}
+		{FuelBag
+			{volume 470 }
+			{rate	36 }
+			{remain 470 }
+			{fuel "fuel"}
+		}
+		{speed
+			{Normal  28}
+			{Slow  28}
+		}
+	}
+	{Extension "turan3_vet.mdl"}
+	{bone "turret"
+		{speed 0.0045}
+	}
+;("ger_4_sight")
+}

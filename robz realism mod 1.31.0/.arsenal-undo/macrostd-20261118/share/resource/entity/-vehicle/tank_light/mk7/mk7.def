@@ -1,0 +1,167 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+
+	{collider "tank.light"}
+	{patherId "tank.light"}
+	{props "light" "turret_rotator" "vision_vehicle_low" "muzzle_minimum" "switch_mgun_coax"}
+	{targetClass "light_tank"}
+
+	{extender "enumerator"}
+
+	; --- Godny hitbox armor (ported from GodnyMod: mk7.def) ---
+	{volume "body1"	;нижн€€ часть корпуса
+		{tags "body"}
+		{component "body"}
+		{thickness 14
+			{front	16}
+			{rear	0.1}	;стык body1 и body4
+			{top	10}	;гласис
+			{bottom	6}
+		}
+	}
+	{volume "body2"	;верхн€€ часть корпуса
+		{tags "body"}
+		{component "body"}
+		{thickness 14
+			{front	16}
+			{rear	0.1}	;стык body1 и body4
+			{top	7}
+			{bottom	0.1}	;стык body1 и body2
+		}
+	}
+	{volume "body3"	;мехвод
+		{tags "body"}
+		{component "body"}
+		{thickness 14
+			{front	16}
+			{rear	0.1}	;стык body1 и body3
+			{top	5}
+			{bottom	0.1}	;стык body1 и body3
+		}
+	}
+	{volume "body4"	;мто
+		{tags "body"}
+		{component "body"}
+		{thickness 14
+			{front	0.1}	;стык body1 и body4
+			{rear	10}
+			{top	5}
+			{bottom	6}
+		}
+	}
+	{volume "turret"
+		{component "turret"}
+		{tags "turret"}
+		{able {holed}}
+		{thickness 14
+			{front	16}
+			{rear	10}
+			{top	8}
+			{bottom	4}
+		}
+	}
+	{Volume "hole_man"
+		{able clear {hole}}
+		{component "turret"}
+	}
+	{volume "mantlet"
+		{thickness 16
+			;	{front	16}
+			{rear	10}	;орудие дает небольшую броню
+		}
+	}
+	{volume "engine"
+		{thickness 10}
+	}
+	{volume "zipl1"
+		{thickness 6}
+	}
+	{volume "zipr1"
+		{thickness 6}
+	}
+	; --- end Godny hitbox armor ---
+	("armor_light" turret(16 16 14 8) body(16 16 14 8))
+	("armor_engine"  t(16))
+	("eng_1-9x_sight")
+
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_LowArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	{extender "inventory"
+		{box
+			{item "bullet40 eng ap" 50}
+			;{item "bullet40 fg" 27}
+			;{item "bullet40 apcr" 2}
+			{item "ammo mg_mauser belt red" 2000}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "40mm_oqf2pdr" filling "bullet40 eng ap" 1}
+			("abm_low")
+		}
+		{place "mgun"
+			{type "mgun_coaxial"}
+			{weapon "besa_optic" filling "mg_mauser belt red" 225}
+			{gunner "commander"}
+			{charger "commander"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	{mass 7500}
+	{Chassis
+		("tank_trace" fx("tracks_sm2") step(0.15) len(0.2))
+		{Locomotion ("locomotion")
+			{maxspeed   38}
+			{maxSpeedAtMaxTurn 6}
+			{StartTime  20}
+			{TurnTime   14}
+			{TurnStart  1.1}
+			{TurnRadius 7}
+			{TurnStop   0.6}
+			{BrakeTime  1.5}
+			{StopTime   3}
+			{Gears 0.1 0.2 0.3 1}
+			{RearGears  0.25}
+		}
+		{FuelBag
+			{volume 205 }
+			{rate	 13 }
+			{remain 205 }
+			{fuel "fuel"}
+		}
+		{speed
+			{Normal  38}
+			{Slow  38}
+		}
+	}
+
+	{Extension "mk7.mdl"}
+
+	{bone "turret"
+		{speed 0.003}
+	}
+	{bone "gun_rot"
+		{limits -25 10}
+		{speed 0.001}
+	}
+}

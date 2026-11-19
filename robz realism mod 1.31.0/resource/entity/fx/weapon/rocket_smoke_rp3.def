@@ -70,7 +70,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b"
 					{turn 1
 						{linear
@@ -166,7 +166,7 @@
 			{damping 0.98}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smtanko"
 					{turn 1
 						{linear
@@ -216,7 +216,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b"
 					{turn 1
 						{linear

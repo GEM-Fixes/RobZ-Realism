@@ -42,9 +42,9 @@
 		{position 0 2}
 		{condition "disabled"}
 	}
-;	{aimed_shot
-;		{position 1 2}
-;	}
+	;	{aimed_shot
+	;		{position 1 2}
+	;	}
 	{gc_cp_browse_back
 		{position 3 2}
 	}

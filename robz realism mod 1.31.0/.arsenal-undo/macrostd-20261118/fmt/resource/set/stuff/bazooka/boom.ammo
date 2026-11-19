@@ -1,0 +1,15 @@
+{from "pattern rpg_ammo"
+	{tag "pierce boom cumulative_big"}
+	{inventory
+		{weight 4}
+		{block 25}
+		{size 1 1}
+		{fsm "belt"}
+	}
+
+	{damage blastwave
+		{energy 1}
+		{area 8 8}
+	}	
+	{mass 0.015}
+}

@@ -4,7 +4,7 @@
 	{fillingVisible "rocket"}
 	{fireSound "reactive/katyusha_burst"}
 	{foresight "foresight"}
-	("heavy_artillery")  
+	("heavy_artillery")
 
 	{spreading
 		{SpreadRadius 20}
@@ -14,7 +14,7 @@
 	{rechargeTime 45}
 	{range 255 255}
 	{speed 60}
-	
+
 	(mod "mp"
 		{tag "prepare"}
 		{Special

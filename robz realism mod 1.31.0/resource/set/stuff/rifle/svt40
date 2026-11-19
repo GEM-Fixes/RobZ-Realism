@@ -4,7 +4,7 @@
 	{entity "svt40"}
 	{fireSound "rifle/svt40_shot/"}
 	{reloadSound "svt40"}
-	
+
 	{Automatic}
 	{rechargeTime 4.5}
 	{healthDamage 30}

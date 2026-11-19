@@ -10,5 +10,5 @@
 	{rechargeTime 90}
 
 	{cursor "cannon_on_fg"}
-	{cursorReloading "cannon_reload_fg"}	
+	{cursorReloading "cannon_reload_fg"}
 }

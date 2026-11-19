@@ -1,18 +1,18 @@
 {bullet
-  {tag "bullet small stackable pierce"}
-  {desc "desc/ammo/beam"}
-  {inventory
-    {weight 1}
-    {block 25}
-    {size 2 1}
-    {fsm "belt"}
-  }
-  {mass 0.013}
-  {entity "beam_ammo"}
-  {trace
+	{tag "bullet small stackable pierce"}
+	{desc "desc/ammo/beam"}
+	{inventory
+		{weight 1}
+		{block 25}
+		{size 2 1}
+		{fsm "belt"}
+	}
+	{mass 0.013}
+	{entity "beam_ammo"}
+	{trace
 		{view "/texture/fx/trace4"
 			{ScaleY 0.4}
-	 		{Light 1}
+			{Light 1}
 		}
 		{length 100}
 	}

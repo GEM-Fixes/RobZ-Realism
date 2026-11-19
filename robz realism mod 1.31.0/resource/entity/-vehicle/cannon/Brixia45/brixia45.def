@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/cannon.ext")
 	{props "vehicle" "cannon" "cannon_small" "nebelwerfer" "no_exp_blast" "round_sandbag2" "vision_cannon_minimum"}
@@ -10,11 +11,7 @@
 
 	("armor_medium")
 
-	{volume "body"
-		{tags "body"}
-		{component "body"}
-		{thickness 15}
-	}
+	("vol_body_plate_lower" name(body) mm(15))
 	{Volume "gun"
 		{thickness 15}
 		{able {Contact 1}}
@@ -41,7 +38,7 @@
 	}
 	{extender "inventory"
 		{box
-			                         {item "ammo  5cm_grenade_brixia fg" 20}
+			{item "ammo  5cm_grenade_brixia fg" 20}
 
 			{item "sandbag_kit2" 2}
 		}

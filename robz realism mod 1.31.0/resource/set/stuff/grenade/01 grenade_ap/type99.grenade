@@ -7,9 +7,9 @@
 	}
 	{throw
 		{range 27}
-		{startAngle 40}		
+		{startAngle 40}
 		{spreading 3.5}
-	}	
+	}
 	{damage blastwave
 		{energy 1.0} ; kg
 		{area 3.3 6.3}

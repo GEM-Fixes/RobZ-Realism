@@ -1,0 +1,9 @@
+{Extension "30_browning_m1919a4_xx.mdl"}
+{Volume "body"
+}
+{Volume "support1"
+}
+{Volume "support2"
+}
+{Volume "support3"
+}

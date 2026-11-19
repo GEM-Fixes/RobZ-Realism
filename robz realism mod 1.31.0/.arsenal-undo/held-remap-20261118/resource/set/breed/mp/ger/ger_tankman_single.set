@@ -1,0 +1,20 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger_ss_tankman"}
+	{portrait "ger_tankman"}
+	{nationality ger2}
+	{icon "tankman"}
+	{icon_priority 1}
+	{armors
+		{head tank_cap2_ss}
+	}
+	{perks
+		("crew_1" body(line))
+		{"tankgun" lvl_2}
+	}
+	("breed_vet" table(crew))
+	{inventory
+		("pistol_valter_32")
+		{in_hands 0}
+	}
+}

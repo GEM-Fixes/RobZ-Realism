@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
@@ -6,7 +7,7 @@
 	{extender "enumerator"}
 
 	("armor_medium_advanced" turret(0) body(64 38 38 22) body2(51 38 38 22) body3(51 38 38 22))
-	("armor_engine"  t(40 38 38 22))		
+	("armor_engine"  t(40 38 38 22))
 	("shield" args 10)
 	("us_3x_sight")
 
@@ -15,18 +16,12 @@
 		{on}
 	}
 
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: m4a3m_eng.def) ---
-	
+
 	; --- end Godny hitbox armor ---
-	{volume "body1"
-		{component "body"}
-		{tags "body"}
-	}
-	{volume "body2"
-		{component "body"}
-		{tags "body"}
-	}
+	("vol_body_part_component_first" name(body1))
+	("vol_body_part_component_first" name(body2))
 	{volume "body3"
 		{component "body"}
 		{thickness 81}
@@ -77,7 +72,7 @@
 	}
 
 	("gunner_visible")
-	
+
 	("crew_human" place(driver)	door1(emit1) door2(emit2) visor(driver))
 	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
 	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
@@ -105,7 +100,7 @@
 		}
 	}
 
-	{mass 25500}	
+	{mass 25500}
 	{Chassis
 		("tank_trace" fx("tracks_sm") step(0.3) len(0.16))
 		{Locomotion ("locomotion")
@@ -115,22 +110,22 @@
 			{TurnTime   17}
 			{TurnStart  1.6}
 			{TurnRadius 8}
-    		{TurnStop   0.8}
+			{TurnStop   0.8}
 			{BrakeTime  1.5}
 			{StopTime   2.5}
 			{Gears   0.1 0.2 0.3 1}
 			{RearGears  0.27}
 		}
 		{FuelBag
-			{volume 660 }	
-			{rate	34 }   
+			{volume 660 }
+			{rate	34 }
 			{remain 660 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  32}
-        	{Slow  32}
-    	}
+			{Normal  32}
+			{Slow  32}
+		}
 	}
 	{Extension "m4a3m.mdl"}
 }

@@ -1,4 +1,8 @@
 {"windowed"
+	; break_window: {if {if} {volumes} {delay}}
+	;   0_x - text in {bone}
+	;   %0 - text in {if}, text in {spawn}, text in {volumes}
+	;   e.g. ("break_window" args 0)
 	(define "break_window"
 		{if bone "window%0" visible
 			{if bone "fx_glass%0"
@@ -19,6 +23,9 @@
 			}
 		}
 	)
+	; try_break_window: {if}
+	;   %0 - text in {if}, text in {if} via "break_window", text in {spawn} via "break_window"
+	;   e.g. ("try_break_window" args 0)
 	(define "try_break_window"
 		{if volume "window%0"
 			("break_window" args %0)
@@ -39,7 +46,7 @@
 			{add_view "light_house2" "light" "fx_light_high5"}
 			{add_view "light_house2" "light" "fx_light_high6"}
 			{view start "light"}
-		else
+			else
 			{bone cut "fx_light1"}
 			{bone cut "fx_light2"}
 			{bone cut "fx_light3"}
@@ -60,15 +67,15 @@
 	{on contact
 		{call "break_window"}
 	}
-	{on blast 
+	{on blast
 		{if min_energy 0.2
 			{call "break_window"}
 		}
 	}
 	{on blast_hit
 		;{if min_energy 0.1
-			{call "break_window"}
-		;}
+		{call "break_window"}
+	;}
 	}
 	{on "break_window"
 		{if not "windows_broken"

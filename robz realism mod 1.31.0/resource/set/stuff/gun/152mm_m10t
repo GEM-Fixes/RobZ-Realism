@@ -1,4 +1,4 @@
-{from "pattern gun"		; "kv-2"  
+{from "pattern gun"		; "kv-2"
 	{filling "bullet152 rus"}
 	{fireSound "gun/howitzer/152mm_ml20"}
 	{reloadSound "tankgun_r04"}
@@ -8,13 +8,13 @@
 	{range 200 200}
 
 	{projectileDamage 125}
-	("damage_170" a(125) b(117) c(109) d(101) e(89) range(200))
+	("damage_170" at20(125) at100(117) at170(109) at215(101) at250(89) max(200))
 	{parameters "apcr"
-        ("damage_170" a(135) b(125) c(112) d(102) e(85) range(200))
+		("damage_170" at20(135) at100(125) at170(112) at215(102) at250(85) max(200))
 	}
 	("accuracy_grazinghowitzer_anti_far")
 	{RelaxationTime 0.0001}
-	
+
 	(mod "mp"
 		{tag "prepare"}
 		{Special

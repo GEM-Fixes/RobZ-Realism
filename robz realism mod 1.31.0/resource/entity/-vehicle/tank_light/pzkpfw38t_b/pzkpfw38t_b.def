@@ -1,33 +1,22 @@
+(include "/properties/robz/volumes.inc")
 {Entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.0))
 	{props "light" "turret" "vision_vehicle_low" "muzzle_small" "switch_mgun_coax"}
-	
+
 	{collider "tank.light"}
 	{targetClass "light_tank"}
 	{patherId "tank.light"}
-	
+
 	{extender "enumerator"
 		{digit_folder "ger2"}
 	}
-	
-	{volume "body1"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body2"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body3"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body4"
-		{tags "body"}
-		{component "body"}
-	}
-	
+
+	("vol_body_part_lower" name(body1))
+	("vol_body_part_lower" name(body2))
+	("vol_body_part_lower" name(body3))
+	("vol_body_part_lower" name(body4))
+
 	("armor_light" turret(25 15 15 10) body(30 15 15 8))
 
 	("crew_4_human_extended")
@@ -42,10 +31,10 @@
 	{extender "inventory"
 		{box
 			{item "ammo bullet37 ger apcbc" 40}
-            		{item "ammo bullet37 ger fg" 50}
+			{item "ammo bullet37 ger fg" 50}
 			{item "ammo bullet37 ger apcr" 10}
 			{item "ammo mg_mauser belt" 2400}
-                        {item "grenade m39" 3}
+			{item "grenade m39" 3}
 		}
 	}
 	{Weaponry
@@ -55,7 +44,7 @@
 			{RestoreIKAfterAim}
 			{gunner "commander"}
 			{charger "charger"}
-			("abm_low")
+			("abm_low_v4")
 		}
 		{place "mgun"
 			("abm_mgun")
@@ -77,7 +66,7 @@
 	}
 
 	{mass 9400}
-       	 {sensor
+	{sensor
 		{visor "main"
 			{vision "tank_main-l"}
 		}
@@ -97,19 +86,19 @@
 			{maxspeed   24}
 			{maxSpeedAtMaxTurn 5}
 			{StartTime  25}
-			{TurnStart  1.7}			
+			{TurnStart  1.7}
 			{TurnTime   15}
-			{TurnRadius 10} 
-    			{TurnStop   0.9}
+			{TurnRadius 10}
+			{TurnStop   0.9}
 			{BrakeTime  1}
 			{StopTime   2}
 			{Gears      0.1 0.2 0.3 1}
 			{RearGears  0.3}
 		}
-                {speed
-				{Slow	12}
-				{Normal	16}
-				{Fast	24}
+		{speed
+			{Slow	12}
+			{Normal	16}
+			{Fast	24}
 		}
 		{FuelBag
 			{volume 220 }	; liters
@@ -117,7 +106,7 @@
 			{remain 220 }
 			{fuel "fuel"}
 		}
-	}	
+	}
 
 	{Extension "pz38t.mdl"}
 

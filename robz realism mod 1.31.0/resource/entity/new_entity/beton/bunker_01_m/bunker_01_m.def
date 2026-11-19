@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {construction
 	(include "/properties/building.inc")
 	{props "concrete" "burning"}
@@ -13,69 +14,21 @@
 		{place "gun_nest_01" "mg42_stan" "browning_stan"}
 		{place "gun_nest_02" "mg42_stan" "browning_stan"}
 	}
-	{Volume "body"
-		{Tags "body"}
-		{Thickness 50}
-	}
-	{Volume "body10"
-			{Tags "body"}
-		{Thickness 50}
-	}
-	{Volume "body11"
-			{Tags "body"}
-		{Thickness 50}
-	}
-	{Volume "body12"
-			{Tags "body"}
-		{Thickness 50}
-		{able {visible 0}{obstacle 0}}
-	}
-	{Volume "body13"
-			{Tags "body"}
-		{Thickness 50}
-	}
-	{Volume "body14"
-			{Tags "body"}
-		{Thickness 50}
-	}
-	{Volume "body15"
-			{Tags "body"}
-		{Thickness 50}
-		{able {visible 0}{obstacle 0}}
-}
-	{Volume "body2"
-			{Tags "body"}
-		{Thickness 50}
-		{able {visible 0}{obstacle 0}}
-}
-	{Volume "body3"
-			{Tags "body"}
-		{Thickness 50}
-	}
-	{Volume "body4"
-			{Tags "body"}
-		{Thickness 50}
-	}
-	{Volume "body5"
-			{Tags "body"}
-		{Thickness 50}
-	}
-	{Volume "body6"
-			{Tags "body"}
-		{Thickness 50}
-	}
-	{Volume "body7"
-			{Tags "body"}
-		{Thickness 50}
-	}
-	{Volume "body8"
-		{Tags "body"}
-		{Thickness 50}
-	}
-	{Volume "body9"
-			{Tags "body"}
-		{Thickness 50}
-	}
+	("vol_body_tagged" name(body) mm(50))
+	("vol_body_tagged" name(body10) mm(50))
+	("vol_body_tagged" name(body11) mm(50))
+	("vol_body_hidden" name(body12) mm(50))
+	("vol_body_tagged" name(body13) mm(50))
+	("vol_body_tagged" name(body14) mm(50))
+	("vol_body_hidden" name(body15) mm(50))
+	("vol_body_hidden" name(body2) mm(50))
+	("vol_body_tagged" name(body3) mm(50))
+	("vol_body_tagged" name(body4) mm(50))
+	("vol_body_tagged" name(body5) mm(50))
+	("vol_body_tagged" name(body6) mm(50))
+	("vol_body_tagged" name(body7) mm(50))
+	("vol_body_tagged" name(body8) mm(50))
+	("vol_body_tagged" name(body9) mm(50))
 	{Extender "land_patch"
 	}
 }

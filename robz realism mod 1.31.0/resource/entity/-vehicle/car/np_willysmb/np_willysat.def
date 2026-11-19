@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {entity
 	(include "/properties/car.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.1))
@@ -5,25 +6,17 @@
 	{PatherId "vehicle.small"}
 	{targetSelector "cannon_rocket"}
 	("armor_light" args 2.3)
-	
+
 	{extender "enumerator"}
 
-	{Volume "body"
-		{tags "body"}
-		{component "body"}
-		{thickness 7}
-	}
-	{Volume "body2"
-		{tags "body"}
-		{component "body"}
-		{thickness 7}
-	}
-	
+	("vol_body_plate" name(body) mm(7))
+	("vol_body_plate" name(body2) mm(7))
+
 	("shield" args 8)
 	{extender "shield"
 		{on}
 	}
-	
+
 	{component "shield1" {tags "shield"}}
 	{component "shield2" {tags "shield"}}
 	{component "shield3" {tags "shield"}}
@@ -59,33 +52,36 @@
 		}
 	}
 
-	 {Placer
-	          {place "attach02"
-	             {entity "bazooka"}
-	             {Linkbone "attach02"}
-	             {handlebone "basis"}
-	             {obstacle disable}
-	          }
-	{place "attach03"
-	             {entity "bazooka"}
-	             {Linkbone "attach03"}
-	             {handlebone "basis"}
-	             {obstacle disable}
-	          }	
+	{Placer
+		{place "attach02"
+			{entity "bazooka"}
+			{Linkbone "attach02"}
+			{handlebone "basis"}
+			{obstacle disable}
+		}
+		{place "attach03"
+			{entity "bazooka"}
+			{Linkbone "attach03"}
+			{handlebone "basis"}
+			{obstacle disable}
+		}
 	}
-	 (define "define_place"
-	          {placer
-	             {place "%place"
-	                {linkbone "%place"}
-	                {attach squat_lie}
-	                {turnoff {shadow}}
-	                {obstacle disable}
-	             }
-	          }
-	          {Volume "%place"
-	             {tags "attach" "attach_%place"}
-	             {able clear {bullet 0} {touch 1}}
-	          }
+	; define_place_squat_lie: {placer {place}} {Volume "%place" {tags} {able}}
+	;   place - name of {place}, name of {linkbone}, name of {Volume}
+	;   e.g. none (not called)
+	(define "define_place_squat_lie"
+		{placer
+			{place "%place"
+				{linkbone "%place"}
+				{attach squat_lie}
+				{turnoff {shadow}}
+				{obstacle disable}
+			}
+		}
+		{Volume "%place"
+			{tags "attach" "attach_%place"}
+			{able clear {bullet 0} {touch 1}}
+		}
 	)
 	{extender "inventory"
 		{Box
@@ -102,19 +98,19 @@
 			("abm_low")
 		}
 	}
-	
+
 	{mass 1250}
 	{Chassis
 		{Locomotion ("locomotion")
 			{Maxspeed 35}
-	  		{maxSpeedAtMaxTurn 8}
+			{maxSpeedAtMaxTurn 8}
 			{StartTime 20}
-     			{Gears  0.1 0.2 0.3 1}
+			{Gears  0.1 0.2 0.3 1}
 			{RearGears  0.25}
 		}
 		{FuelBag
-			{volume 60 }	
-			{rate	10 }   
+			{volume 60 }
+			{rate	10 }
 			{remain 60 }
 			{fuel "fuel"}
 		}

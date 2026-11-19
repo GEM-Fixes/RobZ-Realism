@@ -12,7 +12,7 @@
 	{burst
 		{short 1}
 		{Long 1}
-	}	
+	}
 	{traceFreq 5}
 	{mass 4.5}
 	{reloadSound "rifle_bolt_five"}
@@ -26,17 +26,17 @@
 	{projectileDamageTable {50 8} {250 0}}
 	{projectileDamageThreshold 1.5}
 	{calibre 7.92}
-	
+
 	{spreading 1}
 	{healthDamage 35}
-	
+
 	{range 100 100}
 	{aimingTolerance 1}
 	;{gravity 10}
-	
+
 	{spreading 1
 		{SpreadPower	1}
 		{BurstAccuracy 100 90 80 70 60 50}
-	}	
+	}
 	("accuracy_rifle")
 }

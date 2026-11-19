@@ -1,45 +1,54 @@
 (include "\set\small.firearms.accuracy")
 
-(define "speed"   
-	{speed (* 1.0 %s)}
-)
+(include "/properties/robz/weapon.inc")
 
-(define "recoveryTime"   
-	{recoveryTime (/ 60 %r)}
-)
 
-(define "burst_short"
+; burst_short_v2: {burst {short} {long}}
+;   e.g. ("burst_short_v2")
+(define "burst_short_v2"
 	{burst
 		{short 3 0.1}
 		{long 5 1}
-	}	
+	}
 )
 
+; burst_medium: {burst {short} {long}}
+;   e.g. ("burst_medium")
 (define "burst_medium"
 	{burst
 		{short 4 0.1}
 		{long 7 1}
-	}	
+	}
 )
 
+; burst_long: {burst {short} {long}}
+;   e.g. ("burst_long")
 (define "burst_long"
 	{burst
 		{short 5 0.1}
 		{long 10 1}
-	}	
+	}
 )
+; spread_optic: {Spreading {SpreadPower} {BurstAccuracy}}
+;   e.g. ("spread_optic")
 (define "spread_optic"
 	{Spreading 1
 		{SpreadPower	1}
 		{BurstAccuracy 100 97.5 95 92.5 90 85 80 70 60 50}
 	}
 )
+; mg_zeroing: {ZeroingAccuracy}
+;   e.g. ("mg_zeroing")
 (define "mg_zeroing"
 	{ZeroingAccuracy 1 1 1 1 0.95 0.95 0.95 0.95 0.95 0.90 0.90 0.90 0.90 0.90 0.80 0.80 0.80 0.80 0.80 0.70}
 )
+; mg_zeroing_vet: {ZeroingAccuracy}
+;   e.g. ("mg_zeroing_vet")
 (define "mg_zeroing_vet"
 	{ZeroingAccuracy 1 1 1 0.95 0.95 0.95 0.95 0.90 0.90 0.90 0.80 0.80 0.80 0.70}
 )
+; mg_zeroing_elite: {ZeroingAccuracy}
+;   e.g. none (not called)
 (define "mg_zeroing_elite"
 	{ZeroingAccuracy 1 1 0.95 0.95 0.95 0.90 0.90 0.80 0.80 0.70}
 )

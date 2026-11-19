@@ -7,11 +7,11 @@
 		{block 100}
 		{size 2 2}
 		{fsm "belt"}
-	}	
+	}
 	{mass 0.010}
 	{entity "mgun_cartridge"}
 	{view "rifle_bullet"}
-        {trace
+	{trace
 		{view "/texture/fx/trace_mg_limegreen"
 			{ScaleY 0.22}
 			{Light 10}
@@ -19,5 +19,5 @@
 		{length 8}
 	}
 
-	
+
 }

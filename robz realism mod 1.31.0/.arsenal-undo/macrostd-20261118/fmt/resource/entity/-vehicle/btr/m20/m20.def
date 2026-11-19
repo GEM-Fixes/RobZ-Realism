@@ -1,0 +1,235 @@
+{game_entity
+	(include "/properties/armoredcar.ext")
+	(include "/properties/tank_crew.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.0))
+	{props "vehicle" "armored_car" "tank" "turret" "wheeled_6" "with_gun" "vision_vehicle_low" "switch_mgun"}
+
+	{targetclass "armoredcar" "ap bullet"}
+	(include "/properties/tank_crew.ext")
+	{extender "enumerator"}
+	
+	; --- Godny hitbox armor (ported from GodnyMod: m20.def) ---
+	{volume "sticky"
+		{tags "grenade_fg_target"}
+		{able clear {contact} {touch}}
+		{component "sticky_body"}
+	}
+	{volume "body"	;мехвод
+		{tags "body"}
+		{component "body"}
+		{thickness 9.5
+			{front	19.1}
+		;	{rear	9.5}
+		;	{top	9.5}
+			{bottom	0.1}
+		}
+	}
+	{volume "body1"	;корпус основная часть
+		{tags "body"}
+		{component "body"}
+		{able {holed}}
+		{thickness 9.5
+			{front	12.7}	;верхний гласис
+			{rear	9.5}
+			{top	6.35}
+			{bottom	6.35}
+			{right	0.1}	;внутренняя стенка
+		}
+	}
+	{volume "body2"	;нлд
+		{tags "body"}
+		{component "body"}
+		{thickness 8
+			{front	15.9}
+			{right	0.1}	;внутренняя стенка
+		}
+	}
+	{volume "body3"	;правая консоль
+		{tags "body"}
+		{component "body"}
+		{thickness 9.5
+			{front	12.7}	;нет данных
+			{rear	9.5}
+			{top	6.35}
+			{bottom	6.35}
+			{right	0.1}	;внутренняя стенка
+		}
+	}
+	{volume "body4"	;левая консоль
+		{tags "body"}
+		{component "body"}
+		{thickness 9.5
+			{front	12.7}	;нет данных
+			{rear	9.5}
+			{top	6.35}
+			{bottom	6.35}
+			{right	0.1}	;внутренняя стенка
+		}
+	}
+	{volume "body5"	;надстройка
+		{tags "body"}
+		{component "body"}
+		{able {holed}}
+		{thickness 9.5
+		;	{front	9.5}
+		;	{rear	9.5}
+			{top	6.35}
+			{bottom	0.1}	;внутренняя стенка
+			{right	0.1}	;внутренняя стенка
+		}
+	}
+	{Volume "hole_bod"
+		{able clear {hole}}
+		{component "body"}
+	}
+	{volume "engine"
+		{thickness 10}
+	}
+	{volume "turret1"	;кольцо пулеметной турели
+		{component "turret1"}
+		{able {holed}}
+		{thickness 10}
+	}
+	{Volume "hole_tur"
+		{able clear {hole}}
+		{component "body"}
+	}
+	{volume "wingl1"	;левый лобовой щиток
+		{component "wingl1"}
+		{thickness 6}
+	}
+	{volume "wingr1"	;правый лобовой щиток
+		{component "wingr1"}
+		{thickness 6}
+	}
+	{volume "zipl1"	;левый передний зип
+		{component "zipl1"}
+		{thickness 6}
+	}
+	{volume "zipl2"	;левый задний зип
+		{component "zipl2"}
+		{thickness 6}
+	}
+	{volume "zipr1"	;правый передний зип
+		{component "zipr1"}
+		{thickness 6}
+	}
+	{volume "zipr2"	;правый задний зип
+		{component "zipr2"}
+		{thickness 6}
+	}
+	; --- end Godny hitbox armor ---
+	{volume "turret"
+		{component "turret"}
+		{tags "turret"}
+		{thickness 19}
+	}
+	{volume "mantlet"
+		{component "turret"}
+		{tags "turret"}
+		{thickness 25}
+	}
+	{volume "crew"
+		{able {contact_ground 0}}
+	}
+	{component "turret"
+		{RepairTime 20}
+	}
+
+	{Volume "Gun"
+		{thickness 10}
+	}
+	{component "Gun"
+		{RepairTime 20}
+	}
+		
+	("armor_medium" args 1.2)
+	
+	("shield" args 8)
+	{extender "shield"
+		{on}
+	}
+
+	{component "shieldl1" {tags "shield"}}
+	{component "shieldl2" {tags "shield"}}
+	{component "shieldr1" {tags "shield"}}
+	{component "shieldr2" {tags "shield"}}
+	
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"} {end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"} {end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+	}
+
+	("crew_2_human")
+	("crew_human_visible" place(gunner)	door1(emit1) door2(emit2) visor(main))
+
+	{extender "inventory"
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{box
+			{item "browning" filling "ammo hmgun ap" 100 {user "mgun"}}
+			{item "ammo hmgun ap" 1500}
+			{item "weapon bazooka" 1}			
+			{item "ammo bazooka" 8}
+		}
+	}
+	{Weaponry
+		{place "mgun"
+			{type "mgun_main"}
+			{LinkBone "mgun2"}
+			{LinkAnimation "off"}
+			{charger "gunner"}
+			("abm_mgun_heavy")
+		}
+	}
+	{sensor
+		{visor "main"
+			{bone "mgun2"}
+		}
+	}
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright3")
+	("wheel" args "wheelleft3")
+
+	{mass 7000}
+	{Chassis
+		{Locomotion ("locomotion")
+			{MaxSpeed	42}
+	  		{maxSpeedAtMaxTurn 8}	
+			{StartTime	25}
+			{BrakeTime	1.5}	
+			{StopTime	2}
+			{TurnRadius	6}
+     			{Gears  0.1 0.2 0.3 1}
+			{RearGears 0.25}
+		}
+		{FuelBag
+			{volume 215 }	
+			{rate	11 }   
+			{remain 215 }
+			{fuel "fuel"}
+		}
+		{speed
+        	{Normal  42}
+        	{Slow  42}
+    	}
+		("car_trace" fx("tracewheel01") step(0.09) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
+		("car_trace" fx("tracewheel01") step(0.09) wheell("wlr") wheelr("wrr") bonel("FXtraceL3") boner("FXtraceR3"))
+	}
+
+	{Extension "m20.mdl"}
+	{bone "turret_mgun"
+		{speed 0.005}
+	}
+}

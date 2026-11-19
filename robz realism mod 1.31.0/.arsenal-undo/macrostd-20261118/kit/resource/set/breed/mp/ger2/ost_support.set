@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-arty-rfl"}
+	{portrait "ger2_soldier2"}
+	{nationality ger2}
+	{icon "smg"}
+	{icon_priority 1}
+	{armors
+		{head helmet_ger_m40}
+	}
+	{perks
+		("breed_body" health(150%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(1.0) vehicle(1.0) cannon(1.0))
+		("breed_skills" pistol(3) smg(3) mgun(6) rifle(4) rocket(2) melee(4))
+		{"tankgun" lvl_6}
+	}
+	("breed_vet" table(crew))
+	{inventory
+		{item "mauzer" filled}
+		{item "ammo mauser_clip" 60}
+		{item "bandage" 3}
+		;{item "grenade m24"}
+		{in_hands 0}
+	}
+}

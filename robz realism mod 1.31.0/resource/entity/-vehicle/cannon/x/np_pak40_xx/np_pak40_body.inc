@@ -1,0 +1,17 @@
+{Extension "pak40_xx.mdl"}
+{Volume "body"
+}
+{Volume "gun"
+}
+{Volume "part1"
+}
+{Volume "part2"
+}
+{Volume "part3"
+}
+{Volume "part4"
+}
+{Volume "standr"
+}
+{Volume "turret"
+}

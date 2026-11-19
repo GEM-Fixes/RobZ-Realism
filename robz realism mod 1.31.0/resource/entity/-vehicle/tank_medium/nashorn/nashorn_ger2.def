@@ -1,25 +1,22 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.2))
 	{props "medium" "-turret" "opened" "vision_vehicle_high" "muzzle_large_sides" "nashorn"}
-	
+
 	{extender "enumerator"
 		{digit_folder "ger"}
 	}
 
 	; --- Godny hitbox armor (ported from GodnyMod: nashorn_ger2.def) ---
-	{volume "sticky"
-		{tags "grenade_fg_target"}
-		{able clear {contact} {touch}}
-		{component "sticky_body"}
-	}
+	("vol_sticky_grenade_target" name(sticky))
 	{volume "body1"	;передн€€ (носова€) часть корпуса
 		{component "body"}
 		{tags "body"}
 		{thickness 20
 			{front	30}	;нлд
 			{rear	10.1}	;внутренн€€ стенка
-		;	{top	20}
+			;	{top	20}
 			{bottom	10}
 			{right	15}	;гласис
 		}
@@ -29,7 +26,7 @@
 		{tags "body"}
 		{thickness 20
 			{front	10.1}	;внутренн€€ стенка
-		;	{rear	20}
+			;	{rear	20}
 			{top	10.1}	;внутренн€€ стенка
 			{bottom	10}
 		}
@@ -55,8 +52,8 @@
 		{tags "body"}
 		{thickness 20
 			{front	30}
-		;	{rear	20}
-		;	{top	20}
+			;	{rear	20}
+			;	{top	20}
 			{bottom	0.1}	;внутренн€€ стенка
 		}
 	}
@@ -69,18 +66,12 @@
 	}
 	{volume "mantlet"
 		{thickness 30
-		;	{front	30}
+			;	{front	30}
 			{rear	10}	;орудие дает небольшую броню
 		}
 	}
-	{Volume "hole_bod"
-		{able clear {hole}}
-		{component "body"}
-	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "body"}
-	}
+	("vol_body_hole_only" name(hole_bod))
+	("vol_body_hole_only" name(hole_man))
 	{volume "engine"
 		{thickness 10}
 	}
@@ -112,17 +103,7 @@
 		}
 	}
 
-	(define "crew_human"
-		{placer
-			{place "%place" {group "crew"} {linkbone "%place"} {turnoff {sensor} {shadow}}}
-		}
-		{boarder
-			{door "%door1"}
-			{door "%door2"}
-			{link "%door1" "%place" {anm "%place"} {forward putoff} {reverse puton}}
-			{link "%door2" "%place" {anm "%place"} {forward putoff} {reverse puton}}
-		}
-	)
+	(include "/properties/robz/crew.inc")
 
 	{placer
 		{place "driver" {group "crew"} {visor "driver"}}
@@ -136,22 +117,22 @@
 		{link "emit0" "driver" {anm "driver"} {forward putoff} {reverse puton}}
 	}
 
-	("crew_human" place(commander)	door1(emit1))
-	("crew_human" place(gunner)	    door1(emit1))
-	("crew_human" place(charger)	door1(emit1))
+	("crew_human_two_doors" place(commander)	door1(emit1))
+	("crew_human_two_doors" place(gunner)	    door1(emit1))
+	("crew_human_two_doors" place(charger)	door1(emit1))
 
 	{extender "inventory"
 		{box
-           	{item "bullet88 gerl apcbc" 35}
-          	{item "bullet88 gerl fg" 26}
-           	{item "bullet88 gerl apcr" 4}
+			{item "bullet88 gerl apcbc" 35}
+			{item "bullet88 gerl fg" 26}
+			{item "bullet88 gerl apcr" 4}
 		}
 	}
 	{Weaponry
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "88mm_pak43_vet" filling "ammo bullet88 gerl apcbc" 1}	
+			{weapon "88mm_pak43_vet" filling "ammo bullet88 gerl apcbc" 1}
 			("abm_veteran")
 		}
 	}
@@ -164,28 +145,28 @@
 			{maxSpeedAtMaxTurn 4}
 			{StartTime	  38.25}
 			{TurnTime  	  17.1}
-    		{TurnStart  1.4} 
-    		{BrakeTime    1} 
-    		{StopTime     2} 
-    		{TurnRadius   8} 
-    		{TurnStop   0.8}
-     		{Gears  0.13 0.23 0.33 1}
-    		{RearGears 0.28}
+			{TurnStart  1.4}
+			{BrakeTime    1}
+			{StopTime     2}
+			{TurnRadius   8}
+			{TurnStop   0.8}
+			{Gears  0.13 0.23 0.33 1}
+			{RearGears 0.28}
 		}
 		{FuelBag
-			{volume 470 }	
-			{rate	36 }   
+			{volume 470 }
+			{rate	36 }
 			{remain 470 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  27}
-        	{Slow  27}
-    	}
+			{Normal  27}
+			{Slow  27}
+		}
 		{DisableMoveWhileFiring}
 	}
 	{Extension "nashorn.mdl"}
-	
+
 	{bone "gun_rot"
 		{speed 0.0012}
 	}

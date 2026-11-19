@@ -4,21 +4,21 @@
 	{reloadSound "gun_r02"}
 	{rechargeTime 4}
 	("range_minimum")
-	
+
 	{range 180 180}
-	("speed_all" ap(870) apcr(985) fg(343) heat(343))
+	("speed_all" speed(870) apcr(985) fg(343) heat(343))
 	("caliber_minimum")
 	{projectileDamage 50}
-	("damage_170" a(74) b(54) c(40) d(32) e(28) range(180))
+	("damage_170" at20(74) at100(54) at170(40) at215(32) at250(28) max(180))
 	{parameters "aphebc"
 		{cursorReloading "cannon_reload_aphebc"}
 	}
 	{parameters "apcr"
-        	("damage_170" a(118) b(74) c(46) d(29) e(18) range(180))
+		("damage_170" at20(118) at100(74) at170(46) at215(29) at250(18) max(180))
 	}
 	{parameters "fg"
 		{range 160 160}
 	}
-	("accuracy_low")	
+	("accuracy_low")
 }
 

@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {Entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
@@ -6,13 +7,13 @@
 	{tag "diesel_exhaust"}
 
 	{extender "enumerator"}
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: isu122.def) ---
 	{volume "body1"	;нижн€€ часть корпуса
 		{tags "body"}
 		{component "body"}
 		{thickness 90
-		;	{front	90}	;нижн€€ часть рубки
+			;	{front	90}	;нижн€€ часть рубки
 			{rear	60}
 			{top	0.1}	;внутренн€€ стенка
 			{bottom	20}
@@ -22,9 +23,9 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 90
-		;	{front	90}	;нлд
+			;	{front	90}	;нлд
 			{rear	0.1}	;внутренн€€ стенка
-		;	{top	90}	;влд и гласис едина€ часть, лоб сварной
+			;	{top	90}	;влд и гласис едина€ часть, лоб сварной
 			{bottom	20}
 		}
 	}
@@ -54,17 +55,14 @@
 		{component "body"}
 		{able {holed}}
 		{thickness 65
-		;	{front	65}
+			;	{front	65}
 			{rear	0.1}	;внутренн€€ стенка
 		}
 	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "body"}
-	}
+	("vol_body_hole_only" name(hole_man))
 	{volume "mantlet"
 		{thickness 100
-		;	{front	100}
+			;	{front	100}
 			{rear	15}	;орудие дает небольшую броню
 		}
 	}
@@ -77,14 +75,14 @@
 	("armor_engine"  t(40 75 60 30))
 	("shield" args 20)
 	("rus_4x_sight")
-	
+
 	{volume "gun"
 		{tags "gun"}
 		{component "gun"}
 	}
-	
+
 	("crew_4_human")
-	
+
 	{boarder
 		{anm "left"
 			{forward	{begin	"board_kv"}}
@@ -111,16 +109,16 @@
 			{reverse 	{end	"emit_body"}}
 		}
 	}
-	
+
 	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
 	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor1))
 	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor2))
 	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor3))
-	
+
 	{extender "inventory"
 		{box
 			{item "ammo bullet122 rusl aphebc" 14}
-            {item "ammo bullet122 rusl fg" 15}
+			{item "ammo bullet122 rusl fg" 15}
 		}
 	}
 	{Weaponry
@@ -140,26 +138,26 @@
 			{maxSpeedAtMaxTurn 3}
 			{StartTime	55}
 			{TurnTime	26}
-			{TurnStart  2} 
-    		{BrakeTime  2}
-     		{StopTime   3} 
-    		{TurnRadius 10} 
-    		{TurnStop   1}
+			{TurnStart  2}
+			{BrakeTime  2}
+			{StopTime   3}
+			{TurnRadius 10}
+			{TurnStop   1}
 			{Gears     0.1 0.18 0.26 1.0}
-    		{RearGears 0.1 0.2} 
+			{RearGears 0.1 0.2}
 		}
 		{FuelBag
-			{volume 860 }	
-			{rate	32 }   
+			{volume 860 }
+			{rate	32 }
 			{remain 860 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  26}
-        	{Slow  26}
-    	}
+			{Normal  26}
+			{Slow  26}
+		}
 	}
 
-	{Extension "isu122.mdl"}		
+	{Extension "isu122.mdl"}
 }
 

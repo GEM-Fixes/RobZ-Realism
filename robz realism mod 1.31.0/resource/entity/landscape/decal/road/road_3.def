@@ -1,5 +1,5 @@
-{entity 
-	{DecalView 
+{entity
+	{DecalView
 		{Sprite "road_3.mtl"
 			{Scale 0.15}
 		}

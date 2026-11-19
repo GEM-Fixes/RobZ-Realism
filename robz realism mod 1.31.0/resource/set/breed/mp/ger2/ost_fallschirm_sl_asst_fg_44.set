@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "ger-para-fg"}
 	{portrait "ger_elite1"}
@@ -8,51 +9,17 @@
 		{head helmet_ger_m38_cover}
 	}
 	{perks
-		{"health" "400%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "200%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" mp_soldier
-		}
-		{"speed" 0.9
-		}
-		{"tank" 0.95
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 1
-		}
-		{"pistol" lvl_7
-		}
-		{"smg" lvl_7
-		}
-		{"mgun" lvl_7
-		}
-		{"rifle" lvl_7
-		}
-		{"rocketlauncher" lvl_7
-		}
-		{"melee" lvl_7
-		}
-		{"avoidance" lvl_1
-		}
+		("soldier_smg_7" rocket(7) body(line) sight(soldier))
+		{"avoidance" lvl_1}
 		{"stealth"}
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_lvl5")
-	}
+	("breed_vet" table(start5))
 	{inventory
-		{item "fg42_sc" filled}
-		{item "ammo fg42_mag" 160}
+		("kit_rifle" gun(fg42_sc) ammo(fg42_mag) rounds(160))
 		{item "bandage" 5}
-		{item "grenade m39" 2}
-		{item "grenade pwm1"}
-		{item "smoke grenade" 2}
+		("give" item(grenade m39) count(2))
+		("give" item(grenade pwm1) count(1))
+		("give" item(smoke grenade) count(2))
 		{item "panzerfaust weapon" 0 1 filled}
 		{in_hands 0}
 	}

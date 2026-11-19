@@ -36,15 +36,15 @@
 	}
 	{trench_low
 		{condition "human"}
-		;{position 0 1}
+	;{position 0 1}
 	}
 	{trench_deep
 		{condition "human"}
-		;{position 1 1}
+	;{position 1 1}
 	}
 	{trench_bighole
 		{condition "human"}
-		;{position 2 1}
+	;{position 2 1}
 	}
 	{scrape
 		{condition "human"}
@@ -77,7 +77,7 @@
 	{gc_cp_leave_unit
 		{position 2 2}
 		{condition "vehicle single disabled"}
-	}	
+	}
 	{gc_cp_browse_back
 		{position 3 2}
 	}

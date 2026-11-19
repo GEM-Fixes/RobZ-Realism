@@ -1,7 +1,7 @@
 {game_entity
 	(include "/properties/cannon.ext")
 	{props "vehicle" "cannon" "wheeled" "round_sandbag2" "vision_cannon_medium" "muzzle_small"}
-	
+
 	("armor_medium")
 
 
@@ -29,7 +29,7 @@
 			{forward {end "seat_passenger" 10}}
 		}
 	}
-	(mod "mp" 
+	(mod "mp"
 		("crew_human" place(commander1)		bone(commander1)		door(emit2) animation(commander1))
 		("crew_human" place(commander2)		bone(commander2)		door(emit3) animation(commander2))
 		("crew_human" place(driver3)		bone(driver3)			door(emit3) animation(driver3))
@@ -71,9 +71,9 @@
 	{Extension "76mm_m1909.mdl"}
 	(include "/properties/selection/cannon.inc"  scale(0.7))
 	{bone "basis"
-	      {limits}
+		{limits}
 	}
-	(mod not "mp" 
+	(mod not "mp"
 		{extender "cannon"
 			{animation
 				{switch "close"}
@@ -86,7 +86,7 @@
 			{attack {obstacle "open"}}
 		}
 	)
-	(mod "mp" 
+	(mod "mp"
 		{extender "cannon"
 			{animation
 				{switch "close"}

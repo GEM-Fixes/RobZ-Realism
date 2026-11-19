@@ -1,13 +1,13 @@
 {bullet
-  {tag "bullet small stackable pierce 6-5_rifle"}
-  {inventory
-    {weight 3.33333}
-    {block 30}
-    {size 1 2}
-    {fsm "belt"}
-  }
-  {mass 0.020}
-  {entity "type96_mag"}
+	{tag "bullet small stackable pierce 6-5_rifle"}
+	{inventory
+		{weight 3.33333}
+		{block 30}
+		{size 1 2}
+		{fsm "belt"}
+	}
+	{mass 0.020}
+	{entity "type96_mag"}
 	;{view "bullet"
 	;	{tail "tracer_blue" "basis"}
 	;}

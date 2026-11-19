@@ -2,18 +2,18 @@
 	{entity "grenade_type97_dummy"}
 	{filling "dummy_grenade" 1}
 	{fireSound "rifle/no"}
-	
+
 	{inventory
 		{size 1 1}
 		{weight 1}
 	}
-	
+
 	("speed" s(17))
-	
-	{spreading 
+
+	{spreading
 		{radiusTable {0 0} {7 0.5} {15 1} {25 1.5}}
 	}
-	
+
 	{range 19 19}
 
 }

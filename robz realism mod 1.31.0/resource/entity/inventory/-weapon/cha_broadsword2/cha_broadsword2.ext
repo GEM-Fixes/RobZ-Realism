@@ -1,6 +1,6 @@
-	(include "/properties/stuff_small.ext")
-	{extension "cha_broadsword2.mdl"}
-	{volume "body"
-		{able {contact}}
-   	}
-   	{props "physics_damping" "cha_broadsword2"}
+(include "/properties/stuff_small.ext")
+{extension "cha_broadsword2.mdl"}
+{volume "body"
+	{able {contact}}
+}
+{props "physics_damping" "cha_broadsword2"}

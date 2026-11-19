@@ -7,7 +7,7 @@
 	{mass 2.5}
 	{entity "hdm_oss"}
 	{fireSound	"pistol/silent/welrod"}
-	
+
 	{spreading 0.5}
 	{healthDamage 15}
 	{reloadSound "colt"}

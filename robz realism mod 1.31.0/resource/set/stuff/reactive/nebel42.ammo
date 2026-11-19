@@ -3,7 +3,7 @@
 	{inventory
 		{size 5 1}
 		{weight 100}
-	}	
+	}
 	{entity "nebel_ammo"}
 	{mass 36.05}
 	{view "nebel_ammo"
@@ -14,14 +14,14 @@
 	{damage blastwave
 		{energy 15}
 		{area 1 2}
-	}	
+	}
 	{damage add blastwave
 		{energy 1.5}
 		{area 10 16}
 	}
-	;{damage fire
-	;	{radius 5}
-	;	{heating 0.8}
-	;	{time 5}
-	;}		
+;{damage fire
+;	{radius 5}
+;	{heating 0.8}
+;	{time 5}
+;}
 }

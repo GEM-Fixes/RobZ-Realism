@@ -5,14 +5,14 @@
 	{props "medium" "-turret" "opened" "nebelwerfer" "vision_vehicle_high"}
 
 	{extender "enumerator"}
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: ha-to.def) ---
 	{volume "body1"	;днище
 		{tags "body"}
 		{component "body"}
 		{thickness 12
 			{front	25}
-		;	{rear	12}
+			;	{rear	12}
 			{top	6}
 			{bottom	4}
 		}
@@ -22,7 +22,7 @@
 		{component "body"}
 		{thickness 12
 			{front	25}
-		;	{rear	12}
+			;	{rear	12}
 			{top	6}
 			{bottom	4}
 		}
@@ -32,7 +32,7 @@
 		{component "body"}
 		{thickness 12
 			{front	25}
-		;	{rear	12}
+			;	{rear	12}
 			{top	6}
 			{bottom	4}
 		}
@@ -42,7 +42,7 @@
 		{component "body"}
 		{thickness 12
 			{front	15}
-		;	{rear	12}
+			;	{rear	12}
 			{top	6}
 			{bottom	4}
 		}
@@ -55,7 +55,7 @@
 	}
 	; --- end Godny hitbox armor ---
 	{volume "inventory"
-	        {thickness 2}
+		{thickness 2}
 	}
 
 	("armor_spa_heavy" armor(15 8 8 8))
@@ -123,13 +123,13 @@
 		}
 	}
 	{Weaponry
-			{place "gun"
-				{weapon "weapon t4_30cm" filled}	
-				{barrels 1}
-				{gunner "gunner2"}
-				{charger "gunner2"}
-				("abm_howitzer")
-			}
+		{place "gun"
+			{weapon "weapon t4_30cm" filled}
+			{barrels 1}
+			{gunner "gunner2"}
+			{charger "gunner2"}
+			("abm_howitzer")
+		}
 	}
 
 	{mass 24000}
@@ -137,27 +137,27 @@
 		("tank_trace" fx("tracks_mid") step(0.56) len(0.167))
 		{Locomotion ("locomotion")
 			{MaxSpeed   20}
-	  		{maxSpeedAtMaxTurn 6}
+			{maxSpeedAtMaxTurn 6}
 			{StartTime  30}
-			{TurnStart  1.7}			
+			{TurnStart  1.7}
 			{TurnTime   16}
-			{TurnRadius 10} 
-    		{TurnStop   0.9}
+			{TurnRadius 10}
+			{TurnStop   0.9}
 			{BrakeTime  1}
 			{StopTime   2}
 			{Gears      0.1 0.2 0.3 1}
-			{RearGears  0.25}		
+			{RearGears  0.25}
 		}
 		{FuelBag
-			{volume 470 }	
-			{rate	15 }   
+			{volume 470 }
+			{rate	15 }
 			{remain 470 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  20}
-        	{Slow  20}
-    	}
+			{Normal  20}
+			{Slow  20}
+		}
 	}
 	{Extension "ha-to.mdl"}
 	{bone "gun_rot"

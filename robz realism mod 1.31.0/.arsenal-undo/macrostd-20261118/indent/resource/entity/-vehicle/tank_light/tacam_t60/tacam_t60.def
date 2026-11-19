@@ -1,0 +1,78 @@
+{entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "light" "-turret" "opened" "vision_vehicle_medium" "muzzle_medium"}
+	{collider "tank.light"}
+	;{targetClass "light_tank"}
+	;{targetSelector "tank_at"}
+
+	{extender "enumerator"
+			{digit_folder "ger2"}
+	}
+
+
+	{extension "crew.ext"}
+
+
+	{volume "engine"
+		{thickness 15}
+	}
+        ("armor_light" turret(15 10) body(20 10 10 10))
+	("armor_mantlet" t(20))
+	("armor_engine" t(20 10 10 10))
+
+        ("shield" args 15)
+
+	{extender "shield"
+		{on}
+	}
+	{component "shieldl1" {tags "shield"}}
+	{component "shieldr1" {tags "shield"}}
+	{extender "inventory"
+		{box
+			       {item "bullet76 rus br350b" 27}
+            			{item "bullet76 rus fg" 32}
+            			{item "bullet76 rus apcr" 5}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "76mm_zis3" filling "ammo bullet76 rus br350b" 1}
+			{charger "gunner"}
+			("abm_medium")
+		}
+	}
+
+	{mass 9800}
+		{Chassis
+			("tank_trace" fx("tracks_sm2") step(0.2) len(0.5))
+			{Locomotion ("locomotion")
+				{maxspeed   37}
+				{maxSpeedAtMaxTurn 18}
+			{StartTime 24}
+				{TurnStart  1.5}
+			{TurnTime 14}
+				{TurnRadius  7}
+    			        {TurnStop   1}
+				{BrakeTime   1}
+				{StopTime    3}
+				{Gears   0.1 0.2 0.3 0.4 0.7}
+				{RearGears  0.1 0.2}
+			}
+			{FuelBag
+				{volume 440 }
+				{rate	 95 }
+				{remain 440 }
+				{fuel "fuel"}
+			}
+		{speed
+        	{Normal  16}
+        	{Slow  14}
+    	        }
+	}
+
+	{Extension "tacam_t60.mdl"}
+	;("rus_1_sight")
+}

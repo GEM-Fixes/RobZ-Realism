@@ -1,10 +1,8 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/stuff_small.ext")
 	{collider "ammo"}
-	{Volume "body"
-		{thickness 4}
-		{able {touch} {bullet} {blast}}
-	}
+	("vol_plate_hit" name(body) mm(4))
 	{extender "stuff"
 		{item "bullet76_rus fg"}
 	}

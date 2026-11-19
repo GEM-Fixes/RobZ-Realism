@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/cannon_mgun_1.ext")
 	{props "vision_cannon_minimum" "cannon_small"}
@@ -12,15 +13,15 @@
 	{extender "inventory"
 		{box
 			{item "ammo springfield_belt" 6000}
-		}	
-	} 
+		}
+	}
 	{sensor
 		{visor "main"
 			{vision "cannon_mgun"}
 			{bone "turret"}
 		}
 	}
-  	
+
 	{Extension "browning_stan_fix.mdl"}
 	{bone "turret" {limits}}
 
@@ -34,29 +35,14 @@
 		{thickness 2}
 		{component "body"}
 	}
-	{Volume "body1"
-		{tags "body"}
-		{able{obstacle 0}{blast 0}}
-		{thickness 2}
-		{component "body"}
-	}
-	{Volume "body2"
-		{tags "body"}
-		{able{obstacle 0}{blast 0}}
-		{thickness 2}
-		{component "body"}
-	}
-	{Volume "body3"
-		{tags "body"}
-		{able{obstacle 0}{blast 0}}
-		{thickness 2}
-		{component "body"}
-	}
+	("vol_body_plate_no_obstacle_blast" name(body1) mm(2))
+	("vol_body_plate_no_obstacle_blast" name(body2) mm(2))
+	("vol_body_plate_no_obstacle_blast" name(body3) mm(2))
 	{Volume "body4"
 		{tags "body"}
 		{able{obstacle 0}}
 		{thickness 2}
 		{component "body"}
 	}
-	; --- end Godny hitbox armor ---
-	}
+; --- end Godny hitbox armor ---
+}

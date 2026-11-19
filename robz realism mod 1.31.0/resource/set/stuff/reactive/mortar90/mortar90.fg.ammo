@@ -9,6 +9,6 @@
 	{view "mortar_ammo"
 	}
 	{detonationThickness 1}
-	
-	("fg" args 5.7)
+
+	("fg_v3" args 5.7)
 }

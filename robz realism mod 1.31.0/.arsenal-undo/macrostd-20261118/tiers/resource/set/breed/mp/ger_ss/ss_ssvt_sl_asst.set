@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-ssvt-rfl-rot"}
+	{portrait "ger_soldier7"}
+	{icon "rifleman"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{head helmet_ger_m40_ss}
+	}
+	{perks
+		("breed_body" health(150%) regen_health(100%) stamina(125%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.75) vehicle(1) cannon(0.8))
+		("breed_skills" pistol(2) smg(2) mgun(1) rifle(3) rocket(2) melee(2))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_mauzer")
+		{item "bandage" 3}
+		("frag_m24_x2")
+		{in_hands 0}
+	}
+}

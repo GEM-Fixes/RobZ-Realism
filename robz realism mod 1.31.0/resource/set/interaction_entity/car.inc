@@ -13,13 +13,13 @@
 			{add_view	"dustrun_small"			"on_country_road"	"FXtraceL1"}
 			{add_view	"dustrun_small"			"on_ground"			"FXtraceR1"}
 			{add_view	"dustrun_small"			"on_ground"			"FXtraceL1"}
-		else
+			else
 			{add_view	"engine_steam"			"engine_steam"		"FXfire1"}
 		}
 		{add_view	"drops_water"			"on_water"			"FXtraceR1"}
 		{add_view	"drops_water"			"on_water"			"FXtraceL1"}
-;		{add_view	"drops_water"			"on_mud"			"FXtraceR1"}
-;		{add_view	"drops_water"			"on_mud"			"FXtraceL1"}
+		;		{add_view	"drops_water"			"on_mud"			"FXtraceR1"}
+		;		{add_view	"drops_water"			"on_mud"			"FXtraceL1"}
 		{add_view	"drops_water_moto"		"on_puddle"			"FXtraceR1"}
 		{add_view	"drops_water_moto"		"on_puddle"			"FXtraceL1"}
 
@@ -42,12 +42,12 @@
 			{if rand 0.3
 				{components "engine" break}
 				{call "_burn"}
-			else stuff "zenite"
+				else stuff "zenite"
 				{components "engine" break}
 				{if rand 0.4
 					{call "_burn"}
 				}
-			else stuff "shell"
+				else stuff "shell"
 				{components "engine" break}
 				{if rand 0.6
 					{call "_burn"}
@@ -58,38 +58,38 @@
 			{if rand 0.5
 				{components "body" break}
 			}
-		else stuff "shell"
+			else stuff "shell"
 			{components "body" break}
 		}
 	}
-	
+
 	{on break_armor
 		{if name "pierce"
 			{if volume "fuel"
 				{call "pierce_fuel"}
 			}
-		else name "blast"                   
+			else name "blast"
 			{if volume "body"
 				{if min_energy 3
 					{call "blast_body"}
 				}
-			else volume "inventory"
+				else volume "inventory"
 				{if min_energy 3
 					{call "blast_body"}
 				}
-			else volume "engine"
+				else volume "engine"
 				{if min_energy 3
-					{call "blast_body"} 
-				else min_energy 2
-					{if rand 0.5 
+					{call "blast_body"}
+					else min_energy 2
+					{if rand 0.5
 						{call "blast_body"}
 					}
 				}
-			else volume "cabin"
+				else volume "cabin"
 				{if min_energy 3
 					{call "blast_body"}
 				}
-			else volume "bodyback"
+				else volume "bodyback"
 				{if min_energy 3
 					{call "blast_body"}
 				}
@@ -99,7 +99,7 @@
 	{on blast_hit
 		{if min_energy 2
 			{call "blast_body"}
-		else min_energy 0.5
+			else min_energy 0.5
 			{components "body" break}
 		}
 	}
@@ -109,19 +109,19 @@
 				{if min_energy 2
 					{call "blast_body"}
 				}
-			else volume "inventory"
+				else volume "inventory"
 				{if min_energy 2
 					{call "blast_body"}
 				}
-			else volume "engine"
+				else volume "engine"
 				{if min_energy 2
 					{call "blast_body"}
 				}
-			else volume "cabin"
+				else volume "cabin"
 				{if min_energy 2
 					{call "blast_body"}
 				}
-			else volume "bodyback"
+				else volume "bodyback"
 				{if min_energy 2
 					{call "blast_body"}
 				}
@@ -133,7 +133,7 @@
 			{tags remove "full_auto_mode"}
 			{tags add "coax_burst_mode"}
 			{damage_report "mgun" "Unit changed to burst mode"}
-		else
+			else
 			{tags add "full_auto_mode"}
 			{tags remove "coax_burst_mode"}
 			{damage_report "mgun" "Unit changed to full auto mode"}
@@ -142,35 +142,35 @@
 	{on bullet_hit
 		{if stuff "rocketlauncher"
 			{if volume "cabin"
-				{if rand 0.2	 	
+				{if rand 0.2
 					{call "blast_body"}
-				else			
+					else
 					{components "body" break}
 				}
-			 else volume "body"	
-			 	{if rand 0.2	 	
+				else volume "body"
+				{if rand 0.2
 					{call "blast_body"}
-				else			
+					else
 					{components "body" break}
 				}
-			 else volume "engine"
-			 	{if rand 0.5
+				else volume "engine"
+				{if rand 0.5
 					{call "burn"}
-				else rand 0.2
+					else rand 0.2
 					{call "blast_body"}
 				}
 			}
 		}
 		{if volume "glass"
-		 	{call "break_glass"}
-		 else volume "cabin"
-		 	{call "break_glass"}
+			{call "break_glass"}
+			else volume "cabin"
+			{call "break_glass"}
 		}
 	}
 	{on "blast_body"
 		{if min_energy 40
 			{impulse up 1.5 0.5 dir 1.5 0.5}
-		 else min_energy 25
+			else min_energy 25
 			{impulse up 0.8 0.3 dir 0.8 0.3}
 		}
 		{call "explosion"}
@@ -184,21 +184,21 @@
 	}
 	{on "break_glass"
 		{volumes "glass" disable bullet contact}
-	 	{spawn "glass_hit2" "glass" x}
-	 	{delay 0.1
-;	 		{con "cut glass"}
-		 	{bone cut "glass"}
-	 	}
+		{spawn "glass_hit2" "glass" x}
+		{delay 0.1
+			;	 		{con "cut glass"}
+			{bone cut "glass"}
+		}
 	}
 	{on contact
 		{if not impregnable
 			{if effector_velocity 5
 				{if effector "tank"
 					{call "crush"}
-				else effector "railway"
+					else effector "railway"
 					{call "crush"}
 				}
-			else effector_velocity 3
+				else effector_velocity 3
 				{if effector "big part"
 					{component break}
 				}
@@ -212,8 +212,8 @@
 			{volumes "glass" disable bullet contact}
 			{crew_enable group "crew" 0}
 			{view start "smoke3"}
-    			{delay 10 {view stop "smoke3"}}
-    		else component "body"
+			{delay 10 {view stop "smoke3"}}
+			else component "body"
 			{spawn "car_die_particle"}
 			{reset_manual_control}
 			{able select 0}
@@ -224,8 +224,8 @@
 				{delay 4{crew_emit}}
 				{delay 6{crew_emit}}
 			}
-		else component "engine"
-                        {spawn "car_die_particle"}
+			else component "engine"
+			{spawn "car_die_particle"}
 			{view start "smoke2"}
 			{delay 40 {view stop "smoke2"}}
 			{view start "steam"}
@@ -236,7 +236,7 @@
 		{if component "cabin"
 			{crew_enable group "crew" 1}
 			{view stop "smoke2"}
-		else component "body"
+			else component "body"
 			{able select 1}
 		}
 	}
@@ -262,7 +262,7 @@
 		}
 	}
 	{on "spawn_shellhole"
-;		{spawn "crater_big" "Basis" no_normal terrain_texmod}
+		;		{spawn "crater_big" "Basis" no_normal terrain_texmod}
 		{spawn "shellhole_dead_car2" "Basis"}
 	}
 	{on "tear"
@@ -273,7 +273,7 @@
 		}
 		{tear "piece_medium_steel" bone from_volume
 			{impulse up 2 1 dir 2 1}
-;			{burn first_volume fx "smoke_black" time 10 5}
+			;			{burn first_volume fx "smoke_black" time 10 5}
 			{add_view "smoke_black" "smoke" "basis"}
 			{view start "smoke"}
 			{delay_effect 10 5 "pause"}
@@ -291,21 +291,24 @@
 			{add_view "smoke_dead_norm" "deathfx" "fxfire1"}
 			{view start "deathfx"}
 		}
-		(define "cut_part"
+		; cut_part_v2: {tear "piece_medium_steel" {impulse} {delay_effect}}
+		;   %0 - {tear}, [?]
+		;   e.g. ("cut_part_v2" args "part1")
+		(define "cut_part_v2"
 			{tear "piece_medium_steel" bone %0
 				{impulse up 4 1 dir 5 2 cx 5 2 cy 5 2 rnd_dir 6 no_position}
-;				{burn first_volume fx "smoke_dead_wheel" time 20 5}
-;				{add_view "smoke_dead_wheel" "smoke" "basis"}
-;				{view start "smoke"}
+				;				{burn first_volume fx "smoke_dead_wheel" time 20 5}
+				;				{add_view "smoke_dead_wheel" "smoke" "basis"}
+				;				{view start "smoke"}
 				{delay_effect 20 5 "stop"}
 			}
 		)
-		("cut_part" args "part1")
-		("cut_part" args "part2")
-		("cut_part" args "part3")
-		("cut_part" args "part4")
-		("cut_part" args "part5")
-		("cut_part" args "part6")
+		("cut_part_v2" args "part1")
+		("cut_part_v2" args "part2")
+		("cut_part_v2" args "part3")
+		("cut_part_v2" args "part4")
+		("cut_part_v2" args "part5")
+		("cut_part_v2" args "part6")
 		;cut teared bones after SetSkeleton
 		{if "cabine_teared"
 			{bone cut "cabin"}
@@ -316,11 +319,11 @@
 		{delay 14 5 {view stop "deathfx"}}
 	}
 	{on "crush"
-    	{component destroy}
-    	{if volume "body"
-    		{set "crush" 1}
-    		{call "explosion"}
-    	}
+		{component destroy}
+		{if volume "body"
+			{set "crush" 1}
+			{call "explosion"}
+		}
 	}
 }
 
@@ -338,9 +341,9 @@
 				{if min_energy 2.5
 					{call "tear_wheel"}
 				}
-			else min_energy 3
+				else min_energy 3
 				{call "tear_wheel"}
-			else min_energy 1.5
+				else min_energy 1.5
 				{component break}
 			}
 		}
@@ -355,7 +358,7 @@
 		}
 	}
 	{on break_armor
-;		{con "break_armor"}
+		;		{con "break_armor"}
 		{if component "wheel"
 			{if name "pierce"
 				{component break}
@@ -371,69 +374,72 @@
 		{set "wheel_teared" 1}
 		{spawn	"spheredust_small"}
 		{component destroy}
-;		{con "effect tear wheel"}
+		;		{con "effect tear wheel"}
 		{tear "piece_medium_steel" bone from_volume id "wheel"
 			{volumes disable bullet contact blast}	;prevent destroing at spawn moment
 			{impulse up 6 4 dir 7 3}
-			;{burn first_volume fx "smoke_dead_wheel" time 10 5}
-			;{add_view "smoke_dead_wheel" "smoke" "basis"}
-			;{fire radius 0.5 time 12 follow}
-			;{view start "smoke"}
-			;{delay_effect 10 5 "pause"}
+		;{burn first_volume fx "smoke_dead_wheel" time 10 5}
+		;{add_view "smoke_dead_wheel" "smoke" "basis"}
+		;{fire radius 0.5 time 12 follow}
+		;{view start "smoke"}
+		;{delay_effect 10 5 "pause"}
 		}
 		{impulse up 0.3}
 	}
 	{on break
 		{if component "wheel"
 			{if not linked
-		 		{if not velocity 0.5
-		 			{impulse up 0.05}
-		 		}
+				{if not velocity 0.5
+					{impulse up 0.05}
+				}
 			}
 		}
 	}
 	{on "check_work_mover" overload
 		{if "wheel_teared"
 			{chassis_work 0}
-		else
+			else
 			{if not work "mover"
 				{chassis_work 0}
-			else not work "track"
+				else not work "track"
 				{chassis_work 0}
-			else work "wheel" 1
+				else work "wheel" 1
 				{chassis_work 1}
 				{if broken "wheel" 2
 					{movement_limit slow}
-				else broken "wheel" 1
+					else broken "wheel" 1
 					{movement_limit normal}
-				else
+					else
 					{movement_limit fast}
 				}
-			else
+				else
 				;{chassis_work 0}
 				{movement_limit slow}
 			}
 		}
 	}
 	{on "_explosion"
+		; rand_tear_wheel: {if {components} {tear}}
+		;   %0 - {components}, [?], {tear}, [?]
+		;   e.g. none (not called)
 		(define "rand_tear_wheel"
 			{if rand 0.5
-;				{con "rnd tear wheel"}
+				;				{con "rnd tear wheel"}
 				{components %0 destroy}
 				{tear "piece_medium_steel" bone %0 id "wheel"
 					{volumes disable bullet contact blast}	;prevent destroing at spawn moment
 					{impulse up 7 4 dir 7 4}
-;					{burn first_volume fx "smoke_dead_wheel" time 10 5}
+					;					{burn first_volume fx "smoke_dead_wheel" time 10 5}
 					{add_view "smoke_dead_wheel" "smoke" "basis"}
 					{view start "smoke"}
 					{delay_effect 10 5 "pause"}
 				}
 			}
 		)
-;		("rand_tear_wheel" args "wheelleft1")
-;		("rand_tear_wheel" args "wheelleft2")
-;		("rand_tear_wheel" args "wheelright1")
-;		("rand_tear_wheel" args "wheelright2")
+	;		("rand_tear_wheel" args "wheelleft1")
+	;		("rand_tear_wheel" args "wheelleft2")
+	;		("rand_tear_wheel" args "wheelright1")
+	;		("rand_tear_wheel" args "wheelright2")
 	}
 }
 {"wheeled_6 vehicle"
@@ -460,9 +466,9 @@
 				{if min_energy 2.5
 					{call "tear_wheel"}
 				}
-			else min_energy 3
+				else min_energy 3
 				{call "tear_wheel"}
-			else min_energy 1.5
+				else min_energy 1.5
 				{component break}
 			}
 		}
@@ -477,7 +483,7 @@
 		}
 	}
 	{on break_armor
-;		{con "break_armor"}
+		;		{con "break_armor"}
 		{if component "wheel"
 			{if name "pierce"
 				{component break}
@@ -500,7 +506,7 @@
 			}
 			{impulse up 0.3}
 			{delay 1 {impulse up 0.1}}
-		else
+			else
 			{spawn	"spheredust_small"}
 			{component destroy}
 			{tear "piece_medium_steel" bone from_volume id "wheel"
@@ -513,30 +519,30 @@
 	{on break
 		{if component "wheel"
 			{if not linked
-		 		{if not velocity 0.5
-		 			{impulse up 0.05}
-		 		}
+				{if not velocity 0.5
+					{impulse up 0.05}
+				}
 			}
 		}
 	}
 	{on "check_work_mover" overload
 		{if "wheel_teared"
 			{chassis_work 0}
-		else
+			else
 			{if not work "mover"
 				{chassis_work 0}
-			else not work "track"
+				else not work "track"
 				{chassis_work 0}
-			else work "wheel" 1
+				else work "wheel" 1
 				{chassis_work 1}
 				{if broken "wheel" 2
 					{movement_limit slow}
-				else broken "wheel" 1
+					else broken "wheel" 1
 					{movement_limit normal}
-				else
+					else
 					{movement_limit fast}
 				}
-			else
+				else
 				;{chassis_work 0}
 				{movement_limit slow}
 			}
@@ -567,9 +573,9 @@
 				{if min_energy 2.5
 					{call "tear_wheel"}
 				}
-			else min_energy 3
+				else min_energy 3
 				{call "tear_wheel"}
-			else min_energy 1.5
+				else min_energy 1.5
 				{component break}
 			}
 		}
@@ -584,7 +590,7 @@
 		}
 	}
 	{on break_armor
-;		{con "break_armor"}
+		;		{con "break_armor"}
 		{if component "wheel"
 			{if name "pierce"
 				{component break}
@@ -607,7 +613,7 @@
 			}
 			{impulse up 0.3}
 			{delay 1 {impulse up 0.1}}
-		else
+			else
 			{spawn	"spheredust_small"}
 			{component destroy}
 			{tear "piece_medium_steel" bone from_volume id "wheel"
@@ -620,30 +626,30 @@
 	{on break
 		{if component "wheel"
 			{if not linked
-		 		{if not velocity 0.5
-		 			{impulse up 0.05}
-		 		}
+				{if not velocity 0.5
+					{impulse up 0.05}
+				}
 			}
 		}
 	}
 	{on "check_work_mover" overload
 		{if "wheel_teared"
 			{chassis_work 0}
-		else
+			else
 			{if not work "mover"
 				{chassis_work 0}
-			else not work "track"
+				else not work "track"
 				{chassis_work 0}
-			else work "wheel" 1
+				else work "wheel" 1
 				{chassis_work 1}
 				{if broken "wheel" 2
 					{movement_limit slow}
-				else broken "wheel" 1
+					else broken "wheel" 1
 					{movement_limit normal}
-				else
+					else
 					{movement_limit fast}
 				}
-			else
+				else
 				;{chassis_work 0}
 				{movement_limit slow}
 			}
@@ -651,7 +657,7 @@
 	}
 }
 {"truck"
-;	{on blast overload	
+;	{on blast overload
 ;		{if volume "body"
 ;			{if min_energy 4
 ;				{call "blast_body"}
@@ -686,9 +692,9 @@
 		}
 	}
 	{on "spawn_shellhole"
-		{if "big_explosion"                                        
+		{if "big_explosion"
 			{spawn "crater_extra_big" "basis" terrain_texmod}
-                        {spawn "shellhole_big_dead" "basis"}
+			{spawn "shellhole_big_dead" "basis"}
 		}
 	}
 	{on blast
@@ -698,12 +704,12 @@
 			;else min_energy 1
 			;	{if rand 0.6
 			;		{call "blast_body"}
-			;	}			
+			;	}
 			;else stuff "grenade"
 			;	{if rand 0.4
 			;		{call "blast_body"}
 			;	}
-			}	
+			}
 		}
 	}
 }
@@ -712,7 +718,7 @@
 	{on blast_hit
 		{if min_energy 2
 			{call "explosion"}
-		else min_energy 0.5
+			else min_energy 0.5
 			{if rand 0.5
 				{call "explosion"}
 			}
@@ -770,20 +776,23 @@
 		{delay 20 10
 			{view stop "smoke"}
 		}
-		(define "cut_part"
+		; cut_part_v2: {tear "piece_medium_steel" {impulse} {delay_effect}}
+		;   %0 - {tear}, [?]
+		;   e.g. ("cut_part_v2" args "part1")
+		(define "cut_part_v2"
 			{tear "piece_medium_steel" bone %0
 				{impulse up 4 1 dir 5 2 cx 5 2 cy 5 2 rnd_dir 6 no_position}
-;				{add_view "smoke_dead_wheel" "smoke" "basis"}
-;				{view start "smoke"}
+				;				{add_view "smoke_dead_wheel" "smoke" "basis"}
+				;				{view start "smoke"}
 				{delay_effect 20 5 "stop"}
 			}
 		)
-		("cut_part" args "part1")
-		("cut_part" args "part2")
-		("cut_part" args "part3")
-		("cut_part" args "part4")
-		("cut_part" args "part5")
-		("cut_part" args "part6")
+		("cut_part_v2" args "part1")
+		("cut_part_v2" args "part2")
+		("cut_part_v2" args "part3")
+		("cut_part_v2" args "part4")
+		("cut_part_v2" args "part5")
+		("cut_part_v2" args "part6")
 	}
 }
 
@@ -795,11 +804,14 @@
 		{ani_play "liftup" -1 resume}
 	}
 }
+; break_glass2: {volumes "glass%1"} {spawn "glass_hit2"} {delay}
+;   %1 - text in {volumes}, text in {spawn}, text in {bone}
+;   e.g. ("break_glass2" args 1 _front1)
 (define "break_glass2"
- 	{volumes "glass%1" disable bullet contact blast}
- 	{spawn "glass_hit2" "glass%1" x}
- 	{delay 0.1
- 	{bone cut "glass%1"}
+	{volumes "glass%1" disable bullet contact blast}
+	{spawn "glass_hit2" "glass%1" x}
+	{delay 0.1
+		{bone cut "glass%1"}
 	}
 )
 
@@ -813,6 +825,8 @@
 		{link_sound "idle"			"vehicle/engine/sdkfz_idle"}
 	}
 }
+; sdkfz250_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("sdkfz250_sound")
 (define "sdkfz250_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/tracks/sdkfz250"	}
@@ -844,18 +858,18 @@
 	}
 	("sdkfz250_sound")
 	{on fire "gun"
-        		{view start "flashbarrel1"}
+		{view start "flashbarrel1"}
 		{view start "flashbarrel1s"}
-        		{view start "smkafire"}
+		{view start "smkafire"}
 		{delay 0.8
 			{view pause "flashbarrel1"}
 		}
 		{delay 0.2
 			{view pause "flashbarrel1s"}
 		}
-        		{delay 2.5
-            			{view stop "smkafire"}
-        		}
+		{delay 2.5
+			{view stop "smkafire"}
+		}
 	}
 }
 {"np_sdkfz250_9"
@@ -912,34 +926,34 @@
 		}
 	}
 	{on "spawn_shellhole"
-		{if "big_explosion"                                        
+		{if "big_explosion"
 			{spawn "crater_extra_big" "basis" terrain_texmod}
-                        {spawn "shellhole_big_dead" "basis"}
+			{spawn "shellhole_big_dead" "basis"}
 		}
 	}
 	{on blast
 		{if volume "body"
 			{if min_energy 3
 				{call "blast_body"}
-			else min_energy 1
+				else min_energy 1
 				{if rand 0.6
 					{call "blast_body"}
-				}			
-			else stuff "grenade"
+				}
+				else stuff "grenade"
 				{if rand 0.4
 					{call "blast_body"}
 				}
-			}	
+			}
 		}
 	}
 }
 {"np_sdkfz8"
 	("sdkfz250_sound")
 	{on bullet_hit
- 		{if volume "glass_front"
- 			("break_glass2" args 1 _front)
- 		}
- 	}
+		{if volume "glass_front"
+			("break_glass2" args 1 _front)
+		}
+	}
 }
 {"zis5 car"
 	{on "add_movement_sound" overload
@@ -1004,6 +1018,8 @@
 		{link_sound "exhaust"			"vehicle/engine/dodge_up"	}
 	}
 }
+; kubel_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("kubel_sound")
 (define "kubel_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/wheels/kubel"	}
@@ -1040,12 +1056,12 @@
 		{link_sound "idle"			"vehicle/engine/kubel_idle"   	}
 	}
 	{on bullet_hit
- 		{if volume "glass_front1"
- 			("break_glass2" args 1 _front1)
- 		else volume "glass_front2"
- 			("break_glass2" args 1 _front2)
- 		}
- 	}
+		{if volume "glass_front1"
+			("break_glass2" args 1 _front1)
+			else volume "glass_front2"
+			("break_glass2" args 1 _front2)
+		}
+	}
 }
 {"np_willysmb_50 car"
 	{on "add_movement_sound" overload
@@ -1056,12 +1072,12 @@
 		{link_sound "idle"			"vehicle/engine/kubel_idle"   	}
 	}
 	{on bullet_hit
- 		{if volume "glass_front1"
- 			("break_glass2" args 1 _front1)
- 		else volume "glass_front2"
- 			("break_glass2" args 1 _front2)
- 		}
- 	}
+		{if volume "glass_front1"
+			("break_glass2" args 1 _front1)
+			else volume "glass_front2"
+			("break_glass2" args 1 _front2)
+		}
+	}
 }
 {"np_willys50 car"
 	{on "add_movement_sound" overload
@@ -1090,13 +1106,15 @@
 		{link_sound "idle"			"vehicle/engine/kubel_idle"   	}
 	}
 	{on bullet_hit
- 		{if volume "glass_front1"
- 			("break_glass2" args 1 _front1)
- 		else volume "glass_front2"
- 			("break_glass2" args 1 _front2)
- 		}
- 	}
+		{if volume "glass_front1"
+			("break_glass2" args 1 _front1)
+			else volume "glass_front2"
+			("break_glass2" args 1 _front2)
+		}
+	}
 }
+; horch_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("horch_sound")
 (define "horch_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/wheels/horch"	}
@@ -1115,6 +1133,8 @@
 {"kfz15_gun car"
 	("horch_sound")
 }
+; gmc_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("gmc_sound")
 (define "gmc_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/wheels/gmc"		}
@@ -1140,6 +1160,8 @@
 {"gmc_eng car"
 	("gmc_sound")
 }
+; opel_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("opel_sound")
 (define "opel_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/wheels/blitz"	}
@@ -1207,25 +1229,28 @@
 		{spawn "startsmoke" inv_normal}
 	}
 }
+; break_glass2: {volumes "glass%1"} {spawn "glass_hit2"} {delay}
+;   %1 - text in {volumes}, text in {spawn}, text in {bone}
+;   e.g. ("break_glass2" args 1 _front1)
 (define "break_glass2"
- 	{volumes "glass%1" disable bullet contact blast}
- 	{spawn "glass_hit2" "glass%1" x}
- 	{delay 0.1
- 	{bone cut "glass%1"}
+	{volumes "glass%1" disable bullet contact blast}
+	{spawn "glass_hit2" "glass%1" x}
+	{delay 0.1
+		{bone cut "glass%1"}
 	}
 )
 {"schwimmwagen car"
 	("kubel_sound")
 	{on bullet_hit
- 		{if volume "glass_front1"
- 			("break_glass2" args 1 _front)
- 		}
- 	}
+		{if volume "glass_front1"
+			("break_glass2" args 1 _front)
+		}
+	}
 	{on "update_bulbs"
 		{if "in_water"
-			{if not "eng_water" 
+			{if not "eng_water"
 				{set "eng_water" 1}
-				{ani_play "engine"}	
+				{ani_play "engine"}
 			}
 			{if not velocity 0.001
 				{view start "on_stead"}
@@ -1233,16 +1258,16 @@
 				{ani_stop "swim"}
 				{ani_stop "propeller"}
 				{ani_play "drift" loop}
-					
-			else
+
+				else
 				{view start "on_move"}
 				{view pause "on_stead"}
 				{ani_stop "drift"}
 				{ani_play "swim" loop}
 				{ani_play "propeller" loop}
 			}
-		else
-			{if "eng_water" 
+			else
+			{if "eng_water"
 				{set "eng_water" 0}
 				{ani_play "engine_stop"}
 			}

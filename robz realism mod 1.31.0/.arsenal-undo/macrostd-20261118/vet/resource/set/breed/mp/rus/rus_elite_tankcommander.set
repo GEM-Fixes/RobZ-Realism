@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus_tankman_hp"}
+	{portrait "rus_tankman"}
+	{nationality rus}
+	{icon "tankman"}
+	{icon_priority 1}
+	{armors
+		{head rw_cap}
+	}
+	{perks
+		("breed_body" health(400%) regen_health(100%) stamina(200%) regen_stamina(100%) vision("mp_officer") speed(1))
+		("breed_drive" tank(1.2) vehicle(1.2) cannon(1.1))
+		("breed_skills" pistol(4) smg(5) mgun(7) rifle(3) rocket(3) melee(4))
+		{"tankgun" lvl_10}
+	}
+	("breed_vet" kind(tankcrew))
+	{inventory
+		{item "pps43" filling "ammo pps43_mag" 35}
+		{item "ammo pps43_mag" 210}
+		{item "bandage" 5}
+		{item "grenade f1" 2}
+		{item "grenade rpg43" 1}
+		{in_hands 0}
+	}
+}

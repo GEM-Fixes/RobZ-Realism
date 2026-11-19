@@ -1,20 +1,21 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.2))
 	{props "light" "amphibia" "vision_vehicle_high" "muzzle_medium" "gun_mode_change"}
 
 	{collider "tank.light"}
-	{PatherID "amphibia"}	
+	{PatherID "amphibia"}
 	{extender "enumerator"}
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: lvt4.def) ---
 	{Volume "body"	;нижн€€ часть корпуса
 		{tags "body"}
 		{component "body"}
 		{thickness 6.35
 			{front	12.7}	;нлд
-		;	{rear	6.35}
-		;	{top	6.35}
+			;	{rear	6.35}
+			;	{top	6.35}
 			{bottom	12.7}	;6.35+6.35
 		;	{right	6.35}	;гласис
 		}
@@ -24,8 +25,8 @@
 		{component "body"}
 		{thickness 6.35
 			{front	12.7}
-		;	{rear	6.35}
-		;	{top	6.35}
+			;	{rear	6.35}
+			;	{top	6.35}
 			{bottom	0.1}	;внутренн€€ стенка
 		}
 	}
@@ -35,7 +36,7 @@
 		{able {holed}}
 		{thickness 25.4
 			{front	38.1}
-		;	{rear	25.4}
+			;	{rear	25.4}
 			{top	12.7}
 			{bottom	12.7}
 			{right	15}	;брон€ от оруди€
@@ -45,13 +46,10 @@
 		{able clear {hole}}
 		{component "track"}
 	}
-	{Volume "hole_tur"
-		{able clear {hole}}
-		{component "turret"}
-	}
+	("vol_turret_hole_only" name(hole_tur))
 	{volume "mantlet"
 		{thickness 38.1
-		;	{front	38.1}
+			;	{front	38.1}
 			{rear	0.1}	;маска отстоит от основной брони
 		}
 	}
@@ -123,10 +121,10 @@
 	("crew_human" place(driver)	door1(emit1) door2(emit2) visor(driver))
 	("crew_human" place(commander) door1(emit1) door2(emit2) visor(main))
 	("crew_human_visible" place(gunner)	door1(emit1) door2(emit2) visor(main))
-	{placer 
+	{placer
 		{place "gunner" {openForCrush 0}}
-	}	
-	
+	}
+
 	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
 	("seat_human" place(seat2) bone(seat02) door(emit8)  animation(armor))
 	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
@@ -152,7 +150,7 @@
 			{RestoreIKAfterAim}
 			{charger "gunner"}
 			{weapon "75mm_m2" filling "ammo bullet75 usm8 fg" 1}
-			("abm_low")
+			("abm_low_v4")
 		}
 		{place "gun1_2"
 			{type "gun_change_arty"}
@@ -195,28 +193,28 @@
 			{maxSpeedAtMaxTurn 5}
 			{StartTime	30}
 			{TurnTime	18}
-			{TurnStart  1.8} 
-    		{BrakeTime  1.5}
-     		{StopTime   2.5} 
-    		{TurnRadius 11} 
-    		{TurnStop   0.8} 
-    		{Gears      0.1 0.2 0.3 1.0}
-    		{RearGears  0.3}
+			{TurnStart  1.8}
+			{BrakeTime  1.5}
+			{StopTime   2.5}
+			{TurnRadius 11}
+			{TurnStop   0.8}
+			{Gears      0.1 0.2 0.3 1.0}
+			{RearGears  0.3}
 		}
 		{switch
 			{exitFromWater}
 			{terrain not "water" "deep_water"}
 		}
 		{FuelBag
-			{volume 295 }	
-			{rate	 20 }   
+			{volume 295 }
+			{rate	 20 }
 			{remain 295 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  22}
-        	{Slow  22}
-    	}
+			{Normal  22}
+			{Slow  22}
+		}
 	}
 
 	{Extension "LVT4.mdl"}
@@ -233,6 +231,6 @@
 		{waterline 1.4}
 		{switch
 			{terrain "water" "deep_water"}
-		}	
+		}
 	}
 }

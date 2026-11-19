@@ -1,0 +1,19 @@
+{from "pattern mgun"
+	
+	{filling "ammo zb30_mag" 30 30}
+	{inventory
+		{size 4 2 }
+	}
+	{entity "zb_30lmg"}
+	{fireSound "mgun/besa_burst/"}
+	{reloadSound "bren"}
+	{Spreading 1
+		{SpreadPower	1}
+		{BurstAccuracy 100 96.5 93 89.5 86 82.5 80 75}
+	}
+	("recoveryTime" r(600))
+	("burst_long")
+	("speed" s(750))
+	{mass 9}
+	
+}

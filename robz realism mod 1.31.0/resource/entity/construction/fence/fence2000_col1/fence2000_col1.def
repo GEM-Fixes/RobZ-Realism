@@ -1,13 +1,10 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
-    (include "/properties/construction.inc")
-    	("armor_medium" args 0.1)
+	(include "/properties/construction.inc")
+	("armor_medium" args 0.1)
 	{Extension "fence2000_col1.mdl"}
-    {props "concrete" "small" "parts" "construction" "no_destroyed_stamp"}
+	{props "concrete" "small" "parts" "construction" "no_destroyed_stamp"}
 
-	{Volume "col1"
-		{Tags  "body"}
-		{Thickness 20}
-		{able {visible 1}}
-	}
+	("vol_body_visible" name(col1) mm(20))
 	{lodclass "decor_medium"}
 }

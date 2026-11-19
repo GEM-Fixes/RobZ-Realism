@@ -1,6 +1,6 @@
 {from "pattern throwable"
 	{tag "grenade"}
-	{throw	
+	{throw
 		{spreading 3.5}
 	}
 }

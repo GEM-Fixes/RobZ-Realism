@@ -3,5 +3,5 @@
 	{fireSound "gun/howitzer/150mm_sfh18"}
 	{reloadSound "gun_r04"}
 	("range_heavy_howitzer")
-	{range 440 440}	
+	{range 440 440}
 }

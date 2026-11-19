@@ -1,0 +1,136 @@
+{game_entity
+	(include "/properties/car.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
+	{Extension "zgkw303f.mdl"}
+	{props "vehicle" "car" "truck" "wheeled" "vision_vehicle_high"}
+	{targetSelector "cannon_rocket"}
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_big-midcar_driver"} {base "doorleft"}}
+			{reverse 	{end	"board_big-midcar_driver" -1} {base "doorleft" -1}}
+		}
+
+		{anm "commander"
+			{forward	{begin	"board_big-midcar"} {base "doorright"}}
+			{reverse 	{end	"board_big-midcar" -1} {base "doorright" -1}}
+		}
+	}
+
+	(define "crew_human"
+		{placer
+			{place "%place" {visor "%visor"}}
+		}
+		{boarder
+			{door "%door"}
+			{link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+		}
+	)
+
+	("crew_human" place(driver) door(emit1) animation(driver) visor(driver))
+	("crew_human" place(commander) door(emit2) animation(commander)	visor(main))
+	("armor_medium" args 1.0)
+
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 20
+			{front 20}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 20}
+	}
+	{volume "body3"
+		{tags "body"}
+		{component "body"}
+		{thickness 20}
+	}
+	{volume "body4"
+		{tags "body"}
+		{component "body"}
+		{thickness 20}
+	}
+	{volume "body5"
+		{tags "body"}
+		{component "body"}
+		{thickness 20}
+	}
+	{volume "gun"
+		{thickness 15}
+	}
+	{volume "turret"
+		{thickness 15}
+	}
+	{volume "engine"
+		{thickness 15
+			{front 20}
+		}
+	}
+
+	{component "turret"
+		{RepairTime 20}
+	}
+	{component "gun"
+		{RepairTime 15}
+	}
+	{Weaponry
+		{place "gun"
+			{weapon "weapon 8cm_wurfgranate_48" filling "ammo 8cm_wurfgranate" 48}
+			{Barrels 48}
+			{charger "driver"}
+			{gunner "driver"}
+			{StationaryFiring}
+		}
+	}
+
+
+	{extender "inventory"
+		{box
+			{item "ammo 8cm_wurfgranate" 48}
+			{item "ammo 8cm_wurfgranate sm" 48}
+
+		}
+	}
+
+	("wheel" args "wheelright")
+	("wheel" args "wheelleft")
+	("tracks")
+
+	{mass 8500}
+
+	{Chassis
+		{Locomotion ("locomotion")
+			{MaxSpeed 26}
+			{maxSpeedAtMaxTurn 12}
+		}
+		{FuelBag
+			{volume 120}
+			{rate	40}
+			{remain 120}
+			{fuel "fuel"}
+		}
+		{speed
+			{Normal  12}
+			{Slow  20}
+		}
+		; left track must be first
+		("tank_trace" fx("tracks_mid") step(0.52) len(-2.0) boneleft("FXtraceL2") boneright("FXtraceR2"))
+		("car_trace" fx("tracewheel02") step(0.09) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
+		{DisableMoveWhileFiring}
+	}
+	{bone "gun"
+		{limits -2 60}
+	}
+	{bone "turret"
+		{limits -50 50}
+		{speed 0.008}
+	}
+	{brain
+		{properties
+			{fire_mode hold}
+		}
+	}
+}
+

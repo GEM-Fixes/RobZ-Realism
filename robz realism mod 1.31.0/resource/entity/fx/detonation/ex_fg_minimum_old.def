@@ -41,7 +41,7 @@
 		}
 		{offset 0 0 5}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/flash_g01"
 					{timer
 						{mode play }
@@ -144,7 +144,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -202,7 +202,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4a"
 					{timer
 						{mode play }
@@ -663,7 +663,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -722,7 +722,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4a"
 					{timer
 						{mode play }
@@ -830,7 +830,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "/texture/fx/particle/rock_4"
 					{visibility 1}
 					{scale 0.125 0.025}

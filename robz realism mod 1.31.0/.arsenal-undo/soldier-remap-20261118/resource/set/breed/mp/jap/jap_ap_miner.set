@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "jap_armyts_gear2"}
+	{portrait jap_soldier2}
+	{icon ap_miner}
+	{icon_priority 3}
+	{nationality jap}
+	{armors
+		{head japarmy_cap_hohei2}
+	}
+	{perks
+		("body_regular_bare")
+		("drive_t08_v1_c1")
+		("skills_2_2_1_1_1_2")
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_type100smg")
+		{item "mine antipersonnel" 32}
+		{item "barbwire_kit"}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

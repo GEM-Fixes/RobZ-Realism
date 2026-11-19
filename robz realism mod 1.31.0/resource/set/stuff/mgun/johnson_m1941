@@ -9,7 +9,7 @@
 	{mass 6}
 	{rechargeTime 4.5}
 	("recoveryTime" r(900))
-	("burst_short")
+	("burst_short_v2")
 	("speed" s(854))
 	{range 120 120}
 	{Spreading 1

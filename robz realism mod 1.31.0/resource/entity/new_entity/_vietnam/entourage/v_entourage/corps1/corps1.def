@@ -15,7 +15,7 @@
 	{Volume "body4"
 		{Tags  "body" "fire"}
 		{able {obstacle 0}}
-                {material "flesh"}
+		{material "flesh"}
 	}
 }
 

@@ -1,43 +1,12 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	{Extension "trench_wire_01_x.mdl"}
-	{Volume "piece01"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "piece02"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "piece03"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "piece04"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "piece05"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "piece06"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "piece07"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "piece08"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
+	("vol_body_visible" name(piece01) mm(50))
+	("vol_body_visible" name(piece02) mm(50))
+	("vol_body_visible" name(piece03) mm(50))
+	("vol_body_visible" name(piece04) mm(50))
+	("vol_body_visible" name(piece05) mm(50))
+	("vol_body_visible" name(piece06) mm(50))
+	("vol_body_visible" name(piece07) mm(50))
+	("vol_body_visible" name(piece08) mm(50))
 }

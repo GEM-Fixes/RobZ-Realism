@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "hun_soldier"}
+	{portrait "hun_soldier2"}
+	{nationality hun}
+	{icon "smg"}
+	{icon_priority 0}
+	{armors
+		{head "helmet1_hun"}
+	}
+	{perks
+		("breed_body" health(150%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.8) vehicle(1.0) cannon(1.0))
+		("breed_skills" pistol(2) smg(3) mgun(1) rifle(1) rocket(1) melee(2))
+	}
+	("breed_vet" kind(1))
+	{inventory
+		{item "danuvia_39m" filled}
+		{item  "ammo 9x25" 160}
+		{item "bandage" 3}
+		{item "grenade hungarian_42m" 2}
+		{item "grenade molotov_coctail"}
+		{item "smoke grenade" 1}
+
+		{in_hands 0}
+	}
+}

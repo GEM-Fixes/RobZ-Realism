@@ -5,10 +5,10 @@
 	("range_heavy_howitzer")
 	{projectileDamage 1000}
 	{burst {min 3} {noaiming}}
-	
+
 	{rechargeTime 90}
 	{cursor "cannon_on_fg"}
-	{cursorReloading "cannon_reload_fg"}	
+	{cursorReloading "cannon_reload_fg"}
 	{range 560 560}
 
 }

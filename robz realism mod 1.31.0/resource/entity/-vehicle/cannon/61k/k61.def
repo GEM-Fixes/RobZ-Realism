@@ -6,9 +6,9 @@
 	("armor_medium")
 	{tag "full_auto_mode"}
 
-	{placer	
+	{placer
 		{place "gunner" {visor "main"} {useVision 0}}
-	}	
+	}
 
 	; --- Godny hitbox armor (ported from GodnyMod: k61.def) ---
 	{Volume "body1"
@@ -28,9 +28,9 @@
 		{thickness 10}
 	}
 	; --- end Godny hitbox armor ---
-	;	{volume "shield_front"	
-;		{thickness 15}
-;	}
+	;	{volume "shield_front"
+	;		{thickness 15}
+	;	}
 	("wheel" args "wheelright1")
 	("wheel" args "wheelright2")
 	("wheel" args "wheelleft1")
@@ -57,7 +57,7 @@
 			{forward {end "pose_seat_cannon_right" 10}}
 		}
 	}
-	
+
 	{extender "inventory"
 		{box
 			{item "bullet37 rus zenite ap" 160}
@@ -69,14 +69,14 @@
 			{weapon "37mm_61-k" filled}
 			("abm_field_gun")
 		}
-	}  	
+	}
 
 	{extender "cannon"
 		{animation
 			{aim "Cannon_61K_gunlayer_right" "Cannon_61K_gunlayer_left"}
-;			{fire	"" ""}
+			;			{fire	"" ""}
 			{move "cannon_pak40_pusher_left" "cannon_pak40_pusher_right"}
-;			{reload  "" "cannon_flak38_charger_left"}
+			;			{reload  "" "cannon_flak38_charger_left"}
 			{switch "close"}
 		}
 		{move {obstacle "close"}}

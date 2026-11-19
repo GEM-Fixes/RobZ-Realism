@@ -1,6 +1,6 @@
 {from "pattern mgun"
 	{filling "ammo fg42_mag" 20}
-	{entity "fg42_mg"}                   
+	{entity "fg42_mg"}
 	{fireSound "mgun/fg42_shot"}
 	{reloadSound "fg42"}
 	{inventory
@@ -14,6 +14,6 @@
 	{range 120 120}
 	{rechargeTime 5}
 	("recoveryTime" r(750))
-	("burst_short")
+	("burst_short_v2")
 	("speed" s(740))
 }

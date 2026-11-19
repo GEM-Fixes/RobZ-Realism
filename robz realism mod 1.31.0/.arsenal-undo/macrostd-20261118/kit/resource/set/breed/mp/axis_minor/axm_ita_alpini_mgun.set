@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ita-alp-mgun"}
+	{portrait "ita_soldier1"}
+	{icon "mg"}
+	{icon_priority 3}
+	{nationality ita}
+	{armors
+		{head helmet_ita_m33_alpini}
+	}
+	{perks
+		("breed_body" health(200%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.8) vehicle(1.0) cannon(1.0))
+		("breed_skills" pistol(1) smg(1) mgun(4) rifle(3) rocket(1) melee(2))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "breda_30" filled}
+		{item  "ammo breda_mag" 320}
+		{item "beretta_m1934" filled}
+		{item  "ammo 9x17" 35}
+		{item "bandage" 2}
+		{item "sandbag_kit" 1}
+		{in_hands 0}
+	}
+}

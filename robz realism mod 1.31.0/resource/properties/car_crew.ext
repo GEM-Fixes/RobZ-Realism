@@ -2,6 +2,12 @@
 
 ;//////////////////////////////////////////////////////////////////////////////
 
+; board_animation: {boarder {anm}}
+;   place - name of {anm}
+;   board_begin - name of {begin}, name of {end}
+;   board_end - name of {end}
+;   base - name of {base}
+;   e.g. ("board_animation" place(commander) board_begin(board_big-midcar) board_end(seat_passenger) base(doorright))
 (define "board_animation"
 	{boarder
 		{anm "%place"
@@ -11,12 +17,20 @@
 	}
 )
 
+; crew_inside: calls "board_animation"
+;   e.g. ("crew_inside")
 (define "crew_inside"
 	("board_animation" place(driver)	board_begin(board_bigcar) board_end(seat_driver_car) base(doordriver))
 	("board_animation" place(passenger)	board_begin(board_bigcar) board_end(seat_passenger)	 base(doorpassenger))
 	("board_animation" place(commander)	board_begin(board_bigcar) board_end(seat_passenger)	 base(doorcommander))
 )
 
+; crew_human: {placer {place}} {boarder {door} {link}}
+;   place - name of {place}, text in {link}
+;   bone - name of {linkbone}
+;   door - name of {door}, name of {link}
+;   animation - name of {anm}
+;   e.g. ("crew_human" place(driver) door1(emit1) door2(emit2) visor(driver))
 (define "crew_human"
 	{placer
 		{place "%place"
@@ -31,22 +45,30 @@
 	}
 )
 
+; crew_2_human: calls "crew_inside" "crew_human"
+;   e.g. ("crew_2_human")
 (define "crew_2_human"
 	("crew_inside")
 	("crew_human" place(driver)		bone(driver)	door(emit1) animation(driver))
 	("crew_human" place(commander)	bone(commander)	door(emit2) animation(commander))
 )
 
-(define "crew_3_human"
+; crew_3_human_inside: calls "crew_inside" "crew_human"
+;   e.g. none (not called)
+(define "crew_3_human_inside"
 	("crew_inside")
 	("crew_human" place(driver)		bone(driver)	door(emit1) animation(driver))
 	("crew_human" place(commander)	bone(commander)	door(emit2) animation(commander))
 )
 
+; passenger_2_human: calls "crew_human"
+;   e.g. ("passenger_2_human")
 (define "passenger_2_human"
 	("crew_human" place(seat1)	bone(seat01)	door(emit3)	animation(passenger))
 	("crew_human" place(seat2)	bone(seat02)	door(emit4)	animation(passenger))
 )
+; passenger_10_human: calls "passenger_2_human" "crew_human"
+;   e.g. ("passenger_10_human")
 (define "passenger_10_human"
 	("passenger_2_human")
 	("crew_human" place(seat3)	bone(seat03)	door(emit3)	animation(passenger))
@@ -60,6 +82,8 @@
 )
 
 ;//////////////////////////////////////////////////////////////////////////////
+; seat_inside: {boarder {anm}}
+;   e.g. ("seat_inside")
 (define "seat_inside"
 	{boarder
 		{anm "passenger"
@@ -68,6 +92,12 @@
 		}
 	}
 )
+; passenger_invisible: {placer {place}} {boarder {door} {link}}
+;   place - name of {place}, name of {group}, text in {link}
+;   bone - name of {linkbone}
+;   door - name of {door}, name of {link}
+;   animation - name of {anm}
+;   e.g. ("passenger_invisible" place(seat10) bone(seat10) door(emit4) animation(passenger))
 (define "passenger_invisible"
 	{placer
 		{place "%place" {group "%place"} {linkbone "%bone"} {turnoff {sensor} {visible}}}
@@ -77,6 +107,8 @@
 		{link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
 	}
 )
+; passenger_10_human_invisible: calls "seat_inside" "passenger_invisible"
+;   e.g. ("passenger_10_human_invisible")
 (define "passenger_10_human_invisible"
 	("seat_inside")
 	("passenger_invisible" place(seat1)	bone(seat01)	door(emit3) animation(passenger))

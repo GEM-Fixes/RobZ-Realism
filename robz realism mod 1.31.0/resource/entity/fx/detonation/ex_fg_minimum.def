@@ -25,7 +25,7 @@
 			{## nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -91,7 +91,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -227,7 +227,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/rock"
 					{turn 1
 						{linear
@@ -288,7 +288,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/particle/metal_drops1"
 					{timer
@@ -343,7 +343,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/particle/metal_drops1"
 					{timer
@@ -393,7 +393,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/explosion/bum"
 					{timer
@@ -492,7 +492,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/explosion/bum2"
 					{timer
@@ -564,7 +564,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/exp01"
 					{timer
 						{mode play }
@@ -634,7 +634,7 @@
 			{## nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -692,7 +692,7 @@
 			{damping 0.93}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4"
 					{timer
 						{mode play }
@@ -749,7 +749,7 @@
 			{## nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -817,7 +817,7 @@
 			{## nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/exp_muzzle_01"
 					{timer
 						{mode play }
@@ -882,7 +882,7 @@
 			{## nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/exp_muzzle_01"
 					{timer
 						{mode play }
@@ -1001,7 +1001,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/particle/metal_drops1"
 					{timer
@@ -1051,7 +1051,7 @@
 			{damping 0.8}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4"
 					{timer
 						{mode play }
@@ -1082,7 +1082,7 @@
 		}
 		{notifyowner}
 	}
-		{#+ lightview
+	{#+ lightview
 		{type point}
 		{animator
 			{scale 1

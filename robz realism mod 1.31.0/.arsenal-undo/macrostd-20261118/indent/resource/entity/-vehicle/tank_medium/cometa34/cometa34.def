@@ -1,0 +1,265 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{collider "tank.heavy"}
+	{props "medium" "turret_rotator" "vision_vehicle_high" "muzzle_large_sides"}
+
+	{extender "enumerator"}
+
+	; --- Godny hitbox armor (ported from GodnyMod: cometa34.def) ---
+	{volume "body1"	;нос корпуса
+		{component "body"}
+		{tags "body"}
+		{thickness 42.87	;28,57мм внеш + 14.3мм внутр
+			{front	63.5}	;нлд
+			{rear	0.1}	;внутренн€€ стенка
+			{top	31.75}	;гласис верхний
+			{bottom	14.35}	;8мм +6,35мм
+			{right	25}	;гласис нижний
+		}
+	}
+	{volume "body2"	;низ бо
+		{component "body"}
+		{tags "body"}
+		{thickness 42.87	;28,57мм внеш + 14.3мм внутр
+			{front	0.1}	;внутренн€€ стенка
+			{rear	0.1}	;внутренн€€ стенка
+			{top	20}	;0.5"?
+			{bottom	14.35}	;8мм +6,35мм
+		}
+	}
+	{volume "body3"	;верх бо
+		{component "body"}
+		{tags "body"}
+		{thickness 46	;31.75мм внеш + 14.3мм внутр
+			{front	0.1}	;внутренн€€ стенка
+			{rear	0.1}	;внутренн€€ стенка
+			{top	20}
+			{bottom	0.1}	;внутренн€€ стенка
+		}
+	}
+	{volume "body4"	;влд
+		{component "body"}
+		{tags "body"}
+		{thickness 31.75
+			{front	76.2}
+			{rear	0.1}	;внутренн€€ стенка
+		;	{top	14}
+			{bottom	6.35}
+		}
+	}
+	{volume "body5"	;нижн€€ часть моторного
+		{component "body"}
+		{tags "body"}
+		{thickness 39.3	;25мм внеш + 14.3мм внутр
+			{front	31.75}
+			{rear	31.75}
+			{top	14.3}
+			{bottom	6.35}
+		}
+	}
+	{volume "body6"	;верхн€€ часть моторного
+		{component "body"}
+		{tags "body"}
+		{thickness 31.75	;31.75мм боковые жабры под наклоном
+		;	{front	31.75}
+			{rear	25}
+			{top	14.3}
+			{bottom	0.1}	;внутренн€€ стенка
+		}
+	}
+	{volume "body7"	;кожух выхлопа
+		{component "body"}
+		{tags "body"}
+		{thickness 25
+			{front	0.1}	;внутренн€€ стенка
+		;	{rear	25}
+			{top	14.3}
+			{bottom	6.35}
+		}
+	}
+	{Volume "turret"	;основна€ часть башни
+		{tags "turret"}
+		{component "turret"}
+		{able {holed}}
+		{thickness 63.5
+			{front	101.6}
+			{rear	57.15}
+			{top	20}
+			{bottom	25.4}
+			{right	25.4}	;наклонный верх
+		}
+	}
+	{Volume "turret1"	;бронировка левой цапфы
+		{tags "turret"}
+		{component "turret"}
+		{able {holed}}
+		{thickness 50
+			{front	80}
+			{rear	0.1}	;внутренн€€ стенка
+			{top	20}
+			{bottom	0.1}	;внутренн€€ стенка
+		}
+	}
+	{Volume "turret2"	;бронировка правой цапфы
+		{tags "turret"}
+		{component "turret"}
+		{thickness 50
+			{front	80}
+			{rear	0.1}	;внутренн€€ стенка
+			{top	20}
+			{bottom	0.1}	;внутренн€€ стенка
+		}
+	}
+	{Volume "turret3"	;борода - бронировка нижней части башни
+		{tags "turret"}
+		{component "turret"}
+		{thickness 100
+		;	{front	100}
+			{rear	0.1}	;внутренн€€ стенка
+			{top	20}
+			{bottom	20}
+		}
+	}
+	{Volume "hole_man"
+		{able clear {hole}}
+		{component "turret"}
+	}
+	{Volume "mantlet"
+		{tags "gun"}
+		{component "gun"}
+		{thickness 102
+		;	{front	102}
+			{rear	15}	;орудие дает небольшую броню
+		}
+	}
+	{volume "engine"
+		{thickness 10}
+	}
+	{Volume "zip1"	;€щик на башне из turret2
+		{component "zip1"}
+		{thickness 10}
+	}
+	{volume "zipl1"
+		{component "zipl1"}
+		{thickness 6}
+	}
+	{volume "zipr1"
+		{component "zipr1"}
+		{thickness 6}
+	}
+	; --- end Godny hitbox armor ---
+	{Volume "gun"
+		{tags "gun"}
+		{component "gun"}
+	}
+	("armor_medium" turret(102 64 57 25) body(76 43 25 25) body2(32 43 25 25) body3(63 43 25 25))
+	("armor_engine"  t(10 43 25 25))
+	("armor_mantlet" t(102))
+	("eng_3x_sight")
+
+
+	("crew_4_human")
+
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_right"} {end "pose_mgun_pz6"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_left"} {end "pose_mgun_pz6"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_lowArmor"} 	{end "pose_seat_armor_2"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_lowArmor"} {end "pose_seat_armor_2"}}
+			{reverse 	{end	"emit_body"}}
+		}
+		{anm "armor2"
+			{forward	{begin	"board_lowArmor"} {end "pose_seat_armor_1"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+	("crew_human_visible" 	place(gunner2)	door1(emit1) door2(emit2) visor(main))
+
+
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+
+
+	{extender "inventory"
+		{box
+			{item "ammo bullet77 eng apcbc" 43}
+			{item "ammo bullet77 eng fg" 27}
+			{item "ammo bullet77 eng apds" 4}
+			{item "ammo mg_mauser belt red" 3150}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "77mm_hv" filling "ammo bullet77 eng apcbc" 1}
+			("abm_high")
+		}
+
+		{place "mgun1"
+			{type "mgun_hull"}
+			{weapon "besa" filling "mg_mauser belt red" 225}
+			{foresight "foresight4"}
+			{gunner "driver"}
+			{charger "driver"}
+			("abm_mgun")
+		}
+		{place "mgun2"
+			{type "mgun_coaxial"}
+			{weapon "besa_optic" filling "mg_mauser belt red" 225}
+			{foresight "foresight5"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	{mass 42500}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.50) len(1.2))
+		{Locomotion ("locomotion")
+			{maxspeed   36}
+			{maxSpeedAtMaxTurn 4}
+			{StartTime	28}
+			{TurnTime	18}
+			{TurnStart  1.8}
+    		{BrakeTime  1.5}
+     		{StopTime   2.5}
+    		{TurnRadius 10}
+    		{TurnStop   0.8}
+    		{Gears      0.15 0.25 0.35 1.0}
+    		{RearGears  0.25}
+		}
+		{FuelBag
+			{volume 530 }
+			{rate	41 }
+			{remain 530 }
+			{fuel "fuel"}
+		}
+		{speed
+        	{Normal  36}
+        	{Slow  36}
+    	}
+	}
+{Extension "cometa34.mdl"}
+	{bone "turret"
+		{speed 0.0034}
+	}
+	{bone "gun_rot"
+		{speed 0.0007}
+	}
+}

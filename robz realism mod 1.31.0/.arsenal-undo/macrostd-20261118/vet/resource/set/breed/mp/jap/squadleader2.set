@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "jap_army_squadleader"}
+	{portrait "jap_soldier3"}
+	{nationality jap}
+	{icon "squadleader2"}
+	{icon_priority 2}
+	{armors
+		{head japarmy_cap_hohei2}
+	}
+	{perks
+		("breed_body" health(200%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.8) vehicle(1.0) cannon(1.0))
+		("breed_skills" pistol(3) smg(3) mgun(2) rifle(3) rocket(1) melee(2))
+	}
+	("breed_vet" kind(1))
+	{inventory
+		{item "type100smg_bayonet" filled}
+		{item "ammo type100_mag" 180}
+		{item "bandage" 3}
+		{item "grenade type97" 4}
+		{item "grenade type3at_a" 1}
+		{item "smoke grenade" 1}
+		{in_hands 0}
+	}
+}

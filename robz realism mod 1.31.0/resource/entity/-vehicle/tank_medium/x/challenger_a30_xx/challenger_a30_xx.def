@@ -1,15 +1,4 @@
+; same as the other 1 def here; body in challenger_a30_body.inc
 {game_entity
-	{Extension "challenger_a30_xx.mdl"}
-	{Volume "body"
-	}
-	{Volume "engine"
-	}
-	{Volume "gun"
-	}
-	{Volume "trackleft"
-	}
-	{Volume "trackright"
-	}
-	{Volume "turret"
-	}
+	(include "challenger_a30_body.inc")
 }

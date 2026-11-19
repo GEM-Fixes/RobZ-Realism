@@ -3,7 +3,7 @@
 	{props "vehicle" "cannon" "cannon_small" "wheeled" "vision_cannon_low" "muzzle_minimum" "medium_weapons"}
 	{collider "cannon_small"}
 	; --- Godny hitbox armor (ported from GodnyMod: qf2.def) ---
-	
+
 	; --- end Godny hitbox armor ---
 	("armor_medium")
 
@@ -31,12 +31,12 @@
 			{forward {end "pose_seat_cannon_right" 10}}
 		}
 	}
-	("eng_1-9x_sight")
+	("eng_1-9x_sight_no_visor1")
 	{extender "inventory"
 		{box
 			{item "ammo bullet40 eng ap" 5}
-			;{item "ammo bullet40 fg" 5}
-			;{item "ammo bullet40 apcr" 5}
+		;{item "ammo bullet40 fg" 5}
+		;{item "ammo bullet40 apcr" 5}
 		}
 	}
 	{Weaponry

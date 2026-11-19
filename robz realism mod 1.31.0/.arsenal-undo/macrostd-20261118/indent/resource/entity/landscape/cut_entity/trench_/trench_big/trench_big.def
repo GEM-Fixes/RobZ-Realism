@@ -1,0 +1,83 @@
+{
+	(include "/properties/trench.inc")
+	{Extension "trench_big.mdl"}
+	{props "sand"}
+	("boneLand"  args "trench_ground_big")
+	("volume" args "body")
+	("volume" args "body1")
+	("volume" args "body2")
+	("volume" args "body3")
+	("volume" args "body4")
+	("volume" args "body5")
+	("volume" args "body6")
+	{ObstacleID "trench_wall"}
+
+	{Volume "c1"
+		{Tags  "attach" "1"}
+		{able clear {touch 1}}
+		{density 0}
+	}
+		{Volume "c2"
+		{Tags  "attach" "2"}
+		{able clear {touch 1}}
+		{density 0}
+	}
+		{Volume "c3"
+		{Tags  "attach" "3"}
+		{able clear {touch 1}}
+		{density 0}
+	}
+		{Volume "c4"
+		{Tags  "attach" "4"}
+		{able clear {touch 1}}
+		{density 0}
+	}
+		{Volume "c5"
+		{Tags  "attach" "5"}
+		{able clear {touch 1}}
+		{density 0}
+	}
+		{Volume "c6"
+		{Tags  "attach" "6"}
+		{able clear {touch 1}}
+		{density 0}
+	}
+		{Volume "c7"
+		{Tags  "attach" "7"}
+		{able clear {touch 1}}
+		{density 0}
+	}
+		{Volume "c8"
+		{Tags  "attach" "8"}
+		{able clear {touch 1}}
+		{density 0}
+	}
+	{placer
+		{place "c1" {attach squat_lie} {linkbone "c1"}}
+		{place "c2" {attach squat_lie} {linkbone "c2"}}
+		{place "c3" {attach squat_lie} {linkbone "c3"}}
+		{place "c4" {attach squat_lie} {linkbone "c4"}}
+		{place "c5" {attach squat_lie} {linkbone "c5"}}
+		{place "c6" {attach squat_lie} {linkbone "c6"}}
+		{place "c7" {attach squat_lie} {linkbone "c7"}}
+		{place "c8" {attach squat_lie} {linkbone "c8"}}
+	}
+	{boarder
+		{door "d1" {queue 0}}
+		{link "d1" "c1"}
+		{door "d2" {queue 0}}
+		{link "d2" "c2"}
+		{door "d3" {queue 0}}
+		{link "d3" "c3"}
+		{door "d4" {queue 0}}
+		{link "d4" "c4"}
+		{door "d5" {queue 0}}
+		{link "d5" "c5"}
+		{door "d6" {queue 0}}
+		{link "d6" "c6"}
+		{door "d7" {queue 0}}
+		{link "d7" "c7"}
+		{door "d8" {queue 0}}
+		{link "d8" "c8"}
+	}
+}

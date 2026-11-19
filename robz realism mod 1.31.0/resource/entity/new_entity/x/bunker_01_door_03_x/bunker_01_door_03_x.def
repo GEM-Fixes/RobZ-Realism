@@ -1,11 +1,9 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/building.inc")
 	{props "cornered" "steel" "parts" "construction" "wall" "burning"}
 	("armor_heavy" args 0.8)
 	{Extension "bunker_01_door_03_x.mdl"}
-	{Volume "body"
-		{Tags "body"}
-		{Thickness 50}
-	}
+	("vol_body_tagged" name(body) mm(50))
 
 }

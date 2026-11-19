@@ -82,7 +82,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b"
 					{timer
 						{mode play }
@@ -139,7 +139,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b"
 					{scale 1
 						{linear
@@ -195,7 +195,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b"
 					{timer
 						{mode play }
@@ -251,7 +251,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage initial 
+			{stage initial
 				{sprite "$/flash/wave"
 					{timer
 						{mode play }
@@ -311,7 +311,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/waterplume2"
 					{timer
 						{mode play }
@@ -372,7 +372,7 @@
 			}
 		}
 		{visualizer
-			{stage initial 
+			{stage initial
 				{sprite "$/smoke/smokesmal4b"
 					{scale 1
 						{linear
@@ -398,7 +398,7 @@
 					}
 				}
 			}
-			{stage collided dying 
+			{stage collided dying
 				{sprite "$/flash/ripples_w"
 					{timer
 						{mode play }
@@ -449,7 +449,7 @@
 			{damping 1}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4ablue"
 					{timer
 						{mode play }
@@ -503,7 +503,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage initial 
+			{stage initial
 				{sprite "$/flash/waterplume2"
 					{timer
 						{mode play }
@@ -565,7 +565,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/waterplume2"
 					{timer
 						{mode play }

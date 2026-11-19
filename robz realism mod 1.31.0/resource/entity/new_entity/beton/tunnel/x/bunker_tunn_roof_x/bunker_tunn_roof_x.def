@@ -1,12 +1,9 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/building.inc")
 	{props "one" "staged" "wood" "construction" "disable_area" "no_destroyed_stamp" "burning"}
 	("armor_heavy" args 0.8)
 	{Extension "bunker_tunn_roof.mdl"}
-	{Volume "body_r"
-		{Tags "body"}
-		{Thickness 150}
-		{able {visible 0}{obstacle 0}}
-	}
+	("vol_body_hidden" name(body_r) mm(150))
 
 }

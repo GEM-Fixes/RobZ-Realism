@@ -95,7 +95,7 @@
 			{if operatable
 				{ani_play "lights_on"}
 				{call "lights_on"}
-			else
+				else
 				{call "lights_off"}
 				{ani_play "lights_off"}
 			}
@@ -104,16 +104,16 @@
 	{on pierce
 		{if stuff "shell_maximum"
 			{components "body" break}
-		else stuff "shell_verybig"
+			else stuff "shell_verybig"
 			{components "body" break}
-		else stuff "shell_big"
+			else stuff "shell_big"
 			{components "body" break}
-		else stuff "shell"
+			else stuff "shell"
 			{if rand 0.4
 				{components "body" break}
 			}
 		}
-	}	
+	}
 }
 ;------------------ USA --------------------------
 {"m10wolverine_42 tank"

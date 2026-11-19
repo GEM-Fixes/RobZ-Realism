@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "jap_army_rifle"}
 	{portrait "jap_soldier2"}
@@ -8,49 +9,15 @@
 		{head "jap_army_helmet6"}
 	}
 	{perks
-		{"health" "150%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "100%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.8
-		}
-		{"vehicle" 1.0
-		}
-		{"cannon" 1.0
-		}
-		
-		{"pistol" lvl_3
-		}
-		{"smg" lvl_2
-		}
-		{"mgun" lvl_2
-		}
-		{"rifle" lvl_4
-		}
-		{"rocketlauncher" lvl_2
-		}
-		{"melee" lvl_3
-		}
+		("soldier_rifle_4" rocket(1) body(hardy) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(standard))
 	{inventory
-		{item "type38rifle_bayonet" filled}
-		{item "ammo arisaka6-5_clip" 60}
+		("rifle_type38rifle_bayonet")
 		{item "bandage" 3}
-		{item "dynamite" 1}
+		("give" item(dynamite) count(1))
 		{item "sandbag_kit" 1}
-		{item "mine antipersonnel" 2}
+		("give" item(mine antipersonnel) count(2))
 		{in_hands 0}
 	}
 }

@@ -1,0 +1,15 @@
+;SDL
+; Robz 1.28.6 versions of unit-list macros whose meaning changed in 1.30.10, used by the 1941-1945 year lists.
+(define "how_y"
+	{"%name(%side)"
+		{charge %c}
+		{content "%c2 ( mp/%side/vehicle_supporter:2 )"} ;%c1 ( mp/%side/vehicle_supporter:2 )
+		{tags "%side %t"}
+		{group "%g"}
+		{button "%b"}
+		{level %level}
+		{cost %cost}
+		{fore %f}
+		{info %c2}
+	}
+)

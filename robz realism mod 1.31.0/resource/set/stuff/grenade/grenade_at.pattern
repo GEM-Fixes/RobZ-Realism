@@ -11,9 +11,9 @@
 	{throw
 		{range 14}
 		{startAngle 40}
-		{spreading 0.2}	
+		{spreading 0.2}
 		{constantSpeed 10.5}
-		{spreading 
+		{spreading
 			{radiusTable {0 0} {7 0} {15 0} {25 0}}
 		}
 	}

@@ -13,6 +13,8 @@
 ;	{restitution 0.001}
 }
 
+; throwing_weapon: {on {if}}
+;   e.g. ("throwing_weapon")
 (define "throwing_weapon"
 	{on contact
 		{if effector "human"
@@ -34,16 +36,16 @@
 ;-----------------------------------trenches/foxholes
 
 {"spawner_trench_bighole"
-        {on spawn
-                {delay 0.2
+	{on spawn
+		{delay 0.2
 			{spawn "spheredust_norm" "basis"}
 			{spawn "trench_big" "trench1" x }
 		}
 	}
 }
 {"eg"
-        {on spawn
-                {delay 0.2
+	{on spawn
+		{delay 0.2
 			{spawn "spheredust_norm" "basis"}
 			{spawn "trench_sit_2" "trench1" x }
 		}
@@ -114,7 +116,7 @@
 	}
 	{on contact
 		{if effector "parts construction"
-			;{spawn "dust_houseparts"}
+		;{spawn "dust_houseparts"}
 		}
 		{delete}
 	}
@@ -236,56 +238,56 @@
 }
 
 {"flesh part"
-        {on spawn
+	{on spawn
 		{delay 0.01 {volumes disable bullet contact blast touch}}
 		{delay 1 {volumes enable bullet contact blast touch}}
 		{delay 300 240 {hide 1}}
 	}
-        {on blast
-             {delay 0.01 {volumes disable bullet contact blast touch}}
-	     {delay 3 {volumes enable bullet contact blast touch}}
-	     {if rand 0.1 {spawn "ground_blood_big"}}
-             {if rand 0.15 {spawn "ground_blood_small"}}
-	     {if rand 0.15 {spawn "ground_blood01"}}
-	     {if rand 0.1 {spawn "ground_blood02"}}
-	     {if rand 0.1 {spawn "ground_blood03"}}
-        }
+	{on blast
+		{delay 0.01 {volumes disable bullet contact blast touch}}
+		{delay 3 {volumes enable bullet contact blast touch}}
+		{if rand 0.1 {spawn "ground_blood_big"}}
+		{if rand 0.15 {spawn "ground_blood_small"}}
+		{if rand 0.15 {spawn "ground_blood01"}}
+		{if rand 0.1 {spawn "ground_blood02"}}
+		{if rand 0.1 {spawn "ground_blood03"}}
+	}
 	{on blast_hit
 		{if min_energy 0.3
 			{impulse up 4 1 dir 6 2}
 		}
 	}
 	{on bullet_hit
-	    {if rand 0.15 {spawn "bloodspark_small01"}}
-            {if rand 0.15 {spawn "bloodspark_small02"}}
-            {if rand 0.15 {spawn "bloodsparks01"}}
-            {if rand 0.15 {spawn "bloodsparks02"}}
-            {if rand 0.1 {spawn "ground_blood_big"}}
-            {if rand 0.05 {spawn "ground_blood_small"}}
-            {if rand 0.1 {spawn "ground_blood01"}}
-            {if rand 0.05 {spawn "ground_blood02"}}
-            {if rand 0.1 {spawn "ground_blood03"}}
-        }
+		{if rand 0.15 {spawn "bloodspark_small01"}}
+		{if rand 0.15 {spawn "bloodspark_small02"}}
+		{if rand 0.15 {spawn "bloodsparks01"}}
+		{if rand 0.15 {spawn "bloodsparks02"}}
+		{if rand 0.1 {spawn "ground_blood_big"}}
+		{if rand 0.05 {spawn "ground_blood_small"}}
+		{if rand 0.1 {spawn "ground_blood01"}}
+		{if rand 0.05 {spawn "ground_blood02"}}
+		{if rand 0.1 {spawn "ground_blood03"}}
+	}
 	{on contact
-	    {delay 0.01 {volumes disable bullet contact blast touch}}
-	    {delay 15 {volumes enable bullet contact touch}}
-	    {if rand 0.02 {spawn "ground_blood01"}}
-	    {if rand 0.02 {spawn "ground_blood02"}}
-	    {if rand 0.02 {spawn "ground_blood03"}}
+		{delay 0.01 {volumes disable bullet contact blast touch}}
+		{delay 15 {volumes enable bullet contact touch}}
+		{if rand 0.02 {spawn "ground_blood01"}}
+		{if rand 0.02 {spawn "ground_blood02"}}
+		{if rand 0.02 {spawn "ground_blood03"}}
 	}
 	{on ground_hit
 		{if min_speed 1
-                        {if rand 0.1 {spawn "ground_blood_big"}}
-                        {if rand 0.2 {spawn "ground_blood_small"}}
-	                {if rand 0.15 {spawn "ground_blood01"}}
-	                {if rand 0.1 {spawn "ground_blood02"}}
-	                {if rand 0.05 {spawn "ground_blood03"}}
+			{if rand 0.1 {spawn "ground_blood_big"}}
+			{if rand 0.2 {spawn "ground_blood_small"}}
+			{if rand 0.15 {spawn "ground_blood01"}}
+			{if rand 0.1 {spawn "ground_blood02"}}
+			{if rand 0.05 {spawn "ground_blood03"}}
 		}
 	}
 }
 {"small part"
 	{on spawn
-;		{con "spawn small part"}
+		;		{con "spawn small part"}
 		{delay 0.1
 			{volumes disable bullet contact blast touch}	;prevent destroing at spawn moment
 		}
@@ -294,23 +296,23 @@
 		{delay 25 15 {hide 10}}
 	}
 	{on blast_hit
-;		{con "blast small part"}
+		;		{con "blast small part"}
 		{if min_energy 0.5
 			{hide 1}
-		else
+			else
 			{impulse up 3 1 dir 2 1}
 		}
 	}
 	{on bullet_hit
-;		{con "bullet small part"}
+		;		{con "bullet small part"}
 		{if stuff "bullet"
 			{impulse up 2 1 dir 1 0.5}
-		else stuff "shell"
+			else stuff "shell"
 			{hide 1}
 		}
 	}
 	{on contact
-;		{con "contact small part"}
+		;		{con "contact small part"}
 		{if effector "vehicle"
 			{volumes disable bullet contact blast}	;prevent destroing at spawn moment
 			{hide 1}
@@ -325,8 +327,8 @@
 }
 
 {"medium part"
-;	{friction 2}
-;	{restitution 0.2}
+	;	{friction 2}
+	;	{restitution 0.2}
 	{on spawn
 		{delay 0.1
 			{volumes disable bullet contact blast touch}	;prevent destroing at spawn moment
@@ -336,15 +338,15 @@
 	{on blast_hit
 		{if min_energy 1.0
 			{hide 1}
-		else
+			else
 			{impulse up 1 1 dir 2 1}
 		}
 	}
 	{on bullet_hit
 		{if stuff "bullet"
 			{impulse up 0.5 0.5 dir 0.5 0.5}
-		else stuff "shell"
-			{hide 1}		
+			else stuff "shell"
+			{hide 1}
 		}
 	}
 	{on contact
@@ -353,26 +355,26 @@
 }
 
 {"big part"
-;	{friction 2}
-;	{restitution 0.1}
+	;	{friction 2}
+	;	{restitution 0.1}
 	{on spawn
 		{delay 0.1
 			{volumes disable touch}
 		}
 	}
 	{on blast_hit
-		{if min_energy 8 
+		{if min_energy 8
 			{impulse up 5 1 dir 5 1}
-		  else min_energy 0.5
+			else min_energy 0.5
 			{impulse up 1 0.3 dir 1 0.5}
 		}
 	}
 	{on bullet_hit
 		{if stuff "big shell extra"
 			{impulse up 5 1 dir 5 1}
-		 else stuff "shell"
+			else stuff "shell"
 			{impulse up 1 0.3 dir 1 0.5}
-		 else stuff "zenite"
+			else stuff "zenite"
 			{impulse up 0.2 0.1 dir 0.1 0.05}
 		}
 	}
@@ -449,20 +451,20 @@
 			{add_view "fire_flame_thrower_fly4" "fire2" "root"}
 			{view start "fire2"}
 		}
-;		{delay 0.3
-;			{add_view "fire_flame_thrower_fly5" "fire" "root"}
-;			{view start "fire"}
-;		}
+		;		{delay 0.3
+		;			{add_view "fire_flame_thrower_fly5" "fire" "root"}
+		;			{view start "fire"}
+		;		}
 		{delay 0.05
 			{volumes "body" enable contact}
 			{fire radius 0.5 time 0.7 heating 1.5 follow}
 		}
-;		{delay 0.2
-;			{fire radius 0.5 time 0.5 heating 0.5 follow}
-;		}
-;		{delay 0.5
-;			{call "end"}
-;		}
+	;		{delay 0.2
+	;			{fire radius 0.5 time 0.5 heating 0.5 follow}
+	;		}
+	;		{delay 0.5
+	;			{call "end"}
+	;		}
 	}
 	{on contact
 		{volumes disable contact}
@@ -486,14 +488,14 @@
 			{fire radius 3 time 4 heating 0.3}
 			{fire radius 1.5 time 0.8 heating 0.5}
 			{fire radius 1.5 time 60 heating 0.1}
-			
+
 			{if not air
 				{if not under_water
 					{spawn "fire_flame_thrower" dir_velocity}
 					{if rand 0.05
 						{spawn "fx_piece_flame_end"}
 					}
-;					{spawn "fire_shellhole2"}
+				;					{spawn "fire_shellhole2"}
 				}
 			}
 		}
@@ -558,11 +560,11 @@
 				{if effector_velocity 1
 					{call "delete"}
 				}
-			else effector "armored_car"
+				else effector "armored_car"
 				{if effector_velocity 1
 					{call "delete"}
 				}
-			else effector "car"
+				else effector "car"
 				{if effector_velocity 1
 					{call "delete"}
 				}
@@ -620,7 +622,7 @@
 	{on "capture"
 		{if tex_mod "1"
 			{ani_play "up" resume callback}
-		else
+			else
 			{ani_play "down" resume callback}
 		}
 	}
@@ -697,7 +699,7 @@
 		{if "backward"
 			{ani_play "wave" -1 callback}
 			{set "backward" 0}
-		else
+			else
 			{ani_play "wave" 1 callback}
 			{set "backward" 1}
 		}
@@ -706,6 +708,9 @@
 
 {"cord_wood"
 	{inflammation_time 3}
+	; burn_start: {add_view "smoke_camp_norm"} {set "burning"} {view} {burn} {fire} {delay}
+	;   %0 - {burn}, [?], {fire}, [?], {delay}, s
+	;   e.g. ("burn_start" args 300)
 	(define "burn_start"
 		{add_view "smoke_camp_norm" "fire" "fx_light"}
 		{set "burning" 1}
@@ -750,7 +755,7 @@
 	{on "break"
 		{if "burning"
 			{spawn "camp_die" no_position offset 0 0 5}
-		else
+			else
 			{spawn "wood_hit_small" no_position}
 		}
 		{delete}
@@ -791,7 +796,7 @@
 
 {"stuff"
 	{on "crush_container"
-;		{impulse up 2 1 cx 0 1 cy 0 1}
+		;		{impulse up 2 1 cx 0 1 cy 0 1}
 		{impulse dir 2 1 up 2 1 dir 3 1 cx 2 0.5 cy 2 0.5} ;{impulse dir 2 1 up 2 1 dir 7 2 cx 0 0.5 cy 0 0.5}
 	}
 	{on "drop_item"
@@ -815,15 +820,15 @@
 }
 {"waffen_camo_helmet"
 	{on spawn
-	{delay 0.1
-		{if rand 0.5 {delay 0.1 {tex_mod "1var1"}}} ;2 skins
+		{delay 0.1
+			{if rand 0.5 {delay 0.1 {tex_mod "1var1"}}} ;2 skins
 
-		{if rand 0.25 {delay 0.1 {tex_mod "4var1"}}	;5 skins
-		else rand 0.25 {delay 0.1 {tex_mod "4var2"}}
-		else rand 0.25 {delay 0.1 {tex_mod "4var3"}}
-		else rand 0.25 {delay 0.1 {tex_mod "4var4"}}
+			{if rand 0.25 {delay 0.1 {tex_mod "4var1"}}	;5 skins
+				else rand 0.25 {delay 0.1 {tex_mod "4var2"}}
+				else rand 0.25 {delay 0.1 {tex_mod "4var3"}}
+				else rand 0.25 {delay 0.1 {tex_mod "4var4"}}
+			}
 		}
-	}
 	}
 }
 {"stuff no_blast_physics"
@@ -863,27 +868,33 @@
 		{call "random_animation"}
 	}
 
+	; random_animation: {ani_play "animation%0"}
+	;   %0 - text in {ani_play}
+	;   e.g. ("random_animation" args 0)
 	(define "random_animation"
 		rand 0.1
 		{ani_play "animation%0" callback}
 	)
 	{on "random_animation"
 		{if  ("random_animation" args 0)
-		else ("random_animation" args 1)
-		else ("random_animation" args 2)
-		else ("random_animation" args 3)
-		else ("random_animation" args 4)
-		else ("random_animation" args 5)
-		else ("random_animation" args 6)
-		else ("random_animation" args 7)
-		else ("random_animation" args 8)
-		else rand 0.1
+			else ("random_animation" args 1)
+			else ("random_animation" args 2)
+			else ("random_animation" args 3)
+			else ("random_animation" args 4)
+			else ("random_animation" args 5)
+			else ("random_animation" args 6)
+			else ("random_animation" args 7)
+			else ("random_animation" args 8)
+			else rand 0.1
 			{call "delay"}
-		else
+			else
 			{call "random_animation"}
 		}
 	}
 
+	; random_animation_end: {on {call}}
+	;   %0 - text in {on}
+	;   e.g. ("random_animation_end" args 0)
 	(define "random_animation_end"
 		{on animation_end "animation%0"
 			{call "random_animation"}
@@ -1001,6 +1012,9 @@
 	}
 }
 
+; shellhole_show_with_delay: {on {view} {delay}}
+;   %0 - {delay}, s
+;   e.g. ("shellhole_show_with_delay" args 0.1)
 (define "shellhole_show_with_delay"
 	{on spawn
 		{view hide "shellhole"}
@@ -1073,25 +1087,25 @@
 	{on accelerate on
 		{if tagged "heavy_tow"
 			;{spawn "tow_check_heavy" "link2" offset 0 0 500}
-		else
+			else
 			{spawn "tow_checker" "link2"}
 		}
 	}
-	;{on contact
-	;	{if effector "tow_gun_signal"
-	;		{damage_report "tow" "tow"}
-	;		;{chassis_work 0}
-	;		{delay 10
-	;			{if work "mover"
-	;				{if not tagged "engine_brake"
-	;					{if "engine_on"
-	;						{chassis_work 1}
-	;					}
-	;				}
-	;			}
-	;		}
-	;	}
-	;}
+;{on contact
+;	{if effector "tow_gun_signal"
+;		{damage_report "tow" "tow"}
+;		;{chassis_work 0}
+;		{delay 10
+;			{if work "mover"
+;				{if not tagged "engine_brake"
+;					{if "engine_on"
+;						{chassis_work 1}
+;					}
+;				}
+;			}
+;		}
+;	}
+;}
 }
 {"spread_items"}
 {"slow_on_crush"}

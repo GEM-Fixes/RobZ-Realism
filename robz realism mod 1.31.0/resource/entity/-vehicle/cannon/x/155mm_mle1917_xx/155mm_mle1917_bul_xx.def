@@ -1,27 +1,4 @@
+; same as the other 4 defs here; body in 155mm_mle1917_body.inc
 {game_entity
-	{Extension "155mm_mle1917_schneider_xx.mdl"}
-	{Volume "body"
-	}
-	{Volume "gun_rot"
-	}
-	{Volume "gun"
-	}
-	{Volume "part11"
-	}
-	{Volume "part12"
-	}
-	{Volume "part1"
-	}
-	{Volume "shield1"
-	}
-	{Volume "shield2"
-	}
-	{Volume "shield"
-	}
-	{Volume "turret"
-	}
-	{Volume "wheelleft"
-	}
-	{Volume "wheelright"
-	}
+	(include "155mm_mle1917_body.inc")
 }

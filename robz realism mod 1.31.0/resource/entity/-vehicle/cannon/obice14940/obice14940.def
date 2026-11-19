@@ -3,7 +3,7 @@
 	{props "vehicle" "cannon" "wheeled" "round_sandbag2" "vision_cannon_high" "muzzle_large_nodust"}
 	("armor_medium")
 	{PatherID  "cannon.large"}
-	
+
 	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
 
@@ -28,7 +28,7 @@
 			{forward {end "pose_seat_cannon_right" 10}}
 		}
 	}
-						
+
 	{extender "inventory"
 		{box
 			{item "ammo bullet149_ita fg" 20}
@@ -47,8 +47,8 @@
 	{Extension "obice14940.mdl"}
 	(include "/properties/selection/cannon.inc"  scale(0.7))
 	{bone "basis"
-	      {limits}
-	      {speed 0.005}
+		{limits}
+		{speed 0.005}
 	}
 	{bone "turret"
 		{limits -10 10}
@@ -58,7 +58,7 @@
 		{limits -45 5}
 		{speed 0.0005}
 	}
-        (mod "mp"
+	(mod "mp"
 		{brain
 			{properties
 				{fire_mode hold}
@@ -66,7 +66,7 @@
 		}
 	)
 
-	
+
 	{extender "cannon"
 		{animation
 			{switch "close"}
@@ -84,6 +84,6 @@
 		("loco_big")
 	}
 	{bone "basis"
-    	{speed 0.003}
-    }
+		{speed 0.003}
+	}
 }

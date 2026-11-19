@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "usa-101st-carbine"}
 	{portrait "usa_elite1"}
@@ -8,52 +9,17 @@
 		{head helmet_usa_para}
 	}
 	{perks
-		{"health" "400%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "200%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.95
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 1
-		}
-		
-		{"pistol" lvl_6
-		}
-		{"smg" lvl_6
-		}
-		{"mgun" lvl_6
-		}
-		{"rifle" lvl_7
-		}
-		{"rocketlauncher" lvl_6
-		}
-		{"melee" lvl_6
-		}
-		{"tankgun" lvl_4
-		}
+		("soldier_rifle_7" rocket(1) body(line) sight(soldier))
+		{"tankgun" lvl_4}
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_elite")
-	}
+	("breed_vet" table(elite))
 	{inventory
-		{item "m1a1_carbine" filled}
-		{item "ammo m1carbine_mag" 90}
+		("rifle_m1a1_carbine")
 		{item "bandage" 5}
-		{item "grenade m61" 2}
-		{item "grenade satchel" 1}
-		{item "smoke grenade" 2}
-		{item "m15_smoke grenade" 0.5 0.5}
+		("give" item(grenade m61) count(2))
+		("give" item(grenade satchel) count(1))
+		("give" item(smoke grenade) count(2))
+		("give_chance" item(m15_smoke grenade) chance(50))
 		{item "knife_union"}
 		{in_hands 0}
 	}

@@ -1,27 +1,4 @@
+; same as the other 1 def here; body in np_sdkfz251_1_body.inc
 {game_entity
-	{Extension "sdkfz251_1_xx.mdl"}
-	{volume "body"
-	}
-	{volume "body2"
-	}
-	{volume "engine"
-	}
-	{Volume "body_l"
-	}
-	{Volume "body_r"
-	}
-	{Volume "part2"
-	}
-	{Volume "mgun_turret"
-	}
-	{Volume "shield"
-	}
-	{Volume "trackleft"
-	}
-	{Volume "trackright"
-	}
-	{Volume "wheelleft1"
-	}
-	{Volume "wheelright1"
-	}
+	(include "np_sdkfz251_1_body.inc")
 }

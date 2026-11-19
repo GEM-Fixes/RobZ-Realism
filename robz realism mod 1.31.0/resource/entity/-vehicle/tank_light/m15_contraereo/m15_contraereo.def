@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.2))
@@ -5,26 +6,16 @@
 	{props "medium" "turret_rotator" "flak" "turret" "vision_vehicle_high" "m1441"}
 	;{targetSelector "tank_aa"}
 	{PatherId "tank"}
-	
-	{Volume "Body1"
-		{tags "body"}
-		{component "body"}
-	}
-	{Volume "Body2"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "sticky"
-		{tags "grenade_fg_target"}
-		{able clear {contact} {touch}}
-		{component "sticky_body"}
-	}
-	
+
+	("vol_body_part" name(Body1))
+	("vol_body_part" name(Body2))
+	("vol_sticky_grenade_target" name(sticky))
+
 	{component "sticky_body"}
 
 	("armor_medium" turret(42 25 25 6) body(30 25 25 6))
 	("crew_4_human")
-	
+
 	{boarder
 		{anm "left"
 			{forward	{begin	"board_tank_left"}}
@@ -48,7 +39,11 @@
 		}
 	}
 
-	(define "crew_human"
+	; crew_human_open_for_crush: {placer {place}} {boarder {door} {link}}
+	;   place - name of {place}, name of {group}, text in {link}
+	;   animation - name of {anm}
+	;   e.g. ("crew_human_open_for_crush" place(commander) door1(emit1))
+	(define "crew_human_open_for_crush"
 		{placer
 			{place "%place"
 				{group "%place"} {turnoff {sensor} {shadow}} {openForCrush}
@@ -62,6 +57,11 @@
 		}
 	)
 
+	; crew_human_vis: {placer {place}} {boarder {door} {link}}
+	;   place - name of {place}, name of {linkbone}, text in {link}
+	;   door1 - name of {door}, name of {link}
+	;   door2 - name of {door}, name of {link}
+	;   e.g. ("crew_human_vis" place(gunner)  door(emit1) animation(gunner))
 	(define "crew_human_vis"
 		{placer
 			{place "%place" {group "crew"} {linkbone "%place"} {turnoff {sensor} {shadow}} {openForCrush}}
@@ -71,15 +71,15 @@
 			{door "%door2"}
 			{link "%door1" "%place" {anm "%place"} {forward putoff} {reverse puton}}
 			{link "%door2" "%place" {anm "%place"} {forward putoff} {reverse puton}}
-			
+
 		}
 	)
-	
-	("crew_human" place(gunner)	    door1(emit2))
-	("crew_human" place(commander)	door1(emit1))
+
+	("crew_human_open_for_crush" place(gunner)	    door1(emit2))
+	("crew_human_open_for_crush" place(commander)	door1(emit1))
 	("crew_human_vis" place(gunner)		door(emit1) animation(gunner))
 	("crew_human_vis" place(charger)	door(emit2) animation(charger))
-	
+
 	{placer
 		{place "driver" {visor "driver"}}
 		{place "commander" {visor "main"}}
@@ -91,7 +91,7 @@
 		{box
 			{item "bullet20_ita" 1600}
 		}
-	}	
+	}
 	{Weaponry
 		("restore_ik_time")
 		{place "gun"
@@ -100,46 +100,46 @@
 			("abm_zenite")
 			{charger "gunner"}
 			("abm_mgun")
-			{Barrels 4}	
+			{Barrels 4}
 		}
-	}	
+	}
 	{mass 14300}
 	{Chassis
 		("tank_trace" fx("tracks_mid") step(0.52) len(0.1))
 		{Locomotion ("locomotion")
 			{MaxSpeed   31}
-				(mod "mp"
-					{maxspeed   27}
-				)
+			(mod "mp"
+				{maxspeed   27}
+			)
 			{maxSpeedAtMaxTurn 12}
 			{StartTime 	 13}
 			{TurnTime  	 7}
-    		{TurnStart 1.4}
-     		{BrakeTime   1} 
-    		{StopTime    2}
-     		{TurnRadius  8} 
-    		{TurnStop   0.7}
-     		{Gears  0.1 0.25 0.5}
-     		{RearGears 0.17}
+			{TurnStart 1.4}
+			{BrakeTime   1}
+			{StopTime    2}
+			{TurnRadius  8}
+			{TurnStop   0.7}
+			{Gears  0.1 0.25 0.5}
+			{RearGears 0.17}
 		}
 		(mod "mp"
 			{FuelBag
-				{volume 320 }	
-				{rate	145 }   
+				{volume 320 }
+				{rate	145 }
 				{remain 320 }
 				{fuel "fuel"}
 			}
-		    {speed
-        		{Normal  10}
-    		}
+			{speed
+				{Normal  10}
+			}
 		)
 	}
 	{Extension "m15_contraereo.mdl"}
 	{bone "turret"
-		 {speed 0.004}
+		{speed 0.004}
 	}
 	{bone "gun_rot"
-		 {speed 0.004}
+		{speed 0.004}
 	}
-	;("turret_speed_light")
+;("turret_speed_light")
 }

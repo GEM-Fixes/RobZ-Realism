@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
@@ -70,15 +71,12 @@
 		{tags "turret"}
 		{thickness 95.25
 			{front	152.4}
-		;	{rear	95.25}
+			;	{rear	95.25}
 			{top	20}
 			{bottom	28.57}
 		}
 	}
-	{Volume "hole_bod"
-		{able clear {hole}}
-		{component "body"}
-	}
+	("vol_body_hole_only" name(hole_bod))
 	{volume "engine"
 		{thickness 10}
 	}
@@ -137,10 +135,10 @@
 	{component "shieldr2" {tags "shield"}}
 
 
-	
+
 	("crew_4_human")
 
-		{boarder
+	{boarder
 		{anm "left"
 			{forward	{begin	"board_tank_left"}}
 			{reverse 	{end	"emit_tank_1_hold"}}
@@ -175,14 +173,14 @@
 			{item "ammo bullet75 us ap" 30}
 			{item "ammo bullet75 us fg" 54}
 			{item "tank_balloon" filled}
-            {item "ammo mg_mauser belt red" 3475}
+			{item "ammo mg_mauser belt red" 3475}
 		}
 	}
 	{Weaponry
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "75mm_mk5" filling "ammo bullet75 us ap" 1}	
+			{weapon "75mm_mk5" filling "ammo bullet75 us ap" 1}
 			("abm_medium")
 			{basic}
 		}
@@ -204,7 +202,7 @@
 		}
 	}
 
-{Extension "churchill_crocodile.mdl"}
+	{Extension "churchill_crocodile.mdl"}
 
 	{mass 40500}
 	{Chassis
@@ -213,25 +211,25 @@
 			{MaxSpeed   13}
 			{maxSpeedAtMaxTurn 4}
 			{StartTime  15}
-			{TurnStart  1.8}			
+			{TurnStart  1.8}
 			{TurnTime   30}
-			{TurnRadius 9} 
-    		{TurnStop   0.8}
+			{TurnRadius 9}
+			{TurnStop   0.8}
 			{BrakeTime  2}
 			{StopTime   3}
 			{Gears 0.1 0.2 0.3 1}
-			{RearGears  0.1 0.3}		
+			{RearGears  0.1 0.3}
 		}
 		{FuelBag
-			{volume 680 }	
-			{rate	76 }   
+			{volume 680 }
+			{rate	76 }
 			{remain 680 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  13}
-        	{Slow  13}
-    	}
+			{Normal  13}
+			{Slow  13}
+		}
 	}
 
 	{bone "turret"

@@ -1,22 +1,19 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{props "medium" "-turret" "opened" "vision_vehicle_high" "muzzle_large_nodust" "gun_mode_change_art"}
 
 	{extender "enumerator"}
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: m7.def) ---
-	{volume "sticky"
-		{tags "grenade_fg_target"}
-		{able clear {contact} {touch}}
-		{component "sticky_body"}
-	}
+	("vol_sticky_grenade_target" name(sticky))
 	{volume "body1"	;нижн€€ часть корпуса
 		{component "body"}
 		{tags "body"}
 		{thickness 38.1
 			{front	50.8}	;трансмисси€
-		;	{rear	38.1}
+			;	{rear	38.1}
 			{top	0.1}	;внутренн€€ стенка
 			{bottom	19.05}
 		}
@@ -79,13 +76,10 @@
 		;	{right	0.1}	;внутренн€€ стенка
 		}
 	}
-	{Volume "hole_bod"
-		{able clear {hole}}
-		{component "body"}
-	}
+	("vol_body_hole_only" name(hole_bod))
 	{volume "mantlet"
 		{thickness 12.7
-		;	{front	12.7}
+			;	{front	12.7}
 			{rear	15}	;орудие дает небольшую броню
 		}
 	}
@@ -101,7 +95,7 @@
 	; --- end Godny hitbox armor ---
 	{component "sticky_body"}
 
-	
+
 	{volume "shield1"
 		{thickness 30}
 		{component "body"}
@@ -123,9 +117,9 @@
 		{tags "body"}
 	}
 	{volume "inventory"
-        {thickness 2}
+		{thickness 2}
 	}
-	
+
 	("armor_spa_heavy" armor(64 38 38 20))
 	("armor_engine"  t(30 38 38 20))
 
@@ -152,10 +146,10 @@
 	("crew_human_visible_anm" place(commander)	door1(emit1) door2(emit2) anm_left(commander) anm_right(commander) visor(main))
 	("crew_human_visible_anm" place(gunner2)	door1(emit1) door2(emit2) anm_left(crew) anm_right(crew) visor(main))
 	("gunner_visible")
-	{placer 
+	{placer
 		{place "driver" {openForCrush 0}}
 		{place "gunner" {openForCrush 0}}
-	}	
+	}
 	{sensor
 		{visor "main"
 			{bone "foresight1"}
@@ -164,9 +158,9 @@
 
 	{extender "inventory"
 		{box
-            		{item "ammo bullet105 us fg" 12}
-            		{item "ammo bullet105 us wp" 6}
-            		{item "ammo bullet105 us heat" 4}
+			{item "ammo bullet105 us fg" 12}
+			{item "ammo bullet105 us wp" 6}
+			{item "ammo bullet105 us heat" 4}
 			{item "browning" filled {user "mgun"}}
 			{item "ammo hmgun" 1500}
 		}
@@ -206,25 +200,25 @@
 			{MaxSpeed   27}
 			{maxSpeedAtMaxTurn 6}
 			{StartTime  30}
-			{TurnStart  1.8}			
+			{TurnStart  1.8}
 			{TurnTime   15}
-			{TurnRadius 9} 
-    		{TurnStop   0.8}
+			{TurnRadius 9}
+			{TurnStop   0.8}
 			{BrakeTime  1.5}
 			{StopTime   2.5}
 			{Gears  0.1 0.2 0.3 1}
-			{RearGears  0.3}		
+			{RearGears  0.3}
 		}
 		{FuelBag
-			{volume 660 }	
-			{rate	32 }   
+			{volume 660 }
+			{rate	32 }
 			{remain 660 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  27}
-        	{Slow  27}
-    	}
+			{Normal  27}
+			{Slow  27}
+		}
 		{DisableMoveWhileFiring}
 	}
 

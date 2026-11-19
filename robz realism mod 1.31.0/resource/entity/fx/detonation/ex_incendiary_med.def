@@ -45,7 +45,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smtanko"
 					{timer
 						{mode play }
@@ -128,7 +128,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04l"
 					{timer
 						{mode play }
@@ -204,7 +204,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/exp02a"
 					{timer
 						{mode play }
@@ -255,7 +255,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/oskolki"
 					{light 1
 						{linear
@@ -306,7 +306,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/explosion/faerog"
 					{timer
 						{mode play }
@@ -401,7 +401,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_70"
 					{timer
 						{mode play }
@@ -465,7 +465,7 @@
 	}
 	{#+ particleview "incendiary parts"
 		{visualizer
-			{stage 
+			{stage
 				{sprite "/texture/fx/flash/halo02"
 					{timer
 						{mode play }
@@ -497,7 +497,7 @@
 	}
 	{#+ particleview "incendiary parts"
 		{visualizer
-			{stage 
+			{stage
 				{sprite "/texture/fx/flash/halo02"
 					{timer
 						{mode play }
@@ -529,7 +529,7 @@
 	}
 	{##+ particleview "incendiary parts long"
 		{visualizer
-			{stage 
+			{stage
 				{sprite "/texture/fx/flash/halo02"
 					{timer
 						{mode play }
@@ -676,7 +676,7 @@
 		}
 		{offset 0 0 5}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/flash_g03a"
 					{timer
 						{mode play }
@@ -767,7 +767,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/grit"
 					{turn 1
 						{linear
@@ -826,7 +826,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/oskolki"
 					{scale 0.25 0.05}
 				}
@@ -866,7 +866,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/exp_muzzle_01"
 					{scale 1.5 0.5
 						{## linear
@@ -916,7 +916,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/particle/metal_drops2"
 					{timer
@@ -960,7 +960,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/explosion/bum2"
 					{timer
@@ -1084,7 +1084,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/explosion/bum2"
 					{timer
@@ -1208,7 +1208,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/explosion/bum2"
 					{timer
@@ -1334,7 +1334,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop_short"
 					{timer
 						{mode play }
@@ -1478,7 +1478,7 @@
 			{## nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4a"
 					{timer
 						{mode play }
@@ -1535,7 +1535,7 @@
 			{## nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4a"
 					{timer
 						{mode play }
@@ -1595,7 +1595,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/ground_exp2a"
 					{timer
 						{mode play }
@@ -1654,7 +1654,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{## sprite "$/_bmp/smoke/smokeend_lightloop_short"
 					{timer
 						{mode play }
@@ -1796,7 +1796,7 @@
 			{damping 0.98}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{##+ sprite "$/smoke/smokesmal4b_30"
 					{timer
 						{mode play }
@@ -1914,7 +1914,7 @@
 			{damping 0.98}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_30"
 					{timer
 						{mode play }
@@ -2002,7 +2002,7 @@
 			{damping 0.98}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b"
 					{timer
 						{mode play }
@@ -2060,7 +2060,7 @@
 			{damping 0.991}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04a"
 					{timer
 						{mode play }
@@ -2118,7 +2118,7 @@
 			{damping 0.98}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_100"
 					{timer
 						{mode play }
@@ -2176,7 +2176,7 @@
 			{damping 0.991}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{##+ sprite "$/smoke/smoke_g04a"
 					{timer
 						{mode play }

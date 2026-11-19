@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "bul-inf-mgun"}
+	{portrait "bul_soldier4"}
+	{nationality bul}
+	{icon "radioman"}
+	{icon_priority 5}
+	{armors
+		{head "radioman_hat"}
+	}
+	{perks
+		("breed_body" health(300%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("drive_t08_v10_c10")
+		("skills_2_2_1_1_1_2")
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "mp40" filled}
+		{item "mortar_flaergun" filled}
+		{item "ammo mp40_mag" 192}
+		{item "ammo mortar_flaer" 5}
+		{item "bandage" 3}
+		{in_hands 0}
+
+	}
+}

@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-zelt-smg"}
+	{portrait "ger2_elite1"}
+	{nationality ger}
+	{icon "squadleader"}
+	{icon_priority 2}
+	{armors
+		{body ammo_ger2}
+		{head helmet_ger_m40_camo_foliage}
+	}
+	{perks
+		("soldier_smg_6" rocket(6) body(line))
+	}
+	("breed_vet" table(elite_start2))
+	{inventory
+		("smg_sg44")
+		{item "bandage" 3}
+		("frag_m24_x2")
+		("at_grenade_m24x5_x0_1")
+		("smoke_x2")
+		{item "small_shovel" 1}
+		{item "panzerfaust_30 weapon" 0 1 filled}
+		{in_hands 0}
+	}
+}

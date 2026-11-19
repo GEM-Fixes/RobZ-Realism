@@ -2,17 +2,17 @@
 	{filling "bullet75_ita"}
 	{fireSound "gun/50to76_cal/75mm_obice75"}
 	{reloadSound "gun_r03"}
-    	{rechargeTime 8}
+	{rechargeTime 8}
 	("speed" s(792))
-        {range 190 190}
+	{range 190 190}
 
 	("caliber_medium")
-	("damage_170" a(45) b(44) c(39) d(33) e(25) range(190))
+	("damage_170" at20(45) at100(44) at170(39) at215(33) at250(25) max(190))
 	{parameters "aphebc"
 		{cursorReloading "cannon_reload_aphebc"}
 	}
 	{parameters "apcr"
-        	("damage_170" a(52) b(50) c(44) d(38) e(33) range(190))
+		("damage_170" at20(52) at100(50) at170(44) at215(38) at250(33) max(190))
 	}
 	{parameters "fg"
 		{range 180 180}

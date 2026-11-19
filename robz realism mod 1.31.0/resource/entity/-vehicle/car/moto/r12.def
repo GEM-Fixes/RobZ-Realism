@@ -1,10 +1,4 @@
+; same as the other 1 def here; body in r12_body.inc
 {game_entity
-	(include "moto.inc")
-	{extender "inventory"
-		{Box
-			{item "mg42" filled {user "mgun"}}
-			{item  "ammo mg_mauser drum" 500 }
-		}
-	}
-	{texmod "ger"}
+	(include "r12_body.inc")
 }

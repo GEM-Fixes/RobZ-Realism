@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "jap_army_nco"}
 	{portrait "jap_soldier4"}
@@ -8,49 +9,15 @@
 		{head "jap_army_helmet4"}
 	}
 	{perks
-		{"health" "300%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "150%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.9
-		}
-		{"vehicle" 1.0
-		}
-		{"cannon" 1.0
-		}
-		
-		{"pistol" lvl_4
-		}
-		{"smg" lvl_4
-		}
-		{"mgun" lvl_4
-		}
-		{"rifle" lvl_5
-		}
-		{"rocketlauncher" lvl_4
-		}
-		{"melee" lvl_6
-		}
+		("soldier_rifle_5" rocket(1) body(hardy) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
-	{inventory                    
-		{item "type99rifle" filled}		
-		{item "ammo arisaka7-7_clip" 60}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_type99rifle")
 		{item "bandage" 5}
-		{item "grenade type97" 4}
-		{item "grenade type3at_a" 2}
-		{item "mine antipersonnel" 5}
+		("give" item(grenade type97) count(4))
+		("give" item(grenade type3at_a) count(2))
+		("give" item(mine antipersonnel) count(5))
 		{item "sandbag_kit" 2}
 		{item "knife_japan" 1}
 		{in_hands 0}

@@ -1,7 +1,8 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/cannon.ext")
 	{props "vehicle" "cannon" "wheeled" "round_sandbag2" "vision_cannon_high" "muzzle_large_nodust" "gun_mode_change_art"}
-	{placer	{place "gunner" {visor "main"} {UseVision 0}}}	
+	{placer	{place "gunner" {visor "main"} {UseVision 0}}}
 
 	("armor_medium")
 
@@ -23,10 +24,7 @@
 		{component "body"}
 	}
 	; --- end Godny hitbox armor ---
-	{volume "turret4"
-		{tags "body"}
-		{component "body"}
-	}
+	("vol_body_part_lower" name(turret4))
 
 	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
@@ -55,16 +53,16 @@
 
 	{extender "inventory"
 		{box
-				{item "bullet88 eng fg" 12}
-				{item "bullet88 eng ap" 6}
-				{item "sandbag_kit2"}
+			{item "bullet88 eng fg" 12}
+			{item "bullet88 eng ap" 6}
+			{item "sandbag_kit2"}
 		}
 	}
 	{Weaponry
 
 		{place "gun"
 			{weapon "88mm_oqfmk2_vet" filling "ammo bullet88 eng fg" 6}
-			{StationaryFiring}  
+			{StationaryFiring}
 			("abm_field_gun")
 		}
 		{place "gun1_2"
@@ -80,7 +78,7 @@
 	{Extension "pdr25.mdl"}
 	(include "/properties/selection/cannon.inc"  scale(0.7))
 	{bone "turret"
-	      {limits}
+		{limits}
 	}
 
 	{extender "cannon"
@@ -112,5 +110,5 @@
 				{fire_mode hold}
 			}
 		}
-	)					
+	)
 }

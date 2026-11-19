@@ -1,54 +1,46 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
-    (include "/properties/tank.ext")
+	(include "/properties/tank.ext")
 
-    (include "/properties/selection/vehicle.inc"  scale(1.2))
-    {collider "tank.heavy"}
-    {props "medium" "-turret" "vision_vehicle_medium" "muzzle_medium_sides"}
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{collider "tank.heavy"}
+	{props "medium" "-turret" "vision_vehicle_medium" "muzzle_medium_sides"}
 	;{targetSelector "tank_sup"}
 
-    {extender "enumerator"
+	{extender "enumerator"
 		{digit_folder "ger"}
 	}
 
-    {volume "body1"
-        {tags "body"}
-        {component "body"}
-    }
-    {volume "body2"
-        {tags "body"}
-        {component "body"}
-    }
-    {volume "body3"
-        {tags "body"}
-        {component "body"}
-    }
+	("vol_body_part_lower" name(body1))
+	("vol_body_part_lower" name(body2))
+	("vol_body_part_lower" name(body3))
 
-    ("armor_spa_light" armor(75 25 25 22))
-    ("armor_engine"  t(25))
+	("armor_spa_light" armor(75 25 25 22))
+	("armor_engine"  t(25))
 	("shield" args 10)
 
 
-    ("crew_4_human")
+	("crew_4_human")
 
-    {boarder
-        {anm "left"
-            {forward    {begin  "board_Kv"}}
-            {reverse    {end    "emit_tank_1_hold"}}
-        }
-        {anm "right"
-            {forward    {begin  "board_tank_right"} {end "pose_mgun_pz6"}}
-            {reverse    {end    "emit_tank_2_hold"}}
-        }
+	{boarder
+		{anm "left"
+			{forward    {begin  "board_Kv"}}
+			{reverse    {end    "emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward    {begin  "board_tank_right"} {end "pose_mgun_pz6"}}
+			{reverse    {end    "emit_tank_2_hold"}}
+		}
 
-;       {anm "armor"
-;           {forward    {begin  "board_HighArmor"}  {end "seat_armor"}}
-;           {reverse    {end    "emit_tank_2"}}
-;       }
-;       {anm "armor1"
-;           {forward    {begin  "board_HighArmor"} {end "seat_armor"}}
-;           {reverse    {end    "emit_body"}}
-;       }
-    }
+	;       {anm "armor"
+	;           {forward    {begin  "board_HighArmor"}  {end "seat_armor"}}
+	;           {reverse    {end    "emit_tank_2"}}
+	;       }
+	;       {anm "armor1"
+	;           {forward    {begin  "board_HighArmor"} {end "seat_armor"}}
+	;           {reverse    {end    "emit_body"}}
+	;       }
+	}
 
 	{extender "shield"
 		{on}
@@ -62,21 +54,21 @@
 	{component "shieldr2" {tags "shield"}}
 	{component "shieldr3" {tags "shield"}}
 	{component "shieldr4" {tags "shield"}}
-	
-    {extender "inventory"
-        {box
+
+	{extender "inventory"
+		{box
 			{item "bullet105_hun fg" 26}
 			{item "bullet105_hun heat" 10}
 		}
 	}
-    {Weaponry
+	{Weaponry
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "105mm_40_43m" filling "ammo bullet105_hun fg" 1}	
+			{weapon "105mm_40_43m" filling "ammo bullet105_hun fg" 1}
 			("abm_medium")
 		}
-    }
+	}
 
 	{mass 21600}
 	{Chassis
@@ -86,29 +78,29 @@
 			{maxSpeedAtMaxTurn 6}
 			{StartTime 	 24.5}
 			{TurnTime  	 12}
-    		{TurnStart 1.4}
-     		{BrakeTime   1} 
-    		{StopTime    2}
-     		{TurnRadius  8} 
-    		{TurnStop   0.7}
-     		{Gears  0.16 0.26 0.36 1}
-     		{RearGears 0.28}
+			{TurnStart 1.4}
+			{BrakeTime   1}
+			{StopTime    2}
+			{TurnRadius  8}
+			{TurnStop   0.7}
+			{Gears  0.16 0.26 0.36 1}
+			{RearGears 0.28}
 		}
 		{FuelBag
-			{volume 310 }	
-			{rate	24 }   
+			{volume 310 }
+			{rate	24 }
 			{remain 310 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  30}
-        	{Slow  30}
-    	}
+			{Normal  30}
+			{Slow  30}
+		}
 	}
 
 
-    {Extension "zrinyi2.mdl"}
+	{Extension "zrinyi2.mdl"}
 
-	
-	;("ger_5_sight")
+
+;("ger_5_sight")
 }

@@ -4,19 +4,19 @@
 	{reloadSound "mgun_1"}
 	{rechargeTime 8}
 	("range_zenite")
-	
+
 	("speed" s(750))
 	("caliber_zenite")
 	("recoveryTime" r(700))
 	{projectileDamage 30}
-	("damage_100" a(27) b(19) c(15) d(9) e(6) range(160))
-	
+	("damage_100" at20(27) at100(19) at170(15) at215(9) at250(6) max(160))
+
 	{Automatic}
 	{burst
 		{short 2.5 1}
 		{long 7 2}
 	}
 	{RelaxationTime 0}
-	
+
 	("accuracy_zenite_low")
 }

@@ -4,7 +4,7 @@
 	{inventory
 		{weight 100}
 		{size 2 1}
-	}	
+	}
 	{damage fire
 		{radius 3}
 		{heating 0.4}
@@ -16,6 +16,6 @@
 	}
 	;{cumulative 0.7}
 	{mass 2.75}
-	
-	;{possibleDamageRadius 4}
+
+;{possibleDamageRadius 4}
 }

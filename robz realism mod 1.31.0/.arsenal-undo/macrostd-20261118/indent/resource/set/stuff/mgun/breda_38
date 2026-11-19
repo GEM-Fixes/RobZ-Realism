@@ -1,0 +1,17 @@
+{from "pattern mgun"
+	{filling "ammo bredam38_belt" 24}
+	{entity "bredam38"}
+	{fireSound	"mgun/breda_37_burst"}
+	{reloadSound "breda30_reload"}
+	{rechargeTime 6}
+	("burst_medium")
+	("recoveryTime" r(550))
+	("speed" s(770))
+	{Spreading 1
+		{SpreadPower	1}
+		{BurstAccuracy 100 95 90 85 80 75 70 65 60 55}
+	}
+{range 150 150}
+
+
+}

@@ -1,0 +1,214 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{collider "tank.light"}
+	{props "light" "turret_rotator" "vision_vehicle_low" "muzzle_small"}
+	{targetClass "light_tank"}
+	{patherId "tank.light"}
+
+	{extender "enumerator"}
+
+	; --- Godny hitbox armor (ported from GodnyMod: ke-nu.def) ---
+	{Volume "body1"	;нижн€€ передн€€ часть корпуса
+		{component "body"}
+		{tags "body"}
+		{thickness 12
+			{front	12}
+			{rear	10}
+			{top	0.1}	;внутренн€€ стенка
+			{bottom	9}
+			{right	9}	;гласис
+		}
+	}
+	{Volume "body2"	;верхн€€ часть корпуса (бо)
+		{component "body"}
+		{tags "body"}
+		{thickness 12
+			{front	0.1}	;внутренн€€ стенка
+			{rear	0.1}	;внутренн€€ стенка
+			{top	9}
+			{bottom	6}
+		}
+	}
+	{Volume "body3"	;мехвод
+		{component "body"}
+		{tags "body"}
+		{thickness 12
+			{front	12}
+			{rear	0.1}	;внутренн€€ стенка
+			{top	9}
+			{bottom	0.1}	;внутренн€€ стенка
+		}
+	}
+	{Volume "body4"	;курсовой пулемет
+		{component "body"}
+		{tags "body"}
+		{thickness 12
+			{front	12}
+			{rear	0.1}	;внутренн€€ стенка
+			{top	9}
+			{bottom	0.1}	;внутренн€€ стенка
+		}
+	}
+	{Volume "body5"	;моторное низ
+		{component "body"}
+		{tags "body"}
+		{thickness 12
+			{front	10}	;стенка моторного
+			{rear	10}
+			{top	0.1}	;внутренн€€ стенка
+			{bottom	6}
+		}
+	}
+	{Volume "body6"	;моторное верх
+		{component "body"}
+		{tags "body"}
+		{thickness 12
+			{front	10}	;стенка моторного
+			{rear	6}
+			{top	6}
+			{bottom	6}
+		}
+	}
+	{Volume "turret"
+		{component "turret"}
+		{tags "turret"}
+		{able {holed}}
+		{thickness 25
+			;	{front	25}
+			;	{rear	25}
+			{top	10}
+			{bottom	10}
+		}
+	}
+	{Volume "hole_man"
+		{able clear {hole}}
+		{component "turret"}
+	}
+	{volume "mantlet"
+		{thickness 30
+			;	{front	30}
+			{rear	10}	;орудие дает небольшую броню
+		}
+	}
+	{volume "engine"
+		{thickness 10}
+	}
+	; --- end Godny hitbox armor ---
+	("armor_light" turret(25 25 12 8) body(12 12 6 9))
+	("armor_engine"  t(13))
+
+	{extender "inventory"
+		{box
+			{item "ammo bullet57 jap fg" 60}
+			{item "ammo bullet57 jap aphe" 25}
+			{item "ammo bullet57 jap heat" 15}
+			{item "ammo type97_mag" 2400}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "57mm_type97" filling "ammo bullet57 jap aphe" 1}
+			{charger "gunner"}
+			("abm_low_v4")
+		}
+		{place "mgun"
+			{type "mgun_rear"}
+			{weapon "type97_mg" filled}
+			{foresight "foresight3"}
+			{charger "commander"}
+			{gunner "commander"}
+			("abm_mgun")
+		}
+		{place "mgun1"
+			{type "mgun_hull"}
+			{weapon "type97_mg" filled}
+			{foresight "foresight4"}
+			{gunner "driver"}
+			{charger "driver"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	("crew_2_human_inside_left")
+	("crew_human" place(commander)	door1(emit1) door2(emit2) visor(back))
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor1))
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_kv"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_MiddleArmor"} 	{end "pose_seat_armor_1"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_MiddleArmor"} 	{end "pose_seat_armor_2"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+	{mass 13900}
+	{Chassis
+		("tank_trace_ex" fx("tracks_sm") step(0.3) len(0.25) boneleft("wheell4") boneright("wheelr4"))
+		{Locomotion ("locomotion")
+			{maxspeed   38}
+			{maxSpeedAtMaxTurn 6}
+			{StartTime  25}
+			{TurnTime   14}
+			{TurnStart  1}
+			{TurnRadius 7}
+			{TurnStop   0.6}
+			{BrakeTime  1.5}
+			{StopTime   2.5}
+			{Gears  0.1 0.2 0.3 1}
+			{RearGears  0.2}
+		}
+		{FuelBag
+			{volume 295 }
+			{rate	10 }
+			{remain 295 }
+			{fuel "fuel"}
+		}
+		{speed
+			{Normal  38}
+			{Slow  38}
+		}
+	}
+	{sensor
+		{visor "driver"
+			{vision "tank_driver"}
+			{bone "visor1"}
+		}
+		{visor "main"
+			{vision "tank_main-l"}
+			{bone "visor2"}
+		}
+		{visor "back"
+			{vision "tank_back"}
+			{bone "foresight3"}
+		}
+	}
+
+	{Extension "Ke-nu.mdl"}
+
+	{bone "gun_rot"
+		{speed 0.001}
+		{limits -12 14}
+	}
+	{bone "turret"
+		{speed 0.003}
+	}
+	{bone "mgun1"
+		{speed 0.025}
+	}
+}

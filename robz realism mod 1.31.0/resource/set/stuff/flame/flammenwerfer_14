@@ -13,10 +13,10 @@
 	{aimRange 40}
 	{maxRange 40}
 	{recoveryTime 1.4}
-    {RelaxationTime 0.5}
+	{RelaxationTime 0.5}
 	{gravity 35}
 	{speed 160}
-    {AimingTolerance 3}
+	{AimingTolerance 3}
 	{cursor "cannon_on"}
 	{burst
 		{short 1 0.1}

@@ -1,0 +1,30 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-geb-rfl"}
+	{portrait "ger2_soldier5"}
+	{nationality ger2}
+	{icon "stormtrooper2"}
+	{icon_priority 4}
+	{armors
+		{head helmet_heer_camo}
+	}
+	{perks
+		("body_ger2_pzgren")
+		("drive_t10_v10_c10")
+		("skills_elite_7")
+	}
+	("breed_vet" table(elite_start2))
+	{inventory
+		{item "g43" filling "ammo g43_mag" 10}
+		{item "ammo g43_mag" 20}
+		{item "ammo mauser_clip" 60}
+		{item "ammo mg_mauser drum" 50}
+		{item "bandage" 5}
+		("frag_m24_x2")
+		("at_grenade_m24x5")
+		{item "small_shovel" 1}
+		("smoke_x1")
+		{item "panzerfaust_60 weapon" 0 1 filled}
+		{in_hands 0}
+	}
+}

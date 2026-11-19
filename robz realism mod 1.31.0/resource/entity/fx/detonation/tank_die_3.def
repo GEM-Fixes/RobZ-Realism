@@ -165,7 +165,7 @@
 			}
 		}
 		{visualizer
-			{stage initial 
+			{stage initial
 				{sprite "$/particle/pieces2"
 					{turn 1
 						{npower
@@ -195,7 +195,7 @@
 					}
 				}
 			}
-			{stage collided dying 
+			{stage collided dying
 				{flags killparticle ground }
 				{sprite "$/particle/pieces"
 					{visibility 1
@@ -257,7 +257,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/oskolki"
 					{scale 0.275 0.175}
 				}
@@ -346,7 +346,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/ground_exp"
 					{timer
 						{mode play }
@@ -396,7 +396,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04l"
 					{timer
 						{mode play }
@@ -454,7 +454,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/exp01"
 					{scale 2}
 					{timer
@@ -498,7 +498,7 @@
 			{damping 0.85}
 		}
 		{#+ visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04b"
 					{timer
 						{mode play }
@@ -568,7 +568,7 @@
 			}
 		}
 		{#+ visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04"
 					{timer
 						{mode play }
@@ -704,7 +704,7 @@
 		}
 		{offset 0 0 5}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/flash_g03a"
 					{timer
 						{mode play }
@@ -855,7 +855,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/pieces2"
 					{##+ turn 1
 						{npower
@@ -885,7 +885,7 @@
 					}
 				}
 			}
-			{##+ stage collided dying 
+			{##+ stage collided dying
 				{flags killparticle ground }
 				{sprite "$/particle/pieces"
 					{visibility 1
@@ -942,7 +942,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_loop"
 					{timer
 						{mode play }
@@ -996,7 +996,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{##+ sprite "$/smoke/smoke_g04"
 					{timer
 						{mode play }
@@ -1096,7 +1096,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_loop"
 					{timer
 						{mode play }
@@ -1253,7 +1253,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/explosion/boom"
 					{timer
 						{mode play }
@@ -1313,7 +1313,7 @@
 		}
 		{offset 0 0 10}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/supershock"
 					{timer
 						{mode play }
@@ -1364,7 +1364,7 @@
 			{damping 0.8}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4c"
 					{timer
 						{mode play }
@@ -1463,7 +1463,7 @@
 			{damping 0.8}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4c"
 					{timer
 						{mode play }
@@ -1519,7 +1519,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_100"
 					{timer
 						{mode play }
@@ -1572,7 +1572,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_100"
 					{timer
 						{mode play }
@@ -1669,7 +1669,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/exp01"
 					{timer
 						{mode play }
@@ -1766,7 +1766,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{#+ sprite "$/smoke/smokesmal4b_30"
 					{timer
 						{mode play }

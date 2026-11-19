@@ -1,0 +1,28 @@
+{from "pattern gun"     ; "turan2"
+	{filling "bullet75_hun"}
+	{fireSound "gun/50to76_cal/75mm_kwk40"}
+	{reloadSound "gun_r03"}
+	("range_light_howitzer")
+	("caliber_medium")
+	{projectileDamage 50}
+        {range 190 190}
+
+
+
+       ("speed_all" ap(750) apcr(930) fg(570) heat(450))
+
+	("caliber_medium")
+	{projectileDamage 132}      
+	
+	{parameters "apc"
+		("damage_170" a(70) b(61) c(51) d(44) e(37) range(200))
+	}
+	{parameters "heatb"
+		("damage_heat" a(87) range(200))
+	}
+	
+	{parameters "fg"
+		{range 180 180}
+	}
+	("accuracy_high")	
+}

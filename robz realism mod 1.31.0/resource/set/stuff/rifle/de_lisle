@@ -5,7 +5,7 @@
 	{fireSound	"pistol/silent/welrod"}
 	{reloadSound "m1carbine"}
 
-	{Automatic}	
+	{Automatic}
 	{recoveryTime 0.6}
 	{healthDamage 30}
 	("accuracy_rifle")

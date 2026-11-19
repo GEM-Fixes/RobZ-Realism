@@ -1,0 +1,16 @@
+{from "pattern gun2"		; 170mm Kanone
+    	{filling "bullet170"}
+	{fireSound "gun/howitzer/203mm"}
+	{reloadSound "tankgun_r02"}
+	("range_grazing_howitzer")
+	("caliber_maximum")
+	{rechargeTime 30}
+	{range 210 210}
+	("speed" s(860))
+
+	{cursor "cannon_on_fg"}
+	{cursorReloading "cannon_reload_fg"}
+	("accuracy_grazinghowitzer_210m_anti_far")
+	{burst {min 1} {noaiming}}
+}
+

@@ -1,0 +1,29 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "roybuck"}
+	{portrait usa_elite2}
+	{icon elite}
+	{icon_priority 3}
+	{nationality usa}
+	{armors
+		{body us_marine_haversack}
+		{head helmet_marine_usa}
+	}
+	{perks
+		("body_usa_raider")
+		("drive_veteran")
+		("breed_skills" pistol(4) smg(6) mgun(4) rifle(5) rocket(4) melee(4))
+		{"tankgun" lvl_4}
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "bandage" 5}
+		("frag_m61_x2")
+		("smoke_x1p5_0p5")
+		("smoke_m15_x0p5_0p5")
+		{item "thompson_50" filling "thompson_drum" 50}
+		{item "thompson_drum" 150}
+		("explosive_dynamite")
+		{in_hands 4}
+	}
+}

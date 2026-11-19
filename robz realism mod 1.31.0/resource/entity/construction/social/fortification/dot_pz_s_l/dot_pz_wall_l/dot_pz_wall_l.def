@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/building.inc")
 	{props "concrete"}
@@ -18,106 +19,26 @@
 		}
 	}
 
-	{Volume "body"
-		{Tags  "body"}
-		{Thickness 100}
-		{able {visible 1}}
-	}
-	{Volume "body01"
-		{Tags  "body"}
-		{Thickness 100}
-		{able {visible 1}}
-	}
-	{Volume "body02"
-		{Tags  "body"}
-		{Thickness 100}
-		{able {visible 1}}
-	}
-	{Volume "body03"
-		{Tags  "body"}
-		{Thickness 100}
-		{able {visible 1}}
-	}
-	{Volume "body04"
-		{Tags  "body"}
-		{Thickness 100}
-		{able {visible 1}}
-	}
-	{Volume "body05"
-		{Tags  "body"}
-		{Thickness 100}
-		{able {visible 1}}
-	}
-	{Volume "body06"
-		{Tags  "body"}
-		{Thickness 100}
-		{able {visible 1}}
-	}
-	{Volume "body07"
-		{Tags  "body"}
-		{Thickness 100}
-		{able {visible 1}}
-	}
-	{Volume "body08"
-		{Tags  "body"}
-		{Thickness 100}
-		{able {visible 1}}
-	}
-	{Volume "body09"
-		{Tags  "body"}
-		{Thickness 100}
-		{able {visible 1}}
-	}
-	{Volume "body10"
-		{Tags  "body"}
-		{Thickness 100}
-		{able {visible 1}}
-	}
-	{Volume "body11"
-		{Tags  "body"}
-		{Thickness 100}
-		{able {visible 1}}
-	}
-	{Volume "body12"
-		{Tags  "body"}
-		{Thickness 100}
-		{able {visible 1}}
-	}
-	{Volume "body13"
-		{Tags  "body"}
-		{Thickness 100}
-		{able {visible 1}}
-	}
-	{Volume "body14"
-		{Tags  "body"}
-		{Thickness 100}
-		{able {visible 1}}
-	}
-	{Volume "body15"
-		{Tags  "body"}
-		{Thickness 100}
-		{able {visible 1}}
-	}
-	{Volume "body16"
-		{Tags  "body"}
-		{Thickness 100}
-		{able {visible 1}}
-	}
-	{Volume "body17"
-		{Tags  "body"}
-		{Thickness 100}
-		{able {visible 1}}
-	}
-	{Volume "body18"
-		{Tags  "body"}
-		{Thickness 100}
-		{able {visible 1}}
-	}
-	{Volume "body19"
-		{Tags  "body"}
-		{Thickness 100}
-		{able {visible 1}}
-	}
+	("vol_body_visible" name(body) mm(100))
+	("vol_body_visible" name(body01) mm(100))
+	("vol_body_visible" name(body02) mm(100))
+	("vol_body_visible" name(body03) mm(100))
+	("vol_body_visible" name(body04) mm(100))
+	("vol_body_visible" name(body05) mm(100))
+	("vol_body_visible" name(body06) mm(100))
+	("vol_body_visible" name(body07) mm(100))
+	("vol_body_visible" name(body08) mm(100))
+	("vol_body_visible" name(body09) mm(100))
+	("vol_body_visible" name(body10) mm(100))
+	("vol_body_visible" name(body11) mm(100))
+	("vol_body_visible" name(body12) mm(100))
+	("vol_body_visible" name(body13) mm(100))
+	("vol_body_visible" name(body14) mm(100))
+	("vol_body_visible" name(body15) mm(100))
+	("vol_body_visible" name(body16) mm(100))
+	("vol_body_visible" name(body17) mm(100))
+	("vol_body_visible" name(body18) mm(100))
+	("vol_body_visible" name(body19) mm(100))
 	{Volume "hole1"
 		{able clear {hole}}
 	}

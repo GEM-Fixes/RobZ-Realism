@@ -1,36 +1,16 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/cannon.ext")
-	{props "vehicle" "cannon" "wheeled" "round_sandbag2" "vision_cannon_high" "muzzle_medium" "big_weapons"} 
+	{props "vehicle" "cannon" "wheeled" "round_sandbag2" "vision_cannon_high" "muzzle_medium" "big_weapons"}
 	("armor_medium")
-	{Volume "gun"
-		{tags "gun"}
-		{component "gun"}
-	}
-	{Volume "gun2"
-		{tags "gun"}
-		{component "gun"}
-	}
-	{Volume "turret1"
-		{tags "turret"}
-		{component "turret"}
-	}
-	{Volume "turret2"
-		{tags "turret"}
-		{component "turret"}
-	}
-	{Volume "turret3"
-		{tags "turret"}
-		{component "turret"}
-	}
-	{Volume "body"
-		{tags "body"}
-		{component "body"}
-	}
-	{Volume "body2"
-		{tags "body"}
-		{component "body"}
-	}
-	
+	("vol_gun_part" name(gun))
+	("vol_gun_part" name(gun2))
+	("vol_turret_part" name(turret1))
+	("vol_turret_part" name(turret2))
+	("vol_turret_part" name(turret3))
+	("vol_body_part" name(body))
+	("vol_body_part" name(body2))
+
 	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
 
@@ -55,7 +35,7 @@
 			{forward {end "pose_seat_cannon_right" 10}}
 		}
 	}
-	("us_5x_sight")
+	("us_5x_sight_no_visor1")
 	{extender "inventory"
 		{box
 			{item "bullet76 us ap" 4}
@@ -77,8 +57,8 @@
 	{Extension "m5.mdl"}
 	(include "/properties/selection/cannon.inc"  scale(0.7))
 	{bone "basis"
-	      {limits}
-	      {speed 0.001}
+		{limits}
+		{speed 0.001}
 	}
 	{extender "cannon"
 		{animation

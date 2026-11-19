@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/car.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.1))
@@ -11,19 +12,19 @@
 	("board_animation" place(driver) board_begin(board_big-midcar_driver) board_end(seat_driver_car) base(doorleft))
 	("board_animation" place(commander) board_begin(board_big-midcar) board_end(seat_passenger) base(doorright))
 
-	
+
 	("wheel" args "wheelright1")
 	("wheel" args "wheelleft1")
 	("wheel" args "wheelright2")
 	("wheel" args "wheelleft2")
-	
+
 	{mass 4600}
 	{Chassis
 		{Locomotion ("locomotion")
 			{MaxSpeed   20}
 			{maxSpeedAtMaxTurn 12}
 			{TurnRadius 6}
-	  		{RearGears	0.41}
+			{RearGears	0.41}
 		}
 		{speed
 			{Normal  20}
@@ -46,13 +47,13 @@
 			{item "ammo bm8" 96}
 		}
 	}
-	{component "cabin"	
+	{component "cabin"
 		{RepairTime 12}
 	}
 	{volume "cabin"
 		{thickness 6}
 	}
-	{component "engine"	
+	{component "engine"
 		{RepairTime 12}
 	}
 	{volume "engine"
@@ -61,35 +62,27 @@
 	{Volume "fuel"
 		{thickness 1}
 	}
-  	{Volume "body"
-		{tags "body"}
-		{component "body"}
-		{thickness 7}   
-	}
- 	{Volume "body2"
-		{tags "body"}
-		{component "body"}
-		{thickness 10}   
-	}
+	("vol_body_plate" name(body) mm(7))
+	("vol_body_plate" name(body2) mm(10))
 	{Volume "gun2"
 		{tags "gun"}
 		{component "gun"}
-		{thickness 10}  
+		{thickness 10}
 	}
 	{Volume "gun_rot"
 		{tags "gun"}
 		{component "gun"}
-		{thickness 10} 
+		{thickness 10}
 	}
 	{Volume "gun"
 		{tags "gun"}
 		{component "gun"}
-		{thickness 10} 
+		{thickness 10}
 	}
 	{Volume "turret"
 		{tags "turret"}
 		{component "turret"}
-		{thickness 10} 
+		{thickness 10}
 	}
 	{Extension "bm8-48.mdl"}
 	{bone "turret"

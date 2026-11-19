@@ -1,5 +1,6 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
-                  (include "/properties/trench_new.inc")           
+	(include "/properties/trench_new.inc")
 	{Extension "ardenn_trench_06.mdl"}
 	{props "wood"}
 	{placer}
@@ -9,41 +10,13 @@
 		{place "sandbag2" "sandbag"}
 		{place "roof" "roof_bun_small_1"}
 	}
-	{Volume "body1"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body2"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body3"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body4"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body5"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body6"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body7"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
+	("vol_body_visible" name(body1) mm(50))
+	("vol_body_visible" name(body2) mm(50))
+	("vol_body_visible" name(body3) mm(50))
+	("vol_body_visible" name(body4) mm(50))
+	("vol_body_visible" name(body5) mm(50))
+	("vol_body_visible" name(body6) mm(50))
+	("vol_body_visible" name(body7) mm(50))
 	{Extender "land_patch"
 	}
 }

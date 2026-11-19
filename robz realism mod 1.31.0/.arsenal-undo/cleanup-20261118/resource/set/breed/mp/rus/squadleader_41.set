@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-com"}
+	{portrait "rus_soldier3"}
+	{nationality rus}
+	{icon "squadleader"}
+	{icon_priority 2}
+	{armors
+		{head "cap1_rus"}
+	}
+	{perks
+		("soldier_rifle_3" rocket(1) body(line))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_mosin")
+		{item "bandage" 3}
+		("frag_f1_x2")
+		("at_grenade_rpg40_x1")
+		("smoke_x1")
+		{in_hands 0}
+	}
+}

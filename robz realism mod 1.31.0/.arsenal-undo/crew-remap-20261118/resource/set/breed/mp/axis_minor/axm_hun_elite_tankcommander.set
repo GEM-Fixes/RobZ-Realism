@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "hun_tankman"}
+	{portrait "hun_tankman"}
+	{nationality hun}
+	{icon "tankman"}
+	{icon_priority 0}
+	{armors
+		{head "fieldcap3_hun"}
+	}
+	{tags "tankman"}
+	{perks
+		("body_crew")
+		("drive_crew_elite")
+		("breed_skills" pistol(6) smg(2) mgun(1) rifle(1) rocket(1) melee(2))
+		{"tankgun" lvl_8}
+	}
+	("breed_vet" table(crew))
+	{inventory
+		("pistol_frommer_37m")
+		{in_hands 0}
+	}
+}

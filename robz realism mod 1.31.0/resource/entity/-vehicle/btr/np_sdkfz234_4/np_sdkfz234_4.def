@@ -37,7 +37,7 @@
 		{component "turret"}
 		{tags "turret"}
 		{thickness 10
-		    {front 15}
+			{front 15}
 		}
 	}
 	{component "turret"
@@ -55,49 +55,52 @@
 	{component "Gun"
 		{RepairTime 20}
 	}
-	
+
 	("armor_medium" args 1.1)
 
-	 {Placer
-	         {place "canr1"
-	            {entity "can"}
-	            {Linkbone "canr1"}
-	            {handlebone "basis"}
-	            {obstacle disable}
-	         }
-	         {place "canr2"
-	                 {entity "can"}
-	                  {Linkbone "canr2"}
-	                  {handlebone "basis"}
-	                  {obstacle disable}
-	         }
-	        {place "canl1"
-	                 {entity "can"}
-	                  {Linkbone "canl1"}
-	                  {handlebone "basis"}
-	                  {obstacle disable}
-	         }
-	         {place "canl2"
-	                 {entity "can"}
-	                  {Linkbone "canl2"}
-	                  {handlebone "basis"}
-	                  {obstacle disable}
-	         }
-	   
-	 }
-	 (define "define_place"
-	          {placer
-	             {place "%place"
-	                {linkbone "%place"}
-	                {attach squat_lie}
-	                {turnoff {shadow}}
-	                {obstacle disable}
-	             }
-	          }
-	          {Volume "%place"
-	             {tags "attach" "attach_%place"}
-	             {able clear {bullet 0} {touch 1}}
-	          }
+	{Placer
+		{place "canr1"
+			{entity "can"}
+			{Linkbone "canr1"}
+			{handlebone "basis"}
+			{obstacle disable}
+		}
+		{place "canr2"
+			{entity "can"}
+			{Linkbone "canr2"}
+			{handlebone "basis"}
+			{obstacle disable}
+		}
+		{place "canl1"
+			{entity "can"}
+			{Linkbone "canl1"}
+			{handlebone "basis"}
+			{obstacle disable}
+		}
+		{place "canl2"
+			{entity "can"}
+			{Linkbone "canl2"}
+			{handlebone "basis"}
+			{obstacle disable}
+		}
+
+	}
+	; define_place_squat_lie: {placer {place}} {Volume "%place" {tags} {able}}
+	;   place - name of {place}, name of {linkbone}, name of {Volume}
+	;   e.g. none (not called)
+	(define "define_place_squat_lie"
+		{placer
+			{place "%place"
+				{linkbone "%place"}
+				{attach squat_lie}
+				{turnoff {shadow}}
+				{obstacle disable}
+			}
+		}
+		{Volume "%place"
+			{tags "attach" "attach_%place"}
+			{able clear {bullet 0} {touch 1}}
+		}
 	)
 	{extender "inventory"
 		{box
@@ -113,11 +116,11 @@
 		{place "gun"
 			{weapon "75mm_pak40" filling "ammo bullet75 gerp apcbc" 1}
 			{charger "gunner"}
-			("abm_low")
+			("abm_low_v2")
 		}
-	}	
-	
-	
+	}
+
+
 	("wheel" args "wheelright1")
 	("wheel" args "wheelleft1")
 	("wheel" args "wheelright2")
@@ -133,27 +136,27 @@
 		("car_trace" fx("tracewheel02") step(0.09) wheell("wlr") wheelr("wrr") bonel("FXtraceL3") boner("FXtraceR3"))
 		{Locomotion ("locomotion")
 			{MaxSpeed	38}
-	  		{maxSpeedAtMaxTurn 8}		
+			{maxSpeedAtMaxTurn 8}
 			{StartTime	20}
-			{BrakeTime	1.5}	
+			{BrakeTime	1.5}
 			{StopTime	3}
 			{TurnRadius	7}
-     			{Gears  0.1 0.2 0.3 1}
+			{Gears  0.1 0.2 0.3 1}
 			{RearGears  0.25}
 		}
 		{FuelBag
-			{volume 360 }	
-			{rate	11 }   
+			{volume 360 }
+			{rate	11 }
 			{remain 360 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  38}
-        	{Slow  38}
-    	}
+			{Normal  38}
+			{Slow  38}
+		}
 	}
 	{Extension "sdkfz234_4.mdl"}
-	
+
 	{bone "turret"
 		{speed 0.0015}
 	}

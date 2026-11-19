@@ -1,13 +1,4 @@
+; same as the other 1 def here; body in 303_vickers_mki_body.inc
 {game_entity
-	{Extension "303_vickers_mki_xx.mdl"}
-	{Volume "body"
-	}
-	{Volume "part1"
-	}
-	{Volume "part2"
-	}
-	{Volume "part3"
-	}
-	{Volume "part4"
-	}
+	(include "303_vickers_mki_body.inc")
 }

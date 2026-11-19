@@ -1,0 +1,13 @@
+{Extension "155mm_longtom_x.mdl"}
+{Volume "wheelleft1"
+}
+{Volume "wheelleft2"
+}
+{Volume "wheelleft3"
+}
+{Volume "wheelright1"
+}
+{Volume "wheelright2"
+}
+{Volume "wheelright3"
+}

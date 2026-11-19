@@ -1,25 +1,14 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/car.ext")
-	(include "/properties/selection/vehicle.inc"  scale(1.1))	
+	(include "/properties/selection/vehicle.inc"  scale(1.1))
 	{props "vehicle" "car" "wheeled" "vision_vehicle_high"}
 	{able "emit_on_attack"}
 	{PatherId "vehicle.small"}
 	; --- Godny hitbox armor (ported from GodnyMod: kfz15_gun.def) ---
-	{Volume "body"
-		{tags "body"}
-		{component "body"}
-		{thickness 6}
-	}
-	{Volume "body1"
-		{tags "body"}
-		{component "body"}
-		{thickness 6}
-	}
-	{Volume "body2"
-		{tags "body"}
-		{component "body"}
-		{thickness 6}
-	}
+	("vol_body_plate" name(body) mm(6))
+	("vol_body_plate" name(body1) mm(6))
+	("vol_body_plate" name(body2) mm(6))
 	; --- end Godny hitbox armor ---
 	("armor_light" args 1.0)
 
@@ -45,7 +34,7 @@
 			{reverse 	{end	"board_Kubel_leftpassenger" -1} {base "doorleft2" -1}}
 		}
 	}
-	
+
 	{placer
 		{place "driver" {group "crew"}}
 		{place "commander" {group "crew"}}
@@ -76,7 +65,7 @@
 	{Chassis
 		{Locomotion ("locomotion")
 			{Maxspeed 36}
-	  		{maxSpeedAtMaxTurn 15}
+			{maxSpeedAtMaxTurn 15}
 		}
 		{speed
 			{Normal  12}

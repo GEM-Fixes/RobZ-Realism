@@ -1,0 +1,7 @@
+{Extension "bt7_35_xx.mdl"}
+{Volume "part2"
+}
+{Volume "body1"
+}
+{Volume "turret"
+}

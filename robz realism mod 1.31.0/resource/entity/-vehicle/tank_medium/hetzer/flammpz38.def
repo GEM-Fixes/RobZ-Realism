@@ -1,28 +1,21 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.2))
 	{props "medium" "-turret" "vision_vehicle_medium" "vehicle_camo_2var3" "flamer_tank"}
-	
+
 	{extender "enumerator"
 		{digit_folder "ger"}
 	}
 
-	{volume "body1"
-		{component "body"}
-		{tags "body"}
-		{thickness 60}
-	}
-	{volume "body2"
-		{component "body"}
-		{tags "body"}
-		{thickness 60}
-	}
+	("vol_body_plate_component_first" name(body1) mm(60))
+	("vol_body_plate_component_first" name(body2) mm(60))
 
 	("armor_spa_light"  armor(60 15 15 6))
 	("armor_mantlet" t(60))
 	("shield" args 10)
 	("ger_5x8_sight")
-	
+
 	{extender "shield"
 		{on}
 	}
@@ -39,7 +32,7 @@
 		{component "gun"}
 		{thickness 60}
 	}
-	
+
 	("crew_3_human")
 
 	{boarder
@@ -52,7 +45,7 @@
 			{reverse 	{end	"emit_tank_2_hold"}}
 		}
 	}
-     
+
 	("crew_human" place(gunner3) door1(emit1) door2(emit2) visor(top))
 	{sensor
 		{visor "top"
@@ -61,7 +54,7 @@
 		}
 	}
 
-	{extender "inventory"	
+	{extender "inventory"
 		{weapon "mgun"
 			{mask "weapon mgun"}
 		}
@@ -105,22 +98,22 @@
 			{TurnStart  1.2}
 			{TurnTime   24}
 			{TurnRadius 10}
-    		{TurnStop   0.6}
+			{TurnStop   0.6}
 			{BrakeTime  2}
 			{StopTime   3}
 			{Gears 0.07 0.14 0.21 1}
 			{RearGears  0.15}
-    	}
+		}
 		{FuelBag
-			{volume 320}	
-			{rate	29}   
+			{volume 320}
+			{rate	29}
 			{remain 320}
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  26}
-        	{Slow  26}
-    	}
+			{Normal  26}
+			{Slow  26}
+		}
 	}
 
 	{Extension "hetzer.mdl"}
@@ -131,7 +124,7 @@
 	}
 	{bone "gun_rot"
 		{speed 0.002}
-                {limits -8 11}
+		{limits -8 11}
 	}
 	{bone "mgun_turret"
 		{speed 0.002}

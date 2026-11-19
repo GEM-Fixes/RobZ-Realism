@@ -4,10 +4,10 @@
 	{reloadSound "pak35"}
 	{rechargeTime 5}
 	("speed" s(900))
-        {range 180 180}
-	("caliber_minimum")     
-	{projectileDamage 92}	
-        ("damage_100" a(92) b(56) c(40) d(32) e(25) range(180))
+	{range 180 180}
+	("caliber_minimum")
+	{projectileDamage 92}
+	("damage_100" at20(92) at100(56) at170(40) at215(32) at250(25) max(180))
 	("accuracy_medium")
 	{parameters "fg" {range 120 130}}
 

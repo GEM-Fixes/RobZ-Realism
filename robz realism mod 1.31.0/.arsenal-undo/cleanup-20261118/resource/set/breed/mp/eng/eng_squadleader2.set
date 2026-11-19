@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-inf-cpl"}
+	{portrait "eng_soldier3"}
+	{nationality eng}
+	{icon "squadleader2"}
+	{icon_priority 2}
+	{armors
+		{head helmet2_eng}
+	}
+	{perks
+		("soldier_smg_5" rocket(1) body(line))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_sten_v")
+		{item "bandage" 3}
+		("frag_mk1_x2")
+		{item "grenade n73at" 0.25 1}
+		("smoke_x2")
+		("smoke_n77_x1")
+		{in_hands 0}
+	}
+}

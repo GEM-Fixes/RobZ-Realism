@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-smock2mix-smg"}
+	{portrait "ger_soldier2"}
+	{icon "rifleman"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{head helmet_ger_m40}
+	}
+	{perks
+		("body_militia")
+		("drive_regular")
+		("breed_skills" pistol(1) smg(2) mgun(2) rifle(1) rocket(1) melee(2))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_mp40")
+		{item "ammo mg_mauser belt" 600}
+		{item "bandage" 3}
+		{item "small_shovel" 1}
+		("frag_m24")
+		{in_hands 0}
+	}
+}

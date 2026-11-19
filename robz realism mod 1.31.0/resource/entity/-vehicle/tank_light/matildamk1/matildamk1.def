@@ -1,103 +1,98 @@
+(include "/properties/robz/volumes.inc")
 {entity
-(include "/properties/tank.ext")
-(include "/properties/selection/vehicle.inc" scale(1.2))
-	
-{collider "tank.light"}
-{props "light" "turret_rotator" "vision_vehicle_minimum"  "muzzle_zenite" "switch_mgun_special"}
-{targetClass "light_tank"}
-{patherId "tank.light"}	
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.2))
 
-("armor_medium" turret(60 60 60 60) body(60 30 30 10))
-("armor_engine"  t(30 30 30 15))
+	{collider "tank.light"}
+	{props "light" "turret_rotator" "vision_vehicle_minimum"  "muzzle_zenite" "switch_mgun_special"}
+	{targetClass "light_tank"}
+	{patherId "tank.light"}
 
-("armor_mantlet" t(60))	
-	{volume "body"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body1"
-		{tags "body"}
-		{component "body"}
-	}
+	("armor_medium" turret(60 60 60 60) body(60 30 30 10))
+	("armor_engine"  t(30 30 30 15))
+
+	("armor_mantlet" t(60))
+	("vol_body_part_lower" name(body))
+	("vol_body_part_lower" name(body1))
 	{volume "engine"
 		{thickness 112}
 	}
-("crew_2_human")
-	
-{sensor
-	{visor "main"
-	{vision "tank_main-l"}
-	{bone "visor1"}
+	("crew_2_human_inside_left")
+
+	{sensor
+		{visor "main"
+			{vision "tank_main-l"}
+			{bone "visor1"}
+		}
 	}
-}
-{boarder
-	{anm "left"
-		{forward	{begin "board_LowTank_left"}}
-		{reverse 	{end	 "emit_tank_1_hold"}}
+	{boarder
+		{anm "left"
+			{forward	{begin "board_LowTank_left"}}
+			{reverse 	{end	 "emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin "board_LowTank_left"}}
+			{reverse 	{end	 "emit_tank_1"}}
+		}
 	}
-	{anm "right"
-		{forward	{begin "board_LowTank_left"}}
-		{reverse 	{end	 "emit_tank_1"}}
-	}
-}
-{extender "inventory"
+	{extender "inventory"
 		{box
-		{item "ammo hmgun" 1500}		
+			{item "ammo hmgun" 1500}
+		}
 	}
-}
-{Weaponry
-      {place "gun"
-		{RestoreIKAfterAim}
-      		{weapon "12mm_vickers50" filled}
-		{charger "gunner"}
-		("abm_mgun_heavy")		
+	{Weaponry
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "12mm_vickers50" filled}
+			{charger "gunner"}
+			("abm_mgun_heavy")
+		}
+		{place "mgun17"
+			{type "mgun_right"}
+			{weapon "1xsmokegun" filled}
+			{gunner "gunner"}
+			{foresight "foresight20"}
+			{basic}
+		}
+		{place "mgun18"
+			{type "mgun_left"}
+			{weapon "1xsmokegun" filled}
+			{gunner "gunner"}
+			{foresight "foresight21"}
+			{basic}
+		}
 	}
-	{place "mgun17"			
-		{type "mgun_right"}
-		{weapon "1xsmokegun" filled}
-		{gunner "gunner"}
-		{foresight "foresight20"}
-		{basic}
+	{mass 11160}
+	{Chassis
+		("tank_trace" fx("tracks_sm2") step(0.15) len(0.80))
+		{Locomotion ("locomotion")
+			{maxspeed          13}
+			{maxSpeedAtMaxTurn 5}
+			{StartTime  20}
+			{TurnTime   17}
+			{TurnStart  1}
+			{TurnRadius 10}
+			{TurnStop   1}
+			{BrakeTime  1}
+			{StopTime   2}
+			{Gears  0.1 0.2 0.3 1}
+			{RearGears  0.5}
+		}
+		{FuelBag
+			{volume 190 }
+			{rate    15 }
+			{remain 190 }
+			{fuel "fuel"}
+		}
+
 	}
-	{place "mgun18"
-		{type "mgun_left"}
-		{weapon "1xsmokegun" filled}
-		{gunner "gunner"}
-		{foresight "foresight21"}
-		{basic}
+	{Extension "matildamk1.mdl"}
+	{bone "gun_rot"
+		{limits -20 10}
+		{speed 0.0015}
 	}
-}
-{mass 11160}
-{Chassis
-	("tank_trace" fx("tracks_sm2") step(0.15) len(0.80))
-	{Locomotion ("locomotion")
-	{maxspeed          13}
-	{maxSpeedAtMaxTurn 5}
-	{StartTime  20}
-	{TurnTime   17}
-	{TurnStart  1}
-	{TurnRadius 10} 
-	{TurnStop   1}
-	{BrakeTime  1}
-	{StopTime   2}
-	{Gears  0.1 0.2 0.3 1}
-	{RearGears  0.5}
-}
-{FuelBag
-	{volume 190 }
-	{rate    15 }   
-	{remain 190 }
-	{fuel "fuel"}
-}
-	
-}
-{Extension "matildamk1.mdl"}
-{bone "gun_rot"
-	{limits -20 10}
-	{speed 0.0015}
-}
-{bone "turret"
-	{speed 0.0035}
-}
+	{bone "turret"
+		{speed 0.0035}
+	}
 
 }

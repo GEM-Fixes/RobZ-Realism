@@ -1,4 +1,4 @@
-{from "pattern gun_art"		; 	
+{from "pattern gun_art"		;
 	{filling "bullet600"}
 	{fireSound "gun/howitzer/600mm"}
 
@@ -11,7 +11,7 @@
 	{range 310 310}
 	{aimtype adaptive}
 
-    	{RelaxationTime 2}
+	{RelaxationTime 2}
 
 	{cursor "cannon_on_fg"}
 	{cursorReloading "cannon_reload_fg"}

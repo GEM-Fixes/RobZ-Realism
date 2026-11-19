@@ -20,7 +20,7 @@
 	{throw
 		{range 12}
 		{startAngle 40}
-		;{spreading 1.0}				
+		;{spreading 1.0}
 		{constantSpeed 10.5}
 	}
 	{inventory {size 2 1}}

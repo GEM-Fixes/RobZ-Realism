@@ -1,25 +1,20 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/cannon.ext")
 	{props "vehicle" "cannon" "wheeled" "vision_cannon_medium_vet" "muzzle_small" "medium_weapons"}
-	
+
 	("armor_medium")
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: pak38_ger2.def) ---
-	{Volume "gun2"
-		{tags "gun"}
-		{component "gun"}
-	}
-	{Volume "turret"
-		{tags "gun"}
-		{component "gun"}
-	}
+	("vol_gun_part" name(gun2))
+	("vol_gun_part" name(turret))
 	{Volume "shield1"
 		{component "shield"}
 	}
 	; --- end Godny hitbox armor ---
 	{Volume "body"
 	}
-    {Volume "gun"
+	{Volume "gun"
 	}
 	{Volume "standl"
 	}
@@ -29,7 +24,7 @@
 	}
 	{Volume "wheelright"
 	}
-	
+
 	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
 
@@ -75,7 +70,7 @@
 	{mass 1500}
 	{Extension "pak38.mdl"}
 	(include "/properties/selection/cannon.inc"  scale(0.7))
-	
+
 	{extender "cannon"
 		{animation
 			{switch "close"}

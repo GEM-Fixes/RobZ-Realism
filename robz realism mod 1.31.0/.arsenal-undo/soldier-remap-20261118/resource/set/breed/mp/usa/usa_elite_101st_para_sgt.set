@@ -1,0 +1,28 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-101st-smg-ssgt"}
+	{portrait "usa_elite1"}
+	{nationality usa}
+	{icon "elite_para"}
+	{icon_priority 5}
+	{armors
+		{head helmet_usa_para_nco}
+	}
+	{perks
+		("body_elite")
+		("drive_elite")
+		("breed_skills" pistol(6) smg(7) mgun(6) rifle(6) rocket(6) melee(6))
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("smg_thompson")
+		{item "bandage" 5}
+		("frag_m61_x2")
+		;{item "grenade n73at" 1}
+		("smoke_x1p5_0p5")
+		("smoke_m15_x0p5_0p5")
+		{item "knife_union"}
+		("frag_satchel_x1")
+		{in_hands 0}
+	}
+}

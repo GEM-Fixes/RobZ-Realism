@@ -2,7 +2,7 @@
 	(include "/properties/construction.inc")
 	{Extension "tower_walls.mdl"}
 	{props "cornered" "wood" "parts" "construction" "burning" "wall" "no_destroyed_stamp"}
-;	{props "small" "cornered" "parts" "construction" "watch_tower" "wood" "burning" "disable_area" "no_destroyed_stamp"}
+	;	{props "small" "cornered" "parts" "construction" "watch_tower" "wood" "burning" "disable_area" "no_destroyed_stamp"}
 	{obstacleID "small_building"}
 
 	{extender "structure_bone"

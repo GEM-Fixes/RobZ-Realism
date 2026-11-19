@@ -87,15 +87,15 @@
 	{tag "can-aim-thrower"}
 	{tag "can-aim-bazooka"}
 	{tag "weapon"}
-{tag "aim1"}
+	{tag "aim1"}
 	{tag "aim-thrower"}
 	{tag "aim-bazooka"}
 	{tag "can-aim"}
-{tag "can-aim1"}
+	{tag "can-aim1"}
 	{tag "can-aim-thrower"}
 	{tag "can-aim-bazooka"}
 	{tag "weapon"}
-{tag "fire1"}
+	{tag "fire1"}
 	{tag "fire-bazooka"}
 	{tag "weapon"}
 }
@@ -106,10 +106,10 @@
 	{tag "fire"}
 	{tag "fire-bazooka"}
 	{tag "weapon"}
-{tag "can-aim1"}
+	{tag "can-aim1"}
 	{tag "down"}
 	{tag "fire"}
-{tag "fire1"}
+	{tag "fire1"}
 	{tag "fire-bazooka"}
 	{tag "weapon"}
 }
@@ -119,7 +119,7 @@
 	{tag "down"}
 	{tag "recoil"}
 	{tag "weapon"}
-{tag "can-aim1"}
+	{tag "can-aim1"}
 	{tag "down"}
 	{tag "recoil"}
 	{tag "weapon"}
@@ -130,7 +130,7 @@
 	{tag "reload"}
 	{tag "reload-bazooka"}
 	{tag "weapon"}
-{tag "reload1"}
+	{tag "reload1"}
 	{tag "reload-bazooka"}
 	{tag "weapon"}
 }
@@ -140,7 +140,7 @@
 	{tag "unload"}
 	{tag "unload-bazooka"}
 	{tag "weapon"}
-{tag "unload1"}
+	{tag "unload1"}
 	{tag "unload-bazooka"}
 	{tag "weapon"}
 }

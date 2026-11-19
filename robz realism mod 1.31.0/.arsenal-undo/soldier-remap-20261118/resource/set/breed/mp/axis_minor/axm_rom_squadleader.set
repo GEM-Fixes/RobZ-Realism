@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rom-smg"}
+	{portrait "rom_sailor1"}
+	{icon "squadleader"}
+	{icon_priority 2}
+	{nationality rom}
+	{armors
+		{head "8_kaska_soldat_ruminia"}
+	}
+	{perks
+		("body_squadleader")
+		("drive_t08_v10_c10")
+		("breed_skills" pistol(3) smg(4) mgun(2) rifle(4) rocket(1) melee(2))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_orita")
+		("frag_m24_grenade")
+		("at_grenade_m24x5_grenade")
+		{in_hands 0}
+	}
+}

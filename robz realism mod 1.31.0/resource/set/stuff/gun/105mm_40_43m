@@ -4,23 +4,23 @@
 	("range_light_howitzer")
 	{rechargeTime 14}
 	{range 220 240}
-	
-	
+
+
 	("speed" s(835))
 	("caliber_maximum")
 	{projectileDamage 150}
-	("damage_215" a(206) b(179) c(156) d(136) e(118) range(200))
+	("damage_215" at20(206) at100(179) at170(156) at215(136) at250(118) max(200))
 
 	{parameters "apcr"
-        		("damage" a(91) b(77) c(66) d(55) e(46))
+		("damage" a(91) b(77) c(66) d(55) e(46))
 	}
-        {parameters "heat"
-        	("damage_heat" a(110) range(200))
+	{parameters "heat"
+		("damage_heat" damage(110) max(200))
 		{range 200 200}
 	}
 
 
-        {parameters "fg"
+	{parameters "fg"
 		{range 200 200}
 	}
 	("accuracy_maximum")

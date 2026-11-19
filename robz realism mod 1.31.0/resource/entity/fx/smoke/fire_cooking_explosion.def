@@ -28,7 +28,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/oskolki"
 					{scale 0.225 0.175}
 					{highlight 0xfffe951c}
@@ -62,7 +62,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/flashssp2"
 					{timer
 						{mode play }
@@ -122,7 +122,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/exp_muzzle_01"
 					{scale 1
 						{linear
@@ -168,7 +168,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/explosion/boom3"
 					{scale 1
 						{linear
@@ -214,7 +214,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_100"
 					{scale 1
 						{linear
@@ -260,7 +260,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_100"
 					{scale 1
 						{linear

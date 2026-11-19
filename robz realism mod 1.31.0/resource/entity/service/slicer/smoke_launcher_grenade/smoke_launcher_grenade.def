@@ -11,6 +11,6 @@
 
 	{Volume "smoke1" {able clear} {density 0}}
 	{Volume "smoke2" {able clear} {density 0}}
-	
+
 
 }

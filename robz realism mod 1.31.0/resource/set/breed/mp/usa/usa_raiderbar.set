@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "usa-camo-bar"}
 	{portrait usa_elite2}
@@ -9,48 +10,15 @@
 		{head helmet_marine_usa}
 	}
 	{perks
-		{"health" "250%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "150%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" mp_soldier
-		}
-		{"speed" 0.9
-		}
-		{"tank" 0.85
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 0.9
-		}
-		{"pistol" lvl_4
-		}
-		{"smg" lvl_4
-		}
-		{"mgun" lvl_1
-		}
-		{"rifle" lvl_5
-		}
-		{"rocketlauncher" lvl_4
-		}
-		{"melee" lvl_4
-		}
-		{"tankgun" lvl_4
-		}
+		("soldier_rifle_5" rocket(1) body(line) sight(soldier))
+		{"tankgun" lvl_4}
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(standard))
 	{inventory
 		{item "bandage" 5}
-		{item "grenade m61" 2}
-		{item "smoke grenade" 1.5 0.5}
-		{item "m15_smoke grenade" 0.5 0.5}
+		("give" item(grenade m61) count(2))
+		("give_1_or_2" item(smoke grenade))
+		("give_chance" item(m15_smoke grenade) chance(50))
 		{item "bar_rifle" filling "bar_mag ammo" 20}
 		{item "bar_mag ammo" 240}
 		{in_hands 4}

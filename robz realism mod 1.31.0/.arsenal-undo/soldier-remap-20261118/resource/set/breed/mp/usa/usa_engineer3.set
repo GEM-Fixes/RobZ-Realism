@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-soldier1"}
+	{portrait "usa_soldier2"}
+	{nationality usa}
+	{icon "rifleman"}
+	{icon_priority 1}
+	{armors
+		{head helmet_novice}
+		{body ammo_us2}
+	}
+	{perks
+		("body_regular")
+		("drive_veteran")
+		("skills_2_2_2_3_1_3")
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_garand")
+		("frag_m61_x2")
+		{item "mine antitank" 5}
+		{item "sandbag_kit" 2}
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-inf-pvt"}
+	{portrait "eng_soldier2"}
+	{nationality eng}
+	{icon "rifleman"}
+	{icon_priority 1}
+	{armors
+		{head "helmet2_eng"}
+	}
+	{perks
+		("body_regular")
+		("drive_t08_v10_c10")
+		("breed_skills" pistol(2) smg(2) mgun(2) rifle(5) rocket(1) melee(4))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("kit_mortar" gun(mortar_mkvii) ammo(mortar50 eng fg) rounds(6))
+		{item "ammo mortar50 eng sm" 8}
+		{item "ammo mortar50 eng wp" 2}
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

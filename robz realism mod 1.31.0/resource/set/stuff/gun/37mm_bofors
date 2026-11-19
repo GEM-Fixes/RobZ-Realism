@@ -5,7 +5,7 @@
 	{rechargeTime 3}
 	("range_short")
 	("speed" s(830))
- {range 180 180}
+	{range 180 180}
 	("caliber_minimum")
 	{projectileDamage 56}
 	("damage" a(56) b(45) c(36) d(32) e(25))

@@ -43,7 +43,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "/texture/fx/explosion/flame_hi"
 					{timer
 						{mode play }

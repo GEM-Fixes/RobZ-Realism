@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/armoredcar.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.0))
@@ -6,21 +7,17 @@
 	{extender "enumerator"
 		{digit_folder "ger"}
 	}
-	
+
 	{Extension "crew.ext"}
 
 	; --- Godny hitbox armor (ported from GodnyMod: sdkfz7_2.def) ---
-	{volume "sticky"
-		{tags "grenade_fg_target"}
-		{able clear {contact} {touch}}
-		{component "sticky_body"}
-	}
+	("vol_sticky_grenade_target" name(sticky))
 	{volume "body"	;рама и дно
 		{tags "body"}
 		{component "body"}
 		{thickness 8
-		;	{front	8}
-		;	{rear	8}
+			;	{front	8}
+			;	{rear	8}
 			{top	6}
 			{bottom	6}
 		}
@@ -29,8 +26,8 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 8
-		;	{front	8}
-		;	{rear	8}
+			;	{front	8}
+			;	{rear	8}
 			{top	6}
 			{bottom	6}
 		}
@@ -65,19 +62,19 @@
 	{component "sticky_body"}
 
 	{volume "inventory"
-        {thickness 2}
+		{thickness 2}
 	}
 	{component "gun"
 		{RepairTime 20}
 	}
 
 	{extender "shield"
-			{on}
+		{on}
 	}
 	("shield" args 10)
 	{component "shieldl1" {tags "shield"}}
 	{component "shieldr1" {tags "shield"}}
-	
+
 	("armor_medium" args 1.0)
 
 	{extender "inventory"
@@ -110,7 +107,7 @@
 			{BrakeTime			1.5}
 			{StopTime			2.5}
 			{TurnRadius			8}
-     			{Gears  0.2 0.3 0.4 1}
+			{Gears  0.2 0.3 0.4 1}
 			{RearGears  0.25}
 		}
 		{FuelBag
@@ -129,7 +126,7 @@
 	}
 
 	{Extension "sdkfz7_2.mdl"}
-	
+
 	{bone "gun_rot1"		;horizontal gun
 		{speed 0.0045}
 		{limits -145 145}
@@ -138,7 +135,7 @@
 		{speed 0.003}
 		{limits -10 45}		;gun min down to max up
 	}
-	
+
 	(mod "mp"
 		{brain
 			{properties

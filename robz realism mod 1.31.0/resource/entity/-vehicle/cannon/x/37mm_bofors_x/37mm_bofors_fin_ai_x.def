@@ -1,7 +1,4 @@
+; same as the other 3 defs here; body in 37mm_bofors_body_2.inc
 {game_entity
-	{Extension "37mm_bofors_2_x.mdl"}
-	{Volume "wheelleft"
-	}
-	{Volume "wheelright"
-	}
+	(include "37mm_bofors_body_2.inc")
 }

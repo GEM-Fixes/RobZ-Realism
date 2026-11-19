@@ -19,7 +19,7 @@
 			{damping 0.9}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_100"
 					{preturn 90 90}
 					{visibility 1
@@ -146,7 +146,7 @@
 			{damping 0.95}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_loop"
 					{preturn 90 90}
 					{visibility 1

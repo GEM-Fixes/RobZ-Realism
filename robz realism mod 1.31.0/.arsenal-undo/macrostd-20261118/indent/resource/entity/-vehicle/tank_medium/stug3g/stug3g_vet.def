@@ -1,0 +1,263 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "-turret" "vision_vehicle_medium" "muzzle_medium_sides"}
+
+	{extender "enumerator"
+		{digit_folder "ger"}
+	}
+
+	; --- Godny hitbox armor (ported from GodnyMod: stug3g.def) ---
+	{volume "body1"	;нижняя часть
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+			{front	80}
+			{rear	50}
+			{top	0.1}	;внутренняя стенка
+			{bottom	10}
+			{right	25}	;гласис
+		}
+	}
+	{volume "body2"	;рубка средняя часть
+		{tags "body"}
+		{component "body"}
+		{able {holed}}
+		{thickness 30
+			{front	50}
+		;	{rear	30}
+			{top	0.1}	;внутренняя стенка
+			{bottom	0.1}	;внутренняя стенка
+		}
+	}
+	{volume "body3"	;рубка крыша
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+			{front	50}
+		;	{rear	30}
+			{top	10}
+			{bottom	0.1}	;внутренняя стенка
+		}
+	}
+	{volume "body4"	;моторное верх
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+			{front	0.1}	;внутренняя стенка
+			{rear	50}
+			{top	16}
+			{bottom	16}
+		}
+	}
+	{volume "body5"	;правая консоль
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+			{front	80}	;50+30
+			{rear	0.1}	;внутрення стенка
+		;	{top	30}	;гласис консоли
+			{bottom	0.1}	;внутрення стенка
+		}
+	}
+	{volume "body6"	;левая консоль
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+			{front	80}	;50+30
+			{rear	0.1}	;внутрення стенка
+		;	{top	30}	;гласис консоли
+			{bottom	0.1}	;внутрення стенка
+		}
+	}
+	{volume "body7"	;рубка правый скос
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+		;	{front	30}
+		;	{rear	30}
+			{top	0.1}	;внутренняя стенка
+			{bottom	15}
+			{left	0.1}	;внутрення стенка
+		}
+	}
+	{volume "body8"	;рубка левый скос
+		{tags "body"}
+		{component "body"}
+		{thickness 30
+		;	{front	30}
+		;	{rear	30}
+			{top	0.1}	;внутренняя стенка
+			{bottom	15}
+			{right	0.1}	;внутрення стенка
+		}
+	}
+	{Volume "hole_man"	;сложная маска орудия
+		{able clear {hole}}
+		{component "body"}
+	}
+	{Volume "hole_bod"	;дырка под орудие
+		{able clear {hole}}
+		{component "body"}
+	}
+	{Volume "hole_bod1"	;левая консоль
+		{able clear {hole}}
+		{component "body"}
+	}
+	{Volume "hole_bod2"	;правая консоль
+		{able clear {hole}}
+		{component "body"}
+	}
+	{Volume "mantlet1"
+		{able {holed}}	;дырка от брони тормозных
+		{thickness 50
+		;	{front	50}
+			{rear	1}
+		}
+	}
+	{volume "mantlet"
+		{thickness 70
+		;	{front	70}
+			{rear	15}	;орудие дает небольшую броню
+		}
+	}
+	{volume "engine"
+		{thickness 10}
+	}
+	{volume "mgun_shield1"
+		{thickness 5}
+	}
+	; --- end Godny hitbox armor ---
+	("armor_spa_light" armor(80 30 30 30))
+	("armor_engine"  t(30 30 30 17))
+	("armor_mantlet" t(80))
+	("ger_5x8_sight")
+
+	("shield" args 8)
+	{extender "shield"
+		{on}
+	}
+
+	{component "shieldl1" {tags "shield"}}
+	{component "shieldl2" {tags "shield"}}
+	{component "shieldl3" {tags "shield"}}
+	{component "shieldl4" {tags "shield"}}
+	{component "shieldl5" {tags "shield"}}
+	{component "shieldr1" {tags "shield"}}
+	{component "shieldr2" {tags "shield"}}
+	{component "shieldr3" {tags "shield"}}
+	{component "shieldr4" {tags "shield"}}
+	{component "shieldr5" {tags "shield"}}
+
+	("crew_3_human")
+
+;	("gunner_visible")
+	("crew_human" place(gunner3) door1(emit1) door2(emit2) visor(top))
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+
+	{sensor
+		{visor "top"
+			{vision "vehicle_top_turret"}
+			{bone "foresight3"}
+		}
+	}
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_Kv"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"} {end "pose_mgun_pz6"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_HighArmor"} {end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+
+	{extender "inventory"
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{box
+			{item "ammo bullet75 ger apcbc" 22}
+			{item "ammo bullet75 ger fg" 22}
+			{item "ammo bullet75 ger apcr" 4}
+			{item "ammo bullet75 ger heatc" 5}
+			{item "mg42" filled {user "mgun"}}
+			{item "ammo mg_mauser belt" 1200}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "75mm_stuk40_vet" filling "ammo bullet75 ger apcbc" 1}
+			("abm_veteran")
+		}
+		{place "mgun"
+			{type "mgun_aa"}
+			{gunner "gunner3"}
+			{charger "gunner3"}
+			{LinkBone "mgun_rot"}
+			{LinkAnimation "off"}
+			{basic}
+		}
+		{place "mgun2"
+			{type "mgun_coaxial"}
+			{weapon "mg34_optic" filled}
+			{foresight "foresight5"}
+			{basic}
+		}
+	}
+
+
+	{mass 21000}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.52) len(0.7))
+		{Locomotion ("locomotion")
+			{MaxSpeed   30}
+			{maxSpeedAtMaxTurn 6}
+			{StartTime 	 29.75}
+			{TurnTime  	 13.5}
+    		{TurnStart 1.4}
+     		{BrakeTime   1}
+    		{StopTime    2}
+     		{TurnRadius  8}
+    		{TurnStop   0.7}
+     		{Gears  0.13 0.23 0.33 1}
+     		{RearGears 0.28}
+		}
+		{FuelBag
+			{volume 310 }
+			{rate	24 }
+			{remain 310 }
+			{fuel "fuel"}
+		}
+		{speed
+        	{Normal  30}
+        	{Slow  30}
+    	}
+	}
+
+	{Extension "stug3g.mdl"}
+
+	{bone "gun_rot2"
+		{speed 0.0022}
+	}
+	{bone "gun_rot"
+		{speed 0.0022}
+	}
+}

@@ -9,7 +9,7 @@
 	{volume "turret"
 		{component "turret"}
 		{thickness 16
-		    {rear 10}
+			{rear 10}
 		}
 	}
 }

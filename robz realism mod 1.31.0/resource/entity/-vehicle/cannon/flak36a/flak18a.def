@@ -7,9 +7,9 @@
 	{collider "cannon_heavy"}
 	("armor_heavy")
 
-	{placer	
+	{placer
 		{place "gunner" {visor "main"} {useVision 0}}
-	}	
+	}
 
 	{Volume "body1"
 		{thickness 30}
@@ -24,25 +24,25 @@
 	{Volume "turret"
 		{thickness 10}
 	}
-	{volume "shield_front"	
+	{volume "shield_front"
 		{thickness 25}
 	}
 	{Volume "gun"
 		{thickness 10}
 	}
 
-	{component "shield_front"	
+	{component "shield_front"
 		{RepairTime 20}
 	}
 	{extender "shield"
-			{off}
+		{off}
 	}
 
 	("wheel" args "wheelright1")
 	("wheel" args "wheelright2")
 	("wheel" args "wheelleft1")
 	("wheel" args "wheelleft2")
-	("ger_5x8_sight")
+	("ger_5x8_sight_no_visor1")
 
 	("crew_wheeled_gun")
 	{boarder
@@ -65,7 +65,7 @@
 			{forward {end "pose_seat_cannon_right" 10}}
 		}
 	}
-	
+
 	{extender "inventory"
 		{box
 			{item "bullet88 ger apcbc" 5}
@@ -86,14 +86,14 @@
 			{StationaryFiring}
 			("abm_howitzer")
 		}
-	}  	
+	}
 
 	{extender "cannon"
 		{animation
 			{aim "Cannon_flak41_gunlayer" ""}
 			{fire	"Cannon_flak41_gunlayer_fire-alert" "cannon_pdr25_gunlayer_fire-alert"}
 			{move "cannon_pak40_pusher_left" "cannon_pak40_pusher_right"}
-;			{reload  "" "cannon_flak41_charger"}
+			;			{reload  "" "cannon_flak41_charger"}
 			{switch "close"}
 		}
 		{move {obstacle "close"}}

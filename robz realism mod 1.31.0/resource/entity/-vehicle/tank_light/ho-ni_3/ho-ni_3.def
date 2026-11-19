@@ -1,9 +1,10 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.2))
 	{props "medium" "-turret" "opened" "vision_vehicle_medium" "muzzle_medium"}
 
-	{extender "enumerator"}	
+	{extender "enumerator"}
 
 	("armor_spa_light" armor(25 25 12 8))
 	("armor_engine"  t(25 25 17 18))
@@ -14,7 +15,7 @@
 		{component "body"}
 		{tags "body"}
 		{thickness 25	;нижн€€ боковина 25мм
-		;	{front	25}
+			;	{front	25}
 			{rear	20}
 			{top	0.1}	;внутренн€€ стенка
 			{bottom	10}
@@ -25,7 +26,7 @@
 		{component "body"}
 		{tags "body"}
 		{thickness 25	;верхн€€ боковина 20мм
-		;	{front	25}
+			;	{front	25}
 			{rear	0.1}	;внутренн€€ стенка
 			{top	12}
 			{bottom	10}
@@ -47,7 +48,7 @@
 		{component "body"}
 		{tags "body"}
 		{thickness 25
-		;	{front	25}
+			;	{front	25}
 			{rear	0.1}	;внутренн€€ стенка
 			{top	12}
 			{bottom	10}
@@ -58,8 +59,8 @@
 		{tags "body"}
 		{able {holed}}
 		{thickness 25
-		;	{front	25}
-		;	{rear	25}
+			;	{front	25}
+			;	{rear	25}
 			{top	12}
 			{bottom	10}
 		}
@@ -84,13 +85,10 @@
 			{bottom	10}
 		}
 	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "body"}
-	}
+	("vol_body_hole_only" name(hole_man))
 	{volume "mantlet"
 		{thickness 30
-		;	{front	30}
+			;	{front	30}
 			{rear	10}	;орудие дает небольшую броню
 		}
 	}
@@ -98,10 +96,7 @@
 		{thickness 10}
 	}
 	; --- end Godny hitbox armor ---
-	{Volume "gun"
-		{tags "gun"}
-		{component "gun"}
-	}
+	("vol_gun_part" name(gun))
 	{volume "engine1"
 		{tags "engine"}
 		{component "engine"}
@@ -162,7 +157,7 @@
 		}
 	}
 
-{mass 16300}
+	{mass 16300}
 
 	{Chassis
 		("tank_trace" fx("tracks_mid") step(0.56) len(0.14))
@@ -171,31 +166,31 @@
 			{maxSpeedAtMaxTurn 6}
 			{StartTime	 26}
 			{TurnTime	16}
-			{TurnStart  1.5} 
-    		        {BrakeTime  1.5}
-     		        {StopTime   2.5} 
-    		        {TurnRadius 9} 
-    		        {TurnStop   0.7} 
-    		        {Gears      0.1 0.2 0.3 1.0}
-    		        {RearGears  0.2}
+			{TurnStart  1.5}
+			{BrakeTime  1.5}
+			{StopTime   2.5}
+			{TurnRadius 9}
+			{TurnStop   0.7}
+			{Gears      0.1 0.2 0.3 1.0}
+			{RearGears  0.2}
 		}
 		{speed
-        	{Normal  26}
-        	{Slow  26}
-    	}
+			{Normal  26}
+			{Slow  26}
+		}
 		{FuelBag
-			{volume 350 }	
-			{rate	 15 }   
+			{volume 350 }
+			{rate	 15 }
 			{remain 350 }
 			{fuel "fuel"}
 		}
 	}
-{Extension "ho-ni_3.mdl"}
+	{Extension "ho-ni_3.mdl"}
 	{bone "mantlet"
-	    {speed 0.0015}
+		{speed 0.0015}
 	}
 	{bone "gun_rot"
-	    {speed 0.0015}
+		{speed 0.0015}
 	}
 
 }

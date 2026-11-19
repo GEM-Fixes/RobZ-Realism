@@ -10,7 +10,7 @@
 	("speed" s(262))
 	("caliber_large")
 	{parameters "heat"
-		("damage_heat" a(87) range(265))
+		("damage_heat" damage(87) max(265))
 	}
 	{range 265 265}
 	{gravity 6}

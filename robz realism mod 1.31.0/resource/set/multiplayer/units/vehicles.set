@@ -5,39 +5,70 @@
 
 ;같컂eneric같�
 
+; generic_v_sequence: buy-card fields, {charge} {score} {tags "%t"} {group "%g"} {button "%b"} {icon} +2 more
+;   c - {charge}, [?]
+;   sc - {score}, [?]
+;   t - name of {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   i - {icon}, [?]
+;   cw - {cw}, [?]
+;   cp - {cp}, [?]
+;   e.g. ("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
 (define "generic_v_sequence"
-    {charge %c}
-    {score %sc}
-    {tags "%t"}
-    {group "%g"}
-    {button "%b"}
+	{charge %c}
+	{score %sc}
+	{tags "%t"}
+	{group "%g"}
+	{button "%b"}
 	{icon %i}
-    {cw %cw}
-    {cp %cp}
+	{cw %cw}
+	{cp %cp}
 )
 
+; generic_v: buy-card fields, {charge} {score} {tags "%t"} {group "%g"} {button "%b"} {cw} +1 more
+;   c - {charge}, [?]
+;   sc - {score}, [?]
+;   t - name of {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   cw - {cw}, [?]
+;   cp - {cp}, [?]
+;   e.g. ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
 (define "generic_v"
-    {charge %c}
-    {score %sc}
-    {tags "%t"}
-    {group "%g"}
-    {button "%b"}
-    {cw %cw}
-    {cp %cp}
+	{charge %c}
+	{score %sc}
+	{tags "%t"}
+	{group "%g"}
+	{button "%b"}
+	{cw %cw}
+	{cp %cp}
 )
 
+; generic_h: buy-card fields, {charge} {tags "%t"} {group "%g"} {button "%b"}
+;   c - {charge}, [?]
+;   t - name of {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   e.g. ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
 (define "generic_h"
-    {charge %c}
-    {tags "%t"}
-    {group "%g"}
-    {button "%b"}
+	{charge %c}
+	{tags "%t"}
+	{group "%g"}
+	{button "%b"}
 )
 
+; generic_x: buy-card fields, {score} {tags "%t"} {cw} {cp}
+;   sc - {score}, [?]
+;   t - name of {tags}
+;   cw - {cw}, [?]
+;   cp - {cp}, [?]
+;   e.g. ("generic_x" sc(%sc) t(%t %s) cw(%cw) cp(%cp))
 (define "generic_x"
-    {score %sc}
-    {tags "%t"}
-    {cw %cw}
-    {cp %cp}
+	{score %sc}
+	{tags "%t"}
+	{cw %cw}
+	{cp %cp}
 )
 
 
@@ -45,675 +76,2013 @@
 ;같컂eneric_v같�
 
 
+; vs_seq_rom: {content "%v1 ( mp/%s/axm_rom_vehicle_supporter:%n1)"}, calls "generic_v_sequence"
+;   c - {charge}, [?] via "generic_v_sequence"
+;   sc - {score}, [?] via "generic_v_sequence"
+;   t - name of {tags} via "generic_v_sequence"
+;   s - name of {tags} via "generic_v_sequence", text in {content}
+;   g - name of {group} via "generic_v_sequence"
+;   b - name of {button} via "generic_v_sequence"
+;   cw - {cw}, [?] via "generic_v_sequence"
+;   cp - {cp}, [?] via "generic_v_sequence"
+;   i - {icon}, [?] via "generic_v_sequence"
+;   v1 - text in {content}
+;   n1 - text in {content}
+;   e.g. none (not called)
 (define "vs_seq_rom"
-    ("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
-    {content "%v1 ( mp/%s/axm_rom_vehicle_supporter:%n1)"}
+	("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
+	{content "%v1 ( mp/%s/axm_rom_vehicle_supporter:%n1)"}
 )
 
 
+; vs2_seq_rom: {content "%v1 ( mp/%s/axm_rom_vehicle_supporter:%n1) %v2 ( mp/%s/axm_rom_vehicle_supporter:%n1)"}, calls "generic_v_sequence"
+;   c - {charge}, [?] via "generic_v_sequence"
+;   sc - {score}, [?] via "generic_v_sequence"
+;   t - name of {tags} via "generic_v_sequence"
+;   s - name of {tags} via "generic_v_sequence", text in {content}
+;   g - name of {group} via "generic_v_sequence"
+;   b - name of {button} via "generic_v_sequence"
+;   cw - {cw}, [?] via "generic_v_sequence"
+;   cp - {cp}, [?] via "generic_v_sequence"
+;   i - {icon}, [?] via "generic_v_sequence"
+;   v1 - text in {content}
+;   n1 - text in {content}
+;   v2 - text in {content}
+;   e.g. none (not called)
 (define "vs2_seq_rom"
-    ("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
-    {content "%v1 ( mp/%s/axm_rom_vehicle_supporter:%n1) %v2 ( mp/%s/axm_rom_vehicle_supporter:%n1)"}
+	("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
+	{content "%v1 ( mp/%s/axm_rom_vehicle_supporter:%n1) %v2 ( mp/%s/axm_rom_vehicle_supporter:%n1)"}
 )
 
+; v_seq: {content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2)"}, calls "generic_v_sequence"
+;   c - {charge}, [?] via "generic_v_sequence"
+;   sc - {score}, [?] via "generic_v_sequence"
+;   t - name of {tags} via "generic_v_sequence"
+;   s - name of {tags} via "generic_v_sequence", text in {content}
+;   g - name of {group} via "generic_v_sequence"
+;   b - name of {button} via "generic_v_sequence"
+;   cw - {cw}, [?] via "generic_v_sequence"
+;   cp - {cp}, [?] via "generic_v_sequence"
+;   i - {icon}, [?] via "generic_v_sequence"
+;   v1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v_seq"
-    ("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
-    {content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2)"}
+	("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
+	{content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2)"}
 )
 
 
 
+; vs_seq_ita: {content "%v1 ( mp/%s/axm_ita_vehicle_supporter:%n1)"}, calls "generic_v_sequence"
+;   c - {charge}, [?] via "generic_v_sequence"
+;   sc - {score}, [?] via "generic_v_sequence"
+;   t - name of {tags} via "generic_v_sequence"
+;   s - name of {tags} via "generic_v_sequence", text in {content}
+;   g - name of {group} via "generic_v_sequence"
+;   b - name of {button} via "generic_v_sequence"
+;   cw - {cw}, [?] via "generic_v_sequence"
+;   cp - {cp}, [?] via "generic_v_sequence"
+;   i - {icon}, [?] via "generic_v_sequence"
+;   v1 - text in {content}
+;   n1 - text in {content}
+;   e.g. none (not called)
 (define "vs_seq_ita"
-    ("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
-    {content "%v1 ( mp/%s/axm_ita_vehicle_supporter:%n1)"}
+	("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
+	{content "%v1 ( mp/%s/axm_ita_vehicle_supporter:%n1)"}
 )
 
+; vs2_seq_ita: {content "%v1 ( mp/%s/axm_ita_vehicle_supporter:%n1)"}, calls "generic_v_sequence"
+;   c - {charge}, [?] via "generic_v_sequence"
+;   sc - {score}, [?] via "generic_v_sequence"
+;   t - name of {tags} via "generic_v_sequence"
+;   s - name of {tags} via "generic_v_sequence", text in {content}
+;   g - name of {group} via "generic_v_sequence"
+;   b - name of {button} via "generic_v_sequence"
+;   cw - {cw}, [?] via "generic_v_sequence"
+;   cp - {cp}, [?] via "generic_v_sequence"
+;   i - {icon}, [?] via "generic_v_sequence"
+;   v1 - text in {content}
+;   n1 - text in {content}
+;   e.g. none (not called)
 (define "vs2_seq_ita"
-    ("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
-    {content "%v1 ( mp/%s/axm_ita_vehicle_supporter:%n1)"}
+	("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
+	{content "%v1 ( mp/%s/axm_ita_vehicle_supporter:%n1)"}
 )
 
+; vs3_seq_ita: {content "%v1 ( mp/%s/axm_ita_vehicle_supporter:%n1)"}, calls "generic_v_sequence"
+;   c - {charge}, [?] via "generic_v_sequence"
+;   sc - {score}, [?] via "generic_v_sequence"
+;   t - name of {tags} via "generic_v_sequence"
+;   s - name of {tags} via "generic_v_sequence", text in {content}
+;   g - name of {group} via "generic_v_sequence"
+;   b - name of {button} via "generic_v_sequence"
+;   cw - {cw}, [?] via "generic_v_sequence"
+;   cp - {cp}, [?] via "generic_v_sequence"
+;   i - {icon}, [?] via "generic_v_sequence"
+;   v1 - text in {content}
+;   n1 - text in {content}
+;   e.g. none (not called)
 (define "vs3_seq_ita"
-    ("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
-    {content "%v1 ( mp/%s/axm_ita_vehicle_supporter:%n1)"}
+	("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
+	{content "%v1 ( mp/%s/axm_ita_vehicle_supporter:%n1)"}
 )
 
 
 
 
+; v_seq_ita: {content "%v1 ( mp/%s/axm_ita_tankman:%n1 mp/%s/axm_ita_tankCommander:%n2)"}, calls "generic_v_sequence"
+;   c - {charge}, [?] via "generic_v_sequence"
+;   sc - {score}, [?] via "generic_v_sequence"
+;   t - name of {tags} via "generic_v_sequence"
+;   s - name of {tags} via "generic_v_sequence", text in {content}
+;   g - name of {group} via "generic_v_sequence"
+;   b - name of {button} via "generic_v_sequence"
+;   cw - {cw}, [?] via "generic_v_sequence"
+;   cp - {cp}, [?] via "generic_v_sequence"
+;   i - {icon}, [?] via "generic_v_sequence"
+;   v1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v_seq_ita"
-    ("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
-    {content "%v1 ( mp/%s/axm_ita_tankman:%n1 mp/%s/axm_ita_tankCommander:%n2)"}
+	("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
+	{content "%v1 ( mp/%s/axm_ita_tankman:%n1 mp/%s/axm_ita_tankCommander:%n2)"}
 )
 
+; v2_seq_ita: {content "%v1 ( mp/%s/axm_ita_tankman:%n1 mp/%s/axm_ita_tankCommander:%n2)"}, calls "generic_v_sequence"
+;   c - {charge}, [?] via "generic_v_sequence"
+;   sc - {score}, [?] via "generic_v_sequence"
+;   t - name of {tags} via "generic_v_sequence"
+;   s - name of {tags} via "generic_v_sequence", text in {content}
+;   g - name of {group} via "generic_v_sequence"
+;   b - name of {button} via "generic_v_sequence"
+;   cw - {cw}, [?] via "generic_v_sequence"
+;   cp - {cp}, [?] via "generic_v_sequence"
+;   i - {icon}, [?] via "generic_v_sequence"
+;   v1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v2_seq_ita"
-    ("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
-    {content "%v1 ( mp/%s/axm_ita_tankman:%n1 mp/%s/axm_ita_tankCommander:%n2)"}
+	("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
+	{content "%v1 ( mp/%s/axm_ita_tankman:%n1 mp/%s/axm_ita_tankCommander:%n2)"}
 )
 
 
 
+; v2_seq: {content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2) %v2 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2)"}, calls "generic_v_sequence"
+;   c - {charge}, [?] via "generic_v_sequence"
+;   sc - {score}, [?] via "generic_v_sequence"
+;   t - name of {tags} via "generic_v_sequence"
+;   s - name of {tags} via "generic_v_sequence", text in {content}
+;   g - name of {group} via "generic_v_sequence"
+;   b - name of {button} via "generic_v_sequence"
+;   cw - {cw}, [?] via "generic_v_sequence"
+;   cp - {cp}, [?] via "generic_v_sequence"
+;   i - {icon}, [?] via "generic_v_sequence"
+;   v1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   v2 - text in {content}
+;   e.g. none (not called)
 (define "v2_seq"
-    ("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
-    {content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2) %v2 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2)"}
+	("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
+	{content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2) %v2 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2)"}
 )
 
+; v_seq_com: {content "%v1 ( mp/%s/tankman2:%n2 mp/%s/tankman:%n1)"}, calls "generic_v_sequence"
+;   c - {charge}, [?] via "generic_v_sequence"
+;   sc - {score}, [?] via "generic_v_sequence"
+;   t - name of {tags} via "generic_v_sequence"
+;   s - name of {tags} via "generic_v_sequence", text in {content}
+;   g - name of {group} via "generic_v_sequence"
+;   b - name of {button} via "generic_v_sequence"
+;   cw - {cw}, [?] via "generic_v_sequence"
+;   cp - {cp}, [?] via "generic_v_sequence"
+;   i - {icon}, [?] via "generic_v_sequence"
+;   v1 - text in {content}
+;   n2 - text in {content}
+;   n1 - text in {content}
+;   e.g. none (not called)
 (define "v_seq_com"
-    ("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
-    {content "%v1 ( mp/%s/tankman2:%n2 mp/%s/tankman:%n1)"}
+	("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
+	{content "%v1 ( mp/%s/tankman2:%n2 mp/%s/tankman:%n1)"}
 )
+; v2_seq_com: {content "%v1 ( mp/%s/tankman2:%n2 mp/%s/tankman:%n1) %v2 ( mp/%s/tankman2:%n2 mp/%s/tankman:%n1)"}, calls "generic_v_sequence"
+;   c - {charge}, [?] via "generic_v_sequence"
+;   sc - {score}, [?] via "generic_v_sequence"
+;   t - name of {tags} via "generic_v_sequence"
+;   s - name of {tags} via "generic_v_sequence", text in {content}
+;   g - name of {group} via "generic_v_sequence"
+;   b - name of {button} via "generic_v_sequence"
+;   cw - {cw}, [?] via "generic_v_sequence"
+;   cp - {cp}, [?] via "generic_v_sequence"
+;   i - {icon}, [?] via "generic_v_sequence"
+;   v1 - text in {content}
+;   n2 - text in {content}
+;   n1 - text in {content}
+;   v2 - text in {content}
+;   e.g. none (not called)
 (define "v2_seq_com"
-    ("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
-    {content "%v1 ( mp/%s/tankman2:%n2 mp/%s/tankman:%n1) %v2 ( mp/%s/tankman2:%n2 mp/%s/tankman:%n1)"}
+	("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
+	{content "%v1 ( mp/%s/tankman2:%n2 mp/%s/tankman:%n1) %v2 ( mp/%s/tankman2:%n2 mp/%s/tankman:%n1)"}
 )
 
+; vs_seq: {content "%v1 ( mp/%s/vehicle_supporter:%n )"}, calls "generic_v_sequence"
+;   c - {charge}, [?] via "generic_v_sequence"
+;   sc - {score}, [?] via "generic_v_sequence"
+;   t - name of {tags} via "generic_v_sequence"
+;   s - name of {tags} via "generic_v_sequence", text in {content}
+;   g - name of {group} via "generic_v_sequence"
+;   b - name of {button} via "generic_v_sequence"
+;   cw - {cw}, [?] via "generic_v_sequence"
+;   cp - {cp}, [?] via "generic_v_sequence"
+;   i - {icon}, [?] via "generic_v_sequence"
+;   v1 - text in {content}
+;   n - text in {content}
+;   e.g. ("vs_seq" c(10) v1(mg42_lafette_ss) i(21) t(all 42 43 44 45) s(ger_ss) sc(160) n(2) g(c2) b(v2))
 (define "vs_seq"
-    ("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
-    {content "%v1 ( mp/%s/vehicle_supporter:%n )"}
+	("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
+	{content "%v1 ( mp/%s/vehicle_supporter:%n )"}
 )
+; vs2_seq: {content "%v1 ( mp/%s/vehicle_supporter:%n ) %v2 ( mp/%s/vehicle_supporter:%n )"}, calls "generic_v_sequence"
+;   c - {charge}, [?] via "generic_v_sequence"
+;   sc - {score}, [?] via "generic_v_sequence"
+;   t - name of {tags} via "generic_v_sequence"
+;   s - name of {tags} via "generic_v_sequence", text in {content}
+;   g - name of {group} via "generic_v_sequence"
+;   b - name of {button} via "generic_v_sequence"
+;   cw - {cw}, [?] via "generic_v_sequence"
+;   cp - {cp}, [?] via "generic_v_sequence"
+;   i - {icon}, [?] via "generic_v_sequence"
+;   v1 - text in {content}
+;   n - text in {content}
+;   v2 - text in {content}
+;   e.g. ("vs2_seq" c(10) v1(zb53_stan) v2(zb53_stan) i(20) t(all 39 40 41 42 43 44 45) s(ger_ss) sc(195) n(2) g(c1) b(v2))
 (define "vs2_seq"
-    ("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
-    {content "%v1 ( mp/%s/vehicle_supporter:%n ) %v2 ( mp/%s/vehicle_supporter:%n )"}
+	("generic_v_sequence" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp) i(%i))
+	{content "%v1 ( mp/%s/vehicle_supporter:%n ) %v2 ( mp/%s/vehicle_supporter:%n )"}
 )
 
 ; 1 vehicle with tankmen
+; v: {content "* ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2)"}, calls "generic_v"
+;   c - {charge}, [?] via "generic_v"
+;   sc - {score}, [?] via "generic_v"
+;   t - name of {tags} via "generic_v"
+;   s - name of {tags} via "generic_v", text in {content}
+;   g - name of {group} via "generic_v"
+;   b - name of {button} via "generic_v"
+;   cw - {cw}, [?] via "generic_v"
+;   cp - {cp}, [?] via "generic_v"
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none in the mod (called from vanilla files)
 (define "v"
-    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
-    {content "* ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2)"}
+	("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+	{content "* ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2)"}
 )
+; v3_tank: {content "* ( mp/%s/%n3 mp/%s/%n1 mp/%s/%n2)"}, calls "generic_v"
+;   c - {charge}, [?] via "generic_v"
+;   sc - {score}, [?] via "generic_v"
+;   t - name of {tags} via "generic_v"
+;   s - name of {tags} via "generic_v", text in {content}
+;   g - name of {group} via "generic_v"
+;   b - name of {button} via "generic_v"
+;   cw - {cw}, [?] via "generic_v"
+;   cp - {cp}, [?] via "generic_v"
+;   n3 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v3_tank"
-    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
-    {content "* ( mp/%s/%n3 mp/%s/%n1 mp/%s/%n2)"}
+	("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+	{content "* ( mp/%s/%n3 mp/%s/%n1 mp/%s/%n2)"}
 )
+; v_com: {content "* ( mp/%s/tankman2:%n2 mp/%s/tankman:%n1)"}, calls "generic_v"
+;   c - {charge}, [?] via "generic_v"
+;   sc - {score}, [?] via "generic_v"
+;   t - name of {tags} via "generic_v"
+;   s - name of {tags} via "generic_v", text in {content}
+;   g - name of {group} via "generic_v"
+;   b - name of {button} via "generic_v"
+;   cw - {cw}, [?] via "generic_v"
+;   cp - {cp}, [?] via "generic_v"
+;   n2 - text in {content}
+;   n1 - text in {content}
+;   e.g. none (not called)
 (define "v_com"
-    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
-    {content "* ( mp/%s/tankman2:%n2 mp/%s/tankman:%n1)"}
+	("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+	{content "* ( mp/%s/tankman2:%n2 mp/%s/tankman:%n1)"}
 )
+; v_vet: {content "* ( mp/%s/vet_tankman:%n1 mp/%s/vet_tankman2:%n2)"}, calls "generic_v"
+;   c - {charge}, [?] via "generic_v"
+;   sc - {score}, [?] via "generic_v"
+;   t - name of {tags} via "generic_v"
+;   s - name of {tags} via "generic_v", text in {content}
+;   g - name of {group} via "generic_v"
+;   b - name of {button} via "generic_v"
+;   cw - {cw}, [?] via "generic_v"
+;   cp - {cp}, [?] via "generic_v"
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v_vet"
-    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
-    {content "* ( mp/%s/vet_tankman:%n1 mp/%s/vet_tankman2:%n2)"}
+	("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+	{content "* ( mp/%s/vet_tankman:%n1 mp/%s/vet_tankman2:%n2)"}
 )
+; v_vet_com: {content "* ( mp/%s/vet_tankman2:%n2 mp/%s/vet_tankman:%n1)"}, calls "generic_v"
+;   c - {charge}, [?] via "generic_v"
+;   sc - {score}, [?] via "generic_v"
+;   t - name of {tags} via "generic_v"
+;   s - name of {tags} via "generic_v", text in {content}
+;   g - name of {group} via "generic_v"
+;   b - name of {button} via "generic_v"
+;   cw - {cw}, [?] via "generic_v"
+;   cp - {cp}, [?] via "generic_v"
+;   n2 - text in {content}
+;   n1 - text in {content}
+;   e.g. none (not called)
 (define "v_vet_com"
-    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
-    {content "* ( mp/%s/vet_tankman2:%n2 mp/%s/vet_tankman:%n1)"}
+	("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+	{content "* ( mp/%s/vet_tankman2:%n2 mp/%s/vet_tankman:%n1)"}
 )
+; v_elite: {content "* ( mp/%s/elite_tankman:%n1 mp/%s/elite_tankman2:%n2)"}, calls "generic_v"
+;   c - {charge}, [?] via "generic_v"
+;   sc - {score}, [?] via "generic_v"
+;   t - name of {tags} via "generic_v"
+;   s - name of {tags} via "generic_v", text in {content}
+;   g - name of {group} via "generic_v"
+;   b - name of {button} via "generic_v"
+;   cw - {cw}, [?] via "generic_v"
+;   cp - {cp}, [?] via "generic_v"
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v_elite"
-    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
-    {content "* ( mp/%s/elite_tankman:%n1 mp/%s/elite_tankman2:%n2)"}
+	("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+	{content "* ( mp/%s/elite_tankman:%n1 mp/%s/elite_tankman2:%n2)"}
 )
 ; 1 vehicle with tankmen, soviet 1941-1942 define for tank crews
+; v_rus41: {content "* ( mp/%s/tankman_41:%n1 mp/%s/tankman2_41:%n2)"}, calls "generic_v"
+;   c - {charge}, [?] via "generic_v"
+;   sc - {score}, [?] via "generic_v"
+;   t - name of {tags} via "generic_v"
+;   s - name of {tags} via "generic_v", text in {content}
+;   g - name of {group} via "generic_v"
+;   b - name of {button} via "generic_v"
+;   cw - {cw}, [?] via "generic_v"
+;   cp - {cp}, [?] via "generic_v"
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v_rus41"
-    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
-    {content "* ( mp/%s/tankman_41:%n1 mp/%s/tankman2_41:%n2)"}
+	("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+	{content "* ( mp/%s/tankman_41:%n1 mp/%s/tankman2_41:%n2)"}
 )
 
 ; 1 vehicle with 2 infantry types
+; v_1: {content "%c1 ( mp/%s/%n1 mp/%s/%n2 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v_1"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n1 mp/%s/%n2 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n1 mp/%s/%n2 )"}
 )
 
 ;----------------------- nation doctrine defines ---------------------------
 ;------------- RUS --------------
+; v_rus: {content "%v1 ( mp/rus/tankman:%n1 mp/rus/tankman2:%n2 )"} {info}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}, {info}, [?]
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v_rus"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/rus/tankman:%n1 mp/rus/tankman2:%n2 )"}
-    {info %v1}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/rus/tankman:%n1 mp/rus/tankman2:%n2 )"}
+	{info %v1}
 )
+; v_rus_guard: {content "%v1 ( mp/rus/vet_tankman:%n1 mp/rus/vet_tankman2:%n2 )"} {info}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}, {info}, [?]
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v_rus_guard"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/rus/vet_tankman:%n1 mp/rus/vet_tankman2:%n2 )"}
-    {info %v1}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/rus/vet_tankman:%n1 mp/rus/vet_tankman2:%n2 )"}
+	{info %v1}
 )
+; vs_rus: {content "%v1 ( mp/rus/vehicle_supporter:%n )"} {info}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}, {info}, [?]
+;   n - text in {content}
+;   e.g. none (not called)
 (define "vs_rus"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/rus/vehicle_supporter:%n )"}
-    {info %v1}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/rus/vehicle_supporter:%n )"}
+	{info %v1}
 )
+; vs_rus_noinfo: {content "%v1 ( mp/rus/vehicle_supporter:%n )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}
+;   n - text in {content}
+;   e.g. none (not called)
 (define "vs_rus_noinfo"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/rus/vehicle_supporter:%n )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/rus/vehicle_supporter:%n )"}
 )
+; vs_rus_guard: {content "%v1 ( mp/rus/guard_vehicle_supporter:%n )"} {info}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}, {info}, [?]
+;   n - text in {content}
+;   e.g. none (not called)
 (define "vs_rus_guard"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/rus/guard_vehicle_supporter:%n )"}
-    {info %v1}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/rus/guard_vehicle_supporter:%n )"}
+	{info %v1}
 )
 
 ;------------- RUS Guard --------------
+; v_rus_g: {content "%v1 ( mp/rus_guard/tankman:%n1 mp/rus_guard/tankman2:%n2 )"} {info}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}, {info}, [?]
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. ("v_rus_g" c(10) t(43)  s(rus_guard) n1(1) n2(1) g(d9) sc(260) b(v3) cw(0) cp(5))
 (define "v_rus_g"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/rus_guard/tankman:%n1 mp/rus_guard/tankman2:%n2 )"}
-    {info %v1}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/rus_guard/tankman:%n1 mp/rus_guard/tankman2:%n2 )"}
+	{info %v1}
 )
+; vs_rus_g: {content "%v1 ( mp/rus_guard/vehicle_supporter:%n )"} {info}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}, {info}, [?]
+;   n - text in {content}
+;   e.g. ("vs_rus_g" c(0) t(43)   s(rus_guard) n(2) g(b1) sc(90) b(v1) cw(0) cp(0))
 (define "vs_rus_g"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/rus_guard/vehicle_supporter:%n )"}
-    {info %v1}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/rus_guard/vehicle_supporter:%n )"}
+	{info %v1}
 )
+; vs_rus_g_noinfo: {content "%v1 ( mp/rus_guard/vehicle_supporter:%n )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}
+;   n - text in {content}
+;   e.g. none (not called)
 (define "vs_rus_g_noinfo"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/rus_guard/vehicle_supporter:%n )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/rus_guard/vehicle_supporter:%n )"}
 )
 
 ;------------- USA --------------
+; v_usa: {content "%v1 ( mp/usa/tankman:%n1 mp/usa/tankman2:%n2 )"} {info}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}, {info}, [?]
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v_usa"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/usa/tankman:%n1 mp/usa/tankman2:%n2 )"}
-    {info %v1}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/usa/tankman:%n1 mp/usa/tankman2:%n2 )"}
+	{info %v1}
 )
+; v_usa_5x: {content "%v1 ( mp/usa/tankman:%n1 mp/usa/tankman2:%n2 ) %v2 ( mp/usa/tankman:%n1 mp/usa/tankman2:%n2 ) %v3 ( mp/usa/tankman:%n1 mp/usa/tankman2:%n2 ) %v4 ( mp/usa/tankman:%n1 mp/usa/tankman2:%n2 ) %v5 ( mp/usa/tankman:%n1 mp/usa/tankman2:%n2 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   v2 - text in {content}
+;   v3 - text in {content}
+;   v4 - text in {content}
+;   v5 - text in {content}
+;   e.g. none (not called)
 (define "v_usa_5x"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/usa/tankman:%n1 mp/usa/tankman2:%n2 ) %v2 ( mp/usa/tankman:%n1 mp/usa/tankman2:%n2 ) %v3 ( mp/usa/tankman:%n1 mp/usa/tankman2:%n2 ) %v4 ( mp/usa/tankman:%n1 mp/usa/tankman2:%n2 ) %v5 ( mp/usa/tankman:%n1 mp/usa/tankman2:%n2 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/usa/tankman:%n1 mp/usa/tankman2:%n2 ) %v2 ( mp/usa/tankman:%n1 mp/usa/tankman2:%n2 ) %v3 ( mp/usa/tankman:%n1 mp/usa/tankman2:%n2 ) %v4 ( mp/usa/tankman:%n1 mp/usa/tankman2:%n2 ) %v5 ( mp/usa/tankman:%n1 mp/usa/tankman2:%n2 )"}
 )
+; v_usa_vet: {content "%v1 ( mp/usa/vet_tankman:%n1 mp/usa/vet_tankman2:%n2 )"} {info}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}, {info}, [?]
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v_usa_vet"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/usa/vet_tankman:%n1 mp/usa/vet_tankman2:%n2 )"}
-    {info %v1}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/usa/vet_tankman:%n1 mp/usa/vet_tankman2:%n2 )"}
+	{info %v1}
 )
+; v_usa_elite: {content "%v1 ( mp/usa/elite_tankman:%n1 mp/usa/elite_tankman2:%n2 )"} {info}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}, {info}, [?]
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v_usa_elite"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/usa/elite_tankman:%n1 mp/usa/elite_tankman2:%n2 )"}
-    {info %v1}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/usa/elite_tankman:%n1 mp/usa/elite_tankman2:%n2 )"}
+	{info %v1}
 )
+; vs_usa: {content "%v1 ( mp/usa/vehicle_supporter:%n )"} {info}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}, {info}, [?]
+;   n - text in {content}
+;   e.g. none (not called)
 (define "vs_usa"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/usa/vehicle_supporter:%n )"}
-    {info %v1}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/usa/vehicle_supporter:%n )"}
+	{info %v1}
 )
+; vs_usa_noinfo: {content "%v1 ( mp/usa/vehicle_supporter:%n )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}
+;   n - text in {content}
+;   e.g. none (not called)
 (define "vs_usa_noinfo"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/usa/vehicle_supporter:%n )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/usa/vehicle_supporter:%n )"}
 )
+; vs_usa_para: {content "%v1 ( mp/usa/elite_101st_para:%n )"} {info}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}, {info}, [?]
+;   n - text in {content}
+;   e.g. none (not called)
 (define "vs_usa_para"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/usa/elite_101st_para:%n )"}
-    {info %v1}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/usa/elite_101st_para:%n )"}
+	{info %v1}
 )
+; vs_usa_para_noinfo: {content "%v1 ( mp/usa/elite_101st_para:%n )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}
+;   n - text in {content}
+;   e.g. none (not called)
 (define "vs_usa_para_noinfo"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/usa/elite_101st_para:%n )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/usa/elite_101st_para:%n )"}
 )
+; vs_usa_tow: {content "%v1 ( mp/usa/vehicle_supporter:%n ) %v2 ( mp/usa/vehicle_supporter:2 )"} {info}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}
+;   n - text in {content}
+;   v2 - text in {content}, {info}, [?]
+;   e.g. none (not called)
 (define "vs_usa_tow"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/usa/vehicle_supporter:%n ) %v2 ( mp/usa/vehicle_supporter:2 )"}
-    {info %v2}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/usa/vehicle_supporter:%n ) %v2 ( mp/usa/vehicle_supporter:2 )"}
+	{info %v2}
 )
 
 
 ;------------- Axis Minors --------------
 
+; v_hun: {content "* ( mp/%s/axm_hun_tankman:%n1 mp/%s/axm_hun_tankcommander:%n2)"}, calls "generic_v"
+;   c - {charge}, [?] via "generic_v"
+;   sc - {score}, [?] via "generic_v"
+;   t - name of {tags} via "generic_v"
+;   s - name of {tags} via "generic_v", text in {content}
+;   g - name of {group} via "generic_v"
+;   b - name of {button} via "generic_v"
+;   cw - {cw}, [?] via "generic_v"
+;   cp - {cp}, [?] via "generic_v"
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v_hun"
-    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
-    {content "* ( mp/%s/axm_hun_tankman:%n1 mp/%s/axm_hun_tankcommander:%n2)"}
+	("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+	{content "* ( mp/%s/axm_hun_tankman:%n1 mp/%s/axm_hun_tankcommander:%n2)"}
 )
 
+; vet_hun: {content "* ( mp/%s/axm_hun_vet_tankman:%n1 mp/%s/axm_hun_vet_tankcommander:%n2)"}, calls "generic_v"
+;   c - {charge}, [?] via "generic_v"
+;   sc - {score}, [?] via "generic_v"
+;   t - name of {tags} via "generic_v"
+;   s - name of {tags} via "generic_v", text in {content}
+;   g - name of {group} via "generic_v"
+;   b - name of {button} via "generic_v"
+;   cw - {cw}, [?] via "generic_v"
+;   cp - {cp}, [?] via "generic_v"
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "vet_hun"
-    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
-    {content "* ( mp/%s/axm_hun_vet_tankman:%n1 mp/%s/axm_hun_vet_tankcommander:%n2)"}
+	("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+	{content "* ( mp/%s/axm_hun_vet_tankman:%n1 mp/%s/axm_hun_vet_tankcommander:%n2)"}
 )
 
+; vs_hun: {content "* ( mp/%s/axm_hun_vehicle_supporter:%n )"}, calls "generic_v"
+;   c - {charge}, [?] via "generic_v"
+;   sc - {score}, [?] via "generic_v"
+;   t - name of {tags} via "generic_v"
+;   s - name of {tags} via "generic_v", text in {content}
+;   g - name of {group} via "generic_v"
+;   b - name of {button} via "generic_v"
+;   cw - {cw}, [?] via "generic_v"
+;   cp - {cp}, [?] via "generic_v"
+;   n - text in {content}
+;   e.g. none (not called)
 (define "vs_hun"
-    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
-    {content "* ( mp/%s/axm_hun_vehicle_supporter:%n )"}
+	("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+	{content "* ( mp/%s/axm_hun_vehicle_supporter:%n )"}
 )
 
 
+; v_fin: {content "* ( mp/%s/axm_fin_tankman:%n1 mp/%s/axm_fin_tank_commander:%n2)"}, calls "generic_v"
+;   c - {charge}, [?] via "generic_v"
+;   sc - {score}, [?] via "generic_v"
+;   t - name of {tags} via "generic_v"
+;   s - name of {tags} via "generic_v", text in {content}
+;   g - name of {group} via "generic_v"
+;   b - name of {button} via "generic_v"
+;   cw - {cw}, [?] via "generic_v"
+;   cp - {cp}, [?] via "generic_v"
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v_fin"
-    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
-    {content "* ( mp/%s/axm_fin_tankman:%n1 mp/%s/axm_fin_tank_commander:%n2)"}
+	("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+	{content "* ( mp/%s/axm_fin_tankman:%n1 mp/%s/axm_fin_tank_commander:%n2)"}
 )
 
+; vs_fin: {content "* ( mp/%s/axm_fin_vehicle_supporter:%n )"}, calls "generic_v"
+;   c - {charge}, [?] via "generic_v"
+;   sc - {score}, [?] via "generic_v"
+;   t - name of {tags} via "generic_v"
+;   s - name of {tags} via "generic_v", text in {content}
+;   g - name of {group} via "generic_v"
+;   b - name of {button} via "generic_v"
+;   cw - {cw}, [?] via "generic_v"
+;   cp - {cp}, [?] via "generic_v"
+;   n - text in {content}
+;   e.g. none (not called)
 (define "vs_fin"
-    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
-    {content "* ( mp/%s/axm_fin_vehicle_supporter:%n )"}
+	("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+	{content "* ( mp/%s/axm_fin_vehicle_supporter:%n )"}
 )
 
 
+; v_rom: {content "* ( mp/%s/axm_rom_tankman:%n1 mp/%s/axm_rom_tankcommander:%n2)"}, calls "generic_v"
+;   c - {charge}, [?] via "generic_v"
+;   sc - {score}, [?] via "generic_v"
+;   t - name of {tags} via "generic_v"
+;   s - name of {tags} via "generic_v", text in {content}
+;   g - name of {group} via "generic_v"
+;   b - name of {button} via "generic_v"
+;   cw - {cw}, [?] via "generic_v"
+;   cp - {cp}, [?] via "generic_v"
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v_rom"
-    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
-    {content "* ( mp/%s/axm_rom_tankman:%n1 mp/%s/axm_rom_tankcommander:%n2)"}
+	("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+	{content "* ( mp/%s/axm_rom_tankman:%n1 mp/%s/axm_rom_tankcommander:%n2)"}
 )
 
+; vs_rom: {content "* ( mp/%s/axm_rom_vehicle_supporter:%n )"}, calls "generic_v"
+;   c - {charge}, [?] via "generic_v"
+;   sc - {score}, [?] via "generic_v"
+;   t - name of {tags} via "generic_v"
+;   s - name of {tags} via "generic_v", text in {content}
+;   g - name of {group} via "generic_v"
+;   b - name of {button} via "generic_v"
+;   cw - {cw}, [?] via "generic_v"
+;   cp - {cp}, [?] via "generic_v"
+;   n - text in {content}
+;   e.g. none (not called)
 (define "vs_rom"
-    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
-    {content "* ( mp/%s/axm_rom_vehicle_supporter:%n )"}
+	("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+	{content "* ( mp/%s/axm_rom_vehicle_supporter:%n )"}
 )
 
 
 
 
+; v_ita: {content "* ( mp/%s/axm_ita_tankman:%n1 mp/%s/axm_ita_tankcommander:%n2)"}, calls "generic_v"
+;   c - {charge}, [?] via "generic_v"
+;   sc - {score}, [?] via "generic_v"
+;   t - name of {tags} via "generic_v"
+;   s - name of {tags} via "generic_v", text in {content}
+;   g - name of {group} via "generic_v"
+;   b - name of {button} via "generic_v"
+;   cw - {cw}, [?] via "generic_v"
+;   cp - {cp}, [?] via "generic_v"
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v_ita"
-    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
-    {content "* ( mp/%s/axm_ita_tankman:%n1 mp/%s/axm_ita_tankcommander:%n2)"}
+	("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+	{content "* ( mp/%s/axm_ita_tankman:%n1 mp/%s/axm_ita_tankcommander:%n2)"}
 )
 
+; vs_ita: {content "* ( mp/%s/axm_ita_vehicle_supporter:%n )"}, calls "generic_v"
+;   c - {charge}, [?] via "generic_v"
+;   sc - {score}, [?] via "generic_v"
+;   t - name of {tags} via "generic_v"
+;   s - name of {tags} via "generic_v", text in {content}
+;   g - name of {group} via "generic_v"
+;   b - name of {button} via "generic_v"
+;   cw - {cw}, [?] via "generic_v"
+;   cp - {cp}, [?] via "generic_v"
+;   n - text in {content}
+;   e.g. none (not called)
 (define "vs_ita"
-    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
-    {content "* ( mp/%s/axm_ita_vehicle_supporter:%n )"}
+	("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+	{content "* ( mp/%s/axm_ita_vehicle_supporter:%n )"}
 )
 
 
 
+; v_bul: {content "* ( mp/%s/axm_bul_tankman:%n1 mp/%s/axm_bul_tankcommander:%n2)"}, calls "generic_v"
+;   c - {charge}, [?] via "generic_v"
+;   sc - {score}, [?] via "generic_v"
+;   t - name of {tags} via "generic_v"
+;   s - name of {tags} via "generic_v", text in {content}
+;   g - name of {group} via "generic_v"
+;   b - name of {button} via "generic_v"
+;   cw - {cw}, [?] via "generic_v"
+;   cp - {cp}, [?] via "generic_v"
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v_bul"
-    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
-    {content "* ( mp/%s/axm_bul_tankman:%n1 mp/%s/axm_bul_tankcommander:%n2)"}
+	("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+	{content "* ( mp/%s/axm_bul_tankman:%n1 mp/%s/axm_bul_tankcommander:%n2)"}
 )
 
+; vs_bul: {content "* ( mp/%s/axm_bul_vehicle_supporter:%n )"}, calls "generic_v"
+;   c - {charge}, [?] via "generic_v"
+;   sc - {score}, [?] via "generic_v"
+;   t - name of {tags} via "generic_v"
+;   s - name of {tags} via "generic_v", text in {content}
+;   g - name of {group} via "generic_v"
+;   b - name of {button} via "generic_v"
+;   cw - {cw}, [?] via "generic_v"
+;   cp - {cp}, [?] via "generic_v"
+;   n - text in {content}
+;   e.g. none (not called)
 (define "vs_bul"
-    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
-    {content "* ( mp/%s/axm_bul_vehicle_supporter:%n )"}
+	("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+	{content "* ( mp/%s/axm_bul_vehicle_supporter:%n )"}
 )
 
 
 ;------------- WEHRMACHT --------------
 ; 1 vehicle with tankmen for wehrmacht, doctrines
+; v_ger: {content "%v1 ( mp/ger/tankman:%n1 mp/ger/tankman2:%n2 )"} {info}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}, {info}, [?]
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v_ger"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/ger/tankman:%n1 mp/ger/tankman2:%n2 )"}
-    {info %v1}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/ger/tankman:%n1 mp/ger/tankman2:%n2 )"}
+	{info %v1}
 )
+; v_ger_2x: {content "%v1 ( mp/ger/tankman:%n1 mp/ger/tankman2:%n2 ) %v1 ( mp/ger/tankman:%n1 mp/ger/tankman2:%n2 )"} {info}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}, {info}, [?]
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v_ger_2x"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/ger/tankman:%n1 mp/ger/tankman2:%n2 ) %v1 ( mp/ger/tankman:%n1 mp/ger/tankman2:%n2 )"}
-    {info %v1}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/ger/tankman:%n1 mp/ger/tankman2:%n2 ) %v1 ( mp/ger/tankman:%n1 mp/ger/tankman2:%n2 )"}
+	{info %v1}
 )
 ; 1 vehicle with veteran tankmen for wehrmacht, doctrines
+; v_ger_vet: {content "%v1 ( mp/ger/vet_tankman:%n1 mp/ger/vet_tankman2:%n2 )"} {info}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}, {info}, [?]
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v_ger_vet"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/ger/vet_tankman:%n1 mp/ger/vet_tankman2:%n2 )"}
-    {info %v1}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/ger/vet_tankman:%n1 mp/ger/vet_tankman2:%n2 )"}
+	{info %v1}
 )
 ; 1 vehicle with supporters for wehrmacht, doctrines
+; vs_ger: {content "%v1 ( mp/ger/vehicle_supporter:%n )"} {info}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}, {info}, [?]
+;   n - text in {content}
+;   e.g. none (not called)
 (define "vs_ger"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/ger/vehicle_supporter:%n )"}
-    {info %v1}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/ger/vehicle_supporter:%n )"}
+	{info %v1}
 )
+; vs_ger_luft: {content "%v1 ( mp/ger/fallschirm_rifle:%n )"} {info}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}, {info}, [?]
+;   n - text in {content}
+;   e.g. none (not called)
 (define "vs_ger_luft"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/ger/fallschirm_rifle:%n )"}
-    {info %v1}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/ger/fallschirm_rifle:%n )"}
+	{info %v1}
 )
+; vs_ger_luft_noinfo: {content "%v1 ( mp/ger/fallschirm_rifle:%n )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}
+;   n - text in {content}
+;   e.g. none (not called)
 (define "vs_ger_luft_noinfo"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/ger/fallschirm_rifle:%n )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/ger/fallschirm_rifle:%n )"}
 )
+; vs_ger_noinfo: {content "%v1 ( mp/ger/vehicle_supporter:%n )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}
+;   n - text in {content}
+;   e.g. none (not called)
 (define "vs_ger_noinfo"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/ger/vehicle_supporter:%n )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/ger/vehicle_supporter:%n )"}
 )
 ; gun with tow vehicle for wehrmacht, doctrines
+; vs_ger_tow: {content "%v1 ( mp/ger/vehicle_supporter:%n ) %v2 ( mp/ger/vehicle_supporter:2 )"} {info}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}
+;   n - text in {content}
+;   v2 - text in {content}, {info}, [?]
+;   e.g. none (not called)
 (define "vs_ger_tow"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/ger/vehicle_supporter:%n ) %v2 ( mp/ger/vehicle_supporter:2 )"}
-    {info %v2}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/ger/vehicle_supporter:%n ) %v2 ( mp/ger/vehicle_supporter:2 )"}
+	{info %v2}
 )
+; vs_ger_tow_noinfo: {content "%v1 ( mp/ger/vehicle_supporter:%n ) %v2 ( mp/ger/vehicle_supporter:2 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h"
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}
+;   n - text in {content}
+;   v2 - text in {content}
+;   e.g. none (not called)
 (define "vs_ger_tow_noinfo"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/ger/vehicle_supporter:%n ) %v2 ( mp/ger/vehicle_supporter:2 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/ger/vehicle_supporter:%n ) %v2 ( mp/ger/vehicle_supporter:2 )"}
 )
 
 ;------------------------------------------------------------------------
 ; 1 vehicle with tankmen, for SS nation due to copying of vehicles, works for other nations too
+; v_ss: {content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 )"} {info}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}, {info}, [?]
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v_ss"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 )"}
-    {info %v1}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 )"}
+	{info %v1}
 )
+; v_ss_helmetbois: {content "%v1 ( mp/%s/vehicle_supporter:%n"} {info}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}, {info}, [?]
+;   n - text in {content}
+;   e.g. none (not called)
 (define "v_ss_helmetbois"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/%s/vehicle_supporter:%n"}
-    {info %v1}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/%s/vehicle_supporter:%n"}
+	{info %v1}
 )
+; v_ss_com: {content "%v1 ( mp/%s/tankman2:%n2 mp/%s/tankman:%n1 )"} {info}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}, {info}, [?]
+;   n2 - text in {content}
+;   n1 - text in {content}
+;   e.g. none (not called)
 (define "v_ss_com"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/%s/tankman2:%n2 mp/%s/tankman:%n1 )"}
-    {info %v1}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/%s/tankman2:%n2 mp/%s/tankman:%n1 )"}
+	{info %v1}
 )
 ; 1 vehicle with supporters, russian 1941-1942 define for gun crews
+; vs_rus41: {content "* ( mp/%s/vehicle_supporter_41:%n )"}, calls "generic_v"
+;   c - {charge}, [?] via "generic_v"
+;   sc - {score}, [?] via "generic_v"
+;   t - name of {tags} via "generic_v"
+;   s - name of {tags} via "generic_v", text in {content}
+;   g - name of {group} via "generic_v"
+;   b - name of {button} via "generic_v"
+;   cw - {cw}, [?] via "generic_v"
+;   cp - {cp}, [?] via "generic_v"
+;   n - text in {content}
+;   e.g. none (not called)
 (define "vs_rus41"
-    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
-    {content "* ( mp/%s/vehicle_supporter_41:%n )"}
+	("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+	{content "* ( mp/%s/vehicle_supporter_41:%n )"}
 )
 ; 1 vehicle with supporters, british 1940-1941 define for gun crews
+; vs_eng40: {content "* ( mp/%s/vehicle_supporter_40:%n )"}, calls "generic_v"
+;   c - {charge}, [?] via "generic_v"
+;   sc - {score}, [?] via "generic_v"
+;   t - name of {tags} via "generic_v"
+;   s - name of {tags} via "generic_v", text in {content}
+;   g - name of {group} via "generic_v"
+;   b - name of {button} via "generic_v"
+;   cw - {cw}, [?] via "generic_v"
+;   cp - {cp}, [?] via "generic_v"
+;   n - text in {content}
+;   e.g. none (not called)
 (define "vs_eng40"
-    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
-    {content "* ( mp/%s/vehicle_supporter_40:%n )"}
+	("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+	{content "* ( mp/%s/vehicle_supporter_40:%n )"}
 )
 
 ; 1 vehicle with supporters
+; vs: {content "* ( mp/%s/vehicle_supporter:%n )"}, calls "generic_v"
+;   c - {charge}, [?] via "generic_v"
+;   sc - {score}, [?] via "generic_v"
+;   t - name of {tags} via "generic_v"
+;   s - name of {tags} via "generic_v", text in {content}
+;   g - name of {group} via "generic_v"
+;   b - name of {button} via "generic_v"
+;   cw - {cw}, [?] via "generic_v"
+;   cp - {cp}, [?] via "generic_v"
+;   n - text in {content}
+;   e.g. none in the mod (called from vanilla files)
 (define "vs"
-    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
-    {content "* ( mp/%s/vehicle_supporter:%n )"}
+	("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+	{content "* ( mp/%s/vehicle_supporter:%n )"}
 )
 
 ; 1 vehicle with supporters
+; vs_ger: {content "* ( mp/%s/ger_vehicle_supporter:%n )"}, calls "generic_v"
+;   c - {charge}, [?] via "generic_v"
+;   sc - {score}, [?] via "generic_v"
+;   t - name of {tags} via "generic_v"
+;   s - name of {tags} via "generic_v", text in {content}
+;   g - name of {group} via "generic_v"
+;   b - name of {button} via "generic_v"
+;   cw - {cw}, [?] via "generic_v"
+;   cp - {cp}, [?] via "generic_v"
+;   n - text in {content}
+;   e.g. none (not called)
 (define "vs_ger"
-    ("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
-    {content "* ( mp/%s/ger_vehicle_supporter:%n )"}
+	("generic_v" c(%c) sc(%sc) t(%t %s) g(%g) b(%b) cw(%cw) cp(%cp))
+	{content "* ( mp/%s/ger_vehicle_supporter:%n )"}
 )
 
 ; 1 vehicle with supporters, for SS nation due to copying of vehicles
+; vs_ss: {content "%v1 ( mp/%s/vehicle_supporter:%n )"} {info}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}, {info}, [?]
+;   n - text in {content}
+;   e.g. none (not called)
 (define "vs_ss"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/%s/vehicle_supporter:%n )"}
-    {info %v1}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/%s/vehicle_supporter:%n )"}
+	{info %v1}
 
 )
 
 
 ; 1 vehicle with supporters, for SS nation due to copying of vehicles
+; vs_ger_m: {content "%v1 ( mp/%s/vehicle_supporter:%n )"} {info}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}, {info}, [?]
+;   n - text in {content}
+;   e.g. none (not called)
 (define "vs_ger_m"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/%s/vehicle_supporter:%n )"}
-    {info %v1}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/%s/vehicle_supporter:%n )"}
+	{info %v1}
 )
 
 
-(define "light_mortar"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content " mp/%s/light_mortar:1 mp/%s/light_mortar2:2 "}
+; light_mortar_generic_h: {content " mp/%s/light_mortar:1 mp/%s/light_mortar2:2 "}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   e.g. none (not called)
+(define "light_mortar_generic_h"
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content " mp/%s/light_mortar:1 mp/%s/light_mortar2:2 "}
 )
 
 
+; light_mortar_ger: {content " mp/%s/ger_light_mortar:1 mp/%s/ger_light_mortar_assist:2 "}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   e.g. none (not called)
 (define "light_mortar_ger"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content " mp/%s/ger_light_mortar:1 mp/%s/ger_light_mortar_assist:2 "}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content " mp/%s/ger_light_mortar:1 mp/%s/ger_light_mortar_assist:2 "}
 )
 
+; light_mortar_ost: {content " mp/%s/ost_light_mortar:1 mp/%s/ost_light_mortar_assist:2 "}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   e.g. none (not called)
 (define "light_mortar_ost"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content " mp/%s/ost_light_mortar:1 mp/%s/ost_light_mortar_assist:2 "}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content " mp/%s/ost_light_mortar:1 mp/%s/ost_light_mortar_assist:2 "}
 )
+; light_mortar_eng: {content " mp/%s/eng_light_mortar:1 mp/%s/eng_light_mortar_assist:1 "}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   e.g. none (not called)
 (define "light_mortar_eng"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content " mp/%s/eng_light_mortar:1 mp/%s/eng_light_mortar_assist:1 "}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content " mp/%s/eng_light_mortar:1 mp/%s/eng_light_mortar_assist:1 "}
 )
 
+; light_mortar_ss: {content " mp/%s/ss_light_mortar:1 mp/%s/ss_light_mortar_assist:2 "}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   e.g. none (not called)
 (define "light_mortar_ss"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content " mp/%s/ss_light_mortar:1 mp/%s/ss_light_mortar_assist:2 "}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content " mp/%s/ss_light_mortar:1 mp/%s/ss_light_mortar_assist:2 "}
 )
 
 
 ; 1 vehicle with supporters, for SS nation due to copying of vehicles, without info cus the game is gay
-(define "vs_ss_noinfo"				;starting entity name with number makes the game crash, ffs
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/%s/vehicle_supporter:%n )"}
+; vs_ss_noinfo: starting entity name with number makes the game crash, ffs (makes {content "%v1 ( mp/%s/vehicle_supporter:%n )"}, calls "generic_h")
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}
+;   n - text in {content}
+;   e.g. none (not called)
+(define "vs_ss_noinfo"
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/%s/vehicle_supporter:%n )"}
 )
 
 ;같컂eneric_h같�
 
 ; 1 infantry types
+; i1: {content "mp/%s/%n1"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   n1 - text in {content}
+;   e.g. none in the mod (called from vanilla files)
 (define "i1"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "mp/%s/%n1"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "mp/%s/%n1"}
 )
 
 ; 2 infantry types
+; i2: {content "mp/%s/%n1 mp/%s/%n2"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. ("i2" c(600)     t(all 44 45 hero officer super_officer) s(ger2) n1(ost_officer2:4) g(h3) b(hero))
 (define "i2"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "mp/%s/%n1 mp/%s/%n2"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "mp/%s/%n1 mp/%s/%n2"}
 )
 
 ; 3 infantry types
+; i3: {content "mp/%s/%n1 mp/%s/%n2 mp/%s/%n3"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   n3 - text in {content}
+;   e.g. none in the mod (called from vanilla files)
 (define "i3"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "mp/%s/%n1 mp/%s/%n2 mp/%s/%n3"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "mp/%s/%n1 mp/%s/%n2 mp/%s/%n3"}
 )
 
 ; 4 infantry types
+; i4: {content "mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   n3 - text in {content}
+;   n4 - text in {content}
+;   e.g. none (not called)
 (define "i4"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4"}
 )
 
 ; 5 infantry types
+; i5: {content "mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   n3 - text in {content}
+;   n4 - text in {content}
+;   n5 - text in {content}
+;   e.g. ("i5" c(120)  t(all 44 45 hero) s(jap) n1(otsu_sl:1) n2(otsu_sa:1) n2(otsu_mg:1) n3(otsu_mg_asst:1) n4(otsu_mg_ammo:3) n5(otsu_rifle:3) g(h111) b(hero))
 (define "i5"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5"}
 )
 
 ; 6 infantry types
+; i6: {content "mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   n3 - text in {content}
+;   n4 - text in {content}
+;   n5 - text in {content}
+;   n6 - text in {content}
+;   e.g. none (not called)
 (define "i6"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6"}
-)	
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6"}
+)
 ; 6 infantry types
+; i8: {content "mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6 mp/%s/%n7 mp/%s/%n8"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   n3 - text in {content}
+;   n4 - text in {content}
+;   n5 - text in {content}
+;   n6 - text in {content}
+;   n7 - text in {content}
+;   n8 - text in {content}
+;   e.g. none (not called)
 (define "i8"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6 mp/%s/%n7 mp/%s/%n8"}
-)			  
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6 mp/%s/%n7 mp/%s/%n8"}
+)
 ; 1 vehicle - 0 infantry types
+; v0: {content "%c1 ( mp/%s/%n1 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   e.g. none in the mod (called from vanilla files)
 (define "v0"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n1 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n1 )"}
 )
 
 ; 5 vehicles - 1 infantry types
+; v51: {content "%c1 ( mp/%s/%n1 ) %c1 ( mp/%s/%n1 ) %c2 ( mp/%s/%n1 ) %c2 ( mp/%s/%n1 ) %c3 ( mp/%s/%n1 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   e.g. none (not called)
 (define "v51"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n1 ) %c1 ( mp/%s/%n1 ) %c2 ( mp/%s/%n1 ) %c2 ( mp/%s/%n1 ) %c3 ( mp/%s/%n1 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n1 ) %c1 ( mp/%s/%n1 ) %c2 ( mp/%s/%n1 ) %c2 ( mp/%s/%n1 ) %c3 ( mp/%s/%n1 )"}
 )
 
 ; 4 vehicles - 1 infantry types
+; v41: {content "%c1 ( mp/%s/%n1 ) %c1 ( mp/%s/%n1 ) %c2 ( mp/%s/%n1 ) %c2 ( mp/%s/%n1 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   c2 - text in {content}
+;   e.g. none (not called)
 (define "v41"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n1 ) %c1 ( mp/%s/%n1 ) %c2 ( mp/%s/%n1 ) %c2 ( mp/%s/%n1 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n1 ) %c1 ( mp/%s/%n1 ) %c2 ( mp/%s/%n1 ) %c2 ( mp/%s/%n1 )"}
 )
 
 ; 2 dif vehicles - 2 infantry types
+; 2v: {content "%c1 ( mp/%s/%n1 ) %c2 ( mp/%s/%n2 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   c2 - text in {content}
+;   n2 - text in {content}
+;   e.g. none in the mod (called from vanilla files)
 (define "2v"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n1 ) %c2 ( mp/%s/%n2 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n1 ) %c2 ( mp/%s/%n2 )"}
 )
 
 ; 2 dif vehicles - 2 dif infantry types
+; 22v: {content "%c1 ( mp/%s/%n1 mp/%s/%n2 ) %c2 ( mp/%s/%n1 mp/%s/%n2 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   c2 - text in {content}
+;   e.g. none (not called)
 (define "22v"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n1 mp/%s/%n2 ) %c2 ( mp/%s/%n1 mp/%s/%n2 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n1 mp/%s/%n2 ) %c2 ( mp/%s/%n1 mp/%s/%n2 )"}
 )
 
 ; 1 vehicle - 2 infantry types
+; v1: {content "%c1 ( mp/%s/%n1 mp/%s/%n2 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. ("v1" c(120) c1(mg42_lafette_vet)  t(all hero 44) s(ger) n1(vet_vehicle_supporter:2) g(h1) b(hero))
 (define "v1"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n1 mp/%s/%n2 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n1 mp/%s/%n2 )"}
 )
 
 ; 2 vehicle - 2 infantry types
+; v2: {content "%c1 ( mp/%s/%n1 mp/%s/%n2 ) %c1 ( mp/%s/%n1 mp/%s/%n2 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none in the mod (called from vanilla files)
 (define "v2"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n1 mp/%s/%n2 ) %c1 ( mp/%s/%n1 mp/%s/%n2 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n1 mp/%s/%n2 ) %c1 ( mp/%s/%n1 mp/%s/%n2 )"}
 )
 
 ; 2 vehicle - 3 infantry types
+; v23: {content "%c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 ) %c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   n3 - text in {content}
+;   e.g. none in the mod (called from vanilla files)
 (define "v23"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 ) %c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 ) %c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 )"}
 )
 
 ; 2 vehicle - 4 infantry types
+; v24: {content "%c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 ) %c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   n3 - text in {content}
+;   n4 - text in {content}
+;   e.g. none (not called)
 (define "v24"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 ) %c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 ) %c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 )"}
 )
 
 ; 2 vehicle - 5 infantry types
+; v25: {content "%c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 ) %c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   n3 - text in {content}
+;   n4 - text in {content}
+;   n5 - text in {content}
+;   e.g. none (not called)
 (define "v25"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 ) %c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 ) %c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 )"}
 )
 ; 3 vehicle - 1 infantry types
+; v31: {content "%c1 ( mp/%s/%n ) %c1 ( mp/%s/%n ) %c1 ( mp/%s/%n )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n - text in {content}
+;   e.g. none (not called)
 (define "v31"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n ) %c1 ( mp/%s/%n ) %c1 ( mp/%s/%n )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n ) %c1 ( mp/%s/%n ) %c1 ( mp/%s/%n )"}
 )
 
 ; 3 vehicle - 2 infantry types
+; v32: {content "%c1 ( mp/%s/%n1 mp/%s/%n2 ) %c1 ( mp/%s/%n1 mp/%s/%n2 ) %c1 ( mp/%s/%n1 mp/%s/%n2 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v32"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n1 mp/%s/%n2 ) %c1 ( mp/%s/%n1 mp/%s/%n2 ) %c1 ( mp/%s/%n1 mp/%s/%n2 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n1 mp/%s/%n2 ) %c1 ( mp/%s/%n1 mp/%s/%n2 ) %c1 ( mp/%s/%n1 mp/%s/%n2 )"}
 )
 
 ; 3 different vehicle - 2 infantry types
+; v32_eng: {content "%v1 ( mp/%s/%n1 mp/%s/%n2 ) %v2 ( mp/%s/%n1 mp/%s/%n2 ) %v3 ( mp/%s/%n1 mp/%s/%n2 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   v2 - text in {content}
+;   v3 - text in {content}
+;   e.g. none (not called)
 (define "v32_eng"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/%s/%n1 mp/%s/%n2 ) %v2 ( mp/%s/%n1 mp/%s/%n2 ) %v3 ( mp/%s/%n1 mp/%s/%n2 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/%s/%n1 mp/%s/%n2 ) %v2 ( mp/%s/%n1 mp/%s/%n2 ) %v3 ( mp/%s/%n1 mp/%s/%n2 )"}
 )
 
 ; 4 different vehicle - 3 unique infantry types per vehicle
+; 4_diff_vehicle_2_unique_inf_per: {content "%v1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 ) %v2 ( mp/%s/%n4 mp/%s/%n5 mp/%s/%n6 ) %v3 ( mp/%s/%n7 mp/%s/%n8 mp/%s/%n9 ) %v4 ( mp/%s/%n10 mp/%s/%n11 mp/%s/%n12 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   n3 - text in {content}
+;   v2 - text in {content}
+;   n4 - text in {content}
+;   n5 - text in {content}
+;   n6 - text in {content}
+;   v3 - text in {content}
+;   n7 - text in {content}
+;   n8 - text in {content}
+;   n9 - text in {content}
+;   v4 - text in {content}
+;   n10 - text in {content}
+;   n11 - text in {content}
+;   n12 - text in {content}
+;   e.g. none (not called)
 (define "4_diff_vehicle_2_unique_inf_per"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 ) %v2 ( mp/%s/%n4 mp/%s/%n5 mp/%s/%n6 ) %v3 ( mp/%s/%n7 mp/%s/%n8 mp/%s/%n9 ) %v4 ( mp/%s/%n10 mp/%s/%n11 mp/%s/%n12 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 ) %v2 ( mp/%s/%n4 mp/%s/%n5 mp/%s/%n6 ) %v3 ( mp/%s/%n7 mp/%s/%n8 mp/%s/%n9 ) %v4 ( mp/%s/%n10 mp/%s/%n11 mp/%s/%n12 )"}
 )
 ; 1 vehicle - 3 infantry types
+; v3: {content "%c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   n3 - text in {content}
+;   e.g. none in the mod (called from vanilla files)
 (define "v3"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 )"}
 )
 
 ; 1 vehicle - 4 infantry types
+; v4: {content "%c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   n3 - text in {content}
+;   n4 - text in {content}
+;   e.g. none in the mod (called from vanilla files)
 (define "v4"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 )"}
 )
 
 ; 1 vehicle - 9 infantry types
+; v9: {content "%c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6 mp/%s/%n7 mp/%s/%n8 mp/%s/%n9 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   n3 - text in {content}
+;   n4 - text in {content}
+;   n5 - text in {content}
+;   n6 - text in {content}
+;   n7 - text in {content}
+;   n8 - text in {content}
+;   n9 - text in {content}
+;   e.g. none (not called)
 (define "v9"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6 mp/%s/%n7 mp/%s/%n8 mp/%s/%n9 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6 mp/%s/%n7 mp/%s/%n8 mp/%s/%n9 )"}
 )
 
 ; 6 vehicles, 2x3 types - 1 infantry types
+; v331: {content "%c1 ( mp/%s/%n ) %c1 ( mp/%s/%n ) %c1 ( mp/%s/%n ) %c2 ( mp/%s/%n ) %c2 ( mp/%s/%n ) %c2 ( mp/%s/%n )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n - text in {content}
+;   c2 - text in {content}
+;   e.g. none (not called)
 (define "v331"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n ) %c1 ( mp/%s/%n ) %c1 ( mp/%s/%n ) %c2 ( mp/%s/%n ) %c2 ( mp/%s/%n ) %c2 ( mp/%s/%n )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n ) %c1 ( mp/%s/%n ) %c1 ( mp/%s/%n ) %c2 ( mp/%s/%n ) %c2 ( mp/%s/%n ) %c2 ( mp/%s/%n )"}
 )
 
 ; 2 vehicle - 8 infantry types
+; v28: {content "%c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6 mp/%s/%n7 mp/%s/%n8 ) %c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6 mp/%s/%n7 mp/%s/%n8 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   n3 - text in {content}
+;   n4 - text in {content}
+;   n5 - text in {content}
+;   n6 - text in {content}
+;   n7 - text in {content}
+;   n8 - text in {content}
+;   e.g. none (not called)
 (define "v28"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6 mp/%s/%n7 mp/%s/%n8 ) %c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6 mp/%s/%n7 mp/%s/%n8 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6 mp/%s/%n7 mp/%s/%n8 ) %c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6 mp/%s/%n7 mp/%s/%n8 )"}
 )
 
 ; 2 halftrack - guards squads
+; guard_mech: {content "%v1 ( mp/%s/vehicle_supporter:1 mp/%s/%c1 mp/%s/%c2 mp/%s/%c3 mp/%s/%c4 mp/%s/%c5 mp/%s/%c6) %v1 ( mp/%s/vehicle_supporter:1 mp/%s/%c1 mp/%s/%c2 mp/%s/%c3 mp/%s/%c4 mp/%s/%c5 mp/%s/%c6)"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   c5 - text in {content}
+;   c6 - text in {content}
+;   e.g. none (not called)
 (define "guard_mech"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/%s/vehicle_supporter:1 mp/%s/%c1 mp/%s/%c2 mp/%s/%c3 mp/%s/%c4 mp/%s/%c5 mp/%s/%c6) %v1 ( mp/%s/vehicle_supporter:1 mp/%s/%c1 mp/%s/%c2 mp/%s/%c3 mp/%s/%c4 mp/%s/%c5 mp/%s/%c6)"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/%s/vehicle_supporter:1 mp/%s/%c1 mp/%s/%c2 mp/%s/%c3 mp/%s/%c4 mp/%s/%c5 mp/%s/%c6) %v1 ( mp/%s/vehicle_supporter:1 mp/%s/%c1 mp/%s/%c2 mp/%s/%c3 mp/%s/%c4 mp/%s/%c5 mp/%s/%c6)"}
 )
 ; 2 different vehicle x 2 - 9 infantry types - Wher double mech sturms
+; v229: {content "%c1 ( mp/%s/%n1) %c1 ( mp/%s/%n1) %c2 ( mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6 mp/%s/%n7 mp/%s/%n8 mp/%s/%9) %c2 ( mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6 mp/%s/%n7 mp/%s/%n8 mp/%s/%9)"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   c2 - text in {content}
+;   n2 - text in {content}
+;   n3 - text in {content}
+;   n4 - text in {content}
+;   n5 - text in {content}
+;   n6 - text in {content}
+;   n7 - text in {content}
+;   n8 - text in {content}
+;   %9 - text in {content}
+;   e.g. ("v229" c(540) c1(nebelwerfer41_2) c2(sdkfz251_1_late) n1(vehicle_supporter:2) n2(ger_pzgren_pio_sl) n3(ger_pzgren_pio1) n4(ger_pzgren_pio2) n5(ger_pzgren_pio3) n6(ger_pzgren_pio_flamer) n7(ger_pzgren_pio_mg:2) n8(ger_pzgren_pio_mg_asst) n9(ger_pzgren_pio_at) t(all hero artillery rocket 44) s(ger) g(h4) b(hero))
 (define "v229"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n1) %c1 ( mp/%s/%n1) %c2 ( mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6 mp/%s/%n7 mp/%s/%n8 mp/%s/%9) %c2 ( mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6 mp/%s/%n7 mp/%s/%n8 mp/%s/%9)"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n1) %c1 ( mp/%s/%n1) %c2 ( mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6 mp/%s/%n7 mp/%s/%n8 mp/%s/%9) %c2 ( mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6 mp/%s/%n7 mp/%s/%n8 mp/%s/%9)"}
 )
 
-; 2 different vehicle x 2 - 6 infantry types 
+; 2 different vehicle x 2 - 6 infantry types
+; v236: {content "%c1 ( mp/%s/%n1 mp/%s/%n2)  %c1 ( mp/%s/%n1 mp/%s/%n2) %c2 (  mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6)   %c2 ( mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6) "}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   c2 - text in {content}
+;   n3 - text in {content}
+;   n4 - text in {content}
+;   n5 - text in {content}
+;   n6 - text in {content}
+;   e.g. none (not called)
 (define "v236"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n1 mp/%s/%n2)  %c1 ( mp/%s/%n1 mp/%s/%n2) %c2 (  mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6)   %c2 ( mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6) "}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n1 mp/%s/%n2)  %c1 ( mp/%s/%n1 mp/%s/%n2) %c2 (  mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6)   %c2 ( mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6) "}
 )
 
-; 2 different vehicle x 2  infantry types 
+; 2 different vehicle x 2  infantry types
+; v232: {content "%c1 ( mp/%s/%n1 mp/%s/%n2)  %c1 ( mp/%s/%n1 mp/%s/%n2)  %c2 ( mp/%s/%n1 mp/%s/%n2)  "}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   c2 - text in {content}
+;   e.g. none (not called)
 (define "v232"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n1 mp/%s/%n2)  %c1 ( mp/%s/%n1 mp/%s/%n2)  %c2 ( mp/%s/%n1 mp/%s/%n2)  "}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n1 mp/%s/%n2)  %c1 ( mp/%s/%n1 mp/%s/%n2)  %c2 ( mp/%s/%n1 mp/%s/%n2)  "}
 )
 
 ; 3 different vehicles, 1x3 types - 1 infantry types
+; v1111: {content "%c1 ( mp/%s/%n1 ) %c2 ( mp/%s/%n1) %c3 ( mp/%s/%n1 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   e.g. none (not called)
 (define "v1111"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n1 ) %c2 ( mp/%s/%n1) %c3 ( mp/%s/%n1 )" }
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n1 ) %c2 ( mp/%s/%n1) %c3 ( mp/%s/%n1 )" }
 )
 
 
 ; 3 different vehicles, 1x3 types - 6 infantry types
+; v221: {content "%c1 ( mp/%s/%n1 ) %c1 ( mp/%s/%n1 ) %c2 ( mp/%s/%n1 ) %c2 ( mp/%s/%n1 ) %c3 ( mp/%s/%n1)"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   e.g. none (not called)
 (define "v221"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n1 ) %c1 ( mp/%s/%n1 ) %c2 ( mp/%s/%n1 ) %c2 ( mp/%s/%n1 ) %c3 ( mp/%s/%n1)" }
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n1 ) %c1 ( mp/%s/%n1 ) %c2 ( mp/%s/%n1 ) %c2 ( mp/%s/%n1 ) %c3 ( mp/%s/%n1)" }
 )
 
 ; 3 different vehicles, 1x3 types - 6 infantry types
+; bers_mot: {content "%c1 ( mp/%s/%n1 mp/%s/%n1 ) %c1 ( mp/%s/%n1 ) %c1 ( mp/%s/%n2 ) %c1 ( mp/%s/%n4 ) %c1 ( mp/%s/%n4 ) %c1 ( mp/%s/%n2  ) %c1 ( mp/%s/%n3 mp/%s/%n4"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   n4 - text in {content}
+;   n3 - text in {content}
+;   e.g. none (not called)
 (define "bers_mot"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n1 mp/%s/%n1 ) %c1 ( mp/%s/%n1 ) %c1 ( mp/%s/%n2 ) %c1 ( mp/%s/%n4 ) %c1 ( mp/%s/%n4 ) %c1 ( mp/%s/%n2  ) %c1 ( mp/%s/%n3 mp/%s/%n4" }
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n1 mp/%s/%n1 ) %c1 ( mp/%s/%n1 ) %c1 ( mp/%s/%n2 ) %c1 ( mp/%s/%n4 ) %c1 ( mp/%s/%n4 ) %c1 ( mp/%s/%n2  ) %c1 ( mp/%s/%n3 mp/%s/%n4" }
 )
 
 
 ;new formation defines---------------------------------------------------------------------------####################################################################
 ; US mech platoon
+; arm_mech_us: {content "%v1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 ) %v1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n6 ) %v1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n6 ) %c1 ( mp/%s/vehicle_supporter:2 ) %c1 ( mp/%s/vehicle_supporter:2 ) %c2 ( mp/%s/vehicle_supporter:1 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   n3 - text in {content}
+;   n4 - text in {content}
+;   n5 - text in {content}
+;   n6 - text in {content}
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   e.g. none (not called)
 (define "arm_mech_us"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-					;rifle		;sl		;grenadier	;bar	;sniper														;rifle
-    {content "%v1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 ) %v1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n6 ) %v1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n6 ) %c1 ( mp/%s/vehicle_supporter:2 ) %c1 ( mp/%s/vehicle_supporter:2 ) %c2 ( mp/%s/vehicle_supporter:1 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	;rifle		;sl		;grenadier	;bar	;sniper														;rifle
+	{content "%v1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 ) %v1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n6 ) %v1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n6 ) %c1 ( mp/%s/vehicle_supporter:2 ) %c1 ( mp/%s/vehicle_supporter:2 ) %c2 ( mp/%s/vehicle_supporter:1 )"}
 )
 ; weapons platoon
+; us_weapon: {content "%c1 ( mp/%s/%n:2 ) %c1 ( mp/%s/%n:2 ) %c2 ( mp/%s/%n:1 ) %c2 ( mp/%s/%n:1 ) %c2 ( mp/%s/%n:1 ) %c3 ( mp/%s/%n:2 ) %c3 ( mp/%s/%n:2 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   n - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   e.g. none (not called)
 (define "us_weapon"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/%n:2 ) %c1 ( mp/%s/%n:2 ) %c2 ( mp/%s/%n:1 ) %c2 ( mp/%s/%n:1 ) %c2 ( mp/%s/%n:1 ) %c3 ( mp/%s/%n:2 ) %c3 ( mp/%s/%n:2 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/%n:2 ) %c1 ( mp/%s/%n:2 ) %c2 ( mp/%s/%n:1 ) %c2 ( mp/%s/%n:1 ) %c2 ( mp/%s/%n:1 ) %c3 ( mp/%s/%n:2 ) %c3 ( mp/%s/%n:2 )"}
 )
 ; 3 tanks - 2 infantry types
+; v3-tank: {content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v3-tank"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 )"}
 )
 ; 4 tanks - 2 infantry types
+; v4-tank: {content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v4-tank"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 )"}
 )
 ; 5 tanks - 2 infantry types
+; v5-tank: {content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   e.g. none (not called)
 (define "v5-tank"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 )"}
 )
 
 ; mech AT, 2 vehicle/guns- 2 infantry types
+; mech_at-2: {content "%v1 ( mp/%s/%n1 mp/%s/%n2 ) %v1 ( mp/%s/%n1 mp/%s/%n2 ) %v2 ( mp/%s/%n1 ) %v2 ( mp/%s/%n1 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   v2 - text in {content}
+;   e.g. none (not called)
 (define "mech_at-2"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/%s/%n1 mp/%s/%n2 ) %v1 ( mp/%s/%n1 mp/%s/%n2 ) %v2 ( mp/%s/%n1 ) %v2 ( mp/%s/%n1 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/%s/%n1 mp/%s/%n2 ) %v1 ( mp/%s/%n1 mp/%s/%n2 ) %v2 ( mp/%s/%n1 ) %v2 ( mp/%s/%n1 )"}
 )
 ; mech AT, 3 vehicle/guns- 2 infantry types
+; mech_at-3: {content "%v1 ( mp/%s/%n1 mp/%s/%n2 ) %v1 ( mp/%s/%n1 mp/%s/%n2 ) %v1 ( mp/%s/%n1 mp/%s/%n2 ) %v2 ( mp/%s/%n1 ) %v2 ( mp/%s/%n1 ) %v2 ( mp/%s/%n1 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   v2 - text in {content}
+;   e.g. none (not called)
 (define "mech_at-3"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/%s/%n1 mp/%s/%n2 ) %v1 ( mp/%s/%n1 mp/%s/%n2 ) %v1 ( mp/%s/%n1 mp/%s/%n2 ) %v2 ( mp/%s/%n1 ) %v2 ( mp/%s/%n1 ) %v2 ( mp/%s/%n1 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/%s/%n1 mp/%s/%n2 ) %v1 ( mp/%s/%n1 mp/%s/%n2 ) %v1 ( mp/%s/%n1 mp/%s/%n2 ) %v2 ( mp/%s/%n1 ) %v2 ( mp/%s/%n1 ) %v2 ( mp/%s/%n1 )"}
 )
 
 ; arty btry 4 guns, 2 vehicles - 1 infantry types
+; battery22: {content "%c1 ( mp/%s/vehicle_supporter:2 ) %c1 ( mp/%s/vehicle_supporter:2 ) %v1 ( mp/%s/vehicle_supporter:2 ) %v1 ( mp/%s/vehicle_supporter:2 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   v1 - text in {content}
+;   e.g. none (not called)
 (define "battery22"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/vehicle_supporter:2 ) %c1 ( mp/%s/vehicle_supporter:2 ) %v1 ( mp/%s/vehicle_supporter:2 ) %v1 ( mp/%s/vehicle_supporter:2 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/vehicle_supporter:2 ) %c1 ( mp/%s/vehicle_supporter:2 ) %v1 ( mp/%s/vehicle_supporter:2 ) %v1 ( mp/%s/vehicle_supporter:2 )"}
 )
 ; arty btry 4 guns, 2 vehicles - 1 infantry types
+; battery42: {content "%c1 ( mp/%s/vehicle_supporter:2 ) %c1 ( mp/%s/vehicle_supporter:2 ) %c1 ( mp/%s/vehicle_supporter:2 ) %c1 ( mp/%s/vehicle_supporter:2 ) %v1 ( mp/%s/vehicle_supporter:2 ) %v1 ( mp/%s/vehicle_supporter:2 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   v1 - text in {content}
+;   e.g. none (not called)
 (define "battery42"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/vehicle_supporter:2 ) %c1 ( mp/%s/vehicle_supporter:2 ) %c1 ( mp/%s/vehicle_supporter:2 ) %c1 ( mp/%s/vehicle_supporter:2 ) %v1 ( mp/%s/vehicle_supporter:2 ) %v1 ( mp/%s/vehicle_supporter:2 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/vehicle_supporter:2 ) %c1 ( mp/%s/vehicle_supporter:2 ) %c1 ( mp/%s/vehicle_supporter:2 ) %c1 ( mp/%s/vehicle_supporter:2 ) %v1 ( mp/%s/vehicle_supporter:2 ) %v1 ( mp/%s/vehicle_supporter:2 )"}
 )
 ; arty btry 4 guns, 4 vehicles - 1 infantry types
+; battery44: {content "%c1 ( mp/%s/vehicle_supporter:2 ) %c1 ( mp/%s/vehicle_supporter:2 ) %c1 ( mp/%s/vehicle_supporter:2 ) %c1 ( mp/%s/vehicle_supporter:2 ) %v1 ( mp/%s/vehicle_supporter:2 ) %v1 ( mp/%s/vehicle_supporter:2 ) %v1 ( mp/%s/vehicle_supporter:2 ) %v1 ( mp/%s/vehicle_supporter:2 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   c1 - text in {content}
+;   v1 - text in {content}
+;   e.g. none (not called)
 (define "battery44"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%c1 ( mp/%s/vehicle_supporter:2 ) %c1 ( mp/%s/vehicle_supporter:2 ) %c1 ( mp/%s/vehicle_supporter:2 ) %c1 ( mp/%s/vehicle_supporter:2 ) %v1 ( mp/%s/vehicle_supporter:2 ) %v1 ( mp/%s/vehicle_supporter:2 ) %v1 ( mp/%s/vehicle_supporter:2 ) %v1 ( mp/%s/vehicle_supporter:2 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%c1 ( mp/%s/vehicle_supporter:2 ) %c1 ( mp/%s/vehicle_supporter:2 ) %c1 ( mp/%s/vehicle_supporter:2 ) %c1 ( mp/%s/vehicle_supporter:2 ) %v1 ( mp/%s/vehicle_supporter:2 ) %v1 ( mp/%s/vehicle_supporter:2 ) %v1 ( mp/%s/vehicle_supporter:2 ) %v1 ( mp/%s/vehicle_supporter:2 )"}
 )
 ; US TD platoon - 2 infantry types
+; us-td: {content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v2 ( mp/%s/vehicle_supporter:%n3 ) %v2 ( mp/%s/vehicle_supporter:%n3 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   v2 - text in {content}
+;   n3 - text in {content}
+;   e.g. none (not called)
 (define "us-td"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v2 ( mp/%s/vehicle_supporter:%n3 ) %v2 ( mp/%s/vehicle_supporter:%n3 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v2 ( mp/%s/vehicle_supporter:%n3 ) %v2 ( mp/%s/vehicle_supporter:%n3 )"}
 )
 
 ; 5 4/1 tanks - 2 infantry types
+; v5_4-1-tank: {content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v2 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   v2 - text in {content}
+;   e.g. none (not called)
 (define "v5_4-1-tank"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v2 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v2 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 )"}
 )
 ; 5 3/2 tanks - 2 infantry types
+; v5_3-2-tank: {content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v2 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v2 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   v2 - text in {content}
+;   e.g. none (not called)
 (define "v5_3-2-tank"
-    ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-    {content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v2 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v2 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v1 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v2 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 ) %v2 ( mp/%s/tankman:%n1 mp/%s/tankman2:%n2 )"}
 )
 ; 10 tanks 7/3 - 2 infantry types
+; v15_10-5-tank: {content "%v1 ( mp/%s/%n1:4 mp/%s/%n2:1 ) %v1 ( mp/%s/%n1:4 mp/%s/%n2:1 ) %v1 ( mp/%s/%n1:4 mp/%s/%n2:1 ) %v1 ( mp/%s/%n1:4 mp/%s/%n2:1 ) %v1 ( mp/%s/%n1:4 mp/%s/%n2:1 ) %v1 ( mp/%s/%n1:4 mp/%s/%n2:1 ) %v2 ( mp/%s/%n1:3 mp/%s/%n2:1 ) %v2 ( mp/%s/%n1:3 mp/%s/%n2:1 ) %v2 ( mp/%s/%n1:3 mp/%s/%n2:1 ) %v2 ( mp/%s/%n1:3 mp/%s/%n2:1 ) %v3 ( mp/%s/%n1:3 mp/%s/%n2:1 ) %v3 ( mp/%s/%n1:3 mp/%s/%n2:1 ) %v4 ( mp/%s/%n1:4 mp/%s/%n2:1 ) %v4 ( mp/%s/%n1:4 mp/%s/%n2:1 ) %v4 ( mp/%s/%n1:4 mp/%s/%n2:1 )"}, calls "generic_h"
+;   c - {charge}, [?] via "generic_h"
+;   t - name of {tags} via "generic_h"
+;   s - name of {tags} via "generic_h", text in {content}
+;   g - name of {group} via "generic_h"
+;   b - name of {button} via "generic_h"
+;   v1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   v2 - text in {content}
+;   v3 - text in {content}
+;   v4 - text in {content}
+;   e.g. none (not called)
 (define "v15_10-5-tank"
-   ("generic_h" c(%c) t(%t %s) g(%g) b(%b))
-   {content "%v1 ( mp/%s/%n1:4 mp/%s/%n2:1 ) %v1 ( mp/%s/%n1:4 mp/%s/%n2:1 ) %v1 ( mp/%s/%n1:4 mp/%s/%n2:1 ) %v1 ( mp/%s/%n1:4 mp/%s/%n2:1 ) %v1 ( mp/%s/%n1:4 mp/%s/%n2:1 ) %v1 ( mp/%s/%n1:4 mp/%s/%n2:1 ) %v2 ( mp/%s/%n1:3 mp/%s/%n2:1 ) %v2 ( mp/%s/%n1:3 mp/%s/%n2:1 ) %v2 ( mp/%s/%n1:3 mp/%s/%n2:1 ) %v2 ( mp/%s/%n1:3 mp/%s/%n2:1 ) %v3 ( mp/%s/%n1:3 mp/%s/%n2:1 ) %v3 ( mp/%s/%n1:3 mp/%s/%n2:1 ) %v4 ( mp/%s/%n1:4 mp/%s/%n2:1 ) %v4 ( mp/%s/%n1:4 mp/%s/%n2:1 ) %v4 ( mp/%s/%n1:4 mp/%s/%n2:1 )"}
+	("generic_h" c(%c) t(%t %s) g(%g) b(%b))
+	{content "%v1 ( mp/%s/%n1:4 mp/%s/%n2:1 ) %v1 ( mp/%s/%n1:4 mp/%s/%n2:1 ) %v1 ( mp/%s/%n1:4 mp/%s/%n2:1 ) %v1 ( mp/%s/%n1:4 mp/%s/%n2:1 ) %v1 ( mp/%s/%n1:4 mp/%s/%n2:1 ) %v1 ( mp/%s/%n1:4 mp/%s/%n2:1 ) %v2 ( mp/%s/%n1:3 mp/%s/%n2:1 ) %v2 ( mp/%s/%n1:3 mp/%s/%n2:1 ) %v2 ( mp/%s/%n1:3 mp/%s/%n2:1 ) %v2 ( mp/%s/%n1:3 mp/%s/%n2:1 ) %v3 ( mp/%s/%n1:3 mp/%s/%n2:1 ) %v3 ( mp/%s/%n1:3 mp/%s/%n2:1 ) %v4 ( mp/%s/%n1:4 mp/%s/%n2:1 ) %v4 ( mp/%s/%n1:4 mp/%s/%n2:1 ) %v4 ( mp/%s/%n1:4 mp/%s/%n2:1 )"}
 )
 
 ;(define "v10_7-3-tank"
@@ -724,8 +2093,15 @@
 ;같컂eneric_x같�
 
 ; extra unit
+; extra: calls "generic_x"
+;   sc - {score}, [?] via "generic_x"
+;   t - name of {tags} via "generic_x"
+;   s - name of {tags} via "generic_x"
+;   cw - {cw}, [?] via "generic_x"
+;   cp - {cp}, [?] via "generic_x"
+;   e.g. ("extra" t() sc(0) cw(0) cp(0))
 (define "extra"
-    ("generic_x" sc(%sc) t(%t %s) cw(%cw) cp(%cp))
+	("generic_x" sc(%sc) t(%t %s) cw(%cw) cp(%cp))
 )
 
 
@@ -734,9 +2110,22 @@
 
 
 ; 1 howitzer italy
+; ita_how: {"%name" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   side - text in {content}, text in {tags}
+;   c2 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "ita_how"
 	{"%name"
-   		{charge %c}
+		{charge %c}
 		{content "%c1 ( mp/%side/axm_ita_vehicle_supporter:1 ) %c2 ( mp/%side/axm_ita_vehicle_supporter:2 )"}
 		{tags "%side %t"}
 		{group "%g"}
@@ -748,9 +2137,22 @@
 )
 
 ; 1 howitzer finnland
+; fin_how: {"%name" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   side - text in {content}, text in {tags}
+;   c2 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "fin_how"
 	{"%name"
-   		{charge %c}
+		{charge %c}
 		{content "%c1 ( mp/%side/axm_fin_vehicle_supporter:2 ) %c2 ( mp/%side/axm_fin_vehicle_supporter:2 )"}
 		{tags "%side %t"}
 		{group "%g"}
@@ -761,9 +2163,22 @@
 	}
 )
 
+; hun_how: {"%name" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   side - text in {content}, text in {tags}
+;   c2 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "hun_how"
 	{"%name"
-   		{charge %c}
+		{charge %c}
 		{content "%c1 ( mp/%side/axm_hun_vehicle_supporter:1 ) %c2 ( mp/%side/axm_hun_vehicle_supporter:2 )"}
 		{tags "%side %t"}
 		{group "%g"}
@@ -776,9 +2191,22 @@
 
 
 ; 1 howitzer
+; how: {"%name" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   side - text in {content}, text in {tags}
+;   c2 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none in the mod (called from vanilla files)
 (define "how"
 	{"%name"
-   		{charge %c}
+		{charge %c}
 		{content "%c1 ( mp/%side/vehicle_supporter:2 ) %c2 ( mp/%side/vehicle_supporter:2 )"}
 		{tags "%side %t"}
 		{group "%g"}
@@ -790,9 +2218,22 @@
 )
 
 ; 2 howitzers
+; how2: {"%name" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   side - text in {content}, text in {tags}
+;   c2 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "how2"
 	{"%name"
-   		{charge %c}
+		{charge %c}
 		{content "%c1 ( mp/%side/vehicle_supporter:2 ) %c2 ( mp/%side/vehicle_supporter:2 ) %c1 ( mp/%side/vehicle_supporter:2 ) %c2 ( mp/%side/vehicle_supporter:2 )"}
 		{tags "%side %t"}
 		{group "%g"}

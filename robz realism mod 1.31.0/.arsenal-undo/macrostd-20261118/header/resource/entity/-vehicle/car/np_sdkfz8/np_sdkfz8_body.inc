@@ -1,0 +1,163 @@
+(include "/properties/robz/volumes.inc")
+(include "/properties/armoredcar.ext")
+(include "/properties/selection/vehicle.inc"  scale(1.1))
+{props "vehicle" "armored_car" "wheeled_8" "vision_vehicle_medium"}
+{collider "truck"}
+("armor_medium" args 1.0)
+{tag "heavy_tow"}
+
+{boarder
+	{anm "passengers"
+		{forward	{begin	"board_SdKfz251-1"} {end "seat_passenger"}}
+		{reverse 	{end	"emit_tank_1"}}
+	}
+	{anm "passengers1"
+		{forward	{begin	"board_SdKfz251-1"} {end "seat_passenger"}}
+		{reverse 	{end	"emit_body"}}
+	}
+	{anm "driver"
+		{forward	{begin	"board_SdKfz251-1"} {end "seat_driver_car"}}
+		{reverse 	{end	"emit_body" 1}}
+	}
+	{anm "commander"
+		{forward	{begin	"board_SdKfz251-1"} {end "seat_passenger"}}
+		{reverse 	{end	"emit_body" 1}}
+	}
+}
+(include "/properties/robz/crew.inc")
+
+{placer
+	{place "driver" {visor "driver"}}
+	{place "commander" {visor "main"}}
+}
+("crew_human_no_targetable" place(driver)	door(emit1) bone(driver) animation(driver)		group(crew))
+("crew_human_no_targetable" place(commander)	door(emit2) bone(commander) animation(commander)	group(crew))
+("crew_human_no_targetable" place(seat2)	door(emit3) bone(seat02) animation(passengers1)	group(passengers))
+("crew_human_no_targetable" place(seat3)	door(emit4) bone(seat03) animation(passengers)	group(passengers))
+("crew_human_no_targetable" place(seat4)	door(emit4) bone(seat04) animation(passengers1)	group(passengers))
+("crew_human_no_targetable" place(seat5)	door(emit5) bone(seat05) animation(passengers)	group(passengers))
+("crew_human_no_targetable" place(seat6)	door(emit6) bone(seat06) animation(passengers1)	group(passengers))
+("crew_human_no_targetable" place(seat7)	door(emit6) bone(seat07) animation(passengers1)	group(passengers))
+
+("wheel" args "wheelright1")
+("wheel" args "wheelleft1")
+("tracks")
+
+
+{Extension "np_sdkfz8.mdl"}
+{mass 15000}
+{Chassis
+	{Locomotion ("locomotion")
+		{MaxSpeed	30}
+		{maxSpeedAtMaxTurn 6}
+		{StartTime	20}
+		{BrakeTime	1.5}
+		{StopTime	2.5}
+		{TurnRadius	8}
+		{Gears  0.2 0.3 0.4 1}
+		{RearGears  0.25}
+	}
+	{FuelBag
+		{volume 250}
+		{rate	14}
+		{remain 250 }
+		{fuel "fuel"}
+	}
+	{speed
+		{Normal  30}
+		{Slow  30}
+	}
+}
+
+{extender "inventory"
+	{Box
+		{item "can" 2}
+		{item "dynamite" 1}
+	}
+}
+(include "/properties/robz/vehicle.inc")
+
+{Chassis
+	; left track must be first
+	("tank_trace_track" fx("tracks_mid") step(0.52) len(1.0) boneleft("FXtraceL2") boneright("FXtraceR2"))
+	("car_trace" fx("tracewheel02") step(0.09) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
+}
+
+{Placer
+	{place "attach01"
+		{entity "mauzer"}
+		{Linkbone "attach01"}
+		{handlebone "basis"}
+		{obstacle disable}
+	}
+	{place "attach02"
+		{entity "mauzer"}
+		{Linkbone "attach02"}
+		{handlebone "basis"}
+		{obstacle disable}
+	}
+	{place "attach03"
+		{entity "mauzer"}
+		{Linkbone "attach03"}
+		{handlebone "basis"}
+		{obstacle disable}
+	}
+	{place "attach04"
+		{entity "mauzer"}
+		{Linkbone "attach04"}
+		{handlebone "basis"}
+		{obstacle disable}
+	}
+	{place "attach05"
+		{entity "ammo_box_ger_art"}
+		{Linkbone "attach05"}
+		{handlebone "basis"}
+		{obstacle disable}
+	}
+	{place "attach06"
+		{entity "can"}
+		{Linkbone "attach06"}
+		{handlebone "basis"}
+		{obstacle disable}
+	}
+	{place "attach07"
+		{entity "can"}
+		{Linkbone "attach07"}
+		{handlebone "basis"}
+		{obstacle disable}
+	}
+}
+(define "define_place_squat_lie"
+	{placer
+		{place "%place"
+			{linkbone "%place"}
+			{attach squat_lie}
+			{turnoff {shadow}}
+			{obstacle disable}
+		}
+	}
+	{Volume "%place"
+		{tags "attach" "attach_%place"}
+		{able clear {bullet 0} {touch 1}}
+	}
+)
+{extender "shield"
+	(mod "mp"
+		{off}
+	)
+}
+{component "shield"
+	{RepairTime 10}
+}
+{volume "shield"
+	{thickness 0.3}
+}
+("vol_body_plate" name(body) mm(8))
+("vol_body_plate" name(body2) mm(8))
+("vol_body_plate" name(body3) mm(8))
+{component "engine"
+	{RepairTime 10}
+}
+{volume "engine"
+	{thickness 10}
+}

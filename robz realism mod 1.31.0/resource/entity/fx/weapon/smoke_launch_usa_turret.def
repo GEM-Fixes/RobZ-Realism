@@ -2,7 +2,7 @@
 	{sound "weapon/shot/reactive/mortar_light/lightmortar1"}
 	{particleview smoke
 		{##+ visualizer
-			{stage 
+			{stage
 				{sprite "/texture/fx/flash/halo02"
 					{timer
 						{mode play }

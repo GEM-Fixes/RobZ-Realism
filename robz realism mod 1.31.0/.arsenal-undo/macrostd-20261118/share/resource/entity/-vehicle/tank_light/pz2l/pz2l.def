@@ -1,0 +1,199 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "light" "turret_rotator" "zenite" "vision_vehicle_medium" "muzzle_zenite"}
+	{collider "tank.light"}
+	{targetClass "light_tank"}
+	{patherId "tank.light"}
+
+	{extender "enumerator"
+		{digit_folder "ger"}
+	}
+
+	; --- Godny hitbox armor (ported from GodnyMod: pz2l.def) ---
+	{volume "body1"	;нижн€€ часть корпуса
+		{tags "body"}
+		{component "body"}
+		{thickness 20
+			{front	30}
+			{rear	0.1}	;внутренн€€ стенка
+			{top	0.1}	;внутренн€€ стенка
+			{bottom	10}
+			{right	20}	;гласис
+		}
+	}
+	{volume "body2"	;верхн€€ часть корпуса, бо
+		{tags "body"}
+		{component "body"}
+		{thickness 20
+			{front	30}
+			{rear	0.1}	;внутренн€€ стенка
+			{top	12}
+			{bottom	10}
+		}
+	}
+	{volume "body3"	;моторное
+		{tags "body"}
+		{component "body"}
+		{thickness 20
+			{front	10}	;стенка моторного
+			;	{rear	20}
+			{top	10}
+			{bottom	10}
+		}
+	}
+	{volume "turret"
+		{component "turret"}
+		{tags "turret"}
+		{able {holed}}
+		{thickness 20
+			{front	30}
+			;	{rear	20}
+			{top	12}
+			{bottom	10}
+			{right	12}	;лобовой скос башни
+		}
+	}
+	{volume "turret1"	;цапфы
+		{component "turret"}
+		{tags "turret"}
+		{able {holed}}
+		{thickness 20
+			;	{front	20}
+			{rear	0.1}	;внутренн€€ стенка
+			{top	12}
+			{bottom	10}
+		}
+	}
+	{Volume "hole_man"
+		{able clear {hole}}
+		{component "turret"}
+	}
+	{volume "mantlet"
+		{thickness 30
+			;	{front	30}
+			{rear	0.1}	;маска отстоит от основной брони
+		}
+	}
+	{volume "filterl"
+		{component "filterl"}
+		{thickness 10
+			{right	0.1}	;внутренн€€ стенка
+		}
+	}
+	{volume "filterr"
+		{component "filterr"}
+		{thickness 10
+			{right	0.1}	;внутренн€€ стенка
+		}
+	}
+	{volume "detail4"
+		{tags "detail4"}
+		{thickness 6}
+	}
+	{volume "zipr1"
+		{tags "zipr1"}
+		{thickness 6}
+	}
+	{volume "zipl1"
+		{tags "zipl1"}
+		{thickness 6}
+	}
+	{volume "zipl2"
+		{tags "zipl2"}
+		{thickness 6}
+	}
+	; --- end Godny hitbox armor ---
+	("armor_light" turret(30 15) body(30 15 15 8))
+	("armor_engine"  t(10 15 15 8))
+
+	{extender "inventory"
+		{box
+			{item "ammo bullet20 ger zenite ap" 160}
+			{item "ammo bullet20 ger zenite apcr" 60}
+			{item "ammo bullet20 ger zenite fg" 160}
+			{item "ammo mg_mauser belt" 2280}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "20mm_kwk38(l55)" filling "ammo bullet20 ger zenite ap" 10}
+			{charger "gunner"}
+			("abm_zenite")
+		}
+		{place "mgun"
+			{type "mgun_coaxial"}
+			{weapon "mg34_optic" filled}
+			{gunner "commander"}
+			{charger "commander"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	("crew_2_human")
+	("crew_human" place(commander) door1(emit1) door2(emit2) visor(main))
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_Kv"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_MiddleArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	;	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor))
+
+	{mass 7300}
+	{Chassis
+		("tank_trace" fx("tracks_sm") step(0.3) len(1))
+		{Locomotion ("locomotion")
+			{maxspeed   38}
+			{maxSpeedAtMaxTurn 6}
+			{StartTime  25}
+			{TurnTime   15}
+			{TurnStart  1}
+			{TurnRadius 7}
+			{TurnStop   0.6}
+			{BrakeTime  1.5}
+			{StopTime   2}
+			{Gears  0.1 0.2 0.3 1}
+			{RearGears  0.25}
+		}
+		{FuelBag
+			{volume 175 }
+			{rate	9 }
+			{remain 175 }
+			{fuel "fuel"}
+		}
+		{speed
+			{Normal  38}
+			{Slow  38}
+		}
+	}
+
+	{Extension "pz2l.mdl"}
+
+	{bone "turret"
+		{speed 0.003}
+	}
+	{bone "foresight3"
+		{limits -1 1}
+	}
+	{bone "gun_rot"
+		{limits -9 20}
+		{speed 0.002}
+	}
+}

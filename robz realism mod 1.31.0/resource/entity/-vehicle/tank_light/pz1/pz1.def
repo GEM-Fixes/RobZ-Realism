@@ -5,7 +5,7 @@
 	{collider "tank.light"}
 	{props "light" "turret" "zenite" "light_turret" "opened" "vision_lev03" "muzzle_zenite"}
 	{targetClass "light_tank" "bullet"}
-        {targetSelector "tank_bullet"}
+	{targetSelector "tank_bullet"}
 	{extension "crew.ext"}
 	{patherId "tank.light"}
 
@@ -16,7 +16,7 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 13
-		;	{front	13}	;нлд-14, гласис-8, влд-18
+			;	{front	13}	;нлд-14, гласис-8, влд-18
 			{rear	0.1}	;внутренн€€ стенка
 			{top	7}
 			{bottom	5}
@@ -47,7 +47,7 @@
 		{component "body"}
 		{thickness 13
 			{front	10}
-		;	{rear	13}
+			;	{rear	13}
 			{top	5}
 			{bottom	5}
 		}
@@ -55,7 +55,7 @@
 	{Volume "turret"
 		{thickness 10}
 	}
-	{volume "engine"	
+	{volume "engine"
 		{thickness 10}
 	}
 	{volume "inturret"
@@ -69,7 +69,7 @@
 	}
 	("armor_light" turret(8 6) body(13 13 13 6))
 	("shield" args 6)
-	
+
 	{extender "inventory"
 		{box
 			{Size 5 8}
@@ -82,26 +82,26 @@
 			("abm_zenite")
 		}
 	}
-;	{extender "cannon"
-;		{animation
-;			{aimers "cannon_flak38-1_gunlayer" ""}
-;			{gunners  "" "cannon_flak38-1_charger"}
-;		}
-;		{move {workers clear} {obstacle "close"}}
-;		{attack {workers "gunner" "charger"} {obstacle "open"}}
-;	}
+	;	{extender "cannon"
+	;		{animation
+	;			{aimers "cannon_flak38-1_gunlayer" ""}
+	;			{gunners  "" "cannon_flak38-1_charger"}
+	;		}
+	;		{move {workers clear} {obstacle "close"}}
+	;		{attack {workers "gunner" "charger"} {obstacle "open"}}
+	;	}
 
 	;{sensor
-		;{Visor "main"
-			;{vision "tank_main-2"}	;??? - 2.5x
-		;}
-		;{Visor "driver"
-		;	{vision "tank_270-triplex"}	;щели
-		;}
-		;{visor "view-around"
-		;	{vision "tank_around-eye"}
-		;	{bone "turret"}
-		;}
+	;{Visor "main"
+	;{vision "tank_main-2"}	;??? - 2.5x
+	;}
+	;{Visor "driver"
+	;	{vision "tank_270-triplex"}	;щели
+	;}
+	;{visor "view-around"
+	;	{vision "tank_around-eye"}
+	;	{bone "turret"}
+	;}
 	;}
 
 	("tracks")
@@ -130,7 +130,7 @@
 		}
 	}
 	{Extension "pz1.mdl"}
-	
+
 	{bone "gun_rot"
 		{speed 0.01}
 		{limits -10 60}

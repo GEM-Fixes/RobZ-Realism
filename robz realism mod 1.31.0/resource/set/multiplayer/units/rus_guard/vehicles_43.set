@@ -75,11 +75,11 @@
 {"kv1"             ("v_rus_g" c(60) t(heavy 43) 	s(rus_guard) n1(4) n2(1) g(e9) sc(625) b(v4) cw(0) cp(20)) {level 1} {cost 625} {fore -10.0}}	;660sec
 {"kv1s"            ("v_rus_g" c(60) t(heavy 43) 	s(rus_guard) n1(3) n2(1) g(e10) sc(625) b(v4) cw(0) cp(20)) {level 1} {cost 625} {fore -10.0}}	;660sec
 {"kv8_41"          ("v_rus_g" c(60) t(heavy 43) 	s(rus_guard) n1(3) n2(1) g(e11) sc(600) b(v4) cw(0) cp(20)) {level 1} {cost 600} {fore -10.0}}	;660sec
-	
+
 {"kv85"            ("v_rus_g" c(300) t(heavy 43) 	s(rus) n1(3) n2(1) g(e12) sc(900) b(v4) cw(0) cp(30)) {level 1} {cost 900} {fore -2.0}}	;900sec
 {"is1"             ("v_rus_g" c(600) t(heavy 43) 	s(rus) n1(3) n2(1) g(e13) sc(1150) b(v4) cw(0) cp(30)) {level 1} {cost 1150} {fore -1.0}}	;1200sec
 {"is122"           ("v_rus_g" c(690) t(heavy 43) 	s(rus) n1(3) n2(1) g(e14) sc(1900) b(v4) cw(0) cp(30)) {level 1} {cost 1900} {fore -1.0}}	;1380sec
-	
+
 ;같캛utton 5같�
 
 {"su76"             ("v_rus_g" c(10) t(medium 43) 	s(rus) n1(3) n2(1) g(f1) sc(300) b(v5) cw(0) cp(10)) {level 1} {cost 300} {fore -45.0}}	;460
@@ -87,12 +87,12 @@
 
 ;같캛utton Hero같�
 
-{"hero3(rus)"        ("v1" c(240) c1(gaz67)   	t(hero 43) s(rus) n1(sniper2:2) n2(tankman2:0) g(h1) b(hero)) {level 1} {cost 1.0} {fore -0.5}}
+("unit_vehicle_members_sided" side(rus) name(hero3) vehicle1(gaz67) member1(sniper2:2) member2(tankman2:0) charge(240) tags(hero 43) group(h1) button(hero) level(1) cost(1.0) fore(-0.5))
 
-{"hero5(rus)"        ("i2" c(240)		t(hero 43) s(rus) n1(penal_rifle:30) n2(penal_smg:3) g(h2) b(hero)) {level 1} {cost 2.0} {fore -0.5}}
+("unit_infantry_sided_members2" side(rus) name(hero5) member1(penal_rifle:30) member2(penal_smg:3) charge(240) tags(hero 43) group(h2) button(hero) level(1) cost(2.0) fore(-0.5))
 
-{"hero_isu152(rus)"  ("v1" c(600) c1(isu152) 	t(hero 43) s(rus) n1(tankman:4) n2(tankman2:1) g(h5) b(hero)) {level 1} {cost 8.0} {fore -0.5}}
+("unit_vehicle_members_sided" side(rus) name(hero_isu152) vehicle1(isu152) member1(tankman:4) member2(tankman2:1) charge(600) tags(hero 43) group(h5) button(hero) level(1) cost(8.0) fore(-0.5))
 
-{"hero_orgel(rus)"  	    ("v31" c(960) c1(bm13) 	t(hero artillery rocket 43) s(rus) n(vehicle_supporter:2) g(h10) b(hero)) {level 1} {cost 16.0} {fore -0.5}}
-{"hero_t34platoon(rus)"  ("v32" c(400) c1(t34_2) 	t(hero 43) s(rus) n1(tankman:3) n2(tankman2:1) g(h9) b(hero)) {level 1} {cost 8.0} {fore -0.5}}
-{"hero9(rus)"  	    ("v2" c(1200) c1(203b4) 	t(hero artillery heavyart 43) s(rus) n1(vehicle_supporter:2) n2(tankman2:0) g(h8) b(hero)) {level 1} {cost 20.0} {fore -0.5}}
+("unit_vehicles1_members1_sided" side(rus) name(hero_orgel) vehicle1(bm13) member(vehicle_supporter:2) charge(960) tags(hero artillery rocket 43) group(h10) button(hero) level(1) cost(16.0) fore(-0.5))
+("unit_vehicles1_members2_sided" side(rus) name(hero_t34platoon) vehicle1(t34_2) member1(tankman:3) member2(tankman2:1) charge(400) tags(hero 43) group(h9) button(hero) level(1) cost(8.0) fore(-0.5))
+("unit_two_vehicles_members_sided" side(rus) name(hero9) vehicle1(203b4) member1(vehicle_supporter:2) member2(tankman2:0) charge(1200) tags(hero artillery heavyart 43) group(h8) button(hero) level(1) cost(20.0) fore(-0.5))

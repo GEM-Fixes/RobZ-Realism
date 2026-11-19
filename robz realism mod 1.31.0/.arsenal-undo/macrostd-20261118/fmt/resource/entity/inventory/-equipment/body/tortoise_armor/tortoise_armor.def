@@ -1,0 +1,10 @@
+{game_entity
+	(include "/properties/stuff_small.ext")
+	{volume "body"
+		{thickness 5}
+	}
+	{extender "stuff"
+		{item "tortoise_armor"}
+	}
+	{Extension "tortoise_armor.mdl"}
+}

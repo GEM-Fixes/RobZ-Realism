@@ -1,0 +1,27 @@
+{from "pattern gun"		; "Toldi2"
+	{filling "bullet40_hun"}
+	{fireSound "gun/45mm_oqf2pdr"}
+	{reloadSound "pak35"}
+	{rechargeTime 3.5}
+	("range_minimum")
+
+
+	{range 180 180}
+
+
+	("speed" s(1010))
+	("caliber_minimum")
+	{projectileDamage 68}
+	("damage" a(70) b(63) c(55) d(48) e(41))
+
+	{parameters "apcr"
+		("damage_100" a(93) b(49) c(23) d(11) e(5) range(160))
+		{range 160 160}
+	}
+
+	{parameters "fg"
+		{range 170 170}
+	}
+
+	("accuracy_minimum")
+}

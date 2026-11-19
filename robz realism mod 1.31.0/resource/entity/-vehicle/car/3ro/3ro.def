@@ -1,8 +1,9 @@
+(include "/properties/robz/volumes.inc")
 {entity
 	(include "/properties/car.ext")
 
 	(include "/properties/selection/vehicle.inc"  scale(1.1))
-      
+
 	{collider "truck"}
 	{props "vehicle" "car" "truck" "wheeled" "with_gun" "vision_vehicle_medium" "muzzle_large"  "open_door2" "medium_weapons"}
 	{able "emit_on_attack"}
@@ -21,7 +22,7 @@
 		board_end(seat_passenger)
 		base(doorleft)
 	)
-	{placer	
+	{placer
 		{place "gunner" {visor "main"} {useVision 0}}
 		{place "commander" {visor "main"} {useVision 0}}
 	}
@@ -38,7 +39,7 @@
 
 	("crew_human" place(gunner)		bone(gunner)	door(emit4) animation(charger))
 	("crew_human" place(charger)		bone(charger)	door(emit3) animation(charger))
-	
+
 	{sensor
 		{visor "main"
 			{vision "tank_main-l"}
@@ -49,13 +50,13 @@
 			{bone "visor2"}
 		}
 	}
-	
+
 	;{extender "enumerator"}
-        ("wheel" args "wheelright1")
+	("wheel" args "wheelright1")
 	("wheel" args "wheelleft1")
 	("wheel" args "wheelright2")
 	("wheel" args "wheelleft2")
-		
+
 	{mass 2750}
 
 	{extender "inventory"
@@ -63,7 +64,7 @@
 			{size 8 10}
 			{item "bullet90_ita ap" 20}
 			{item "bullet90_ita fg" 10}
-		
+
 			{item "sandbag_kit2" 2}
 		}
 	}
@@ -73,42 +74,34 @@
 			{weapon "90mm_m90_53" filling "bullet90_ita ap" 1}
 			("abm_low")
 		}
-			}  
+	}
 	{Chassis
 		{Locomotion ("locomotion")
-      		{MaxSpeed   30}
-				(mod "mp"
-					{maxspeed   28}
-				)
-	  		{maxSpeedAtMaxTurn 13}
-      		{TurnRadius 6}
+			{MaxSpeed   30}
+			(mod "mp"
+				{maxspeed   28}
+			)
+			{maxSpeedAtMaxTurn 13}
+			{TurnRadius 6}
 		}
 		{FuelBag
-			{volume 70 }	
-			{rate	19 }   
+			{volume 70 }
+			{rate	19 }
 			{remain 65 }
 			{fuel "fuel"}
 		}
 		("car_trace" fx("tracewheel03") step(0.08) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
 		("car_trace" fx("tracewheel03") step(0.08) wheell("wlr") wheelr("wrr") bonel("FXtraceL2") boner("FXtraceR2"))
 	}
-	{volume "body"
-		{tags "body"}
-		{component "body"}
-		{thickness 15} 
-	}
-	{Volume "body2"
-		{tags "body"}
-		{component "body"}
-		{thickness 15}
-	}
-	{component "cabin"	
+	("vol_body_plate_lower" name(body) mm(15))
+	("vol_body_plate" name(body2) mm(15))
+	{component "cabin"
 		{RepairTime 12}
 	}
 	{volume "cabin"
 		{thickness 13}
 	}
-	{component "engine"	
+	{component "engine"
 		{RepairTime 10}
 	}
 	{volume "engine"
@@ -129,12 +122,12 @@
 		{thickness 10}
 	}
 	{Extension "3ro.mdl"}
-    
+
 	{sensor
 		{visor "main"
 			{vision "moto_around"}
 			{bone "visor2						"}
 		}
 	}
-	;("eng_2_sight")
+;("eng_2_sight")
 }

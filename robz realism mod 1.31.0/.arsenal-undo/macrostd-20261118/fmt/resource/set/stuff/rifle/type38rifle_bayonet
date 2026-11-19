@@ -1,0 +1,12 @@
+{from "pattern rifle"
+	{entity "type38rifle_bayonet"}
+	{filling "ammo arisaka6-5_clip" 5}
+	{fireSound "rifle/type38_shot"}
+	{reloadSound "type38_reload"}
+	
+	("speed" s(750))
+	;("accuracy_boost")
+	{healthDamage 30}
+	{tag "bolt"}	; bolt-action cycling animation
+	{tag "bolt_r220"}	; bolt animation speed class (recoveryTime 2.20s)
+}

@@ -4,9 +4,9 @@
 	{reloadSound "gun_r00"}
 	{rechargeTime 8}
 	{recoveryTime 8}
-	
+
 	("range_arty_lowarc_low")
-	("speed_lowarc" s(380))
+	("speed_lowarc" mps(380))
 	{range 310 310}
 	{burst {min 6} {noaiming}}
 	{gravity 5}

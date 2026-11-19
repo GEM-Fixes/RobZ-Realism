@@ -49,7 +49,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/exp01a"
 					{timer
 						{mode play }
@@ -169,7 +169,7 @@
 		}
 		{offset 0 0 5}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/flash_g03a"
 					{timer
 						{mode play }
@@ -316,7 +316,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{#+ sprite "$/explosion/ground_exp3"
 					{timer
@@ -541,7 +541,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/oskolki"
 					{light 1
 						{linear
@@ -597,7 +597,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04b"
 					{timer
 						{mode play }
@@ -731,7 +731,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04b"
 					{timer
 						{mode play }
@@ -811,7 +811,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_turb2"
 					{timer
 						{mode play }
@@ -867,7 +867,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04b"
 					{timer
 						{mode play }
@@ -947,7 +947,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/smoke/smokesmal4b_50"
 					{timer
@@ -1026,7 +1026,7 @@
 			{damping 0.97}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4ablue"
 					{scale 1
 						{linear

@@ -107,9 +107,9 @@
 		{call "update_hatch_on_spawn"}
 		{set "engine_running" 0}
 		{view pause "exhaust2"}
-	
+
 		{delay 0.1{if has_place "gunner2" {tags add "com_mode"}}}
-		
+
 	}
 	("com_mode" anm(pose_mgun_pz6) mgun(mgun))
 	{on "add_movement_sound"
@@ -122,6 +122,9 @@
 	{on "gunner_hatch_open"
 		{ani_wind "open" end}
 	}
+	; update_hatch: {if {if}}
+	;   wind - {if}, [?]
+	;   e.g. ("update_hatch" wind(true))
 	(define "update_hatch"
 		{if not operatable
 			{if %wind
@@ -148,6 +151,9 @@
 	{on "update_hatch_on_spawn"
 		("update_hatch" wind(true))
 	}
+	; update_hatch_event: {on {delay}}
+	;   event - {on}, [?]
+	;   e.g. ("update_hatch_event" event(crew in))
 	(define "update_hatch_event"
 		{on %event
 			{delay 0.1{if crew_in_place "gunner2" {tags add "com_mode"}}}
@@ -158,63 +164,63 @@
 	("update_hatch_event" event(operatable off))
 	("update_hatch_event" event(crew in))
 	("update_hatch_event" event(crew out))
-        
+
 	{on "emit_on_hit"
 		{call "burn_emit"}
 		{able select 0}
-		
+
 		;{view start "smoke4_1"}
 		{set "smoke4_1" 1}
-		
-		{delay 8	
+
+		{delay 8
 			{if not "burn_fire"
 				{able "burning" 0}
-				{able repaired 1}			
+				{able repaired 1}
 			}
 		}
 		{delay 11
 			{able select 1}
 			{if not "burn_fire"
 				{able "burning" 0}
-				{able repaired 1}			
+				{able repaired 1}
 			}
 		}
 		{delay 20
 			{if not "burn_fire"
-				{able "burning" 0}			
-			}		
+				{able "burning" 0}
+			}
 		}
 		{delay 120
 			{view stop "smoke4_1"}
-			{set "smoke4_1" 0} 
+			{set "smoke4_1" 0}
 		}
 	}
-        
+
     {on "emit_on_rocketlauncher"
 		{if rand 0.5
 			{call "burn_emit"}
 		else
 			{crew_emit}
 		}
-		{able select 0}	
+		{able select 0}
 		{delay 4
 			{if not "burn_fire"
 				{able select 1}
 				{able "burning" 0}
-				{able repaired 1}			
+				{able repaired 1}
 			}
 		}
 		{burn fx "smoke_dead_tank2" fake}
 	}
-	
+
 	{on "stat_body_break"
 		{if not broken
 			{if not "notified_broken"
 				{stat_notify break}
 				{set "notified_broken" 1}
-				{tags add "body_break"}	
+				{tags add "body_break"}
 			}
-		}	
+		}
 	}
 	{on "notify_break"
 		{if not "notified_broken"
@@ -223,6 +229,9 @@
 		}
 	}
 
+    ; cut_shield_part: {if {delay_ex}}
+    ;   %0 - {if}, [?], {tear}, [?]
+    ;   e.g. ("cut_shield_part" args "shieldl2")
     (define "cut_shield_part"
         {if component %0
 			{delay_ex 0.11
@@ -232,7 +241,10 @@
 			}
         }
 	)
-        
+
+    ; gun_hit: {if {if}}
+    ;   rand - {if}, [?]
+    ;   e.g. ("gun_hit" rand(%pierce_gun_main))
     (define "gun_hit"
 		{if volume "gun"
 			{if rand (* %rand 0.2)
@@ -248,34 +260,38 @@
 			}
 		}
 	)
+	; track_hit: {if {if}}
+	;   max_rand - {if}, [?]
+	;   min_rand - {if}, [?]
+	;   e.g. ("track_hit" max_rand(%pierce_front_back_track) min_rand(%pierce_left_right_track))
 	(define "track_hit"
 		{if hit_side front
  			{if rand %max_rand
 				{if volume "trackleft"
                     {if work "trackleft"
-						{components "trackleft" break}	
+						{components "trackleft" break}
 						{damage_report "trackleft" "component/track_broken"}
-                    }				
+                    }
 				else volume "trackright"
                     {if work "trackright"
-						{components "trackright" break}	
+						{components "trackright" break}
 						{damage_report "trackright" "component/track_broken"}
-                    }			
+                    }
 				}
 			}
 		else hit_side back
 				{if rand %max_rand
 					{if volume "trackleft"
                         {if work "trackleft"
-							{components "trackleft" break}	
+							{components "trackleft" break}
 							{damage_report "trackleft" "component/track_broken"}
                         }
 					else volume "trackright"
                         {if work "trackright"
-							{components "trackright" break}	
+							{components "trackright" break}
 							{damage_report "trackright" "component/track_broken"}
-                        }			
-					}				
+                        }
+					}
 				}
 		else rand %min_rand
 			{if volume "trackleft"
@@ -285,13 +301,16 @@
                 }
 			else volume "trackright"
                 {if work "trackright"
-					{components "trackright" break}	
+					{components "trackright" break}
 					{burn fx "smoke_dead_tank2" fake}
 					{damage_report "trackright" "component/track_broken"}
                 }
-			}				
+			}
 		}
 	)
+	; crew_shock: {if {if} {weapon_work} {delay}}
+	;   crew_shock_time - {delay}, s
+	;   e.g. ("crew_shock" crew_shock_time(10))
 	(define "crew_shock"
         {if operatable
             {if work "mover"
@@ -327,7 +346,7 @@
 								{weapon_work "gun" 1}
 							}
 						}
-					else	
+					else
 						{weapon_work "gun" 1}
 					}
                 }
@@ -409,6 +428,8 @@
 			}
 		}
 	}
+	; crew_bail: {delay {call} {able} {if}}
+	;   e.g. ("crew_bail")
 	(define "crew_bail"
 		{delay 4 2
 			{call "notify_break"}
@@ -423,12 +444,20 @@
 			}
 		}
 	)
+	; fuel_leak_fire: {delay {call} {components}}
+	;   %0 - {delay}, s
+	;   %1 - {delay}, s
+	;   e.g. ("fuel_leak_fire" args 3 3)
 	(define "fuel_leak_fire"
 		{delay %0 %1
 			{call "fuel_fire"}
 			{components "engine" break}
 		}
 	)
+	; fuel_leak_explosion: {delay {spawn} {components} {damage_report} {if}}
+	;   %0 - {delay}, s
+	;   %1 - {delay}, s
+	;   e.g. ("fuel_leak_explosion" args 15 5)
 	(define "fuel_leak_explosion"
 		{delay %0 %1
 			{spawn "tank_fuel_die" "engine"}
@@ -485,6 +514,10 @@
 			}
 		}
 	}
+	; burn_fire_rng: {delay {call} {view} {if}}
+	;   %0 - {delay}, s
+	;   %1 - {delay}, s
+	;   e.g. ("burn_fire_rng" args 3 3)
 	(define "burn_fire_rng"
 		{delay %0 %1
 			{call "fuel_fire_2"}
@@ -498,6 +531,10 @@
 			}
 		}
 	)
+	; fuel_fire_rng: {delay {call} {view} {if}}
+	;   %0 - {delay}, s
+	;   %1 - {delay}, s
+	;   e.g. ("fuel_fire_rng" args 3 3)
 	(define "fuel_fire_rng"
 		{delay %0 %1
 			{call "fuel_fire_2"}
@@ -534,6 +571,10 @@
 		}
 	}
 	}
+	; random_fuel_explosion: {delay {if}}
+	;   %0 - {delay}, s
+	;   %1 - {delay}, s
+	;   e.g. ("random_fuel_explosion" args 4 4)
 	(define "random_fuel_explosion"
 		{delay %0 %1
 			{if rand 0.25 {delay 4 4 {spawn "tank_fuel_die" "engine"}{components "engine" destroy}{damage_report "engine" "component/engine_destroyed"}}
@@ -571,6 +612,8 @@
 			{view start "fuel_fire_smoke"}
 		}
 	}
+	; small_expl_rand_cookoff: {if {spawn}}
+	;   e.g. ("small_expl_rand_cookoff")
 	(define "small_expl_rand_cookoff"
 		{if rand 0.5
 			{spawn "tank_small_ammo_explosion" "FXfire3"}
@@ -600,7 +643,7 @@
 				{if rand 0.35  {view start "smoke4_7"} {play_sound "cook_off" 1} ;start cooking FX, hatch
 				else rand 0.30 {view start "smoke_cook_high_1a"} {play_sound "cook_off" 1} {play_sound "burnup_ammo" 1}
 				else	       {view start "smoke_cook_high_1b"} {play_sound "cook_off" 1} {play_sound "burnup_ammo" 1}
-				}	
+				}
 				{if rand 0.5
 					{view start "smoke4_3"}
 					{delay 2 {view stop "smoke4_3"}}
@@ -752,6 +795,10 @@
 		}
 	}
 	}
+	; smoke4_17: {delay {view} {delay}}
+	;   %0 - {delay}, s
+	;   %1 - {delay}, s
+	;   e.g. ("smoke4_17" args 3 3)
 	(define "smoke4_17"
 		{delay %0 %1
 			{view start "smoke4_17"}
@@ -801,10 +848,19 @@
 			}
 		}
 	}
+	; small_expl: {delay {spawn}}
+	;   %0 - {delay}, s
+	;   %1 - {delay}, s
+	;   e.g. ("small_expl" args %2 0.1)
 	(define "small_expl"
 		{delay %0 %1
 			{spawn "tank_small_ammo_explosion" "FXfire3"}
 	)
+	; small_expl_script: {if} {delay} x4
+	;   %0 - {delay}, s
+	;   %1 - {delay}, s
+	;   %2 - {delay}, s via "small_expl"
+	;   e.g. ("small_expl_script" args 1 1 1)
 	(define "small_expl_script"
 			{if rand 0.25
 				{delay %0 %1
@@ -989,6 +1045,9 @@
 			}
 		}
 	}
+	; ammunition_check: {if {tags} {call} {if}}
+	;   ammo - {if}, [?]
+	;   e.g. ("ammunition_check" ammo(250))
 	(define "ammunition_check"
 		{if explosive_amount (* %ammo 1.25)	;>125%
 			{tags add "ammo_overload"}{tags add "instant_explosion"}{call "pre_explosion"}
@@ -1015,6 +1074,10 @@
 			("ammunition_check" ammo(250))
 		}
 	}
+	; ammunition_loads: {if {if}}
+	;   ammo - {if}, [?]
+	;   rand - {if}, [?]
+	;   e.g. ("ammunition_loads" rand(0.20) ammo(250))
 	(define "ammunition_loads"
 		{if explosive_amount (* %ammo 2.00)	;>200%
 			{if rand (* %rand 5.0){tags add "ammo_overload"}{tags add "instant_explosion"}{call "pre_explosion"}}
@@ -1055,6 +1118,10 @@
 			{if rand (* %rand 0){call "pre_cookoff_call"}}
 		}
 	)
+	; ammunition_loads_spall: {if {if}}
+	;   ammo - {if}, [?]
+	;   rand - {if}, [?]
+	;   e.g. ("ammunition_loads_spall" rand(0.10) ammo(360))
 	(define "ammunition_loads_spall"
 		{if explosive_amount (* %ammo 2.25)	;>225%
 			{if rand (* %rand 5.0){tags add "ammo_overload"}{tags add "instant_explosion"}{call "pre_explosion"}}
@@ -1080,7 +1147,7 @@
 			{if rand (* %rand 2.7){tags add "ammo_overload"}{tags add "instant_explosion"}{call "pre_explosion"}}
 		else explosive_amount (* %ammo 0.90)	;>90%
 			{if rand (* %rand 2.56){tags add "ammo_overload"}
-				{if rand 0.6{tags add "instant_explosion"}{call "pre_explosion"} 
+				{if rand 0.6{tags add "instant_explosion"}{call "pre_explosion"}
 				else{call "pre_cookoff_call"}}}
 		else explosive_amount (* %ammo 0.80)	;>80%
 			{if rand (* %rand 2.42){if rand 0.5{tags add "ammo_overload"}{call "pre_cookoff_call"}
@@ -1167,20 +1234,20 @@
 			{kick_entity_manager}
 
 		}
-		{if rand 0.5	
+		{if rand 0.5
 			("cut_shield_part" args "shieldl4")
 			("cut_shield_part" args "shieldl5")
 			("cut_shield_part" args "shieldr2")
 			("cut_shield_part" args "shieldr3")
 		}
-		{if rand 0.5	
+		{if rand 0.5
 			("cut_shield_part" args "shieldl2")
 			("cut_shield_part" args "shieldl3")
 			("cut_shield_part" args "shieldr4")
 			("cut_shield_part" args "shieldr1")
 		}
 		{call "check_burn_emit"}
-									
+
 		{reset_manual_control}
 		{able select 0}
 		{able repaired 0}
@@ -1221,7 +1288,10 @@
 			{add_view "smoke_black_big2b" "deathfx2" "basis"}
 			;{view start "deathfx"}
 		}
-		(define "cut_part"
+		; cut_part_rand: {if {tear}}
+		;   %0 - {tear}, [?]
+		;   e.g. ("cut_part_rand" args "part1")
+		(define "cut_part_rand"
 			{if rand 0.5
 				{tear "piece_medium_steel" bone %0
 					{impulse up 12 1 dir 9 3 cx 9 3 cy 9 3 rnd_dir 10 no_position}
@@ -1229,16 +1299,16 @@
 				}
 			}
 		)
-		("cut_part" args "part1")
-		("cut_part" args "part2")
-		("cut_part" args "part3")
-		("cut_part" args "part4")
-		("cut_part" args "part5")
-		("cut_part" args "part6")
+		("cut_part_rand" args "part1")
+		("cut_part_rand" args "part2")
+		("cut_part_rand" args "part3")
+		("cut_part_rand" args "part4")
+		("cut_part_rand" args "part5")
+		("cut_part_rand" args "part6")
 		{delay 90 15
 			{view stop "deathfx"}
 			{view start "deathfx2"}
-		}	
+		}
 	}
 
 	{on "check_burn_emit"
@@ -1280,7 +1350,7 @@
 			{view pause "flashbarrel1smoke"}
 		}
 	}
-	{on fire "gun1_2"    
+	{on fire "gun1_2"
 		{if not work "gun_breech"
 			{if rand 0.5 {call "gun_breech_fire"}}
 		}
@@ -1296,12 +1366,12 @@
 		}
 		{delay 2.5
 			{view pause "flashbarrel1smoke"}
-		}              
+		}
 	}
-	{on fire "gun2"    
+	{on fire "gun2"
 		{if not work "gun_breech"
 			{if rand 0.5 {call "gun_breech_fire"}}
-		}                 
+		}
 		{view start "flashbarrel2s"}
 		{delay 0.2
 			{view pause "flashbarrel2s"}
@@ -1327,7 +1397,7 @@
 		else rand 0.3
 			{components "gun" destroy}
 		}
-		{if rand 0.3 
+		{if rand 0.3
 			{if not "gun_breech_destroyed"
 				{set "gun_breech_destroyed" 1}
 				{components "gun_breech" destroy}
@@ -1349,7 +1419,7 @@
 		else
 			("ammunition_loads" rand(0.20) ammo(250))
 		}
-	}	
+	}
     {on "criticalhit" overload
 		{if component "body"
 			{if not hit_side front
@@ -1396,6 +1466,9 @@
 		{if rand 0.6 {kill_crew "commander"}}
 		{if rand 0.6 {kill_crew "driver"}}
 	}
+    ; burn_by_engine: {on "burn_by_engine" {if}}
+    ;   %0 - {if}, [?]
+    ;   e.g. ("burn_by_engine" args 0.3)
     (define "burn_by_engine"
 	{on "burn_by_engine"
         	{if not tagged "burned"
@@ -1415,7 +1488,7 @@
                 {if rand 0.5 {kill_crew "commander"}}
                 {if rand 0.5 {kill_crew "driver"}}
                 {if rand 0.5 {kill_crew "gunner2"}}
-                        
+
                 {if not tagged "destroyed"
                     {call "mp_destroy"}
                 }
@@ -1431,7 +1504,7 @@
                 {if rand 0.1 {kill_crew "commander"}}
                 {if rand 0.1 {kill_crew "driver"}}
             }
-        }                
+        }
         {if not "no_burn_volumes"
             {if name "pierce"
                 {if volume "body"
@@ -1442,7 +1515,7 @@
             }
         }
     }
- 
+
     {on break_armor_again
         {if component "engine"
             ;{call "burn_by_engine"}
@@ -1472,7 +1545,7 @@
 				{view stop "smoke_hullcrush_engine"}
 			}
 			;}
-			
+
 			;{delay 150
 			;	{view stop "smoke4"}
 			;	{set "smoke4" 0}

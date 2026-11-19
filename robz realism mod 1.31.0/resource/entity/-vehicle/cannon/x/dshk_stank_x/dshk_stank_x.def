@@ -1,15 +1,4 @@
+; same as the other 1 def here; body in dshk_stank_x_body.inc
 {game_entity
-	{Extension "dshk_stan_x.mdl"}
-	{Volume "barrel"
-	}
-	{Volume "body"
-	}
-	{Volume "shield"
-	}
-	{Volume "stan"
-	}
-	{Volume "wheell"
-	}
-	{Volume "wheelr"
-	}
+	(include "dshk_stank_x_body.inc")
 }

@@ -3,15 +3,15 @@
 	{fireSound "gun/50to76_cal/75mm_kwk40"}
 	{reloadSound "gun_r03"}
 	{rechargeTime 8}
-	("range_short")  
+	("range_short")
 	("speed" s(502))
 	("caliber_medium")
-	("damage_170" a(121) b(106) c(91) d(79) e(68) range(190))
+	("damage_170" at20(121) at100(106) at170(91) at215(79) at250(68) max(190))
 	{parameters "aphebc"
 		{cursorReloading "cannon_reload_aphebc"}
 	}
 	{parameters "apcr"
-        	("damage_170" a(185) b(147) c(111) d(84) e(64) range(190))
+		("damage_170" at20(185) at100(147) at170(111) at215(84) at250(64) max(190))
 	}
 	{parameters "fg"
 		{range 180 180}

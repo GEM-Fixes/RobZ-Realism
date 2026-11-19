@@ -192,7 +192,7 @@
 			{damping 0.92}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "/fx/_bmp/smoke/pil2.ebm"
 					{timer
 						{mode play }
@@ -234,7 +234,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "/fx/_bmp/smoke/smokeend_loop.ebm"
 					{scale 1.5 0.5}
 					{visibility 1
@@ -300,7 +300,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "/fx/_bmp/particle/grit.ebm"
 					{turn 1
 						{linear
@@ -392,7 +392,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "/fx/_bmp/particle/oskolki.ebm"
 					{light 1
 						{linear
@@ -446,7 +446,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "/fx/_bmp/smoke/smtanko.ebm"
 					{turn 1
 						{linear
@@ -527,7 +527,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "/fx/_bmp/particle/grit.ebm"
 					{turn 1
 						{linear
@@ -615,7 +615,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "/fx/_bmp/explosion/bum3d.ebm"
 					{scale 1
 						{linear
@@ -680,7 +680,7 @@
 		}
 		{offset 0 0 5}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/flash_g01"
 					{timer
 						{mode play }
@@ -765,7 +765,7 @@
 		}
 		{offset 0 0 5}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/flash_g03a"
 					{timer
 						{mode play }
@@ -894,7 +894,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04l"
 					{timer
 						{mode play }
@@ -954,7 +954,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/grit"
 					{turn 1
 						{linear
@@ -1046,7 +1046,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -1125,7 +1125,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }

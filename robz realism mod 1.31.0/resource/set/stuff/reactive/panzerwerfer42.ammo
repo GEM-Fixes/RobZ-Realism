@@ -3,7 +3,7 @@
 	{inventory
 		{size 5 1}
 		{weight 100}
-	}	
+	}
 	{entity "panzerwerfer_ammo"}
 	{mass 36.05}
 	{view "panzerwerfer_ammo"
@@ -14,7 +14,7 @@
 	{damage blastwave
 		{energy 10}
 		{area 1 2}
-	}		
+	}
 	{damage add blastwave
 		{energy 1.5}
 		{area 8 12}

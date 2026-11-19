@@ -1,8 +1,9 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/construction.inc")
 	("armor_light" args 0.5)
 	{Extension "trench_box_roof_01.mdl"}
-	{props "construction" "parts" "wood" "no_destroyed_stamp" "disable_area" "small" "burning"} 
+	{props "construction" "parts" "wood" "no_destroyed_stamp" "disable_area" "small" "burning"}
 	("armor_heavy" args 0.8)
 	{obstacleID "small_building"}
 	{Volume "body1r"
@@ -12,15 +13,7 @@
 	}
 
 
-	{Volume "body2"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body3"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
+	("vol_body_visible" name(body2) mm(50))
+	("vol_body_visible" name(body3) mm(50))
 
 }

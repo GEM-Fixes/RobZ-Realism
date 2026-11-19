@@ -1,79 +1,28 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.2))
 	{props "vehicle" "armored_car" "tractor" "tank" "-turret" "opened" "explosion_throw_crew" "vision_vehicle_low"}
 
 	{extender "enumerator"}
-	
-	{volume "sticky"
-		{tags "grenade_fg_target"}
-		{able clear {contact} {touch}}
-		{component "sticky_body"}
-	}
 
-	{volume "body1"
-		{component "body"}
-		{tags "body"}
-		{thickness 8}
-	}
-	{volume "body2"
-		{component "body"}
-		{tags "body"}
-		{thickness 8}
-	}
-	{volume "body3"
-		{component "body"}
-		{tags "body"}
-		{thickness 8}
-	}
-	{volume "body4"
-		{component "body"}
-		{tags "body"}
-		{thickness 8}
-	}
-	{volume "body5"
-		{component "body"}
-		{tags "body"}
-		{thickness 8}
-	}
-	{volume "body6"
-		{component "body"}
-		{tags "body"}
-		{thickness 8}
-	}
-	{volume "body7"
-		{component "body"}
-		{tags "body"}
-		{thickness 8}
-	}
-	{volume "body8"
-		{component "body"}
-		{tags "body"}
-		{thickness 8}
-	}
-	{volume "body9"
-		{component "body"}
-		{tags "body"}
-		{thickness 8}
-	}
-	{volume "body10"
-		{component "body"}
-		{tags "body"}
-		{thickness 8}
-	}
-	{volume "body11"
-		{component "body"}
-		{tags "body"}
-		{thickness 8}
-	}
-	{volume "body12"
-		{component "body"}
-		{tags "body"}
-		{thickness 8}
-	}
+	("vol_sticky_grenade_target" name(sticky))
+
+	("vol_body_plate_component_first" name(body1) mm(8))
+	("vol_body_plate_component_first" name(body2) mm(8))
+	("vol_body_plate_component_first" name(body3) mm(8))
+	("vol_body_plate_component_first" name(body4) mm(8))
+	("vol_body_plate_component_first" name(body5) mm(8))
+	("vol_body_plate_component_first" name(body6) mm(8))
+	("vol_body_plate_component_first" name(body7) mm(8))
+	("vol_body_plate_component_first" name(body8) mm(8))
+	("vol_body_plate_component_first" name(body9) mm(8))
+	("vol_body_plate_component_first" name(body10) mm(8))
+	("vol_body_plate_component_first" name(body11) mm(8))
+	("vol_body_plate_component_first" name(body12) mm(8))
 
 	{volume "inventory"
-        {thickness 2}
+		{thickness 2}
 	}
 
 	("armor_medium" turret(0) body(12 8 8 8))
@@ -98,21 +47,11 @@
 	("crew_human_visible_anm" place(charger)	door1(emit4) door2(emit4) anm_left(commander) anm_right(crew) visor(driver))
 	("crew_human_visible_anm" place(gunner)	        door1(emit2) door2(emit2) anm_left(commander) anm_right(crew) visor(main))
 	("gunner_visible")
-	{placer 
+	{placer
 		{place "driver" {openForCrush 0}}
-	}	
+	}
 
-	(define "crew_human"
-		{placer
-			{place "%place" {group "crew"} {linkbone "%place"} {turnoff {sensor} {shadow}}}
-		}
-		{boarder
-			{door "%door1"}
-			{door "%door2"}
-			{link "%door1" "%place" {anm "%place"} {forward putoff} {reverse puton}}
-			{link "%door2" "%place" {anm "%place"} {forward putoff} {reverse puton}}
-		}
-	)
+	(include "/properties/robz/crew.inc")
 
 	{placer
 		{place "driver" {group "crew"} {visor "driver"}}
@@ -156,7 +95,7 @@
 			{charger "commander"}
 			("abm_mgun")
 		}
-	}  	
+	}
 
 	{mass 24000}
 	{Chassis
@@ -166,19 +105,19 @@
 			{maxSpeedAtMaxTurn 5}
 			{StartTime  30}
 			{TurnTime   12}
-			{TurnStart  0.6}			
-			{TurnRadius 6} 
-    		{TurnStop   0.5}
+			{TurnStart  0.6}
+			{TurnRadius 6}
+			{TurnStop   0.5}
 			{BrakeTime  1}
 			{StopTime   1.5}
-   			{Gears  0.1 0.2 0.3 1}
-			{RearGears  0.30} 
+			{Gears  0.1 0.2 0.3 1}
+			{RearGears  0.30}
 		}
 		{speed
-        	{Normal  28}
-        	{Slow  28}
-    	}
-		;{DisableMoveWhileFiring}
+			{Normal  28}
+			{Slow  28}
+		}
+	;{DisableMoveWhileFiring}
 	}
 
 	{Extension "gun_carrier.mdl"}

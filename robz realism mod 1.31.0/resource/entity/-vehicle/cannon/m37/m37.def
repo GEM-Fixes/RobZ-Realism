@@ -2,11 +2,11 @@
 	(include "/properties/cannon.ext")
 	{props "vehicle" "cannon" "cannon_small" "wheeled" "vision_cannon_low" "muzzle_minimum" "medium_weapons"}
 	; --- Godny hitbox armor (ported from GodnyMod: m37.def) ---
-	
+
 	; --- end Godny hitbox armor ---
 	("armor_light")
 	{collider "cannon_small"}
-	
+
 	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
 
@@ -31,7 +31,7 @@
 			{forward {end "pose_seat_cannon_right" 10}}
 		}
 	}
-	("rus_2-5x_sight")
+	("rus_2-5x_sight_no_visor1")
 	{extender "inventory"
 		{box
 			{item "ammo bullet45 rus aphebc" 5}
@@ -50,7 +50,7 @@
 	{Extension "m37.mdl"}
 	(include "/properties/selection/cannon.inc"  scale(0.7))
 	{bone "basis"
-	      {limits}
+		{limits}
 	}
 	{extender "cannon"
 		{animation

@@ -1,2 +1,2 @@
-	(include "/properties/stuff_small.ext")
-	{extension "cha_broadsword.mdl"}
+(include "/properties/stuff_small.ext")
+{extension "cha_broadsword.mdl"}

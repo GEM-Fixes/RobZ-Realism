@@ -1,9 +1,9 @@
 {ArmoredCar
 	(include "/properties/armoredcar.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.0))
-        (include "/properties/tank_crew.ext")
+	(include "/properties/tank_crew.ext")
 	{extension "crew.ext"}
-	{props "vehicle" "armored_car" "tank" "turret" "turret_rotator" "wheeled" "with_gun" "vision_vehicle_low" "muzzle_zenite" "switch_cannon"}	        
+	{props "vehicle" "armored_car" "tank" "turret" "turret_rotator" "wheeled" "with_gun" "vision_vehicle_low" "muzzle_zenite" "switch_cannon"}
 	{tag "full_auto_mode"}
 	{volume "body1"
 		{tags "body"}
@@ -23,15 +23,15 @@
 		{component "turret"}
 		{tags "turret"}
 		{thickness 12
-		    {front 15}
+			{front 15}
 		}
 	}
 	{volume "crew"
 		{able {contact_ground 0}}
 	}
-        
+
 	("armor_medium" args 1.0)
-        
+
 	("crew_human" 			place(driver)		door1(emit1) door2(emit2) visor(driver))
 	("crew_human" 			place(gunner)		door1(emit1) door2(emit2) visor(main))
 	("crew_human" 			place(charger)		door1(emit1) door2(emit2) visor(main))
@@ -56,23 +56,23 @@
 	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
 	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
 	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor))
-	
-	
+
+
 	{extender "inventory"
 		{weapon "mgun"
 			{mask "weapon mgun"}
 		}
 		{Box
 			{item "ammo mg_mauser belt red" 1000}
-			{item "ammo bullet15" 1000}	
+			{item "ammo bullet15" 1000}
 			{item "besa_optic" filling "mg_mauser belt red" 225 {user "mgun"}}
 		}
 	}
 	{Weaponry
-        {place "gun"
-            {weapon "15mm_besa" filled}
+		{place "gun"
+			{weapon "15mm_besa" filled}
 			("abm_zenite")
-        }
+		}
 		{place "mgun"
 			{type "mgun_coaxial"}
 			{basic}
@@ -89,27 +89,27 @@
 		("car_trace" fx("tracewheel02") step(0.09) wheell("wlr") wheelr("wrr") bonel("FXtraceL3") boner("FXtraceR3"))
 		{Locomotion ("locomotion")
 			{MaxSpeed	42}
-	  		{maxSpeedAtMaxTurn 6}		
+			{maxSpeedAtMaxTurn 6}
 			{StartTime	25}
-			{BrakeTime	1.5}	
+			{BrakeTime	1.5}
 			{StopTime	3}
 			{TurnRadius	7}
-     			{Gears  0.1 0.2 0.3 1}
+			{Gears  0.1 0.2 0.3 1}
 			{RearGears  0.25}
 		}
 		{FuelBag
-			{volume 340 }	
-			{rate	14 }   
+			{volume 340 }
+			{rate	14 }
 			{remain 340 }
 			{fuel "fuel"}
 		}
 		{speed
-        		{Normal  42}
-        		{Slow  42}
-    		}
+			{Normal  42}
+			{Slow  42}
+		}
 	}
-        
-        {Extension "humber.mdl"}
+
+	{Extension "humber.mdl"}
 	{bone "turret"
 		{speed 0.005}
 	}

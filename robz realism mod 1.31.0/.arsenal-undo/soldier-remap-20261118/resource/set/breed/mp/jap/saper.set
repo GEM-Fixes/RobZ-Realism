@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "jap_armyts_gear2"}
+	{portrait "jap_soldier2"}
+	{nationality jap}
+	{icon "sapper"}
+	{icon_priority 3}
+	{armors
+		{head "japarmy_cap_hohei2"}
+	}
+	{perks
+		("body_h250_s100")
+		("drive_t08_v10_c10")
+		("skills_2_2_1_1_1_2")
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_type100smg")
+		{item "mine_detector"}
+		("explosive_dynamite_x2")
+		{item "trench_spade"}
+		{in_hands 0}
+	}
+}

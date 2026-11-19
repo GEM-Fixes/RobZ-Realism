@@ -1,0 +1,21 @@
+{Extension "turan2_xx.mdl"}
+{Volume "body1"
+}
+{Volume "body2"
+}
+{Volume "gun"
+}
+{Volume "part1"
+}
+{Volume "part2"
+}
+{Volume "part3"
+}
+{Volume "part4"
+}
+{Volume "trackleft"
+}
+{Volume "trackright"
+}
+{Volume "turret"
+}

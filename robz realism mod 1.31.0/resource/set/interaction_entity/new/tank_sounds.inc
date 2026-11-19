@@ -45,7 +45,7 @@
 }
 {"np_sdkfz251_16"
 	("sdkfz250_sound")
-	{on spawn   
+	{on spawn
 		{add_view "flamer_fire" "flame1" "foresight9"}
 		{add_view "flamer_fire_barrel" "fire1" "foresight9"}
 		{add_view "flamer_fire" "flame2" "foresight10"}
@@ -60,7 +60,7 @@
 			{if volume "body"
 				{call "explosion"}
 			}
-        }
+		}
 	}
 	{on "_explosion"
 		{call "__explosion"}
@@ -82,11 +82,11 @@
 			{view pause	"flame2"}
 		}
 	}
-	{on operatable on	
+	{on operatable on
 		{view start	"fire1"}
 		{view start	"fire2"}
-	}	
-	{on operatable off		
+	}
+	{on operatable off
 		{view stop	"fire1"}
 		{view stop	"fire2"}
 	}
@@ -144,9 +144,9 @@
 		{link_sound "rotate_turret" 	    "vehicle/turret/sherman"	}
 		{link_sound "idle"				"vehicle/engine/m4a2_idle"}
 	}
-        {on fire "gun2"
-                {spawn "startsmoke_cali"}
-        }
+	{on fire "gun2"
+		{spawn "startsmoke_cali"}
+	}
 	("smoke_launcher_usa_turret")
 	("burn_by_engine" args 0.3)
 }
@@ -176,10 +176,10 @@
 		{view show	"fire1"}
 		{view start	"fire1"}
 	}
-	{on operatable on	
+	{on operatable on
 		{view start	"fire1"}
-	}	
-	{on operatable off		
+	}
+	{on operatable off
 		{view stop	"fire1"}
 	}
 	{on "_explosion"
@@ -216,18 +216,18 @@
 		{add_view	"smoke_zenite"		    "smkafire"		"Foresight1"}
 	}
 	{on fire "gun"
-        	{view start "flashbarrel1"}
+		{view start "flashbarrel1"}
 		{view start "flashbarrel1s"}
-        	{view start "smkafire"}
+		{view start "smkafire"}
 		{delay 0.8
 			{view pause "flashbarrel1"}
 		}
 		{delay 0.2
 			{view pause "flashbarrel1s"}
 		}
-        	{delay 2.5
-            		{view stop "smkafire"}
-        	}
+		{delay 2.5
+			{view stop "smkafire"}
+		}
 	}
 }
 {"gun_carrier_3_inch tank"
@@ -241,18 +241,18 @@
 		{add_view	"smoke_zenite"		    "smkafire"		"Foresight1"}
 	}
 	{on fire "gun"
-        		{view start "flashbarrel1"}
+		{view start "flashbarrel1"}
 		{view start "flashbarrel1s"}
-        		{view start "smkafire"}
+		{view start "smkafire"}
 		{delay 0.8
 			{view pause "flashbarrel1"}
 		}
 		{delay 0.2
 			{view pause "flashbarrel1s"}
 		}
-        		{delay 2.5
-            			{view stop "smkafire"}
-        		}
+		{delay 2.5
+			{view stop "smkafire"}
+		}
 	}
 }
 {"humber"
@@ -326,7 +326,7 @@
 			{delay 0.8
 				{view pause "flashbarrel00"}
 			}
-		else name "01"
+			else name "01"
 			{view start "flashbarrel01"}
 			{delay 0.8
 				{view pause "flashbarrel01"}
@@ -350,6 +350,8 @@
 	("kv_sound")
 	("burn_by_engine" args 0.2)
 }
+; bt7_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("bt7_sound")
 (define "bt7_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/tracks/bt"		}
@@ -360,21 +362,26 @@
 		{link_sound "idle"			"vehicle/engine/V-2_idle"}
 	}
 )
+; break_glass: {volumes "glass%1"} {spawn "glass_hit2"} {delay}
+;   %1 - text in {volumes}, text in {spawn}, text in {bone}
+;   e.g. ("break_glass" args 3 _front1)
 (define "break_glass"
- 	{volumes "glass%1" disable bullet contact blast}
- 	{spawn "glass_hit2" "glass%1" x}
- 	{delay 0.1
- 	{bone cut "glass%1"}
+	{volumes "glass%1" disable bullet contact blast}
+	{spawn "glass_hit2" "glass%1" x}
+	{delay 0.1
+		{bone cut "glass%1"}
 	}
 )
+; m3_break_glass: {on {if}}
+;   e.g. ("m3_break_glass")
 (define "m3_break_glass"
 	{on bullet_hit
- 		{if volume "glass_front1"
- 			("break_glass" args 3 _front1)
- 		else volume "glass_front2"
- 			("break_glass" args 3 _front2)
- 		}
- 	}
+		{if volume "glass_front1"
+			("break_glass" args 3 _front1)
+			else volume "glass_front2"
+			("break_glass" args 3 _front2)
+		}
+	}
 )
 {"np_m5 tank"
 	("m3_sound")
@@ -405,7 +412,7 @@
 			{delay 0.8
 				{view pause "flashbarrel00"}
 			}
-		else name "01"
+			else name "01"
 			{view start "flashbarrel01"}
 			{delay 0.8
 				{view pause "flashbarrel01"}
@@ -437,7 +444,7 @@
 	("sdkfz234_sound")
 	("smoke_launcher_3_sides")
 	("burn_by_engine" args 0.3)
-}	
+}
 {"np_sdkfz234_1 tank"
 	("sdkfz234_sound")
 	("burn_by_engine" args 0.3)
@@ -450,7 +457,7 @@
 	("sdkfz234_sound")
 	("burn_by_engine" args 0.3)
 }
-{"np_su14 tank"		
+{"np_su14 tank"
 	("mk7_sound")
 	("burn_by_engine" args 0.3)
 }
@@ -476,6 +483,8 @@
 	("hanomag_sound")
 	("burn_by_engine" args 0.3)
 }
+; lorraine_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("lorraine_sound")
 (define "lorraine_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/tracks/pz3"}
@@ -595,6 +604,8 @@
 	("smoke_launcher_usa_turret")
 	("burn_by_engine" args 0.3)
 }
+; b1bis_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("b1bis_sound")
 (define "b1bis_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/tracks/b1bis"}
@@ -607,7 +618,7 @@
 {"b1bis tank"
 	("b1bis_sound")
 	{on fire "gun2"
-        		{view start "flashbarrel11"}
+		{view start "flashbarrel11"}
 		{view start "flashbarrel11s"}
 		{ani_play "fire1"}
 		{delay 0.8
@@ -618,7 +629,7 @@
 		}
 	}
 }
-{"t35 tank"		
+{"t35 tank"
 	{on spawn
 		{add_view	"flash_gun_big_vehicle"	"flashbarrel8"	"Foresight8"}
 		{add_view	"flash_gun_big_vehicle"	"flashbarrel9"	"Foresight9"}
@@ -648,7 +659,7 @@
 		{view start "flashbarrel10"}
 	}
 	{on fire "gun2"
-        		{view start "flashbarrel13"}
+		{view start "flashbarrel13"}
 		{view start "flashbarrel13s"}
 		{ani_play "fire2"}
 		{delay 0.8
@@ -659,7 +670,7 @@
 		}
 	}
 	{on fire "gun3"
-        		{view start "flashbarrel12"}
+		{view start "flashbarrel12"}
 		{view start "flashbarrel12s"}
 		{ani_play "fire3"}
 		{delay 0.8
@@ -690,7 +701,7 @@
 	{on fire "mgun" overload
 		{if  name "00"
 			{view start "flashbarrel00"}
-		else name "01"
+			else name "01"
 			{view start "flashbarrel01"}
 		}
 	}
@@ -762,8 +773,8 @@
 	}
 	("burn_by_engine" args 0.3)
 	{on fire "gun"
-        		{ani_play "fire_p"}
-	}	
+		{ani_play "fire_p"}
+	}
 }
 {"stug3e tank"
 	("pz3_sound")
@@ -837,22 +848,22 @@
 	("burn_by_engine" args 0.3)
 	("smoke_launcher_3_sides")
 	{on fire "gun"
-        		{ani_play "fire2"}
+		{ani_play "fire2"}
 	}
 }
 {"pz3_l tank"
 	("pz3_sound")
-	("burn_by_engine" args 0.3)	
+	("burn_by_engine" args 0.3)
 }
 {"pz3j tank"
 	("pz3_sound")
-	("burn_by_engine" args 0.3)	
+	("burn_by_engine" args 0.3)
 }
 {"su85m tank"
 	("t34_sound")
 	("burn_by_engine" args 0.2)
 	{on fire "gun"
-        		{ani_play "fire2"}
+		{ani_play "fire2"}
 	}
 }
 {"t34m2 tank"
@@ -875,13 +886,13 @@
 		{ani_play "start2"}
 	}
 	{on fire "gun"
-        		{ani_play "fire2"}
+		{ani_play "fire2"}
 	}
 }
 {"ot34_2 tank"
 	("t34_sound")
 	("burn_by_engine" args 0.2)
-	{on spawn   
+	{on spawn
 		{add_view "flamer_fire_tank" "flame1" "foresight4"}
 		{add_view "flamer_fire_barrel" "fire1" "foresight4"}
 		{view show   "fire1"}
@@ -899,16 +910,16 @@
 			{view pause   "flame1"}
 		}
 	}
-	{on operatable on	
+	{on operatable on
 		{view start	"fire1"}
-	}	
-	{on operatable off		
+	}
+	{on operatable off
 		{view stop	"fire1"}
 	}
 }
 {"pz3_m_flamer tank"
 	("pz3_sound")
-	("burn_by_engine" args 0.3)	
+	("burn_by_engine" args 0.3)
 	("smoke_launcher_3_sides")
 	{on spawn
 		{add_view "flamer_fire_tank" "flame1" "foresight1"}
@@ -916,10 +927,10 @@
 		{view show	"fire1"}
 		{view start	"fire1"}
 	}
-	{on operatable on	
+	{on operatable on
 		{view start	"fire1"}
-	}	
-	{on operatable off		
+	}
+	{on operatable off
 		{view stop	"fire1"}
 	}
 	{on "_explosion"
@@ -963,17 +974,17 @@
 }
 {"ot-130 tank"
 	("t26_sound")
-	("burn_by_engine" args 0.3)	
+	("burn_by_engine" args 0.3)
 	{on spawn
 		{add_view "flamer_fire" "flame1" "foresight1"}
 		{add_view "flamer_fire_barrel" "fire1" "foresight1"}
 		{view show	"fire1"}
 		{view start	"fire1"}
 	}
-	{on operatable on	
+	{on operatable on
 		{view start	"fire1"}
-	}	
-	{on operatable off		
+	}
+	{on operatable off
 		{view stop	"fire1"}
 	}
 	{on "_explosion"
@@ -1017,10 +1028,10 @@
 		{view start	"fire1"}
 	}
 	("mk7_sound")
-	{on operatable on	
+	{on operatable on
 		{view start	"fire1"}
-	}	
-	{on operatable off		
+	}
+	{on operatable off
 		{view stop	"fire1"}
 	}
 	{on break_armor
@@ -1028,7 +1039,7 @@
 			{if volume "body"
 				{call "explosion"}
 			}
-        }
+		}
 	}
 	{on pierce
 		{if volume "body"
@@ -1055,7 +1066,7 @@
 {"kv8_41 tank"
 	("kv_sound")
 	("burn_by_engine" args 0.2)
-	{on spawn   
+	{on spawn
 		{add_view "flamer_fire_tank" "flame1" "foresight5"}
 		{add_view "flamer_fire_barrel" "fire1" "foresight5"}
 		{view show   "fire1"}
@@ -1073,10 +1084,10 @@
 			{view pause   "flame1"}
 		}
 	}
-	{on operatable on	
+	{on operatable on
 		{view start	"fire1"}
-	}	
-	{on operatable off		
+	}
+	{on operatable off
 		{view stop	"fire1"}
 	}
 }
@@ -1095,7 +1106,7 @@
 			{delay 0.8
 				{view pause "flashbarrel00"}
 			}
-		else name "01"
+			else name "01"
 			{view start "flashbarrel01"}
 			{delay 0.8
 				{view pause "flashbarrel01"}
@@ -1129,6 +1140,8 @@
 	("burn_by_engine" args 0.3)
 }
 ;-----------------Normand Unit Pack
+; pz7_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("pz7_sound")
 (define "pz7_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"			"vehicle/tracks/jugdpanther"	}
@@ -1147,8 +1160,8 @@
 	{on fire "gun2"
 		{view start "flashbarrel2"}
 		{view start "flashbarrel2s"}
-       		{spawn "dust_shot_norm" 	"basis"}
-        	{spawn "tank_canon_fire_medium" 	"Foresight2" x}
+		{spawn "dust_shot_norm" 	"basis"}
+		{spawn "tank_canon_fire_medium" 	"Foresight2" x}
 		{blastwave c4 0.2 r0 1 r1 1.5 bone 	"Foresight2"}
 		{delay 0.3
 			{view pause "flashbarrel2s"}

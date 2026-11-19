@@ -3,9 +3,9 @@
 	(include "/properties/selection/vehicle.inc" scale(1.2))
 	{collider "tank.light"}
 	{props "light" "turret_rotator" "vision_vehicle_medium" "muzzle_small" "switch_mgun_coax"}
-	
+
 	{extender "enumerator"}
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: mk6.def) ---
 	{volume "body1"	;корпус (нижн€€ часть и гласис)
 		{tags "body"}
@@ -13,7 +13,7 @@
 		{thickness 0.1	;внутренн€€ стенка
 			{front	9}	;верх 9мм
 			{rear	14}
-		;	{top	0.1}	;внутренн€€ стенка
+			;	{top	0.1}	;внутренн€€ стенка
 			{bottom	10.4}	;4+6,35
 		}
 	}
@@ -92,7 +92,7 @@
 	}
 	{Volume "mantlet"
 		{thickness 31.75
-		;	{front	31.75}	;31,75+19,05 передн€€ плита
+			;	{front	31.75}	;31,75+19,05 передн€€ плита
 			{rear	19.05}
 		}
 	}
@@ -109,7 +109,7 @@
 	}
 	; --- end Godny hitbox armor ---
 	("shield" args 10)
-	
+
 	{extender "shield"
 		{on}
 	}
@@ -158,7 +158,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "57mm_oqf" filling "bullet57 eng apcbc" 1}		
+			{weapon "57mm_oqf" filling "bullet57 eng apcbc" 1}
 			("abm_medium")
 		}
 		{place "mgun"
@@ -168,32 +168,32 @@
 			{basic}
 		}
 	}
-	
+
 	{mass 20100}
-		{Chassis
+	{Chassis
 		("tank_trace" fx("tracks_sm2") step(0.15) len(0.2))
 		{Locomotion ("locomotion")
 			{MaxSpeed   34}
 			{StartTime  20}
-			{TurnStart  1.5}			
+			{TurnStart  1.5}
 			{TurnTime   15}
-			{TurnRadius 9} 
-    		{TurnStop   0.7}
+			{TurnRadius 9}
+			{TurnStop   0.7}
 			{BrakeTime  1.5}
 			{StopTime   2.5}
 			{Gears  0.1 0.2 0.3 1}
 			{RearGears  0.23}
 		}
 		{FuelBag
-			{volume 500 }	
-			{rate	32 }   
+			{volume 500 }
+			{rate	32 }
 			{remain 500 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  34}
-        	{Slow  34}
-    	}
+			{Normal  34}
+			{Slow  34}
+		}
 	}
 
 

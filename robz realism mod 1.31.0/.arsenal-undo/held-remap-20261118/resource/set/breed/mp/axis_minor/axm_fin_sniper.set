@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "fin-camo2-rfl"}
+	{portrait "fin_soldier4"}
+	{icon "sniper"}
+	{icon_priority 2}
+	{nationality fin}
+	{armors
+		{head helmet_sniper_fin}
+	}
+	{tags "sniper"}
+	{perks
+		("body_sniper")
+		("drive_t10_v10_c10")
+		{"stealth"}
+		{"telescope"}
+		("skills_sniper_r5")
+		{"aimedshot"}
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("kit_rifle" gun(mosin_s_fin) ammo(7x53) rounds(120))
+		{item "bandage" 6}
+		{item "plant" 3}
+		{in_hands 0}
+	}
+}

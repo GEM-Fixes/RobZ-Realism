@@ -5,7 +5,7 @@
 	}
 	("fg_medium" args 6.0)
 	{mass 16}
-	
+
 	; anti-apc
 	{damage add blastwave
 		{energy 3.0}

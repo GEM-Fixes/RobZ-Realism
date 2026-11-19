@@ -24,7 +24,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_30"
 					{timer
 						{mode play }
@@ -78,7 +78,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_50"
 					{timer
 						{mode play }
@@ -155,7 +155,7 @@
 			{damping 0.9}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/flash_g03"
 					{timer
 						{mode play }
@@ -258,7 +258,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_50"
 					{timer
 						{mode play }
@@ -336,7 +336,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_30"
 					{timer
 						{mode play }
@@ -367,7 +367,7 @@
 	}
 	{#+ particleview "wp flares"
 		{visualizer
-			{stage 
+			{stage
 				{sprite "/texture/fx/flash/halo02"
 					{timer
 						{mode play }
@@ -399,7 +399,7 @@
 	}
 	{#+ particleview "wp flares"
 		{visualizer
-			{stage 
+			{stage
 				{sprite "/texture/fx/flash/halo02"
 					{timer
 						{mode play }
@@ -431,7 +431,7 @@
 	}
 	{#+ particleview "wp flares"
 		{visualizer
-			{stage 
+			{stage
 				{sprite "/texture/fx/flash/halo02"
 					{timer
 						{mode play }
@@ -463,7 +463,7 @@
 	}
 	{#+ particleview "wp flares"
 		{visualizer
-			{stage 
+			{stage
 				{sprite "/texture/fx/flash/halo02"
 					{timer
 						{mode play }
@@ -521,7 +521,7 @@
 			}
 		}
 		{visualizer
-			{stage initial 
+			{stage initial
 				{sprite "$/particle/oskolki"
 					{timer
 						{mode play }
@@ -537,7 +537,7 @@
 					{light 1}
 				}
 			}
-			{stage collided 
+			{stage collided
 				{sprite "$/particle/oskolki"
 					{timer
 						{mode play }

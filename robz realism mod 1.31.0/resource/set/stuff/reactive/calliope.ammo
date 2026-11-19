@@ -4,7 +4,7 @@
 	{inventory
 		{size 4 1}
 		{weight 50}
-	}	
+	}
 	{mass 20.3}
 	{view "calliope_ammo"
 		{tail "rocket_smoke_norm" "tail"}

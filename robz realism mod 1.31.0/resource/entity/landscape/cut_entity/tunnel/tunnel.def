@@ -5,7 +5,7 @@
 	("boneLand"  args "trench_ground")
 	("boneLand"  args "trench_ground2")
 	{ObstacleID "unbreakable"}
-	
+
 	{Volume "cL1"
 		{Tags  "attach" "1"}
 		{able clear {touch 1}}
@@ -127,7 +127,7 @@
 		{place "cR10" {attach squat_lie} {linkbone "cR10"}}
 		{place "cR11" {attach squat_lie} {linkbone "cR11"}}
 		{place "cR12" {attach squat_lie} {linkbone "cR12"}}
-	}	
+	}
 	{boarder
 		{door "dL1"}
 		{door "dL2"}
@@ -156,9 +156,9 @@
 		{door "dR10"}
 		{door "dR11"}
 		{door "dR12"}
-		{node "nR0"}	
+		{node "nR0"}
 		{node "n2"}
-		
+
 		{anm "walk"
 			{forward {speed 1.2} {loop "walk_normal_gun_up" -1}}
 			{reverse {speed 1.2} {loop "walk_normal_gun_up" }}
@@ -175,7 +175,7 @@
 			{forward {speed 100} {loop "stand_upstairs"} {fix_orientation}}
 			{reverse {speed 100} {loop "stand_upstairs" -1} {fix_orientation}}
 		}
-		
+
 		{link "nL0" "dL1" {anm "walk"}}
 		{link "nL0" "dL2" {anm "walk"}}
 		{link "nL0" "dL3" {anm "walk"}}
@@ -188,7 +188,7 @@
 		{link "nL0" "dL10" {anm "walk"}}
 		{link "nL0" "dL11" {anm "walk"}}
 		{link "nL0" "dL12" {anm "walk"}}
-		
+
 		{link "nL0" "n1" {anm "ladder"}}
 
 		{link "n1" "cL1" {anm "ladder_super_fast"}}
@@ -203,7 +203,7 @@
 		{link "n1" "cL10" {anm "ladder_super_fast"}}
 		{link "n1" "cL11" {anm "ladder_super_fast"}}
 		{link "n1" "cL12" {anm "ladder_super_fast"}}
-		
+
 		{link "cL1" "cR1" {anm "ladder_fast"}}
 		{link "cL2" "cR2" {anm "ladder_fast"}}
 		{link "cL3" "cR3" {anm "ladder_fast"}}
@@ -216,7 +216,7 @@
 		{link "cL10" "cR10" {anm "ladder_fast"}}
 		{link "cL11" "cR11" {anm "ladder_fast"}}
 		{link "cL12" "cR12" {anm "ladder_fast"}}
-		
+
 		{link "n2" "cR1" {anm "ladder_super_fast"}}
 		{link "n2" "cR2" {anm "ladder_super_fast"}}
 		{link "n2" "cR3" {anm "ladder_super_fast"}}
@@ -229,9 +229,9 @@
 		{link "n2" "cR10" {anm "ladder_super_fast"}}
 		{link "n2" "cR11" {anm "ladder_super_fast"}}
 		{link "n2" "cR12" {anm "ladder_super_fast"}}
-		
+
 		{link "nR0" "n2" {anm "ladder"}}
-		
+
 		{link "nR0" "dR1" {anm "walk"}}
 		{link "nR0" "dR2" {anm "walk"}}
 		{link "nR0" "dR3" {anm "walk"}}

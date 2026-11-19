@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "waffen-tk2-g43"}
 	{portrait "ger_soldier6"}
@@ -9,49 +10,17 @@
 		{head waffen_helmet_totenkopf}
 	}
 	{perks
-		{"health" "200%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "150%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.85
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 0.9
-		}
-		{"pistol" lvl_4
-		}
-		{"smg" lvl_3
-		}
-		{"mgun" lvl_3
-		}
-		{"rifle" lvl_5
-		}
-		{"rocketlauncher" lvl_5
-		}
-		{"melee" lvl_4
-		}
+		("soldier_rifle_5" rocket(5) body(hardy) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_lvl3")
-	}
+	("breed_vet" table(ss_start3))
 	{inventory
 		{item "g43" filling "ammo g43_mag" 10}
 		{item "ammo g43_mag" 20}
 		{item "ammo mauser_clip" 60}
 		{item "ammo mg_mauser drum" 50}
 		{item "bandage" 5}
-		{item "grenade m24" 2}
-		{item "m24x5 grenade"}
+		("give" item(grenade m24) count(2))
+		("give" item(m24x5 grenade) count(1))
 		{item "sandbag_kit"}
 		{item "panzerfaust_60 weapon" filled}
 		{in_hands 0}

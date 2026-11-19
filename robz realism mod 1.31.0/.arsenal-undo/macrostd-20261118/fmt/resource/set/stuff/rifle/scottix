@@ -1,0 +1,18 @@
+{from "pattern rifle"
+	{tag "autorifle"}
+	{filling "ammo 6x52" 6 36}
+	{entity "scottix"}
+	{fireSound "rifle/carcano_m91"}
+	{reloadSound "m1carbine"}
+	
+	{Automatic}
+	{healthDamage 200}
+	("recoveryTime" r(50))
+	("accuracy_automatic_rifle")
+	("speed" s(840))
+	{burst
+		{short 1}
+		{long 5 1}
+	}
+
+}

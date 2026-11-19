@@ -2,9 +2,9 @@
 	{filling "ammo 8x50" 24}
 	{entity "hotchkiss_1914"}
 	{fireSound	"mgun/breda_37_burst/"}
-    	{reloadSound "breda30_reload"}
+	{reloadSound "breda30_reload"}
 	{rechargeTime 2.5}
-    	{spreading 2}
+	{spreading 2}
 	("recoveryTime" r(500))
 	("burst_long")
 	("speed" s(725))

@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-arty-rfl"}
+	{portrait "ger2_soldier2"}
+	{nationality ger}
+	{icon "smg"}
+	{icon_priority 1}
+	{armors
+		{head helmet_ger_m40}
+	}
+	{perks
+		("body_crew")
+		("drive_crew_elite")
+		("breed_skills" pistol(5) smg(5) mgun(5) rifle(5) rocket(2) melee(4))
+		{"tankgun" lvl_8}
+	}
+	("breed_vet" table(crew))
+	{inventory
+		("rifle_mauzer")
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

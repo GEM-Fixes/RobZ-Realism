@@ -3,7 +3,7 @@
 	{Extension "firelight2_hm1.mdl"}
 	{props "cornered" "wood" "parts" "construction" "burning" "wall" "fire_light" "no_destroyed_stamp"}
 	("armor_house_wood")
-        {mass 10000}
+	{mass 10000}
 
 	{extender "structure_bone"
 		{hold  "39"}

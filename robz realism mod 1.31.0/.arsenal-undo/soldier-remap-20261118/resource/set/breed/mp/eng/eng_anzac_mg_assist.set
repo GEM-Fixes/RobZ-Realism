@@ -1,0 +1,29 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng_t3"}
+	{portrait "eng_elite2"}
+	{nationality anzac}
+	{icon "elite5"}
+	{icon_priority 3}
+	{armors
+		{head fieldcap_eng}
+	}
+	{perks
+		("body_eng_anzac")
+		("drive_t09_v10_c10")
+		("skills_3_3_4_4_3_3")
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "em3" filled}
+		{item "ammo bren_mag" 224}
+		{item "ammo british303_clip" 100}
+		{item "bandage" 5}
+		("frag_mk1_x2")
+		("at_grenade_n73at_x1")
+		("smoke_x2")
+		("mine_antitank_x1")
+		{item "sandbag_kit" 1}
+		{in_hands 0}
+	}
+}

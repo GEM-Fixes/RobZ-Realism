@@ -48,11 +48,11 @@
 		}
 		{piercing
 			{show}
-			{offset 74 10}	
+			{offset 74 10}
 			{size 26 14}
 
 			{invalid black}
-			{satisfy black}			
+			{satisfy black}
 			{optimal black}
 			{disabled black}
 

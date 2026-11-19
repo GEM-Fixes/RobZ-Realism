@@ -1,19 +1,4 @@
+; same as the other 1 def here; body in np_pak40_body.inc
 {game_entity
-	{Extension "pak40_xx.mdl"}
-	{Volume "body"
-	}
-	{Volume "gun"
-	}
-	{Volume "part1"
-	}
-	{Volume "part2"
-	}
-	{Volume "part3"
-	}
-	{Volume "part4"
-	}
-	{Volume "standr"
-	}
-	{Volume "turret"
-	}
+	(include "np_pak40_body.inc")
 }

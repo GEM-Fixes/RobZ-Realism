@@ -1,0 +1,9 @@
+{Extension "dshk_zenit_x.mdl"}
+{Volume "body"
+}
+{Volume "stan1"
+}
+{Volume "stan2"
+}
+{Volume "stan3"
+}

@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "fin-camo2-svt"}
+	{portrait "fin_elite1"}
+	{icon "elite-mg"}
+	{icon_priority 1}
+	{nationality fin}
+	{armors
+	;{head helmet_fin_m38}
+	}
+	{perks
+		("body_veteran")
+		("drive_t09_v10_c10")
+		("breed_skills" pistol(3) smg(3) mgun(6) rifle(4) rocket(3) melee(3))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("kit_mgun" gun(lsm26) ammo(LSM26_mag) rounds(320))
+		{item "bandage" 2}
+		("frag_m24_x1")
+		("frag_kasapanos_2kg_x1")
+		("at_grenade_kasapanos_4kg_x1")
+		{item "molotov_coctail" 1}
+
+		{in_hands 0}
+	}
+}

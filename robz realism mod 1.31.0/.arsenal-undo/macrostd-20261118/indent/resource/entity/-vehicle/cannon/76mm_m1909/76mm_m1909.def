@@ -1,0 +1,112 @@
+{game_entity
+	(include "/properties/cannon.ext")
+	{props "vehicle" "cannon" "wheeled" "round_sandbag2" "vision_cannon_medium" "muzzle_small"}
+
+	("armor_medium")
+
+
+	("wheel" args "wheelright")
+	("wheel" args "wheelleft")
+
+	("crew_wheeled_gun")
+	{boarder
+		{anm "gunner"
+			{forward	{end "pose_m8_gunlayer" 10}}
+		}
+		{anm "commander"
+			{forward	{end "pose_m8_charger" 10}}
+		}
+		{anm "driver1"
+			{forward {end "cannon_pak40_pusher_left" 10}}
+		}
+		{anm "driver2"
+			{forward {end "cannon_pak40_pusher_right" 10}}
+		}
+		{anm "seat1"
+			{forward {end "seat_passenger" 10}}
+		}
+		{anm "seat2"
+			{forward {end "seat_passenger" 10}}
+		}
+	}
+	(mod "mp"
+		("crew_human" place(commander1)		bone(commander1)		door(emit2) animation(commander1))
+		("crew_human" place(commander2)		bone(commander2)		door(emit3) animation(commander2))
+		("crew_human" place(driver3)		bone(driver3)			door(emit3) animation(driver3))
+		("crew_human" place(driver4)		bone(driver4)			door(emit4) animation(driver4))
+		{boarder
+			{anm "commander1"
+				{forward	{end "pose_squat_watch_binocular" 10}}
+			}
+			{anm "commander2"
+				{forward	{end "pose_m8_charger" 10}}
+			}
+			{anm "driver3"
+				{forward {end "mgun_browning_driver_l" 10}}
+			}
+			{anm "driver4"
+				{forward {end "mgun_browning_driver_r" 10}}
+			}
+		}
+		{placer
+			{place "commander1" {group "crew"}}
+			{place "commander2" {group "crew"}}
+		}
+	)
+	{extender "inventory"
+		{box
+			{item "bullet76_rus fg" 100}
+			{item "sandbag_kit2"}
+		}
+	}
+	{Weaponry
+		{place "gun"
+			{weapon "76mm_1909" filling "bullet76_rus fg" 1}
+			{RestoreIKAfterAim}
+			{Rotate}
+			("abm_field_gun")
+		}
+	}
+	{mass 627}
+	{Extension "76mm_m1909.mdl"}
+	(include "/properties/selection/cannon.inc"  scale(0.7))
+	{bone "basis"
+	      {limits}
+	}
+	(mod not "mp"
+		{extender "cannon"
+			{animation
+				{switch "close"}
+				{move "cannon_pak40_pusher_left" "cannon_pak40_pusher_right"}
+				{aim "cannon_m8_gunlayer" ""}
+				{fire  "Cannon_gunlayer_fire-alert" "cannon_m8_charger_fire"}
+				{reload  "" "Cannon_m8_charger"}
+			}
+			{move {obstacle "close"}}
+			{attack {obstacle "open"}}
+		}
+	)
+	(mod "mp"
+		{extender "cannon"
+			{animation
+				{switch "close"}
+				{move "cannon_pak40_pusher_left" "cannon_pak40_pusher_right" "mgun_browning_driver_l" "mgun_browning_driver_r"}
+				{aim "cannon_m8_gunlayer" "" "" ""}
+				{fire  "Cannon_gunlayer_fire-alert" "cannon_m8_charger_fire" "" "Cannon_zis3_charger_fire 0.2"}
+				{reload  "" "Cannon_m8_charger" "" "cannon_pak40_charger"}
+			}
+			{move {workers "driver1" "driver2" "driver3" "driver4"} {obstacle "close"}}
+			{attack {workers "gunner" "commander" "commander1" "commander2"} {obstacle "open"}}
+			{rotate_ik_Limit 0}
+		}
+	)
+	{Chassis "track"
+		("car_trace" fx("tracewheel05") step(0.07) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
+		("loco_medium")
+	}
+	{bone "gun_rot"
+		{speed 0.006}
+	}
+
+	{Texmod "bo4"}
+}

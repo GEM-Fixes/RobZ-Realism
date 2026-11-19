@@ -1,9 +1,10 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{collider "tank.medium"}
 	{props "medium" "turret_rotator" "vision_vehicle_maximum" "muzzle_medium"}
-	
+
 	{extender "enumerator"}
 
 	{Extension "chi-ri.mdl"}
@@ -14,7 +15,7 @@
 		{component "body"}
 		{thickness 50
 			{front	100}
-		;	{rear	50}
+			;	{rear	50}
 			{top	0.1}	;внутренняя стенка
 			{bottom	20}
 			{right	30}	;гласис
@@ -36,7 +37,7 @@
 		{component "body"}
 		{thickness 50
 			{front	10}	;стенка моторного
-		;	{rear	50}
+			;	{rear	50}
 			{top	30}
 			{bottom	20}
 		}
@@ -52,13 +53,10 @@
 			{bottom	20}
 		}
 	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "turret"}
-	}
+	("vol_turret_hole_only" name(hole_man))
 	{volume "mantlet"
 		{thickness 100
-		;	{front	100}
+			;	{front	100}
 			{rear	15}	;орудие дает небольшую броню
 		}
 	}
@@ -192,10 +190,10 @@
 			{MaxSpeed   30}
 			{maxSpeedAtMaxTurn 4}
 			{StartTime  40}
-			{TurnStart  1.8}			
+			{TurnStart  1.8}
 			{TurnTime   20}
-			{TurnRadius 10} 
-    		{TurnStop   1}
+			{TurnRadius 10}
+			{TurnStop   1}
 			{BrakeTime  2}
 			{StopTime   3}
 			{Gears   0.1 0.2 0.3 1}
@@ -208,9 +206,9 @@
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  30}
-        	{Slow  30}
-    	}
+			{Normal  30}
+			{Slow  30}
+		}
 	}
 
 	{bone "turret"

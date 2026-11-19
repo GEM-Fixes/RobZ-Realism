@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-82nd-bar"}
+	{portrait "usa_elite1"}
+	{nationality usa}
+	{icon "elite3"}
+	{icon_priority 3}
+	{armors
+		{head helmet_usa_para}
+	}
+	{perks
+		("body_h250_s150")
+		("drive_veteran")
+		("skills_usa_4_4_5_5_4_4")
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_garand")
+		{item "ammo bar_mag" 240}
+		{item "bandage" 5}
+		("frag_m61_x2")
+		{item "sandbag_kit" 1}
+		{in_hands 0}
+	}
+}

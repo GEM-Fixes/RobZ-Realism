@@ -1,57 +1,26 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/armoredcar.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.0))
 	{Extension "t48.mdl"}
 	{extension "crew_t48.ext"}
 	{props "vehicle" "armored_car" "tank" "turret" "with_gun" "wheeled_6" "explosion_throw_crew" "vision_vehicle_medium" "muzzle_small"}
-	
+
 	{extender "enumerator"}
-	
-	{volume "sticky"
-		{tags "grenade_fg_target"}
-		{able clear {contact} {touch}}
-		{component "sticky_body"}
-	}
+
+	("vol_sticky_grenade_target" name(sticky))
 	{component "sticky_body"}
 
-	{volume "body1"
-		{tags "body"}
-		{component "body"}
-		{thickness 10}
-	}
-	{volume "body2"
-		{tags "body"}
-		{component "body"}
-		{thickness 10}
-	}
-	{volume "body3"
-		{tags "body"}
-		{component "body"}
-		{thickness 15}
-	}
-	{volume "body4"
-		{tags "body"}
-		{component "body"}
-		{thickness 15}
-	}
-	{volume "body5"
-		{tags "body"}
-		{component "body"}
-		{thickness 15}
-	}
-	{volume "body6"
-		{tags "body"}
-		{component "body"}
-		{thickness 15}
-	}
+	("vol_body_plate_lower" name(body1) mm(10))
+	("vol_body_plate_lower" name(body2) mm(10))
+	("vol_body_plate_lower" name(body3) mm(15))
+	("vol_body_plate_lower" name(body4) mm(15))
+	("vol_body_plate_lower" name(body5) mm(15))
+	("vol_body_plate_lower" name(body6) mm(15))
 	{volume "roll"
 		{thickness 15}
 	}
-	{volume "body7"
-		{tags "body"}
-		{component "body"}
-		{thickness 15}
-	}
+	("vol_body_plate_lower" name(body7) mm(15))
 	{Volume "gun_rot"
 		{tags "gun"}
 		{component "gun"}
@@ -74,7 +43,7 @@
 		{thickness 1}
 	}
 
-	("armor_light" args 1.0)
+	("armor_light_btr" args 1.0)
 
 	("wheel" args "wheelright1")
 	("wheel" args "wheelleft1")
@@ -92,7 +61,7 @@
 			{RestoreIKAfterAim}
 		}
 	}
-  	
+
 	{sensor
 		{visor "main"
 			{bone "mgun"}
@@ -102,21 +71,21 @@
 	{Chassis
 		{Locomotion ("locomotion")
 			{MaxSpeed 35}
-	  		{maxSpeedAtMaxTurn 6}
+			{maxSpeedAtMaxTurn 6}
 			{StartTime	30}
-     			{Gears  0.1 0.2 0.3 1}
+			{Gears  0.1 0.2 0.3 1}
 			{RearGears 0.25}
 		}
 		{FuelBag
-			{volume 230 }	
-			{rate	11 }   
+			{volume 230 }
+			{rate	11 }
 			{remain 230 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  35}
-        	{Slow  35}
-    	}
+			{Normal  35}
+			{Slow  35}
+		}
 		; left track must be first
 		("tank_trace" fx("tracks_sm") step(0.3) len(0.4) boneleft("wheell4") boneright("wheelr4"))
 		("car_trace" fx("tracewheel01") step(0.09) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))

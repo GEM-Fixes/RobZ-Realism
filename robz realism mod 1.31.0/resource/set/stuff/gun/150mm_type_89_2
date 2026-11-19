@@ -1,5 +1,5 @@
 {from "pattern gun2"		; type89 direct fire
-    	{filling "bullet150 jap"}
+	{filling "bullet150 jap"}
 	{fireSound "gun/howitzer/155mm_gpf"}
 	{reloadSound "gun_r04"}
 	("range_grazing_howitzer")
@@ -8,8 +8,8 @@
 	{range 210 210}
 	("speed" s(875))
 	("accuracy_grazinghowitzer_210m_anti_far")
-		(mod "mp"
-			{tag "prepare"}
+	(mod "mp"
+		{tag "prepare"}
 		{Special
 			{Mode aim}
 			{PrepareTime 0.1}

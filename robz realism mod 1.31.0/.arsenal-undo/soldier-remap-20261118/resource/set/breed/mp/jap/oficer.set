@@ -1,0 +1,31 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "jap_army_officer"}
+	{portrait "jap_officer"}
+	{nationality jap}
+	{icon "officer"}
+	{icon_priority 6}
+	{armors
+		{head "japarmy_officer_cap1"}
+	}
+	{tags "officer"}
+	{perks
+		("body_officer")
+		{"field_glass"}
+		("drive_t10_v10_c10")
+		{"pistol" lvl_3}
+		{"smg" lvl_3}
+		{"mgun" lvl_3}
+		{"rifle" lvl_3}
+		{"rocketlauncher" lvl_3}
+		{"melee" "lvl_3"}
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("kit_pistol" gun(nambu) ammo(nambu_mag) rounds(32))
+		("smoke_paradrop_ammo_heavy_x5")
+		{item "knife_japan"}
+		{item "binocular"}
+		{in_hands 0}
+	}
+}

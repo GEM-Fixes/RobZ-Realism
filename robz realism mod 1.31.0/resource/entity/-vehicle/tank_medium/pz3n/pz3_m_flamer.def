@@ -1,26 +1,21 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{props "medium" "turret_rotator" "vision_vehicle_high" "muzzle_small" "flamer_tank"}
-	
+
 	{extender "enumerator"
 		{digit_folder "ger"}
 	}
 
-	{volume "body1"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body2"
-		{tags "body"}
-		{component "body"}
-	}
+	("vol_body_part_lower" name(body1))
+	("vol_body_part_lower" name(body2))
 
 	("armor_medium" turret(50 30 30 10) body(50 30 50 22))
 	("armor_engine"  t(30 30 50 20))
 	("armor_mantlet" t(50))
 	("shield" args 8)
-	
+
 	{volume "armor_turret"
 		{thickness 20}
 	}
@@ -29,7 +24,7 @@
 	}
 
 	{extender "shield"
-			{on}
+		{on}
 	}
 	{component "shieldl1" {tags "shield"}}
 	{component "shieldl2" {tags "shield"}}
@@ -43,12 +38,12 @@
 	{component "shieldr2" {tags "shield"}}
 	{component "shieldr3" {tags "shield"}}
 	{component "shieldr4" {tags "shield"}}
-	{component "shieldr5" {tags "shield"}}	
+	{component "shieldr5" {tags "shield"}}
 	{component "shieldr6" {tags "shield"}}
-	{component "shieldr7" {tags "shield"}}	
+	{component "shieldr7" {tags "shield"}}
 	{component "armor_hull" {tags "armor_hull"}}
-	{component "shieldr9" {tags "shield"}}	
-	
+	{component "shieldr9" {tags "shield"}}
+
 	("crew_4_human")
 
 	{boarder
@@ -87,9 +82,9 @@
 	}
 	{Weaponry
 		("restore_ik_time")
-		 {place "flamer1"
+		{place "flamer1"
 			{type "secondary_flamer"}
-		 	;{weapon "flame_thrower_tank" filled}
+			;{weapon "flame_thrower_tank" filled}
 			{weapon "flamer_t_ger" filled}
 			{foresight "foresight1"}
 			("abm_mgun")
@@ -120,28 +115,28 @@
 			{maxSpeedAtMaxTurn 6}
 			{StartTime 	 35}
 			{TurnTime  	 15}
-    		{TurnStart 1.4}
-     		{BrakeTime   1} 
-    		{StopTime    2}
-     		{TurnRadius  8} 
-    		{TurnStop   0.7}
-     		{Gears  0.1 0.2 0.3 1}
-     		{RearGears 0.28}
+			{TurnStart 1.4}
+			{BrakeTime   1}
+			{StopTime    2}
+			{TurnRadius  8}
+			{TurnStop   0.7}
+			{Gears  0.1 0.2 0.3 1}
+			{RearGears 0.28}
 		}
 		{FuelBag
-			{volume 320 }	
-			{rate	24 }   
+			{volume 320 }
+			{rate	24 }
 			{remain 320 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  30}
-        	{Slow  30}
-    	}
+			{Normal  30}
+			{Slow  30}
+		}
 	}
 
 	{Extension "pz3_m_flamer.mdl"}
-	
+
 	{bone "turret"
 		{speed 0.002}
 	}

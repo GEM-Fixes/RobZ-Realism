@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "fin-camo2-rfl"}
+	{portrait "fin_soldier4"}
+	{icon "sniper"}
+	{icon_priority 2}
+	{nationality fin}
+	{armors
+		{head helmet_sniper_fin}
+	}
+	{tags "sniper"}
+	{perks
+		("breed_body" health(350%) regen_health(100%) stamina(150%) regen_stamina(100%) vision("mp_sniper") speed(1.0))
+		("breed_drive" tank(1.0) vehicle(1.0) cannon(1.0))
+		{"stealth"}
+		{"telescope"}
+		("breed_skills" pistol(2) smg(2) mgun(1) rifle(5) rocket(1) melee(2))
+		{"aimedshot"}
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("kit_rifle" gun(mosin_s_fin) ammo(7x53) rounds(120))
+		{item "bandage" 6}
+		{item "plant" 3}
+		{in_hands 0}
+	}
+}

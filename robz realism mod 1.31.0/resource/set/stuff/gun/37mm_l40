@@ -5,12 +5,12 @@
 	{rechargeTime 4.4}
 	("caliber_minimum")
 	;("range_minimum")
-        {range 180 180}
-        ("speed" s(792))
+	{range 180 180}
+	("speed" s(792))
 
-		("damage_170" a(78) b(69) c(59) d(51) e(43) range(180))
+	("damage_170" at20(78) at100(69) at170(59) at215(51) at250(43) max(180))
 	{parameters "apcr"
-        	("damage_170" a(107) b(82) c(59) d(41) e(27) range(180))
+		("damage_170" at20(107) at100(82) at170(59) at215(41) at250(27) max(180))
 	}
 	{parameters "fg"
 		{range 160 160}
@@ -18,5 +18,5 @@
 	{parameters "canister"
 		{range 100 100}
 	}
-	("accuracy_low"))
+	("accuracy_low")
 }

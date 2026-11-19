@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-smguner"}
+	{portrait "rus_elite2"}
+	{nationality rus}
+	{icon "elite6"}
+	{icon_priority 3}
+	{armors
+		{body ammo_rus}
+		{head helmet1_rus}
+	}
+	{perks
+		("body_squadleader")
+		("drive_veteran")
+		("skills_2_1_3_3_1_3")
+	}
+	("breed_vet" table(start5))
+	{inventory
+		{item "dt" filling "ammo dt29_mag" 60}
+		{item "ammo dt29_mag" 240}
+		{item "bandage" 5}
+		{item "sandbag_kit" 1}
+		{in_hands 0}
+	}
+}

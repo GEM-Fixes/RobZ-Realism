@@ -1,24 +1,16 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{props "medium" "-turret" "vision_vehicle_medium" "muzzle_medium_sides"}
-	
+
 	{extender "enumerator"
-		;{digit_folder "ger"}
+	;{digit_folder "ger"}
 	}
 
-	{volume "body1"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body2"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body3"
-		{tags "body"}
-		{component "body"}
-	}
+	("vol_body_part_lower" name(body1))
+	("vol_body_part_lower" name(body2))
+	("vol_body_part_lower" name(body3))
 
 	("armor_spa_light" armor(50 30 30 17))
 	("armor_mantlet" t(50))
@@ -57,7 +49,7 @@
 
 	{extender "inventory"
 		{box
-			
+
 			{item "ammo bullet75 ger apcbc" 24}
 			{item "ammo bullet75 ger fg" 22}
 			{item "ammo bullet75 ger apcr" 2}
@@ -65,9 +57,9 @@
 		}
 	}
 	{Weaponry
-        		("restore_ik_time")
+		("restore_ik_time")
 		{place "gun"
-            		{RestoreIKAfterAim}
+			{RestoreIKAfterAim}
 			{weapon "75mm_stuk40_l43" filling "ammo bullet75 ger apcbc" 1}
 			("abm_medium")
 		}
@@ -81,28 +73,28 @@
 			{maxSpeedAtMaxTurn 6}
 			{StartTime 	 35}
 			{TurnTime  	 15}
-    		{TurnStart 1.4}
-     		{BrakeTime   1} 
-    		{StopTime    2}
-     		{TurnRadius  8} 
-    		{TurnStop   0.7}
-     		{Gears  0.1 0.2 0.3 1}
-     		{RearGears 0.28}
+			{TurnStart 1.4}
+			{BrakeTime   1}
+			{StopTime    2}
+			{TurnRadius  8}
+			{TurnStop   0.7}
+			{Gears  0.1 0.2 0.3 1}
+			{RearGears 0.28}
 		}
 		{FuelBag
-			{volume 320 }	
-			{rate	24 }   
+			{volume 320 }
+			{rate	24 }
 			{remain 320 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  30}
-        	{Slow  30}
-    	}
+			{Normal  30}
+			{Slow  30}
+		}
 	}
 
 	{Extension "stug3f.mdl"}
-	
+
 	{bone "gun_rot1"
 		{speed 0.002}
 	}

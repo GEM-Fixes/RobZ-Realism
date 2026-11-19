@@ -1,16 +1,13 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/car.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.1))
 	{props "vehicle" "car" "wheeled" "turn_over" "vision_vehicle_low" "-tractor"}
 	{PatherId "vehicle.small"}
 	("armor_light" args 1)
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: kubel_mgun.def) ---
-	{Volume "Body"
-		{tags "body"}
-		{component "body"}
-		{thickness 7}
-	}
+	("vol_body_plate" name(Body) mm(7))
 	; --- end Godny hitbox armor ---
 	("wheel" args "wheelright1")
 	("wheel" args "wheelleft1")
@@ -64,16 +61,16 @@
 			("abm_mgun")
 		}
 	}
-	
+
 	{mass 1250}
 	{Chassis
 		{Locomotion ("locomotion")
 			{Maxspeed 40}
-	  		{maxSpeedAtMaxTurn 15}
+			{maxSpeedAtMaxTurn 15}
 		}
 		{FuelBag
-			{volume 60 }	
-			{rate	8 }   
+			{volume 60 }
+			{rate	8 }
 			{remain 60 }
 			{fuel "fuel"}
 		}

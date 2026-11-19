@@ -4,7 +4,7 @@
 	{chassis "torpedo"
 		{maxspeed		25}
 		{acceleration	10}
-		;{depth			0.3}
+	;{depth			0.3}
 	}
 	{obstacleID "unbreakable"}
 	{collider "torpedo"}

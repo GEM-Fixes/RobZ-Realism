@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	;© 2009 Zeke Wolff & Ngvede.
 	(include "/properties/tank.ext")
@@ -10,29 +11,23 @@
 	;{targetSelector "tank_sup"}
 
 
-        {extender "enumerator"}
+	{extender "enumerator"}
 
 
 
-	{Volume "Body1"
-		{tags "body"}
-		{component "body"}
-	}
-	{Volume "Body2"
-		{tags "body"}
-		{component "body"}
-	}
+	("vol_body_part" name(Body1))
+	("vol_body_part" name(Body2))
 
 	{volume "turret"
 		{tags "turret"}
 		{component "turret"}
 	}
-	
+
 	("armor_light" turret(20 20 20 20) body(40 20 20 10))
 	("armor_engine"  t(10 32 32 20))
 
 	("crew_4_human")
-	
+
 	{boarder
 		{anm "left"
 			{forward	{begin	"board_kv"} {end "seat_willysat_driver"}}
@@ -48,8 +43,8 @@
 	("crew_human" place(driver)		door1(emit1) door2(emit2) visor(driver))
 	("crew_human_visible" place(charger) 	door1(emit1) door2(emit2) visor(main))
 	("crew_human_visible" place(gunner)	door1(emit1) door2(emit2) visor(main))
-	
-	{placer 
+
+	{placer
 		{place "charger" {openForCrush 0}}
 		{place "gunner" {openForCrush 0}}
 	}
@@ -68,7 +63,7 @@
 			{StationaryFiring}
 			("abm_howitzer")
 		}
-	}	
+	}
 	{mass 18300}
 	{Chassis
 		("tank_trace" fx("tracks_mid") step(0.4) len(0.4))
@@ -76,32 +71,32 @@
 			{maxspeed   22}
 			{maxSpeedAtMaxTurn 4.5}
 			{StartTime  30}
-			{TurnStart  1.8}			
+			{TurnStart  1.8}
 			{TurnTime   17}
-			{TurnRadius 9} 
-    		{TurnStop   0.5}
+			{TurnRadius 9}
+			{TurnStop   0.5}
 			{BrakeTime  1}
 			{StopTime   2}
 			{Gears  0.1 0.2 0.3 1}
 			{RearGears   0.25}
 		}
 		{FuelBag
-			{volume 230 }	
-			{rate	24 }   
+			{volume 230 }
+			{rate	24 }
 			{remain 230 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  22}
-        	{Slow  22}
-    	}
-        {DisableMoveWhileFiring}
+			{Normal  22}
+			{Slow  22}
+		}
+		{DisableMoveWhileFiring}
 
 	}
 
 	{Extension "m149.mdl"}
 
-        {bone "turret"
+	{bone "turret"
 		{limits -10 10}
 		{speed 0.0005}
 	}

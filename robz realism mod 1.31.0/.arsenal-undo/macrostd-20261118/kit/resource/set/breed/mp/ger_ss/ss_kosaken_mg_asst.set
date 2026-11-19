@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-ssvt-rfl"}
+	{portrait "ger_soldier7"}
+	{icon "rifleman"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{body ammo_ger3}
+		{head helmet_ger_m40_ss}
+	}
+	{perks
+		("breed_body" health(100%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.75) vehicle(1) cannon(0.8))
+		("breed_skills" pistol(1) smg(1) mgun(2) rifle(2) rocket(1) melee(1))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "mosin" filled}
+		{item "ammo mosin_clip" 60}
+		{item "ammo dp27_mag" 141}
+		{item "bandage" 3}
+		{item "grenade m24" 1}
+		{in_hands 0}
+	}
+}

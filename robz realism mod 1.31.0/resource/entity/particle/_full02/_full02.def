@@ -4,7 +4,7 @@
 	{props "ps_dummy" "flesh"}
 	{Extension "#_full02.mdl"}
 	{mass 70}
-        {Volume "body"
+	{Volume "body"
 		{able {float}}
 	}
 	{simulatorID "water"}

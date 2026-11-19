@@ -3,5 +3,5 @@
 	{fireSound "gun/zenite/20mm"}
 	{RecoveryTime 0.24}
 	{rechargeTime 5}
-		("speed" s(830))     
+	("speed" s(830))
 }

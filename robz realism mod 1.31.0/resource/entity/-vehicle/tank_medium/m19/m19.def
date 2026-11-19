@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
@@ -11,7 +12,7 @@
 		{component "body"}
 		{able {holed}}
 		{thickness 12.7	;из одной толщины листа корпус
-		;	{front	12.7}	;нлд и влд
+			;	{front	12.7}	;нлд и влд
 			{rear	10}	;стенка моторного
 		;	{top	12.7}
 		;	{bottom	12.7}
@@ -77,33 +78,27 @@
 		{tags "gun"}
 		{component "gun"}
 	}
-	{Volume "hole_bod"
-		{able clear {hole}}
-		{component "body"}
-	}
+	("vol_body_hole_only" name(hole_bod))
 	; --- end Godny hitbox armor ---
-	{volume "body"
-		{tags "body"}
-		{component "body"}
-	}
+	("vol_body_part_lower" name(body))
 	("armor_medium" turret(15) body(25 25 10 22))
-	
+
 	{extender "inventory"
 		{box
-            {item "bullet40 us zenite ap" 220}
-	    {item "bullet40 us zenite fg" 200}
-        }
-    }
-    {Weaponry
-        {place "gun"
-            {weapon "40mm_m19" filling "ammo bullet40 us zenite ap" 14}
-            {charger "gunner"}
-            {Barrels 2}
+			{item "bullet40 us zenite ap" 220}
+			{item "bullet40 us zenite fg" 200}
+		}
+	}
+	{Weaponry
+		{place "gun"
+			{weapon "40mm_m19" filling "ammo bullet40 us zenite ap" 14}
+			{charger "gunner"}
+			{Barrels 2}
 			("abm_zenite")
-        }
-    }
+		}
+	}
 
-	("crew_inside")
+	("crew_inside_left")
 	{boarder
 		{anm "driver"
 			{forward	{begin	"board_pz4_driver"} {end "seat_sd222_gunner2"} {base "open_driver"}}
@@ -145,38 +140,38 @@
 	("seat_human" place(seat3) bone(seat03) door(emit6)  animation(armor))
 	("seat_human" place(seat4) bone(seat04) door(emit2)  animation(armor1))
 
-;	("gunner_visible")
+	;	("gunner_visible")
 
 	{placer
 		{place "gunner" {openForCrush 0}}
 	}
-	
+
 	{mass 20000}
 	{Chassis
 		("tank_trace" fx("tracks_mid") step(0.52) len(0.7))
-			{Locomotion ("locomotion")
-				{maxspeed   27}
-				{maxSpeedAtMaxTurn 6}
-				{StartTime  13}
-				{TurnTime   14}
-				{TurnStart  1.5}			
-				{TurnRadius 9} 
-    			{TurnStop   0.7}
-				{BrakeTime  1.5}
-				{StopTime   2.5}
-				{Gears   0.1 0.2 0.3 1}
-				{RearGears  0.34}	
-			}
-			{FuelBag
-				{volume 420 }	
-				{rate	28 }   
-				{remain 420 }
-				{fuel "fuel"}
-			}
+		{Locomotion ("locomotion")
+			{maxspeed   27}
+			{maxSpeedAtMaxTurn 6}
+			{StartTime  13}
+			{TurnTime   14}
+			{TurnStart  1.5}
+			{TurnRadius 9}
+			{TurnStop   0.7}
+			{BrakeTime  1.5}
+			{StopTime   2.5}
+			{Gears   0.1 0.2 0.3 1}
+			{RearGears  0.34}
+		}
+		{FuelBag
+			{volume 420 }
+			{rate	28 }
+			{remain 420 }
+			{fuel "fuel"}
+		}
 		{speed
-        	{Normal  27}
-        	{Slow  27}
-    	}
+			{Normal  27}
+			{Slow  27}
+		}
 	}
 
 	{Extension "m19.mdl"}

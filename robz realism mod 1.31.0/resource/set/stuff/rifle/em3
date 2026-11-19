@@ -3,7 +3,7 @@
 	{entity "lee_enfield_mk3"}
 	{fireSound "rifle/enfield_shot"}
 	{reloadSound "rifle_bolt_ten"}
-	
+
 	{recoveryTime 1.0}
 	{rechargeTime 7.5}
 	("speed" s(744))

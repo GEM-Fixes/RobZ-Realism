@@ -12,11 +12,11 @@
 	;	{mined}
 	}
 	{Placer
-	     {place "grenade"
-		{entity "grenade_type97"}
-		{Linkbone "for_m67"}
-		{obstacle disable}
-	     }
+		{place "grenade"
+			{entity "grenade_type97"}
+			{Linkbone "for_m67"}
+			{obstacle disable}
+		}
 	}
 	{collider "mine.ap"}
 	{lodclass "vehicle_small"}

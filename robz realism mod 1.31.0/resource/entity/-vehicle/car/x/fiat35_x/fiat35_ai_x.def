@@ -1,15 +1,4 @@
+; same as the other 5 defs here; body in fiat35_body.inc
 {game_entity
-	{Extension "fiat35_x.mdl"}
-	{volume "wheelright1"
-	}
-	{volume "wheelleft1"
-	}
-	{volume "wheelright2"
-	}
-	{volume "wheelleft2"
-	}
-	{volume "wheelright3"
-	}
-	{volume "wheelleft3"
-	}
+	(include "fiat35_body.inc")
 }

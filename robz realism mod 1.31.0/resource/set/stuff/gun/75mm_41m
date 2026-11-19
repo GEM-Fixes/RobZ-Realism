@@ -5,24 +5,24 @@
 	("range_light_howitzer")
 	("caliber_medium")
 	{projectileDamage 50}
-        {range 190 190}
+	{range 190 190}
 
 
 
-       ("speed_all" ap(750) apcr(930) fg(570) heat(450))
+	("speed_all" speed(750) apcr(930) fg(570) heat(450))
 
 	("caliber_medium")
-	{projectileDamage 132}      
-	
+	{projectileDamage 132}
+
 	{parameters "apc"
-		("damage_170" a(70) b(61) c(51) d(44) e(37) range(200))
+		("damage_170" at20(70) at100(61) at170(51) at215(44) at250(37) max(200))
 	}
 	{parameters "heatb"
-		("damage_heat" a(87) range(200))
+		("damage_heat" damage(87) max(200))
 	}
-	
+
 	{parameters "fg"
 		{range 180 180}
 	}
-	("accuracy_high")	
+	("accuracy_high")
 }

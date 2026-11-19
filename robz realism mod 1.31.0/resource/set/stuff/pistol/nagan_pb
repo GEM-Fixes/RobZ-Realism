@@ -7,7 +7,7 @@
 	{mass 2.5}
 	{entity "nagan_pb"}
 	{fireSound	"pistol/silent/welrod"}
-	
+
 	{spreading 0.5}
 	{reloadSound "nagan"}
 }

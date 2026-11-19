@@ -1,16 +1,16 @@
 {game_entity
 	(include "/properties/construction.inc")
-        	{Extension "dot_sandbags.mdl"}
+	{Extension "dot_sandbags.mdl"}
 	{props "sand" "sandbag" "heap" "parts" "construction" "burning" "no_destroyed_stamp"}
 	{obstacleID "small_building"}
 	{placer
 		{place "1" {attach  snipe_cover} 		{linkbone "attach1"}}
 
-                	{place "2" {attach  snipe_cover} 		{linkbone "attach2"}}
+		{place "2" {attach  snipe_cover} 		{linkbone "attach2"}}
 	}
 	{boarder}
 	{mass 5000}
-	
+
 
 	{Volume "body1"
 		{Tags  "body"}

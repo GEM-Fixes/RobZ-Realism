@@ -4,27 +4,27 @@
 	{reloadSound "gun_r03"}
 	{rechargeTime 5}
 	("range_medium")
-        {range 200 200}
-	
+	{range 200 200}
+
 	("speed" s(792))
 	("caliber_medium")
-	{projectileDamage 122}                        
+	{projectileDamage 122}
 	("damage" a(121) b(110) c(97) d(84) e(72))
 	{parameters "apcr"
-        		("damage_170" a(145) b(129) c(111) d(92) e(75) range(200))
+		("damage_170" at20(145) at100(129) at170(111) at215(92) at250(75) max(200))
 	}
 	{parameters "cu"
-        	{projectileDamage 75}
+		{projectileDamage 75}
 		("damage" a(75) b(0) c(0) d(0) e(0))
 	}
-        {parameters "fg"
+	{parameters "fg"
 		{range 180 180}
 	}
-	("accuracy_high")	
+	("accuracy_high")
 }
 
 
-	
+
 
 
 

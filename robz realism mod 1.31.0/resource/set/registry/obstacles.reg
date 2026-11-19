@@ -1,5 +1,8 @@
 ;SDL
-(define "vehicles" 
+; vehicles: {"cannon.small"} {"cannon.large"} {"cannon.carried"} {"cannon.micro"} {"vehicle.small"} {"vehicle.large"} +6 more
+;   cost - {cannon.small}, [?], {cannon.large}, [?], {cannon.carried}, [?]
+;   e.g. ("vehicles"    cost(-1))
+(define "vehicles"
 	{"cannon.small"		%cost }
 	{"cannon.large"		%cost }
 	{"cannon.carried"	%cost }
@@ -13,6 +16,9 @@
 	{"amphibia"			%cost }
 	{"railway"			%cost }
 )
+; marines: {"water"} {"shallow_water"} {"shallow_water_0"} {"deep_water"} {"deep_water_0"}
+;   cost - {water}, [?], {shallow_water}, [?], {shallow_water_0}, [?]
+;   e.g. ("marines"    cost(0))
 (define "marines"
 	{"water"			%cost }
 	{"shallow_water"	%cost }
@@ -30,7 +36,7 @@
 		("marines"	   cost(0)	)
 		{"airborne"			0	}
 		{"airdrop"		0}
-    }
+	}
 	{fire
 		{flag_damage}
 		{"human"			1000}
@@ -40,7 +46,7 @@
 		("marines"	  cost(200) )
 		{"airborne"			 0	}
 		{"airdrop"		0}
-    }
+	}
 	{human
 		{flag_human}
 		{flag_skip_impregnable}
@@ -51,7 +57,7 @@
 		("marines"	   cost(5)	)
 		{"airborne"			0	}
 		{"airdrop"		0}
-    }
+	}
 	{tank
 		{"human"			-1	}
 		{"human_flying"		-1	}
@@ -60,7 +66,7 @@
 		("marines"	   cost(0)	)
 		{"airborne"			0	}
 		{"airdrop"		0}
-    }
+	}
 	{marine
 		{"human"			-1	}
 		{"human_flying"		-1	}
@@ -69,7 +75,7 @@
 		("marines"	   cost(-1)	)
 		{"airborne"			0	}
 		{"airdrop"		0}
-    }
+	}
 	{trench_wall
 		{"human"			22	}
 		{"human_flying"		-1	}
@@ -88,7 +94,7 @@
 		{"railway"			0   }
 		{"airborne"			0	}
 		{"airdrop"			0}
-    }
+	}
 	{tree
 		{"human"			-1	}
 		{"human_flying"		-1	}
@@ -109,7 +115,7 @@
 
 		{"airborne"			0	}
 		{"airdrop"		0}
-    }
+	}
 	{unbreakable
 		{"human"			-1	}
 		{"human_flying"		-1	}
@@ -118,7 +124,7 @@
 		("marines"	   cost(-1)	)
 		{"airborne"			0	}
 		{"airdrop"		0}
-    }
+	}
 	{building
 		{flag_crush_in_battle}
 		{"human"			-1	}
@@ -140,7 +146,7 @@
 		{"airborne"			0	}
 		("marines"	   cost(0)	)
 		{"airdrop"		0}
-    }
+	}
 	{small_building
 		{flag_crush_in_battle}
 		{"human"			-1	}
@@ -163,7 +169,7 @@
 		{"airborne"			0	}
 		("marines"	   cost(0)	)
 		{"airdrop"		0}
-    }
+	}
 	{small_hedgehog
 		{"human"		-1	}
 		{"human_flying"		-1	}
@@ -185,7 +191,7 @@
 		{"airborne"		0	}
 		("marines"	   cost(0)	)
 		{"airdrop"		0}
-    	}
+	}
 	{construction
 		{"human"			-1	}
 		{"human_flying"		-1	}
@@ -207,7 +213,7 @@
 		{"airborne"			0	}
 		("marines"	   cost(0)	)
 		{"airdrop"		0}
-    }
+	}
 	{stuff
 		{flag_skip_impregnable}
 		{"human"			-1	}
@@ -230,5 +236,5 @@
 		{"airborne"			0	}
 		("marines"	   cost(0)	)
 		{"airdrop"		0}
-    }
+	}
 }

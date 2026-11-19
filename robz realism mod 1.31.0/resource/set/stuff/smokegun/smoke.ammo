@@ -1,6 +1,6 @@
 {bullet
 	{tag "ammo small sm fg itemin2hands"}
-;	{detonationThickness 20}
+	;	{detonationThickness 20}
 	{inventory
 		{size 2 1}
 		{weight 100}

@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-para-rfl"}
+	{portrait "ger_elite1"}
+	{icon "elite"}
+	{icon_priority 4}
+	{nationality ger}
+	{armors
+		{head helmet_ger_m38_cover}
+	}
+	{perks
+		("body_elite_bare")
+		("drive_elite")
+		("skills_elite_7")
+		{"avoidance" lvl_1}
+		{"stealth"}
+	}
+	("breed_vet" table(start5))
+	{inventory
+		("kit_rifle" gun(mauzer_vet) ammo(mauser_clip) rounds(80))
+		{item "ammo mg_mauser belt" 600}
+		{item "bandage" 5}
+		{item "panzerfaust_60 weapon" 0 1 filled}
+		{in_hands 0}
+	}
+}

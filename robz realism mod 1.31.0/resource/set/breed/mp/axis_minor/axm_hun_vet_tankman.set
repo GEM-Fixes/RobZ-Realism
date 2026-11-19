@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "hun_tankman"}
 	{portrait "hun_tankman"}
@@ -9,47 +10,11 @@
 	}
 	{tags "tankman"}
 	{perks
-		{"health" "100%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "100%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-        		{"vision" "mp_soldier"
-		}
-		{"speed" 0.8
-		}
-		{"tank"	1.15
-		}
-		{"vehicle" 1.15
-		}
-		{"cannon" 1.0
-		}
-		
-		{"pistol" lvl_2
-		}
-		{"smg" lvl_2
-		}
-		{"mgun" lvl_4
-		}
-		{"rifle" lvl_1
-		}
-		{"rocketlauncher" lvl_1
-		}
-		{"melee" lvl_2
-		}
-                {"tankgun" lvl_8
-		}
+		("crew_2" body(vet_line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_tankcrew")
-	}
+	("breed_vet" table(crew))
 	{inventory
-		{item "frommer_37m" filled}
-		{item  "ammo 9x17" 35}
+		("pistol_frommer_37m")
 		{in_hands 0}
 	}
 }

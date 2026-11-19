@@ -1,12 +1,12 @@
 {bullet
 	{tag "bullet stackable pierce"}
-  	{desc "desc/ammo/carbine"}
+	{desc "desc/ammo/carbine"}
 	{inventory
 		{weight 4}
 		{block 25}
 		{size 1 1}
 		{fsm "belt"}
-	}	
+	}
 	{mass 0.015}
 	{entity "rifle_cartridge"}
 ;	{trace

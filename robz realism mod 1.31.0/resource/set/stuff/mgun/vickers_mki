@@ -2,7 +2,7 @@
 	{entity "vickers_mk_i"}
 	{filling "ammo british303_belt" 250}
 	{fireSound	"mgun/maxim_burst/"}
-    {reloadSound "cal30_reload"}
+	{reloadSound "cal30_reload"}
 
 	{rechargeTime 9}
 	("recoveryTime" r(500))

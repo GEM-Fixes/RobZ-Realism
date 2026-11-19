@@ -1,0 +1,13 @@
+{from "pattern mgun"
+	{filling "ammo 8x59" 20}
+	{entity "breda_37"}
+	{fireSound	"mgun/type99lmg_burst/"}
+	{reloadSound "bren"}
+	{spreading 2}
+	{rechargeTime 6}
+	("recoveryTime" r(450))
+	("speed" s(800))
+	("burst_long")
+
+	
+}

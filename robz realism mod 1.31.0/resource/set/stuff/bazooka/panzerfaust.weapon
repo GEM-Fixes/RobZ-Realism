@@ -9,7 +9,7 @@
 	{entity "panzerfaust100"}
 	{fireSound "reactive/launch04"}
 	{ammoLocked}
-    	{projectileDamageTable {0 200} {60 200} {65 0}}
+	{projectileDamageTable {0 200} {60 200} {65 0}}
 	{gravity 3}
 	{reactive 0}
 	{spreading 4.5}

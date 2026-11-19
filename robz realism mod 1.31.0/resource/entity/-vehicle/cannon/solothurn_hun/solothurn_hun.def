@@ -3,12 +3,12 @@
 	{props "vehicle" "cannon" "cannon_small" "wheeled" "vision_cannon_minimum" "muzzle_minimum"}
 	{collider "cannon_small"}
 	("armor_light")
-	
+
 	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
 
 	("crew_wheeled_gun")
-	
+
 	{boarder
 		{anm "gunner"
 			{forward	{end "lie_fire_mgun" 10}}
@@ -30,7 +30,7 @@
 			{item "bullet20x105b_hun fg" 20}
 		}
 	}
-	
+
 	{Weaponry
 		{place "gun"
 			{weapon "20mm_s18_100" filled}
@@ -38,17 +38,17 @@
 			("abm_field_gun")
 		}
 	}
-	
+
 	{mass 45}
 
 	{Extension "20_mm_solothurn_s18_100.mdl"}
-	
+
 	(include "/properties/selection/cannon.inc"  scale(0.7))
-	
+
 	{bone "basis"
-	      {limits}
+		{limits}
 	}
-	
+
 	{extender "cannon"
 		{animation
 			{move "mgun_browning_driver_r" "mgun_browning_driver_l"}
@@ -60,8 +60,8 @@
 	}
 
 	{Chassis "track"
-;		("car_trace" fx("tracewheel05") step(0.07) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
+		;		("car_trace" fx("tracewheel05") step(0.07) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
 		("loco_small")
 	}
-	
+
 }

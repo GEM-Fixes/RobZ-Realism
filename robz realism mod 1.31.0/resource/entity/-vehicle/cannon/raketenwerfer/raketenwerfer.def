@@ -2,11 +2,11 @@
 	(include "/properties/cannon.ext")
 	(include "/properties/selection/vehicle.inc" scale(0.9))
 	{props "vehicle" "cannon" "wheeled" "vision_cannon_medium" "muzzle_minimum" "medium_weapons"}
-	
+
 	("armor_medium")
 
 	("crew_wheeled_gun")
-	
+
 	{boarder
 		{anm "gunner"
 			{forward	{end "pose_pak40_gunlayer" 10}}
@@ -46,7 +46,7 @@
 	}
 
 	{mass 860}
-	
+
 
 	{extender "cannon"
 		{animation
@@ -64,8 +64,8 @@
 		("car_trace" fx("tracewheel05") step(0.07) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
 		("loco_carrier")
 	}
-	
-	
+
+
 	{Extension "raketenwerfer.mdl"}
 	{Volume "body"
 	}
@@ -83,5 +83,5 @@
 	}
 }
 
-	
+
 

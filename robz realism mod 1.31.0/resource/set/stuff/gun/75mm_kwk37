@@ -4,23 +4,23 @@
 	{reloadSound "gun_r03"}
 	("range_light_howitzer")
 	("caliber_medium")
-	("speed_all" ap(440) apcr(440) fg(570) heat(450))
+	("speed_all" speed(440) apcr(440) fg(570) heat(450))
 
 	{projectileDamage 52}
-	("damage_170" a(52) b(48) c(44) d(40) e(37) range(180))
+	("damage_170" at20(52) at100(48) at170(44) at215(40) at250(37) max(180))
 	{parameters "apc"
 		{cursorReloading "cannon_reload_apc"}
 	}
 	{parameters "heat"
-		("damage_heat" a(52) range(180))
+		("damage_heat" damage(52) max(180))
 	}
 	{parameters "heata"
-		("damage_heat" a(81) range(180))
+		("damage_heat" damage(81) max(180))
 	}
 	{parameters "heatb"
-		("damage_heat" a(87) range(180))
+		("damage_heat" damage(87) max(180))
 	}
 	{parameters "heatc"
-		("damage_heat" a(100) range(180))
+		("damage_heat" damage(100) max(180))
 	}
 }

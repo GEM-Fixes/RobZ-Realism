@@ -1,6 +1,7 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/cannon_mgun.ext")
-	
+
 	{props "cannon" "vision_cannon_minimum" "cannon_small" "mgun_tripod"}
 	{collider "cannon_small"}
 
@@ -10,13 +11,13 @@
 			{LinkBone ""}
 			{weapon "sg_43_mount" filled}
 		}
-	} 
+	}
 	{extender "inventory"
 		{box
 			{item "ammo rus_mg_belt" 500}
 			{item "plant" 5}
 		}
-	} 	
+	}
 	{Extension "sg43_goryunov.mdl"}
 
 	{boarder
@@ -32,20 +33,20 @@
 		{anm "driver2"
 			{forward {end "walk_1hand" 10}}
 		}
-	
+
 	}
 
-	{sensor 
-		{visor "main" 
+	{sensor
+		{visor "main"
 			{vision "cannon_mgun"}
 			{bone "turret"}
 		}
 	}
-	
+
 	{extender "shield"
 		{on}
 	}
-	
+
 	{extender "cannon"
 		{animation
 			{move "cannon_maxim_move" "walk_1hand"}
@@ -56,12 +57,7 @@
 		{rotate_ik_Limit 0}
 	}
 
-	{Volume "body"
-		{tags "body"}
-		{able{obstacle 0}{blast 0}}
-		{thickness 1}
-		{component "body"}
-	}
+	("vol_body_plate_no_obstacle_blast" name(body) mm(1))
 	{volume "turret"
 		{thickness 3}
 	}

@@ -1,9 +1,9 @@
 {"grenade"
 	{on spawn
-;		{add_view "grenade_p" "trace" "root"}
+	;		{add_view "grenade_p" "trace" "root"}
 	}
 	{on "onThrow"
-;		{view start "trace"}
+		;		{view start "trace"}
 		{volumes "body" disable contact}
 	}
 	{on "onThrowActivate"
@@ -13,7 +13,7 @@
 		{if stuff_activated
 			{if effector "human"
 				{call "fall_down"}
-			else effector "cannon"
+				else effector "cannon"
 				{link_grenade_to_nearest_human teleport}
 			}
 		}
@@ -23,7 +23,7 @@
 		{link_grenade_to_nearest_human}
 	}
 	{on ground_hit
-;		{view stop "trace"}
+	;		{view stop "trace"}
 	}
 	{on "fall_down"
 		{volumes disable contact}
@@ -75,15 +75,15 @@
 		{volumes disable touch select}
 	}
 	{on "add_smoke"
-;		{add_view "smoke_cover-up_small"	"smoke1" "root"}
+		;		{add_view "smoke_cover-up_small"	"smoke1" "root"}
 		{add_view "smoke_cover-up_norm"		"smoke2" "root"}
 		{add_view "smoke_cover-up_big"		"smoke3" "root"}
 	}
-		{on "activate"
+	{on "activate"
 		{play_sound "smoke" 1}
 		{tags add "smoke"}
-;		{view stop "trace"}
-;		{view stop "smoke1"}
+		;		{view stop "trace"}
+		;		{view stop "smoke1"}
 		{view start "smoke2"}
 		{volumes "smoke1" enable visible}
 		{update_visibility_patch}
@@ -110,7 +110,7 @@
 			{set "activated" 1}
 			{if under_water
 				{hide 1}
-			else
+				else
 				{delay 3
 					{call "activate"}
 				}
@@ -133,7 +133,7 @@
 		{link_sound "smoke" "detonation/grenade_smoke/grenade_smoke"}
 	}
 	{on "add_smoke"
-;		{add_view "smoke_cover-up_small"	"smoke1" "root"}
+		;		{add_view "smoke_cover-up_small"	"smoke1" "root"}
 		{add_view "smoke_cover-up_norm"		"smoke2" "root"}
 		{add_view "smoke_cover-up_big"		"smoke3" "root"}
 	}
@@ -143,8 +143,8 @@
 	{on "activate"
 		{play_sound "smoke" 1}
 		{tags add "smoke"}
-;		{view stop "trace"}
-;		{view stop "smoke1"}
+		;		{view stop "trace"}
+		;		{view stop "smoke1"}
 		{view start "smoke2"}
 		{volumes "smoke1" enable visible}
 		{update_visibility_patch}
@@ -172,7 +172,7 @@
 				{set "activated" 1}
 				{if under_water
 					{hide 1}
-				else
+					else
 					{delay 3
 						{call "activate"}
 					}
@@ -197,7 +197,7 @@
 		{link_sound "smoke" "detonation/grenade_smoke/grenade_smoke"}
 	}
 	{on "add_smoke"
-;		{add_view "smoke_cover-up_small"	"smoke1" "root"}
+		;		{add_view "smoke_cover-up_small"	"smoke1" "root"}
 		{add_view "smoke_cover-up_norm"		"smoke2" "root"}
 		{add_view "smoke_cover-up_big"		"smoke3" "root"}
 	}
@@ -207,8 +207,8 @@
 	{on "activate"
 		{play_sound "smoke" 1}
 		{tags add "smoke"}
-;		{view stop "trace"}
-;		{view stop "smoke1"}
+		;		{view stop "trace"}
+		;		{view stop "smoke1"}
 		{view start "smoke2"}
 		{volumes "smoke1" enable visible}
 		{update_visibility_patch}
@@ -232,27 +232,27 @@
 	}
 	{on ground_hit
 		;{if stuff_activated
-			{if not "activated"
-				{set "activated" 1}
-				{if under_water
-					{hide 1}
+		{if not "activated"
+			{set "activated" 1}
+			{if under_water
+				{hide 1}
 				else
-					{delay 1
-						{call "activate"}
-					}
-				}
-			}
-		;}
-	}
-	{on contact
-		;{if stuff_activated
-			{if not "activated"
-				{set "activated" 1}
 				{delay 1
 					{call "activate"}
 				}
 			}
-		;}
+		}
+	;}
+	}
+	{on contact
+		;{if stuff_activated
+		{if not "activated"
+			{set "activated" 1}
+			{delay 1
+				{call "activate"}
+			}
+		}
+	;}
 	}
 }
 {"smoke_shell"
@@ -263,14 +263,14 @@
 		{volumes disable touch select}
 	}
 	{on "add_smoke"
-;		{add_view "smoke_cover-up_small"	"smoke1" "root"}
+		;		{add_view "smoke_cover-up_small"	"smoke1" "root"}
 		{add_view "smoke_cover-up_norm"		"smoke2" "root"}
 		{add_view "smoke_cover-up_big"		"smoke3" "root"}
-	}	
+	}
 	{on "activate"
 		{play_sound "smoke" 1}
 		{tags add "smoke"}
-;		{view stop "smoke1"}
+		;		{view stop "smoke1"}
 		{view start "smoke2"}
 		{volumes "smoke1" enable visible}
 		{update_visibility_patch}
@@ -298,7 +298,7 @@
 				{set "activated" 1}
 				{if under_water
 					{hide 1}
-				else
+					else
 					{delay 3
 						{call "activate"}
 					}
@@ -325,14 +325,14 @@
 		{volumes disable touch select}
 	}
 	{on "add_smoke"
-;		{add_view "smoke_cover-up_small"	"smoke1" "root"}
+		;		{add_view "smoke_cover-up_small"	"smoke1" "root"}
 		{add_view "smoke_cover-up_norm"		"smoke2" "root"}
 		{add_view "smoke_shell_fx_medium"	"smoke3" "root"}
-	}	
+	}
 	{on "activate"
 		{play_sound "smoke" 1}
 		{tags add "smoke"}
-;		{view stop "smoke1"}
+		;		{view stop "smoke1"}
 		{view start "smoke2"}
 		{volumes "smoke1" enable visible}
 		{update_visibility_patch}
@@ -360,7 +360,7 @@
 				{set "activated" 1}
 				{if under_water
 					{hide 1}
-				else
+					else
 					{delay 3
 						{call "activate"}
 					}
@@ -387,14 +387,14 @@
 		{volumes disable touch select}
 	}
 	{on "add_smoke"
-;		{add_view "smoke_cover-up_small"	"smoke1" "root"}
+		;		{add_view "smoke_cover-up_small"	"smoke1" "root"}
 		{add_view "smoke_cover-up_norm"		"smoke2" "root"}
 		{add_view "smoke_shell_fx_big"		"smoke3" "root"}
-	}	
+	}
 	{on "activate"
 		{play_sound "smoke" 1}
 		{tags add "smoke"}
-;		{view stop "smoke1"}
+		;		{view stop "smoke1"}
 		{view start "smoke2"}
 		{volumes "smoke1" enable visible}
 		{update_visibility_patch}
@@ -422,7 +422,7 @@
 				{set "activated" 1}
 				{if under_water
 					{hide 1}
-				else
+					else
 					{delay 3
 						{call "activate"}
 					}
@@ -471,8 +471,8 @@
 			{delay 0.1
 				{call "detonate"}
 			}
-		else
-		;	{fire radius 1.5 time 2 heating 20 effector follow}
+			else
+			;	{fire radius 1.5 time 2 heating 20 effector follow}
 			{fire radius 0.7 time 0.7 heating 30 effector}
 			{call "detonate"}
 		}

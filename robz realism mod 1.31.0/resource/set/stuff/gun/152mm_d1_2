@@ -7,7 +7,7 @@
 	{speed 508}
 	{range 200 200}
 	{projectileDamage 140}
-		("accuracy_grazinghowitzer_210m_anti_far")
+	("accuracy_grazinghowitzer_210m_anti_far")
 	(mod "mp"
 		{tag "prepare"}
 		{Special

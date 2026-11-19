@@ -1,12 +1,12 @@
 {weapon_bullet
 	{tag "mrl gun"}
 	{filling "mortar50 ger"}
-    {fillingVisible "rocket"}
+	{fillingVisible "rocket"}
 
 	{fireSound "reactive/mortar_light"}
 	{foresight "foresight"}
-	
-	{spreading 
+
+	{spreading
 		{SpreadRadius 20}
 		{radiusFunction
 			0	0.6
@@ -26,12 +26,12 @@
 	{speed 220}
 	{AimingTolerance 0.1}
 	{projectileDamageTable {90 10}}
-	
+
 	{aimtype curved}
 
 	{parameters "fg"
 		{cursor "cannon_on_fg"}
 		{cursorReloading "cannon_reload_fg"}
 	}
-	
-} 
+
+}

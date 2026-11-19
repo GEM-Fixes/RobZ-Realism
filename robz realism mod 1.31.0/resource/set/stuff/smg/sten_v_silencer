@@ -3,9 +3,9 @@
 	{entity "sten_mkv_silencer"}
 	{fireSound	"pistol/silent/welrod"}
 	{reloadSound "sten"}
-	
+
 	("recoveryTime" r(600))
 	("burst_short")
- 	("speed" s(305))
+	("speed" s(305))
 	("accuracy_smg_low")
 }

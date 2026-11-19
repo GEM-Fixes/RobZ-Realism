@@ -3,7 +3,7 @@
 	{inventory
 		{size 4 1}
 		{weight 100}
-	}	
+	}
 	{entity "8cm_wurfgranate_ammo"}
 	{mass 20.3}
 	{view "8cm_wurfgranate_ammo"

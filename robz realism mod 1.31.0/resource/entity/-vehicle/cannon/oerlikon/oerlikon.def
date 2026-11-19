@@ -1,16 +1,14 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/cannon.ext")
 	{props "vehicle" "cannon" "cannon_small" "flak" "barrel1" "wheeled" "vision_cannon_low" "muzzle_zenite" "medium_weapons" "switch_cannon"}
 	{collider "cannon_small"}
-	
-	("wheel" args "wheelright")	
+
+	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: oerlikon.def) ---
-	{Volume "gun1"
-		{tags "gun"}
-		{component "gun"}
-	}
+	("vol_gun_part" name(gun1))
 	{Volume "gun_rot1"
 		{tags "gun"}
 		{component "gun"}
@@ -51,30 +49,11 @@
 		{component "gun"}
 		{thickness 7}
 	}
-	{Volume "standl1"
-		{tags "body"}
-		{component "body"}
-		{thickness 7}
-	}
-	{Volume "standl2"
-		{tags "body"}
-		{component "body"}
-		{thickness 7}
-	}
-	{Volume "standr1"
-		{tags "body"}
-		{component "body"}
-		{thickness 7}
-	}
-	{Volume "standr2"
-		{tags "body"}
-		{component "body"}
-		{thickness 7}
-	}
-	{Volume "turret1"
-		{tags "turret"}
-		{component "turret"}
-	}
+	("vol_body_plate" name(standl1) mm(7))
+	("vol_body_plate" name(standl2) mm(7))
+	("vol_body_plate" name(standr1) mm(7))
+	("vol_body_plate" name(standr2) mm(7))
+	("vol_turret_part" name(turret1))
 	; --- end Godny hitbox armor ---
 	("armor_medium")
 
@@ -86,7 +65,7 @@
 		{place "gunner" {UseVision 0}}
 		{place "commander" remove}
 	}
-	
+
 	{boarder
 		{anm "gunner"
 			{forward	{end "pose_oerlikon_charger" 10}}
@@ -100,11 +79,11 @@
 		{link "driver" "gunner"}
 		{link "seat1" "gunner"}
 	}
-	
+
 	{mass 300}
 	{Extension "oerlikon.mdl"}
 	(include "/properties/selection/vehicle.inc"  scale(0.7))
-	
+
 	{extender "cannon"
 		{animation
 			{move "cannon_pak40_pusher_left"}

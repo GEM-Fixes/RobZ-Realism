@@ -2,7 +2,7 @@
 	{filling "ammo mg_mauser belt" 225}
 	{entity "besa"}
 	{fireSound	"mgun/besa_burst/"}
-	
+
 	{rechargeTime 9}
 	("recoveryTime" r(800))
 	("burst_long")

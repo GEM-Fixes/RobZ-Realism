@@ -3,9 +3,9 @@
 	{entity "pps43"}
 	{fireSound	"smg/pps43_burst/"}
 	{reloadSound "mp44"}
-	
+
 	("recoveryTime" r(700))
 	("burst_short")
- 	("speed" s(500))
+	("speed" s(500))
 	("accuracy_smg_high")
 }

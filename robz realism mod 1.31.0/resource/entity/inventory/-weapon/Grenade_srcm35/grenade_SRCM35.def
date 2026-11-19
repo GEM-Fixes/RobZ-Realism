@@ -5,7 +5,7 @@
 	{extender "stuff"
 		{item "grenade srcm35"}
 	}
-	{nogroupmesh 1}	
+	{nogroupmesh 1}
 	{volume "body"
 		{able {contact}}
 	}

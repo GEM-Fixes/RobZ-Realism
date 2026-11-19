@@ -1,7 +1,4 @@
+; same as the other 1 def here; body in bm_37_body.inc
 {game_entity
-	{Extension "bm_37_x.mdl"}
-	{Volume "body"
-	}
-	{Volume "gun"
-	}
+	(include "bm_37_body.inc")
 }

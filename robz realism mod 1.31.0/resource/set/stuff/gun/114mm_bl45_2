@@ -3,14 +3,14 @@
 	{fireSound "gun/howitzer/105mm_m2a1"}
 	{reloadSound "tankgun_r04"}
 	("range_grazing_howitzer")
-	
+
 	("speed" s(686))
 	("caliber_maximum")
 	{range 200 200}
 	{projectileDamage 150}
 	{rechargeTime 14}
 	("accuracy_grazinghowitzer_anti_far")
-		(mod "mp"
+	(mod "mp"
 		{tag "prepare"}
 		{Special
 			{Mode aim}

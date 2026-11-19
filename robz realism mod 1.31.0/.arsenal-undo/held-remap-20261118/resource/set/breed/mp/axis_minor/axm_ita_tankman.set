@@ -1,0 +1,20 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ita-tankman"}
+	{portrait "ita_tankman"}
+	{icon "tankman"}
+	{icon_priority 0}
+	{nationality ita}
+	{armors
+		{head helmet_ita_tank}
+	}
+	{perks
+		("crew_1" body(line))
+		{"tankgun" lvl_2}
+	}
+	("breed_vet" table(crew))
+	{inventory
+		("kit_pistol" gun(Bodeo_m1889) ammo(10x20) rounds(30))
+		{in_hands 0}
+	}
+}

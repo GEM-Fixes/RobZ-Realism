@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-lsssmock2-rfl"}
+	{portrait "ger_soldier6"}
+	{icon "rifleman"}
+	{icon_priority 3}
+	{nationality ger}
+	{armors
+		{head waffen_helmet_lssah}
+	}
+	{perks
+		("soldier_smg_6" rocket(1) body(hardy))
+		{"aimedshot"}
+		{"telescope"}
+	}
+	("breed_vet" table(start5))
+	{inventory
+		("rifle_mauzer_s")
+		{item "ammo mg_mauser drum" 50}
+		{item "bandage" 5}
+		("frag_m24_x2")
+		("smoke_x2")
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,13 @@
+{Extension "fiat35_x.mdl"}
+{volume "wheelright1"
+}
+{volume "wheelleft1"
+}
+{volume "wheelright2"
+}
+{volume "wheelleft2"
+}
+{volume "wheelright3"
+}
+{volume "wheelleft3"
+}

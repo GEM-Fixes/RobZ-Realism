@@ -6,16 +6,16 @@
 	("range_short")
 
 	{range 180 180}
-	("speed_all" ap(685) apcr(1050) fg(550) heat(110))
+	("speed_all" speed(685) apcr(1050) fg(550) heat(110))
 	("caliber_minimum")
 	{projectileDamage 68}
-	("damage_170" a(74) b(59) c(45) d(34) e(26) range(180))
+	("damage_170" at20(74) at100(59) at170(45) at215(34) at250(26) max(180))
 	{parameters "apc"
-		("damage_170" a(74) b(59) c(45) d(34) e(26) range(180))
+		("damage_170" at20(74) at100(59) at170(45) at215(34) at250(26) max(180))
 		{cursorReloading "cannon_reload_apc"}
 	}
 	{parameters "apcr"
-        	("damage_170" a(132) b(94) c(63) d(42) e(28) range(180))
+		("damage_170" at20(132) at100(94) at170(63) at215(42) at250(28) max(180))
 	}
 	{parameters "heat"
 		("damage" a(0) b(0) c(0) d(0) e(0))
@@ -24,5 +24,5 @@
 	{parameters "fg"
 		{range 160 160}
 	}
-	("accuracy_medium")               
+	("accuracy_medium")
 }

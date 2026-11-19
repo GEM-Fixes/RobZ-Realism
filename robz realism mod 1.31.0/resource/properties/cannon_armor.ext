@@ -10,23 +10,31 @@
 	}
 }
 
+; armor_cannon: {armor {setting}}
+;   tur - {thickness}, mm, {value}, [?]
+;   t_thr - {value}, [?]
+;   t_dur - {value}, [?]
+;   s - {thickness}, mm
+;   w - {thickness}, mm
+;   b - {thickness}, mm
+;   e.g. ("armor_cannon" tur(5) t_thr(3) t_dur(8) s(3) b(5) w(10))
 (define "armor_cannon"
 	{armor
 		{setting "turret"
 			{thickness %tur}
-			{threshold  {blast {value %t_thr}}}	; 
-			{durability {blast {value %t_dur}}}	; 
+			{threshold  {blast {value %t_thr}}}	;
+			{durability {blast {value %t_dur}}}	;
 			{volumes "turret*"}
 		}
 		{setting "gun"
 			{thickness %tur}
-			{threshold  {blast {value (* 0.8 %t_thr)}}}	; 
-			{durability {blast {value (* 0.8 %t_dur)}}}	; 
+			{threshold  {blast {value (* 0.8 %t_thr)}}}	;
+			{durability {blast {value (* 0.8 %t_dur)}}}	;
 			{volumes "gun*"}
 		}
 		{setting "shield"
 			{thickness %s}
-			{durability 
+			{durability
 				{blast {value (* %tur 3)}}
 				{pierce {value 999}}
 			}
@@ -38,27 +46,37 @@
 		}
 		{setting "body"
 			{thickness %b}
-			{threshold  {blast {value %t_thr}}}	
-			{durability {blast {value %t_dur}}}	
+			{threshold  {blast {value %t_thr}}}
+			{durability {blast {value %t_dur}}}
 			{volumes "body*"}
 		}
 	}
 )
 
+; armor_mortar: calls "armor_cannon"
+;   e.g. ("armor_mortar")
 (define "armor_mortar"
 	("armor_cannon" tur(5) t_thr(3) t_dur(8) s(3) b(5) w(10))
 )
+; armor_light: calls "armor_cannon"
+;   e.g. ("armor_light" args 0.5)
 (define "armor_light"
 	("armor_cannon" tur(7) t_thr(3) t_dur(10) s(4) b(10) w(10))
 )
+; armor_medium: calls "armor_cannon"
+;   e.g. ("armor_medium" args 1.0)
 (define "armor_medium"
 	("armor_cannon" tur(7) t_thr(6) t_dur(15) s(4) b(10) w(14))
 )
+; armor_heavy: calls "armor_cannon"
+;   e.g. ("armor_heavy" args 0.8)
 (define "armor_heavy"
 	("armor_cannon" tur(7) t_thr(7) t_dur(20) s(10) b(10) w(14))
 )
 
 
+; loco_params: {StopTime} {BrakeTime} {TurnRadius} {TurnStart} {TurnStop} {Gears} +1 more
+;   e.g. ("loco_params")
 (define "loco_params"
 	{StopTime	0.2}
 	{BrakeTime	0.7}
@@ -70,6 +88,8 @@
 )
 
 
+; loco_carrier: {locomotion {MaxSpeed} {StartTime} {TurnTime} {TurnRadius}}
+;   e.g. ("loco_carrier")
 (define "loco_carrier"
 	{locomotion
 		("loco_params")
@@ -80,6 +100,8 @@
 	}
 )
 
+; loco_carrier_vet: {locomotion {MaxSpeed} {StartTime} {TurnTime} {TurnRadius}}
+;   e.g. ("loco_carrier_vet")
 (define "loco_carrier_vet"
 	{locomotion
 		("loco_params")
@@ -90,6 +112,8 @@
 	}
 )
 
+; loco_carrier_big: {locomotion {MaxSpeed} {StartTime} {TurnTime} {TurnRadius}}
+;   e.g. ("loco_carrier_big")
 (define "loco_carrier_big"
 	{locomotion
 		("loco_params")
@@ -100,6 +124,8 @@
 	}
 )
 
+; loco_small: {locomotion {MaxSlope} {FallSlope} {MaxSpeed} {StartTime} ..}
+;   e.g. ("loco_small")
 (define "loco_small"
 	{locomotion
 		("loco_params")
@@ -111,6 +137,8 @@
 		{TurnRadius	2}
 	}
 )
+; loco_small_vet: {locomotion {MaxSlope} {FallSlope} {MaxSpeed} {StartTime} ..}
+;   e.g. ("loco_small_vet")
 (define "loco_small_vet"
 	{locomotion
 		("loco_params")
@@ -123,6 +151,8 @@
 	}
 )
 
+; loco_medium: {locomotion {FallSlope} {MaxSpeed} {StartTime} {TurnTime} ..}
+;   e.g. ("loco_medium")
 (define "loco_medium"
 	{locomotion
 		("loco_params")
@@ -133,6 +163,8 @@
 		{TurnRadius	3}
 	}
 )
+; loco_medium_vet: {locomotion {FallSlope} {MaxSpeed} {StartTime} {TurnTime} ..}
+;   e.g. ("loco_medium_vet")
 (define "loco_medium_vet"
 	{locomotion
 		("loco_params")
@@ -144,6 +176,8 @@
 	}
 )
 
+; loco_massive: {locomotion {FallSlope} {MaxSpeed} {StartTime} {TurnTime} ..}
+;   e.g. ("loco_massive")
 (define "loco_massive"
 	{locomotion
 		("loco_params")
@@ -155,6 +189,8 @@
 	}
 )
 
+; loco_big: {locomotion {FallSlope} {MaxSpeed} {StartTime} {TurnTime} ..}
+;   e.g. ("loco_big")
 (define "loco_big"
 	{locomotion
 		("loco_params")
@@ -165,6 +201,8 @@
 		{TurnRadius	3}
 	}
 )
+; loco_big_vet: {locomotion {FallSlope} {MaxSpeed} {StartTime} {TurnTime} ..}
+;   e.g. ("loco_big_vet")
 (define "loco_big_vet"
 	{locomotion
 		("loco_params")
@@ -176,6 +214,8 @@
 	}
 )
 
+; loco_verybig: {locomotion {FallSlope} {MaxSpeed} {StartTime} {TurnTime} ..}
+;   e.g. ("loco_verybig")
 (define "loco_verybig"
 	{locomotion
 		("loco_params")
@@ -186,6 +226,8 @@
 		{TurnRadius	3}
 	}
 )
+; loco_nomove: {locomotion {FallSlope} {MaxSpeed} {StartTime} {TurnTime} ..}
+;   e.g. ("loco_nomove")
 (define "loco_nomove"
 	{locomotion
 		("loco_params")
@@ -196,6 +238,8 @@
 		{TurnRadius	3}
 	}
 )
+; loco_nomove_vet: {locomotion {FallSlope} {MaxSpeed} {StartTime} {TurnTime} ..}
+;   e.g. ("loco_nomove_vet")
 (define "loco_nomove_vet"
 	{locomotion
 		("loco_params")
@@ -209,119 +253,145 @@
 
 ;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Gun Sights ////////////////////////////////////////
 
+; ger_1x11_sight: {sensor {visor}}
+;   e.g. ("ger_1x11_sight")
 (define "ger_1x11_sight"
-    {sensor
-    	{visor "main"
-        	{vision "tank_main_ger_1x11"}
-        	{bone "visor"}
-   	}
-    }
+	{sensor
+		{visor "main"
+			{vision "tank_main_ger_1x11"}
+			{bone "visor"}
+		}
+	}
 )
 
+; ger_3x8_sight: {sensor {visor}}
+;   e.g. ("ger_3x8_sight")
 (define "ger_3x8_sight"
-    {sensor
-    	{visor "main"
-        	{vision "tank_main_ger_3x8"}
-        	{bone "visor"}
-   	}
-    }
+	{sensor
+		{visor "main"
+			{vision "tank_main_ger_3x8"}
+			{bone "visor"}
+		}
+	}
 )
 
+; ger_3x11_sight: {sensor {visor}}
+;   e.g. ("ger_3x11_sight")
 (define "ger_3x11_sight"
-    {sensor
-    	{visor "main"
-        	{vision "cannon_mgun_ger_3x11"}
-        	{bone "visor"}
-   	}
-    }
+	{sensor
+		{visor "main"
+			{vision "cannon_mgun_ger_3x11"}
+			{bone "visor"}
+		}
+	}
 )
 
-(define "ger_5x8_sight"
-    {sensor
-    	{visor "main"
-        	{vision "tank_main_ger_5x8"}
-        	{bone "visor"}
-   	}
-    }
+; ger_5x8_sight_no_visor1: {sensor {visor}}
+;   e.g. ("ger_5x8_sight_no_visor1")
+(define "ger_5x8_sight_no_visor1"
+	{sensor
+		{visor "main"
+			{vision "tank_main_ger_5x8"}
+			{bone "visor"}
+		}
+	}
 )
 
-(define "ger_2-5x_sight"
-    {sensor
-    	{visor "main"
-        	{vision "tank_main_ger_2-5x"}
-        	{bone "visor"}
-   	}
-    }
+; ger_2-5x_sight_no_visor1: {sensor {visor}}
+;   e.g. none (not called)
+(define "ger_2-5x_sight_no_visor1"
+	{sensor
+		{visor "main"
+			{vision "tank_main_ger_2-5x"}
+			{bone "visor"}
+		}
+	}
 )
 
-(define "ger_5x_sight"
-    {sensor
-    	{visor "main2"
-        	{vision "tank_main_ger_5x"}
-        	{bone "visor"}
-   	}
-    }
+; ger_5x_sight_no_visor1: {sensor {visor}}
+;   e.g. none (not called)
+(define "ger_5x_sight_no_visor1"
+	{sensor
+		{visor "main2"
+			{vision "tank_main_ger_5x"}
+			{bone "visor"}
+		}
+	}
 )
 
-(define "rus_2-5x_sight"
-    {sensor
-    	{visor "main"
-        	{vision "tank_main_rus_2-5x"}
-        	{bone "visor"}
-   	}
-    }
+; rus_2-5x_sight_no_visor1: {sensor {visor}}
+;   e.g. ("rus_2-5x_sight_no_visor1")
+(define "rus_2-5x_sight_no_visor1"
+	{sensor
+		{visor "main"
+			{vision "tank_main_rus_2-5x"}
+			{bone "visor"}
+		}
+	}
 )
 
-(define "rus_4x_sight"
-    {sensor
-    	{visor "main"
-        	{vision "tank_main_rus_4x"}
-        	{bone "visor"}
-   	}
-    }
+; rus_4x_sight_no_visor1: {sensor {visor}}
+;   e.g. ("rus_4x_sight_no_visor1")
+(define "rus_4x_sight_no_visor1"
+	{sensor
+		{visor "main"
+			{vision "tank_main_rus_4x"}
+			{bone "visor"}
+		}
+	}
 )
 
-(define "us_3x_sight"
-    {sensor
-    	{visor "main"
-        	{vision "tank_main_us_3x"}
-        	{bone "visor"}
-   	}
-    }
+; us_3x_sight_no_visor1: {sensor {visor}}
+;   e.g. ("us_3x_sight_no_visor1")
+(define "us_3x_sight_no_visor1"
+	{sensor
+		{visor "main"
+			{vision "tank_main_us_3x"}
+			{bone "visor"}
+		}
+	}
 )
 
-(define "us_5x_sight"
-    {sensor
-    	{visor "main"
-        	{vision "tank_main_us_5x"}
-        	{bone "visor"}
-   	}
-    }
+; us_5x_sight_no_visor1: {sensor {visor}}
+;   e.g. ("us_5x_sight_no_visor1")
+(define "us_5x_sight_no_visor1"
+	{sensor
+		{visor "main"
+			{vision "tank_main_us_5x"}
+			{bone "visor"}
+		}
+	}
 )
 
-(define "eng_1-9x_sight"
-    {sensor
-    	{visor "main"
-        	{vision "tank_main_eng_1-9x"}
-        	{bone "visor"}
-   	}
-    }
+; eng_1-9x_sight_no_visor1: {sensor {visor}}
+;   e.g. ("eng_1-9x_sight_no_visor1")
+(define "eng_1-9x_sight_no_visor1"
+	{sensor
+		{visor "main"
+			{vision "tank_main_eng_1-9x"}
+			{bone "visor"}
+		}
+	}
 )
 
-(define "eng_3x_sight"
-    {sensor
-    	{visor "main"
-        	{vision "tank_main_us_3x"}
-        	{bone "visor"}
-   	}
-    }
+; eng_3x_sight_no_visor1: {sensor {visor}}
+;   e.g. ("eng_3x_sight_no_visor1")
+(define "eng_3x_sight_no_visor1"
+	{sensor
+		{visor "main"
+			{vision "tank_main_us_3x"}
+			{bone "visor"}
+		}
+	}
 )
 
-(define "eng_6x_sight"
-    {sensor
-    	{visor "main"
-        	{vision "tank_main_eng_6x"}
-        	{bone "visor"}
-   	}
-    }
+; eng_6x_sight_no_visor1: {sensor {visor}}
+;   e.g. ("eng_6x_sight_no_visor1")
+(define "eng_6x_sight_no_visor1"
+	{sensor
+		{visor "main"
+			{vision "tank_main_eng_6x"}
+			{bone "visor"}
+		}
+	}
 )

@@ -4,7 +4,7 @@
 	{entity "g43"}
 	{fireSound "rifle/g43_shot/"}
 	{reloadSound "m1carbine"}
-	
+
 	{Automatic}
 	{rechargeTime 4.5}
 	{healthDamage 30}

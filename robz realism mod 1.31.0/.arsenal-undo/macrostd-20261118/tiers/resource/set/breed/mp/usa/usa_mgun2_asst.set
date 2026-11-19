@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-mgun"}
+	{portrait usa_soldier2}
+	{icon mg}
+	{icon_priority 2}
+	{nationality usa}
+	{armors
+		{body ammo_us}
+		{head helmet_novice}
+	}
+	{perks
+		("breed_body" health(150%) regen_health(100%) stamina(100%) regen_stamina(100%) vision(mp_soldier) speed(0.9))
+		("breed_drive" tank(0.75) vehicle(1) cannon(0.8))
+		("breed_skills" pistol(2) smg(2) mgun(3) rifle(3) rocket(1) melee(3))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_garand")
+		{item "bandage" 3}
+		{item "sandbag_kit"}
+		{item "springfield_belt ammo" 500}
+		{in_hands 0}
+	}
+}

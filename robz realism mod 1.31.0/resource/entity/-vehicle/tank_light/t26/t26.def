@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.2))
@@ -6,24 +7,18 @@
 	{props "light" "turret_rotator" "vision_vehicle_low" "muzzle_minimum"}
 	{targetClass "light_tank"}
 	{patherId "tank.light"}
-	
+
 	{extender "enumerator"}
-	
-	{Volume "Body1"
-		{tags "body"}
-		{component "body"}
-	}
-	{Volume "Body2"
-		{tags "body"}
-		{component "body"}
-	}
-	
+
+	("vol_body_part" name(Body1))
+	("vol_body_part" name(Body2))
+
 	("armor_light" turret(15 15 15 10) body(15 15 15 15))
 	("armor_mantlet" t(15))
 	("armor_engine"  t(13))
 	("rus_2-5x_sight")
-	
-	("crew_2_human")
+
+	("crew_2_human_inside_left")
 	("crew_human" place(commander)	door1(emit1) door2(emit2) visor(back))
 
 	{boarder
@@ -43,7 +38,7 @@
 
 	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
 	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
-	
+
 	{extender "inventory"
 		{box
 			{item "bullet45 rus aphebc" 35}
@@ -56,8 +51,8 @@
 		{place "gun"
 			{RestoreIKAfterAim}
 			{weapon "45mm_20k" filling "bullet45 rus aphebc" 1}
-			{charger "gunner"}     
-			("abm_low")   
+			{charger "gunner"}
+			("abm_low_v4")
 		}
 		{place "mgun1"
 			{type "mgun_coaxial"}
@@ -82,34 +77,34 @@
 			{bone "foresight5"}
 		}
 	}
-	
+
 	{mass 9800}
-		{Chassis
+	{Chassis
 		("tank_trace" fx("tracks_sm2") step(0.15) len(0.6))
-			{Locomotion ("locomotion")
-				{maxspeed   31}
-				{maxSpeedAtMaxTurn 6}
-				{StartTime  28}
-				{TurnTime   15}
-				{TurnStart  1.1}			
-				{TurnRadius 7} 
-    			{TurnStop   0.7}
-				{BrakeTime  1}
-				{StopTime   2}
-				{Gears   0.1 0.2 0.3 1}
-				{RearGears  0.25}	
-			}
-			{FuelBag
-				{volume 295 }	
-				{rate	 12 }   
-				{remain 295 }
-				{fuel "fuel"}
-			}
-		{speed
-        	{Normal  31}
-        	{Slow  31}
-    	}
+		{Locomotion ("locomotion")
+			{maxspeed   31}
+			{maxSpeedAtMaxTurn 6}
+			{StartTime  28}
+			{TurnTime   15}
+			{TurnStart  1.1}
+			{TurnRadius 7}
+			{TurnStop   0.7}
+			{BrakeTime  1}
+			{StopTime   2}
+			{Gears   0.1 0.2 0.3 1}
+			{RearGears  0.25}
 		}
+		{FuelBag
+			{volume 295 }
+			{rate	 12 }
+			{remain 295 }
+			{fuel "fuel"}
+		}
+		{speed
+			{Normal  31}
+			{Slow  31}
+		}
+	}
 
 	{Extension "t-26_1939.mdl"}
 

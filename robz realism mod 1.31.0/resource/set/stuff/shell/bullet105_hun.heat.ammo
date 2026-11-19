@@ -3,7 +3,7 @@
 	{tag "big" "size_medium" "heat_medium"}
 	{inventory
 		{size 5 1}
-	}	
+	}
 	{mass 19}
 	{entity "hun_shell_105_heat"}
 

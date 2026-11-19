@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "ger-smock2-rfl"}
 	{portrait "ger2_soldier4"}
@@ -8,50 +9,12 @@
 		{head helmet_ger_m40_grass}
 	}
 	{perks
-		{"health" "350%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "150%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_sniper"
-		}
-		{"speed" 1.0
-		}
-		{"stealth"
-		}
-		{"telescope"
-		}
-		{"tank"	0.75
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 0.8
-		}
-		
-		{"pistol" lvl_4
-		}
-		{"smg" lvl_4
-		}
-		{"mgun" lvl_3
-		}
-		{"rifle" lvl_7
-		}
-		{"rocketlauncher" lvl_3
-		}
-		{"melee" lvl_5
-		}
-		{"aimedshot"}
+		("soldier_rifle_7" rocket(6) body(line) sight(sniper))
+		("perks_sniper")
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_elite")
-	}
+	("breed_vet" table(elite))
 	{inventory
-		{item "mauzer_s_vet" filled}
-		{item "ammo mauser_clip" 60}
+		("rifle_mauzer_s_vet")
 		{item "ammo mauser_clip fg" 20}
 		{item "bandage" 5}
 		;{item "smoke_paradrop_ammo grenade" 1}

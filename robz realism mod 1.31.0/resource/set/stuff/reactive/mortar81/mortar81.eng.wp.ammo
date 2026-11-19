@@ -9,7 +9,7 @@
 	{view "mortar_ammo"
 	}
 	{detonationThickness 2}
-	
+
 	{damage fire
 		{radius 6}
 		{heating 0.5}

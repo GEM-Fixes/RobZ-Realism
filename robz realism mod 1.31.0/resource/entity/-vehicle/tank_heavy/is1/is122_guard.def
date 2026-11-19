@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {Entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
@@ -5,20 +6,9 @@
 	{props "heavy" "turret_rotator" "vision_vehicle_maximum" "muzzle_maximum_sides" "is122"}
 	{tag "diesel_exhaust"}
 
-	{volume "body1"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body2"
-		{tags "body"}
-		{component "body"}
-
-	}
-	{volume "body3"
-		{tags "body"}
-		{component "body"}
-
-	}
+	("vol_body_part_lower" name(body1))
+	("vol_body_part_lower" name(body2))
+	("vol_body_part_lower" name(body3))
 	{Volume "armorf"
 		{thickness 10}
 	}
@@ -70,7 +60,7 @@
 		{thickness 4}
 		{component "shield"}
 	}
-	("armor_heavy_advanced" turret(100 90 90 30) body(120 90 60 30) body2(60 90 60 30) body3(100 90 60 30))
+	("armor_heavy_advanced" turret(100 90 90 30) body_mm(120 90 60 30) body2(60 90 60 30) body3(100 90 60 30))
 	("armor_engine"  t(20 20 20 30))
 	("armor_mantlet" t(100))
 	("rus_4x_sight")
@@ -92,7 +82,7 @@
 	}
 
 	("crew_4_human")
-	{placer 
+	{placer
 		{place "commander" {visor "back"}}
 	}
 	{boarder
@@ -129,9 +119,9 @@
 
 
 	{extender "inventory"
-		{box			  
+		{box
 			{item "ammo bullet122 rusl aphe" 9}
-            {item "ammo bullet122 rusl fg" 18}
+			{item "ammo bullet122 rusl fg" 18}
 			{item "ammo dt29_mag" 2400}
 		}
 	}
@@ -160,7 +150,7 @@
 		{place "mgun2"
 			{type "mgun_coaxial"}
 			{weapon "dt_optic" filled}
-			{foresight "foresight5"}	
+			{foresight "foresight5"}
 			{gunner "charger"}
 			{charger "charger"}
 			("abm_mgun")
@@ -183,25 +173,25 @@
 			{Maxspeed   29}
 			{maxSpeedAtMaxTurn 3}
 			{StartTime  42.5}
-			{BrakeTime 2.0}		
-			{StopTime  3.0}			
+			{BrakeTime 2.0}
+			{StopTime  3.0}
 			{TurnStart 1.8}
-			{TurnTime   22.5}		
+			{TurnTime   22.5}
 			{TurnStop    1}
 			{TurnRadius 11}
 			{Gears     0.13 0.21 0.31 1.0}
 			{RearGears  0.1 0.2}
 		}
 		{FuelBag
-			{volume 820 }	
-			{rate	34 }   
+			{volume 820 }
+			{rate	34 }
 			{remain 820 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  19}
-        	{Slow  10}
-    	}
+			{Normal  19}
+			{Slow  10}
+		}
 	}
 
 	{Extension "is122.mdl"}

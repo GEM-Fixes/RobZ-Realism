@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "usa-paramarine-pvt"}
 	{portrait "usa_elite2"}
@@ -9,50 +10,16 @@
 		{head helmet_marine_usa}
 	}
 	{perks
-		{"health" "350%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "200%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.95
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 1
-		}
-		
-		{"pistol" lvl_5
-		}
-		{"smg" lvl_6
-		}
-		{"mgun" lvl_5
-		}
-		{"rifle" lvl_5
-		}
-		{"rocketlauncher" lvl_5
-		}
-		{"melee" lvl_5
-		}
+		("soldier_smg_6" rocket(1) body(line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_elite")
-	}
+	("breed_vet" table(elite))
 	{inventory
-		{item "m50reising" filled}
-		{item "ammo m50reising_mag" 150}
+		("smg_m50reising")
 		{item "bandage" 5}
-		{item "grenade m61" 2}
+		("give" item(grenade m61) count(2))
 		;{item "grenade n73at" 1}
-		{item "smoke grenade" 1.5 0.5}
-		{item "m15_smoke grenade" 0.5 0.5}
+		("give_1_or_2" item(smoke grenade))
+		("give_chance" item(m15_smoke grenade) chance(50))
 		{in_hands 0}
 	}
 }

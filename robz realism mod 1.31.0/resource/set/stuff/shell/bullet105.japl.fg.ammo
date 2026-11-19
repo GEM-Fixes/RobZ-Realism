@@ -6,7 +6,7 @@
 	("fg_medium" args 6.5)
 	("jap_he" args 1.1)
 	{mass 21}
-	
+
 	; anti-apc
 	{damage add blastwave
 		{energy 3.5}
@@ -17,7 +17,7 @@
 		{view "/texture/fx/trace"
 			{Light 0}
 			{ScaleY 0}
-		}		
+		}
 		{length 0}
 	}
 }

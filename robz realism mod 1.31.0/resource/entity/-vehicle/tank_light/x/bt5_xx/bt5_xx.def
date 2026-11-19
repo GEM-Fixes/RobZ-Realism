@@ -1,25 +1,11 @@
 ;Created by Dmirog
 ;Date:        Mon 9 09 2013
+(include "/properties/robz/volumes.inc")
 {game_entity
 	{obstacleId "tank"}
-	{volume "body1"
-		{tags "body"}
-		{component "body"}
-		{thickness 13
-		}   
-	}
-	{volume "body2"
-		{tags "body"}
-		{component "body"}
-		{thickness 13
-		}
-	}
-	{volume "body3"
-		{tags "body"}
-		{component "body"}
-		{thickness 13
-		}
-	}
+	("vol_body_plate_lower" name(body1) mm(13))
+	("vol_body_plate_lower" name(body2) mm(13))
+	("vol_body_plate_lower" name(body3) mm(13))
 	{volume "turret"
 		{thickness 13 0.3
 			{front  13}

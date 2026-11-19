@@ -58,7 +58,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04b"
 					{turn 1
 						{linear

@@ -1,0 +1,13 @@
+{Extension "303_bren_tripod_xx.mdl"}
+{Volume "body1"
+}
+{Volume "body2"
+}
+{Volume "body"
+}
+{Volume "support1"
+}
+{Volume "support2"
+}
+{Volume "support3"
+}

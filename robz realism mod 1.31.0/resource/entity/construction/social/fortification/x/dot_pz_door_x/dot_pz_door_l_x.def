@@ -1,10 +1,7 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	{Extension "dot_pz_door_x.mdl"}
-	{Volume "door"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
+	("vol_body_visible" name(door) mm(50))
 	{Volume "sub_piece1"
 	}
 	{Volume "sub_piece2"

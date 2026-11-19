@@ -2,7 +2,7 @@
 	{filling "ammo mg_mauser" 50}
 	{fireSound	"mgun/mg34_burst/"}
 	{rechargeTime 9.0}
-	
+
 	{range 130 130}
 	{traceFreq 5}
 	("recoveryTime" r(800))

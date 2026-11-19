@@ -7,6 +7,6 @@
 	("caliber_medium")
 	{projectileDamage 27}
 	("speed" s(380))
-	("accuracy_zenite_low") 
+	("accuracy_zenite_low")
 	{range 90 100}
 }

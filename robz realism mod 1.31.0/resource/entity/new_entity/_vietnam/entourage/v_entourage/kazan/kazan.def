@@ -8,9 +8,9 @@
 	{Volume "body"
 		{Tags  "body"}
 	}
-{obstacleID "stuff"}
-{collider "stuff"}
-{props "steel" "stuff" "collectable"}
-{simulation {able 1} {disableLinked 1}}
-{constrain ground}
+	{obstacleID "stuff"}
+	{collider "stuff"}
+	{props "steel" "stuff" "collectable"}
+	{simulation {able 1} {disableLinked 1}}
+	{constrain ground}
 }

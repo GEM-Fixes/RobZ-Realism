@@ -1,0 +1,6 @@
+{game_entity
+	{Extension "guzzi-sa500_xx.mdl"}
+
+	{texmod "ita_x"}
+	
+}

@@ -2,6 +2,9 @@
 ; medium: 3-4  [2, 3-4]
 ; light : 1-2  [1, 2-3]
 
+; _tr: sets {trace}
+;   args 0 (positional %0) - tracer size: trace length (and width) scale with it
+;   e.g. ("_tr" args (* %0 6))
 (define "_tr"
 	{trace
 		{view "/texture/fx/trace"
@@ -11,6 +14,9 @@
 		{length (* %0 12)}
 	}
 )
+; _tr2: sets {trace}
+;   args 0 (positional %0) - tracer size: trace length (and width) scale with it
+;   e.g. ("_tr2" args (* %0 6))
 (define "_tr2"
 	{trace
 		{view "/texture/fx/trace_apcr"
@@ -21,6 +27,9 @@
 	}
 )
 
+; _tr_us: sets {trace}
+;   args 0 (positional %0) - tracer size: trace length (and width) scale with it
+;   e.g. ("_tr_us" args (* %0 6))
 (define "_tr_us"
 	{trace
 		{view "/texture/fx/trace_mg_red"
@@ -31,6 +40,9 @@
 	}
 )
 
+; _tr_rus: sets {trace}
+;   args 0 (positional %0) - tracer size: trace length (and width) scale with it
+;   e.g. ("_tr_rus" args (* %0 6))
 (define "_tr_rus"
 	{trace
 		{view "/texture/fx/trace_mg_green"
@@ -41,6 +53,9 @@
 	}
 )
 
+; _tr_ger: sets {trace}
+;   args 0 (positional %0) - tracer size: trace length (and width) scale with it
+;   e.g. ("_tr_ger" args (* %0 6))
 (define "_tr_ger"
 	{trace
 		{view "/texture/fx/trace_apcr"
@@ -51,147 +66,204 @@
 	}
 )
 
+; ---- design table (author, "tings to do.txt" lines 649-676): 150 mm+ shell fillers: kg, fg value, damage distances, fg define, mid damage and distances, copied as written ----
+; E = highest energy							     
+; 150+ fillers / energy							    mid damage | min - max dist
+; 15cm Gr.19 = 5.1kg		12	11,9 - 18,7	fg_heavy		2,4	 5,5 - 6,0
+; 15cm IGr.38 = 8.6kg		18	16,1 - 25,3	fg_heavy		3,6	 5,5 - 6,0
+; 150mm Type 92 = 5kg		11.9	11,83- 18,59	fg_heavy		2,38	 5,5 - 6,0
+; 152mm Mk.II.D = 4.9kg		11.8	11,76- 18,48	fg_heavy		2,36	 5,5 - 6,0
+; 152mm OF-530 = 6.95kg		15.5	14,35- 22,55	fg_heavy		3,1	 5,5 - 6,0
+; 152mm OF-540 = 6.25kg		14	13,3 - 20,9	fg_heavy		2,8	 5,5 - 6,0
+; 155mm M101 = 6.88kg		15.3	14,21- 22,33	fg_heavy		3,06	 5,5 - 6,0
+; 290mm mortar = 12kg		25	15,0 - 20,0	custom			10	 7,0 - 12,0
+; 183mm shell = 12.64kg		21	16,9 - 24,7	fg_maximum		9,45	 6,3 - 10,5
+; 203mm shell = 15,36kg		24.1	18,85- 27,55	fg_maximum		10,8	 7,2 - 12,0
+; 203mm US M106 = 16,46kg	26	20,15- 29,45	fg_maximum		11,7	 7,8 - 13,0
+; 21cm Gr 18 = 17,35kg		28	21,45- 31,35	fg_maximum		12,6	 8,4 - 14,0
+; 240mm M114 = 24,52kg|2,55-6,8	34	26,0 - 37,0	custom			14,5	10,2 - 17,0
+; 280mm F-674K = 33,6kg|2,8-7,6	38	27,95- 40,85	fg_maximum		17,1	11,4 - 19,0
+; 280mm F-674 = 58,7kg|3,15-8,4	42	30,55- 44,65	fg_maximum		18,9	12,6 - 21,0
+;--------------------------------------------------------------------------------------------------
+; 38cm spreng = 125kg		50	 8,0 - 12,0				18,9	16,0 - 25,0
+; 				1,5	 45,0- 60,0
+;--------------------------------------------------------------------------------------------------
+; 60cm light = 220/280kg	60	14,0 - 18,0				20	22,0 - 30,0
+; 				1,5	70,0 - 85,0
+;--------------------------------------------------------------------------------------------------
+; 60cm heavy = 280/350kg	65	18,0 - 25,0				20	30,0 - 38,0
+; 				1,5	85,0 - 100,0
+;--------------------------------------------------------------------------------------------------
+; 54cm spreng = 460kg
+
+; ---- design table (author, "tings to do.txt" lines 697-713): gun shell fillers: kg, fg value, damage distances, fg define, copied as written ----
+; other shell fillers
+; 75mm HE M48 = 0.67kg		3.5	4,25 - 7,65	fg_min
+; 7.5cm sprgr.34 = 0.68kg		3.5
+; 7.5cm sprgr.42 = 0.6kg		3.2
+; 76mm HE M42A1 = 0.39kg		2.0	3,50 - 6,3	fg_min
+;
+; 85mm OF-365 = 0.78kg		5.2			fg
+; 88mm Mk.I.D = 0.82kg		5.3			fg
+; 8.8cm L/4.5 = 0.9kg		5.5			fg
+; 8.8cm sprgr.43 = 1kg		5.8	5,4  -	9,72	fg
+; 90mm HE M71 = 0.97kg		5.7			fg
+;
+; 105mm HE = 2.18kg		6.5	8,05 - 12,65	fg_med
+; 122mm HE = 3.67kg		7.5	8,75 - 13,75	fg_med
+; 128mm HE = 3.37kg		7.2			fg_med
+; 57mm T18 HE = 0.17kg		2.5	2,6  - 5,2	fg_min_low
+; 37mm HE				1.8	2,32 - 4,64	fg_min_low
+
+; fg_minimum_low: HE blast: blastwave damage layers (anti-tank, anti-personnel) scaled by the filler value
+;   args 0 (positional %0) - filler value (explosive energy): anti-tank energy and anti-personnel area scale with it
+;   e.g. ("fg_minimum_low" args 1.8)
 (define "fg_minimum_low"
-		; anti-tank
-		{damage blastwave
-			{energy (* %0 0.8)}
-			{area 0.1 0.2}
-		}
-		; anti-personel
-		{damage add blastwave
-			{energy 1}
-			{area (* 0.4 (+ %0 4)) (* 0.8 (+ %0 4))}
-		}
-		{damage add blastwave
-			{energy 0.1}
-			{area (* 1 (+ %0 4)) (* 1 (+ %0 4))}
-		}
-		;("_tr" args (* %0 5))
+	; anti-tank
+	{damage blastwave
+		{energy (* %0 0.8)}
+		{area 0.1 0.2}
+	}
+	; anti-personel
+	{damage add blastwave
+		{energy 1}
+		{area (* 0.4 (+ %0 4)) (* 0.8 (+ %0 4))}
+	}
+	{damage add blastwave
+		{energy 0.1}
+		{area (* 1 (+ %0 4)) (* 1 (+ %0 4))}
+	}
+;("_tr" args (* %0 5))
 )
 
-(define "fg_minimum"
-		; anti-tank
-		{damage blastwave
-			{energy (* %0 1.15)}
-			{area 0.1 0.2}
-		}
-		; anti-personel
-		{damage add blastwave
-			{energy 1.2}
-			{area (* 0.5 (+ %0 5)) (* 0.9 (+ %0 5))}
-		}
-		{damage add blastwave
-			{energy 0.1}
-			{area (* 1.1 (+ %0 5)) (* 1.1 (+ %0 5))}
-		}
-		;("_tr" args (* %0 6))
-)
+(include "/properties/robz/weapon.inc")
 
+; fg: HE blast: blastwave damage layers (anti-tank, anti-personnel) scaled by the filler value
+;   args 0 (positional %0) - filler value (explosive energy): anti-tank energy and anti-personnel area scale with it
+;   e.g. ("fg" args 6.5)
 (define "fg"
-		; anti-tank
-		{damage blastwave
-			{energy (* %0 1.15)}
-			{area 0.4 0.5}
-		}
-		; anti-personel
-		{damage add blastwave
-			{energy 3.6}
-			{area 1.5 2}
-		}
-		; anti-personel
-		{damage add blastwave
-			{energy 1.2}
-			{area (* 0.5 (+ %0 5)) (* 0.9 (+ %0 5))}
-		}
-		{damage add blastwave
-			{energy 0.1}
-			{area (* 1.2 (+ %0 5)) (* 1.2 (+ %0 5))}
-		}
-		;("_tr" args (* %0 6))
+	; anti-tank
+	{damage blastwave
+		{energy (* %0 1.15)}
+		{area 0.4 0.5}
+	}
+	; anti-personel
+	{damage add blastwave
+		{energy 3.6}
+		{area 1.5 2}
+	}
+	; anti-personel
+	{damage add blastwave
+		{energy 1.2}
+		{area (* 0.5 (+ %0 5)) (* 0.9 (+ %0 5))}
+	}
+	{damage add blastwave
+		{energy 0.1}
+		{area (* 1.2 (+ %0 5)) (* 1.2 (+ %0 5))}
+	}
+;("_tr" args (* %0 6))
 )
 
+; fg_medium: HE blast: blastwave damage layers (anti-tank, anti-personnel) scaled by the filler value
+;   args 0 (positional %0) - filler value (explosive energy): anti-tank energy and anti-personnel area scale with it
+;   e.g. ("fg_medium" args 6.5)
 (define "fg_medium"
-		; anti-tank
-		{damage blastwave
-			{energy (* %0 1.15)}
-			{area 0.8 1.0}
-		}
-		; anti-personel
-		{damage add blastwave
-			{energy 3.6}
-			{area 2.5 3}
-		}
-		; anti-personel
-		{damage add blastwave
-			{energy 1.5}
-			{area (* 0.7 (+ %0 5)) (* 1.1 (+ %0 5))}
-		}
-		{damage add blastwave
-			{energy 0.1}
-			{area (* 1.3 (+ %0 5)) (* 1.3 (+ %0 5))}
-		}
-		;("_tr" args (* %0 6))
+	; anti-tank
+	{damage blastwave
+		{energy (* %0 1.15)}
+		{area 0.8 1.0}
+	}
+	; anti-personel
+	{damage add blastwave
+		{energy 3.6}
+		{area 2.5 3}
+	}
+	; anti-personel
+	{damage add blastwave
+		{energy 1.5}
+		{area (* 0.7 (+ %0 5)) (* 1.1 (+ %0 5))}
+	}
+	{damage add blastwave
+		{energy 0.1}
+		{area (* 1.3 (+ %0 5)) (* 1.3 (+ %0 5))}
+	}
+;("_tr" args (* %0 6))
 )
 
+; fg_heavy: HE blast: blastwave damage layers (anti-tank, anti-personnel) scaled by the filler value
+;   args 0 (positional %0) - filler value (explosive energy): anti-tank energy and anti-personnel area scale with it
+;   e.g. ("fg_heavy" args 6.5)
 (define "fg_heavy"
-		; anti-tank
-		{damage blastwave
-			{energy %0}
-			{area 0 2}
-		}
-		; anti-apc
-		{damage add blastwave
-			{energy (* %0 0.2)}
-			{area 5.5 6}
-		}
-		; anti-personel
-		{damage add blastwave
-			{energy 1.5}
-			{area (* 0.7 (+ %0 5)) (* 1.1 (+ %0 5))}
-		}
-		{damage add blastwave
-			{energy 0.1}
-			{area (* 1.3 (+ %0 5)) (* 1.3 (+ %0 5))}
-		}
-		;("_tr" args (* %0 6))
+	; anti-tank
+	{damage blastwave
+		{energy %0}
+		{area 0 2}
+	}
+	; anti-apc
+	{damage add blastwave
+		{energy (* %0 0.2)}
+		{area 5.5 6}
+	}
+	; anti-personel
+	{damage add blastwave
+		{energy 1.5}
+		{area (* 0.7 (+ %0 5)) (* 1.1 (+ %0 5))}
+	}
+	{damage add blastwave
+		{energy 0.1}
+		{area (* 1.3 (+ %0 5)) (* 1.3 (+ %0 5))}
+	}
+;("_tr" args (* %0 6))
 )
 
+; ---- design table (author, "tings to do.txt" line 695): fg_maximum note, copied as written ----
+; fg_maximum max damage = fg_value, area *0,75; 1		mid damage =  %0*0,45
+
+; fg_maximum: HE blast: blastwave damage layers (anti-tank, anti-personnel) scaled by the filler value
+;   args 0 (positional %0) - filler value (explosive energy): anti-tank energy and anti-personnel area scale with it
+;   e.g. ("fg_maximum" args 21)
 (define "fg_maximum"
-		; anti-tank
-		{damage blastwave
-			{energy %0}
-			{area 0 2.5}
-		}
-		; anti-apc
-		{damage add blastwave
-			{energy (* %0 0.45)}
-			{area (* %0 0.3) (* %0 0.5)}
-		}
-		; anti-personel
-		{damage add blastwave
-			{energy 1.5}
-			{area (* 0.65 (+ %0 5)) (* 0.95 (+ %0 5))}
-		}
-		{damage add blastwave
-			{energy 0.1}
-			{area (* 1.2 (+ %0 5)) (* 1.2 (+ %0 5))}
-		}
-		;("_tr" args (* %0 6))
+	; anti-tank
+	{damage blastwave
+		{energy %0}
+		{area 0 2.5}
+	}
+	; anti-apc
+	{damage add blastwave
+		{energy (* %0 0.45)}
+		{area (* %0 0.3) (* %0 0.5)}
+	}
+	; anti-personel
+	{damage add blastwave
+		{energy 1.5}
+		{area (* 0.65 (+ %0 5)) (* 0.95 (+ %0 5))}
+	}
+	{damage add blastwave
+		{energy 0.1}
+		{area (* 1.2 (+ %0 5)) (* 1.2 (+ %0 5))}
+	}
+;("_tr" args (* %0 6))
 )
 
+; heat_dmg: sets {damage}
+;   args 0 (positional %0) - value of {energy}
+;   e.g. ("heat_dmg" args 6.5)
 (define "heat_dmg"
-		; anti-tank
-		{damage blastwave
-			{energy %0}
-			{area 0.1 0.2}
-		}
-		; anti-personel
-		{damage add blastwave
-			{energy 1.2}
-			{area (* 0.4 (+ %0 5)) (* 0.8 (+ %0 5))}
-		}
+	; anti-tank
+	{damage blastwave
+		{energy %0}
+		{area 0.1 0.2}
+	}
+	; anti-personel
+	{damage add blastwave
+		{energy 1.2}
+		{area (* 0.4 (+ %0 5)) (* 0.8 (+ %0 5))}
+	}
 )
 
+; ap: "_tr"; sets {damage}
+;   args 0 (positional %0) - value of {energy}
+;   e.g. ("ap" args 0.18)
 (define "ap"
 	{damage blastwave
 		{energy (* %0 2)}
@@ -204,6 +276,9 @@
 	("_tr" args (* %0 6))
 )
 
+; us: "_tr_us"; sets {damage}
+;   args 0 (positional %0) - value of {energy}
+;   e.g. ("us" args 0.27)
 (define "us"
 	{damage blastwave
 		{energy (* %0 2)}
@@ -216,6 +291,9 @@
 	("_tr_us" args (* %0 6))
 )
 
+; rus: "_tr_rus"; sets {damage}
+;   args 0 (positional %0) - value of {energy}
+;   e.g. ("rus" args 1.1)
 (define "rus"
 	{damage blastwave
 		{energy (* %0 2)}
@@ -228,6 +306,9 @@
 	("_tr_rus" args (* %0 6))
 )
 
+; ger: "_tr_ger"; sets {damage}
+;   args 0 (positional %0) - value of {energy}
+;   e.g. ("ger" args 1.1)
 (define "ger"
 	{damage blastwave
 		{energy (* %0 2)}
@@ -239,6 +320,9 @@
 	}
 	("_tr_ger" args (* %0 6))
 )
+; jap: "_tr_ger"; sets {damage}
+;   args 0 (positional %0) - value of {energy}
+;   e.g. ("jap" args 1.1)
 (define "jap"
 	{damage blastwave
 		{energy (* %0 2)}
@@ -250,18 +334,29 @@
 	}
 	("_tr_ger" args (* %0 6))
 )
+; us_he: empty body
+;   e.g. ("us_he" args 0.27)
 (define "us_he"
-	;("_tr_us" args (* %0 6))
+;("_tr_us" args (* %0 6))
 )
+; rus_he: empty body
+;   e.g. ("rus_he" args 1.1)
 (define "rus_he"
-	;("_tr_rus" args (* %0 6))
+;("_tr_rus" args (* %0 6))
 )
+; ger_he: empty body
+;   e.g. ("ger_he" args 1.4)
 (define "ger_he"
-	;("_tr_ger" args (* %0 6))
+;("_tr_ger" args (* %0 6))
 )
+; jap_he: empty body
+;   e.g. ("jap_he" args 1.1)
 (define "jap_he"
-	;("_tr_ger" args (* %0 6))
+;("_tr_ger" args (* %0 6))
 )
+; us_apcr: "_tr_us"; sets {damage}
+;   args 0 (positional %0) - value of {energy}
+;   e.g. ("us_apcr" args 0.5)
 (define "us_apcr"
 	{damage blastwave
 		{energy (* %0 1)}
@@ -273,6 +368,9 @@
 	}
 	("_tr_us" args (* %0 6))
 )
+; rus_apcr: "_tr_rus"; sets {damage}
+;   args 0 (positional %0) - value of {energy}
+;   e.g. ("rus_apcr" args 0.35)
 (define "rus_apcr"
 	{damage blastwave
 		{energy (* %0 1)}
@@ -284,6 +382,9 @@
 	}
 	("_tr_rus" args (* %0 6))
 )
+; ger_apcr: "_tr_ger"; sets {damage}
+;   args 0 (positional %0) - value of {energy}
+;   e.g. ("ger_apcr" args 0.27)
 (define "ger_apcr"
 	{damage blastwave
 		{energy (* %0 1)}
@@ -295,6 +396,9 @@
 	}
 	("_tr_ger" args (* %0 6))
 )
+; apcr: "_tr2"; sets {damage}
+;   args 0 (positional %0) - value of {area}
+;   e.g. ("apcr" args 0.27)
 (define "apcr"
 	{damage blastwave
 		{energy 1}

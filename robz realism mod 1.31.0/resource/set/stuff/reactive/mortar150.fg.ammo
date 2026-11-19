@@ -6,9 +6,9 @@
 	}	{mass 2}
 	{entity "mortar150_ammo"}
 	{view "mortar150_ammo"
-	}	
+	}
 	{detonationThickness 1}
-	
-	("fg_medium" args 7.9)
+
+	("fg_medium_v2" args 7.9)
 
 }

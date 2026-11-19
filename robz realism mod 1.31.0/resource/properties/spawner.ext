@@ -2,18 +2,18 @@
 actor
 
 {Chassis "track"
-    ; left track must be first
-    {FuelBag
-        {volume 250 }   ; liters
-        {rate   1 }    ; liters per kilometer
-        {remain 250 }
-        {fuel "fuel"}
-    }
-    {speed
-        {Slow   25   }   ; km/h
-        {Normal 27  }
-        {Fast   30  }
-    }
+	; left track must be first
+	{FuelBag
+		{volume 250 }   ; liters
+		{rate   1 }    ; liters per kilometer
+		{remain 250 }
+		{fuel "fuel"}
+	}
+	{speed
+		{Slow   25   }   ; km/h
+		{Normal 27  }
+		{Fast   30  }
+	}
 }
 
 (include "vehicle.ext")
@@ -21,22 +21,15 @@ actor
 
 ("brain_vehicle")
 
-(define "accuracy_by_motion" ;  spreading depending on the speed of "body", "gun" volumes
-	{AccuracyByMotion
-        {MaxLinearSpeed %max_linear}               ;km/h
-        {ByLinearSpeed %accuracy_by_linear}
-        {MaxAngularSpeed %max_angular}             ;deg/s
-        {ByAngularSpeed %accuracy_by_angular}
-        {DisorderTime %disorder_time}              ;s
-        {OrderTime %order_time}                    ;s
-    }
-)
-(define "abm_low"
-    ("accuracy_by_motion"
-        max_linear(20) accuracy_by_linear(0.4)
-        max_angular(4) accuracy_by_angular(0.6)
-        disorder_time(1.6) order_time(2)
-    )
+(include "/properties/robz/armor.inc")
+; abm_low_v3: calls "accuracy_by_motion"
+;   e.g. none (not called)
+(define "abm_low_v3"
+	("accuracy_by_motion"
+		max_linear(20) accuracy_by_linear(0.4)
+		max_angular(4) accuracy_by_angular(0.6)
+		disorder_time(1.6) order_time(2)
+	)
 )
 
 {hearingBias 4.5} ; in meters
@@ -48,174 +41,186 @@ actor
 
 
 {extender "inventory"
-    {box
-        {Size 4 4}
-        {Weight 15000}
-    }
+	{box
+		{Size 4 4}
+		{Weight 15000}
+	}
 }
 
 
 
 {volume "gun"
-    {tags "no_target"}
-    {thickness 50}
-    {able {Visible 0} {Obstacle 0} {Contact 0}}
+	{tags "no_target"}
+	{thickness 50}
+	{able {Visible 0} {Obstacle 0} {Contact 0}}
 }
 {volume "inventory"
-    {tags "explosive"}
-    {thickness 0.1}
+	{tags "explosive"}
+	{thickness 0.1}
 }
 {volume "crew"
 	{able {NoWoundDecal}}
 }
 {volume "engine"
-    {thickness 1}
+	{thickness 1}
 }
 {volume "crew"
-    {thickness 1}
+	{thickness 1}
 }
 {volume "turret"
-    {component "turret"}
-    {tags "turret"}
+	{component "turret"}
+	{tags "turret"}
 }
 
 
-(define "components_tank"
-    {component "body"
-        {RepairTime (* %repair 40)}
-        {tags "mover" "noDestroyedView"}
-    }
-    {component "engine"
-        {RepairTime (* %repair 15)}
-    }
-    {component "turret"
-        {RepairTime (* %repair 12)}
-    }
-    {component "gun"
-        {RepairTime (* %repair 12)}
-    }
-    {component "trackleft"
-        {RepairTime (* %repair 8)}
-    }
-    {component "trackright"
-        {RepairTime (* %repair 8)}
-    }
-)
-
-
-(define "locomotion"
-    {MaxSpeed	40}						
-    {StartTime	20}						
-    {maxSpeedAtMaxTurn 20}
-    {TurnTime	7}						
-    {TurnStart	1.5}						
-    {BrakeTime	1.5}					
-    {StopTime	1.5}						
-    {TurnRadius	7}						
-    {TurnStop	1.5}					
-    {Gears	0.45 1.0}	
-    {RearGears	0.2 0.4}				
-    {GearSwitchDelay 1.5}				
-)
-
-(define "armor_engine"
-    {armor
-        {setting "engine"
-            {thickness %t}
-            {volumes "engine*"}
-        }
-    }
-)
-
-(define "armor_tank" ; armor system details you will find at "set/interaction_entity/tank.inc"
-    {armor
-        {setting "track"
-            {thickness %t}
-            {durability
-                {blast
-                    {koef (* %dur 2.5)}
-                }
-                {pierce
-                    {value 200}
-                }
-            }
-            {threshold
-                {blast
-                    {value %track_b}
-                }
-            }
-            {volumes "track*"}
-            {whole_wound}
-        }
-        {setting "turret"
-            {thickness %tur}
-         
-            {durability
-                {pierce
-                    {koef %pierce_dur}
-                }
-            }
-        
-            {threshold
-                {blast
-                    {koef  0.8}
-                }
-            }
-            {volumes "turret*"}
-        }
-        {setting "gun"
-            {thickness %gun}
-            {durability
-                {blast  {koef 3}}
-                {pierce {koef 3}}
-            }
-            {threshold
-                {blast
-                    {value 15}
-                }
-                {pierce
-                    {value 12}
-                }
-            }
-            {volumes "gun*"}
-        }
-        {setting "body"
-            {thickness %bod}
-            {durability
-                {blast
-                    {koef %dur}
-                }
-        		{pierce
-                    {koef %pierce_dur}
-                }
-            }
-            {threshold
-                {blast
-                    {koef %thr}
-                }
-            }
-            {volumes "body*"}
-        }
-        {setting "engine"
-            {thickness %en}
-            {durability
-                {blast
-                    {koef %dur}
-                }
-            }
-            {threshold
-                {blast
-                    {koef %thr}
-                }
-            }
-            {volumes "engine*"}
-        }
+; components_tank_no_internal: {component "body"} {component "engine"} {component "turret"} {component "gun"} {component "trackleft"} {component "trackright"}
+;   repair - {RepairTime}, s
+;   e.g. ("components_tank_no_internal" repair(1.5))
+(define "components_tank_no_internal"
+	{component "body"
+		{RepairTime (* %repair 40)}
+		{tags "mover" "noDestroyedView"}
+	}
+	{component "engine"
+		{RepairTime (* %repair 15)}
+	}
+	{component "turret"
+		{RepairTime (* %repair 12)}
+	}
+	{component "gun"
+		{RepairTime (* %repair 12)}
+	}
+	{component "trackleft"
+		{RepairTime (* %repair 8)}
+	}
+	{component "trackright"
+		{RepairTime (* %repair 8)}
 	}
 )
 
-(define "armor_light"
-    ("armor_tank" t(7) track_b(12) bod(%body) tur(%turret) en(12) gun(15) dur(1) thr(1) pierce_dur(60))
-    ("components_tank" repair(1.5))
+
+; locomotion_v2: {MaxSpeed} {StartTime} {maxSpeedAtMaxTurn} {TurnTime} {TurnStart} {BrakeTime} +6 more
+;   e.g. ("locomotion_v2")
+(define "locomotion_v2"
+	{MaxSpeed	40}
+	{StartTime	20}
+	{maxSpeedAtMaxTurn 20}
+	{TurnTime	7}
+	{TurnStart	1.5}
+	{BrakeTime	1.5}
+	{StopTime	1.5}
+	{TurnRadius	7}
+	{TurnStop	1.5}
+	{Gears	0.45 1.0}
+	{RearGears	0.2 0.4}
+	{GearSwitchDelay 1.5}
+)
+
+
+; armor_tank_v2: armor system details you will find at "set/interaction_entity/tank.inc" (makes {armor {setting}})
+;   track_mm - {thickness}, mm
+;   dur - {koef}, [?]
+;   track_b - {value}, [?]
+;   tur - {thickness}, mm
+;   pierce_dur - {koef}, [?]
+;   gun - {thickness}, mm
+;   bod - {thickness}, mm
+;   thr - {koef}, [?]
+;   en - {thickness}, mm
+;   e.g. ("armor_tank_v2" track_mm(7) track_b(12) bod(%body) tur(%turret) en(12) gun(15) dur(1) thr(1) pierce_dur(60))
+(define "armor_tank_v2"
+	{armor
+		{setting "track"
+			{thickness %track_mm}
+			{durability
+				{blast
+					{koef (* %dur 2.5)}
+				}
+				{pierce
+					{value 200}
+				}
+			}
+			{threshold
+				{blast
+					{value %track_b}
+				}
+			}
+			{volumes "track*"}
+			{whole_wound}
+		}
+		{setting "turret"
+			{thickness %tur}
+
+			{durability
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+
+			{threshold
+				{blast
+					{koef  0.8}
+				}
+			}
+			{volumes "turret*"}
+		}
+		{setting "gun"
+			{thickness %gun}
+			{durability
+				{blast  {koef 3}}
+				{pierce {koef 3}}
+			}
+			{threshold
+				{blast
+					{value 15}
+				}
+				{pierce
+					{value 12}
+				}
+			}
+			{volumes "gun*"}
+		}
+		{setting "body"
+			{thickness %bod}
+			{durability
+				{blast
+					{koef %dur}
+				}
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
+			{volumes "body*"}
+		}
+		{setting "engine"
+			{thickness %en}
+			{durability
+				{blast
+					{koef %dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
+			{volumes "engine*"}
+		}
+	}
+)
+
+; armor_light_tank_v2: {sensor {visor}}, calls "armor_tank_v2" "components_tank_no_internal"
+;   body - {thickness}, mm via "armor_tank_v2"
+;   turret - {thickness}, mm via "armor_tank_v2"
+;   e.g. ("armor_light_tank_v2" turret(1) body(1))
+(define "armor_light_tank_v2"
+	("armor_tank_v2" track_mm(7) track_b(12) bod(%body) tur(%turret) en(12) gun(15) dur(1) thr(1) pierce_dur(60))
+	("components_tank_no_internal" repair(1.5))
 
 	{sensor
 		{visor "view-around"

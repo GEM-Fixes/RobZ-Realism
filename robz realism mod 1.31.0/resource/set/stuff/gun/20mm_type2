@@ -4,19 +4,19 @@
 	{reloadSound "flak38"}
 	{rechargeTime 6}
 	("range_zenite")
-	
+
 	("speed" s(829))
 	("caliber_zenite")
 	("recoveryTime" r(300))
 	{projectileDamage 46}
-	("damage_100" a(46) b(33) c(23) d(15) e(11) range(160))
-	
+	("damage_100" at20(46) at100(33) at170(23) at215(15) at250(11) max(160))
+
 	{Automatic}
 	{burst
 		{short 2.5 1}
 		{long 7 2}
-	}	
+	}
 	{RelaxationTime 0}
-	
+
 	("accuracy_zenite_medium")
 }

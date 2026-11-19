@@ -1,0 +1,53 @@
+{breed
+	{skin "eng-inf-pvt"}
+	{portrait eng_soldier2}
+	{icon at_rifle}
+	{icon_priority 3}
+	{nationality eng}
+	{armors
+		{head helmet2_eng}
+	}
+	{perks
+		{"health" "150%"
+		}
+		{"health_regeneration" "100%"
+		}
+		{"stamina" "100%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"vision" mp_soldier
+		}
+		{"speed" 0.9
+		}
+		{"tank" 0.8
+		}
+		{"vehicle" 1
+		}
+		{"cannon" 1
+		}
+		{"pistol" lvl_2
+		}
+		{"smg" lvl_3
+		}
+		{"mgun" lvl_2
+		}
+		{"rifle" lvl_4
+		}
+		{"rocketlauncher" lvl_2
+		}
+		{"melee" lvl_3
+		}
+	}
+        {veterancy
+		(include "veterancy_generic.inc")
+		("veterancy_1")
+	}
+	{inventory
+		{item "boyes" filled}
+		{item "bandage" 5}
+		{item "grenade n73at"}
+		{item "ammo ptr" 50}
+		{in_hands 0}
+	}
+}

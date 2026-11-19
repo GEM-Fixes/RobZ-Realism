@@ -18,11 +18,11 @@
 		{bone "visor2"}
 	}
 	(mod "mp"
-         {visor "view-around"
-                {vision "moto_around"}
-                {bone "basis"}
-         }
-    )
+		{visor "view-around"
+			{vision "moto_around"}
+			{bone "basis"}
+		}
+	)
 }
 
 {Placer
@@ -50,7 +50,7 @@
 
 {extender "inventory"
 	{weapon "carcano_m1891cavalry"
-		;{mask "weapon carcano_m1891cavalry"}
+	;{mask "weapon carcano_m1891cavalry"}
 	}
 	{Box
 		{item  "ammo rifle" 144 }
@@ -60,10 +60,10 @@
 {Chassis
 	{Locomotion ("locomotion")
 		{MaxSpeed	49	}
-				(mod "mp"
-					{maxspeed   45}
-				)			; максимальная скорость, kmph
-	  	{maxSpeedAtMaxTurn 17}	
+		(mod "mp"
+			{maxspeed   45}
+		)			; максимальная скорость, kmph
+		{maxSpeedAtMaxTurn 17}
 		{StartTime	10	}		; время разгона до макс. скорости с 0, seconds
 		{BrakeTime	2	}		; время торможения с макс. скорости до 0, seconds
 		{StopTime	4	}		; время остановки после отключения двигателя с макс. скорости до 0, seconds
@@ -73,7 +73,7 @@
 		{SteerOn	30}			; скорость поворота колес, градусов в секунду
 		{SteerOff	40}         ; скорость возврата колес в исх. состояние, градусов в секунду
 		{SplineRadius 2}		; ограничение радиуса поворота на сплайнах, метров
-	}	
+	}
 	{FuelBag
 		{volume 50 }	; liters
 		{rate	10 }   	; liters per kilometer
@@ -91,8 +91,8 @@
 		{LinkAnimation "off"}
 		{charger "gunner"}
 	}
-}  	
+}
 {Extension "guzzi-sa500.mdl"}
-	{bone "gun_rot"
-		{limits -45 35}
-	}
+{bone "gun_rot"
+	{limits -45 35}
+}

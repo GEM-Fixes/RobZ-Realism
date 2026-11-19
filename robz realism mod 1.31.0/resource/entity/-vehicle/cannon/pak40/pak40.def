@@ -1,14 +1,14 @@
 {entity
 	(include "/properties/cannon.ext")
 	{props "vehicle" "cannon" "wheeled" "round_sandbag2" "vision_cannon_high" "muzzle_medium_sides" "big_weapons"}
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: pak40.def) ---
 	{Volume "shield1"
 		{component "shield"}
 	}
 	; --- end Godny hitbox armor ---
 	("armor_medium")
-	
+
 	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
 
@@ -33,7 +33,7 @@
 			{forward {end "pose_seat_cannon_right" 10}}
 		}
 	}
-	("ger_5x8_sight")
+	("ger_5x8_sight_no_visor1")
 	{extender "inventory"
 		{box
 			{item "bullet75 gerp apcbc" 5}
@@ -55,7 +55,7 @@
 	{mass 1500}
 	{Extension "pak40.mdl"}
 	(include "/properties/selection/cannon.inc"  scale(0.7))
-	
+
 	{extender "cannon"
 		{animation
 			{switch "close"}
@@ -81,8 +81,8 @@
 		{speed 0.0005}
 	}
 	{bone "basis"
-	    {limits}
-	    {speed 0.007}
+		{limits}
+		{speed 0.007}
 	}
 
 

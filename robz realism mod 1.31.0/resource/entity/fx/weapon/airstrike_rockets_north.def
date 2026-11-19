@@ -2,7 +2,7 @@
 	{sound "weapon/shot/reactive/calliope_burst"}
 	{particleview rockets
 		{##+ visualizer
-			{stage 
+			{stage
 				{sprite "/texture/fx/flash/halo02"
 					{timer
 						{mode play }

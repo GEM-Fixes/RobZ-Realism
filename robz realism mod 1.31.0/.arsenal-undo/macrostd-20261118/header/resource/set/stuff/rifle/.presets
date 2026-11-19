@@ -1,0 +1,10 @@
+(include "\set\small.firearms.accuracy")
+
+(include "/properties/robz/weapon.inc")
+(define "sa_zeroing"
+	{ZeroingAccuracy 0.96 0.92 0.88 0.84 0.8}
+	{burst
+		{short 1 0.1}
+		{Long 1 0.1}
+	}
+)

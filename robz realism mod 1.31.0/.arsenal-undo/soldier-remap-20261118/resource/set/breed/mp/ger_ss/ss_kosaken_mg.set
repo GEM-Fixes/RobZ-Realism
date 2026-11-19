@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-ssvt-rfl"}
+	{portrait "ger_soldier7"}
+	{icon "rifleman"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{body ammo_ger3}
+		{head helmet_ger_m40_ss}
+	}
+	{perks
+		("body_h100_s100")
+		("drive_regular")
+		("breed_skills" pistol(1) smg(1) mgun(2) rifle(2) rocket(1) melee(1))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "dp" filling "ammo dp27_mag" 47}
+		{item "ammo dp27_mag" 235}
+		{item "bandage" 3}
+		{item "sandbag_kit" 1}
+		{in_hands 0}
+	}
+}

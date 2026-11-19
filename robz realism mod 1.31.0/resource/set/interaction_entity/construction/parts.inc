@@ -1,3 +1,5 @@
+; cut_pieces: calls "cut_piece"
+;   e.g. ("cut_pieces")
 (define "cut_pieces"
 	("cut_piece" args 0)	("cut_piece" args 1)
 	("cut_piece" args 2)	("cut_piece" args 3)
@@ -14,6 +16,8 @@
 	("cut_piece" args 14)	("cut_piece" args 15)
 )
 
+; cut_subpieces: calls "cut_subpiece"
+;   e.g. ("cut_subpieces")
 (define "cut_subpieces"
 	("cut_subpiece" args 0)	("cut_subpiece" args 1)
 	("cut_subpiece" args 2)	("cut_subpiece" args 3)
@@ -44,12 +48,12 @@
 				{if not "blast_disable"
 					{if min_energy 350
 						{set "blast_one" 0}
-					else
+						else
 						{set "blast_one" 1}
 					}
 					{call "change_model"}
 				}
-			else
+				else
 				{set "blast" 0}
 				{call "change_model"}
 			}
@@ -75,7 +79,7 @@
 		{set "blast" 0}
 		{if effector "airborne"
 			{call "change_model"}
-		else effector "air_part"
+			else effector "air_part"
 			{if min_speed 5
 				{call "change_model"}
 			}
@@ -141,6 +145,9 @@
 {"concrete small parts construction"
 	{on "cut_pieces"
 		{volumes disable contact}
+		; cut_piece: {tear "piece_small_concrete" {volumes} {impulse}}
+		;   %0 - text in {tear}
+		;   e.g. ("cut_piece" args 0)
 		(define "cut_piece"
 			{tear "piece_small_concrete" bone "piece%0"
 				{volumes enable contact}
@@ -156,6 +163,9 @@
 	{on "cut_pieces" overload
 		{if "blast"
 			{volumes disable contact}
+			; cut_piece: {tear "piece_small_concrete" {volumes} {impulse}}
+			;   %0 - text in {tear}
+			;   e.g. ("cut_piece" args 0)
 			(define "cut_piece"
 				{tear "piece_small_concrete" bone "piece%0"
 					{volumes enable contact}
@@ -163,7 +173,7 @@
 				}
 			)
 			("cut_pieces")
-		else
+			else
 			{inherited}
 		}
 	}
@@ -172,6 +182,9 @@
 
 {"big steel parts construction"
 	{on "cut_pieces"
+		; cut_piece: {tear "piece_large_steel" {volumes} {impulse}}
+		;   %0 - text in {tear}
+		;   e.g. ("cut_piece" args 0)
 		(define "cut_piece"
 			{tear "piece_large_steel" bone "piece%0"
 				{volumes enable contact}
@@ -179,6 +192,9 @@
 			}
 		)
 		("cut_pieces")
+		; cut_subpiece: {tear "piece_medium_steel" {volumes} {spawn} {impulse}}
+		;   %0 - text in {tear}, text in {spawn}
+		;   e.g. ("cut_subpiece" args 0)
 		(define "cut_subpiece"
 			{tear "piece_medium_steel" bone "sub_piece%0"
 				{volumes enable contact}
@@ -193,12 +209,15 @@
 {"small steel parts construction"
 	{on "cut_pieces"
 		{volumes disable contact}
+		; cut_piece: {tear "piece_medium_steel_construction" {volumes} {if}}
+		;   %0 - text in {tear}
+		;   e.g. ("cut_piece" args 0)
 		(define "cut_piece"
 			{tear "piece_medium_steel_construction" bone "piece%0"
 				{volumes enable contact}
 				{if "blast"
 					{impulse up 4 2 dir 2.5 1.3 no_position}
-				else
+					else
 					{impulse up 1 0.7 dir -4.5 0.3 no_position}
 				}
 			}
@@ -217,6 +236,9 @@
 		}
 	}
 	{on "cut_pieces"
+		; cut_piece: {tear "building_part_wood" {volumes} {impulse}}
+		;   %0 - text in {tear}
+		;   e.g. ("cut_piece" args 0)
 		(define "cut_piece"
 			{tear "building_part_wood" bone "piece%0"
 				{volumes enable contact float}
@@ -230,6 +252,9 @@
 {"small wood parts construction"
 	{on "cut_pieces" overload
 		{volumes disable contact blast}
+		; cut_piece: {tear "piece_small_wood" {volumes} {impulse}}
+		;   %0 - text in {tear}
+		;   e.g. ("cut_piece" args 0)
 		(define "cut_piece"
 			{tear "piece_small_wood" bone "piece%0"
 				{volumes enable float}
@@ -244,6 +269,9 @@
 	{on "cut_pieces" overload
 		{if "blast"
 			{volumes disable contact blast}
+			; cut_piece: {tear "piece_small_wood" {volumes} {impulse}}
+			;   %0 - text in {tear}
+			;   e.g. ("cut_piece" args 0)
 			(define "cut_piece"
 				{tear "piece_small_wood" bone "piece%0"
 					{volumes enable float}
@@ -251,7 +279,7 @@
 				}
 			)
 			("cut_pieces")
-		else
+			else
 			{inherited}
 		}
 	}
@@ -260,6 +288,9 @@
 {"small sand parts construction"
 	{on "cut_pieces" overload
 		{volumes disable contact blast}
+		; cut_piece: {tear "piece_medium_sand" {impulse}}
+		;   %0 - text in {tear}
+		;   e.g. ("cut_piece" args 0)
 		(define "cut_piece"
 			{tear "piece_medium_sand" bone "piece%0"
 				{impulse up 1 0.7 dir 2.5 0.3 no_position}
@@ -325,6 +356,9 @@
 	}
 	{on "cut_subpieces"
 		{set "sliced" 1}
+		; cut_subpiece: {tear "piece_large_concrete" {volumes} {spawn} {impulse} {add_view} ..}
+		;   %0 - text in {tear}, text in {spawn}
+		;   e.g. ("cut_subpiece" args 0)
 		(define "cut_subpiece"
 			{tear "piece_large_concrete" bone "sub_piece%0" id "building_part_concrete_subpiece"
 				{volumes enable contact}
@@ -349,6 +383,9 @@
 {"building_part wood"
 	{on "cut_subpieces"
 		{set "sliced" 1}
+		; cut_subpiece: {tear "piece_big_wood" {volumes} {spawn} {impulse} {add_view} ..}
+		;   %0 - text in {tear}, text in {spawn}
+		;   e.g. ("cut_subpiece" args 0)
 		(define "cut_subpiece"
 			{tear "piece_big_wood" bone "sub_piece%0" id "building_part_wood_subpiece"
 				{volumes enable contact}
@@ -359,7 +396,7 @@
 				{delay_effect 5 3 "stop"}
 			}
 		)
-		("cut_subpieces")	
+		("cut_subpieces")
 	}
 	{on contact
 		{if can_crush
@@ -380,15 +417,18 @@
 	{on bullet_hit
 		{if not under_water
 			{if stuff "shell small"
-			 	{spawn	"stone_hit_br_small" inv_normal}
-			else stuff "big shell fg"
-			 	{spawn	"stone_hit_br_big" inv_normal}
-			else stuff "shell"
-			 	{spawn	"stone_hit_br" inv_normal}
+				{spawn	"stone_hit_br_small" inv_normal}
+				else stuff "big shell fg"
+				{spawn	"stone_hit_br_big" inv_normal}
+				else stuff "shell"
+				{spawn	"stone_hit_br" inv_normal}
 			}
 		}
 	}
 	{on "cut_pieces"
+		; cut_piece: {tear "building_part_concrete" {volumes} {impulse} {spawn}}
+		;   %0 - text in {tear}, text in {spawn}
+		;   e.g. ("cut_piece" args 0)
 		(define "cut_piece"
 			{tear "building_part_concrete" bone "piece%0"
 				{volumes enable contact}
@@ -397,6 +437,9 @@
 			}
 		)
 		("cut_pieces")
+		; cut_subpiece: {tear "piece_large_concrete" {volumes} {spawn} {impulse}}
+		;   %0 - text in {tear}, text in {spawn}
+		;   e.g. ("cut_subpiece" args 0)
 		(define "cut_subpiece"
 			{tear "piece_large_concrete" bone "sub_piece%0" id "cornered_parts_construction_piece"
 				{volumes enable contact}
@@ -416,11 +459,11 @@
 	{on "destroyed_stamp" overload
 		{if rand 0.25
 			{spawn "crash_brick3"		no_position}
-		else rand 0.25
+			else rand 0.25
 			{spawn "stonechip1"		no_position}
-		else rand 0.25
+			else rand 0.25
 			{spawn "crash_stone2"		no_position}
-		else
+			else
 			{spawn "crash_brick3a"		no_position}
 		}
 	}
@@ -452,7 +495,7 @@
 			{set "blast" 0}
 			{if effector "tank"
 				{call "delayed_change_model"}
-			else effector "car"
+				else effector "car"
 				{call "delayed_change_model"}
 			}
 		}
@@ -472,6 +515,9 @@
 		{delay 0.5
 			{spawn "ex_water_sm"}
 		}
+		; cut_piece: {tear "piece_medium_ice" {volumes} {impulse}}
+		;   %0 - text in {tear}
+		;   e.g. ("cut_piece" args 0)
 		(define "cut_piece"
 			{tear "piece_medium_ice" bone "piece%0"
 				{volumes enable contact}

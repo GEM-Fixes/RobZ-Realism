@@ -5,28 +5,28 @@
 	{collider "cannon_small"}
 
 	; --- Godny hitbox armor (ported from GodnyMod: type2_20mm_stand.def) ---
-	
+
 	; --- end Godny hitbox armor ---
 	("armor_medium")
 
 	("crew_2_human")
-			{placer	{place "gunner" {visor "main"} {useVision 0}}}	
-			
-			{boarder
-				{anm "gunner"
-					{forward	{end "pose_flak38-1_gunlayer" 10}}
-				}
-				{anm "commander"
-					{forward	{end "pose_pak40_charger" 10}}
-				}
+	{placer	{place "gunner" {visor "main"} {useVision 0}}}
+
+	{boarder
+		{anm "gunner"
+			{forward	{end "pose_flak38-1_gunlayer" 10}}
 		}
-		{extender "cannon"
-			{animation
-								{aim	"cannon_flak38-1_gunlayer" ""}
-								{reload	"" "cannon_pak40_charger"}
-			}
-			{move {workers clear} {obstacle "close"}}
-			{attack {workers "gunner" "commander"} {obstacle "open"}}
+		{anm "commander"
+			{forward	{end "pose_pak40_charger" 10}}
+		}
+	}
+	{extender "cannon"
+		{animation
+			{aim	"cannon_flak38-1_gunlayer" ""}
+			{reload	"" "cannon_pak40_charger"}
+		}
+		{move {workers clear} {obstacle "close"}}
+		{attack {workers "gunner" "commander"} {obstacle "open"}}
 	}
 
 	{extender "inventory"
@@ -38,14 +38,14 @@
 			)
 		}
 	}
-	
+
 	{Weaponry
 		{place "gun"
 			{weapon "20mm_type2" filling "bullet20 jap zenite ap" 30}
 			{RestoreIKAfterAim}
-			;{Rotate}
+		;{Rotate}
 		}
-	}   	
+	}
 	{mass 1500}
 	{Extension "type2_20mm_stand.mdl"}
 	(include "/properties/selection/cannon.inc"  scale(0.7))

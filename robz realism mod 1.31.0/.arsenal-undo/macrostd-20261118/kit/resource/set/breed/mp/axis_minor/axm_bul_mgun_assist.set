@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "bul-ber-mgun"}
+	{portrait "bul_soldier4"}
+	{nationality bul}
+	{icon "mg"}
+	{icon_priority 3}
+	{armors
+		{head helmet1_bul}
+	}
+	{perks
+		("breed_body" health(200%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.8) vehicle(1.0) cannon(1.0))
+		("breed_skills" pistol(1) smg(1) mgun(3) rifle(2) rocket(1) melee(2))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "mauzer" filled}
+		{item  "ammo mauser_rifle mauser" 120}
+		{item  "ammo zb_vz26_mag" 120}
+		{item "bandage" 2}
+
+
+		{in_hands 0}
+	}
+}

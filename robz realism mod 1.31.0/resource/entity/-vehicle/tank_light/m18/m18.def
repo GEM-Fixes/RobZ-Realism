@@ -1,9 +1,10 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.2))
 	{props "light" "turret_rotator" "vision_vehicle_medium" "muzzle_medium" "gun_mode_change"}
 	{targetClass "light_tank"}
-	
+
 	{extender "enumerator"}
 
 	; --- Godny hitbox armor (ported from GodnyMod: m18.def) ---
@@ -12,8 +13,8 @@
 		{component "body"}
 		{able {holed}}
 		{thickness 12.7
-		;	{front	12.7}
-		;	{rear	12.7}
+			;	{front	12.7}
+			;	{rear	12.7}
 			{top	0.1}	;внутренняя стенка
 			{bottom	5}
 		}
@@ -22,8 +23,8 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 12.7
-		;	{front	12.7}
-		;	{rear	12.7}
+			;	{front	12.7}
+			;	{rear	12.7}
 			{top	8}
 			{bottom	5}
 		}
@@ -32,8 +33,8 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 12.7
-		;	{front	12.7}
-		;	{rear	12.7}
+			;	{front	12.7}
+			;	{rear	12.7}
 			{top	8}
 			{bottom	5}
 		}
@@ -42,7 +43,7 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 12.7
-		;	{front	12.7}
+			;	{front	12.7}
 			{rear	0.1}	;внутренняя стенка
 		;	{top	12.7}
 		;	{bottom	12.7}
@@ -64,7 +65,7 @@
 		{component "turret"}
 		{thickness 12.7
 			{front	25.4}
-		;	{rear	12.7}
+			;	{rear	12.7}
 			{top	0.1}	;стык turret и turret1
 			{bottom	5}
 		}
@@ -76,21 +77,12 @@
 			{bottom	0.1}	;стык turret и turret2
 		}
 	}
-	{Volume "hole_bod"
-		{able clear {hole}}
-		{component "body"}
-	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "turret"}
-	}
-	{Volume "hole_tur"
-		{able clear {hole}}
-		{component "turret"}
-	}
+	("vol_body_hole_only" name(hole_bod))
+	("vol_turret_hole_only" name(hole_man))
+	("vol_turret_hole_only" name(hole_tur))
 	{volume "mantlet"
 		{thickness 19
-		;	{front	19}
+			;	{front	19}
 			{rear	15}	;орудие дает некоторую броню
 		}
 	}
@@ -108,7 +100,7 @@
 	("shield" args 10)
 
 	{extender "shield"
-			{on}
+		{on}
 	}
 	{component "shieldl1"}
 	{component "shieldl2"}
@@ -119,7 +111,7 @@
 	{component "shieldr3"}
 	{component "shieldr4"}
 
-	
+
 	{boarder
 		{anm "left"
 			{forward	{begin	"board_tank_left"} {end "seat_driver_car"}}
@@ -143,7 +135,7 @@
 	("crew_human_visible_anm"	place(charger) door1(emit1) door2(emit2) visor(main) anm_left(left) anm_right(left))
 	("crew_human_gunner" 	place(gunner2) visorbone(mgun2))
 	("crew_human_visible_anm"	place(gunner) door1(emit1) door2(emit2) visor(main) anm_left(left) anm_right(left))
-	{placer 
+	{placer
 		{place "gunner" {openForCrush 0}}
 		{place "charger" {openForCrush 0}}
 	}
@@ -168,7 +160,7 @@
 		{place "gun"
 			{RestoreIKAfterAim}
 			{weapon "76mm_m1a2" filling "ammo bullet76 us apcbc" 1}
-			("abm_low")
+			("abm_low_v4")
 		}
 		{place "gun1_2"
 			{type "gun_change_arty"}
@@ -197,7 +189,7 @@
 			{TurnTime   14}
 			{TurnStart  1}
 			{TurnRadius 8}
-    		{TurnStop   0.6}
+			{TurnStop   0.6}
 			{BrakeTime  1.5}
 			{StopTime   2.5}
 			{Gears  0.1 0.25 0.35 1}
@@ -210,22 +202,22 @@
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  40}
-        	{Slow  40}
-    	}
-	{DisableMoveWhileFiring}
+			{Normal  40}
+			{Slow  40}
+		}
+		{DisableMoveWhileFiring}
 	}
-	
+
 	{Extension "m18.mdl"}
 
 	{bone "turret"
-            {speed 0.0043}
-        }
+		{speed 0.0043}
+	}
 
-        {bone "gun_rot"
-            {limits -10 20}
-            {speed 0.001}
-        }
+	{bone "gun_rot"
+		{limits -10 20}
+		{speed 0.001}
+	}
 
 	{bone "turret_mgun"
 		{Matrix34

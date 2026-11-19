@@ -1,0 +1,164 @@
+{game_entity
+	(include "churchill_mk_vii.inc")
+	{extender "inventory"
+		{box
+			{item "ammo bullet75 us ap" 30}
+			{item "ammo bullet75 us fg" 54}
+			{item "ammo mg_mauser belt red" 3475}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "75mm_mk5" filling "ammo bullet75 us ap" 1}
+			("abm_medium")
+			{basic}
+		}
+		{place "mgun"
+			{type "mgun_aa"}
+			{gunner "gunner2"}
+			{charger "gunner2"}
+			{LinkBone "mgun1_rot"}
+			{LinkAnimation "off"}
+			("abm_mgun_heavy")
+		}
+		{place "mgun1"
+			{type "mgun_hull"}
+			{weapon "besa" filling "mg_mauser belt red" 225}
+			{foresight "foresight4"}
+			{gunner "driver"}
+			{charger "driver"}
+			("abm_mgun")
+		}
+		{place "mgun2"
+			{type "mgun_coaxial"}
+			{weapon "besa_optic" filling "mg_mauser belt red" 225}
+			{foresight "foresight5"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	; --- Godny hitbox armor (ported from GodnyMod: churchill_mk_vii.def) ---
+	{volume "body1"	;низ корпуса
+		{component "body"}
+		{tags "body"}
+		{able {holed}}
+		{thickness 57.15
+			{front	139.7}
+			{rear	50.8}
+			{top	0.1}	;внутренн€€ стенка
+			{bottom	25.4}
+		;	{right	57.15}	;гласис
+		}
+	}
+	{volume "body2"	;верхн€€ часть корпуса, бо
+		{component "body"}
+		{tags "body"}
+		{able {holed}}
+		{thickness 82.55
+			{front	152.4}
+			{rear	0.1}	;внутренн€€ стенка
+			{top	19.05}
+			{bottom	0.1}	;внутренн€€ стенка
+		}
+	}
+	{volume "body3"	;моторное
+		{component "body"}
+		{tags "body"}
+		{able {holed}}
+		{thickness 82.55
+			{front	10}
+			{rear	50.8}
+			{top	15.88}	;мто
+			{bottom	19.05}
+		}
+	}
+	{volume "body4"	;левый спонсон
+		{component "body"}
+		{tags "body"}
+		{thickness 95.25
+			{front	63.5}
+			{rear	50.8}
+			{top	15.88}
+			{bottom	15.88}
+			{right	0.1}	;внутренн€€ стенка
+		}
+	}
+	{volume "body5"	;правый спонсон
+		{component "body"}
+		{tags "body"}
+		{thickness 95.25
+			{front	63.5}
+			{rear	50.8}
+			{top	15.88}
+			{bottom	15.88}
+			{right	0.1}	;внутренн€€ стенка
+		}
+	}
+	{Volume "turret"
+		{component "turret"}
+		{tags "turret"}
+		{thickness 95.25
+			{front	152.4}
+			;	{rear	95.25}
+			{top	20}
+			{bottom	28.57}
+		}
+	}
+	{Volume "hole_bod"
+		{able clear {hole}}
+		{component "body"}
+	}
+	{volume "engine"
+		{thickness 10}
+	}
+	{volume "trackleft"
+		{able {holed}}
+	}
+	{volume "trackright"
+		{able {holed}}
+	}
+	{volume "strutl1"
+		{component "strutl1"}
+		{thickness 10
+			{left	38.1}
+			{right	38.1}
+		}
+	}
+	{volume "strutl2"
+		{component "strutl2"}
+		{thickness 10
+			{left	38.1}
+			{right	0.1}	;отключить двойную стенку
+		}
+	}
+	{volume "strutr1"
+		{component "strutr1"}
+		{thickness 10
+			{left	38.1}
+			{right	38.1}
+		}
+	}
+	{volume "strutr2"
+		{component "strutr2"}
+		{thickness 10
+			{left	38.1}
+			{right	0.1}	;отключить двойную стенку
+		}
+	}
+	{volume "detail3"
+		{component "detail3"}
+		{thickness 6}
+	}
+	; --- end Godny hitbox armor ---
+	{Extension "churchill_mk_vii.mdl"}
+	{bone "turret"
+		{speed 0.0025}
+	}
+	{bone "gun_rot"
+		{speed 0.0008}
+	}
+}
+

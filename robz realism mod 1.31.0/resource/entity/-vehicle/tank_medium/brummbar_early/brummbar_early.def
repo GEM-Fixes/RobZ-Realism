@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
@@ -6,21 +7,13 @@
 	{extender "enumerator"
 		{digit_folder "ger"}
 	}
-	
-	{volume "body1"
-		{tags "body"}
-		{component "body"}
-		{thickness 30}
-	}
-	{volume "body2"
-		{tags "body"}
-		{component "body"}
-		{thickness 30}
-	}
+
+	("vol_body_plate_lower" name(body1) mm(30))
+	("vol_body_plate_lower" name(body2) mm(30))
 	("shield" args 10)
-	
+
 	{extender "shield"
-			{on}
+		{on}
 	}
 	{component "shieldl1" {tags "shield"}}
 	{component "shieldl2" {tags "shield"}}
@@ -31,8 +24,8 @@
 	{component "shieldr2" {tags "shield"}}
 	{component "shieldr3" {tags "shield"}}
 	{component "shieldr4" {tags "shield"}}
-	{component "shieldr5" {tags "shield"}}	
-			
+	{component "shieldr5" {tags "shield"}}
+
 	("armor_spa_heavy" armor(100 50 30 10))
 	("armor_mantlet" t(110))
 	("armor_engine"  t(10 45 45 20))
@@ -78,7 +71,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "150mm_Stuh43" filling "ammo bullet150 ger fg" 1}    	
+			{weapon "150mm_Stuh43" filling "ammo bullet150 ger fg" 1}
 			("abm_direct_how")
 		}
 	}
@@ -91,28 +84,28 @@
 			{maxSpeedAtMaxTurn 4}
 			{StartTime	  45}
 			{TurnTime  	  19}
-    		{TurnStart  1.4} 
-    		{BrakeTime    1} 
-    		{StopTime     2} 
-    		{TurnRadius   8} 
-    		{TurnStop   0.8}
-     		{Gears  0.1 0.2 0.3 1}
-    		{RearGears 0.28}
+			{TurnStart  1.4}
+			{BrakeTime    1}
+			{StopTime     2}
+			{TurnRadius   8}
+			{TurnStop   0.8}
+			{Gears  0.1 0.2 0.3 1}
+			{RearGears 0.28}
 		}
 		{FuelBag
-			{volume 470 }	
-			{rate	36 }   
+			{volume 470 }
+			{rate	36 }
 			{remain 470 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  28}
-        	{Slow  28}
-    	}
+			{Normal  28}
+			{Slow  28}
+		}
 	}
-	
+
 	{Extension "brummbar.mdl"}
-	
+
 	{bone "turret"
 		{speed 0.0005}
 	}

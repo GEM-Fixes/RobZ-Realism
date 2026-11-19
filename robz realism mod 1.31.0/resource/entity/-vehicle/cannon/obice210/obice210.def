@@ -1,10 +1,10 @@
 {entity
 	(include "/properties/cannon.ext")
-	
+
 	{props "vehicle" "cannon" "round_sandbag4" "vision_cannon_maximum" "flak" "muzzle_maximum_nodust" "turret" "turret_rotator"}
 	{PatherID  "cannon.large"}
-	("armor_heavy")	
-	{placer	
+	("armor_heavy")
+	{placer
 		{place "gunner" {visor "main"} {useVision 0}}
 		{place "commander" {visor "main"} {useVision 0}}
 	}
@@ -34,7 +34,7 @@
 			{forward {end "pose_seat_cannon_right" 10}}
 		}
 	}
-	(mod "mp" 
+	(mod "mp"
 		("crew_human" place(commander1)		bone(commander1)		door(emit2) animation(commander1))
 		("crew_human" place(commander2)		bone(commander2)		door(emit3) animation(commander2))
 		("crew_human" place(driver3)		bone(driver3)			door(emit3) animation(driver3))
@@ -74,7 +74,7 @@
 	}
 
 	{mass 4000}
-	
+
 
 	{extender "cannon"
 		{animation
@@ -96,11 +96,11 @@
 		{Visor "commander"
 			{vision "cannon_crew"}
 			{bone "commander"}
-		}	
+		}
 	}
 	{Extension "obice210.mdl"}
 	(include "/properties/selection/cannon.inc"  scale(0.7))
-        (mod "mp"
+	(mod "mp"
 		{brain
 			{properties
 				{fire_mode hold}

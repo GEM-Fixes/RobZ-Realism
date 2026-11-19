@@ -1,0 +1,12 @@
+{from "pattern gun"
+	{filling "bullet_azh1"}
+	{fireSound "reactive/launch04"}
+	{reloadSound "granatomet"}
+	("range_light_howitzer")
+	{rechargeTime 8}
+	("caliber_medium")
+	{projectileDamage 27}
+	("speed" s(380))
+	("accuracy_zenite_low") 
+	{range 90 100}
+}

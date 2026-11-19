@@ -3,9 +3,9 @@
 	{fireSound "gun/120mm_type97"}
 	{reloadSound "tankgun_r04"}
 	("range_grazing_howitzer")
-	
+
 	{parameters "heat"
-        	("damage_heat" a(140) range(190))
+		("damage_heat" damage(140) max(190))
 	}
 	{gravity 6}
 	{range 190 190}
@@ -14,7 +14,7 @@
 	("caliber_maximum")
 	("accuracy_grazinghowitzer_190m_anti_far")
 	{RelaxationTime 0.0001}
-	
+
 	(mod "mp"
 		{tag "prepare"}
 		{Special

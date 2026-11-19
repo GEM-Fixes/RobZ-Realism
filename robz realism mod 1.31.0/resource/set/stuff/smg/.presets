@@ -1,13 +1,10 @@
 (include "\set\small.firearms.accuracy")
 
-(define "speed"   
-	{speed (* 1.0 %s)}  
-)
+(include "/properties/robz/weapon.inc")
 
-(define "recoveryTime"   
-	{recoveryTime (/ 60 %r)}
-)
 
+; burst_short: {burst {short} {long}}
+;   e.g. ("burst_short")
 (define "burst_short"
 	{burst
 		{short 5 0.5}
@@ -15,16 +12,20 @@
 	}
 )
 
-(define "burst_medium"
+; burst_medium_v2: {burst {short} {long}}
+;   e.g. ("burst_medium_v2")
+(define "burst_medium_v2"
 	{burst
 		{short 7 0.5}
 		{long 12 0.5}
 	}
 )
 
+; burst_long: {burst {short} {long}}
+;   e.g. ("burst_long")
 (define "burst_long"
 	{burst
 		{short 9 0.5}
 		{long 25 0.5}
-	}	
+	}
 )

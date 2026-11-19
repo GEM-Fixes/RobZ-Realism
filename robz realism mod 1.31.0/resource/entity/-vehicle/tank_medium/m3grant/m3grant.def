@@ -2,7 +2,7 @@
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{props "medium"  "turret_rotator" "vision_vehicle_medium" "muzzle_medium"}
- 	
+
 	("armor_medium_custom" turret(76 51 51 32) body(51 38 38 51))
 	("armor_engine"  t(40 38 38 25))
 	("armor_mantlet" t(76))
@@ -123,7 +123,7 @@
 			{gunner "commander"}
 			{basic}
 		}
-        	}
+	}
 
 	{mass 28600}
 	{Chassis
@@ -133,24 +133,24 @@
 			{maxSpeedAtMaxTurn 5}
 			{StartTime  40}
 			{TurnTime   19}
-			{TurnStart  1.8}			
-			{TurnRadius 10} 
-    		{TurnStop   0.8}
+			{TurnStart  1.8}
+			{TurnRadius 10}
+			{TurnStop   0.8}
 			{BrakeTime  1.5}
 			{StopTime   2.5}
 			{Gears   0.1 0.2 0.3 1}
 			{RearGears  0.3}
 		}
 		{FuelBag
-			{volume 660 }	
-			{rate	33 }   
+			{volume 660 }
+			{rate	33 }
 			{remain 660 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  26}
-        	{Slow  26}
-    	}
+			{Normal  26}
+			{Slow  26}
+		}
 	}
 
 	{Extension "m3grant.mdl"}
@@ -165,7 +165,7 @@
 	{bone "gun_rot2"
 		{limits -9 9}
 		{speed 0.001}
-	}				
+	}
 	{bone "gun_rot"
 		{limits -20 9}
 		{speed 0.001}
@@ -180,5 +180,5 @@
 		{limits 0 0}
 		{speed 0.005}
 	}
-	
+
 }

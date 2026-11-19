@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-tankman"}
+	{portrait eng_tankman}
+	{icon tankman}
+	{icon_priority 0}
+	{nationality eng}
+	{armors
+		{head beret_eng1}
+	}
+	{perks
+		("breed_body" health(100%) regen_health(100%) stamina(100%) regen_stamina(100%) vision(mp_soldier) speed(0.8))
+		("breed_drive" tank(1) vehicle(1) cannon(0.8))
+		("breed_skills" pistol(3) smg(3) mgun(2) rifle(2) rocket(1) melee(3))
+		{"tankgun" lvl_2}
+	}
+	("breed_vet" kind(tankcrew))
+	{inventory
+		{item "webley" filled}
+		{item "ammo webley_clip" 36}
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

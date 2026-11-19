@@ -8,12 +8,12 @@
 	("speed" s(880))
 	("caliber_maximum")
 	{projectileDamage 214}
-	("damage_215" a(210) b(188) c(164) d(144) e(126) range(250))
+	("damage_215" at20(210) at100(188) at170(164) at215(144) at250(126) max(250))
 	{parameters "aphe"
 		{cursorReloading "cannon_reload_aphe"}
 	}
 	{parameters "aphebc"
-		("damage_215" a(241) b(211) c(185) d(161) e(141) range(250))
+		("damage_215" at20(241) at100(211) at170(185) at215(161) at250(141) max(250))
 		{cursorReloading "cannon_reload_aphebc"}
 	}
 	{parameters "fg"

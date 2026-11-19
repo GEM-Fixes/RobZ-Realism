@@ -5,29 +5,29 @@
 	{rechargeTime 4.5}
 	{reloadSound "61k_reload"}
 	{AimingTolerance 3}
-       {parameters "heat"
-		("damage_heat" a(180) range(100))
+	{parameters "heat"
+		("damage_heat" damage(180) max(100))
 		{range 100 100}
 		{rechargeTime 12}
 	}
-{parameters "apc"
-		("damage_170" a(97) b(79) c(62) d(49) e(38) range(190))
+	{parameters "apc"
+		("damage_170" at20(97) at100(79) at170(62) at215(49) at250(38) max(190))
 		{cursorReloading "cannon_reload_apc"}
 	}
 	{parameters "apcr"
-        	("damage_170" a(150) b(108) c(72) d(48) e(32) range(190))
+		("damage_170" at20(150) at100(108) at170(72) at215(48) at250(32) max(190))
 	}
 
 	{Automatic}
 	{burst
 		{short 2.5 1}
 		{long 7 2}
-	}	
+	}
 	{speed 90}
 	("speed" s(1150))
 	("caliber_minimum")
 	("range_zenite_long")
 	{projectileDamage 70}
 	("damage" a(70) b(55) c(48) d(39) e(23))
-	;{RelaxationTime 10}
+;{RelaxationTime 10}
 }

@@ -8,15 +8,18 @@
 		}
 	}
 	{on "cut_parts"
-		(define "cut_piece"
+		; cut_piece_building_part_wood: {tear "building_part_wood" {volumes} {impulse} {spawn}}
+		;   %0 - text in {tear}, text in {spawn}
+		;   e.g. ("cut_piece_building_part_wood" args 0)
+		(define "cut_piece_building_part_wood"
 			{tear "building_part_wood" bone "piece%0"
 				{volumes enable contact}
 				{impulse up 1 0.7 dir 2.5 0.3 no_position}
 				{spawn "spheredust_norm" "piece%0"}
 			}
 		)
-		("cut_piece" args 0)	("cut_piece" args 1)
-		("cut_piece" args 2)	("cut_piece" args 3)
+		("cut_piece_building_part_wood" args 0)	("cut_piece_building_part_wood" args 1)
+		("cut_piece_building_part_wood" args 2)	("cut_piece_building_part_wood" args 3)
 		{delay 0.1
 			{bone cut "sweep"}
 		}
@@ -29,7 +32,7 @@
 		{burn volume "fx2" fx "drops_water_mill" time 1000000 fake even_law}
 		{burn volume "fx3" fx "drops_water_mill" time 1000000 fake even_law}
 		{burn volume "fx4" fx "drops_water_mill" time 1000000 fake even_law}
-	
+
 		{add_view "wash_ship_stop" "water" "fx_wash1"}
 		{add_view "wash_ship_stop" "water" "fx_wash2"}
 
@@ -65,7 +68,7 @@
 			}
 			{spawn "metal_hit_fg" "fx_spark2"}
 			{spawn "metal_hit_fg" "fx_spark3"}
-	
+
 			{delay 1
 				{spawn "spheredust_small" "fx_water_hook"}
 			}
@@ -79,13 +82,16 @@
 		{delay 0
 			{spawn "metal_hit_fg" "fx_spark"}
 			{spawn "metal_hit_fg" "fx_spark1"}
-			(define "cut_piece"
+			; cut_piece_large_steel: {tear "piece_large_steel" {volumes} {impulse}}
+			;   %0 - text in {tear}
+			;   e.g. ("cut_piece_large_steel" args 1)
+			(define "cut_piece_large_steel"
 				{tear "piece_large_steel" bone "piece%0"
 					{volumes enable contact}
 					{impulse up -5 no_position}
 				}
 			)
-			("cut_piece" args 1)
+			("cut_piece_large_steel" args 1)
 		}
 	}
 }
@@ -131,7 +137,7 @@
 		{if can_crush
 			{call "stage1"}
 			{tags add "stage1"}
-		else effector "air_part"
+			else effector "air_part"
 			{if min_speed 5
 				{call "stage1"}
 				{tags add "stage1"}
@@ -142,7 +148,7 @@
 		{if not tagged "stage1"
 			{call "stage1"}
 			{tags add "stage1"}
-		else
+			else
 			{if rand 0.3
 				{call "stage2"}
 			}
@@ -199,6 +205,9 @@
 		}
 	}
 	{on "cut_pieces"
+		; cut_piece: {tear "piece_medium_sand" {volumes} {impulse} {if}}
+		;   %0 - text in {tear}
+		;   e.g. ("cut_piece" args 0)
 		(define "cut_piece"
 			{tear "piece_medium_sand" bone "piece%0"
 				{volumes enable contact}
@@ -279,6 +288,9 @@
 			{tags add "crushed"}
 			{volumes "support" disable contact bullet blast}
 			{ani_play "crush1"}
+			; cut_stone: {tear "piece_big_stone" {volumes} {impulse}}
+			;   %0 - text in {tear}
+			;   e.g. ("cut_stone" args 0)
 			(define "cut_stone"
 				{tear "piece_big_stone" bone "part%0"
 					{volumes enable contact}
@@ -376,15 +388,18 @@
 		}
 	}
 	{on "cut_pieces"
-		(define "cut_piece"
+		; cut_piece_medium_steel: {tear "piece_medium_steel" {volumes} {impulse}}
+		;   %0 - text in {tear}
+		;   e.g. ("cut_piece_medium_steel" args 1)
+		(define "cut_piece_medium_steel"
 			{tear "piece_medium_steel" bone "piece%0"
 				{volumes enable contact}
 				{impulse up 0.1 0.1 dir 0.1 0.1 no_position}
 			}
 		)
-		("cut_piece" args 1)
-		("cut_piece" args 2)
-		("cut_piece" args 3)
+		("cut_piece_medium_steel" args 1)
+		("cut_piece_medium_steel" args 2)
+		("cut_piece_medium_steel" args 3)
 	}
 }
 {"antitank_hedgehog"
@@ -402,6 +417,9 @@
 		}
 	}
 	{on "cut_pieces" overload
+		; cut_piece: {tear "piece_medium_steel" {volumes} {impulse}}
+		;   %0 - text in {tear}
+		;   e.g. ("cut_piece" args 0)
 		(define "cut_piece"
 			{tear "piece_medium_steel" bone "piece%0"
 				{volumes enable contact}

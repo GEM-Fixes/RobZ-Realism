@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/cannon.ext")
 	{props "vehicle" "cannon" "cannon_small" "flak" "barrel1" "wheeled" "vision_cannon_low" "muzzle_zenite" "turret" "turret_rotator" "medium_weapons"}
@@ -9,10 +10,7 @@
 	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
 
-	{Volume "body"
-		{tags "body"}
-		{component "body"}
-	}
+	("vol_body_part" name(body))
 
 	("crew_wheeled_gun")
 	{boarder
@@ -41,7 +39,7 @@
 			{forward {end "pose_flak38_charger_left" 10}}
 		}
 	}
-	
+
 	{extender "cannon"
 		{animation
 			{switch "close"}
@@ -68,13 +66,13 @@
 			{weapon "37mm_flak_36" filled}
 			("abm_zenite")
 		}
-	}  	
+	}
 
 	{mass 1550}
 	{Extension "37_mm_flak_36.mdl"}
 	(include "/properties/selection/cannon.inc"  scale(0.7))
 	{bone "basis"
-	      {limits}
+		{limits}
 	}
 }
 

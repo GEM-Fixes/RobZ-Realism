@@ -1,10 +1,10 @@
 {Game_entity
-        (include "/properties/human_part.ext")
-	
+	(include "/properties/human_part.ext")
+
 	{props "ps_dummy" "flesh"}
 	{Extension "#_corp01.mdl"}
-        {mass 70}
-        {Volume "body"
+	{mass 70}
+	{Volume "body"
 		{able {float}}
 	}
 	{simulatorID "water"}

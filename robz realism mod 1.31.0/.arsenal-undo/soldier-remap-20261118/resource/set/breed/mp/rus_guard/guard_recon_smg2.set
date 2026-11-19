@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-smguner"}
+	{portrait "rus_soldier2"}
+	{nationality rus}
+	{icon "smg"}
+	{icon_priority 3}
+	{armors
+		;{body ammo_rus}
+		{head helmet1_rus}
+	}
+	{perks
+		("body_regular")
+		("drive_veteran")
+		("skills_2_3_1_1_1_3")
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_pps43_105")
+		{item "bandage" 5}
+		("frag_f1_x1")
+		("fire_molotov_coctail_x0_1")
+		{in_hands 0}
+	}
+}

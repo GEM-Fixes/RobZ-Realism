@@ -1,0 +1,30 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-smguner"}
+	{portrait "rus_soldier5"}
+	{nationality rus}
+	{icon "elite5"}
+	{icon_priority 5}
+	{armors
+		{head fieldcap_rus}
+	}
+	{perks
+		("breed_body" health(150%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_sniper") speed(0.9))
+		("drive_level_4")
+		("skills_rifle_4" rocket(1))
+		{"stealth"}
+		{"telescope"}
+		{"aimedshot"}
+	}
+	("breed_vet" table(start5))
+	{inventory
+		{item "mosin_s_elite" filling "ammo mosin_clip fg" 5}
+		{item "ammo mosin_clip fg" 120}
+		{item "bandage" 5}
+		;{item "smoke_paradrop_ammo grenade" 1}
+		{item "plant" 3}
+		{item "knife_rus"}
+		{item "jelet_mac_gop_dark"}
+		{in_hands 0}
+	}
+}

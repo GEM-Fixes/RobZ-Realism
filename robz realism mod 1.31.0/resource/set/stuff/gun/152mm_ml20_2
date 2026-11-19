@@ -7,17 +7,17 @@
 	{speed 655}
 	{range 210 210}
 	{projectileDamage 140}
-	("damage_170" a(140) b(125) c(117) d(100) e(93) range(210))
+	("damage_170" at20(140) at100(125) at170(117) at215(100) at250(93) max(210))
 	{parameters "aphebc"
-       		("damage_170" a(140) b(125) c(117) d(100) e(93) range(210))
+		("damage_170" at20(140) at100(125) at170(117) at215(100) at250(93) max(210))
 		{cursorReloading "cannon_reload_aphebc"}
 	}
 	{parameters "heat"
-       		("damage_heat" a(190) range(210))
+		("damage_heat" damage(190) max(210))
 	}
 	("accuracy_grazinghowitzer_210m_anti_far")
-		(mod "mp"
-			{tag "prepare"}
+	(mod "mp"
+		{tag "prepare"}
 		{Special
 			{Mode aim}
 			{PrepareTime 0.1}

@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng_t3"}
+	{portrait "eng_elite2"}
+	{nationality anzac}
+	{icon "elite5"}
+	{icon_priority 3}
+	{armors
+		{head fieldcap_eng}
+	}
+	{perks
+		("breed_body" health(250%) regen_health(100%) stamina(200%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.9) vehicle(1.0) cannon(1.0))
+		("breed_skills" pistol(3) smg(3) mgun(3) rifle(4) rocket(3) melee(3))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_em3")
+		{item "bandage" 5}
+		("frag_mk1_x2")
+		("at_grenade_n73at_x1")
+		("kit_at" gun(boyes) ammo(ptr) rounds(25))
+		{in_hands 0}
+	}
+}

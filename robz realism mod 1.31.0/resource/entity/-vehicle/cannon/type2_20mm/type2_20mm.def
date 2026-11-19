@@ -5,7 +5,7 @@
 	{collider "cannon_small"}
 
 	; --- Godny hitbox armor (ported from GodnyMod: type2_20mm.def) ---
-	
+
 	; --- end Godny hitbox armor ---
 	("armor_medium")
 
@@ -20,7 +20,7 @@
 		{place "gunner" {UseVision 0}}
 		{place "commander" remove}
 	}
-	
+
 	{boarder
 		{anm "gunner"
 			{forward	{end "pose_oerlikon_charger" 10}}
@@ -41,14 +41,14 @@
 			{item "bullet20 jap zenite fg" 90}
 		}
 	}
-	
+
 	{Weaponry
 		{place "gun"
 			{weapon "20mm_type2" filling "bullet20 jap zenite ap" 30}
 			{RestoreIKAfterAim}
-			;{Rotate}
+		;{Rotate}
 		}
-	}   	
+	}
 	{mass 1500}
 	{Extension "type2_20mm.mdl"}
 	(include "/properties/selection/cannon.inc"  scale(0.7))
@@ -60,16 +60,16 @@
 		}
 		{move {workers "driver"} {obstacle "close"}}
 		{attack {workers "gunner"} {obstacle "open"}}
-		;(mod "mp" {rotate_ik_Limit 0})
+	;(mod "mp" {rotate_ik_Limit 0})
 	}
 	{Chassis "track"
 		("car_trace" fx("tracewheel02a") step(0.08) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
 		("loco_medium")
 	}
 	{bone "gun_rot"
-	      {limits -20 40}
+		{limits -20 40}
 	}
 	{bone "basis"
-	      {limits}
+		{limits}
 	}
 }

@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/car.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.1))
@@ -8,16 +9,8 @@
 	("armor_light" args 1.0)
 
 	; --- Godny hitbox armor (ported from GodnyMod: gaz67b.def) ---
-	{Volume "body"
-		{tags "body"}
-		{component "body"}
-		{thickness 6}
-	}
-	{Volume "body1"
-		{tags "body"}
-		{component "body"}
-		{thickness 6}
-	}
+	("vol_body_plate" name(body) mm(6))
+	("vol_body_plate" name(body1) mm(6))
 	; --- end Godny hitbox armor ---
 	("wheel" args "wheelright1")
 	("wheel" args "wheelleft1")
@@ -40,7 +33,7 @@
 		board_end(seat_Willis_passenger)
 		base(doorright)
 	)
-	
+
 	("board_animation"
 		place(passenger1)
 		board_begin(board_willis)
@@ -60,18 +53,18 @@
 			{reverse 	{end	"emit_tank_1_hold" 1}}
 		}
 	}
-	
+
 	("crew_human"		place(gunner)	bone(gunner)	door(emit3)		animation(gunner))
 	("crew_human" place(seat1)	bone(seat01)	door(emit1)	animation(passenger1))
 	("crew_human" place(seat2)	bone(seat02)	door(emit2)	animation(passenger2))
 	("crew_human" place(gunner)	bone(gunner)	door(emit3)	animation(gunner))
-	
+
 	{placer
 		{place "driver"		{group "crew"} {visor "driver"}}
 		{place "commander"	{group "crew"} {visor "main"}}
 		{place "gunner"		{group "crew"} {turnoff {targetable 0}}}
 	}
-	
+
 	{sensor
 		{visor "driver"
 			{bone "visor1"}
@@ -83,7 +76,7 @@
 		{visor "mgun"
 			{bone "gun_rot"}
 			{vision "vehicle_top_mgun"}
-		}	
+		}
 	}
 
 	{extender "inventory"
@@ -108,7 +101,7 @@
 	{Chassis
 		{Locomotion ("locomotion")
 			{Maxspeed 45}
-	  		{maxSpeedAtMaxTurn 15}
+			{maxSpeedAtMaxTurn 15}
 		}
 		{speed
 			{Normal  12}

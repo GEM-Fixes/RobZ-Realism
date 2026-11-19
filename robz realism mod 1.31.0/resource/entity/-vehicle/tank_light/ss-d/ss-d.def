@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
@@ -5,16 +6,16 @@
 	{targetSelector "tank_bullet"}
 	{targetClass "tank" "bullet"}
 	{patherId "tank.light"}
-	
+
 	{extender "enumerator"}
 
- 	; --- Godny hitbox armor (ported from GodnyMod: ss-d.def) ---
+	; --- Godny hitbox armor (ported from GodnyMod: ss-d.def) ---
 	{volume "body"	;нижн€€ часть корпуса
 		{tags "body"}
 		{component "body"}
 		{thickness 25
-		;	{front	25}
-		;	{rear	25}
+			;	{front	25}
+			;	{rear	25}
 			{top	10}
 			{bottom	10}
 		}
@@ -23,8 +24,8 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 25
-		;	{front	25}
-		;	{rear	25}
+			;	{front	25}
+			;	{rear	25}
 			{top	10}
 			{bottom	10}
 		}
@@ -33,8 +34,8 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 25
-		;	{front	25}
-		;	{rear	25}
+			;	{front	25}
+			;	{rear	25}
 			{top	10}
 			{bottom	10}
 		}
@@ -43,8 +44,8 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 25
-		;	{front	25}
-		;	{rear	25}
+			;	{front	25}
+			;	{rear	25}
 			{top	10}
 			{bottom	10}
 		}
@@ -53,8 +54,8 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 25
-		;	{front	25}
-		;	{rear	25}
+			;	{front	25}
+			;	{rear	25}
 			{top	10}
 			{bottom	10}
 		}
@@ -63,8 +64,8 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 25
-		;	{front	25}
-		;	{rear	25}
+			;	{front	25}
+			;	{rear	25}
 			{top	10}
 			{bottom	10}
 		}
@@ -81,10 +82,7 @@
 		{thickness 800}
 	}
 	; --- end Godny hitbox armor ---
-	{volume "body6"
-				{tags "body"}
-				{component "body"}
-	}
+	("vol_body_part_lower" name(body6))
 	("armor_spa_light" armor(25 15))
 	("shield" args 10)
 
@@ -94,7 +92,7 @@
 			{item "ammo type97_mag" 1600}
 		}
 	}
-	
+
 	("crew_4_human")
 
 	{boarder
@@ -119,7 +117,7 @@
 	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
 	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
 	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
-	
+
 	{Weaponry
 		{place "flamer1"
 			{type "secondary_flamer"}
@@ -163,7 +161,7 @@
 		}
 		{place "mgun"
 			{type "mgun_hull"}
-			{weapon "type97_mg" filled}   
+			{weapon "type97_mg" filled}
 			{foresight "foresight3"}
 			{gunner "commander"}
 			{charger "commander"}
@@ -188,24 +186,24 @@
 			{maxSpeedAtMaxTurn 6}
 			{StartTime  15}
 			{TurnTime   15}
-			{TurnStart  2}			
-			{TurnRadius 8} 
-    		{TurnStop   1}
+			{TurnStart  2}
+			{TurnRadius 8}
+			{TurnStop   1}
 			{BrakeTime  1.5}
 			{StopTime   2.5}
 			{Gears   0.4 1}
 			{RearGears  0.3}
 		}
 		{FuelBag
-			{volume 390 }	
-			{rate	 20 }   
+			{volume 390 }
+			{rate	 20 }
 			{remain 390 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  18}
-        	{Slow  18}
-    	}
+			{Normal  18}
+			{Slow  18}
+		}
 	}
 	{Extension "ss-d.mdl"}
 }

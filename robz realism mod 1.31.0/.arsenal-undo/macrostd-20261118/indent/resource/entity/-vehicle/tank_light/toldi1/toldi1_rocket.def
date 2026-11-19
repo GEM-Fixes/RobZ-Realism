@@ -1,0 +1,113 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{collider "tank.light"}
+	{patherId "tank.light"}
+	{props "light" "turret_rotator" "vision_vehicle_low" "muzzle_small"}
+	{targetClass "light_tank"}
+	{targetSelector "tank_aa"}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+	}
+	{volume "turret"
+		{tags "turret"}
+		{component "turret"}
+	}
+	{volume "mantlet"
+		{tags "mantlet"}
+		{component "mantlet"}
+	}
+	{volume "engine"
+		{tags "engine"}
+		{component "engine"}
+	}
+
+	{extender "enumerator"
+		{digit_folder "ger"}
+	}
+	("armor_light" turret(20 13 13 8) body(20 13 13 8))
+	("armor_mantlet" t(20))
+	("armor_engine"  t(13))
+	("crew_3_human_extended")
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_pz4_driver"} {end "seat_gunner_stand"} {base "open_driver"}}
+			{reverse 	{end	"board_pz4_driver" -1} {base "open_driver" -1}}
+		}
+		{anm "left"
+			{forward	{begin	"board_tank_left"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+	}
+	{extender "inventory"
+		{box
+			{size 8 8}
+			{item "ammo gabauer_belt" 2300}
+			{item " ammo buzoganyveto215" 10}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{weapon "weapon buzoganyveto" filling "ammo buzoganyveto215" 2}
+			{foresight "foresight1"}
+			{Barrels 2}
+			{StationaryFiring}
+			{basic}
+		}
+		{place "mgun1"
+			{type "mgun_coaxial"}
+			{weapon "gebauer" filled}
+			{foresight "foresight4"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+{mass 10000}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.56) len(0.167))
+		{Locomotion ("locomotion")
+			{maxspeed   40}
+			{maxSpeedAtMaxTurn 6}
+			{StartTime  25}
+			{TurnStart  1.7}
+			{TurnTime   15}
+			{TurnRadius 10}
+    			{TurnStop   0.9}
+			{BrakeTime  1}
+			{StopTime   2}
+			{Gears      0.1 0.2 0.3 1}
+			{RearGears  0.25}
+		}
+		{FuelBag
+			{volume 320 }
+			{rate	14 }
+			{remain 320 }
+			{fuel "fuel"}
+		}
+		{speed
+        	{Normal  40}
+        	{Slow  24}
+    	}
+
+	}
+
+
+
+	{Extension "toldi1_rocket.mdl"}
+
+{bone "turret"
+		{speed 0.004}
+	}
+	;("turret_speed_zenite")
+}

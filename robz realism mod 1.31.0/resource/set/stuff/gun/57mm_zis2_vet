@@ -1,9 +1,9 @@
 {from "57mm_zis2"		; "zis2_guard"
 	{rechargeTime 4.4}
 	{range 210 210}
-	("damage_170" a(121) b(106) c(91) d(79) e(68) range(210))
+	("damage_170" at20(121) at100(106) at170(91) at215(79) at250(68) max(210))
 	{parameters "apcr"
-        	("damage_170" a(185) b(147) c(111) d(84) e(64) range(210))
+		("damage_170" at20(185) at100(147) at170(111) at215(84) at250(64) max(210))
 	}
 	{parameters "fg"
 		{range 190 190}

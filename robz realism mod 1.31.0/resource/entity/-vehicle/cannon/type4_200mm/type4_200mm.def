@@ -1,16 +1,16 @@
 {game_entity
 	(include "/properties/cannon.ext")
-	
+
 	{props "vehicle" "cannon" "cannon_small" "nebelwerfer" "no_exp_blast"  "round_sandbag" "vision_cannon_medium"}
 	{collider "cannon_small"}
 	{targetSelector "cannon_rocket"}
 	{patherId "cannon.carried"}
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: type4_200mm.def) ---
-	
+
 	; --- end Godny hitbox armor ---
 	("armor_mortar")
-	
+
 
 	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
@@ -75,21 +75,21 @@
 		{limits -30 30}
 		{speed 0.001}
 	}
-	{bone "foresight"          
+	{bone "foresight"
 		{limits -50 40}
 		{speed 0.004}
-	}               	
+	}
 	{sensor
 		{visor "main"
 			{vision "cannon_main"}
 		}
 	}
-	(include "/properties/selection/cannon.inc"  scale(0.7))	
+	(include "/properties/selection/cannon.inc"  scale(0.7))
 	(mod "mp"
 		{brain
 			{properties
 				{fire_mode hold}
 			}
-		}	
+		}
 	)
 }

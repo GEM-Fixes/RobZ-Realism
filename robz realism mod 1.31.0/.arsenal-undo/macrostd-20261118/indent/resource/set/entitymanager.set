@@ -1,0 +1,128 @@
+{entitymanager
+	{group "dead" actor dead
+		{limit 60}
+		{remove dissolve}
+		{entity "human"}
+		{entity "flesh"}
+		{tag "flesh"}
+	}
+
+	{group "dead" actor dead
+		{limit 1}
+		{remove instant}
+		{entity "fauna"}
+		{entity "animal"}
+	}
+	{group "broken" gameentity
+		{limit 20}
+		{remove dissolve}
+		{DeadVehicles}
+	}
+    	{group "gore" gameentity
+		{limit 20}
+		{remove dissolve}
+		{entity "flesh"}
+		{tag "flesh"}
+	}
+   	{group "gore2" gameentity
+		{limit 50}
+		{remove instant}
+		{entity "flesh"}
+		{tag "flesh"}
+	}
+
+	{group "piece" gameentity
+		{limit 8}
+		{remove dissolve}
+		{entity "piece_big_steel"}
+		{entity "piece_large_steel"}
+		{entity "piece_medium_steel"}
+	}
+
+	{group "piece2" gameentity
+		{limit 30};mod new
+		{remove instant}
+		{entity "piece_big_steel"}
+		{entity "piece_large_steel"}
+		{entity "piece_medium_steel"}
+	}
+	{group "guns" stuff
+		{limit 25}
+		{remove instant}
+		{tag "rifle"}
+		{tag "smg"}
+		{tag "pistol"}
+	}
+	{group "guns2" stuff
+		{limit 20}
+		{remove dissolve}
+		{tag "mgun"}
+	}
+	{group "guns3" stuff
+		{limit 15}
+		{remove dissolve}
+		{tag "rocketlauncher"}
+	}
+	{group "guns4" stuff
+		{limit 15}
+		{remove dissolve}
+		{tag "at_rifle"}
+	}
+	{group "stuff" stuff
+		{limit 30}
+		{remove instant}
+		{tag "shell"}
+		{tag "grenade"}
+		{tag "missile"}
+		{tag "sharp_edge"}
+		{entity "trench_spade"}
+	}
+	{group "stuff2" stuff
+		{limit 20}
+		{remove dissolve}
+		{tag "shell"}
+		{tag "dynamite"}
+		{tag "grenade"}
+		{tag "missile"}
+		{tag "sharp_edge"}
+		{entity "trench_spade"}
+		{tag "trench_spade"}
+	}
+	{group "stuff3" stuff
+		{limit 10}
+		{remove dissolve}
+		{entity "trench_spade"}
+		{tag "trench_spade"}
+	}
+
+	{group "equip" stuff
+		{limit 10}
+		{remove dissolve}
+		{tag "field_glass"}
+		{tag "head"}
+		{tag "body"}
+	}
+
+	{group "shellhole" gameentity
+		{limit 200}
+		{remove instant}
+		{entity "grenade_shellhole"}
+		{entity "grenade_at_shellhole"}
+	}
+	{group "burning" gameentity
+		{limit 20}
+		{remove dissolve}
+		{tag "burned"}
+	}
+
+	{group "construction_broken" gameentity
+		{limit 8}
+		{remove dissolve}
+		{tag "crushed"}
+	}
+	{group "construction_broken" gameentity
+		{limit 20}
+		{remove instant}
+		{tag "crushed"}
+	}
+}

@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "hun_elite2"}
 	{portrait "hun_elite3"}
@@ -5,52 +6,18 @@
 	{icon_priority 3}
 	{nationality hun}
 	{armors
-	
+
 		{head "helmet1_hun"}
 	}
 	{perks
-		{"health" "200%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "200%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	1.0
-		}
-		{"vehicle" 1.0
-		}
-		{"cannon" 1.0
-		}
-		
-		{"pistol" lvl_4
-		}
-		{"smg" lvl_4
-		}
-		{"mgun" lvl_4
-		}
-		{"rifle" lvl_4
-		}
-		{"rocketlauncher" lvl_4
-		}
-		{"melee" lvl_4
-		}
+		("soldier_mgun_4" rocket(3) body(line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(standard))
 	{inventory
-		{item "solothurn_31m" filled}
-		{item  "ammo solothurn31m_mag" 240}
+		("kit_mgun" gun(solothurn_31m) ammo(solothurn31m_mag) rounds(240))
 		{item "bandage" 4}
-		{item "grenade f1" 3}
-		{item "smoke grenade" 2}
-	        {in_hands 0}
+		("give" item(grenade f1) count(3))
+		("give" item(smoke grenade) count(2))
+		{in_hands 0}
 	}
 }

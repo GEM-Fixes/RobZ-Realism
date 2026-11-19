@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/car.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.1))
@@ -19,9 +20,9 @@
 		board_end(seat_passenger)
 		base(doorright)
 	)
-;	("crew_human" place(seat1)	bone(seat01)	door(emit3)	animation(passenger))
-;	("crew_human" place(seat2)	bone(seat02)	door(emit4)	animation(passenger))
-;	("crew_human" place(seat3)	bone(seat03)	door(emit3)	animation(passenger))
+	;	("crew_human" place(seat1)	bone(seat01)	door(emit3)	animation(passenger))
+	;	("crew_human" place(seat2)	bone(seat02)	door(emit4)	animation(passenger))
+	;	("crew_human" place(seat3)	bone(seat03)	door(emit3)	animation(passenger))
 
 	{extender "enumerator"}
 
@@ -41,13 +42,13 @@
 
 	{Chassis
 		{Locomotion ("locomotion")
-      		{MaxSpeed   36}
-	  		{maxSpeedAtMaxTurn 12}
-      		{TurnRadius 6}
+			{MaxSpeed   36}
+			{maxSpeedAtMaxTurn 12}
+			{TurnRadius 6}
 		}
 		{FuelBag
-			{volume 80 }	
-			{rate	9 }   
+			{volume 80 }
+			{rate	9 }
 			{remain 80 }
 			{fuel "fuel"}
 		}
@@ -60,13 +61,13 @@
 	}
 
 	{extender "inventory"
-    		{box
-      			{size 8 10}
-    		}
-  	}
-    {extender "inventory"
-    	{box
-			{size 6 10}     
+		{box
+			{size 8 10}
+		}
+	}
+	{extender "inventory"
+		{box
+			{size 6 10}
 			{clear}
 			{item "hedgehog_kit" 1 {cell 0 0}}
 			{item "hedgehog_kit" 1 {cell 0 2}}
@@ -89,10 +90,7 @@
 
 	{Extension "zis5eng.mdl"}
 	; --- Godny hitbox armor (ported from GodnyMod: zis5eng.def) ---
-	{Volume "body"
-		{tags "body"}
-		{component "body"}
-	}
+	("vol_body_part" name(body))
 	{Volume "cabin1"
 		{tags "cabin"}
 		{component "cabin"}
@@ -177,10 +175,7 @@
 		{able clear {hole}}
 	}
 	; --- end Godny hitbox armor ---
-	{Volume "body1"
-		{tags "body"}
-		{component "body"}
-	}
+	("vol_body_part" name(body1))
 	{Volume "cabin"
 	}
 	{Volume "engine"

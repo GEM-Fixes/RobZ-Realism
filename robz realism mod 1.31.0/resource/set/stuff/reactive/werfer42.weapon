@@ -5,8 +5,8 @@
 
 	{fireSound "reactive/mortar"}
 	{foresight "foresight"}
-	
-	{spreading 
+
+	{spreading
 		{SpreadRadius 15}
 		{radiusFunction
 			0	0.6
@@ -23,7 +23,7 @@
 	{speed 220}
 	{AimingTolerance 0.1}
 	{projectileDamageTable {130 15}}
-	
+
 	{aimtype curved}
 	{cursor "cannon_on_fg"}
 	{cursorReloading "cannon_reload_fg"}

@@ -6,21 +6,21 @@
 	("range_short")
 
 	{range 200 200}
-	("speed_all" ap(740) apcr(919) fg(570) heat(450))
+	("speed_all" speed(740) apcr(919) fg(570) heat(450))
 	("caliber_medium")
 	{projectileDamage 123}
-	("damage_170" a(133) b(121) c(107) d(95) e(85) range(200))
+	("damage_170" at20(133) at100(121) at170(107) at215(95) at250(85) max(200))
 	{parameters "apcbc"
-		("damage_170" a(133) b(121) c(107) d(95) e(85) range(200))
+		("damage_170" at20(133) at100(121) at170(107) at215(95) at250(85) max(200))
 	}
 	{parameters "heatb"
-		("damage_heat" a(87) range(200))
+		("damage_heat" damage(87) max(200))
 	}
 	{parameters "heatc"
-		("damage_heat" a(100) range(200))
+		("damage_heat" damage(100) max(200))
 	}
 	{parameters "apcr"
-        	("damage_170" a(156) b(133) c(108) d(88) e(72) range(200))
+		("damage_170" at20(156) at100(133) at170(108) at215(88) at250(72) max(200))
 	}
 	{parameters "fg"
 		{range 180 180}

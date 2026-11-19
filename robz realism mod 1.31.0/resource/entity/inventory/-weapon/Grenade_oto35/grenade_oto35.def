@@ -5,7 +5,7 @@
 	{extender "stuff"
 		{item "grenade oto_mod35"}
 	}
-	{nogroupmesh 1}	
+	{nogroupmesh 1}
 	{volume "body"
 		{able {contact}}
 	}

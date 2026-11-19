@@ -1,10 +1,10 @@
 {weapon_bullet
 	{tag "weapon build_in"}
 	{filling "ammo sturmtiger" 1}
-;	{fillingVisible "rocket"}
+	;	{fillingVisible "rocket"}
 
 	{fireSound "gun/sturmtiger_burst"}
-	{foresight "foresight"}          
+	{foresight "foresight"}
 	("heavy_artillery")
 
 	{range 310 310}

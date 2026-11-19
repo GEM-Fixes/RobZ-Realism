@@ -1,28 +1,21 @@
 ;http://wwiivehicles.com/italy/armored-cars/autoblindo-mitragliatrice-lancia-ansaldo-iz.asp
 
+(include "/properties/robz/volumes.inc")
 {game_entity
 	;© 2009 Zeke Wolff & Ngvede.
 	(include "/properties/armoredcar.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.0))
 	{mass 8000}
 	{props "vehicle" "armored_car" "tank" "wheeled" "turret" "turret_rotator" "vision_vehicle_high"}
-  	;{targetClass "armoredcar" "ap fg bullet"}
+	;{targetClass "armoredcar" "ap fg bullet"}
 	;{targetSelector "tank"}
 	{PatherId "vehicle.small"}
-	
+
 	{extension "crew.ext"}
 
-	{volume "body1"
-		{tags "body"}
-		{component "body"}
-		{thickness 15}
-	}
-	{volume "body2"
-		{tags "body"}
-		{component "body"}
-		{thickness 15}
-	}
-	
+	("vol_body_plate_lower" name(body1) mm(15))
+	("vol_body_plate_lower" name(body2) mm(15))
+
 	{volume "turret"
 		{component "turret"}
 		{tags "turret" "body"}
@@ -30,7 +23,7 @@
 	}
 	{volume "crew"
 		{able {contact_ground 0}}
-	}	
+	}
 	{component "turret"
 		{RepairTime 10}
 	}
@@ -52,9 +45,9 @@
 	{extender "inventory"
 		{Box
 			{item "ammo ravelli_belt" 1560}
-	
+
 		}
-		
+
 	}
 	{Weaponry
 		{place "mgun1"
@@ -87,21 +80,21 @@
 	{Chassis
 		{Locomotion ("locomotion")
 			{MaxSpeed	34}
-	  		{maxSpeedAtMaxTurn 15}		
+			{maxSpeedAtMaxTurn 15}
 			{StartTime 22}
-			{BrakeTime	1.5}	
+			{BrakeTime	1.5}
 			{StopTime	3}
 			{TurnRadius	5}
 		}
 		{FuelBag
 			{volume 110}
-			{rate	25} 
+			{rate	25}
 			{remain 110 }
 			{fuel "fuel"}
 		}
 		{speed
-        		{Normal  12}
-    		}
+			{Normal  12}
+		}
 		("car_trace" fx("tracewheel02") step(0.09) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
 		("car_trace" fx("tracewheel02") step(0.09) wheell("wlr") wheelr("wrr") bonel("FXtraceL2") boner("FXtraceR2"))
 	}

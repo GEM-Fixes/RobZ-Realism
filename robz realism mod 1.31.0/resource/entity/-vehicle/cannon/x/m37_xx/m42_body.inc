@@ -1,0 +1,7 @@
+{Extension "m42_xx.mdl"}
+; --- Godny hitbox armor (ported from GodnyMod: m42_xx.def) ---
+{Volume "wheelleft"
+}
+{Volume "wheelright"
+}
+; --- end Godny hitbox armor ---

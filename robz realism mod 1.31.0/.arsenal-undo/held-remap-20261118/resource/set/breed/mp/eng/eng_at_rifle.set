@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-inf-pvt"}
+	{portrait eng_soldier2}
+	{icon at_rifle}
+	{icon_priority 3}
+	{nationality eng}
+	{armors
+		{head helmet2_eng}
+	}
+	{perks
+		("body_regular_bare")
+		("drive_t08_v1_c1")
+		("breed_skills" pistol(2) smg(3) mgun(2) rifle(4) rocket(2) melee(3))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "boyes" filled}
+		{item "bandage" 5}
+		("at_grenade_n73at")
+		{item "ammo ptr" 50}
+		{in_hands 0}
+	}
+}

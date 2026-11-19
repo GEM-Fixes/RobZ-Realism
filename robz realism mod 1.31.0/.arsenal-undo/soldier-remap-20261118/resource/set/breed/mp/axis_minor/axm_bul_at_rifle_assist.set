@@ -1,0 +1,30 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "bul-alp-rfl"}
+	{portrait "bul_soldier2"}
+	{icon "rifleman"}
+	{icon_priority 0}
+	{nationality bul}
+	{armors
+		{head helmet1_bul}
+	}
+	{perks
+		("body_regular")
+		("drive_regular")
+		("skills_4_4_2_5_2_4")
+		{"at_rifle" lvl_5}
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_mp40")
+		{item "bandage" 3}
+		("frag_m24_x2")
+		("at_grenade_hohlladung")
+		("smoke_x1")
+		{item "ammo ptr" 10}
+		{in_hands 0}
+	}
+}
+
+
+

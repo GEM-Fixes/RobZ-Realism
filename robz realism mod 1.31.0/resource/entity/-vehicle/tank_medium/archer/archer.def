@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.2))
@@ -6,11 +7,7 @@
 	{extender "enumerator"}
 
 	; --- Godny hitbox armor (ported from GodnyMod: archer.def) ---
-	{volume "sticky"
-		{tags "grenade_fg_target"}
-		{able clear {contact} {touch}}
-		{component "sticky_body"}
-	}
+	("vol_sticky_grenade_target" name(sticky))
 	{volume "body1"	;передняя (носовая) часть корпуса
 		{component "body"}
 		{tags "body"}
@@ -23,7 +20,7 @@
 			{right	15}	;гласис
 		}
 	}
-	{volume "body2"	;моторное 
+	{volume "body2"	;моторное
 		{component "body"}
 		{tags "body"}
 		{thickness 20
@@ -39,7 +36,7 @@
 		{tags "body"}
 		{thickness 20
 			{front	0.1}	;внутренняя стенка
-		;	{rear	20}
+			;	{rear	20}
 			{top	10}
 			{bottom	20}	;днище усилено?
 		}
@@ -49,8 +46,8 @@
 		{tags "body"}
 		{able {holed}}
 		{thickness 20
-		;	{front	20}
-		;	{rear	20}
+			;	{front	20}
+			;	{rear	20}
 			{top	10}
 			{bottom	10}
 		}
@@ -67,27 +64,18 @@
 	}
 	{volume "turret"
 		{thickness 20
-		;	{front	20}
+			;	{front	20}
 			{rear	15}	;орудие дает небольшую броню
 		}
 	}
-	{Volume "hole_bod1"
-		{able clear {hole}}
-		{component "body"}
-	}
-	{Volume "hole_bod2"
-		{able clear {hole}}
-		{component "body"}
-	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "body"}
-	}
+	("vol_body_hole_only" name(hole_bod1))
+	("vol_body_hole_only" name(hole_bod2))
+	("vol_body_hole_only" name(hole_man))
 	{volume "engine"
 		{thickness 10}
 	}
 	{volume "inventory"
-        	{thickness 2}
+		{thickness 2}
 	}
 	{volume "zipl1"
 		{component "zipl1"}
@@ -106,16 +94,8 @@
 		{thickness 6}
 	}
 	; --- end Godny hitbox armor ---
-	{volume "body6"
-		{component "body"}
-		{tags "body"}
-		{thickness 30}
-	}
-	{volume "body7"
-		{component "body"}
-		{tags "body"}
-		{thickness 30}
-	}
+	("vol_body_plate_component_first" name(body6) mm(30))
+	("vol_body_plate_component_first" name(body7) mm(30))
 
 	("armor_spa_light" armor(30 15 15 15))
 	("armor_mantlet" t(30))
@@ -140,17 +120,7 @@
 		}
 	}
 
-	(define "crew_human"
-		{placer
-			{place "%place" {group "crew"} {linkbone "%place"} {turnoff {sensor} {shadow}}}
-		}
-		{boarder
-			{door "%door1"}
-			{door "%door2"}
-			{link "%door1" "%place" {anm "%place"} {forward putoff} {reverse puton}}
-			{link "%door2" "%place" {anm "%place"} {forward putoff} {reverse puton}}
-		}
-	)
+	(include "/properties/robz/crew.inc")
 
 	{placer
 		{place "driver" {group "crew"} {visor "driver"}}
@@ -164,16 +134,16 @@
 		{link "emit0" "driver" {anm "driver"} {forward putoff} {reverse puton}}
 	}
 
-	("crew_human" place(commander)	door2(emit2))
-	("crew_human" place(driver)	door1(emit1))
-	("crew_human" place(charger)	door2(emit2))
-	("crew_human" place(gunner)	door1(emit1))
+	("crew_human_two_doors" place(commander)	door2(emit2))
+	("crew_human_two_doors" place(driver)	door1(emit1))
+	("crew_human_two_doors" place(charger)	door2(emit2))
+	("crew_human_two_doors" place(gunner)	door1(emit1))
 
 	{extender "inventory"
 		{box
-            {item "bullet76 eng apcbc" 44}
-            {item "bullet76 eng fg" 6}
-            {item "bullet76 eng apds" 4}
+			{item "bullet76 eng apcbc" 44}
+			{item "bullet76 eng fg" 6}
+			{item "bullet76 eng apds" 4}
 		}
 	}
 	{Weaponry
@@ -193,10 +163,10 @@
 			{vision "tank_driver"}
 			{bone "visor1"}
 		}
-        {visor "view-around"
-            {vision "none"}
-            {bone "basis"}
-        }
+		{visor "view-around"
+			{vision "none"}
+			{bone "basis"}
+		}
 	}
 
 	{mass 16300}
@@ -206,25 +176,25 @@
 			{maxspeed   29}
 			{maxSpeedAtMaxTurn 6}
 			{StartTime  30}
-			{TurnStart  1}			
+			{TurnStart  1}
 			{TurnTime   17}
-			{TurnRadius 9} 
-    		{TurnStop   0.5}
+			{TurnRadius 9}
+			{TurnStop   0.5}
 			{BrakeTime  1}
 			{StopTime   2}
 			{Gears  0.1 0.2 0.3 1}
 			{RearGears   0.25}
 		}
 		{FuelBag
-			{volume 230 }	
-			{rate	24 }   
+			{volume 230 }
+			{rate	24 }
 			{remain 230 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  29}
-        	{Slow  29}
-    	}
+			{Normal  29}
+			{Slow  29}
+		}
 	}
 
 	{Extension "archer.mdl"}

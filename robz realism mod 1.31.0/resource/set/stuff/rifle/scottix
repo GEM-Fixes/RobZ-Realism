@@ -4,7 +4,7 @@
 	{entity "scottix"}
 	{fireSound "rifle/carcano_m91"}
 	{reloadSound "m1carbine"}
-	
+
 	{Automatic}
 	{healthDamage 200}
 	("recoveryTime" r(50))

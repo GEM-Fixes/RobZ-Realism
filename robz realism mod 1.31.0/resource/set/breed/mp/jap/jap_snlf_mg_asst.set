@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "snlf_rifle_gear2"}
 	{portrait "jap_soldier5"}
@@ -8,49 +9,15 @@
 		{head "helmet_japmc9"}
 	}
 	{perks
-		{"health" "400%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "200%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	1.0
-		}
-		{"vehicle" 1.0
-		}
-		{"cannon" 1.0
-		}
-		
-		{"pistol" lvl_5
-		}
-		{"smg" lvl_5
-		}
-		{"mgun" lvl_5
-		}
-		{"rifle" lvl_7
-		}
-		{"rocketlauncher" lvl_5
-		}
-		{"melee" lvl_7
-		}
+		("soldier_mgun_7" rocket(1) body(hardy) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_elite")
-	}
+	("breed_vet" table(elite))
 	{inventory
-		{item "type99rifle" filled}
-		{item "ammo arisaka7-7_clip" 60}
+		("rifle_type99rifle")
 		{item "ammo type99_mag" 120}
 		{item "bandage" 5}
-		{item "grenade type99" 2}
-		{item "grenade type3at_a" 1}
+		("give" item(grenade type99) count(2))
+		("give" item(grenade type3at_a) count(1))
 		{in_hands 0}
 	}
 }

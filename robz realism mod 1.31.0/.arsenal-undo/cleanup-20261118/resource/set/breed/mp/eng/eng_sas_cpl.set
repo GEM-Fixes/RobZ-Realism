@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-scout-sgt"}
+	{portrait "eng_soldier5"}
+	{nationality eng}
+	{icon "stormtrooper"}
+	{icon_priority 4}
+	{armors
+		{head beret_eng_sas}
+	}
+	{perks
+		("soldier_smg_7" rocket(1) body(line))
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("smg_sten_v")
+		{item "bandage" 5}
+		("frag_mk1_x2")
+		("at_grenade_n73at_x1")
+		("smoke_x2")
+		("smoke_n77_x1")
+		{in_hands 0}
+	}
+}

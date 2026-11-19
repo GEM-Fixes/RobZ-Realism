@@ -4,12 +4,12 @@
 	{reloadSound "gun_r02"}
 	{rechargeTime 5}
 	("range_short")
-	
+
 	{range 180 180}
 	("speed" s(830))
-	("caliber_minimum")  
+	("caliber_minimum")
 	{projectileDamage 86}
-	("damage_170" a(86) b(66) c(51) d(39) e(30) range(180))
+	("damage_170" at20(86) at100(66) at170(51) at215(39) at250(30) max(180))
 	{parameters "fg"
 		{range 160 160}
 	}

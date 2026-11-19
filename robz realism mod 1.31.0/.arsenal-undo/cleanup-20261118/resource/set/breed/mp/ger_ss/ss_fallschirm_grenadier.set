@@ -1,0 +1,28 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-fj-rifleman"}
+	{portrait "ger_elite1"}
+	{icon "elite"}
+	{icon_priority 4}
+	{nationality ger}
+	{armors
+		;{body ammo_ger2}
+		{head helmet_ger_m38_cover}
+	}
+	{perks
+		("soldier_rifle_7" rocket(1) body(hardy))
+		{"avoidance" lvl_1}
+		{"stealth"}
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("rifle_mauzer_vet_120")
+		{item "bandage" 5}
+		{item "k98_gewehrgranat" filling "k98_grenade fg" 1}
+		{item "k98_grenade fg" 6 1}
+		{item "k98_grenade ap3" 1 2}
+		{item "k98_grenade ap2" 0 1}
+		{item "ammo mg_mauser drum" 50}
+		{in_hands 3}
+	}
+}

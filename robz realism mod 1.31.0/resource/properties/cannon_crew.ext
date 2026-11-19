@@ -1,6 +1,8 @@
 ;SDL
 
 ;//////////////////////////////////////////////////////////////////////////////
+; crew_inside: {boarder {anm}}
+;   e.g. ("crew_inside")
 (define "crew_inside"
 	{boarder
 		{anm "gunner"
@@ -14,6 +16,11 @@
 		}
 	}
 )
+; crew_human: {placer {place}} {boarder {door} {link}}
+;   place - name of {place}, name of {group}, text in {link}
+;   bone - name of {linkbone}
+;   animation - name of {anm}
+;   e.g. ("crew_human" place(driver) door1(emit1) door2(emit2) visor(driver))
 (define "crew_human"
 	{placer
 		{place "%place"
@@ -34,6 +41,11 @@
 	}
 )
 
+; crew_human_invisible: {placer {place}} {boarder {door} {link}}
+;   place - name of {place}, text in {link}
+;   visor - name of {visor}
+;   animation - name of {anm}
+;   e.g. none (not called)
 (define "crew_human_invisible"
 	{placer
 		{place "%place"
@@ -54,6 +66,8 @@
 	}
 )
 
+; crew_2_human: {placer {place}}, calls "crew_inside" "crew_human"
+;   e.g. ("crew_2_human")
 (define "crew_2_human"
 	("crew_inside")
 	("crew_human" place(gunner)		bone(gunner)	door(emit1) animation(gunner))
@@ -63,14 +77,21 @@
 		{place "commander" {group "crew"}}
 	}
 )
+; crew_gunner: calls "crew_inside" "crew_human"
+;   e.g. none in the mod (called from vanilla files)
 (define "crew_gunner"
 	("crew_inside")
 	("crew_human" place(gunner)		bone(gunner)	door(emit) animation(gunner))
 )
 
+; stand_human: {placer {place}} {boarder {door} {link}}
+;   place - name of {place}, name of {group}, text in {link}
+;   bone - name of {linkbone}
+;   animation - name of {anm}
+;   e.g. ("stand_human" place(gunner) bone(gunner) animation(gunner))
 (define "stand_human"
 	{placer
-		{place "%place" {group "%place"} {linkbone "%bone"} {turnoff {sensor}} {openForCrush}} 
+		{place "%place" {group "%place"} {linkbone "%bone"} {turnoff {sensor}} {openForCrush}}
 	}
 	{boarder
 		{door "emit"}
@@ -86,6 +107,8 @@
 	}
 )
 
+; crew_stan_gunner: {boarder {anm}}, calls "stand_human"
+;   e.g. none in the mod (called from vanilla files)
 (define "crew_stan_gunner"
 	{boarder
 		{anm "gunner"
@@ -98,6 +121,8 @@
 	{place "gunner" {visor "main"}}
 }
 
+; crew_gun: {placer {place}} {boarder {link}}, calls "crew_2_human" "crew_human"
+;   e.g. ("crew_gun")
 (define "crew_gun"
 	("crew_2_human")
 	("crew_human" place(driver1) bone(driver1) door(emit1) animation(driver1))
@@ -112,6 +137,8 @@
 	}
 )
 
+; crew_wheeled_gun: {placer {place}} {boarder {link}}, calls "crew_gun" "crew_human"
+;   e.g. ("crew_wheeled_gun")
 (define "crew_wheeled_gun"
 	("crew_gun")
 	("crew_human" place(seat1)   bone(seat1)   door(emit1) animation(seat1))
@@ -126,7 +153,9 @@
 	}
 )
 
-(define "crew_4_human"
+; crew_4_human_two_commanders: {boarder} {placer} {boarder}, calls "crew_human"
+;   e.g. none (not called)
+(define "crew_4_human_two_commanders"
 	("crew_human" place(commander1)		bone(commander1)		door(emit3) animation(commander1))
 	("crew_human" place(commander2)		bone(commander2)		door(emit4) animation(commander2))
 	("crew_human" place(driver3)		bone(driver3)			door(emit3) animation(driver3))
@@ -156,6 +185,8 @@
 		{link "driver4" "commander2"}
 	}
 )
+; crew_gun_extended: calls "crew_4_human", per mod "mp"
+;   e.g. none (not called)
 (define "crew_gun_extended"
 	(mod "mp"
 		("crew_4_human")

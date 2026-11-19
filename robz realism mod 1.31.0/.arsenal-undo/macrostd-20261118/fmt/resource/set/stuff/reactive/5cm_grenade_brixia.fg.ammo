@@ -1,0 +1,17 @@
+{bullet
+	{tag "dropboxed grenade small mortar"}
+	{inventory
+		{size 2 1}
+		{weight 40}
+	}
+	{mass 2}
+	{entity "brixia_ammo"}
+	{view "brixia_ammo"}
+	{detonationThickness 1}
+	
+	{damage blastwave
+		{energy 1.0}
+		{area 3.0 6.0}
+	}
+
+}

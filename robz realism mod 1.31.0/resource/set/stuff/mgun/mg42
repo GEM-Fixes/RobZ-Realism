@@ -8,7 +8,7 @@
 	{mass 11.5}
 	("recoveryTime" r(1200))
 
-	("burst_short")
+	("burst_short_v2")
 	("speed" s(740))
 	{Spreading 1
 		{SpreadPower	1}

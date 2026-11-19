@@ -4,5 +4,5 @@
 	{extender "stuff"
 		{item "m1917_enfield"}
 	}
-	{nogroupmesh 1}	
+	{nogroupmesh 1}
 }

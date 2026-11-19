@@ -1,10 +1,11 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{props "medium" "turret_rotator" "vision_vehicle_medium" "muzzle_minimum" "switch_mgun_coax"}
 
 	{extender "enumerator"}
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: mk2a.def) ---
 	{volume "body1"	;низ корпуса
 		{component "body"}
@@ -43,8 +44,8 @@
 		{tags "turret"}
 		{able {holed}}
 		{thickness 75
-		;	{front	75}
-		;	{rear	75}
+			;	{front	75}
+			;	{rear	75}
 			{top	20}
 			{bottom	10}
 		}
@@ -57,13 +58,10 @@
 			{bottom	10}
 		}
 	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "turret"}
-	}
+	("vol_turret_hole_only" name(hole_man))
 	{volume "mantlet"
 		{thickness 75
-		;	{front	75}
+			;	{front	75}
 			{rear	10}	;орудие дает небольшую броню
 		}
 	}
@@ -73,7 +71,7 @@
 	{volume "shield1"	;права€ передн€€ часть корпуса - экран
 		{component "shield1"}
 		{thickness 22
-		;	{front	22}
+			;	{front	22}
 			{rear	0.1}	;стык body1 и body4
 			{top	0.1}	;стык body4 и body6
 		}
@@ -81,7 +79,7 @@
 	{volume "shield2"	;лева€ передн€€ часть корпуса - экран
 		{component "shield2"}
 		{thickness 22
-		;	{front	22}
+			;	{front	22}
 			{rear	0.1}	;стык body1 и body5
 			{top	0.1}	;стык body5 и body7
 		}
@@ -127,11 +125,11 @@
 		{tags "engine"}
 		{component "engine"}
 	}
-	
+
 	("armor_medium" turret(75 75 75 20) body(78 70 55 22))
 	("armor_engine"  t(30 70 55 22))
 	("eng_1-9x_sight")
-	
+
 	("crew_4_human")
 
 	{boarder
@@ -159,12 +157,12 @@
 	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor))
 
 	{extender "inventory"
-        {box
-            {item "ammo bullet40 eng ap" 93}
-            ;{item "ammo bullet40 fg" 43}
-            ;{item "ammo bullet40 apcr" 3}
-            {item "ammo mg_mauser belt red" 2950}
-        }
+		{box
+			{item "ammo bullet40 eng ap" 93}
+			;{item "ammo bullet40 fg" 43}
+			;{item "ammo bullet40 apcr" 3}
+			{item "ammo mg_mauser belt red" 2950}
+		}
 	}
 	{Weaponry
 		("restore_ik_time")
@@ -188,28 +186,28 @@
 			{MaxSpeed   20}
 			{maxSpeedAtMaxTurn 4}
 			{StartTime  30}
-			{TurnStart  1.7}			
+			{TurnStart  1.7}
 			{TurnTime   18}
-			{TurnRadius 8} 
-    		{TurnStop   0.8}
+			{TurnRadius 8}
+			{TurnStop   0.8}
 			{BrakeTime  1.5}
 			{StopTime   2.5}
 			{Gears  0.1 0.2 0.3 1}
-			{RearGears  0.24}		
+			{RearGears  0.24}
 		}
 		{FuelBag
-			{volume 210 }	
-			{rate	24 }   
+			{volume 210 }
+			{rate	24 }
 			{remain 210 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  20}
-        	{Slow  20}
-    	}
+			{Normal  20}
+			{Slow  20}
+		}
 	}
 	{Extension "mk2a.mdl"}
-	
+
 	{bone "gun_rot"
 		{speed 0.001}
 		{limits -15 20}
@@ -217,7 +215,7 @@
 	{bone "turret"
 		{speed 0.003}
 	}
-    {bone "foresight3"
+	{bone "foresight3"
 		{limits 1}
 	}
 }

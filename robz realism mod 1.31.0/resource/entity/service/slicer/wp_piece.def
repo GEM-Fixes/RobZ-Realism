@@ -1,16 +1,4 @@
+; same as the other 1 def here; body in incendiary_piece_body.inc
 {game_entity
-	{extension "/properties/piece.ext"}
-	{simulation {able 1} {state 1}}
-	{constrain none}
-	{props "dummy"}
-	{volume "body"
-		{sphere 1}
-		{able clear {contact 1} {contact_ground 1}}
-		{bone "basis"}
-		{material "dummy"}
-	}
-	{body
-		{proper body}
-		{permit body}
-	}
+	(include "incendiary_piece_body.inc")
 }

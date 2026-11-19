@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	{Extension "m4_xx.mdl"}
 	{Volume "trackleft"
@@ -16,31 +17,11 @@
 		{tags "body"}
 		{thickness 6}
 	}
-	{Volume "body2"
-		{tags "body"}
-		{component "body"}
-		{thickness 8}
-	}
-	{Volume "body1"
-		{tags "body"}
-		{component "body"}
-		{thickness 8}
-	}
-	{Volume "body3"
-		{tags "body"}
-		{component "body"}
-		{thickness 8}
-	}
-	{Volume "body4"
-		{tags "body"}
-		{component "body"}
-		{thickness 8}
-	}
-	{Volume "part5"
-		{tags "body"}
-		{component "body"}
-		{thickness 8}
-	}
+	("vol_body_plate" name(body2) mm(8))
+	("vol_body_plate" name(body1) mm(8))
+	("vol_body_plate" name(body3) mm(8))
+	("vol_body_plate" name(body4) mm(8))
+	("vol_body_plate" name(part5) mm(8))
 	{Volume "Part1"
 		{tags "body"}
 		{thickness 8}

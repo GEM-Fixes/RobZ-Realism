@@ -1,0 +1,28 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-82nd-rfl"}
+	{portrait "usa_elite1"}
+	{nationality usa}
+	{icon "elite"}
+	{icon_priority 3}
+	{armors
+		{head helmet_usa_para}
+	}
+	{perks
+		("body_h250_s150")
+		{"telescope"}
+		("drive_veteran")
+		("skills_usa_4_4_4_5_4_4")
+		{"aimedshot"}
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_m1903a4")
+		{item "bandage" 5}
+		("frag_m61_x2")
+		;{item "grenade n73at" 1}
+		("smoke_x1p5_0p5")
+		("smoke_m15_x0p5_0p5")
+		{in_hands 0}
+	}
+}

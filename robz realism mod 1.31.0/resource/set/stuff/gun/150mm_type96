@@ -4,5 +4,5 @@
 	{reloadSound "gun_r04"}
 	("range_heavy_howitzer")
 	{range 400 400}
-	{speed 540}		
+	{speed 540}
 }

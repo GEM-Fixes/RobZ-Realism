@@ -1,0 +1,25 @@
+{Extension "kv-1s_xx.mdl"}
+{Volume "body1"
+}
+{Volume "body2"
+}
+{Volume "body3"
+}
+{Volume "crew"
+}
+{Volume "engine"
+}
+{Volume "gun"
+}
+{Volume "inventory"
+}
+{Volume "mantlet"
+}
+{Volume "mantlet2"
+}
+{Volume "trackleft"
+}
+{Volume "trackright"
+}
+{Volume "turret"
+}

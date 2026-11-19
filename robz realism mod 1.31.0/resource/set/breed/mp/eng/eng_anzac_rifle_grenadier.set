@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "eng_t3"}
 	{portrait "eng_elite2"}
@@ -8,45 +9,11 @@
 		{head fieldcap_eng}
 	}
 	{perks
-		{"health" "250%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "200%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.9
-		}
-		{"vehicle" 1.0
-		}
-		{"cannon" 1.0
-		}
-		
-		{"pistol" lvl_3
-		}
-		{"smg" lvl_3
-		}
-		{"mgun" lvl_3
-		}
-		{"rifle" lvl_4
-		}
-		{"rocketlauncher" lvl_3
-		}
-		{"melee" lvl_3
-		}
+		("soldier_rifle_4" rocket(1) body(line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(standard))
 	{inventory
-		{item "em3" filled}
-		{item "ammo british303_clip" 50}
+		("rifle_em3")
 		{item "em3_mark1" filled}
 		{item "ammo rifle_grenade" 6 1}
 		{item "ammo bren_mag" 56}

@@ -1,5 +1,7 @@
 (include "tank.ext")
-(define "crew_5_human"
+; crew_5_human_inside: calls "crew_inside" "crew_human"
+;   e.g. none (not called)
+(define "crew_5_human_inside"
 	("crew_inside")
 	("crew_human" place(gunner)		door1(emit1) door2(emit2) visor(main))
 	("crew_human" place(driver)		door1(emit1) door2(emit2) visor(driver))
@@ -7,6 +9,8 @@
 	("crew_human" place(gunner1)		door1(emit1) door2(emit2) visor(driver))
 	("crew_human" place(commander)	door1(emit1) door2(emit2) visor(around))
 )
+; crew_6_human: calls "crew_inside" "crew_human"
+;   e.g. none (not called)
 (define "crew_6_human"
 	("crew_inside")
 	("crew_human" place(gunner)		door1(emit1) door2(emit2) visor(main))
@@ -16,506 +20,536 @@
 	("crew_human" place(charger1)		door1(emit1) door2(emit2) visor(driver))
 	("crew_human" place(commander)	door1(emit1) door2(emit2) visor(around))
 )
-(define "gunner_human_visible"
-	("crew_human_visible_anm" place(%place) door1(%door1) door2(%door2) visor(%visor) anm_left(left) anm_right(right))
-)
-(define "armor_wheel"
-	{props "armor_wheel"}
-	{armor
-        	{setting "track"
-            		{thickness %t}
-            		{durability
-                		{blast
-                    			{koef (* %t 0.4)}
-                		}
-                		{pierce
-                			{value 1000}
-                		}
-            		}
-            		{threshold
-                		{blast
-                    			{value (* %t 2)}
-                		}
-            		}
-            		{volumes "track*"}
-            		{whole_wound}
-        	}
-    	}
-)
-(define "armor_tank" ; armor system details you will find at "set/interaction_entity/tank.inc"
+; armor_tank_props: armor system details you will find at "set/interaction_entity/tank.inc" (makes {props "cupola"} {armor {setting}})
+;   track_mm - {thickness}, mm
+;   dur - {koef}, [?]
+;   track_b - {value}, [?]
+;   gun - {thickness}, mm
+;   turret_mm - {thickness}, mm
+;   pierce_dur - {koef}, [?]
+;   thr - {koef}, [?]
+;   tur2 - {thickness}, mm
+;   tur3 - {thickness}, mm
+;   tur4 - {thickness}, mm
+;   tur5 - {thickness}, mm
+;   tur6 - {thickness}, mm
+;   tur7 - {thickness}, mm
+;   body_mm - {thickness}, mm
+;   bod2 - {thickness}, mm
+;   bod3 - {thickness}, mm
+;   bod4 - {thickness}, mm
+;   bod5 - {thickness}, mm
+;   bod6 - {thickness}, mm
+;   bod7 - {thickness}, mm
+;   en - {thickness}, mm
+;   e.g. none (not called)
+(define "armor_tank_props"
 	{props "cupola" "tank_shield"}
 	{armor
-        	{setting "track"
-            		{thickness %t}
-            		{durability
-                		{blast
-                    			{koef (* %dur 2.5)}
-                		}
-                		{pierce
-                			{value 1000}
-                		}
-            		}
-            		{threshold
-                		{blast
-                    			{value %track_b}
-                		}
-            		}
-            		{volumes "track*"}
-            		{whole_wound}
-        	}
-        	{setting "gun"
-            		{thickness %gun}
-            		{durability
-                		{blast  {koef 3}}
-                		{pierce {koef 3}}
-            		}
-            		{threshold
-                		{blast
-                			{value 15}
-                		}
-                		{pierce
-                    			{value 12}
-                		}
-            		}
-            		{volumes "gun*"}
-        	}
-        	{setting "turret"
-            		{thickness %tur}
+		{setting "track"
+			{thickness %track_mm}
 			{durability
-                		{pierce
-                    			{koef %pierce_dur}
-                		}
-            		}
-        
-            		{threshold
-                		{blast
-                    			{koef  %thr}
-                		}
-            		}
-            		{volumes "turret"}
-			{volumes "turret1"}
-			{volumes "turret01"}
-        	}
-        	{setting "turret2"
-            		{thickness %tur2}
-			{durability
-                		{pierce
-                    			{koef %pierce_dur}
-                		}
-            		}
-           		{threshold
-                		{blast
-                    			{koef  %thr}
-                		}
-            		}
-			{volumes "turret2"}
-			{volumes "turret02"}
-        	}
-        	{setting "turret3"
-            		{thickness %tur3}
-			{durability
-                		{pierce
-                    			{koef %pierce_dur}
-                		}
-            		}
-           		{threshold
-                		{blast
-                    			{koef  %thr}
-                		}
-            		}
-			{volumes "turret3"}
-			{volumes "turret03"}
-        	}
-        	{setting "turret4"
-            		{thickness %tur4}
-			{durability
-                		{pierce
-                    			{koef %pierce_dur}
-                		}
-            		}
-           		{threshold
-                		{blast
-                    			{koef  %thr}
-                		}
-            		}
-			{volumes "turret4"}
-			{volumes "turret04"}
-        	}
-        	{setting "turret5"
-            		{thickness %tur5}
-			{durability
-                		{pierce
-                    			{koef %pierce_dur}
-                		}
-            		}
-           		{threshold
-                		{blast
-                    			{koef  %thr}
-                		}
-            		}
-			{volumes "turret5"}
-			{volumes "turret05"}
-        	}
-        	{setting "turret6"
-            		{thickness %tur6}
-			{durability
-                		{pierce
-                    			{koef %pierce_dur}
-                		}
-            		}
-           		{threshold
-                		{blast
-                    			{koef  %thr}
-                		}
-            		}
-			{volumes "turret6"}
-			{volumes "turret06"}
-        	}
-        	{setting "turret7"
-            		{thickness %tur7}
-			{durability
-                		{pierce
-                    			{koef %pierce_dur}
-                		}
-            		}
-           		{threshold
-                		{blast
-                    			{koef  %thr}
-                		}
-            		}
-			{volumes "turret7"}
-			{volumes "turret07"}
-        	}
-        	{setting "body"
-            		{thickness %bod}
-            		{durability
-                		{blast
-                			{koef %dur}
-                		}
-        			{pierce
-                			{koef %pierce_dur}
-                		}
-            		}
-            		{threshold
-                		{blast
-                			{koef %thr}
-                		}
-            		}
-            		{volumes "body"}
-			{volumes "body1"}
-	    		{volumes "body01"}
-        	}
-		{setting "body2"
-            		{thickness %bod2}
-            		{durability
-                		{blast
-                			{koef %dur}
-                		}
-        			{pierce
-                			{koef %pierce_dur}
+				{blast
+					{koef (* %dur 2.5)}
+				}
+				{pierce
+					{value 1000}
 				}
 			}
-            		{threshold
-                		{blast
-                    			{koef %thr}
-                		}
-            		}
-            		{volumes "body2"}
-	    		{volumes "body02"}
-        	}
-        	{setting "body3"
-        		{thickness %bod3}
-            		{durability
-                		{blast
-                    			{koef %dur}
-                		}
-        			{pierce
-                			{koef %pierce_dur}
-            			}
-           		}
-           		{threshold
-                		{blast
-                			{koef %thr}
-                		}
-            		}
-            		{volumes "body3"}
-	    		{volumes "body03"}
-        	}
-
-        	{setting "body4"
-            		{thickness %bod4}
+			{threshold
+				{blast
+					{value %track_b}
+				}
+			}
+			{volumes "track*"}
+			{whole_wound}
+		}
+		{setting "gun"
+			{thickness %gun}
 			{durability
-                		{blast
-                    			{koef %dur}
-                	}
-        			{pierce
-                			{koef %pierce_dur}
-                		}
-            		}
-            		{threshold
-                		{blast
-                 			{koef %thr}
-	                	}
-        		}
+				{blast  {koef 3}}
+				{pierce {koef 3}}
+			}
+			{threshold
+				{blast
+					{value 15}
+				}
+				{pierce
+					{value 12}
+				}
+			}
+			{volumes "gun*"}
+		}
+		{setting "turret"
+			{thickness %turret_mm}
+			{durability
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+
+			{threshold
+				{blast
+					{koef  %thr}
+				}
+			}
+			{volumes "turret"}
+			{volumes "turret1"}
+			{volumes "turret01"}
+		}
+		{setting "turret2"
+			{thickness %tur2}
+			{durability
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef  %thr}
+				}
+			}
+			{volumes "turret2"}
+			{volumes "turret02"}
+		}
+		{setting "turret3"
+			{thickness %tur3}
+			{durability
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef  %thr}
+				}
+			}
+			{volumes "turret3"}
+			{volumes "turret03"}
+		}
+		{setting "turret4"
+			{thickness %tur4}
+			{durability
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef  %thr}
+				}
+			}
+			{volumes "turret4"}
+			{volumes "turret04"}
+		}
+		{setting "turret5"
+			{thickness %tur5}
+			{durability
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef  %thr}
+				}
+			}
+			{volumes "turret5"}
+			{volumes "turret05"}
+		}
+		{setting "turret6"
+			{thickness %tur6}
+			{durability
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef  %thr}
+				}
+			}
+			{volumes "turret6"}
+			{volumes "turret06"}
+		}
+		{setting "turret7"
+			{thickness %tur7}
+			{durability
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef  %thr}
+				}
+			}
+			{volumes "turret7"}
+			{volumes "turret07"}
+		}
+		{setting "body"
+			{thickness %body_mm}
+			{durability
+				{blast
+					{koef %dur}
+				}
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
+			{volumes "body"}
+			{volumes "body1"}
+			{volumes "body01"}
+		}
+		{setting "body2"
+			{thickness %bod2}
+			{durability
+				{blast
+					{koef %dur}
+				}
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
+			{volumes "body2"}
+			{volumes "body02"}
+		}
+		{setting "body3"
+			{thickness %bod3}
+			{durability
+				{blast
+					{koef %dur}
+				}
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
+			{volumes "body3"}
+			{volumes "body03"}
+		}
+
+		{setting "body4"
+			{thickness %bod4}
+			{durability
+				{blast
+					{koef %dur}
+				}
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
 			{volumes "body4"}
 			{volumes "body04"}
-        	}
-        
+		}
+
 		{setting "body5"
 			{thickness %bod5}
-            		{durability
-                		{blast
-                			{koef %dur}
-                		}
-        			{pierce
-                			{koef %pierce_dur}
-                		}
-            		}
-            		{threshold
-                		{blast
-               				{koef %thr}
-            			}
-            		}
-            		{volumes "body5"}
+			{durability
+				{blast
+					{koef %dur}
+				}
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
+			{volumes "body5"}
 			{volumes "body05"}
-        	}
-        	{setting "body6"
-            		{thickness %bod6}
-            		{durability
-                		{blast
-                			{koef %dur}
-                		}
-        			{pierce
-                			{koef %pierce_dur}
-            			}
-            		}
-            		{threshold
-                		{blast
-                			{koef %thr}
-            			}
-            		}
-            		{volumes "body6"}
+		}
+		{setting "body6"
+			{thickness %bod6}
+			{durability
+				{blast
+					{koef %dur}
+				}
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
+			{volumes "body6"}
 			{volumes "body06"}
-        	}
-        	{setting "body7"
-        		{thickness %bod7}
-        		{durability
-                		{blast
-                			{koef %dur}
-                		}
-        			{pierce
-                			{koef %pierce_dur}
-            			}
-            		}
-            		{threshold
-                		{blast
-                			{koef %thr}
-            			}
-            		}
-            		{volumes "body7"}
+		}
+		{setting "body7"
+			{thickness %bod7}
+			{durability
+				{blast
+					{koef %dur}
+				}
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
+			{volumes "body7"}
 			{volumes "body07"}
-        	}
-        	{setting "engine"
-        		{thickness %en}
-        		{durability
-                		{blast
-                			{koef %dur}
-            			}
-            		}
-            		{threshold
-                		{blast
-                			{koef %thr}
-            			}
-            		}
-        		{volumes "engine*"}
+		}
+		{setting "engine"
+			{thickness %en}
+			{durability
+				{blast
+					{koef %dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
+			{volumes "engine*"}
 		}
 	}
 )
-(define "armor_spa" ; armor system details you will find at "set/interaction_entity/tank.inc"
+; armor_spa: armor system details you will find at "set/interaction_entity/tank.inc" (makes {volume "turret" {component} {tags}} {armor {setting}})
+;   track_mm - {thickness}, mm
+;   dur - {koef}, [?]
+;   track_b - {value}, [?]
+;   gun - {thickness}, mm
+;   body_mm - {thickness}, mm
+;   pierce_dur - {koef}, [?]
+;   thr - {koef}, [?]
+;   bod2 - {thickness}, mm
+;   bod3 - {thickness}, mm
+;   bod4 - {thickness}, mm
+;   bod5 - {thickness}, mm
+;   bod6 - {thickness}, mm
+;   bod7 - {thickness}, mm
+;   en - {thickness}, mm
+;   e.g. ("armor_spa" t(8) track_b(16) bod(%armor) en(25) gun(35) dur(5) thr(1.5) pierce_dur(99999))
+(define "armor_spa"
 	{volume "turret"
 		{component "turret"}
 		{tags "turret" "body"}
 	}
 	{armor
-        	{setting "track"
-            		{thickness %t}
-            		{durability
-                		{blast
-                			{koef (* %dur 2.5)}
-                		}
-                		{pierce
-                			{value 1000}
-                		}
-            		}
-            		{threshold
-                		{blast
-                			{value %track_b}
-                		}
-            		}
-            		{volumes "track*"}
-           		{whole_wound}
-        	}
-        	{setting "gun"
-        		{thickness %gun}
-            		{durability
-                		{blast  {koef 3}}
-                		{pierce {koef 3}}
-            		}
-            		{threshold
-                		{blast
-                			{value 15}
-                		}
-                		{pierce
-                			{value 15}
-                		}
-            		}
-            		{volumes "gun*"}
-        	}
+		{setting "track"
+			{thickness %track_mm}
+			{durability
+				{blast
+					{koef (* %dur 2.5)}
+				}
+				{pierce
+					{value 1000}
+				}
+			}
+			{threshold
+				{blast
+					{value %track_b}
+				}
+			}
+			{volumes "track*"}
+			{whole_wound}
+		}
+		{setting "gun"
+			{thickness %gun}
+			{durability
+				{blast  {koef 3}}
+				{pierce {koef 3}}
+			}
+			{threshold
+				{blast
+					{value 15}
+				}
+				{pierce
+					{value 15}
+				}
+			}
+			{volumes "gun*"}
+		}
 		{setting "body"
-			{thickness %bod}
-        	    	{durability
-                		{blast
-               				{koef %dur}
-                		}
-        			{pierce
-                			{koef %pierce_dur}
-                		}
-            		}
-            		{threshold
-                		{blast
-                	    		{koef %thr}
-                		}
-            		}
-            		{volumes "body"}
-			{volumes "body1"}		
+			{thickness %body_mm}
+			{durability
+				{blast
+					{koef %dur}
+				}
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
+			{volumes "body"}
+			{volumes "body1"}
 			{volumes "body01"}
-        	}
-        	{setting "body2"
-        	    	{thickness %bod2}
-        	    	{durability
-        	        	{blast
-        		       		{koef %dur}
-                		}
-        			{pierce
-                    			{koef %pierce_dur}
-                		}
-            		}
-            		{threshold
-                		{blast
-                			{koef %thr}
-                		}
-            		}
-            		{volumes "body2"}
-	    		{volumes "body02"}
-        	}
-        	{setting "body3"
-        		{thickness %bod3}
-        	    	{durability
-        	        	{blast
-		          		{koef %dur}
-                		}
-        			{pierce
-                	    		{koef %pierce_dur}
-                		}
-            		}
-            		{threshold
-                		{blast
-                			{koef %thr}
-                		}
-            		}
-            		{volumes "body3"}
-	    		{volumes "body03"}
-        	}
-        	{setting "body4"
-        		{thickness %bod4}
-           		{durability
-                		{blast
-                			{koef %dur}
-                		}
-        			{pierce
-                			{koef %pierce_dur}
-                		}
-            		}
-            		{threshold
-                		{blast
-                	    		{koef %thr}
-                		}
-            		}
-            		{volumes "body4"}
-	    		{volumes "body04"}
-        	}
-        	{setting "body5"
-        		{thickness %bod5}
-        		{durability
-        	        	{blast
-                			{koef %dur}
-                		}
-        			{pierce
-                			{koef %pierce_dur}
-                		}
-            		}
-            		{threshold
-            			{blast
-                			{koef %thr}
-                		}
-            		}
-            		{volumes "body5"}
-	    		{volumes "body05"}
-        	}
-        	{setting "body6"
-            		{thickness %bod6}
-            		{durability
-                		{blast
-                			{koef %dur}
-                		}
-        			{pierce
-                			{koef %pierce_dur}
-                		}
-            		}
-            		{threshold
-                		{blast
-                			{koef %thr}
-                		}
-            		}
-         	   	{volumes "body6"}
-	 	   	{volumes "body06"}
-        	}
-        	{setting "body7"
-            		{thickness %bod7}
-            		{durability
-                		{blast
-                			{koef %dur}
-                		}
-        			{pierce
-                			{koef %pierce_dur}
-                		}
-            		}
-            		{threshold
-                		{blast
-                    			{koef %thr}
-                		}
-            		}
-            		{volumes "body7"}
-	    		{volumes "body07"}
-        	}
-        	{setting "engine"
-        		{thickness %en}
-        		{durability
-                		{blast
-                			{koef %dur}
-                		}
-            		}
-            		{threshold
-                		{blast
-                			{koef %thr}
-                		}
-            		}
-            		{volumes "engine*"}
-        	}
+		}
+		{setting "body2"
+			{thickness %bod2}
+			{durability
+				{blast
+					{koef %dur}
+				}
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
+			{volumes "body2"}
+			{volumes "body02"}
+		}
+		{setting "body3"
+			{thickness %bod3}
+			{durability
+				{blast
+					{koef %dur}
+				}
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
+			{volumes "body3"}
+			{volumes "body03"}
+		}
+		{setting "body4"
+			{thickness %bod4}
+			{durability
+				{blast
+					{koef %dur}
+				}
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
+			{volumes "body4"}
+			{volumes "body04"}
+		}
+		{setting "body5"
+			{thickness %bod5}
+			{durability
+				{blast
+					{koef %dur}
+				}
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
+			{volumes "body5"}
+			{volumes "body05"}
+		}
+		{setting "body6"
+			{thickness %bod6}
+			{durability
+				{blast
+					{koef %dur}
+				}
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
+			{volumes "body6"}
+			{volumes "body06"}
+		}
+		{setting "body7"
+			{thickness %bod7}
+			{durability
+				{blast
+					{koef %dur}
+				}
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
+			{volumes "body7"}
+			{volumes "body07"}
+		}
+		{setting "engine"
+			{thickness %en}
+			{durability
+				{blast
+					{koef %dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
+			{volumes "engine*"}
+		}
 	}
 )
-(define "armor_light"
-	("armor_tank" t(7.5) track_b(15) bod(%body) bod1(%body1) bod2(%body2) bod3(%body3) bod4(%body4) bod5(%body5) bod6(%body6) bod7(%body7) tur(%turret) tur2(%turret2) tur3(%turret3) tur4(%turret4) tur5(%turret5) tur6(%turret6) tur7(%turret7) en(12) gun(15) dur(1) thr(1) pierce_dur(5000))
+; armor_light_tank: {sensor {visor}}, calls "armor_tank" "components_tank"
+;   body_main - {thickness}, mm via "armor_tank"
+;   body1 - bod1() of "armor_tank"
+;   body2 - bod2() of "armor_tank"
+;   body3 - bod3() of "armor_tank"
+;   body4 - bod4() of "armor_tank"
+;   body5 - bod5() of "armor_tank"
+;   body6 - bod6() of "armor_tank"
+;   body7 - bod7() of "armor_tank"
+;   turret_main - {thickness}, mm via "armor_tank"
+;   turret2 - tur2() of "armor_tank"
+;   turret3 - tur3() of "armor_tank"
+;   turret4 - tur4() of "armor_tank"
+;   turret5 - tur5() of "armor_tank"
+;   turret6 - tur6() of "armor_tank"
+;   turret7 - tur7() of "armor_tank"
+;   e.g. none (not called)
+(define "armor_light_tank"
+	("armor_tank" t(7.5) track_b(15) bod(%body_main) bod1(%body1) bod2(%body2) bod3(%body3) bod4(%body4) bod5(%body5) bod6(%body6) bod7(%body7) tur(%turret_main) tur2(%turret2) tur3(%turret3) tur4(%turret4) tur5(%turret5) tur6(%turret6) tur7(%turret7) en(12) gun(15) dur(1) thr(1) pierce_dur(5000))
 	("components_tank" repair(1.5))
 
 	{sensor
@@ -529,66 +563,109 @@
 	}
 )
 
-(define "armor_medium"
-	("armor_tank" t(15) track_b(30) bod(%body) bod1(%body1) bod2(%body2) bod3(%body3) bod4(%body4) bod5(%body5) bod6(%body6) bod7(%body7) tur(%turret) tur2(%turret2) tur3(%turret3) tur4(%turret4) tur5(%turret5) tur6(%turret6) tur7(%turret7) en(25) gun(35) dur(1.5) thr(1.5) pierce_dur(10000))
+; armor_medium_tank: {sensor {visor}} {Chassis "track" {FuelBag} {speed}}, calls "armor_tank" "components_tank"
+;   body_main - {thickness}, mm via "armor_tank"
+;   body1 - bod1() of "armor_tank"
+;   body2 - bod2() of "armor_tank"
+;   body3 - bod3() of "armor_tank"
+;   body4 - bod4() of "armor_tank"
+;   body5 - bod5() of "armor_tank"
+;   body6 - bod6() of "armor_tank"
+;   body7 - bod7() of "armor_tank"
+;   turret_main - {thickness}, mm via "armor_tank"
+;   turret2 - tur2() of "armor_tank"
+;   turret3 - tur3() of "armor_tank"
+;   turret4 - tur4() of "armor_tank"
+;   turret5 - tur5() of "armor_tank"
+;   turret6 - tur6() of "armor_tank"
+;   turret7 - tur7() of "armor_tank"
+;   e.g. none (not called)
+(define "armor_medium_tank"
+	("armor_tank" t(15) track_b(30) bod(%body_main) bod1(%body1) bod2(%body2) bod3(%body3) bod4(%body4) bod5(%body5) bod6(%body6) bod7(%body7) tur(%turret_main) tur2(%turret2) tur3(%turret3) tur4(%turret4) tur5(%turret5) tur6(%turret6) tur7(%turret7) en(25) gun(35) dur(1.5) thr(1.5) pierce_dur(10000))
 	("components_tank" repair(2.5))
 
 	{sensor
-        	{visor "view-around"
-        		{vision "none"}
-        		{bone "basis"}
-        	}
-        	{visor "main"
-        		{vision "tank_main-m"}
-    		}
-    	}
+		{visor "view-around"
+			{vision "none"}
+			{bone "basis"}
+		}
+		{visor "main"
+			{vision "tank_main-m"}
+		}
+	}
 	{Chassis "track"
-      		;left track must be first
-       		{FuelBag
-        		{volume 400 }   ; liters
-        		{rate   4 }    ; liters per kilometer
-        		{remain 400 }
-        		{fuel "fuel"}
-       		}
-       		{speed
-        		{Slow   15   }   ; km/h
-        		{Normal 25  }
-       			{Fast   35  }
+		;left track must be first
+		{FuelBag
+			{volume 400 }   ; liters
+			{rate   4 }    ; liters per kilometer
+			{remain 400 }
+			{fuel "fuel"}
+		}
+		{speed
+			{Slow   15   }   ; km/h
+			{Normal 25  }
+			{Fast   35  }
 		}
 	}
 )
 
-(define "armor_heavy"
-	("armor_tank" t(25) track_b(50) bod(%body) bod1(%body1) bod2(%body2) bod3(%body3) bod4(%body4) bod5(%body5) bod6(%body6) bod7(%body7) tur(%turret) tur2(%turret2) tur3(%turret3) tur4(%turret4) tur5(%turret5) tur6(%turret6) tur7(%turret7) en(40) gun(45) dur(2) thr(2) pierce_dur(15000))
+; armor_heavy_tank: {sensor {visor}} {Chassis "track" {FuelBag} {speed}}, calls "armor_tank" "components_tank"
+;   body_main - {thickness}, mm via "armor_tank"
+;   body1 - bod1() of "armor_tank"
+;   body2 - bod2() of "armor_tank"
+;   body3 - bod3() of "armor_tank"
+;   body4 - bod4() of "armor_tank"
+;   body5 - bod5() of "armor_tank"
+;   body6 - bod6() of "armor_tank"
+;   body7 - bod7() of "armor_tank"
+;   turret_main - {thickness}, mm via "armor_tank"
+;   turret2 - tur2() of "armor_tank"
+;   turret3 - tur3() of "armor_tank"
+;   turret4 - tur4() of "armor_tank"
+;   turret5 - tur5() of "armor_tank"
+;   turret6 - tur6() of "armor_tank"
+;   turret7 - tur7() of "armor_tank"
+;   e.g. none (not called)
+(define "armor_heavy_tank"
+	("armor_tank" t(25) track_b(50) bod(%body_main) bod1(%body1) bod2(%body2) bod3(%body3) bod4(%body4) bod5(%body5) bod6(%body6) bod7(%body7) tur(%turret_main) tur2(%turret2) tur3(%turret3) tur4(%turret4) tur5(%turret5) tur6(%turret6) tur7(%turret7) en(40) gun(45) dur(2) thr(2) pierce_dur(15000))
 	("components_tank" repair(3))
 
 	{sensor
-        	{visor "view-around"
-        		{vision "none"}
-        		{bone "basis"}
-        	}
-        	{visor "main"
-        		{vision "tank_main-h"}
+		{visor "view-around"
+			{vision "none"}
+			{bone "basis"}
+		}
+		{visor "main"
+			{vision "tank_main-h"}
 		}
 	}
 	{Chassis "track"
-      		;left track must be first
+		;left track must be first
 		{FuelBag
-        		{volume 800 }   ; liters
-        		{rate   8 }    ; liters per kilometer
-        		{remain 800 }
-        		{fuel "fuel"}
-       		}
-       		{speed
-        		{Slow   15  }   ; km/h
-        		{Normal 20  }
-        		{Fast   25  }
-       		}
-    	}
+			{volume 800 }   ; liters
+			{rate   8 }    ; liters per kilometer
+			{remain 800 }
+			{fuel "fuel"}
+		}
+		{speed
+			{Slow   15  }   ; km/h
+			{Normal 20  }
+			{Fast   25  }
+		}
+	}
 )
-(define "armor_spa_light"
+; armor_spa_light_track_b: {sensor {visor}}, calls "armor_spa" "components_tank"
+;   armor_main - bod() of "armor_spa"
+;   armor2 - {thickness}, mm via "armor_spa"
+;   armor3 - {thickness}, mm via "armor_spa"
+;   armor4 - {thickness}, mm via "armor_spa"
+;   armor5 - {thickness}, mm via "armor_spa"
+;   armor6 - {thickness}, mm via "armor_spa"
+;   armor7 - {thickness}, mm via "armor_spa"
+;   e.g. none (not called)
+(define "armor_spa_light_track_b"
 
-	("armor_spa" t(7.5) track_b(15) bod(%armor) bod2(%armor2) bod3(%armor3) bod4(%armor4) bod5(%armor5) bod6(%armor6) bod7(%armor7)en(12) gun(15) dur(1) thr(1) pierce_dur(5000))
+	("armor_spa" t(7.5) track_b(15) bod(%armor_main) bod2(%armor2) bod3(%armor3) bod4(%armor4) bod5(%armor5) bod6(%armor6) bod7(%armor7)en(12) gun(15) dur(1) thr(1) pierce_dur(5000))
 	("components_tank" repair(1.5))
 
 	{sensor
@@ -603,63 +680,81 @@
 )
 
 
+; armor_spa_medium: {Chassis "track" {FuelBag} {speed}} {sensor {visor}}, calls "armor_spa" "components_tank"
+;   armor_main - bod() of "armor_spa"
+;   armor2 - {thickness}, mm via "armor_spa"
+;   armor3 - {thickness}, mm via "armor_spa"
+;   armor4 - {thickness}, mm via "armor_spa"
+;   armor5 - {thickness}, mm via "armor_spa"
+;   armor6 - {thickness}, mm via "armor_spa"
+;   armor7 - {thickness}, mm via "armor_spa"
+;   e.g. none (not called)
 (define "armor_spa_medium"
 	{Chassis "track"
-      		;left track must be first
-       		{FuelBag
-        		{volume 400 }   ; liters
-        		{rate   8 }    ; liters per kilometer
-        		{remain 400 }
-       			{fuel "fuel"}
-       		}
-       		{speed
-        		{Slow   15   }   ; km/h
-        		{Normal 20  }
-        		{Fast   35  }
+		;left track must be first
+		{FuelBag
+			{volume 400 }   ; liters
+			{rate   8 }    ; liters per kilometer
+			{remain 400 }
+			{fuel "fuel"}
 		}
-    	}
-    	("armor_spa" t(15) track_b(30) bod(%armor) bod2(%armor2) bod3(%armor3) bod4(%armor4) bod5(%armor5) bod6(%armor6) bod7(%armor7) en(25) gun(35) dur(1.5) thr(1.5) pierce_dur(10000))
-    	("components_tank" repair(2.5))
+		{speed
+			{Slow   15   }   ; km/h
+			{Normal 20  }
+			{Fast   35  }
+		}
+	}
+	("armor_spa" t(15) track_b(30) bod(%armor_main) bod2(%armor2) bod3(%armor3) bod4(%armor4) bod5(%armor5) bod6(%armor6) bod7(%armor7) en(25) gun(35) dur(1.5) thr(1.5) pierce_dur(10000))
+	("components_tank" repair(2.5))
 
-    	{sensor
-        	{visor "view-around"
-        		{vision "none"}
-        		{bone "basis"}
-        	}
-        	{visor "main"
-        		{vision "tank_main-m"}
-        	}
-    	}
+	{sensor
+		{visor "view-around"
+			{vision "none"}
+			{bone "basis"}
+		}
+		{visor "main"
+			{vision "tank_main-m"}
+		}
+	}
 
 )
-(define "armor_spa_heavy"
+; armor_spa_heavy_chassis: {Chassis "track" {FuelBag} {speed}} {sensor {visor}}, calls "armor_spa" "components_tank"
+;   armor_main - bod() of "armor_spa"
+;   armor2 - {thickness}, mm via "armor_spa"
+;   armor3 - {thickness}, mm via "armor_spa"
+;   armor4 - {thickness}, mm via "armor_spa"
+;   armor5 - {thickness}, mm via "armor_spa"
+;   armor6 - {thickness}, mm via "armor_spa"
+;   armor7 - {thickness}, mm via "armor_spa"
+;   e.g. none (not called)
+(define "armor_spa_heavy_chassis"
 	{Chassis "track"
-      		;left track must be first
-       		{FuelBag
-          		{volume 800 }   ; liters
-          		{rate   8 }    ; liters per kilometer
-          		{remain 800 }
-          		{fuel "fuel"}
-       		}
-       		{speed
-          		{Slow   15   }   ; km/h
-          		{Normal 20  }
-          		{Fast   25  }
-    		}
-    	}
-	("armor_spa" t(25) track_b(50) bod(%armor) bod2(%armor2) bod3(%armor3) bod4(%armor4) bod5(%armor5) bod6(%armor6) bod7(%armor7) en(40) gun(45) dur(2.5) thr(2.5) pierce_dur(15000))
+		;left track must be first
+		{FuelBag
+			{volume 800 }   ; liters
+			{rate   8 }    ; liters per kilometer
+			{remain 800 }
+			{fuel "fuel"}
+		}
+		{speed
+			{Slow   15   }   ; km/h
+			{Normal 20  }
+			{Fast   25  }
+		}
+	}
+	("armor_spa" t(25) track_b(50) bod(%armor_main) bod2(%armor2) bod3(%armor3) bod4(%armor4) bod5(%armor5) bod6(%armor6) bod7(%armor7) en(40) gun(45) dur(2.5) thr(2.5) pierce_dur(15000))
 	("components_tank" repair(3))
 
 
 	{sensor
-        	{visor "view-around"
-        		{vision "none"}
-            		{bone "basis"}
-        	}
-        	{visor "main"
-        		{vision "tank_main-h"}
-        	}
-    	}
+		{visor "view-around"
+			{vision "none"}
+			{bone "basis"}
+		}
+		{visor "main"
+			{vision "tank_main-h"}
+		}
+	}
 )
 
 
@@ -670,17 +765,48 @@
 	}
 }
 
+; armor_spa_mantlet: {volume "mantlet" {tags} {component}} {armor {setting}}
+;   t - {thickness}, mm
+;   e.g. none (not called)
 (define "armor_spa_mantlet"
-    {volume "mantlet"
-        {tags "mantlet"}
-        {component "mantlet"}
-    }
-    {armor
-        {setting "mantlet"
-            {thickness %t}
-            {volumes "mantlet"}
-        }
-    }
+	{volume "mantlet"
+		{tags "mantlet"}
+		{component "mantlet"}
+	}
+	{armor
+		{setting "mantlet"
+			{thickness %t}
+			{volumes "mantlet"}
+		}
+	}
 )
 
-	
+
+
+; ---- unused macros (macrostd): defined, never called ----
+; (define "gunner_human_visible"
+; 	("crew_human_visible_anm" place(%place) door1(%door1) door2(%door2) visor(%visor) anm_left(left) anm_right(right))
+; )
+; (define "armor_wheel"
+; 	{props "armor_wheel"}
+; 	{armor
+; 		{setting "track"
+; 			{thickness %t}
+; 			{durability
+; 				{blast
+; 					{koef (* %t 0.4)}
+; 				}
+; 				{pierce
+; 					{value 1000}
+; 				}
+; 			}
+; 			{threshold
+; 				{blast
+; 					{value (* %t 2)}
+; 				}
+; 			}
+; 			{volumes "track*"}
+; 			{whole_wound}
+; 		}
+; 	}
+; )

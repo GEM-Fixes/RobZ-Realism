@@ -1,7 +1,4 @@
+; same as the other 1 def here; body in qf6_4_body.inc
 {game_entity
-	{Extension "qf6_x.mdl"}
-	{Volume "wheelleft"
-	}
-	{Volume "wheelright"
-	}
+	(include "qf6_4_body.inc")
 }

@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "rus-sco-late-smg2"}
 	{portrait "rus_elite3"}
@@ -9,50 +10,16 @@
 		{head helmet_rus_ssh40_cover_camo}
 	}
 	{perks
-		{"health" "250%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "150%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.75
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 0.8
-		}
-		
-		{"pistol" lvl_3
-		}
-		{"smg" lvl_4
-		}
-		{"mgun" lvl_2
-		}
-		{"rifle" lvl_2
-		}
-		{"rocketlauncher" lvl_2
-		}
-		{"melee" lvl_3
-		}
+		("soldier_smg_4" rocket(1) body(line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_lvl5")
-	}
+	("breed_vet" table(start5))
 	{inventory
-		{item "pps43" filled}
-		{item "ammo pps43_mag" 210}
+		("smg_pps43")
 		{item "bandage" 3}
-		{item "grenade f1" 2}
-		{item "grenade molotov_coctail" 0 1}
-		{item "grenade rpg43" 1}
-		{item "smoke grenade" 1}
+		("give" item(grenade f1) count(2))
+		("give_chance" item(grenade molotov_coctail) chance(25))
+		("give" item(grenade rpg43) count(1))
+		("give" item(smoke grenade) count(1))
 		{item "ru_backpack_meshok"}
 		{in_hands 0}
 	}

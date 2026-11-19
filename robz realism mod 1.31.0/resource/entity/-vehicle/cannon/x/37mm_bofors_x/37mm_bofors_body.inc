@@ -1,0 +1,5 @@
+{Extension "37mm_bofors_x.mdl"}
+{Volume "wheelleft"
+}
+{Volume "wheelright"
+}

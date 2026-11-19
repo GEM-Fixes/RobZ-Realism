@@ -1,126 +1,31 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/building.inc")
 	{props "cornered" "steel" "parts" "construction" "wall" "burning"}
 	("armor_heavy" args 1.0)
 	{Extension "belgian_gate_x.mdl"}
-	{Volume "body1"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body10"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body11"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body12r"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 0}{obstacle 0}}
-	}
-	{Volume "body13r"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 0}{obstacle 0}}
-	}
-	{Volume "body16"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body18"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body19"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body2"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body20"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body21"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body22"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body23r"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 0}{obstacle 0}}
-	}
-	{Volume "body24r"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 0}{obstacle 0}}
-	}
-	{Volume "body26r"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 0}{obstacle 0}}
-	}
-	{Volume "body27r"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 0}{obstacle 0}}
-	}
-	{Volume "body28r"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 0}{obstacle 0}}
-	}
-	{Volume "body3"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body4"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body5r"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 0}{obstacle 0}}
-	}
-	{Volume "body6r"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 0}{obstacle 0}}
-	}
-	{Volume "body7r"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 0}{obstacle 0}}
-	}
-	{Volume "body8r"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 0}{obstacle 0}}
-	}
-	{Volume "body9"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
+	("vol_body_visible" name(body1) mm(50))
+	("vol_body_visible" name(body10) mm(50))
+	("vol_body_visible" name(body11) mm(50))
+	("vol_body_hidden" name(body12r) mm(50))
+	("vol_body_hidden" name(body13r) mm(50))
+	("vol_body_visible" name(body16) mm(50))
+	("vol_body_visible" name(body18) mm(50))
+	("vol_body_visible" name(body19) mm(50))
+	("vol_body_visible" name(body2) mm(50))
+	("vol_body_visible" name(body20) mm(50))
+	("vol_body_visible" name(body21) mm(50))
+	("vol_body_visible" name(body22) mm(50))
+	("vol_body_hidden" name(body23r) mm(50))
+	("vol_body_hidden" name(body24r) mm(50))
+	("vol_body_hidden" name(body26r) mm(50))
+	("vol_body_hidden" name(body27r) mm(50))
+	("vol_body_hidden" name(body28r) mm(50))
+	("vol_body_visible" name(body3) mm(50))
+	("vol_body_visible" name(body4) mm(50))
+	("vol_body_hidden" name(body5r) mm(50))
+	("vol_body_hidden" name(body6r) mm(50))
+	("vol_body_hidden" name(body7r) mm(50))
+	("vol_body_hidden" name(body8r) mm(50))
+	("vol_body_visible" name(body9) mm(50))
 }

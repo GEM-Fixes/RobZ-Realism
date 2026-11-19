@@ -117,7 +117,7 @@
 		}
 		{offset 0 0 5}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/flash_g03a"
 					{timer
 						{mode play }
@@ -264,7 +264,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/explosion/bum2"
 					{timer
@@ -393,7 +393,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/grit"
 					{turn 1
 						{linear
@@ -450,7 +450,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/ground_exp2a"
 					{timer
 						{mode play }
@@ -596,7 +596,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04b"
 					{timer
 						{mode play }
@@ -732,7 +732,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04c"
 					{timer
 						{mode play }
@@ -813,7 +813,7 @@
 		}
 		{offset 0 0 80}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04b"
 					{timer
 						{mode play }
@@ -893,7 +893,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_turb2"
 					{timer
 						{mode play }
@@ -977,7 +977,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_100"
 					{scale 1
 						{linear
@@ -1111,7 +1111,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage initial 
+			{stage initial
 				{sprite "$/particle/pieces2"
 					{turn 1
 						{npower
@@ -1141,7 +1141,7 @@
 					}
 				}
 			}
-			{stage collided dying 
+			{stage collided dying
 				{flags killparticle ground }
 				{sprite "$/particle/pieces"
 					{visibility 1
@@ -1202,7 +1202,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/oskolki"
 					{scale 0.25 0.05}
 				}
@@ -1283,7 +1283,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/particle/metal_drops2"
 					{timer
@@ -1323,7 +1323,7 @@
 			{damping 0.8}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_s01"
 					{scale 1
 						{npower
@@ -1384,7 +1384,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/explosion/bum2"
 					{timer
@@ -1508,7 +1508,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/explosion/bum2"
 					{timer
@@ -1632,7 +1632,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/explosion/bum2"
 					{timer
@@ -1756,7 +1756,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/flash/flash_g03"
 					{timer
@@ -1889,7 +1889,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop_short"
 					{timer
 						{mode play }
@@ -2037,7 +2037,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop_short"
 					{timer
 						{mode play }
@@ -2177,7 +2177,7 @@
 			{## nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4a"
 					{timer
 						{mode play }
@@ -2234,7 +2234,7 @@
 			{## nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4a"
 					{timer
 						{mode play }
@@ -2279,7 +2279,7 @@
 		}
 		{offset 0 0 10}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/supershock"
 					{timer
 						{mode play }
@@ -2330,7 +2330,7 @@
 			{damping 0.98}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4c"
 					{timer
 						{mode play }
@@ -2405,7 +2405,7 @@
 			}
 		}
 		{visualizer
-			{stage initial 
+			{stage initial
 				{sprite "$/explosion/ground_exp2a"
 					{timer
 						{mode play }
@@ -2436,7 +2436,7 @@
 					}
 				}
 			}
-			{stage collided 
+			{stage collided
 				{sprite "$/explosion/ground_exp2a"
 					{timer
 						{mode play }
@@ -2482,7 +2482,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{## sprite "$/_bmp/smoke/smokeend_lightloop_short"
 					{timer
 						{mode play }
@@ -2630,7 +2630,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/grit"
 					{timer
 						{mode play }

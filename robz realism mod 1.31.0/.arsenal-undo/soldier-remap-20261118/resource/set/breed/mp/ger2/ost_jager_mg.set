@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-zelt-mgun"}
+	{portrait "ger2_elite1"}
+	{icon "mg"}
+	{icon_priority 2}
+	{nationality ger}
+	{armors
+		{head helmet_ger_m40_camo_foliage}
+	}
+	{perks
+		("body_veteran")
+		("drive_regular")
+		("skills_5_3_5_4_2_5")
+	}
+	("breed_vet" table(elite_start2))
+	{inventory
+		("mgun_mg42_inf")
+		("pistol_valter")
+		{item "bandage" 3}
+		;{item "sandbag_kit"}
+		{item "barrel_case"}
+		{in_hands 0}
+	}
+}

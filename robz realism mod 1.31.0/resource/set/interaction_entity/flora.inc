@@ -6,6 +6,9 @@
 		{view hide "shadow_fall"}
 		{call "update_texmod"}
 	}
+	; stir: {if {if}}
+	;   params - {ani_play}, [?]
+	;   e.g. ("stir" params(loop callback))
 	(define "stir"
 		{if not "bare"
 			{if not "started"
@@ -43,10 +46,10 @@
 	{on bullet_hit overload
 		{if volume "crown"
 			{spawn "tree_hit_small"}
-		 else volume "bole"
+			else volume "bole"
 			{if stuff "bullet"
 				{spawn "wood_hit_bul"}
-			 else stuff "shell"
+				else stuff "shell"
 				{spawn "tree_crush"}
 				{call "stir"}
 			}
@@ -55,7 +58,7 @@
 	{on blast
 		{if volume "crown"
 			{call "stir"}
-		else min_energy 2
+			else min_energy 2
 			{call "start_fall"}
 		}
 	}
@@ -63,7 +66,7 @@
 		{call "stir"}
 		{if effector "tank"
 			{call "start_fall"}
-		else effector "airborne"
+			else effector "airborne"
 			{call "start_fall"}
 		}
 	}
@@ -72,14 +75,14 @@
 			{if not "snow_fall"
 				{set "snow_fall" 1}
 				{burn volume "crown" fx "snow_fir" time 0.5 fake even_law}
-;				{tex_morph "_win0" 2}
+			;				{tex_morph "_win0" 2}
 			}
 		}
 	}
 	{on "start_fall"
-	   	{start_sound "crush/medium/tree"}
-   		{volumes "bole" disable contact blast}
-   		{pillar_fall}
+		{start_sound "crush/medium/tree"}
+		{volumes "bole" disable contact blast}
+		{pillar_fall}
 		{call "regenerate"}
 	}
 	{on "fallen"
@@ -94,13 +97,16 @@
 			{tags add "burned"}
 			{if "bare"
 				{tex_morph "_burned1" 8 "_burned3" 8}
-			else
+				else
 				{tex_morph "_burned0" 5 "_burned1" 5 "_burned3" 5}
 			}
 			{call "update_crown_visibility"}
 		}
 		{call "regenerate"}
 	}
+	; set_crown_visible: {volumes "crown"} {update_visibility_patch}
+	;   %0 - {volumes}, [?]
+	;   e.g. ("set_crown_visible" args disable)
 	(define "set_crown_visible"
 		{volumes "crown" %0 visible}
 		{update_visibility_patch}
@@ -108,18 +114,18 @@
 	{on "update_crown_visibility"
 		{if burned
 			("set_crown_visible" args disable)
-		else "bare"
+			else "bare"
 			("set_crown_visible" args disable)
-		else
+			else
 			("set_crown_visible" args enable)
 		}
 	}
 	{on "update_wind"
 		{if "bare"
 			{depend_on_wind 0}
-		else fallen
+			else fallen
 			{depend_on_wind 0}
-		else
+			else
 			{depend_on_wind 1}
 		}
 	}
@@ -129,9 +135,9 @@
 		{set "autlate" 0}
 		{if tex_mod "bare" "bare1" "broken" "_burned1" "_burned3" "win3"
 			{set "bare" 1}
-		else tex_mod "win" "win1" "win2"
+			else tex_mod "win" "win1" "win2"
 			{set "snow" 1}
-		else tex_mod "aut" "aut1" "aut2" "aut3" "autlate" "autlate1" "autlate2" "autlate3"
+			else tex_mod "aut" "aut1" "aut2" "aut3" "autlate" "autlate1" "autlate2" "autlate3"
 			{set "autlate" 1}
 		}
 		{if tex_mod "_crushed"
@@ -148,7 +154,7 @@
 			{delay 140
 				{set "crown_fall" 0}
 				{burn stop_retry}
-		   		{volumes "bole" enable contact blast}
+				{volumes "bole" enable contact blast}
 				{tex_mod reset}
 				{pillar_up}
 				{scale from 0.1 to 1 time 10}
@@ -164,7 +170,7 @@
 		{delay 4	{update_visibility_patch}}
 		{delay 7	{update_visibility_patch}}
 		{delay 10	{update_visibility_patch}}
-    }
+	}
 }
 
 {"bush"
@@ -176,9 +182,9 @@
 			{tags add "burned"}
 			{if "bare"
 				{tex_morph "_burned1" 5 "_burned3" 5}
-			else "snow"
+				else "snow"
 				{tex_morph "_burned1" 5 "_burned3" 5}
-			else
+				else
 				{tex_morph "_burned0" 3 "_burned1" 3 "_burned3" 3}
 			}
 			{delay 10
@@ -192,7 +198,7 @@
 		{call "snow_fall"}
 		{if fogged
 			("stir" params(loop fake callback))
-		else
+			else
 			("stir" params(loop callback))
 		}
 	}
@@ -203,16 +209,16 @@
 					{set "crown_fall" 1}
 					{if "bare"
 						{tex_morph "_burned1" 0.3 "_burned3" 0.3}
-					else "snow"
+						else "snow"
 						{tex_morph "_win0" 2}
-					else
+						else
 						{tex_morph "_burned0" 0.2 "_burned1" 0.2 "_burned3" 0.2}
 					}
 					{if "snow"
 						{spawn "snow_hit_small" no_position}
-					else "autlate"
+						else "autlate"
 						{spawn "tree_hit_big_out"}
-					else not "bare"
+						else not "bare"
 						{spawn "tree_hit_big"}
 					}
 					{call "regenerate"}
@@ -242,7 +248,7 @@
 			{tags add "burned"}
 			{if "bare"
 				{tex_morph "_burned1" 3 "_burned3" 3}
-			else
+				else
 				{tex_morph "_burned0" 2 "_burned1" 2 "_burned3" 2}
 			}
 			{delay 4
@@ -291,7 +297,7 @@
 	{on bullet_hit overload
 		{if rand 0.2
 			{call "crush"}
-		else
+			else
 			{if rand 0.3
 				{spawn "tree_hit_small"}
 			}
@@ -300,7 +306,7 @@
 	{on blast_hit
 		{if min_energy 1
 			{call "crush"}
-		else
+			else
 			{impulse up 2 1 dir 2 1}
 		}
 	}
@@ -313,7 +319,7 @@
 			{delay 0.5
 				{volumes "crown" enable contact}
 			}
-		else
+			else
 			{call "crush"}
 		}
 	}
@@ -339,6 +345,9 @@
 }
 
 {"tree foliage"
+	; foliage: {add_view "foliage"}
+	;   %0 - text in {add_view}
+	;   e.g. ("foliage" args 00)
 	(define "foliage"
 		{add_view "foliage" "foliage" "foliage%0"}
 	)

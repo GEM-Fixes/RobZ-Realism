@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "waffen-smock2-g43"}
 	{portrait "ger_soldier4"}
@@ -8,47 +9,10 @@
 		{head helmet_ger_m40_grass}
 	}
 	{perks
-		{"health" "350%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "150%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_sniper"
-		}
-		{"speed" 1.0
-		}
-		{"stealth"
-		}
-		{"telescope"
-		}
-		{"tank"	0.75
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 0.8
-		}
-		
-		{"pistol" lvl_4
-		}
-		{"smg" lvl_3
-		}
-		{"mgun" lvl_2
-		}
-		{"rifle" lvl_6
-		}
-		{"rocketlauncher" lvl_2
-		}
-		{"melee" lvl_4
-		}
-		{"aimedshot"}
+		("soldier_rifle_6" rocket(1) body(hardy) sight(sniper))
+		("perks_sniper")
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(elite))
 	{inventory
 		{item "g43_scope" filling "ammo g43_mag" 10}
 		{item "ammo g43_mag" 60}

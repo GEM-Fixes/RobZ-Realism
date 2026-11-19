@@ -3,14 +3,14 @@
 	{fireSound "gun/50to76_cal/75mm_kwk40"}
 	{reloadSound "gun_r03"}
 	{rechargeTime 5.5}
-	("range_medium")  
+	("range_medium")
 	("caliber_medium")
 	("speed" s(425))
 	{projectileDamage 50}
 	("damage" a(48) b(41) c(36) d(32) e(29))
 	{parameters "apcr"
 		("speed" s(476))
-        		("damage" a(59) b(49) c(39) d(30) e(26))
+		("damage" a(59) b(49) c(39) d(30) e(26))
 	}
 	{parameters "cu"
 		("speed" s(400))

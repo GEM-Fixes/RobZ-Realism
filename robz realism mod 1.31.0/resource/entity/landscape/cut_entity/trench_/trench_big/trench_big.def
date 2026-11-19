@@ -11,43 +11,43 @@
 	("volume" args "body5")
 	("volume" args "body6")
 	{ObstacleID "trench_wall"}
-	
+
 	{Volume "c1"
 		{Tags  "attach" "1"}
 		{able clear {touch 1}}
 		{density 0}
 	}
-		{Volume "c2"
+	{Volume "c2"
 		{Tags  "attach" "2"}
 		{able clear {touch 1}}
 		{density 0}
 	}
-		{Volume "c3"
+	{Volume "c3"
 		{Tags  "attach" "3"}
 		{able clear {touch 1}}
 		{density 0}
 	}
-		{Volume "c4"
+	{Volume "c4"
 		{Tags  "attach" "4"}
 		{able clear {touch 1}}
 		{density 0}
 	}
-		{Volume "c5"
+	{Volume "c5"
 		{Tags  "attach" "5"}
 		{able clear {touch 1}}
 		{density 0}
 	}
-		{Volume "c6"
+	{Volume "c6"
 		{Tags  "attach" "6"}
 		{able clear {touch 1}}
 		{density 0}
 	}
-		{Volume "c7"
+	{Volume "c7"
 		{Tags  "attach" "7"}
 		{able clear {touch 1}}
 		{density 0}
 	}
-		{Volume "c8"
+	{Volume "c8"
 		{Tags  "attach" "8"}
 		{able clear {touch 1}}
 		{density 0}
@@ -61,7 +61,7 @@
 		{place "c6" {attach squat_lie} {linkbone "c6"}}
 		{place "c7" {attach squat_lie} {linkbone "c7"}}
 		{place "c8" {attach squat_lie} {linkbone "c8"}}
-	}	
+	}
 	{boarder
 		{door "d1" {queue 0}}
 		{link "d1" "c1"}

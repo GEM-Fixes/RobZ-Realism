@@ -6,143 +6,143 @@
 
 ;같캧nfantry only같�
 
-{"bedford_inf"      ("vs" c(60) t(inf_only) 	s(eng) n(2) g(a1) sc(50)  b(v1) cw(0) cp(0)) {level 1} {cost 50} {fore 1.0}}			;0sec
+("unit_vehicle_supporters" side(eng) name(bedford_inf) breed(vehicle_supporter) crew(2) charge(60) tags(inf_only) group(a1) button(v1) score(50) weight(0) points(0) level(1) cost(50) fore(1.0))			;0sec
 
 
 
 
 ;같캛utton 1같�
 
-{"willysmb_eng"     ("vs" c(30) t(all 42 43 44 45 inf_only) s(eng) n(3) g(b1) sc(125)  b(v1) cw(0) cp(0)) {level 1} {cost 125} {fore 0.0}}		;30sec
-{"dodgewc55"        ("vs" c(30) t(all 41 42 43 44 45) 	s(eng) n(4) g(b2) sc(220) b(v1) cw(0) cp(0)) {level 1} {cost 220} {fore -3.0}}		;120sec
-{"m3_eng"           ("vs" c(60) t(all 42 43 44 45) 	s(eng) n(2) g(b3) sc(200)  b(v1) cw(0) cp(0)) {level 1} {cost 200} {fore -3.0}}			;240sec
-{"universal_carrier" ("vs" c(10) t(all 40 41 42 43 44 45) 	s(eng) n(2) g(b4) sc(125)  b(v1) cw(0) cp(0)) {level 1} {cost 125} {fore -17.0}}	;180sec
-{"churchill_kangaroo" ("vs" c(540) t(all heavy 44 45) 	s(eng) n(2) g(b5) sc(450) b(v1) cw(0) cp(5)) {level 1} {cost 450} {fore 0.0}}		;540sec
+("unit_vehicle_supporters" side(eng) name(willysmb_eng) breed(vehicle_supporter) crew(3) charge(30) tags(all 42 43 44 45 inf_only) group(b1) button(v1) score(125) weight(0) points(0) level(1) cost(125) fore(0.0))		;30sec
+("unit_vehicle_supporters" side(eng) name(dodgewc55) breed(vehicle_supporter) crew(4) charge(30) tags(all 41 42 43 44 45) group(b2) button(v1) score(220) weight(0) points(0) level(1) cost(220) fore(-3.0))		;120sec
+("unit_vehicle_supporters" side(eng) name(m3_eng) breed(vehicle_supporter) crew(2) charge(60) tags(all 42 43 44 45) group(b3) button(v1) score(200) weight(0) points(0) level(1) cost(200) fore(-3.0))			;240sec
+("unit_vehicle_supporters" side(eng) name(universal_carrier) breed(vehicle_supporter) crew(2) charge(10) tags(all 40 41 42 43 44 45) group(b4) button(v1) score(125) weight(0) points(0) level(1) cost(125) fore(-17.0))	;180sec
+("unit_vehicle_supporters" side(eng) name(churchill_kangaroo) breed(vehicle_supporter) crew(2) charge(540) tags(all heavy 44 45) group(b5) button(v1) score(450) weight(0) points(5) level(1) cost(450) fore(0.0))		;540sec
 
-{"bedford"	    ("vs" c(0) t(all 40 41 42 43 44 45) 	s(eng) n(2) g(b6) sc(100)  b(v1) cw(0) cp(0)) {level 1} {cost 100} {fore 0.0}}			;0sec
-{"bedford_art"      ("vs" c(0) t(all 40 41 42 43 44 45) 	s(eng) n(2) g(b7) sc(300)  b(v1) cw(0) cp(0)) {level 1} {cost 300} {fore 0.0}}	;0sec
-{"bedford_eng"      ("vs" c(0) t(all 40 41 42 43 44 45) 	s(eng) n(2) g(b8) sc(250)  b(v1) cw(0) cp(0)) {level 1} {cost 250} {fore 0.0}}	;0sec
-{"ammo_box_eng_inf" ("vs" c(0) t(all 40 41 42 43 44 45) 	s(eng) n(2) g(b9) sc(25) b(v1) cw(0) cp(0)) {level 1} {cost 25} {fore 0.0}}		;0sec
-{"ammo_box_eng_art" ("vs" c(0) t(all 40 41 42 43 44 45) 	s(eng) n(2) g(b10) sc(75) b(v1) cw(0) cp(0)) {level 1} {cost 75} {fore 0.0}}		;0sec
-{"ammo_box_eng_special" ("vs" c(300) t(all 43 44 45) 		s(eng) n(2) g(b11) sc(100) b(v1) cw(0) cp(0)) {level 1} {cost 100} {fore 0.0}}		;0sec
+("unit_vehicle_supporters" side(eng) name(bedford) breed(vehicle_supporter) crew(2) charge(0) tags(all 40 41 42 43 44 45) group(b6) button(v1) score(100) weight(0) points(0) level(1) cost(100) fore(0.0))			;0sec
+("unit_vehicle_supporters" side(eng) name(bedford_art) breed(vehicle_supporter) crew(2) charge(0) tags(all 40 41 42 43 44 45) group(b7) button(v1) score(300) weight(0) points(0) level(1) cost(300) fore(0.0))	;0sec
+("unit_vehicle_supporters" side(eng) name(bedford_eng) breed(vehicle_supporter) crew(2) charge(0) tags(all 40 41 42 43 44 45) group(b8) button(v1) score(250) weight(0) points(0) level(1) cost(250) fore(0.0))	;0sec
+("unit_vehicle_supporters" side(eng) name(ammo_box_eng_inf) breed(vehicle_supporter) crew(2) charge(0) tags(all 40 41 42 43 44 45) group(b9) button(v1) score(25) weight(0) points(0) level(1) cost(25) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(eng) name(ammo_box_eng_art) breed(vehicle_supporter) crew(2) charge(0) tags(all 40 41 42 43 44 45) group(b10) button(v1) score(75) weight(0) points(0) level(1) cost(75) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(eng) name(ammo_box_eng_special) breed(vehicle_supporter) crew(2) charge(300) tags(all 43 44 45) group(b11) button(v1) score(100) weight(0) points(0) level(1) cost(100) fore(0.0))		;0sec
 
 
 
 
 ;같캛utton 2같�
 
-{"303_bren_tripod"  ("vs" c(10) t(all 43 44 45) s(eng) n(2) g(c1) sc(100)  b(v2) cw(2) cp(5)) {level 1} {cost 100} {fore -2.0}}		;30sec
-{"303_vickers_mkiv" ("vs" c(10) t(all 43 44 45) s(eng) n(2) g(c2) sc(125)  b(v2) cw(2) cp(5)) {level 1} {cost 125} {fore -2.0}}		;30sec
-{"oerlikon"         ("vs" c(30) t(all 43 44 45) s(eng) n(1) g(c3) sc(170) b(v2) cw(2) cp(5)) {level 1} {cost 170} {fore -4.0}}			;150sec
-{"light_mortar_eng"     ("light_mortar_eng" c(10) t(all 43 44 45 mortar) s(eng) g(c4) b(v2)) {level 1} {cost 170} {fore -2.0}}		;30sec
-{"ml_3_inch_mk_ii"  ("vs" c(10) t(all 43 44 45 mortar) s(eng) n(2) g(c5) sc(340) b(v2) cw(2) cp(5)) {level 1} {cost 340} {fore -2.0}}		;30sec
-{"4_2_inch_mk_ii"   ("vs" c(60) t(all 43 44 45 mortar) s(eng) n(2) g(c6) sc(620) b(v2) cw(2) cp(10)) {level 1} {cost 620} {fore -9.0}}	;600sec
+("unit_vehicle_supporters" side(eng) name(303_bren_tripod) breed(vehicle_supporter) crew(2) charge(10) tags(all 43 44 45) group(c1) button(v2) score(100) weight(2) points(5) level(1) cost(100) fore(-2.0))		;30sec
+("unit_vehicle_supporters" side(eng) name(303_vickers_mkiv) breed(vehicle_supporter) crew(2) charge(10) tags(all 43 44 45) group(c2) button(v2) score(125) weight(2) points(5) level(1) cost(125) fore(-2.0))		;30sec
+("unit_vehicle_supporters" side(eng) name(oerlikon) breed(vehicle_supporter) crew(1) charge(30) tags(all 43 44 45) group(c3) button(v2) score(170) weight(2) points(5) level(1) cost(170) fore(-4.0))			;150sec
+("unit_light_mortar_2" side(eng) name(light_mortar_eng) charge(10) tags(all 43 44 45 mortar) group(c4) button(v2) level(1) cost(170) fore(-2.0))		;30sec
+("unit_vehicle_supporters" side(eng) name(ml_3_inch_mk_ii) breed(vehicle_supporter) crew(2) charge(10) tags(all 43 44 45 mortar) group(c5) button(v2) score(340) weight(2) points(5) level(1) cost(340) fore(-2.0))		;30sec
+("unit_vehicle_supporters" side(eng) name(4_2_inch_mk_ii) breed(vehicle_supporter) crew(2) charge(60) tags(all 43 44 45 mortar) group(c6) button(v2) score(620) weight(2) points(10) level(1) cost(620) fore(-9.0))	;600sec
 
-{"qf2"       	    ("vs" c(10) t(all 43 44 45) 	s(eng) n(2) g(c7) sc(225)  b(v2) cw(2) cp(5)) {level 1} {cost 225} {fore -2.0}}		;30sec
-{"qf6_43"           ("vs" c(20) t(43) 			s(eng) n(2) g(c8) sc(350) b(v2) cw(2) cp(10)) {level 1} {cost 350} {fore -14.0}}		;300sec
-{"qf6"              ("vs" c(20) t(all 44 45) 		s(eng) n(2) g(c9) sc(350) b(v2) cw(2) cp(10)) {level 1} {cost 350} {fore -14.0}}		;300sec
-{"qf17_43"          ("vs" c(30) t(medium 43) 		s(eng) n(2) g(c10) sc(600) b(v2) cw(2) cp(15)) {level 1} {cost 600} {fore -29.0}}		;900sec
-{"qf17"             ("vs" c(30) t(all medium 44 45) 	s(eng) n(2) g(c11) sc(600) b(v2) cw(2) cp(15)) {level 1} {cost 600} {fore -29.0}}		;900sec
+("unit_vehicle_supporters" side(eng) name(qf2) breed(vehicle_supporter) crew(2) charge(10) tags(all 43 44 45) group(c7) button(v2) score(225) weight(2) points(5) level(1) cost(225) fore(-2.0))		;30sec
+("unit_vehicle_supporters" side(eng) name(qf6_43) breed(vehicle_supporter) crew(2) charge(20) tags(43) group(c8) button(v2) score(350) weight(2) points(10) level(1) cost(350) fore(-14.0))		;300sec
+("unit_vehicle_supporters" side(eng) name(qf6) breed(vehicle_supporter) crew(2) charge(20) tags(all 44 45) group(c9) button(v2) score(350) weight(2) points(10) level(1) cost(350) fore(-14.0))		;300sec
+("unit_vehicle_supporters" side(eng) name(qf17_43) breed(vehicle_supporter) crew(2) charge(30) tags(medium 43) group(c10) button(v2) score(600) weight(2) points(15) level(1) cost(600) fore(-29.0))		;900sec
+("unit_vehicle_supporters" side(eng) name(qf17) breed(vehicle_supporter) crew(2) charge(30) tags(all medium 44 45) group(c11) button(v2) score(600) weight(2) points(15) level(1) cost(600) fore(-29.0))		;900sec
 
-("how_y" side(eng) name(how_aa) c(60) c1(universal_carrier) c2(vickers) 	t(heavyaa all medium 43 44 45) g(c12) b(v2) level(1) cost(600) f(-14.0))		;900sec
+("unit_howitzer" side(eng) name(how_aa) vehicle2(vickers) charge(60) tags(heavyaa all medium 43 44 45) group(c12) button(v2) level(1) cost(600) fore(-14.0))		;900sec
 
 
 
-("how_y" side(eng) name(how_b) c(60) c1(universal_carrier) c2(pdr25) 	t(all artillery 43 44 45) g(c13) b(v22) level(1) cost(400) f(-14.0))			;900sec
-("how_y" side(eng) name(bl45) c(60) c1(universal_carrier) c2(bl45) 	t(all artillery 43 44 45) g(c14) b(v22) level(1) cost(650) f(-14.0))			;900sec
-("how_y" side(eng) name(how_a) c(60) c1(universal_carrier) c2(bl6)   	t(all artillery heavyart heavy 43 44 45) g(c15) b(v22) level(1) cost(650) f(-14.0))	;900sec
-("how_y" side(eng) name(long_tom) c(60) c1(universal_carrier) c2(longtom_155mm)   t(all artillery heavyart heavy 43 44 45) g(c155) b(v22) level(1) cost(1000) f(-19.0))	;1200sec
-("how_y" side(eng) name(bl72) c(60) c1(universal_carrier) c2(bl72)   t(all artillery heavyart heavy 44 45) g(c183) b(v22) level(1) cost(1100) f(-19.0))	;1200sec
+("unit_howitzer" side(eng) name(how_b) vehicle2(pdr25) charge(60) tags(all artillery 43 44 45) group(c13) button(v22) level(1) cost(400) fore(-14.0))			;900sec
+("unit_howitzer" side(eng) name(bl45) vehicle2(bl45) charge(60) tags(all artillery 43 44 45) group(c14) button(v22) level(1) cost(650) fore(-14.0))			;900sec
+("unit_howitzer" side(eng) name(how_a) vehicle2(bl6) charge(60) tags(all artillery heavyart heavy 43 44 45) group(c15) button(v22) level(1) cost(650) fore(-14.0))	;900sec
+("unit_howitzer" side(eng) name(long_tom) vehicle2(longtom_155mm) charge(60) tags(all artillery heavyart heavy 43 44 45) group(c155) button(v22) level(1) cost(1000) fore(-19.0))	;1200sec
+("unit_howitzer" side(eng) name(bl72) vehicle2(bl72) charge(60) tags(all artillery heavyart heavy 44 45) group(c183) button(v22) level(1) cost(1100) fore(-19.0))	;1200sec
 
-{"gun_carrier_3_inch" ("vs" c(10) t(all 43 44 45 mortar) 	s(eng) n(4) g(c16) sc(390) b(v22) cw(0) cp(10)) {level 1} {cost 390} {fore -31.0}}		;320sec
-{"bishop"           ("v"  c(60) t(all artillery 43) 		s(eng) n1(3) n2(1) g(c17) sc(600) b(v22) cw(0) cp(15)) {level 1} {cost 600} {fore -14.0}}	;900sec
-{"m7_eng"           ("v" c(60) t(all artillery 43 44 45) 	s(eng) n1(3) n2(1) g(c18) sc(850) b(v22) cw(0) cp(15)) {level 1} {cost 850} {fore -14.0}}	;900sec
-("how_y" side(eng) name(land_mattress) c(60) c1(universal_carrier) c2(land_mattress)   t(all artillery heavyart rocket 44 45) g(c19) b(v22) level(1) cost(750) f(-19.0));1200sec
+("unit_vehicle_supporters" side(eng) name(gun_carrier_3_inch) breed(vehicle_supporter) crew(4) charge(10) tags(all 43 44 45 mortar) group(c16) button(v22) score(390) weight(0) points(10) level(1) cost(390) fore(-31.0))		;320sec
+("unit_tank" side(eng) name(bishop) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(60) tags(all artillery 43) group(c17) button(v22) score(600) weight(0) points(15) level(1) cost(600) fore(-14.0))	;900sec
+("unit_tank" side(eng) name(m7_eng) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(60) tags(all artillery 43 44 45) group(c18) button(v22) score(850) weight(0) points(15) level(1) cost(850) fore(-14.0))	;900sec
+("unit_howitzer" side(eng) name(land_mattress) vehicle2(land_mattress) charge(60) tags(all artillery heavyart rocket 44 45) group(c19) button(v22) level(1) cost(750) fore(-19.0));1200sec
 
 
 
 
 ;같캛utton 3같�
 
-{"mk7"    	    ("v" c(10) t(all 43 44 45) 	s(eng) n1(2) n2(1) g(d1) sc(230) b(v3) cw(0) cp(5)) {level 1} {cost 230} {fore -31.0}}	;320sec
-{"humber"	    ("v" c(10) t(all 43 44 45) 	s(eng) n1(3) n2(1) g(d2) sc(240) b(v3) cw(0) cp(5)) {level 1} {cost 240} {fore -37.0}}	;380sec
-{"mk2daimler"       ("v" c(10) t(all 43 44 45) 	s(eng) n1(2) n2(1) g(d3) sc(240) b(v3) cw(0) cp(5)) {level 1} {cost 240} {fore -41.0}}	;420sec
-{"staghound"       	("v" c(10) t(all 42 43 44 45) 	s(eng) n1(3) n2(1) g(d31) sc(300) b(v3) cw(0) cp(5)) {level 1} {cost 300} {fore -41.0}}	;420sec
-{"staghound_mk3"    ("v" c(10) t(all 45) 			s(eng) n1(3) n2(1) g(d32) sc(350) b(v3) cw(0) cp(5)) {level 1} {cost 350} {fore -45.0}}	;460sec
+("unit_tank" side(eng) name(mk7) breed1(tankman) breed2(tankman2) crew1(2) crew2(1) charge(10) tags(all 43 44 45) group(d1) button(v3) score(230) weight(0) points(5) level(1) cost(230) fore(-31.0))	;320sec
+("unit_tank" side(eng) name(humber) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(all 43 44 45) group(d2) button(v3) score(240) weight(0) points(5) level(1) cost(240) fore(-37.0))	;380sec
+("unit_tank" side(eng) name(mk2daimler) breed1(tankman) breed2(tankman2) crew1(2) crew2(1) charge(10) tags(all 43 44 45) group(d3) button(v3) score(240) weight(0) points(5) level(1) cost(240) fore(-41.0))	;420sec
+("unit_tank" side(eng) name(staghound) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(all 42 43 44 45) group(d31) button(v3) score(300) weight(0) points(5) level(1) cost(300) fore(-41.0))	;420sec
+("unit_tank" side(eng) name(staghound_mk3) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(all 45) group(d32) button(v3) score(350) weight(0) points(5) level(1) cost(350) fore(-45.0))	;460sec
 ; [removed - unit not in 1.30.10] {"cruisermk1"       ("v" c(10) t(all) 		s(eng) n1(3) n2(1) g(d4) sc(16.00) b(v3) cw(0) cp(5)) {level 1} {cost 320} {fore -45.0}}	;460sec
 ; [removed - unit not in 1.30.10] {"cruisermk3"       ("v" c(10) t(all) 		s(eng) n1(2) n2(1) g(d5) sc(17.50) b(v3) cw(0) cp(5)) {level 1} {cost 350} {fore -45.0}}	;460sec
-{"matildamk1"       ("v" c(10) t(all) 		s(eng) n1(1) n2(1) g(d6) sc(300) b(v3) cw(0) cp(5)) {level 1} {cost 300} {fore -49.0}}	;500sec
-{"mk3"              ("v" c(10) t(all 43 44 45) 	s(eng) n1(3) n2(1) g(d7) sc(370) b(v3) cw(0) cp(5)) {level 1} {cost 370} {fore -53.0}}	;540sec
+("unit_tank" side(eng) name(matildamk1) breed1(tankman) breed2(tankman2) crew1(1) crew2(1) charge(10) tags(all) group(d6) button(v3) score(300) weight(0) points(5) level(1) cost(300) fore(-49.0))	;500sec
+("unit_tank" side(eng) name(mk3) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(all 43 44 45) group(d7) button(v3) score(370) weight(0) points(5) level(1) cost(370) fore(-53.0))	;540sec
 
-{"m3stuart_eng"     ("v" c(10) t(all 43 44 45) 	s(eng) n1(3) n2(1) g(d8) sc(280) b(v3) cw(0) cp(5)) {level 1} {cost 280} {fore -45.0}}	;460sec
-{"m5a1_eng"         ("v" c(10) t(all 43 44 45) 	s(eng) n1(3) n2(1) g(d9) sc(300) b(v3) cw(0) cp(5)) {level 1} {cost 300} {fore -45.0}}	;460sec
-{"crusaderaa2"      ("v" c(30) t(all 43 44 45) 	s(eng) n1(2) n2(1) g(d10) sc(300) b(v3) cw(0) cp(10)) {level 1} {cost 300} {fore -16.3}}	;520sec
-{"crusaderaa1"      ("v" c(30) t(all 43 44 45) 	s(eng) n1(3) n2(1) g(d11) sc(380) b(v3) cw(0) cp(10)) {level 1} {cost 380} {fore -18.3}}	;580sec
-{"m4a3m_eng"        ("v" c(150) t(deminer) 	s(eng) n1(1) n2(1) g(d12) sc(250) b(v3) cw(0) cp(0)) {level 1} {cost 250} {fore 0}}
+("unit_tank" side(eng) name(m3stuart_eng) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(all 43 44 45) group(d8) button(v3) score(280) weight(0) points(5) level(1) cost(280) fore(-45.0))	;460sec
+("unit_tank" side(eng) name(m5a1_eng) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(all 43 44 45) group(d9) button(v3) score(300) weight(0) points(5) level(1) cost(300) fore(-45.0))	;460sec
+("unit_tank" side(eng) name(crusaderaa2) breed1(tankman) breed2(tankman2) crew1(2) crew2(1) charge(30) tags(all 43 44 45) group(d10) button(v3) score(300) weight(0) points(10) level(1) cost(300) fore(-16.3))	;520sec
+("unit_tank" side(eng) name(crusaderaa1) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(30) tags(all 43 44 45) group(d11) button(v3) score(380) weight(0) points(10) level(1) cost(380) fore(-18.3))	;580sec
+("unit_tank" side(eng) name(m4a3m_eng) breed1(tankman) breed2(tankman2) crew1(1) crew2(1) charge(150) tags(deminer) group(d12) button(v3) score(250) weight(0) points(0) level(1) cost(250) fore(0))
 
 
 
 
 ;같캛utton 4같�
 
-{"m3grant"          ("v" c(10) t(all 43 medium arcade) 	s(eng) n1(3) n2(1) g(e0) sc(380) b(v4) cw(0) cp(15)) {level 1} {cost 380} {fore -59.0}}	;600sec
-{"mk6_42"           ("v" c(10) t(43) 			s(eng) n1(3) n2(1) g(e1) sc(350) b(v4) cw(0) cp(15)) {level 1} {cost 350} {fore -59.0}}	;600sec
-{"mk6"       	    ("v" c(10) t(all medium 44 45) 	s(eng) n1(3) n2(1) g(e1) sc(350) b(v4) cw(0) cp(15)) {level 1} {cost 350} {fore -59.0}}	;600sec
-{"mk2a"             ("v" c(10) t(all medium 43 44 45) 	s(eng) n1(3) n2(1) g(e4) sc(380) b(v4) cw(0) cp(15)) {level 1} {cost 380} {fore -59.0}}	;600sec
-{"cromwell_mk_iv"   ("v" c(10) t(all medium 44 45) 	s(eng) n1(3) n2(1) g(e2) sc(380) b(v4) cw(0) cp(15)) {level 1} {cost 380} {fore -60.0}}	;600sec
-{"cromwell_mk_vii"  ("v" c(10) t(all medium 44 45) 	s(eng) n1(3) n2(1) g(e2) sc(430) b(v4) cw(0) cp(15)) {level 1} {cost 430} {fore -65.0}}	;660sec
-{"cromwell_mk_vi"   ("v" c(10) t(all medium 44 45) 	s(eng) n1(3) n2(1) g(e3) sc(450) b(v4) cw(0) cp(15)) {level 1} {cost 450} {fore -60.0}}	;600sec
-{"cromwell_mk_viii" ("v" c(10) t(all medium 44 45) 	s(eng) n1(3) n2(1) g(e3) sc(500) b(v4) cw(0) cp(15)) {level 1} {cost 500} {fore -65.0}}	;660sec
+("unit_tank" side(eng) name(m3grant) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(all 43 medium arcade) group(e0) button(v4) score(380) weight(0) points(15) level(1) cost(380) fore(-59.0))	;600sec
+("unit_tank" side(eng) name(mk6_42) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(43) group(e1) button(v4) score(350) weight(0) points(15) level(1) cost(350) fore(-59.0))	;600sec
+("unit_tank" side(eng) name(mk6) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(all medium 44 45) group(e1) button(v4) score(350) weight(0) points(15) level(1) cost(350) fore(-59.0))	;600sec
+("unit_tank" side(eng) name(mk2a) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(all medium 43 44 45) group(e4) button(v4) score(380) weight(0) points(15) level(1) cost(380) fore(-59.0))	;600sec
+("unit_tank" side(eng) name(cromwell_mk_iv) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(all medium 44 45) group(e2) button(v4) score(380) weight(0) points(15) level(1) cost(380) fore(-60.0))	;600sec
+("unit_tank" side(eng) name(cromwell_mk_vii) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(all medium 44 45) group(e2) button(v4) score(430) weight(0) points(15) level(1) cost(430) fore(-65.0))	;660sec
+("unit_tank" side(eng) name(cromwell_mk_vi) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(all medium 44 45) group(e3) button(v4) score(450) weight(0) points(15) level(1) cost(450) fore(-60.0))	;600sec
+("unit_tank" side(eng) name(cromwell_mk_viii) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(all medium 44 45) group(e3) button(v4) score(500) weight(0) points(15) level(1) cost(500) fore(-65.0))	;660sec
 
-{"m4a1_eng"         ("v" c(10) t(all medium 43 44 45) 		s(eng) n1(3) n2(1) g(e5) sc(380) b(v4) cw(0) cp(15)) {level 1} {cost 380} {fore -59.0}}	;600sec
-{"m4a1_76w_eng"     ("v" c(60) t(all medium 44 45) 		s(eng) n1(3) n2(1) g(e6) sc(575) b(v4) cw(0) cp(15)) {level 1} {cost 575} {fore -14.0}}	;900sec
-{"m4a4"             ("v" c(10) t(all medium 43 44 45) 		s(eng) n1(4) n2(1) g(e7) sc(400) b(v4) cw(0) cp(15)) {level 1} {cost 400} {fore -59.0}}	;600sec
-{"m4a4_tulip"       ("v" c(60) t(all medium 45) 		s(eng) n1(4) n2(1) g(e8) sc(500) b(v4) cw(0) cp(15)) {level 1} {cost 500} {fore -11.0}}	;720sec
-{"mk4"              ("v" c(10) t(all medium arcade 44 45) 	s(eng) n1(3) n2(1) g(e9) sc(600) b(v4) cw(0) cp(15)) {level 1} {cost 600} {fore -65.0}} 	;660sec
-{"cometa34"         ("v" c(60) t(all medium 44 45) 		s(eng) n1(3) n2(1) g(e10) sc(750) b(v4) cw(0) cp(15)) {level 1} {cost 750} {fore -15.0}}	;960sec
-{"cometa34_elite_gun" ("v3_tank" c(700) t(all medium 44 45) 	s(eng) n1(tankman:2) n2(tankman2:1) n3(elite_tankman:1) g(e101) sc(950) b(v4) cw(0) cp(15)) {level 1} {cost 950} {fore -1.0}}	;1400sec
+("unit_tank" side(eng) name(m4a1_eng) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(all medium 43 44 45) group(e5) button(v4) score(380) weight(0) points(15) level(1) cost(380) fore(-59.0))	;600sec
+("unit_tank" side(eng) name(m4a1_76w_eng) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(60) tags(all medium 44 45) group(e6) button(v4) score(575) weight(0) points(15) level(1) cost(575) fore(-14.0))	;900sec
+("unit_tank" side(eng) name(m4a4) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(10) tags(all medium 43 44 45) group(e7) button(v4) score(400) weight(0) points(15) level(1) cost(400) fore(-59.0))	;600sec
+("unit_tank" side(eng) name(m4a4_tulip) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(60) tags(all medium 45) group(e8) button(v4) score(500) weight(0) points(15) level(1) cost(500) fore(-11.0))	;720sec
+("unit_tank" side(eng) name(mk4) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(all medium arcade 44 45) group(e9) button(v4) score(600) weight(0) points(15) level(1) cost(600) fore(-65.0)) 	;660sec
+("unit_tank" side(eng) name(cometa34) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(60) tags(all medium 44 45) group(e10) button(v4) score(750) weight(0) points(15) level(1) cost(750) fore(-15.0))	;960sec
+("unit_tank_three_crew" side(eng) name(cometa34_elite_gun) member1(tankman:2) member2(tankman2:1) member3(elite_tankman:1) charge(700) tags(all medium 44 45) group(e101) button(v4) score(950) weight(0) points(15) level(1) cost(950) fore(-1.0))	;1400sec
 
-{"challenger_a30"   ("v" c(60) t(all medium 44 45) 	s(eng) n1(4) n2(1) g(e11) sc(850) b(v4) cw(0) cp(15)) {level 1} {cost 850} {fore -19.0}}	;1200sec
-{"m4a4_firefly"     ("v" c(60) t(all medium 44 45) 	s(eng) n1(4) n2(1) g(e11) sc(900) b(v4) cw(0) cp(15)) {level 1} {cost 900} {fore -21.0}}	;1320sec
-{"m4a4_firefly_elite_gun"     ("v3_tank" c(800) t(all medium 44 45) 	s(eng) n1(tankman:3) n2(tankman2:1) n3(elite_tankman:1) g(e111) sc(1100) b(v4) cw(0) cp(15)) {level 1} {cost 1100} {fore -1.0}}	;1700sec
-{"churchill_mk_ix" ("v" c(60) t(all heavy 44 45) 	s(eng) n1(3) n2(1) g(e12) sc(650) b(v4) cw(0) cp(20)) {level 1} {cost 650} {fore -10.0}}	;660sec
-{"churchill_mk_vii" ("v" c(60) t(all heavy 44 45) 	s(eng) n1(3) n2(1) g(e12) sc(800) b(v4) cw(0) cp(25)) {level 1} {cost 800} {fore -15.0}}	;960sec
-{"churchill_mk_v_cs" ("v" c(60) t(all heavy 44 45) 	s(eng) n1(3) n2(1) g(e12) sc(800) b(v4) cw(0) cp(25)) {level 1} {cost 800} {fore -15.0}}	;960sec
-{"churchill_crocodile" ("v" c(60) t(all heavy 44 45) 	s(eng) n1(3) n2(1) g(e12) sc(850) b(v4) cw(0) cp(25)) {level 1} {cost 850} {fore -15.0}}	;960sec
-{"churchill_avre"   ("v" c(60) t(all heavy 44 45) 	s(eng) n1(3) n2(1) g(e12) sc(600) b(v4) cw(0) cp(20)) {level 1} {cost 600} {fore -15.0}}	;960sec
+("unit_tank" side(eng) name(challenger_a30) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(60) tags(all medium 44 45) group(e11) button(v4) score(850) weight(0) points(15) level(1) cost(850) fore(-19.0))	;1200sec
+("unit_tank" side(eng) name(m4a4_firefly) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(60) tags(all medium 44 45) group(e11) button(v4) score(900) weight(0) points(15) level(1) cost(900) fore(-21.0))	;1320sec
+("unit_tank_three_crew" side(eng) name(m4a4_firefly_elite_gun) member1(tankman:3) member2(tankman2:1) member3(elite_tankman:1) charge(800) tags(all medium 44 45) group(e111) button(v4) score(1100) weight(0) points(15) level(1) cost(1100) fore(-1.0))	;1700sec
+("unit_tank" side(eng) name(churchill_mk_ix) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(60) tags(all heavy 44 45) group(e12) button(v4) score(650) weight(0) points(20) level(1) cost(650) fore(-10.0))	;660sec
+("unit_tank" side(eng) name(churchill_mk_vii) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(60) tags(all heavy 44 45) group(e12) button(v4) score(800) weight(0) points(25) level(1) cost(800) fore(-15.0))	;960sec
+("unit_tank" side(eng) name(churchill_mk_v_cs) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(60) tags(all heavy 44 45) group(e12) button(v4) score(800) weight(0) points(25) level(1) cost(800) fore(-15.0))	;960sec
+("unit_tank" side(eng) name(churchill_crocodile) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(60) tags(all heavy 44 45) group(e12) button(v4) score(850) weight(0) points(25) level(1) cost(850) fore(-15.0))	;960sec
+("unit_tank" side(eng) name(churchill_avre) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(60) tags(all heavy 44 45) group(e12) button(v4) score(600) weight(0) points(20) level(1) cost(600) fore(-15.0))	;960sec
 
-{"centurion"        ("v" c(850) t(all postwar heavy) 	s(eng) n1(4) n2(1) g(e13) sc(2000) b(v4) cw(0) cp(30)) {level 1} {cost 2000} {fore -1.0}} 	;1700sec
+("unit_tank" side(eng) name(centurion) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(850) tags(all postwar heavy) group(e13) button(v4) score(2000) weight(0) points(30) level(1) cost(2000) fore(-1.0)) 	;1700sec
 
 
 
 
 ;같캛utton 5같�
 
-{"archer"           ("v" c(60) t(all medium 43 44 45) 	s(eng) n1(3) n2(1) g(f1) sc(775) b(v5) cw(0) cp(10)) {level 1} {cost 775} {fore -14.0}} 	;900sec
-{"m10wolverine_eng"  ("v" c(10) t(all medium 43 44 45) 	s(eng) n1(4) n2(1) g(f2) sc(450) b(v5) cw(0) cp(15)) {level 1} {cost 450} {fore -65.0}} 	;660sec
-{"achilles"         ("v" c(60) t(all medium 44 45) 	s(eng) n1(4) n2(1) g(f3) sc(825) b(v5) cw(0) cp(15)) {level 1} {cost 825} {fore -19.0}}	;1200sec
-{"achilles_elite_gun" ("v3_tank" c(800) t(all medium 44 45) 	s(eng) n1(tankman:3) n2(tankman2:1) n3(elite_tankman:1) g(f4) sc(1025) b(v5) cw(0) cp(15)) {level 1} {cost 1025} {fore -1.0}}	;1600sec
+("unit_tank" side(eng) name(archer) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(60) tags(all medium 43 44 45) group(f1) button(v5) score(775) weight(0) points(10) level(1) cost(775) fore(-14.0)) 	;900sec
+("unit_tank" side(eng) name(m10wolverine_eng) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(10) tags(all medium 43 44 45) group(f2) button(v5) score(450) weight(0) points(15) level(1) cost(450) fore(-65.0)) 	;660sec
+("unit_tank" side(eng) name(achilles) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(60) tags(all medium 44 45) group(f3) button(v5) score(825) weight(0) points(15) level(1) cost(825) fore(-19.0))	;1200sec
+("unit_tank_three_crew" side(eng) name(achilles_elite_gun) member1(tankman:3) member2(tankman2:1) member3(elite_tankman:1) charge(800) tags(all medium 44 45) group(f4) button(v5) score(1025) weight(0) points(15) level(1) cost(1025) fore(-1.0))	;1600sec
 
 
 
 
 ;같캛utton Hero같�
 
-{"hero2(eng)"        ("v1" c(120) c1(dodge) 	t(all hero 41 42 43 44 45) s(eng) n1(saper2:3) n2(saper3:3) g(h1) b(hero)) {level 1} {cost 1.0} {fore -0.5}}
-{"hero_wasp(eng)"    ("v1" c(120) c1(wasp) 	t(all hero 41 42 43 44 45) s(eng) n1(vehicle_supporter:2) n2(saper3:0) g(h2) b(hero)) {level 1} {cost 2.0} {fore -0.5}}
+("unit_vehicle_members_sided" side(eng) name(hero2) vehicle1(dodge) member1(saper2:3) member2(saper3:3) charge(120) tags(all hero 41 42 43 44 45) group(h1) button(hero) level(1) cost(1.0) fore(-0.5))
+("unit_vehicle_members_sided" side(eng) name(hero_wasp) vehicle1(wasp) member1(vehicle_supporter:2) member2(saper3:0) charge(120) tags(all hero 41 42 43 44 45) group(h2) button(hero) level(1) cost(2.0) fore(-0.5))
 
-{"hero_staghound_e1(eng)"("v1" c(300) c1(staghound_e1) t(all hero 44 45) s(eng) n1(tankman:3) n2(tankman2:1) g(h22) b(hero)) {level 1} {cost 4.0} {fore -0.5}}
+("unit_vehicle_members_sided" side(eng) name(hero_staghound_e1) vehicle1(staghound_e1) member1(tankman:3) member2(tankman2:1) charge(300) tags(all hero 44 45) group(h22) button(hero) level(1) cost(4.0) fore(-0.5))
 ; [removed - unit not in 1.30.10] {"heronew3_eng"	    ("v1" c(600) c1(m4a4_tulip)	t(all hero 45) s(eng) n1(tankman:4) n2(tankman2:1) g(h5) b(hero)) {level 1} {cost 5.0} {fore -0.5}}
-{"heronew2(eng)"     ("v1" c(480) c1(cromwell_mk_vi) t(all hero 44 45) s(eng) n1(tankman:3) n2(tankman2:1) g(h23) b(hero)) {level 1} {cost 4.0} {fore -0.5}}
-{"hero8(eng)"        ("v1" c(720) c1(churchill_avre) t(all hero 44 45) s(eng) n1(tankman:3) n2(tankman2:1) g(h7) b(hero)) {level 1} {cost 5.0} {fore -0.5}}
-("squad_with5types" side(eng) name(hero_eng_para) c(330) g(h3) c1(para_cpl:3) c2(para_2ic:3) c3(para2:9) c4(para4:12) c5(para5:3) b(hero) t(all hero 40 41 42 43 44 45) level(1) cost(6) f(-0.5))
-{"hero6(eng)"        ("v1" c(600) c1(churchill_crocodile) t(all hero 44 45) s(eng) n1(tankman:3) n2(tankman2:1) g(h4) b(hero)) {level 1} {cost 7.0} {fore -0.5}}
+("unit_vehicle_members_sided" side(eng) name(heronew2) vehicle1(cromwell_mk_vi) member1(tankman:3) member2(tankman2:1) charge(480) tags(all hero 44 45) group(h23) button(hero) level(1) cost(4.0) fore(-0.5))
+("unit_vehicle_members_sided" side(eng) name(hero8) vehicle1(churchill_avre) member1(tankman:3) member2(tankman2:1) charge(720) tags(all hero 44 45) group(h7) button(hero) level(1) cost(5.0) fore(-0.5))
+("squad_5" side(eng) name(hero_eng_para) member1(para_cpl:3) member2(para_2ic:3) member3(para2:9) member4(para4:12) member5(para5:3) charge(330) tags(all hero 40 41 42 43 44 45) group(h3) button(hero) level(1) cost(6) fore(-0.5))
+("unit_vehicle_members_sided" side(eng) name(hero6) vehicle1(churchill_crocodile) member1(tankman:3) member2(tankman2:1) charge(600) tags(all hero 44 45) group(h4) button(hero) level(1) cost(7.0) fore(-0.5))
 
 
-{"hero7(eng)"        ("v2" c(720) c1(pdr25_vet) 	t(all hero artillery 40 41 42 43 44 45) s(eng) n1(vehicle_supporter:2) n2(tankman2:0) g(h6) b(hero)) {level 1} {cost 7.0} {fore -0.5}}
-{"hero_firefly(eng)" ("v1" c(720) c1(m4a4_firefly_tulip) t(all hero 44 45) s(eng) n1(vet_tankman:4) n2(vet_tankman2:1) g(h9) b(hero)) {level 1} {cost 10.0} {fore -0.5}}
+("unit_two_vehicles_members_sided" side(eng) name(hero7) vehicle1(pdr25_vet) member1(vehicle_supporter:2) member2(tankman2:0) charge(720) tags(all hero artillery 40 41 42 43 44 45) group(h6) button(hero) level(1) cost(7.0) fore(-0.5))
+("unit_vehicle_members_sided" side(eng) name(hero_firefly) vehicle1(m4a4_firefly_tulip) member1(vet_tankman:4) member2(vet_tankman2:1) charge(720) tags(all hero 44 45) group(h9) button(hero) level(1) cost(10.0) fore(-0.5))
 ; [removed - unit not in 1.30.10] {"hero9_eng"        ("v1" c(1080) c1(black_prince)  t(all postwar hero) s(eng) n1(tankman:3) n2(tankman2:1) g(h8) b(hero)) {level 1} {cost 14.0} {fore -0.5}}
-{"hero_churchill(eng)" ("v2" c(650) c1(churchill_mk_vii)  t(all 44 45 hero) s(eng) n1(tankman:3) n2(tankman2:1) g(h10) b(hero)) {level 1} {cost 11.0} {fore -0.5}}
+("unit_two_vehicles_members_sided" side(eng) name(hero_churchill) vehicle1(churchill_mk_vii) member1(tankman:3) member2(tankman2:1) charge(650) tags(all 44 45 hero) group(h10) button(hero) level(1) cost(11.0) fore(-0.5))
 
 ;{"hero1(eng)"       ("i1" c(120)		t(all hero) s(eng) n1(scout:1) g(h1) b(hero)) {level 1} {cost 1.0} {fore -0.5}}
 ;{"heronew1(eng)"    ("i3" c(120)		t(all hero) s(eng) n1(rifle3:4) n2(smg3:3) n3(mgun2:1) g(h1) b(hero)) {level 1} {cost 1.0} {fore -0.5}}

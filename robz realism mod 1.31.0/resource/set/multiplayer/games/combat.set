@@ -20,7 +20,7 @@
 		{showPiercing 0}
 		{showDamageReports}
 		{useUnitLevelRestrictions 0}
-		;{enableBots}
+	;{enableBots}
 	}
 	{teamSettings
 		{teamsMode normal}

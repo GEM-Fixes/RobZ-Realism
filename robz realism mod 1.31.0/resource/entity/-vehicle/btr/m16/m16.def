@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/armoredcar.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.0))
@@ -7,11 +8,7 @@
 	{extender "enumerator"}
 
 	; --- Godny hitbox armor (ported from GodnyMod: m16.def) ---
-	{volume "sticky"
-		{tags "grenade_fg_target"}
-		{able clear {contact} {touch}}
-		{component "sticky_body"}
-	}
+	("vol_sticky_grenade_target" name(sticky))
 	{volume "body"		;рама
 		{tags "body"}
 		{component "body"}
@@ -23,9 +20,9 @@
 		{able {holed}}
 		{thickness 6.35
 			{front	12.7}
-		;	{rear	6.35}
-		;	{top	6.35}
-		;	{bottom	6.35}
+			;	{rear	6.35}
+			;	{top	6.35}
+			;	{bottom	6.35}
 			{right	0.1}	;внутренн€€ стенка
 		}
 	}
@@ -54,16 +51,13 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 6.35
-		;	{front	6.35}
-		;	{rear	6.35}
+			;	{front	6.35}
+			;	{rear	6.35}
 			{top	0.1}	;внутренн€€ стенка
 		;	{bottom	6.35}
 		}
 	}
-	{Volume "hole_bod"
-		{able clear {hole}}
-		{component "body"}
-	}
+	("vol_body_hole_only" name(hole_bod))
 	{volume "turret"
 		{component "turret"}
 		{tags "turret"}
@@ -82,21 +76,9 @@
 		{thickness 10}
 	}
 	; --- end Godny hitbox armor ---
-	{volume "body5"
-		{tags "body"}
-		{component "body"}
-		{thickness 8}
-	}
-	{volume "body6"
-		{tags "body"}
-		{component "body"}
-		{thickness 8}
-	}
-	{volume "body7"
-		{tags "body"}
-		{component "body"}
-		{thickness 8}
-	}
+	("vol_body_plate_lower" name(body5) mm(8))
+	("vol_body_plate_lower" name(body6) mm(8))
+	("vol_body_plate_lower" name(body7) mm(8))
 	{component "turret"
 		{RepairTime 20}
 	}
@@ -107,14 +89,14 @@
 		{thickness 1}
 	}
 
-	("armor_light" args 1.0)
-	
+	("armor_light_btr" args 1.0)
+
 	{boarder
 		{anm "gunner"
 			{forward	{begin	"board_LowTank_stand"} {end "pose_maxson"}}
 			{reverse 	{end	"emit_tank_1"}}
-    	}
-    }
+		}
+	}
 
 	("crew_2_human")
 
@@ -128,8 +110,8 @@
 		{place "gunner"		{group "gunner"} {visor "main"} {turnoff {targetable 0}}}
 	}
 
-("board_animation" place(driver)	  board_begin(board_big-midcar_driver) board_end(seat_driver_car) base(doorleft))
-("board_animation" place(commander)	  board_begin(board_big-midcar) board_end(seat_driver_car) base(doorright))
+	("board_animation" place(driver)	  board_begin(board_big-midcar_driver) board_end(seat_driver_car) base(doorleft))
+	("board_animation" place(commander)	  board_begin(board_big-midcar) board_end(seat_driver_car) base(doorright))
 
 	{extender "inventory"
 		{Box
@@ -144,9 +126,9 @@
 			{Barrels 4}
 			{LinkAnimation "off"}
 			{charger "gunner"}
-			("abm_mgun_heavy")
+			("abm_mgun_heavy_v2")
 		}
-	}  	
+	}
 	{sensor
 		{visor "main"
 			{bone "gun_rot"}
@@ -155,10 +137,10 @@
 			{vision "tank_driver"}
 			{bone "visor2"}
 		}
-    	{visor "view-around"
-        	{vision "none"}
-        	{bone "visor2"}
-    	}
+		{visor "view-around"
+			{vision "none"}
+			{bone "visor2"}
+		}
 	}
 
 	("wheel" args "wheelright1")
@@ -170,21 +152,21 @@
 	{Chassis
 		{Locomotion ("locomotion")
 			{MaxSpeed 35}
-	  		{maxSpeedAtMaxTurn 6}
+			{maxSpeedAtMaxTurn 6}
 			{StartTime	30}
-     			{Gears  0.1 0.2 0.3 1}
+			{Gears  0.1 0.2 0.3 1}
 			{RearGears 0.25}
 		}
 		{FuelBag
-			{volume 230 }	
-			{rate	11 }   
+			{volume 230 }
+			{rate	11 }
 			{remain 230 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  35}
-        	{Slow  35}
-    	}
+			{Normal  35}
+			{Slow  35}
+		}
 		; left track must be first
 		("tank_trace" fx("tracks_sm") step(0.3) len(0.2) boneleft("wheell4") boneright("wheelr4"))
 		("car_trace" fx("tracewheel01") step(0.09) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))

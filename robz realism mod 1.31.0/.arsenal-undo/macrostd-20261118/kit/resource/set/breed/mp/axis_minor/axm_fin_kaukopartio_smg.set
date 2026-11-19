@@ -1,0 +1,28 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "fin-camo2-svt"}
+	{portrait "fin_elite1"}
+	{icon "elite-smg"}
+	{icon_priority 1}
+	{nationality fin}
+	{armors
+	;{head helmet_fin_m38}
+	}
+	{perks
+		("breed_body" health(200%) regen_health(100%) stamina(150%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.9) vehicle(1.0) cannon(1.0))
+		("breed_skills" pistol(3) smg(6) mgun(5) rifle(5) rocket(3) melee(3))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "suomi_m31" filled}
+		{item "ammo ppsh_mag" 213}
+		{item "bandage" 4}
+		{item "grenade m24" 2}
+		{item "kasapanos_2kg" 1}
+		{item "kasapanos_4kg" 1}
+		{item "smoke grenade" 1}
+
+		{in_hands 0}
+	}
+}

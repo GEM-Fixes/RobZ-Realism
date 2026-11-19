@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-tank-pvt"}
+	{portrait usa_tankman}
+	{icon tankman}
+	{icon_priority 0}
+	{nationality usa}
+	{armors
+		{head tankhelmet_usa}
+	}
+	{perks
+		("body_crew_bare")
+		("drive_crew")
+		("breed_skills" pistol(3) smg(3) mgun(2) rifle(2) rocket(2) melee(3))
+		{"tankgun" lvl_2}
+	}
+	("breed_vet" table(crew))
+	{inventory
+		("pistol_colt_21")
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

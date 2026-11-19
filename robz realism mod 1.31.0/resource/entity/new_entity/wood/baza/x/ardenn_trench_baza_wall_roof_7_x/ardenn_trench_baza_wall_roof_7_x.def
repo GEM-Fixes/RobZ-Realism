@@ -3,6 +3,6 @@
 	{props "one" "staged" "wood" "construction" "disable_area" "no_destroyed_stamp" "burning"}
 	("armor_heavy" args 0.8)
 	{Extension "ardenn_trench_baza_wall_roof_7_x.mdl"}
-	
+
 
 }

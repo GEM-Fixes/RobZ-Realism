@@ -1,0 +1,109 @@
+;   Squads
+
+
+
+
+;------------------------------ Infantry Squads-------------------------------------------
+
+("squad_2" side(axis_minor) name(Bulgarian_Infantry) member1(axm_bul_squadleader:1) member2(axm_bul_rifle:7) charge(60) tags(all inf_only 44 45) group(squad_1) button(squad1) level(1) cost(75) fore(0.5))
+
+("squad_3" side(axis_minor) name(hungarian_smg_squad) member1(axm_hun_squadleader_smg:1) member2(axm_hun_smg_ppsh:4) member3(axm_hun_smg_danuvia:4) charge(30) tags(all inf_only 44 45) group(squad_2) button(squad1) level(1) cost(84) fore(1.0))
+
+("squad_4" side(axis_minor) name(romanian_rifle_squad) member1(axm_rom_rifle:7) member2(axm_rom_squadleader:1) member3(axm_rom_mgun:1) member4(axm_rom_mgunassist:1) charge(30) tags(all inf_only 44 45) group(squad_4) button(squad1) level(1) cost(114) fore(1.0))
+
+("squad_6" side(axis_minor) name(fin_pioneer) member1(axm_fin_pio_squadleader:1) member2(axm_fin_pio_mgun:1) member3(axm_fin_pio_rifle_dynamite:1) member4(axm_fin_pio_smg:2) member5(axm_fin_pio_rifle:4) member6(axm_fin_pio_flamer:1) charge(90) tags(all inf_only 44 45) group(squad_3) button(squad1) level(1) cost(220) fore(1.0))
+
+("squad_5_vehicle" side(axis_minor) name(Motorized_Hungarian_Rifles) vehicle1(Botond) member1(axm_hun_squadleader_smg:1) member2(axm_hun_rifle:3) member3(axm_hun_smg_danuvia:3) member4(axm_hun_smg_ppsh:1) member5(axm_hun_rifle3:2) charge(60) tags(all inf_only 44 45) group(squad_7) button(squad1) level(1) cost(109) fore(0.0))
+
+("squad_5" side(axis_minor) name(fin_kaukopartio) member1(axm_fin_kaukopartio_squadleader:1) member2(axm_fin_kaukopartio_mgun:1) member3(axm_fin_kaukopartio_mgun_assist:1) member4(axm_fin_kaukopartio_smg:2) member5(axm_fin_kaukopartio_rifle:4) charge(60) tags(all inf_only 44 45) group(squad_5) button(squad1) level(1) cost(148) fore(1.0))
+
+
+("squad_5" side(axis_minor) name(Bersaglieri) member1(axm_ita_bersaglieri_rifle:4) member2(axm_ita_bersaglieri_smg:2) member3(axm_ita_bersaglieri_mgun:1) member4(axm_ita_bersaglieri_mgun_assist:1) member5(axm_ita_bersaglieri_rifle2:3) charge(60) tags(all inf_only 44 45) group(squad_9) button(squad1) level(1) cost(158) fore(1.0))
+
+("squad_5" side(axis_minor) name(Sissi) member1(axm_fin_sissi_squadleader_vision:1) member2(axm_fin_sissi_mgun:1) member3(axm_fin_sissi_mgun_assist:1) member4(axm_fin_sissi_smg:2) member5(axm_fin_sissi_rifle:4) charge(60) tags(all inf_only 44 45) group(squad_6) button(squad1) level(1) cost(159) fore(1.0))
+
+("squad_7" side(axis_minor) name(Hungarian_Assualt_Infantry) member1(axm_hun_assualt_squadleader:1) member2(axm_hun_assualt_rifle:2) member3(axm_hun_assualt_smg:4) member4(axm_hun_assualt_mgun:1) member5(axm_hun_assualt_mgun_assist:1) member6(axm_hun_assualt_pzf:1) member7(axm_hun_assualt_flamer:1) charge(60) tags(all inf_only 44 45) group(squad_8) button(squad1) level(1) cost(186) fore(1.0))
+
+("squad_7" side(axis_minor) name(Alpini) member1(axm_ita_alpini_rifle:4) member2(axm_ita_alpini_smg:2) member3(axm_ita_alpini_mgun:1) member4(axm_ita_alpini_mgun_assist:1) member5(axm_ita_alpini_rifle2:3) member6(axm_ita_alpini_squadleader:1) member7(axm_ita_alpini_sniper:1) charge(60) tags(all inf_only 44 45) group(squad_10) button(squad1) level(1) cost(215) fore(1.0))
+
+("unit_vehicles1_members4_sided" side(axis_minor) name(bersaglieri_motorcycle) vehicle1(guzzi-sa500) member1(axm_ita_bersaglieri_rifle) member2(axm_ita_bersaglieri_smg:2) member3(axm_ita_bersaglieri_mgun) member4(axm_ita_bersaglieri_mgun_assist) charge(60) tags(all hero 44 45) group(squad_mot) button(squad1) level(1) cost(215) fore(0.0))
+
+("squad_5_vehicle" side(axis_minor) name(Bersaglieri_Mot) vehicle1(fiat35) member1(axm_ita_vehicle_supporter:2) member2(axm_ita_bersaglieri_rifle:3) member3(axm_ita_bersaglieri_mgun_assist:1) member4(axm_ita_bersaglieri_smg:4) member5(axm_bersaglieri_mgun:2) charge(30) tags(all inf_only 44 45) group(squad_11) button(squad1) level(1) cost(174) fore(0.0))
+
+
+("squad_5" side(axis_minor) name(Paracadutisti) member1(axm_ita_paratrooper_squadleader:1) member2(axm_ita_paratrooper_rifle:6) member3(axm_ita_paratrooper_smg:2) member4(axm_ita_paratrooper_mgun:2) member5(axm_ita_paratrooper_mgun_assist:1) charge(120) tags(all inf_only 44 45) group(squad_13) button(squad1) level(1) cost(311) fore(1.0))
+
+("squad_2" side(axis_minor) name(tankcrew) member1(axm_hun_tankman_single:4) member2(axm_hun_tankcommander_single:1) charge(0) tags(all inf_only 44 45) group(squad_14) button(squad1) level(1) cost(70) fore(1.0))
+
+("squad_1" side(axis_minor) name(vet_tankcrew) member1(axm_rom_vet_tankcommander_single:1) charge(0) tags(all inf_only 44 45) group(squad_15) button(squad1) level(1) cost(100) fore(0.0))
+
+("squad_1" side(axis_minor) name(sappers) member1(axm_rom_minedisposal:2) charge(0) tags(all inf_only 44 45) group(squad_15) button(squad1) level(1) cost(70) fore(0.0))
+
+("squad_1" side(axis_minor) name(vehic_supporter) member1(axm_bul_vehicle_supporter_single:2) charge(0) tags(all inf_only 42 43 44 45) group(squad_15) button(squad1) level(1) cost(25) fore(0.0))
+
+
+
+
+;------------------------------ Specialized Units-------------------------------------------
+
+
+("squad_1" side(axis_minor) name(carcano) member1(axm_ita_bersaglieri_rifle:1) charge(10) tags(all inf_only 44 45) group(squad_17) button(squad2) level(1) cost(13) fore(1.0))
+
+("squad_1" side(axis_minor) name(zb_24rifle) member1(axm_rom_rifle:1) charge(10) tags(all inf_only 44 45) group(squad_18) button(squad2) level(1) cost(13) fore(1.0))
+
+("squad_1" side(axis_minor) name(orita) member1(axm_rom_smg:1) charge(10) tags(all inf_only 44 45) group(squad_19) button(squad2) level(1) cost(13) fore(1.0))
+
+("squad_1" side(axis_minor) name(suomi_m31) member1(axm_fin_kaukopartio_smg:1) charge(10) tags(all inf_only 44 45) group(squad_20) button(squad2) level(1) cost(13) fore(1.0))
+
+("squad_1" side(axis_minor) name(danuvia) member1(axm_hun_assualt_smg:1) charge(10) tags(all inf_only 44 45) group(squad_21) button(squad2) level(1) cost(13) fore(1.0))
+
+("squad_1" side(axis_minor) name(AP_Miners) member1(axm_bul_miner_ap:4) charge(10) tags(all inf_only 44 45) group(squad_22) button(squad2) level(1) cost(100) fore(0))
+("squad_1" side(axis_minor) name(AT_Miners) member1(axm_bul_miner_at:4) charge(10) tags(all inf_only 44 45) group(squad_23) button(squad2) level(1) cost(100) fore(0))
+
+
+
+("squad_2" side(axis_minor) name(solothurn_31m) member1(axm_hun_assualt_mgun:1) member2(axm_hun_assualt_mgun_assist:1) charge(30) tags(all inf_only 44 45) group(squad_24) button(squad2) level(1) cost(46) fore(1.0))
+("squad_2" side(axis_minor) name(zb_vz26) member1(axm_bul_mgun:1) member2(axm_bul_mgun_assist:1) charge(0) tags(all inf_only 44 45) group(squad_35) button(squad2) level(1) cost(44) fore(0))
+
+("squad_2" side(axis_minor) name(breda30_alpini) member1(axm_ita_alpini_mgun:1) member2(axm_ita_alpini_mgun_assist:1) charge(60) tags(all inf_only 44 45) group(squad_25) button(squad2) level(1) cost(55) fore(1.0))
+
+("squad_2" side(axis_minor) name(breda30_bers) member1(axm_ita_bersaglieri_mgun:1) member2(axm_ita_bersaglieri_mgun_assist:1) charge(60) tags(all inf_only 44 45) group(squad_26) button(squad2) level(1) cost(61) fore(1.0))
+
+("squad_2" side(axis_minor) name(breda30_para) member1(axm_ita_paratrooper_mgun:1) member2(axm_ita_paratrooper_mgun_assist:1) charge(60) tags(all inf_only 44 45) group(squad_27) button(squad2) level(1) cost(80) fore(1.0))
+
+("squad_2" side(axis_minor) name(Boys_AT_Rifle) member1(axm_fin_at_rifle:1) member2(axm_fin_at_rifleassist:1) charge(0) tags(all inf_only 44 45) group(squad_28) button(squad2) level(1) cost(66) fore(1.0))
+
+("squad_2" side(axis_minor) name(pzb_at_Rifle) member1(axm_bul_at_rifle:1) member2(axm_bul_at_rifle_assist:1) charge(0) tags(all inf_only 44 45) group(squad_29) button(squad2) level(1) cost(101) fore(1.0))
+
+
+
+
+("squad_1" side(axis_minor) name(panzerfaust) member1(axm_hun_assualt_pzf:2) charge(30) tags(all inf_only 44 45) group(squad_30) button(squad2) level(1) cost(52) fore(1.0))
+
+("squad_2" side(axis_minor) name(panzershreck) member1(axm_rom_bazooker:1) member2(axm_rom_bazooker_assist:1) charge(10) tags(all inf_only 44 45) group(squad_31) button(squad2) level(1) cost(114) fore(1.0))
+
+("squad_1" side(axis_minor) name(Radioman) member1(axm_bul_radioman:1) charge(0) tags(all inf_only 44 45) group(squad_32) button(squad2) level(1) cost(200) fore(1))
+
+("squad_2" side(axis_minor) name(flamers) member1(axm_fin_pio_flamer:1) member2(axm_fin_kaukopartio_rifle:1) charge(150) tags(all inf_only 44 45) group(squad_33) button(squad2) level(1) cost(83) fore(0.0))
+
+("squad_1" side(axis_minor) name(finnish_sniper) member1(axm_fin_sniper:1) charge(150) tags(all inf_only 44 45) group(squad_34) button(squad2) level(1) cost(90) fore(1.0))
+
+
+
+("squad_1_x4_sequence" side(axis_minor) name(officer) member1(axm_fin_officer:1) charge(1) tags(all officer inf_only 39 40 41 42 43 44 45) group(squad_16) button(squad2) icon(10002) level(1) cost(0) fore(-599.0)) ;10 minutes
+("squad_1_x4_sequence" side(axis_minor) name(officers_40) member1(axm_fin_officer:1) charge(1800) tags(all officer inf_only 39 40 41 42 43 44 45) group(squad_16) button(squad2) icon(10002) level(1) cost(0) fore(-2399.0)) ;40 minutes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

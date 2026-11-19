@@ -7,12 +7,12 @@
 		{block 10}
 		{size 1 1}
 		{fsm "belt"}
-	}	
+	}
 	{mass 0.0097}
 	{entity "fg42_mag"}
 
 	{view "rifle_bullet"}
-{trace
+	{trace
 		{view "/texture/fx/trace_mg_limegreen"
 			{ScaleY 0.22}
 			{Light 10}

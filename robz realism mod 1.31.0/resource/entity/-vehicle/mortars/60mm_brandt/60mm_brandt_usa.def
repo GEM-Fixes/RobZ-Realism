@@ -1,15 +1,15 @@
 {game_entity
-(include "/properties/cannon.ext")
+	(include "/properties/cannon.ext")
 
-{props "vehicle" "cannon" "cannon_small" "truck_mortar" "vision_cannon_minimum" "small_weapons"}
-{collider "cannon_small"}
-{targetSelector "cannon_rocket"}
-{patherId "cannon.carried"}
+	{props "vehicle" "cannon" "cannon_small" "truck_mortar" "vision_cannon_minimum" "small_weapons"}
+	{collider "cannon_small"}
+	{targetSelector "cannon_rocket"}
+	{patherId "cannon.carried"}
 
-("armor_mortar")
+	("armor_mortar")
 
-("wheel" args "wheelright")
-("wheel" args "wheelleft")
+	("wheel" args "wheelright")
+	("wheel" args "wheelleft")
 
 	("crew_inside")
 	("crew_human" place(driver) bone(driver)	door(emit1) animation(driver))
@@ -47,7 +47,7 @@
 			{move "walk_1hand" ""}
 			{aim "" ""}
 			{fire  "" ""}
-            {reload "lie_take_small end lie_take_item_end end lie_fire_pistol" ""}
+			{reload "lie_take_small end lie_take_item_end end lie_fire_pistol" ""}
 		}
 		{move {workers "driver"} {obstacle "close"}}
 		{attack {workers "gunner"} {obstacle "open"}}
@@ -55,34 +55,34 @@
 
 	}
 
-{Chassis "human_carrier"
-	{carrierPlace "driver1" "driver2"}
-	{carrierBone  "handle1" "handle2"}
-	("loco_carrier")
-}
-
-{Weaponry
-	{place "gun"
-		{Barrels 1}
-		{weapon "weapon 60mm_m2" filling "ammo mortar60 us fg"}
-; 		{Rotate}
+	{Chassis "human_carrier"
+		{carrierPlace "driver1" "driver2"}
+		{carrierBone  "handle1" "handle2"}
+		("loco_carrier")
 	}
-}
-{mass 14}
+
+	{Weaponry
+		{place "gun"
+			{Barrels 1}
+			{weapon "weapon 60mm_m2" filling "ammo mortar60 us fg"}
+		; 		{Rotate}
+		}
+	}
+	{mass 14}
 
 	{Extension "60_mm_mortar_m2.mdl"}
-	
-(include "/properties/selection/cannon.inc"  scale(0.7))
 
-{bone "body"
-	{limits -40 40}
-	{speed 0.004}
-}
+	(include "/properties/selection/cannon.inc"  scale(0.7))
+
+	{bone "body"
+		{limits -40 40}
+		{speed 0.004}
+	}
 
 	{Volume "body"
 	}
 	{Volume "gun"
 	}
 
-{Texmod "us"}
+	{Texmod "us"}
 }

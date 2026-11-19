@@ -3,7 +3,7 @@
 	{props "vehicle" "cannon" "wheeled" "round_sandbag2" "vision_cannon_medium" "muzzle_medium"}
 	("armor_medium")
 
-	
+
 	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
 
@@ -28,7 +28,7 @@
 			{forward {end "pose_seat_cannon_right" 10}}
 		}
 	}
-	(mod "mp" 
+	(mod "mp"
 		("crew_human" place(commander1)		bone(commander1)		door(emit2) animation(commander1))
 		("crew_human" place(commander2)		bone(commander2)		door(emit3) animation(commander2))
 		("crew_human" place(driver3)		bone(driver3)			door(emit3) animation(driver3))
@@ -70,10 +70,10 @@
 	{Extension "cannone7527.mdl"}
 	(include "/properties/selection/cannon.inc"  scale(0.7))
 	{bone "basis"
-	      {limits}
-		  {speed 0.004}
+		{limits}
+		{speed 0.004}
 	}
-	(mod not "mp" 
+	(mod not "mp"
 		{extender "cannon"
 			{animation
 				{switch "close"}
@@ -86,7 +86,7 @@
 			{attack {obstacle "open"}}
 		}
 	)
-	(mod "mp" 
+	(mod "mp"
 		{extender "cannon"
 			{animation
 				{switch "close"}
@@ -111,5 +111,5 @@
 	{bone "gun_rot"
 		{speed 0.002}
 	}
-	;("eng_1_sight")
+;("eng_1_sight")
 }

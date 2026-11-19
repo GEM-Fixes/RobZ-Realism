@@ -16,7 +16,7 @@
 {"at_rifles(rus_guard)" "Guards PTRS AT-rifle"}
 ; -- group soldier_5 --
 ; [new] card "bazookers(rus_guard)" cost 75 lvl 1 | soldiers guard_bazooker, guard_bazookerassist | tags infantry all inf_only 42 43 44 45 | units/rus_guard/squads_43-45.set:69
-{"bazookers(rus_guard)" "PIAT team"}
+{"bazookers(rus_guard)" "Guards Bazooka team"}
 ; -- group soldier_55 --
 ; [new] card "bazookers_piat(rus_guard)" cost 129 lvl 1 | soldiers guard_piat, guard_piatassist | tags infantry all inf_only 43 44 45 | units/rus_guard/squads_43-45.set:70
 {"bazookers_piat(rus_guard)" "Guards PIAT infantry"}

@@ -1,18 +1,13 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	;© 2010 Zeke Wolff & Ngvede.
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{props "medium" "turret_rotator" "vision_vehicle_medium" "muzzle_small"}
 	{PatherId "tank"}
-	
-	{volume "body1"
-		{component "body"}
-		{tags "body"}
-	}
-	{volume "body2"
-		{component "body"}
-		{tags "body"}
-	}
+
+	("vol_body_part_component_first" name(body1))
+	("vol_body_part_component_first" name(body2))
 	{volume "turret"
 		{component "turret"}
 	}
@@ -58,7 +53,7 @@
 			{basic}
 		}
 	}
-	
+
 	{mass 31000}
 	{Chassis
 		("tank_trace" fx("tracks_mid") step(0.52) len(0.7))
@@ -67,24 +62,24 @@
 			{maxSpeedAtMaxTurn 12}
 			{StartTime 28}
 			{TurnTime 16}
-    		{TurnStart   1.7} 
-    		{BrakeTime    1} 
-    		{StopTime     2} 
-    		{TurnRadius   9} 
-    		{TurnStop   0.9}
-     		{Gears  0.05 0.1 0.25 0.7} 
-    		{RearGears 0.05 0.17}
+			{TurnStart   1.7}
+			{BrakeTime    1}
+			{StopTime     2}
+			{TurnRadius   9}
+			{TurnStop   0.9}
+			{Gears  0.05 0.1 0.25 0.7}
+			{RearGears 0.05 0.17}
 		}
 		(mod "mp"
 			{FuelBag
-				{volume 470 }	
-				{rate	120 }   
+				{volume 470 }
+				{rate	120 }
 				{remain 450 }
 				{fuel "fuel"}
 			}
-		    {speed
-        		{Normal  10}
-    		}
+			{speed
+				{Normal  10}
+			}
 		)
 	}
 	{Extension "p40.mdl"}

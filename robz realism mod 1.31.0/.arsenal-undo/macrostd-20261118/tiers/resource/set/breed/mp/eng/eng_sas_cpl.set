@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-scout-sgt"}
+	{portrait "eng_soldier5"}
+	{nationality eng}
+	{icon "stormtrooper"}
+	{icon_priority 4}
+	{armors
+		{head beret_eng_sas}
+	}
+	{perks
+		("breed_body" health(400%) regen_health(100%) stamina(200%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(1.0) vehicle(1.0) cannon(1.0))
+		("breed_skills" pistol(7) smg(7) mgun(7) rifle(7) rocket(7) melee(7))
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("smg_sten_v")
+		{item "bandage" 5}
+		("frag_mk1_x2")
+		("at_grenade_n73at_x1")
+		("smoke_x2")
+		("smoke_n77_x1")
+		{in_hands 0}
+	}
+}

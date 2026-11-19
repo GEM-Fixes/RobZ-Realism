@@ -1,0 +1,28 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-zelt-ss-smg"}
+	{portrait "ger_soldier7"}
+	{icon "smg"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{head waffen_helmet_pe}
+	}
+	{perks
+		("breed_body" health(200%) regen_health(100%) stamina(150%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.75) vehicle(1) cannon(0.8))
+		("breed_skills" pistol(4) smg(5) mgun(3) rifle(3) rocket(4) melee(4))
+	}
+	("breed_vet" kind(1))
+	{inventory
+		{item "mab_38a" filled}
+		{item "ammo mab_38a_mag" 200}
+		{item "bandage" 3}
+		{item "grenade m24" 2}
+		{item "grenade m24x5"}
+		{item "smoke grenade" 1}
+		{item "small_shovel" 1}
+		{item "panzerfaust_30 weapon" filled}
+		{in_hands 0}
+	}
+}

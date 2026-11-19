@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "hun_vehicle_supporter"}
 	{portrait "hun_soldier1"}
@@ -8,48 +9,12 @@
 		{head "helmet1_hun"}
 	}
 	{perks
-		{"health" "150%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "100%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.85
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 1.0
-		}
-		
-		{"pistol" lvl_2
-		}
-		{"smg" lvl_2
-		}
-		{"mgun" lvl_4
-		}
-		{"rifle" lvl_2
-		}
-		{"rocketlauncher" lvl_2
-		}
-		{"melee" lvl_4
-		}
-		{"tankgun" lvl_4
-		}
+		("support_1" body(normal_line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_tankcrew")
-	}
+	("breed_vet" table(crew))
 
 	{inventory
-		{item "danuvia_39m" filled}
-		{item  "ammo 9x25" 80}
+		("kit_smg" gun(danuvia_39m) ammo(9x25) rounds(80))
 		{item "bandage" 2}
 		{item "grenade hungarian_36m" 1}
 		{in_hands 0}

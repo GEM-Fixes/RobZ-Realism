@@ -1,7 +1,4 @@
+; same as the other 8 defs here; body in 81mm_brandt_body.inc
 {game_entity
-	{Extension "brandt_mle_27-31_x.mdl"}
-	{Volume "body"
-	}
-	{Volume "gun"
-	}
+	(include "81mm_brandt_body.inc")
 }

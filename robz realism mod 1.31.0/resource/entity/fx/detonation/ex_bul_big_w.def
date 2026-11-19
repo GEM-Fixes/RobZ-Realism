@@ -20,7 +20,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/ripples_w2"
 					{scale 1
 						{npower
@@ -80,7 +80,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage initial 
+			{stage initial
 				{sprite "$/flash/drops"
 					{scale 1
 						{linear
@@ -101,7 +101,7 @@
 					{## highlight 0xffffffaf}
 				}
 			}
-			{stage collided dying 
+			{stage collided dying
 				{flags killparticle ground }
 				{sprite "$/flash/ripples_w"
 					{visibility 1
@@ -155,7 +155,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4ba"
 					{timer
 						{mode play }
@@ -199,7 +199,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/waterplume2"
 					{timer
 						{mode play }
@@ -255,7 +255,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/waterplume2"
 					{timer
 						{mode play }

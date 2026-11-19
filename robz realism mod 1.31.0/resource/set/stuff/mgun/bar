@@ -9,7 +9,7 @@
 	{rechargeTime 4.5}
 	{range 120 120}
 	("recoveryTime" r(650))
-	("burst_short")
+	("burst_short_v2")
 	("speed" s(853))
 	{Spreading 1
 		{SpreadPower	1}

@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-fjnco-smg"}
+	{portrait "ger_elite1"}
+	{icon "elite2"}
+	{icon_priority 4}
+	{nationality ger}
+	{armors
+		;{body ammo_ger2}
+		{head helmet_ger_m38_cover}
+	}
+	{perks
+		("soldier_smg_4" rocket(3) body(hardy))
+		{"avoidance" lvl_1}
+		{"stealth"}
+	}
+	("breed_vet" table(start5))
+	{inventory
+		("smg_mp40")
+		{item "bandage" 5}
+		("frag_m39_x2")
+		("at_grenade_pwm1")
+		("smoke_x2")
+		{in_hands 0}
+	}
+}

@@ -1,13 +1,13 @@
 {from "pattern mgun"
-	
+
 	{filling "ammo breda_mag" 20 20}
 	{entity "breda_30"}
 	{fireSound "mgun/fg42_shot"}
- 	{reloadSound "breda30_reload"}
-{tag "mgun_light"}
+	{reloadSound "breda30_reload"}
+	{tag "mgun_light"}
 	{mass 10}
 	{rechargeTime 6}
-	("burst_short")
+	("burst_short_v2")
 	("recoveryTime" r(500))
 	("speed" s(620))
 	{Spreading 1
@@ -15,5 +15,5 @@
 		{BurstAccuracy 100 97 94 91 88 85 80}
 	}
 
-	
+
 }

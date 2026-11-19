@@ -1,11 +1,4 @@
+; same as the other 1 def here; body in dshk_zenit_x_body.inc
 {game_entity
-	{Extension "dshk_zenit_x.mdl"}
-	{Volume "body"
-	}
-	{Volume "stan1"
-	}
-	{Volume "stan2"
-	}
-	{Volume "stan3"
-	}
+	(include "dshk_zenit_x_body.inc")
 }

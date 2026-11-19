@@ -1,24 +1,24 @@
 {game_entity
 	{Extension "dot_sandbags_x.mdl"}
 	{Volume "dot_sandbags_x1"
-;		{Tags  "body"}
-;		{Thickness 200}
-;		{able {visible 1}{touch 0}}
+	;		{Tags  "body"}
+	;		{Thickness 200}
+	;		{able {visible 1}{touch 0}}
 	}
 	{Volume "dot_sandbags_x2"
-;		{Tags  "body"}
-;		{Thickness 200}
-;		{able {visible 1}{touch 0}}
+	;		{Tags  "body"}
+	;		{Thickness 200}
+	;		{able {visible 1}{touch 0}}
 	}
 	{Volume "dot_sandbags_x3"
-;		{Tags  "body"}
-;		{Thickness 200}
-;		{able {visible 1}{touch 0}}
+	;		{Tags  "body"}
+	;		{Thickness 200}
+	;		{able {visible 1}{touch 0}}
 	}
 	{Volume "dot_sandbags_x4"
-;		{Tags  "body"}
-;		{Thickness 200}
-;		{able {visible 1}{touch 0}}
+	;		{Tags  "body"}
+	;		{Thickness 200}
+	;		{able {visible 1}{touch 0}}
 	}
 	{Volume "piece01"
 	}

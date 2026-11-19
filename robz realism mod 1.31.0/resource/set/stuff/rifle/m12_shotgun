@@ -20,11 +20,11 @@
 	{reloadSound "shotgun"}
 	{fireSound "rifle/shotgun"}
 	{traceFreq 1}
-	
+
 	{range 45 60}
 	{spreading 0.15}
 
-    {RelaxationTime 0.1}
+	{RelaxationTime 0.1}
 	{recoveryTime 1}
 	{Automatic}
 	{rechargeTime 5.0}

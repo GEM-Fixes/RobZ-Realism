@@ -3,19 +3,19 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 82
-		    {front  100}
+			{front  100}
 			{bottom	26}
 			{top    26}
-		}   
+		}
 	}
 	{volume "body2"
 		{tags "body"}
 		{component "body"}
 		{thickness 82
-		    {front  100}
+			{front  100}
 			{bottom	26}
 			{top    26}
-		}   
+		}
 	}
 	{volume "turret"
 		{thickness 40 0.3

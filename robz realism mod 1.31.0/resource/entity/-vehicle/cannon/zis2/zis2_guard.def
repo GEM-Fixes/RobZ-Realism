@@ -1,18 +1,13 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/cannon.ext")
 	{props "vehicle" "cannon" "wheeled" "round_sandbag2" "vision_cannon_medium_vet" "muzzle_small" "medium_weapons"}
-	
+
 	("armor_medium")
 
 	; --- Godny hitbox armor (ported from GodnyMod: zis2.def) ---
-	{volume "body1"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body2"
-		{tags "body"}
-		{component "body"}
-	}
+	("vol_body_part_lower" name(body1))
+	("vol_body_part_lower" name(body2))
 	; --- end Godny hitbox armor ---
 	("crew_wheeled_gun")
 	{boarder
@@ -35,7 +30,7 @@
 			{forward {end "pose_seat_cannon_right" 10}}
 		}
 	}
-	("rus_2-5x_sight")
+	("rus_2-5x_sight_no_visor1")
 	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
 
@@ -62,7 +57,7 @@
 
 	{bone "basis"
 		{limits}
-	    {speed 0.007}
+		{speed 0.007}
 	}
 	{extender "cannon"
 		{animation

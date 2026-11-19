@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-fj-smg"}
+	{portrait "ger_elite1"}
+	{icon "elite2"}
+	{icon_priority 4}
+	{nationality ger}
+	{armors
+		;{body ammo_ger2}
+		{head helmet_ger_m38_cover}
+	}
+	{perks
+		("soldier_smg_3" rocket(2) body(hardy))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_mp40")
+		{item "bandage" 5}
+		("frag_m39_x2")
+		("at_grenade_pwm1")
+		{in_hands 0}
+	}
+}

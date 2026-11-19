@@ -1,0 +1,30 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "fin-sum-inf-officer"}
+	{portrait "fin_officer"}
+	{nationality fin}
+	{icon "oficer"}
+	{icon_priority 2}
+	{armors
+		{head "cap_fin_officer"}
+	}
+	{tags "officer"}
+	{perks
+		("breed_body" health(300%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_officer") speed(1.0))
+		("breed_drive" tank(1.0) vehicle(1.0) cannon(1.0))
+		{"field_glass"}
+		{"pistol" lvl_5}
+		{"smg" lvl_1}
+		{"mgun" lvl_1}
+		{"rifle" lvl_1}
+		{"rocketlauncher" lvl_1}
+		{"melee" "lvl_2"}
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("pistol_luger")
+		{item "knife_ger"}
+		{item "binocular"}
+		{in_hands 3}
+	}
+}

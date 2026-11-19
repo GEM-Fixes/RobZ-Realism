@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "jap_army_mc"}
+	{portrait "jap_soldier2"}
+	{nationality jap}
+	{icon "home_guard"}
+	{icon_priority 0}
+	{armors
+		{head "jap_army_helmet3"}
+	}
+	{perks
+		("breed_body" health(150%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.8) vehicle(1.0) cannon(1.0))
+		("breed_skills" pistol(2) smg(1) mgun(1) rifle(3) rocket(1) melee(2))
+	}
+	("breed_vet" kind(1))
+	{inventory
+		{item "type44_carbine" filled}
+		{item "ammo arisaka6-5_clip" 60}
+		{item "ammo 5cm_grenade fg" 16}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

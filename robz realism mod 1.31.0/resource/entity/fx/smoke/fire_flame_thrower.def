@@ -28,7 +28,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/fireloop"
 					{timer
 						{mode play }
@@ -106,7 +106,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/fireloop"
 					{timer
 						{mode play }
@@ -184,7 +184,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/halo02"
 					{timer
 						{mode play }
@@ -262,7 +262,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{#+ sprite "$/smoke/smoke_g04"
 					{timer
 						{mode play }
@@ -417,7 +417,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{#+ sprite "$/smoke/smoke_g04"
 					{timer
 						{mode play }
@@ -575,7 +575,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{##+ sprite "$/explosion/faerog2b"
 					{timer
 						{mode play }
@@ -676,7 +676,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smtanko"
 					{timer
 						{mode play }
@@ -765,7 +765,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/explosion/boom2"
 					{timer
 						{mode play }
@@ -828,7 +828,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/explosion/faerog"
 					{timer
 						{mode play }
@@ -918,7 +918,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04"
 					{timer
 						{mode play }

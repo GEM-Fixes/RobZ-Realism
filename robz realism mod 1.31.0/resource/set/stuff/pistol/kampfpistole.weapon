@@ -4,7 +4,7 @@
 	{entity "flaermow"}
 
 	{fireSound	"pistol/nagan"}
-	{foresight "foresight16"} 
+	{foresight "foresight16"}
 
 	{aimRange 7}
 	{maxRange 10}

@@ -1,0 +1,84 @@
+;SDL
+{panel_control
+	{heal
+		{position 0 0}
+		{condition "human disabled"}
+	}
+	{injection
+		{position 1 0}
+		{condition "disabled"}
+	}
+	{put_dynamite
+		{position 2 0}
+		{condition "disabled"}
+	}
+	{gc_cp_state_weapon
+		{position 3 0}
+		{condition "disabled"}
+	}
+	{burn
+	}
+	{mine
+	}
+	{mine_detection
+	}
+	{barbwire
+		{condition "human"}
+	}
+	{hedgehog
+		{condition "human"}
+	}
+	{barricade
+		{condition "human"}
+	}
+	{round_sandbag
+		{condition "cannon"}
+	}
+	{trench_low
+		{condition "human"}
+		;{position 0 1}
+	}
+	{trench_deep
+		{condition "human"}
+		;{position 1 1}
+	}
+	{trench_bighole
+		{condition "human"}
+		;{position 2 1}
+	}
+	{scrape
+		{condition "human"}
+	}
+	{tunnel
+		{condition "human"}
+	}
+	{tree_line
+		{condition "human"}
+	}
+	{barbwire_actual
+		{condition "human"}
+	}
+	{hedgehog_actual
+		{condition "human"}
+	}
+	{hedgehog_big
+		{condition "human"}
+	}
+	{plant
+	}
+	{collect
+		{position 0 2}
+		{condition "human disabled"}
+	}
+	{drop
+		{position 1 2}
+		{condition "human disabled"}
+	}
+	{gc_cp_leave_unit
+		{position 2 2}
+		{condition "vehicle single disabled"}
+	}	
+	{gc_cp_browse_back
+		{position 3 2}
+	}
+}

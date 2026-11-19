@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/construction.inc")
 	{Extension "interset4_hs2.mdl"}
@@ -8,20 +9,12 @@
 	{extender "structure_bone"
 		{hold "26" "13"}
 	}
-	{Volume "body1"
-		{Tags  "body"}
-		{Thickness 10}
-		{able {obstacle 0}}
-	}
+	("vol_body_no_obstacle" name(body1) mm(10))
 	{Volume "body2"
 		{Tags  "body"}
 		{Thickness 10}
 		{able {obstacle 0}}
 		{material "steel" }
 	}
-	{Volume "body3"
-		{Tags  "body"}
-		{Thickness 10}
-		{able {obstacle 0}}
-	}
+	("vol_body_no_obstacle" name(body3) mm(10))
 }

@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "ita-para-smg"}
 	{portrait "ita_elite1"}
@@ -6,53 +7,19 @@
 	{nationality ita}
 	{armors
 		{head helmet_ita_para}
-		
+
 	}
 	{perks
-		{"health" "200%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "150%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.9
-		}
-		{"vehicle" 1.0
-		}
-		{"cannon" 1.0
-		}
-		
-		{"pistol" lvl_3
-		}
-		{"smg" lvl_7
-		}
-		{"mgun" lvl_4
-		}
-		{"rifle" lvl_5
-		}
-		{"rocketlauncher" lvl_3
-		}
-		{"melee" lvl_3
-		}
+		("soldier_smg_7" rocket(1) body(line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(elite))
 	{inventory
-		{item "mab_38a" filled}
-		{item  "ammo mab_38a_mag" 240}
+		("kit_smg" gun(mab_38a) ammo(mab_38a_mag) rounds(240))
 		{item "bandage" 4}
 		{item "breda35" 3}
 		{item "oto42flam" 2}
-		{item "ccm34smoke" 2}
- 	        {item "ita_pack1"}
-                {in_hands 0}
+		("give" item(ccm34smoke) count(2))
+		{item "ita_pack1"}
+		{in_hands 0}
 	}
 }

@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "jap_army_tankman2"}
+	{portrait jap_tankman}
+	{icon tankman}
+	{icon_priority 1}
+	{nationality jap}
+	{armors
+		{head tankhelmet_jap_old}
+	}
+	{perks
+		("breed_body" health(150%) regen_health(100%) stamina(100%) regen_stamina(100%) vision(mp_soldier) speed(0.8))
+		("breed_drive" tank(1.15) vehicle(1.15) cannon(1.15))
+		("breed_skills" pistol(2) smg(2) mgun(3) rifle(1) rocket(1) melee(2))
+		{"tankgun" lvl_4}
+	}
+	("breed_vet" table(crew))
+	{inventory
+		{item "type100smg" filled}
+		{item "ammo type100_mag" 30}
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

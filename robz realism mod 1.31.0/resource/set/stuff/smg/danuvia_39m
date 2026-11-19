@@ -5,7 +5,7 @@
 	{reloadSound "mp40_reload"}
 	("burst_short")
 	("recoveryTime" r(750))
- 	("speed" s(450))
+	("speed" s(450))
 	{spreading 1.2
 		{SpreadPower	1}
 		{BurstAccuracy 100 97 94 91 88 85 82 79 76 73 70 60}

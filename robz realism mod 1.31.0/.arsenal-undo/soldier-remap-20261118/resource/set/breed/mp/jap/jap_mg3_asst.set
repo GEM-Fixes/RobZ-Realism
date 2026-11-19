@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "jap_army_rifle"}
+	{portrait jap_soldier2}
+	{icon rifleman}
+	{icon_priority 1}
+	{nationality jap}
+	{armors
+		{head jap_army_helmet6}
+	}
+	{perks
+		("body_regular_bare")
+		("drive_t08_v1_c1")
+		("skills_2_1_3_3_1_2")
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("kit_rifle" gun(type38rifle) ammo(arisaka6-5_clip) rounds(200))
+		{item "bandage" 3}
+		("frag_type97")
+		{item "sandbag_kit"}
+		("mine_antipersonnel_x2")
+		{in_hands 0}
+	}
+}

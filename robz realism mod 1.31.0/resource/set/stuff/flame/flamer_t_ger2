@@ -13,10 +13,10 @@
 	{aimRange 75}
 	{maxRange 75}
 	{recoveryTime 0.2}
-    	{RelaxationTime 0.5}
+	{RelaxationTime 0.5}
 	{gravity 35}
 	{speed 230}
-    	{AimingTolerance 3}
+	{AimingTolerance 3}
 	{burst
 		{short 1 0.1}
 		{long 2 1}

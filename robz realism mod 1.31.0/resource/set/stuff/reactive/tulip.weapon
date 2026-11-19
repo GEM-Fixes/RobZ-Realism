@@ -2,10 +2,10 @@
 	{filling "ammo tulip" 2}
 	("heavy_artillery")
 	{fireSound "reactive/calliope_burst"}
-	{recoveryTime 0.50}	
-	
+	{recoveryTime 0.50}
+
 	{aimtype direct}
-	{gravity 3.0}	
+	{gravity 3.0}
 	{range 180 180}
 	{rechargeTime 60}
 	{speed 200}

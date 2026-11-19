@@ -1,8 +1,8 @@
 {from "pattern throwable"
 	{tag "ap big"}
-	{inventory {size 2 2}}	
+	{inventory {size 2 2}}
 	{entity "kasapanos_4kg"}
-	
+
 	{damage blastwave
 		{energy 20}
 		{area 0.4 0.4}
@@ -14,19 +14,19 @@
 	{throw
 		{range 15}
 		{startAngle 90}
-		{spreading 0.4}		
+		{spreading 0.4}
 		{constantSpeed 14}
 	}
 	{damage cumulative
-		{damage 120}			
+		{damage 120}
 		(mod "mp" {damage 120})
 		{distance 1}
 	}
 	{throw
 		{range 12}
 		{startAngle 90}
-		{spreading 0.4}			
-		(mod "mp" {spreading 2})		
+		{spreading 0.4}
+		(mod "mp" {spreading 2})
 		{constantSpeed 10.5}
 	}
 	{possibleDamageRadius 5}

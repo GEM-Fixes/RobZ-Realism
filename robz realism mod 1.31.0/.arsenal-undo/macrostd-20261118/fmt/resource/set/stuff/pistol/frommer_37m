@@ -1,0 +1,9 @@
+{from "pattern pistol"
+	{filling "ammo 9x17" 7 35}
+	{entity "frommer_37m"}
+	{fireSound	"pistol/tt"}
+	{reloadSound "vis"}
+	("speed" s(300))
+
+	
+}

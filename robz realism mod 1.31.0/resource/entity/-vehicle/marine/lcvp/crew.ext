@@ -15,7 +15,13 @@
 	}
 }
 
-(define "crew_human"
+; crew_human_no_group_targetable: {placer {place}} {boarder {door} {link}}
+;   place - name of {place}, text in {link}
+;   bone - name of {linkbone}
+;   door - name of {door}, name of {link}
+;   animation - name of {anm}
+;   e.g. ("crew_human_no_group_targetable" place(gunner1) bone(gunner1) door(emit)   animation(gunner))
+(define "crew_human_no_group_targetable"
 	{placer
 		{place "%place" {linkbone "%bone"} {turnoff {sensor} {shadow}}}
 	}
@@ -25,9 +31,9 @@
 	}
 )
 
-("crew_human" place(gunner1)	bone(gunner1)	door(emit)			animation(gunner))
-("crew_human" place(gunner2)	bone(gunner2)	door(emit)			animation(gunner))
-("crew_human" place(driver)		bone(driver)	door(emit)			animation(passenger))
+("crew_human_no_group_targetable" place(gunner1)	bone(gunner1)	door(emit)			animation(gunner))
+("crew_human_no_group_targetable" place(gunner2)	bone(gunner2)	door(emit)			animation(gunner))
+("crew_human_no_group_targetable" place(driver)		bone(driver)	door(emit)			animation(passenger))
 
 {placer
 	{place "driver"		{group "crew"}}
@@ -36,6 +42,9 @@
 }
 
 
+; define_place: {placer} {boarder} {Volume "%place"}
+;   place - text in {place}, name of {linkbone}, name of {door}
+;   e.g. ("define_place" place(place1))
 (define "define_place"
 	{placer
 		{place "attach%place"
@@ -55,6 +64,9 @@
 	}
 )
 
+; define_place_jump: {placer} {boarder} {Volume "place%i"}
+;   i - text in {place}, text in {linkbone}, text in {door}
+;   e.g. none in the mod (called from vanilla files)
 (define "define_place_jump"
 	{placer
 		{place "attachplace%i"

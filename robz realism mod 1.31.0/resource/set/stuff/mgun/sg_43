@@ -3,7 +3,7 @@
 	{entity "sg43"}
 	{fireSound	"mgun/sg-43_burst/"}
 	{reloadSound "dt_reload"}
-	
+
 	{mass 14}
 	{rechargeTime 12}
 	("recoveryTime" r(800))

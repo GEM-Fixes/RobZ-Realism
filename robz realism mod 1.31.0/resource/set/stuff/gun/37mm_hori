@@ -6,16 +6,16 @@
 	{cursor "cannon_on"}
 	{rechargeTime 4}
 	("range_minimum")
-	
+
 	{range 170 170}
 	("speed" s(780))
 	("caliber_minimum")
 	{projectileDamage 55}
-	("damage_170" a(55) b(44) c(33) d(26) e(18) range(170))
+	("damage_170" at20(55) at100(44) at170(33) at215(26) at250(18) max(170))
 	{parameters "apcr"
 		{cursor "cannon_on_apcr"}
 		{cursorReloading "cannon_reload_apcr"}
-       		("damage_170" a(80) b(64) c(48) d(36) e(23) range(170))
+		("damage_170" at20(80) at100(64) at170(48) at215(36) at250(23) max(170))
 	}
 	{parameters "fg"
 		{range 150 150}
@@ -26,7 +26,7 @@
 		{cursor "cannon_on_sm"}
 		{cursorReloading "cannon_reload_sm"}
 	}
-	
+
 	("accuracy_minimum")
 }
 

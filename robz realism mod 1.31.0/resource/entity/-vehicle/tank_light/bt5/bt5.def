@@ -1,5 +1,6 @@
 ;Created by Dmirog
 ;Date:        Mon 9 09 2013
+(include "/properties/robz/volumes.inc")
 {Entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.2))
@@ -10,22 +11,10 @@
 	{patherId "tank.light"}
 	{extender "enumerator"}
 
-	{Volume "Body1"
-		{tags "body"}
-		{component "body"}
-	}
-	{Volume "Body2"
-		{tags "body"}
-		{component "body"}
-	}
-	{Volume "Body2"
-		{tags "body"}
-		{component "body"}
-	}
-	{Volume "gun_rot"
-		{tags "gun"}
-		{component "gun"}
-	}
+	("vol_body_part" name(Body1))
+	("vol_body_part" name(Body2))
+	("vol_body_part" name(Body2))
+	("vol_gun_part" name(gun_rot))
 	{Volume "gun"
 		{tags "gun"}
 		{thickness 10}
@@ -79,7 +68,7 @@
 	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor1))
 	("seat_human" place(seat3) bone(seat03) door(emit6)  animation(armor))
 	("seat_human" place(seat4) bone(seat04) door(emit5)  animation(armor))
-	
+
 	{extender "inventory"
 		{box
 			{item "ammo dt29_mag" 2400}
@@ -93,11 +82,11 @@
 			{RestoreIKAfterAim}
 			{weapon "45mm_20k" filling "bullet45 rus aphebc" 1}
 			{charger "gunner"}
-			("abm_low")    
+			("abm_low_v4")
 
 		}
 		{place "mgun"
-            		("abm_mgun")
+			("abm_mgun")
 			{type "mgun_coaxial"}
 			{LinkBone "mgun_rot"}
 			{LinkAnimation "off"}
@@ -106,7 +95,7 @@
 			{basic}
 		}
 	}
-	
+
 	{mass 11500}
 
 	{Chassis
@@ -116,9 +105,9 @@
 			{maxSpeedAtMaxTurn 6}
 			{StartTime  25}
 			{TurnTime   13}
-			{TurnStart  1.1}			
-			{TurnRadius 7} 
-    			{TurnStop   0.6}
+			{TurnStart  1.1}
+			{TurnRadius 7}
+			{TurnStop   0.6}
 			{BrakeTime  1.5}
 			{StopTime   2.5}
 			{Gears  0.1 0.2 0.3 1}

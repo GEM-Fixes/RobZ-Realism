@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ita-ber-smg"}
+	{portrait "ita_soldier3"}
+	{icon "smg"}
+	{icon_priority 0}
+	{nationality ita}
+	{armors
+		{head helmet_ita_m33_bersaglieri}
+	}
+	{perks
+		("body_squadleader")
+		("drive_t08_v10_c10")
+		("breed_skills" pistol(2) smg(5) mgun(3) rifle(4) rocket(1) melee(2))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("kit_smg" gun(mab_38a) ammo(mab_38a_mag) rounds(240))
+		{item "bandage" 2}
+		{item "breda42at"}
+		("smoke_ccm34smoke_x2")
+		{item "breda35" 2}
+
+		{in_hands 0}
+	}
+}

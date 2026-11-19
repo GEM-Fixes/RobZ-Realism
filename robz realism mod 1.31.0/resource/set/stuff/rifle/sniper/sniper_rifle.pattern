@@ -1,9 +1,9 @@
 {from "pattern rifle"
 	{tag "sniper"}
-	
+
 	{special
 		{mode aim}
-		{PrepareTime 3.5}	
+		{PrepareTime 3.5}
 		{PrepareCursor "aimed_shot"}
 		{accuracy 2.5}
 		{throw_off}

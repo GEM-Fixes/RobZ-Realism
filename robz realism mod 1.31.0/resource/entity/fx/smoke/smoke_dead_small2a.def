@@ -25,7 +25,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{## sprite "$/smoke/smokesmal4b_100"
 					{turn 1
 						{linear
@@ -106,7 +106,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{## sprite "$/smoke/smokesmal4b_100"
 					{turn 1
 						{linear
@@ -184,7 +184,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/flame"
 					{timer
 						{mode play }
@@ -253,7 +253,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/oskolki"
 					{turn 1
 						{linear
@@ -307,7 +307,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smtanko"
 					{turn 1
 						{linear
@@ -403,7 +403,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_100"
 					{turn 1
 						{linear
@@ -462,7 +462,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_100"
 					{turn 1
 						{linear

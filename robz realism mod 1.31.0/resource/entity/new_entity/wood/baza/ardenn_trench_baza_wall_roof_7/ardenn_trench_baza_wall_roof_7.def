@@ -1,31 +1,12 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
-(include "/properties/building.inc")
+	(include "/properties/building.inc")
 	{props "one" "staged" "wood" "construction" "disable_area" "no_destroyed_stamp" "burning"}
 	("armor_heavy" args 0.8)
 	{Extension "ardenn_trench_baza_wall_roof_7.mdl"}
-	{Volume "body1"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 0}{obstacle 0}}
-	}
-	{Volume "body2"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 0}{obstacle 0}}
-	}
-	{Volume "body3"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 0}{obstacle 0}}
-	}
-	{Volume "body4"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 0}{obstacle 0}}
-	}
-	{Volume "body5"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 0}{obstacle 0}}
-	}
+	("vol_body_hidden" name(body1) mm(50))
+	("vol_body_hidden" name(body2) mm(50))
+	("vol_body_hidden" name(body3) mm(50))
+	("vol_body_hidden" name(body4) mm(50))
+	("vol_body_hidden" name(body5) mm(50))
 }

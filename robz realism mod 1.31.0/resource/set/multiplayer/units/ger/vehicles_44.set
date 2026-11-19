@@ -1,175 +1,173 @@
 ;----- Germany -----
 
 
-;   Button 1   
+;   Button 1
 
-{"r12"              ("vs" c(0) t(44) 	s(ger) n(2) g(b1) sc(105) b(v1) cw(0) cp(2)) {level 1} {cost 105} {fore 0.0}}		;0sec
-{"kubel_mgun"       ("vs" c(30) t(44) 	s(ger) n(3) g(b2) sc(120) b(v1) cw(0) cp(3)) {level 1} {cost 120} {fore 0.0}}		;30sec
-{"np_sdkfz250_1"    ("vs" c(10) t(44) 	s(ger) n(4) g(b4) sc(140) b(v1) cw(0) cp(5)) {level 1} {cost 140} {fore -17.0}}	;180sec
-{"np_sdkfz251_1_late_single"  ("vs" c(10) t(44) 	s(ger) n(2) g(b5) sc(150) b(v1) cw(0) cp(5)) {level 1} {cost 150} {fore -17.0}}	;180sec
-{"np_sdkfz8_single"        ("vs" c(0) t(44) 	s(ger) n(2) g(b6) sc(180) b(v1) cw(0) cp(1)) {level 1} {cost 180} {fore 0.0}}		;0sec
+("unit_vehicle_supporters" side(ger) name(r12) breed(vehicle_supporter) crew(2) charge(0) tags(44) group(b1) button(v1) score(105) weight(0) points(2) level(1) cost(105) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(ger) name(kubel_mgun) breed(vehicle_supporter) crew(3) charge(30) tags(44) group(b2) button(v1) score(120) weight(0) points(3) level(1) cost(120) fore(0.0))		;30sec
+("unit_vehicle_supporters" side(ger) name(np_sdkfz250_1) breed(vehicle_supporter) crew(4) charge(10) tags(44) group(b4) button(v1) score(140) weight(0) points(5) level(1) cost(140) fore(-17.0))	;180sec
+("unit_vehicle_supporters" side(ger) name(np_sdkfz251_1_late_single) breed(vehicle_supporter) crew(2) charge(10) tags(44) group(b5) button(v1) score(150) weight(0) points(5) level(1) cost(150) fore(-17.0))	;180sec
+("unit_vehicle_supporters" side(ger) name(np_sdkfz8_single) breed(vehicle_supporter) crew(2) charge(0) tags(44) group(b6) button(v1) score(180) weight(0) points(1) level(1) cost(180) fore(0.0))		;0sec
 
-{"blitz3_6"         ("vs" c(0) t(44) 	s(ger) n(2) g(b7) sc(100) b(v1) cw(0) cp(3)) {level 1} {cost 100} {fore 0.0}}		;0sec
-{"blitz3_6art"      ("vs" c(0) t(44) 	s(ger) n(2) g(b8) sc(300) b(v1) cw(0) cp(3)) {level 1} {cost 300} {fore 0.0}}		;0sec
-{"blitz3_6eng"      ("vs" c(0) t(44) 	s(ger) n(2) g(b9) sc(250) b(v1) cw(0) cp(3)) {level 1} {cost 250} {fore 0.0}}		;0sec
+("unit_vehicle_supporters" side(ger) name(blitz3_6) breed(vehicle_supporter) crew(2) charge(0) tags(44) group(b7) button(v1) score(100) weight(0) points(3) level(1) cost(100) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(ger) name(blitz3_6art) breed(vehicle_supporter) crew(2) charge(0) tags(44) group(b8) button(v1) score(300) weight(0) points(3) level(1) cost(300) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(ger) name(blitz3_6eng) breed(vehicle_supporter) crew(2) charge(0) tags(44) group(b9) button(v1) score(250) weight(0) points(3) level(1) cost(250) fore(0.0))		;0sec
 
-{"ammo_box_ger_inf" ("vs" c(0) t(44)	s(ger) n(2) g(b10) sc(30) b(v1) cw(0) cp(1)) {level 1} {cost 30} {fore 0.0}}		;0sec
-{"ammo_box_ger_art" ("vs" c(0) t(44)	s(ger) n(2) g(b11) sc(75) b(v1) cw(0) cp(1)) {level 1} {cost 75} {fore 0.0}}		;0sec
-{"ammo_box_ger_special" ("vs" c(300) t(44)	s(ger) n(2) g(b12) sc(150) b(v1) cw(0) cp(1)) {level 1} {cost 150} {fore 0.0}}		;0sec
+("unit_vehicle_supporters" side(ger) name(ammo_box_ger_inf) breed(vehicle_supporter) crew(2) charge(0) tags(44) group(b10) button(v1) score(30) weight(0) points(1) level(1) cost(30) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(ger) name(ammo_box_ger_art) breed(vehicle_supporter) crew(2) charge(0) tags(44) group(b11) button(v1) score(75) weight(0) points(1) level(1) cost(75) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(ger) name(ammo_box_ger_special) breed(vehicle_supporter) crew(2) charge(300) tags(44) group(b12) button(v1) score(150) weight(0) points(1) level(1) cost(150) fore(0.0))		;0sec
 
 
 
 
 ;   Button 2    support weapons
 
-{"mg34_lafette_seq(ger)"     ("vs_seq" c(10) t(44) 	i(20) v1(mg34_lafette)	s(ger) n(2) g(c1) sc(130) b(v2) cw(2) cp(5)) {level 1} {cost 130} {fore -2.0}}			;30sec
-{"mg34_lafette_seqx2(ger)"     ("vs2_seq" c(10) t(44) v1(mg34_lafette) v2(mg34_lafette)	i(20)	s(ger) n(2) g(c1) sc(195) b(v2) cw(2) cp(5)) {level 1} {cost 195} {fore -2.0}}			;30sec
+("unit_vehicle_supporters_sequence_sided" side(ger) name(mg34_lafette_seq) vehicle1(mg34_lafette) crew(2) charge(10) tags(44) group(c1) button(v2) icon(20) score(130) weight(2) points(5) level(1) cost(130) fore(-2.0))			;30sec
+("unit_vehicles_supporters_sequence_sided" side(ger) name(mg34_lafette_seqx2) vehicle1(mg34_lafette) vehicle2(mg34_lafette) crew(2) charge(10) tags(44) group(c1) button(v2) icon(20) score(195) weight(2) points(5) level(1) cost(195) fore(-2.0))			;30sec
 
-{"mg42_lafette_seq(ger)"     ("vs_seq" c(10) t(44) v1(mg42_lafette)	i(21)	s(ger) n(2) g(c2) sc(150) b(v2) cw(2) cp(5)) {level 1} {cost 150} {fore -2.0}}			;30sec
-{"mg42_lafette_seqx2(ger)"     ("vs2_seq" c(10) t(44) v1(mg42_lafette) v2(mg42_lafette)	i(21)	s(ger) n(2) g(c2) sc(225) b(v2) cw(2) cp(5)) {level 1} {cost 225} {fore -2.0}}			;30sec
+("unit_vehicle_supporters_sequence_sided" side(ger) name(mg42_lafette_seq) vehicle1(mg42_lafette) crew(2) charge(10) tags(44) group(c2) button(v2) icon(21) score(150) weight(2) points(5) level(1) cost(150) fore(-2.0))			;30sec
+("unit_vehicles_supporters_sequence_sided" side(ger) name(mg42_lafette_seqx2) vehicle1(mg42_lafette) vehicle2(mg42_lafette) crew(2) charge(10) tags(44) group(c2) button(v2) icon(21) score(225) weight(2) points(5) level(1) cost(225) fore(-2.0))			;30sec
 
 
-{"2cm_flak38"       ("vs" c(30) t(44) 		s(ger) n(2) g(c3) sc(200) b(v2) cw(2) cp(5)) {level 1} {cost 200} {fore -4.0}}			;150sec
+("unit_vehicle_supporters" side(ger) name(2cm_flak38) breed(vehicle_supporter) crew(2) charge(30) tags(44) group(c3) button(v2) score(200) weight(2) points(5) level(1) cost(200) fore(-4.0))			;150sec
 
-{"2cm_flakvierling38" ("vs" c(30) t(44)		s(ger) n(4) g(c4) sc(250) b(v2) cw(2) cp(5)) {level 1} {cost 250} {fore -4.0}}			;150sec
-("how" side(ger) name(2cm_flakvierling38_towed) c(30) c1(sdkfz251_1_late) c2(2cm_flakvierling38) t(44) g(c4) b(v2) level(1) cost(325) f(-5.0))	;180sec
+("unit_vehicle_supporters" side(ger) name(2cm_flakvierling38) breed(vehicle_supporter) crew(4) charge(30) tags(44) group(c4) button(v2) score(250) weight(2) points(5) level(1) cost(250) fore(-4.0))			;150sec
+("unit_howitzer_tractor" side(ger) name(2cm_flakvierling38_towed) vehicle1(sdkfz251_1_late) vehicle2(2cm_flakvierling38) breed1(vehicle_supporter) breed2(vehicle_supporter) charge(30) tags(44) group(c4) button(v2) level(1) cost(325) fore(-5.0))	;180sec
 
-{"37mm_flak_36"     ("vs" c(30) t(44) 		s(ger) n(2) g(c5) sc(250) b(v2) cw(2) cp(5)) {level 1} {cost 250} {fore -5.0}}			;180sec
-("how" side(ger) name(37mm_flak_36_towed) c(30) c1(sdkfz251_1_late) c2(37mm_flak_36) t(44) g(c5) b(v2) level(1) cost(325) f(-5.0))	;180sec
+("unit_vehicle_supporters" side(ger) name(37mm_flak_36) breed(vehicle_supporter) crew(2) charge(30) tags(44) group(c5) button(v2) score(250) weight(2) points(5) level(1) cost(250) fore(-5.0))			;180sec
+("unit_howitzer_tractor" side(ger) name(37mm_flak_36_towed) vehicle1(sdkfz251_1_late) vehicle2(37mm_flak_36) breed1(vehicle_supporter) breed2(vehicle_supporter) charge(30) tags(44) group(c5) button(v2) level(1) cost(325) fore(-5.0))	;180sec
 
-{"pak38"            ("vs" c(10) t(44) 		s(ger) n(2) g(c9) sc(180) b(v2) cw(2) cp(5)) {level 1} {cost 180} {fore -14.0}}		;150sec
+("unit_vehicle_supporters" side(ger) name(pak38) breed(vehicle_supporter) crew(2) charge(10) tags(44) group(c9) button(v2) score(180) weight(2) points(5) level(1) cost(180) fore(-14.0))		;150sec
 
-{"np_pak40_seq(ger)"         ("vs_seq" c(20) t(medium 44) 	v1(np_pak40) s(ger) n(2) g(c10) i(2) sc(400) b(v2) cw(2) cp(10)) {level 1} {cost 400} {fore -19.0}}		;400sec
-{"np_pak40_seqx2(ger)"   	("vs2_seq" c(20) t(medium 44)	v1(np_pak40) v2(np_pak40) s(ger) n(2) g(c10) i(2) sc(600) b(v2) cw(2) cp(10)) {level 1} {cost 600} {fore -19.0}}		;400sec
-("how" side(ger) name(np_pak40_towed) c(20) c1(sdkfz251_1_late) c2(np_pak40) t(medium 44) g(c10) b(v2) level(1) cost(475) f(-19.0))	;400sec
+("unit_vehicle_supporters_sequence_sided" side(ger) name(np_pak40_seq) vehicle1(np_pak40) crew(2) charge(20) tags(medium 44) group(c10) button(v2) icon(2) score(400) weight(2) points(10) level(1) cost(400) fore(-19.0))		;400sec
+("unit_vehicles_supporters_sequence_sided" side(ger) name(np_pak40_seqx2) vehicle1(np_pak40) vehicle2(np_pak40) crew(2) charge(20) tags(medium 44) group(c10) button(v2) icon(2) score(600) weight(2) points(10) level(1) cost(600) fore(-19.0))		;400sec
+("unit_howitzer_tractor" side(ger) name(np_pak40_towed) vehicle1(sdkfz251_1_late) vehicle2(np_pak40) breed1(vehicle_supporter) breed2(vehicle_supporter) charge(20) tags(medium 44) group(c10) button(v2) level(1) cost(475) fore(-19.0))	;400sec
 
-("how" side(ger) name(pak43_towed) c(60) c1(np_sdkfz8) c2(pak43) t(heavy 44) g(c11) b(v2) level(1) cost(940) f(-19.0))		;1200sec
+("unit_howitzer_tractor" side(ger) name(pak43_towed) vehicle1(np_sdkfz8) vehicle2(pak43) breed1(vehicle_supporter) breed2(vehicle_supporter) charge(60) tags(heavy 44) group(c11) button(v2) level(1) cost(940) fore(-19.0))		;1200sec
 
-("how" side(ger) name(flak36a_towed) c(60) c1(np_sdkfz8) c2(flak36a) t(medium artillery 44) g(c12) b(v2) level(1) cost(700) f(-14.0))			;900sec
+("unit_howitzer_tractor" side(ger) name(flak36a_towed) vehicle1(np_sdkfz8) vehicle2(flak36a) breed1(vehicle_supporter) breed2(vehicle_supporter) charge(60) tags(medium artillery 44) group(c12) button(v2) level(1) cost(700) fore(-14.0))			;900sec
 
-{"75mm_leig18_seq(ger)"    ("vs_seq" v1(75mm_leig18) i(123123) c(60) t(artillery 44) s(ger) n(2) g(c13) sc(16) b(v2) cw(2) cp(5)) {level 1} {cost 310} {fore -1.0}}		;120sec
-{"75mm_leig18_seq2(ger)"    ("vs_seq" v1(75mm_leig18)i(123123) c(60) t(artillery 44) s(ger) n(2) g(c13) sc(16) b(v2) cw(2) cp(5)) {level 1} {cost 210} {fore -1.0}}	;120sec
+("unit_vehicle_supporters_sequence_sided" side(ger) name(75mm_leig18_seq) vehicle1(75mm_leig18) crew(2) charge(60) tags(artillery 44) group(c13) button(v2) icon(123123) score(16) weight(2) points(5) level(1) cost(310) fore(-1.0))		;120sec
+("unit_vehicle_supporters_sequence_sided" side(ger) name(75mm_leig18_seq2) vehicle1(75mm_leig18) crew(2) charge(60) tags(artillery 44) group(c13) button(v2) icon(123123) score(16) weight(2) points(5) level(1) cost(210) fore(-1.0))	;120sec
 
-{"15_cm_sig33"      ("vs" c(60) t(artillery 44) s(ger) n(2) g(c133) sc(750) b(v2) cw(2) cp(15)) {level 1} {cost 750} {fore -9.0}}		;600sec
-("how" side(ger) name(15_cm_sig33_towed) c(60) c1(np_sdkfz8) c2(15_cm_sig33) t(artillery 44) g(c133) b(v2) level(1) cost(840) f(-9.0))		;600sec
+("unit_vehicle_supporters" side(ger) name(15_cm_sig33) breed(vehicle_supporter) crew(2) charge(60) tags(artillery 44) group(c133) button(v2) score(750) weight(2) points(15) level(1) cost(750) fore(-9.0))		;600sec
+("unit_howitzer_tractor" side(ger) name(15_cm_sig33_towed) vehicle1(np_sdkfz8) vehicle2(15_cm_sig33) breed1(vehicle_supporter) breed2(vehicle_supporter) charge(60) tags(artillery 44) group(c133) button(v2) level(1) cost(840) fore(-9.0))		;600sec
 
-{"stuh42"	    ("v" c(10) t(medium 44)	s(ger) n1(4) n2(1) g(c14) sc(600) b(v2) cw(0) cp(20)) {level 1} {cost 600} {fore -87.0}}			;880sec
-{"sig33b"	    ("v_com" c(10) t(medium 44)	s(ger) n1(4) n2(1) g(c17) sc(850) b(v2) cw(0) cp(20)) {level 1} {cost 850} {fore -87.0}} 	;880sec
-{"brummbar_early"	    ("v" c(60) t(medium 44)	s(ger) n1(3) n2(1) g(c15) sc(1050) b(v2) cw(0) cp(20)) {level 1} {cost 1050} {fore -17.67}}		;1120sec
+("unit_tank" side(ger) name(stuh42) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(10) tags(medium 44) group(c14) button(v2) score(600) weight(0) points(20) level(1) cost(600) fore(-87.0))			;880sec
+("unit_tank_commander_first" side(ger) name(sig33b) breed1(tankman2) breed2(tankman) crew1(4) crew2(1) charge(10) tags(medium 44) group(c17) button(v2) score(850) weight(0) points(20) level(1) cost(850) fore(-87.0)) 	;880sec
+("unit_tank" side(ger) name(brummbar_early) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(60) tags(medium 44) group(c15) button(v2) score(1050) weight(0) points(20) level(1) cost(1050) fore(-17.67))		;1120sec
 
 ;   Button support 2    artillery guns
 
-{"light_mortar_ger" ("light_mortar_ger" c(10) t(all 44 mortar) s(ger) g(c56) b(v22)) {level 1} {cost 110} {fore -2.0}}		;30sec
+("unit_light_mortar" side(ger) name(light_mortar_ger) breed1(ger_light_mortar) breed2(ger_light_mortar_assist) charge(10) tags(all 44 mortar) group(c56) button(v22) level(1) cost(110) fore(-2.0))		;30sec
 
-{"sgrw_34_ger"		("vs_ger_m" c(10) v1(sgrw_34) t(all 39 40 41 42 43 44 45 mortar) s(ger) n(2) g(c6) b(v22)) {level 1} {cost 320} {fore -2.0}}		;30sec
-{"sgrw_42_ger"		("vs_ger_m" c(60) v1(sgrw_42) t(all 42 43 44 45 mortar) s(ger) n(2) g(c7) b(v22)) {level 1} {cost 670} {fore -9.0}}			;600sec
+("unit_vehicle_supporters_info" side(ger) name(sgrw_34_ger) vehicle1(sgrw_34) crew(2) charge(10) tags(all 39 40 41 42 43 44 45 mortar) group(c6) button(v22) level(1) cost(320) fore(-2.0))		;30sec
+("unit_vehicle_supporters_info" side(ger) name(sgrw_42_ger) vehicle1(sgrw_42) crew(2) charge(60) tags(all 42 43 44 45 mortar) group(c7) button(v22) level(1) cost(670) fore(-9.0))			;600sec
 
-{"np_sdkfz250_7"    ("vs" c(10) t(44 mortar) 	s(ger) n(4) g(d3) sc(430) b(v22) cw(0) cp(10)) {level 1} {cost 430} {fore -31.0}}		;320sec
+("unit_vehicle_supporters" side(ger) name(np_sdkfz250_7) breed(vehicle_supporter) crew(4) charge(10) tags(44 mortar) group(d3) button(v22) score(430) weight(0) points(10) level(1) cost(430) fore(-31.0))		;320sec
 
-{"lefh18"      ("vs" c(60) t(artillery 44) s(ger) n(2) g(cc2) sc(400) b(v22) cw(0) cp(15)) {level 1} {cost 400} {fore -9.0}}				;600sec
-("how" side(ger) name(lefh18_towed) c(60) c1(np_sdkfz8) c2(lefh18)  	t(artillery 44) g(cc2) b(v22) level(1) cost(490) f(-9.0))				;600sec
+("unit_vehicle_supporters" side(ger) name(lefh18) breed(vehicle_supporter) crew(2) charge(60) tags(artillery 44) group(cc2) button(v22) score(400) weight(0) points(15) level(1) cost(400) fore(-9.0))				;600sec
+("unit_howitzer_tractor" side(ger) name(lefh18_towed) vehicle1(np_sdkfz8) vehicle2(lefh18) breed1(vehicle_supporter) breed2(vehicle_supporter) charge(60) tags(artillery 44) group(cc2) button(v22) level(1) cost(490) fore(-9.0))				;600sec
 
-("how" side(ger) name(sfh18_towed) c(60) c1(np_sdkfz8) c2(sfh18) 	t(artillery heavyart heavy 44) g(cc3) b(v22) level(1) cost(750) f(-19.0))		;1200sec
+("unit_howitzer_tractor" side(ger) name(sfh18_towed) vehicle1(np_sdkfz8) vehicle2(sfh18) breed1(vehicle_supporter) breed2(vehicle_supporter) charge(60) tags(artillery heavyart heavy 44) group(cc3) button(v22) level(1) cost(750) fore(-19.0))		;1200sec
 
-("how" side(ger) name(morser18) c(60) c1(np_sdkfz8) c2(morser18) t(artillery heavyart heavy 44) s(ger) g(cc4) b(v22)  level(1) cost(1240) f(-19.0)) 	;1200sec
+("unit_howitzer_tractor" side(ger) name(morser18) vehicle1(np_sdkfz8) vehicle2(morser18) breed1(vehicle_supporter) breed2(vehicle_supporter) charge(60) tags(artillery heavyart heavy 44) group(cc4) button(v22) level(1) cost(1240) fore(-19.0)) 	;1200sec
 
-{"wespe"        ("v" c(60) t(artillery 44) 			s(ger) n1(3) n2(1) g(cc8) sc(750) b(v22) cw(0) cp(15)) {level 1} {cost 750} {fore -14.0}}	;900sec
-{"grille"       ("v" c(60) t(artillery 44) 	s(ger) n1(4) n2(1) g(cc12) sc(1040) b(v22) cw(0) cp(15)) {level 1} {cost 1040} {fore -14.0}}			;900sec
-{"hummel"       ("v" c(60) t(artillery heavyart heavy 44) 	s(ger) n1(3) n2(1) g(cc9) sc(1280) b(v22) cw(0) cp(20)) {level 1} {cost 1280} {fore -19.0}}	;1200sec
+("unit_tank" side(ger) name(wespe) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(60) tags(artillery 44) group(cc8) button(v22) score(750) weight(0) points(15) level(1) cost(750) fore(-14.0))	;900sec
+("unit_tank" side(ger) name(grille) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(60) tags(artillery 44) group(cc12) button(v22) score(1040) weight(0) points(15) level(1) cost(1040) fore(-14.0))			;900sec
+("unit_tank" side(ger) name(hummel) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(60) tags(artillery heavyart heavy 44) group(cc9) button(v22) score(1280) weight(0) points(20) level(1) cost(1280) fore(-19.0))	;1200sec
 
-{"nebelwerfer41"    ("vs" c(60) t(artillery rocket 44)		s(ger) n(2) g(cc5) sc(450) b(v22) cw(2) cp(15)) {level 1} {cost 450} {fore -16.0}}	;900sec
-("how" side(ger) name(nebelwerfer41_towed) c(60) c1(sdkfz251_1_late) c2(nebelwerfer41) t(artillery rocket 44) g(cc5) b(v22) level(1) cost(525) f(-16.0))	;900sec
+("unit_vehicle_supporters" side(ger) name(nebelwerfer41) breed(vehicle_supporter) crew(2) charge(60) tags(artillery rocket 44) group(cc5) button(v22) score(450) weight(2) points(15) level(1) cost(450) fore(-16.0))	;900sec
+("unit_howitzer_tractor" side(ger) name(nebelwerfer41_towed) vehicle1(sdkfz251_1_late) vehicle2(nebelwerfer41) breed1(vehicle_supporter) breed2(vehicle_supporter) charge(60) tags(artillery rocket 44) group(cc5) button(v22) level(1) cost(525) fore(-16.0))	;900sec
 
-{"nebelwerfer42"    ("vs" c(60) t(artillery heavyart rocket 44)	s(ger) n(2) g(cc6) sc(1300) b(v22) cw(2) cp(15)) {level 1} {cost 1300} {fore -19.0}}	;900sec
-("how" side(ger) name(nebelwerfer42_towed) c(60) c1(sdkfz251_1_late) c2(nebelwerfer42) t(artillery heavyart rocket 44) g(cc6) b(v22) level(1) cost(1375) f(-19.0))	;900sec
+("unit_vehicle_supporters" side(ger) name(nebelwerfer42) breed(vehicle_supporter) crew(2) charge(60) tags(artillery heavyart rocket 44) group(cc6) button(v22) score(1300) weight(2) points(15) level(1) cost(1300) fore(-19.0))	;900sec
+("unit_howitzer_tractor" side(ger) name(nebelwerfer42_towed) vehicle1(sdkfz251_1_late) vehicle2(nebelwerfer42) breed1(vehicle_supporter) breed2(vehicle_supporter) charge(60) tags(artillery heavyart rocket 44) group(cc6) button(v22) level(1) cost(1375) fore(-19.0))	;900sec
 
-{"np_sdkfz251_1w"   ("vs" c(60) t(artillery heavyart rocket 44) s(ger) n(3) g(cc7) sc(1500) b(v22) cw(0) cp(15)) {level 1} {cost 1500} {fore -21.0}}	;1200sec
-{"sdkfz4"       ("v" c(60) t(artillery heavyart rocket 44) 	s(ger) n1(2) n2(0) g(cc10) sc(650) b(v22) cw(0) cp(20)) {level 1} {cost 650} {fore -16.0}}	;1200sec
+("unit_vehicle_supporters" side(ger) name(np_sdkfz251_1w) breed(vehicle_supporter) crew(3) charge(60) tags(artillery heavyart rocket 44) group(cc7) button(v22) score(1500) weight(0) points(15) level(1) cost(1500) fore(-21.0))	;1200sec
+("unit_tank" side(ger) name(sdkfz4) breed1(tankman) breed2(tankman2) crew1(2) crew2(0) charge(60) tags(artillery heavyart rocket 44) group(cc10) button(v22) score(650) weight(0) points(20) level(1) cost(650) fore(-16.0))	;1200sec
 
-;   Button 3   
+;   Button 3
 
-{"np_sdkfz250_10"   ("vs" c(10) t(44) 	s(ger) n(4) g(d1) sc(200) b(v3) cw(0) cp(5)) {level 1} {cost 200} {fore -23.0}}		;240sec
-{"np_sdkfz250_9"    ("vs" c(10) t(44) 	s(ger) n(3) g(d4) sc(210) b(v3) cw(0) cp(5)) {level 1} {cost 210} {fore -31.0}}		;320sec
-{"np_sdkfz251_9"    ("vs" c(10) t(44) 	s(ger) n(3) g(d6) sc(280) b(v3) cw(0) cp(5)) {level 1} {cost 280} {fore -36.0}}		;370sec
+("unit_vehicle_supporters" side(ger) name(np_sdkfz250_10) breed(vehicle_supporter) crew(4) charge(10) tags(44) group(d1) button(v3) score(200) weight(0) points(5) level(1) cost(200) fore(-23.0))		;240sec
+("unit_vehicle_supporters" side(ger) name(np_sdkfz250_9) breed(vehicle_supporter) crew(3) charge(10) tags(44) group(d4) button(v3) score(210) weight(0) points(5) level(1) cost(210) fore(-31.0))		;320sec
+("unit_vehicle_supporters" side(ger) name(np_sdkfz251_9) breed(vehicle_supporter) crew(3) charge(10) tags(44) group(d6) button(v3) score(280) weight(0) points(5) level(1) cost(280) fore(-36.0))		;370sec
 
-{"sdkfz223"         ("v" c(10) t(44) 	s(ger) n1(1) n2(1) g(d8) sc(150)  b(v3) cw(0) cp(5)) {level 1} {cost 150} {fore -31.0}}	;320sec
-{"sdkfz222"         ("v" c(10) t(44) 	s(ger) n1(2) n2(1) g(d10) sc(220) b(v3) cw(0) cp(5)) {level 1} {cost 220} {fore -37.0}}	;380sec
+("unit_tank" side(ger) name(sdkfz223) breed1(tankman) breed2(tankman2) crew1(1) crew2(1) charge(10) tags(44) group(d8) button(v3) score(150) weight(0) points(5) level(1) cost(150) fore(-31.0))	;320sec
+("unit_tank" side(ger) name(sdkfz222) breed1(tankman) breed2(tankman2) crew1(2) crew2(1) charge(10) tags(44) group(d10) button(v3) score(220) weight(0) points(5) level(1) cost(220) fore(-37.0))	;380sec
 
-{"np_sdkfz234_1"    ("v" c(10) t(44)   	s(ger) n1(2) n2(1) g(d15) sc(250) b(v3) cw(0) cp(5)) {level 1} {cost 265} {fore -41.0}}	;420sec
-{"np_sdkfz234_3"    ("v" c(10) t(44)   	s(ger) n1(2) n2(1) g(d17) sc(350) b(v3) cw(0) cp(5)) {level 1} {cost 315} {fore -52.0}}	;530sec
-{"sdkfz234"         ("v" c(10) t(44)   	s(ger) n1(2) n2(1) g(d16) sc(300) b(v3) cw(0) cp(10)) {level 1} {cost 300} {fore -52.0}}	;530sec
+("unit_tank" side(ger) name(np_sdkfz234_1) breed1(tankman) breed2(tankman2) crew1(2) crew2(1) charge(10) tags(44) group(d15) button(v3) score(250) weight(0) points(5) level(1) cost(265) fore(-41.0))	;420sec
+("unit_tank" side(ger) name(np_sdkfz234_3) breed1(tankman) breed2(tankman2) crew1(2) crew2(1) charge(10) tags(44) group(d17) button(v3) score(350) weight(0) points(5) level(1) cost(315) fore(-52.0))	;530sec
+("unit_tank" side(ger) name(sdkfz234) breed1(tankman) breed2(tankman2) crew1(2) crew2(1) charge(10) tags(44) group(d16) button(v3) score(300) weight(0) points(10) level(1) cost(300) fore(-52.0))	;530sec
 
 
-{"pz2l"             ("v" c(10) t(44) 	s(ger) n1(2) n2(1) g(d12) sc(220) b(v3) cw(0) cp(5)) {level 1} {cost 220} {fore -41.0}}	;420sec
+("unit_tank" side(ger) name(pz2l) breed1(tankman) breed2(tankman2) crew1(2) crew2(1) charge(10) tags(44) group(d12) button(v3) score(220) weight(0) points(5) level(1) cost(220) fore(-41.0))	;420sec
 
-{"welberwind"       ("v" c(30) t(44)	s(ger) n1(3) n2(1) g(d19) sc(250) b(v3) cw(0) cp(10)) {level 1} {cost 250} {fore -13}}	;420sec
-{"ostwind"          ("v" c(30) t(44)	s(ger) n1(3) n2(1) g(d20) sc(300) b(v3) cw(0) cp(10)) {level 1} {cost 300} {fore -17.33}}	;520sec
+("unit_tank" side(ger) name(welberwind) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(30) tags(44) group(d19) button(v3) score(250) weight(0) points(10) level(1) cost(250) fore(-13))	;420sec
+("unit_tank" side(ger) name(ostwind) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(30) tags(44) group(d20) button(v3) score(300) weight(0) points(10) level(1) cost(300) fore(-17.33))	;520sec
 
-;   Button 4   
+;   Button 4
 
-{"pz3_m_flamer"     ("v" c(900) t(medium 44 flamethrower) 		s(ger) n1(3) n2(1) g(flame) sc(480) b(v4) cw(0) cp(15)) {level 1} {cost 480} {fore 0.0}}	;900sec
+("unit_tank" side(ger) name(pz3_m_flamer) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(900) tags(medium 44 flamethrower) group(flame) button(v4) score(480) weight(0) points(15) level(1) cost(480) fore(0.0))	;900sec
 
-{"pz3_m"            ("v" c(10) t(medium 44) 		s(ger) n1(3) n2(1) g(e6) sc(270) b(v4) cw(0) cp(15)) {level 1} {cost 270} {fore -62.0}}	;630sec
+("unit_tank" side(ger) name(pz3_m) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(medium 44) group(e6) button(v4) score(270) weight(0) points(15) level(1) cost(270) fore(-62.0))	;630sec
 
-{"pz3n"             ("v" c(10) t(medium 44) 		s(ger) n1(3) n2(1) g(e8) sc(370) b(v4) cw(0) cp(15)) {level 1} {cost 370} {fore -62.0}}	;630sec
+("unit_tank" side(ger) name(pz3n) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(medium 44) group(e8) button(v4) score(370) weight(0) points(15) level(1) cost(370) fore(-62.0))	;630sec
 
-{"pz4h_seq(ger)"          ("v_seq" c(10) t(all 44 45 medium) v1(pz4h)	s(ger) n1(4) n2(1) g(e14) i(61) sc(500) b(v4) cw(0) cp(20)) {level 1} {cost 500} {fore -94.0}}	;950sec
-{"pz4h_seqx2(ger)"        ("v_seq" c(10) t(all medium 44 45) v1(pz4h)s(ger) n1(4) n2(1) g(e14) i(61) sc(500) b(v4) cw(0) cp(20)) {level 1} {cost 400} {fore -94.0}}	;950sec
+("unit_tank_sequence_sided" side(ger) name(pz4h_seq) vehicle1(pz4h) crew1(4) crew2(1) charge(10) tags(all 44 45 medium) group(e14) button(v4) icon(61) score(500) weight(0) points(20) level(1) cost(500) fore(-94.0))	;950sec
+("unit_tank_sequence_sided" side(ger) name(pz4h_seqx2) vehicle1(pz4h) crew1(4) crew2(1) charge(10) tags(all medium 44 45) group(e14) button(v4) icon(61) score(500) weight(0) points(20) level(1) cost(400) fore(-94.0))	;950sec
 
-{"pz5g"             ("v" c(60) t(44 heavy) 			s(ger) n1(4) n2(1) g(e16) sc(1325) b(v4) cw(0) cp(30)) {level 1} {cost 1325} {fore -24.0}}	;1500sec
+("unit_tank" side(ger) name(pz5g) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(60) tags(44 heavy) group(e16) button(v4) score(1325) weight(0) points(30) level(1) cost(1325) fore(-24.0))	;1500sec
 
-{"pz6e"             ("v" c(600) t(44 heavy) 		s(ger) n1(4) n2(1) g(e17) sc(1300) b(v4) cw(0) cp(30)) {level 1} {cost 1300} {fore -1.92}}  ;1750sec
+("unit_tank" side(ger) name(pz6e) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(600) tags(44 heavy) group(e17) button(v4) score(1300) weight(0) points(30) level(1) cost(1300) fore(-1.92))  ;1750sec
 
-{"sdkfz182b"        ("v" c(120) t(44 sheavy) 		s(ger) n1(4) n2(1) g(e19) sc(2200) b(v4) cw(0) cp(40)) {level 1} {cost 2200} {fore -17.0}} 	;2160sec
-{"pz6bh"            ("v" c(120) t(44 sheavy) 		s(ger) n1(4) n2(1) g(e19) sc(2350) b(v4) cw(0) cp(40)) {level 1} {cost 2350} {fore -17.0}} 	;2160sec
+("unit_tank" side(ger) name(sdkfz182b) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(120) tags(44 sheavy) group(e19) button(v4) score(2200) weight(0) points(40) level(1) cost(2200) fore(-17.0)) 	;2160sec
+("unit_tank" side(ger) name(pz6bh) breed1(tankman) breed2(tankman2) crew1(4) crew2(1) charge(120) tags(44 sheavy) group(e19) button(v4) score(2350) weight(0) points(40) level(1) cost(2350) fore(-17.0)) 	;2160sec
 
-;   Button 5   
-{"np_sdkfz234_4"    ("v" c(10) t(45)   	s(ger) n1(2) n2(1) g(d18) sc(500) b(v5) cw(0) cp(10)) {level 1} {cost 500} {fore -62.0}}	;630sec
+;   Button 5
+("unit_tank" side(ger) name(np_sdkfz234_4) breed1(tankman) breed2(tankman2) crew1(2) crew2(1) charge(10) tags(45) group(d18) button(v5) score(500) weight(0) points(10) level(1) cost(500) fore(-62.0))	;630sec
 
-{"marder_3m"        ("v" c(10) t(medium 44) 	s(ger) n1(3) n2(1) g(f0) sc(425) b(v5) cw(0) cp(12)) {level 1} {cost 425} {fore -74.0}} 	;750sec
+("unit_tank" side(ger) name(marder_3m) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(medium 44) group(f0) button(v5) score(425) weight(0) points(12) level(1) cost(425) fore(-74.0)) 	;750sec
 
-{"hetzer"           ("v_com" c(10) t(medium 44) 	s(ger) n1(3) n2(1) g(f1) sc(600) b(v5) cw(0) cp(15)) {level 1} {cost 600} {fore -87.0}} 	;880sec
+("unit_tank_commander_first" side(ger) name(hetzer) breed1(tankman2) breed2(tankman) crew1(3) crew2(1) charge(10) tags(medium 44) group(f1) button(v5) score(600) weight(0) points(15) level(1) cost(600) fore(-87.0)) 	;880sec
 
-{"stug3g_seq(ger)"           ("v_seq_com" c(10) t(medium 44) v1(stug3g) s(ger) n1(3) n2(1) g(f6) i(1) sc(550) b(v5) cw(0) cp(15)) {level 1} {cost 550} {fore -94.0}} 	;950sec
-{"stug3g_seqx2(ger)"         ("v2_seq_com" c(10) t(medium 44) v1(stug3g) v2(stug3g) s(ger) n1(3) n2(1) g(f6) i(1) sc(825) b(v5) cw(0) cp(15)) {level 1} {cost 825} {fore -94.0}}	;950sec
+("unit_tank_sequence_commander_first_sided" side(ger) name(stug3g_seq) vehicle1(stug3g) crew1(3) crew2(1) charge(10) tags(medium 44) group(f6) button(v5) icon(1) score(550) weight(0) points(15) level(1) cost(550) fore(-94.0)) 	;950sec
+("unit_tanks_sequence_commander_first_sided" side(ger) name(stug3g_seqx2) vehicle1(stug3g) vehicle2(stug3g) crew1(3) crew2(1) charge(10) tags(medium 44) group(f6) button(v5) icon(1) score(825) weight(0) points(15) level(1) cost(825) fore(-94.0))	;950sec
 
-{"jagdpanzer_iv_l48" ("v" c(10) t(medium 44)	s(ger) n1(3) n2(1) g(f12) sc(500) b(v5) cw(0) cp(20)) {level 1} {cost 500} {fore -94.0}} 	;950sec
-{"jagdpanzer_iv"    ("v" c(60) t(heavy 44)	s(ger) n1(3) n2(1) g(f13) sc(1100) b(v5) cw(0) cp(30)) {level 1} {cost 1100} {fore -24.0}} 	;1500sec
+("unit_tank" side(ger) name(jagdpanzer_iv_l48) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(medium 44) group(f12) button(v5) score(500) weight(0) points(20) level(1) cost(500) fore(-94.0)) 	;950sec
+("unit_tank" side(ger) name(jagdpanzer_iv) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(60) tags(heavy 44) group(f13) button(v5) score(1100) weight(0) points(30) level(1) cost(1100) fore(-24.0)) 	;1500sec
 
-{"nashorn"          ("v" c(60) t(heavy 44) 	s(ger) n1(3) n2(1) g(f9) sc(1300) b(v5) cw(0) cp(30)) {level 1} {cost 1300} {fore -30.67}}  	;1900sec
+("unit_tank" side(ger) name(nashorn) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(60) tags(heavy 44) group(f9) button(v5) score(1300) weight(0) points(30) level(1) cost(1300) fore(-30.67))  	;1900sec
 
-{"jagdpanther"      ("v" c(850) t(heavy 44) 	s(ger) n1(3) n2(1) g(f14) sc(1750) b(v5) cw(0) cp(30)) {level 1} {cost 1750} {fore -1.35}} 	;2000sec
-{"elefant"          ("v" c(850) t(sheavy 44) 	s(ger) n1(3) n2(1) g(f15) sc(2100) b(v5) cw(0) cp(40)) {level 1} {cost 2100} {fore -1.35}} 	;2000sec
+("unit_tank" side(ger) name(jagdpanther) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(850) tags(heavy 44) group(f14) button(v5) score(1750) weight(0) points(30) level(1) cost(1750) fore(-1.35)) 	;2000sec
+("unit_tank" side(ger) name(elefant) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(850) tags(sheavy 44) group(f15) button(v5) score(2100) weight(0) points(40) level(1) cost(2100) fore(-1.35)) 	;2000sec
 
-{"jagdtiger"        ("v" c(900) t(sheavy 44) 	s(ger) n1(3) n2(1) g(f16) sc(2750) b(v5) cw(0) cp(40)) {level 1} {cost 2750} {fore -1.4}} 	;2160sec
+("unit_tank" side(ger) name(jagdtiger) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(900) tags(sheavy 44) group(f16) button(v5) score(2750) weight(0) points(40) level(1) cost(2750) fore(-1.4)) 	;2160sec
 
-;   Button Hero   
+;   Button Hero
 
 {"hero_mg42(ger)"        ("v1" c(120) c1(mg42_lafette_vet)		t(all hero 44) s(ger) n1(vet_vehicle_supporter:2) g(h1) b(hero)) {level 1} {cost 1.0} {fore -0.5}}
-{"pak38_elite"	    ("2v" c(200) c1(pak38_elite) c2(ammo_box_ger_art) n1(elite_vehicle_supporter:2) n2(vehicle_supporter:2) t(all hero 41 42 43 44) s(ger) g(pak38_elite) b(hero)) {level 1}  {cost 3.0} {fore -0.5}} ;300sec
-{"hero3(ger)"        ("v31" c(120) c1(sdkfz303) 		t(all hero 44) s(ger) n(vehicle_supporter:1) g(h1321) b(hero)) {level 1} {cost 2.0} {fore -0.5}}
+("unit_vehicle_pair" side(ger) name(pak38_elite) vehicle1(pak38_elite) vehicle2(ammo_box_ger_art) member1(elite_vehicle_supporter:2) member2(vehicle_supporter:2) charge(200) tags(all hero 41 42 43 44) group(pak38_elite) button(hero) level(1) cost(3.0) fore(-0.5)) ;300sec
+("unit_vehicles1_members1_sided" side(ger) name(hero3) vehicle1(sdkfz303) member(vehicle_supporter:1) charge(120) tags(all hero 44) group(h1321) button(hero) level(1) cost(2.0) fore(-0.5))
 
 
-{"kblitz"	    ("v1" c(345) c1(kblitz)		t(all hero 44) s(ger) n1(tankman:3) n2(tankman2:1) g(kblitz) b(hero)) {level 1} {cost 4.0} {fore -0.65}} ;570sec
+("unit_vehicle_members" side(ger) name(kblitz) vehicle1(kblitz) member1(tankman:3) member2(tankman2:1) charge(345) tags(all hero 44) group(kblitz) button(hero) level(1) cost(4.0) fore(-0.65)) ;570sec
 
 
 
-("squad_with14types" side(ger) name(hero_ger_volks) c(200) g(h22) c1(ger_volksgren_sl_stg:2) c2(ger_volksgren_sl_smg:1) c3(ger_volksgren_sl_asst:3) c4(ger_volksgren_stg44:5) c5(ger_volksgren_pzfst2:2) c6(ger_volksgren_smg:1) 
-c7(ger_volksgren_sa:3) c8(ger_volksgren_rifle:6) c9(ger_volksgren_mg:2) c10(ger_volksgren_mg_asst:1) c11(ger_volksgren_mg_asst3:1) c12(ger_volksgren_grenadier:3) c13(volksgren_at:1) c14(volksgren_at2:1) b(hero) t(all hero 44 45) 
-level(1) cost(3) f(-0.5))
+("squad_14" side(ger) name(hero_ger_volks) member01(ger_volksgren_sl_stg:2) member02(ger_volksgren_sl_smg:1) member03(ger_volksgren_sl_asst:3) member04(ger_volksgren_stg44:5) member05(ger_volksgren_pzfst2:2) member06(ger_volksgren_smg:1) member07(ger_volksgren_sa:3) member08(ger_volksgren_rifle:6) member09(ger_volksgren_mg:2) member10(ger_volksgren_mg_asst:1) member11(ger_volksgren_mg_asst3:1) member12(ger_volksgren_grenadier:3) member13(volksgren_at:1) member14(volksgren_at2:1) charge(200) tags(all hero 44 45) group(h22) button(hero) level(1) cost(3) fore(-0.5))
 
 
-{"heronew2(ger)"	    ("v1" c(345) c1(marder_3m)		t(all hero 44) s(ger) n1(tankman:3) n2(tankman2:1) g(h2) b(hero)) {level 1} {cost 4.0} {fore -0.65}} ;690sec
+("unit_vehicle_members_sided" side(ger) name(heronew2) vehicle1(marder_3m) member1(tankman:3) member2(tankman2:1) charge(345) tags(all hero 44) group(h2) button(hero) level(1) cost(4.0) fore(-0.65)) ;690sec
 
-{"hero6(ger)"	    ("v1" c(880) c1(stuh42) 		t(all hero 44) s(ger) n1(tankman:4) n2(tankman2:1) g(h5) b(hero)) {level 1} {cost 5.0} {fore 0.0}} ;880sec
-{"hero10(ger)"	    ("v2" c(633) c1(pz4h)		t(all hero 44) s(ger) n1(tankman:4) n2(tankman2:1) g(h6) b(hero)) {level 1}  {cost 6.0} {fore -0.5}} ;950sec
+("unit_vehicle_members_sided" side(ger) name(hero6) vehicle1(stuh42) member1(tankman:4) member2(tankman2:1) charge(880) tags(all hero 44) group(h5) button(hero) level(1) cost(5.0) fore(0.0)) ;880sec
+("unit_two_vehicles_members_sided" side(ger) name(hero10) vehicle1(pz4h) member1(tankman:4) member2(tankman2:1) charge(633) tags(all hero 44) group(h6) button(hero) level(1) cost(6.0) fore(-0.5)) ;950sec
 
-{"hero_flak18_hero(ger)"      ("v41" c(600) c1(np_sdkfz8) c2(flak18a) 		t(all hero artillery 44) s(ger) n1(vehicle_supporter:2) n2(tankman2:0) g(h8) b(hero)) {level 1} {cost 7.0} {fore -0.5}}
-{"heronew3(ger)"	    ("2v" c(900) c1(np_sdkfz8) c2(pak44) t(all hero 44) s(ger) n1(vehicle_supporter:2) n2(vehicle_supporter:2) g(h7) b(hero)) {level 1} {cost 9.0} {fore -0.5}}
+("unit_vehicles2_members1_sided" side(ger) name(hero_flak18_hero) vehicle1(np_sdkfz8) vehicle2(flak18a) member1(vehicle_supporter:2) charge(600) tags(all hero artillery 44) group(h8) button(hero) level(1) cost(7.0) fore(-0.5))
+("unit_vehicle_pair_sided" side(ger) name(heronew3) vehicle1(np_sdkfz8) vehicle2(pak44) member1(vehicle_supporter:2) member2(vehicle_supporter:2) charge(900) tags(all hero 44) group(h7) button(hero) level(1) cost(9.0) fore(-0.5))
 
 {"hero7(ger)"        ("v229" c(540) c1(nebelwerfer41_2) c2(sdkfz251_1_late) n1(vehicle_supporter:2) n2(ger_pzgren_pio_sl) n3(ger_pzgren_pio1) n4(ger_pzgren_pio2) n5(ger_pzgren_pio3) n6(ger_pzgren_pio_flamer) n7(ger_pzgren_pio_mg:2) n8(ger_pzgren_pio_mg_asst) n9(ger_pzgren_pio_at)	t(all hero artillery rocket 44) s(ger) g(h4) b(hero)) {level 1} {cost 6.0} {fore -0.5}}
 
-{"hero8(ger)"        ("v1" c(950) c1(veteran_tiger) 	t(hero 44) s(ger) n1(vet_tankman:4) n2(vet_tankman2:1) g(h10) b(hero)) {level 1} {cost 14.0} {fore -0.99}} ;1890sec
-{"hero_panther_hero(ger)"     ("v1" c(1100) c1(pz5g_veteran) 	t(hero 44) s(ger) n1(vet_tankman:4) n2(vet_tankman2:1) g(h11) b(hero)) {level 1} {cost 14.0} {fore -0.718}} ;1890sec
-{"hero9(ger)"        ("v1" c(1000) c1(sturmtiger) 	t(artillery hero 44) s(ger) n1(tankman:3) n2(tankman2:1) g(h12) b(hero)) {level 1} {cost 14.0} {fore -0.5}} ;1890sec
-{"hero_tiger2_ace(ger)"     ("v1" c(1600) c1(pz6bh_ace) 	t(sheavy hero 44) s(ger) n1(elite_tankman:4) n2(elite_tankman2:1) g(h13) b(hero)) {level 1} {cost 20.0} {fore -0.35}} ;2160sec
+("unit_vehicle_members_sided" side(ger) name(hero8) vehicle1(veteran_tiger) member1(vet_tankman:4) member2(vet_tankman2:1) charge(950) tags(hero 44) group(h10) button(hero) level(1) cost(14.0) fore(-0.99)) ;1890sec
+("unit_vehicle_members_sided" side(ger) name(hero_panther_hero) vehicle1(pz5g_veteran) member1(vet_tankman:4) member2(vet_tankman2:1) charge(1100) tags(hero 44) group(h11) button(hero) level(1) cost(14.0) fore(-0.718)) ;1890sec
+("unit_vehicle_members_sided" side(ger) name(hero9) vehicle1(sturmtiger) member1(tankman:3) member2(tankman2:1) charge(1000) tags(artillery hero 44) group(h12) button(hero) level(1) cost(14.0) fore(-0.5)) ;1890sec
+("unit_vehicle_members_sided" side(ger) name(hero_tiger2_ace) vehicle1(pz6bh_ace) member1(elite_tankman:4) member2(elite_tankman2:1) charge(1600) tags(sheavy hero 44) group(h13) button(hero) level(1) cost(20.0) fore(-0.35)) ;2160sec

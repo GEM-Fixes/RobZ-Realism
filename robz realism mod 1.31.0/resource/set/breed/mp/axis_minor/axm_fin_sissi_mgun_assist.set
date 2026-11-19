@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "fin-inf-svt"}
 	{portrait "fin_soldier3"}
@@ -8,50 +9,17 @@
 		{head "cap_fin_m36"}
 	}
 	{perks
-		{"health" "200%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "100%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.8
-		}
-		{"vehicle" 1.0
-		}
-		{"cannon" 1.0
-		}
-		{"pistol" lvl_1
-		}
-		{"smg" lvl_1
-		}
-		{"mgun" lvl_7
-		}
-		{"rifle" lvl_7
-		}
-		{"rocketlauncher" lvl_1
-		}
-		{"melee" lvl_2
-		}
+		("soldier_mgun_7" rocket(1) body(line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(elite))
 
 	{inventory
-		{item "mosin_fin" filled}
-		{item  "ammo 7x53" 120}
-                {item  "LSM26_mag" 300}
+		("rifle_mosin_fin")
+		{item  "LSM26_mag" 300}
 		{item "bandage" 2}
-		{item "grenade m24" }
+		("give" item(grenade m24) count(1))
 		{item "sandbag_kit" 1}
 		{in_hands 0}
 	}
-	
+
 }

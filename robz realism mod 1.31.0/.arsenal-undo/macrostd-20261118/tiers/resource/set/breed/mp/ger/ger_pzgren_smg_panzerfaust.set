@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-reg2-g43"}
+	{portrait "ger_soldier3"}
+	{icon "stormtrooper3"}
+	{icon_priority 3}
+	{nationality ger}
+	{armors
+		{body ammo_ger3}
+		{head helmet_ger_m40}
+	}
+	{perks
+		("breed_body" health(200%) regen_health(100%) stamina(150%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.85) vehicle(1) cannon(0.9))
+		("breed_skills" pistol(5) smg(4) mgun(4) rifle(5) rocket(5) melee(5))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_mp40")
+		{item "bandage" 5}
+		("frag_m24_x2")
+		("at_grenade_m24x5_x0_1")
+		{item "panzerfaust_60 weapon" filled}
+		{in_hands 0}
+	}
+}

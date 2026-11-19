@@ -1,7 +1,4 @@
+; same as the other 2 defs here; body in 60mm_brandt_body.inc
 {game_entity
-	{Extension "60mm_mortar_m2_x.mdl"}
-	{Volume "body"
-	}
-	{Volume "gun"
-	}
+	(include "60mm_brandt_body.inc")
 }

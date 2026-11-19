@@ -1,23 +1,23 @@
 {game_entity
 	{obstacleId "tank"}
-	{Extension "m149_xx.mdl"}	
+	{Extension "m149_xx.mdl"}
 	{volume "body1"
 		{tags "body"}
 		{component "body"}
 		{thickness 30
-		    {front  30}
-		    {top	20}
+			{front  30}
+			{top	20}
 			{bottom	20}
-		}   
+		}
 	}
 	{volume "body2"
 		{tags "body"}
 		{component "body"}
 		{thickness 30
-		    {front  30}
-		    {top	20}
+			{front  30}
+			{top	20}
 			{bottom	20}
-		}   
+		}
 	}
 	{volume "turret"
 		{thickness 14 0.3
@@ -25,4 +25,4 @@
 			{rear   14}
 		}
 	}
-}	
+}

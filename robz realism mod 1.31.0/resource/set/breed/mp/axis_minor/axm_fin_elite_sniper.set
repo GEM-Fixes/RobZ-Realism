@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "fin-camo2-svt"}
 	{portrait "fin_elite1"}
@@ -5,50 +6,13 @@
 	{icon "elite5"}
 	{icon_priority 5}
 	{armors
-		
+
 	}
 	{perks
-		{"health" "350%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "200%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_sniper"
-		}
-		{"speed" 1.0
-		}
-		{"stealth"
-		}
-		{"telescope"
-		}
-		{"tank"	0.85
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 0.9
-		}
-		
-		{"pistol" lvl_2
-		}
-		{"smg" lvl_2
-		}
-		{"mgun" lvl_2
-		}
-		{"rifle" lvl_7
-		}
-		{"rocketlauncher" lvl_2
-		}
-		{"melee" lvl_4
-		}
-		{"aimedshot"}
+		("soldier_rifle_7" rocket(1) body(line) sight(sniper))
+		("perks_sniper")
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_lvl5")
-	}
+	("breed_vet" table(start5))
 	{inventory
 		{item "mosin_s_elite" filling "ammo mosin_clip fg" 5}
 		{item "ammo mosin_clip fg" 120}

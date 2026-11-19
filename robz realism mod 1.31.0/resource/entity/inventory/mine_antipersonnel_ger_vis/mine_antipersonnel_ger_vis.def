@@ -1,7 +1,7 @@
 {game_entity
 	{Extension "mine_antipersonnel_ger_vis.mdl"}
 	{NoGetShadows}
-	{SpriteView 
+	{SpriteView
 		{Sprite "mine_f.ebm"
 			{Scale 0.25}
 		}

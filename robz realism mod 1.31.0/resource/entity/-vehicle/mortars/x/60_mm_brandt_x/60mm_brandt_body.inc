@@ -1,0 +1,5 @@
+{Extension "60mm_mortar_m2_x.mdl"}
+{Volume "body"
+}
+{Volume "gun"
+}

@@ -23,7 +23,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/bloodspot03"
 					{scale 1
 						{linear

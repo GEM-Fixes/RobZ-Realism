@@ -7,9 +7,9 @@
 		{block 20}
 		{size 1 1}
 		{fsm "belt"}
-	}	
+	}
 	{mass 0.015}
 	{entity "rifle_cartridge_fra"}
 	{view "rifle_bullet"}
-	;("mgun_trace")
+;("mgun_trace")
 }

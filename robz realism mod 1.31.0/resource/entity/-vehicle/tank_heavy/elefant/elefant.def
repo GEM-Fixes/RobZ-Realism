@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
@@ -7,7 +8,7 @@
 	{extender "enumerator"
 		{digit_folder "ger"}
 	}
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: elefant.def) ---
 	{volume "body1"	;нижн€€ передн€€ часть корпуса
 		{tags "body"}
@@ -47,16 +48,13 @@
 		{able {holed}}
 		{thickness 80
 			{front	200}	;влд
-		;	{rear	80}
+			;	{rear	80}
 			{top	30}
 			{bottom	20}
 			{right	0.1}	;внутренн€€ стенка
 		}
 	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "turret"}
-	}
+	("vol_turret_hole_only" name(hole_man))
 	{volume "mantlet"
 		{thickness 30
 		;	{front	30}
@@ -73,7 +71,7 @@
 	}
 	{volume "shield1"	;бронировка вокруг шарового креплени€ оруди€
 		{thickness 80
-		;	{front	80}
+			;	{front	80}
 			{rear	20}	;толщина самого шарового приблизительно
 			{bottom	0.1}	;внутренн€€ стенка
 		}
@@ -108,16 +106,16 @@
 		}
 	}
 
-;	("gunner_visible")
+	;	("gunner_visible")
 	("crew_human" place(charger) door1(emit1) door2(emit2))
-	{placer 
+	{placer
 		{place "commander" {visor "back"}}
 	}
 
 	("seat_human" place(seat1) bone(seat01) door(emit5)  animation(armor))
 	("seat_human" place(seat2) bone(seat02) door(emit3)  animation(armor1))
 	("seat_human" place(seat3) bone(seat03) door(emit6)  animation(armor1))
-	
+
 	{sensor
 		{visor "back"
 			{vision "tank_back"}
@@ -127,8 +125,8 @@
 
 	{extender "inventory"
 		{box
-          		{item "ammo bullet88 gerl apcbc" 29}
-          		{item "ammo bullet88 gerl fg" 20}
+			{item "ammo bullet88 gerl apcbc" 29}
+			{item "ammo bullet88 gerl fg" 20}
 			;{item "ammo bullet88 gerl apcr" 4}
 			{item "ammo bullet88 gerl heat" 5}
 			{item "ammo mg_mauser belt" 2500}
@@ -138,13 +136,13 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "88mm_pak43" filling "ammo bullet88 gerl apcbc" 1}	
-			("abm_low")
+			{weapon "88mm_pak43" filling "ammo bullet88 gerl apcbc" 1}
+			("abm_low_v4")
 		}
 		{place "mgun"
-			{type "mgun_hull"} 
-			{weapon "mg34_optic" filled}    
-			{foresight "foresight3"} 
+			{type "mgun_hull"}
+			{weapon "mg34_optic" filled}
+			{foresight "foresight3"}
 			{gunner "driver"}
 			{charger "driver"}
 			("abm_mgun")
@@ -156,30 +154,30 @@
 	{Chassis
 		("tank_trace" fx("tracks_big") step(0.20) len(0.65))
 		{Locomotion ("locomotion")
-         	{Maxspeed    18}
+			{Maxspeed    18}
 			{maxSpeedAtMaxTurn 2.5}
 			{StartTime   50}
-			{BrakeTime  2.5}		
-			{StopTime   3.5}			
+			{BrakeTime  2.5}
+			{StopTime   3.5}
 			{TurnStart  2.5}
-			{TurnTime    30}		
+			{TurnTime    30}
 			{TurnStop     1}
 			{TurnRadius   14}
 			{Gears     0.1 0.2 0.28 1.0}
 			{RearGears 0.1 0.2}
 		}
 		{FuelBag
-			{volume 950 }	
-			{rate	105 }   
+			{volume 950 }
+			{rate	105 }
 			{remain 950 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  10}
-        	{Slow  12}
-    	}
+			{Normal  10}
+			{Slow  12}
+		}
 	}
-	
+
 	{Extension "elefant.mdl"}
 
 	{bone "gun_rot"

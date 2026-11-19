@@ -1,0 +1,30 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-officer"}
+	{portrait "ger_officer"}
+	{nationality ger}
+	{icon "officer"}
+	{icon_priority 6}
+	{armors
+		{head cap_ger_off}
+	}
+	{tags "officer"}
+	{perks
+		("body_officer_s100")
+		{"field_glass"}
+		("drive_veteran")
+		{"pistol" lvl_5}
+		{"smg" lvl_5}
+		{"mgun" lvl_5}
+		{"rifle" lvl_5}
+		{"rocketlauncher" lvl_5}
+		{"melee" "lvl_5"}
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("pistol_luger")
+		{item "knife_ger"}
+		{item "binocular"}
+		{in_hands 0}
+	}
+}

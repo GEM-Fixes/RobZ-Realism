@@ -34,7 +34,7 @@
 			{forward {end "pose_seat_cannon1_left" 10}}
 		}
 	}
-	("us_3x_sight")
+	("us_3x_sight_no_visor1")
 	{extender "inventory"
 		{box
 			{item "ammo bullet75 usm8 fg" 6}
@@ -64,7 +64,7 @@
 	{Extension "m8_howitzer.mdl"}
 	(include "/properties/selection/cannon.inc"  scale(0.7))
 	{bone "basis"
-	      {limits}
+		{limits}
 	}
 	{extender "cannon"
 		{animation

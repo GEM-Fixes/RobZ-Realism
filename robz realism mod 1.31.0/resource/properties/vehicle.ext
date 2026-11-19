@@ -20,6 +20,8 @@
 {boarder}
 {placer {crew}}
 
+; brain_vehicle: {brain "vehicle" {state} {const}}
+;   e.g. ("brain_vehicle")
 (define "brain_vehicle"
 	{brain "vehicle"
 		{state "vehicle"}
@@ -32,6 +34,8 @@
 	{random}
 }
 
+; chassis_defaults: {FuelBag {volume} {rate} {remain} {fuel}} {speed {Slow} {Normal} {Fast}}
+;   e.g. ("chassis_defaults")
 (define "chassis_defaults"
 	{FuelBag
 		{volume 200 }	; liters
@@ -46,6 +50,9 @@
 	}
 )
 
+; wheel: {volume {thickness} {tags} {component} {able}} {component {RepairTime} {tags}}
+;   %0 - {volume}, [?], {component}, [?]
+;   e.g. ("wheel" args "wheelleft1")
 (define "wheel"
 	{volume %0
 		{thickness 0.5}
@@ -59,6 +66,8 @@
 	}
 )
 
+; tracks: {volume "trackleft"} {volume "trackright"} {component "trackleft"} {component "trackright"}
+;   e.g. ("tracks")
 (define "tracks"
 	{volume "trackleft"
 		{thickness 20}
@@ -80,54 +89,77 @@
 	}
 )
 
+; car_trace: {Track {Tracer}} x2
+;   wheell - {Track}, [?]
+;   fx - {View}, [?]
+;   bonel - {Bone}, [?]
+;   step - {Step}, [?]
+;   wheelr - {Track}, [?]
+;   boner - {Bone}, [?]
+;   e.g. ("car_trace" fx("tracewheel02") step(0.09) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
 (define "car_trace"
-    {Track %wheell
-	    {Tracer
-    		{View %fx}
-    		{Bone %bonel}
-	    	{Step %step}
-    	}
-    }
-    {Track %wheelr
-    	{Tracer 
-	    	{View %fx}
-    		{Bone %boner}
-    		{Step %step}
-	    }
-    }
+	{Track %wheell
+		{Tracer
+			{View %fx}
+			{Bone %bonel}
+			{Step %step}
+		}
+	}
+	{Track %wheelr
+		{Tracer
+			{View %fx}
+			{Bone %boner}
+			{Step %step}
+		}
+	}
 )
 
+; tank_trace_ex: {Track "left" {Tracer} {TextureScroller}} {Track "right" {Tracer} {TextureScroller}}
+;   fx - {View}, [?]
+;   boneleft - {Bone}, [?]
+;   step - {Step}, [?]
+;   len - {Length}, [?]
+;   boneright - {Bone}, [?]
+;   e.g. ("tank_trace_ex" fx("tracks_sm") step(0.3) len(0.55) boneleft("wheell4") boneright("wheelr4"))
 (define "tank_trace_ex"
-    {Track "left"
-	    {Tracer
-    		{View %fx} ; "tracks"
-    		{Bone %boneleft}
-	    	{Step %step}			; 0.7 meters
-    	}
+	{Track "left"
+		{Tracer
+			{View %fx} ; "tracks"
+			{Bone %boneleft}
+			{Step %step}			; 0.7 meters
+		}
 		{TextureScroller
-	    	{Bone "TrackL"}
-    		{Length %len}		; 0.6 meters per animation
-    	}
-    }
-    {Track "right"
-    	{Tracer 
-	    	{View %fx}
-    		{Bone %boneright}
-    		{Step %step}			; in meters
-	    }
+			{Bone "TrackL"}
+			{Length %len}		; 0.6 meters per animation
+		}
+	}
+	{Track "right"
+		{Tracer
+			{View %fx}
+			{Bone %boneright}
+			{Step %step}			; in meters
+		}
 		{TextureScroller
-	    	{Bone "TrackR"}
-    		{Length %len}		; meters per animation
-    	}
-    }
+			{Bone "TrackR"}
+			{Length %len}		; meters per animation
+		}
+	}
 )
 
+; tank_trace: calls "tank_trace_ex"
+;   fx - {View}, [?] via "tank_trace_ex"
+;   step - {Step}, [?] via "tank_trace_ex"
+;   len - {Length}, [?] via "tank_trace_ex"
+;   e.g. ("tank_trace" fx("tracks_mid") step(0.52) len(0.21))
 (define "tank_trace"
 	("tank_trace_ex" fx(%fx) step(%step) len(%len) boneleft("FXtraceL1") boneright("FXtraceR1"))
 )
 
 {able "ally_crew"}
 
+; shield: {armor {setting}}
+;   %0 - {thickness}, mm
+;   e.g. ("shield" args 10)
 (define "shield"
 	{armor
 		{setting "shield"
@@ -136,6 +168,11 @@
 		}
 	}
 )
+; shield_pz3: {armor {setting}}
+;   %0 - {thickness}, mm
+;   %1 - {thickness}, mm
+;   %2 - {thickness}, mm
+;   e.g. none (not called)
 (define "shield_pz3"
 	{armor
 		{setting "shield"
@@ -155,160 +192,204 @@
 
 ;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Gun Sights ////////////////////////////////////////
 
-(define "ger_1x11_sight"
-    {sensor
-    	{visor "main"
-        	{vision "tank_main_ger_1x11"}
-        	{bone "visor1"}
-   	}
-    }
+; ger_1x11_sight_visor1: {sensor {visor}}
+;   e.g. ("ger_1x11_sight_visor1")
+(define "ger_1x11_sight_visor1"
+	{sensor
+		{visor "main"
+			{vision "tank_main_ger_1x11"}
+			{bone "visor1"}
+		}
+	}
 )
 
-(define "ger_3x8_sight"
-    {sensor
-    	{visor "main"
-        	{vision "tank_main_ger_3x8"}
-        	{bone "visor1"}
-   	}
-    }
+; ger_3x8_sight_visor1: {sensor {visor}}
+;   e.g. none (not called)
+(define "ger_3x8_sight_visor1"
+	{sensor
+		{visor "main"
+			{vision "tank_main_ger_3x8"}
+			{bone "visor1"}
+		}
+	}
 )
 
+; ger_5x8_sight: {sensor {visor}}
+;   e.g. ("ger_5x8_sight")
 (define "ger_5x8_sight"
-    {sensor
-    	{visor "main"
-        	{vision "tank_main_ger_5x8"}
-        	{bone "visor1"}
-   	}
-    }
+	{sensor
+		{visor "main"
+			{vision "tank_main_ger_5x8"}
+			{bone "visor1"}
+		}
+	}
 )
 
+; ger_2-5x_sight: {sensor {visor}}
+;   e.g. ("ger_2-5x_sight")
 (define "ger_2-5x_sight"
-    {sensor
-    	{visor "main"
-        	{vision "tank_main_ger_2-5x"}
-        	{bone "visor1"}
-   	}
-    }
+	{sensor
+		{visor "main"
+			{vision "tank_main_ger_2-5x"}
+			{bone "visor1"}
+		}
+	}
 )
 
+; ger_5x_sight: {sensor {visor}}
+;   e.g. ("ger_5x_sight")
 (define "ger_5x_sight"
-    {sensor
-    	{visor "main2"
-        	{vision "tank_main_ger_5x"}
-        	{bone "visor1"}
-   	}
-    }
+	{sensor
+		{visor "main2"
+			{vision "tank_main_ger_5x"}
+			{bone "visor1"}
+		}
+	}
 )
 
+; rus_2-5x_sight: {sensor {visor}}
+;   e.g. ("rus_2-5x_sight")
 (define "rus_2-5x_sight"
-    {sensor
-    	{visor "main"
-        	{vision "tank_main_rus_2-5x"}
-        	{bone "visor1"}
-   	}
-    }
+	{sensor
+		{visor "main"
+			{vision "tank_main_rus_2-5x"}
+			{bone "visor1"}
+		}
+	}
 )
 
+; rus_4x_sight: {sensor {visor}}
+;   e.g. ("rus_4x_sight")
 (define "rus_4x_sight"
-    {sensor
-    	{visor "main"
-        	{vision "tank_main_rus_4x"}
-        	{bone "visor1"}
-   	}
-    }
+	{sensor
+		{visor "main"
+			{vision "tank_main_rus_4x"}
+			{bone "visor1"}
+		}
+	}
 )
 
+; us_3x_sight: {sensor {visor}}
+;   e.g. ("us_3x_sight")
 (define "us_3x_sight"
-    {sensor
-    	{visor "main"
-        	{vision "tank_main_us_3x"}
-        	{bone "visor1"}
-   	}
-    }
+	{sensor
+		{visor "main"
+			{vision "tank_main_us_3x"}
+			{bone "visor1"}
+		}
+	}
 )
 
+; us_5x_sight: {sensor {visor}}
+;   e.g. ("us_5x_sight")
 (define "us_5x_sight"
-    {sensor
-    	{visor "main"
-        	{vision "tank_main_us_5x"}
-        	{bone "visor1"}
-   	}
-    }
+	{sensor
+		{visor "main"
+			{vision "tank_main_us_5x"}
+			{bone "visor1"}
+		}
+	}
 )
 
+; eng_1-9x_sight: {sensor {visor}}
+;   e.g. ("eng_1-9x_sight")
 (define "eng_1-9x_sight"
-    {sensor
-    	{visor "main"
-        	{vision "tank_main_eng_1-9x"}
-        	{bone "visor1"}
-   	}
-    }
+	{sensor
+		{visor "main"
+			{vision "tank_main_eng_1-9x"}
+			{bone "visor1"}
+		}
+	}
 )
 
+; eng_3x_sight: {sensor {visor}}
+;   e.g. ("eng_3x_sight")
 (define "eng_3x_sight"
-    {sensor
-    	{visor "main"
-        	{vision "tank_main_us_3x"}
-        	{bone "visor1"}
-   	}
-    }
+	{sensor
+		{visor "main"
+			{vision "tank_main_us_3x"}
+			{bone "visor1"}
+		}
+	}
 )
 
+; eng_6x_sight: {sensor {visor}}
+;   e.g. ("eng_6x_sight")
 (define "eng_6x_sight"
-    {sensor
-    	{visor "main"
-        	{vision "tank_main_eng_6x"}
-        	{bone "visor1"}
-   	}
-    }
+	{sensor
+		{visor "main"
+			{vision "tank_main_eng_6x"}
+			{bone "visor1"}
+		}
+	}
 )
 
 ; --- turret speed presets (moved from car1.ext so tanks/armored cars can use them; last five were undefined) ---
+; turret_speed_zenite: {bone "turret" {speed}}
+;   e.g. none (not called)
 (define "turret_speed_zenite"
 	{bone "turret"
 		{speed 0.006}
 	}
 )
+; turret_speed_light: {bone "turret" {speed}}
+;   e.g. none (not called)
 (define "turret_speed_light"
 	{bone "turret"
 		{speed 0.005}
 	}
 )
+; turret_speed_light_slow: {bone "turret" {speed}}
+;   e.g. none (not called)
 (define "turret_speed_light_slow"
 	{bone "turret"
 		{speed 0.0055}
 	}
 )
+; turret_speed_medium: {bone "turret" {speed}}
+;   e.g. ("turret_speed_medium")
 (define "turret_speed_medium"
 	{bone "turret"
-		{speed 0.004} 
+		{speed 0.004}
 	}
 )
+; turret_speed_medium_slow: {bone "turret" {speed}}
+;   e.g. none (not called)
 (define "turret_speed_medium_slow"
 	{bone "turret"
 		{speed 0.003}
 	}
 )
+; turret_speed_heavy: {bone "turret" {speed}}
+;   e.g. none (not called)
 (define "turret_speed_heavy"
 	{bone "turret"
 		{speed 0.0025}
 	}
 )
+; turret_speed_sheavy: {bone "turret" {speed}}
+;   e.g. ("turret_speed_sheavy")
 (define "turret_speed_sheavy"
 	{bone "turret"
 		{speed 0.002}
 	}
 )
+; turret_speed_medium_low: {bone "turret" {speed}}
+;   e.g. ("turret_speed_medium_low")
 (define "turret_speed_medium_low"
 	{bone "turret"
 		{speed 0.0035}
 	}
 )
+; turret_speed_medium35: {bone "turret" {speed}}
+;   e.g. ("turret_speed_medium35")
 (define "turret_speed_medium35"
 	{bone "turret"
 		{speed 0.0035}
 	}
 )
+; turret_speed_light_low: {bone "turret" {speed}}
+;   e.g. none (not called)
 (define "turret_speed_light_low"
 	{bone "turret"
 		{speed 0.0045}

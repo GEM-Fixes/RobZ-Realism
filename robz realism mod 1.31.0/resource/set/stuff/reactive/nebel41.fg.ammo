@@ -3,7 +3,7 @@
 	{inventory
 		{size 5 1}
 		{weight 100}
-	}	
+	}
 	{entity "nebelwerfer41_ammo"}
 	{mass 36.05}
 	{view "nebelwerfer41_ammo"
@@ -11,7 +11,7 @@
 	}
 	{detonationThickness 2}
 	{applyProjectile}
-	("fg_rocket_medium" args 6.5)	
+	("fg_rocket_medium" args 6.5)
 	{damage add blastwave
 		{energy 1}
 		{area 10 15}

@@ -1,0 +1,9 @@
+{Extension "sgrw_34_xx.mdl"}
+{Volume "part1"
+}
+{Volume "part2"
+}
+{Volume "part3"
+}
+{Volume "part4"
+}

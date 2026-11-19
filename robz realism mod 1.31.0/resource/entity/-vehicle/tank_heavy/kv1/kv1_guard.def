@@ -1,10 +1,11 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{collider "tank.heavy"}
 	{props "heavy" "turret_rotator" "vision_vehicle_high" "muzzle_medium" "kv1"}
 	{tag "diesel_exhaust"}
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: kv1.def) ---
 	{volume "body1"	;нижн€€ часть корпуса
 		{tags "body"}
@@ -42,8 +43,8 @@
 		{component "turret"}
 		{able {holed}}
 		{thickness 110	;лита€ ут€желенна€ башн€
-		;	{front	110}
-		;	{rear	110}
+			;	{front	110}
+			;	{rear	110}
 			{top	40}
 			{bottom	40}
 		}
@@ -52,16 +53,13 @@
 		{tags "turret"}
 		{component "turret"}
 		{thickness 110
-		;	{front	110}
-		;	{rear	110}
+			;	{front	110}
+			;	{rear	110}
 			{top	0.1}	;внутренн€€ стенка
 			{bottom	40}
 		}
 	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "turret"}
-	}
+	("vol_turret_hole_only" name(hole_man))
 	{volume "mantlet"
 		{thickness 110
 			{front	90}
@@ -127,10 +125,10 @@
 			{vision "tank_back"}
 			{bone "foresight4"}
 		}
-        {visor "main"
-            	{vision "tank_main-m"}
-        }
-    }
+		{visor "main"
+			{vision "tank_main-m"}
+		}
+	}
 
 	{extender "inventory"
 		{box
@@ -147,7 +145,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "76mm_zis5_vet" filling "ammo bullet76 rus br350b" 1}	
+			{weapon "76mm_zis5_vet" filling "ammo bullet76 rus br350b" 1}
 			("abm_veteran")
 		}
 		;{place "mgun"
@@ -191,28 +189,28 @@
 			{maxSpeedAtMaxTurn 3}
 			{StartTime	46.75}
 			{TurnTime	22.5}
-			{TurnStart  1.9} 
-    		{BrakeTime  3.0}
-     		{StopTime   3.5} 
-    		{TurnRadius 10} 
-    		{TurnStop   1}
-		{Gears	0.13 0.21 0.29 1.0}
-		{RearGears 0.1 0.2} 
+			{TurnStart  1.9}
+			{BrakeTime  3.0}
+			{StopTime   3.5}
+			{TurnRadius 10}
+			{TurnStop   1}
+			{Gears	0.13 0.21 0.29 1.0}
+			{RearGears 0.1 0.2}
 		}
 		{FuelBag
-			{volume 600 }	
-			{rate	33 }   
+			{volume 600 }
+			{rate	33 }
 			{remain 600 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  28}
-        	{Slow  28}
-    	}
+			{Normal  28}
+			{Slow  28}
+		}
 	}
-	
+
 	{Extension "kv1.mdl"}
-	
+
 
 	{bone "turret"
 		{speed 0.002}

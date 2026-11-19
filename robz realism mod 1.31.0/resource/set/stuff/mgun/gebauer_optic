@@ -1,10 +1,10 @@
 {from "pattern mgun"
-        {tag "mgun_light"}
+	{tag "mgun_light"}
 	{filling "gabauer_belt" 100}
 	{entity "gebauer"}
 	{fireSound	"mgun/besa_burst/"}
 	{inventory 	{handle_bone "handle_box"}}
-	
+
 	("recoveryTime" r(1000))
 	("burst_long")
 	("speed" s(890))

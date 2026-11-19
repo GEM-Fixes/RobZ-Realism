@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-inf-cpl"}
+	{portrait "eng_soldier3"}
+	{nationality eng}
+	{icon "squadleader2"}
+	{icon_priority 2}
+	{armors
+		{head helmet2_eng}
+	}
+	{perks
+		("breed_body" health(200%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.8) vehicle(1.0) cannon(1.0))
+		("breed_skills" pistol(4) smg(5) mgun(3) rifle(4) rocket(2) melee(5))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "sten_v" filled}
+		{item "ammo sten_mag" 224}
+		{item "bandage" 3}
+		{item "grenade mk1" 2}
+		{item "grenade n73at" 0.25 1}
+		{item "smoke grenade" 2}
+		{item "n77_smoke grenade" 1}
+		{in_hands 0}
+	}
+}

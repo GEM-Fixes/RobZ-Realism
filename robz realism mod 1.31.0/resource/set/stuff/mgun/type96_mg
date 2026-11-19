@@ -4,10 +4,10 @@
 	{entity "type96_mg"}
 	{fireSound	"mgun/type96_lmg_burst/"}
 	{reloadSound "type99lmg_reload"}
-	
+
 	{rechargeTime 5}
 	("recoveryTime" r(530))
-	("burst_short")
+	("burst_short_v2")
 	("speed" s(715))
 	{healthDamage 30}
 	{Spreading 1

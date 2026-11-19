@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "ger-reg2-rfl"}
 	{portrait "ger_soldier3"}
@@ -8,48 +9,15 @@
 		{head helmet_heer_camo}
 	}
 	{perks
-		{"health" "200%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "150%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.85
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 0.9
-		}
-		{"pistol" lvl_5
-		}
-		{"smg" lvl_4
-		}
-		{"mgun" lvl_4
-		}
-		{"rifle" lvl_5
-		}
-		{"rocketlauncher" lvl_4
-		}
-		{"melee" lvl_5
-		}
+		("soldier_rifle_5" rocket(1) body(line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(standard))
 	{inventory
-		{item "mauzer" filled}
-		{item "ammo mauser_clip" 60}
+		("rifle_mauzer")
 		{item "ammo mg_mauser drum" 50}
 		{item "bandage" 5}
-		{item "grenade m24" 2}
-		{item "grenade m24x5" 0 1}
+		("give" item(grenade m24) count(2))
+		("give_chance" item(grenade m24x5) chance(25))
 		{item "sandbag_kit"}
 		{in_hands 0}
 	}

@@ -1,0 +1,28 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-smock2-rfl"}
+	{portrait "ger_soldier3"}
+	{icon "stormtrooper"}
+	{icon_priority 3}
+	{nationality ger}
+	{armors
+		{body ammo_ger3}
+		{head helmet_heer_camo}
+	}
+	{perks
+		("breed_body" health(200%) regen_health(100%) stamina(150%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.85) vehicle(1) cannon(0.9))
+		("breed_skills" pistol(4) smg(3) mgun(3) rifle(5) rocket(4) melee(5))
+	}
+	("breed_vet" kind(lvl5))
+	{inventory
+		{item "mauzer_vet" filled}
+		{item "ammo mauser_clip" 60}
+		{item "ammo mg_mauser drum" 50}
+		{item "bandage" 5}
+		{item "grenade m39" 2}
+		{item "grenade m24x5"}
+		{item "smoke grenade" 2}
+		{in_hands 0}
+	}
+}

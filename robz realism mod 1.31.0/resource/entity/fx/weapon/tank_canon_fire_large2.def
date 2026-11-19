@@ -25,7 +25,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/oskolkim"
 					{timer
 						{mode play }
@@ -53,7 +53,7 @@
 			}
 		}
 	}
-  {#+ spriteview central
+	{#+ spriteview central
 		{sprite "$/flash/flash_bc"
 			{light 1
 				{linear
@@ -123,7 +123,7 @@
 		}
 		{offset 0 0 5}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/flash_g03a"
 					{timer
 						{mode play }
@@ -246,7 +246,7 @@
 		{autovisible}
 		{#+ nightonly}
 	}
-		{#+ particleview smoke1
+	{#+ particleview smoke1
 		{generator
 			{totalparticles 40}
 			{emissionarea
@@ -272,7 +272,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_30"
 					{timer
 						{mode play }
@@ -326,7 +326,7 @@
 			}
 		}
 	}
-  {#+ particleview fire
+	{#+ particleview fire
 		{generator
 			{totalparticles 1}
 			{emissionarea
@@ -342,7 +342,7 @@
 			{timetolive 0.1}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/flashssp3"
 					{timer
 						{mode play }
@@ -387,7 +387,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_30"
 					{timer
 						{mode play }
@@ -626,7 +626,7 @@
 			}
 		}
 		{visualizer
-			{stage initial 
+			{stage initial
 				{sprite "$/explosion/exp_muzzle_01"
 					{timer
 						{mode play }

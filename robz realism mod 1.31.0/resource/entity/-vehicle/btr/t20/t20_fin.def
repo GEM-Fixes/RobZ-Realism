@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank_unarmed.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.2))
@@ -7,9 +8,9 @@
 	{targetClass "tank" "bullet"}
 	{targetSelector "tank_bullet"}
 	{patherId "tank.light"}
-        {tag "heavy_tow"}
+	{tag "heavy_tow"}
 
-	
+
 	("armor_medium" turret(0) body(10 10 10 7))
 	("armor_engine"  t(10 10 10 7))
 
@@ -30,7 +31,7 @@
 		{component "body"}
 		{thickness 7
 			{front	10}
-		;	{rear	7}	;стенка моторного
+			;	{rear	7}	;стенка моторного
 			{top	0.1}
 			{bottom	17}	;днище усилено 7+10мм?
 		;	{right	7}
@@ -41,7 +42,7 @@
 		{component "body"}
 		{thickness 7
 			{front	0.1}
-		;	{rear	7}
+			;	{rear	7}
 			{top	0.1}
 			{bottom	17}	;днище усилено 7+10мм?
 		;	{right	7}
@@ -69,7 +70,7 @@
 		{thickness 7
 			{front	0.1}
 			{rear	0.1}
-		;	{top	7}
+			;	{top	7}
 			{bottom	0.1}
 		}
 	}
@@ -78,10 +79,7 @@
 		{component "body"}
 		{thickness 7}
 	}
-	{Volume "hole_bod"
-		{able clear {hole}}
-		{component "body"}
-	}
+	("vol_body_hole_only" name(hole_bod))
 	{volume "engine"
 		{thickness 10}
 	}
@@ -98,10 +96,10 @@
 		}
 	}
 	; --- end Godny hitbox armor ---
-	("crew_2_human")
+	("crew_2_human_inside_left")
 	("crew_human" place(gunner) door1(emit1) door2(emit2) visor(main))
 	("seat_6_human")
-		
+
 	{sensor
 		{visor "main"
 			{vision "tank_main-l"}
@@ -128,10 +126,10 @@
 		}
 	}
 
-;	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
-;	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
-;	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
-;	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+	;	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	;	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	;	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	;	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
 
 	{extender "inventory"
 		{Box
@@ -150,7 +148,7 @@
 			{charger "gunner"}
 			("abm_mgun")
 		}
-	}  	
+	}
 
 	{mass 2500}
 	{Chassis
@@ -160,18 +158,18 @@
 			{maxSpeedAtMaxTurn 10}
 			{StartTime 20}
 			{TurnTime 12}
-			{TurnStart  0.6}			
-			{TurnRadius 6} 
-    		{TurnStop   0.5}
+			{TurnStart  0.6}
+			{TurnRadius 6}
+			{TurnStop   0.5}
 			{BrakeTime  1}
 			{StopTime   1.5}
-   			{Gears  0.1 0.35 0.7}
-			{RearGears  0.43} 
+			{Gears  0.1 0.35 0.7}
+			{RearGears  0.43}
 		}
 		{speed
-        	{Normal  12}
-        	{Slow  20}
-    	}
+			{Normal  12}
+			{Slow  20}
+		}
 	}
 	{Extension "t20.mdl"}
 }

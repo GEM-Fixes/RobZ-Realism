@@ -1,0 +1,244 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "medium" "-turret" "opened" "vision_vehicle_medium" "muzzle_large_nodust" "gun_mode_change_art"}
+
+	{extender "enumerator"
+		{digit_folder "ger"}
+	}
+
+	; --- Godny hitbox armor (ported from GodnyMod: wespe.def) ---
+	{volume "sticky"
+		{tags "grenade_fg_target"}
+		{able clear {contact} {touch}}
+		{component "sticky_body"}
+	}
+	{Volume "body1"	;нижн€€ часть корпуса
+		{component "body"}
+		{tags "body"}
+		{able {holed}}
+		{thickness 14.5
+			{front	30}
+			;	{rear	14.5}
+			{top	0.1}	;внутренн€€ стенка
+			{bottom	6}
+		}
+	}
+	{Volume "body2"	;гласис
+		{component "body"}
+		{tags "body"}
+		{able {holed}}
+		{thickness 14.5
+			;	{front	14.5}
+			{rear	0.1}	;внутренн€€ стенка
+			{bottom	0.1}	;внутренн€€ стенка
+		}
+	}
+	{Volume "body3"	;мехвод
+		{component "body"}
+		{tags "body"}
+		{thickness 14.5
+			{front	30}
+			{rear	0.1}	;внутренн€€ стенка
+			{top	10}
+			{bottom	0.1}	;внутренн€€ стенка
+		}
+	}
+	{Volume "body4"	;моторное верхнее
+		{component "body"}
+		{tags "body"}
+		{thickness 14.5
+			{front	10}	;стенка моторного
+			{rear	10}	;стенка моторного
+			{top	10}
+			{bottom	6}
+		}
+	}
+	{Volume "body5"	;нижн€€ часть рубки
+		{component "body"}
+		{tags "body"}
+		{able {holed}}
+		{thickness 10
+			{front	0.1}	;внутренн€€ стенка
+			;	{rear	10}
+			{top	0.1}	;внутренн€€ стенка
+			{bottom	6}
+		}
+	}
+	{Volume "body6"	;верхн€€ часть рубки
+		{component "body"}
+		{tags "body"}
+		{able {holed}}
+		{thickness 10
+			{bottom	0.1}	;внутренн€€ стенка
+		}
+	}
+	{Volume "hole_bod1"	;внутр€нка рубки
+		{able clear {hole}}
+		{component "body"}
+	}
+	{Volume "hole_bod2"	;уровень инвентар€
+		{able clear {hole}}
+		{component "body"}
+	}
+	{Volume "hole_bod3"	;нижн€€  полость
+		{able clear {hole}}
+		{component "body"}
+	}
+	{Volume "hole_bod4"	;мехвод
+		{able clear {hole}}
+		{component "body"}
+	}
+	{volume "mantlet"
+		{thickness 10
+			;	{front	10}
+			{rear	15}	;орудие дает небольшую броню
+		}
+	}
+	{volume "inventory"
+		{thickness 5}
+	}
+	{volume "inventory1"
+		{thickness 5}
+	}
+	{volume "detail3"
+		{component "detail1"}
+		{thickness 7.5}
+	}
+	; --- end Godny hitbox armor ---
+	{Volume "body7"
+		{component "body"}
+		{tags "body"}
+	}
+	{Volume "body8"
+		{component "body"}
+		{tags "body"}
+	}
+	{Volume "body9"
+		{component "body"}
+		{tags "body"}
+	}
+
+
+
+
+	("armor_spa_light" armor(30 20 20 15))
+	("shield" args 15)
+	("crew_4_human")
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_t34_driver"} {end "seat_gunner_stand"} {base "open_driver"}}
+			{reverse 	{end	"emit_t34_hold"} {base "close_driver"}}
+		}
+		{anm "charger"
+			{forward	{begin	"board_hummel"} {end "pose_pak40_charger"} {base "open_back_door"}}
+			{reverse 	{end	"emit_body" 1} {base "open_back_door" -1}}
+		}
+		{anm "gunner"
+			{forward	{begin	"board_hummel"} {end "pose_pak40_gunlayer"} {base "open_back_door"}}
+			{reverse 	{end	"emit_body" 1} {base "open_back_door" -1}}
+		}
+		{anm "commander"
+			{forward	{begin	"board_hummel"} {end "pose_seat_armor_2"} {base "open_back_door"}}
+			{reverse 	{end	"emit_body" 1} {base "open_back_door" -1}}
+		}
+	}
+
+	(define "crew_human"
+		{placer
+			{place "%place" {group "crew"} {linkbone "%place"} {turnoff {sensor} {shadow}}}
+		}
+		{boarder
+			{door "%door1"}
+			{door "%door2"}
+			{link "%door1" "%place" {anm "%place"} {forward putoff} {reverse puton}}
+			{link "%door2" "%place" {anm "%place"} {forward putoff} {reverse puton}}
+		}
+	)
+
+	{placer
+		{place "driver" {group "crew"} {visor "driver"}}
+	}
+	{placer
+		{place "gunner" {visor "main"}}
+	}
+	{boarder
+		{door "emit0"}
+		{door "emit1"}
+		{link "emit0" "driver" {anm "driver"} {forward putoff} {reverse puton}}
+	}
+	("crew_human" place(commander)	door1(emit1))
+	("crew_human" place(gunner)	    door1(emit1))
+	("crew_human" place(charger)	door1(emit1))
+
+	{extender "inventory"
+		{box
+			{item "ammo bullet105 ger fg" 28}
+			{item "ammo bullet105 ger sm" 8}
+			{item "ammo bullet105 ger heat" 4}
+		}
+	}
+	{Weaponry
+		{place "gun"
+			{weapon "105mm_l31" filling "ammo bullet105 ger fg" 4}
+			{StationaryFiring}
+			("abm_howitzer")
+		}
+		{place "gun1_2"
+			{RestoreIKAfterAim}
+			{type "gun_change_direct"}
+			{weapon "105mm_l31_2"}
+			{basic}
+			("abm_direct_how")
+		}
+	}
+
+	{mass 24000}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.56) len(0.167))
+		{Locomotion ("locomotion")
+			{maxspeed   24}
+			{maxSpeedAtMaxTurn 6}
+			{StartTime  25}
+			{TurnStart  1.7}
+			{TurnTime   15}
+			{TurnRadius 10}
+			{TurnStop   0.9}
+			{BrakeTime  1}
+			{StopTime   2}
+			{Gears      0.1 0.2 0.3 1}
+			{RearGears  0.25}
+		}
+		{FuelBag
+			{volume 320 }
+			{rate	14 }
+			{remain 320 }
+			{fuel "fuel"}
+		}
+		{speed
+			{Normal  24}
+			{Slow  24}
+		}
+		{DisableMoveWhileFiring}
+	}
+
+	{Extension "wespe.mdl"}
+
+	{bone "mantlet"
+		{limits -15 15}
+		{speed 0.0005}
+	}
+	{bone "gun_rot"
+		{limits -5 50}
+		{speed 0.0005}
+	}
+
+	(mod "mp"
+		{brain
+			{properties
+				{fire_mode hold}
+			}
+		}
+	)
+}

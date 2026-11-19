@@ -1,19 +1,19 @@
 {game_entity
 	(include "/properties/building.inc")
-        	{Extension "dzot.mdl"}
+	{Extension "dzot.mdl"}
 	{props "cornered" "concrete" "parts" "construction" "wall" "no_destroyed_stamp"}
 	{ObstacleId "building"}
 	("armor_heavy" args 2.0)
 	{mass 5000}
-	
+
 	{placer
 		{place "1" {attach  snipe_cover} 		{linkbone "attach1"}}
 
-                	{place "2" {attach  snipe_cover} 		{linkbone "attach2"}}
+		{place "2" {attach  snipe_cover} 		{linkbone "attach2"}}
 	}
 	{boarder}
 	{mass 5000}
-	
+
 	{Volume "body10"
 		{Tags  "body"}
 		{Thickness 100}

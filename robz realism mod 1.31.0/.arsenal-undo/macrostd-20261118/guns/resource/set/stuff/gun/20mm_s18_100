@@ -1,0 +1,22 @@
+{from "pattern gun"		; Solothurn S 18-100
+	{filling "bullet20x105b_hun" 10}
+	{fireSound "gun/zenite/20mm_burst/"}
+	{reloadSound "ptrd"}
+	{rechargeTime 6.5}
+	("recoveryTime" r(300))
+	("range_zenite")
+	("damage_100" a(35) b(30) c(23) d(15) e(11) range(130))
+
+
+
+	{parameters "ap"
+		("damage_100" a(42) b(35) c(27) d(23) e(11) range(130))
+	}
+
+
+	{range 130 130}
+	{projectileDamage 35}
+	("speed" s(790))
+	("accuracy_zenite_medium")
+
+}

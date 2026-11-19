@@ -3,18 +3,18 @@
 	{rechargeTime 6.8}
 
 	{range 200 200}
-	("damage_170" a(86) b(74) c(67) d(57) e(38) range(200))
+	("damage_170" at20(86) at100(74) at170(67) at215(57) at250(38) max(200))
 	{parameters "br350b"
-		("damage_170" a(91) b(79) c(67) d(57) e(48) range(200))
+		("damage_170" at20(91) at100(79) at170(67) at215(57) at250(48) max(200))
 	}
 	{parameters "apbc"
-		("damage_170" a(92) b(77) c(73) d(64) e(55) range(200))
+		("damage_170" at20(92) at100(77) at170(73) at215(64) at250(55) max(200))
 	}
 	{parameters "heat"
-		("damage_heat" a(87) range(200))
+		("damage_heat" damage(87) max(200))
 	}
 	{parameters "apcr"
-		("damage_170" a(116) b(102) c(92) d(78) e(60) range(200))
+		("damage_170" at20(116) at100(102) at170(92) at215(78) at250(60) max(200))
 	}
 	{parameters "fg"
 		{range 190 190}

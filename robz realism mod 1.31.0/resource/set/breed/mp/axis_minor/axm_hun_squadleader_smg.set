@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "hun_officer"}
 	{portrait "hun_squadleader"}
@@ -8,49 +9,15 @@
 		{head "helmet1_hun"}
 	}
 	{perks
-		{"health" "200%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "100%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.8
-		}
-		{"vehicle" 1.0
-		}
-		{"cannon" 1.0
-		}
-		
-		{"pistol" lvl_3
-		}
-		{"smg" lvl_3
-		}
-		{"mgun" lvl_2
-		}
-		{"rifle" lvl_3
-		}
-		{"rocketlauncher" lvl_1
-		}
-		{"melee" lvl_2
-		}
+		("soldier_smg_3" rocket(2) body(line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(standard))
 	{inventory
-		{item "danuvia_43m" filled}
-		{item  "ammo 9x25" 160}
+		("kit_smg" gun(danuvia_43m) ammo(9x25) rounds(160))
 		{item "bandage" 4}
 		{item "grenade hungarian_42m" 4}
-		{item "smoke grenade" 2}
-	
+		("give" item(smoke grenade) count(2))
+
 		{in_hands 0}
 	}
 }

@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-ranger-rfl"}
+	{portrait usa_soldier5}
+	{icon stormtrooper4b}
+	{icon_priority 4}
+	{nationality usa}
+	{armors
+		{head helmet_usa_ranger}
+	}
+	{perks
+		("soldier_rifle_6" rocket(1) body(line))
+		{"telescope"}
+		{"aimedshot"}
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "ammo springfield_clip" 100}
+		{item "bandage" 5}
+		("frag_m61_x2")
+		("explosive_dynamite")
+		{item "m1903a4" filling "springfield_clip ammo" 5}
+		{in_hands 4}
+	}
+}

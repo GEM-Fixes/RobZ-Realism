@@ -15,7 +15,7 @@
 			{add_view	"dustrun_snow_small"	"on_snow"			"FXtrace3"}
 		}
 		{add_view	"drops_water"			"on_water"			"FXtrace1"}
-;		{add_view	"drops_water"			"on_mud"			"FXtrace1"}
+		;		{add_view	"drops_water"			"on_mud"			"FXtrace1"}
 		{add_view	"drops_water_moto"		"on_puddle"			"FXtrace1"}
 
 		{add_view	"smoke_black"			"smoke4"			"basis"}
@@ -34,13 +34,13 @@
 		{if min_speed 30
 			{if effector "construction"
 				{call "explosion"}
-			 else effector "shed"
+				else effector "shed"
 				{call "explosion"}
 			}
-		else min_speed 20
+			else min_speed 20
 			{component break}
-;		else min_speed 5
-;			{component break}
+		;		else min_speed 5
+		;			{component break}
 		}
 	}
 	{on "burst_mode"
@@ -48,7 +48,7 @@
 			{tags remove "full_auto_mode"}
 			{tags add "coax_burst_mode"}
 			{damage_report "mgun" "Unit changed to burst mode"}
-		else
+			else
 			{tags add "full_auto_mode"}
 			{tags remove "coax_burst_mode"}
 			{damage_report "mgun" "Unit changed to full auto mode"}
@@ -61,7 +61,7 @@
 				{if rand 0.4
 					{call "_burn"}
 				}
-			else stuff "shell"
+				else stuff "shell"
 				{components "engine" break}
 				{if rand 0.6
 					{call "_burn"}
@@ -84,9 +84,9 @@
 						{call "explosion"}
 					}
 				}
-			else effector "concrete"
+				else effector "concrete"
 				{call "test_heavy_contact"}
-			else effector "steel"
+				else effector "steel"
 				{call "test_heavy_contact"}
 			}
 		}
@@ -111,8 +111,8 @@
 				{delay 4{crew_emit}}
 				{delay 6{crew_emit}}
 			}
-    			{delay 10 {view stop "smoke3"}}
-		else component "engine"
+			{delay 10 {view stop "smoke3"}}
+			else component "engine"
 			{spawn "tank_die_particle"}
 		}
 	}
@@ -125,25 +125,25 @@
 	{on blast_hit
 		{if min_energy 0.8
 			{impulse up 2 1 dir 2 1}
-		 else min_energy 0.5
+			else min_energy 0.5
 			{impulse up 1 1 dir 1 1}
 		}
 	}
 	{on break_armor
 		{component break}
 		{if name "blast"
-;			{if volume "body"
-				{call "explosion"}
-;			}
+			;			{if volume "body"
+			{call "explosion"}
+		;			}
 		}
 	}
-;	{on "_burn"
-;		{add_view "smoke_dead_norm" "burn_fire" "basis"}
-;		{view start "burn_fire"}
-;	}
+	;	{on "_burn"
+	;		{add_view "smoke_dead_norm" "burn_fire" "basis"}
+	;		{view start "burn_fire"}
+	;	}
 	{on "_burn" overload
 		{add_view "smoke_dead_norm" "burn_fire" "basis"}
-;		{add_view	"smoke_black" "burn_fire" "FXfire1"}
+		;		{add_view	"smoke_black" "burn_fire" "FXfire1"}
 		{play_sound "flame" 1}
 		{view start "burn_fire"}
 		{explosive 1}
@@ -174,7 +174,7 @@
 	}
 
 	{on "spawn_shellhole"
-;		{spawn "shellhole_road_moto" "Basis"}
+		;		{spawn "shellhole_road_moto" "Basis"}
 		{spawn "shellhole_dead_moto2" "Basis"}
 	}
 
@@ -189,15 +189,21 @@
 		{add_view "smoke_dead_moto" "deathfx" "body"}
 		{view start "deathfx"}
 
-		(define "cut_part"
+		; cut_part_burn: {tear "piece_medium_steel" {impulse} {burn} {delay_effect}}
+		;   %0 - {tear}, [?]
+		;   e.g. ("cut_part_burn" args "part1")
+		(define "cut_part_burn"
 			{tear "piece_medium_steel" bone %0
 				{impulse up 4 1 dir 5 2 cx 5 2 cy 5 2 rnd_dir 6 no_position}
 				{burn first_volume fx "smoke_dead_wheel" time 20 5}
-;				{add_view "smoke_dead_wheel" "smoke" "basis"}
-;				{view start "smoke"}
+				;				{add_view "smoke_dead_wheel" "smoke" "basis"}
+				;				{view start "smoke"}
 				{delay_effect 20 5 "stop"}
 			}
 		)
+		; tear_wheel: {if {components} {tear}}
+		;   %0 - name of {components}, text in {tear}
+		;   e.g. ("tear_wheel" args wheel1)
 		(define "tear_wheel"
 			{if rand 0.2
 				{components "%0" destroy}
@@ -218,11 +224,11 @@
 		("tear_wheel" args wheel2)
 		("tear_wheel" args wheel3)
 
-		("cut_part" args "part1")
-		("cut_part" args "part2")
-		("cut_part" args "part3")
-		("cut_part" args "part4")
-		("cut_part" args "part5")
-		("cut_part" args "part6")
+		("cut_part_burn" args "part1")
+		("cut_part_burn" args "part2")
+		("cut_part_burn" args "part3")
+		("cut_part_burn" args "part4")
+		("cut_part_burn" args "part5")
+		("cut_part_burn" args "part6")
 	}
 }

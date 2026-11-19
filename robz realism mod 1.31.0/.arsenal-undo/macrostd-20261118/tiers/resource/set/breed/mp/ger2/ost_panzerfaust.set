@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-smock2-rfl"}
+	{portrait "ger2_soldier2"}
+	{nationality ger}
+	{icon "bazooker"}
+	{icon_priority 3}
+	{armors
+		{head helmet_heer_camo}
+	}
+	{perks
+		("breed_body" health(150%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.75) vehicle(1) cannon(0.8))
+		("breed_skills" pistol(4) smg(3) mgun(2) rifle(4) rocket(5) melee(4))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_mauzer")
+		{item "bandage" 3}
+		("frag_m24_x2")
+		("at_grenade_hohlladung")
+		("smoke_x1")
+		{item "panzerfaust_60 weapon" filled}
+		{item "panzerfaust_60 weapon" filled}
+		{in_hands 0}
+	}
+}

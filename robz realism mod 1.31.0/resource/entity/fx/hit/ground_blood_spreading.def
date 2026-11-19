@@ -79,7 +79,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "/texture/fx/particle/bloodstain"
 					{timer
 						{mode play}

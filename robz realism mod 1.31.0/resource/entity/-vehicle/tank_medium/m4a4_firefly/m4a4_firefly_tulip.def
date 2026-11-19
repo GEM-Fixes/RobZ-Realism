@@ -1,10 +1,11 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{props "medium" "turret_rotator" "vision_vehicle_high" "muzzle_large_sides"}
 
 	{extender "enumerator"}
-	
+
 	{Volume "body1"
 		{component "body"}
 		{tags "body"}
@@ -17,21 +18,12 @@
 		{component "body"}
 		{tags "body"}
 	}
-	{Volume "turret1"
-		{tags "turret"}
-		{component "turret"}
-	}
-	{Volume "turret2"
-		{tags "turret"}
-		{component "turret"}
-	}
-	{Volume "mantlet"
-		{tags "turret"}
-		{component "turret"}
-	}
+	("vol_turret_part" name(turret1))
+	("vol_turret_part" name(turret2))
+	("vol_turret_part" name(mantlet))
 
 	("armor_medium" turret(76 51 64 25) body(51 38 38 22) body2(51 38 38 22))
-	("armor_engine"  t(40 38 38 22))		
+	("armor_engine"  t(40 38 38 22))
 	("armor_mantlet" t(89))
 	("shield" args 10)
 	("eng_6x_sight")
@@ -45,7 +37,7 @@
 	{component "shieldr1" {tags "shield"}}
 	{component "shieldr2" {tags "shield"}}
 
-	
+
 	("crew_4_human")
 
 	("gunner_visible")
@@ -108,11 +100,11 @@
 			{charger "commander"}
 			;{StationaryFiring}
 			{basic}
-			("abm_low")
+			("abm_low_v4")
 		}
 	}
 
-{Extension "m4a4_firefly_tulip.mdl"}
+	{Extension "m4a4_firefly_tulip.mdl"}
 
 	{mass 32500}
 	{Chassis
@@ -124,22 +116,22 @@
 			{TurnTime   16.2}
 			{TurnStart  1.6}
 			{TurnRadius 8}
-    		{TurnStop   0.8}
+			{TurnStop   0.8}
 			{BrakeTime  1.5}
 			{StopTime   2.5}
 			{Gears   0.13 0.23 0.33 1}
 			{RearGears  0.27}
 		}
 		{FuelBag
-			{volume 660 }	
-			{rate	35 }   
+			{volume 660 }
+			{rate	35 }
 			{remain 660 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  32}
-        	{Slow  32}
-    	}
+			{Normal  32}
+			{Slow  32}
+		}
 	}
 	{bone "turret_mgun"
 		{limits -15 15}

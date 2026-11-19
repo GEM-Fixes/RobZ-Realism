@@ -19,11 +19,11 @@
 		{bone "visor2"}
 	}
 	(mod "mp"
-         {visor "view-around"
-                {vision "moto_around"}
-                {bone "basis"}
-         }
-    )
+		{visor "view-around"
+			{vision "moto_around"}
+			{bone "basis"}
+		}
+	)
 }
 
 {Placer
@@ -51,27 +51,27 @@
 
 {extender "inventory"
 	{Box
-		;{item "ammo 6x52" 144}
+	;{item "ammo 6x52" 144}
 	}
 }
 {mass 200}
 {Chassis
 	{Locomotion ("locomotion")
 		{MaxSpeed	49	}
-				(mod "mp"
-					{maxspeed   45}
-				)			;    ᨬ  쭠  ᪮    , kmph
-	  	{maxSpeedAtMaxTurn 17}	
+		(mod "mp"
+			{maxspeed   45}
+		)			;    ᨬ  쭠  ᪮    , kmph
+		{maxSpeedAtMaxTurn 17}
 		{StartTime	10	}		;  ६  ࠧ            . ᪮      0, seconds
 		{BrakeTime	2	}		;  ६   ମ            . ᪮       0, seconds
 		{StopTime	4	}		;  ६    ⠭       ᫥  ⪫ 祭        ⥫        . ᪮       0, seconds
 		{TurnRadius	3	}		;    . ࠤ    ࠧ    , meter
-		{Gears		0.35 0.5 0.7 1.0} ;   ।         -     ஡     ।  
-		{RearGears	0.33 0.5}	;   ।         -     ஡     ।  
-		{SteerOn	30}			; ᪮                 ,  ࠤ ᮢ   ᥪ㭤 
-		{SteerOff	40}         ; ᪮                       .    ﭨ ,  ࠤ ᮢ   ᥪ㭤 
+		{Gears		0.35 0.5 0.7 1.0} ;   ।         -     ஡     ।
+		{RearGears	0.33 0.5}	;   ।         -     ஡     ।
+		{SteerOn	30}			; ᪮                 ,  ࠤ ᮢ   ᥪ㭤
+		{SteerOff	40}         ; ᪮                       .    ﭨ ,  ࠤ ᮢ   ᥪ㭤
 		{SplineRadius 2}		;   ࠭ 祭   ࠤ              ᯫ     ,    ஢
-	}	
+	}
 	{FuelBag
 		{volume 50 }	; liters
 		{rate	10 }   	; liters per kilometer
@@ -83,8 +83,8 @@
 	}
 }
 
- 	
+
 {Extension "guzzi-sa500.mdl"}
-	{bone "gun_rot"
-		{limits -45 35}
-	}
+{bone "gun_rot"
+	{limits -45 35}
+}

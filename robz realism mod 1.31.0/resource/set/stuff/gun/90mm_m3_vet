@@ -2,12 +2,12 @@
 	{rechargeTime 9.77}
 
 	{range 240 240}
-	("damage_215" a(172) b(159) c(148) d(137) e(127) range(240))
+	("damage_215" at20(172) at100(159) at170(148) at215(137) at250(127) max(240))
 	{parameters "apc"
-		("damage_215" a(172) b(159) c(148) d(137) e(127) range(240))
+		("damage_215" at20(172) at100(159) at170(148) at215(137) at250(127) max(240))
 	}
 	{parameters "hvap"
-       		("damage_215" a(314) b(278) c(246) d(218) e(193) range(240))
+		("damage_215" at20(314) at100(278) at170(246) at215(218) at250(193) max(240))
 	}
 	{parameters "fg"
 		{range 230 230}

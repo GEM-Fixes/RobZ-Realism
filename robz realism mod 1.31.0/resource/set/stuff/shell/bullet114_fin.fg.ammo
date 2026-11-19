@@ -4,14 +4,14 @@
 		{size 3 3}
 	}
 	{mass 37}
-	
+
 	("fg_heavy" args 6.5)
-	
+
 	{trace
 		{view "/texture/fx/trace"
 			{Light 0}
 			{ScaleY 0}
-		}		
+		}
 		{length 0}
 	}
 	{entity "fin_shell_114_fg"}

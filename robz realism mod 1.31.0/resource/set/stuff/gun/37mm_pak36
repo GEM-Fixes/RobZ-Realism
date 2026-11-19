@@ -4,19 +4,19 @@
 	{reloadSound "pak35"}
 	{rechargeTime 3.5}
 	("range_minimum")
-	
+
 	{range 170 170}
-	("speed_all" ap(762) apcr(1020) fg(550) heat(110))
-	("caliber_minimum")     
-	{projectileDamage 65}	
-	("damage_170" a(65) b(52) c(40) d(30) e(23) range(170))
+	("speed_all" speed(762) apcr(1020) fg(550) heat(110))
+	("caliber_minimum")
+	{projectileDamage 65}
+	("damage_170" at20(65) at100(52) at170(40) at215(30) at250(23) max(170))
 	{parameters "heat"
-	   	("damage_heat" a(180) range(90))
+		("damage_heat" damage(180) max(90))
 		{range 90 90}
 		{rechargeTime 12}
 	}
 	{parameters "apcr"
-        	("damage_100" a(93) b(49) c(23) d(11) e(5) range(160))
+		("damage_100" at20(93) at100(49) at170(23) at215(11) at250(5) max(160))
 		{range 160 160}
 	}
 	{parameters "fg"

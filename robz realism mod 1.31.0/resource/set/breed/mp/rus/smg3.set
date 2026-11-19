@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "rus-smguner"}
 	{portrait "rus_elite3"}
@@ -9,50 +10,16 @@
 		{head helmet1_rus}
 	}
 	{perks
-		{"health" "250%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "100%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.75
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 0.8
-		}
-		
-		{"pistol" lvl_3
-		}
-		{"smg" lvl_4
-		}
-		{"mgun" lvl_2
-		}
-		{"rifle" lvl_2
-		}
-		{"rocketlauncher" lvl_2
-		}
-		{"melee" lvl_3
-		}
+		("soldier_smg_4" rocket(1) body(line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(standard))
 	{inventory
-		{item "ppsh41" filled}
-		{item "ammo ppsh41_mag" 210}
+		("smg_ppsh41_210")
 		{item "bandage" 3}
-		{item "grenade f1" 1.5 0.5}
-		{item "grenade molotov_coctail" 0 1}
-		{item "grenade rpg40" 0 1}
-		{item "smoke grenade" 1}
+		("give_1_or_2" item(grenade f1))
+		("give_chance" item(grenade molotov_coctail) chance(25))
+		("give_chance" item(grenade rpg40) chance(25))
+		("give" item(smoke grenade) count(1))
 		{in_hands 0}
 	}
 }

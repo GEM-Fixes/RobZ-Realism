@@ -4,15 +4,15 @@
 
 ;같캛utton 1같�
 
-{"m3a1scout"        ("vs_rus41" c(10) t(41) 	s(rus) n(2) g(b3) sc(175) b(v1) cw(0) cp(0)) {level 1} {cost 175} {fore -23.0}}	;240sec
-{"m3"               ("vs_rus41" c(10) t(41) 	s(rus) n(2) g(b3) sc(200) b(v1) cw(0) cp(0)) {level 1} {cost 200} {fore -23.0}}	;240sec
+("unit_vehicle_supporters" side(rus) name(m3a1scout) breed(vehicle_supporter_41) crew(2) charge(10) tags(41) group(b3) button(v1) score(175) weight(0) points(0) level(1) cost(175) fore(-23.0))	;240sec
+("unit_vehicle_supporters" side(rus) name(m3) breed(vehicle_supporter_41) crew(2) charge(10) tags(41) group(b3) button(v1) score(200) weight(0) points(0) level(1) cost(200) fore(-23.0))	;240sec
 
-{"zis5"             ("vs_rus41" c(0) t(41) s(rus) n(2) g(b5) sc(100) b(v1) cw(0) cp(0)) {level 1} {cost 100} {fore 0.0}}		;0sec
-{"zis5art"          ("vs_rus41" c(0) t(41) s(rus) n(2) g(b6) sc(300) b(v1) cw(0) cp(0)) {level 1} {cost 300} {fore 0.0}}		;0sec
-{"zis5eng"          ("vs_rus41" c(0) t(41) s(rus) n(2) g(b7) sc(250) b(v1) cw(0) cp(0)) {level 1} {cost 250} {fore 0.0}}		;0sec
-{"ammo_box_rus_inf" ("vs_rus41" c(0) t(41) s(rus) n(2) g(b8) sc(25) b(v1) cw(0) cp(0)) {level 1} {cost 25} {fore 0.0}}		;0sec
-{"ammo_box_rus_art" ("vs_rus41" c(0) t(41) s(rus) n(2) g(b9) sc(75) b(v1) cw(0) cp(0)) {level 1} {cost 75} {fore 0.0}}		;0sec
-{"ammo_box_rus_special" ("vs_rus41" c(300) t(41) s(rus) n(2) g(b10) sc(100) b(v1) cw(0) cp(0)) {level 1} {cost 100} {fore 0.0}}	;0sec
+("unit_vehicle_supporters" side(rus) name(zis5) breed(vehicle_supporter_41) crew(2) charge(0) tags(41) group(b5) button(v1) score(100) weight(0) points(0) level(1) cost(100) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(rus) name(zis5art) breed(vehicle_supporter_41) crew(2) charge(0) tags(41) group(b6) button(v1) score(300) weight(0) points(0) level(1) cost(300) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(rus) name(zis5eng) breed(vehicle_supporter_41) crew(2) charge(0) tags(41) group(b7) button(v1) score(250) weight(0) points(0) level(1) cost(250) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(rus) name(ammo_box_rus_inf) breed(vehicle_supporter_41) crew(2) charge(0) tags(41) group(b8) button(v1) score(25) weight(0) points(0) level(1) cost(25) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(rus) name(ammo_box_rus_art) breed(vehicle_supporter_41) crew(2) charge(0) tags(41) group(b9) button(v1) score(75) weight(0) points(0) level(1) cost(75) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(rus) name(ammo_box_rus_special) breed(vehicle_supporter_41) crew(2) charge(300) tags(41) group(b10) button(v1) score(100) weight(0) points(0) level(1) cost(100) fore(0.0))	;0sec
 
 
 
@@ -20,65 +20,65 @@
 ;같캛utton 2같�
 
 ;{"degtyarev_stan"  ("vs_rus41" c(10) t(41) 		s(rus) n(2) g(c1) sc(110) b(v2) cw(2) cp(5)) {level 1} {cost 110} {fore -2.0}}		;30sec
-{"ds39_degtyaryov"  ("vs_rus41" c(10) t(41) 		s(rus) n(2) g(c2) sc(110) b(v2) cw(2) cp(5)) {level 1} {cost 110} {fore -2.0}}		;30sec
-{"maxim_1910_30"    ("vs_rus41" c(10) t(41) 		s(rus) n(2) g(c3) sc(125) b(v2) cw(2) cp(5)) {level 1} {cost 125} {fore -2.0}}		;30sec
-{"dshk_stank"       ("vs_rus41" c(10) t(41) 		s(rus) n(2) g(c5) sc(200) b(v2) cw(2) cp(5)) {level 1} {cost 200} {fore -2.0}}		;30sec
-{"dshk_zenit"       ("vs_rus41" c(10) t(41) 		s(rus) n(2) g(c6) sc(200) b(v2) cw(2) cp(5)) {level 1} {cost 200} {fore -2.0}}		;30sec
-{"bm_37"            ("vs_rus41" c(10) t(41 mortar) 	s(rus) n(2) g(c7) sc(350) b(v2) cw(2) cp(5)) {level 1} {cost 350} {fore -2.0}}	;30sec
-{"pm_38"            ("vs_rus41" c(60) t(41 mortar) 	s(rus) n(2) g(c8) sc(690) b(v2) cw(2) cp(10)) {level 1} {cost 690} {fore -9.0}}	;600sec
+("unit_vehicle_supporters" side(rus) name(ds39_degtyaryov) breed(vehicle_supporter_41) crew(2) charge(10) tags(41) group(c2) button(v2) score(110) weight(2) points(5) level(1) cost(110) fore(-2.0))		;30sec
+("unit_vehicle_supporters" side(rus) name(maxim_1910_30) breed(vehicle_supporter_41) crew(2) charge(10) tags(41) group(c3) button(v2) score(125) weight(2) points(5) level(1) cost(125) fore(-2.0))		;30sec
+("unit_vehicle_supporters" side(rus) name(dshk_stank) breed(vehicle_supporter_41) crew(2) charge(10) tags(41) group(c5) button(v2) score(200) weight(2) points(5) level(1) cost(200) fore(-2.0))		;30sec
+("unit_vehicle_supporters" side(rus) name(dshk_zenit) breed(vehicle_supporter_41) crew(2) charge(10) tags(41) group(c6) button(v2) score(200) weight(2) points(5) level(1) cost(200) fore(-2.0))		;30sec
+("unit_vehicle_supporters" side(rus) name(bm_37) breed(vehicle_supporter_41) crew(2) charge(10) tags(41 mortar) group(c7) button(v2) score(350) weight(2) points(5) level(1) cost(350) fore(-2.0))	;30sec
+("unit_vehicle_supporters" side(rus) name(pm_38) breed(vehicle_supporter_41) crew(2) charge(60) tags(41 mortar) group(c8) button(v2) score(690) weight(2) points(10) level(1) cost(690) fore(-9.0))	;600sec
 
-{"m37"              ("vs_rus41" c(10) t(41) 		s(rus) n(2) g(c9) sc(135)  b(v2) cw(2) cp(5)) {level 1} {cost 135} {fore -2.0}}	;30sec
-{"zis2"             ("vs_rus41" c(20) t(medium 41) 	s(rus) n(2) g(c11) sc(475) b(v2) cw(2) cp(15)) {level 1} {cost 475} {fore -25.0}}	;520sec
-{"np_52k"           ("vs_rus41" c(30) t(medium 41) 	s(rus) n(2) g(c12) sc(700) b(v2) cw(2) cp(20)) {level 1} {cost 700} {fore -25.0}}	;780sec
+("unit_vehicle_supporters" side(rus) name(m37) breed(vehicle_supporter_41) crew(2) charge(10) tags(41) group(c9) button(v2) score(135) weight(2) points(5) level(1) cost(135) fore(-2.0))	;30sec
+("unit_vehicle_supporters" side(rus) name(zis2) breed(vehicle_supporter_41) crew(2) charge(20) tags(medium 41) group(c11) button(v2) score(475) weight(2) points(15) level(1) cost(475) fore(-25.0))	;520sec
+("unit_vehicle_supporters" side(rus) name(np_52k) breed(vehicle_supporter_41) crew(2) charge(30) tags(medium 41) group(c12) button(v2) score(700) weight(2) points(20) level(1) cost(700) fore(-25.0))	;780sec
 
-("how_y" side(rus) name(how_aa) c(30) c1(t20) c2(k61)  	t(medium 41) g(c14) b(v2) level(1) cost(250) f(-6.0))				;210sec
+("unit_howitzer" side(rus) name(how_aa) vehicle2(k61) charge(30) tags(medium 41) group(c14) button(v2) level(1) cost(250) fore(-6.0))				;210sec
 
-{"kv2"              ("v_rus41" c(600) t(heavy 41) 		s(rus) n1(3) n2(1) g(c21) sc(1400) b(v2) cw(0) cp(20)) {level 1} {cost 1400} {fore -1.0}};1200sec
+("unit_tank" side(rus) name(kv2) breed1(tankman_41) breed2(tankman2_41) crew1(3) crew2(1) charge(600) tags(heavy 41) group(c21) button(v2) score(1400) weight(0) points(20) level(1) cost(1400) fore(-1.0));1200sec
 
 
-("how_y" side(rus) name(how_b) c(60) c1(zis5art) c2(m30_1938) t(artillery 41) g(c15) b(v22) level(1) cost(600) f(-14.0))			;900sec
-("how_y" side(rus) name(np_ml20) c(60) c1(zis5art) c2(np_ml20) t(artillery heavyart heavy 41) g(c22) b(v22) level(1) cost(875) f(-19.0))			;1200sec
-{"203b4"            ("vs_rus41" c(60) t(artillery heavyart heavy 41) 	s(rus) n(2) g(c17) sc(1200) b(v22) cw(2) cp(25)) {level 1} {cost 1200} {fore -19.0}} 	;1200sec
-{"280br5"           ("vs_rus41" c(60) t(artillery heavyart heavy 41) 	s(rus) n(2) g(c17) sc(1500) b(v22) cw(2) cp(25)) {level 1} {cost 1500} {fore -19.0}} ;1200sec
+("unit_howitzer" side(rus) name(how_b) vehicle2(m30_1938) charge(60) tags(artillery 41) group(c15) button(v22) level(1) cost(600) fore(-14.0))			;900sec
+("unit_howitzer" side(rus) name(np_ml20) vehicle2(np_ml20) charge(60) tags(artillery heavyart heavy 41) group(c22) button(v22) level(1) cost(875) fore(-19.0))			;1200sec
+("unit_vehicle_supporters" side(rus) name(203b4) breed(vehicle_supporter_41) crew(2) charge(60) tags(artillery heavyart heavy 41) group(c17) button(v22) score(1200) weight(2) points(25) level(1) cost(1200) fore(-19.0)) 	;1200sec
+("unit_vehicle_supporters" side(rus) name(280br5) breed(vehicle_supporter_41) crew(2) charge(60) tags(artillery heavyart heavy 41) group(c17) button(v22) score(1500) weight(2) points(25) level(1) cost(1500) fore(-19.0)) ;1200sec
 
-{"bm_8_24"          ("vs_rus41" c(60) t(artillery heavyart rocket 41) s(rus) n(2) g(c22) sc(500) b(v22) cw(0) cp(10)) {level 1} {cost 500} {fore -14.0}} 	;900sec
-{"bm8-48"          ("vs_rus41" c(60) t(artillery heavyart rocket 41) s(rus) n(2) g(c23) sc(650) b(v22) cw(0) cp(10)) {level 1} {cost 650} {fore -14.0}} 	;900sec
-{"bm13"             ("vs_rus41" c(60) t(artillery heavyart rocket 41) s(rus) n(2) g(c24) sc(850) b(v22) cw(0) cp(20)) {level 1} {cost 850} {fore -19.0}} 	;1200sec
+("unit_vehicle_supporters" side(rus) name(bm_8_24) breed(vehicle_supporter_41) crew(2) charge(60) tags(artillery heavyart rocket 41) group(c22) button(v22) score(500) weight(0) points(10) level(1) cost(500) fore(-14.0)) 	;900sec
+("unit_vehicle_supporters" side(rus) name(bm8-48) breed(vehicle_supporter_41) crew(2) charge(60) tags(artillery heavyart rocket 41) group(c23) button(v22) score(650) weight(0) points(10) level(1) cost(650) fore(-14.0)) 	;900sec
+("unit_vehicle_supporters" side(rus) name(bm13) breed(vehicle_supporter_41) crew(2) charge(60) tags(artillery heavyart rocket 41) group(c24) button(v22) score(850) weight(0) points(20) level(1) cost(850) fore(-19.0)) 	;1200sec
 
 
 
 ;같캛utton 3같�
 
-{"gazaaa4m"         ("vs_rus41" c(30) t(41) 	s(rus) n(3) g(d1) sc(180)  b(v3) cw(0) cp(5)) {level 1} {cost 180} {fore -2.0}}		;90sec
-{"ba11"             ("v_rus41" c(10) t(41) 	s(rus) n1(3) n2(1) g(d3) sc(220) b(v3) cw(0) cp(5)) {level 1} {cost 220} {fore -35}}		;360sec
+("unit_vehicle_supporters" side(rus) name(gazaaa4m) breed(vehicle_supporter_41) crew(3) charge(30) tags(41) group(d1) button(v3) score(180) weight(0) points(5) level(1) cost(180) fore(-2.0))		;90sec
+("unit_tank" side(rus) name(ba11) breed1(tankman_41) breed2(tankman2_41) crew1(3) crew2(1) charge(10) tags(41) group(d3) button(v3) score(220) weight(0) points(5) level(1) cost(220) fore(-35))		;360sec
 ; [removed - unit not in 1.30.10] {"t-38"             ("v_rus41" c(10) t(41) 	s(rus) n1(1) n2(1) g(d4) sc(9.00) b(v3) cw(0) cp(5)) {level 1} {cost 180} {fore -31}}		;320sec
-{"t26"              ("v_rus41" c(10) t(41) 	s(rus) n1(2) n2(1) g(d5) sc(200) b(v3) cw(0) cp(5)) {level 1} {cost 200} {fore -37}}		;380sec
+("unit_tank" side(rus) name(t26) breed1(tankman_41) breed2(tankman2_41) crew1(2) crew2(1) charge(10) tags(41) group(d5) button(v3) score(200) weight(0) points(5) level(1) cost(200) fore(-37))		;380sec
 
-{"bt5"         	    ("v_rus41" c(10) t(41) 	s(rus) n1(2) n2(1) g(d6) sc(210) b(v3) cw(0) cp(5)) {level 1} {cost 210} {fore -37}}		;380sec
-{"bt7a"             ("v_rus41" c(10) t(41) 	s(rus) n1(2) n2(1) g(d7) sc(320) b(v3) cw(0) cp(15)) {level 1} {cost 320} {fore -43.0}} 	;440sec
-{"bt7_37_1"         ("v_rus41" c(10) t(41) 	s(rus) n1(2) n2(1) g(d8) sc(220) b(v3) cw(0) cp(5)) {level 1} {cost 220} {fore -37}}		;380sec
-{"t60"              ("v_rus41" c(10) t(41) 	s(rus) n1(1) n2(1) g(d9) sc(260) b(v3) cw(0) cp(5)) {level 1} {cost 260} {fore -41}}		;420sec
+("unit_tank" side(rus) name(bt5) breed1(tankman_41) breed2(tankman2_41) crew1(2) crew2(1) charge(10) tags(41) group(d6) button(v3) score(210) weight(0) points(5) level(1) cost(210) fore(-37))		;380sec
+("unit_tank" side(rus) name(bt7a) breed1(tankman_41) breed2(tankman2_41) crew1(2) crew2(1) charge(10) tags(41) group(d7) button(v3) score(320) weight(0) points(15) level(1) cost(320) fore(-43.0)) 	;440sec
+("unit_tank" side(rus) name(bt7_37_1) breed1(tankman_41) breed2(tankman2_41) crew1(2) crew2(1) charge(10) tags(41) group(d8) button(v3) score(220) weight(0) points(5) level(1) cost(220) fore(-37))		;380sec
+("unit_tank" side(rus) name(t60) breed1(tankman_41) breed2(tankman2_41) crew1(1) crew2(1) charge(10) tags(41) group(d9) button(v3) score(260) weight(0) points(5) level(1) cost(260) fore(-41))		;420sec
 
 
 ;같캛utton 4같�
 
-{"t34_0"           ("v_rus41" c(10) t(medium 41) 	s(rus) n1(3) n2(1) g(e2) sc(700) b(v4) cw(0) cp(15)) {level 1} {cost 700} {fore -89.0}}	;900sec
-{"t34_41"          ("v_rus41" c(10) t(medium 41) 	s(rus) n1(3) n2(1) g(e3) sc(725) b(v4) cw(0) cp(15)) {level 1} {cost 725} {fore -89.0}}	;900sec
-{"t34_1"           ("v_rus41" c(10) t(medium 41) 	s(rus) n1(3) n2(1) g(e5) sc(750) b(v4) cw(0) cp(15)) {level 1} {cost 750} {fore -99.0}}	;1000sec
+("unit_tank" side(rus) name(t34_0) breed1(tankman_41) breed2(tankman2_41) crew1(3) crew2(1) charge(10) tags(medium 41) group(e2) button(v4) score(700) weight(0) points(15) level(1) cost(700) fore(-89.0))	;900sec
+("unit_tank" side(rus) name(t34_41) breed1(tankman_41) breed2(tankman2_41) crew1(3) crew2(1) charge(10) tags(medium 41) group(e3) button(v4) score(725) weight(0) points(15) level(1) cost(725) fore(-89.0))	;900sec
+("unit_tank" side(rus) name(t34_1) breed1(tankman_41) breed2(tankman2_41) crew1(3) crew2(1) charge(10) tags(medium 41) group(e5) button(v4) score(750) weight(0) points(15) level(1) cost(750) fore(-99.0))	;1000sec
 
-{"kv1_41"          ("v_rus41" c(600) t(heavy 41) 	s(rus) n1(3) n2(1) g(e8) sc(1250) b(v4) cw(0) cp(20)) {level 1} {cost 1250} {fore -1.0}}	;1200sec
+("unit_tank" side(rus) name(kv1_41) breed1(tankman_41) breed2(tankman2_41) crew1(3) crew2(1) charge(600) tags(heavy 41) group(e8) button(v4) score(1250) weight(0) points(20) level(1) cost(1250) fore(-1.0))	;1200sec
 
 ;같캛utton 5같�
 
-{"zis_30"           ("v_rus41" c(10) t(medium 41) 	s(rus) n1(3) n2(1) g(f2) sc(450) b(v5) cw(0) cp(10)) {level 1} {cost 450} {fore -69.0}}	;700sec
+("unit_tank" side(rus) name(zis_30) breed1(tankman_41) breed2(tankman2_41) crew1(3) crew2(1) charge(10) tags(medium 41) group(f2) button(v5) score(450) weight(0) points(10) level(1) cost(450) fore(-69.0))	;700sec
 
 
 ;같캛utton Hero같�
 
 
-{"hero5(rus)"        ("i2" c(240)		t(hero 41) s(rus) n1(rifle3:30) n2(smg2:3) g(h2) b(hero)) {level 1} {cost 2.0} {fore -0.5}}
+("unit_infantry_sided_members2" side(rus) name(hero5) member1(rifle3:30) member2(smg2:3) charge(240) tags(hero 41) group(h2) button(hero) level(1) cost(2.0) fore(-0.5))
 
 ; [removed - unit not in 1.30.10] {"hero8_rus"        ("v1" c(600) c1(kv2) 	t(hero 41) s(rus) n1(tankman:3) n2(tankman2:1) g(h5) b(hero)) {level 1} {cost 14.0} {fore -0.5}}
 
-{"hero_orgel(rus)"  	    ("v31" c(960) c1(bm13) 	t(hero artillery rocket 41) s(rus) n(vehicle_supporter:2) g(h10) b(hero)) {level 1} {cost 16.0} {fore -0.5}}
-{"hero9(rus)"  	    ("v2" c(1200) c1(203b4) 	t(hero artillery heavyart 41) s(rus) n1(vehicle_supporter:2) n2(tankman2:0) g(h8) b(hero)) {level 1} {cost 20.0} {fore -0.5}}
+("unit_vehicles1_members1_sided" side(rus) name(hero_orgel) vehicle1(bm13) member(vehicle_supporter:2) charge(960) tags(hero artillery rocket 41) group(h10) button(hero) level(1) cost(16.0) fore(-0.5))
+("unit_two_vehicles_members_sided" side(rus) name(hero9) vehicle1(203b4) member1(vehicle_supporter:2) member2(tankman2:0) charge(1200) tags(hero artillery heavyart 41) group(h8) button(hero) level(1) cost(20.0) fore(-0.5))

@@ -21,17 +21,17 @@
 		{SpreadPower	1}
 		{SpreadRadius 0.5}
 	}
-	{rechargeTime 3.5}   
-	{recoveryTime 1.25}    
+	{rechargeTime 3.5}
+	{recoveryTime 1.25}
 	{calibre 14}
 	{curve "gun_light"}
 	{healthDamage 275}
 	{aimingTolerance 0.1}
-	                     
-   	{RelaxationTime 1}
+
+	{RelaxationTime 1}
 	{projectileDamageTable {20 30} {100 25} {170 20} {215 10} {250 5}}
 	{projectileDamageThreshold 1}
-	
+
 	("accuracy_ptr")
 	("accuracy_boost")
 }

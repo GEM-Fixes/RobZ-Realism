@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "fin-inf-svt"}
+	{portrait "fin_soldier3"}
+	{nationality fin}
+	{icon "mg"}
+	{icon_priority 0}
+	{armors
+		{head "cap_fin_m36"}
+	}
+	{perks
+		("breed_body" health(200%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.8) vehicle(1.0) cannon(1.0))
+		("breed_skills" pistol(1) smg(5) mgun(7) rifle(6) rocket(1) melee(2))
+	}
+	("breed_vet" kind(1))
+	{inventory
+		{item "lsm26" filled}
+		{item  "LSM26_mag" 320}
+		{item "luger" filled}
+		{item  "ammo 9x19" 40}
+		{item "bandage" 2}
+		{item "sandbag_kit" 1}
+		{in_hands 0}
+	}
+}

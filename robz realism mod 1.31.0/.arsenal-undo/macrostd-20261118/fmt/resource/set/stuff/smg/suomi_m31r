@@ -1,0 +1,20 @@
+{from "pattern smg"
+	{filling "ammo ppsh_mag" 40 40}
+	{entity "suomi_m31"}
+	{fireSound	"smg/ppsh_burst/"}
+	{reloadSound "suomikpreload"}
+	("recoveryTime" r(700))
+	("speed" s(396))
+	{recoveryTime 0.07}
+	{burst
+		{short 2.5 1.5}
+		{long 7.5 1.5}
+	}	
+	{spreading
+		{BurstAccuracy 100 98 94 88 82 76 68 60}
+	}
+	; -- accuracy_smg_low
+	("distance_1" r1(0.385) r2(1.925) r3(4.40))
+
+
+}

@@ -3,7 +3,7 @@
 	{inventory
 		{size 6 1}
 		{weight 100}
-	}	
+	}
 	{mass 42}
 	{entity "katusha_ammo"}
 	{view "katusha_ammo"

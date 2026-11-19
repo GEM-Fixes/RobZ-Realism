@@ -1,0 +1,8 @@
+{from "flame_thrower"
+	{entity "flame_thrower_g"}
+
+	{aimRange 35}
+	{maxRange 35}
+	{recoveryTime 0.8}
+    	{RelaxationTime 0.5}
+}

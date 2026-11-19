@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "us_bazooker"}
 	{portrait "usa_soldier2"}
@@ -8,47 +9,13 @@
 		{head helmet_novice}
 	}
 	{perks
-		{"health" "150%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "100%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.85
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 0.9
-		}
-		
-		{"pistol" lvl_2
-		}
-		{"smg" lvl_3
-		}
-		{"mgun" lvl_2
-		}
-		{"rifle" lvl_2
-		}
-		{"rocketlauncher" lvl_1
-		}
-		{"melee" lvl_3
-		}
+		("soldier_smg_3" rocket(1) body(line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(standard))
 	{inventory
-		{item "m3a" filled}
-		{item "ammo m3a_mag" 192}
+		("smg_m3a")
 		{item "mine_detector"}
-		{item "dynamite" 2}
+		("give" item(dynamite) count(2))
 		{item "trench_spade"}
 		{in_hands 0}
 	}

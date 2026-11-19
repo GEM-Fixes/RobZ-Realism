@@ -1,5 +1,5 @@
 {from "pattern gun2"		; bl 7.2 direct fire
-    	{filling "bullet183"}
+	{filling "bullet183"}
 	{fireSound "gun/howitzer/203mm"}
 	{reloadSound "tankgun_r02"}
 	("range_grazing_howitzer")
@@ -11,7 +11,7 @@
 	{cursor "cannon_on_fg"}
 	{cursorReloading "cannon_reload_fg"}
 	("accuracy_grazinghowitzer_210m_anti_far")
-		(mod "mp"
+	(mod "mp"
 		{tag "prepare"}
 		{Special
 			{Mode aim}

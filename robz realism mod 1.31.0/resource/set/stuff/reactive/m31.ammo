@@ -3,7 +3,7 @@
 	{inventory
 		{size 6 1}
 		{weight 100}
-	}	
+	}
 	{mass 42}
 	{entity "m31_ammo"}
 	{view "m31_ammo"
@@ -14,7 +14,7 @@
 	{damage blastwave
 		{energy 23}
 		{area 3 8}
-	}	
+	}
 	{damage add blastwave
 		{energy 10}
 		{area 8 12}

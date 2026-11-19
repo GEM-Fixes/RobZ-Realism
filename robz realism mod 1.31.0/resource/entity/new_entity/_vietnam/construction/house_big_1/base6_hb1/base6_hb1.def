@@ -1,33 +1,17 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/construction.inc")
 	{Extension "base6_hb1.mdl"}
 	{props "cornered" "wood" "parts" "construction" "burning" "wood_stamp" "wall"}
 	("armor_house_wood")
-        {mass 1000}
+	{mass 1000}
 	{obstacleID "small_building"}
 
-	{Volume "body1"
-		{Tags  "body"}
-		{Thickness 10}
-		{able {obstacle 0}}
-	}
-	{Volume "body2"
-		{Tags  "body" "fire"}
-		{Thickness 10}
-	}
-	{Volume "body3"
-		{Tags  "body"}
-		{Thickness 10}
-		{able {obstacle 0}}
-	}
-	{Volume "body4"
-		{Tags  "body"}
-		{Thickness 10}
-	}
-	{Volume "body5"
-		{Tags  "body"}
-		{Thickness 10}
-	}
+	("vol_body_no_obstacle" name(body1) mm(10))
+	("vol_body_fire" name(body2) mm(10))
+	("vol_body_no_obstacle" name(body3) mm(10))
+	("vol_body_tagged" name(body4) mm(10))
+	("vol_body_tagged" name(body5) mm(10))
 	{Extender "land_patch"
 		{nonormals 1}
 	}

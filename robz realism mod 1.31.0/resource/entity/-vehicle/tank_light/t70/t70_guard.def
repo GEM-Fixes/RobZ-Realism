@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.2))
@@ -7,9 +8,9 @@
 	{targetClass "light_tank"}
 	{patherId "tank.light"}
 	{tag "diesel_exhaust"}
-	
+
 	{extender "enumerator"}
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: t70.def) ---
 	{volume "body1"
 		{tags "body"}
@@ -26,8 +27,8 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 15
-		;	{front	15}
-		;	{rear	15}
+			;	{front	15}
+			;	{rear	15}
 			{top	10}
 			{bottom	6}
 			{right	0.1}	;стык body1 и body2
@@ -38,7 +39,7 @@
 		{tags "turret"}
 		{thickness 35
 			{front	0.1}	;стык turret и turret1
-		;	{rear	35}
+			;	{rear	35}
 			{top	10}
 			{bottom	10}
 		}
@@ -48,7 +49,7 @@
 		{component "turret"}
 		{able {holed}}
 		{thickness 35
-		;	{front	35}
+			;	{front	35}
 			{rear	0.1}	;стык turret и turret1
 			{top	15}
 			{bottom	10}
@@ -60,16 +61,13 @@
 			{rear	10}	;орудие дает небольшую броню
 		}
 	}
-	{Volume "hole_tur"
-		{able clear {hole}}
-		{component "turret"}
-	}
+	("vol_turret_hole_only" name(hole_tur))
 	{volume "engine"
 		{thickness 10}
 	}
 	; --- end Godny hitbox armor ---
 	("armor_light" turret(65 35 35 10) body(35 15 25 15))
-	("crew_2_human")
+	("crew_2_human_inside_left")
 	("rus_2-5x_sight")
 
 	{boarder
@@ -103,7 +101,7 @@
 		{place "gun"
 			{RestoreIKAfterAim}
 			{weapon "45mm_20k_vet" filling "bullet45 rus aphebc" 1}
-			{charger "gunner"}        
+			{charger "gunner"}
 			("abm_veteran")
 		}
 		{place "mgun"
@@ -114,34 +112,34 @@
 			{basic}
 		}
 	}
-	
+
 	{mass 9800}
-		{Chassis
-			("tank_trace" fx("tracks_sm2") step(0.15) len(0.6))
-			{Locomotion ("locomotion")
-				{maxspeed   38}
-				{maxSpeedAtMaxTurn 6}
-				{StartTime   21.25}
-				{TurnStart  1.1}
-				{TurnTime  	 12.6}
-				{TurnRadius  7} 
-    			{TurnStop   0.5}
-				{BrakeTime   1}
-				{StopTime    2}
-				{Gears   0.13 0.23 0.33 1}
-				{RearGears  0.25}
-			}
-			{FuelBag
-				{volume 440 }	
-				{rate	 13 }   
-				{remain 440 }
-				{fuel "fuel"}
-			}
-		{speed
-        	{Normal  38}
-        	{Slow  38}
-    	}
+	{Chassis
+		("tank_trace" fx("tracks_sm2") step(0.15) len(0.6))
+		{Locomotion ("locomotion")
+			{maxspeed   38}
+			{maxSpeedAtMaxTurn 6}
+			{StartTime   21.25}
+			{TurnStart  1.1}
+			{TurnTime  	 12.6}
+			{TurnRadius  7}
+			{TurnStop   0.5}
+			{BrakeTime   1}
+			{StopTime    2}
+			{Gears   0.13 0.23 0.33 1}
+			{RearGears  0.25}
 		}
+		{FuelBag
+			{volume 440 }
+			{rate	 13 }
+			{remain 440 }
+			{fuel "fuel"}
+		}
+		{speed
+			{Normal  38}
+			{Slow  38}
+		}
+	}
 
 	{Extension "t70.mdl"}
 

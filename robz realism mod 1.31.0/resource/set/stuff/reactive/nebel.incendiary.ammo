@@ -3,7 +3,7 @@
 	{inventory
 		{size 5 1}
 		{weight 100}
-	}	
+	}
 	{entity "nebel_incendiary_ammo"}
 	{mass 83}
 	{view "nebel_ammo"
@@ -27,10 +27,10 @@
 		{radius 20}
 		{heating 2}
 		{time 0.1}
-	}	
+	}
 	{damage add fire
 		{radius 10}
 		{heating 0.01}
 		{time 60}
-	}	
+	}
 }

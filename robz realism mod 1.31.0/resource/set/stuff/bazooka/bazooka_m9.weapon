@@ -2,5 +2,5 @@
 	{entity "bazooka_m9"}
 	{spreading 3.5}
 	{range 80 80}
-    	{projectileDamageTable {0 100} {80 100} {85 0}}
+	{projectileDamageTable {0 100} {80 100} {85 0}}
 }

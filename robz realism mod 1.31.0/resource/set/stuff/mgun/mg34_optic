@@ -15,6 +15,6 @@
 	("burst_medium")
 	("speed" s(765))
 	("accuracy_mgun_tank")
-	;{SpreadTolerance 0.1}
-	;{LockFireDistanceTime 0.1}
+;{SpreadTolerance 0.1}
+;{LockFireDistanceTime 0.1}
 }

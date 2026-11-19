@@ -2,19 +2,19 @@
 	{filling "bullet95 eng"}
 	{fireSound "gun/howitzer/105mm_m2a1"}
 	("range_grazing_howitzer")
-	
-	("speed_all" ap(330) apcr(330) fg(330) heat(503))
+
+	("speed_all" speed(330) apcr(330) fg(330) heat(503))
 	("caliber_maximum")
 	{range 190 190}
 	{gravity 8}
 	{projectileDamage 150}
 	{parameters "heat"
-		("damage_heat" a(110) range(190))
+		("damage_heat" damage(110) max(190))
 	}
-	
+
 	("accuracy_grazinghowitzer_high_anti_far")
 	{RelaxationTime 0.0001}
-	
+
 	(mod "mp"
 		{tag "prepare"}
 		{Special

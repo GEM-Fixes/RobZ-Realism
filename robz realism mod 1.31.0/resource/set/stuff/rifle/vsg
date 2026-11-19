@@ -4,7 +4,7 @@
 	{entity "vsg"}
 	{fireSound "smg/mp44_burst/"}
 	{reloadSound "mp44"}
-	
+
 	{Automatic}
 	{rechargeTime 4.5}
 	{healthDamage 30}

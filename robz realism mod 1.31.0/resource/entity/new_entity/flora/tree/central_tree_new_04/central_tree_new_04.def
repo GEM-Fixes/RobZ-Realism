@@ -1,9 +1,8 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tree.inc")
 	{props "tree" "normal_light" "invisible_crown"}
 	{Extension "central_tree_new_04.mdl"}
-	{Volume "crown"
-		{able {visible 0}}
-	}
+	("vol_invisible" name(crown))
 	{NoGroupMesh 1}
 }

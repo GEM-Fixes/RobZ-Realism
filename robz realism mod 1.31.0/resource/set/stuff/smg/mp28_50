@@ -6,6 +6,6 @@
 	{rechargeTime 5}
 	("recoveryTime" r(500))
 	("burst_long")
- 	("speed" s(380))
+	("speed" s(380))
 	("accuracy_smg_low")
 }

@@ -6,7 +6,7 @@
 	("speed" s(290))
 	{range 190 190}
 	{rechargeTime 20}
-	{projectileDamage 140}	
+	{projectileDamage 140}
 	("accuracy_grazinghowitzer_190m_anti_far")
 	(mod "mp"
 		{tag "prepare"}

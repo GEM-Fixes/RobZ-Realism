@@ -5,6 +5,6 @@
 
 	("recoveryTime" r(600))
 	("burst_short")
- 	("speed" s(420))
+	("speed" s(420))
 	("accuracy_smg_high")
 }

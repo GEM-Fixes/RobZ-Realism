@@ -1,6 +1,6 @@
 {game_entity
 	(include "/properties/cannon_mgun.ext")
-	
+
 	{props "cannon" "vision_cannon_minimum" "cannon_small" "mgun_tripod"}
 	{collider "cannon_small"}
 
@@ -10,13 +10,13 @@
 			{LinkBone ""}
 			{weapon "rus_maxim_1910_30" filled}
 		}
-	} 
+	}
 	{extender "inventory"
 		{box
 			{item "ammo rus_mg_belt" 500}
 			{item "plant" 5}
 		}
-	} 	
+	}
 	{Extension "maxim_1910_30.mdl"}
 
 	{boarder
@@ -32,20 +32,20 @@
 		{anm "driver2"
 			{forward {end "walk_1hand"}}
 		}
-	
+
 	}
 
-	{sensor 
-		{visor "main" 
+	{sensor
+		{visor "main"
 			{vision "cannon_mgun"}
 			{bone "turret"}
 		}
 	}
-	
+
 	{extender "shield"
 		{on}
 	}
-	
+
 	{extender "cannon"
 		{animation
 			{move "cannon_maxim_move" "walk_1hand"}
@@ -57,13 +57,13 @@
 	}
 
 	{Volume "body"
-		;{tags "body"}
-		;{able{obstacle 0}{blast 0}}
-		;{thickness 1}
-		;{component "body"}
+	;{tags "body"}
+	;{able{obstacle 0}{blast 0}}
+	;{thickness 1}
+	;{component "body"}
 	}
 	{volume "turret"
-		;{thickness 3}
+	;{thickness 3}
 	}
 	{volume "shield"
 		{thickness 1}

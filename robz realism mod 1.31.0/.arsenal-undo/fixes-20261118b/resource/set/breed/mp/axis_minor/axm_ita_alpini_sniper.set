@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ita-alp-rfl"}
+	{portrait "ita_soldier5"}
+	{icon "sniper"}
+	{icon_priority 5}
+	{nationality ita}
+	{armors
+		{head helmet_ita_m33_alpini}
+	}
+	{tags "sniper"}
+	{perks
+		("body_sniper")
+		("drive_t10_v10_c10")
+		{"stealth"}
+		{"telescope"}
+		("breed_skills" pistol(2) smg(2) mgun(4) rifle(5) rocket(1) melee(2))
+		{"aimedshot"}
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("kit_rifle" gun(carcano_m91_scoped) ammo(6x52) rounds(160))
+		("kit_pistol" gun(beretta_m1934) ammo(9x17) rounds(160))
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

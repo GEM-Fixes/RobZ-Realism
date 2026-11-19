@@ -1,7 +1,7 @@
 {from "breda_37"
 	{filling "ammo 8x59" 40}
 	{fireSound	"mgun/breda_37_burst/"}
-       	{reloadSound "breda30x2_reload"}
-         {tag "mgun_light"}
+	{reloadSound "breda30x2_reload"}
+	{tag "mgun_light"}
 	("recoveryTime" r(900))
 }

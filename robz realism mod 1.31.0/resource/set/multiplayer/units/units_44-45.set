@@ -4,6 +4,7 @@
 	(include "soldiers.set")
 	(include "squads.set")
 	(include "vehicles.set")
+	(include "_macros.inc")
 	(include "/set/multiplayer/units/usa/squads_43-45.set")
 	(include "/set/multiplayer/units/usa/vehicles_43-45.set")
 
@@ -13,8 +14,8 @@
 	(include "/set/multiplayer/units/ger2/squads.set")
 	(include "/set/multiplayer/units/ger2/vehicles_all.set")
 
-        (include "/set/multiplayer/units/axis_minor/vehicles.set")
-        (include "/set/multiplayer/units/axis_minor/squads.set")
+	(include "/set/multiplayer/units/axis_minor/vehicles.set")
+	(include "/set/multiplayer/units/axis_minor/squads.set")
 
 
 
@@ -29,6 +30,6 @@
 	(include "/set/multiplayer/units/rus/vehicles_44-45.set")
 	(include "/set/multiplayer/units/rus_guard/squads_43-45.set")
 	(include "/set/multiplayer/units/rus_guard/vehicles_43-45.set")
-	
+
 	(include "vehicles_x.set")
 }

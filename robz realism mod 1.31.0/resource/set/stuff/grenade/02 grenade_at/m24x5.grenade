@@ -20,7 +20,7 @@
 	{throw
 		{range 12}
 		{startAngle 40}
-		;{spreading 1.0}				
+		;{spreading 1.0}
 		{constantSpeed 10.5}
 	}
 	{damage cumulative
@@ -28,6 +28,6 @@
 		{distance 0.5}
 	}
 	{possibleDamageRadius 5}
-	{inventory {size 2 1}}	
+	{inventory {size 2 1}}
 	{entity "grenade_m24x5"}
 }

@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "ita-alp-mgun"}
 	{portrait "ita_soldier1"}
@@ -8,47 +9,12 @@
 		{head helmet_ita_m33_alpini}
 	}
 	{perks
-		{"health" "200%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "100%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.8
-		}
-		{"vehicle" 1.0
-		}
-		{"cannon" 1.0
-		}
-		
-		{"pistol" lvl_1
-		}
-		{"smg" lvl_1
-		}
-		{"mgun" lvl_4
-		}
-		{"rifle" lvl_3
-		}
-		{"rocketlauncher" lvl_1
-		}
-		{"melee" lvl_2
-		}
+		("soldier_mgun_4" rocket(1) body(line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(standard))
 	{inventory
-		{item "breda_30" filled}
-		{item  "ammo breda_mag" 320}
-		{item "beretta_m1934" filled}
-		{item  "ammo 9x17" 35}
+		("kit_mgun" gun(breda_30) ammo(breda_mag) rounds(320))
+		("kit_pistol" gun(beretta_m1934) ammo(9x17) rounds(35))
 		{item "bandage" 2}
 		{item "sandbag_kit" 1}
 		{in_hands 0}

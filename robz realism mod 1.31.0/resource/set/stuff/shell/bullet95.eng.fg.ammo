@@ -5,7 +5,7 @@
 	}
 	("fg" args 6.0)
 	{mass 19}
-	
+
 	; anti-apc
 	{damage add blastwave
 		{energy 3.2}
@@ -16,7 +16,7 @@
 		{view "/texture/fx/trace"
 			{Light 0}
 			{ScaleY 0}
-		}		
+		}
 		{length 0}
 	}
 }

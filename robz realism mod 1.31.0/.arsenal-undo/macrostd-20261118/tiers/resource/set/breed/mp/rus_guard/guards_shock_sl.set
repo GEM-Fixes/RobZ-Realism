@@ -1,0 +1,28 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-sco-late-rfl"}
+	{portrait "rus_elite3"}
+	{nationality rus}
+	{icon "smg3"}
+	{icon_priority 1}
+	{armors
+		{body body_armor}
+		{head helmet_rus_ssh40_cover_camo}
+	}
+	{perks
+		("breed_body" health(250%) regen_health(100%) stamina(150%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.75) vehicle(1) cannon(0.8))
+		("breed_skills" pistol(4) smg(3) mgun(3) rifle(4) rocket(3) melee(4))
+	}
+	("breed_vet" table(standard_start3))
+	{inventory
+		("rifle_svt40")
+		{item "ammo mosin_clip" 60}
+		{item "bandage" 3}
+		("frag_f1_x2")
+		("fire_molotov_coctail_x0_1")
+		("smoke_grenade_smoke_x2")
+		{item "ru_backpack_meshok"}
+		{in_hands 0}
+	}
+}

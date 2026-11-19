@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/armoredcar.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.0))
@@ -5,10 +6,10 @@
 	{targetClass "armoredcar" "ap bullet"}
 	{targetSelector "tank"}
 	{PatherId "vehicle.small"}
-	
+
 	{extender "enumerator"}
-	{extension "crew.ext"}	
-	
+	{extension "crew.ext"}
+
 	; --- Godny hitbox armor (ported from GodnyMod: mk2daimler.def) ---
 	{volume "body1"	;бо
 		{tags "body"}
@@ -54,7 +55,7 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 10
-		;	{front	10}
+			;	{front	10}
 			{rear	14}
 			{top	5}
 			{bottom	6}
@@ -71,17 +72,14 @@
 		{thickness 14
 			{front	16}
 			{rear	14}
-		;	{top	6}
+			;	{top	6}
 			{bottom	6}
 		}
 	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "turret"}
-	}
+	("vol_turret_hole_only" name(hole_man))
 	{volume "mantlet"
 		{thickness 16
-		;	{front	16}
+			;	{front	16}
 			{rear	10}	;орудие дает небольшую броню
 		}
 	}
@@ -108,7 +106,7 @@
 	{component "Gun"
 		{RepairTime 20}
 	}
-	
+
 	("armor_medium" args 1.0)
 	("eng_1-9x_sight")
 
@@ -125,7 +123,7 @@
 		{place "gun"
 			{RestoreIKAfterAim}
 			{weapon "40mm_oqf2pdr" filling "bullet40 eng ap" 1}
-			("abm_low")
+			("abm_low_v2")
 		}
 		{place "mgun"
 			{type "mgun_coaxial"}
@@ -135,7 +133,7 @@
 			{basic}
 		}
 	}
-	
+
 	("wheel" args "wheelright1")
 	("wheel" args "wheelleft1")
 	("wheel" args "wheelright2")
@@ -147,24 +145,24 @@
 	{Chassis
 		{Locomotion ("locomotion")
 			{MaxSpeed	38}
-	  		{maxSpeedAtMaxTurn 6}	
+			{maxSpeedAtMaxTurn 6}
 			{StartTime	30}
-			{BrakeTime	1.5}	
+			{BrakeTime	1.5}
 			{StopTime	2.5}
 			{TurnRadius	6}
-     			{Gears  0.1 0.2 0.3 1}
+			{Gears  0.1 0.2 0.3 1}
 			{RearGears 0.25}
 		}
 		{FuelBag
-			{volume 45 }	
-			{rate	10 }   
+			{volume 45 }
+			{rate	10 }
 			{remain 45 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  38}
-        	{Slow  38}
-    	}
+			{Normal  38}
+			{Slow  38}
+		}
 		("car_trace" fx("tracewheel03") step(0.08) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
 		("car_trace" fx("tracewheel03") step(0.08) wheell("wlr") wheelr("wrr") bonel("FXtraceL2") boner("FXtraceR2"))
 	}

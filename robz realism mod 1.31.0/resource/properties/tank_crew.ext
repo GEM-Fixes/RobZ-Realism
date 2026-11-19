@@ -1,7 +1,9 @@
 ;SDL
 
 ;//////////////////////////////////////////////////////////////////////////////
-(define "crew_inside"
+; crew_inside_left: {boarder {anm}}
+;   e.g. ("crew_inside_left")
+(define "crew_inside_left"
 	{boarder
 		{anm "left"
 			{forward	{begin	"board_tank"}}
@@ -13,6 +15,14 @@
 		}
 	}
 )
+; crew_human_visible_anm: {placer {place}} {boarder {door} {link}}
+;   place - name of {place}, name of {linkbone}, text in {link}
+;   visor - name of {visor}
+;   door1 - name of {door}, name of {link}
+;   door2 - name of {door}, name of {link}
+;   anm_left - name of {anm}
+;   anm_right - name of {anm}
+;   e.g. ("crew_human_visible_anm" place(driver)  door1(emit1) door2(emit2) anm_left(driver) anm_right(driver) visor(driver))
 (define "crew_human_visible_anm"
 	{placer
 		{place "%place"
@@ -30,9 +40,21 @@
 		{link "%door2" "%place" {anm "%anm_right"} {forward putoff} {reverse puton}}
 	}
 )
+; crew_human_visible: calls "crew_human_visible_anm"
+;   place - name of {place} via "crew_human_visible_anm", name of {linkbone} via "crew_human_visible_anm", text in {link} via "crew_human_visible_anm"
+;   door1 - name of {door} via "crew_human_visible_anm", name of {link} via "crew_human_visible_anm"
+;   door2 - name of {door} via "crew_human_visible_anm", name of {link} via "crew_human_visible_anm"
+;   visor - name of {visor} via "crew_human_visible_anm"
+;   e.g. ("crew_human_visible" place(gunner) door1(emit1) door2(emit2) visor(main))
 (define "crew_human_visible"
 	("crew_human_visible_anm" place(%place) door1(%door1) door2(%door2) visor(%visor) anm_left(left) anm_right(right))
 )
+; crew_human: {placer {place}} {boarder {door} {link}}
+;   place - name of {place}, text in {link}
+;   visor - name of {visor}
+;   door1 - name of {door}, name of {link}
+;   door2 - name of {door}, name of {link}
+;   e.g. ("crew_human" place(driver) door1(emit1) door2(emit2) visor(driver))
 (define "crew_human"
 	{placer
 		{place "%place"
@@ -47,24 +69,32 @@
 		{link "%door2" "%place" {anm "right"} {forward putoff} {reverse puton}}
 	}
 )
+; crew_3_human: calls "crew_inside_left" "crew_human"
+;   e.g. ("crew_3_human")
 (define "crew_3_human"
-	("crew_inside")
+	("crew_inside_left")
 	("crew_human" place(gunner)		door1(emit1) door2(emit2) visor(main))
 	("crew_human" place(driver)		door1(emit1) door2(emit2) visor(driver))
 	("crew_human" place(charger)	door1(emit1) door2(emit2) visor(main))
 )
+; crew_4_human: calls "crew_3_human" "crew_human"
+;   e.g. ("crew_4_human")
 (define "crew_4_human"
 	("crew_3_human")
 	("crew_human" place(commander)	door1(emit1) door2(emit2) visor(main))
 )
-(define "crew_2_human"
-	("crew_inside")
+; crew_2_human_inside_left: calls "crew_inside_left" "crew_human"
+;   e.g. ("crew_2_human_inside_left")
+(define "crew_2_human_inside_left"
+	("crew_inside_left")
 	("crew_human" place(gunner) door1(emit1) door2(emit2) visor(main))
 	("crew_human" place(driver)	door1(emit1) door2(emit2) visor(driver))
 )
 
+; crew_4_human_extended: {placer {place}} {boarder {door} {link}}, calls "crew_inside_left" "crew_human"
+;   e.g. ("crew_4_human_extended")
 (define "crew_4_human_extended"
-	("crew_inside")
+	("crew_inside_left")
 	{placer
 		{place "driver" {group "crew"} {visor "driver"}}
 	}
@@ -76,14 +106,18 @@
 	("crew_human" place(charger)	door1(emit1) door2(emit2) visor(main))
 	("crew_human" place(commander)	door1(emit1) door2(emit2) visor(main))
 )
+; crew_5_human: calls "crew_inside_left" "crew_human"
+;   e.g. ("crew_5_human")
 (define "crew_5_human"
-	("crew_inside")
+	("crew_inside_left")
 	("crew_human" place(gunner)		door1(emit1) door2(emit2) visor(main))
 	("crew_human" place(driver)		door1(emit1) door2(emit2) visor(driver))
 	("crew_human" place(charger)	door1(emit1) door2(emit2) visor(main))
 	("crew_human" place(gunner3)		door1(emit1) door2(emit2) visor(driver))
 	("crew_human" place(commander)	door1(emit1) door2(emit2) visor(main))
 )
+; crew_6_human: calls "crew_inside" "crew_human"
+;   e.g. none (not called)
 (define "crew_6_human"
 	("crew_inside")
 	("crew_human" place(gunner)		door1(emit1) door2(emit2) visor(main))
@@ -93,8 +127,10 @@
 	("crew_human" place(gunner4)		door1(emit1) door2(emit2) visor(driver))
 	("crew_human" place(commander)	door1(emit1) door2(emit2) visor(main))
 )
+; crew_3_human_extended: {placer {place}} {boarder {door} {link}}, calls "crew_inside_left" "crew_human"
+;   e.g. ("crew_3_human_extended")
 (define "crew_3_human_extended"
-	("crew_inside")
+	("crew_inside_left")
 	{placer
 		{place "driver" {group "crew"} {visor "driver"}}
 	}
@@ -107,6 +143,8 @@
 ;	("crew_human" place(commander)	door1(emit1) door2(emit2) visor(main))
 )
 ;//////////////////////////////////////////////////////////////////////////////
+; seat_on_armor: {boarder {anm}}
+;   e.g. ("seat_on_armor")
 (define "seat_on_armor"
 	{boarder
 		{anm "armor"
@@ -115,6 +153,12 @@
 		}
 	}
 )
+; seat_human: {placer {place}} {boarder {door} {link}}
+;   place - name of {place}, text in {link}
+;   bone - name of {LinkBone}
+;   door - name of {door}, name of {link}
+;   animation - name of {anm}
+;   e.g. ("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
 (define "seat_human"
 	{placer
 		{place "%place" {LinkBone "%bone"} {openForCrush}}
@@ -124,24 +168,34 @@
 		{link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
 	}
 )
+; seat_2_human: calls "seat_on_armor" "seat_human"
+;   e.g. ("seat_2_human")
 (define "seat_2_human"
 	("seat_on_armor")
 	("seat_human" place(seat1) bone(seat01) door(emit3) animation(armor))
 	("seat_human" place(seat2) bone(seat02) door(emit4) animation(armor))
 )
+; seat_3_human: calls "seat_2_human" "seat_human"
+;   e.g. ("seat_3_human")
 (define "seat_3_human"
 	("seat_2_human")
 	("seat_human" place(seat3) bone(seat03) door(emit5) animation(armor))
 )
+; seat_4_human: calls "seat_3_human" "seat_human"
+;   e.g. ("seat_4_human")
 (define "seat_4_human"
 	("seat_3_human")
 	("seat_human" place(seat4) bone(seat04) door(emit6) animation(armor))
 )
+; seat_6_human: calls "seat_4_human" "seat_human"
+;   e.g. ("seat_6_human")
 (define "seat_6_human"
 	("seat_4_human")
 	("seat_human" place(seat5) bone(seat05) door(emit7) animation(armor))
 	("seat_human" place(seat6) bone(seat06) door(emit8) animation(armor))
 )
+; seat_9_human: calls "seat_6_human" "seat_human"
+;   e.g. none (not called)
 (define "seat_9_human"
 	("seat_6_human")
 	("seat_human" place(seat7) bone(seat07) door(emit9) animation(armor))
@@ -150,22 +204,36 @@
 )
 
 ;//////////////////////////////////////////////////////////////////////////////
+; crew_human_gunner: {sensor {visor}} {placer {place}}, calls "crew_human_visible"
+;   place - name of {place} via "crew_human_visible", name of {linkbone} via "crew_human_visible", text in {link} via "crew_human_visible"
+;   visorbone - name of {bone}
+;   e.g. ("crew_human_gunner" place(gunner2) visorbone(mgun))
 (define "crew_human_gunner"
 	("crew_human_visible" place(%place) door1(emit1) door2(emit2) visor(main))
 	{sensor
 		{visor "top"
-			{vision "vehicle_top_mgun"} 
+			{vision "vehicle_top_mgun"}
 			{bone "%visorbone"}
 		}
 	}
-	{placer 
+	{placer
 		{place "%place" {visor "top"}}
 	}
 )
+; gunner_visible: calls "crew_human_gunner"
+;   e.g. ("gunner_visible")
 (define "gunner_visible"
 	("crew_human_gunner" place(gunner2) visorbone(mgun2))
 )
 
+; crew_human_visible_anm_non_crew: {placer {place}} {boarder {door} {link}}
+;   place - name of {place}, name of {group}, name of {linkbone}
+;   visor - name of {visor}
+;   door1 - name of {door}, name of {link}
+;   door2 - name of {door}, name of {link}
+;   anm_left - name of {anm}
+;   anm_right - name of {anm}
+;   e.g. ("crew_human_visible_anm_non_crew" place(%place) door1(%door1) door2(%door2) visor(%visor) anm_left(left) anm_right(right))
 (define "crew_human_visible_anm_non_crew"
 	{placer
 		{place "%place"
@@ -183,27 +251,41 @@
 		{link "%door2" "%place" {anm "%anm_right"} {forward putoff} {reverse puton}}
 	}
 )
+; crew_human_visible_non_crew: calls "crew_human_visible_anm_non_crew"
+;   place - name of {place} via "crew_human_visible_anm_non_crew", name of {group} via "crew_human_visible_anm_non_crew", name of {linkbone} via "crew_human_vis
+;   door1 - name of {door} via "crew_human_visible_anm_non_crew", name of {link} via "crew_human_visible_anm_non_crew"
+;   door2 - name of {door} via "crew_human_visible_anm_non_crew", name of {link} via "crew_human_visible_anm_non_crew"
+;   visor - name of {visor} via "crew_human_visible_anm_non_crew"
+;   e.g. ("crew_human_visible_non_crew" place(%place) door1(emit1) door2(emit2) visor(main))
 (define "crew_human_visible_non_crew"
 	("crew_human_visible_anm_non_crew" place(%place) door1(%door1) door2(%door2) visor(%visor) anm_left(left) anm_right(right))
 )
+; crew_human_gunner_non_crew: {sensor {visor}} {placer {place}}, calls "crew_human_visible_non_crew"
+;   place - name of {place} via "crew_human_visible_non_crew", name of {group} via "crew_human_visible_non_crew", name of {linkbone} via "crew_human_visible_non
+;   visorbone - name of {bone}
+;   e.g. ("crew_human_gunner_non_crew" place(gunner3) visorbone(mgun3))
 (define "crew_human_gunner_non_crew"
 	("crew_human_visible_non_crew" place(%place) door1(emit1) door2(emit2) visor(main))
 	{sensor
 		{visor "top"
-			{vision "vehicle_top_mgun"} 
+			{vision "vehicle_top_mgun"}
 			{bone "%visorbone"}
 		}
 	}
-	{placer 
+	{placer
 		{place "%place" {visor "top"}}
 	}
 )
 
+; gunner3_visible: calls "crew_human_gunner_non_crew"
+;   e.g. ("gunner3_visible")
 (define "gunner3_visible"
 	("crew_human_gunner_non_crew" place(gunner3) visorbone(mgun3))
 )
 
 ;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+; crew_51_human .. crew_61_human (3 defines, same shape): {placer {place}} {boarder {door} {link}}, calls "crew_4_human"
+;   e.g. ("crew_51_human")
 (define "crew_51_human"
 	("crew_4_human")
 	{placer
@@ -212,7 +294,7 @@
 	{boarder
 		{door "emit7"}
 		{link "emit7" "gunner2" {anm "gunner3"} {forward putoff} {reverse puton}}
-	}	
+	}
 )
 (define "crew_52_human"
 	("crew_4_human")
@@ -222,7 +304,7 @@
 	{boarder
 		{door "emit3"}
 		{link "emit3" "gunner3" {anm "gunner3"} {forward putoff} {reverse puton}}
-	}	
+	}
 )
 (define "crew_61_human"
 	("crew_51_human")
@@ -232,5 +314,5 @@
 	{boarder
 		{door "emit8"}
 		{link "emit8" "gunner3" {anm "gunner4"} {forward putoff} {reverse puton}}
-	}	
+	}
 )

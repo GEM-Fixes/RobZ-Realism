@@ -1,0 +1,31 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-officer"}
+	{portrait "ger2_officer"}
+	{nationality ger2}
+	{icon "officer"}
+	{icon_priority 6}
+	{armors
+		{head cap_ger_off}
+	}
+	{tags "officer"}
+	{perks
+		("breed_body" health(500%) regen_health(100%) stamina(200%) regen_stamina(100%) vision("mp_officer") speed(1.0))
+		{"field_glass"}
+		("breed_drive" tank(1.0) vehicle(1.0) cannon(1.0))
+		{"pistol" lvl_6}
+		{"smg" lvl_6}
+		{"mgun" lvl_6}
+		{"rifle" lvl_6}
+		{"rocketlauncher" lvl_6}
+		{"melee" "lvl_6"}
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "mp41" filled}
+		{item "ammo mp40_mag" 64}
+		{item "knife_ger"}
+		{item "binocular"}
+		{in_hands 0}
+	}
+}

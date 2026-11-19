@@ -1,0 +1,13 @@
+{from "pattern gun_art"		;
+	{filling "bullet155_fra" 3}
+	{fireSound "gun/howitzer/155mm_gpf"}
+	{reloadSound "gun_r04"}
+	("range_heavy_howitzer")
+        {range 400 400}
+	{recoveryTime 12}
+        {projectileDamage 150}
+        {burst {min 3} {noaiming}}
+        ("zeroing_3")
+
+
+}

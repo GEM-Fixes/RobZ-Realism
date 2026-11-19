@@ -1,8 +1,9 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{props "medium" "turret_rotator" "vision_vehicle_high" "muzzle_small" "pz3"}
-	
+
 	{extender "enumerator"
 		{digit_folder "ger"}
 	}
@@ -13,7 +14,7 @@
 		{component "body"}
 		{thickness 30	;борта и нижние гласисы - скосы
 			{front	50}	;слд и нлд
-		;	{rear	30}
+			;	{rear	30}
 			{top	0.1}	;внутренн€€ стенка
 			{bottom	15}
 			{right	25}	;гласис
@@ -34,7 +35,7 @@
 		{component "body"}
 		{thickness 30	;борта и скос между верхней и задними стенками мто
 			{front	0.1}	;внутренн€€ и нижн€€ стенки
-		;	{rear	30}
+			;	{rear	30}
 			{top	15}
 			{bottom	10}
 		}
@@ -45,7 +46,7 @@
 		{able {holed}}
 		{thickness 30
 			{front	50}
-		;	{rear	30}
+			;	{rear	30}
 			{top	16}
 			{bottom	10}
 		}
@@ -55,19 +56,16 @@
 		{tags "turret"}
 		{able {holed}}
 		{thickness 30
-		;	{front	30}
-		;	{rear	30}
+			;	{front	30}
+			;	{rear	30}
 			{top	16}
 			{bottom	10}
 		}
 	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "turret"}
-	}
+	("vol_turret_hole_only" name(hole_man))
 	{volume "mantlet"
 		{thickness 50
-		;	{front	50}
+			;	{front	50}
 			{rear	15}	;орудие дает небольшую броню
 		}
 	}
@@ -133,7 +131,7 @@
 		{place "gun"
 			{RestoreIKAfterAim}
 			{weapon "50mm_kwk39" filling "ammo bullet50 gerl apc" 1}
-			("abm_medium")	
+			("abm_medium")
 		}
 		{place "mgun1"
 			{type "mgun_hull"}
@@ -160,28 +158,28 @@
 			{maxSpeedAtMaxTurn 6}
 			{StartTime 	 35}
 			{TurnTime  	 15}
-    		{TurnStart 1.4}
-     		{BrakeTime   1} 
-    		{StopTime    2}
-     		{TurnRadius  8} 
-    		{TurnStop   0.7}
-     		{Gears  0.1 0.2 0.3 1}
-     		{RearGears 0.28}
+			{TurnStart 1.4}
+			{BrakeTime   1}
+			{StopTime    2}
+			{TurnRadius  8}
+			{TurnStop   0.7}
+			{Gears  0.1 0.2 0.3 1}
+			{RearGears 0.28}
 		}
 		{FuelBag
-			{volume 320 }	
-			{rate	24 }   
+			{volume 320 }
+			{rate	24 }
 			{remain 320 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  30}
-        	{Slow  30}
-    	}
+			{Normal  30}
+			{Slow  30}
+		}
 	}
 
 	{Extension "pz3j.mdl"}
-	
+
 	{bone "turret"
 		{speed 0.002}
 	}

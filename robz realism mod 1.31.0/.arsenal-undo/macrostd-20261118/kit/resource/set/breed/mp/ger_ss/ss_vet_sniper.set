@@ -1,0 +1,30 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-smock2-rfl"}
+	{portrait "ger_soldier5"}
+	{nationality ger}
+	{icon "sniper2"}
+	{icon_priority 5}
+	{armors
+		{head helmet_ger_m40_grass}
+	}
+	{perks
+		("breed_body" health(350%) regen_health(100%) stamina(200%) regen_stamina(100%) vision("mp_sniper") speed(1.0))
+		{"stealth"}
+		{"telescope"}
+		("breed_drive" tank(0.85) vehicle(1) cannon(0.9))
+		("breed_skills" pistol(7) smg(7) mgun(7) rifle(7) rocket(7) melee(7))
+		{"aimedshot"}
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "mauzer_s_vet" filled}
+		{item "ammo mauser_clip" 60}
+		{item "ammo mauser_clip fg" 20}
+		{item "bandage" 5}
+		;{item "smoke_paradrop_ammo grenade" 1}
+		{item "plant" 3}
+		{item "knife_ger"}
+		{in_hands 0}
+	}
+}

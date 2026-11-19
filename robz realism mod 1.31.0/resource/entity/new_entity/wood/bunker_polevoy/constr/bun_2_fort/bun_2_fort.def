@@ -1,43 +1,16 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/construction.inc")
 	("armor_light" args 0.5)
 	{Extension "bun_3_fort.mdl"}
-	{props "construction" "parts" "wood" "no_destroyed_stamp" "disable_area" "small" "burning"} 
+	{props "construction" "parts" "wood" "no_destroyed_stamp" "disable_area" "small" "burning"}
 	("armor_heavy" args 0.8)
 	{obstacleID "small_building"}
-	{Volume "body_1"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body_2"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body_3"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body_4"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body_5"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body_6"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
-	{Volume "body_7"
-		{Tags  "body"}
-		{Thickness 50}
-		{able {visible 1}}
-	}
+	("vol_body_visible" name(body_1) mm(50))
+	("vol_body_visible" name(body_2) mm(50))
+	("vol_body_visible" name(body_3) mm(50))
+	("vol_body_visible" name(body_4) mm(50))
+	("vol_body_visible" name(body_5) mm(50))
+	("vol_body_visible" name(body_6) mm(50))
+	("vol_body_visible" name(body_7) mm(50))
 }

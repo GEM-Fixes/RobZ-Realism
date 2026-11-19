@@ -7,13 +7,13 @@
 	{rechargeTime 8}
 	("caliber_medium")
 	{projectileDamage 25}
-	("speed_all" ap(380) apcr(380) fg(380) heat(304))
-	("damage_170" a(25) b(24) c(19) d(17) e(15) range(180))
+	("speed_all" speed(380) apcr(380) fg(380) heat(304))
+	("damage_170" at20(25) at100(24) at170(19) at215(17) at250(15) max(180))
 	{parameters "apcr"
-        ("damage_170" a(50) b(42) c(34) d(27) e(20) range(180))
+		("damage_170" at20(50) at100(42) at170(34) at215(27) at250(20) max(180))
 	}
 	{parameters "heat"
-        ("damage_heat" a(91) range(180))
+		("damage_heat" damage(91) max(180))
 	}
 	("accuracy_lighthowitzer_m8")
 }

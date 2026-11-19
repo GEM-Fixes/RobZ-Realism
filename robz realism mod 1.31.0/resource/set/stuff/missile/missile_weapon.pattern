@@ -12,7 +12,7 @@
 	{rechargeTime 5}
 	{curve "cumulative"}
 	{projectileDamageThreshold 50}
-    	{projectileDamage 200}  
+	{projectileDamage 200}
 	{speed 65}
 	{range 100 110}
 	{AimingTolerance 3}

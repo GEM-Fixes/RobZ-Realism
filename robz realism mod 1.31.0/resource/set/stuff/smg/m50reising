@@ -7,5 +7,5 @@
 	{healthDamage 30}
 	("recoveryTime" r(550))
 	("burst_short")
- 	("speed" s(280))	
+	("speed" s(280))
 }

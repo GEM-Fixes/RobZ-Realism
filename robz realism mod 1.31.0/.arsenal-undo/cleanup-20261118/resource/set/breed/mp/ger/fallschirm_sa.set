@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-para-g43"}
+	{portrait "ger_elite1"}
+	{icon "elite"}
+	{icon_priority 4}
+	{nationality ger}
+	{armors
+		{head helmet_ger_m38_cover}
+	}
+	{perks
+		("soldier_rifle_7" rocket(1) body(line))
+		{"avoidance" lvl_1}
+		{"stealth"}
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("kit_rifle" gun(g43) ammo(g43_mag) rounds(20))
+		{item "ammo mauser_clip" 100}
+		{item "ammo mg_mauser drum" 50}
+		{item "bandage" 5}
+		("frag_m39_x2")
+		("at_grenade_pwm1")
+		{in_hands 0}
+	}
+}

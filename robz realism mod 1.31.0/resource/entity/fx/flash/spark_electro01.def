@@ -37,7 +37,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/spark01"
 					{timer
 						{mode play }
@@ -87,7 +87,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/flashss5"
 					{timer
 						{mode play }

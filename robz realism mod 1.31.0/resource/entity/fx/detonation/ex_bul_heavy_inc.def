@@ -25,7 +25,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_30"
 					{turn 1
 						{linear
@@ -78,7 +78,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/metal_drops1"
 					{light 1}
 					{turn 1

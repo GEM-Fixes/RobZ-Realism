@@ -1,19 +1,14 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/cannon.ext")
 	{props "vehicle" "cannon" "nebelwerfer" "wheeled" "round_sandbag2" "vision_cannon_medium"}
 	{targetSelector "cannon_rocket"}
-	
+
 	("armor_light")
 
 	; --- Godny hitbox armor (ported from GodnyMod: nebelwerfer42.def) ---
-	{volume "body1"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body2"
-		{tags "body"}
-		{component "body"}
-	}
+	("vol_body_part_lower" name(body1))
+	("vol_body_part_lower" name(body2))
 	; --- end Godny hitbox armor ---
 	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
@@ -95,12 +90,12 @@
 			{properties
 				{fire_mode hold}
 			}
-		}	
+		}
 	)
 	{bone "basis"
 		{speed 0.001}
 	}
- 	{bone "turret"
+	{bone "turret"
 		{speed 0.001}
 	}
 	{bone "foresight"

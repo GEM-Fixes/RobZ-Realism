@@ -1,0 +1,13 @@
+{Extension "dshk_stan_x.mdl"}
+{Volume "barrel"
+}
+{Volume "body"
+}
+{Volume "shield"
+}
+{Volume "stan"
+}
+{Volume "wheell"
+}
+{Volume "wheelr"
+}

@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "jap_army_gilly"}
 	{portrait "jap_soldier4"}
@@ -8,50 +9,12 @@
 		{head "jap_army_helmet2_net"}
 	}
 	{perks
-		{"health" "350%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "150%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_sniper"
-		}
-		{"speed" 1.0
-		}
-		{"stealth"
-		}
-		{"telescope"
-		}
-		{"tank"	1.0
-		}
-		{"vehicle" 1.0
-		}
-		{"cannon" 1.0
-		}
-		
-		{"pistol" lvl_2
-		}
-		{"smg" lvl_2
-		}
-		{"mgun" lvl_1
-		}
-		{"rifle" lvl_5
-		}
-		{"rocketlauncher" lvl_1
-		}
-		{"melee" lvl_2
-		}
-		{"aimedshot"}
+		("soldier_rifle_5" rocket(1) body(hardy) sight(sniper))
+		("perks_sniper")
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(standard))
 	{inventory
-		{item "type99sniper" filled}
-		{item "ammo arisaka7-7_clip" 60}
+		("kit_rifle" gun(type99sniper) ammo(arisaka7-7_clip) rounds(60))
 		{item "bandage" 5}
 		;{item "smoke_paradrop_ammo grenade" 1}
 		{item "plant" 3}

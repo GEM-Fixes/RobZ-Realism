@@ -38,11 +38,11 @@
 	{on spawn
 		{set "train" 1}
 	}
-;	{on "add_movement_sound"
-;		{link_sound "accelerating" "vehicle/wheels/train_end"}
-;		{link_sound "moving" "world/railway"}
-;		{link_sound "braking" "vehicle/wheels/train_end"}
-;	}
+	;	{on "add_movement_sound"
+	;		{link_sound "accelerating" "vehicle/wheels/train_end"}
+	;		{link_sound "moving" "world/railway"}
+	;		{link_sound "braking" "vehicle/wheels/train_end"}
+	;	}
 	{on accelerate on
 		{play_sound "accelerating"}
 		{delay 1
@@ -67,7 +67,7 @@
 				{play_sound "moving" 1}
 				{if velocity 8 ;fast
 					{view start "move_smoke_fast"}
-				else
+					else
 					{view start "move_smoke_slow"}
 				}
 				{call "moving"}
@@ -83,7 +83,7 @@
 				}
 				{call "moving"}
 			}
-		else
+			else
 			{delay 8 2 "moving"
 				{view start "move_steam_slow"}
 				{delay 0.5
@@ -190,7 +190,7 @@
 				{view start	"warm_smoke"}
 			}
 			{call "warming"}
-		else name "off"
+			else name "off"
 			{kill_delay "warming"}
 			{delay 1
 				{view pause "warm_smoke"}
@@ -200,14 +200,17 @@
 	{on "warming"
 		{delay 5 2 "warming"
 			{if not velocity 0 ; == 0 km/h
+				; rand_start: {if {view} {delay}}
+				;   %0 - {view}, [?]
+				;   e.g. ("rand_start" args "warm_steam1")
 				(define "rand_start"
 					{if rand 0.25
-									{view start %0} {delay 0.7 {view pause %0}}
-					else rand 0.5
+						{view start %0} {delay 0.7 {view pause %0}}
+						else rand 0.5
 						{delay 0.3	{view start %0} {delay 0.7 {view pause %0}}}
-					else rand 0.75
+						else rand 0.75
 						{delay 0.6	{view start %0} {delay 0.7 {view pause %0}}}
-					else
+						else
 						{delay 0.9	{view start %0} {delay 0.7 {view pause %0}}}
 					}
 				)
@@ -243,6 +246,9 @@
 			{delay_effect 20 5 "pause"}
 		}
 
+		; rand_fire: {if {delay}}
+		;   %0 - text in {view}
+		;   e.g. ("rand_fire" args 1)
 		(define "rand_fire"
 			{if rand 0.7
 				{delay 0.3 0.2
@@ -320,6 +326,9 @@
 		{view start "deathfx"}
 		{delay 40 5	{view stop "deathfx"}}
 
+		; fire_start: {add_view "smoke_dead_wheel"} {view} {delay}
+		;   %0 - text in {add_view}, text in {view}
+		;   e.g. ("fire_start" args 1)
 		(define "fire_start"
 			{add_view "smoke_dead_wheel" "fire%0" "fx_fire%0"}
 			{view start "fire%0"}
@@ -334,11 +343,14 @@
 		("fire_start" args 5)
 		("fire_start" args 6)
 
+		; cut_part: {tear "piece_medium_steel" {impulse} {delay_effect}}
+		;   %0 - {tear}, [?]
+		;   e.g. ("cut_part" args "part1")
 		(define "cut_part"
 			{tear "piece_medium_steel" bone %0
 				{impulse up 8 1 dir 5 2 cx 5 2 cy 5 2 rnd_dir 10 no_position}
-;				{add_view "smoke_dead_wheel" "smoke" "basis"}
-;				{view start "smoke"}
+				;				{add_view "smoke_dead_wheel" "smoke" "basis"}
+				;				{view start "smoke"}
 				{delay_effect 20 5 "stop"}
 			}
 		)
@@ -371,13 +383,16 @@
 		{blastwave c4 15 r0 20 r1 30}
 
 		{spawn "train_die" "basis"}
-;		{spawn "crater_extra_big" "basis"}
-;		{spawn "shellhole_big_dead" "basis"}
+		;		{spawn "crater_extra_big" "basis"}
+		;		{spawn "shellhole_big_dead" "basis"}
 
 		{add_view "smoke_black_big" "deathfx" "basis"}
 		{view start "deathfx"}
 		{delay 40 5	{view stop "deathfx"}}
 
+		; fire_start: {add_view "smoke_dead_wheel"} {view} {delay}
+		;   %0 - text in {add_view}, text in {view}
+		;   e.g. ("fire_start" args 1)
 		(define "fire_start"
 			{add_view "smoke_dead_wheel" "fire%0" "fx_fire%0"}
 			{view start "fire%0"}
@@ -389,11 +404,14 @@
 		("fire_start" args 2)
 		("fire_start" args 3)
 
+		; cut_part: {tear "piece_medium_steel" {impulse} {delay_effect}}
+		;   %0 - {tear}, [?]
+		;   e.g. ("cut_part" args "part1")
 		(define "cut_part"
 			{tear "piece_medium_steel" bone %0
 				{impulse up 8 1 dir 5 2 cx 5 2 cy 5 2 rnd_dir 10 no_position}
-;				{add_view "smoke_dead_wheel" "smoke" "basis"}
-;				{view start "smoke"}
+				;				{add_view "smoke_dead_wheel" "smoke" "basis"}
+				;				{view start "smoke"}
 				{delay_effect 20 5 "stop"}
 			}
 		)
@@ -418,19 +436,22 @@
 			{call "explosion"}
 		}
 	}
-;	{on pierce
-;		{if bullet "shell"
-;			{if volume "body"
-;				{bullet_detonate}
-;			}
-;		}
-;	}
+	;	{on pierce
+	;		{if bullet "shell"
+	;			{if volume "body"
+	;				{bullet_detonate}
+	;			}
+	;		}
+	;	}
 	{on "cut_parts"
+		; cut_part: {tear "piece_medium_steel" {impulse} {delay_effect}}
+		;   %0 - {tear}, [?]
+		;   e.g. ("cut_part" args "part1")
 		(define "cut_part"
 			{tear "piece_medium_steel" bone %0
 				{impulse up 8 1 dir 5 2 cx 5 2 cy 5 2 rnd_dir 10 no_position}
-;				{add_view "smoke_dead_wheel" "smoke" "basis"}
-;				{view start "smoke"}
+				;				{add_view "smoke_dead_wheel" "smoke" "basis"}
+				;				{view start "smoke"}
 				{delay_effect 20 5 "stop"}
 			}
 		)
@@ -453,8 +474,8 @@
 			{spawn "sandbags_crush" "fx_shield2"}
 			{spawn "sandbags_crush" "fx_shield3"}
 			{spawn "sandbags_crush" "fx_shield4"}
-;			{bone hide "shield_left"}
-;			{bone hide "shield_right"}
+		;			{bone hide "shield_left"}
+		;			{bone hide "shield_right"}
 		}
 	}
 }
@@ -474,7 +495,7 @@
 		{if not "started"
 			{if name "forward"
 				{ani_play "hook_swing" -1 loop callback}
-			else
+				else
 				{ani_play "hook_swing" loop callback}
 			}
 			{set "started" 1}
@@ -513,6 +534,9 @@
 		{spawn "aero_die" "fx_exp3"}
 		{spawn "aero_die" "fx_exp4"}
 
+		; cut_big_part: {tear "piece_big_steel" {impulse} {add_view} {view} {delay_effect}}
+		;   %0 - {tear}, [?]
+		;   e.g. ("cut_big_part" args "part_big1")
 		(define "cut_big_part"
 			{tear "piece_big_steel" bone %0
 				{impulse up 8 1 dir 5 2 cx 5 2 cy 5 2 rnd_dir 10 no_position}
@@ -534,10 +558,10 @@
 	{on spawn
 		{set "train" 1}
 	}
-;	{on spawn
-;		{ani_play "doorright" 1}
-;		{ani_play "doorleft" 1}
-;	}
+	;	{on spawn
+	;		{ani_play "doorright" 1}
+	;		{ani_play "doorleft" 1}
+	;	}
 	{on "cut_parts"
 		("fire_start" args 1)
 		("fire_start" args 2)

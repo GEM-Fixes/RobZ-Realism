@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-volkg2-smg"}
+	{portrait "ger_soldier2"}
+	{icon "smg"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{head helmet_ger_m40}
+	}
+	{perks
+		("breed_body" health(100%) regen_health(100%) stamina(75%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.75) vehicle(1) cannon(0.8))
+		("breed_skills" pistol(1) smg(2) mgun(1) rifle(1) rocket(1) melee(2))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_mp40")
+		{item "bandage" 3}
+		{item "grenade m24" 1.5 0.5}
+		("at_grenade_m24x5_x0_1")
+		("smoke_x0_1")
+		{item "panzerfaust_30 weapon" 0 1 filled}
+		{item "small_shovel" 1}
+		{in_hands 0}
+	}
+}

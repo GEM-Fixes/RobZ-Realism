@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/car.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.1))
@@ -19,7 +20,7 @@
 		board_end(seat_passenger)
 		base(doorright)
 	)
-	
+
 	{boarder
 		{anm "gunner"
 			{forward	{begin	"board_sdkfz251-1"}	{end "pose_flak38-1_gunlayer" 10}}
@@ -44,16 +45,8 @@
 	("wheel" args "wheelleft2")
 	("wheel" args "wheelright3")
 	("wheel" args "wheelleft3")
-	{volume "body"
-		{tags "body"}
-		{component "body"}
-		{thickness 15}
-	}
-	{volume "body1"
-		{tags "body"}
-		{component "body"}
-		{thickness 15}
-	}
+	("vol_body_plate_lower" name(body) mm(15))
+	("vol_body_plate_lower" name(body1) mm(15))
 	{volume "cabin"
 		{tags "cabin"}
 		{component "cabin"}
@@ -87,19 +80,19 @@
 			{charger "charger"}
 		}
 	}
-	
-	
+
+
 
 	{mass 5000}
 	{Chassis
-        {Locomotion ("locomotion")
+		{Locomotion ("locomotion")
 			{MaxSpeed 32}
-			{BrakeTime  2}  
+			{BrakeTime  2}
 			{StopTime   4.2}
-        }
+		}
 		{FuelBag
-			{volume 150 }	
-			{rate	3.4 }   
+			{volume 150 }
+			{rate	3.4 }
 			{remain 100 }
 			{fuel "fuel"}
 		}
@@ -111,8 +104,8 @@
 		{speed 0.00450}
 	}
 	{bone "gun_rot"
-	    {limits -5 85}
-	    {speed 0.005}
+		{limits -5 85}
+		{speed 0.005}
 	}
-	;("turret_speed_zenite")
+;("turret_speed_zenite")
 }

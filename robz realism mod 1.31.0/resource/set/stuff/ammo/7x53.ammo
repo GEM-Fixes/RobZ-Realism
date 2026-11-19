@@ -7,7 +7,7 @@
 		{block 10}
 		{size 1 1}
 		{fsm "belt"}
-	}	
+	}
 	{mass 0.011}
 	{entity "rifle_cartridge"}
 	{view "rifle_bullet"}

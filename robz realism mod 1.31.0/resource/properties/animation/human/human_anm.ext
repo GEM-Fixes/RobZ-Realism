@@ -20,7 +20,7 @@
 	{sequence "bolt_gun"}
 	{sequence "bolt_gun_lie"}
 
-;	{blend "pose_die_water" 		{pose <теперь нет позы!> end}}
+	;	{blend "pose_die_water" 		{pose <теперь нет позы!> end}}
 	{blend "pose_lie_empty" 		{pose "lie_from_squat_empty" end}}
 	{blend "pose_lie_pistol"		{pose "lie_from_squat_pistol" end}}
 	{blend "pose_lie_gun" 			{pose "lie_from_squat_gun" end}}
@@ -45,11 +45,11 @@
 	{blend "pose_squat_bazooka" 	{pose "squat_take_bazooka" end}}
 	{blend "pose_stand_giveup_1" 	{pose "stand_giveup_1" end}}
 	{blend "pose_stand_giveup_2" 	{pose "stand_giveup_2" end}}
-                          	
-   	{blend "Steam_locomotive_driver"{pose "Steam_locomotive_driver" begin}}
-   	{blend "pose_watch_binocular" 	{pose "stand_watch_binocular" begin}}
-   	{blend "pose_squat_watch_binocular" {pose "squat_watch_binocular" begin}}
-   	{blend "pose_lie_watch_binocular" 	{pose "squat_watch_binocular" end}}
+
+	{blend "Steam_locomotive_driver"{pose "Steam_locomotive_driver" begin}}
+	{blend "pose_watch_binocular" 	{pose "stand_watch_binocular" begin}}
+	{blend "pose_squat_watch_binocular" {pose "squat_watch_binocular" begin}}
+	{blend "pose_lie_watch_binocular" 	{pose "squat_watch_binocular" end}}
 	{blend "pose_squat_mortar" 		{pose "squat_load_mortar" begin}}
 	{blend "pose_pak40_gunlayer"	{pose "Cannon_pak40_gunlayer" end}}
 	{blend "pose_pak40_charger" 	{pose "Cannon_pak40_charger" begin}}
@@ -115,7 +115,7 @@
 	{blend "pose_sit_chair"					{pose "pose_sit_chair"  begin}}
 	{blend "pose_stand_look_around_gun"		{pose "stand_look_around_gun"  end}}
 	{blend "pose_stand_look_around_gun_1"	{pose "stand_look_around_gun_1"  end}}
-	{blend "pose_stand_gun_aside"			{pose "pose_stand_gun_aside"  begin}}  
+	{blend "pose_stand_gun_aside"			{pose "pose_stand_gun_aside"  begin}}
 	{blend "pose_stand_gun_aside_1"   	    {pose "pose_stand_gun_aside_1_2"  begin}}
 	{blend "pose_stand_gun_aside_2"     	{pose "pose_stand_gun_aside_1_2"  end}}
 
@@ -184,9 +184,9 @@
 	{sequence "stand_giveup_1" {speed 1}}
 	{sequence "stand_giveup_2" {speed 1}}
 
-    {sequence "lie_sleep_idle_1" {smooth 0.1}}                                        
-    {sequence "lie_sleep_idle_2" {smooth 0.1}}                                        
-    {sequence "idle_passive_squat_ground_gun_strap_sleep" {smooth 0.1}}   
+	{sequence "lie_sleep_idle_1" {smooth 0.1}}
+	{sequence "lie_sleep_idle_2" {smooth 0.1}}
+	{sequence "idle_passive_squat_ground_gun_strap_sleep" {smooth 0.1}}
 
 	; STAND OPERATIONS
 	{sequence "stand_from_lie_back"  {speed 0.6}  {smooth 0.2}}
@@ -319,7 +319,7 @@
 	{sequence "run_gun_up"				{speed 0.55} {resume}}
 	{sequence "run_flag_up" 			{speed 0.55} {resume}}
 	{sequence "run_flag_down"			{speed 0.55} {resume}}
-	
+
 	{sequence "walk_normal_pistol_down"	{speed 1.00} {resume}}
 	{sequence "walk_normal_pistol_up"	{speed 1.00} {resume}}
 	{sequence "walk_normal_mgun_down"	{speed 1.00} {resume}}
@@ -329,11 +329,11 @@
 	{sequence "walk_normal_gun_down_2"	{speed 1.00} {resume}}
 	{sequence "walk_normal_gun_up_2"	{speed 1.00} {resume}}
 
-; 	run backward - for manual control
-;	{sequence "run_back_down"}
-;	{sequence "run_back_up"}
-;	{sequence "run_strap_back_down"}
-;	{sequence "run_strap_back_up"}
+	; 	run backward - for manual control
+	;	{sequence "run_back_down"}
+	;	{sequence "run_back_up"}
+	;	{sequence "run_strap_back_down"}
+	;	{sequence "run_strap_back_up"}
 
 	; run fast
 	{sequence "run_fast_down"				{speed 0.33} {resume}}
@@ -349,17 +349,17 @@
 	{sequence "run_bow_gun_tocover_up"		{speed 0.55} {resume}}
 	{sequence "run_bow_tocover_down"		{speed 0.55} {resume}}
 	{sequence "run_bow_tocover_up"			{speed 0.55} {resume}}
-;	{sequence "run_bow_flag"				{speed 0.70} {resume}}
+	;	{sequence "run_bow_flag"				{speed 0.70} {resume}}
 
-	; strafe                
+	; strafe
 	{sequence "run_back_spot_gun_down" 	 	 	{resume}}
 	{sequence "run_back_spot_gun_up" 			{resume}}
 	{sequence "run_spot_gun_down"				{resume}}
 	{sequence "run_spot_gun_up"  				{resume}}
 	{sequence "run_spot_back-strafe_gun_down"	{resume} {rotate "body" 0 0 1 -90}}
 	{sequence "run_spot_back-strafe_gun_up"  	{resume} {rotate "body" 0 0 1 -90}}
-	{sequence "run_spot_left-strafe_gun_down"	{resume} {rotate "body" 0 0 1 -90}} 
-	{sequence "run_spot_left-strafe_gun_up"  	{resume} {rotate "body" 0 0 1 -90}} 
+	{sequence "run_spot_left-strafe_gun_down"	{resume} {rotate "body" 0 0 1 -90}}
+	{sequence "run_spot_left-strafe_gun_up"  	{resume} {rotate "body" 0 0 1 -90}}
 
 	; STAND THROW
 	{smooth 0.2}
@@ -389,22 +389,22 @@
 	{sequence "stand_die_back_3"	{movement}}
 	{sequence "stand_die_back_4"	{movement}}
 	{sequence "stand_die_back_5"	{movement}}
-    {sequence "stand_die_front_1"   {movement}}
+	{sequence "stand_die_front_1"   {movement}}
 	{sequence "stand_die_front_2"   {movement}}
 	{sequence "stand_die_front_3"   {movement}}
 	{sequence "stand_die_front_4"   {movement}}
 
 	{sequence "stand_die_back_4_blast" {movement} {speed 1.3} {file "stand_die_back_4.anm"}}
 	{sequence "stand_die_back_5_blast" {movement} {speed 1.3} {file "stand_die_back_5.anm"}}
-    {sequence "stand_die_front_1_blast" {movement} {speed 1.3} {file "stand_die_front_1.anm"}}
-    {sequence "stand_die_front_2_blast" {movement} {speed 1.3} {file "stand_die_front_2.anm"}}
-    {sequence "Stand_die-force_back_1"     {movement} {speed 1.3}}
-    {sequence "Stand_die-force_back_2_far" {movement} {speed 1.3}}
-    {sequence "Stand_die-force_back_3_far" {movement} {speed 1.3}}
-    {sequence "Stand_die-force_front_1"     {movement} {speed 1.3}}
-    {sequence "Stand_die-force_front_2"     {movement} {speed 1.3}}
-    {sequence "Stand_die-force_front_3_far" {movement} {speed 1.3}}
-    {sequence "Stand_die-force_front_4_far" {movement} {speed 1.3}}
+	{sequence "stand_die_front_1_blast" {movement} {speed 1.3} {file "stand_die_front_1.anm"}}
+	{sequence "stand_die_front_2_blast" {movement} {speed 1.3} {file "stand_die_front_2.anm"}}
+	{sequence "Stand_die-force_back_1"     {movement} {speed 1.3}}
+	{sequence "Stand_die-force_back_2_far" {movement} {speed 1.3}}
+	{sequence "Stand_die-force_back_3_far" {movement} {speed 1.3}}
+	{sequence "Stand_die-force_front_1"     {movement} {speed 1.3}}
+	{sequence "Stand_die-force_front_2"     {movement} {speed 1.3}}
+	{sequence "Stand_die-force_front_3_far" {movement} {speed 1.3}}
+	{sequence "Stand_die-force_front_4_far" {movement} {speed 1.3}}
 
 	{sequence "stand_die_drowin" }
 	{sequence "stand_die_trench_1"		{speed 0.9}}
@@ -435,7 +435,7 @@
 	{sequence "stand_fly_tumble_back_end"}
 	{sequence "stand_fly_back_far" {speed 0.8}}
 	{sequence "stand_fly_back_far_end" {speed 0.8}}
-	{sequence "stand_fly_tumble_back_far" {speed 0.8}}    
+	{sequence "stand_fly_tumble_back_far" {speed 0.8}}
 	{sequence "stand_fly_tumble_back_far_end" {speed 0.8}}
 	{sequence "stand_fly_forward_far" {speed 0.8}}
 	{sequence "stand_fly_forward_far_end" {speed 0.8}}
@@ -461,9 +461,9 @@
 	{sequence "squat_throw_grenade_begin" {speed 1.5}}
 	{sequence "squat_throw_grenade_end" {speed 1.2}}
 	{sequence "squat_throw_grenade_1_begin" {speed 1.7}}
-	{sequence "squat_throw_grenade_1_end" {speed 1.2}}									
+	{sequence "squat_throw_grenade_1_end" {speed 1.2}}
 	{sequence "squat_throw_knife_begin"}
-	{sequence "squat_throw_knife_end"}								
+	{sequence "squat_throw_knife_end"}
 	{sequence "squat_repair_1"}
 	{sequence "squat_repair_2"}
 	{sequence "squat_holdback_gun"}
@@ -490,7 +490,7 @@
 	{sequence "squat_fire_pistol_1"}
 
 	; LIE
-	{sequence "crawl" {resume} {speed 0.85}}    
+	{sequence "crawl" {resume} {speed 0.85}}
 	{sequence "crawl_gun" {resume} {speed 0.85}}
 	{sequence "lie_from_stand" {speed 0.8}}
 	{sequence "lie_from_stand_1" {speed 0.8}}
@@ -574,7 +574,7 @@
 
 	;FIGHT
 	{smooth 0.2}
-	{sequence "fight_front_knife" {movement}} 
+	{sequence "fight_front_knife" {movement}}
 	{sequence "fight_front_club_begin" {speed 1.2} {dynamicSpeed {0 2 0.25} {10 12 0.2}}}
 	{sequence "fight_club_finish"}
 	{sequence "fight_kick_lying_begin"  {dynamicSpeed {11.5 12 0.05}}}
@@ -586,7 +586,7 @@
 	{sequence "fight_upper-cut_Rhand"    {speed 2}  {dynamicSpeed {0 10 1.0} {16 20 0.4}}}
 	{sequence "fight_body-hit_Rhand" {speed 3.0} {dynamicSpeed {0 1 0.10} {16 20 0.2}}}
 
-	{sequence "stand_after_straight_hit"}                                   
+	{sequence "stand_after_straight_hit"}
 	{sequence "stand_after_hit"   {speed 0.85}  {dynamicSpeed {10 11 0.1}}}
 	{sequence "stand_after_hit_1" {speed 0.85}  {dynamicSpeed {10 11 0.1}}}
 	{sequence "stand_after_body-hit" {dynamicSpeed {9 10 0.12}}}
@@ -657,7 +657,7 @@
 	{sequence "board_Dodge"}
 	{sequence "board_Dodge_body"}
 	{sequence "board_Dodge_bodyBack"}
-	{sequence "board_MiddleArmor"}	
+	{sequence "board_MiddleArmor"}
 	{sequence "board_hetzer"}
 	{sequence "board_isu-152"}
 
@@ -667,13 +667,13 @@
 	{sequence "emit_tank_2"}
 	{sequence "emit_torpedo_boat"}
 	{sequence "emit_body" {movement}}
-	{sequence "emit_cg-4a"}	
+	{sequence "emit_cg-4a"}
 	{sequence "emit_Bk1124" {file "getover_middle.anm"}}
 	{sequence "emit_lcvp" {file "getover_middle_1.anm"} {movement}}
 	{sequence "emit_sd222_driver"}
 	{sequence "emit_t34_hold"}
-	
-	; SEAT	
+
+	; SEAT
 	{smooth 0.2}
 	;ISU152/IS2/IS1 SEATS
 	{sequence "seat_isu"}
@@ -681,9 +681,9 @@
 	{sequence "seat_isu2"}
 	{sequence "seat_isu3"}
 	{sequence "pose_gunner_isu"}
-	
+
 	{sequence "pose_gunner_ostwind"}
-	
+
 	{sequence "seat_armor"}
 	{sequence "seat_armor1"}
 	{sequence "seat_crew_cannon"}
@@ -700,8 +700,8 @@
 	{sequence "seat_sd222_gunner_1"}
 	{sequence "seat_sd222_gunner_2"}
 	{sequence "seat_sd223_gunner"}
-	{sequence "seat_tankturret_gunner_1"} 
-	{sequence "seat_tankturret_gunner_2"} 
+	{sequence "seat_tankturret_gunner_1"}
+	{sequence "seat_tankturret_gunner_2"}
 	{sequence "seat_m7_mgunner"}
 	{sequence "seat_m7_gunner"}
 	{sequence "seat_m7_com"}
@@ -709,7 +709,7 @@
 	{sequence "seat_wc55_com"}
 	{sequence "seat_sd251_mgunner"}
 	{sequence "seat_willysat_basooker"}
-	{blend 	  "seat_torpedo" {pose "lie_holdback_gun" end}}		
+	{blend 	  "seat_torpedo" {pose "lie_holdback_gun" end}}
 
 	{sequence "Cannon_pak40_charger"  {speed 0.9}  {smooth 0.1}}
 	{sequence "Cannon_pak40_gunlayer" {speed 0.95} {resume} {smooth 0.03}}
@@ -730,7 +730,7 @@
 	{sequence "Cannon_zis3_charger"         {speed 1.1} {smooth 0.1}}
 	{sequence "Cannon_gunlayer_fire-alert"  {speed 0.9}  {smooth 0.05}}
 	{sequence "Cannon_pdr25_gunlayer"       {speed 0.9} {resume}}
-	{sequence "Cannon_pdr25_charger"        {speed 1}} 
+	{sequence "Cannon_pdr25_charger"        {speed 1}}
 	{sequence "Cannon_pdr25_charger_fire"   {speed 1.1} {dynamicSpeed {0 7 2}}}
 	{sequence "Cannon_m5_gunlayer"          {speed 0.9} {resume}}
 	{sequence "Cannon_m5_charger"           {speed 0.9}}

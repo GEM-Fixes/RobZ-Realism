@@ -1,10 +1,11 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 
 	{collider "tank.light"}
 	{props "light" "turret_rotator" "vision_vehicle_medium" "muzzle_small"}
-	
+
 	{extender "enumerator"}
 
 	; --- Godny hitbox armor (ported from GodnyMod: chi-ha57.def) ---
@@ -13,7 +14,7 @@
 		{tags "body"}
 		{thickness 20	;нижн€€ боковина 20мм
 			{front	25}
-		;	{rear	20}
+			;	{rear	20}
 			{top	0.1}	;внутренн€€ стенка
 			{bottom	10}
 			{right	12}	;гласис
@@ -23,7 +24,7 @@
 		{component "body"}
 		{tags "body"}
 		{thickness 25	;верхн€€ боковина 25мм
-		;	{front	25}
+			;	{front	25}
 			{rear	20}
 			{top	12}
 			{bottom	10}
@@ -45,7 +46,7 @@
 		{component "body"}
 		{tags "body"}
 		{thickness 25
-		;	{front	25}
+			;	{front	25}
 			{rear	0.1}	;внутренн€€ стенка
 			{top	12}
 			{bottom	10}
@@ -66,8 +67,8 @@
 		{tags "turret"}
 		{able {holed}}
 		{thickness 25
-		;	{front	25}
-		;	{rear	25}
+			;	{front	25}
+			;	{rear	25}
 			{top	10}
 			{bottom	10}
 		}
@@ -77,20 +78,17 @@
 		{tags "turret"}
 		{thickness 17}
 	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "turret"}
-	}
+	("vol_turret_hole_only" name(hole_man))
 	{volume "mantlet"
 		{thickness 30
-		;	{front	30}
+			;	{front	30}
 			{rear	10}	;орудие дает небольшую броню
 		}
 	}
 	{Volume "gun1"
 		{tags "gun"}
 		{component "gun"}
-		{tags "no_target"}	    
+		{tags "no_target"}
 		{thickness 35}
 		{able {Visible 0} {Obstacle 0} {Contact 0}}
 	}
@@ -141,7 +139,7 @@
 
 	("armor_light" turret(25 25 12 8) body(25 15 7 8))
 	("armor_mantlet" t(25))
-	 
+
 	{extender "inventory"
 		{box
 			{item "ammo bullet57 jap aphe" 25}
@@ -150,24 +148,24 @@
 			{item "ammo type97_mag" 2300}
 		}
 	}
-		
+
 	{Weaponry
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
 			{weapon "57mm_type97" filling "ammo bullet57 jap aphe" 1}
-			("abm_low")
+			("abm_low_v4")
 		}
 
 		{place "mgun"
 			{basic}
 			{type "mgun_hull"}
-			{weapon "type97_mg" filled}     
+			{weapon "type97_mg" filled}
 			{gunner "driver"}
 			{charger "driver"}
 			{foresight "foresight3"}
 			("abm_mgun")
-            {basic}
+			{basic}
 		}
 		{place "mgun2"
 			{type "mgun_rear"}
@@ -176,7 +174,7 @@
 			{charger "commander"}
 			{foresight "foresight5"}
 			("abm_mgun")
-		}			
+		}
 	}
 	{sensor
 		{visor "back"
@@ -186,7 +184,7 @@
 	}
 
 	("crew_4_human")
-	{placer 
+	{placer
 		{place "commander" {visor "back"}}
 	}
 	{boarder
@@ -198,7 +196,7 @@
 			{forward	{begin	"board_tank_right"}}
 			{reverse 	{end	"emit_tank_1_hold"}}
 		}
-			{anm "armor"
+		{anm "armor"
 			{forward	{begin	"board_MiddleArmor"} {end "pose_seat_armor_1"}}
 			{reverse 	{end	"emit_tank_2"}}
 		}
@@ -221,21 +219,21 @@
 			{maxSpeedAtMaxTurn 6}
 			{StartTime	 25}
 			{TurnTime	14}
-			{TurnStart  1.5} 
+			{TurnStart  1.5}
 			{BrakeTime  1.5}
-			{StopTime   2.5} 
-			{TurnRadius 9} 
-			{TurnStop   0.7} 
+			{StopTime   2.5}
+			{TurnRadius 9}
+			{TurnStop   0.7}
 			{Gears      0.1 0.2 0.3 1.0}
 			{RearGears  0.25}
 		}
 		{speed
-        	{Normal  34}
-        	{Slow  34}
-    	}
+			{Normal  34}
+			{Slow  34}
+		}
 		{FuelBag
-			{volume 390 }	
-			{rate	 15 }   
+			{volume 390 }
+			{rate	 15 }
 			{remain 390 }
 			{fuel "fuel"}
 		}

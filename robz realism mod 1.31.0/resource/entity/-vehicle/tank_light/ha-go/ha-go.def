@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.2))
@@ -5,7 +6,7 @@
 	{props "light" "turret_rotator" "vision_vehicle_low" "muzzle_minimum" "flamer_tank"}
 	{targetClass "light_tank"}
 	{patherId "tank.light"}
-	
+
 	{extender "enumerator"}
 
 	; --- Godny hitbox armor (ported from GodnyMod: ha-go.def) ---
@@ -81,13 +82,10 @@
 			{bottom	6}
 		}
 	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "turret"}
-	}
+	("vol_turret_hole_only" name(hole_man))
 	{volume "mantlet"
 		{thickness 12
-		;	{front	12}
+			;	{front	12}
 			{rear	10}	;орудие дает небольшую броню
 		}
 	}
@@ -97,7 +95,7 @@
 	; --- end Godny hitbox armor ---
 	("armor_light" turret(12 12 12 9) body(12 12 6 9))
 	("armor_engine"  t(13))
-	
+
 	{extender "inventory"
 		{box
 			{item "ammo bullet37 jap aphe" 68}
@@ -111,11 +109,11 @@
 			{RestoreIKAfterAim}
 			{weapon "37mm_type38" filling "ammo bullet37 jap aphe" 1}
 			{charger "gunner"}
-			("abm_low")
+			("abm_low_v4")
 		}
 		{place "mgun"
 			{type "mgun_rear"}
-			{weapon "type97_mg" filled} 
+			{weapon "type97_mg" filled}
 			{foresight "foresight3"}
 			{gunner "commander"}
 			{charger "commander"}
@@ -132,7 +130,7 @@
 		}
 	}
 
-	("crew_2_human")
+	("crew_2_human_inside_left")
 	("crew_human" place(commander)	door1(emit1) door2(emit2) visor(back))
 	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
 	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
@@ -156,7 +154,7 @@
 			{reverse 	{end	"emit_body"}}
 		}
 	}
-       
+
 	{mass 13900}
 	{Chassis
 		("tank_trace_ex" fx("tracks_sm") step(0.3) len(0.25) boneleft("wheell4") boneright("wheelr4"))
@@ -165,24 +163,24 @@
 			{maxSpeedAtMaxTurn 6}
 			{StartTime  25}
 			{TurnTime   15}
-			{TurnStart  1}			
-			{TurnRadius 7} 
-    		{TurnStop   0.6}
+			{TurnStart  1}
+			{TurnRadius 7}
+			{TurnStop   0.6}
 			{BrakeTime  1.5}
 			{StopTime   2.5}
 			{Gears  0.2 0.5 1}
 			{RearGears  0.27}
 		}
 		{FuelBag
-			{volume 295 }	
-			{rate	 10 }   
+			{volume 295 }
+			{rate	 10 }
 			{remain 295 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  38}
-        	{Slow  38}
-    	}
+			{Normal  38}
+			{Slow  38}
+		}
 	}
 	{sensor
 		{visor "driver"

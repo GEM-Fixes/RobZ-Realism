@@ -1,0 +1,39 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-inf-pvt"}
+	{portrait eng_soldier2}
+	{icon rifleman}
+	{icon_priority 1}
+	{nationality eng}
+	{armors
+		{head helmet2_eng}
+	}
+	{perks
+		("breed_body" health(150%) regen_health(100%) stamina(100%) regen_stamina(100%) vision(mp_soldier) speed(0.9))
+		("breed_drive" tank(0.8) vehicle(1) cannon(1))
+		("breed_skills" pistol(2) smg(2) mgun(2) rifle(4) rocket(1) melee(4))
+	}
+	{veterancy
+		{"lvl_1" 2
+		}
+		{"lvl_2" 5
+		}
+		{"lvl_3" 9
+		}
+		{"lvl_4" 14
+		}
+		{"lvl_5" 20
+		}
+	}
+	{inventory
+		{item "em3" filled}
+		{item "ammo british303_clip" 60}
+		{item "ammo bren_mag" 56}
+		{item "bandage" 3}
+		{item "grenade mk1"}
+		{item "sandbag_kit"}
+		{item "grenade n73at"}
+		{item "n77_smoke grenade" 0 1}
+		{in_hands 0}
+	}
+}

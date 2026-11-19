@@ -1,4 +1,5 @@
-{game_entity	
+(include "/properties/robz/volumes.inc")
+{game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{collider "tank.heavy"}
@@ -62,13 +63,10 @@
 			{right	80}	;лобовой скос башни
 		}
 	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "turret"}
-	}
+	("vol_turret_hole_only" name(hole_man))
 	{volume "mantlet"
 		{thickness 90
-		;	{front	90}
+			;	{front	90}
 			{rear	15}	;орудие дает небольшую броню
 		}
 	}
@@ -80,24 +78,15 @@
 		{thickness 6}
 	}
 	; --- end Godny hitbox armor ---
-	{Volume "gun"
-		{tags "gun"}
-		{component "gun"}
-	}
-	{Volume "turret1"
-		{tags "turret"}
-		{component "turret"}
-	}
-	{Volume "turret2"
-		{tags "turret"}
-		{component "turret"}	
-	}
+	("vol_gun_part" name(gun))
+	("vol_turret_part" name(turret1))
+	("vol_turret_part" name(turret2))
 	{Volume "trackleft"
 	}
 	{Volume "trackright"
 	}
 
-	("armor_heavy_advanced" turret(102 82 82 25) body(102 82 82 25) body2(62 62 82 25) body3(102 62 82 25))
+	("armor_heavy_advanced" turret(102 82 82 25) body_mm(102 82 82 25) body2(62 62 82 25) body3(102 62 82 25))
 	("armor_engine"  t(10 82 82 25))
 	("armor_mantlet" t(130))
 	("ger_2-5x_sight")
@@ -154,8 +143,8 @@
 			{reverse 	{end	"emit_body"}}
 		}
 	}
-	
-	
+
+
 	{extender "inventory"
 		{box
 			{item "bullet88 ger apcbc" 43}
@@ -166,12 +155,12 @@
 			{item "mg42" filled {user "mgun"}}
 		}
 	}
-	
+
 	{Weaponry
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "88mm_kwk36" filling "ammo bullet88 ger apcbc" 1}	
+			{weapon "88mm_kwk36" filling "ammo bullet88 ger apcbc" 1}
 			("abm_medium")
 		}
 		{place "mgun"
@@ -198,7 +187,7 @@
 			{basic}
 		}
 	}
-	
+
 	{mass 57000}
 	{Chassis
 		("tank_trace" fx("tracks_big") step(0.47) len(1.25))
@@ -208,12 +197,12 @@
 			{StartTime	60}
 			{TurnTime	28}
 			{TurnStart  2}
-    		{BrakeTime  2.5}
-     		{StopTime   3.5}
-    		{TurnRadius 11}
-    		{TurnStop   1}
+			{BrakeTime  2.5}
+			{StopTime   3.5}
+			{TurnRadius 11}
+			{TurnStop   1}
 			{Gears  0.1 0.18 0.25 1}
-    		{RearGears  0.1 0.2}
+			{RearGears  0.1 0.2}
 		}
 		{FuelBag
 			{volume 570 }
@@ -222,11 +211,11 @@
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  28}
-        	{Slow  28}
-    	}
+			{Normal  28}
+			{Slow  28}
+		}
 	}
-	{Extension "pz6e.mdl"}	
+	{Extension "pz6e.mdl"}
 	{bone "turret_mgun"
 		{limits -20 40}
 		{speed 0.03}

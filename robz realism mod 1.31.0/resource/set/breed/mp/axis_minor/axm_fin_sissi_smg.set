@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "fin-inf"}
 	{portrait "fin_soldier2"}
@@ -8,49 +9,16 @@
 		{head cap_fin_m36}
 	}
 	{perks
-		{"health" "150%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "100%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.8
-		}
-		{"vehicle" 1.0
-		}
-		{"cannon" 1.0
-		}
-		{"pistol" lvl_2
-		}
-		{"smg" lvl_7
-		}
-		{"mgun" lvl_5
-		}
-		{"rifle" lvl_5
-		}
-		{"rocketlauncher" lvl_3
-		}
-		{"melee" lvl_2
-		}
+		("soldier_smg_7" rocket(1) body(line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
-	{inventory            
-		{item "suomi_m31" filled}
-		{item "ammo ppsh_mag" 210}
+	("breed_vet" table(elite))
+	{inventory
+		("smg_suomi_m31")
 		{item "bandage" 3}
-		{item "grenade m24" 2}
-		{item "kasapanos_2kg" 1}
-		{item "smoke grenade" 1}
-		
+		("give" item(grenade m24) count(2))
+		("give" item(kasapanos_2kg) count(1))
+		("give" item(smoke grenade) count(1))
+
 		{in_hands 0}
 	}
 }

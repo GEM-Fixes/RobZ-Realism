@@ -3,10 +3,10 @@
 	{props "vehicle" "cannon" "cannon_small" "wheeled" "vision_cannon_low" "muzzle_minimum" "medium_weapons"}
 	{collider "cannon_small"}
 	; --- Godny hitbox armor (ported from GodnyMod: pak36.def) ---
-	
+
 	; --- end Godny hitbox armor ---
 	("armor_light")
-	
+
 	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
 
@@ -53,7 +53,7 @@
 	{Extension "Pak36.mdl"}
 	(include "/properties/selection/cannon.inc"  scale(0.7))
 	{bone "basis"
-	      {limits}
+		{limits}
 	}
 	{extender "cannon"
 		{animation

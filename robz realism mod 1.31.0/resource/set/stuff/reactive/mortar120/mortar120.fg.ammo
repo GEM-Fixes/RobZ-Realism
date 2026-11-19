@@ -5,9 +5,9 @@
 		{weight 70}
 	}	{mass 2}
 	{entity "ammo_mortar120_fg"}
-	{view "ammo_mortar120_fg"}	
+	{view "ammo_mortar120_fg"}
 	{detonationThickness 1}
-	
+
 	{damage blastwave
 		{energy 2}
 		{area 7 10}

@@ -2,9 +2,9 @@
 	{rechargeTime 3.2}
 	{range 190 190}
 
-	("damage_170" a(74) b(54) c(40) d(32) e(28) range(190))
+	("damage_170" at20(74) at100(54) at170(40) at215(32) at250(28) max(190))
 	{parameters "apcr"
-        	("damage_170" a(118) b(74) c(46) d(29) e(18) range(190))
+		("damage_170" at20(118) at100(74) at170(46) at215(29) at250(18) max(190))
 	}
 	{parameters "fg"
 		{range 170 170}

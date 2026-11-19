@@ -5,7 +5,7 @@
 	{props "vehicle" "armored_car" "tank" "turret" "turret_rotator" "wheeled_6" "nebelwerfer" "vision_vehicle_high"}
 	{targetClass "armoredcar" "ap fg"}
 	{targetSelector "cannon_rocket"}
-	{extension "crew.ext"}	
+	{extension "crew.ext"}
 
 	{extender "enumerator"
 		{digit_folder "ger"}
@@ -17,7 +17,7 @@
 		{component "body"}
 		{thickness 8
 			{front	0.1}	;внутренн€€ стенка
-		;	{rear	8}
+			;	{rear	8}
 			{top	6}
 			{bottom	6}
 		}
@@ -26,7 +26,7 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 8
-		;	{front	8}
+			;	{front	8}
 			{rear	3}	;внутренн€€ стенка
 			{top	6}
 			{bottom	6}
@@ -36,8 +36,8 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 8
-		;	{front	8}
-		;	{rear	8}
+			;	{front	8}
+			;	{rear	8}
 			{top	6}
 			{bottom	0.1}	;внутренн€€ стенка
 		}
@@ -94,14 +94,14 @@
 
 	("wheel" args "wheelright1")
 	("wheel" args "wheelleft1")
-	("tracks")     
+	("tracks")
 
 	{mass 8500}
 
 	{Chassis
 		{Locomotion ("locomotion")
 			{MaxSpeed 26}
-	  		{maxSpeedAtMaxTurn 12}	
+			{maxSpeedAtMaxTurn 12}
 		}
 		{FuelBag
 			{volume 120}
@@ -110,19 +110,19 @@
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  26}
-        	{Slow  26}
-    	}
+			{Normal  26}
+			{Slow  26}
+		}
 		; left track must be first
 		("tank_trace" fx("tracks_mid") step(0.52) len(0.7) boneleft("FXtraceL2") boneright("FXtraceR2"))
 		("car_trace" fx("tracewheel02") step(0.09) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
 		{DisableMoveWhileFiring}
 	}
-	{bone "gun"	
+	{bone "gun"
 		{limits 2.0000 42.0000}
 		{speed 0.001}
 	}
-	{bone "turret"	
+	{bone "turret"
 		{speed 0.002}
 	}
 	{brain

@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger_ss_tankman"}
+	{portrait ger_tankman}
+	{icon tankman}
+	{icon_priority 1}
+	{nationality ger2}
+	{armors
+		{head tank_cap2_ss}
+	}
+	{perks
+		("breed_body" health(100%) regen_health(100%) stamina(100%) regen_stamina(100%) vision(mp_soldier) speed(0.8))
+		("breed_drive" tank(1.2) vehicle(1.2) cannon(1.05))
+		("breed_skills" pistol(7) smg(5) mgun(6) rifle(4) rocket(1) melee(6))
+		{"tankgun" lvl_8}
+	}
+	("breed_vet" kind(1))
+	{inventory
+		{item "valter" filled}
+		{item "ammo walther_mag" 32}
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

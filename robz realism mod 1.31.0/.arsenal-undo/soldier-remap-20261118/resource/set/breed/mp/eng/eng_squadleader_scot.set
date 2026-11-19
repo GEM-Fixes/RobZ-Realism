@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-scot-cpl"}
+	{portrait "eng_soldier3"}
+	{nationality eng}
+	{icon "squadleader"}
+	{icon_priority 2}
+	{armors
+		{head cap_eng_tamoshanter}
+	}
+	{perks
+		("body_squadleader")
+		("drive_t08_v10_c10")
+		("skills_squadleader")
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_em3")
+		{item "bandage" 3}
+		("frag_mk1_x2")
+		("at_grenade_n73at_x1")
+		("smoke_x2")
+		("smoke_n77_x1")
+		{in_hands 0}
+	}
+}

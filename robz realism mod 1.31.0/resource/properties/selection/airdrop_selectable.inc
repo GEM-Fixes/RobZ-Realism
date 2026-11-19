@@ -12,5 +12,5 @@
 	{dynamic}
 	{useDirection}
 	{NoGetShadows}
-}	
+}
 

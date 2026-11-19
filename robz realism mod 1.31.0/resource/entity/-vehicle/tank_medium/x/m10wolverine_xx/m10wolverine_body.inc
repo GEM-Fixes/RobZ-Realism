@@ -1,0 +1,21 @@
+{Extension "m10wolverine_xx.mdl"}
+{Volume "body1"
+}
+{Volume "body2"
+}
+{Volume "engine"
+}
+{Volume "gun"
+}
+{Volume "inventory"
+}
+{Volume "mantlet"
+}
+{Volume "trackleft"
+}
+{Volume "trackright"
+}
+{Volume "turret8"
+}
+{Volume "turret"
+}

@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/armoredcar.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.0))
@@ -6,17 +7,17 @@
 	{targetSelector "tank"}
 	(include "/properties/tank_crew.ext")
 	{PatherId "vehicle.small"}
-	
+
 	{extender "enumerator"}
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: m8grayhound.def) ---
 	{volume "body"	;мехвод
 		{tags "body"}
 		{component "body"}
 		{thickness 9.5
 			{front	19.1}
-		;	{rear	9.5}
-		;	{top	9.5}
+			;	{rear	9.5}
+			;	{top	9.5}
 			{bottom	0.1}
 		}
 	}
@@ -66,8 +67,8 @@
 		{component "turret"}
 		{able {holed}}
 		{thickness 19.1
-		;	{front	19.1}
-		;	{rear	19.1}
+			;	{front	19.1}
+			;	{rear	19.1}
 			{top	6.35}
 			{bottom	6.35}
 		}
@@ -77,13 +78,10 @@
 		{tags "turret"}
 		{thickness 10}
 	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "turret"}
-	}
+	("vol_turret_hole_only" name(hole_man))
 	{volume "mantlet"
 		{thickness 25.4
-		;	{front	25.4}
+			;	{front	25.4}
 			{rear	10}	;орудие дает небольшую броню
 		}
 	}
@@ -133,7 +131,7 @@
 
 	("armor_medium" args 1.0)
 	("us_3x_sight")
-	
+
 	{extender "enumerator"}
 
 
@@ -156,16 +154,16 @@
 			{forward	{begin	"board_tank_right"} {end "seat_m7_mgunner"}}
 			{reverse 	{end	"emit_tank_1_hold"}}
 		}
-	{anm "gunner"
-		{forward	{begin	"board_sd222_gunner_1"} {end "seat_sd222_gunner_1"} {base "open_gunner"}}
-		{reverse 	{end	"emit_body"}}
-	}
+		{anm "gunner"
+			{forward	{begin	"board_sd222_gunner_1"} {end "seat_sd222_gunner_1"} {base "open_gunner"}}
+			{reverse 	{end	"emit_body"}}
+		}
 	}
 
 	("crew_human" place(driver)	door1(emit1) door2(emit2) visor(driver))
 	("crew_human_visible" place(gunner) door1(emit1) door2(emit2) visor(main))
 	("crew_human_gunner" place(gunner2) visorbone(mgun))
-	{placer {place "gunner" {openForCrush 0}}}		
+	{placer {place "gunner" {openForCrush 0}}}
 
 	{extender "inventory"
 		{weapon "mgun"
@@ -187,7 +185,7 @@
 			{RestoreIKAfterAim}
 			{weapon "37mm_m6" filling "ammo bullet37 us ap" 1}
 			{charger "gunner"}
-			("abm_low")
+			("abm_low_v2")
 		}
 		{place "mgun"
 			{type "mgun_aa"}
@@ -195,7 +193,7 @@
 			{LinkAnimation "off"}
 			{gunner "gunner2"}
 			{charger "gunner2"}
-			("abm_mgun_heavy")
+			("abm_mgun_heavy_v2")
 		}
 		{place "mgun2"
 			{type "mgun_coaxial"}
@@ -205,8 +203,8 @@
 			{charger "gunner"}
 			("abm_mgun")
 			{basic}
-		}	
-		
+		}
+
 	}
 
 	("wheel" args "wheelright1")
@@ -220,22 +218,22 @@
 	{Chassis
 		{Locomotion ("locomotion")
 			{MaxSpeed  42}
-	  		{maxSpeedAtMaxTurn 8}
+			{maxSpeedAtMaxTurn 8}
 			{StartTime 30}
 			{TurnRadius 6}
-     			{Gears  0.1 0.2 0.3 1}
+			{Gears  0.1 0.2 0.3 1}
 			{RearGears 0.25}
 		}
 		{FuelBag
-			{volume 210 }	
-			{rate	11 }   
+			{volume 210 }
+			{rate	11 }
 			{remain 210 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  42}
-        	{Slow  42}
-    	}
+			{Normal  42}
+			{Slow  42}
+		}
 		("car_trace" fx("tracewheel01") step(0.09) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
 		("car_trace" fx("tracewheel01") step(0.09) wheell("wlr") wheelr("wrr") bonel("FXtraceL3") boner("FXtraceR3"))
 	}

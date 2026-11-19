@@ -1,0 +1,93 @@
+{game_entity
+	;© 2009 Zeke Wolff & Ngvede.
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{collider "tank.light"}
+	{props "medium" "turret_rotator" "opened" "vision_vehicle_high" "muzzle_large"}
+	{PatherId "tank"}
+	;{targetSelector "tank_at"}
+
+
+	{Volume "Body1"
+		{tags "body"}
+		{component "body"}
+	}
+	{Volume "Body2"
+		{tags "body"}
+		{component "body"}
+	}
+	{volume "turret"
+		{tags "turret"}
+		{component "turret"}
+	}
+
+	("armor_light" turret(20 20 20 20) body(40 20 20 10))
+	("armor_engine"  t(10 32 32 20))
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_kv"} {end "seat_willysat_driver"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"} {end "seat_willysat_driver"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+	}
+	("crew_human" place(commander)	door1(emit1) door2(emit2) visor(driver))
+	("crew_human" place(driver)		door1(emit1) door2(emit2) visor(driver))
+	("crew_human_visible" place(charger) 	door1(emit1) door2(emit2) visor(main))
+	("crew_human_visible" place(gunner)	door1(emit1) door2(emit2) visor(main))
+
+	{placer
+		{place "charger" {openForCrush 0}}
+		{place "gunner" {openForCrush 0}}
+	}
+	{extender "inventory"
+		{box
+			{item "bullet90_ita ap" 20}
+			{item "bullet90_ita fg" 6}
+
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{weapon "90mm_m90_53" filling "bullet90_ita ap" 1}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_low")
+		}
+	}
+
+	{mass 18300}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.4) len(0.4))
+		{Locomotion ("locomotion")
+			{maxspeed   29}
+			{maxSpeedAtMaxTurn 6}
+			{StartTime  30}
+			{TurnStart  1}
+			{TurnTime   17}
+			{TurnRadius 9}
+    		{TurnStop   0.5}
+			{BrakeTime  1}
+			{StopTime   2}
+			{Gears  0.1 0.2 0.3 1}
+			{RearGears   0.25}
+		}
+		{FuelBag
+			{volume 230 }
+			{rate	24 }
+			{remain 230 }
+			{fuel "fuel"}
+		}
+		{speed
+        	{Normal  29}
+        	{Slow  29}
+    	}
+	}
+	{Extension "m9053.mdl"}
+
+}

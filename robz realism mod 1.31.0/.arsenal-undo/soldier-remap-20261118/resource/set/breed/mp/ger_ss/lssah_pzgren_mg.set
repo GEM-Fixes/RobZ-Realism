@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-lssmock2-mgun"}
+	{portrait "ger_soldier6"}
+	{icon "mg"}
+	{icon_priority 3}
+	{nationality ger}
+	{armors
+		{head waffen_helmet_lssah}
+	}
+	{perks
+		("body_veteran")
+		("drive_veteran")
+		("skills_ger_ss_4_3_5_5_4_4")
+	}
+	("breed_vet" table(start5))
+	{inventory
+		("mgun_mg42_inf_250")
+		("pistol_valter")
+		{item "bandage" 5}
+		{item "sandbag_kit"}
+		{item "barrel_case"}
+		{in_hands 0}
+	}
+}

@@ -1,35 +1,18 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/cannon.ext")
 	{props "vehicle" "cannon" "wheeled" "round_sandbag2" "vision_cannon_high" "muzzle_large_nodust" "gun_mode_change_art"}
 	{PatherId "cannon.large"}
 
 	("armor_medium")
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: lefh18_ger2.def) ---
-	{Volume "body"
-		{tags "body"}
-		{component "body"}
-	}
-	{Volume "gun1"
-		{tags "gun"}
-		{component "gun"}
-	}
-	{Volume "gun2"
-		{tags "gun"}
-		{component "gun"}
-	}
-	{Volume "gun3"
-		{tags "gun"}
-		{component "gun"}
-	}
-	{Volume "gun"
-		{tags "gun"}
-		{component "gun"}
-	}
-	{Volume "turret"
-		{tags "turret"}
-		{component "turret"}
-	}
+	("vol_body_part" name(body))
+	("vol_gun_part" name(gun1))
+	("vol_gun_part" name(gun2))
+	("vol_gun_part" name(gun3))
+	("vol_gun_part" name(gun))
+	("vol_turret_part" name(turret))
 	; --- end Godny hitbox armor ---
 	{Volume "standl"
 	}
@@ -39,7 +22,7 @@
 	}
 	{Volume "wheelright"
 	}
-	
+
 	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
 
@@ -78,7 +61,7 @@
 		{place "gun"
 			{weapon "105mm_l31" filling "ammo bullet105 ger fg" 4}
 			{Rotate}
-			{StationaryFiring}  
+			{StationaryFiring}
 			("abm_howitzer")
 		}
 		{place "gun1_2"
@@ -93,7 +76,7 @@
 	{mass 1500}
 	{Extension "lefh18.mdl"}
 	(include "/properties/selection/cannon.inc"  scale(0.7))
-	
+
 	{extender "cannon"
 		{animation
 			{switch "close"}

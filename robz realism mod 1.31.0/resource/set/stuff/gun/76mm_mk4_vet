@@ -1,15 +1,15 @@
 {from "76mm_mk4"		; "m4a4vc", "17_pdr", "achilles", "archer"
 	{rechargeTime 8}
 	{range 240 240}
-	("damage_215" a(161) b(145) c(131) d(118) e(107) range(240))
+	("damage_215" at20(161) at100(145) at170(131) at215(118) at250(107) max(240))
 	{parameters "apc"
-		("damage_215" a(169) b(148) c(130) d(114) e(100) range(240))
+		("damage_215" at20(169) at100(148) at170(130) at215(114) at250(100) max(240))
 	}
 	{parameters "apcbc"
-		("damage_215" a(174) b(163) c(150) d(137) e(126) range(240))	;no explosive filler so matches up to panther
+		("damage_215" at20(174) at100(163) at170(150) at215(137) at250(126) max(240))	;no explosive filler so matches up to panther
 	}							;even with less muzzle velocity
 	{parameters "apds"
-        	("damage_215" a(280) b(256) c(233) d(213) e(193) range(240))
+		("damage_215" at20(280) at100(256) at170(233) at215(213) at250(193) max(240))
 	}
 	{parameters "fg"
 		{range 230 230}

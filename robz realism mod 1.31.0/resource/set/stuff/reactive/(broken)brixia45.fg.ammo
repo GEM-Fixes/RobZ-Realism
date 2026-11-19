@@ -3,7 +3,7 @@
 	{inventory
 		{size 2 1}
 		{weight 40}
-			}	
+	}
 	{mass 2}
 	{entity "brixia_ammo"}
 	{view "brixia_ammo"}

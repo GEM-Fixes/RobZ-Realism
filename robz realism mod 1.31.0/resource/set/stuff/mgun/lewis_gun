@@ -7,7 +7,7 @@
 	{rechargeTime 6}
 
 	("recoveryTime" r(550))
-	("burst_short")
+	("burst_short_v2")
 	("speed" s(740))
 	{Spreading 1
 		{SpreadPower	1}

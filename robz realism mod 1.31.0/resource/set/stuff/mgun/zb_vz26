@@ -1,17 +1,17 @@
 {from "pattern mgun"
-	
+
 	{filling "ammo zb_vz26_mag" 20 20}
 	{entity "zbrojovka_brno_vz26"}
 	{fireSound	"mgun/zb30_burst/"}
 	{reloadSound "bren"}
 	{rechargeTime 2.5}
 	("recoveryTime" r(500))
-	("burst_short")
+	("burst_short_v2")
 	("speed" s(764))
 	{Spreading 1
 		{SpreadPower	1}
 		{BurstAccuracy 100 97 94 91 88 85 80}
 	}
 
-	
+
 }

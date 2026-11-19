@@ -3,7 +3,7 @@
 	{entity "dp27"}
 	{fireSound	"mgun/dt_burst/"}
 	{reloadSound "dt"}
-	{rechargeTime 5.5}	
+	{rechargeTime 5.5}
 
 	{mass 9}
 	("recoveryTime" r(550))

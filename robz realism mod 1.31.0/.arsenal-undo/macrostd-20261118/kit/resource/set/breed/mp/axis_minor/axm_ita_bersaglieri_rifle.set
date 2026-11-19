@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ita-ber-rfl"}
+	{portrait "ita_soldier2"}
+	{nationality ita}
+	{icon "rifleman"}
+	{icon_priority 0}
+	{armors
+		{head helmet_ita_m33_bersaglieri}
+	}
+	{perks
+		("breed_body" health(200%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.8) vehicle(1.0) cannon(1.0))
+		("breed_skills" pistol(2) smg(4) mgun(4) rifle(5) rocket(1) melee(2))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "carcano_m91" filled}
+		{item  "ammo 6x52" 240}
+		{item "bandage" 3}
+		{item "breda35" 1}
+		{item "sandbag_kit" 1}
+		{in_hands 0}
+	}
+}

@@ -5,9 +5,9 @@
 
 	{collider "goliath"}
 	{patherId "tank.light"}
-       
+
 	{extender "enumerator"}
-          
+
 	; --- Godny hitbox armor (ported from GodnyMod: sdkfz303.def) ---
 	{volume "body"
 		{tags "inbody"}	;обработка повреждений
@@ -31,19 +31,19 @@
 			{vision "none"}
 		}
 	}
-	
+
 	{placer
 		{crew 0}
 		{place "driver" remove}
 	}
-       
+
 	{extender "inventory"
 		{box
 			{item "ammo goliath" 1}
 			{item "plant" 3}
 		}
 	}
-	
+
 	{Weaponry
 		{place "charge"
 			{weapon "weapon goliath" filling "ammo goliath" 1}
@@ -61,16 +61,16 @@
 			{TurnStart 0.8}
 			{TurnTime 3}
 		}
-        {FuelBag
-	  		{volume 12}	; liters
-	  		{rate	3}   	; liters per kilometer
-	  		{remain 12}
-	  		{fuel "fuel"}
+		{FuelBag
+			{volume 12}	; liters
+			{rate	3}   	; liters per kilometer
+			{remain 12}
+			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  18}
-        	{Slow  18}
-    	}
+			{Normal  18}
+			{Slow  18}
+		}
 	}
 	{Extension "sdkfz303.mdl"}
 	{tag "sdkfz303"}

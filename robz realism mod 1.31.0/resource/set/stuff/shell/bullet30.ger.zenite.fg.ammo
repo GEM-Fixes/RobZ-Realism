@@ -7,11 +7,11 @@
 	}
 	{mass 1.2}
 	{entity "shell_fg_37_flak36"}
-	{damage blastwave  
+	{damage blastwave
 		{energy 1.1}
 		{area 0.2 0.35}
 	}
-	{damage add blastwave  
+	{damage add blastwave
 		{energy 0.2}
 		{area 2.3 3.8}
 	}

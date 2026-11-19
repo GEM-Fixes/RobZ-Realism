@@ -1,0 +1,8 @@
+(include "moto.inc")
+{extender "inventory"
+	{Box
+		{item "mg42" filled {user "mgun"}}
+		{item  "ammo mg_mauser drum" 500 }
+	}
+}
+{texmod "ger"}

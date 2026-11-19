@@ -7,7 +7,7 @@
 	}
 	{anm "passengers1"
 		{forward	{begin	"board_SdKfz251-1"} {end "seat_passenger"} {base "close"}}
-		{reverse 	{end	"emit_body"} {base "close" -1}} 
+		{reverse 	{end	"emit_body"} {base "close" -1}}
 	}
 	{anm "driver"
 		{forward	{begin	"board_SdKfz251-1"} {end "seat_driver_car"} {base "close"}}
@@ -23,15 +23,7 @@
 	}
 }
 
-(define "crew_human"
-	{placer
-		{place "%place" {group "%group"} {linkbone "%bone"} {turnoff {sensor} {shadow}}}
-	}
-	{boarder
-		{door "%door"}
-		{link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
-	}
-)
+(include "/properties/robz/crew.inc")
 
 {sensor
 	{visor "gunner" {bone "visor"}}
@@ -41,10 +33,10 @@
 	{place "gunner" {useVision} {visor "gunner"}}
 }
 
-("crew_human" place(driver)	door(emit1) bone(driver) animation(driver)		group(crew))
-("crew_human" place(gunner)	door(emit1) bone(gunner) animation(gunner)		group(crew))
-("crew_human" place(commander)	door(emit1) bone(commander) animation(driver)	group(crew))
-("crew_human" place(seat1)	door(emit1) bone(seat03) animation(commander)	group(crew))
-("crew_human" place(seat2)	door(emit1) bone(seat06) animation(passengers1)	group(passengers))
-("crew_human" place(seat3)	door(emit1) bone(seat05) animation(passengers)	group(passengers))
-("crew_human" place(seat4)	door(emit1) bone(seat04) animation(passengers)	group(passengers))
+("crew_human_no_targetable" place(driver)	door(emit1) bone(driver) animation(driver)		group(crew))
+("crew_human_no_targetable" place(gunner)	door(emit1) bone(gunner) animation(gunner)		group(crew))
+("crew_human_no_targetable" place(commander)	door(emit1) bone(commander) animation(driver)	group(crew))
+("crew_human_no_targetable" place(seat1)	door(emit1) bone(seat03) animation(commander)	group(crew))
+("crew_human_no_targetable" place(seat2)	door(emit1) bone(seat06) animation(passengers1)	group(passengers))
+("crew_human_no_targetable" place(seat3)	door(emit1) bone(seat05) animation(passengers)	group(passengers))
+("crew_human_no_targetable" place(seat4)	door(emit1) bone(seat04) animation(passengers)	group(passengers))

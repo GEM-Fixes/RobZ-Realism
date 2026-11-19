@@ -19,7 +19,7 @@
 			{damping 0.9}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "/texture/fx/smoke/smokesmal4a"
 					{visibility 1
 						{linear

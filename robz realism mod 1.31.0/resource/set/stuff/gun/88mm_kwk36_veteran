@@ -2,12 +2,12 @@
 	{rechargeTime 9.35}
 	{range 240 240}
 	("accuracy_maximum_240m_vet")
-	("damage_215" a(162) b(151) c(138) d(126) e(116) range(240))
+	("damage_215" at20(162) at100(151) at170(138) at215(126) at250(116) max(240))
 	{parameters "apcr"
-        	("damage_215" a(220) b(200) c(179) d(160) e(143) range(240))
+		("damage_215" at20(220) at100(200) at170(179) at215(160) at250(143) max(240))
 	}
 	{parameters "heat"
-        	("damage_heat" a(110) range(240))
+		("damage_heat" damage(110) max(240))
 	}
 	{parameters "fg"
 		{range 240 240}

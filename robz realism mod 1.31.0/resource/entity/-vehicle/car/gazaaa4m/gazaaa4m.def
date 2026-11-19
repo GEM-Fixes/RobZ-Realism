@@ -1,4 +1,5 @@
 ;Model recreated by: -Georgy-
+(include "/properties/robz/volumes.inc")
 {entity
 	(include "/properties/car.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.1))
@@ -27,15 +28,15 @@
 		{anm "gunner"
 			{forward	{begin	"board_LowTank_stand"} {end "pose_flak38_gunlayer"}}
 			{reverse 	{end	"emit_tank_1"}}
-	    	}
+		}
 		{anm "charger"
 			{forward	{begin	"board_LowTank_stand"} {end "pose_flak38_charger_right"}}
 			{reverse 	{end	"emit_tank_1"}}
- 	   	}
+		}
 		{anm "gunner"
 			{forward	{begin	"board_LowTank_stand"} {end "pose_dodge_sg2"}}
 			{reverse 	{end	"emit_tank_1"}}
-    	        }
+		}
 	}
 
 	("crew_human" place(gunner)	bone(gunner)	door(emit3) animation(gunner))
@@ -47,18 +48,13 @@
 		{place "gunner"		{group "gunner"} {visor "main"} {turnoff {targetable 0}}}
 	}
 
-	
+
 	("wheel" args "wheelright1")
 	("wheel" args "wheelleft1")
 	("wheel" args "wheelright2")
 	("wheel" args "wheelleft2")
 
-	{volume "body"
-		{tags "body"}
-		{component "body"}
-		{thickness 8
-		}   
-	}
+	("vol_body_plate_lower" name(body) mm(8))
 	{volume "turret"
 		{thickness 8
 		}
@@ -66,13 +62,13 @@
 	{Volume "cabine"
 		{tags "cabine"}
 		{component "body"}
-		{thickness 8}   
+		{thickness 8}
 	}
 	{volume "turret"
 		{tags "turret"}
 		{component "turret"}
 		{thickness 8
-		}   
+		}
 	}
 	{component "turret"
 		{RepairTime 10}
@@ -81,13 +77,13 @@
 		{tags "turret"}
 		{component "turret"}
 		{thickness 8
-		}   
+		}
 	}
 	{volume "turret2"
 		{tags "turret"}
 		{component "turret"}
 		{thickness 8
-		}   
+		}
 	}
 	{Volume "gun"
 		{tags "gun"}
@@ -111,12 +107,12 @@
 			{bone "visor1"}
 		}
 	}
-  
+
 	{extender "inventory"
 		{box
 			{item "ammo rus_mg_belt" 10000}
 		}
-	}	
+	}
 	{Weaponry
 		{place "gun"
 			{weapon "maxim_quad" filled}
@@ -129,13 +125,13 @@
 	{mass 3200}
 	{Chassis
 		{Locomotion ("locomotion")
-      		{MaxSpeed   36}
-	  		{maxSpeedAtMaxTurn 12}
-      		{TurnRadius 6}
+			{MaxSpeed   36}
+			{maxSpeedAtMaxTurn 12}
+			{TurnRadius 6}
 		}
 		{FuelBag
-			{volume 80 }	
-			{rate	10 }   
+			{volume 80 }
+			{rate	10 }
 			{remain 80 }
 			{fuel "fuel"}
 		}

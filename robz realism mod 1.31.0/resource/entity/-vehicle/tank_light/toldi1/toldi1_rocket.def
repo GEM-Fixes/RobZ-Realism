@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.2))
@@ -6,14 +7,8 @@
 	{props "light" "turret_rotator" "vision_vehicle_low" "muzzle_small"}
 	{targetClass "light_tank"}
 	{targetSelector "tank_aa"}
-	{volume "body1"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body2"
-		{tags "body"}
-		{component "body"}
-	}
+	("vol_body_part_lower" name(body1))
+	("vol_body_part_lower" name(body2))
 	{volume "turret"
 		{tags "turret"}
 		{component "turret"}
@@ -26,7 +21,7 @@
 		{tags "engine"}
 		{component "engine"}
 	}
-	
+
 	{extender "enumerator"
 		{digit_folder "ger"}
 	}
@@ -72,42 +67,42 @@
 			{basic}
 		}
 	}
-	
-{mass 10000}
+
+	{mass 10000}
 	{Chassis
 		("tank_trace" fx("tracks_mid") step(0.56) len(0.167))
 		{Locomotion ("locomotion")
 			{maxspeed   40}
 			{maxSpeedAtMaxTurn 6}
 			{StartTime  25}
-			{TurnStart  1.7}			
+			{TurnStart  1.7}
 			{TurnTime   15}
-			{TurnRadius 10} 
-    			{TurnStop   0.9}
+			{TurnRadius 10}
+			{TurnStop   0.9}
 			{BrakeTime  1}
 			{StopTime   2}
 			{Gears      0.1 0.2 0.3 1}
-			{RearGears  0.25}		
+			{RearGears  0.25}
 		}
 		{FuelBag
-			{volume 320 }	
-			{rate	14 }   
+			{volume 320 }
+			{rate	14 }
 			{remain 320 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  40}
-        	{Slow  24}
-    	}
-		
+			{Normal  40}
+			{Slow  24}
+		}
+
 	}
 
-	
+
 
 	{Extension "toldi1_rocket.mdl"}
 
-{bone "turret"
+	{bone "turret"
 		{speed 0.004}
 	}
-	;("turret_speed_zenite")
+;("turret_speed_zenite")
 }

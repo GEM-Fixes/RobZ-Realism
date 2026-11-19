@@ -1,16 +1,14 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/cannon.ext")
 	{props "vehicle" "cannon" "wheeled" "round_sandbag2" "vision_cannon_high" "muzzle_large_nodust" "gun_mode_change_art"}
 	{PatherId "cannon.large"}
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: m2a1l.def) ---
-	{Volume "gun2"
-		{tags "gun"}
-		{component "gun"}
-	}
+	("vol_gun_part" name(gun2))
 	; --- end Godny hitbox armor ---
 	("armor_medium")
-		
+
 	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
 
@@ -38,20 +36,20 @@
 
 	{extender "inventory"
 		{box
-			   {item "ammo bullet105 us fg" 8}
-			   {item "ammo bullet105 us wp" 4}
-			   {item "ammo bullet105 us sm" 4}
-			   {item "ammo bullet105 us heat" 4}
-			   {item "sandbag_kit2"}
+			{item "ammo bullet105 us fg" 8}
+			{item "ammo bullet105 us wp" 4}
+			{item "ammo bullet105 us sm" 4}
+			{item "ammo bullet105 us heat" 4}
+			{item "sandbag_kit2"}
 		}
 	}
 	{Weaponry
 
-		{place "gun"			
+		{place "gun"
 			{weapon "105mm_m2a1" filling "ammo bullet105 us fg" 4}
 			{Rotate}
-		    {StationaryFiring}  
-			("abm_howitzer")			
+			{StationaryFiring}
+			("abm_howitzer")
 		}
 		{place "gun1_2"
 			{type "gun_change_direct"}
@@ -65,7 +63,7 @@
 	{mass 1500}
 	{Extension "105mm_m2a1.mdl"}
 	(include "/properties/selection/cannon.inc"  scale(0.7))
-	
+
 	{extender "cannon"
 		{animation
 			{switch "close"}
@@ -82,7 +80,7 @@
 	{Chassis "track"
 		("car_trace" fx("tracewheel03") step(0.09) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
 		("loco_big")
-    }
+	}
 	{bone "turret"
 		{limits -10 10}
 		{speed 0.0005}

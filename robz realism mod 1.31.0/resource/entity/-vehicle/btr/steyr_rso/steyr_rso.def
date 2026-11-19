@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank_unarmed.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.2))
@@ -7,7 +8,7 @@
 	{targetSelector "tank_bullet"}
 	{patherId "tank.light"}
 	{tag "heavy_tow"}
-	
+
 	("armor_medium" turret(0) body(7 7 7 7))
 	("armor_engine"  t(7 7 7 7))
 
@@ -30,9 +31,9 @@
 		}
 	}
 
-	("crew_human_visible_anm" place(driver) door1(emit2) door2(emit2) visor(driver) anm_left(left) anm_right(left)) 
+	("crew_human_visible_anm" place(driver) door1(emit2) door2(emit2) visor(driver) anm_left(left) anm_right(left))
 	("crew_human_visible_anm" place(commander) door1(emit1) door2(emit1) visor(driver) anm_left(right) anm_right(right))
-	
+
 	{sensor
 		{visor "main"
 			{vision "tank_main-l"}
@@ -43,7 +44,7 @@
 			{bone "visor1"}
 		}
 	}
-	
+
 	("seat_human" place(seat1) bone(seat01) door(emit4) animation(armor))
 	("seat_human" place(seat2) bone(seat02) door(emit4) animation(armor1))
 	("seat_human" place(seat3) bone(seat03) door(emit4) animation(armor))
@@ -52,9 +53,9 @@
 	("seat_human" place(seat6) bone(seat06) door(emit3) animation(armor1))
 	("seat_human" place(seat7) bone(seat07) door(emit3) animation(armor))
 	("seat_human" place(seat8) bone(seat08) door(emit3) animation(armor1))
-	
+
 	{extender "shield"
-			{on}
+		{on}
 	}
 
 	{extender "inventory"
@@ -71,71 +72,63 @@
 			{maxSpeedAtMaxTurn 10}
 			{StartTime  10}
 			{TurnTime   6}
-			{TurnStart  0.6}			
-			{TurnRadius 6} 
-	    	{TurnStop   0.5}
+			{TurnStart  0.6}
+			{TurnRadius 6}
+			{TurnStop   0.5}
 			{BrakeTime  1}
 			{StopTime   1.5}
-     		{Gears  0.2 0.5 1}
+			{Gears  0.2 0.5 1}
 			{RearGears  0.43}
 		}
 		{speed
-        	{Normal  20}
-        	{Slow  20}
-    	}
+			{Normal  20}
+			{Slow  20}
+		}
 	}
 
 	{Extension "steyr_rso.mdl"}
 	; --- Godny hitbox armor (ported from GodnyMod: steyr_rso.def) ---
-	{Volume "body"
-		{tags "body"}
-		{component "body"}
-		{thickness 6}
-	}
+	("vol_body_plate" name(body) mm(6))
 	{Volume "bodyback"
-	;	{tags "body"}
+		;	{tags "body"}
 		{component "bodyback"}
-		{thickness 5} 
+		{thickness 5}
 	}
 	{Volume "cabin"
-	;	{tags "body"}
+		;	{tags "body"}
 		{component "cabin"}
-		{thickness 3} 
+		{thickness 3}
 	}
 	{Volume "engine"
 		{component "engine"}
-		{thickness 10} 
+		{thickness 10}
 	}
-	{Volume "fuel"
-		{tags "body"}
-		{component "body"}
-		{thickness 1} 
-	}
+	("vol_body_plate" name(fuel) mm(1))
 	{Volume "shield"
 		{component "shield"}
-		{thickness 1} 
+		{thickness 1}
 	}
 	{Volume "window1"
 		{Thickness 0.2}
-;		{component "cabin"}
+		;		{component "cabin"}
 		{able {visible 0}{window}{obstacle 0}}
 	}
 	{Volume "window2"
 		{Thickness 0.2}
-;		{component "cabin"}
+		;		{component "cabin"}
 		{able {visible 0}{window}{obstacle 0}}
 	}
 	; --- end Godny hitbox armor ---
 	{Volume "inventory"
 		{tags "body"}
-		{thickness 1} 
-;		{component "bodyback"}
+		{thickness 1}
+	;		{component "bodyback"}
 	}
 	{Volume "trackleft"
-		{thickness 5} 
+		{thickness 5}
 	}
 	{Volume "trackright"
-		{thickness 5} 
+		{thickness 5}
 	}
 	{component "cabin"}
 	{component "bodyback"}

@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "rus-sco-late"}
 	{portrait "rus_elite3"}
@@ -9,42 +10,9 @@
 		{head helmet_rus_ssh40_cover_camo}
 	}
 	{perks
-		{"health" "250%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "150%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.75
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 0.8
-		}
-		
-		{"pistol" lvl_3
-		}
-		{"smg" lvl_4
-		}
-		{"mgun" lvl_2
-		}
-		{"rifle" lvl_2
-		}
-		{"rocketlauncher" lvl_2
-		}
-		{"melee" lvl_3
-		}
+		("soldier_smg_4" rocket(1) body(line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_lvl5")
-	}
+	("breed_vet" table(start5))
 	{inventory
 		{item "flame_thrower"}
 		{item "balloon" filled}

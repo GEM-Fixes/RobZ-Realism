@@ -1,0 +1,87 @@
+;   Squads
+;------------------------------assault infantry || vet 2/3/4--------------------------------------------------------
+
+("squad_with6types" side(eng) name(smgs) c(0) g(squad_2) c1(eng_squadleader2:1) c2(eng_squadleader_asst:1) c3(eng_rifleman:3) c4(eng_smg:3) c5(eng_mgun:1) c6(eng_mgun_asst:1) b(squad1) t(all inf_only 42 43 44 45) level(1) cost(147) f(1.0))
+
+("squad_with9types" side(eng) name(pioneers) c(0) g(squad_2) c1(eng_pioneer_sl:1) c2(eng_pioneer_flamer:1) c3(eng_pioneer_mg:1) c4(eng_pioneer_at:1) c5(eng_pioneer_ap_miner:1) c6(eng_pioneer_at_miner:1) c7(eng_pioneer_1trench:4) c8(eng_pioneer_minedisposal:1) c9(eng_pioneer_3trench:1) b(squad1) t(all inf_only 43 44 45) level(1) cost(306) f(1.0))
+
+;------------------------------regular squad || vet 2/3/4-----------------------------------------------------------
+
+("squad_with4types" side(eng) name(riflemans_can) c(60) g(squad_3) c1(eng_squadleader_can:1) c2(eng_rifleman_canada:7) c3(eng_mg_canada:1) c4(eng_mg_assist_canada:1) b(squad1) t(all inf_only 40 41 42 43 44 45) level(1) cost(147) f(1.0))
+("squad_with7types" side(eng) name(riflemans) c(0) g(squad_3) c1(eng_squadleader:1) c2(eng_squadleader_asst:1) c3(eng_rifleman_smoke:4) c4(eng_rifle_grenadier:1) c5(eng_mgun:1) c6(eng_mgun_asst:1) c7(eng_rifle_piat:1) b(squad1) t(all inf_only 42 43 44 45) level(1) cost(163) f(1.0))
+("squad_with6types" side(eng) name(riflemans_at) c(0) g(squad_3) c1(eng_squadleader:1) c2(eng_squadleader_asst:1) c3(eng_rifleman_smoke:5) c4(eng_bazooker:1) c5(eng_mgun:1) c6(eng_mgun_asst:1) b(squad1) t(all inf_only 43 44 45) level(1) cost(184) f(1.0))
+("squad_with4types" side(eng) name(riflemans_scot) c(60) g(squad_3) c1(eng_squadleader_scot:1) c2(eng_rifle_scot:7) c3(eng_mgun_scot:1) c4(eng_mgun_assist_scot:1) b(squad1) t(all inf_only 40 41 42 43 44 45) level(1) cost(175) f(1.0))
+
+("squad_with7types_vehicle" side(eng) name(mech_rifles) c(10) g(squad_33) v1(m3_eng) c1(eng_squadleader:1) c2(eng_squadleader_asst:1) c3(eng_rifleman_smoke:4) c4(eng_rifle_grenadier:1) c5(eng_mgun:1) c6(eng_mgun_asst:1) c7(eng_rifle_piat:1) b(squad1) t(all inf_only 42 43 44 45) level(5) cost(208) f(-23.0)) ;240sec
+
+;------------------------------commandos squads ||| vet 5-----------------------------------------------------------
+
+("squad_with4types" side(eng) name(elites_40) c(60) g(squad_5) c1(eng_commando_cpl_smg:1) c2(eng_commando_silencesmg:3) c3(eng_commando_silence_carbine:4) c4(eng_commando_bren:2) b(squad1) t(40 41 42) level(1) cost(215) f(1.0))
+
+("squad_with6types" side(eng) name(elites) c(60) g(squad_5) c1(eng_commando_cpl_smg:1) c2(eng_commando_sl:1) c3(eng_commando_smg:2) c4(eng_commando_carbine:2) c5(eng_commando_bren:2) c6(eng_commando_bren_assist:2) b(squad1) t(all inf_only 43 44 45) level(1) cost(215) f(1.0))
+
+;------------------------------stormtroopers para/SAS |||| vet 6 and 7---------------------------------------------------------
+
+("squad_with6types" side(eng) name(paratroopers) c(60) g(squad_5) c1(eng_paratrooper_cpl_smg:1) c2(eng_paratrooper_sic:1) c3(eng_paratrooper_bren:3) c4(eng_paratrooper_carbine:2) c5(eng_paratrooper_smg:2) c6(eng_paratrooper_lightmortar:1) b(squad1) t(all inf_only 40 41 42 43 44 45) level(1) cost(237) f(1.0))
+
+("squad_with7types" side(eng) name(stormtroopers) c(60) g(squad_5) c1(eng_sas_cpl:1) c2(eng_sas_2ic:1) c3(eng_sas_bran_assist:1) c4(eng_sas_at_rifle:1) c5(eng_sas_bren2:2) c6(eng_sas_bren2_assist:2) c7(eng_sas_rifle1:2) b(squad1) t(all inf_only 43 44 45) level(1) cost(302) f(1.0))
+
+("squad_with6types_vehicle" side(eng) name(paratroopers_drop) c(900) g(squad_5) v1(airborne_spawner) c1(eng_paratrooper_cpl_smg:1) c2(eng_paratrooper_sic:1) c3(eng_paratrooper_bren:3) c4(eng_paratrooper_carbine:2) c5(eng_paratrooper_smg:2) c6(eng_paratrooper_lightmortar:1) b(squad1) t(all inf_only 40 41 42 43 44 45) level(1) cost(237) f(0.5))
+
+("squad_with7types_vehicle" side(eng) name(stormtroopers_drop) c(900) g(squad_5) v1(airborne_spawner) c1(eng_sas_cpl:1) c2(eng_sas_2ic:1) c3(eng_sas_bran_assist:1) c4(eng_sas_at_rifle:1) c5(eng_sas_bren2:2) c6(eng_sas_bren2_assist:2) c7(eng_sas_rifle1:2) b(squad1) t(all inf_only 43 44 45) level(1) cost(302) f(0.5))
+
+;------------------------------AP and AT miners, sappers || vet 2-----------------------------------------------
+
+("squad_with1types" side(eng) name(ap_miners) c(0) g(squad_7) c1(eng_ap_miner:4) b(squad1) t(all inf_only engineers mines 39 40 41 42 43 44 45) level(20) cost(100) f(0))
+
+("squad_with1types" side(eng) name(at_miners) c(0) g(squad_8) c1(eng_at_miner:4) b(squad1) t(all inf_only engineers mines 39 40 41 42 43 44 45) level(25) cost(150) f(0))
+
+("squad_with1types" side(eng) name(sappers) c(0) g(squad_9) c1(eng_saper:2) b(squad1) t(all inf_only engineers 39 40 41 42 43 44 45) level(1) cost(70) f(0))
+
+;------------------------------tank and support crews || vet 2--------------------------------------------------
+
+("squad_with1types" side(eng) name(vehic_supporter) c(0) g(soldier_3) c1(vehicle_supporter_single:2) b(squad1) t(all inf_only 42 43 44 45) level(1) cost(25) f(-1.0))
+
+("squad_with2types" side(eng) name(tankmans) c(0) g(soldier_3) c1(eng_tankman2_single:1) c2(eng_tankman_single:4) b(squad1) t(all inf_only tankmans 39 40 41 42 43 44 45) level(1) cost(70) f(-1.0))
+
+("squad_with1types" side(eng) name(elite_tankmans) c(0) g(soldier_3) c1(eng_vet_tankman2_single:1) b(squad1) t(all inf_only tankmans 39 40 41 42 43 44 45) level(1) cost(100) f(-1.0))
+
+;   Single Soldiers
+
+;------------------------------rifleman and smg || vet 2--------------------------------------------------------
+
+("squad_with1types" side(eng) name(riflemans2) c(10) g(soldier_1) c1(eng_rifleman_smoke:1) b(squad2) t(all inf_only 42 43 44 45) level(1) cost(17) f(1.0))
+
+("squad_with1types" side(eng) name(smgs2) c(10) g(soldier_2) c1(eng_smg_wp:1) b(squad2) t(all inf_only 42 43 44 45) level(1) cost(14) f(1.0))
+
+;------------------------------AT rifles and bazookas || vet 2--------------------------------------------------
+
+("squad_with2types" side(eng) name(at_rifles) c1(eng_at_rifle:1) c2(eng_at_rifle_assist:1) c(0) g(soldier_4) b(squad2) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(66) f(1.0))
+
+("squad_with2types" side(eng) name(bazookers) c1(eng_bazooker:1) c2(eng_bazooker_assist:1) c(0) g(soldier_5) b(squad2) t(all inf_only 43 44 45) level(1) cost(122) f(1.0))
+
+("squad_with2types" side(eng) name(stormtrooper5) c1(eng_sas_piat:1) c2(eng_sas_piat_assist:1) c(0) g(soldier_5) b(squad2) t(all inf_only 42 43 44 45) level(1) cost(143) f(1.0))
+
+;------------------------------MG infantry || vet 2-------------------------------------------------------------
+
+("squad_with2types" side(eng) name(mgs2) c(60) g(soldier_6) c1(eng_mgun:1) c2(eng_mgun_asst:1) b(squad2) t(all inf_only 42 43 44 45) level(1) cost(62) f(1.0))
+
+;------------------------------elite3
+
+("squad_with2types" side(eng) name(elite3) c(60) g(squad_4) c1(eng_commando_bren:1) c2(eng_commando_carbine:2) b(squad2) t(all inf_only 40 41 42 43 44 45) level(1) cost(91) f(1.0))
+
+;------------------------------------------------
+
+("squad_with2types" side(eng) name(stormtrooper6) c(60) g(squad_4) c1(eng_sas_bren2:1) c2(eng_sas_bren2_assist:2) b(squad2) t(all inf_only 40 41 42 43 44 45) level(1) cost(105) f(1.0))
+
+;------------------------------flamer, sniper and officer || vet2/3/4----------------------------------------------
+
+("squad_with2types" side(eng) name(flamers) c(60) g(soldier_8) c1(eng_flamer:1) c2(eng_flamer_assist:1) b(squad2) t(all flamer inf_only 39 40 41 42 43 44 45) level(1) cost(71) f(1.0))
+
+("squad_with1types" side(eng) name(snipers) c(60) g(soldier_9) c1(eng_sniper:1) b(squad2) t(all sniper inf_only 39 40 41 42 43 44 45) level(1) cost(105) f(1.0))
+
+("i_seq_with1x4types" side(eng) name(officers) c(1) g(soldier_10) c1(eng_officer:1) b(squad2) i(10002) t(all officer inf_only 39 40 41 42 43 44 45) level(1) cost(0) f(-599.0)) ;10 minutes
+("i_seq_with1x4types" side(eng) name(officers_40) c(1800) g(soldier_10) c1(eng_officer:1) b(squad2) i(10002) t(all officer inf_only 39 40 41 42 43 44 45) level(1) cost(0) f(-2399.0)) ;40 minutes
+
+
+("squad_with1types" side(eng) name(snipers_d) c(0) g(soldier_12) c1(eng_sniper:1) b(squad2) t(sniper_duell) level(1) cost(105) f(1.0))

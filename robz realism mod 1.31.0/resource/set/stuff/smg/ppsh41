@@ -6,7 +6,7 @@
 
 	("recoveryTime" r(900))
 	("burst_short")
- 	("speed" s(490))
+	("speed" s(490))
 	("accuracy_smg_low")
 	{spreading 1.0
 		{SpreadPower	1}

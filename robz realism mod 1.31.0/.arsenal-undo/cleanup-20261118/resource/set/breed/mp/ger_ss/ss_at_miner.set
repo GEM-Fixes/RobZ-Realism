@@ -1,0 +1,34 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-pioneer"}
+	{portrait ger_soldier2}
+	{icon at_miner}
+	{icon_priority 3}
+	{nationality ger}
+	{armors
+		{head waffen_helmet_camo}
+	}
+	{perks
+		("soldier_smg_4" rocket(3) body(hardy))
+	}
+	{veterancy
+		{"lvl_1" 2
+		}
+		{"lvl_2" 5
+		}
+		{"lvl_3" 9
+		}
+		{"lvl_4" 14
+		}
+		{"lvl_5" 20
+		}
+	}
+	{inventory
+		("smg_mp40")
+		("mine_antitank_x7")
+		("at_grenade_hohlladung")
+		{item "hedgehog_kit"}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

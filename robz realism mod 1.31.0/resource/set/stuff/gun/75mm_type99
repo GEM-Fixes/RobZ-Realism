@@ -7,9 +7,9 @@
 	("caliber_medium")
 	("speed" s(450))
 	{projectileDamage 20}
-	("damage_170" a(42) b(31) c(20) d(10) e(8) range(180))
+	("damage_170" at20(42) at100(31) at170(20) at215(10) at250(8) max(180))
 	{parameters "heat"
-		("damage_heat" a(100) range(180))
+		("damage_heat" damage(100) max(180))
 	}
 }
 

@@ -1,8 +1,9 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{props "medium" "turret_rotator" "vision_vehicle_high" "muzzle_medium"}
-	
+
 	{extender "enumerator"}
 
 	; --- Godny hitbox armor (ported from GodnyMod: cromwell_mk_vi.def) ---
@@ -32,7 +33,7 @@
 		{thickness 31.75
 			{front	63.5}
 			{rear	0.1}	;внутренн€€ стенка
-		;	{top	14}
+			;	{top	14}
 			{bottom	6.35}
 		}
 	}
@@ -60,7 +61,7 @@
 		{component "body"}
 		{tags "body"}
 		{thickness 31.75	;31.75мм боковые жабры под наклоном
-		;	{front	31.75}
+			;	{front	31.75}
 			{rear	25}
 			{top	14.3}
 			{bottom	0.1}	;внутренн€€ стенка
@@ -71,7 +72,7 @@
 		{tags "body"}
 		{thickness 25
 			{front	0.1}	;внутренн€€ стенка
-		;	{rear	25}
+			;	{rear	25}
 			{top	14.3}
 			{bottom	6.35}
 		}
@@ -102,16 +103,13 @@
 		{thickness 6}
 	}
 	; --- end Godny hitbox armor ---
-	{Volume "gun"
-		{tags "gun"}
-		{component "gun"}
-	}
+	("vol_gun_part" name(gun))
 	("armor_medium" turret(76 64 57 20) body(102 44 32 14) body2(25 44 32 14) body3(57 44 32 14))
 	("armor_engine"  t(10 44 25 14))
 	("eng_3x_sight")
 
 	("shield" args 10)
-	
+
 	{extender "shield"
 		{on}
 	}
@@ -167,7 +165,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "95mm_oqf" filling "ammo bullet95 eng fg" 1}	
+			{weapon "95mm_oqf" filling "ammo bullet95 eng fg" 1}
 			("abm_direct_how")
 		}
 
@@ -192,30 +190,30 @@
 	{Chassis
 		("tank_trace" fx("tracks_mid") step(0.52) len(1.2))
 		{Locomotion ("locomotion")
-            {MaxSpeed   36}
+			{MaxSpeed   36}
 			{maxSpeedAtMaxTurn 4}
 			{StartTime  25}
-			{TurnStart  1.7}			
+			{TurnStart  1.7}
 			{TurnTime   18}
-			{TurnRadius 9} 
-    		{TurnStop   0.8}
+			{TurnRadius 9}
+			{TurnStop   0.8}
 			{BrakeTime  1.5}
 			{StopTime   3}
 			{Gears   0.1 0.2 0.3 1}
 			{RearGears  0.25}
 		}
 		{FuelBag
-			{volume 420 }	
-			{rate	33 }   
+			{volume 420 }
+			{rate	33 }
 			{remain 420 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  36}
-        	{Slow  36}
-    	}
+			{Normal  36}
+			{Slow  36}
+		}
 	}
-{Extension "cromwell_mk_vi.mdl"}
+	{Extension "cromwell_mk_vi.mdl"}
 	{bone "turret"
 		{speed 0.004}
 	}

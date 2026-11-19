@@ -4,5 +4,5 @@
 	{extender "stuff"
 		{item "em3_mark1"}
 	}
-	{nogroupmesh 1}	
+	{nogroupmesh 1}
 }

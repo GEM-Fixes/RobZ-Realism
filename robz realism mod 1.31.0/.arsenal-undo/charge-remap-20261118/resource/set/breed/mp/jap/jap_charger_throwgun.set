@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "jap_army_rifle"}
+	{portrait "jap_soldier1"}
+	{nationality jap}
+	{icon "rifleman"}
+	{icon_priority 0}
+	{armors
+		{head "jap_army_helmet6"}
+	}
+	{perks
+		("breed_body" health(300%) regen_health(100%) stamina(200%) regen_stamina(125%) vision("mp_soldier") speed(0.95))
+		("drive_t09_v10_c10")
+		("skills_jap_charger")
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "throwable_gun" filled}
+		{item "type99rifle_bayonet_melee" filled}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

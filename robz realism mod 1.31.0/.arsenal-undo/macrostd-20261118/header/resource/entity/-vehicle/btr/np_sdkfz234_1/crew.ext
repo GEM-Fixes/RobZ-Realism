@@ -1,0 +1,47 @@
+;SDL
+
+{boarder
+	{anm "driver"
+		{forward	{begin	"board_tank_left"} {end "seat_driver_car"} {base "open_driver"}}
+		{reverse 	{end	"emit_tank_1_hold"} {base "close_driver"}}
+	}
+
+	{anm "gunner"
+		{forward	{begin	"board_tank_right"}  {end "seat_gunner_stand"} {base "open"}}
+		{reverse 	{end	"emit_tank_1_hold"} {base "close"}}
+	}
+
+	{anm "commander"
+		{forward	{begin	"board_tank_right"} {base "open"}}
+		{reverse 	{end	"emit_tank_1_hold"} {base "close"}}
+	}
+
+}
+
+
+(include "/properties/robz/crew.inc")
+
+
+
+(define "crew_human_2_link_bone"
+	{boarder
+		{door "%door"}
+		{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}
+	}
+	{placer
+		{place "%place"	{LinkBone "%place"} {visor "%visor"} {turnoff {sensor} {shadow}}}
+	}
+)
+
+{sensor
+	{visor "gunner" {bone "visor"}}
+}
+{placer
+	{place "commander" {visor "gunner"}}
+}
+
+("crew_human_2_link_bone" place(driver)	door(emit1) visor(driver) group(crew) )
+("crew_human_2_link_bone" place(gunner)	door(emit3) visor(gunner) group(crew) )
+("crew_human_no_linkbone" place(commander)	door(emit2)	animation(commander)	group(crew))
+
+

@@ -97,7 +97,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags ground }
 				{sprite "$/flash/ring_g01"
 					{timer
@@ -140,7 +140,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags ground }
 				{sprite "$/explosion/fire_sled"
 					{timer
@@ -189,7 +189,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04l"
 					{timer
 						{mode play }
@@ -266,7 +266,7 @@
 			{damping 0.99}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04"
 					{timer
 						{mode play }
@@ -345,7 +345,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04a"
 					{timer
 						{mode play }
@@ -453,7 +453,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04a"
 					{timer
 						{mode play }
@@ -536,7 +536,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/bum"
 					{timer
 						{mode play }

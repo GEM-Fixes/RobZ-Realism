@@ -1,107 +1,143 @@
-(define "fg_minimum"
-		; anti-tank
-		{damage blastwave
-			{energy (* %0 1.15)}
-			{area 0.1 0.2}
-		}
-		; anti-personel
-		{damage add blastwave
-			{energy 1.2}
-			{area (* 0.5 (+ %0 5)) (* 0.9 (+ %0 5))}
-		}
-		{damage add blastwave
-			{energy 0.1}
-			{area (* 1.1 (+ %0 5)) (* 1.1 (+ %0 5))}
-		}
+(include "/properties/robz/weapon.inc")
+
+; ---- design table (author, "tings to do.txt" lines 632-647): mortar fillers (reactive/mortar*/.presets hold their own fg_* group): kg, fg value, damage distances, fg define, copied as written ----
+; E = highest energy
+; mortar fillers 		     fg value|   min - max dist|fg define	    mid damage |min - max dist
+; 8cm wgr = 0.57kg 		3.3	4,15 - 7,47	fg_min
+; 81mm M43A1 = 0.55kg		3.25	4,125- 7,425	fg_min
+; 81mm M45 = 2.03kg		6.2	7,84 - 12,32	fg_med
+; 82mm O-832 = 0.41kg		2.9	3,95 - 7,11	fg_min
+; 3inch HE Mk.II = 0.5kg	3.2	4,05 - 7,29	fg_min
+; 90mm type 97 = 1.06kg		5.7	5,35 - 9,63	fg
+; 4.2inch US = 3.64kg		7.5	8,75 - 13,75	fg_med
+; 4.2inch UK = 4.25kg		8.1	9,17 - 14,41	fg_med
+; 12cm Wgr. 42 = 2.78kg		6.8	8,26 - 12,98	fg_med
+; 120mm F-843 = 3.9kg		7.7	8,89 - 13,97	fg_med
+; 120mm OF-843A = 1.58kg frag	4.0	4,5  - 8,1	fg_min
+; 150mm type 97 = 4.07kg	7.9	9,03 - 14,19	fg_med
+; 200mm rocket = 16,2kg		25	19,25- 28,5	custom			12,5	 7,4 - 12,5
+; 300mm rocket = ~30kg?		35	26,0 - 36,0	custom			16,0	10,0 - 17,0
+
+; ---- design table (author, "tings to do.txt" lines 678-691): rocket fillers: kg, fg value, damage distances, fg define, mid/max damage and distances, copied as written ----
+;rocket damage overall less than compareable shells due to less "material" for fragments
+; rocket fillers 		     fg value||  min - max dist|fg define	mid/max damage	| min - max dist
+; 82-mm M-8 = 0,5kg		3.0	4,0  - 	7,2	fg_min			3,45	  0,1 - 0,2
+; 132-mm M-13 = 4,9kg		11.8	10,92-  17,64	fg_rkt_heavy		11,8	  2,0 - 6,0
+; 300-mm M-30 = 28,9kg
+; 300-mm M-31 = 28,9kg		23	2,0  -  6,0	custom			10,0	  6,0 - 10,0
+; 				1,2	12,0 -  19,0				
+; 4.5-in HE M8 = 1,95kg		5.0	6,0  -	10,0	fg_rkt_med		6,0	  1,0 - 3,0
+; land mattress = 3,18kg	8.0	7,8  - 	14,3	fg_rkt_med		9,6	  1,0 - 3,0
+; 15cm wurfg 41 spr = 2,5kg	6.5	6,9  -  12,65	fg_rkt_med		7,8	  1,0 - 3,0
+; 28cm wurfköpr spr = 49,9kg	40	3,0  -  8,0	custom			18,0	  8,0 - 15,0
+; 				1,2	20,0 -  30,0
+; 32cm wurfköpr MF1 50 = 39,8kg	25	1,5  -  4,0	custom			15,5	  4,0 - 8,0
+; 				1,2	12,0 -  18,0
+
+; fg_v2: HE blast: blastwave damage layers (anti-tank, anti-personnel) scaled by the filler value
+;   args 0 (positional %0) - filler value (explosive energy): anti-tank energy and anti-personnel area scale with it
+;   e.g. ("fg_v2" args ..) (no call in the mod)
+(define "fg_v2"
+	; anti-tank
+	{damage blastwave
+		{energy (* %0 1.15)}
+		{area 0.4 0.5}
+	}
+	; anti-personel
+	{damage add blastwave
+		{energy 1.2}
+		{area (* 0.5 (+ %0 5)) (* 0.9 (+ %0 5))}
+	}
+	{damage add blastwave
+		{energy 0.1}
+		{area (* 1.2 (+ %0 5)) (* 1.2 (+ %0 5))}
+	}
 )
 
-(define "fg"
-		; anti-tank
-		{damage blastwave
-			{energy (* %0 1.15)}
-			{area 0.4 0.5}
-		}
-		; anti-personel
-		{damage add blastwave
-			{energy 1.2}
-			{area (* 0.5 (+ %0 5)) (* 0.9 (+ %0 5))}
-		}
-		{damage add blastwave
-			{energy 0.1}
-			{area (* 1.2 (+ %0 5)) (* 1.2 (+ %0 5))}
-		}
+; fg_medium_v2: HE blast: blastwave damage layers (anti-tank, anti-personnel) scaled by the filler value
+;   args 0 (positional %0) - filler value (explosive energy): anti-tank energy and anti-personnel area scale with it
+;   e.g. ("fg_medium_v2" args 7.9)
+(define "fg_medium_v2"
+	; anti-tank
+	{damage blastwave
+		{energy (* %0 1.15)}
+		{area 0.8 1.0}
+	}
+	; anti-personel
+	{damage add blastwave
+		{energy 1.5}
+		{area (* 0.7 (+ %0 5)) (* 1.1 (+ %0 5))}
+	}
+	{damage add blastwave
+		{energy 0.1}
+		{area (* 1.3 (+ %0 5)) (* 1.3 (+ %0 5))}
+	}
 )
 
-(define "fg_medium"
-		; anti-tank
-		{damage blastwave
-			{energy (* %0 1.15)}
-			{area 0.8 1.0}
-		}
-		; anti-personel
-		{damage add blastwave
-			{energy 1.5}
-			{area (* 0.7 (+ %0 5)) (* 1.1 (+ %0 5))}
-		}
-		{damage add blastwave
-			{energy 0.1}
-			{area (* 1.3 (+ %0 5)) (* 1.3 (+ %0 5))}
-		}
+; fg_heavy_v2: HE blast: blastwave damage layers (anti-tank, anti-personnel) scaled by the filler value
+;   args 0 (positional %0) - filler value (explosive energy): anti-tank energy and anti-personnel area scale with it
+;   e.g. ("fg_heavy_v2" args ..) (no call in the mod)
+(define "fg_heavy_v2"
+	; anti-tank
+	{damage blastwave
+		{energy %0}
+		{area 1 2}
+	}
+	; anti-apc
+	{damage add blastwave
+		{energy (* %0 0.2)}
+		{area 5.5 6}
+	}
+	; anti-personel
+	{damage add blastwave
+		{energy 1.5}
+		{area (* 0.65 (+ %0 5)) (* 1.0 (+ %0 5))}
+	}
+	{damage add blastwave
+		{energy 0.1}
+		{area (* 1.2 (+ %0 5)) (* 1.2 (+ %0 5))}
+	}
 )
-
-(define "fg_heavy"
-		; anti-tank
-		{damage blastwave
-			{energy %0}
-			{area 1 2}
-		}
-		; anti-apc
-		{damage add blastwave
-			{energy (* %0 0.2)}
-			{area 5.5 6}
-		}
-		; anti-personel
-		{damage add blastwave
-			{energy 1.5}
-			{area (* 0.65 (+ %0 5)) (* 1.0 (+ %0 5))}
-		}
-		{damage add blastwave
-			{energy 0.1}
-			{area (* 1.2 (+ %0 5)) (* 1.2 (+ %0 5))}
-		}
-)
+; fg_rocket_medium: HE blast: blastwave damage layers (anti-tank, anti-personnel) scaled by the filler value
+;   args 0 (positional %0) - filler value (explosive energy): anti-tank energy and anti-personnel area scale with it
+;   e.g. ("fg_rocket_medium" args 5.0)
 (define "fg_rocket_medium"
-		; anti-tank
-		{damage blastwave
-			{energy (* %0 1.2)}
-			{area 1 3}
-		}
-		; anti-personel
-		{damage add blastwave
-			{energy 1.2}
-			{area (* 0.6 (+ %0 5)) (* 1.1 (+ %0 5))}
-		}
-		{damage add blastwave
-			{energy 0.1}
-			{area (* 1.3 (+ %0 5)) (* 1.3 (+ %0 5))}
-		}
+	; anti-tank
+	{damage blastwave
+		{energy (* %0 1.2)}
+		{area 1 3}
+	}
+	; anti-personel
+	{damage add blastwave
+		{energy 1.2}
+		{area (* 0.6 (+ %0 5)) (* 1.1 (+ %0 5))}
+	}
+	{damage add blastwave
+		{energy 0.1}
+		{area (* 1.3 (+ %0 5)) (* 1.3 (+ %0 5))}
+	}
 )
+; fg_rocket_heavy: HE blast: blastwave damage layers (anti-tank, anti-personnel) scaled by the filler value
+;   args 0 (positional %0) - filler value (explosive energy): anti-tank energy and anti-personnel area scale with it
+;   e.g. ("fg_rocket_heavy" args 11.8)
 (define "fg_rocket_heavy"
-		; anti-tank
-		{damage blastwave
-			{energy %0}
-			{area 2 6}
-		}
-		; anti-personel
-		{damage add blastwave
-			{energy 1.2}
-			{area (* 0.65 (+ %0 5)) (* 1.05 (+ %0 5))}
-		}
-		{damage add blastwave
-			{energy 0.1}
-			{area (* 1.3 (+ %0 5)) (* 1.3 (+ %0 5))}
-		}
+	; anti-tank
+	{damage blastwave
+		{energy %0}
+		{area 2 6}
+	}
+	; anti-personel
+	{damage add blastwave
+		{energy 1.2}
+		{area (* 0.65 (+ %0 5)) (* 1.05 (+ %0 5))}
+	}
+	{damage add blastwave
+		{energy 0.1}
+		{area (* 1.3 (+ %0 5)) (* 1.3 (+ %0 5))}
+	}
 )
+; heavy_artillery: sets {curve} {tag} {fillingVisible} {inventory} {foresight} {range} {spreading} {gravity} ...; per-ammo {parameters} wp fg sm; (mod "mp") block
+;   e.g. ("heavy_artillery")
 (define "heavy_artillery"
 	{curve "gun_heavy"}
 	{tag "mrl"}

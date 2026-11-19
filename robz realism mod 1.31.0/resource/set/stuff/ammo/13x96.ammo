@@ -14,7 +14,7 @@
 		{tail "tracer_red" "basis"}
 	}
 
-         {trace
+	{trace
 		{view "/texture/fx/trace_mg_limegreen"
 			{ScaleY 0.22}
 			{Light 10}
@@ -22,5 +22,5 @@
 		{length 8}
 	}
 
-	
+
 }

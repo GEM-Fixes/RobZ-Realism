@@ -3,7 +3,7 @@
 	{entity "besa"}
 	{fireSound	"mgun/besa_burst/"}
 	{rechargeTime 12}
-	
+
 	("recoveryTime" r(800))
 	("burst_long")
 	("speed" s(793))

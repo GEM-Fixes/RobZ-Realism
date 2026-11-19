@@ -1,6 +1,6 @@
 {army
 	{id 10}
-	{title "mp/army/axis_minor"} 
+	{title "mp/army/axis_minor"}
 	{icon "/interface/pages/multi/flag_axis_minor"}
 	{flag "/interface/scene/common/flag-germany-ss"}
 }

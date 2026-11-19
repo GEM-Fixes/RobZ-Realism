@@ -51,11 +51,11 @@
 	{Chassis
 		{Locomotion ("locomotion")
 			{maxspeed 34}
-	 	    {maxSpeedAtMaxTurn 12}
+			{maxSpeedAtMaxTurn 12}
 		}
 		{FuelBag
-			{volume 80 }	
-			{rate	9 }   
+			{volume 80 }
+			{rate	9 }
 			{remain 80 }
 			{fuel "fuel"}
 		}

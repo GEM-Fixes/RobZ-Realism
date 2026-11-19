@@ -2,14 +2,14 @@
 	{filling "bullet290" 1}
 	{fireSound "gun/203mm"}
 	{range 80 80}
-	{spreading 
+	{spreading
 		{SpreadRadius 1}
 		{radiusFunction
 			0	0
 			1	1
 			1.05	20
 		}
-	} 
+	}
 	{RecoveryTime 2}
 	{RechargeTime 40}
 	{Automatic}

@@ -8,10 +8,10 @@
 
 
 	{Volume "body1"
-	{tags "body"}
-	{able{obstacle 0}}
-	{thickness 1}
-	{component "body"}
+		{tags "body"}
+		{able{obstacle 0}}
+		{thickness 1}
+		{component "body"}
 	}
 }
 

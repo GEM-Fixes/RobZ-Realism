@@ -3,7 +3,7 @@
 	{Extension "wall7_hb2.mdl"}
 	{props "cornered" "wood" "parts" "construction" "burning" "wall" "no_destroyed_stamp"}
 	("armor_house_wood")
-        {mass 500}
+	{mass 500}
 	{obstacleID "small_building"}
 
 	{extender "structure_bone"

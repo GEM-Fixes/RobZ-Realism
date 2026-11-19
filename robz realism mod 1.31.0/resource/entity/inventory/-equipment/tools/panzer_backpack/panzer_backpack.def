@@ -4,12 +4,12 @@
 		{thickness 1}
 	}
 	{extender "inventory"
-    {box
-        {Size 4 4}
-	{Weight 100}
-		{item "ammo panzershreck" 5}
-    }
-}
+		{box
+			{Size 4 4}
+			{Weight 100}
+			{item "ammo panzershreck" 5}
+		}
+	}
 	{props "capacity" "collectable"}
 	{extender "stuff"
 		{item "panzerbacksellsheet"}

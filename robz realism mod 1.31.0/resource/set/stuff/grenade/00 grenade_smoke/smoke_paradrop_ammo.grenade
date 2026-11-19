@@ -1,6 +1,6 @@
 {from "pattern grenade_smoke"
 	{tag "-missile"}
-	{inventory 
+	{inventory
 		{size 2 1}
 	}
 	{entity "grenade_smoke_paradrop_ammo"}

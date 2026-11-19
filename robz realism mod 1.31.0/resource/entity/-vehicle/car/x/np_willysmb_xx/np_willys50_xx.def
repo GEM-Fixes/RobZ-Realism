@@ -1,19 +1,4 @@
+; same as the other 1 def here; body in np_willys_body.inc
 {game_entity
-	{Extension "willysat_xx.mdl"}
-	{Volume "body2"
-	}
-	{Volume "body"
-	}
-	{Volume "engine"
-	}
-	{Volume "wheelleft1"
-	}
-	{Volume "wheelleft2"
-	}
-	{Volume "wheelright1"
-	}
-	{Volume "wheelright2"
-	}
-	{Volume "windshield"
-	}
+	(include "np_willys_body.inc")
 }

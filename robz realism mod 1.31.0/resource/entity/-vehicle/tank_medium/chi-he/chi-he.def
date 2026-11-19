@@ -1,8 +1,9 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{props "medium" "turret_rotator" "vision_vehicle_medium" "muzzle_small"}
-	
+
 	{extender "enumerator"}
 
 	("armor_medium" turret(50 45 12 12) body(50 30 8 12))
@@ -41,14 +42,14 @@
 			{bone "gun_rot"}
 		}
 	}
-	
-	("crew_inside")
-	
+
+	("crew_inside_left")
+
 	("crew_human" place(commander)	door1(emit1) door2(emit2) visor(back))
 	("crew_human" place(gunner)		door1(emit1) door2(emit2) visor(main))
 	("crew_human" place(driver)		door1(emit1) door2(emit2) visor(driver))
 	("crew_human" place(charger)	door1(emit1) door2(emit2) visor(main))
-	
+
 	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
 	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
 	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
@@ -74,7 +75,7 @@
 		}
 		{place "mgun1"
 			{type "mgun_hull"}
-			{weapon "type97_mg" filled} 
+			{weapon "type97_mg" filled}
 			{foresight "foresight4"}
 			{gunner "driver"}
 			{charger "driver"}
@@ -94,7 +95,7 @@
 	{mass 15100}
 	{Chassis
 		("tank_trace" fx("tracks_sm") step(0.3) len(0.35))
-	        {Locomotion ("locomotion")
+		{Locomotion ("locomotion")
 			{MaxSpeed	34}
 			{maxSpeedAtMaxTurn 6}
 			{StartTime	 25}
@@ -102,21 +103,21 @@
 			{TurnStart  1.5}
 			{BrakeTime  1.5}
 			{StopTime   2.5}
-			{TurnRadius 9} 
-			{TurnStop   0.7} 
+			{TurnRadius 9}
+			{TurnStop   0.7}
 			{Gears      0.1 0.2 0.3 1.0}
 			{RearGears  0.25}
 		}
 		{FuelBag
-					{volume 450 }	
-					{rate	20 }   
-					{remain 450 }
+			{volume 450 }
+			{rate	20 }
+			{remain 450 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  34}
-        	{Slow  34}
-    	}
+			{Normal  34}
+			{Slow  34}
+		}
 	}
 	{Extension "chi-he.mdl"}
 
@@ -137,7 +138,7 @@
 		{tags "body"}
 		{thickness 20	;верхний борт 20мм
 			{front	50}
-		;	{rear	20}
+			;	{rear	20}
 			{top	12}
 			{bottom	9}
 		}
@@ -147,7 +148,7 @@
 		{tags "body"}
 		{thickness 20
 			{front	0.1}	;внутренн€€ стенка
-		;	{rear	20}
+			;	{rear	20}
 			{top	10}
 			{bottom	9}
 		}
@@ -158,7 +159,7 @@
 		{able {holed}}
 		{thickness 25
 			{front	50}
-		;	{rear	25}
+			;	{rear	25}
 			{top	12}
 			{bottom	10}
 		}
@@ -182,17 +183,14 @@
 	{Volume "gun1"
 		{tags "gun"}
 		{component "gun"}
-		{tags "no_target"}	    
+		{tags "no_target"}
 		{thickness 50}
 		{able {Visible 0} {Obstacle 0} {Contact 0}}
 	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "turret"}
-	}
+	("vol_turret_hole_only" name(hole_man))
 	{volume "mantlet"
 		{thickness 50
-		;	{front	101}
+			;	{front	101}
 			{rear	10}	;орудие дает небольшую броню
 		}
 	}
@@ -204,23 +202,23 @@
 		{tags "gun"}
 		{component "gun"}
 		{tags "no_target"}
-	    {thickness 50}
-    	{able {Visible 0} {Obstacle 0} {Contact 0}}
-	}	
+		{thickness 50}
+		{able {Visible 0} {Obstacle 0} {Contact 0}}
+	}
 	{Volume "ram"
-	}	
+	}
 	{Volume "trackleft"
-	}	
+	}
 	{Volume "trackright"
-	}	
+	}
 	{bone "gun_rot"
 		{speed 0.001}
 		{limits 12 -10}
 	}
 	{bone "turret"
-		{speed 0.003}	
+		{speed 0.003}
 	}
 	{bone "mgun1"
-		{speed 0.025}	
+		{speed 0.025}
 	}
 }

@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "ita-alp-rfl"}
 	{portrait "ita_soldier1"}
@@ -8,49 +9,15 @@
 		{head helmet_ita_m33_alpini}
 	}
 	{perks
-		{"health" "150%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "100%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.8
-		}
-		{"vehicle" 1.0
-		}
-		{"cannon" 1.0
-		}
-		
-		{"pistol" lvl_2
-		}
-		{"smg" lvl_3
-		}
-		{"mgun" lvl_3
-		}
-		{"rifle" lvl_4
-		}
-		{"rocketlauncher" lvl_1
-		}
-		{"melee" lvl_2
-		}
+		("soldier_rifle_4" rocket(1) body(line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(standard))
 	{inventory
-		{item "carcano_m91" filled}
-		{item  "ammo 6x52" 160}
+		("kit_rifle" gun(carcano_m91) ammo(6x52) rounds(160))
 		{item "bandage" 4}
-            	{item "breda35"}
+		{item "breda35"}
 		{item "sandbag_kit"}
-                {in_hands 0}
-		
+		{in_hands 0}
+
 	}
 }

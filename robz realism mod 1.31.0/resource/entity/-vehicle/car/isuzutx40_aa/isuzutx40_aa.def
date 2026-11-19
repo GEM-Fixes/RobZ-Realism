@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/car.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.1))
@@ -26,31 +27,31 @@
 		{anm "gunner"
 			{forward	{begin	"board_LowTank_stand"} {end "pose_flak38_gunlayer"}}
 			{reverse 	{end	"emit_tank_1"}}
-	    	}
+		}
 		{anm "charger"
 			{forward	{begin	"board_LowTank_stand"} {end "pose_flak38_charger_right"}}
 			{reverse 	{end	"emit_tank_1"}}
- 	   	}
-;		{anm "gunner2"
-;			{forward	{begin	"board_LowTank_stand"} {end "pose_flak38_charger_left"}}
-;			{reverse 	{end	"emit_tank_1"}}
-;	    	}
+		}
+	;		{anm "gunner2"
+	;			{forward	{begin	"board_LowTank_stand"} {end "pose_flak38_charger_left"}}
+	;			{reverse 	{end	"emit_tank_1"}}
+	;	    	}
 	}
 
 	("crew_human" place(gunner)	bone(gunner)	door(emit3) animation(gunner))
 	("crew_human" place(charger)	bone(charger)	door(emit5) animation(gunner))
-;	("crew_human" place(charger)	bone(charger)	door(emit4) animation(gunner))
-;	("crew_human" place(charger)	bone(charger)	door(emit3) animation(gunner))
-;	("crew_human" place(gunner)	bone(gunner)	door(emit5) animation(gunner))
-;	("crew_human" place(gunner)	bone(gunner)	door(emit4) animation(gunner))
+	;	("crew_human" place(charger)	bone(charger)	door(emit4) animation(gunner))
+	;	("crew_human" place(charger)	bone(charger)	door(emit3) animation(gunner))
+	;	("crew_human" place(gunner)	bone(gunner)	door(emit5) animation(gunner))
+	;	("crew_human" place(gunner)	bone(gunner)	door(emit4) animation(gunner))
 
 	{placer
 		{place "driver" 	{visor "driver"}{group "crew"}}
 		{place "commander"	{visor "driver"}{group "crew"}}
 		{place "gunner"		{visor "main"}	{group "crew"} {openForCrush}}
-;		{place "charger" 	remove}
+		;		{place "charger" 	remove}
 		{place "charger"	{visor "main"}	{group "crew"} {openForCrush}}
-;		{place "gunner2" 	{visor "main"}	{group "crew"} {openForCrush}}
+	;		{place "gunner2" 	{visor "main"}	{group "crew"} {openForCrush}}
 	}
 
 	("wheel" args "wheelright1")
@@ -61,11 +62,7 @@
 	("wheel" args "wheelleft3")
 
 	; --- Godny hitbox armor (ported from GodnyMod: isuzutx40_aa.def) ---
-	{volume "sticky"
-		{tags "grenade_fg_target"}
-		{able clear {contact} {touch}}
-		{component "sticky_body"}
-	}
+	("vol_sticky_grenade_target" name(sticky))
 	{Volume "cabin1"
 		{tags "cabin"}
 		{component "cabin"}
@@ -97,17 +94,17 @@
 	{volume "turret1"
 		{tags "turret"}
 		{component "turret"}
-		{thickness 10}   
+		{thickness 10}
 	}
 	{volume "turret2"
 		{tags "turret"}
 		{component "turret"}
-		{thickness 10}   
+		{thickness 10}
 	}
 	{volume "turret3"
 		{tags "turret"}
 		{component "turret"}
-		{thickness 10}   
+		{thickness 10}
 	}
 	{Volume "gun_rot"
 		{component "gun_rot"}
@@ -119,12 +116,7 @@
 		{thickness 15}
 	}
 	; --- end Godny hitbox armor ---
-	{volume "body"
-		{tags "body"}
-		{component "body"}
-		{thickness 15
-		}   
-	}
+	("vol_body_plate_lower" name(body) mm(15))
 	{volume "turret"
 		{thickness 15
 		}
@@ -132,13 +124,13 @@
 	{Volume "cabine"
 		{tags "cabine"}
 		{component "body"}
-		{thickness 15}   
+		{thickness 15}
 	}
 	{volume "turret"
 		{tags "turret"}
 		{component "turret"}
 		{thickness 15
-		}   
+		}
 	}
 	{component "turret"
 		{RepairTime 10}
@@ -156,18 +148,18 @@
 			{bone "visor1"}
 		}
 	}
-  
+
 	{extender "inventory"
 		{box
 			{item "bullet20 jap zenite ap" 200}
 			{item "bullet20 jap zenite fg" 200}
 		}
-	}	
+	}
 	{Weaponry
 		{place "gun"
 			{weapon "20mm_type2" filling "bullet20 jap zenite ap" 30}
 			{Barrels 1}
-			("abm_zenite")
+			("abm_zenite_v2")
 		}
 	}
 
@@ -180,8 +172,8 @@
 			{RearGears	0.4}
 		}
 		{FuelBag
-			{volume 120 }	
-			{rate	10 }   
+			{volume 120 }
+			{rate	10 }
 			{remain 120 }
 			{fuel "fuel"}
 		}

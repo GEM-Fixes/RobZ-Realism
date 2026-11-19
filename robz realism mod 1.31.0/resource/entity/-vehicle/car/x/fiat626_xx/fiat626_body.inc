@@ -1,0 +1,17 @@
+{Extension "fiat626_xx.mdl"}
+{Volume "body"
+}
+{Volume "bodyback"
+}
+{Volume "cabin"
+}
+{Volume "engine"
+}
+{Volume "wheelleft1"
+}
+{Volume "wheelleft2"
+}
+{Volume "wheelright1"
+}
+{Volume "wheelright2"
+}

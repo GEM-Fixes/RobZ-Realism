@@ -1,0 +1,31 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-zelt-rfl"}
+	{portrait "ger2_elite1"}
+	{icon "rifleman"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{body ammo_ger3}
+		{head helmet_ger_m40_camo_foliage}
+	}
+	{perks
+		("body_veteran")
+		("drive_regular")
+		("skills_4_3_2_5_3_5")
+	}
+	("breed_vet" table(elite_start2))
+	{inventory
+		{item "g43" filling "ammo g43_mag" 10}
+		{item "ammo g43_mag" 20}
+		{item "ammo mauser_clip" 60}
+		{item "ammo mg_mauser drum" 50}
+		{item "bandage" 3}
+		("frag_m24_x2")
+		("at_grenade_m24x5_x0_1")
+		("smoke_x1")
+		{item "panzerfaust_30 weapon" 0 1 filled}
+		{item "small_shovel" 1}
+		{in_hands 0}
+	}
+}

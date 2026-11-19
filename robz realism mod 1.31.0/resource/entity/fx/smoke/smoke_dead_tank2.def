@@ -97,7 +97,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/particle/metal_drops2"
 					{timer
@@ -155,7 +155,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/particle/metal_drops1"
 					{timer
@@ -208,7 +208,7 @@
 			}
 		}
 		{#+ visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04"
 					{turn 1
 						{linear
@@ -285,7 +285,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04"
 					{turn 1
 						{linear
@@ -362,7 +362,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_loop"
 					{turn 1
 						{linear
@@ -415,7 +415,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04l"
 					{turn 1
 						{linear
@@ -469,7 +469,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/explosion/faerog"
 					{timer
 						{mode play }

@@ -1,7 +1,8 @@
-(define "speed"   
-	{speed (* 0.5 %s)} 
+; speed_v2: {speed}
+;   s - {speed}, [?]
+;   e.g. ("speed_v2" s(175))
+(define "speed_v2"
+	{speed (* 0.5 %s)}
 )
 
-(define "accuracy_boost"
-	{ZeroingAccuracy 0.9 0.8}
-)
+(include "/properties/robz/weapon.inc")

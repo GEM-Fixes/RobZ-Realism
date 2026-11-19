@@ -1,16 +1,16 @@
 {entity
 	(include "/properties/cannon.ext")
 	{props "vehicle" "cannon" "wheeled" "vision_cannon_high_vet" "muzzle_large_sides" "big_weapons"}
-		
+
 	{PatherID "cannon.large"}
 
 	{collider "cannon_heavy"}
-	
-	("armor_medium")	
-	{placer	
+
+	("armor_medium")
+	{placer
 		{place "gunner" {visor "main"} {useVision 0}}
 		{place "commander" {visor "main"} {useVision 0}}
-	}	
+	}
 	{Volume "body"
 		{thickness 10}
 		{tags "body"}
@@ -19,25 +19,25 @@
 	{Volume "turret"
 		{thickness 10}
 	}
-	{volume "shield"	
+	{volume "shield"
 		{thickness 10}
 	}
 	{Volume "gun"
 		{thickness 10}
 	}
 
-	{component "shield"	
+	{component "shield"
 		{RepairTime 20}
 	}
 	{extender "shield"
-			{on}
+		{on}
 	}
 
 	("wheel" args "wheelright1")
 	("wheel" args "wheelright2")
 	("wheel" args "wheelleft1")
 	("wheel" args "wheelleft2")
-	("rus_2-5x_sight")
+	("rus_2-5x_sight_no_visor1")
 
 	("crew_wheeled_gun")
 	{boarder
@@ -76,13 +76,13 @@
 			{weapon "85mm_52k_vet" filling "bullet85 rus aphebc" 1}
 			("abm_field_gun_veteran")
 		}
-	}  	
+	}
 
 	{extender "cannon"
 		{animation
 			{aim "cannon_m8_gunlayer" "Cannon_61K_gunlayer_left"}
 			{move "cannon_pak40_pusher_left" "cannon_pak40_pusher_right"}
-;			{reload  "" "cannon_flak38_charger_left"}
+			;			{reload  "" "cannon_flak38_charger_left"}
 			{switch "close"}
 		}
 		{move {obstacle "close"}}

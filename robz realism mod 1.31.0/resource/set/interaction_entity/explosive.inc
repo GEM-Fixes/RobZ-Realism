@@ -23,7 +23,7 @@
 			{tags add "mine_planted"}
 			{volumes "body1" disable all}
 			{volumes "body" enable select touch contact contact_ground blast}
-		 else
+			else
 			{tags remove "mine_planted"}
 			{volumes "body" disable all}
 			{volumes "body1" enable select touch contact contact_ground blast}
@@ -59,9 +59,9 @@
 	{on contact
 		{if mine_effector "human"
 			{call "explosion"}
-		else mine_effector "vehicle"
+			else mine_effector "vehicle"
 			{call "explosion"}
-		else mine_effector "animal"
+			else mine_effector "animal"
 			{call "explosion"}
 		}
 	}
@@ -70,7 +70,7 @@
 			{if not stuff "mine"
 				{stuff_detonate}
 			}
-		}	
+		}
 	}
 }
 
@@ -80,14 +80,14 @@
 			{if not stuff "mine"
 				{stuff_detonate}
 			}
-		}				
+		}
 	}
 	{on contact
 		{if mine_effector "mine_exploder"
 			{delay 0
 				{call "explosion"}
 			}
-		else mine_effector "vehicle"
+			else mine_effector "vehicle"
 			{if mined
 				{volumes disable contact}
 				{delay 0.1
@@ -102,7 +102,7 @@
 	{on "undermine"
 		{tags add "fuse"}
 		{add_view "flash_fuse_small" "fire" "fire"}
-;		{add_view "dynamite_p" "fire" "fire"}
+		;		{add_view "dynamite_p" "fire" "fire"}
 		{view start "fire"}
 		{ani_play "fire" 0.06}
 		{delay 1
@@ -117,7 +117,7 @@
 		{if stuff_activated
 			{tags add "fuse"}
 			{add_view "flash_fuse_small" "fire" "fire"}
-;			{add_view "dynamite_p" "fire" "fire"}
+			;			{add_view "dynamite_p" "fire" "fire"}
 			{view start "fire"}
 			{ani_play "fire" 0.06}
 			{volumes disable touch select}
@@ -126,7 +126,7 @@
 	{on blast
 		{if min_energy 0.25
 			{stuff_detonate}
-		}	
+		}
 	}
 	{on "explosion"
 		{stuff_detonate}
@@ -144,7 +144,7 @@
 	{on "artillery_smoke_84"
 		{damage_report "smoke_launcher" "Time on Target 90 Seconds"}; so this worked on other vehicles and works on spawn on the air drop, but wont work now???????
 		{chassis_work 0}
-		
+
 		{delay 81
 			{start_sound "world/cannonade/torn_bomb2"}
 			{damage_report "smoke_launcher" "Fire for Effect"}; test
@@ -174,7 +174,7 @@
 			{damage_report "smoke_launcher" "On Target"}; test
 			{spawn "84_smoke_shell_fx"}
 		}
-		
+
 		{delay 86
 			{start_sound "world/cannonade/torn_bomb2"}
 		}
@@ -198,11 +198,11 @@
 		}
 		{delay 89.5
 			{start_sound "world/cannonade/torn_bomb2"}
-		}		
+		}
 		{delay 94
 			{spawn "84_smoke_shell_fx"}
 		}
-		
+
 		{delay 91
 			{start_sound "world/cannonade/torn_bomb2"}
 		}
@@ -226,7 +226,7 @@
 		}
 		{delay 94.5
 			{start_sound "world/cannonade/torn_bomb2"}
-		}		
+		}
 		{delay 99
 			{spawn "84_smoke_shell_fx"}
 		}
@@ -238,8 +238,8 @@
 
 {"rp3_rocket_dropping"
 	{on spawn
-		;{link_sound "sound" "weapon/shot/shellheavy_incoming"}
-		;{play_sound "sound"}
+	;{link_sound "sound" "weapon/shot/shellheavy_incoming"}
+	;{play_sound "sound"}
 	}
 	{on "explosion"
 		;{blastwave c4 20 r0 0.5 r1 0.5 offset 0 0 1}
@@ -251,10 +251,10 @@
 		{call "explosion"}
 		{if terrain_fx "snow"
 			{spawn "ex_fg_big_w"}
-		else
+			else
 			{spawn "ex_fg_big"}
 		}
-      		{spawn "crater_big" terrain_texmod}
+		{spawn "crater_big" terrain_texmod}
 	}
 	{on contact
 		{spawn "ex_stone_hit_br_big"}
@@ -277,10 +277,10 @@
 		{call "explosion"}
 		{if terrain_fx "snow"
 			{spawn "ex_fg_maximum_w"}
-		else
+			else
 			{spawn "ex_fg_maximum"}
 		}
-      		{spawn "crater_big" terrain_texmod}
+		{spawn "crater_big" terrain_texmod}
 	}
 	{on contact
 		{spawn "ex_stone_hit_br_big"}
@@ -303,10 +303,10 @@
 		{call "explosion"}
 		{if terrain_fx "snow"
 			{spawn "ex_fg_big_w"}
-		else
+			else
 			{spawn "ex_fg_big"}
 		}
-      		{spawn "crater_big" terrain_texmod}
+		{spawn "crater_big" terrain_texmod}
 	}
 	{on contact
 		{spawn "ex_stone_hit_br_big"}
@@ -329,10 +329,10 @@
 		{call "explosion"}
 		{if terrain_fx "snow"
 			{spawn "ex_fg_medium_w"}
-		else
+			else
 			{spawn "ex_fg_medium"}
 		}
-      		{spawn "crater_norm_land" terrain_texmod}
+		{spawn "crater_norm_land" terrain_texmod}
 	}
 	{on contact
 		{spawn "ex_stone_hit_br"}
@@ -345,8 +345,8 @@
 		{play_sound "sound"}
 	}
 	{on "explosion"
-                {spawn "ex_arm_big"}
-                {spawn "smoke_shell_medium"}
+		{spawn "ex_arm_big"}
+		{spawn "smoke_shell_medium"}
 		{delete}
 	}
 	{on ground_hit
@@ -371,10 +371,10 @@
 		{call "explosion"}
 		{if terrain_fx "snow"
 			{spawn "ex_grenade_big_w"}
-		else
+			else
 			{spawn "ex_grenade_big"}
 		}
-      		{spawn "grenade_at_shellhole" terrain_texmod}
+		{spawn "grenade_at_shellhole" terrain_texmod}
 	}
 	{on contact
 		{spawn "ex_stone_hit_small"}
@@ -395,10 +395,10 @@
 		{call "explosion"}
 		{if terrain_fx "snow"
 			{spawn "ex_grenade_big_w"}
-		else
+			else
 			{spawn "ex_grenade_big"}
 		}
-      		{spawn "grenade_at_shellhole" terrain_texmod}
+		{spawn "grenade_at_shellhole" terrain_texmod}
 	}
 	{on contact
 		{spawn "ex_stone_hit_small"}
@@ -458,6 +458,9 @@
 
 {"artillery_explosion_240"
 
+	; 240_rand_delay: {delay {start_sound} {delay}}
+	;   delay - {delay}, s
+	;   e.g. ("240_rand_delay" delay(14 3))
 	(define "240_rand_delay"
 		{delay %delay
 			{start_sound "world/cannonade/torn_bomb2"}
@@ -474,15 +477,15 @@
 	}
 	{on spawn
 		{if rand 0.1 ("240_rand_delay" delay(14 3))
-		else rand 0.1 ("240_rand_delay" delay(15 4))
-		else rand 0.1 ("240_rand_delay" delay(16 2))
-		else rand 0.1 ("240_rand_delay" delay(17 3))
-		else rand 0.1 ("240_rand_delay" delay(18 4))
-		else rand 0.1 ("240_rand_delay" delay(19 2))
-		else rand 0.1 ("240_rand_delay" delay(20 3))
-		else rand 0.1 ("240_rand_delay" delay(21 4))
-		else rand 0.1 ("240_rand_delay" delay(22 2))
-		else ("240_rand_delay" delay(23 3))
+			else rand 0.1 ("240_rand_delay" delay(15 4))
+			else rand 0.1 ("240_rand_delay" delay(16 2))
+			else rand 0.1 ("240_rand_delay" delay(17 3))
+			else rand 0.1 ("240_rand_delay" delay(18 4))
+			else rand 0.1 ("240_rand_delay" delay(19 2))
+			else rand 0.1 ("240_rand_delay" delay(20 3))
+			else rand 0.1 ("240_rand_delay" delay(21 4))
+			else rand 0.1 ("240_rand_delay" delay(22 2))
+			else ("240_rand_delay" delay(23 3))
 		}
 	}
 }
@@ -578,36 +581,39 @@
 		{stuff_detonate}
 	}
 	{on spawn
+		; airstrike_rockets: {delay {start_sound} {delay}}
+		;   direction - text in {spawn}
+		;   e.g. ("airstrike_rockets" direction(east))
 		(define "airstrike_rockets"
-		{delay 15
-			{start_sound "world/ambient/airstrike_incoming.wav"}
 			{delay 15
-				{start_sound "world/ambient/airstrike_attack.wav"}
-				{delay 2
-					{start_sound "world/ambient/airstrike_incoming.wav"}
-					{spawn "airstrike_rockets_%direction"}
-					{delay 0.3
+				{start_sound "world/ambient/airstrike_incoming.wav"}
+				{delay 15
+					{start_sound "world/ambient/airstrike_attack.wav"}
+					{delay 2
+						{start_sound "world/ambient/airstrike_incoming.wav"}
 						{spawn "airstrike_rockets_%direction"}
 						{delay 0.3
 							{spawn "airstrike_rockets_%direction"}
 							{delay 0.3
 								{spawn "airstrike_rockets_%direction"}
-								{delay 15{delete}}
+								{delay 0.3
+									{spawn "airstrike_rockets_%direction"}
+									{delay 15{delete}}
+								}
 							}
 						}
 					}
 				}
 			}
-		}
 		)
-		
+
 		{if rand 0.25
 			("airstrike_rockets" direction(north))
-		else rand 0.25
+			else rand 0.25
 			("airstrike_rockets" direction(south))
-		else rand 0.25
+			else rand 0.25
 			("airstrike_rockets" direction(west))
-		else
+			else
 			("airstrike_rockets" direction(east))
 		}
 	}
@@ -637,75 +643,75 @@
 		{delay 10
 			{if rand 0.2
 				{spawn "mortar_explosion" offset 0 100 7}
-			else rand 0.2
+				else rand 0.2
 				{spawn "mortar_explosion" offset 0 -100 7}
-			else rand 0.2
+				else rand 0.2
 				{spawn "mortar_explosion" offset 100 0 7}
-			else
+				else
 				{spawn "mortar_explosion" offset -100 0 7}
 			}
 			{delay 2
 				{if rand 0.3
 					{spawn "mortar_explosion" offset 200 200 7}
-				else rand 0.3
+					else rand 0.3
 					{spawn "mortar_explosion" offset 150 300 7}
-				else
+					else
 					{spawn "mortar_explosion" offset 300 200 7}
 				}
 				{delay 2
 					{if rand 0.3
 						{spawn "mortar_explosion" offset -200 -200 7}
-					else rand 0.3
+						else rand 0.3
 						{spawn "mortar_explosion" offset -150 -300 7}
-					else
+						else
 						{spawn "mortar_explosion" offset -300 -200 7}
 					}
 					{delay 2
 						{if rand 0.3
 							{spawn "mortar_explosion" offset 200 -200 7}
-						else rand 0.3
+							else rand 0.3
 							{spawn "mortar_explosion" offset -300 150 7}
-						else
+							else
 							{spawn "mortar_explosion" offset 300 -200 7}
 						}
 						{delay 2
 							{if rand 0.3
 								{spawn "mortar_explosion" offset -200 200 7}
-							else rand 0.3
+								else rand 0.3
 								{spawn "mortar_explosion" offset 260 -180 7}
-							else
+								else
 								{spawn "mortar_explosion" offset -300 200 7}
 							}
 							{delay 2
 								{if rand 0.3
 									{spawn "mortar_explosion" offset 0 -200 7}
-								else rand 0.3
+									else rand 0.3
 									{spawn "mortar_explosion" offset 180 270 7}
-								else
+									else
 									{spawn "mortar_explosion" offset 0 -300 7}
 								}
 								{delay 2
 									{if rand 0.3
 										{spawn "mortar_explosion" offset 0 200 7}
-									else rand 0.3
+										else rand 0.3
 										{spawn "mortar_explosion" offset 270 180 7}
-									else
+										else
 										{spawn "mortar_explosion" offset 0 300 7}
 									}
 									{delay 2
 										{if rand 0.3
 											{spawn "mortar_explosion" offset 200 0 7}
-										else rand 0.3
+											else rand 0.3
 											{spawn "mortar_explosion" offset -150 300 7}
-										else
+											else
 											{spawn "mortar_explosion" offset 300 0 7}
 										}
 										{delay 2
 											{if rand 0.3
 												{spawn "mortar_explosion" offset -200 0 7}
-											else rand 0.3
+												else rand 0.3
 												{spawn "mortar_explosion" offset 150 -300 7}
-											else
+												else
 												{spawn "mortar_explosion" offset -300 0 7}
 											}
 										}
@@ -756,23 +762,23 @@
 		{if name "pierce"
 			{if stuff_filled "fuel" 20
 				{call "explosion"}
-			else stuff "bullet"
+				else stuff "bullet"
 				{if stuff_filled "water" 20
 					{burn fx "drops_water_small_short" fake}
 				}
-			else stuff "shell"
+				else stuff "shell"
 				{call "break"}
 			}
-	else name "blast"
+			else name "blast"
 			{call "break"}
 		}
 	}
 	{on contact
-;		{if effector "vehicle"
-;			{if effector_velocity 5
-;				{call "break"}
-;			}
-;		}
+	;		{if effector "vehicle"
+	;			{if effector_velocity 5
+	;				{call "break"}
+	;			}
+	;		}
 	}
 	{on "burn"
 		{call "break"}
@@ -780,7 +786,7 @@
 	{on "break"
 		{if stuff_filled "fuel" 20
 			{call "explosion"}
-		else
+			else
 			{spawn "car_die_particle"}
 			{volumes disable bullet blast contact}
 			{hide 0.3}
@@ -848,7 +854,7 @@
 	{on "explosion"
 		{if not "explosioned"
 			{set "explosioned" 1}
-;			{con "explosion"}
+			;			{con "explosion"}
 			{stuff_detonate}
 		}
 	}

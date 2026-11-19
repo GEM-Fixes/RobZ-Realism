@@ -1,0 +1,28 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "jap_army_giretu"}
+	{portrait "jap_elite1"}
+	{nationality jap}
+	{icon "elite"}
+	{icon_priority 3}
+	{armors
+		{head jap_army_helmet_para}
+	}
+	{perks
+		("breed_body" health(400%) regen_health(100%) stamina(200%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.9) vehicle(1.0) cannon(1.0))
+		("breed_skills" pistol(7) smg(7) mgun(7) rifle(7) rocket(7) melee(7))
+	}
+	("breed_vet" kind(elite))
+	{inventory
+		{item "type2rifle" filled}
+		{item "ammo arisaka7-7_clip" 100}
+		{item "ammo type99_mag" 30}
+		{item "bandage" 5}
+		{item "grenade type97" 2}
+		{item "grenade type3at_a" 1}
+		{item "smoke grenade" 1}
+		{item "plant" 1}
+		{in_hands 0}
+	}
+}

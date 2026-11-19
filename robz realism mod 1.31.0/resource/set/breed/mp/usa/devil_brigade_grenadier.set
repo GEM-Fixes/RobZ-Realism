@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "usa-devil-pvt"}
 	{portrait "usa_elite4"}
@@ -8,49 +9,13 @@
 		{head "helmet4_usa"}
 	}
 	{perks
-		{"health" "350%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "200%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.95
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 1
-		}
-		{"stealth"
-		}
-		
-		{"pistol" lvl_6
-		}
-		{"smg" lvl_6
-		}
-		{"mgun" lvl_6
-		}
-		{"rifle" lvl_6
-		}
-		{"rocketlauncher" lvl_6
-		}
-		{"melee" lvl_6
-		}
+		("soldier_rifle_6" rocket(1) body(line) sight(soldier))
+		{"stealth"}
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_elite")
-	}
+	("breed_vet" table(elite))
 	{inventory
-		{item "garand" filled}
-		{item "ammo garand_clip" 80}
-		{item "colt" filled}
-		{item "ammo colt_mag" 14}
+		("rifle_garand")
+		("pistol_colt")
 		{item "bandage" 5}
 		{item "garand_grenade" filling "ammo m1garand_grenade fg" 1}
 		{item "m1garand_grenade fg" 5 1}

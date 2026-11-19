@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "ger-regnco-smg"}
 	{portrait "ger_soldier3"}
@@ -8,50 +9,16 @@
 		{head helmet_ger_m40_fge}
 	}
 	{perks
-		{"health" "200%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "100%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.85
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 0.9
-		}
-		
-		{"pistol" lvl_4
-		}
-		{"smg" lvl_5
-		}
-		{"mgun" lvl_3
-		}
-		{"rifle" lvl_4
-		}
-		{"rocketlauncher" lvl_2
-		}
-		{"melee" lvl_5
-		}
+		("soldier_smg_5" rocket(4) body(line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(standard))
 	{inventory
-		{item "mp40" filled}
-		{item "ammo mp40_mag" 192}
+		("smg_mp40")
 		{item "bandage" 3}
-		{item "grenade m24" 2}
-		{item "grenade m24x5" 1}
-		{item "smoke grenade" 2}
-		{item "hohlladung grenade"}
+		("give" item(grenade m24) count(2))
+		("give" item(grenade m24x5) count(1))
+		("give" item(smoke grenade) count(2))
+		("give" item(hohlladung grenade) count(1))
 		{item "sandbag_kit" 2}
 		{in_hands 0}
 	}

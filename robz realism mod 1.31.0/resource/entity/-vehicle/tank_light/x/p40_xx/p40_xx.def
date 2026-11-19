@@ -20,7 +20,7 @@
 		{thickness 45 0.3
 			{front	60}
 			{rear 	40}
-		} 
+		}
 	}
 	{obstacleId "tank"}
 	{Extension "p40_xx.mdl"}

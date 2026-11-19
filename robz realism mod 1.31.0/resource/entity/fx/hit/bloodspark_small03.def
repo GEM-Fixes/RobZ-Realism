@@ -27,7 +27,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage initial 
+			{stage initial
 				{sprite "$/particle/cow_2"
 					{turn 1
 						{linear
@@ -43,7 +43,7 @@
 					{preturn 90 90}
 				}
 			}
-			{stage collided dying 
+			{stage collided dying
 				{sprite "$/particle/cow_2"
 					{visibility 1
 						{linear
@@ -91,7 +91,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/cow_2"
 					{scale 1
 						{linear

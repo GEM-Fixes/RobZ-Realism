@@ -1,16 +1,17 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.2))
 	{props "medium" "-turret" "opened" "vision_vehicle_medium" "muzzle_maximum" "gun_mode_change"}
 
-	{extender "enumerator"}	
+	{extender "enumerator"}
 
 	("armor_spa_light" armor(25 25 7 8))
 	("armor_engine"  t(25 25 17 18))
 	("shield" args 10)
 
 	{extender "shield"
-			{on}
+		{on}
 	}
 	{component "shield"}
 
@@ -36,7 +37,7 @@
 	("crew_human"		place(driver) door1(emit1) door2(emit2) visor(driver))
 	("crew_human_visible_anm"	place(commander) door1(emit1) door2(emit2) visor(main) anm_left(left) anm_right(right))
 	("crew_human_visible_anm"	place(gunner) door1(emit1) door2(emit2) visor(main) anm_left(left) anm_right(right))
-	{placer 
+	{placer
 		{place "commander" {openForCrush 0}}
 		{place "gunner" {openForCrush 0}}
 	}
@@ -62,7 +63,7 @@
 	{extender "inventory"
 		{box
 			{item "ammo bullet150 jap fg" 30}
-			;{item "ammo bullet150 sm" 12}
+		;{item "ammo bullet150 sm" 12}
 		}
 	}
 
@@ -84,7 +85,7 @@
 			{StationaryFiring}
 			("abm_howitzer")
 		}
-	
+
 	}
 
 	{mass 16300}
@@ -94,22 +95,22 @@
 			{MaxSpeed	30}
 			{maxSpeedAtMaxTurn 6}
 			{StartTime  26}
-			{TurnStart  1.7}			
+			{TurnStart  1.7}
 			{TurnTime   15}
-			{TurnRadius 10} 
-    		{TurnStop   0.9}
+			{TurnRadius 10}
+			{TurnStop   0.9}
 			{BrakeTime  1}
 			{StopTime   2}
 			{Gears      0.1 0.2 0.3 1}
-			{RearGears  0.2}		
+			{RearGears  0.2}
 		}
 		{speed
-        	{Normal  30}
-        	{Slow  30}
-    	}
+			{Normal  30}
+			{Slow  30}
+		}
 		{FuelBag
-			{volume 380 }	
-			{rate	15 }   
+			{volume 380 }
+			{rate	15 }
 			{remain 380 }
 			{fuel "fuel"}
 		}
@@ -123,7 +124,7 @@
 		{tags "body"}
 		{thickness 20	;нижн€€ боковина 20мм
 			{front	25}
-		;	{rear	20}
+			;	{rear	20}
 			{top	0.1}	;внутренн€€ стенка
 			{bottom	10}
 			{right	12}	;гласис
@@ -134,7 +135,7 @@
 		{tags "body"}
 		{able {holed}}
 		{thickness 25	;верхн€€ боковина 25мм
-		;	{front	25}
+			;	{front	25}
 			{rear	20}
 			{top	12}
 			{bottom	10}
@@ -146,7 +147,7 @@
 		{tags "body"}
 		{able {holed}}
 		{thickness 25
-		;	{front	25}
+			;	{front	25}
 			{rear	0.1}	;внутренн€€ стенка
 			{top	12}
 			{bottom	0.1}	;внутренн€€ стенка
@@ -173,10 +174,7 @@
 			{bottom	10}
 		}
 	}
-	{Volume "hole_bod"
-		{able clear {hole}}
-		{component "body"}
-	}
+	("vol_body_hole_only" name(hole_bod))
 	{Volume "gun1"	;лафет
 		{tags "gun"}
 		{component "gun"}
@@ -193,10 +191,7 @@
 		{thickness 12}
 	}
 	; --- end Godny hitbox armor ---
-	{Volume "crew"
-		{able clear {hole}}
-		{component "body"}
-	}
+	("vol_body_hole_only" name(crew))
 	{Volume "engine01"
 		{tags "engine"}
 		{component "engine"}
@@ -205,10 +200,7 @@
 		{tags "engine"}
 		{component "engine"}
 	}
-	{Volume "gun2"
-		{tags "gun"}
-		{component "gun"}
-	}
+	("vol_gun_part" name(gun2))
 	{Volume "hole01"
 		{able clear {hole}}
 		{component "shield"}
@@ -225,12 +217,12 @@
 	}
 
 	{bone "turret"
-	    {limits -5 50}
-	    {speed 0.001}
+		{limits -5 50}
+		{speed 0.001}
 	}
 	{bone "gun_rot"
-	    {limits -15 15}
-	    {speed 0.001}
+		{limits -15 15}
+		{speed 0.001}
 	}
 	(mod "mp"
 		{brain

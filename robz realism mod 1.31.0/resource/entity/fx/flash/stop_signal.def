@@ -1,9 +1,9 @@
-{fx 
-	{SpriteView "FlashSSP" 
-		{Sprite "$/Flash/FlashSS" 
+{fx
+	{SpriteView "FlashSSP"
+		{Sprite "$/Flash/FlashSS"
 			{Scale 0.6 }
-			{Light 
-				{Linear 
+			{Light
+				{Linear
 					{min 0 }
 					{max 1 }
 				}

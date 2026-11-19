@@ -1,5 +1,5 @@
 {"tankgun" from weapon
-	{item "tankgun"}	
+	{item "tankgun"}
 	{level "lvl_1"
 		{stand
 			{accuracy 0.35}

@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
@@ -5,22 +6,10 @@
 
 	{extender "enumerator"}
 
- 	{volume "body1"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body2"
-		{tags "body"}
-		{component "body"}
-	}
- 	{volume "body3"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body4"
-		{tags "body"}
-		{component "body"}
-	}
+	("vol_body_part_lower" name(body1))
+	("vol_body_part_lower" name(body2))
+	("vol_body_part_lower" name(body3))
+	("vol_body_part_lower" name(body4))
 
 	("crew_4_human")
 
@@ -42,17 +31,17 @@
 
 	{extender "inventory"
 		{box
-                      	{item "ammo bullet75 gers apc" 14}
+			{item "ammo bullet75 gers apc" 14}
 			{item "ammo bullet75 gers fg" 24}
 			{item "ammo bullet75 gers heat" 6}
 		}
 	}
-	
+
 	{Weaponry
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "75mm_stuk37" filling "ammo bullet75 gers fg" 1}	
+			{weapon "75mm_stuk37" filling "ammo bullet75 gers fg" 1}
 			("abm_medium")
 		}
 	}
@@ -65,24 +54,24 @@
 			{maxSpeedAtMaxTurn 6}
 			{StartTime 	 35}
 			{TurnTime  	 15}
-    		{TurnStart 1.4}
-     		{BrakeTime   1} 
-    		{StopTime    2}
-     		{TurnRadius  8} 
-    		{TurnStop   0.7}
-     		{Gears  0.1 0.2 0.3 1}
-     		{RearGears 0.28}
+			{TurnStart 1.4}
+			{BrakeTime   1}
+			{StopTime    2}
+			{TurnRadius  8}
+			{TurnStop   0.7}
+			{Gears  0.1 0.2 0.3 1}
+			{RearGears 0.28}
 		}
 		{FuelBag
-			{volume 320 }	
-			{rate	24 }   
+			{volume 320 }
+			{rate	24 }
 			{remain 320 }
 			{fuel "fuel"}
 		}
 		{speed
-        			{Normal  30}
-        			{Slow  30}
-    		}
+			{Normal  30}
+			{Slow  30}
+		}
 	}
 	{Extension "stug3.mdl"}
 

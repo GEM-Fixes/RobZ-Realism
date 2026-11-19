@@ -1,0 +1,114 @@
+;   Squads
+;------------------------------home guards | vet 1--------------------------------------------------------------
+
+("squad_with3types" side(jap) name(home_guards) c(30) g(squad_1) c1(jap_charger_rifle:8) c2(jap_charger_smg_type100:4) c3(jap_charger_smg_type100_44:3) b(squad1) t(all inf_only 44 45) level(1) cost(105) f(0))
+
+("squad_with1types" side(jap) name(home_guards_throwgun) c(30) g(squad_1) c1(jap_charger_throwgun:15) b(squad1) t(all inf_only 44 45) level(1) cost(105) f(0))
+
+;------------------------------assault infantry || vet 2/3/4--------------------------------------------------------
+
+("squad_with5types" side(jap) name(smgs) c(30) g(squad_2) c1(jap_squadleader2:1) c2(jap_rifle2:3) c3(jap_rifle2b:1) c4(jap_smg2:4) c5(jap_smg2b:6) b(squad1) t(all inf_only 44 45) level(1) cost(157) f(1.0))
+
+;------------------------------regular squad || vet 2/3/4-----------------------------------------------------------
+
+("i_seq_with8types" side(jap) name(riflemans_t96) i(30) c(0) g(squad_3) c1(jap_squadleader:1) c2(jap_rifle:3) c3(jap_rifleb:4) c4(jap_smgb:2) c5(jap_mgun2:1) c6(mgun2_asst:1) c7(mgun2_ammo:3) c8(jap_rifle_grenadier:1) b(squad1) t(all inf_only 44 45) level(1) cost(163) f(1.0))
+("i_seq_with8types" side(jap) name(riflemans_t96_2) i(30) c(0) g(squad_3) c1(jap_squadleader:1) c2(jap_rifle:3) c3(jap_rifleb:4) c4(jap_smgb:2) c5(jap_mgun2:1) c6(mgun2_asst:1) c7(mgun2_ammo:3) c8(jap_rifle_grenadier:1) b(squad1) t(all inf_only 44 45) level(1) cost(145) f(1.0))
+("i_seq_with8types" side(jap) name(riflemans_t96_3) i(30) c(0) g(squad_3) c1(jap_squadleader:1) c2(jap_rifle:3) c3(jap_rifleb:4) c4(jap_smgb:2) c5(jap_mgun2:1) c6(mgun2_asst:1) c7(mgun2_ammo:3) c8(jap_rifle_grenadier:1) b(squad1) t(all inf_only 44 45) level(1) cost(145) f(1.0))
+("i_seq_with3types" side(jap) name(riflemans_t96_4) i(30) c(0) g(squad_3) c1(jap_squadleader:1) c2(jap_light_mortar:3) c3(light_mortar_asst:6) b(squad1) t(all inf_only 44 45) level(1) cost(100) f(1.0))
+
+
+
+("i_seq_with8types" side(jap) name(riflemans) i(33) c(0) g(squad_3) c1(jap_squadleader:1) c2(jap_rifle:3) c3(jap_rifleb:4) c4(jap_smgb:2) c5(jap_mgun2:1) c6(mgun2_asst:1) c7(mgun2_ammo:3) c8(jap_rifle_grenadier:1) b(squad1) t(all inf_only 44 45) level(1) cost(163) f(1.0))
+("i_seq_with8types" side(jap) name(riflemans_2) i(33) c(0) g(squad_3) c1(jap_squadleader:1) c2(jap_rifle:3) c3(jap_rifleb:4) c4(jap_smgb:2) c5(jap_mgun2:1) c6(mgun2_asst:1) c7(mgun2_ammo:3) c8(jap_rifle_grenadier:1) b(squad1) t(all inf_only 44 45) level(1) cost(145) f(1.0))
+("i_seq_with8types" side(jap) name(riflemans_3) i(33) c(0) g(squad_3) c1(jap_squadleader:1) c2(jap_rifle:3) c3(jap_rifleb:4) c4(jap_smgb:2) c5(jap_mgun2:1) c6(mgun2_asst:1) c7(mgun2_ammo:3) c8(jap_rifle_grenadier:1) b(squad1) t(all inf_only 44 45) level(1) cost(145) f(1.0))
+("i_seq_with3types" side(jap) name(riflemans_4) i(33) c(0) g(squad_3) c1(jap_squadleader:1) c2(jap_light_mortar:3) c3(jap_light_mortar_asst:6) b(squad1) t(all inf_only 44 45) level(1) cost(100) f(1.0))
+
+;------------------------------imperial guards ||| --------------------------------------------------------------
+
+
+
+("squad_with6types" side(jap) name(elites_ig) c(120) g(squad_55) c1(jap_kanoeshidan_rifle_apminer:7) c2(jap_kanoeshidan_type38rifle:2) c3(jap_kanoeshidan_mg:2) c4(jap_kanoeshidan_type100_44:2) c5(jap_kanoeshidan_at:1) c6(jap_kanoeshidan_type99rifle:1) b(squad1) t(all inf_only 44 45) level(1) cost(252) f(1.0))
+
+;------------------------------elite squads ||| vet 3/4-----------------------------------------------------------
+
+("squad_with4types" side(jap) name(elites_takasago) c(360) g(squad_5) c1(jap_elite_takasago_rifle:2) c2(jap_elite_takasago_rifle2:6) c3(jap_elite_takasago_smg2:5) c4(jap_elite_takasago_lmg:2) b(squad1) t(all inf_only 44 45) level(1) cost(238) f(1.0))
+
+("squad_with6types" side(jap) name(elites) c(360) g(squad_5) c1(jap_teishin_type2rifle:6) c2(jap_teishin_type2rifle_apminer:2) c3(jap_teishin_mg:2) c4(jap_teishin_type100_44_apminer:3) c5(teishin_type97_atr:1) c6(teishin_type97_atr_asst:1) b(squad1) t(all inf_only 44 45) level(1) cost(254) f(1.0))
+
+("squad_with6types_vehicle" side(jap) name(elites_drop) c(900) g(squad_5) v1(airborne_spawner) c1(jap_teishin_type2rifle:4) c2(jap_teishin_type2rifle_apminer:3) c3(jap_teishin_mg:2) c4(jap_teishin_type100_44_apminer:4) c5(teishin_type97_atr:1) c6(teishin_type97_atr_asst:1) b(squad1) t(all inf_only 44 45 only-one) level(1) cost(304) f(1.0))
+
+
+
+;------------------------------stormtroopers |||| vet 6---------------------------------------------------------
+
+("squad_with5types" side(jap) name(stormtroopers) c(360) g(squad_5) c1(jap_snlf_type100_44:1) c2(jap_snlf_mg_type99:2) c3(jap_snlf_at:2) c4(jap_snlf_rifle_type99:5) c5(jap_snlf_mg_asst:1) b(squad1) t(all inf_only 44 45) level(1) cost(291) f(1.0))
+
+;------------------------------AP and AT miners, sappers || vet 2-----------------------------------------------
+
+("squad_with1types" side(jap) name(ap_miners) c(0) g(squad_7) c1(jap_ap_miner:6) b(squad1) t(all inf_only engineers mines 39 40 41 42 43 44 45) level(20) cost(100) f(0))
+
+("squad_with1types" side(jap) name(at_miners) c(0) g(squad_8) c1(jap_at_miner:6) b(squad1) t(all inf_only engineers mines 39 40 41 42 43 44 45) level(25) cost(150) f(0))
+
+("squad_with1types" side(jap) name(sappers) c(0) g(squad_9) c1(jap_saper:2) b(squad1) t(all inf_only engineers 39 40 41 42 43 44 45) level(1) cost(70) f(0))
+
+;------------------------------tank and support crews || vet 2--------------------------------------------------
+
+("squad_with1types" side(jap) name(vehic_supporter) c(0) g(soldier_3) c1(vehicle_supporter_single:2) b(squad1) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(25) f(-1.0))
+
+("squad_with2types" side(jap) name(tankmans) c(0) g(soldier_3) c1(jap_tankman2_single:1) c2(jap_tankman_single:4) b(squad1) t(all inf_only tankmans 39 40 41 42 43 44 45) level(1) cost(70) f(-1.0))
+
+;   Single Soldiers
+
+;------------------------------rifleman and smg || vet 2--------------------------------------------------------
+
+("squad_with1types" side(jap) name(riflemans2b) c(0) g(soldier_1) c1(jap_rifleb:1) b(squad2) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(9) f(1.0))
+("squad_with1types" side(jap) name(riflemans2) c(0) g(soldier_1) c1(jap_rifle:1) b(squad2) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(11) f(1.0))
+
+("squad_with1types" side(jap) name(smgs2) c(0) g(soldier_2) c1(jap_smg:1) b(squad2) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(11) f(1.0))
+("squad_with1types" side(jap) name(smgs2b) c(0) g(soldier_2) c1(jap_smgb:1) b(squad2) t(all inf_only 44 45) level(1) cost(10) f(1.0))
+("squad_with1types" side(jap) name(smg3) c(30) g(soldier_99) c1(jap_smg3:1) b(squad2) t(all inf_only 42 43 44 45) level(1) cost(12) f(1.0))
+
+;------------------------------Kamikaze & type 89 mortar-------------------------------------------------------------------------
+
+("i_seq_with1types" side(jap) name(type89mortarinf) c1(jap_light_mortar:1) i(1) c(180) g(soldier_89) b(squad2) t(all inf_only 42 43 44 45) level(1) cost(40) f(1.0))
+("i_seq_with1types" side(jap) name(type89mortarinfx2) c1(jap_light_mortar:2) i(1) c(180) g(soldier_89) b(squad2) t(all inf_only 42 43 44 45) level(1) cost(40) f(1.0))
+
+("squad_with1types" side(jap) name(kamikaze) c1(jap_kamikaze:2) c(0) g(soldier_5) b(squad2) t(all inf_only 42 43 44 45) level(1) cost(50) f(1.0))
+
+;------------------------------AT rifles and bazookas || vet 2--------------------------------------------------
+
+("squad_with2types" side(jap) name(at_rifles) c1(jap_at_rifle:1) c2(jap_at_rifleassist:1) c(0) g(soldier_4) b(squad2) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(84) f(1.0))
+
+("squad_with2types" side(jap) name(bazookers) c1(jap_type4_atassist:1) c2(jap_type4_atassist:1) c(80) g(soldier_5) b(squad2) t(all inf_only 44 45) level(1) cost(82) f(1.0))
+
+("squad_with2types" side(jap) name(stormtrooper5) c1(jap_snlf_at2:1) c2(jap_snlf_atassist:1) c(80) g(soldier_5) b(squad2) t(all inf_only 44 45) level(1) cost(113) f(1.0))
+
+("squad_with2types" side(jap) name(teishin_at_rifles) c1(teishin_type97_atr:1) c2(teishin_type97_atr_asst:3) c(80) g(soldier_4) b(squad2) t(all inf_only 41 42 43 44 45) level(1) cost(134) f(1.0))
+;------------------------------MG infantry || vet 2-------------------------------------------------------------
+
+("squad_with2types" side(jap) name(mg3) c(30) g(soldier_6) c1(jap_mgun3:1) c2(jap_mg3_asst:1) b(squad2) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(39) f(1.0))
+("squad_with2types" side(jap) name(mgs2) c(90) g(soldier_6) c1(jap_mgun:1) c2(jap_mg_asst:1) b(squad2) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(39) f(1.0))
+
+;------------------------------elite3
+
+("squad_with2types" side(jap) name(elite_ig2) c(230) g(squad_4) c1(jap_kanoeshidan_mg:1) c2(jap_kanoeshidan_rifle_apminer:3) b(squad2) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(81) f(0.9))
+
+("squad_with2types" side(jap) name(elite3) c(260) g(squad_4) c1(jap_elite_takasago_lmg:1) c2(jap_elite_takasago_rifle:2) b(squad2) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(84) f(0.9))
+
+;------------------------------------------------
+
+("squad_with2types" side(jap) name(stormtrooper6) c(300) g(squad_4) c1(jap_snlf_mg:1) c2(jap_snlf_mg_asst:3) b(squad2) t(all inf_only 40 41 42 43 44 45) level(1) cost(112) f(0.9))
+
+;------------------------------flamer, sniper and officer || vet2/3/4----------------------------------------------
+
+("squad_with2types" side(jap) name(flamers) c(150) g(soldier_8) c1(jap_flamer:1) c2(jap_flamerassist:1) b(squad2) t(all flamer inf_only 39 40 41 42 43 44 45) level(1) cost(74) f(0))
+
+("squad_with1types" side(jap) name(snipers2) c(90) g(soldier_9) c1(jap_sniper_type97:1) b(squad2) t(all sniper inf_only 39 40 41 42 43 44 45) level(1) cost(83) f(0))
+("squad_with1types" side(jap) name(snipers) c(90) g(soldier_9) c1(jap_sniper_type99:1) b(squad2) t(all sniper inf_only 39 40 41 42 43 44 45) level(1) cost(83) f(0))
+
+("i_seq_with1x4types" side(jap) name(officers) c(1) g(soldier_10) c1(jap_officer:1) b(squad2) i(10002) t(all officer inf_only 39 40 41 42 43 44 45) level(1) cost(0) f(-599.0)) ;10 minutes
+("i_seq_with1x4types" side(jap) name(officers_40) c(1800) g(soldier_10) c1(jap_officer:1) b(squad2) i(10002) t(all officer inf_only 39 40 41 42 43 44 45) level(1) cost(0) f(-2399.0)) ;40 minutes
+
+
+("squad_with1types" side(jap) name(snipers_d) c(0) g(soldier_12) c1(jap_sniper_type99:1) b(squad2) t(sniper_duell) level(1) cost(83) f(0))
+

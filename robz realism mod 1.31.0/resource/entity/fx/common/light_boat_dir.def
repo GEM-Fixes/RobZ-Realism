@@ -57,7 +57,7 @@
 		}
 		{notifyowner}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/oskolkim"
 					{timer
 						{mode play }

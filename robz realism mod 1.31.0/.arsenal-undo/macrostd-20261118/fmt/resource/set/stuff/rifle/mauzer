@@ -1,0 +1,13 @@
+{from "pattern rifle"
+	{filling "ammo mauser_rifle mauser" 5}
+	{entity "mauzer"}
+	{fireSound "rifle/mauzer_shot"}
+	{reloadSound "rifle_bolt_five"}
+	
+	("speed" s(755))
+	;("accuracy_boost")
+	{recoveryTime 1.4}
+	{rechargeTime 7.5}
+	{tag "bolt"}	; bolt-action cycling animation
+	{tag "bolt_r140"}	; bolt animation speed class (recoveryTime 1.40s)
+}

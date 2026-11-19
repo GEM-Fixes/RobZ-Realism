@@ -1,4 +1,4 @@
-{from "pattern gun"     
+{from "pattern gun"
 	{filling "bullet75 japs"}
 	{fireSound "gun/75mm_type41"}
 	{reloadSound "gun_r03"}
@@ -7,9 +7,9 @@
 	("caliber_medium")
 	("speed" s(435))
 	{projectileDamage 20}
-	("damage_170" a(25) b(24) c(19) d(17) e(15) range(180))
+	("damage_170" at20(25) at100(24) at170(19) at215(17) at250(15) max(180))
 	{parameters "heat"
-		("damage_heat" a(100) range(180))
+		("damage_heat" damage(100) max(180))
 	}
 	("accuracy_curve_direct_howitz_180m" r1(0.475) heat(0.625) ap(0.55)) ;0,65 0,75 0,7
 }

@@ -1,0 +1,206 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "light" "-turret" "opened" "vision_vehicle_high" "muzzle_maximum_nodust" "gun_mode_change_art"}
+
+	{extender "enumerator"
+		{digit_folder "ger"}
+	}
+	{extension "crew.ext"}
+
+	; --- Godny hitbox armor (ported from GodnyMod: sdkfz138_1.def) ---
+	{volume "sticky"
+		{tags "grenade_fg_target"}
+		{able clear {contact} {touch}}
+		{component "sticky_body"}
+	}
+	{Volume "body1"	;нижн€€ передн€€ часть корпуса
+		{component "body"}
+		{tags "body"}
+		{able {holed}}
+		{thickness 15
+			;	{front	15}
+			{rear	10}	;стенка моторного
+			{top	8}
+			{bottom	10}
+			{right	11}	;гласис
+		}
+	}
+	{Volume "body2"	;нижн€€ средн€€ часть корпуса
+		{component "body"}
+		{tags "body"}
+		{thickness 15
+			{front	0.1}	;внутренн€€ стенка
+			{rear	0.1}	;внутренн€€ стенка
+			{top	0.1}	;внутренн€€ стенка
+			{bottom	10}
+		}
+	}
+	{volume "body3"	;верхн€€ средн€€ часть корпуса
+		{component "body"}
+		{tags "body"}
+		{thickness 15
+			;	{front	15}
+			{rear	0.1}	;внутренн€€ стенка
+			{top	8}
+			{bottom	10}
+			{right	0.1}	;внутренн€€ стенка
+		}
+	}
+	{volume "body4"	;задн€€ часть корпуса
+		{component "body"}
+		{tags "body"}
+		;	{able {holed}}
+		{thickness 15
+			{front	10}	;стенка моторного
+			{rear	10}
+			{top	0.1}	;внутренн€€ стенка
+			{bottom	10}
+		}
+	}
+	{volume "body5"	;нижн€€ часть рубки
+		{component "body"}
+		{tags "body"}
+		{able {holed}}
+		{thickness 10
+			;	{front	10}	;стенка моторного
+			;	{rear	10}
+			{top	0.1}	;внутренн€€ стенка
+			{bottom	10}
+		}
+	}
+	{volume "body6"	;верхн€€ часть рубки
+		{component "body"}
+		{tags "body"}
+		{able {holed}}
+		{thickness 10
+			;	{front	10}
+			;	{rear	10}
+			;	{top	10}
+			{bottom	0.1}	;внутренн€€ стенка
+		}
+	}
+	{Volume "body7"	;мехвод
+		{component "body"}
+		{tags "body"}
+		{thickness 10
+			{front	15}
+			{rear	0.1}	;внутренн€€ стенка
+			{top	15}
+			{bottom	0.1}	;внутренн€€ стенка
+		}
+	}
+	{Volume "hole_bod1"	;внутр€нка рубки
+		{able clear {hole}}
+		{component "body"}
+	}
+	{Volume "hole_bod2"	;уровень инвентар€
+		{able clear {hole}}
+		{component "body"}
+	}
+	{Volume "hole_bod3"	;мехвод
+		{able clear {hole}}
+		{component "body"}
+	}
+	{volume "engine"
+		{thickness 10}
+	}
+	{volume "inventory"	;права€ боеукладка
+		{component "inventory"}
+		{thickness 5
+			{top	0.1}
+			{left	0.1}
+		}
+	}
+	{volume "inventory1"	;права€ боеукладка
+		{component "inventory"}
+		{thickness 5
+			{top	0.1}
+			{left	0.1}
+		}
+	}
+	{volume "inventory2"	;лева€ боеукладка
+		{component "inventory"}
+		{thickness 5
+			{top	0.1}
+			{right	0.1}
+		}
+	}
+	{volume "detail1"
+		{component "detail1"}
+		{thickness 7.5}
+	}
+	{volume "detail2"
+		{component "detail2"}
+		{thickness 7.5}
+	}
+	; --- end Godny hitbox armor ---
+	{component "sticky_body"}
+	("armor_medium" body(50 15 15 15) turret(15 15 15 15))
+	("armor_engine"  t(15 15 15 15))
+
+	{extender "inventory"
+		{box
+			{item "bullet150 gers fg" 9}
+			{item "bullet150 gers sm" 6}
+		}
+	}
+	{Weaponry
+		{place "gun"
+			{weapon "150mm_sig33a" filling "bullet150 gers fg" 3}
+			{StationaryFiring}
+			("abm_howitzer")
+		}
+		{place "gun1_2"
+			{RestoreIKAfterAim}
+			{type "gun_change_direct"}
+			{weapon "150mm_sig33a_2" filling "bullet150 gers fg" 1}
+			{basic}
+			("abm_medium")
+		}
+	}
+
+	{mass 11500}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.56) len(0.167))
+		{Locomotion ("locomotion")
+			{maxspeed   24}
+			{maxSpeedAtMaxTurn 5}
+			{StartTime  30}
+			{TurnStart  1.7}
+			{TurnTime   15}
+			{TurnRadius 10}
+			{TurnStop   0.9}
+			{BrakeTime  1}
+			{StopTime   2}
+			{Gears      0.1 0.2 0.3 1}
+			{RearGears  0.3}
+		}
+		{FuelBag
+			{volume 220 }
+			{rate	14 }
+			{remain 220 }
+			{fuel	"fuel"}
+		}
+		{speed
+			{Normal	24}
+			{Slow	24}
+		}
+		{DisableMoveWhileFiring}
+	}
+	{Extension "sdkfz138_1.mdl"}
+
+	{bone "gun_rot1"
+		{speed 0.001}
+	}
+	{bone "gun_rot"
+		{speed 0.001}
+	}
+	(mod "mp"
+		{brain
+			{properties
+				{fire_mode hold}
+			}
+		}
+	)
+}

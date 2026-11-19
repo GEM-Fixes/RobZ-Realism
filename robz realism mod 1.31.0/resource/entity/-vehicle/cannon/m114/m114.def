@@ -2,11 +2,11 @@
 	(include "/properties/cannon.ext")
 	{props "vehicle" "cannon" "wheeled" "round_sandbag2" "vision_cannon_maximum" "muzzle_maximum_nodust" "gun_mode_change_art"}
 	; --- Godny hitbox armor (ported from GodnyMod: m114.def) ---
-	
+
 	; --- end Godny hitbox armor ---
 	("armor_heavy")
 	{collider "cannon_heavy"}
-	
+
 	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
 
@@ -45,7 +45,7 @@
 		{place "gun"
 			{weapon "155mm_m114" filling "bullet155 us fg" 3}
 			{Rotate}
-			{StationaryFiring}  
+			{StationaryFiring}
 			("abm_howitzer")
 		}
 		{place "gun1_2"
@@ -97,8 +97,8 @@
 		}
 	}
 	{bone "basis"
-    		{speed 0.003}
-    	}
+		{speed 0.003}
+	}
 	(mod "mp"
 		{brain
 			{properties

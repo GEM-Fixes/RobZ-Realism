@@ -32,12 +32,12 @@
 	{group
 		{fx "blood"}
 		{fx "blood_small"}
-     	 	{fx "ground_blood_big"}
-      		{fx "ground_blood_small"}
-      		{fx "ground_blood01"}
-        	{fx "ground_blood02"}
-        	{fx "ground_blood03"}
-        	{fx "ground_blood_spreaded"}
+		{fx "ground_blood_big"}
+		{fx "ground_blood_small"}
+		{fx "ground_blood01"}
+		{fx "ground_blood02"}
+		{fx "ground_blood03"}
+		{fx "ground_blood_spreaded"}
 		{countLimit 40}
 		{timeLimit 10}
 	}

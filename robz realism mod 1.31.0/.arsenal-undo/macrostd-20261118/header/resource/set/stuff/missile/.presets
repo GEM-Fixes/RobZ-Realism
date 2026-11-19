@@ -1,0 +1,5 @@
+(define "speed_v2"
+	{speed (* 0.5 %s)}
+)
+
+(include "/properties/robz/weapon.inc")

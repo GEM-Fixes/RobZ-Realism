@@ -1,8 +1,12 @@
 {"tank"
-;   {friction 1}
-;   {restitution 0.3}
+	;   {friction 1}
+	;   {restitution 0.3}
 	;expanded safeties
-	
+
+	; delay_tag: {if {tags} {call}}
+	;   a_uwu - text in {if}, text in {tags}
+	;   a - text in {tags}
+	;   e.g. ("delay_tag" a(cumulative_damage_blast_to_armor))
 	(define "delay_tag"
 		{if not tagged "%a_uwu" ;prevent infloop crash.
 			{tags add "%a_uwu"}
@@ -16,27 +20,27 @@
 	{on "delay_tag"
 		{if tagged "damage_counter_blast_add1"
 			(include "tank/safeties/damage_counter_blast_add1.inc")
-		else tagged "damage_counter_blast_add2"
+			else tagged "damage_counter_blast_add2"
 			(include "tank/safeties/damage_counter_blast_add2.inc")
-		else tagged "damage_counter_blast_add3"
+			else tagged "damage_counter_blast_add3"
 			(include "tank/safeties/damage_counter_blast_add3.inc")
-		else tagged "damage_counter_blast_add4"
+			else tagged "damage_counter_blast_add4"
 			(include "tank/safeties/damage_counter_blast_add4.inc")
-		else tagged "damage_counter_blast_add5"
+			else tagged "damage_counter_blast_add5"
 			(include "tank/safeties/damage_counter_blast_add5.inc")
-		else tagged "damage_counter_blast_add6"
+			else tagged "damage_counter_blast_add6"
 			(include "tank/safeties/damage_counter_blast_add6.inc")
-		else tagged "damage_counter_blast_add7"
+			else tagged "damage_counter_blast_add7"
 			(include "tank/safeties/damage_counter_blast_add7.inc")
-		else tagged "damage_counter_blast_add8"
+			else tagged "damage_counter_blast_add8"
 			(include "tank/safeties/damage_counter_blast_add8.inc")
-		else tagged "damage_counter_blast_add9"
+			else tagged "damage_counter_blast_add9"
 			(include "tank/safeties/damage_counter_blast_add9.inc")
-		else tagged "damage_counter_blast_add10"
+			else tagged "damage_counter_blast_add10"
 			(include "tank/safeties/damage_counter_blast_add10.inc")
-		else tagged "combat_capable_check_blast"
-			(include "tank/safeties/combat_capable_check_blast.inc")			
-		else tagged "cumulative_damage_blast_to_armor"
+			else tagged "combat_capable_check_blast"
+			(include "tank/safeties/combat_capable_check_blast.inc")
+			else tagged "cumulative_damage_blast_to_armor"
 			{damage_report "body" "<c(FF1F00)>Knocked Out From Armor Fatigue<c(FFFFFF)>"}
 			{reset_manual_control}
 			{able select 0}
@@ -56,54 +60,98 @@
 					{crew_emit}
 				}
 			}
-		}		
+		}
 	}
-	
+
 	(include "tank/safeties/penetration_safety.inc")
 	(include "tank/safeties/damage_counter.inc")
 	(include "tank/safeties/combat_capable_check.inc")
-	
-	(include "tank/safeties/blast_safety.inc")
-	
-	(include "tank/safeties/contact_safety.inc")
-	
-    (include "tank/general_scripts_defines.inc")
 
-;MEGA BUILDING BEGIN
-=============================================================================================================================================================================
-    (define "damage_process_pierce" ;by Svoyak  ;define's call's see in tank-armoredcar.inc, tank-light.inc, tank-medium.inc & tank-heavy.inc.
-;=================================
-        {if stuff "%staff"
+	(include "tank/safeties/blast_safety.inc")
+
+	(include "tank/safeties/contact_safety.inc")
+
+	(include "tank/general_scripts_defines.inc")
+
+	;MEGA BUILDING BEGIN
+	=============================================================================================================================================================================
+	; damage_process_pierce: by Svoyak  ;define's call's see in tank-armoredcar.inc, tank-light.inc, tank-medium.inc & tank-heavy.inc. (makes {if {if}})
+	;   staff - text in {if}
+	;   shell_shatter - {if}, [?]
+	;   pierce_gun_main - {if}, [?] via "gun_hit"
+	;   pierce_front_back_track - {if}, [?] via "track_hit"
+	;   pierce_left_right_track - {if}, [?] via "track_hit"
+	;   pierce_body__kill_charger - {if}, [?]
+	;   pierce_body__kill_driver - {if}, [?]
+	;   pierce_body__kill_gunner_main - {if}, [?]
+	;   pierce_body__kill_commander - {if}, [?]
+	;   pierce_body__kill_gunner2 - {if}, [?]
+	;   pierce_engine__fuel_leak - {if}, [?]
+	;   pierce_body__ammo_fire - {if}, [?] via "ammunition_loads"
+	;   pierce_internal_damage - {if}, [?]
+	;   pierce_turret_drive_break - {if}, [?]
+	;   pierce_gun_breech - {if}, [?]
+	;   pierce_transmission_break - {if}, [?]
+	;   pierce_body__body_brake - {if}, [?]
+	;   pierce_body__body_destroy - {if}, [?]
+	;   pierce_crew_bail - {if}, [?]
+	;   crew_shock_time - {delay}, s
+	;   pierce_turret__explosive - {if}, [?]
+	;   pierce_turret__tear - {if}, [?]
+	;   pierce_turret__ammo_fire - {if}, [?] via "ammunition_loads"
+	;   pierce_gun_drive_break - {if}, [?]
+	;   pierce_turret__turret_destroy - {if}, [?]
+	;   pierce_turret__gun_destroy - [?]
+	;   pierce_turret_front__gun_brake - {if}, [?]
+	;   pierce_turret_front__turret_brake - {if}, [?]
+	;   pierce_turret_back__gun_brake - {if}, [?]
+	;   pierce_turret_back__turret_brake - {if}, [?]
+	;   pierce_turret_left_right__gun_brake - {if}, [?]
+	;   pierce_turret_left_right__turret_brake - {if}, [?]
+	;   pierce_turret__kill_charger - {if}, [?]
+	;   pierce_turret__kill_driver - {if}, [?]
+	;   pierce_turret__kill_gunner_main - {if}, [?]
+	;   pierce_turret__kill_commander - {if}, [?]
+	;   pierce_turret__kill_gunner2 - {if}, [?]
+	;   pierce_mantlet__gun_destroy - {if}, [?]
+	;   pierce_mantlet__gun_brake - {if}, [?]
+	;   pierce_inventory__explosive - {if}, [?]
+	;   pierce_engine__engine_brake - {if}, [?]
+	;   pierce_engine__engine_burn - {if}, [?]
+	;   e.g. ("damage_process_pierce" staff(bullet)  pierce_gun_main(0) pierce_front_back_track(0) pierce_left_right_track(0) pierce_inventory__explosive(0) pierce_crew_bail(0) pierce_internal_damage(0) pierce_body__ammo_fire(0) pierce_turret__ammo_fire(0) pierce_transmission_break(0) pierce_turret_drive_break(0) pierce_gun_drive_break(0) pierce_gun_breech(0)  pierce_body__burn(0) pierce_body__body_brake(0) pierce_body__body_destroy(0)  crew_shock_time(0)  pierce_turret__explosive(0) pierce_turret__tear(0) pierce_turret__turret_destroy(0) pierce_mantlet__gun_destroy(0) pierce_turret__gun_destroy(0) pierce_turret_front__turret_brake(0) pierce_turret_back__turret_brake(0) pierce_turret_left_right__turret_brake(0) pierce_turret_front__gun_brake(0.30) pierce_mantlet__gun_brake(0.30) pierce_turret_back__gun_brake(0.10) pierce_turret_left_right__gun_brake(0.10)  pierce_engine__engine_brake(1.00) pierce_engine__engine_burn(0.10) pierce_engine__fuel_leak(0) shell_shatter(0)   pierce_body__kill_charger(0.20) pierce_body__kill_gunner_main(0) pierce_body__kill_driver(0.20) pierce_body__kill_commander(0) pierce_body__kill_gunner2(0)  pierce_turret__kill_charger(0) pierce_turret__kill_gunner_main(0.20) pierce_turret__kill_driver(0) pierce_turret__kill_commander(0.20) pierce_turret__kill_gunner2(0.20))
+	(define "damage_process_pierce"
+		;=================================
+		{if stuff "%staff"
 			{if not stuff "capped"
-			{if rand %shell_shatter
-				{tags add "shell_shattered"}
-				{bullet_detonate}
-				{damage_report "body" "component/shell_shatter"}
-				{delay 0.1
-					{tags remove "shell_shattered"}
-				}
-			else
-				{set "penetrated" 1}
-				{delay 0.2
-					{set "penetrated" 0}
+				{if rand %shell_shatter
+					{tags add "shell_shattered"}
+					{bullet_detonate}
+					{damage_report "body" "component/shell_shatter"}
+					{delay 0.1
+						{tags remove "shell_shattered"}
+					}
+					else
+					{set "penetrated" 1}
+					{delay 0.2
+						{set "penetrated" 0}
+					}
 				}
 			}
-			}
-		{if not tagged "shell_shattered"
+			{if not tagged "shell_shattered"
 				{if stuff "shell"
 					{if volume "body"
 						{damage_report "penetration" "<c(FF1F00)>Penetration<c(FFFFFF)>"}
-					else volume "body2"
-						{damage_report "penetration" "<c(FF1F00)>Penetration<c(FFFFFF)>"}		
-					else volume "body3"
-						{damage_report "penetration" "<c(FF1F00)>Penetration<c(FFFFFF)>"}							
-					else volume "turret"
+						else volume "body2"
 						{damage_report "penetration" "<c(FF1F00)>Penetration<c(FFFFFF)>"}
-					else volume "engine"
+						else volume "body3"
 						{damage_report "penetration" "<c(FF1F00)>Penetration<c(FFFFFF)>"}
-					else volume "gun"
+						else volume "turret"
 						{damage_report "penetration" "<c(FF1F00)>Penetration<c(FFFFFF)>"}
-					else volume "mantlet"
+						else volume "engine"
+						{damage_report "penetration" "<c(FF1F00)>Penetration<c(FFFFFF)>"}
+						else volume "gun"
+						{damage_report "penetration" "<c(FF1F00)>Penetration<c(FFFFFF)>"}
+						else volume "mantlet"
 						{damage_report "penetration" "<c(FF1F00)>Penetration<c(FFFFFF)>"}
 					}
 				}
@@ -111,576 +159,598 @@
 				{delay 0.2
 					{set "penetrated" 0}
 				}
-                    ("gun_hit" rand(%pierce_gun))
-                    ("track_hit" max_rand(%pierce_front_back_track) min_rand(%pierce_left_right_track))
-                    {if volume "body"
-						{if "internal_fire"
-							{burn fx "smoke_dead_tank1"}
-						}
-                        {burn fx "smoke_dead_tank3" fake}
-                        {if rand %pierce_body__kill_charger {kill_crew "charger"}}
-                        {if rand %pierce_body__kill_driver {kill_crew "driver"}}
-                        {if rand %pierce_body__kill_gunner {kill_crew "gunner"}}
-                        {if rand %pierce_body__kill_commander {kill_crew "commander"}}
-                        {if rand %pierce_body__kill_gunner2 {kill_crew "gunner2"}}
-						{if rand (* %pierce_engine__fuel_leak 0.1)
-							{call "fuel_leak"}
-						}
-						{call "flamer_tank_chance"}
-						{if "light_tank"
-							("ammunition_loads" rand(%pierce_body__ammo_fire) ammo(250))
+				("gun_hit" rand(%pierce_gun_main))
+				("track_hit" max_rand(%pierce_front_back_track) min_rand(%pierce_left_right_track))
+				{if volume "body"
+					{if "internal_fire"
+						{burn fx "smoke_dead_tank1"}
+					}
+					{burn fx "smoke_dead_tank3" fake}
+					{if rand %pierce_body__kill_charger {kill_crew "charger"}}
+					{if rand %pierce_body__kill_driver {kill_crew "driver"}}
+					{if rand %pierce_body__kill_gunner_main {kill_crew "gunner"}}
+					{if rand %pierce_body__kill_commander {kill_crew "commander"}}
+					{if rand %pierce_body__kill_gunner2 {kill_crew "gunner2"}}
+					{if rand (* %pierce_engine__fuel_leak 0.1)
+						{call "fuel_leak"}
+					}
+					{call "flamer_tank_chance"}
+					{if "light_tank"
+						("ammunition_loads" rand(%pierce_body__ammo_fire) ammo(250))
 						else "medium_tank"
-							("ammunition_loads" rand(%pierce_body__ammo_fire) ammo(300))
+						("ammunition_loads" rand(%pierce_body__ammo_fire) ammo(300))
 						else "heavy_tank"
-							("ammunition_loads" rand(%pierce_body__ammo_fire) ammo(360))
+						("ammunition_loads" rand(%pierce_body__ammo_fire) ammo(360))
 						else
-							("ammunition_loads" rand(%pierce_body__ammo_fire) ammo(250))
+						("ammunition_loads" rand(%pierce_body__ammo_fire) ammo(250))
+					}
+					{if rand (* %pierce_internal_damage 0.8)
+						{if not "internal_damage"
+							{set "internal_damage" 1}
+							;{components "internal_components" break}
+							{reset_manual_control}
+							{able select 0}
+							{able repaired 0}
+							{call "notify_break"}
+							{tags add "destroyed"}
+							{damage_report "internal" "<c(FF1F00)>Knocked out<c(FFFFFF)>"}
+							{delay 3 1
+								{call "engine stop view"}
+								{crew_emit}
+								{delay 2{crew_emit}}
+								{delay 4{crew_emit}}
+								{delay 6{crew_emit}}
+							}
 						}
-						{if rand (* %pierce_internal_damage 0.8)
-							{if not "internal_damage"
-								{set "internal_damage" 1}
-								;{components "internal_components" break}
-								{reset_manual_control}
-								{able select 0}
-								{able repaired 0}
-								{call "notify_break"}
-								{tags add "destroyed"}
-								{damage_report "internal" "<c(FF1F00)>Knocked out<c(FFFFFF)>"}
+					}
+					{if "turret"
+						{if rand (* %pierce_turret_drive_break 0.05)
+							{if not "turret_drive_destroyed"
+								{set "turret_drive_destroyed" 1}
+								{components "turret_drive" destroy}
+								{damage_report "turret_drive" "<c(FF1F00)>Horizontal turret drive destroyed<c(FFFFFF)>"}
+								{ik_enable "turret" 0}
+							}
+							else rand (* %pierce_turret_drive_break 0.25)
+							{if work "turret_drive"
+								{components "turret_drive" break}
+								{damage_report "turret_drive" "<c(FFFF00)>Horizontal turret drive damaged<c(FFFFFF)>"}
+								{ik_enable "turret" 0}
+							}
+						}
+						{if rand (* %pierce_gun_breech 0.2)
+							{if work "gun_breech"
+								{components "gun_breech" break}
+								{damage_report "gun_breech" "<c(FFFF00)>Gun breech damaged<c(FFFFFF)>"}
+							}
+						}
+					}
+					{if not "turret"
+						{if rand %pierce_gun_breech
+							{if work "gun_breech"
+								{components "gun_breech" break}
+								{damage_report "gun_breech" "<c(FFFF00)>Gun breech damaged<c(FFFFFF)>"}
+							}
+						}
+					}
+					{if hit_side front
+						{if rand (* %pierce_transmission_break 0.3)
+							{if not "transmission_destroyed"
+								{set "transmission_destroyed" 1}
+								{call "transmission_break"}
+							}
+							else rand (* %pierce_transmission_break 0.85)
+							{if work "transmission"
+								{call "transmission_break"}
+							}
+						}
+						else hit_side back
+						{if rand (* %pierce_transmission_break 0.2)
+							{if work "transmission"
+								{call "transmission_break"}
+							}
+						}
+						else
+						{if rand (* %pierce_transmission_break 0.4)
+							{if work "transmission"
+								{call "transmission_break"}
+							}
+						}
+					}
+					{if rand %pierce_body__body_brake
+						{if work "body"
+							{components "body" break}
+							{unlink_trailer}
+							{call "stat_body_break"}
+							{damage_report "body" "component/body_break"}
+							{set "armor_heavydamage" 1}
+							{delay 2
+								{crew_emit}
+							}
+							{delay 4
+								{crew_emit}
+							}
+							{delay 6
+								{crew_emit}
+							}
+							{able "select" 0}
+							else
+							{delay 2
+								{crew_emit}
+							}
+							{delay 4
+								{crew_emit}
+							}
+							{delay 6
+								{crew_emit}
+							}
+						}
+						else rand (* %pierce_body__body_destroy 0.75)
+						{call "mp_destroy"}
+						;{if rand 0.35
+						;{call "explosive_broken"}
+						;}
+						{delay 2
+							{able "select" 0}
+						}
+						else operatable
+						;{damage_report "body" "component/shock"}
+						else
+					;{damage_report "body" "component/body_pierced"}
+					}
+
+					;================
+					{if operatable
+						{if "crew_emit_time"
+							{if rand (* %pierce_crew_bail 0.5)
 								{delay 3 1
+									{reset_manual_control}
 									{call "engine stop view"}
+									{able select 0}
+									{able repaired 0}
+									{call "notify_break"}
+									{damage_report "crew" "crew bailing"}
 									{crew_emit}
 									{delay 2{crew_emit}}
 									{delay 4{crew_emit}}
 									{delay 6{crew_emit}}
+									{call "crew_bail_timer"}
 								}
 							}
 						}
-						{if "turret"
-							{if rand (* %pierce_turret_drive_break 0.05)
-								{if not "turret_drive_destroyed"
-									{set "turret_drive_destroyed" 1}
-									{components "turret_drive" destroy}
-									{damage_report "turret_drive" "<c(FF1F00)>Horizontal turret drive destroyed<c(FFFFFF)>"}
-									{ik_enable "turret" 0}
-								}
-							else rand (* %pierce_turret_drive_break 0.25)
-								{if work "turret_drive"
-									{components "turret_drive" break}
-									{damage_report "turret_drive" "<c(FFFF00)>Horizontal turret drive damaged<c(FFFFFF)>"}
-									{ik_enable "turret" 0}
-								}
-							}
-							{if rand (* %pierce_gun_breech 0.2)
-								{if work "gun_breech"
-									{components "gun_breech" break}
-									{damage_report "gun_breech" "<c(FFFF00)>Gun breech damaged<c(FFFFFF)>"}
-								}
+						{if not "crew_emit_time"
+							{set "crew_emit_time" 1}
+							{delay (* %crew_shock_time 2)
+								{set "crew_emit_time" 0}
 							}
 						}
-						{if not "turret"
-							{if rand %pierce_gun_breech
-								{if work "gun_breech"
-									{components "gun_breech" break}
-									{damage_report "gun_breech" "<c(FFFF00)>Gun breech damaged<c(FFFFFF)>"}
-								}
-							}
+						{if work "mover"
+							{chassis_work 0}
+							{tags add "stopped"}
 						}
-                        			{if hit_side front
-							{if rand (* %pierce_transmission_break 0.3)
-								{if not "transmission_destroyed"
-									{set "transmission_destroyed" 1}
-									{call "transmission_break"}
-								}
-							else rand (* %pierce_transmission_break 0.85)
-								{if work "transmission"
-									{call "transmission_break"}
-								}
-							}
-						else hit_side back
-							{if rand (* %pierce_transmission_break 0.2)
-								{if work "transmission"
-									{call "transmission_break"}
-								}
-							}
-						else
-							{if rand (* %pierce_transmission_break 0.4)
-								{if work "transmission"
-									{call "transmission_break"}
-								}
-							}
+						{if work "turret"
+							{ik_enable "turret" 0}
+							{tags add "turr_jummed"}
 						}
-						{if rand %pierce_body__body_brake
-							{if work "body"
-								{components "body" break}
-								{unlink_trailer}
-								{call "stat_body_break"}
-								{damage_report "body" "component/body_break"}
-								{set "armor_heavydamage" 1}
-								{delay 2
-									{crew_emit}
-								}
-								{delay 4
-                                    					{crew_emit}
-                               	 				}
-                                				{delay 6
-                                    					{crew_emit}
-                                				}
-                                				{able "select" 0}
-							else
-								{delay 2
-									{crew_emit}
-								}
-								{delay 4
-									{crew_emit}
-								}
-								{delay 6
-									{crew_emit}
-								}
-                            				}
-						else rand (* %pierce_body__body_destroy 0.75)
-							{call "mp_destroy"}
-							;{if rand 0.35 
-								;{call "explosive_broken"}
-							;}
-                            				{delay 2
-								{able "select" 0}
-                            				}
-                        			else operatable 
-                            				;{damage_report "body" "component/shock"}
-                        			else
-                            				;{damage_report "body" "component/body_pierced"}
-                        			}
-
-                            ;================                  
-                        {if operatable
-							{if "crew_emit_time"
-								{if rand (* %pierce_crew_bail 0.5)
-									{delay 3 1
-										{reset_manual_control}
-										{call "engine stop view"}
-										{able select 0}
-										{able repaired 0}
-										{call "notify_break"}
-										{damage_report "crew" "crew bailing"}
-										{crew_emit}
-										{delay 2{crew_emit}}
-										{delay 4{crew_emit}}
-										{delay 6{crew_emit}}
-										{call "crew_bail_timer"}
+						{weapon_work "gun" 0}{weapon_work "gun1_2" 0}{weapon_work "gun2" 0}{weapon_work "mgun" 0}{weapon_work "mgun1" 0}{weapon_work "mgun2" 0}{weapon_work "mgun3" 0}
+						{delay (* %crew_shock_time 0.5)
+							{if tagged "stopped"
+								{tags remove "stopped"}
+								{if work "mover"
+									{if not tagged "engine_brake"
+										{if "engine_on"
+											{if not "wheel_teared"
+												{chassis_work 1}
+											}
+										}
 									}
 								}
 							}
-							{if not "crew_emit_time"
-								{set "crew_emit_time" 1}
-								{delay (* %crew_shock_time 2)
-									{set "crew_emit_time" 0}
+						}
+						{delay %crew_shock_time
+							{if not tagged "gun_brake"
+								{if tagged "gun_mode_unit"
+									{if not tagged "gun_changing"
+										{if "gun_mode"
+											{weapon_work "gun1_2" 1}
+											else
+											{weapon_work "gun" 1}
+										}
+									}
+									else tagged "gun_mode_unit_art"
+									{if not tagged "gun_changing"
+										{if "gun_mode"
+											{weapon_work "gun1_2" 1}
+											else
+											{weapon_work "gun" 1}
+										}
+									}
+									else
+									{weapon_work "gun" 1}
 								}
 							}
-                            {if work "mover"
-                                    {chassis_work 0}
-                                    {tags add "stopped"}
-                            }
-                            {if work "turret"
-                                {ik_enable "turret" 0}
-                                {tags add "turr_jummed"}
-                            }
-                            {weapon_work "gun" 0}{weapon_work "gun1_2" 0}{weapon_work "gun2" 0}{weapon_work "mgun" 0}{weapon_work "mgun1" 0}{weapon_work "mgun2" 0}{weapon_work "mgun3" 0}
-							{delay (* %crew_shock_time 0.5)
-                                {if tagged "stopped"
-                                    {tags remove "stopped"}
-                                    {if work "mover"
-                                        {if not tagged "engine_brake"
-											{if "engine_on"
-												{if not "wheel_teared"
-													{chassis_work 1}
-												}
-											}
-                                        }
-                                    }
-                                }
-							}
-                            {delay %crew_shock_time
-                                {if not tagged "gun_brake"
-					{if tagged "gun_mode_unit"
-						{if not tagged "gun_changing"
-							{if "gun_mode"
-								{weapon_work "gun1_2" 1}
-							else
-								{weapon_work "gun" 1}
+							{weapon_work "gun2" 1}{if not tagged "commander_down"{weapon_work "mgun" 1}}{weapon_work "mgun1" 1}{weapon_work "mgun2" 1}{weapon_work "mgun3" 1}
+							{if tagged "turr_jummed"
+								{if tagged "turret_brake"
+									{tags remove "turr_jummed"}
+									else tagged "turret_stopped_by_body"
+									{tags remove "turr_jummed"}
+									else
+									{tags remove "turr_jummed"}
+									{if work "turret_drive"
+										{ik_enable "turret" 1}
+									}
+								}
 							}
 						}
-					else tagged "gun_mode_unit_art"
-						{if not tagged "gun_changing"
-							{if "gun_mode"
-								{weapon_work "gun1_2" 1}
-							else
-								{weapon_work "gun" 1}
-							}
-						}
-					else	
-                               			{weapon_work "gun" 1}
 					}
-                                }
-                                {weapon_work "gun2" 1}{if not tagged "commander_down"{weapon_work "mgun" 1}}{weapon_work "mgun1" 1}{weapon_work "mgun2" 1}{weapon_work "mgun3" 1}
-                                {if tagged "turr_jummed"
-                                    {if tagged "turret_brake"
-                                        {tags remove "turr_jummed"}
-                                    else tagged "turret_stopped_by_body"
-                                        {tags remove "turr_jummed"}
-                                    else
-                                        {tags remove "turr_jummed"}
-					{if work "turret_drive"
-                                        	{ik_enable "turret" 1}
+					else volume "turret"
+					{if "internal_fire"
+						{burn fx "smoke_dead_tank1"}
 					}
-                                    }
-                                }
-                            }
-                        }
-                    else volume "turret"						
-						{if "internal_fire"
-							{burn fx "smoke_dead_tank1"}
+					{burn fx "smoke_dead_tank3" fake}
+					{if rand %pierce_turret__explosive
+						{call "stat_break"}
+						{delay 0.2
+							{call "_explosion"}
 						}
-                        {burn fx "smoke_dead_tank3" fake}
-                        {if rand %pierce_turret__explosive
-                            {call "stat_break"}
-                            {delay 0.2
-                                {call "_explosion"}
-                            }
-                        }
-						{if rand %pierce_turret__tear
-							{if not "turret_teared"
+					}
+					{if rand %pierce_turret__tear
+						{if not "turret_teared"
 							{call "tear_turret_ap"}
 							{view stop "smoke4_7"}
 							{view stop "smoke4_5"}
+						}
+					}
+					{if "light_tank"
+						("ammunition_loads" rand(%pierce_turret__ammo_fire) ammo(250))
+						else "medium_tank"
+						("ammunition_loads" rand(%pierce_turret__ammo_fire) ammo(290))
+						else "heavy_tank"
+						("ammunition_loads" rand(%pierce_turret__ammo_fire) ammo(340))
+						else
+						("ammunition_loads" rand(%pierce_turret__ammo_fire) ammo(250))
+					}
+					{if rand (* %pierce_internal_damage 0.6)
+						{if not "internal_damage"
+							{set "internal_damage" 1}
+							{reset_manual_control}
+							{call "engine stop view"}
+							{able select 0}
+							{able repaired 0}
+							{call "notify_break"}
+							{tags add "destroyed"}
+							{damage_report "internal" "<c(FF1F00)>Knocked out<c(FFFFFF)>"}
+							{delay 3 1
+								{call "engine stop view"}
+								{crew_emit}
+								{delay 2{crew_emit}}
+								{delay 4{crew_emit}}
+								{delay 6{crew_emit}}
 							}
 						}
-						{if "light_tank"
-							("ammunition_loads" rand(%pierce_turret__ammo_fire) ammo(250))
-						else "medium_tank"
-							("ammunition_loads" rand(%pierce_turret__ammo_fire) ammo(290))
-						else "heavy_tank"
-							("ammunition_loads" rand(%pierce_turret__ammo_fire) ammo(340))
-						else
-							("ammunition_loads" rand(%pierce_turret__ammo_fire) ammo(250))
+					}
+					{if "turret"
+						{if rand (* %pierce_turret_drive_break 0.4)
+							{if not "turret_drive_destroyed"
+								{set "turret_drive_destroyed" 1}
+								{components "turret_drive" destroy}
+								{damage_report "turret_drive" "<c(FF1F00)>Horizontal turret drive destroyed<c(FFFFFF)>"}
+								{ik_enable "turret" 0}
+							}
+							else rand %pierce_turret_drive_break
+							{if work "turret_drive"
+								{components "turret_drive" break}
+								{damage_report "turret_drive" "<c(FFFF00)>Horizontal turret drive damaged<c(FFFFFF)>"}
+								{ik_enable "turret" 0}
+							}
 						}
-						{if rand (* %pierce_internal_damage 0.6)
-							{if not "internal_damage"
-								{set "internal_damage" 1}
-								{reset_manual_control}
-								{call "engine stop view"}
-								{able select 0}
-								{able repaired 0}
-								{call "notify_break"}
-								{tags add "destroyed"}
-								{damage_report "internal" "<c(FF1F00)>Knocked out<c(FFFFFF)>"}
+						{if rand %pierce_gun_breech
+							{if work "gun_breech"
+								{components "gun_breech" break}
+								{damage_report "gun_breech" "<c(FFFF00)>Gun breech damaged<c(FFFFFF)>"}
+							}
+						}
+					}
+					{if rand (* %pierce_gun_drive_break 0.4)
+						{if not "vertical_drive_destroyed"
+							{set "vertical_drive_destroyed" 1}
+							{components "turret_drive" destroy}
+							{damage_report "vertical_drive" "<c(FF1F00)>Vertical gun drive destroyed<c(FFFFFF)>"}
+							{ik_enable "gun_rot" 0}
+						}
+						else rand %pierce_gun_drive_break
+						{if work "vertical_drive"
+							{components "vertical_drive" break}
+							{damage_report "vertical_drive" "<c(FFFF00)>Vertical gun drive damaged<c(FFFFFF)>"}
+							{ik_enable "gun_rot" 0}
+						}
+					}
+					{if rand %pierce_turret__turret_destroy
+						{call "turret_destroyed"}
+						{set "turretarmor_spall" 1}
+					}
+					;{if rand (* %pierce_turret__gun_destroy 0.75)
+					;	{if not "gun_destroyed"
+					;		{set "gun_destroyed" 1}
+					;		{components "gun" destroy}
+					;		{damage_report "gun" "component/gun_destroyed"}
+					;	}
+					;}
+					{if hit_side front
+						{if rand (* %pierce_turret_front__gun_brake 0.5)
+							{if work "gun"
+								{components "gun" break}
+								{damage_report "gun" "component/gun_broken"}
+							}
+						}
+						{if rand (* %pierce_turret_front__turret_brake 0.5)
+							{components "turret" break}
+							{set "turretarmor_heavydamage" 1}
+							{ik_enable "turret" 0}
+						}
+						else hit_side back
+						{if rand (* %pierce_turret_back__gun_brake 0.5)
+							{if work "gun"
+								{components "gun" break}
+								{damage_report "gun" "component/gun_broken"}
+							}
+						}
+						{if rand (* %pierce_turret_back__turret_brake 0.6)
+							{components "turret" break}
+							{set "turretarmor_heavydamage" 1}
+							{ik_enable "turret" 0}
+						}
+						else
+						{if rand (* %pierce_turret_left_right__gun_brake 0.75)
+							{if work "gun"
+								{components "gun" break}
+								{damage_report "gun" "component/gun_broken"}
+							}
+						}
+						{if rand (* %pierce_turret_left_right__turret_brake 0.6)
+							{components "turret" break}
+							{set "turretarmor_heavydamage" 1}
+							{ik_enable "turret" 0}
+						}
+					}
+					{if rand %pierce_turret__kill_charger {kill_crew "charger"}}
+					{if rand %pierce_turret__kill_driver {kill_crew "driver"}}
+					{if rand %pierce_turret__kill_gunner_main {kill_crew "gunner"}}
+					{if rand %pierce_turret__kill_commander {kill_crew "commander"}}
+					{if rand %pierce_turret__kill_gunner2 {kill_crew "gunner2"}}
+
+					;==============
+					{if operatable
+						{if "crew_emit_time"
+							{if rand (* %pierce_crew_bail 0.4)
 								{delay 3 1
 									{call "engine stop view"}
+									{reset_manual_control}
+									{able select 0}
+									{able repaired 0}
+									{call "notify_break"}
+									{damage_report "crew" "crew bailing"}
 									{crew_emit}
 									{delay 2{crew_emit}}
 									{delay 4{crew_emit}}
 									{delay 6{crew_emit}}
+									{call "crew_bail_timer"}
 								}
 							}
 						}
-						{if "turret"
-							{if rand (* %pierce_turret_drive_break 0.4)
-								{if not "turret_drive_destroyed"
-									{set "turret_drive_destroyed" 1}
-									{components "turret_drive" destroy}
-									{damage_report "turret_drive" "<c(FF1F00)>Horizontal turret drive destroyed<c(FFFFFF)>"}
-									{ik_enable "turret" 0}
+						{ik_enable "turret" 0}
+						{weapon_work "gun" 0}{weapon_work "gun1_2" 0}{weapon_work "gun2" 0}{weapon_work "mgun" 0}{weapon_work "mgun1" 0}{weapon_work "mgun2" 0}{weapon_work "mgun3" 0}
+						{tags add "turr_jummed"}
+						{delay %crew_shock_time
+							{if not tagged "gun_brake"
+								{if tagged "gun_mode_unit"
+									{if not tagged "gun_changing"
+										{if "gun_mode"
+											{weapon_work "gun1_2" 1}
+											else
+											{weapon_work "gun" 1}
+										}
+									}
+									else tagged "gun_mode_unit_art"
+									{if not tagged "gun_changing"
+										{if "gun_mode"
+											{weapon_work "gun1_2" 1}
+											else
+											{weapon_work "gun" 1}
+										}
+									}
+									else
+									{weapon_work "gun" 1}
 								}
-							else rand %pierce_turret_drive_break
-								{if work "turret_drive"
-									{components "turret_drive" break}
-									{damage_report "turret_drive" "<c(FFFF00)>Horizontal turret drive damaged<c(FFFFFF)>"}
-									{ik_enable "turret" 0}
-								}
 							}
-							{if rand %pierce_gun_breech
-								{if work "gun_breech"
-									{components "gun_breech" break}
-									{damage_report "gun_breech" "<c(FFFF00)>Gun breech damaged<c(FFFFFF)>"}
-								}
-							}
-						}
-						{if rand (* %pierce_gun_drive_break 0.4)
-							{if not "vertical_drive_destroyed"
-								{set "vertical_drive_destroyed" 1}
-								{components "turret_drive" destroy}
-								{damage_report "vertical_drive" "<c(FF1F00)>Vertical gun drive destroyed<c(FFFFFF)>"}
-								{ik_enable "gun_rot" 0}
-							}
-						else rand %pierce_gun_drive_break
-							{if work "vertical_drive"
-								{components "vertical_drive" break}
-								{damage_report "vertical_drive" "<c(FFFF00)>Vertical gun drive damaged<c(FFFFFF)>"}
-								{ik_enable "gun_rot" 0}
-							}
-						}
-						{if rand %pierce_turret__turret_destroy
-							{call "turret_destroyed"}
-							{set "turretarmor_spall" 1}
-						}
-						;{if rand (* %pierce_turret__gun_destroy 0.75)
-						;	{if not "gun_destroyed"
-						;		{set "gun_destroyed" 1}
-						;		{components "gun" destroy}
-						;		{damage_report "gun" "component/gun_destroyed"}
-						;	}
-						;}
-                        {if hit_side front
-                            {if rand (* %pierce_turret_front__gun_brake 0.5)
-                                {if work "gun"
-                                    {components "gun" break}
-                                    {damage_report "gun" "component/gun_broken"}
-                                }
-                            }
-                            {if rand (* %pierce_turret_front__turret_brake 0.5)
-                                {components "turret" break}
-								{set "turretarmor_heavydamage" 1}
-                                {ik_enable "turret" 0}
-							}
-                        else hit_side back
-                            {if rand (* %pierce_turret_back__gun_brake 0.5)
-                                {if work "gun"
-                                    {components "gun" break}
-                                    {damage_report "gun" "component/gun_broken"}
-                                }
-                            }
-                            {if rand (* %pierce_turret_back__turret_brake 0.6)
-                                {components "turret" break}
-								{set "turretarmor_heavydamage" 1}
-                                {ik_enable "turret" 0}
-                            }
-                        else
-                            {if rand (* %pierce_turret_left_right__gun_brake 0.75)
-                                {if work "gun"
-                                    {components "gun" break}
-                                    {damage_report "gun" "component/gun_broken"}
-                                }
-                            }
-                            {if rand (* %pierce_turret_left_right__turret_brake 0.6)
-                                {components "turret" break}
-								{set "turretarmor_heavydamage" 1}
-                                {ik_enable "turret" 0}								
-                            }
-                        }
-                        {if rand %pierce_turret__kill_charger {kill_crew "charger"}}
-                        {if rand %pierce_turret__kill_driver {kill_crew "driver"}}
-                        {if rand %pierce_turret__kill_gunner {kill_crew "gunner"}}
-                        {if rand %pierce_turret__kill_commander {kill_crew "commander"}}
-                        {if rand %pierce_turret__kill_gunner2 {kill_crew "gunner2"}}
-						
-                        ;==============                  
-                        {if operatable
-							{if "crew_emit_time"
-								{if rand (* %pierce_crew_bail 0.4)
-									{delay 3 1
-										{call "engine stop view"}
-										{reset_manual_control}
-										{able select 0}
-										{able repaired 0}
-										{call "notify_break"}
-										{damage_report "crew" "crew bailing"}
-										{crew_emit}
-										{delay 2{crew_emit}}
-										{delay 4{crew_emit}}
-										{delay 6{crew_emit}}
-										{call "crew_bail_timer"}
+							{weapon_work "gun2" 1}{if not tagged "commander_down"{weapon_work "mgun" 1}}{weapon_work "mgun1" 1}{weapon_work "mgun2" 1}{weapon_work "mgun3" 1}
+							{if tagged "turr_jummed"
+								{if tagged "turret_brake"
+									{tags remove "turr_jummed"}
+									else tagged "turret_stopped_by_body"
+									{tags remove "turr_jummed"}
+									else
+									{tags remove "turr_jummed"}
+									{if work "turret_drive"
+										{ik_enable "turret" 1}
 									}
 								}
 							}
-                            {ik_enable "turret" 0}
-                            {weapon_work "gun" 0}{weapon_work "gun1_2" 0}{weapon_work "gun2" 0}{weapon_work "mgun" 0}{weapon_work "mgun1" 0}{weapon_work "mgun2" 0}{weapon_work "mgun3" 0}
-                            {tags add "turr_jummed"}
-                            {delay %crew_shock_time
-				{if not tagged "gun_brake"
-					{if tagged "gun_mode_unit"
-						{if not tagged "gun_changing"
-							{if "gun_mode"
-								{weapon_work "gun1_2" 1}
-							else
-								{weapon_work "gun" 1}
+						}
+					}
+					else volume "mantlet"
+					{burn fx "smoke_dead_tank3" fake}
+					{if rand (* %pierce_mantlet__gun_destroy 0.1)
+						{if not "gun_destroyed"
+							{set "gun_destroyed" 1}
+							{components "gun" destroy}
+							{damage_report "gun" "component/gun_destroyed"}
+						}
+						else rand (* %pierce_mantlet__gun_brake 0.7)
+						{if work "gun"
+							{components "gun" break}
+							{damage_report "gun" "component/gun_broken"}
+						}
+						else
+					;{call "turret_break"}
+					}
+					;{if rand %pierce_turret_front__turret_brake
+					;   {components "turret" break}
+					;}
+					else volume "explosive"
+					{if rand (* %pierce_inventory__explosive 0.8)
+						{call "explosion"}
+						{damage_report "body" "component/inventory_broken"}
+					}
+					else volume "engine"
+					{if rand (* %pierce_engine__fuel_leak 0.7)
+						{call "fuel_leak"}
+					}
+					{if rand (* %pierce_engine__engine_brake 0.3)
+						{if work "engine"
+							{components "engine" destroy}
+							{damage_report "engine" "<c(FF1F00)>Engine destroyed<c(FFFFFF)>"}
+							{call "engine fullstop"}
+						}
+						else rand %pierce_engine__engine_brake
+						{if work "engine"
+							{components "engine" break}
+							{call "engine fullstop"}
+						}
+						{if rand %pierce_engine__engine_burn
+							{delay 3 2
+							;{call "_burn"}
 							}
 						}
-					else tagged "gun_mode_unit_art"
-						{if not tagged "gun_changing"
-							{if "gun_mode"
-								{weapon_work "gun1_2" 1}
-							else
-								{weapon_work "gun" 1}
+					}
+				}
+				{if component "armor_hull"
+					{if stuff "shell_big"
+						("cut_shield_part" args "armor_hull")
+						else stuff "size_big"
+						("cut_shield_part" args "armor_hull")
+					}
+				}
+				{if component "armor_turret"
+					{if stuff "shell_big"
+						("cut_shield_part" args "armor_turret")
+						else stuff "size_big"
+						("cut_shield_part" args "armor_turret")
+					}
+				}
+				{if component "shield"
+					{if stuff "shell_big"
+						("cut_shield_part" args "shieldr1")
+						("cut_shield_part" args "shieldr2")
+						("cut_shield_part" args "shieldr3")
+						("cut_shield_part" args "shieldr4")
+						("cut_shield_part" args "shieldr5")
+						("cut_shield_part" args "shieldr6")
+						("cut_shield_part" args "shieldr7")
+						("cut_shield_part" args "shieldr8")
+						("cut_shield_part" args "shieldr9")
+						("cut_shield_part" args "shieldl1")
+						("cut_shield_part" args "shieldl2")
+						("cut_shield_part" args "shieldl3")
+						("cut_shield_part" args "shieldl4")
+						("cut_shield_part" args "shieldl5")
+						("cut_shield_part" args "shieldl6")
+						("cut_shield_part" args "shieldl8")
+						else stuff "size_big"
+						("cut_shield_part" args "shieldr1")
+						("cut_shield_part" args "shieldr2")
+						("cut_shield_part" args "shieldr3")
+						("cut_shield_part" args "shieldr4")
+						("cut_shield_part" args "shieldr5")
+						("cut_shield_part" args "shieldr6")
+						("cut_shield_part" args "shieldr7")
+						("cut_shield_part" args "shieldr8")
+						("cut_shield_part" args "shieldr9")
+						("cut_shield_part" args "shieldl1")
+						("cut_shield_part" args "shieldl2")
+						("cut_shield_part" args "shieldl3")
+						("cut_shield_part" args "shieldl4")
+						("cut_shield_part" args "shieldl5")
+						("cut_shield_part" args "shieldl6")
+						("cut_shield_part" args "shieldl8")
+					}
+				}
+				{if "transmission_destroyed"
+					{if "turret_drive_destroyed"
+						{if not "internal_damage"
+							{set "internal_damage" 1}
+							{reset_manual_control}
+							{call "engine stop view"}
+							{able select 0}
+							{able repaired 0}
+							{call "notify_break"}
+							{tags add "destroyed"}
+							{damage_report "components" "<c(FF1F00)>Destroyed beyond repair<c(FFFFFF)>"}
+							{delay 3 1
+								{call "engine stop view"}
+								{crew_emit}
+								{delay 2{crew_emit}}
+								{delay 4{crew_emit}}
+								{delay 6{crew_emit}}
 							}
 						}
-					else	
-                               			{weapon_work "gun" 1}
-					}
-				}
-                                {weapon_work "gun2" 1}{if not tagged "commander_down"{weapon_work "mgun" 1}}{weapon_work "mgun1" 1}{weapon_work "mgun2" 1}{weapon_work "mgun3" 1}
-                                {if tagged "turr_jummed"
-                                    {if tagged "turret_brake"
-                                        {tags remove "turr_jummed"}
-                                    else tagged "turret_stopped_by_body"
-                                        {tags remove "turr_jummed"}
-                                    else
-                                        {tags remove "turr_jummed"}
-					{if work "turret_drive"
-                                        	{ik_enable "turret" 1}
-					}
-                                    }
-                                }
-                            }
-                        }
-                    else volume "mantlet"
-                        {burn fx "smoke_dead_tank3" fake}
-			{if rand (* %pierce_mantlet__gun_destroy 0.1)
-				{if not "gun_destroyed"
-					{set "gun_destroyed" 1}
-					{components "gun" destroy}
-					{damage_report "gun" "component/gun_destroyed"}
-				}
-                        else rand (* %pierce_mantlet__gun_brake 0.7)
-                        	{if work "gun"
-                                	{components "gun" break}
-                                	{damage_report "gun" "component/gun_broken"}
-                            	}
-                        else
-                           ;{call "turret_break"}
-                        }
-                       ;{if rand %pierce_turret_front__turret_brake
-                        ;   {components "turret" break}
-                       ;}
-                    else volume "explosive"
-                        {if rand (* %pierce_inventory__explosive 0.8)
-                            {call "explosion"}
-			                {damage_report "body" "component/inventory_broken"}
-                        }
-                    else volume "engine"
-			{if rand (* %pierce_engine__fuel_leak 0.7)
-				{call "fuel_leak"}
-			}
-                        {if rand (* %pierce_engine__engine_brake 0.3)
-                            {if work "engine"
-                                {components "engine" destroy}
-				{damage_report "engine" "<c(FF1F00)>Engine destroyed<c(FFFFFF)>"}
-				{call "engine fullstop"}
-                            }
-                        else rand %pierce_engine__engine_brake
-                            {if work "engine"
-                                {components "engine" break}
-				{call "engine fullstop"}
-                            }
-                            {if rand %pierce_engine__engine_burn
-                                {delay 3 2
-                                    ;{call "_burn"}
-                                }
-                            }
-                        }
-                    }
-		{if component "armor_hull"
-			{if stuff "shell_big"
-            			("cut_shield_part" args "armor_hull")
-			else stuff "size_big"
-            			("cut_shield_part" args "armor_hull")
-			}
-		}
-		{if component "armor_turret"
-			{if stuff "shell_big"
-            			("cut_shield_part" args "armor_turret")
-			else stuff "size_big"
-            			("cut_shield_part" args "armor_turret")
-			}
-		}
-		{if component "shield"
-			{if stuff "shell_big"
-            			("cut_shield_part" args "shieldr1")
-            			("cut_shield_part" args "shieldr2")
-            			("cut_shield_part" args "shieldr3")
-            			("cut_shield_part" args "shieldr4")
-            			("cut_shield_part" args "shieldr5")
-            			("cut_shield_part" args "shieldr6")
-            			("cut_shield_part" args "shieldr7")
-            			("cut_shield_part" args "shieldr8")
-            			("cut_shield_part" args "shieldr9")
-            			("cut_shield_part" args "shieldl1")
-            			("cut_shield_part" args "shieldl2")
-            			("cut_shield_part" args "shieldl3")
-            			("cut_shield_part" args "shieldl4")
-            			("cut_shield_part" args "shieldl5")
-            			("cut_shield_part" args "shieldl6")
-            			("cut_shield_part" args "shieldl8")
-			else stuff "size_big"
-            			("cut_shield_part" args "shieldr1")
-            			("cut_shield_part" args "shieldr2")
-            			("cut_shield_part" args "shieldr3")
-            			("cut_shield_part" args "shieldr4")
-            			("cut_shield_part" args "shieldr5")
-            			("cut_shield_part" args "shieldr6")
-            			("cut_shield_part" args "shieldr7")
-            			("cut_shield_part" args "shieldr8")
-            			("cut_shield_part" args "shieldr9")
-            			("cut_shield_part" args "shieldl1")
-            			("cut_shield_part" args "shieldl2")
-            			("cut_shield_part" args "shieldl3")
-            			("cut_shield_part" args "shieldl4")
-            			("cut_shield_part" args "shieldl5")
-            			("cut_shield_part" args "shieldl6")
-            			("cut_shield_part" args "shieldl8")
-			}
-		}
-		{if "transmission_destroyed"
-			{if "turret_drive_destroyed"
-				{if not "internal_damage"
-					{set "internal_damage" 1}
-					{reset_manual_control}
-					{call "engine stop view"}
-					{able select 0}
-					{able repaired 0}
-					{call "notify_break"}
-					{tags add "destroyed"}
-					{damage_report "components" "<c(FF1F00)>Destroyed beyond repair<c(FFFFFF)>"}
-					{delay 3 1
-						{call "engine stop view"}
-						{crew_emit}
-						{delay 2{crew_emit}}
-						{delay 4{crew_emit}}
-						{delay 6{crew_emit}}
 					}
 				}
 			}
-		}
-		}
-                };stuff
-    )
-	
-    (define "damage_process_bullet_hit" ;by Svoyak
-;====================================
-	(define "armor_spall"
-		{if not "armor_hit"
+		};stuff
+	)
+
+	; damage_process_bullet_hit: by Svoyak (makes {if} x7)
+	;   staff - text in {if}
+	;   hit_body__ammo_fire - {if}, [?] via "ammunition_loads", {if}, [?], {if}, [?] via "ammunition_loads_spall"
+	;   hit_turret__ammo_fire - {if}, [?] via "ammunition_loads"
+	;   imp - {impulse}, [?]
+	;   hit_tank__kill_charger - {if}, [?]
+	;   hit_tank__kill_gunner - {if}, [?]
+	;   hit_tank__kill_driver - {if}, [?]
+	;   hit_tank__kill_commander - {if}, [?]
+	;   hit_tank__kill_gunner2 - {if}, [?]
+	;   hit_tank__inter_spall - {if}, [?]
+	;   crew_shock_time - {delay}, s via "crew_shock"
+	;   hit_body__explosive - {if}, [?]
+	;   hit_body__engine_brake - {if}, [?]
+	;   hit_body__body_destroy - {if}, [?]
+	;   hit_body__body_brake - {if}, [?]
+	;   hit_engine__engine_brake - {if}, [?]
+	;   hit_turret__explosive - {if}, [?]
+	;   hit_turret_front__gun_brake - {if}, [?]
+	;   hit_turret__turret_destroy - {if}, [?]
+	;   hit_turret__turret_brake - {if}, [?]
+	;   e.g. ("damage_process_bullet_hit" staff(highvel_medium) hit_body__explosive(0) hit_body__engine_burn(0) hit_body__body_destroy(0) hit_body__body_brake(0) hit_tank__inter_spall(0.075) hit_tank__kill_charger(0.1) hit_tank__kill_gunner(0.1) hit_tank__kill_driver(0.1) hit_tank__kill_commander(0.1) hit_tank__kill_gunner2(0.1) hit_body__ammo_fire(0.0132) hit_turret__ammo_fire(0.0066)  hit_body__engine_brake(0) crew_shock_time(6)  hit_turret__explosive(0) hit_turret_front__gun_brake(0) hit_turret__turret_destroy(0) hit_turret__turret_brake(0) imp(0) hit_tank__tank_destroy(0) hit_engine__engine_brake(0))
+	(define "damage_process_bullet_hit"
+		;====================================
+		(define "armor_spall"
+			{if not "armor_hit"
 				{if "armor_spall"
-                       			{if rand 0.3 {kill_crew "charger"}}
-                        		{if rand 0.3 {kill_crew "driver"}}
-                        		{if rand 0.3 {kill_crew "gunner"}}
-                        		{if rand 0.3 {kill_crew "commander"}}
-                        		{if rand 0.3 {kill_crew "gunner2"}}
+					{if rand 0.3 {kill_crew "charger"}}
+					{if rand 0.3 {kill_crew "driver"}}
+					{if rand 0.3 {kill_crew "gunner"}}
+					{if rand 0.3 {kill_crew "commander"}}
+					{if rand 0.3 {kill_crew "gunner2"}}
 					{tags remove "ammo_overload"}
 					{tags remove "ammo_normal_load"}
 					{if stuff "%staff"
-					{if "light_tank"
-						("ammunition_loads" rand(%hit_body__ammo_fire) ammo(250))
-					else "medium_tank"
-						("ammunition_loads" rand(%hit_body__ammo_fire) ammo(290))
-					else "heavy_tank"
-						("ammunition_loads" rand(%hit_body__ammo_fire) ammo(340))
-					else
-						("ammunition_loads" rand(%hit_body__ammo_fire) ammo(250))
+						{if "light_tank"
+							("ammunition_loads" rand(%hit_body__ammo_fire) ammo(250))
+							else "medium_tank"
+							("ammunition_loads" rand(%hit_body__ammo_fire) ammo(290))
+							else "heavy_tank"
+							("ammunition_loads" rand(%hit_body__ammo_fire) ammo(340))
+							else
+							("ammunition_loads" rand(%hit_body__ammo_fire) ammo(250))
+						}
 					}
-					}
-				else "armor_heavydamage"
+					else "armor_heavydamage"
 					{delay 0.01 {damage_report "body" "component/armor_spall"}}
 					{set "armor_spall" 1}
 					{call "mp_destroy"}
-				else "armor_damage"
+					else "armor_damage"
 					{set "armor_heavydamage" 1}
 					{delay 0.01 {damage_report "body" "component/armor_heavydamage"}}
 					{components "body" break}
@@ -692,88 +762,88 @@
 					{delay 2{crew_emit}}
 					{delay 4{crew_emit}}
 					{delay 6{crew_emit}}
-				else
+					else
 					{set "armor_damage" 1}
 					{damage_report "body" "component/armor_damage"}
 				}
-		}
-		{if not "penetrated"
-			{set "armor_hit" 1}
-			{delay 0.2 {set "armor_hit" 0}}
-		}
-	)
-	(define "turret_armor_spall"
-		{if not "armor_hit"
+			}
+			{if not "penetrated"
+				{set "armor_hit" 1}
+				{delay 0.2 {set "armor_hit" 0}}
+			}
+		)
+		(define "turret_armor_spall"
+			{if not "armor_hit"
 				{if "turretarmor_spall"
-                       			{if rand 0.3 {kill_crew "charger"}}
-                        		{if rand 0.3 {kill_crew "driver"}}
-                        		{if rand 0.3 {kill_crew "gunner"}}
-                        		{if rand 0.3 {kill_crew "commander"}}
-                        		{if rand 0.3 {kill_crew "gunner2"}}
+					{if rand 0.3 {kill_crew "charger"}}
+					{if rand 0.3 {kill_crew "driver"}}
+					{if rand 0.3 {kill_crew "gunner"}}
+					{if rand 0.3 {kill_crew "commander"}}
+					{if rand 0.3 {kill_crew "gunner2"}}
 					{tags remove "ammo_overload"}
 					{tags remove "ammo_normal_load"}
 					{if stuff "%staff"
-					{if "light_tank"
-						("ammunition_loads" rand(%hit_turret__ammo_fire) ammo(250))
-					else "medium_tank"
-						("ammunition_loads" rand(%hit_turret__ammo_fire) ammo(290))
-					else "heavy_tank"
-						("ammunition_loads" rand(%hit_turret__ammo_fire) ammo(340))
-					else
-						("ammunition_loads" rand(%hit_turret__ammo_fire) ammo(250))
+						{if "light_tank"
+							("ammunition_loads" rand(%hit_turret__ammo_fire) ammo(250))
+							else "medium_tank"
+							("ammunition_loads" rand(%hit_turret__ammo_fire) ammo(290))
+							else "heavy_tank"
+							("ammunition_loads" rand(%hit_turret__ammo_fire) ammo(340))
+							else
+							("ammunition_loads" rand(%hit_turret__ammo_fire) ammo(250))
+						}
 					}
-					}
-				else "turretarmor_heavydamage"
+					else "turretarmor_heavydamage"
 					{delay 0.01 {damage_report "body" "component/turretarmor_spall"}}
 					{set "turretarmor_spall" 1}
 					{components "turret" destroy}
-				else "turretarmor_damage"
+					else "turretarmor_damage"
 					{set "turretarmor_heavydamage" 1}
 					{delay 0.01 {damage_report "body" "component/turretarmor_heavydamage"}}
 					{components "turret" break}
 
-				else
+					else
 					{set "turretarmor_damage" 1}
 					{damage_report "body" "component/turretarmor_damage"}
 				}
-		}
-		{if not "penetrated"
-			{set "armor_hit" 1}
-			{delay 0.2 {set "armor_hit" 0}}
-		}
-	)
-;=========================================================
-		    {if stuff "shell"
+			}
+			{if not "penetrated"
+				{set "armor_hit" 1}
+				{delay 0.2 {set "armor_hit" 0}}
+			}
+		)
+		;=========================================================
+		{if stuff "shell"
 			{if volume "engine"
 				{damage_report "hit_engine" "Hit: Engine"}
 			}
 			{if volume "body"
 				{if hit_side front
 					{damage_report "hit_hull" "Hit: Hull front"}
-				else hit_side back
+					else hit_side back
 					{damage_report "hit_hull" "Hit: Hull rear"}
-				else hit_side left
+					else hit_side left
 					{damage_report "hit_hull" "Hit: Hull left side"}
-				else hit_side right
+					else hit_side right
 					{damage_report "hit_hull" "Hit: Hull right side"}
-				else hit_side top
+					else hit_side top
 					{damage_report "hit_hull" "Hit: Hull top"}
-				else
+					else
 					{damage_report "hit_hull" "Hit: Hull"}
 				}
 			}
 			{if volume "turret"
 				{if hit_side front
 					{damage_report "hit_turret" "Hit: Turret front"}
-				else hit_side back
+					else hit_side back
 					{damage_report "hit_turret" "Hit: Turret rear"}
-				else hit_side left
+					else hit_side left
 					{damage_report "hit_turret" "Hit: Turret left side"}
-				else hit_side right
+					else hit_side right
 					{damage_report "hit_turret" "Hit: Turret right side"}
-				else hit_side top
+					else hit_side top
 					{damage_report "hit_turret" "Hit: Turret top"}
-				else
+					else
 					{damage_report "hit_turret" "Hit: Turret"}
 				}
 			}
@@ -817,600 +887,605 @@
 			{if volume "shieldl6" {damage_report "hit_shield" "Hit: Shield"}}
 			{if volume "shieldl7" {damage_report "hit_shield" "Hit: Shield"}}
 			{if volume "shieldl8" {damage_report "hit_shield" "Hit: Shield"}}
-			}
-		    {if stuff "size_minimum"
+		}
+		{if stuff "size_minimum"
 			{if not stuff "heat_shell"
-			{if stuff "pierce"
-			{if not tagged "shell_shattered"
-		    		{delay 0.1
-					{if not "penetrated"
-						{if rand 0.35
-							{start_sound "hit/wob_ricochet_small"}
-						}
-					else
-						{start_sound "hit/wob_penetrate_small"}
-					}
-				}
-			}
-			}
-			}
-		    }
-		    {if stuff "size_small"
-			{if not stuff "heat_shell"
-			{if stuff "pierce"
-			{if not tagged "shell_shattered"
-		   		{delay 0.1
-					{if not "penetrated"
-						{if rand 0.35
-							{start_sound "hit/wob_ricochet_medium"}
-						}
-					else
-						{start_sound "hit/wob_penetrate_medium"}
-					}
-				}
-			}
-			}
-			}
-		    }
-		    {if stuff "highvel_big"
-			{if not stuff "heat_shell"
-			{if stuff "pierce"
-			{if not tagged "shell_shattered"
-		   		{delay 0.1
-					{if not "penetrated"
-						{if rand 0.35
-							{start_sound "hit/wob_ricochet_large"}
-						}
-					else
-						{start_sound "hit/wob_penetrate_large"}
-					}
-				}
-			}
-			}
-			}
-			{if stuff "fg" {spawn "dust_tank_hit" 	"basis"}}
-			{if not "armor_hit"
-			{if volume "body"
-				{if "light_tank" {if rand 0.3 ("armor_spall")("crew_shock" crew_shock_time(10))}
-				else "medium_tank" {if rand 0.15 ("armor_spall")("crew_shock" crew_shock_time(8))}
-				else "heavy_tank" {if rand 0.05 ("armor_spall")("crew_shock" crew_shock_time(6))}
-				else "super_heavy_tank" {if rand 0.01 ("armor_spall")("crew_shock" crew_shock_time(4))}
-				else {if rand 0.15 ("armor_spall")("crew_shock" crew_shock_time(8))}
-				}
-			}
-			{if volume "turret"
-				{if "light_tank" {if rand 0.4 ("turret_armor_spall")("crew_shock" crew_shock_time(10))}
-				else "medium_tank" {if rand 0.2 ("turret_armor_spall")("crew_shock" crew_shock_time(8))}
-				else "heavy_tank" {if rand 0.03 ("turret_armor_spall")("crew_shock" crew_shock_time(6))}
-				else "super_heavy_tank" {if rand 0.01 ("turret_armor_spall")("crew_shock" crew_shock_time(4))}
-				else {if rand 0.2 ("turret_armor_spall")("crew_shock" crew_shock_time(8))}
-				}
-			}
-		    	}
-		    }
-		    {if stuff "shell_verybig"
-			{if not stuff "heat_shell"
-			{if stuff "pierce"
-			{if not tagged "shell_shattered"
-		   		{delay 0.1
-					{if not "penetrated"
-						{if rand 0.35
-							{start_sound "hit/wob_ricochet_large"}
-						}
-					else
-						{start_sound "hit/wob_penetrate_large"}
-					}
-				}
-			}
-			}
-			}
-			{if stuff "fg" {spawn "dust_tank_hit" 	"basis"}}
-			{if not "armor_hit"
-			{if volume "body"
-				{if "light_tank" {if rand 0.4 ("armor_spall")("crew_shock" crew_shock_time(11))}
-				else "medium_tank" {if rand 0.2 ("armor_spall")("crew_shock" crew_shock_time(9))}
-				else "heavy_tank" {if rand 0.1 ("armor_spall")("crew_shock" crew_shock_time(7))}
-				else "super_heavy_tank" {if rand 0.05 ("armor_spall")("crew_shock" crew_shock_time(5))}
-				else {if rand 0.2 ("armor_spall")("crew_shock" crew_shock_time(9))}
-				}
-			}
-			{if volume "turret"
-				{if "light_tank" {if rand 0.5 ("turret_armor_spall")("crew_shock" crew_shock_time(11))}
-				else "medium_tank" {if rand 0.3 ("turret_armor_spall")("crew_shock" crew_shock_time(9))}
-				else "heavy_tank" {if rand 0.15 ("turret_armor_spall")("crew_shock" crew_shock_time(7))}
-				else "super_heavy_tank" {if rand 0.07 ("turret_armor_spall")("crew_shock" crew_shock_time(5))}
-				else {if rand 0.3 ("turret_armor_spall")("crew_shock" crew_shock_time(9))}
-				}
-			}
-			}
-		    }
-		    {if stuff "shell_maximum"
-			{if stuff "fg" {spawn "dust_tank_hit" 	"basis"}}
-			{if not "armor_hit"
-			{if volume "body"
-				{if "light_tank" {if rand 0.6 ("armor_spall")("crew_shock" crew_shock_time(12))}
-				else "medium_tank" {if rand 0.3 ("armor_spall")("crew_shock" crew_shock_time(10))}
-				else "heavy_tank" {if rand 0.2 ("armor_spall")("crew_shock" crew_shock_time(8))}
-				else "super_heavy_tank" {if rand 0.05 ("armor_spall")("crew_shock" crew_shock_time(6))}
-				else {if rand 0.3 ("armor_spall")("crew_shock" crew_shock_time(10))}
-				}
-			}
-			{if volume "turret"
-				{if "light_tank" {if rand 0.7 ("turret_armor_spall")("crew_shock" crew_shock_time(12))}
-				else "medium_tank" {if rand 0.4 ("turret_armor_spall")("crew_shock" crew_shock_time(10))}
-				else "heavy_tank" {if rand 0.25 ("turret_armor_spall")("crew_shock" crew_shock_time(8))}
-				else "super_heavy_tank" {if rand 0.07 ("turret_armor_spall")("crew_shock" crew_shock_time(6))}
-				else {if rand 0.4 ("turret_armor_spall")("crew_shock" crew_shock_time(10))}
-				}
-			}
-			}
-		    }
-                    {if stuff "%staff"
-		    {impulse dir %imp}
-				{if stuff "fg"
-                       			{if rand (* %hit_tank__kill_charger 0.7){kill_crew "charger"}}
-                        		{if rand (* %hit_tank__kill_gunner 0.7) {kill_crew "gunner"}}
-                        		{if rand (* %hit_tank__kill_driver 0.7) {kill_crew "driver"}}
-                        		{if rand (* %hit_tank__kill_commander 0.7) {kill_crew "commander"}}
-                        		{if rand (* %hit_tank__kill_gunner2 0.7) {kill_crew "gunner2"}}
-				}
-				{if hit_side front
-					{if rand (* %hit_tank__inter_spall 0.7)
-						{damage_report "spall" "Internal spalling"}
-                       				{if rand %hit_tank__kill_charger {kill_crew "charger"}}
-                        			{if rand %hit_tank__kill_gunner {kill_crew "gunner"}}
-						{if rand %hit_tank__kill_driver {kill_crew "driver"}}
-                        			{if rand %hit_tank__kill_commander {kill_crew "commander"}}
-                        			{if rand %hit_tank__kill_gunner2 {kill_crew "gunner2"}}
-						{if "light_tank"
-							{if "ammo_cooked"
-								{if rand %hit_body__ammo_fire
-									{tags remove "ammo_overload"}
-									{tags remove "ammo_normal_load"}
-									{call "explosion"}
+				{if stuff "pierce"
+					{if not tagged "shell_shattered"
+						{delay 0.1
+							{if not "penetrated"
+								{if rand 0.35
+									{start_sound "hit/wob_ricochet_small"}
 								}
+								else
+								{start_sound "hit/wob_penetrate_small"}
 							}
-							("crew_shock" crew_shock_time(%crew_shock_time))
-							("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(250))
-						else "medium_tank"
-							{if "ammo_cooked"
-								{if stuff "shell_verybig"
-									{if rand %hit_body__ammo_fire
-										{tags remove "ammo_overload"}
-										{tags remove "ammo_normal_load"}
-										{call "explosion"}
-									}
-								else stuff "shell_maximum"
-									{if rand %hit_body__ammo_fire
-										{tags remove "ammo_overload"}
-										{tags remove "ammo_normal_load"}
-										{call "explosion"}
-									}
-								}
-							}
-							("crew_shock" crew_shock_time(%crew_shock_time))
-							("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(300))
-						else "heavy_tank"
-							{if "ammo_cooked"
-								{if stuff "shell_maximum"
-									{if rand %hit_body__ammo_fire
-										{tags remove "ammo_overload"}
-										{tags remove "ammo_normal_load"}
-										{call "explosion"}
-									}
-								}
-							}
-							("crew_shock" crew_shock_time(%crew_shock_time))
-							("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(360))
-						else "super_heavy_tank"
-							("crew_shock" crew_shock_time(%crew_shock_time))
-							{if rand 0.5 ("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(450))}
-						else
-							{if "ammo_cooked"
-								{if rand %hit_body__ammo_fire
-									{tags remove "ammo_overload"}
-									{tags remove "ammo_normal_load"}
-									{call "explosion"}
-								}
-							}
-							("crew_shock" crew_shock_time(%crew_shock_time))
-							("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(250))
-						}
-						{if stuff "fg"
-						{if rand (* %hit_tank__inter_spall 0.3)
-							{if not "internal_damage"
-								{set "internal_damage" 1}
-								;{components "internal_components" break}
-								{reset_manual_control}
-								{able select 0}
-								{able repaired 0}
-								{call "notify_break"}
-								{tags add "destroyed"}
-								{damage_report "internal" "<c(FF1F00)>Knocked out<c(FFFFFF)>"}
-								{delay 3 1
-									{call "engine stop view"}
-									{crew_emit}
-									{delay 2{crew_emit}}
-									{delay 4{crew_emit}}
-									{delay 6{crew_emit}}
-								}
-							}
-						}
 						}
 					}
-				else hit_side back
-					{if rand (* %hit_tank__inter_spall 1.2)
-						{damage_report "spall" "Internal spalling"}
-                       				{if rand %hit_tank__kill_charger {kill_crew "charger"}}
-                        			{if rand %hit_tank__kill_gunner {kill_crew "gunner"}}
-                        			{if rand %hit_tank__kill_driver {kill_crew "driver"}}
-                        			{if rand %hit_tank__kill_commander {kill_crew "commander"}}
-                        			{if rand %hit_tank__kill_gunner2 {kill_crew "gunner2"}}
-						{if "light_tank"
-							{if "ammo_cooked"
-								{if rand %hit_body__ammo_fire
-									{tags remove "ammo_overload"}
-									{tags remove "ammo_normal_load"}
-									{call "explosion"}
-								}
-							}
-							("crew_shock" crew_shock_time(%crew_shock_time))
-							("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(250))
-						else "medium_tank"
-							{if "ammo_cooked"
-								{if stuff "shell_verybig"
-									{if rand %hit_body__ammo_fire
-										{tags remove "ammo_overload"}
-										{tags remove "ammo_normal_load"}
-										{call "explosion"}
-									}
-								else stuff "shell_maximum"
-									{if rand %hit_body__ammo_fire
-										{tags remove "ammo_overload"}
-										{tags remove "ammo_normal_load"}
-										{call "explosion"}
-									}
-								}
-							}
-							("crew_shock" crew_shock_time(%crew_shock_time))
-							("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(300))
-						else "heavy_tank"
-							{if "ammo_cooked"
-								{if stuff "shell_maximum"
-									{if rand %hit_body__ammo_fire
-										{tags remove "ammo_overload"}
-										{tags remove "ammo_normal_load"}
-										{call "explosion"}
-									}
-								}
-							}
-							("crew_shock" crew_shock_time(%crew_shock_time))
-							("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(360))
-						else "super_heavy_tank"
-							("crew_shock" crew_shock_time(%crew_shock_time))
-							{if rand 0.5 ("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(450))}
-						else
-							{if "ammo_cooked"
-								{if rand %hit_body__ammo_fire
-									{tags remove "ammo_overload"}
-									{tags remove "ammo_normal_load"}
-									{call "explosion"}
-								}
-							}
-							("crew_shock" crew_shock_time(%crew_shock_time))
-							("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(250))
-						}
-						{if stuff "fg"
-						{if rand (* %hit_tank__inter_spall 0.3)
-							{if not "internal_damage"
-								{set "internal_damage" 1}
-								;{components "internal_components" break}
-								{reset_manual_control}
-								{able select 0}
-								{able repaired 0}
-								{call "notify_break"}
-								{tags add "destroyed"}
-								{damage_report "internal" "<c(FF1F00)>Knocked out<c(FFFFFF)>"}
-								{delay 3 1
-									{call "engine stop view"}
-									{crew_emit}
-									{delay 2{crew_emit}}
-									{delay 4{crew_emit}}
-									{delay 6{crew_emit}}
-								}
-							}
-						}
-						}
-					}
-				else
-					{if rand (* %hit_tank__inter_spall 1.0)
-						{damage_report "spall" "Internal spalling"}
-                       				{if rand %hit_tank__kill_charger {kill_crew "charger"}}
-                        			{if rand %hit_tank__kill_gunner {kill_crew "gunner"}}
-                        			{if rand %hit_tank__kill_driver {kill_crew "driver"}}
-                        			{if rand %hit_tank__kill_commander {kill_crew "commander"}}
-                        			{if rand %hit_tank__kill_gunner2 {kill_crew "gunner2"}}
-						{if "light_tank"
-							{if "ammo_cooked"
-								{if rand %hit_body__ammo_fire
-									{tags remove "ammo_overload"}
-									{tags remove "ammo_normal_load"}
-									{call "explosion"}
-								}
-							}
-							("crew_shock" crew_shock_time(%crew_shock_time))
-							("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(250))
-						else "medium_tank"
-							{if "ammo_cooked"
-								{if stuff "shell_verybig"
-									{if rand %hit_body__ammo_fire
-										{tags remove "ammo_overload"}
-										{tags remove "ammo_normal_load"}
-										{call "explosion"}
-									}
-								else stuff "shell_maximum"
-									{if rand %hit_body__ammo_fire
-										{tags remove "ammo_overload"}
-										{tags remove "ammo_normal_load"}
-										{call "explosion"}
-									}
-								}
-							}
-							("crew_shock" crew_shock_time(%crew_shock_time))
-							("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(300))
-						else "heavy_tank"
-							{if "ammo_cooked"
-								{if stuff "shell_maximum"
-									{if rand %hit_body__ammo_fire
-										{tags remove "ammo_overload"}
-										{tags remove "ammo_normal_load"}
-										{call "explosion"}
-									}
-								}
-							}
-							("crew_shock" crew_shock_time(%crew_shock_time))
-							("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(360))
-						else "super_heavy_tank"
-							("crew_shock" crew_shock_time(%crew_shock_time))
-							{if rand 0.5 ("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(450))}
-						else
-							{if "ammo_cooked"
-								{if rand %hit_body__ammo_fire
-									{tags remove "ammo_overload"}
-									{tags remove "ammo_normal_load"}
-									{call "explosion"}
-								}
-							}
-							("crew_shock" crew_shock_time(%crew_shock_time))
-							("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(250))
-						}
-						{if stuff "fg"
-						{if rand (* %hit_tank__inter_spall 0.3)
-							{if not "internal_damage"
-								{set "internal_damage" 1}
-								;{components "internal_components" break}
-								{reset_manual_control}
-								{able select 0}
-								{able repaired 0}
-								{call "notify_break"}
-								{tags add "destroyed"}
-								{damage_report "internal" "<c(FF1F00)>Knocked out<c(FFFFFF)>"}
-								{delay 3 1
-									{call "engine stop view"}
-									{crew_emit}
-									{delay 2{crew_emit}}
-									{delay 4{crew_emit}}
-									{delay 6{crew_emit}}
-								}
-							}
-						}
-						}
-					}
-				}
-			{if volume "body"
-                                {if rand %hit_body__explosive
-                                    {call "explosion"}
-                                }
-                                {if rand %hit_body__engine_brake
-                                    {if work "engine"
-                                        {components "engine" break}
-                                    }
-                                }
-                                {if rand %hit_body__body_destroy
-				    {set "armor_spall" 1}
-                                    {call "mp_destroy"}
-                                else rand %hit_body__body_brake
-				    {set "armor_heavydamage" 1}
-                                    {components "body" break}
-                                    {damage_report "body" "component/body_break"}
-                                }
-                        else volume "engine"
-                                {if rand %hit_body__explosive
-                                    {call "explosion"}
-                                }
-                                {if rand %hit_engine__engine_brake
-                                    {if work "engine"
-                                        {components "engine" break}
-					{call "engine fullstop"}
-                                    }
-                                }
-                                {if rand %hit_body__body_brake
-                                    {components "body" break}
-                                    {damage_report "body" "component/body_break"}
-                                }
-                        else volume "turret"
-                                {if rand %hit_turret__explosive
-                                    {call "explosion"}
-                                }
-                                {if hit_side front
-                                    {if rand %hit_turret_front__gun_brake
-                                        {if work "gun"
-                                            {components "gun" break}
-                                            {damage_report "gun" "component/gun_broken"}
-                                        }
-                                    }
-				}
-                                {if rand %hit_turret__turret_destroy
-				    {set "turretarmor_spall" 1}
-                                    {components "turret" destroy}
-                                else rand %hit_turret__turret_brake
-				    {set "turretarmor_heavydamage" 1}
-                                    {components "turret" break}
-                                }
-                        else volume "mantlet"
-                                {if rand %hit_turret__explosive
-                                    {call "explosion"}
-                                }
-                                {if rand %hit_turret_front__gun_brake
-                                    {if work "gun"
-                                        {components "gun" break}
-                                        {damage_report "gun" "component/gun_broken"}
-                                    }
-                                }
-                                {if rand %hit_turret__turret_destroy
-                                    {components "turret" destroy}
-                                else rand %hit_turret__turret_brake
-                                    {components "turret" break}
-                                }
-                        }
-		     ;};if hit_angle end
-                   }; stuff
-;=====================================
-    )
-
-    (define "blast_damage_contusion" ;by Svoyak
-        {if volume "trackleft"
-            ;do nothing
-        else volume "trackright"
-            ;do nothing
-        else volume "roller"
-            ;do nothing
-        else volume "wheel_work"
-            ;do nothing
-        else volume "wheel"
-            ;do nothing
-        else
-            {if operatable
-                {if not "already_blasted"
-            
-                    {if min_energy %blast_energy
-                        {set "already_blasted" 1}
-                        {if rand %blast_rand_contusion
-                            {delay 0.5
-                                {set "already_blasted" 0}
-                            }
-                            ;{con "%blast_energy"}
-                            {damage_report "body" "component/shock"}
-                            {chassis_work 0}
-                            {tags add "stopped1"}
-                            
-                            {if work "turret"
-                                {ik_enable "turret" 0}
-                                {tags add "turr_jummed1"}
-                            }
-                            {weapon_work "gun" 0}{weapon_work "gun1_2" 0}{weapon_work "gun2" 0}{weapon_work "mgun" 0}{weapon_work "mgun1" 0}{weapon_work "mgun2" 0}{weapon_work "mgun3" 0}
-                            {delay %blast_crew_shock_time
-                                {if not tagged "gun_brake"
-					{if tagged "gun_mode_unit"
-						{if not tagged "gun_changing"
-							{if "gun_mode"
-								{weapon_work "gun1_2" 1}
-							else
-								{weapon_work "gun" 1}
-							}
-						}
-					else tagged "gun_mode_unit_art"
-						{if not tagged "gun_changing"
-							{if "gun_mode"
-								{weapon_work "gun1_2" 1}
-							else
-								{weapon_work "gun" 1}
-							}
-						}
-					else	
-                               			{weapon_work "gun" 1}
-					}
-                                }
-                                {weapon_work "gun2" 1}{if not tagged "commander_down"{weapon_work "mgun" 1}}{weapon_work "mgun1" 1}{weapon_work "mgun2" 1}{weapon_work "mgun3" 1}
-                                {if tagged "stopped1"
-                                    {tags remove "stopped1"}
-                                    {if work "mover"
-                                        {if not tagged "engine_brake"
-					    {if "engine_on"
-                                            	{chassis_work 1}
-					    }
-                                        }
-                                    }
-                                }
-                                {if tagged "turr_jummed1"
-                                        {if tagged "turret_brake"
-                                            {tags remove "turr_jummed1"}
-                                            
-                                        else tagged "turret_stopped_by_body"
-                                            {tags remove "turr_jummed1"}
-                                        else
-                                            {tags remove "turr_jummed1"}
-					    {if work "turret_drive"
-                                           	{ik_enable "turret" 1}
-					    }
-                                        }
-                                }
-                            }
-                        else
-                            {delay 0.5
-                                {set "already_blasted" 0}
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        
-    )
-;MEGA BUILDING END =============================================================================================================================================================================
-
-    {on repair
-	    {if component "turret"
-    		{view stop "smoke3"}
-            {call "update_turret"}
-            {tags remove "turret_brake"}
-	else component "transmission"
-		{if work "mover"
-			{if not tagged "engine_brake"
-				{if "engine_on"
-					{if work "trackleft" {if work "trackright" {chassis_work 1}}}
 				}
 			}
 		}
-	else component "turret_drive"
-		{call "update_turret"}
-	else component "vertical_drive"
-		{ik_enable "gun_rot"}
-        else component "body"
-            {view stop "smoke4"}
-            {call "update_turret"}
-            {tags remove "turret_stopped_by_body"}
-            {tags remove "body_brake"}
-            {able "select" 1}
-        else component "engine"
-            {tags remove "engine_brake"}
-        }
-    }
+		{if stuff "size_small"
+			{if not stuff "heat_shell"
+				{if stuff "pierce"
+					{if not tagged "shell_shattered"
+						{delay 0.1
+							{if not "penetrated"
+								{if rand 0.35
+									{start_sound "hit/wob_ricochet_medium"}
+								}
+								else
+								{start_sound "hit/wob_penetrate_medium"}
+							}
+						}
+					}
+				}
+			}
+		}
+		{if stuff "highvel_big"
+			{if not stuff "heat_shell"
+				{if stuff "pierce"
+					{if not tagged "shell_shattered"
+						{delay 0.1
+							{if not "penetrated"
+								{if rand 0.35
+									{start_sound "hit/wob_ricochet_large"}
+								}
+								else
+								{start_sound "hit/wob_penetrate_large"}
+							}
+						}
+					}
+				}
+			}
+			{if stuff "fg" {spawn "dust_tank_hit" 	"basis"}}
+			{if not "armor_hit"
+				{if volume "body"
+					{if "light_tank" {if rand 0.3 ("armor_spall")("crew_shock" crew_shock_time(10))}
+						else "medium_tank" {if rand 0.15 ("armor_spall")("crew_shock" crew_shock_time(8))}
+						else "heavy_tank" {if rand 0.05 ("armor_spall")("crew_shock" crew_shock_time(6))}
+						else "super_heavy_tank" {if rand 0.01 ("armor_spall")("crew_shock" crew_shock_time(4))}
+						else {if rand 0.15 ("armor_spall")("crew_shock" crew_shock_time(8))}
+					}
+				}
+				{if volume "turret"
+					{if "light_tank" {if rand 0.4 ("turret_armor_spall")("crew_shock" crew_shock_time(10))}
+						else "medium_tank" {if rand 0.2 ("turret_armor_spall")("crew_shock" crew_shock_time(8))}
+						else "heavy_tank" {if rand 0.03 ("turret_armor_spall")("crew_shock" crew_shock_time(6))}
+						else "super_heavy_tank" {if rand 0.01 ("turret_armor_spall")("crew_shock" crew_shock_time(4))}
+						else {if rand 0.2 ("turret_armor_spall")("crew_shock" crew_shock_time(8))}
+					}
+				}
+			}
+		}
+		{if stuff "shell_verybig"
+			{if not stuff "heat_shell"
+				{if stuff "pierce"
+					{if not tagged "shell_shattered"
+						{delay 0.1
+							{if not "penetrated"
+								{if rand 0.35
+									{start_sound "hit/wob_ricochet_large"}
+								}
+								else
+								{start_sound "hit/wob_penetrate_large"}
+							}
+						}
+					}
+				}
+			}
+			{if stuff "fg" {spawn "dust_tank_hit" 	"basis"}}
+			{if not "armor_hit"
+				{if volume "body"
+					{if "light_tank" {if rand 0.4 ("armor_spall")("crew_shock" crew_shock_time(11))}
+						else "medium_tank" {if rand 0.2 ("armor_spall")("crew_shock" crew_shock_time(9))}
+						else "heavy_tank" {if rand 0.1 ("armor_spall")("crew_shock" crew_shock_time(7))}
+						else "super_heavy_tank" {if rand 0.05 ("armor_spall")("crew_shock" crew_shock_time(5))}
+						else {if rand 0.2 ("armor_spall")("crew_shock" crew_shock_time(9))}
+					}
+				}
+				{if volume "turret"
+					{if "light_tank" {if rand 0.5 ("turret_armor_spall")("crew_shock" crew_shock_time(11))}
+						else "medium_tank" {if rand 0.3 ("turret_armor_spall")("crew_shock" crew_shock_time(9))}
+						else "heavy_tank" {if rand 0.15 ("turret_armor_spall")("crew_shock" crew_shock_time(7))}
+						else "super_heavy_tank" {if rand 0.07 ("turret_armor_spall")("crew_shock" crew_shock_time(5))}
+						else {if rand 0.3 ("turret_armor_spall")("crew_shock" crew_shock_time(9))}
+					}
+				}
+			}
+		}
+		{if stuff "shell_maximum"
+			{if stuff "fg" {spawn "dust_tank_hit" 	"basis"}}
+			{if not "armor_hit"
+				{if volume "body"
+					{if "light_tank" {if rand 0.6 ("armor_spall")("crew_shock" crew_shock_time(12))}
+						else "medium_tank" {if rand 0.3 ("armor_spall")("crew_shock" crew_shock_time(10))}
+						else "heavy_tank" {if rand 0.2 ("armor_spall")("crew_shock" crew_shock_time(8))}
+						else "super_heavy_tank" {if rand 0.05 ("armor_spall")("crew_shock" crew_shock_time(6))}
+						else {if rand 0.3 ("armor_spall")("crew_shock" crew_shock_time(10))}
+					}
+				}
+				{if volume "turret"
+					{if "light_tank" {if rand 0.7 ("turret_armor_spall")("crew_shock" crew_shock_time(12))}
+						else "medium_tank" {if rand 0.4 ("turret_armor_spall")("crew_shock" crew_shock_time(10))}
+						else "heavy_tank" {if rand 0.25 ("turret_armor_spall")("crew_shock" crew_shock_time(8))}
+						else "super_heavy_tank" {if rand 0.07 ("turret_armor_spall")("crew_shock" crew_shock_time(6))}
+						else {if rand 0.4 ("turret_armor_spall")("crew_shock" crew_shock_time(10))}
+					}
+				}
+			}
+		}
+		{if stuff "%staff"
+			{impulse dir %imp}
+			{if stuff "fg"
+				{if rand (* %hit_tank__kill_charger 0.7){kill_crew "charger"}}
+				{if rand (* %hit_tank__kill_gunner 0.7) {kill_crew "gunner"}}
+				{if rand (* %hit_tank__kill_driver 0.7) {kill_crew "driver"}}
+				{if rand (* %hit_tank__kill_commander 0.7) {kill_crew "commander"}}
+				{if rand (* %hit_tank__kill_gunner2 0.7) {kill_crew "gunner2"}}
+			}
+			{if hit_side front
+				{if rand (* %hit_tank__inter_spall 0.7)
+					{damage_report "spall" "Internal spalling"}
+					{if rand %hit_tank__kill_charger {kill_crew "charger"}}
+					{if rand %hit_tank__kill_gunner {kill_crew "gunner"}}
+					{if rand %hit_tank__kill_driver {kill_crew "driver"}}
+					{if rand %hit_tank__kill_commander {kill_crew "commander"}}
+					{if rand %hit_tank__kill_gunner2 {kill_crew "gunner2"}}
+					{if "light_tank"
+						{if "ammo_cooked"
+							{if rand %hit_body__ammo_fire
+								{tags remove "ammo_overload"}
+								{tags remove "ammo_normal_load"}
+								{call "explosion"}
+							}
+						}
+						("crew_shock" crew_shock_time(%crew_shock_time))
+						("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(250))
+						else "medium_tank"
+						{if "ammo_cooked"
+							{if stuff "shell_verybig"
+								{if rand %hit_body__ammo_fire
+									{tags remove "ammo_overload"}
+									{tags remove "ammo_normal_load"}
+									{call "explosion"}
+								}
+								else stuff "shell_maximum"
+								{if rand %hit_body__ammo_fire
+									{tags remove "ammo_overload"}
+									{tags remove "ammo_normal_load"}
+									{call "explosion"}
+								}
+							}
+						}
+						("crew_shock" crew_shock_time(%crew_shock_time))
+						("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(300))
+						else "heavy_tank"
+						{if "ammo_cooked"
+							{if stuff "shell_maximum"
+								{if rand %hit_body__ammo_fire
+									{tags remove "ammo_overload"}
+									{tags remove "ammo_normal_load"}
+									{call "explosion"}
+								}
+							}
+						}
+						("crew_shock" crew_shock_time(%crew_shock_time))
+						("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(360))
+						else "super_heavy_tank"
+						("crew_shock" crew_shock_time(%crew_shock_time))
+						{if rand 0.5 ("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(450))}
+						else
+						{if "ammo_cooked"
+							{if rand %hit_body__ammo_fire
+								{tags remove "ammo_overload"}
+								{tags remove "ammo_normal_load"}
+								{call "explosion"}
+							}
+						}
+						("crew_shock" crew_shock_time(%crew_shock_time))
+						("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(250))
+					}
+					{if stuff "fg"
+						{if rand (* %hit_tank__inter_spall 0.3)
+							{if not "internal_damage"
+								{set "internal_damage" 1}
+								;{components "internal_components" break}
+								{reset_manual_control}
+								{able select 0}
+								{able repaired 0}
+								{call "notify_break"}
+								{tags add "destroyed"}
+								{damage_report "internal" "<c(FF1F00)>Knocked out<c(FFFFFF)>"}
+								{delay 3 1
+									{call "engine stop view"}
+									{crew_emit}
+									{delay 2{crew_emit}}
+									{delay 4{crew_emit}}
+									{delay 6{crew_emit}}
+								}
+							}
+						}
+					}
+				}
+				else hit_side back
+				{if rand (* %hit_tank__inter_spall 1.2)
+					{damage_report "spall" "Internal spalling"}
+					{if rand %hit_tank__kill_charger {kill_crew "charger"}}
+					{if rand %hit_tank__kill_gunner {kill_crew "gunner"}}
+					{if rand %hit_tank__kill_driver {kill_crew "driver"}}
+					{if rand %hit_tank__kill_commander {kill_crew "commander"}}
+					{if rand %hit_tank__kill_gunner2 {kill_crew "gunner2"}}
+					{if "light_tank"
+						{if "ammo_cooked"
+							{if rand %hit_body__ammo_fire
+								{tags remove "ammo_overload"}
+								{tags remove "ammo_normal_load"}
+								{call "explosion"}
+							}
+						}
+						("crew_shock" crew_shock_time(%crew_shock_time))
+						("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(250))
+						else "medium_tank"
+						{if "ammo_cooked"
+							{if stuff "shell_verybig"
+								{if rand %hit_body__ammo_fire
+									{tags remove "ammo_overload"}
+									{tags remove "ammo_normal_load"}
+									{call "explosion"}
+								}
+								else stuff "shell_maximum"
+								{if rand %hit_body__ammo_fire
+									{tags remove "ammo_overload"}
+									{tags remove "ammo_normal_load"}
+									{call "explosion"}
+								}
+							}
+						}
+						("crew_shock" crew_shock_time(%crew_shock_time))
+						("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(300))
+						else "heavy_tank"
+						{if "ammo_cooked"
+							{if stuff "shell_maximum"
+								{if rand %hit_body__ammo_fire
+									{tags remove "ammo_overload"}
+									{tags remove "ammo_normal_load"}
+									{call "explosion"}
+								}
+							}
+						}
+						("crew_shock" crew_shock_time(%crew_shock_time))
+						("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(360))
+						else "super_heavy_tank"
+						("crew_shock" crew_shock_time(%crew_shock_time))
+						{if rand 0.5 ("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(450))}
+						else
+						{if "ammo_cooked"
+							{if rand %hit_body__ammo_fire
+								{tags remove "ammo_overload"}
+								{tags remove "ammo_normal_load"}
+								{call "explosion"}
+							}
+						}
+						("crew_shock" crew_shock_time(%crew_shock_time))
+						("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(250))
+					}
+					{if stuff "fg"
+						{if rand (* %hit_tank__inter_spall 0.3)
+							{if not "internal_damage"
+								{set "internal_damage" 1}
+								;{components "internal_components" break}
+								{reset_manual_control}
+								{able select 0}
+								{able repaired 0}
+								{call "notify_break"}
+								{tags add "destroyed"}
+								{damage_report "internal" "<c(FF1F00)>Knocked out<c(FFFFFF)>"}
+								{delay 3 1
+									{call "engine stop view"}
+									{crew_emit}
+									{delay 2{crew_emit}}
+									{delay 4{crew_emit}}
+									{delay 6{crew_emit}}
+								}
+							}
+						}
+					}
+				}
+				else
+				{if rand (* %hit_tank__inter_spall 1.0)
+					{damage_report "spall" "Internal spalling"}
+					{if rand %hit_tank__kill_charger {kill_crew "charger"}}
+					{if rand %hit_tank__kill_gunner {kill_crew "gunner"}}
+					{if rand %hit_tank__kill_driver {kill_crew "driver"}}
+					{if rand %hit_tank__kill_commander {kill_crew "commander"}}
+					{if rand %hit_tank__kill_gunner2 {kill_crew "gunner2"}}
+					{if "light_tank"
+						{if "ammo_cooked"
+							{if rand %hit_body__ammo_fire
+								{tags remove "ammo_overload"}
+								{tags remove "ammo_normal_load"}
+								{call "explosion"}
+							}
+						}
+						("crew_shock" crew_shock_time(%crew_shock_time))
+						("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(250))
+						else "medium_tank"
+						{if "ammo_cooked"
+							{if stuff "shell_verybig"
+								{if rand %hit_body__ammo_fire
+									{tags remove "ammo_overload"}
+									{tags remove "ammo_normal_load"}
+									{call "explosion"}
+								}
+								else stuff "shell_maximum"
+								{if rand %hit_body__ammo_fire
+									{tags remove "ammo_overload"}
+									{tags remove "ammo_normal_load"}
+									{call "explosion"}
+								}
+							}
+						}
+						("crew_shock" crew_shock_time(%crew_shock_time))
+						("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(300))
+						else "heavy_tank"
+						{if "ammo_cooked"
+							{if stuff "shell_maximum"
+								{if rand %hit_body__ammo_fire
+									{tags remove "ammo_overload"}
+									{tags remove "ammo_normal_load"}
+									{call "explosion"}
+								}
+							}
+						}
+						("crew_shock" crew_shock_time(%crew_shock_time))
+						("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(360))
+						else "super_heavy_tank"
+						("crew_shock" crew_shock_time(%crew_shock_time))
+						{if rand 0.5 ("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(450))}
+						else
+						{if "ammo_cooked"
+							{if rand %hit_body__ammo_fire
+								{tags remove "ammo_overload"}
+								{tags remove "ammo_normal_load"}
+								{call "explosion"}
+							}
+						}
+						("crew_shock" crew_shock_time(%crew_shock_time))
+						("ammunition_loads_spall" rand(%hit_body__ammo_fire) ammo(250))
+					}
+					{if stuff "fg"
+						{if rand (* %hit_tank__inter_spall 0.3)
+							{if not "internal_damage"
+								{set "internal_damage" 1}
+								;{components "internal_components" break}
+								{reset_manual_control}
+								{able select 0}
+								{able repaired 0}
+								{call "notify_break"}
+								{tags add "destroyed"}
+								{damage_report "internal" "<c(FF1F00)>Knocked out<c(FFFFFF)>"}
+								{delay 3 1
+									{call "engine stop view"}
+									{crew_emit}
+									{delay 2{crew_emit}}
+									{delay 4{crew_emit}}
+									{delay 6{crew_emit}}
+								}
+							}
+						}
+					}
+				}
+			}
+			{if volume "body"
+				{if rand %hit_body__explosive
+					{call "explosion"}
+				}
+				{if rand %hit_body__engine_brake
+					{if work "engine"
+						{components "engine" break}
+					}
+				}
+				{if rand %hit_body__body_destroy
+					{set "armor_spall" 1}
+					{call "mp_destroy"}
+					else rand %hit_body__body_brake
+					{set "armor_heavydamage" 1}
+					{components "body" break}
+					{damage_report "body" "component/body_break"}
+				}
+				else volume "engine"
+				{if rand %hit_body__explosive
+					{call "explosion"}
+				}
+				{if rand %hit_engine__engine_brake
+					{if work "engine"
+						{components "engine" break}
+						{call "engine fullstop"}
+					}
+				}
+				{if rand %hit_body__body_brake
+					{components "body" break}
+					{damage_report "body" "component/body_break"}
+				}
+				else volume "turret"
+				{if rand %hit_turret__explosive
+					{call "explosion"}
+				}
+				{if hit_side front
+					{if rand %hit_turret_front__gun_brake
+						{if work "gun"
+							{components "gun" break}
+							{damage_report "gun" "component/gun_broken"}
+						}
+					}
+				}
+				{if rand %hit_turret__turret_destroy
+					{set "turretarmor_spall" 1}
+					{components "turret" destroy}
+					else rand %hit_turret__turret_brake
+					{set "turretarmor_heavydamage" 1}
+					{components "turret" break}
+				}
+				else volume "mantlet"
+				{if rand %hit_turret__explosive
+					{call "explosion"}
+				}
+				{if rand %hit_turret_front__gun_brake
+					{if work "gun"
+						{components "gun" break}
+						{damage_report "gun" "component/gun_broken"}
+					}
+				}
+				{if rand %hit_turret__turret_destroy
+					{components "turret" destroy}
+					else rand %hit_turret__turret_brake
+					{components "turret" break}
+				}
+			}
+		;};if hit_angle end
+		}; stuff
+	;=====================================
+	)
+
+	; blast_damage_contusion: by Svoyak (makes {if {if}})
+	;   blast_energy - {if}, [?]
+	;   blast_rand_contusion - {if}, [?]
+	;   blast_crew_shock_time - {delay}, s
+	;   e.g. ("blast_damage_contusion" blast_rand_contusion(1.00) blast_energy(4) blast_crew_shock_time(1.00))
+	(define "blast_damage_contusion"
+		{if volume "trackleft"
+			;do nothing
+			else volume "trackright"
+			;do nothing
+			else volume "roller"
+			;do nothing
+			else volume "wheel_work"
+			;do nothing
+			else volume "wheel"
+			;do nothing
+			else
+			{if operatable
+				{if not "already_blasted"
+
+					{if min_energy %blast_energy
+						{set "already_blasted" 1}
+						{if rand %blast_rand_contusion
+							{delay 0.5
+								{set "already_blasted" 0}
+							}
+							;{con "%blast_energy"}
+							{damage_report "body" "component/shock"}
+							{chassis_work 0}
+							{tags add "stopped1"}
+
+							{if work "turret"
+								{ik_enable "turret" 0}
+								{tags add "turr_jummed1"}
+							}
+							{weapon_work "gun" 0}{weapon_work "gun1_2" 0}{weapon_work "gun2" 0}{weapon_work "mgun" 0}{weapon_work "mgun1" 0}{weapon_work "mgun2" 0}{weapon_work "mgun3" 0}
+							{delay %blast_crew_shock_time
+								{if not tagged "gun_brake"
+									{if tagged "gun_mode_unit"
+										{if not tagged "gun_changing"
+											{if "gun_mode"
+												{weapon_work "gun1_2" 1}
+												else
+												{weapon_work "gun" 1}
+											}
+										}
+										else tagged "gun_mode_unit_art"
+										{if not tagged "gun_changing"
+											{if "gun_mode"
+												{weapon_work "gun1_2" 1}
+												else
+												{weapon_work "gun" 1}
+											}
+										}
+										else
+										{weapon_work "gun" 1}
+									}
+								}
+								{weapon_work "gun2" 1}{if not tagged "commander_down"{weapon_work "mgun" 1}}{weapon_work "mgun1" 1}{weapon_work "mgun2" 1}{weapon_work "mgun3" 1}
+								{if tagged "stopped1"
+									{tags remove "stopped1"}
+									{if work "mover"
+										{if not tagged "engine_brake"
+											{if "engine_on"
+												{chassis_work 1}
+											}
+										}
+									}
+								}
+								{if tagged "turr_jummed1"
+									{if tagged "turret_brake"
+										{tags remove "turr_jummed1"}
+
+										else tagged "turret_stopped_by_body"
+										{tags remove "turr_jummed1"}
+										else
+										{tags remove "turr_jummed1"}
+										{if work "turret_drive"
+											{ik_enable "turret" 1}
+										}
+									}
+								}
+							}
+							else
+							{delay 0.5
+								{set "already_blasted" 0}
+							}
+						}
+					}
+				}
+			}
+		}
+
+	)
+	;MEGA BUILDING END =============================================================================================================================================================================
+
+	{on repair
+		{if component "turret"
+			{view stop "smoke3"}
+			{call "update_turret"}
+			{tags remove "turret_brake"}
+			else component "transmission"
+			{if work "mover"
+				{if not tagged "engine_brake"
+					{if "engine_on"
+						{if work "trackleft" {if work "trackright" {chassis_work 1}}}
+					}
+				}
+			}
+			else component "turret_drive"
+			{call "update_turret"}
+			else component "vertical_drive"
+			{ik_enable "gun_rot"}
+			else component "body"
+			{view stop "smoke4"}
+			{call "update_turret"}
+			{tags remove "turret_stopped_by_body"}
+			{tags remove "body_brake"}
+			{able "select" 1}
+			else component "engine"
+			{tags remove "engine_brake"}
+		}
+	}
 	{on "update_turret"
 		{if work "turret"
 			{if work "body"
 				{if work "turret_drive"
 					{ik_enable "turret" 1}
-				else
+					else
 					{ik_enable "turret" 0}
 				}
-			 else
+				else
 				{ik_enable "turret" 0}
 			}
-		 else
+			else
 			{ik_enable "turret" 0}
 		}
-    }
+	}
 }; end of "tank"
 
 {"flamer_tank"
@@ -1420,27 +1495,27 @@
 				{if rand 0.35
 					{tags add "instant_explosion"}{call "pre_explosion"}
 				}
-			else stuff "ptr"
+				else stuff "ptr"
 				{if rand 0.15
 					{tags add "instant_explosion"}{call "pre_explosion"}
 				}
-			else stuff "20mm"
+				else stuff "20mm"
 				{if rand 0.15
 					{tags add "instant_explosion"}{call "pre_explosion"}
 				}
-			else stuff "size_minimum"
+				else stuff "size_minimum"
 				{if rand 0.2
 					{tags add "instant_explosion"}{call "pre_explosion"}
 				}
-			else stuff "size_small"
+				else stuff "size_small"
 				{if rand 0.3
 					{tags add "instant_explosion"}{call "pre_explosion"}
 				}
-			else stuff "size_medium"
+				else stuff "size_medium"
 				{if rand 0.5
 					{tags add "instant_explosion"}{call "pre_explosion"}
 				}
-			else stuff "size_big"
+				else stuff "size_big"
 				{if rand 0.75
 					{tags add "instant_explosion"}{call "pre_explosion"}
 				}
@@ -1450,45 +1525,45 @@
 }
 
 {"opened tank"
-        {on "explosive_broken" overload
-                {call "explosion"}
-        }
+	{on "explosive_broken" overload
+		{call "explosion"}
+	}
 }
 
 {"m4a3c"
-        {on fire "gun2"
-                {spawn "startsmoke_cali"}
-        }
+	{on fire "gun2"
+		{spawn "startsmoke_cali"}
+	}
 }
 
 {"m4a4_tulip"
-        {on fire "gun2"
-                {spawn "startsmoke_cali"}
-        }
+	{on fire "gun2"
+		{spawn "startsmoke_cali"}
+	}
 	("smoke_launcher_usa_turret")
 }
 
 {"bm_8_24"
-        {on fire "gun"
-                {spawn "startsmoke_cali"}
-        }
+	{on fire "gun"
+		{spawn "startsmoke_cali"}
+	}
 }
 
 {"m4calliope"	; must be placed before	the props "turret"
-	{on break_armor             
-		{if volume "guns"           
+	{on break_armor
+		{if volume "guns"
 			{call "tear_guns"}
 		}
 	}
 	{on break_armor_again
-		{if volume "guns"           
+		{if volume "guns"
 			{call "tear_guns"}
 		}
 	}
 	{on "tear_turret"
 		{if "roof_broken"
 			{bone cut "gun"}
-		else
+			else
 			{call "tear_gun"}
 		}
 	}
@@ -1501,6 +1576,9 @@
 				{bone cut "gun2"}
 			}
 			{delay_ex 0
+				; teargun: {tear "piece_large_steel" {impulse} {add_view} {view} {delay_effect}}
+				;   gun - text in {tear}
+				;   e.g. ("teargun" gun(gun2))
 				(define "teargun"
 					{tear "piece_large_steel" bone "%gun"
 						{impulse up 5 2.3 dir 3 1.5 cx 5 2 cy 5 2 rnd_dir 10 no_position}
@@ -1538,13 +1616,13 @@
 			{call "update_turret"}
 			{spawn "tank_die_particle" "Turret"}
 			{spawn "circledust_norm" "Turret"}
-;			{ani_play "open" -1.0 resume}
+			;			{ani_play "open" -1.0 resume}
 			{view start "smoke3"}
-            {delay 10
-    			{view stop "smoke3"}
-    			{set "smoke3" 0}
-            }
-        else component "body"
+			{delay 10
+				{view stop "smoke3"}
+				{set "smoke3" 0}
+			}
+			else component "body"
 			{spawn "circledust_norm" "Turret"}
 			{call "update_turret"}
 		}
@@ -1565,8 +1643,8 @@
 					{impulse up 6 3 dir 6 1.5 cx 6 2 cy 6 2 rnd_dir 5 1.5 no_position}
 					{if rand 0.8
 						{add_view "smoke_dead_norm" "smoke" "basis"}
-					else
-					{add_view "smoke_black" "smoke" "basis"}
+						else
+						{add_view "smoke_black" "smoke" "basis"}
 					}
 					{view start "smoke"}
 					{delay_effect 30 5 "pause"}
@@ -1593,8 +1671,8 @@
 					{impulse up 3.2 2.3 dir 2.5 1.5 cx 3.5 2 cy 3.5 2 rnd_dir 3 0.5 no_position}
 					{if rand 0.8
 						{add_view "smoke_dead_turret" "smoke" "basis"}
-					else
-					{add_view "smoke_dead_norm" "smoke" "basis"}
+						else
+						{add_view "smoke_dead_norm" "smoke" "basis"}
 					}
 					{view start "smoke"}
 					{delay_effect 30 5 "pause"}
@@ -1621,8 +1699,8 @@
 					{impulse up 8 4 dir 8 1.5 cx 10 2 cy 10 2 rnd_dir 10 3 no_position}
 					{if rand 1
 						{add_view "smoke_dead_turret" "smoke" "basis"}
-					else
-					{add_view "smoke_dead_norm" "smoke" "basis"}
+						else
+						{add_view "smoke_dead_norm" "smoke" "basis"}
 					}
 					{view start "smoke"}
 					{delay_effect 30 5 "pause"}
@@ -1679,7 +1757,7 @@
 			{bone cut "turret"}
 		;else
 		;	{if rand 0.5
-                ;    		{call "tear_turret"}
+		;    		{call "tear_turret"}
 		;	}
 		}
 	}
@@ -1715,31 +1793,31 @@
 		{if min_energy 8
 			{if explosive_amount 1
 				{call "explosion"}
-			else explosive_amount 0
+				else explosive_amount 0
 				{tags add "energy_overload"}
 				{call "destroy_energy_overload"}
 				{impulse up 0.1 0.1 dir 1 0.2}
 			}
-		 else min_energy 5
+			else min_energy 5
 			{if explosive_amount 1
 				{call "explosion"}
-			else explosive_amount 0
+				else explosive_amount 0
 				{tags add "energy_overload"}
 				{call "destroy_energy_overload"}
 			}
-		 else min_energy 4
+			else min_energy 4
 			{if rand 0.5
 				{if explosive_amount 1
 					{call "explosion"}
-				else explosive_amount 0
+					else explosive_amount 0
 					{tags add "energy_overload"}
 					{call "destroy_energy_overload"}
 				}
 			}
-		 else min_energy 1
+			else min_energy 1
 			{impulse up 0.1 0.1 dir 0.4 0.2}
-		 else min_energy 0.4
-		 	{ani_play "hit"}
+			else min_energy 0.4
+			{ani_play "hit"}
 		}
 	}
 	{on "_explosion"
@@ -1763,7 +1841,7 @@
 				;{damage_report "body" "component/shock"}
 				{if rand 0.5 {components "engine" break}}
 				{if rand 0.4 {components "body" break}}
-			else effector_velocity 16
+				else effector_velocity 16
 				;{damage_report "body" "component/shock"}
 				{if rand 0.5 {components "engine" break}}
 				{if rand 0.1 {components "body" break}}
@@ -1774,14 +1852,14 @@
 				;{damage_report "body" "component/shock"}
 				{if rand 0.7 {components "engine" break}}
 				{if rand 0.5 {components "body" break}}
-			else effector_velocity 12
+				else effector_velocity 12
 				;{damage_report "body" "componenets/shock"}
 				{if rand 0.3 {components "engine" break}}
 				{if rand 0.1 {components "body" break}}
 			}
 		}
 	}
-(include "tank/tank_armoredcar.inc")
+	(include "tank/tank_armoredcar.inc")
 
 }
 
@@ -1793,41 +1871,42 @@
 		{if tagged "full_auto_mode"
 			{tags remove "full_auto_mode"}
 			{damage_report "mgun" "Unit changed to burst mode"}
-		else
+			else
 			{tags add "full_auto_mode"}
 			{damage_report "mgun" "Unit changed to full auto mode"}
 		}
-		;{if tagged "coax_burst_mode"
-		;	{tags add "full_auto_mode"}
-		;	{tags remove "coax_burst_mode"}
-		;	{damage_report "mgun" "Unit changed to full auto mode"}
-		;else tagged "full_auto_mode"
-		;	{tags remove "full_auto_mode"}
-		;	{damage_report "mgun" "Unit changed to burst mode"}
-		;else
-		;	{tags add "coax_burst_mode"}
-		;	{damage_report "mgun" "Coax MG changed to burst mode"}
-		;}
+	;{if tagged "coax_burst_mode"
+	;	{tags add "full_auto_mode"}
+	;	{tags remove "coax_burst_mode"}
+	;	{damage_report "mgun" "Unit changed to full auto mode"}
+	;else tagged "full_auto_mode"
+	;	{tags remove "full_auto_mode"}
+	;	{damage_report "mgun" "Unit changed to burst mode"}
+	;else
+	;	{tags add "coax_burst_mode"}
+	;	{damage_report "mgun" "Coax MG changed to burst mode"}
+	;}
 	}
 	{on blast_hit
-	{if tagged "com_mode"
-		{if rand 0.8
-			{if not tagged "hatch_mode_up"
-				{if not tagged "hatch_mode_down"
-					{if not tagged "commander_down"
-						{tags add "commander_down"}
-						{with_linked_entity "gunner2" {ani_play "into_hatch_common"}}
-						{weapon_work "%mgun" 0}
-						{delay 1{weapon_work "%mgun" 0}}
-						{delay 10
-							{if not tagged "hatch_mode_down"
-								{if tagged "commander_down"
-									{tags remove "commander_down"}
-									{with_linked_entity "gunner2" {ani_play "into_hatch_common" -1}}
-									{delay 1.2
-										{if not tagged "commander_down"
-											{weapon_work "%mgun" 1}
-											{with_linked_entity "gunner2" {ani_wind "pose_mgun_pz6" end}}
+		{if tagged "com_mode"
+			{if rand 0.8
+				{if not tagged "hatch_mode_up"
+					{if not tagged "hatch_mode_down"
+						{if not tagged "commander_down"
+							{tags add "commander_down"}
+							{with_linked_entity "gunner2" {ani_play "into_hatch_common"}}
+							{weapon_work "%mgun" 0}
+							{delay 1{weapon_work "%mgun" 0}}
+							{delay 10
+								{if not tagged "hatch_mode_down"
+									{if tagged "commander_down"
+										{tags remove "commander_down"}
+										{with_linked_entity "gunner2" {ani_play "into_hatch_common" -1}}
+										{delay 1.2
+											{if not tagged "commander_down"
+												{weapon_work "%mgun" 1}
+												{with_linked_entity "gunner2" {ani_wind "pose_mgun_pz6" end}}
+											}
 										}
 									}
 								}
@@ -1837,38 +1916,37 @@
 				}
 			}
 		}
-	}
 		{if min_energy 30
 			{if explosive_amount 1
 				{call "explosion"}
-			else explosive_amount 0
+				else explosive_amount 0
 				;{call "tear_turret_low"}
 				{tags add "energy_overload"}
 				{call "destroy_energy_overload"}
 				{impulse up 0.1 0.1 dir 6 0.1}
 			}
-		else min_energy  9
+			else min_energy  9
 			{if explosive_amount 1
 				{call "explosion"}
-			else
+				else
 				;{call "tear_turret_low"}
 				{tags add "energy_overload"}
 				{call "destroy_energy_overload"}
 				{impulse up 0.1 0.1 dir 1 0.2}
 			}
-		 else min_energy 6
+			else min_energy 6
 			;{if rand 0.6 {call "tear_turret_low"}}
 			{if rand 0.5
 				{if explosive_amount 1
 					{call "explosion"}
-				else explosive_amount 0
+					else explosive_amount 0
 					{tags add "energy_overload"}
 					{call "destroy_energy_overload"}
 				}
 			}
 			{impulse up 0.1 0.1 dir 0.7 0.2}
-		 else min_energy 1
-		 	{ani_play "hit"}
+			else min_energy 1
+			{ani_play "hit"}
 		}
 	}
 	{on "_explosion"
@@ -1877,14 +1955,14 @@
 		{impulse up 0.1}
 		{if tagged "ammo_overload"
 			{blastwave c4 2 r0 10 r1 20 offset 0 0 60}
-		else tagged "ammo_normal_load"
+			else tagged "ammo_normal_load"
 			{blastwave c4 2 r0 6 r1 12 offset 0 0 60}
 		}
 	}
 	{on "cut_parts"
 		{if tagged "ammo_overload"
 			{call "tear_turret_high"}
-		else tagged "ammo_normal_load"
+			else tagged "ammo_normal_load"
 			{call "tear_turret_low"}
 		}
 		{if not tagged "energy_overload"
@@ -1906,12 +1984,12 @@
 				{if rand 0.5 {components "engine" break}}
 				{if rand 0.8 {components "trackleft" break}}
 				{if rand 0.8 {components "trackright" break}}
-			else effector_velocity 24
+				else effector_velocity 24
 				;{damage_report "body" "component/shock"}
 				{if rand 0.5 {components "engine" break}}
 				{if rand 0.6 {components "trackleft" break}}
 				{if rand 0.6 {components "trackright" break}}
-			else effector_velocity 16
+				else effector_velocity 16
 				;{damage_report "body" "component/shock"}
 				{if rand 0.2 {components "engine" break}}
 				{if rand 0.35 {components "trackleft" break}}
@@ -1925,20 +2003,20 @@
 				{if rand 0.5 {components "body" break}}
 				{if rand 0.7 {components "trackleft" break}}
 				{if rand 0.7 {components "trackright" break}}
-			else effector_velocity 16
+				else effector_velocity 16
 				;{damage_report "body" "componenets/shock"}
 				{if rand 0.2 {components "engine" break}}
 				{if rand 0.2 {components "body" break}}
 				{if rand 0.5 {components "trackleft" break}}
 				{if rand 0.5 {components "trackright" break}}
-			else effector_velocity 12
+				else effector_velocity 12
 				;{damage_report "body" "componenets/shock"}
 				{if rand 0.35 {components "trackleft" break}}
 				{if rand 0.35 {components "trackright" break}}
 			}
 		}
 	}
-(include "tank/tank_light.inc")
+	(include "tank/tank_light.inc")
 }
 
 {"medium tank"
@@ -1950,41 +2028,42 @@
 		{if tagged "full_auto_mode"
 			{tags remove "full_auto_mode"}
 			{damage_report "mgun" "Unit changed to burst mode"}
-		else
+			else
 			{tags add "full_auto_mode"}
 			{damage_report "mgun" "Unit changed to full auto mode"}
 		}
-		;{if tagged "coax_burst_mode"
-		;	{tags add "full_auto_mode"}
-		;	{tags remove "coax_burst_mode"}
-		;	{damage_report "mgun" "Unit changed to full auto mode"}
-		;else tagged "full_auto_mode"
-		;	{tags remove "full_auto_mode"}
-		;	{damage_report "mgun" "Unit changed to burst mode"}
-		;else
-		;	{tags add "coax_burst_mode"}
-		;	{damage_report "mgun" "Coax MG changed to burst mode"}
-		;}
+	;{if tagged "coax_burst_mode"
+	;	{tags add "full_auto_mode"}
+	;	{tags remove "coax_burst_mode"}
+	;	{damage_report "mgun" "Unit changed to full auto mode"}
+	;else tagged "full_auto_mode"
+	;	{tags remove "full_auto_mode"}
+	;	{damage_report "mgun" "Unit changed to burst mode"}
+	;else
+	;	{tags add "coax_burst_mode"}
+	;	{damage_report "mgun" "Coax MG changed to burst mode"}
+	;}
 	}
 	{on blast_hit
-	{if tagged "com_mode"
-		{if rand 0.8
-			{if not tagged "hatch_mode_up"
-				{if not tagged "hatch_mode_down"
-					{if not tagged "commander_down"
-						{tags add "commander_down"}
-						{with_linked_entity "gunner2" {ani_play "into_hatch_common"}}
-						{weapon_work "%mgun" 0}
-						{delay 1{weapon_work "%mgun" 0}}
-						{delay 10
-							{if not tagged "hatch_mode_down"
-								{if tagged "commander_down"
-									{tags remove "commander_down"}
-									{with_linked_entity "gunner2" {ani_play "into_hatch_common" -1}}
-									{delay 1.2
-										{if not tagged "commander_down"
-											{weapon_work "%mgun" 1}
-											{with_linked_entity "gunner2" {ani_wind "pose_mgun_pz6" end}}
+		{if tagged "com_mode"
+			{if rand 0.8
+				{if not tagged "hatch_mode_up"
+					{if not tagged "hatch_mode_down"
+						{if not tagged "commander_down"
+							{tags add "commander_down"}
+							{with_linked_entity "gunner2" {ani_play "into_hatch_common"}}
+							{weapon_work "%mgun" 0}
+							{delay 1{weapon_work "%mgun" 0}}
+							{delay 10
+								{if not tagged "hatch_mode_down"
+									{if tagged "commander_down"
+										{tags remove "commander_down"}
+										{with_linked_entity "gunner2" {ani_play "into_hatch_common" -1}}
+										{delay 1.2
+											{if not tagged "commander_down"
+												{weapon_work "%mgun" 1}
+												{with_linked_entity "gunner2" {ani_wind "pose_mgun_pz6" end}}
+											}
 										}
 									}
 								}
@@ -1994,7 +2073,6 @@
 				}
 			}
 		}
-	}
 		{if min_energy 30
 			{impulse up 0.1 0.1 dir 4 0.1}
 			{if volume "turret"
@@ -2002,19 +2080,19 @@
 					{call "tear_turret"}
 				}
 			}
-		else min_energy 12
+			else min_energy 12
 			{impulse up 0.1 0.1 dir 1.5 0.2}
 			{if volume "turret"
 				{if rand 0.5
 					{call "tear_turret"}
 				}
 			}
-		 else min_energy 9
+			else min_energy 9
 			{impulse up 0.1 0.1 dir 1 0.2}
-		 else min_energy 7
+			else min_energy 7
 			{impulse up 0.1 0.1 dir 0.4 0.1}
-		 else min_energy 1
-		 	;{ani_play "hit"}
+			else min_energy 1
+		;{ani_play "hit"}
 		}
 	}
 	{on "_explosion"
@@ -2023,7 +2101,7 @@
 		{impulse up 0.1 0.1 dir 0.2 0.1}
 		{if tagged "ammo_overload"
 			{blastwave c4 2 r0 15 r1 25 offset 0 0 75}
-		else tagged "ammo_normal_load"
+			else tagged "ammo_normal_load"
 			{blastwave c4 2 r0 10 r1 15 offset 0 0 75}
 		}
 	}
@@ -2031,13 +2109,13 @@
 		{if tagged "ammo_overload"
 			{spawn "tank_die_2" "basis"}
 			{call "tear_turret_high"}
-		else tagged "ammo_normal_load"
+			else tagged "ammo_normal_load"
 			{spawn "tank_die_3" "basis"}
 			{call "tear_turret_low"}
 		}
 		{if "turret_teared"
 			{add_view "smoke_black_big2" "deathfx" "basis"}
-		else
+			else
 			{add_view "smoke_black_big2a" "deathfx" "basis"}
 		}
 		{view start "deathfx"}
@@ -2076,12 +2154,12 @@
 				{if rand 0.5 {components "engine" break}}
 				{if rand 0.8 {components "trackleft" break}}
 				{if rand 0.8 {components "trackright" break}}
-			else effector_velocity 24
+				else effector_velocity 24
 				;{damage_report "body" "component/shock"}
 				{if rand 0.4 {components "engine" break}}
 				{if rand 0.6 {components "trackleft" break}}
 				{if rand 0.6 {components "trackright" break}}
-			else effector_velocity 16
+				else effector_velocity 16
 				;{damage_report "body" "component/shock"}
 				{if rand 0.4 {components "trackleft" break}}
 				{if rand 0.4 {components "trackright" break}}
@@ -2093,19 +2171,19 @@
 				{if rand 0.4 {components "engine" break}}
 				{if rand 0.7 {components "trackleft" break}}
 				{if rand 0.7 {components "trackright" break}}
-			else effector_velocity 17
+				else effector_velocity 17
 				;{damage_report "body" "component/shock"}
 				{if rand 0.3 {components "engine" break}}
 				{if rand 0.6 {components "trackleft" break}}
 				{if rand 0.6 {components "trackright" break}}
-			else effector_velocity 13
+				else effector_velocity 13
 				;{damage_report "body" "componenets/shock"}
 				{if rand 0.45 {components "trackleft" break}}
 				{if rand 0.45 {components "trackright" break}}
 			}
 		}
 	}
-(include "tank/tank_medium.inc")
+	(include "tank/tank_medium.inc")
 }
 
 {"heavy tank"
@@ -2117,41 +2195,42 @@
 		{if tagged "full_auto_mode"
 			{tags remove "full_auto_mode"}
 			{damage_report "mgun" "Unit changed to burst mode"}
-		else
+			else
 			{tags add "full_auto_mode"}
 			{damage_report "mgun" "Unit changed to full auto mode"}
 		}
-		;{if tagged "coax_burst_mode"
-		;	{tags add "full_auto_mode"}
-		;	{tags remove "coax_burst_mode"}
-		;	{damage_report "mgun" "Unit changed to full auto mode"}
-		;else tagged "full_auto_mode"
-		;	{tags remove "full_auto_mode"}
-		;	{damage_report "mgun" "Unit changed to burst mode"}
-		;else
-		;	{tags add "coax_burst_mode"}
-		;	{damage_report "mgun" "Coax MG changed to burst mode"}
-		;}
+	;{if tagged "coax_burst_mode"
+	;	{tags add "full_auto_mode"}
+	;	{tags remove "coax_burst_mode"}
+	;	{damage_report "mgun" "Unit changed to full auto mode"}
+	;else tagged "full_auto_mode"
+	;	{tags remove "full_auto_mode"}
+	;	{damage_report "mgun" "Unit changed to burst mode"}
+	;else
+	;	{tags add "coax_burst_mode"}
+	;	{damage_report "mgun" "Coax MG changed to burst mode"}
+	;}
 	}
 	{on blast_hit
 		{if tagged "com_mode"
-		{if rand 0.8
-			{if not tagged "hatch_mode_up"
-				{if not tagged "hatch_mode_down"
-					{if not tagged "commander_down"
-						{tags add "commander_down"}
-						{with_linked_entity "gunner2" {ani_play "into_hatch_common"}}
-						{weapon_work "%mgun" 0}
-						{delay 1{weapon_work "%mgun" 0}}
-						{delay 10
-							{if not tagged "hatch_mode_down"
-								{if tagged "commander_down"
-									{tags remove "commander_down"}
-									{with_linked_entity "gunner2" {ani_play "into_hatch_common" -1}}
-									{delay 1.2
-										{if not tagged "commander_down"
-											{weapon_work "%mgun" 1}
-											{with_linked_entity "gunner2" {ani_wind "pose_mgun_pz6" end}}
+			{if rand 0.8
+				{if not tagged "hatch_mode_up"
+					{if not tagged "hatch_mode_down"
+						{if not tagged "commander_down"
+							{tags add "commander_down"}
+							{with_linked_entity "gunner2" {ani_play "into_hatch_common"}}
+							{weapon_work "%mgun" 0}
+							{delay 1{weapon_work "%mgun" 0}}
+							{delay 10
+								{if not tagged "hatch_mode_down"
+									{if tagged "commander_down"
+										{tags remove "commander_down"}
+										{with_linked_entity "gunner2" {ani_play "into_hatch_common" -1}}
+										{delay 1.2
+											{if not tagged "commander_down"
+												{weapon_work "%mgun" 1}
+												{with_linked_entity "gunner2" {ani_wind "pose_mgun_pz6" end}}
+											}
 										}
 									}
 								}
@@ -2161,7 +2240,6 @@
 				}
 			}
 		}
-		}
 		{if min_energy 30
 			{impulse up 1.5 0.1 dir 2.5 0.1}
 			{if volume "turret"
@@ -2169,26 +2247,26 @@
 					{call "tear_turret"}
 				}
 			}
-		else min_energy 14
+			else min_energy 14
 			{impulse up 0.25 0.1 dir 0.35 0.1}
 			{if volume "turret"
 				{if rand 0.3
 					{call "tear_turret"}
 				}
 			}
-		 else min_energy 8
+			else min_energy 8
 			{impulse up 0.2 0.1 dir 0.3 0.1}
-		 else min_energy 3
-		 	;{ani_play "hit"}
+			else min_energy 3
+		;{ani_play "hit"}
 		}
 	}
 	{on "_explosion"
 		{damage_report "ammo" "<c(FF1F00)>Ammunition destroyed<c(FFFFFF)>"}
-        	{blastwave c4 15 r0 2.5 r1 10 offset 0 0 75}
+		{blastwave c4 15 r0 2.5 r1 10 offset 0 0 75}
 		{impulse up 0.1 0.1 dir 0.1 0.1}
 		{if tagged "ammo_overload"
 			{blastwave c4 2 r0 20 r1 30 offset 0 0 75}
-		else tagged "ammo_normal_load"
+			else tagged "ammo_normal_load"
 			{blastwave c4 2 r0 10 r1 20 offset 0 0 75}
 		}
 	}
@@ -2196,13 +2274,13 @@
 		{if tagged "ammo_overload"
 			{call "tear_turret_high"}
 			{spawn "tank_die_2" "basis"}
-		else tagged "ammo_normal_load"
+			else tagged "ammo_normal_load"
 			{call "tear_turret_low"}
 			{spawn "tank_die_3" "basis"}
 		}
 		{if "turret_teared"
 			{add_view "smoke_black_big2" "deathfx" "basis"}
-		else
+			else
 			{add_view "smoke_black_big2a" "deathfx" "basis"}
 		}
 		{view start "deathfx"}
@@ -2241,12 +2319,12 @@
 				{if rand 0.15 {components "engine" break}}
 				{if rand 0.8 {components "trackleft" break}}
 				{if rand 0.8 {components "trackright" break}}
-			else effector_velocity 24
+				else effector_velocity 24
 				;{damage_report "body" "component/shock"}
 				{if rand 0.05 {components "engine" break}}
 				{if rand 0.6 {components "trackleft" break}}
 				{if rand 0.6 {components "trackright" break}}
-			else effector_velocity 18
+				else effector_velocity 18
 				;{damage_report "body" "component/shock"}
 				{if rand 0.35 {components "trackleft" break}}
 				{if rand 0.35 {components "trackright" break}}
@@ -2258,18 +2336,18 @@
 				{if rand 0.1 {components "engine" break}}
 				{if rand 0.8 {components "trackleft" break}}
 				{if rand 0.8 {components "trackright" break}}
-			else effector_velocity 18
+				else effector_velocity 18
 				;{damage_report "body" "component/shock"}
 				{if rand 0.6 {components "trackleft" break}}
 				{if rand 0.6 {components "trackright" break}}
-			else effector_velocity 14
+				else effector_velocity 14
 				;{damage_report "body" "componenets/shock"}
 				{if rand 0.35 {components "trackleft" break}}
 				{if rand 0.35 {components "trackright" break}}
 			}
 		}
 	}
-(include "tank/tank_heavy.inc")
+	(include "tank/tank_heavy.inc")
 }
 
 {"mine_exploder"
@@ -2298,7 +2376,7 @@
 	{on blast overload
 		{if not volume "wheel_work"
 			{inherited}
-		else
+			else
 			{ani_play "explosion"}
 		}
 	}
@@ -2320,7 +2398,7 @@
 			{delay 0.4
 				{view pause "flashbarrel00"}
 			}
-		else name "01"
+			else name "01"
 			{view start "flashbarrel01"}
 			{delay 0.4
 				{view pause "flashbarrel01"}
@@ -2329,6 +2407,8 @@
 	}
 	("burn_by_engine" args 0.3)
 }
+; pz1_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("pz1_sound")
 (define "pz1_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/tracks/pz1"}
@@ -2371,25 +2451,27 @@
 		{call "explosion"}
 	}
 	{on "explosion"
-	{if not "exploded"
-		{set "exploded" 1}
-		{if terrain_fx "snow"
-			{spawn "ex_fg_maximum_w"}
-		else terrain_fx "ice"
-			{spawn "ex_fg_maximum_w"}
-		else terrain_fx "water"
-			;nothing
-		else
-			{spawn "ex_fg_maximum"}
+		{if not "exploded"
+			{set "exploded" 1}
+			{if terrain_fx "snow"
+				{spawn "ex_fg_maximum_w"}
+				else terrain_fx "ice"
+				{spawn "ex_fg_maximum_w"}
+				else terrain_fx "water"
+				;nothing
+				else
+				{spawn "ex_fg_maximum"}
+			}
+			{blastwave c4 30 r0 5 r1 10 offset 0 0 20}
+			{blastwave c4 15 r0 15 r1 20 offset 0 0 20}
+			{blastwave c4 1.5 r0 25 r1 35 offset 0 0 20}
+			{delete}
 		}
-		{blastwave c4 30 r0 5 r1 10 offset 0 0 20}
-		{blastwave c4 15 r0 15 r1 20 offset 0 0 20}
-		{blastwave c4 1.5 r0 25 r1 35 offset 0 0 20}
-		{delete}
-	}
 	}
 	("burn_by_engine" args 0.3)
 }
+; t26_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("t26_sound")
 (define "t26_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/tracks/bt"			}
@@ -2400,6 +2482,8 @@
 		{link_sound "idle"			"vehicle/engine/matilda_idle"}
 	}
 )
+; lt_turret_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. none (not called)
 (define "lt_turret_sound"
 	{on "add_movement_sound" overload
 		{link_sound "rotate_turret" 	"vehicle/turret/light"		}
@@ -2409,6 +2493,8 @@
 	("t26_sound")
 	("burn_by_engine" args 0.3)
 }
+; su76_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("su76_sound")
 (define "su76_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/tracks/t-70"}
@@ -2430,6 +2516,8 @@
 	("su76_sound")
 	("burn_by_engine" args 0.3)
 }
+; t70_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("t70_sound")
 (define "t70_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/tracks/t-70"}
@@ -2480,6 +2568,8 @@
 	("burn_by_engine" args 0.3)
 }
 
+; kv_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("kv_sound")
 (define "kv_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/tracks/is"}
@@ -2490,6 +2580,8 @@
 		{link_sound "idle"			"vehicle/engine/kv_idle"}
 	}
 )
+; is_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("is_sound")
 (define "is_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"			"vehicle/tracks/is"		}
@@ -2580,6 +2672,8 @@
 	}
 	("burn_by_engine" args 0.3)
 }
+; t34_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("t34_sound")
 (define "t34_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"			"vehicle/tracks/t34"	}
@@ -2637,10 +2731,10 @@
 
 		{view start	"fire1"}
 	}
-	{on operatable on	
+	{on operatable on
 		{view start	"fire1"}
-	}	
-	{on operatable off		
+	}
+	{on operatable off
 		{view stop	"fire1"}
 	}
 	{on "_explosion"
@@ -2666,6 +2760,8 @@
 	("burn_by_engine" args 0.3)
 }
 
+; pz5g_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("pz5g_sound")
 (define "pz5g_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"			"vehicle/tracks/jugdpanther"		}
@@ -2676,6 +2772,8 @@
 		{link_sound "idle"			"vehicle/engine/pz5_idle"}
 	}
 )
+; ho-ri_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("ho-ri_sound")
 (define "ho-ri_sound"
 	{on "add_movement_sound" overload
 		{link_sound "rotate_turret" 		"vehicle/turret/heavy"	}
@@ -2733,6 +2831,8 @@
 	("burn_by_engine" args 0.3)
 }
 
+; m8_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("m8_sound")
 (define "m8_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"			"vehicle/wheels/m8grayhound"		}
@@ -2761,6 +2861,8 @@
 	}
 	("burn_by_engine" args 0.3)
 }
+; mk7_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("mk7_sound")
 (define "mk7_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/tracks/mk7"	}
@@ -2783,6 +2885,8 @@
 	("mk7_sound")
 	("burn_by_engine" args 0.3)
 }
+; bishop_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("bishop_sound")
 (define "bishop_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/tracks/bishop"	}
@@ -2801,6 +2905,8 @@
 	("bishop_sound")
 	("burn_by_engine" args 0.3)
 }
+; mk6_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("mk6_sound")
 (define "mk6_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/tracks/crusader"	}
@@ -2888,6 +2994,8 @@
 	}
 	("burn_by_engine" args 0.3)
 }
+; m4_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("m4_sound")
 (define "m4_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"					"vehicle/tracks/m4a2"			}
@@ -2898,6 +3006,8 @@
 		{link_sound "idle"			"vehicle/engine/m4a2_idle"}
 	}
 )
+; m4_turret_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("m4_turret_sound")
 (define "m4_turret_sound"
 	{on "add_movement_sound"
 		{link_sound "rotate_turret"     	"vehicle/turret/sherman"   	}
@@ -2997,6 +3107,8 @@
 	("m4_sound")
 	("burn_by_engine" args 0.3)
 }
+; m7_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("m7_sound")
 (define "m7_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"					"vehicle/tracks/m7"		}
@@ -3032,7 +3144,9 @@
 	("pz5g_sound")
 	("burn_by_engine" args 0.3)
 	("smoke_launcher_ger_hull")
-}					  
+}
+; pz6_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("pz6_sound")
 (define "pz6_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/tracks/pz6"	}
@@ -3072,7 +3186,7 @@
 	}
 	("burn_by_engine" args 0.3)
 	("smoke_launcher_ger_turret")
-}								  
+}
 {"pz6e tank"
 	("pz6_sound")
 	{on "gunner_hatch_open" overload
@@ -3151,7 +3265,7 @@
 		{link_sound "idle"			"vehicle/engine/hetzer_idle2"	}
 	}
 	("burn_by_engine" args 0.3)
-}				 
+}
 {"ba64 tank"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/wheels/wheels"	}
@@ -3185,6 +3299,8 @@
 	}
 	("burn_by_engine" args 0.3)
 }
+; pz3_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("pz3_sound")
 (define "pz3_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/tracks/pz3"	}
@@ -3250,7 +3366,7 @@
 		{ani_play "open2"}
 	}
 	("burn_by_engine" args 0.3)
-	
+
 }
 {"pz3m tank"
 	{on "add_movement_sound" overload
@@ -3262,6 +3378,8 @@
 	}
 	("burn_by_engine" args 0.3)
 }
+; pz4_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("pz4_sound")
 (define "pz4_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/tracks/pz4"	}
@@ -3272,6 +3390,8 @@
 		{link_sound "idle"			"vehicle/engine/pz4_idle"	}
 	}
 )
+; wespe_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("wespe_sound")
 (define "wespe_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/tracks/pz3"	}
@@ -3297,7 +3417,7 @@
 {"marder_3m_ss tank"
 	("wespe_sound")
 	("burn_by_engine" args 0.3)
-}					
+}
 {"grille tank"
 	("wespe_sound")
 	("burn_by_engine" args 0.3)
@@ -3315,16 +3435,16 @@
 	("pz4_sound")
 	("burn_by_engine" args 0.3)
 	("smoke_launcher_ger_hull")
-}						
+}
 {"jagdpanzer_iv_l48_ss tank"
 	("pz4_sound")
 	("burn_by_engine" args 0.3)
 	("smoke_launcher_ger_hull")
-}			  
+}
 {"pz4g_ss tank"
 	("pz4_sound")
 	("burn_by_engine" args 0.3)
-}						
+}
 {"jagdpanzer_iv_l48 tank"
 	("pz4_sound")
 	("burn_by_engine" args 0.3)
@@ -3345,10 +3465,10 @@
 {"nashorn_ss tank"
 	("pz4_sound")
 	("burn_by_engine" args 0.3)
-}							
+}
 {"pz4h tank"
 	("pz4_sound")
-	("burn_by_engine" args 0.3)		
+	("burn_by_engine" args 0.3)
 }
 {"hummel tank"
 	("pz4_sound")
@@ -3358,6 +3478,8 @@
 	("pz4_sound")
 	("burn_by_engine" args 0.3)
 }
+; sdkfz_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("sdkfz_sound")
 (define "sdkfz_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/wheels/wheels"			}
@@ -3388,6 +3510,8 @@
 	("sdkfz_sound")
 	("burn_by_engine" args 0.3)
 }
+; sdkfz234_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("sdkfz234_sound")
 (define "sdkfz234_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/tracks/sdkfz234"		}
@@ -3407,7 +3531,7 @@
 	("sdkfz234_sound")
 	("smoke_launcher_3_sides")
 	("burn_by_engine" args 0.3)
-}	
+}
 {"np_sdkfz234_1 tank"
 	("sdkfz234_sound")
 	("burn_by_engine" args 0.3)
@@ -3436,6 +3560,8 @@
 	("sdkfz234_sound")
 	("burn_by_engine" args 0.3)
 }
+; m8grayhound_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("m8grayhound_sound")
 (define "m8grayhound_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/wheels/m8grayhound"	}
@@ -3501,6 +3627,8 @@
 	}
 	("burn_by_engine" args 0.3)
 }
+; hanomag_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("hanomag_sound")
 (define "hanomag_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/tracks/sdkfz251"	}
@@ -3534,12 +3662,14 @@
 	("hanomag_sound")
 	("burn_by_engine" args 0.3)
 }
+; m3_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("m3_sound")
 (define "m3_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/tracks/m3a1"	}
 		{link_sound "engine"			"vehicle/engine/m3a1"		}
 		{link_sound "engine_end"		"vehicle/engine/m3a1_end"	}
-;		{link_sound "rotate_turret" 	"vehicle/turret/light"	}
+		;		{link_sound "rotate_turret" 	"vehicle/turret/light"	}
 		{link_sound "exhaust"			"vehicle/engine/m3a1_up"	}
 		{link_sound "idle"			"vehicle/engine/m3a1"		}
 	}
@@ -3583,6 +3713,8 @@
 	("burn_by_engine" args 0.3)
 }
 
+; cometa34_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("cometa34_sound")
 (define "cometa34_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/tracks/kv"	}
@@ -3601,6 +3733,8 @@
 	("cometa34_sound")
 	("burn_by_engine" args 0.3)
 }
+; m10wolverine_sound: {on "add_movement_sound" {link_sound}}
+;   e.g. ("m10wolverine_sound")
 (define "m10wolverine_sound"
 	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/tracks/mk2"	}
@@ -3732,8 +3866,8 @@
 	}
 	{on "__explosion"
 		{set "big_explosion" 0}
-		{if explosive_amount 50         
-			{blastwave c4 30 r0 8 r1 16}     
+		{if explosive_amount 50
+			{blastwave c4 30 r0 8 r1 16}
 			{blastwave c4 3 r0 20 r1 30}
 			{set "big_explosion" 1}
 		}
@@ -3745,12 +3879,12 @@
 		}
 	}
 	{on pierce
-		{if volume "gun" 
-			{if hit_side front            
+		{if volume "gun"
+			{if hit_side front
 				{if rand 0.4
 					{call "stat_break"}
 					{call "explosion"}
-				} 
+				}
 			}
 		}
 	}
@@ -3940,11 +4074,11 @@
 		{link_sound "idle"			"vehicle/engine/cromwell_idle"	}
 	}
 	{on pierce
-	{delay 0.1
-		{if "internal_damage"
-			{call "explosion"}
+		{delay 0.1
+			{if "internal_damage"
+				{call "explosion"}
+			}
 		}
-	}
 	}
 	{on break
 		{if component "body"
@@ -3987,25 +4121,25 @@
 	("burn_by_engine" args 0.3)
 }
 {"ss-d tank"
-	{on spawn	
+	{on spawn
 		{add_view "flamer_fire" "flame1" "foresight9"}
 		{add_view "flamer_fire" "flame2" "foresight10"}
 		{add_view "flamer_fire" "flame3" "foresight13"}
 		{add_view "flamer_fire" "flame4" "foresight12"}
 		{add_view "flamer_fire" "flame5" "foresight11"}
-		
+
 		{add_view "flamer_fire_barrel" "fire1" "foresight9"}
 		{add_view "flamer_fire_barrel" "fire2" "foresight10"}
 		{add_view "flamer_fire_barrel" "fire3" "foresight13"}
 		{add_view "flamer_fire_barrel" "fire4" "foresight12"}
 		{add_view "flamer_fire_barrel" "fire5" "foresight11"}
-	
+
 		{view show	"fire1"}
 		{view show	"fire2"}
 		{view show	"fire3"}
 		{view show	"fire4"}
 		{view show	"fire5"}
-		
+
 		{view start	"fire1"}
 		{view start	"fire2"}
 		{view start	"fire3"}
@@ -4018,19 +4152,19 @@
 				{if volume "body"
 					{call "explosion"}
 				}
-                        }
-                else name "blast"
+			}
+			else name "blast"
 			{if volume "body"
 				{call "explosion"}
 			}
-                }
+		}
 	}
 	{on "_explosion"
 		{spawn "fuel_die"}
 		{blastwave c4 5 r0 4 r1 15}
 		{fire radius 8 time 15 heating 10}
 	}
-	
+
 	{on fire "flamer1"
 		{view start	"flame1"}
 		{kill_delay "fire1"}
@@ -4066,7 +4200,7 @@
 			{view pause	"flame5"}
 		}
 	}
-		
+
 }
 {"churchill_crocodile tank"
 	{on spawn
@@ -4076,10 +4210,10 @@
 
 		{view start	"fire1"}
 	}
-	{on operatable on	
+	{on operatable on
 		{view start	"fire1"}
-	}	
-	{on operatable off		
+	}
+	{on operatable off
 		{view stop	"fire1"}
 	}
 	{on "_explosion"
@@ -4102,7 +4236,7 @@
 		{link_sound "exhaust"			"vehicle/engine/churchill_up" 	}
 		{link_sound "idle"			"vehicle/engine/cromwell_idle"	}
 	}
-	("burn_by_engine" args 0.3)	
+	("burn_by_engine" args 0.3)
 }
 {"m4a3_zippo tank"
 	{on spawn
@@ -4112,10 +4246,10 @@
 
 		{view start	"fire1"}
 	}
-	{on operatable on	
+	{on operatable on
 		{view start	"fire1"}
-	}	
-	{on operatable off		
+	}
+	{on operatable off
 		{view stop	"fire1"}
 	}
 	{on "_explosion"
@@ -4138,7 +4272,7 @@
 		{link_sound "rotate_turret"     	"vehicle/turret/sherman"   	}
 		{link_sound "idle"				"vehicle/engine/m4a2_idle"}
 	}
-	("burn_by_engine" args 0.3)	
+	("burn_by_engine" args 0.3)
 	("smoke_launcher_usa_turret")
 }
 
@@ -4153,7 +4287,7 @@
 		{link_sound "idle"			"vehicle/engine/1"	}
 		{link_sound "flying_sound"		"vehicle/paraflight"}
 	}
-    {on spawn {physics_work 0}
+	{on spawn {physics_work 0}
 		{damage_report "basis" "Drop in 5 secounds, place the dropzone!"}
 		{delay 1{play_sound "flying_sound" 1}}
 		{delay 5
@@ -4164,27 +4298,27 @@
 			{spawn "smoke_red_norm" "flareR"}
 			{delay 3{crew_emit}
 				{delay 2{crew_emit}
-				{spawn "smoke_red_norm" "flareF"}
-				{spawn "smoke_red_norm" "flareM"}
-				{spawn "smoke_red_norm" "flareR"}
+					{spawn "smoke_red_norm" "flareF"}
+					{spawn "smoke_red_norm" "flareM"}
+					{spawn "smoke_red_norm" "flareR"}
 					{delay 3{crew_emit}
 						{delay 2{crew_emit}
-						{spawn "smoke_red_norm" "flareF"}
-						{spawn "smoke_red_norm" "flareM"}
-						{spawn "smoke_red_norm" "flareR"}
-							{delay 3{crew_emit}	
 							{spawn "smoke_red_norm" "flareF"}
 							{spawn "smoke_red_norm" "flareM"}
 							{spawn "smoke_red_norm" "flareR"}
-								{delay 3
+							{delay 3{crew_emit}
 								{spawn "smoke_red_norm" "flareF"}
 								{spawn "smoke_red_norm" "flareM"}
 								{spawn "smoke_red_norm" "flareR"}
+								{delay 3
+									{spawn "smoke_red_norm" "flareF"}
+									{spawn "smoke_red_norm" "flareM"}
+									{spawn "smoke_red_norm" "flareR"}
 								}
 								{delay 10
 									{if not operatable
 										{delete}
-									else
+										else
 										{call "airborne_reset"}
 									}
 								}
@@ -4206,27 +4340,27 @@
 			{spawn "smoke_red_norm" "flareR"}
 			{delay 3{crew_emit}
 				{delay 2{crew_emit}
-				{spawn "smoke_red_norm" "flareF"}
-				{spawn "smoke_red_norm" "flareM"}
-				{spawn "smoke_red_norm" "flareR"}
+					{spawn "smoke_red_norm" "flareF"}
+					{spawn "smoke_red_norm" "flareM"}
+					{spawn "smoke_red_norm" "flareR"}
 					{delay 3{crew_emit}
 						{delay 2{crew_emit}
-						{spawn "smoke_red_norm" "flareF"}
-						{spawn "smoke_red_norm" "flareM"}
-						{spawn "smoke_red_norm" "flareR"}
-							{delay 3{crew_emit}	
 							{spawn "smoke_red_norm" "flareF"}
 							{spawn "smoke_red_norm" "flareM"}
 							{spawn "smoke_red_norm" "flareR"}
-								{delay 3
+							{delay 3{crew_emit}
 								{spawn "smoke_red_norm" "flareF"}
 								{spawn "smoke_red_norm" "flareM"}
 								{spawn "smoke_red_norm" "flareR"}
-								}		
+								{delay 3
+									{spawn "smoke_red_norm" "flareF"}
+									{spawn "smoke_red_norm" "flareM"}
+									{spawn "smoke_red_norm" "flareR"}
+								}
 								{delay 10
 									{if not operatable
 										{delete}
-									else
+										else
 										{call "airborne_reset"}
 									}
 								}
@@ -4252,7 +4386,7 @@
 		{link_sound "idle"			"vehicle/engine/1"	}
 		{link_sound "flying_sound"		"vehicle/paraflight"}
 	}
-    {on spawn {physics_work 0}
+	{on spawn {physics_work 0}
 		{damage_report "basis" "Drop in 5 secounds, place the dropzone"}
 		{delay 1{play_sound "flying_sound" 1}}
 		{delay 5{crew_emit}{chassis_work 0}
@@ -4265,7 +4399,7 @@
 						{delay 5
 							{if not operatable
 								{delete}
-							else
+								else
 								{call "airborne_reset"}
 							}
 						}
@@ -4287,7 +4421,7 @@
 						{delay 5
 							{if not operatable
 								{delete}
-							else
+								else
 								{call "airborne_reset"}
 							}
 						}
@@ -4296,11 +4430,11 @@
 			}
 		}
 	}
-	;{on operatable off
-	;	{delay 25
-	;		{delete}
-	;	}
-	;}
+;{on operatable off
+;	{delay 25
+;		{delete}
+;	}
+;}
 }
 {"airborne_spawner_m8_howitzer"
 	{on "add_movement_sound" overload
@@ -4311,7 +4445,7 @@
 		{link_sound "idle"			"vehicle/engine/1"	}
 		{link_sound "flying_sound"		"vehicle/paraflight"}
 	}
-    {on spawn {physics_work 0}
+	{on spawn {physics_work 0}
 		{damage_report "basis" "Drop in 5 secounds, place the dropzone"}
 		{delay 1{play_sound "flying_sound" 1}}
 		{delay 5{crew_emit}{chassis_work 0}
@@ -4324,7 +4458,7 @@
 						{delay 5
 							{if not operatable
 								{delete}
-							else
+								else
 								{call "airborne_reset"}
 							}
 						}
@@ -4346,7 +4480,7 @@
 						{delay 5
 							{if not operatable
 								{delete}
-							else
+								else
 								{call "airborne_reset"}
 							}
 						}
@@ -4355,12 +4489,14 @@
 			}
 		}
 	}
-	;{on operatable off
-	;	{delay 25
-	;		{delete}
-	;	}
-	;}
+;{on operatable off
+;	{delay 25
+;		{delete}
+;	}
+;}
 }
+; snowman: {on "add_movement_sound"} {on} {on "__explosion"} {on "explosion"}, calls "burn_by_engine"
+;   e.g. ("snowman")
 (define "snowman"
 	{on "add_movement_sound" overload
 		{link_sound "move"			"vehicle/engine/dodge_move_new"	}
@@ -4418,21 +4554,21 @@
 		{view start	"fire1"}
 
 	}
-	{on operatable on	
+	{on operatable on
 		{view start	"fire1"}
-	}	
-	{on operatable off		
+	}
+	{on operatable off
 		{view stop	"fire1"}
 	}
 	{on "_explosion"
-	    {spawn "fuel_die"}
-	    {blastwave c4 5 r0 4 r1 15}
-	    {fire radius 5 time 15 heating 10}
+		{spawn "fuel_die"}
+		{blastwave c4 5 r0 4 r1 15}
+		{fire radius 5 time 15 heating 10}
 	}
 	{on "__explosion"
 		{set "big_explosion" 0}
-		{if explosive_amount 50         
-			{blastwave c4 30 r0 8 r1 16}     
+		{if explosive_amount 50
+			{blastwave c4 30 r0 8 r1 16}
 			{blastwave c4 3 r0 20 r1 30}
 			{spawn "train_die" "basis"}
 			{set "big_explosion" 1}
@@ -4445,7 +4581,7 @@
 			{view pause	"flame1"}
 		}
 	}
-	("burn_by_engine" args 0.3)	
+	("burn_by_engine" args 0.3)
 }
 
 {"l335 tank"
@@ -4467,7 +4603,7 @@
 }
 
 {"m149 tank"
-       ("pz4_sound")
+	("pz4_sound")
 	("burn_by_engine" args 0.3)
 
 }
@@ -4481,11 +4617,11 @@
 
 
 {"m1139"
-	  ("pz3_sound")
+	("pz3_sound")
 	("burn_by_engine" args 0.3)
 }
 {"m7518"
-	  ("pz3_sound")
+	("pz3_sound")
 	("burn_by_engine" args 0.3)
 }
 {"np_sdkfz251_ita"
@@ -4494,55 +4630,55 @@
 
 
 {"fiat35"
-		{on "add_movement_sound" overload
+	{on "add_movement_sound" overload
 		{link_sound	"move"				"vehicle/wheels/blitz"	}
 		{link_sound "engine"			"vehicle/engine/horch"	}
 		{link_sound	"engine_end"		"vehicle/engine/blitz_end"	}
 		{link_sound "exhaust"			"vehicle/engine/blitz_up"	}
 		{link_sound "idle"			"vehicle/engine/truck_idle"   	}
 	}
-("burn_by_engine" args 0.3)
+	("burn_by_engine" args 0.3)
 }
 
 
 {"fiat35_art"
-		{on "add_movement_sound" overload
+	{on "add_movement_sound" overload
 		{link_sound	"move"				"vehicle/wheels/blitz"	}
 		{link_sound "engine"			"vehicle/engine/horch"	}
 		{link_sound	"engine_end"		"vehicle/engine/blitz_end"	}
 		{link_sound "exhaust"			"vehicle/engine/blitz_up"	}
 		{link_sound "idle"			"vehicle/engine/truck_idle"   	}
 	}
-("burn_by_engine" args 0.3)
+	("burn_by_engine" args 0.3)
 }
 {"ab41"
-        ("sdkfz_sound")
+	("sdkfz_sound")
 	("burn_by_engine" args 0.3)
 }
 
 {"m15_contraereo"
-        ("pz3_sound")
+	("pz3_sound")
 	("burn_by_engine" args 0.3)
 }
 {"fiat35_bomb"
-		{on "add_movement_sound" overload
+	{on "add_movement_sound" overload
 		{link_sound	"move"				"vehicle/wheels/blitz"	}
 		{link_sound "engine"			"vehicle/engine/horch"	}
 		{link_sound	"engine_end"		"vehicle/engine/blitz_end"	}
 		{link_sound "exhaust"			"vehicle/engine/blitz_up"	}
 		{link_sound "idle"			"vehicle/engine/truck_idle"   	}
 	}
-("burn_by_engine" args 0.3)
+	("burn_by_engine" args 0.3)
 }
 {"fiataa35"
-		{on "add_movement_sound" overload
+	{on "add_movement_sound" overload
 		{link_sound	"move"				"vehicle/wheels/blitz"	}
 		{link_sound "engine"			"vehicle/engine/horch"	}
 		{link_sound	"engine_end"		"vehicle/engine/blitz_end"	}
 		{link_sound "exhaust"			"vehicle/engine/blitz_up"	}
 		{link_sound "idle"			"vehicle/engine/truck_idle"   	}
 	}
-("burn_by_engine" args 0.3)
+	("burn_by_engine" args 0.3)
 }
 
 
@@ -4552,36 +4688,36 @@
 {"as422  car"
 	("sdkfz_sound")
 }
-{"as423  car" 
-	("sdkfz_sound")	
+{"as423  car"
+	("sdkfz_sound")
 }
 
-{"panhard_rom" 
-	("sdkfz_sound")	
+{"panhard_rom"
+	("sdkfz_sound")
 }
 
 {"turan3 tank"
-        ("pz4_sound")
+	("pz4_sound")
 	("burn_by_engine" args 0.3)
-        ("smoke_launcher_ger_turret")
+	("smoke_launcher_ger_turret")
 }
 
 {"turan3_vet tank"
-        ("pz4_sound")
+	("pz4_sound")
 	("burn_by_engine" args 0.3)
-        ("smoke_launcher_ger_turret")
+	("smoke_launcher_ger_turret")
 }
 
 {"turan2 tank"
 	("pz4_sound")
 	("burn_by_engine" args 0.3)
-        ("smoke_launcher_ger_turret")
+	("smoke_launcher_ger_turret")
 }
 
 {"turan1 tank"
-        ("pz4_sound")
+	("pz4_sound")
 	("burn_by_engine" args 0.3)
-        ("smoke_launcher_ger_turret")
+	("smoke_launcher_ger_turret")
 }
 
 {"toldi2 tank"
@@ -4596,7 +4732,7 @@
 
 }
 {"toldi1 tank"
-{on "add_movement_sound" overload
+	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/tracks/mk2"	}
 		{link_sound "engine"			"vehicle/engine/pz2"		}
 		{link_sound "engine_end"		"vehicle/engine/pz2_end"	}
@@ -4609,7 +4745,7 @@
 
 {"zrinyi1 tank"
 	("pz4_sound")
-        ("smoke_launcher_ger_turret")
+	("smoke_launcher_ger_turret")
 
 	("burn_by_engine" args 0.3)
 }
@@ -4617,10 +4753,10 @@
 
 {"zrinyi2 tank"
 	("pz4_sound")
-        ("smoke_launcher_ger_turret")
+	("smoke_launcher_ger_turret")
 
 	("burn_by_engine" args 0.3)
-	
+
 }
 {"tas_44m tank"
 	("pz5g_sound")
@@ -4646,7 +4782,7 @@
 }
 
 {"nimrod tank"
-      {on "add_movement_sound" overload
+	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/tracks/mk2"	}
 		{link_sound "engine"			"vehicle/engine/pz3"		}
 		{link_sound "engine_end"		"vehicle/engine/pz3_end"	}
@@ -4674,7 +4810,7 @@
 }
 
 {"r2 tank"
-{on "add_movement_sound" overload
+	{on "add_movement_sound" overload
 		{link_sound "move"				"vehicle/tracks/t-70"}
 		{link_sound "engine"			"vehicle/engine/t26"		}
 		{link_sound "engine_end"		"vehicle/engine/bt_end"	}
@@ -4706,7 +4842,7 @@
 		{link_sound "exhaust"			"vehicle/engine/blitz_up"	}
 		{link_sound "idle"			"vehicle/engine/truck_idle"   	}
 	}
-        ("burn_by_engine" args 0.3)
+	("burn_by_engine" args 0.3)
 
 }
 

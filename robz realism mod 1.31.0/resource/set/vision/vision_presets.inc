@@ -1,3 +1,5 @@
+; firing: {welrod} {nagan_pb} {delisle} {hdm} {sten_v_silencer} {knife_ger} +26 more
+;   e.g. ("firing")
 (define "firing"
 	{welrod 0.25}
 	{nagan_pb 0.25}
@@ -8,7 +10,7 @@
 	{knife_rus 0}
 	{knife_union 0}
 	{knife_japan 0}
-	{axe 0}	
+	{axe 0}
 	{crow_bar 0}
 	{smoke 0.1}
 	{smoke_paradrop_ammo 0.1}
@@ -32,6 +34,8 @@
 	{type3at_a 0.1}
 	{type99at 0.1}
 )
+; vision: {cover} {squat} {crawl} {still} {visible} {firing}
+;   e.g. ("vision")
 (define "vision"
 	{cover 0.80
 		{stand 0.80
@@ -45,95 +49,99 @@
 		}
 	}
 	{squat 0.90
-        {stealth 0.70}			; 50%
+		{stealth 0.70}			; 50%
 	}
-    {crawl 0.80
-        {stealth 0.60}			; 50%
+	{crawl 0.80
+		{stealth 0.60}			; 50%
 		{still 0.70
 			{stealth 0.35}		; 50%
 		}
-    }
-    {still 0.95}
-    {visible 1.05}
+	}
+	{still 0.95}
+	{visible 1.05}
 	{firing 1.15}
 )
 
+; cannon: {cannon_01} {cannon_02} {cannon_02_vet} {cannon_03} {cannon_03_vet} {cannon_04} +3 more
+;   e.g. ("cannon")
 (define "cannon"
-        {cannon_01 1	;minimum
-            {firing 1.1}
-            {visible 1}
-            {still 1}
-        }
-        {cannon_02 1.1	;low
-            {firing 1.2}
-            {visible 1.1}
-            {still 1.1}
-        }
-		{cannon_02_vet 0.99	;low
-            {firing 1.08}
-            {visible 0.99}
-            {still 0.99}
-        }
-        {cannon_03 1.2	;medium
-            {firing 1.3}
-            {visible 1.2}
-            {still 1.2}
-        }
-		{cannon_03_vet 1.08	;medium veteran
-            {firing 1.17}
-            {visible 1.08}
-            {still 1.08}
-        }
-        {cannon_04 1.3	;high
-            {firing 1.4}
-            {visible 1.3}
-            {still 1.3}
-        }
-        {cannon_04_vet 1.17	;high veteran
-            {firing 1.26}
-            {visible 1.17}
-            {still 1.17}
-        }
-        {cannon_05 1.7	;maximum
-            {firing 2.0}
-            {visible 1.7}
-            {still 1.7}
-        }
-		{cannon_05_vet 1.53	;maximum veteran
-            {firing 1.8}
-            {visible 1.53}
-            {still 1.53}
-        }
+	{cannon_01 1	;minimum
+		{firing 1.1}
+		{visible 1}
+		{still 1}
+	}
+	{cannon_02 1.1	;low
+		{firing 1.2}
+		{visible 1.1}
+		{still 1.1}
+	}
+	{cannon_02_vet 0.99	;low
+		{firing 1.08}
+		{visible 0.99}
+		{still 0.99}
+	}
+	{cannon_03 1.2	;medium
+		{firing 1.3}
+		{visible 1.2}
+		{still 1.2}
+	}
+	{cannon_03_vet 1.08	;medium veteran
+		{firing 1.17}
+		{visible 1.08}
+		{still 1.08}
+	}
+	{cannon_04 1.3	;high
+		{firing 1.4}
+		{visible 1.3}
+		{still 1.3}
+	}
+	{cannon_04_vet 1.17	;high veteran
+		{firing 1.26}
+		{visible 1.17}
+		{still 1.17}
+	}
+	{cannon_05 1.7	;maximum
+		{firing 2.0}
+		{visible 1.7}
+		{still 1.7}
+	}
+	{cannon_05_vet 1.53	;maximum veteran
+		{firing 1.8}
+		{visible 1.53}
+		{still 1.53}
+	}
 )
+; tank: {paradrop_spawner} {vehicle_01} {vehicle_02} {vehicle_03} {vehicle_04} {vehicle_05}
+;   e.g. ("tank")
 (define "tank"
-        {paradrop_spawner 0
-            {firing 0}
-            {visible 0}
-            {still 0}
-        }
-        {vehicle_01 1.1
-            {firing 2.0}
-            {visible 1.6}
-            {still 1.6}
-        }
-        {vehicle_02 1.8
-            {firing 2.25}
-            {visible 1.7}
-            {still 1.7}
-        }
-        {vehicle_03 2.0
-            {firing 2.5}
-            {visible 1.8}
-            {still 1.8}
-        }
-        {vehicle_04 2.2
-            {firing 2.75}
-            {visible 1.9}
-            {still 1.9}
-        }
-        {vehicle_05 2.4
-            {firing 3}
-            {visible 2}
-            {still 2}
-        }
+	{paradrop_spawner 0
+		{firing 0}
+		{visible 0}
+		{still 0}
+	}
+	{vehicle_01 1.1
+		{firing 2.0}
+		{visible 1.6}
+		{still 1.6}
+	}
+	{vehicle_02 1.8
+		{firing 2.25}
+		{visible 1.7}
+		{still 1.7}
+	}
+	{vehicle_03 2.0
+		{firing 2.5}
+		{visible 1.8}
+		{still 1.8}
+	}
+	{vehicle_04 2.2
+		{firing 2.75}
+		{visible 1.9}
+		{still 1.9}
+	}
+	{vehicle_05 2.4
+		{firing 3}
+		{visible 2}
+		{still 2}
+	}
 )

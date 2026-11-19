@@ -1,0 +1,63 @@
+{breed
+	{skin "waffen-pioneer"}
+	{portrait ger_soldier2}
+	{icon at_miner}
+	{icon_priority 3}
+	{nationality ger}
+	{armors
+		{head waffen_helmet_camo}
+	}
+	{perks
+		{"health" "150%"
+		}
+		{"health_regeneration" "100%"
+		}
+		{"stamina" "100%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"vision" mp_soldier
+		}
+		{"speed" 0.9
+		}
+		{"tank" 0.75
+		}
+		{"vehicle" 1
+		}
+		{"cannon" 0.8
+		}
+		{"pistol" lvl_4
+		}
+		{"smg" lvl_4
+		}
+		{"mgun" lvl_2
+		}
+		{"rifle" lvl_3
+		}
+		{"rocketlauncher" lvl_2
+		}
+		{"melee" lvl_4
+		}
+	}
+	{veterancy
+		{"lvl_1" 2
+		}
+		{"lvl_2" 5
+		}
+		{"lvl_3" 9
+		}
+		{"lvl_4" 14
+		}
+		{"lvl_5" 20
+		}
+	}
+	{inventory
+		{item "mp40" filled}
+		{item "ammo mp40_mag" 192}
+		{item "mine antitank" 7}
+		{item "hohlladung grenade"}
+		{item "hedgehog_kit"}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

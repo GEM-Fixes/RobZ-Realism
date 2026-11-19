@@ -1,12 +1,12 @@
 {entity
 	(include "/properties/cannon.ext")
 	{props "vehicle" "cannon" "wheeled" "vision_cannon_medium" "muzzle_medium" "gun_mode_change" "medium_weapons"}
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: m43.def) ---
-	
+
 	; --- end Godny hitbox armor ---
 	("armor_medium")
-	
+
 	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
 
@@ -35,7 +35,7 @@
 	{extender "inventory"
 		{box
 			{item "ammo bullet76 rus fg" 6}
-            {item "ammo bullet76 rus heat" 5}
+			{item "ammo bullet76 rus heat" 5}
 		}
 	}
 	{Weaponry
@@ -58,7 +58,7 @@
 	{Extension "m43.mdl"}
 	(include "/properties/selection/cannon.inc"  scale(0.7))
 	{bone "basis"
-	      {limits}
+		{limits}
 	}
 	{extender "cannon"
 		{animation

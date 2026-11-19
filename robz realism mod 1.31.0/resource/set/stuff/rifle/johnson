@@ -4,9 +4,9 @@
 	{entity "johnsonrifle"}
 	{fireSound "rifle/johnson_shot"}
 	{reloadSound "garand/m1"}
-	
+
 	{Automatic}
-	{rechargeTime 7}	
+	{rechargeTime 7}
 	{healthDamage 30}
 	{recoveryTime 0.60}
 	("accuracy_rifle")

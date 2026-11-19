@@ -2,7 +2,7 @@
 	{tag "ammo ap2 shell dropboxed cumulative_small pierce rocketlauncher bazooka"}
 	{entity "gewehrpanzergranate"}
 	{view "gewehrpanzergranate"
-		;{tail "grenade_tail" "tail"}
+	;{tail "grenade_tail" "tail"}
 	}
 	{damage blastwave
 		{energy 1.0}
@@ -12,6 +12,6 @@
 		{weight 20}
 		{size 2 1}
 	}
-  	{mass 0.025}
+	{mass 0.025}
 	{cumulative 1}
 }

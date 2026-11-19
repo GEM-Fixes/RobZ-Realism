@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "jap_army_kamikaze"}
+	{portrait "jap_elite2"}
+	{nationality jap}
+	{icon "kamikaze"}
+	{icon_priority 0}
+	{armors
+		{head "jap_army_helmet6"}
+	}
+	{tags "stealth"}
+	{perks
+		("breed_body" health(300%) regen_health(100%) stamina(200%) regen_stamina(150%) vision("mp_soldier") speed(1.1))
+		{"stealth"}
+		("breed_drive" tank(0.8) vehicle(1.0) cannon(1.0))
+		("breed_skills" pistol(2) smg(2) mgun(1) rifle(1) rocket(1) melee(2))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "lunge_mine" filled}
+		{in_hands 0}
+	}
+}

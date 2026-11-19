@@ -1,25 +1,22 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.2))
 	{props "medium" "-turret" "opened" "vision_vehicle_high" "muzzle_maximum_nodust" "gun_mode_change_art"}
-	
+
 	{extender "enumerator"
 		{digit_folder "ger"}
 	}
 
 	; --- Godny hitbox armor (ported from GodnyMod: hummel.def) ---
-	{volume "sticky"
-		{tags "grenade_fg_target"}
-		{able clear {contact} {touch}}
-		{component "sticky_body"}
-	}
+	("vol_sticky_grenade_target" name(sticky))
 	{volume "body1"	;передн€€ (носова€) часть корпуса
 		{component "body"}
 		{tags "body"}
 		{thickness 20
 			{front	30}	;нлд
 			{rear	10}	;стенка моторного
-		;	{top	20}
+			;	{top	20}
 			{bottom	10}
 			{right	15}	;гласис
 		}
@@ -29,7 +26,7 @@
 		{tags "body"}
 		{thickness 20
 			{front	0.1}	;внутренн€€ стенка
-		;	{rear	20}
+			;	{rear	20}
 			{top	0.1}	;внутренн€€ стенка
 			{bottom	10}
 		}
@@ -55,25 +52,19 @@
 		{tags "body"}
 		{thickness 20
 			{front	30}
-		;	{rear	20}
-		;	{top	20}
+			;	{rear	20}
+			;	{top	20}
 			{bottom	0.1}	;внутренн€€ стенка
 		}
 	}
 	{volume "mantlet"
 		{thickness 20
-		;	{front	20}
+			;	{front	20}
 			{rear	10}	;орудие дает небольшую броню
 		}
 	}
-	{Volume "hole_bod"
-		{able clear {hole}}
-		{component "body"}
-	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "body"}
-	}
+	("vol_body_hole_only" name(hole_bod))
+	("vol_body_hole_only" name(hole_man))
 	{volume "engine"
 		{thickness 10}
 	}
@@ -108,17 +99,7 @@
 		}
 	}
 
-	(define "crew_human"
-		{placer
-			{place "%place" {group "crew"} {linkbone "%place"} {turnoff {sensor} {shadow}}}
-		}
-		{boarder
-			{door "%door1"}
-			{door "%door2"}
-			{link "%door1" "%place" {anm "%place"} {forward putoff} {reverse puton}}
-			{link "%door2" "%place" {anm "%place"} {forward putoff} {reverse puton}}
-		}
-	)
+	(include "/properties/robz/crew.inc")
 
 	{placer
 		{place "driver" {group "crew"} {visor "driver"}}
@@ -132,14 +113,14 @@
 		{link "emit0" "driver" {anm "driver"} {forward putoff} {reverse puton}}
 	}
 
-	("crew_human" place(commander)	door1(emit1))
-	("crew_human" place(gunner)	    door1(emit1))
-	("crew_human" place(charger)	door1(emit1))
+	("crew_human_two_doors" place(commander)	door1(emit1))
+	("crew_human_two_doors" place(gunner)	    door1(emit1))
+	("crew_human_two_doors" place(charger)	door1(emit1))
 
 	{extender "inventory"
 		{box
-            	{item "ammo bullet150 ger fg" 9}
-		{item "ammo bullet150 ger sm" 6}
+			{item "ammo bullet150 ger fg" 9}
+			{item "ammo bullet150 ger sm" 6}
 		}
 	}
 	{Weaponry
@@ -149,8 +130,8 @@
 			("abm_howitzer")
 		}
 		{place "gun1_2"
-			{RestoreIKAfterAim}	
-			{type "gun_change_direct"}		
+			{RestoreIKAfterAim}
+			{type "gun_change_direct"}
 			{weapon "150mm_sfh18_2"}
 			{basic}
 			("abm_direct_how")
@@ -164,34 +145,34 @@
 			{MaxSpeed   24}
 			{maxSpeedAtMaxTurn 5}
 			{StartTime  45}
-			{TurnStart  1.7}			
+			{TurnStart  1.7}
 			{TurnTime   16}
-			{TurnRadius 10} 
-    		{TurnStop   0.9}
+			{TurnRadius 10}
+			{TurnStop   0.9}
 			{BrakeTime  1}
 			{StopTime   2}
 			{Gears      0.1 0.2 0.3 1}
-			{RearGears  0.3}		
+			{RearGears  0.3}
 		}
 		{FuelBag
-			{volume 470 }	
-			{rate	36 }   
+			{volume 470 }
+			{rate	36 }
 			{remain 470 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  24}
-        	{Slow  24}
-    	}
+			{Normal  24}
+			{Slow  24}
+		}
 		{DisableMoveWhileFiring}
 	}
 	{Extension "Hummel.mdl"}
-	
+
 	{bone "gun_rot1"
 		{speed 0.0005}
 	}
 	{bone "gun_rot"
-        	{speed 0.0005}
+		{speed 0.0005}
 	}
 	(mod "mp"
 		{brain

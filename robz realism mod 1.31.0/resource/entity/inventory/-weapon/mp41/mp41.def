@@ -1,5 +1,5 @@
 {actor
-	
+
 	(include "/properties/stuff_small.ext")
 	{Extension "mp41.mdl"}
 	{extender "stuff"

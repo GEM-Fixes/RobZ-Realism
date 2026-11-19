@@ -1,8 +1,9 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{props "medium" "turret_rotator" "vision_vehicle_medium" "muzzle_medium"}
-	
+
 	{extender "enumerator"}
 
 	; --- Godny hitbox armor (ported from GodnyMod: ho-i.def) ---
@@ -22,7 +23,7 @@
 		{tags "body"}
 		{thickness 20	;верхний борт 20мм
 			{front	50}
-		;	{rear	20}
+			;	{rear	20}
 			{top	12}
 			{bottom	9}
 		}
@@ -32,7 +33,7 @@
 		{tags "body"}
 		{thickness 20
 			{front	0.1}	;внутренн€€ стенка
-		;	{rear	20}
+			;	{rear	20}
 			{top	10}
 			{bottom	9}
 		}
@@ -43,18 +44,15 @@
 		{able {holed}}
 		{thickness 25
 			{front	50}
-		;	{rear	25}
+			;	{rear	25}
 			{top	12}
 			{bottom	10}
 		}
 	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "turret"}
-	}
+	("vol_turret_hole_only" name(hole_man))
 	{volume "mantlet"
 		{thickness 50
-		;	{front	50}	;маска
+			;	{front	50}	;маска
 			{rear	10}
 		}
 	}
@@ -64,7 +62,7 @@
 	; --- end Godny hitbox armor ---
 	("armor_medium" turret(60 30 30 10) body(50 30 20 22))
 	{extender "shield"
-			{off}
+		{off}
 	}
 	{component "shieldl1" {tags "shield"}}
 	{component "shieldl2" {tags "shield"}}
@@ -76,7 +74,7 @@
 	{component "shieldr3" {tags "shield"}}
 	{component "shieldr4" {tags "shield"}}
 	{component "shieldr5" {tags "shield"}}
-	 
+
 	{extender "inventory"
 		{box
 			{item "ammo bullet75 japs aphe" 10}
@@ -100,8 +98,8 @@
 			{charger "driver"}
 			("abm_mgun")
 			{basic}
-		}			
-				
+		}
+
 	}
 
 	("crew_4_human")
@@ -142,12 +140,12 @@
 			{bone "visor2"}
 		}
 	}
-	
+
 	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
 	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
 	("seat_human" place(seat3) bone(seat03) door(emit6)  animation(armor2))
 	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
-	
+
 	{mass 23500}
 	{Chassis
 		("tank_trace" fx("tracks_mid") step(0.52) len(0.25))
@@ -156,32 +154,32 @@
 			{maxSpeedAtMaxTurn 6}
 			{StartTime	  27}
 			{TurnTime  	  14}
-    		{TurnStart  1.7} 
-    		{BrakeTime    1} 
-    		{StopTime     2} 
-    		{TurnRadius   9} 
-    		{TurnStop   0.9}
-     		{Gears  0.1 0.2 0.3 1} 
-    		{RearGears 0.25}
+			{TurnStart  1.7}
+			{BrakeTime    1}
+			{StopTime     2}
+			{TurnRadius   9}
+			{TurnStop   0.9}
+			{Gears  0.1 0.2 0.3 1}
+			{RearGears 0.25}
 		}
 		{FuelBag
-			{volume 470 }	
-			{rate	21 }   
+			{volume 470 }
+			{rate	21 }
 			{remain 470 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  34}
-        	{Slow  34}
-    	}
+			{Normal  34}
+			{Slow  34}
+		}
 	}
 	{Extension "ho-i.mdl"}
-	
-        {bone "gun_rot"
+
+	{bone "gun_rot"
 		{speed 0.0008}
 	}
 	{bone "turret"
-		{speed 0.003}	
+		{speed 0.003}
 	}
 	{bone "mgun1"
 		{speed 0.07}

@@ -3,20 +3,20 @@
 	{fireSound "gun/50to76_cal/75mm_pak40"}
 	{rechargeTime 7}
 
-	("speed_all" ap(792) apcr(990) fg(570) heat(450))
+	("speed_all" speed(792) apcr(990) fg(570) heat(450))
 	{projectileDamage 146}
-	("damage_170" a(146) b(133) c(118) d(105) e(93) range(200))
+	("damage_170" at20(146) at100(133) at170(118) at215(105) at250(93) max(200))
 	{parameters "apcbc"
-		("damage_170" a(146) b(133) c(118) d(105) e(93) range(200))
+		("damage_170" at20(146) at100(133) at170(118) at215(105) at250(93) max(200))
 	}
 	{parameters "heatb"
-		("damage_heat" a(87) range(200))
+		("damage_heat" damage(87) max(200))
 	}
 	{parameters "heatc"
-		("damage_heat" a(100) range(200))
+		("damage_heat" damage(100) max(200))
 	}
 	{parameters "apcr"
-        	("damage_170" a(195) b(170) c(144) d(121) e(102) range(200))
+		("damage_170" at20(195) at100(170) at170(144) at215(121) at250(102) max(200))
 	}
 }
 

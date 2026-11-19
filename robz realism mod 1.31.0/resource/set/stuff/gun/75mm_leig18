@@ -3,23 +3,23 @@
 	{fireSound "gun/50to76_cal/75mm_kwk40"}
 	{reloadSound "gun_r03"}
 	("range_light_howitzer")
-	
+
 	{rechargeTime 8}
 	("caliber_medium")
-	("speed_all" ap(380) apcr(380) fg(380) heat(304))
+	("speed_all" speed(380) apcr(380) fg(380) heat(304))
 	{projectileDamage 52}
 	("damage" a(52) b(48) c(44) d(40) e(37))
 	{parameters "heat"
-		("damage_heat" a(52) range(180))
+		("damage_heat" damage(52) max(180))
 	}
 	{parameters "heata"
-		("damage_heat" a(81) range(180))
+		("damage_heat" damage(81) max(180))
 	}
 	{parameters "heatb"
-		("damage_heat" a(87) range(180))
+		("damage_heat" damage(87) max(180))
 	}
 	{parameters "heatc"
-		("damage_heat" a(115) range(180))
+		("damage_heat" damage(115) max(180))
 	}
 	("accuracy_lighthowitzer_m8")
 }

@@ -3,7 +3,7 @@
 	{entity "fnab_m1943open"}
 	{fireSound	"smg/fnab_m1943_burst/"}
 	{reloadSound "m3a1_reload"}
-	("burst_medium")
+	("burst_medium_v2")
 	("recoveryTime" r(400))
 	("speed" s(381))
 }

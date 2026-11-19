@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-sgt"}
+	{portrait "usa_soldier3"}
+	{nationality usa}
+	{icon "squadleader"}
+	{icon_priority 2}
+	{armors
+		{head helmet2_usa}
+	}
+	{perks
+		("body_squadleader")
+		("drive_veteran")
+		("breed_skills" pistol(3) smg(4) mgun(3) rifle(3) rocket(2) melee(4))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_thompson")
+		{item "bandage" 3}
+		("frag_m61_x2")
+		;{item "grenade n73at" 1}
+		("smoke_x1p5_0p5")
+		("smoke_m15_x0p5_0p5")
+		{in_hands 0}
+	}
+}

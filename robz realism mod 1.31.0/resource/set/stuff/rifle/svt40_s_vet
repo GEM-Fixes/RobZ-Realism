@@ -3,7 +3,7 @@
 	{tag "sniper"}
 	{special
 		{mode aim}
-		{PrepareTime 2.0}	
+		{PrepareTime 2.0}
 		{PrepareCursor "aimed_shot"}
 		{accuracy 2.0}
 		{throw_off}

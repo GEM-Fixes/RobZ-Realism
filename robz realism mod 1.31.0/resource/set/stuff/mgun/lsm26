@@ -8,7 +8,7 @@
 	("recoveryTime" r(500))
 	("speed" s(800))
 	{spreading 0.8}
-	("burst_short")
+	("burst_short_v2")
 
-	
+
 }

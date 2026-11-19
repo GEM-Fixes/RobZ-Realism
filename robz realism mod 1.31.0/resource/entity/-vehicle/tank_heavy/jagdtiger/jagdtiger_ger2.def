@@ -1,9 +1,10 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.3))
 	{collider "tank.heavy"}
 	{props "heavy" "-turret" "vision_vehicle_maximum" "muzzle_maximum" "gun_mode_change" "vehicle_camo_2var2" "jagdtiger"}
-	
+
 	{extender "enumerator"
 		{digit_folder "ger"}
 	}
@@ -14,7 +15,7 @@
 		{component "body"}
 		{thickness 80
 			{front	150}	;влд
-		;	{rear	80}
+			;	{rear	80}
 			{top	0.1}	;внутренн€€ стенка
 			{bottom	40}
 			{right	120}	;нлд
@@ -35,7 +36,7 @@
 		{component "body"}
 		{thickness 80
 			{front	0.1}	;внутренн€€ и нижн€€ стенки
-		;	{rear	80}
+			;	{rear	80}
 			{top	30}	;крышка моторного
 			{bottom	40}
 		}
@@ -46,18 +47,15 @@
 		{able {holed}}
 		{thickness 80
 			{front	250}
-		;	{rear	80}
+			;	{rear	80}
 			{top	45}
 			{bottom	0.1}	;внутренн€€ стенка
 		}
 	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "body"}
-	}
+	("vol_body_hole_only" name(hole_man))
 	{volume "mantlet"
 		{thickness 100
-		;	{front	100}
+			;	{front	100}
 			{rear	25}	;брон€ от оруди€
 		}
 	}
@@ -65,11 +63,11 @@
 		{thickness 10}
 	}
 	; --- end Godny hitbox armor ---
-	("armor_spa_heavy_advanced" body(250 80 80 40) body2(150 80 80 40) body3(150 80 80 40))
+	("armor_spa_heavy_advanced" body_mm(250 80 80 40) body2(150 80 80 40) body3(150 80 80 40))
 	("armor_engine"  t(40 80 80 40))
 	("armor_mantlet" t(500))
 	("ger_5x8_sight")
-	
+
 	("shield" args 8)
 	{extender "shield"
 		{on}
@@ -91,7 +89,7 @@
 	{component "shieldr7" {tags "shield"}}
 
 	("crew_4_human_extended")
-		
+
 	{boarder
 		{anm "driver"
 			{forward	{begin	"board_jtiger_driver"} {end "seat_gunner_stand"} {base "open2"}}
@@ -119,11 +117,11 @@
 	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
 	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
 	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
-	
+
 	{extender "inventory"
-		{box			
-           	{item "ammo bullet128 ger apcbc" 25}
-           	{item "ammo bullet128 ger fg" 14}
+		{box
+			{item "ammo bullet128 ger apcbc" 25}
+			{item "ammo bullet128 ger fg" 14}
 			{item "ammo mg_mauser belt" 3300}
 		}
 	}
@@ -160,10 +158,10 @@
 			{Maxspeed   21}
 			{maxSpeedAtMaxTurn 2.5}
 			{StartTime  63}
-			{BrakeTime  3.0}		
-			{StopTime   4.0}			
+			{BrakeTime  3.0}
+			{StopTime   4.0}
 			{TurnStart  2}
-			{TurnTime   33}		
+			{TurnTime   33}
 			{TurnStop   1.1}
 			{TurnRadius  14}
 			{Gears      0.13 0.21 0.31 1.0}
@@ -176,13 +174,13 @@
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  10}
-        	{Slow  12}
-    	}
-	{DisableMoveWhileFiring}
+			{Normal  10}
+			{Slow  12}
+		}
+		{DisableMoveWhileFiring}
 	}
 	{Extension "jagdtiger.mdl"}
-	
+
 	{bone "gun_rot"
 		{limits -7 15}
 		{speed 0.0015}
@@ -192,5 +190,5 @@
 		{speed 0.0015}
 	}
 }
-  
+
 

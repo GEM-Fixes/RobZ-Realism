@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-inf-pvt"}
+	{portrait "eng_soldier2"}
+	{nationality eng}
+	{icon "smg"}
+	{icon_priority 1}
+	{armors
+		{head "helmet2_eng"}
+	}
+	{perks
+		("breed_body" health(150%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(1.0) vehicle(1.0) cannon(1.0))
+		("breed_skills" pistol(3) smg(2) mgun(3) rifle(2) rocket(1) melee(3))
+		{"tankgun" lvl_3}
+	}
+	("breed_vet" table(crew))
+	{inventory
+		("smg_sten_mk2")
+		{item "bandage" 3}
+		;{item "grenade mk1" 1}
+		;{item "smoke grenade" 1}
+		{in_hands 0}
+	}
+}

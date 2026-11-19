@@ -1,10 +1,11 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{props "medium" "turret_rotator" "vision_vehicle_high" "muzzle_medium_reduced" "gun_mode_change"}
 
 	{extender "enumerator"}
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: m4a3_75.def) ---
 	{volume "body1"	;нижн€€ часть корпуса
 		{component "body"}
@@ -33,7 +34,7 @@
 		{tags "body"}
 		{thickness 38.1
 			{front	10}
-		;	{rear	38.1}
+			;	{rear	38.1}
 			{right	19.05}	;верхние скосы мто
 			{top	15}	;у этой модификации решетка, немного ослаблен лист
 			{bottom	12.7}
@@ -44,7 +45,7 @@
 		{tags "body"}
 		{thickness 38.1
 			{front	0.1}	;внутренн€€ стенка
-		;	{rear	38.1}
+			;	{rear	38.1}
 			{top	0.1}	;внутренн€€ стенка
 			{bottom	12.7}
 		}
@@ -55,7 +56,7 @@
 		{able {holed}}
 		{thickness 50.8
 			{front	76.2}
-		;	{rear	50.8}
+			;	{rear	50.8}
 			{top	25.4}
 			{bottom	12.7}
 		}
@@ -65,21 +66,18 @@
 		{component "turret"}
 		{able {holed}}
 		{thickness 38.1
-		;	{front	38.1}	;внутренн€€ стенка
+			;	{front	38.1}	;внутренн€€ стенка
 			{rear	0.1}	;внутренн€€ стенка
 			{top	25.4}
 			{bottom	12.7}
 		}
 	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "turret"}
-	}
+	("vol_turret_hole_only" name(hole_man))
 	{Volume "mantlet"
 		{tags "gun"}
 		{component "gun"}
 		{thickness 89
-		;	{front	89}
+			;	{front	89}
 			{rear	15}	;орудие дает небольшую броню
 		}
 	}
@@ -87,12 +85,9 @@
 		{thickness 10}
 	}
 	; --- end Godny hitbox armor ---
-	{Volume "turret2"
-		{tags "turret"}
-		{component "turret"}
-	}
+	("vol_turret_part" name(turret2))
 	("armor_medium_advanced" turret(76 51 51 25) body(64 38 38 22) body2(51 38 38 22) body3(51 38 38 22))
-	("armor_engine"  t(40 38 38 22))		
+	("armor_engine"  t(40 38 38 22))
 	("armor_mantlet" t(89))
 	("shield" args 10)
 	("us_3x_sight")
@@ -107,7 +102,7 @@
 	{component "shieldr1" {tags "shield"}}
 	{component "shieldr2" {tags "shield"}}
 
-	
+
 	("crew_4_human")
 
 	("gunner_visible")
@@ -152,7 +147,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "75mm_m3" filling "ammo bullet75 us apcbc" 1}	
+			{weapon "75mm_m3" filling "ammo bullet75 us apcbc" 1}
 			("abm_stabilized")
 		}
 		{place "gun1_2"
@@ -187,7 +182,7 @@
 		}
 	}
 
-{Extension "m4a3_75.mdl"}
+	{Extension "m4a3_75.mdl"}
 
 	{mass 31800}
 	{Chassis
@@ -199,23 +194,23 @@
 			{TurnTime   17}
 			{TurnStart  1.6}
 			{TurnRadius 8}
-    		{TurnStop   0.8}
+			{TurnStop   0.8}
 			{BrakeTime  1.5}
 			{StopTime   2.5}
 			{Gears   0.1 0.2 0.3 1}
 			{RearGears  0.27}
 		}
 		{FuelBag
-			{volume 660 }	
-			{rate	34 }   
+			{volume 660 }
+			{rate	34 }
 			{remain 660 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  32}
-        	{Slow  32}
-    	}
-	{DisableMoveWhileFiring}
+			{Normal  32}
+			{Slow  32}
+		}
+		{DisableMoveWhileFiring}
 	}
 	{bone "turret_mgun"
 		{limits -15 15}

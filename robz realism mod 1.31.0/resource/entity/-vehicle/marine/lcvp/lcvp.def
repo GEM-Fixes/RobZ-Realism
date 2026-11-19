@@ -1,9 +1,10 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/marine.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.5))
 	{mass 15000}
 	{props "vehicle" "marine" "emit_on_sink" "open_with_land" "explosion_throw_crew" "car"  }
- 	{targetSelector "tank_bullet"}
+	{targetSelector "tank_bullet"}
 	{patherid "shallow_water_0"}
 
 	{extension "lcvp.mdl"}
@@ -26,11 +27,7 @@
 		{tags "float"}
 		{Able clear {float}}
 	}
-	{volume "body_rear"
-		{tags "body"}
-		{component "body"}
-		{thickness 20}
-	}
+	("vol_body_plate_lower" name(body_rear) mm(20))
 	{Volume "body_l"
 		{tags "body"}
 		{component "body"}
@@ -84,7 +81,7 @@
 			{basic}
 		}
 	}
-	
+
 	{extender "enumerator"
 	}
 

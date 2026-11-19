@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "jap_army_giretu"}
+	{portrait "jap_elite1"}
+	{nationality jap}
+	{icon "elite2"}
+	{icon_priority 3}
+	{armors
+		{head jap_army_helmet_para}
+	}
+	{perks
+		("body_elite")
+		("drive_t09_v10_c10")
+		("skills_elite_7")
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("kit_smg" gun(type100smg) ammo(type100_mag) rounds(240))
+		{item "bandage" 5}
+		("frag_type97_x2")
+		("at_grenade_type3at_a_x1")
+		("smoke_x1")
+		("mine_antipersonnel_x5")
+		{in_hands 0}
+	}
+}

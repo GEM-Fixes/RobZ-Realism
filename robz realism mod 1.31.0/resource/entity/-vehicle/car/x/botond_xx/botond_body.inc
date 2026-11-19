@@ -1,0 +1,15 @@
+{Extension "botond_xx.mdl"}
+{Volume "body1"
+}
+{Volume "body"
+}
+{Volume "part1"
+}
+{Volume "part2"
+}
+{Volume "part3"
+}
+{Volume "part4"
+}
+{Volume "part5"
+}

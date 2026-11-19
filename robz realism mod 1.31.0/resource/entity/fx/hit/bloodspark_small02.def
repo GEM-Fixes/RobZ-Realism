@@ -27,7 +27,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage initial 
+			{stage initial
 				{sprite "$/particle/bloodsplash01"
 					{turn 1
 						{linear
@@ -43,7 +43,7 @@
 					{preturn 90 90}
 				}
 			}
-			{stage collided dying 
+			{stage collided dying
 				{sprite "$/particle/bloodsplash01"
 					{visibility 1
 						{linear

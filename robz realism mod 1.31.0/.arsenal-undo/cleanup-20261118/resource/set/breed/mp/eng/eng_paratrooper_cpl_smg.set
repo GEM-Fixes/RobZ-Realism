@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-para-nco"}
+	{portrait "eng_soldier5"}
+	{nationality eng}
+	{icon "stormtrooper"}
+	{icon_priority 4}
+	{armors
+		{head beret_eng_para}
+	}
+	{perks
+		("soldier_smg_7" rocket(1) body(line))
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("smg_sten_v")
+		{item "bandage" 5}
+		("frag_mk1_x2")
+		("at_grenade_n73at")
+		("smoke_x2")
+		("smoke_n77_x0p25_1")
+		{in_hands 0}
+	}
+}

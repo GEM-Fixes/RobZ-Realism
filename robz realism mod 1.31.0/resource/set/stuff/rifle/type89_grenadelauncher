@@ -13,18 +13,18 @@
 	{burst
 		{short 1}
 		{Long 1}
-	}	
+	}
 	{preloaded}
 	{mass 6}
-	
+
 	{spreading 15
-		;{SpreadXYRatio	1}
-		;{radiusFunction
-		;	0.0		0
-		;	1.0		1.0
-		;	1.2		2.5
-		;	2.5		5.0
-		;}
+	;{SpreadXYRatio	1}
+	;{radiusFunction
+	;	0.0		0
+	;	1.0		1.0
+	;	1.2		2.5
+	;	2.5		5.0
+	;}
 	}
 	{aimRange 110}
 	{maxRange 110}
@@ -41,7 +41,7 @@
 	{DisableRicochet}
 	{foresight "Foresight3"}
 
-        {projectileDamage 10}
+	{projectileDamage 10}
 	{AimingTolerance 0.1}
 	{SpreadTolerance 0.75}
 	{projectileDamageTable {90 10}}

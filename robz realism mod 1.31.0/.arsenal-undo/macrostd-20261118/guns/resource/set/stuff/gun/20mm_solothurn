@@ -1,0 +1,21 @@
+{from "pattern gun"		; "toldi1"
+	{filling "bullet20_hun zenite" 4}
+	{fireSound "gun/zenite/20mm_burst/"}
+	{rechargeTime 5}
+	{RecoveryTime 0.27}
+	{automatic}
+	{range 170 170}
+
+	("damage_100" a(46) b(33) c(23) d(15) e(11) range(160))
+	{burst
+		{min 1}
+		{short 2}
+		{long 10}
+	}
+
+
+	{projectileDamage 40}
+	("speed" s(925))
+	;("caliber_zenite")
+	("accuracy_zenite_medium")
+}

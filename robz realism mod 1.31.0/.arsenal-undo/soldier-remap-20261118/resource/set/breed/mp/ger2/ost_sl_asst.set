@@ -1,0 +1,28 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-smock2-g43"}
+	{portrait "ger2_soldier2"}
+	{nationality ger}
+	{icon "rifleman"}
+	{icon_priority 1}
+	{armors
+		{head helmet_heer_camo}
+	}
+	{perks
+		("body_regular")
+		("drive_regular")
+		("skills_4_3_2_4_2_4")
+	}
+	("breed_vet" table(standard_start2))
+	{inventory
+		("kit_rifle" gun(g43) ammo(g43_mag) rounds(20))
+		{item "ammo mauser_clip" 60}
+		{item "ammo mg_mauser drum" 50}
+		{item "bandage" 5}
+		("frag_m24_x2")
+		("at_grenade_m24x5_x0_1")
+		{item "sandbag_kit" 1}
+		{item "panzerfaust_60 weapon" 0 1 filled}
+		{in_hands 0}
+	}
+}

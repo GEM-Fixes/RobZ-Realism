@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/car.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.1))
@@ -12,68 +13,68 @@
 	("wheel" args "wheelright2")
 	("wheel" args "wheelleft2")
 
-    {armor
-        {setting "turret"
+	{armor
+		{setting "turret"
 			{thickness 5}
 			{threshold
-				{blast 					
+				{blast
 					{value 8}
-				}								
-				{pierce 
+				}
+				{pierce
 					{value 7}
 				}
 			}
-			{durability 
-				{blast 					
+			{durability
+				{blast
 					{value 17}
-				}			
+				}
 				{pierce
 					{value 22}
 				}
 			}
-            {volumes "turret"}
-        }
+			{volumes "turret"}
+		}
 		{setting "gun"
 			{durability
-                {blast  
+				{blast
 					{koef 2}
 				}
-            }
-            {threshold
-                {blast 
+			}
+			{threshold
+				{blast
 					{value 15}
 				}
-                {pierce 
+				{pierce
 					{value 16}
 				}
-            }
+			}
 			{volumes "gun"}
 		}
 	}
-		{sensor
-			{visor "gunner1" {bone "mgun"}}
+	{sensor
+		{visor "gunner1" {bone "mgun"}}
+	}
+	{placer
+		{place "gunner1" {useVision} {visor "gunner1"}}
+	}
+	{sensor
+		{visor "view-around"
+			{vision "moto_around"}
+			{bone "basis"}
 		}
-		{placer 
-			{place "gunner1" {useVision} {visor "gunner1"}}
+		{visor "main"
+			{vision "tank_main-l"}
+			{bone "turret"}
 		}
-		{sensor
-			{visor "view-around"
-                {vision "moto_around"}
-				{bone "basis"}
-			}	
-			{visor "main"
-				{vision "tank_main-l"}
-				{bone "turret"}
-			}
-			{visor "driver"
-                {vision "vehicle_main"}
-				{bone "visor2"}
-			}
-			{visor "mgun2"
-                {vision "mp_soldier"}
-				{bone "mgun2"}
-			}		
+		{visor "driver"
+			{vision "vehicle_main"}
+			{bone "visor2"}
 		}
+		{visor "mgun2"
+			{vision "mp_soldier"}
+			{bone "mgun2"}
+		}
+	}
 	("us_3x_sight")
 	{extender "inventory"
 		{box
@@ -99,17 +100,17 @@
 			("abm_mgun")
 			{basic}
 		}
-	}  	
+	}
 	{Chassis
 		{Locomotion ("locomotion")
 			{TurnRadius	5}
 			{Maxspeed 36}
 			{StartTime 18}
-	  		{maxSpeedAtMaxTurn 8}
+			{maxSpeedAtMaxTurn 8}
 		}
 		{FuelBag
-			{volume 80 }	
-			{rate	10 }   
+			{volume 80 }
+			{rate	10 }
 			{remain 80 }
 			{fuel "fuel"}
 		}
@@ -121,26 +122,10 @@
 		("car_trace" fx("tracewheel01a") step(0.08) wheell("wlr") wheelr("wrr") bonel("FXtraceL2") boner("FXtraceR2"))
 	}
 	; --- Godny hitbox armor (ported from GodnyMod: dodgewc55.def) ---
-	{Volume "body"
-		{tags "body"}
-		{component "body"}
-		{thickness 6}
-	}
-	{Volume "body1"
-		{tags "body"}
-		{component "body"}
-		{thickness 6}
-	}
-	{Volume "body2"
-		{tags "body"}
-		{component "body"}
-		{thickness 6}
-	}
-	{Volume "body3"
-		{tags "body"}
-		{component "body"}
-		{thickness 6}
-	}
+	("vol_body_plate" name(body) mm(6))
+	("vol_body_plate" name(body1) mm(6))
+	("vol_body_plate" name(body2) mm(6))
+	("vol_body_plate" name(body3) mm(6))
 	{volume "turret"
 		{thickness 5}
 	}
@@ -148,10 +133,10 @@
 		{thickness 5}
 	}
 	; --- end Godny hitbox armor ---
-	{component "gun"	
+	{component "gun"
 		{RepairTime 20}
 	}
-	{component "turret"	
+	{component "turret"
 		{RepairTime 20}
 	}
 	{Extension "dodgewc55.mdl"}

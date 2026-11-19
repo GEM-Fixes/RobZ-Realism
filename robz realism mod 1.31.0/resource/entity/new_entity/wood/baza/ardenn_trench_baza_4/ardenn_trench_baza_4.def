@@ -1,5 +1,5 @@
 {game_entity
-                  (include "/properties/trench_new.inc")           
+	(include "/properties/trench_new.inc")
 	{Extension "ardenn_trench_baza_4.mdl"}
 	{props "wood"}
 	{placer}

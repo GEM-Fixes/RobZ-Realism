@@ -1,18 +1,11 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
-    (include "/properties/building.inc")
+	(include "/properties/building.inc")
 	{props "cornered" "concrete" "parts" "construction" "wall"}
 	{Extension "dot_pz_se.mdl"}
 	{obstacleid "unbreakable"}
-	{Volume "body"
-		{Tags  "body"}
-		{Thickness 100}
-		{able {visible 1}}
-	}
-	{Volume "body01"
-		{Tags  "body"}
-		{Thickness 100}
-		{able {visible 1}}
-	}
+	("vol_body_visible" name(body) mm(100))
+	("vol_body_visible" name(body01) mm(100))
 	{Extender "land_patch"
 		{TerrainType "road" "bridge"}
 	}

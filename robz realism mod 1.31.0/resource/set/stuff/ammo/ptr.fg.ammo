@@ -5,7 +5,7 @@
 		{weight 20}
 		{block 5}
 	}
-	{damage blastwave  
+	{damage blastwave
 		{energy 0.8}
 		{area 0.1 0.2}
 	}

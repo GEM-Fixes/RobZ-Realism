@@ -1,0 +1,58 @@
+{breed
+	{skin "ita-para-smg"}
+	{portrait "ita_elite1"}
+	{icon "elite"}
+	{icon_priority 3}
+	{nationality ita}
+	{armors
+		{head helmet_ita_para}
+
+	}
+	{perks
+		{"health" "200%"
+		}
+		{"health_regeneration" "100%"
+		}
+		{"stamina" "150%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+		{"tank"	0.9
+		}
+		{"vehicle" 1.0
+		}
+		{"cannon" 1.0
+		}
+
+		{"pistol" lvl_3
+		}
+		{"smg" lvl_3
+		}
+		{"mgun" lvl_7
+		}
+		{"rifle" lvl_7
+		}
+		{"rocketlauncher" lvl_3
+		}
+		{"melee" lvl_3
+		}
+	}
+	{veterancy
+		(include "veterancy_generic.inc")
+		("veterancy_1")
+	}
+	{inventory
+		{item "breda_30" filled}
+		{item  "ammo breda_mag" 240}
+		{item "mg_backpack"}
+		{item "bandage" 4}
+		{item "oto_mod35"}
+		{item "breda42at"}
+		{item "sandbag_kit"}
+		{in_hands 0}
+	}
+}

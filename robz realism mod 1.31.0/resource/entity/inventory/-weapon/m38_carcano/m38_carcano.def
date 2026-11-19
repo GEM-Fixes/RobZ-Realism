@@ -4,5 +4,5 @@
 	{extender "stuff"
 		{item "m38_carcano"}
 	}
-	{nogroupmesh 1}	
+	{nogroupmesh 1}
 }

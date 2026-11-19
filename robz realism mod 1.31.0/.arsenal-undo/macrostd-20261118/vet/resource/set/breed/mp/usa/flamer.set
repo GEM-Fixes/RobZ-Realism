@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "us_flamer_hp"}
+	{portrait "usa_soldier2"}
+	{nationality usa}
+	{icon "flamer"}
+	{icon_priority 3}
+	{armors
+		{head helmet1_usa}
+	}
+	{perks
+		("breed_body" health(150%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.75) vehicle(1) cannon(0.8))
+		("breed_skills" pistol(3) smg(3) mgun(2) rifle(2) rocket(1) melee(3))
+		{"avoidance" lvl_1}
+	}
+	("breed_vet" kind(1))
+	{inventory
+		{item "flame_thrower"}
+		{item "balloon" filled}
+		{in_hands 0}
+	}
+}

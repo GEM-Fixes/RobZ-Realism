@@ -1,0 +1,24 @@
+{from "pattern gun"     ; Semovente M75_18
+	{filling "bullet75_ita"}
+	{fireSound "gun/50to76_cal/75mm_obice75"}
+	{reloadSound "gun_r03"}
+    	{rechargeTime 8}
+	("speed" s(792))
+        {range 190 190}
+
+	("caliber_medium")
+	("damage_170" a(45) b(44) c(39) d(33) e(25) range(190))
+	{parameters "aphebc"
+		{cursorReloading "cannon_reload_aphebc"}
+	}
+	{parameters "apcr"
+        	("damage_170" a(52) b(50) c(44) d(38) e(33) range(190))
+	}
+	{parameters "fg"
+		{range 180 180}
+	}
+	("accuracy_high")
+
+
+	("accuracy_lighthowitzer")
+}

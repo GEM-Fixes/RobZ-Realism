@@ -3,7 +3,7 @@
 	{fireSound "mgun/dshk_burst/"}
 	{reloadSound "ptrd"}
 	{rechargeTime 5}
-	{Spreading	
+	{Spreading
 		{BurstRecoveryTime 0.8}
 		{BurstAccuracy  100 75 65 55 45 35 20}
 	}
@@ -12,7 +12,7 @@
 		{short 1}
 		{long 5 2}
 		{rangeKoef 0.35}
-	}	
+	}
 	{range 150 150}
 	{traceFreq 1}
 	("speed" s(818))
@@ -26,5 +26,5 @@
 	{projectileDamage 20}
 	("damage" a(26) b(18) c(12) d(9) e(4))
 	{gravity 1.5}
-        ("accuracy_zenite_high")
+	("accuracy_zenite_high")
 }

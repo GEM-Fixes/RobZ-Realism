@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/construction.inc")
 	{Extension "interset10_hb1.mdl"}
@@ -13,26 +14,11 @@
 		{Thickness 5}
 		{material "steel"}
 	}
-	{Volume "body2"
-		{Tags  "body"}
-		{Thickness 5}
-	}
-	{Volume "body3"
-		{Tags  "body"}
-		{Thickness 5}
-	}
-	{Volume "body4"
-		{Tags  "body"}
-		{Thickness 5}
-	}
-	{Volume "body5"
-		{Tags  "body"}
-		{Thickness 5}
-	}
-	{Volume "body6"
-		{Tags  "body"}
-		{Thickness 5}
-	}
+	("vol_body_tagged" name(body2) mm(5))
+	("vol_body_tagged" name(body3) mm(5))
+	("vol_body_tagged" name(body4) mm(5))
+	("vol_body_tagged" name(body5) mm(5))
+	("vol_body_tagged" name(body6) mm(5))
 	{Volume "body7"
 		{Tags  "body"}
 		{Thickness 5}

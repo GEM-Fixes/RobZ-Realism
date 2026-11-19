@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-scout-cpl"}
+	{portrait eng_soldier4}
+	{icon sniper}
+	{icon_priority 5}
+	{nationality eng}
+	{armors
+		{head helmet_eng_mk3c}
+	}
+	{perks
+		("breed_body" health(350%) regen_health(100%) stamina(150%) regen_stamina(100%) vision(mp_sniper) speed(1))
+		{"stealth"}
+		{"telescope"}
+		("breed_drive" tank(1) vehicle(1) cannon(1))
+		("breed_skills" pistol(3) smg(3) mgun(3) rifle(6) rocket(2) melee(4))
+		{"aimedshot"}
+	}
+	("breed_vet" kind(1))
+	{inventory
+		{item "ammo british303_clip" 100}
+		{item "bandage" 5}
+		{item "plant" 3}
+		{item "em2_vet" filling "british303_clip ammo" 10}
+		{in_hands 3}
+	}
+}

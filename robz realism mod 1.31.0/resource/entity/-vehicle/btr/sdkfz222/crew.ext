@@ -1,4 +1,4 @@
-  
+
 
 ;SDL
 {boarder
@@ -16,24 +16,16 @@
 	}
 }
 
-(define "crew_human"
-	{boarder
-		{door "%door"}
-		{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}
-	}
-	{placer
-		{place "%place"	{LinkBone "%place"}	{visor "%visor"} {turnoff {sensor} {shadow}}}
-	}
-)
+(include "/properties/robz/crew.inc")
 
 {boarder
 	{door "emit1"}
 	{link "emit1" "driver" {anm "driver"} {forward putoff} {reverse puton}}
 }
-("crew_human" place(gunner) door(emit2) visor(main))
-("crew_human" place(commander) door(emit2) visor(main))
+("crew_human_link_bone" place(gunner) door(emit2) visor(main))
+("crew_human_link_bone" place(commander) door(emit2) visor(main))
 {placer
 	{place "driver"	{visor "main"}}
 }
-  
+
 

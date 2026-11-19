@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ita-tankcom"}
+	{portrait "ita_tankman"}
+	{icon "tankman2"}
+	{icon_priority 0}
+	{tags "tankman2"}
+	{nationality ita}
+	{armors
+		{head helmet_ita_tank}
+	}
+	{tags "tankman2"}
+	{perks
+		("body_crew_commander")
+		("drive_t11_v10_c095")
+		("skills_axis_minor_2_2_4_1_1_2")
+		{"tankgun" lvl_7}
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("kit_pistol" gun(glisenti) ammo(9x19c) rounds(35))
+		{in_hands 0}
+	}
+}

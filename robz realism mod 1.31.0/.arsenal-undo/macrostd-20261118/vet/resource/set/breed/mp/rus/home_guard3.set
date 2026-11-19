@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-partisan1"}
+	{portrait "rus_soldier1"}
+	{nationality rus}
+	{icon "home_guard2"}
+	{icon_priority 0}
+	{armors
+		{head "cap_rus_partisan"}
+	}
+	{perks
+		("breed_body" health(100%) regen_health(100%) stamina(75%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.75) vehicle(0.8) cannon(0.8))
+		("breed_skills" pistol(1) smg(1) mgun(1) rifle(1) rocket(1) melee(2))
+	}
+	("breed_vet" kind(1))
+	{inventory
+		{item "mp38" filled}
+		{item "ammo mp40_mag" 96}
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

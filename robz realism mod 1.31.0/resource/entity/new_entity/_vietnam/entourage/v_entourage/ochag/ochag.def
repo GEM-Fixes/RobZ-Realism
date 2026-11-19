@@ -1,13 +1,11 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/construction.inc")
-;	{props "wood" "parts" "construction" "wall" "burning" "break_on_burn" "no_destroyed_stamp"}
+	;	{props "wood" "parts" "construction" "wall" "burning" "break_on_burn" "no_destroyed_stamp"}
 	{props "wood" "small" "construction" "parts" "no_destroyed_stamp" "burning" "break_on_burn"}
 	("armor_light")
 	{mass 50}
 
 	{Extension "ochag.mdl"}
-	{Volume "body"
-		{Tags  "body" "fire"}
-		{Thickness 1}
-	}
+	("vol_body_fire" name(body) mm(1))
 }

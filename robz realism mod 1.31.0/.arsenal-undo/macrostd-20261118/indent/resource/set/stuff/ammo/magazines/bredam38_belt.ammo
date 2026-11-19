@@ -1,0 +1,24 @@
+;// 8x59mmRb Breda
+
+{bullet
+	{tag "bullet stackable pierce 7-62_rifle"}
+	{inventory
+		{weight 1}
+		{block 24}
+		{size 1 1}
+		{fsm "belt"}
+	}
+	{mass 0.011}
+	{entity "fg42_mag"}
+
+	{view "rifle_bullet"}
+{trace
+		{view "/texture/fx/trace_mg_limegreen"
+			{ScaleY 0.22}
+			{Light 10}
+		}
+		{length 8}
+	}
+
+
+}

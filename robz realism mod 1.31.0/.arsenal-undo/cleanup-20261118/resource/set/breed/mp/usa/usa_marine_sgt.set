@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-marine-sgt"}
+	{portrait "usa_elite2"}
+	{nationality usa}
+	{icon "elite4"}
+	{icon_priority 4}
+	{armors
+		{head helmet_marine_usa}
+	}
+	{perks
+		("soldier_smg_5" rocket(1) body(line))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_thompson")
+		{item "bandage" 5}
+		("frag_m61_x2")
+		;{item "grenade n73at" 1}
+		("smoke_x1p5_0p5")
+		("smoke_m15_x0p5_0p5")
+		{in_hands 0}
+	}
+}

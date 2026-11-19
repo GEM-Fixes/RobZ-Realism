@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-smock2mix-g43"}
+	{portrait "ger_soldier2"}
+	{icon "rifleman"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{head helmet_heer_camo}
+	}
+	{perks
+		("breed_body" health(100%) regen_health(100%) stamina(75%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.75) vehicle(1) cannon(0.8))
+		("breed_skills" pistol(1) smg(1) mgun(1) rifle(2) rocket(1) melee(2))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "g43" filling "ammo g43_mag" 10}
+		{item "ammo g43_mag" 20}
+		{item "ammo mauser_clip" 60}
+		{item "bandage" 3}
+		{item "grenade m24"}
+		{item "small_shovel" 1}
+		{item "panzerfaust_60 weapon" 0 1 filled}
+		{in_hands 0}
+	}
+}

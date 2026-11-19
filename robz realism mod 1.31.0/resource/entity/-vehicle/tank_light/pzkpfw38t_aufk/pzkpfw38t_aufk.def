@@ -2,13 +2,13 @@
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.0))
 	{props "vehicle" "light" "tank" "zenite" "turret" "wheeled_8" "explosion_throw_crew"  "vision_vehicle_medium" "muzzle_zenite" "switch_mgun"}
-	
+
 	{collider "tank.light"}
 	{targetClass "light_tank"}
 	{patherId "tank.light"}
-	
+
 	("armor_light" turret(30 8 8 8) body(50 30 30 15))
-	
+
 	{volume "body1"
 		{tags "body"}
 		{component "body"}
@@ -32,7 +32,7 @@
 		{component "turret"}
 		{tags "turret"}
 		{thickness 8
-		    {front 30}
+			{front 30}
 		}
 	}
 	{Volume "Gun"
@@ -57,11 +57,11 @@
 	{extender "inventory"
 		{box
 			{item "ammo mg_mauser belt" 700}
-            {item "ammo bullet20 ger zenite ap" 200}
-            {item "ammo bullet20 ger zenite apcr" 80}
-	    	{item "ammo bullet20 ger zenite fg" 200}
+			{item "ammo bullet20 ger zenite ap" 200}
+			{item "ammo bullet20 ger zenite apcr" 80}
+			{item "ammo bullet20 ger zenite fg" 200}
 			{item "ammo mortar_flaer" 10}
-            {item "grenade m39" 3}
+			{item "grenade m39" 3}
 		}
 	}
 	{Weaponry
@@ -71,7 +71,7 @@
 			{RestoreIKAfterAim}
 			{gunner "commander"}
 			{charger "charger"}
-			("abm_low")
+			("abm_low_v4")
 		}
 		{place "gun2"
 			{weapon "mortar_flaergun_tank" filling "ammo mortar_flaer" 1}
@@ -91,7 +91,7 @@
 	}
 
 	{mass 9400}
-       	 {sensor
+	{sensor
 		{visor "main"
 			{vision "tank_main-l"}
 		}
@@ -111,19 +111,19 @@
 			{maxspeed   38}
 			{maxSpeedAtMaxTurn 8}
 			{StartTime  38}
-			{TurnStart  1.7}			
+			{TurnStart  1.7}
 			{TurnTime   15}
-			{TurnRadius 10} 
-    			{TurnStop   0.9}
+			{TurnRadius 10}
+			{TurnStop   0.9}
 			{BrakeTime  1}
 			{StopTime   2}
 			{Gears      0.1 0.2 0.3 1}
 			{RearGears  0.3}
 		}
-                {speed
-				{Slow	38}
-				{Normal	38}
-				{Fast	38}
+		{speed
+			{Slow	38}
+			{Normal	38}
+			{Fast	38}
 		}
 		{FuelBag
 			{volume 220 }	; liters
@@ -131,7 +131,7 @@
 			{remain 220 }
 			{fuel "fuel"}
 		}
-	}	
+	}
 
 	{Extension "pz38t.mdl"}
 

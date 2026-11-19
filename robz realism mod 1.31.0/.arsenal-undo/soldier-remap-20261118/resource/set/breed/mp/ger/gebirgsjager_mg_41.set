@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-geb-mgun"}
+	{portrait "ger_soldier4"}
+	{icon "elite2"}
+	{icon_priority 4}
+	{nationality ger}
+	{armors
+		{body mgun_ammo}
+		{head fieldcap_ger_geb}
+	}
+	{perks
+		("body_ger_gebirgsjager")
+		("drive_elite")
+		("skills_elite_7")
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("mgun_mg34")
+		("pistol_valter")
+		{item "bandage" 5}
+		("frag_m24_grenade")
+		{item "barrel_case"}
+		{in_hands 0}
+	}
+}

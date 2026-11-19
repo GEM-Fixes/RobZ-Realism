@@ -1,5 +1,6 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
-    (include "/properties/construction.inc")
+	(include "/properties/construction.inc")
 	{Extension "bridge_big.mdl"}
 	{props "parts" "construction" "no_destroyed_stamp" "wood" "burning"}
 	{Volume "body"
@@ -7,89 +8,23 @@
 		{Thickness 50}
 		{able clear {blast}}
 	}
-	{Volume "body10"
-		{Tags  "body" "fire"}
-		{Thickness 50}
-		{able {obstacle 0}}
-	}
-	{Volume "body11"
-		{Tags  "body" "fire"}
-		{Thickness 50}
-		{able {obstacle 0}}
-	}
-	{Volume "body12"
-		{Tags  "body" "fire"}
-		{Thickness 50}
-		{able {obstacle 0}}
-	}
-	{Volume "body13"
-		{Tags  "body" "fire"}
-		{Thickness 50}
-		{able {obstacle 0}}
-	}
-	{Volume "body14"
-		{Tags  "body" "fire"}
-		{Thickness 50}
-		{able {obstacle 0}}
-	}
-	{Volume "body15"
-		{Tags  "body" "fire"}
-		{Thickness 50}
-		{able {obstacle 0}}
-	}
-	{Volume "body16"
-		{Tags  "body" "fire"}
-		{Thickness 50}
-		{able {obstacle 0}}
-	}
-	{Volume "body17"
-		{Tags  "body" "fire"}
-		{Thickness 50}
-		{able {obstacle 0}}
-	}
-	{Volume "body1"
-		{Tags  "body" "fire"}
-		{Thickness 40}
-	}
-	{Volume "body2"
-		{Tags  "body" "fire"}
-		{Thickness 40}
-	}
-	{Volume "body3"
-		{Tags  "body" "fire"}
-		{Thickness 50}
-		{able {obstacle 0}}
-	}
-	{Volume "body4"
-		{Tags  "body" "fire"}
-		{Thickness 50}
-		{able {obstacle 0}}
-	}
-	{Volume "body5"
-		{Tags  "body" "fire"}
-		{Thickness 50}
-		{able {obstacle 0}}
-	}
-	{Volume "body6"
-		{Tags  "body" "fire"}
-		{Thickness 50}
-		{able {obstacle 0}}
-	}
-	{Volume "body7"
-		{Tags  "body" "fire"}
-		{Thickness 50}
-		{able {obstacle 0}}
-	}
-	{Volume "body8"
-		{Tags  "body" "fire"}
-		{Thickness 50}
-		{able {obstacle 0}}
-	}
-	{Volume "body9"
-		{Tags  "body" "fire"}
-		{Thickness 50}
-		{able {obstacle 0}}
-	}
+	("vol_body_fire_no_obstacle" name(body10) mm(50))
+	("vol_body_fire_no_obstacle" name(body11) mm(50))
+	("vol_body_fire_no_obstacle" name(body12) mm(50))
+	("vol_body_fire_no_obstacle" name(body13) mm(50))
+	("vol_body_fire_no_obstacle" name(body14) mm(50))
+	("vol_body_fire_no_obstacle" name(body15) mm(50))
+	("vol_body_fire_no_obstacle" name(body16) mm(50))
+	("vol_body_fire_no_obstacle" name(body17) mm(50))
+	("vol_body_fire" name(body1) mm(40))
+	("vol_body_fire" name(body2) mm(40))
+	("vol_body_fire_no_obstacle" name(body3) mm(50))
+	("vol_body_fire_no_obstacle" name(body4) mm(50))
+	("vol_body_fire_no_obstacle" name(body5) mm(50))
+	("vol_body_fire_no_obstacle" name(body6) mm(50))
+	("vol_body_fire_no_obstacle" name(body7) mm(50))
+	("vol_body_fire_no_obstacle" name(body8) mm(50))
+	("vol_body_fire_no_obstacle" name(body9) mm(50))
 	{Extender "land_patch"
 		{TerrainType "road" "bridge_wood"}
 	}

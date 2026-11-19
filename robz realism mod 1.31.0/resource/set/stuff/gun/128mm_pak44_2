@@ -5,7 +5,7 @@
 	{rechargeTime 20}
 	{recoveryTime 20}
 	("range_arty_lowarc")
-	("speed_lowarc" s(880))
+	("speed_lowarc" mps(880))
 	{range 800 800}
 	{burst {min 3} {noaiming}}
 	("zeroing_3")

@@ -22,7 +22,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smoke_g04b"
 					{turn 1
 						{linear
@@ -79,7 +79,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/oskolki"
 					{light 1
 						{linear
@@ -137,7 +137,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -260,7 +260,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/particle/metal_drops1"
 					{timer
@@ -305,7 +305,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -388,7 +388,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -526,7 +526,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -636,7 +636,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{##+ sprite "$/smoke/smoke_small_grey"
 					{timer
 						{mode play }
@@ -733,7 +733,7 @@
 		}
 		{offset 0 0 10}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/supershock"
 					{timer
 						{mode play }
@@ -808,7 +808,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -928,7 +928,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{##+ sprite "$/smoke/smoke_small_grey"
 					{timer
 						{mode play }
@@ -1037,7 +1037,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{##+ sprite "$/smoke/smoke_small_grey"
 					{timer
 						{mode play }
@@ -1151,7 +1151,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -1260,7 +1260,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{##+ sprite "$/smoke/smoke_small_grey"
 					{timer
 						{mode play }
@@ -1370,7 +1370,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{##+ sprite "$/smoke/smoke_small_grey"
 					{timer
 						{mode play }
@@ -1479,7 +1479,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/explosion/Exp2"
 					{timer
 						{mode play }
@@ -1550,7 +1550,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/exp_muzzle_01"
 					{timer
 						{mode play }
@@ -1626,7 +1626,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{## flags trace }
 				{sprite "$/flash/spark01"
 					{timer
@@ -1730,7 +1730,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/rock_3"
 					{timer
 						{mode play }

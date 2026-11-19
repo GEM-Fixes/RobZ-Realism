@@ -1,28 +1,21 @@
+(include "/properties/robz/volumes.inc")
 {entity
 	(include "/properties/car.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.1))
 	{props "vehicle" "car" "wheeled" "turn_over" "vision_vehicle_low"}
 	{PatherId "vehicle.small"}
 	("armor_light" args 1.0)
-	
+
 	{extender "enumerator"}
 
-	{Volume "body"
-		{tags "body"}
-		{component "body"}
-		{thickness 7}
-	}
-	{Volume "body2"
-		{tags "body"}
-		{component "body"}
-		{thickness 7}
-	}
-	
+	("vol_body_plate" name(body) mm(7))
+	("vol_body_plate" name(body2) mm(7))
+
 	("shield" args 8)
 	{extender "shield"
 		{on}
 	}
-	
+
 	{component "shield1" {tags "shield"}}
 	{component "shield2" {tags "shield"}}
 	{component "shield3" {tags "shield"}}
@@ -58,12 +51,12 @@
 		}
 	}
 
-	
+
 	{extender "inventory"
 		{Box
 			{size 5 6}
 			{item  "ammo hmgun" 1200}
-			;{item "browning" filled {user "mgun"}}
+		;{item "browning" filled {user "mgun"}}
 		}
 	}
 	{Weaponry
@@ -76,19 +69,19 @@
 			("abm_mgun")
 		}
 	}
-	
+
 	{mass 1250}
 	{Chassis
 		{Locomotion ("locomotion")
 			{Maxspeed 35}
-	  		{maxSpeedAtMaxTurn 8}
+			{maxSpeedAtMaxTurn 8}
 			{StartTime 20}
-     			{Gears  0.1 0.2 0.3 1}
+			{Gears  0.1 0.2 0.3 1}
 			{RearGears  0.25}
 		}
 		{FuelBag
-			{volume 60 }	
-			{rate	10 }   
+			{volume 60 }
+			{rate	10 }
 			{remain 60 }
 			{fuel "fuel"}
 		}

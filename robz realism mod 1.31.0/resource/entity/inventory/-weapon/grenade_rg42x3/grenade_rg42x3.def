@@ -4,7 +4,7 @@
 	{props "grenade"}
 	{extender "stuff"
 		{item "grenade rg42x3"}
-	}	
+	}
 	{nogroupmesh 1}
 	{volume "body"
 		{able clear {bullet} {select} {contact_ground} {touch} {contact}}

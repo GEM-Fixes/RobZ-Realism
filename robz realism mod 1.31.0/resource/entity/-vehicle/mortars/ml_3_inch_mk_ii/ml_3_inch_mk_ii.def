@@ -1,28 +1,25 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/cannon.ext")
-	
+
 	{props "vehicle" "cannon" "cannon_small" "truck_mortar" "round_sandbag3" "vision_cannon_minimum" "small_weapons"}
 	{collider "cannon_small"}
 	{targetSelector "cannon_rocket"}
 	{patherId "cannon.carried"}
-	
+
 	("armor_mortar")
-	
-	{volume "body"
-		{tags "body"}
-		{component "body"}
-		{thickness 15}
-	}
+
+	("vol_body_plate_lower" name(body) mm(15))
 	{Volume "gun"
 		{thickness 15}
 		{able {Contact 1}}
 	}
-	
+
 	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
-	
+
 	("crew_gun")
-	
+
 	{boarder
 		{anm "gunner"
 			{forward	{end "pose_pak40_gunlayer" 10}}
@@ -37,7 +34,7 @@
 			{forward {end "mortar_driver_l" 10}}
 		}
 	}
-	
+
 	{extender "inventory"
 		{box
 			{item "ammo mortar81 eng fg" 6}
@@ -45,7 +42,7 @@
 			{item "ammo mortar81 eng sm" 6}
 		}
 	}
-	
+
 	{extender "cannon"
 		{animation
 			{switch "close"}
@@ -57,13 +54,13 @@
 		{move {obstacle "close"}}
 		{attack {obstacle "open"}}
 	}
-	
+
 	{Chassis "human_carrier"
 		{carrierPlace "driver1" "driver2"}
 		{carrierBone  "handle1" "handle2"}
 		("loco_carrier")
 	}
-	
+
 	{Weaponry
 		{place "gun"
 			{Barrels 1}
@@ -72,9 +69,9 @@
 		}
 	}
 	{mass 56}
-	
+
 	{Extension "ml_3_inch_mk_ii.mdl"}
-	
+
 	{sensor
 		{visor "main"
 			{vision "cannon_main"}

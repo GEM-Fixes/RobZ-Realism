@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-paramarine-pvt"}
+	{portrait "usa_elite2"}
+	{nationality usa}
+	{icon "elite6"}
+	{icon_priority 4}
+	{armors
+		{body ammo_us2}
+		{head helmet_marine_usa}
+	}
+	{perks
+		("body_h350_s200")
+		("drive_elite")
+		("skills_5_5_6_6_5_5")
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("rifle_johnson_m1941_rifle")
+		{item "bandage" 5}
+		;{item "grenade smoke_paradrop_ammo" 1}
+		("frag_m61_x2")
+		{item "sandbag_kit" 1}
+		{in_hands 0}
+	}
+}

@@ -4,49 +4,49 @@
 
 ;°°°Button 1°°°
 
-{"universal_carrier" ("vs_eng40" c(10) t(40) 		s(eng) n(2) g(b9) sc(125)  b(v1) cw(0) cp(0)) {level 1} {cost 125} {fore -17.0}}	;180sec
+("unit_vehicle_supporters" side(eng) name(universal_carrier) breed(vehicle_supporter_40) crew(2) charge(10) tags(40) group(b9) button(v1) score(125) weight(0) points(0) level(1) cost(125) fore(-17.0))	;180sec
 
-{"bedford"	    ("vs_eng40" c(0) t(40) 		s(eng) n(2) g(b4) sc(100)  b(v1) cw(0) cp(0)) {level 1} {cost 100} {fore 0.0}}		;0sec
-{"bedford_art"      ("vs_eng40" c(0) t(40) 		s(eng) n(2) g(b5) sc(300)  b(v1) cw(0) cp(0)) {level 1} {cost 300} {fore 0.0}}		;0sec
-{"bedford_eng"      ("vs_eng40" c(0) t(40) 		s(eng) n(2) g(b6) sc(250)  b(v1) cw(0) cp(0)) {level 1} {cost 250} {fore 0.0}}	;0sec
-{"ammo_box_eng_inf" ("vs_eng40" c(0) t(40) 		s(eng) n(2) g(b7) sc(25) b(v1) cw(0) cp(0)) {level 1} {cost 25} {fore 0.0}}		;0sec
-{"ammo_box_eng_art" ("vs_eng40" c(0) t(40) 		s(eng) n(2) g(b8) sc(75) b(v1) cw(0) cp(0)) {level 1} {cost 75} {fore 0.0}}		;0sec
+("unit_vehicle_supporters" side(eng) name(bedford) breed(vehicle_supporter_40) crew(2) charge(0) tags(40) group(b4) button(v1) score(100) weight(0) points(0) level(1) cost(100) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(eng) name(bedford_art) breed(vehicle_supporter_40) crew(2) charge(0) tags(40) group(b5) button(v1) score(300) weight(0) points(0) level(1) cost(300) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(eng) name(bedford_eng) breed(vehicle_supporter_40) crew(2) charge(0) tags(40) group(b6) button(v1) score(250) weight(0) points(0) level(1) cost(250) fore(0.0))	;0sec
+("unit_vehicle_supporters" side(eng) name(ammo_box_eng_inf) breed(vehicle_supporter_40) crew(2) charge(0) tags(40) group(b7) button(v1) score(25) weight(0) points(0) level(1) cost(25) fore(0.0))		;0sec
+("unit_vehicle_supporters" side(eng) name(ammo_box_eng_art) breed(vehicle_supporter_40) crew(2) charge(0) tags(40) group(b8) button(v1) score(75) weight(0) points(0) level(1) cost(75) fore(0.0))		;0sec
 
 
 
 
 ;°°°Button 2°°°
 
-{"303_bren_tripod"  ("vs_eng40" c(10) t(40) 	s(eng) n(2) g(c1) sc(100)  b(v2) cw(2) cp(5)) {level 1} {cost 100} {fore -2.0}}	;30sec
-{"303_vickers_mkiv" ("vs_eng40" c(10) t(40) 		s(eng) n(2) g(c2) sc(125)  b(v2) cw(2) cp(5)) {level 1} {cost 125} {fore -2.0}}	;30sec
-{"oerlikon"         ("vs_eng40" c(30) t(40) 		s(eng) n(1) g(c3) sc(170) b(v2) cw(2) cp(5)) {level 1} {cost 170} {fore -4.0}}		;150sec
-{"light_mortar_eng"     ("light_mortar_eng" c(10) t(all 40 mortar) s(eng) g(c44) b(v2)) {level 1} {cost 170} {fore -2.0}}		;30sec
-{"ml_3_inch_mk_ii"  ("vs_eng40" c(10) t(40 mortar) 	s(eng) n(2) g(c4) sc(340) b(v2) cw(2) cp(5)) {level 1} {cost 340} {fore -2.0}}	;30sec
+("unit_vehicle_supporters" side(eng) name(303_bren_tripod) breed(vehicle_supporter_40) crew(2) charge(10) tags(40) group(c1) button(v2) score(100) weight(2) points(5) level(1) cost(100) fore(-2.0))	;30sec
+("unit_vehicle_supporters" side(eng) name(303_vickers_mkiv) breed(vehicle_supporter_40) crew(2) charge(10) tags(40) group(c2) button(v2) score(125) weight(2) points(5) level(1) cost(125) fore(-2.0))	;30sec
+("unit_vehicle_supporters" side(eng) name(oerlikon) breed(vehicle_supporter_40) crew(1) charge(30) tags(40) group(c3) button(v2) score(170) weight(2) points(5) level(1) cost(170) fore(-4.0))		;150sec
+("unit_light_mortar_2" side(eng) name(light_mortar_eng) charge(10) tags(all 40 mortar) group(c44) button(v2) level(1) cost(170) fore(-2.0))		;30sec
+("unit_vehicle_supporters" side(eng) name(ml_3_inch_mk_ii) breed(vehicle_supporter_40) crew(2) charge(10) tags(40 mortar) group(c4) button(v2) score(340) weight(2) points(5) level(1) cost(340) fore(-2.0))	;30sec
 
-{"qf2_40"           ("vs_eng40" c(10) t(40) 		s(eng) n(2) g(c5) sc(250)  b(v2) cw(2) cp(5)) {level 1} {cost 250} {fore -2.0}}	;30sec
+("unit_vehicle_supporters" side(eng) name(qf2_40) breed(vehicle_supporter_40) crew(2) charge(10) tags(40) group(c5) button(v2) score(250) weight(2) points(5) level(1) cost(250) fore(-2.0))	;30sec
 
-("how_y" side(eng) name(how_aa) c(60) c1(universal_carrier) c2(vickers) 	t(heavyaa medium 40) g(c11) b(v2) level(1) cost(900) f(-17.0))			;1080sec
+("unit_howitzer" side(eng) name(how_aa) vehicle2(vickers) charge(60) tags(heavyaa medium 40) group(c11) button(v2) level(1) cost(900) fore(-17.0))			;1080sec
 
 
 
-("how_y" side(eng) name(how_b) c(60) c1(universal_carrier) c2(pdr25) 	t(artillery 40) g(c12) b(v22) level(1) cost(400) f(-14.0))			;900sec
-("how_y" side(eng) name(how_a) c(60) c1(universal_carrier) c2(bl6)   	t(artillery heavyart heavy 40) g(c14) b(v22) level(1) cost(650) f(-14.0))	;900sec
+("unit_howitzer" side(eng) name(how_b) vehicle2(pdr25) charge(60) tags(artillery 40) group(c12) button(v22) level(1) cost(400) fore(-14.0))			;900sec
+("unit_howitzer" side(eng) name(how_a) vehicle2(bl6) charge(60) tags(artillery heavyart heavy 40) group(c14) button(v22) level(1) cost(650) fore(-14.0))	;900sec
 
-{"gun_carrier_3_inch" ("vs_eng40" c(10) t(40 mortar) 	s(eng) n(4) g(c15) sc(390) b(v22) cw(0) cp(10)) {level 1} {cost 390} {fore -31.0}}	;320sec
+("unit_vehicle_supporters" side(eng) name(gun_carrier_3_inch) breed(vehicle_supporter_40) crew(4) charge(10) tags(40 mortar) group(c15) button(v22) score(390) weight(0) points(10) level(1) cost(390) fore(-31.0))	;320sec
 
 
 
 ;°°°Button 3°°°
 
-{"mk7"    	    ("v" c(10) t(40) 	s(eng) n1(2) n2(1) g(d1) sc(250) b(v3) cw(0) cp(5)) {level 1} {cost 250} {fore -31.0}}	;320sec
+("unit_tank" side(eng) name(mk7) breed1(tankman) breed2(tankman2) crew1(2) crew2(1) charge(10) tags(40) group(d1) button(v3) score(250) weight(0) points(5) level(1) cost(250) fore(-31.0))	;320sec
 ; [removed - unit not in 1.30.10] {"cruisermk1"       ("v" c(10) t(40) 	s(eng) n1(3) n2(1) g(d4) sc(17.50) b(v3) cw(0) cp(5)) {level 1} {cost 350} {fore -45.0}}	;460sec
 ; [removed - unit not in 1.30.10] {"cruisermk3"       ("v" c(10) t(40) 	s(eng) n1(2) n2(1) g(d5) sc(20.00) b(v3) cw(0) cp(5)) {level 1} {cost 400} {fore -55.0}}	;560sec
-{"matildamk1"       ("v" c(10) t(40) 	s(eng) n1(1) n2(1) g(d6) sc(400) b(v3) cw(0) cp(5)) {level 1} {cost 400} {fore -49.0}}	;500sec
-{"mk3"              ("v" c(10) t(40) 	s(eng) n1(3) n2(1) g(d7) sc(550) b(v3) cw(0) cp(5)) {level 1} {cost 550} {fore -69.0}}	;700sec
+("unit_tank" side(eng) name(matildamk1) breed1(tankman) breed2(tankman2) crew1(1) crew2(1) charge(10) tags(40) group(d6) button(v3) score(400) weight(0) points(5) level(1) cost(400) fore(-49.0))	;500sec
+("unit_tank" side(eng) name(mk3) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(40) group(d7) button(v3) score(550) weight(0) points(5) level(1) cost(550) fore(-69.0))	;700sec
 
 ;°°°Button 4°°°
 
-{"mk2a"             ("v" c(10) t(medium 40) 	s(eng) n1(3) n2(1) g(e3) sc(625) b(v4) cw(0) cp(15)) {level 1} {cost 625} {fore -84.0}}	;850sec
+("unit_tank" side(eng) name(mk2a) breed1(tankman) breed2(tankman2) crew1(3) crew2(1) charge(10) tags(medium 40) group(e3) button(v4) score(625) weight(0) points(15) level(1) cost(625) fore(-84.0))	;850sec
 
 
 ;°°°Button 5°°°
@@ -54,4 +54,4 @@
 
 ;°°°Button Hero°°°
 
-{"hero7(eng)"        ("v2" c(720) c1(pdr25_vet) 	t(hero artillery 40) s(eng) n1(vehicle_supporter:2) n2(tankman2:0) g(h6) b(hero)) {level 1} {cost 9.0} {fore -0.5}}
+("unit_two_vehicles_members_sided" side(eng) name(hero7) vehicle1(pdr25_vet) member1(vehicle_supporter:2) member2(tankman2:0) charge(720) tags(hero artillery 40) group(h6) button(hero) level(1) cost(9.0) fore(-0.5))

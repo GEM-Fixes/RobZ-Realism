@@ -1,15 +1,13 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/building.inc")
 	{props "cornered" "wood" "parts" "construction" "burning" "wall" "break_on_burn" "no_destroyed_stamp"}
 	("armor_medium" args 1.0)
-        {mass 100}
-        {obstacleID "small_building"}
+	{mass 100}
+	{obstacleID "small_building"}
 
 	{Extension "naves_1.mdl"}
-	{Volume "body1"
-		{Tags  "body" "fire"}
-		{able {visible 0}{obstacle 0}}
-	}
+	("vol_body_fire_hidden" name(body1))
 	{Volume "body2"
 		{Tags  "body" "fire"}
 	}

@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-lsssmock2-rfl"}
+	{portrait "ger_soldier6"}
+	{icon "rifleman"}
+	{icon_priority 3}
+	{nationality ger}
+	{armors
+		{head waffen_helmet_lssah}
+	}
+	{perks
+		("body_veteran")
+		("drive_veteran")
+		("skills_ger_ss_4_3_5_5_4_4")
+	}
+	("breed_vet" table(start5))
+	{inventory
+		("rifle_mauzer_vet")
+		{item "ammo mg_mauser belt" 600}
+		{item "bandage" 5}
+		("frag_m24_x2")
+		{item "sandbag_kit"}
+		{in_hands 0}
+	}
+}

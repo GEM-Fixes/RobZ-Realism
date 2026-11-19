@@ -1,0 +1,28 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "fin-camo2-svt"}
+	{portrait "fin_elite1"}
+	{nationality fin}
+	{icon "elite5"}
+	{icon_priority 5}
+	{armors
+
+	}
+	{perks
+		("body_sniper_s200")
+		{"stealth"}
+		{"telescope"}
+		("drive_veteran")
+		("breed_skills" pistol(2) smg(2) mgun(2) rifle(7) rocket(2) melee(4))
+		{"aimedshot"}
+	}
+	("breed_vet" table(start5))
+	{inventory
+		{item "mosin_s_elite" filling "ammo mosin_clip fg" 5}
+		{item "ammo mosin_clip fg" 120}
+		{item "bandage" 5}
+		;{item "smoke_paradrop_ammo grenade" 1}
+		{item "plant" 3}
+		{in_hands 0}
+	}
+}

@@ -13,5 +13,5 @@
 	("recoveryTime" r(2300))
 	("burst_short")
 	("accuracy_beam_rifle")
- 	("speed" s(350))
+	("speed" s(350))
 }

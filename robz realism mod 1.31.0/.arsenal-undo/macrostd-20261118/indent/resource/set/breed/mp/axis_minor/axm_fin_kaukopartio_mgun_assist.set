@@ -1,0 +1,62 @@
+{breed
+	{skin "fin-camo2-svt"}
+	{portrait "fin_elite1"}
+	{icon "elite-rifle"}
+	{icon_priority 1}
+	{nationality fin}
+	{armors
+		;{head helmet_fin_m38}
+	}
+	{perks
+		{"health" "250%"
+		}
+		{"health_regeneration" "100%"
+		}
+		{"stamina" "150%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"vision" "mp_soldier"
+		}
+		{"speed" 0.9
+		}
+		{"tank"	0.9
+		}
+		{"vehicle" 1.0
+		}
+		{"cannon" 1.0
+		}
+
+		{"pistol" lvl_3
+		}
+		{"smg" lvl_3
+		}
+		{"mgun" lvl_6
+		}
+		{"rifle" lvl_6
+		}
+		{"rocketlauncher" lvl_3
+		}
+		{"melee" lvl_3
+		}
+	}
+	{veterancy
+		(include "veterancy_generic.inc")
+		("veterancy_1")
+	}
+	{inventory
+		{item "mosin_fin" filled}
+		{item  "ammo 7x53" 120}
+                {item  "LSM26_mag" 320}
+		{item "bandage" 4}
+		{item "grenade m24" 2}
+		{item "m24x5" 1}
+		{item "kasapanos_2kg" 1}
+		{item "kasapanos_4kg" 1}
+		{item "smoke grenade" 1}
+		{item "molotov_coctail" 1}
+
+                 {in_hands 0}
+
+	}
+}

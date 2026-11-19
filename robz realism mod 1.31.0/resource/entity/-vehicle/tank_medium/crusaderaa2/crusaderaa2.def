@@ -1,22 +1,14 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{props "medium" "turret_rotator" "flak" "turret" "vision_vehicle_medium" "muzzle_zenite"}
-	
+
 	{extender "enumerator"}
-	
-	{volume "body1"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body2"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body3"
-		{tags "body"}
-		{component "body"}
-	}
+
+	("vol_body_part_lower" name(body1))
+	("vol_body_part_lower" name(body2))
+	("vol_body_part_lower" name(body3))
 	{volume "gun1"
 		{tags "gun"}
 		{component "gun"}
@@ -37,7 +29,7 @@
 	}
 
 	("shield" args 10)
-	
+
 	{extender "shield"
 		{on}
 	}
@@ -48,7 +40,7 @@
 	{component "shieldr2" {tags "shield"}}
 	{component "shieldr3" {tags "shield"}}
 
-	
+
 	("armor_medium" turret(49 23 23	12) body(46 27 27 9))
 	("armor_engine"  t(30 27 27 7))
 	("armor_mantlet" t(20))
@@ -78,7 +70,7 @@
 	("crew_human" 			place(driver)		door1(emit1) door2(emit2) visor(driver))
 	("crew_human_visible"	place(gunner)		door1(emit1) door2(emit2) visor(main))
 	("crew_human" 			place(commander)	door1(emit1) door2(emit2) visor(main))
-	{placer 
+	{placer
 		{place "gunner" {openForCrush 0}}
 	}
 
@@ -118,25 +110,25 @@
 		{Locomotion ("locomotion")
 			{MaxSpeed   34}
 			{StartTime  30}
-			{TurnStart  1.5}			
+			{TurnStart  1.5}
 			{TurnTime   15}
-			{TurnRadius 9} 
-    		{TurnStop   0.7}
+			{TurnRadius 9}
+			{TurnStop   0.7}
 			{BrakeTime  1.5}
 			{StopTime   2.5}
 			{Gears  0.1 0.2 0.3 1}
-			{RearGears  0.23}			
+			{RearGears  0.23}
 		}
 		{FuelBag
-			{volume 500 }	
-			{rate	28 }   
+			{volume 500 }
+			{rate	28 }
 			{remain 500 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  34}
-        	{Slow  34}
-    	}
+			{Normal  34}
+			{Slow  34}
+		}
 	}
 
 	{Extension "crusaderaa.mdl"}

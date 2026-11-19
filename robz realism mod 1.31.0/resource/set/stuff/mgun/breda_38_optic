@@ -7,7 +7,7 @@
 	("burst_medium")
 	("recoveryTime" r(550))
 	("speed" s(770))
-	
+
 	("spread_optic")
 	("accuracy_mgun_tank")
 }

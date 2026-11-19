@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "rus-smguner"}
 	{portrait "rus_elite2"}
@@ -9,43 +10,10 @@
 		{head helmet1_rus}
 	}
 	{perks
-		{"health" "200%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "100%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.85
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 0.9
-		}
-		
-		{"pistol" lvl_2
-		}
-		{"smg" lvl_1
-		}
-		{"mgun" lvl_3
-		}
-		{"rifle" lvl_3
-		}
-		{"rocketlauncher" lvl_1
-		}
-		{"melee" lvl_3
-		}
+		("soldier_mgun_3" rocket(1) body(line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_lvl5")
-	}
-	{inventory               
+	("breed_vet" table(start5))
+	{inventory
 		{item "dt" filling "ammo dt29_mag" 60}
 		{item "ammo dt29_mag" 240}
 		{item "bandage" 5}

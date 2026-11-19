@@ -4,5 +4,5 @@
 	{aimRange 35}
 	{maxRange 35}
 	{recoveryTime 0.8}
-    	{RelaxationTime 0.5}
+	{RelaxationTime 0.5}
 }

@@ -16,7 +16,7 @@ actor
 {targetClass "cannon" "bullet"}
 {targetSelector "cannon_bullet"}
 
-{brain "vehicle" 
+{brain "vehicle"
 	{state "vehicle"}
 }
 
@@ -50,7 +50,7 @@ actor
 		{LinkBone "mgun"}
 		{LinkAnimation "off"}
 	}
-}  	
+}
 
 
 ("crew_2_human")

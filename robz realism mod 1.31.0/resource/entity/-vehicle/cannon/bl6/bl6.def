@@ -1,37 +1,17 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/cannon.ext")
 	{props "vehicle" "cannon" "wheeled" "round_sandbag2" "vision_cannon_maximum" "muzzle_maximum_nodust" "gun_mode_change_art"}
 	("armor_heavy")
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: bl6.def) ---
-	{volume "body"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body1"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body2"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body3"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body4"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body5"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body6"
-		{tags "body"}
-		{component "body"}
-	}
+	("vol_body_part_lower" name(body))
+	("vol_body_part_lower" name(body1))
+	("vol_body_part_lower" name(body2))
+	("vol_body_part_lower" name(body3))
+	("vol_body_part_lower" name(body4))
+	("vol_body_part_lower" name(body5))
+	("vol_body_part_lower" name(body6))
 	{Volume "gun_rot"
 		{component "gun"}
 	}
@@ -72,7 +52,7 @@
 		{place "gun"
 			{weapon "152mm_bl6" filling "bullet152 eng fg" 3}
 			{Rotate}
-			{StationaryFiring}  
+			{StationaryFiring}
 			("abm_howitzer")
 		}
 		{place "gun1_2"
@@ -100,7 +80,7 @@
 		{limits -5 50}
 		{speed 0.0005}
 	}
-	
+
 	{extender "cannon"
 		{animation
 			{switch "close"}
@@ -124,8 +104,8 @@
 		}
 	}
 	{bone "basis"
-    		{speed 0.003}
-    	}
+		{speed 0.003}
+	}
 	(mod "mp"
 		{brain
 			{properties

@@ -1,0 +1,167 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "medium" "-turret" "vision_vehicle_medium" "muzzle_medium" "hetzer"}
+
+	{extender "enumerator"
+		{digit_folder "ger"}
+	}
+
+	("armor_spa_light"  armor(60 15 15 6))
+
+	; --- Godny hitbox armor (ported from GodnyMod: hetzer_ger2.def) ---
+	{volume "body1"	;нижн€€ часть корпуса
+		{component "body"}
+		{tags "body"}
+		{thickness 20
+			{front	60}
+			{rear	20}
+			{top	0.1}	;стык body1 и body2
+			{bottom	10}
+		}
+	}
+	{volume "body2"	;верхн€€ часть корпуса, рубка
+		{component "body"}
+		{tags "body"}
+		{able {holed}}
+		{thickness 20
+			{front	60}
+			{rear	8}	;моторное
+			{top	8}
+			{bottom	10}
+		}
+	}
+	{volume "body3"	;бронировка оруди€
+		{component "body"}
+		{tags "body"}
+		{able {holed}}
+		{thickness 60
+		;	{front	60}
+			{rear	0.1}	;стык body3 и body2
+		;	{top	20}
+		;	{bottom	20}
+		}
+	}
+	{Volume "hole_bod"
+		{able clear {hole}}
+		{component "body"}
+	}
+	{volume "engine"
+		{thickness 10}
+	}
+	{volume "mantlet"
+		{thickness 70
+		;	{front	70}
+			{rear	15}	;орудие дает небольшую броню
+		}
+	}
+	{volume "shieldl1"
+		{component "shieldl1"}
+		{thickness 5}
+	}
+	{volume "shieldr1"
+		{component "shieldr1"}
+		{thickness 5}
+	}
+	; --- end Godny hitbox armor ---
+	{Volume "turret"
+		{tags "gun"}
+		{component "gun"}
+		{thickness 60}
+	}
+
+	("crew_3_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_hetzer"} {end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_hetzer"} {end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+	}
+
+	("crew_human" place(gunner3) door1(emit1) door2(emit2) visor(top))
+	{sensor
+		{visor "top"
+			{vision "vehicle_top_mgun"}
+			{bone "foresight3"}
+		}
+	}
+
+	{extender "inventory"
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{box
+			{item "bullet75 ger apcbc" 29}
+			{item "bullet75 ger fg" 20}
+			{item "bullet75 ger apcr" 4}
+			{item "bullet75 ger heatc" 5}
+			{item "mg42" filled {user "mgun"}}
+			{item "ammo mg_mauser belt" 1200}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "75mm_pak39_vet" filling "ammo bullet75 ger apcbc" 1}
+			("abm_veteran")
+		}
+		{place "mgun"
+			{type "mgun_aa"}
+			{gunner "gunner3"}
+			{charger "gunner3"}
+			{LinkBone "mgun2"}
+			{LinkAnimation "off"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	{mass 15750}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.52) len(1.80))
+		{Locomotion ("locomotion")
+			{MaxSpeed   26}
+			{maxSpeedAtMaxTurn 4}
+			{StartTime  30}
+			{TurnStart  1.2}
+			{TurnTime   24}
+			{TurnRadius 10}
+    		{TurnStop   0.6}
+			{BrakeTime  2}
+			{StopTime   3}
+			{Gears 0.07 0.14 0.21 1}
+			{RearGears  0.15}
+    	}
+		{FuelBag
+			{volume 320}
+			{rate	29}
+			{remain 320}
+			{fuel "fuel"}
+		}
+		{speed
+        	{Normal  26}
+        	{Slow  26}
+    	}
+	}
+
+	{Extension "Hetzer.mdl"}
+
+	{bone "gun_rot2"
+		{limits -11 5}		;gun min right to max left
+		{speed 0.0022}
+	}
+	{bone "gun_rot1"
+		{limits -12 6}		;gun min up to max down
+		{speed 0.0022}
+	}
+	{bone "mgun2"
+		{speed 0.003}
+	}
+}

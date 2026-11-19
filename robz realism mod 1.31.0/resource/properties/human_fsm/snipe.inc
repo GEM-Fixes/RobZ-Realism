@@ -49,38 +49,38 @@
 	{tag "can-aim"}
 	{tag "can-aim-thrower"}
 	{tag "can-aim-bazooka"}
-{tag "aim1"}
+	{tag "aim1"}
 	{tag "aim-thrower"}
 	{tag "aim-bazooka"}
 	{tag "can-aim"}
-{tag "can-aim1"}
+	{tag "can-aim1"}
 	{tag "can-aim-thrower"}
 	{tag "can-aim-bazooka"}
 }
 {State "snipe_fire"
-   	{to "snipe_recoil"}
+	{to "snipe_recoil"}
 	{tag "snipe"}
 	{tag "fire"}
 	{tag "fire-bazooka"}
 	{tag "weapon"}
-{tag "fire1"}
+	{tag "fire1"}
 	{tag "fire-bazooka"}
 	{tag "weapon"}
 }
 {State "snipe_recoil"
-   	{transit "snipe_aim"}
+	{transit "snipe_aim"}
 	{tag "snipe"}
 	{tag "weapon"}
 	{tag "recoil"}
 }
 {State "snipe_throw_begin"
 	{from "snipe"}
-  	{transit "snipe_throw_end"}
+	{transit "snipe_throw_end"}
 	{tag "throw"}
 	{tag "snipe"}
 }
 {State "snipe_throw_end"
-  	{transit "snipe"}
+	{transit "snipe"}
 	{tag "snipe"}
 }
 {State "snipe_to_squat"

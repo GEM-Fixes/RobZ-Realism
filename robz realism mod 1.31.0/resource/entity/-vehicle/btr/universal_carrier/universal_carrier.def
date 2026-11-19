@@ -1,21 +1,18 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.2))
 	{props "vehicle" "armored_car" "tractor" "tank" "opened" "vision_vehicle_low" "switch_mgun"}
 
 	{extender "enumerator"}
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: universal_carrier.inc) ---
-	{volume "sticky"
-		{tags "grenade_fg_target"}
-		{able clear {contact} {touch}}
-		{component "sticky_body"}
-	}
+	("vol_sticky_grenade_target" name(sticky))
 	{Volume "body"	;нижн€€ часть корпуса
 		{able {holed}}
 		{thickness 8
 			{front	10}
-		;	{rear	8}
+			;	{rear	8}
 			{top	6}
 			{bottom	4}
 			{right	6}	;гласис ?мм
@@ -26,8 +23,8 @@
 		{tags "body"}
 		{able {holed}}
 		{thickness 8
-		;	{front	8}
-		;	{rear	8}
+			;	{front	8}
+			;	{rear	8}
 			{top	6}
 			{bottom	4}
 		}
@@ -49,7 +46,7 @@
 		{tags "body"}
 		{able {holed}}
 		{thickness 10
-		;	{front	10}
+			;	{front	10}
 			{rear	0.1}	;внутренн€€ стенка
 			{top	6}
 			{bottom	0.1}	;внутренн€€ стенка
@@ -81,51 +78,15 @@
 		}
 	}
 	; --- end Godny hitbox armor ---
-	{volume "body4"
-		{component "body"}
-		{tags "body"}
-		{thickness 8}
-	}
-	{volume "body5"
-		{component "body"}
-		{tags "body"}
-		{thickness 8}
-	}
-	{volume "body6"
-		{component "body"}
-		{tags "body"}
-		{thickness 8}
-	}
-	{volume "body7"
-		{component "body"}
-		{tags "body"}
-		{thickness 8}
-	}
-	{volume "body8"
-		{component "body"}
-		{tags "body"}
-		{thickness 8}
-	}
-	{volume "body9"
-		{component "body"}
-		{tags "body"}
-		{thickness 8}
-	}
-	{volume "body10"
-		{component "body"}
-		{tags "body"}
-		{thickness 8}
-	}
-	{volume "body11"
-		{component "body"}
-		{tags "body"}
-		{thickness 8}
-	}
-	{volume "body12"
-		{component "body"}
-		{tags "body"}
-		{thickness 8}
-	}
+	("vol_body_plate_component_first" name(body4) mm(8))
+	("vol_body_plate_component_first" name(body5) mm(8))
+	("vol_body_plate_component_first" name(body6) mm(8))
+	("vol_body_plate_component_first" name(body7) mm(8))
+	("vol_body_plate_component_first" name(body8) mm(8))
+	("vol_body_plate_component_first" name(body9) mm(8))
+	("vol_body_plate_component_first" name(body10) mm(8))
+	("vol_body_plate_component_first" name(body11) mm(8))
+	("vol_body_plate_component_first" name(body12) mm(8))
 
 	("armor_medium" turret(0) body(12 8 8 8))
 
@@ -149,22 +110,12 @@
 	("crew_human_visible_anm" place(seat01)		door2(emit3) door4(emit3) anm_left(crew) anm_right(crew) visor(main))
 	("crew_human_visible_anm" place(seat02)		door2(emit4) door4(emit4) anm_left(crew) anm_right(crew) visor(main))
 	("gunner_visible")
-	{placer 
+	{placer
 		{place "driver" {openForCrush 0}}
 		{place "gunner" {openForCrush 0}}
-	}	
+	}
 
-	(define "crew_human"
-		{placer
-			{place "%place" {group "crew"} {linkbone "%place"} {turnoff {sensor} {shadow}}}
-		}
-		{boarder
-			{door "%door1"}
-			{door "%door2"}
-			{link "%door1" "%place" {anm "%place"} {forward putoff} {reverse puton}}
-			{link "%door2" "%place" {anm "%place"} {forward putoff} {reverse puton}}
-		}
-	)
+	(include "/properties/robz/crew.inc")
 
 	{placer
 		{place "driver" {group "crew"} {visor "driver"}}
@@ -176,7 +127,7 @@
 		{link "emit1" "driver" {anm "driver"} {forward putoff} {reverse puton}}
 	}
 
-   {sensor
+	{sensor
 		{visor "main"
 			{vision "tank_main-l"}
 			{bone "foresight4"}
@@ -204,7 +155,7 @@
 			{charger "commander"}
 			("abm_mgun")
 		}
-	}  	
+	}
 
 	{mass 24000}
 	{Chassis
@@ -214,18 +165,18 @@
 			{maxSpeedAtMaxTurn 5}
 			{StartTime  15}
 			{TurnTime   10}
-			{TurnStart  0.6}			
-			{TurnRadius 6} 
-    		{TurnStop   0.5}
+			{TurnStart  0.6}
+			{TurnRadius 6}
+			{TurnStop   0.5}
 			{BrakeTime  1}
 			{StopTime   1.5}
-   			{Gears  0.15 0.25 0.35 1}
-			{RearGears  0.30} 
+			{Gears  0.15 0.25 0.35 1}
+			{RearGears  0.30}
 		}
 		{speed
-        	{Normal  28}
-        	{Slow  28}
-    	}
+			{Normal  28}
+			{Slow  28}
+		}
 	}
 
 	{Extension "universal_carrier.mdl"}

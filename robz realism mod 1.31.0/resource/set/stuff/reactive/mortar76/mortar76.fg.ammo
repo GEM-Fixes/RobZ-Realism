@@ -9,7 +9,7 @@
 	{view "ammo_mortar76_he"
 	}
 	{detonationThickness 1}
-	
+
 	{damage blastwave
 		{energy 2}
 		{area 2.5 6}

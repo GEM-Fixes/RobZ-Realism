@@ -3,7 +3,7 @@
 	{inventory
 		{size 6 3}
 		{weight 150}
-	}	
+	}
 	{mass 1500}
 	{entity "shell_ap_600"}
 	{detonationThickness 2}
@@ -25,9 +25,9 @@
 		{area 105 105}
 	}
 
-	;{damage fire
-	;	{radius 20}
-	;	{heating 3}
-	;	{time 4}
-	;}
+;{damage fire
+;	{radius 20}
+;	{heating 3}
+;	{time 4}
+;}
 }

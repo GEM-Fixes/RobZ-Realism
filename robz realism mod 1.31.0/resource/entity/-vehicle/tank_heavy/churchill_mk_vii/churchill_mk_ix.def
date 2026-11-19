@@ -9,7 +9,7 @@
 			{item "ammo bullet57 eng apcbc" 48}
 			{item "ammo bullet57 eng fg" 36}
 			{item "ammo bullet57 eng apds" 4}
-            		{item "ammo mg_mauser belt red" 3475}
+			{item "ammo mg_mauser belt red" 3475}
 		}
 	}
 	{Weaponry
@@ -44,7 +44,7 @@
 		}
 	}
 
-{Extension "churchill_mk_ix.mdl"}
+	{Extension "churchill_mk_ix.mdl"}
 	{bone "turret"
 		{speed 0.0033}
 	}

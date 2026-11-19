@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "us_flamer_hp"}
+	{portrait "usa_soldier2"}
+	{nationality usa}
+	{icon "smg"}
+	{icon_priority 1}
+	{armors
+		{head helmet1_usa}
+	}
+	{perks
+		("body_regular")
+		("drive_regular")
+		("skills_3_3_2_2_1_3")
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_m3a")
+		{item "bandage" 3}
+		("frag_m61_x2")
+		;{item "grenade n73at" 1}
+		("smoke_x1")
+		{in_hands 0}
+	}
+}

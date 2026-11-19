@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-engineer"}
+	{portrait "eng_soldier2"}
+	{nationality eng}
+	{icon "rifleman"}
+	{icon_priority 1}
+	{armors
+		{head "helmet2_eng"}
+	}
+	{perks
+		("body_regular")
+		("drive_t08_v10_c10")
+		("skills_2_2_2_4_2_4")
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "flame_thrower"}
+		{item "balloon" filled}
+		{item "bandage" 3}
+		("frag_mk1_x2")
+		{in_hands 0}
+	}
+}

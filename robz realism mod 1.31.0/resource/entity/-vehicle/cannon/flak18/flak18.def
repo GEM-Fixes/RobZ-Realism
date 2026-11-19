@@ -6,9 +6,9 @@
 	{PatherID "cannon.large"}
 	("armor_medium" args 1.1)
 	{collider "cannon_heavy"}
-	{placer	
+	{placer
 		{place "gunner" {visor "main"} {useVision 0}}
-	}	
+	}
 
 	; --- Godny hitbox armor (ported from GodnyMod: flak18.def) ---
 	{Volume "body1"
@@ -34,18 +34,18 @@
 	{Volume "turret"
 		{thickness 10}
 	}
-	{volume "shield_front"	
+	{volume "shield_front"
 		{thickness 15}
 	}
 	{Volume "gun"
 		{thickness 10}
 	}
 	; --- end Godny hitbox armor ---
-	{component "shield_front"	
+	{component "shield_front"
 		{RepairTime 20}
 	}
 	{extender "shield"
-			{on}
+		{on}
 	}
 
 	("wheel" args "wheelright1")
@@ -74,7 +74,7 @@
 			{forward {end "pose_seat_cannon_right" 10}}
 		}
 	}
-	
+
 	{extender "inventory"
 		{box
 			{item "bullet88 ger apcbc" 50}
@@ -88,14 +88,14 @@
 			{weapon "88mm_flak36" filling "bullet88 ger apcbc" 1}
 			("abm_field_gun")
 		}
-	}  	
+	}
 
 	{extender "cannon"
 		{animation
 			{aim "Cannon_flak41_gunlayer" ""}
 			{fire	"Cannon_flak41_gunlayer_fire-alert" "Cannon_flak41_gunlayer_fire-alert_1"}
 			{move "cannon_pak40_pusher_left" "cannon_pak40_pusher_right"}
-;			{reload  "" "cannon_flak41_charger"}
+			;			{reload  "" "cannon_flak41_charger"}
 			{switch "close"}
 		}
 		{move {obstacle "close"}}

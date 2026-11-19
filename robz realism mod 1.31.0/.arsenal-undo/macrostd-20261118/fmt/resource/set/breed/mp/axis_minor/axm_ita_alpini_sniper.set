@@ -1,0 +1,61 @@
+{breed
+	{skin "ita-alp-rfl"}
+	{portrait "ita_soldier5"}
+	{icon "sniper"}
+	{icon_priority 5}
+	{nationality ita}
+	{armors
+		{head helmet_ita_m33_alpini}
+	}
+	{tags "sniper"}
+	{perks
+		{"health" "350%"
+		}
+		{"health_regeneration" "100%"
+		}
+		{"stamina" "150%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"vision" "mp_sniper"
+		}
+		{"speed" 1.0
+		}
+		{"tank"	1.0
+		}
+		{"vehicle" 1.0
+		}
+		{"cannon" 1.0
+		}
+		{"stealth"
+		}
+		{"telescope"
+		}
+		
+		{"pistol" lvl_2
+		}
+		{"smg" lvl_2
+		}
+		{"mgun" lvl_4
+		}
+		{"rifle" lvl_5
+		}
+		{"rocketlauncher" lvl_1
+		}
+		{"melee" lvl_2
+		}
+		{"aimedshot"}
+	}
+	{veterancy
+		(include "veterancy_generic.inc")
+		("veterancy_1")
+	}
+	{inventory
+		{item "carcano_m91_scoped" filled}
+		{item  "ammo 6x52" 160}
+		{item "beretta_m1934" filled}
+		{item  "ammo 9x17" 160}
+		{item "bandage" 5}
+                {in_hands 0}
+	}
+}

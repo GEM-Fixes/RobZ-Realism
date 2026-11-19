@@ -5,10 +5,10 @@
 	{inventory
 		{size 4 2}
 		{weight 150}
-	}	
+	}
 	{mass 50}
 	{entity "shell_fg_ita_210"}
-	
+
 	{detonationThickness 1}
 	{applyProjectile}
 
@@ -16,13 +16,13 @@
 	{damage blastwave
 		{energy 1}
 		{area 12 18}
-	}				
+	}
 	; anti-tank
 	{damage add blastwave
-			{energy 16}
-			{area 7 12}
+		{energy 16}
+		{area 7 12}
 	}
-	
+
 	{trace
 		{view "/texture/fx/trace"
 			{Light 0.5}

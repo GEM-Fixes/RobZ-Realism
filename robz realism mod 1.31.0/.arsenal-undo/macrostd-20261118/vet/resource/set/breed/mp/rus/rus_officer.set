@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-com"}
+	{portrait rus_officer}
+	{icon officer}
+	{icon_priority 6}
+	{tags "officer"}
+	{nationality rus}
+	{armors
+		{head cap3_rus}
+	}
+	{perks
+		("breed_body" health(250%) regen_health(100%) stamina(150%) regen_stamina(100%) vision(mp_officer) speed(1))
+		{"field_glass"}
+		("breed_drive" tank(0.85) vehicle(1) cannon(0.9))
+		("breed_skills" pistol(3) smg(3) mgun(3) rifle(3) rocket(3) melee(3))
+	}
+	("breed_vet" kind(1))
+	{inventory
+		{item "tt" filled}
+		{item "ammo tt_mag" 32}
+		{item "knife_rus"}
+		{item "binocular"}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

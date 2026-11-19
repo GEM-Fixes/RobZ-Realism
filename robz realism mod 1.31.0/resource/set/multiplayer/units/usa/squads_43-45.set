@@ -1,124 +1,124 @@
-;   Squads   
+;   Squads
 ;------------------------------assault infantry || vet 2/3/4--------------------------------------------------------
 
 ("squad_with4types" side(usa) name(smgs) c(0) g(squad_2) c1(usa_armor_squadleader:1) c2(usa_armor_rifle:10) c3(usa_armor_rifle_grenadier:1) b(squad1) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(163) f(1.0))
 
 ;------------------------------regular squad || vet 2/3/4-----------------------------------------------------------
 
-("squad_with6types" side(usa) name(riflemans) c(0) g(squad_3) c1(usa_squadleader:1) c2(usa_rifle:7) c3(usa_rifle_grenadier:1) c4(usa_mgun:1) c5(usa_mgun_asst:1) c6(usa_rifle_at:1) b(squad1) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(171) f(1.0))
+("squad_6" side(usa) name(riflemans) member1(usa_squadleader:1) member2(usa_rifle:7) member3(usa_rifle_grenadier:1) member4(usa_mgun:1) member5(usa_mgun_asst:1) member6(usa_rifle_at:1) charge(0) tags(all inf_only 39 40 41 42 43 44 45) group(squad_3) button(squad1) level(1) cost(171) fore(1.0))
 
-("squad_with6types" side(usa) name(riflemans_bar) c(0) g(squad_3) c1(usa_squadleader:1) c2(usa_rifle:4) c3(usa_rifle_grenadier:2) c4(usa_mgun:2) c5(usa_mgun_asst:2) c6(usa_bazooker:1) b(squad1) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(190) f(1.0))
+("squad_6" side(usa) name(riflemans_bar) member1(usa_squadleader:1) member2(usa_rifle:4) member3(usa_rifle_grenadier:2) member4(usa_mgun:2) member5(usa_mgun_asst:2) member6(usa_bazooker:1) charge(0) tags(all inf_only 39 40 41 42 43 44 45) group(squad_3) button(squad1) level(1) cost(190) fore(1.0))
 
-("squad_with6types" side(usa) name(riflemans_assault) c(120) g(squad_3) c1(usa_squadleader:1) c2(usa_rifle:5) c3(usa_rifle_grenadier:3) c4(usa_mgun:1) c5(usa_mgun_asst:1) c6(usa_rifle_at:1) b(squad1) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(176) f(1.0))
+("squad_6" side(usa) name(riflemans_assault) member1(usa_squadleader:1) member2(usa_rifle:5) member3(usa_rifle_grenadier:3) member4(usa_mgun:1) member5(usa_mgun_asst:1) member6(usa_rifle_at:1) charge(120) tags(all inf_only 39 40 41 42 43 44 45) group(squad_3) button(squad1) level(1) cost(176) fore(1.0))
 
-("squad_with5types_vehicle" side(usa) name(mech_armor_rifles) c(10) g(squad_33) v1(m3_usa) c1(usa_armor_rifle:7) c2(usa_armor_squadleader:1) c3(usa_armor_rifle_grenadier:1) c4(usa_armor_mgun:1) c5(usa_armor_mgun:0) b(squad1) t(all inf_only 43 44 45) level(5) cost(221) f(-23.0)) ;240sec
+("squad_5_vehicle" side(usa) name(mech_armor_rifles) vehicle1(m3_usa) member1(usa_armor_rifle:7) member2(usa_armor_squadleader:1) member3(usa_armor_rifle_grenadier:1) member4(usa_armor_mgun:1) member5(usa_armor_mgun:0) charge(10) tags(all inf_only 43 44 45) group(squad_33) button(squad1) level(5) cost(221) fore(-23.0)) ;240sec
 
-("squad_with8types" side(usa) name(engineers) c(60) g(squad_31) c1(usa_engineer_squadleader:1) c2(usa_engineer_grenadier:2) c3(usa_engineer_at:1) c4(usa_engineer_flamer:1) c5(usa_engineer:4) c6(usa_engineer2:1) c7(usa_engineer3:1) c8(usa_engineer4:1) b(squad1) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(271) f(1.0))
+("squad_8" side(usa) name(engineers) member1(usa_engineer_squadleader:1) member2(usa_engineer_grenadier:2) member3(usa_engineer_at:1) member4(usa_engineer_flamer:1) member5(usa_engineer:4) member6(usa_engineer2:1) member7(usa_engineer3:1) member8(usa_engineer4:1) charge(60) tags(all inf_only 39 40 41 42 43 44 45) group(squad_31) button(squad1) level(1) cost(271) fore(1.0))
 
 ;------------------------------marine squad ||| vet 4-----------------------------------------------------------
 
-("squad_with6types" side(usa) name(specialinf) c(60) g(squad_6) c1(usa_marine_sgt:1) c2(usa_marine_rifle:4) c3(usa_marine_grenadier:1) c4(usa_marine_bar:3) c5(usa_marine_barassist:3) c6(usa_marine_shotgun:1) b(squad1) t(all inf_only 42 43 44 45) level(1) cost(211) f(1.0))
+("squad_6" side(usa) name(specialinf) member1(usa_marine_sgt:1) member2(usa_marine_rifle:4) member3(usa_marine_grenadier:1) member4(usa_marine_bar:3) member5(usa_marine_barassist:3) member6(usa_marine_shotgun:1) charge(60) tags(all inf_only 42 43 44 45) group(squad_6) button(squad1) level(1) cost(211) fore(1.0))
 
 ;------------------------------airborne squads ||| vet 5-----------------------------------------------------------
 
-("squad_with9types" side(usa) name(elites) c(60) g(squad_5) c1(usa_elite_sgt:1) c2(usa_82ndairborne_carbine:2) c3(usa_82ndairborne_sniper:1) c4(usa_82ndairborne_rifle:3) c5(usa_elite_grenadier:1) c6(usa_82ndairborne_bar:1) c7(usa_82ndairborne_barassist:1) c8(usa_82ndairborne_mg:1) c9(usa_82ndairborne_mgassist:1) b(squad1) t(all inf_only 42 43 44 45) level(1) cost(288) f(1.0))
-("squad_with9types_vehicle" side(usa) name(elites_drop) c(900) g(squad_5) v1(airborne_spawner) c1(usa_elite_sgt:1) c2(usa_82ndairborne_carbine:2) c3(usa_82ndairborne_sniper:1) c4(usa_82ndairborne_rifle:3) c5(usa_elite_grenadier:1) c6(usa_82ndairborne_bar:1) c7(usa_82ndairborne_barassist:1) c8(usa_82ndairborne_mg:1) c9(usa_82ndairborne_mgassist:1) b(squad1) t(all inf_only 42 43 44 45 only-one) level(1) cost(338) f(0.0))
+("squad_9" side(usa) name(elites) member1(usa_elite_sgt:1) member2(usa_82ndairborne_carbine:2) member3(usa_82ndairborne_sniper:1) member4(usa_82ndairborne_rifle:3) member5(usa_elite_grenadier:1) member6(usa_82ndairborne_bar:1) member7(usa_82ndairborne_barassist:1) member8(usa_82ndairborne_mg:1) member9(usa_82ndairborne_mgassist:1) charge(60) tags(all inf_only 42 43 44 45) group(squad_5) button(squad1) level(1) cost(288) fore(1.0))
+("squad_9_vehicle" side(usa) name(elites_drop) vehicle1(airborne_spawner) member1(usa_elite_sgt:1) member2(usa_82ndairborne_carbine:2) member3(usa_82ndairborne_sniper:1) member4(usa_82ndairborne_rifle:3) member5(usa_elite_grenadier:1) member6(usa_82ndairborne_bar:1) member7(usa_82ndairborne_barassist:1) member8(usa_82ndairborne_mg:1) member9(usa_82ndairborne_mgassist:1) charge(900) tags(all inf_only 42 43 44 45 only-one) group(squad_5) button(squad1) level(1) cost(338) fore(0.0))
 
 ;------------------------------101st airborne |||| vet 7--------------------------------------------------------
 
-("squad_with9types" side(usa) name(elites_101st) c(60) g(squad_5) c1(usa_elite_101st_para_sgt:1) c2(usa_elite_101st_para:1) c3(usa_elite_101st_parab:2) c4(usa_elite_101st_para_grenadier:1) c5(usa_elite_101st_para3:2) c6(usa_elite_101st_para3_asst:2) c7(usa_elite_101st_para3b:1) c8(usa_elite_101st_para3b_asst:1) c9(usa_elite_101st_para4:1) b(squad1) t(all inf_only 44 45) level(5) cost(352) f(1.0))
-("squad_with9types_vehicle" side(usa) name(elites_101st_drop) c(900) g(squad_5) v1(airborne_spawner) c1(usa_elite_101st_para_sgt:1) c2(usa_elite_101st_para:1) c3(usa_elite_101st_parab:2) c4(usa_elite_101st_para_grenadier:1) c5(usa_elite_101st_para3:2) c6(usa_elite_101st_para3_asst:2) c7(usa_elite_101st_para3b:1) c8(usa_elite_101st_para3b_asst:1) c9(usa_elite_101st_para4:1) b(squad1) t(all inf_only 44 45 only-one) level(5) cost(402) f(0.0))
+("squad_9" side(usa) name(elites_101st) member1(usa_elite_101st_para_sgt:1) member2(usa_elite_101st_para:1) member3(usa_elite_101st_parab:2) member4(usa_elite_101st_para_grenadier:1) member5(usa_elite_101st_para3:2) member6(usa_elite_101st_para3_asst:2) member7(usa_elite_101st_para3b:1) member8(usa_elite_101st_para3b_asst:1) member9(usa_elite_101st_para4:1) charge(60) tags(all inf_only 44 45) group(squad_5) button(squad1) level(5) cost(352) fore(1.0))
+("squad_9_vehicle" side(usa) name(elites_101st_drop) vehicle1(airborne_spawner) member1(usa_elite_101st_para_sgt:1) member2(usa_elite_101st_para:1) member3(usa_elite_101st_parab:2) member4(usa_elite_101st_para_grenadier:1) member5(usa_elite_101st_para3:2) member6(usa_elite_101st_para3_asst:2) member7(usa_elite_101st_para3b:1) member8(usa_elite_101st_para3b_asst:1) member9(usa_elite_101st_para4:1) charge(900) tags(all inf_only 44 45 only-one) group(squad_5) button(squad1) level(5) cost(402) fore(0.0))
 
 ;------------------------------paramarines |||| vet 6-----------------------------------------------------------
 
-("squad_with8types" side(usa) name(paramarines) c(60) g(squad_5) c1(usa_paramarine_sgt:1) c2(usa_paramarine2:1) c3(usa_paramarine:1) c4(usa_paramarineb:3) c5(usa_paramarine_grenadier:1) c6(usa_paramarine3:2) c7(usa_paramarine3_asst:2) c8(usa_paramarine_boys:1) b(squad1) t(all inf_only 42 43 44) level(1) cost(278) f(1.0))
-("squad_with7types_vehicle" side(usa) name(paramarines_drop) c(900) g(squad_5) v1(airborne_spawner) c1(usa_paramarine_sgt:1) c2(usa_paramarine2:1) c3(usa_paramarine:1) c4(usa_paramarineb:3) c5(usa_paramarine_grenadier:1) c6(usa_paramarine3:2) c7(usa_paramarine3_asst:2) c8(paramarineb_boys_at:1) b(squad1) t(all inf_only 42 43 44 only-one) level(1) cost(328) f(0.0))
+("squad_8" side(usa) name(paramarines) member1(usa_paramarine_sgt:1) member2(usa_paramarine2:1) member3(usa_paramarine:1) member4(usa_paramarineb:3) member5(usa_paramarine_grenadier:1) member6(usa_paramarine3:2) member7(usa_paramarine3_asst:2) member8(usa_paramarine_boys:1) charge(60) tags(all inf_only 42 43 44) group(squad_5) button(squad1) level(1) cost(278) fore(1.0))
+("squad_7_vehicle" side(usa) name(paramarines_drop) vehicle1(airborne_spawner) member1(usa_paramarine_sgt:1) member2(usa_paramarine2:1) member3(usa_paramarine:1) member4(usa_paramarineb:3) member5(usa_paramarine_grenadier:1) member6(usa_paramarine3:2) member7(usa_paramarine3_asst:2) charge(900) tags(all inf_only 42 43 44 only-one) group(squad_5) button(squad1) level(1) cost(328) fore(0.0))
 
 ;------------------------------stormtroopers |||| vet 6---------------------------------------------------------
 
-("squad_with8types" side(usa) name(stormtroopers) c(60) g(squad_5) c1(usa_ranger_sgt:1) c2(usa_ranger_springfield:1) c3(usa_ranger_bar:2) c4(usa_ranger_barassist:2) c5(usa_ranger_bazooka:1) c6(usa_ranger_garand:2) c7(usa_ranger_grenadier:1) c8(usa_ranger_springfield2:2) b(squad1) t(all inf_only 42 43 44 45) level(1) cost(269) f(1.0))
-("squad_with7types" side(usa) name(stormtroopers_assault) c(60) g(squad_5) c1(usa_ranger_sgt:1) c2(usa_ranger_carbine:2) c3(usa_ranger_bar:1) c4(usa_ranger_garand:5) c5(usa_ranger_grenadier:1) c6(usa_ranger_mg:1) c7(usa_ranger_mgassist:1) b(squad1) t(all inf_only 43 44 45) level(1) cost(286) f(1.0))
-("squad_with8types" side(usa) name(stormtroopers_heavy) c(60) g(squad_5) c1(usa_ranger_sgt:1) c2(usa_ranger_springfield:2) c3(usa_ranger_bar:2) c4(usa_ranger_bazooka:2) c5(usa_ranger_garand:2) c6(usa_ranger_grenadier:1) c7(usa_ranger_springfield2:1) c8(usa_ranger_sniper:1) b(squad1) t(all inf_only 43 44 45) level(1) cost(356) f(1.0))
+("squad_8" side(usa) name(stormtroopers) member1(usa_ranger_sgt:1) member2(usa_ranger_springfield:1) member3(usa_ranger_bar:2) member4(usa_ranger_barassist:2) member5(usa_ranger_bazooka:1) member6(usa_ranger_garand:2) member7(usa_ranger_grenadier:1) member8(usa_ranger_springfield2:2) charge(60) tags(all inf_only 42 43 44 45) group(squad_5) button(squad1) level(1) cost(269) fore(1.0))
+("squad_7" side(usa) name(stormtroopers_assault) member1(usa_ranger_sgt:1) member2(usa_ranger_carbine:2) member3(usa_ranger_bar:1) member4(usa_ranger_garand:5) member5(usa_ranger_grenadier:1) member6(usa_ranger_mg:1) member7(usa_ranger_mgassist:1) charge(60) tags(all inf_only 43 44 45) group(squad_5) button(squad1) level(1) cost(286) fore(1.0))
+("squad_8" side(usa) name(stormtroopers_heavy) member1(usa_ranger_sgt:1) member2(usa_ranger_springfield:2) member3(usa_ranger_bar:2) member4(usa_ranger_bazooka:2) member5(usa_ranger_garand:2) member6(usa_ranger_grenadier:1) member7(usa_ranger_springfield2:1) member8(usa_ranger_sniper:1) charge(60) tags(all inf_only 43 44 45) group(squad_5) button(squad1) level(1) cost(356) fore(1.0))
 
 ;------------------------------devil's brigade |||| vet 6-------------------------------------------------------
 
-("squad_with6types" side(usa) name(devils_brigade) c(60) g(squad_5) c1(usa_devil_brigade_sl:1) c2(usa_devil_brigade_demo:3) c3(usa_devil_brigade_radio:1) c4(usa_devil_brigade_grenadier:2) c5(usa_devil_brigade_mg:1) c6(usa_devil_brigade_rifle:4) b(squad1) t(all inf_only 42 43 44) level(10) cost(261) f(0.5))
+("squad_6" side(usa) name(devils_brigade) member1(usa_devil_brigade_sl:1) member2(usa_devil_brigade_demo:3) member3(usa_devil_brigade_radio:1) member4(usa_devil_brigade_grenadier:2) member5(usa_devil_brigade_mg:1) member6(usa_devil_brigade_rifle:4) charge(60) tags(all inf_only 42 43 44) group(squad_5) button(squad1) level(10) cost(261) fore(0.5))
 
 ;------------------------------stormtrooper halftrack |||| vet 3/4----------------------------------------------
 
-{"storm_mech(usa)"      ("vb3_usa" c(380) c1(m3_usa) 	t(all inf_only 42 43 44 45) 	  s(usa) n1(6) n2(2) n3(2) 		g(squad_5) b(squad1)) {level 1} {cost 414} {fore 1.0}}
+("unit_vehicles1_crews3_sided_2" side(usa) name(storm_mech) vehicle1(m3_usa) crew1(6) crew2(2) crew3(2) charge(380) tags(all inf_only 42 43 44 45) group(squad_5) button(squad1) level(1) cost(414) fore(1.0))
 
 
 
 ;------------------------------AP and AT miners, sappers || vet 2-----------------------------------------------
 
-("squad_with1types" side(usa) name(ap_miners) c(0) g(squad_7) c1(usa_ap_miner:4) b(squad1) t(all inf_only engineers mines 39 40 41 42 43 44 45) level(20) cost(100) f(0))
+("squad_1" side(usa) name(ap_miners) member1(usa_ap_miner:4) charge(0) tags(all inf_only engineers mines 39 40 41 42 43 44 45) group(squad_7) button(squad1) level(20) cost(100) fore(0))
 
-("squad_with1types" side(usa) name(at_miners) c(0) g(squad_8) c1(usa_at_miner:4) b(squad1) t(all inf_only engineers mines 39 40 41 42 43 44 45) level(25) cost(150) f(0))
+("squad_1" side(usa) name(at_miners) member1(usa_at_miner:4) charge(0) tags(all inf_only engineers mines 39 40 41 42 43 44 45) group(squad_8) button(squad1) level(25) cost(150) fore(0))
 
-("squad_with1types" side(usa) name(sappers) c(0) g(squad_9) c1(usa_saper:2) b(squad1) t(all inf_only engineers 39 40 41 42 43 44 45) level(1) cost(70) f(0))
+("squad_1" side(usa) name(sappers) member1(usa_saper:2) charge(0) tags(all inf_only engineers 39 40 41 42 43 44 45) group(squad_9) button(squad1) level(1) cost(70) fore(0))
 
 ;------------------------------tank and support crews || vet 2--------------------------------------------------
 
-("squad_with1types" side(usa) name(vehic_supporter) c(0) g(soldier_3) c1(vehicle_supporter_single:2) b(squad1) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(25) f(-1.0))
+("squad_1" side(usa) name(vehic_supporter) member1(vehicle_supporter_single:2) charge(0) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_3) button(squad1) level(1) cost(25) fore(-1.0))
 
-("squad_with2types" side(usa) name(tankmans) c(0) g(soldier_3) c1(usa_tankman2_single:1) c2(usa_tankman_single:4) b(squad1) t(all inf_only tankmans 39 40 41 42 43 44 45) level(1) cost(70) f(-1.0))
+("squad_2" side(usa) name(tankmans) member1(usa_tankman2_single:1) member2(usa_tankman_single:4) charge(0) tags(all inf_only tankmans 39 40 41 42 43 44 45) group(soldier_3) button(squad1) level(1) cost(70) fore(-1.0))
 
-("squad_with1types" side(usa) name(elite_tankmans) c(0) g(soldier_3) c1(usa_vet_tankman2_single:1) b(squad1) t(all inf_only tankmans 39 40 41 42 43 44 45) level(1) cost(100) f(-1.0))
+("squad_1" side(usa) name(elite_tankmans) member1(usa_vet_tankman2_single:1) charge(0) tags(all inf_only tankmans 39 40 41 42 43 44 45) group(soldier_3) button(squad1) level(1) cost(100) fore(-1.0))
 
-;   Single Soldiers   
+;   Single Soldiers
 
 ;------------------------------rifleman and smg || vet 2--------------------------------------------------------
 
-("squad_with1types" side(usa) name(riflemans2) c(5) g(soldier_1) c1(usa_rifle:1) b(squad2) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(15) f(1.0))
+("squad_1" side(usa) name(riflemans2) member1(usa_rifle:1) charge(5) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_1) button(squad2) level(1) cost(15) fore(1.0))
 
-("squad_with1types" side(usa) name(rifle3) c(30) g(soldier_sa) c1(usa_rifle3:1) b(squad2) t(all inf_only 42 43 44 45) level(1) cost(14) f(1.0))
+("squad_1" side(usa) name(rifle3) member1(usa_rifle3:1) charge(30) tags(all inf_only 42 43 44 45) group(soldier_sa) button(squad2) level(1) cost(14) fore(1.0))
 
-("squad_with1types" side(usa) name(smgs2) c(5) g(soldier_2) c1(usa_smg:1) b(squad2) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(14) f(1.0))
+("squad_1" side(usa) name(smgs2) member1(usa_smg:1) charge(5) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_2) button(squad2) level(1) cost(14) fore(1.0))
 
 ;------------------------------AT rifles and bazookas || vet 2--------------------------------------------------
 
-("squad_with1types" side(usa) name(shotguns)  c1(usa_marine_shotgun:1) c(60) g(soldier_4) b(squad2) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(25) f(1.0))
+("squad_1" side(usa) name(shotguns) member1(usa_marine_shotgun:1) charge(60) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_4) button(squad2) level(1) cost(25) fore(1.0))
 
-("squad_with2types" side(usa) name(bazookers) c1(usa_bazooker:1) c2(usa_bazookerassist:1) c(0) g(soldier_5) b(squad2) t(all inf_only 42 43 44 45) level(1) level(1) cost(66) f(1.0))
+("squad_2" side(usa) name(bazookers) member1(usa_bazooker:1) member2(usa_bazookerassist:1) charge(0) tags(all inf_only 42 43 44 45) group(soldier_5) button(squad2) level(1) cost(66) fore(1.0))
 
-("squad_with2types" side(usa) name(stormtrooper5) c1(usa_ranger_bazooka:1) c2(usa_ranger_bazookaassist:1) c(0) g(soldier_5) b(squad2) t(all inf_only 42 43 44 45) level(1) level(1) cost(116) f(1.0))
-("squad_with1types" side(usa) name(stormtrooper_at) c1(usa_ranger_recoiless:1) c(0) g(soldier_5) b(squad2) t(all inf_only 45) level(1) level(1) cost(116) f(1.0))
+("squad_2" side(usa) name(stormtrooper5) member1(usa_ranger_bazooka:1) member2(usa_ranger_bazookaassist:1) charge(0) tags(all inf_only 42 43 44 45) group(soldier_5) button(squad2) level(1) cost(116) fore(1.0))
+("squad_1" side(usa) name(stormtrooper_at) member1(usa_ranger_recoiless:1) charge(0) tags(all inf_only 45) group(soldier_5) button(squad2) level(1) cost(116) fore(1.0))
 
 ;------------------------------MG infantry || vet 2-------------------------------------------------------------
 
-("squad_with3types" side(usa) name(mgs2) c(60) g(soldier_6) c1(usa_mgun:1) c2(usa_mgun_asst:1) c3(usa_rifle:1) b(squad2) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(53) f(1.0))
-("squad_with3types" side(usa) name(mg2) c(60) g(soldier_6) c1(usa_mgun2:1) c2(usa_mgun2_asst:1) c3(usa_rifle:1) b(squad2) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(70) f(1.0))
+("squad_3" side(usa) name(mgs2) member1(usa_mgun:1) member2(usa_mgun_asst:1) member3(usa_rifle:1) charge(60) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_6) button(squad2) level(1) cost(53) fore(1.0))
+("squad_3" side(usa) name(mg2) member1(usa_mgun2:1) member2(usa_mgun2_asst:1) member3(usa_rifle:1) charge(60) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_6) button(squad2) level(1) cost(70) fore(1.0))
 
 
-("squad_with3types" side(usa) name(elite3) c(60) g(squad_4) c1(usa_82ndairborne_bar:1) c2(usa_82ndairborne_barassist:1) c3(usa_82ndairborne_rifle:1) b(squad2) t(all inf_only 42 43 44 45) level(1) cost(67) f(1))
+("squad_3" side(usa) name(elite3) member1(usa_82ndairborne_bar:1) member2(usa_82ndairborne_barassist:1) member3(usa_82ndairborne_rifle:1) charge(60) tags(all inf_only 42 43 44 45) group(squad_4) button(squad2) level(1) cost(67) fore(1))
 
-("squad_with3types" side(usa) name(elite6) c(60) g(squad_4) c1(usa_marine_bar:1) c2(usa_marine_barassist:1) c3(usa_marine_rifle:2) b(squad2) t(all inf_only 42 43 44 45) level(1) cost(72) f(1))
+("squad_3" side(usa) name(elite6) member1(usa_marine_bar:1) member2(usa_marine_barassist:1) member3(usa_marine_rifle:2) charge(60) tags(all inf_only 42 43 44 45) group(squad_4) button(squad2) level(1) cost(72) fore(1))
 
-("squad_with3types" side(usa) name(elite_101st_para3) c(60) g(squad_4) c1(usa_elite_101st_para3:1) c2(usa_elite_101st_para3_asst:1) c3(usa_elite_101st_para:1) b(squad2) t(all inf_only 44 45) level(1) cost(101) f(1))
+("squad_3" side(usa) name(elite_101st_para3) member1(usa_elite_101st_para3:1) member2(usa_elite_101st_para3_asst:1) member3(usa_elite_101st_para:1) charge(60) tags(all inf_only 44 45) group(squad_4) button(squad2) level(1) cost(101) fore(1))
 
-("squad_with3types" side(usa) name(stormtrooper6) c(60) g(squad_4) c1(usa_ranger_bar2:1) c2(usa_ranger_barassist:1) c3(usa_ranger_carbine:2) b(squad2) t(all inf_only 42 43 44 45) level(1) cost(112) f(1))
+("squad_3" side(usa) name(stormtrooper6) member1(usa_ranger_bar2:1) member2(usa_ranger_barassist:1) member3(usa_ranger_carbine:2) charge(60) tags(all inf_only 42 43 44 45) group(squad_4) button(squad2) level(1) cost(112) fore(1))
 
-("squad_with3types" side(usa) name(elite3b) c(60) g(squad_4) c1(usa_82ndairborne_mg:1) c2(usa_82ndairborne_mgassist:1) c3(usa_82ndairborne_rifle:1) b(squad2) t(all inf_only 42 43 44 45) level(1) cost(104) f(1))
+("squad_3" side(usa) name(elite3b) member1(usa_82ndairborne_mg:1) member2(usa_82ndairborne_mgassist:1) member3(usa_82ndairborne_rifle:1) charge(60) tags(all inf_only 42 43 44 45) group(squad_4) button(squad2) level(1) cost(104) fore(1))
 
-("squad_with3types" side(usa) name(paramarine3) c(60) g(squad_4) c1(usa_paramarine3:1) c2(usa_paramarine3_asst:1) c3(usa_paramarineb:2) b(squad2) t(all inf_only 42 43 44) level(1) cost(99) f(1))
+("squad_3" side(usa) name(paramarine3) member1(usa_paramarine3:1) member2(usa_paramarine3_asst:1) member3(usa_paramarineb:2) charge(60) tags(all inf_only 42 43 44) group(squad_4) button(squad2) level(1) cost(99) fore(1))
 
-("squad_with3types" side(usa) name(elite_101st_para3b) c(60) g(squad_4) c1(usa_elite_101st_para3b:1) c2(usa_elite_101st_para3b_asst:1) c3(usa_elite_101st_para:1) b(squad2) t(all inf_only 44 45) level(1) cost(126) f(1))
+("squad_3" side(usa) name(elite_101st_para3b) member1(usa_elite_101st_para3b:1) member2(usa_elite_101st_para3b_asst:1) member3(usa_elite_101st_para:1) charge(60) tags(all inf_only 44 45) group(squad_4) button(squad2) level(1) cost(126) fore(1))
 
 ;------------------------------flamer, sniper and officer || vet2/3/4----------------------------------------------
 
-("squad_with2types" side(usa) name(flamers) c(60) g(soldier_8) c1(usa_flamer:1) c2(usa_flamerassist:1) b(squad2) t(all flamer inf_only 39 40 41 42 43 44 45) level(1) cost(77) f(1))
+("squad_2" side(usa) name(flamers) member1(usa_flamer:1) member2(usa_flamerassist:1) charge(60) tags(all flamer inf_only 39 40 41 42 43 44 45) group(soldier_8) button(squad2) level(1) cost(77) fore(1))
 
-("squad_with1types" side(usa) name(snipers) c(60) g(soldier_9) c1(usa_sniper:1) b(squad2) t(all sniper inf_only 39 40 41 42 43 44 45) level(1) cost(83) f(1))
+("squad_1" side(usa) name(snipers) member1(usa_sniper:1) charge(60) tags(all sniper inf_only 39 40 41 42 43 44 45) group(soldier_9) button(squad2) level(1) cost(83) fore(1))
 
-("i_seq_with1x4types" side(usa) name(officers) c(1) g(soldier_10) c1(usa_officer:1) b(squad2) i(10002) t(all officer inf_only 39 40 41 42 43 44 45) level(1) cost(0) f(-599.0)) ;10 minutes
-("i_seq_with1x4types" side(usa) name(officers_40) c(1800) g(soldier_10) c1(usa_officer:1) b(squad2) i(10002) t(all officer inf_only 39 40 41 42 43 44 45) level(1) cost(0) f(-2399.0)) ;40 minutes
+("squad_1_x4_sequence" side(usa) name(officers) member1(usa_officer:1) charge(1) tags(all officer inf_only 39 40 41 42 43 44 45) group(soldier_10) button(squad2) icon(10002) level(1) cost(0) fore(-599.0)) ;10 minutes
+("squad_1_x4_sequence" side(usa) name(officers_40) member1(usa_officer:1) charge(1800) tags(all officer inf_only 39 40 41 42 43 44 45) group(soldier_10) button(squad2) icon(10002) level(1) cost(0) fore(-2399.0)) ;40 minutes
 
 
-("squad_with1types" side(usa) name(radioman_mortar) c(60) g(radio_1) c1(usa_radioman_mortar:1) b(squad2) t(all mortar 39 40 41 42 43 44 45) level(1) cost(200) f(1.0))
-("squad_with1types" side(usa) name(radioman_105) c(60) g(radio_1) c1(usa_radioman_105:1) b(squad2) t(all mortar 39 40 41 42 43 44 45) level(1) cost(450) f(1.0))
-("squad_with1types" side(usa) name(radioman_155) c(60) g(radio_1) c1(usa_radioman_155:1) b(squad2) t(all mortar 39 40 41 42 43 44 45) level(1) cost(550) f(1.0))
-("squad_with1types" side(usa) name(radioman_240) c(60) g(radio_1) c1(usa_radioman_240:1) b(squad2) t(all artillery 44 45) level(1) cost(700) f(1))
+("squad_1" side(usa) name(radioman_mortar) member1(usa_radioman_mortar:1) charge(60) tags(all mortar 39 40 41 42 43 44 45) group(radio_1) button(squad2) level(1) cost(200) fore(1.0))
+("squad_1" side(usa) name(radioman_105) member1(usa_radioman_105:1) charge(60) tags(all mortar 39 40 41 42 43 44 45) group(radio_1) button(squad2) level(1) cost(450) fore(1.0))
+("squad_1" side(usa) name(radioman_155) member1(usa_radioman_155:1) charge(60) tags(all mortar 39 40 41 42 43 44 45) group(radio_1) button(squad2) level(1) cost(550) fore(1.0))
+("squad_1" side(usa) name(radioman_240) member1(usa_radioman_240:1) charge(60) tags(all artillery 44 45) group(radio_1) button(squad2) level(1) cost(700) fore(1))
 
 
 

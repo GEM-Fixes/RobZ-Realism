@@ -9,9 +9,9 @@
 	}
 	{throw
 		{range 12}
-		{startAngle 40}		
+		{startAngle 40}
 		{spreading 0.1}
-	}	
+	}
 	{damage blastwave
 		{energy 20}
 		{area 4 6}

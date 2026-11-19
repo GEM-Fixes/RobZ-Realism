@@ -1,0 +1,109 @@
+;   Squads   
+
+
+
+
+;------------------------------ Infantry Squads-------------------------------------------
+
+("squad_with2types" side(axis_minor) name(Bulgarian_Infantry) c(60) g(squad_1) c1(axm_bul_squadleader:1) c2(axm_bul_rifle:7)  b(squad1) t(all inf_only 44 45) level(1) cost(75) f(0.5))
+
+("squad_with3types" side(axis_minor) name(hungarian_smg_squad) c(30) g(squad_2) c1(axm_hun_squadleader_smg:1)  c2(axm_hun_smg_ppsh:4) c3(axm_hun_smg_danuvia:4) b(squad1) t(all inf_only 44 45) level(1) cost(84) f(1.0))
+
+("squad_with4types" side(axis_minor) name(romanian_rifle_squad) c(30) g(squad_4) c1(axm_rom_rifle:7) c2(axm_rom_squadleader:1) c3(axm_rom_mgun:1) c4(axm_rom_mgunassist:1)  b(squad1) t(all inf_only 44 45) level(1) cost(114) f(1.0))
+
+("squad_with6types" side(axis_minor) name(fin_pioneer) c(90) g(squad_3) c1(axm_fin_pio_squadleader:1) c2(axm_fin_pio_mgun:1) c3(axm_fin_pio_rifle_dynamite:1) c4(axm_fin_pio_smg:2) c5(axm_fin_pio_rifle:4)  c6(axm_fin_pio_flamer:1) b(squad1) t(all inf_only 44 45) level(1) cost(220) f(1.0))
+
+("squad_with5types_vehicle" side(axis_minor) name(Motorized_Hungarian_Rifles) c(60) g(squad_7) v1(Botond) c1(axm_hun_squadleader_smg:1) c2(axm_hun_rifle:3) c3(axm_hun_smg_danuvia:3) c4(axm_hun_smg_ppsh:1) c5(axm_hun_rifle3:2) b(squad1) t(all inf_only 44 45) level(1) cost(109) f(0.0))
+
+("squad_with5types" side(axis_minor) name(fin_kaukopartio) c(60) g(squad_5) c1(axm_fin_kaukopartio_squadleader:1) c2(axm_fin_kaukopartio_mgun:1) c3(axm_fin_kaukopartio_mgun_assist:1) c4(axm_fin_kaukopartio_smg:2) c5(axm_fin_kaukopartio_rifle:4) b(squad1) t(all inf_only 44 45) level(1) cost(148) f(1.0))
+
+
+("squad_with5types" side(axis_minor) name(Bersaglieri) c(60) g(squad_9) c1(axm_ita_bersaglieri_rifle:4) c2(axm_ita_bersaglieri_smg:2) c3(axm_ita_bersaglieri_mgun:1) c4(axm_ita_bersaglieri_mgun_assist:1) c5(axm_ita_bersaglieri_rifle2:3) b(squad1) t(all inf_only 44 45) level(1) cost(158) f(1.0))
+
+("squad_with5types" side(axis_minor) name(Sissi) c(60) g(squad_6) c1(axm_fin_sissi_squadleader_vision:1) c2(axm_fin_sissi_mgun:1) c3(axm_fin_sissi_mgun_assist:1) c4(axm_fin_sissi_smg:2) c5(axm_fin_sissi_rifle:4) b(squad1) t(all inf_only 44 45) level(1) cost(159) f(1.0))
+
+("squad_with7types" side(axis_minor) name(Hungarian_Assualt_Infantry) c(60) g(squad_8) c1(axm_hun_assualt_squadleader:1) c2(axm_hun_assualt_rifle:2) c3(axm_hun_assualt_smg:4) c4(axm_hun_assualt_mgun:1) c5(axm_hun_assualt_mgun_assist:1) c6(axm_hun_assualt_pzf:1) c7(axm_hun_assualt_flamer:1) b(squad1) t(all inf_only 44 45) level(1) cost(186) f(1.0))
+
+("squad_with7types" side(axis_minor) name(Alpini) c(60) g(squad_10) c1(axm_ita_alpini_rifle:4) c2(axm_ita_alpini_smg:2) c3(axm_ita_alpini_mgun:1) c4(axm_ita_alpini_mgun_assist:1) c5(axm_ita_alpini_rifle2:3) c6(axm_ita_alpini_squadleader:1) c7(axm_ita_alpini_sniper:1) b(squad1) t(all inf_only 44 45) level(1) cost(215) f(1.0))
+
+{"bersaglieri_motorcycle(axis_minor)"  ("bers_mot" c(60) c1(guzzi-sa500) n1(axm_ita_bersaglieri_rifle) n2(axm_ita_bersaglieri_smg:2) n3(axm_ita_bersaglieri_mgun) n4(axm_ita_bersaglieri_mgun_assist)  t(all hero 44 45) s(axis_minor) g(squad_mot) b(squad1)) {level 1} {cost 215} {fore 0.0}}
+
+("squad_with5types_vehicle" side(axis_minor) name(Bersaglieri_Mot) c(30) g(squad_11) v1(fiat35) c1(axm_ita_vehicle_supporter:2) c2(axm_ita_bersaglieri_rifle:3) c3(axm_ita_bersaglieri_mgun_assist:1) c4(axm_ita_bersaglieri_smg:4) c5(axm_bersaglieri_mgun:2) b(squad1) t(all inf_only 44 45) level(1) cost(174) f(0.0))
+
+
+("squad_with5types" side(axis_minor) name(Paracadutisti) c(120) g(squad_13) c1(axm_ita_paratrooper_squadleader:1) c2(axm_ita_paratrooper_rifle:6) c3(axm_ita_paratrooper_smg:2) c4(axm_ita_paratrooper_mgun:2) c5(axm_ita_paratrooper_mgun_assist:1) b(squad1) t(all inf_only 44 45) level(1) cost(311) f(1.0))
+
+("squad_with2types" side(axis_minor) name(tankcrew) c(0) g(squad_14) c1(axm_hun_tankman_single:4)  c2(axm_hun_tankcommander_single:1) b(squad1) t(all inf_only 44 45) level(1) cost(70) f(1.0))
+
+("squad_with1types" side(axis_minor) name(vet_tankcrew) c(0) g(squad_15) c1(axm_rom_vet_tankcommander_single:1)   b(squad1) t(all inf_only 44 45) level(1) cost(100) f(0.0))
+
+("squad_with1types" side(axis_minor) name(sappers) c(0) g(squad_15) c1(axm_rom_minedisposal:2)   b(squad1) t(all inf_only 44 45) level(1) cost(70) f(0.0))
+
+("squad_with1types" side(axis_minor) name(vehic_supporter) c(0) g(squad_15) c1(axm_bul_vehicle_supporter_single:2) b(squad1) t(all inf_only 42 43 44 45) level(1) cost(25) f(0.0))
+
+
+
+
+;------------------------------ Specialized Units-------------------------------------------
+
+
+("squad_with1types" side(axis_minor) name(carcano) c(10) g(squad_17) c1(axm_ita_bersaglieri_rifle:1) b(squad2) t(all inf_only 44 45) level(1) cost(13) f(1.0))
+
+("squad_with1types" side(axis_minor) name(zb_24rifle) c(10) g(squad_18) c1(axm_rom_rifle:1) b(squad2) t(all inf_only 44 45) level(1) cost(13) f(1.0))
+
+("squad_with1types" side(axis_minor) name(orita) c(10) g(squad_19) c1(axm_rom_smg:1) b(squad2) t(all inf_only 44 45) level(1) cost(13) f(1.0))
+
+("squad_with1types" side(axis_minor) name(suomi_m31) c(10) g(squad_20) c1(axm_fin_kaukopartio_smg:1) b(squad2) t(all inf_only 44 45) level(1) cost(13) f(1.0))
+
+("squad_with1types" side(axis_minor) name(danuvia) c(10) g(squad_21) c1(axm_hun_assualt_smg:1) b(squad2) t(all inf_only 44 45) level(1) cost(13) f(1.0))
+
+("squad_with1types" side(axis_minor) name(AP_Miners) c(10) g(squad_22) c1(axm_bul_miner_ap:4) b(squad2) t(all inf_only 44 45) level(1) cost(100) f(0))
+("squad_with1types" side(axis_minor) name(AT_Miners) c(10) g(squad_23) c1(axm_bul_miner_at:4) b(squad2) t(all inf_only 44 45) level(1) cost(100) f(0))
+
+
+
+("squad_with2types" side(axis_minor) name(solothurn_31m) c(30) g(squad_24) c1(axm_hun_assualt_mgun:1) c2(axm_hun_assualt_mgun_assist:1) b(squad2) t(all inf_only 44 45) level(1) cost(46) f(1.0))
+("squad_with2types" side(axis_minor) name(zb_vz26) c(0) g(squad_35) c1(axm_bul_mgun:1) c2(axm_bul_mgun_assist:1) b(squad2) t(all inf_only 44 45) level(1) cost(44) f(0))
+
+("squad_with2types" side(axis_minor) name(breda30_alpini) c(60) g(squad_25) c1(axm_ita_alpini_mgun:1) c2(axm_ita_alpini_mgun_assist:1) b(squad2) t(all inf_only 44 45) level(1) cost(55) f(1.0))
+
+("squad_with2types" side(axis_minor) name(breda30_bers) c(60) g(squad_26) c1(axm_ita_bersaglieri_mgun:1) c2(axm_ita_bersaglieri_mgun_assist:1) b(squad2) t(all inf_only 44 45) level(1) cost(61) f(1.0))
+
+("squad_with2types" side(axis_minor) name(breda30_para) c(60) g(squad_27) c1(axm_ita_paratrooper_mgun:1) c2(axm_ita_paratrooper_mgun_assist:1) b(squad2) t(all inf_only 44 45) level(1) cost(80) f(1.0))
+
+("squad_with2types" side(axis_minor) name(Boys_AT_Rifle) c(0) g(squad_28) c1(axm_fin_at_rifle:1) c2(axm_fin_at_rifleassist:1) b(squad2) t(all inf_only 44 45) level(1) cost(66) f(1.0))
+
+("squad_with2types" side(axis_minor) name(pzb_at_Rifle) c(0) g(squad_29) c1(axm_bul_at_rifle:1) c2(axm_bul_at_rifle_assist:1) b(squad2) t(all inf_only 44 45) level(1) cost(101) f(1.0))
+
+
+
+
+("squad_with1types" side(axis_minor) name(panzerfaust) c(30) g(squad_30) c1(axm_hun_assualt_pzf:2) b(squad2) t(all inf_only 44 45) level(1) cost(52) f(1.0))
+
+("squad_with2types" side(axis_minor) name(panzershreck) c(10) g(squad_31) c1(axm_rom_bazooker:1) c2(axm_rom_bazooker_assist:1)  b(squad2) t(all inf_only 44 45) level(1) cost(114) f(1.0))
+
+("squad_with1types" side(axis_minor) name(Radioman) c(0) g(squad_32) c1(axm_bul_radioman:1) b(squad2) t(all inf_only 44 45) level(1) cost(200) f(1))
+
+("squad_with2types" side(axis_minor) name(flamers) c(150) g(squad_33) c1(axm_fin_pio_flamer:1) c2(axm_fin_kaukopartio_rifle:1) b(squad2) t(all inf_only 44 45) level(1) cost(83) f(0.0))
+
+("squad_with1types" side(axis_minor) name(finnish_sniper) c(150) g(squad_34) c1(axm_fin_sniper:1)  b(squad2) t(all inf_only 44 45) level(1) cost(90) f(1.0))
+
+
+
+("i_seq_with1x4types" side(axis_minor) name(officer) c(1) g(squad_16) c1(axm_fin_officer:1) b(squad2) i(10002) t(all officer inf_only 39 40 41 42 43 44 45) level(1) cost(0) f(-599.0)) ;10 minutes
+("i_seq_with1x4types" side(axis_minor) name(officers_40) c(1800) g(squad_16) c1(axm_fin_officer:1) b(squad2) i(10002) t(all officer inf_only 39 40 41 42 43 44 45) level(1) cost(0) f(-2399.0)) ;40 minutes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

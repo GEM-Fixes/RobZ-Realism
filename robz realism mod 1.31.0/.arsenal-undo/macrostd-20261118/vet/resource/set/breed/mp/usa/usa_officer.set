@@ -1,0 +1,28 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "us_com"}
+	{portrait usa_officer}
+	{icon officer}
+	{icon_priority 6}
+	{tags "officer"}
+	{nationality usa}
+	{armors
+		{head cap1_usa}
+	}
+	{perks
+		("breed_body" health(250%) regen_health(100%) stamina(150%) regen_stamina(100%) vision(mp_officer) speed(1))
+		{"field_glass"}
+		("breed_drive" tank(0.85) vehicle(1) cannon(0.9))
+		("breed_skills" pistol(5) smg(5) mgun(4) rifle(4) rocket(3) melee(4))
+	}
+	("breed_vet" kind(1))
+	{inventory
+		{item "colt" filled}
+		{item "ammo colt_mag" 21}
+		;{item "smoke_paradrop_ammo_heavy grenade" 2}
+		{item "knife_union"}
+		{item "binocular"}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

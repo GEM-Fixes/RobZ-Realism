@@ -5,7 +5,7 @@
 		{weight 70}
 	}	{mass 2}
 	{entity "ammo_mortar120_tr843"}
-	{view "ammo_mortar120_tr843"}	
+	{view "ammo_mortar120_tr843"}
 	{detonationThickness 1}
 	{damage add blastwave
 		{energy 1.2}
@@ -15,7 +15,7 @@
 		{radius 12}
 		{heating 2}
 		{time 0.1}
-	}	
+	}
 	{damage add fire
 		{radius 8}
 		{heating 0.01}

@@ -1,5 +1,5 @@
 {from "pattern gun2"		; longtom direct fire
-    	{filling "bullet155 us"}
+	{filling "bullet155 us"}
 	{fireSound "gun/howitzer/155mm_gpf"}
 	{reloadSound "gun_r04"}
 	("range_grazing_howitzer")
@@ -8,9 +8,9 @@
 	{range 210 210}
 	("speed" s(853))
 	("accuracy_grazinghowitzer_210m_anti_far")
-	("damage_170" a(198) b(193) c(187) d(182) e(176) range(210))
-		(mod "mp"
-			{tag "prepare"}
+	("damage_170" at20(198) at100(193) at170(187) at215(182) at250(176) max(210))
+	(mod "mp"
+		{tag "prepare"}
 		{Special
 			{Mode aim}
 			{PrepareTime 0.1}

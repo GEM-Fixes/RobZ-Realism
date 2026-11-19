@@ -1,0 +1,187 @@
+{game_entity
+    (include "/properties/tank.ext")
+    (include "/properties/selection/vehicle.inc" scale(1.2))
+
+    {collider "tank.light"}
+    {props "medium" "turret_rotator" "vision_vehicle_medium" "muzzle_medium"}
+    {targetClass "light_tank"}
+
+    {extender "enumerator"}
+
+    ; --- Godny hitbox armor (ported from GodnyMod: m24.def) ---
+	{volume "body1"	;корпус
+		{tags "body"}
+		{component "body"}
+		{able {holed}}
+		{thickness 25.4
+		;	{front	25.4}	;нлд и влд
+			{rear	19.05}
+			{top	12.7}
+			{bottom	12.7}
+		}
+	}
+	{volume "body2"	;люк трансмиссии
+		{tags "body"}
+		{component "body"}
+		{thickness 12.7
+			{front	25.4}
+			{rear	0.1}	;внутренн€€ стенка
+			{top	12.7}
+			{bottom	12.7}
+		}
+	}
+	{volume "turret"
+		{tags "turret"}
+		{component "turret"}
+		{able {holed}}
+		{thickness 25.4
+			{front	38.1}
+		;	{rear	25.4}
+			{top	12.7}
+			{bottom	12.7}
+		}
+	}
+	{Volume "hole_bod"
+		{able clear {hole}}
+		{component "body"}
+	}
+	{Volume "hole_man"
+		{able clear {hole}}
+		{component "turret"}
+	}
+	{volume "mantlet"
+		{thickness 38.1
+		;	{front	38.1}
+			{rear	10}	;орудие дает небольшую броню
+		}
+	}
+	{volume "engine"
+		{thickness 10}
+	}
+	{volume "zip1"
+		{tags "zip1"}
+		{component "zip1"}
+		{thickness 6}
+	}
+	; --- end Godny hitbox armor ---
+	("armor_medium" turret(38 25 25 25) body(25 25 19 13))
+    ("armor_engine"  t(25))
+    ("armor_mantlet" t(38))
+	("us_3x_sight")
+
+    ("crew_4_human")
+	("gunner3_visible")
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_Kv"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"} {end "pose_mgun_pz6"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_LowArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+    ("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
+    ("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+
+    {extender "inventory"
+        {box
+            {item "bullet75 us ap" 10}
+            {item "bullet75 us apcbc" 17}
+            {item "bullet75 us fg" 43}
+			{item "bullet75 us wp" 5}
+            {item "ammo springfield_belt" 1600}
+			{item "ammo hmgun ap" 200}
+			{item "browning" filled {user "mgun3"}}
+        }
+		{weapon "mgun3"
+			{mask "weapon mgun"}
+		}
+    }
+    {Weaponry
+        ("restore_ik_time")
+        {place "gun"
+            {RestoreIKAfterAim}
+            {weapon "75mm_m6" filling "bullet75 us apcbc" 1}
+            {charger "gunner"}
+            ("abm_stabilized")
+        }
+        {place "mgun1"
+            {type "mgun_hull"}
+			{weapon "browning_m19" filled}
+            {foresight "foresight4"}
+            {gunner "driver"}
+            {charger "driver"}
+			("abm_mgun")
+        }
+        {place "mgun2"
+            {type "mgun_coaxial"}
+            {weapon "browning_m19_optic" filled}
+            {foresight "foresight5"}
+            {gunner "commander"}
+            {charger "commander"}
+			("abm_mgun")
+            {basic}
+        }
+	{place "mgun3"
+			{type "mgun_aa"}
+			{gunner "gunner3"}
+			{charger "gunner3"}
+			{LinkBone "mgun_rot"}
+			{LinkAnimation "off"}
+			("abm_mgun")
+		}
+
+    }
+    {mass 18400}
+    {Chassis
+        ("tank_trace" fx("tracks_sm2") step(0.15) len(0.45))
+        {Locomotion ("locomotion")
+            {maxspeed   38}
+            {maxSpeedAtMaxTurn 6}
+            {StartTime  25}
+            {TurnTime   14}
+            {TurnStart  1}
+            {TurnRadius 8}
+            {TurnStop   0.6}
+            {BrakeTime  1.8}
+            {StopTime   2.5}
+            {Gears  0.1 0.225 0.325 1}
+            {RearGears  0.25}
+        }
+        {FuelBag
+            {volume 420 }
+            {rate   26 }
+            {remain 420 }
+            {fuel "fuel"}
+        }
+		{speed
+        	{Normal  38}
+        	{Slow  38}
+    	}
+    }
+
+    {Extension "m24.mdl"}
+
+    {bone "turret"
+        {speed 0.003}
+    }
+    {bone "mgun_coaxial"
+        {limits 1}
+    }
+
+        {bone "gun_rot"
+        {limits -10 15}
+                {speed 0.0008}
+        }
+
+        {bone "mgun"
+        {limits 15}
+                {speed2 80}
+        }
+}

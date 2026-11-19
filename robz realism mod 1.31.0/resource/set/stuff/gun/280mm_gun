@@ -1,4 +1,4 @@
-{from "pattern gun_art"		; BR-5 280mm	
+{from "pattern gun_art"		; BR-5 280mm
 	{filling "bullet280"}
 	{fireSound "gun/howitzer/203mm"}
 	{reloadSound "tankgun_r02"}

@@ -9,13 +9,13 @@
 			{weapon "mg42_mount_optic_vet" filling "ammo mg_mauser belt ap" 250}
 			{Rotate}
 		}
-	}  
+	}
 	{sensor
 		{visor "main"
 			{vision "cannon_mgun"}
 			{bone "turret"}
 		}
-	}  	
+	}
 	{extender "inventory"
 		{box
 			{item "ammo mg_mauser belt" 500}
@@ -48,10 +48,10 @@
 		}
 	}
 	{Extension "mg34_lafette.mdl"}
-	{bone "turret" 
+	{bone "turret"
 		{limits -40 40}
 	}
-		
+
 	{Volume "body"
 	}
 	{Volume "stan1"
@@ -60,9 +60,9 @@
 	}
 	{Volume "stan3"
 	}
-	
-	;{Chassis "human_carrier"
-		;("loco_carrier_vet")
-	;}
+
+;{Chassis "human_carrier"
+;("loco_carrier_vet")
+;}
 }
 

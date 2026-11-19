@@ -1,6 +1,6 @@
 {from "mg34_optic"
 	{filling "ammo mg_mauser belt" 150}
-	
+
 	{rechargeTime 16}
 	("recoveryTime" r(1200))
 }

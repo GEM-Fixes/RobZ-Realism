@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "bul-ber-mgun"}
+	{portrait "bul_soldier4"}
+	{nationality bul}
+	{icon "mg"}
+	{icon_priority 3}
+	{armors
+		{head helmet1_bul}
+	}
+	{perks
+		("body_squadleader")
+		("drive_t08_v10_c10")
+		("breed_skills" pistol(1) smg(1) mgun(3) rifle(2) rocket(1) melee(2))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("kit_mgun" gun(zb_vz26) ammo(zb_vz26_mag) rounds(120))
+		("pistol_valter_32")
+		{item "bandage" 2}
+
+
+		{in_hands 0}
+	}
+}

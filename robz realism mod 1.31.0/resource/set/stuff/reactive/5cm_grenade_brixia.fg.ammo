@@ -8,7 +8,7 @@
 	{entity "brixia_ammo"}
 	{view "brixia_ammo"}
 	{detonationThickness 1}
-	
+
 	{damage blastwave
 		{energy 1.0}
 		{area 3.0 6.0}

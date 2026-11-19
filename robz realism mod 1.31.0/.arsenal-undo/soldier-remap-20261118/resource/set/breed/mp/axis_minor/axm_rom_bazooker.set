@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rom-smg"}
+	{portrait "rom_soldier1"}
+	{icon "smgs2"}
+	{icon_priority 0}
+	{nationality rom}
+	{armors
+		{head "8_kaska_soldat_ruminia"}
+	}
+	{perks
+		("body_squadleader")
+		("drive_t08_v10_c10")
+		("breed_skills" pistol(3) smg(2) mgun(1) rifle(1) rocket(3) melee(2))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "weapon panzershreck" filled}
+		{item "valter" filled}
+		{item "ammo walther_mag" 40}
+		{item "bandage" 3}
+		("at_grenade_m24x5_x1")
+		{item "ammo panzershreck" 5}
+		{in_hands 0}
+	}
+}

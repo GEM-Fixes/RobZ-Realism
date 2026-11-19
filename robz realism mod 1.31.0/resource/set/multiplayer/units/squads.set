@@ -5,43 +5,122 @@
 
 ;같컂eneric같�
 
+; generic_vi: buy-card fields, {charge} {tags "%t"} {group "%g"} {button "%b"}
+;   c - {charge}, [?]
+;   t - name of {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   e.g. ("generic_vi" c(%c) t(%t %s) g(%g) i(%i) b(%b))
 (define "generic_vi"
-    {charge %c}
-    {tags "%t"}
-    {group "%g"}
-    {button "%b"}
+	{charge %c}
+	{tags "%t"}
+	{group "%g"}
+	{button "%b"}
 )
 
+; generic_i_sequence: buy-card fields, {charge} {tags "%t"} {group "%g"} {button "%b"} {icon}
+;   c - {charge}, [?]
+;   t - name of {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   i - {icon}, [?]
+;   e.g. none (not called)
 (define "generic_i_sequence"
-    {charge %c}
-    {tags "%t"}
-    {group "%g"}
-    {button "%b"}
-    {icon %i}
+	{charge %c}
+	{tags "%t"}
+	{group "%g"}
+	{button "%b"}
+	{icon %i}
 )
 
 ;같캫echanized infantry같�
+; vb3: {content "%c1 ( mp/%s/ost_jager_sa:%n1 mp/%s/ost_jager_stg:%n2 mp/%s/ost_jager_smg:%n3)"}, calls "generic_vi"
+;   c - {charge}, [?] via "generic_vi"
+;   t - name of {tags} via "generic_vi"
+;   s - name of {tags} via "generic_vi", text in {content}
+;   g - name of {group} via "generic_vi"
+;   i - i() of "generic_vi"
+;   b - name of {button} via "generic_vi"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   n3 - text in {content}
+;   e.g. none in the mod (called from vanilla files)
 (define "vb3"
-    ("generic_vi" c(%c) t(%t %s) g(%g) i(%i) b(%b))
-    {content "%c1 ( mp/%s/ost_jager_sa:%n1 mp/%s/ost_jager_stg:%n2 mp/%s/ost_jager_smg:%n3)"}
+	("generic_vi" c(%c) t(%t %s) g(%g) i(%i) b(%b))
+	{content "%c1 ( mp/%s/ost_jager_sa:%n1 mp/%s/ost_jager_stg:%n2 mp/%s/ost_jager_smg:%n3)"}
 )
 
+; vb3_usa: {content "%c1 ( mp/%s/usa_ranger_springfield:%n1 mp/%s/usa_ranger_barassist:%n2 mp/%s/usa_ranger_bar:%n3)"}, calls "generic_vi"
+;   c - {charge}, [?] via "generic_vi"
+;   t - name of {tags} via "generic_vi"
+;   s - name of {tags} via "generic_vi", text in {content}
+;   g - name of {group} via "generic_vi"
+;   i - i() of "generic_vi"
+;   b - name of {button} via "generic_vi"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   n3 - text in {content}
+;   e.g. none (not called)
 (define "vb3_usa"
-    ("generic_vi" c(%c) t(%t %s) g(%g) i(%i) b(%b))
-    {content "%c1 ( mp/%s/usa_ranger_springfield:%n1 mp/%s/usa_ranger_barassist:%n2 mp/%s/usa_ranger_bar:%n3)"}
+	("generic_vi" c(%c) t(%t %s) g(%g) i(%i) b(%b))
+	{content "%c1 ( mp/%s/usa_ranger_springfield:%n1 mp/%s/usa_ranger_barassist:%n2 mp/%s/usa_ranger_bar:%n3)"}
 )
 
+; vb4: {content "%c1 ( mp/%s/sturmovik:%n1 mp/%s/sturmovik2:%n2 mp/%s/sturmovik3:%n3 mp/%s/sturmovik4:%n4 )"}, calls "generic_vi"
+;   c - {charge}, [?] via "generic_vi"
+;   t - name of {tags} via "generic_vi"
+;   s - name of {tags} via "generic_vi", text in {content}
+;   g - name of {group} via "generic_vi"
+;   i - i() of "generic_vi"
+;   b - name of {button} via "generic_vi"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   n3 - text in {content}
+;   n4 - text in {content}
+;   e.g. none in the mod (called from vanilla files)
 (define "vb4"
-    ("generic_vi" c(%c) t(%t %s) g(%g) i(%i) b(%b))
-    {content "%c1 ( mp/%s/sturmovik:%n1 mp/%s/sturmovik2:%n2 mp/%s/sturmovik3:%n3 mp/%s/sturmovik4:%n4 )"}
+	("generic_vi" c(%c) t(%t %s) g(%g) i(%i) b(%b))
+	{content "%c1 ( mp/%s/sturmovik:%n1 mp/%s/sturmovik2:%n2 mp/%s/sturmovik3:%n3 mp/%s/sturmovik4:%n4 )"}
 )
+; vb6: {content "%c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6 )"}, calls "generic_vi"
+;   c - {charge}, [?] via "generic_vi"
+;   t - name of {tags} via "generic_vi"
+;   s - name of {tags} via "generic_vi", text in {content}
+;   g - name of {group} via "generic_vi"
+;   i - i() of "generic_vi"
+;   b - name of {button} via "generic_vi"
+;   c1 - text in {content}
+;   n1 - text in {content}
+;   n2 - text in {content}
+;   n3 - text in {content}
+;   n4 - text in {content}
+;   n5 - text in {content}
+;   n6 - text in {content}
+;   e.g. none (not called)
 (define "vb6"
-    ("generic_vi" c(%c) t(%t %s) g(%g) i(%i) b(%b))
-    {content "%c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6 )"}
+	("generic_vi" c(%c) t(%t %s) g(%g) i(%i) b(%b))
+	{content "%c1 ( mp/%s/%n1 mp/%s/%n2 mp/%s/%n3 mp/%s/%n4 mp/%s/%n5 mp/%s/%n6 )"}
 )
 
 
 ;같캳quads define같�
+; i_seq_with1types: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   i - {icon}, [?]
+;   e.g. none (not called)
 (define "i_seq_with1types"
 	{"%name(%side)"
 		{charge %c}
@@ -56,6 +135,19 @@
 	}
 )
 
+; i_seq_with1types: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   i - {icon}, [?]
+;   e.g. none (not called)
 (define "i_seq_with1types"
 	{"%name(%side)"
 		{charge %c}
@@ -70,6 +162,19 @@
 	}
 )
 
+; i_seq_with1x4types: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   i - {icon}, [?]
+;   e.g. none (not called)
 (define "i_seq_with1x4types"
 	{"%name(%side)"
 		{charge %c}
@@ -84,6 +189,20 @@
 	}
 )
 
+; i_seq_with2types: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   i - {icon}, [?]
+;   e.g. none (not called)
 (define "i_seq_with2types"
 	{"%name(%side)"
 		{charge %c}
@@ -98,6 +217,21 @@
 	}
 )
 
+; i_seq_with3types: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   i - {icon}, [?]
+;   e.g. ("i_seq_with3types" side(jap) name(hero_banzai_1) c(30) g(h_10) i(20) c1(jap_charger_rifle:15) b(hero) t(all inf_only 44 45) level(1) cost(5) f(0.0))
 (define "i_seq_with3types"
 	{"%name(%side)"
 		{charge %c}
@@ -112,6 +246,22 @@
 	}
 )
 
+; i_seq_with4types: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   i - {icon}, [?]
+;   e.g. none (not called)
 (define "i_seq_with4types"
 	{"%name(%side)"
 		{charge %c}
@@ -126,6 +276,23 @@
 	}
 )
 
+; i_seq_with5types: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   c5 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   i - {icon}, [?]
+;   e.g. none (not called)
 (define "i_seq_with5types"
 	{"%name(%side)"
 		{charge %c}
@@ -140,6 +307,24 @@
 	}
 )
 
+; i_seq_with6types: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   c5 - text in {content}
+;   c6 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   i - {icon}, [?]
+;   e.g. none (not called)
 (define "i_seq_with6types"
 	{"%name(%side)"
 		{charge %c}
@@ -154,6 +339,25 @@
 	}
 )
 
+; i_seq_with7types: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   c5 - text in {content}
+;   c6 - text in {content}
+;   c7 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   i - {icon}, [?]
+;   e.g. none (not called)
 (define "i_seq_with7types"
 	{"%name(%side)"
 		{charge %c}
@@ -168,6 +372,26 @@
 	}
 )
 
+; i_seq_with8types: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   c5 - text in {content}
+;   c6 - text in {content}
+;   c7 - text in {content}
+;   c8 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   i - {icon}, [?]
+;   e.g. none (not called)
 (define "i_seq_with8types"
 	{"%name(%side)"
 		{charge %c}
@@ -181,6 +405,18 @@
 		{icon %i}
 	}
 )
+; squad_kekspecial: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - [?]
+;   cost - [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_kekspecial"
 	{"%name(%side)"
 		{charge %c}
@@ -193,6 +429,18 @@
 		{fore %f}
 	}
 )
+; squad_with1types: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none in the mod (called from vanilla files)
 (define "squad_with1types"
 	{"%name(%side)"
 		{charge %c}
@@ -205,6 +453,19 @@
 		{fore %f}
 	}
 )
+; squad_with2types: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none in the mod (called from vanilla files)
 (define "squad_with2types"
 	{"%name(%side)"
 		{charge %c}
@@ -217,6 +478,20 @@
 		{fore %f}
 	}
 )
+; squad_with2types_vehicle: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   v1 - text in {content}
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_with2types_vehicle"
 	{"%name(%side)"
 		{charge %c}
@@ -229,6 +504,20 @@
 		{fore %f}
 	}
 )
+; squad_with3types: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none in the mod (called from vanilla files)
 (define "squad_with3types"
 	{"%name(%side)"
 		{charge %c}
@@ -241,6 +530,21 @@
 		{fore %f}
 	}
 )
+; squad_with3types_vehicle: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   v1 - text in {content}
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_with3types_vehicle"
 	{"%name(%side)"
 		{charge %c}
@@ -253,6 +557,21 @@
 		{fore %f}
 	}
 )
+; squad_with4types: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. ("squad_with4types" side(usa) name(smgs) c(0) g(squad_2) c1(usa_armor_squadleader:1) c2(usa_armor_rifle:10) c3(usa_armor_rifle_grenadier:1) b(squad1) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(163) f(1.0))
 (define "squad_with4types"
 	{"%name(%side)"
 		{charge %c}
@@ -265,6 +584,22 @@
 		{fore %f}
 	}
 )
+; squad_with4types_vehicle: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   v1 - text in {content}
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. ("squad_with4types_vehicle" side(rus) name(smgs_mot) c(60) g(squad_2) v1(zis5) c1(rus_squadleader2_43:1) c2(rus_smg2_43:1) c3(rus_smg2:8) b(squad1) t(all inf_only 43 44 45) level(1) cost(137) f(-1.0))
 (define "squad_with4types_vehicle"
 	{"%name(%side)"
 		{charge %c}
@@ -277,6 +612,22 @@
 		{fore %f}
 	}
 )
+; squad_with5types: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   c5 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_with5types"
 	{"%name(%side)"
 		{charge %c}
@@ -289,6 +640,23 @@
 		{fore %f}
 	}
 )
+; squad_with5types_vehicle: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   v1 - text in {content}
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   c5 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_with5types_vehicle"
 	{"%name(%side)"
 		{charge %c}
@@ -301,6 +669,23 @@
 		{fore %f}
 	}
 )
+; squad_with6types: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   c5 - text in {content}
+;   c6 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. ("squad_with6types" side(ger_ss) name(gebirgs_42) c(0) g(squad_3) c1(gebirgs_sl:1) c2(gebirgs_sl_asst:1) c3(gebirgs_rifle:7) c4(gebirgs_mg:1) c5(gebirgs_mg_asst:1) b(squad1) t(42) level(1) cost(189) f(1.0))
 (define "squad_with6types"
 	{"%name(%side)"
 		{charge %c}
@@ -313,6 +698,24 @@
 		{fore %f}
 	}
 )
+; squad_with6types_vehicle: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   v1 - text in {content}
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   c5 - text in {content}
+;   c6 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. ("squad_with6types_vehicle" side(rus) name(shock_assault_mech) c(60) g(squad_3) v1(m3) c1(rus_shock_sl_smg:1) c2(rus_shock_smg:3) c3(rus_shock_smg2:2) c4(rus_shock_smg3:2) c5(rus_shock_flame:1) b(squad1) t(all inf_only 42 43 44 45) level(1) cost(196) f(-3.0))
 (define "squad_with6types_vehicle"
 	{"%name(%side)"
 		{charge %c}
@@ -325,6 +728,24 @@
 		{fore %f}
 	}
 )
+; squad_with7types: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   c5 - text in {content}
+;   c6 - text in {content}
+;   c7 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. ("squad_with7types" side(rus) name(paras) c(360) g(squad_5) c1(rus_para_sl:1) c2(rus_para_smg3:2) c3(rus_para_sa:2) c4(rus_para_rifle:2) c5(rus_para_mg:2) c6(rus_para_mg_asst:2) b(squad1) t(all inf_only 44 45) level(1) cost(266) f(1.0))
 (define "squad_with7types"
 	{"%name(%side)"
 		{charge %c}
@@ -338,6 +759,25 @@
 	}
 )
 
+; squad_with7types_vehicle: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   v1 - text in {content}
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   c5 - text in {content}
+;   c6 - text in {content}
+;   c7 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. ("squad_with7types_vehicle" side(rus) name(riflemans_rifle_mot) c(60) g(squad_2) v1(zis5) c1(rus_squadleader_smg:1) c2(rus_smg:1) c3(rus_rifle_sa:1) c4(rus_rifle:6) c5(rus_mgun:1) c6(rus_mgun_asst:1) b(squad1) t(all inf_only 43 44 45) level(1) cost(167) f(-1.0))
 (define "squad_with7types_vehicle"
 	{"%name(%side)"
 		{charge %c}
@@ -350,6 +790,25 @@
 		{fore %f}
 	}
 )
+; squad_with8types: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   c5 - text in {content}
+;   c6 - text in {content}
+;   c7 - text in {content}
+;   c8 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_with8types"
 	{"%name(%side)"
 		{charge %c}
@@ -362,6 +821,26 @@
 		{fore %f}
 	}
 )
+; squad_with8types_vehicle: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   v1 - text in {content}
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   c5 - text in {content}
+;   c6 - text in {content}
+;   c7 - text in {content}
+;   c8 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_with8types_vehicle"
 	{"%name(%side)"
 		{charge %c}
@@ -374,6 +853,26 @@
 		{fore %f}
 	}
 )
+; squad_with9types: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   c5 - text in {content}
+;   c6 - text in {content}
+;   c7 - text in {content}
+;   c8 - text in {content}
+;   c9 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_with9types"
 	{"%name(%side)"
 		{charge %c}
@@ -386,6 +885,27 @@
 		{fore %f}
 	}
 )
+; squad_with9types_vehicle: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   v1 - text in {content}
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   c5 - text in {content}
+;   c6 - text in {content}
+;   c7 - text in {content}
+;   c8 - text in {content}
+;   c9 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_with9types_vehicle"
 	{"%name(%side)"
 		{charge %c}
@@ -398,6 +918,28 @@
 		{fore %f}
 	}
 )
+; squad_with10types_vehicle: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   v1 - text in {content}
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   c5 - text in {content}
+;   c6 - text in {content}
+;   c7 - text in {content}
+;   c8 - text in {content}
+;   c9 - text in {content}
+;   c10 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_with10types_vehicle"
 	{"%name(%side)"
 		{charge %c}
@@ -410,6 +952,31 @@
 		{fore %f}
 	}
 )
+; squad_with14types: {"%name(%side)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   side - block name, text in {content}, text in {tags}
+;   c - {charge}, [?]
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   c5 - text in {content}
+;   c6 - text in {content}
+;   c7 - text in {content}
+;   c8 - text in {content}
+;   c9 - text in {content}
+;   c10 - text in {content}
+;   c11 - text in {content}
+;   c12 - text in {content}
+;   c13 - text in {content}
+;   c14 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_with14types"
 	{"%name(%side)"
 		{charge %c}
@@ -423,6 +990,19 @@
 	}
 )
 ;--------------- DOCTRINE DEFINES ------------------------------------------------
+; squad_with1types_doc: {"%name(%doc)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   doc - block name, text in {tags}
+;   c - {charge}, [?]
+;   side - text in {content}
+;   c1 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_with1types_doc"
 	{"%name(%doc)"
 		{charge %c}
@@ -435,6 +1015,20 @@
 		{fore %f}
 	}
 )
+; squad_with1types_vehicle_doc: {"%name(%doc)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   doc - block name, text in {tags}
+;   c - {charge}, [?]
+;   v1 - text in {content}
+;   side - text in {content}
+;   c1 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_with1types_vehicle_doc"
 	{"%name(%doc)"
 		{charge %c}
@@ -447,6 +1041,20 @@
 		{fore %f}
 	}
 )
+; squad_with2types_doc: {"%name(%doc)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   doc - block name, text in {tags}
+;   c - {charge}, [?]
+;   side - text in {content}
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_with2types_doc"
 	{"%name(%doc)"
 		{charge %c}
@@ -459,6 +1067,21 @@
 		{fore %f}
 	}
 )
+; squad_with3types_doc: {"%name(%doc)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   doc - block name, text in {tags}
+;   c - {charge}, [?]
+;   side - text in {content}
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_with3types_doc"
 	{"%name(%doc)"
 		{charge %c}
@@ -471,6 +1094,22 @@
 		{fore %f}
 	}
 )
+; squad_with4types_doc: {"%name(%doc)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   doc - block name, text in {tags}
+;   c - {charge}, [?]
+;   side - text in {content}
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_with4types_doc"
 	{"%name(%doc)"
 		{charge %c}
@@ -483,6 +1122,23 @@
 		{fore %f}
 	}
 )
+; squad_with4types_vehicle_doc: {"%name(%doc)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   doc - block name, text in {tags}
+;   c - {charge}, [?]
+;   v1 - text in {content}
+;   side - text in {content}
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_with4types_vehicle_doc"
 	{"%name(%doc)"
 		{charge %c}
@@ -495,6 +1151,23 @@
 		{fore %f}
 	}
 )
+; squad_with4types_2vehicle_doc: {"%name(%doc)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   doc - block name, text in {tags}
+;   c - {charge}, [?]
+;   v1 - text in {content}
+;   side - text in {content}
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_with4types_2vehicle_doc"
 	{"%name(%doc)"
 		{charge %c}
@@ -507,6 +1180,23 @@
 		{fore %f}
 	}
 )
+; squad_with5types_doc: {"%name(%doc)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   doc - block name, text in {tags}
+;   c - {charge}, [?]
+;   side - text in {content}
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   c5 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_with5types_doc"
 	{"%name(%doc)"
 		{charge %c}
@@ -519,6 +1209,24 @@
 		{fore %f}
 	}
 )
+; squad_with5types_vehicle_doc: {"%name(%doc)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   doc - block name, text in {tags}
+;   c - {charge}, [?]
+;   v1 - text in {content}
+;   side - text in {content}
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   c5 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_with5types_vehicle_doc"
 	{"%name(%doc)"
 		{charge %c}
@@ -531,6 +1239,24 @@
 		{fore %f}
 	}
 )
+; squad_with6types_doc: {"%name(%doc)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   doc - block name, text in {tags}
+;   c - {charge}, [?]
+;   side - text in {content}
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   c5 - text in {content}
+;   c6 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_with6types_doc"
 	{"%name(%doc)"
 		{charge %c}
@@ -543,6 +1269,25 @@
 		{fore %f}
 	}
 )
+; squad_with7types_doc: {"%name(%doc)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   doc - block name, text in {tags}
+;   c - {charge}, [?]
+;   side - text in {content}
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   c5 - text in {content}
+;   c6 - text in {content}
+;   c7 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_with7types_doc"
 	{"%name(%doc)"
 		{charge %c}
@@ -555,6 +1300,26 @@
 		{fore %f}
 	}
 )
+; squad_with7types_vehicle_doc: {"%name(%doc)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   doc - block name, text in {tags}
+;   c - {charge}, [?]
+;   v1 - text in {content}
+;   side - text in {content}
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   c5 - text in {content}
+;   c6 - text in {content}
+;   c7 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_with7types_vehicle_doc"
 	{"%name(%doc)"
 		{charge %c}
@@ -567,6 +1332,26 @@
 		{fore %f}
 	}
 )
+; squad_with8types_doc: {"%name(%doc)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   doc - block name, text in {tags}
+;   c - {charge}, [?]
+;   side - text in {content}
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   c5 - text in {content}
+;   c6 - text in {content}
+;   c7 - text in {content}
+;   c8 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_with8types_doc"
 	{"%name(%doc)"
 		{charge %c}
@@ -579,6 +1364,27 @@
 		{fore %f}
 	}
 )
+; squad_with8types_vehicle_doc: {"%name(%doc)" {charge} {content} {tags} {group} ..}
+;   name - block name
+;   doc - block name, text in {tags}
+;   c - {charge}, [?]
+;   v1 - text in {content}
+;   side - text in {content}
+;   c1 - text in {content}
+;   c2 - text in {content}
+;   c3 - text in {content}
+;   c4 - text in {content}
+;   c5 - text in {content}
+;   c6 - text in {content}
+;   c7 - text in {content}
+;   c8 - text in {content}
+;   t - text in {tags}
+;   g - name of {group}
+;   b - name of {button}
+;   level - {level}, [?]
+;   cost - {cost}, [?]
+;   f - {fore}, [?]
+;   e.g. none (not called)
 (define "squad_with8types_vehicle_doc"
 	{"%name(%doc)"
 		{charge %c}

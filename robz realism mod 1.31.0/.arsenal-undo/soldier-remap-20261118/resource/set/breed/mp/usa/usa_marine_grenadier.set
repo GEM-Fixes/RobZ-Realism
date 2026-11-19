@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-marine-pvt"}
+	{portrait "usa_elite2"}
+	{nationality usa}
+	{icon "elite5"}
+	{icon_priority 3}
+	{armors
+		{head helmet_marine_usa}
+	}
+	{perks
+		("body_veteran")
+		("drive_veteran")
+		("skills_3_3_3_4_3_3")
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_garand")
+		{item "bandage" 5}
+		{item "garand_grenade" filling "ammo m1garand_grenade fg" 1}
+		{item "m1garand_grenade fg" 5 1}
+		{item "m1garand_grenade ap" 1 1}
+		{item "m1garand_grenade wp" 0.2 1}
+		{item "sandbag_kit" 1}
+		{in_hands 3}
+	}
+}

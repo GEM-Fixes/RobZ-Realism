@@ -1,17 +1,14 @@
+(include "/properties/robz/volumes.inc")
 {entity
 	(include "/properties/car.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.1))
 	{props "vehicle" "car" "wheeled" "turn_over" "vision_vehicle_low"}
 	{PatherId "vehicle.small"}
 	("armor_light" args 2.3)
-	
+
 	{extender "enumerator"}
 
-	{Volume "Body"
-		{tags "body"}
-		{component "body"}
-		{thickness 7}
-	}
+	("vol_body_plate" name(Body) mm(7))
 
 	("wheel" args "wheelright1")
 	("wheel" args "wheelleft1")
@@ -28,18 +25,18 @@
 
 	("board_animation" place(driver) board_begin(board_willis_driver) board_end(seat_Willis_driver) base(doorleft))
 	("board_animation" place(commander) board_begin(board_willis) board_end(seat_Willis_passenger) base(doorright))
-	
-	
-;--- skr: изменяем позу пулемётчика --------------------------------------------
-; пулемёт оказывается чуть ниже, чем хотелось бы, но зато его ноги не точат из крыльев задних колёс
+
+
+	;--- skr: изменяем позу пулемётчика --------------------------------------------
+	; пулемёт оказывается чуть ниже, чем хотелось бы, но зато его ноги не точат из крыльев задних колёс
 	{boarder
 		{anm "gunner"
-;			{forward {begin "board_LowTank_stand"} {end "seat_gunner_stand"}}
+			;			{forward {begin "board_LowTank_stand"} {end "seat_gunner_stand"}}
 			{forward {begin "board_LowTank_stand"} {end "pose_mgun_pz6"}}
 			{reverse {end "emit_tank_1_hold" 1}}
 		}
 	}
-;----------------------------------------------------------------------------------
+	;----------------------------------------------------------------------------------
 
 
 
@@ -70,16 +67,16 @@
 			("abm_mgun")
 		}
 	}
-	
+
 	{mass 1250}
 	{Chassis
 		{Locomotion ("locomotion")
 			{Maxspeed 45}
-	  		{maxSpeedAtMaxTurn 15}
+			{maxSpeedAtMaxTurn 15}
 		}
 		{FuelBag
-			{volume 60 }	
-			{rate	9 }   
+			{volume 60 }
+			{rate	9 }
 			{remain 60 }
 			{fuel "fuel"}
 		}
@@ -92,11 +89,11 @@
 	}
 	{Extension "willysmb_en.mdl"}
 
-;--- skr: пулемёт теперь не вращается ---
-;	{bone "mgun"
-;		{limits -25 20}
-;	}
-;----------------------------------------
+	;--- skr: пулемёт теперь не вращается ---
+	;	{bone "mgun"
+	;		{limits -25 20}
+	;	}
+	;----------------------------------------
 	{bone "mgun_turret"
 		{speed 0.005}
 	}

@@ -1,0 +1,222 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "vehicle" "armored_car" "tractor" "tank" "opened" "vision_vehicle_low" "switch_mgun"}
+
+	{extender "enumerator"}
+
+	; --- Godny hitbox armor (ported from GodnyMod: universal_carrier.inc) ---
+	{volume "sticky"
+		{tags "grenade_fg_target"}
+		{able clear {contact} {touch}}
+		{component "sticky_body"}
+	}
+	{Volume "body"	;нижн€€ часть корпуса
+		{able {holed}}
+		{thickness 8
+			{front	10}
+			;	{rear	8}
+			{top	6}
+			{bottom	4}
+			{right	6}	;гласис ?мм
+		}
+	}
+	{volume "body1"	;десантное
+		{component "body"}
+		{tags "body"}
+		{able {holed}}
+		{thickness 8
+			;	{front	8}
+			;	{rear	8}
+			{top	6}
+			{bottom	4}
+		}
+	}
+	{volume "body2"	;отделение управлени€
+		{component "body"}
+		{tags "body"}
+		{able {holed}}
+		{thickness 8
+			{front	10}
+			{rear	0.1}	;внутренн€€ стенка
+			{top	6}
+			{bottom	4}
+			{right	0.1}	;внутренн€€ стенка
+		}
+	}
+	{volume "body3"	;место стрелка
+		{component "body"}
+		{tags "body"}
+		{able {holed}}
+		{thickness 10
+			;	{front	10}
+			{rear	0.1}	;внутренн€€ стенка
+			{top	6}
+			{bottom	0.1}	;внутренн€€ стенка
+		}
+	}
+	{Volume "hole_bod1"	;отделение управлени€
+		{able clear {hole}}
+		{component "body"}
+	}
+	{Volume "hole_bod2"	;стрелок
+		{able clear {hole}}
+		{component "body"}
+	}
+	{Volume "hole_bod3"	;дно отделени€ управлени€
+		{able clear {hole}}
+		{component "body"}
+	}
+	{Volume "hole_bod4"	;дно десантного
+		{able clear {hole}}
+		{component "body"}
+	}
+	{Volume "hole_bod5"	;десантное
+		{able clear {hole}}
+		{component "body"}
+	}
+	{volume "inventory"
+		{thickness 3
+			{bottom	0.1}
+		}
+	}
+	; --- end Godny hitbox armor ---
+	{volume "body4"
+		{component "body"}
+		{tags "body"}
+		{thickness 8}
+	}
+	{volume "body5"
+		{component "body"}
+		{tags "body"}
+		{thickness 8}
+	}
+	{volume "body6"
+		{component "body"}
+		{tags "body"}
+		{thickness 8}
+	}
+	{volume "body7"
+		{component "body"}
+		{tags "body"}
+		{thickness 8}
+	}
+	{volume "body8"
+		{component "body"}
+		{tags "body"}
+		{thickness 8}
+	}
+	{volume "body9"
+		{component "body"}
+		{tags "body"}
+		{thickness 8}
+	}
+	{volume "body10"
+		{component "body"}
+		{tags "body"}
+		{thickness 8}
+	}
+	{volume "body11"
+		{component "body"}
+		{tags "body"}
+		{thickness 8}
+	}
+	{volume "body12"
+		{component "body"}
+		{tags "body"}
+		{thickness 8}
+	}
+
+	("armor_medium" turret(0) body(12 8 8 8))
+
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_tank_left"} {end "seat_driver_car"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "commander"
+			{forward	{begin	"board_tank_left"} {end "seat_passenger"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "crew"
+			{forward	{begin	"board_tank_right"} {end "seat_passenger"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+	}
+	("crew_human_visible_anm" place(driver)		door1(emit1) door2(emit2) anm_left(driver) anm_right(driver) visor(driver))
+	("crew_human_visible_anm" place(commander)	door1(emit1) door2(emit2) anm_left(commander) anm_right(commander) visor(main))
+	("crew_human_visible_anm" place(seat01)		door2(emit3) door4(emit3) anm_left(crew) anm_right(crew) visor(main))
+	("crew_human_visible_anm" place(seat02)		door2(emit4) door4(emit4) anm_left(crew) anm_right(crew) visor(main))
+	("gunner_visible")
+	{placer
+		{place "driver" {openForCrush 0}}
+		{place "gunner" {openForCrush 0}}
+	}
+
+	(include "/properties/robz/crew.inc")
+
+	{placer
+		{place "driver" {group "crew"} {visor "driver"}}
+	}
+
+	{boarder
+		{door "emit1"}
+		{door "emit2"}
+		{link "emit1" "driver" {anm "driver"} {forward putoff} {reverse puton}}
+	}
+
+	{sensor
+		{visor "main"
+			{vision "tank_main-l"}
+			{bone "foresight4"}
+		}
+	}
+
+	{extender "inventory"
+		{weapon "mgun"
+			{mask "weapon mgun"}
+		}
+		{box
+			{item "bren" filling "ammo bren_mag" 28 {user "mgun"}}
+			{item "ammo bren_mag" 2520}
+			{item "bandage" 10}
+			{item "dynamite"}
+		}
+	}
+	{Weaponry
+		{place "mgun"
+			{basic}
+			{type "mgun_hull"}
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			{gunner "commander"}
+			{charger "commander"}
+			("abm_mgun")
+		}
+	}
+
+	{mass 24000}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.56) len(0.4))
+		{Locomotion ("locomotion")
+			{maxspeed   28}
+			{maxSpeedAtMaxTurn 5}
+			{StartTime  15}
+			{TurnTime   10}
+			{TurnStart  0.6}
+			{TurnRadius 6}
+			{TurnStop   0.5}
+			{BrakeTime  1}
+			{StopTime   1.5}
+			{Gears  0.15 0.25 0.35 1}
+			{RearGears  0.30}
+		}
+		{speed
+			{Normal  28}
+			{Slow  28}
+		}
+	}
+
+	{Extension "universal_carrier.mdl"}
+}

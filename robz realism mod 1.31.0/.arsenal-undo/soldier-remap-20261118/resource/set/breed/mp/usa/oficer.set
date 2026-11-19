@@ -1,0 +1,31 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "us_com"}
+	{portrait "usa_officer"}
+	{nationality usa}
+	{icon "officer"}
+	{icon_priority 6}
+	{armors
+		{head "cap1_usa"}
+	}
+	{tags "officer"}
+	{perks
+		("body_officer")
+		{"field_glass"}
+		("drive_veteran")
+		{"pistol" lvl_5}
+		{"smg" lvl_5}
+		{"mgun" lvl_4}
+		{"rifle" lvl_4}
+		{"rocketlauncher" lvl_3}
+		{"melee" "lvl_4"}
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("pistol_colt_21")
+		("smoke_paradrop_ammo_heavy_x5")
+		{item "knife_union"}
+		{item "binocular"}
+		{in_hands 0}
+	}
+}

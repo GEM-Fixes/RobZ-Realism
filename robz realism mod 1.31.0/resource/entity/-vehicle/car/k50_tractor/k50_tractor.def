@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {entity
 	(include "/properties/tank_unarmed.ext")
 	(include "/properties/selection/vehicle.inc" scale(0.85))
@@ -6,11 +7,11 @@
 	{targetClass "tank" "bullet"}
 	{targetSelector "tank_bullet"}
 	{patherId "tank.light"}
-        {tag "heavy_tow"}
-	
+	{tag "heavy_tow"}
+
 	("armor_light" turret(0) body(3 3 3 3))
 	("armor_engine"  t(3 3 3 3))
-	
+
 	{boarder
 		{anm "left"
 			{forward	{begin	"board_tank_left"} {end "seat_passenger"}}
@@ -22,7 +23,7 @@
 		}
 	}
 
-	("crew_human_visible_anm" place(driver) door1(emit1) door2(emit1) visor(driver) anm_left(left) anm_right(left)) 
+	("crew_human_visible_anm" place(driver) door1(emit1) door2(emit1) visor(driver) anm_left(left) anm_right(left))
 
 
 	{sensor
@@ -33,7 +34,7 @@
 	}
 	{extender "inventory"
 		{box
-			
+
 		}
 	}
 	{mass 2500}
@@ -44,33 +45,29 @@
 			{maxSpeedAtMaxTurn 11}
 			{StartTime 20}
 			{TurnTime 12}
-			{TurnStart  0.8}			
-			{TurnRadius 6} 
-    		{TurnStop   0.5}
+			{TurnStart  0.8}
+			{TurnRadius 6}
+			{TurnStop   0.5}
 			{BrakeTime  1}
 			{StopTime   1.5}
-   			{Gears  0.1 0.35 0.7}
-			{RearGears  0.43} 
+			{Gears  0.1 0.35 0.7}
+			{RearGears  0.43}
 		}
 		(mod "mp"
 			{FuelBag
-				{volume 550 }	
-				{rate	3.2 }   
+				{volume 550 }
+				{rate	3.2 }
 				{remain 545 }
 				{fuel "fuel"}
 			}
-		    {speed
-        		{Normal  10}
-    			
-		    }
+			{speed
+				{Normal  10}
+
+			}
 		)
 	}
 	{Extension "k50.mdl"}
-	{volume "body"
-		{tags "body"}
-		{component "body"}
-		{thickness 3}
-	}
+	("vol_body_plate_lower" name(body) mm(3))
 	{Volume "engine"
 		{component "engine"}
 	}

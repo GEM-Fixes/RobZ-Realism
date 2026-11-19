@@ -65,7 +65,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/grunt3"
 					{timer
 						{mode play }
@@ -129,7 +129,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/flashss4"
 					{timer
 						{mode play }
@@ -173,7 +173,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/flash/small_arms_fire2"
 					{timer
 						{mode play }
@@ -225,7 +225,7 @@
 			{damping 0.85}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4b_50"
 					{scale 1
 						{linear
@@ -283,7 +283,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop_short"
 					{timer
 						{mode play }

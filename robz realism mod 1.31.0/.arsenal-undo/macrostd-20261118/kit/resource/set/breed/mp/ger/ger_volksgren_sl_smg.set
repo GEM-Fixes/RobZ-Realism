@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-smock2mix-smg-nco"}
+	{portrait "ger_soldier2"}
+	{icon "smg"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{head fieldcap_ger_heer}
+	}
+	{perks
+		("breed_body" health(100%) regen_health(100%) stamina(75%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.75) vehicle(1) cannon(0.8))
+		("breed_skills" pistol(1) smg(3) mgun(1) rifle(2) rocket(1) melee(3))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "mp40" filled}
+		{item "ammo mp40_mag" 192}
+		{item "bandage" 3}
+		{item "grenade m24" 2}
+		{item "small_shovel" 1}
+		{item "smoke grenade" 2}
+		{in_hands 0}
+	}
+}

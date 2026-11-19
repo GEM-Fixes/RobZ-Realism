@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "fin-inf"}
+	{portrait "fin_soldier2"}
+	{nationality fin}
+	{icon "smg"}
+	{icon_priority 0}
+	{armors
+		{head cap_fin_m36}
+	}
+	{perks
+		("soldier_smg_7" rocket(1) body(line))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_suomi_m31")
+		{item "bandage" 3}
+		("frag_m24_x2")
+		("frag_kasapanos_2kg_x1")
+		("smoke_x1")
+
+		{in_hands 0}
+	}
+}

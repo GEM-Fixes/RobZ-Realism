@@ -2,8 +2,8 @@
 	{filling "ammo 8x59" 20}
 	{entity "breda_37"}
 	{fireSound "mgun/fg42_shot"}
-        {tag "mgun_light"}
- 	{reloadSound "breda30_reload"}
+	{tag "mgun_light"}
+	{reloadSound "breda30_reload"}
 	{mass 10}
 	{rechargeTime 6}
 	("burst_long")
@@ -13,7 +13,7 @@
 		{SpreadPower	1}
 		{BurstAccuracy 100 97 94 91 88 85 80}
 	}
-       {range 150 150}
+	{range 150 150}
 
 
 }

@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
@@ -6,21 +7,13 @@
 	{extender "enumerator"
 		{digit_folder "ger"}
 	}
-	
-	{volume "body1"
-		{tags "body"}
-		{component "body"}
-		{thickness 30}
-	}
-	{volume "body2"
-		{tags "body"}
-		{component "body"}
-		{thickness 30}
-	}
+
+	("vol_body_plate_lower" name(body1) mm(30))
+	("vol_body_plate_lower" name(body2) mm(30))
 	("armor_medium" turret(30 20 20 10) body(30 20 20 22))
 	("armor_engine"  t(30 30 20 12))
 	("armor_mantlet" t(35))
-	
+
 	("crew_4_human_extended")
 	{boarder
 		{anm "driver"
@@ -69,7 +62,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "75mm_kwk37_2" filling "ammo bullet75 gers apc" 1}	
+			{weapon "75mm_kwk37_2" filling "ammo bullet75 gers apc" 1}
 			("abm_medium")
 		}
 		{place "mgun1"
@@ -85,7 +78,7 @@
 			{weapon "mg34_optic" filled}
 			{foresight "foresight5"}
 			("abm_mgun")
-            {basic}
+			{basic}
 		}
 	}
 
@@ -97,28 +90,28 @@
 			{maxSpeedAtMaxTurn 4}
 			{StartTime	  45}
 			{TurnTime  	  19}
-    		{TurnStart  1.4} 
-    		{BrakeTime    1} 
-    		{StopTime     2} 
-    		{TurnRadius   8} 
-    		{TurnStop   0.8}
-     		{Gears  0.1 0.2 0.3 1}
-    		{RearGears 0.28}
+			{TurnStart  1.4}
+			{BrakeTime    1}
+			{StopTime     2}
+			{TurnRadius   8}
+			{TurnStop   0.8}
+			{Gears  0.1 0.2 0.3 1}
+			{RearGears 0.28}
 		}
 		{FuelBag
-			{volume 470 }	
-			{rate	36 }   
+			{volume 470 }
+			{rate	36 }
 			{remain 470 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  28}
-        	{Slow  28}
-    	}
+			{Normal  28}
+			{Slow  28}
+		}
 	}
-	
+
 	{Extension "pz4d.mdl"}
-	
+
 	{bone "turret"
 		{speed 0.0036}
 	}

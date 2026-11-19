@@ -1,0 +1,22 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "us_bazooker"}
+	{portrait "usa_soldier2"}
+	{nationality usa}
+	{icon "sapper"}
+	{icon_priority 3}
+	{armors
+		{head helmet_novice}
+	}
+	{perks
+		("soldier_smg_3" rocket(1) body(line))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_m3a")
+		{item "mine_detector"}
+		("explosive_dynamite_x2")
+		{item "trench_spade"}
+		{in_hands 0}
+	}
+}

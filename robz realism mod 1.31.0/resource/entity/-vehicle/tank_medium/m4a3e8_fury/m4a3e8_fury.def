@@ -1,10 +1,11 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{props "medium" "turret_rotator" "vision_vehicle_high" "muzzle_medium_sides" "gun_mode_change"}
 
 	{extender "enumerator"}
-	
+
 	{Volume "body1"
 		{component "body"}
 		{tags "body"}
@@ -17,21 +18,12 @@
 		{component "body"}
 		{tags "body"}
 	}
-	{Volume "turret1"
-		{tags "turret"}
-		{component "turret"}
-	}
-	{Volume "turret2"
-		{tags "turret"}
-		{component "turret"}
-	}
-	{Volume "mantlet"
-		{tags "turret"}
-		{component "turret"}
-	}
+	("vol_turret_part" name(turret1))
+	("vol_turret_part" name(turret2))
+	("vol_turret_part" name(mantlet))
 
 	("armor_medium_advanced" turret(64 64 64 25) body(64 38 38 22) body2(51 38 38 22) body3(51 38 38 22))
-	("armor_engine"  t(40 38 38 22))		
+	("armor_engine"  t(40 38 38 22))
 	("armor_mantlet" t(89))
 	("us_5x_sight")
 
@@ -45,7 +37,7 @@
 	{component "shieldr1" {tags "shield"}}
 	{component "shieldl2" {tags "shield"}}
 	{component "shieldr2" {tags "shield"}}
-	
+
 	("crew_4_human")
 
 	("gunner_visible")
@@ -91,7 +83,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "76mm_m1a2_fury" filling "ammo bullet76 us apcbc" 1}	
+			{weapon "76mm_m1a2_fury" filling "ammo bullet76 us apcbc" 1}
 			("abm_stabilized")
 		}
 		{place "gun1_2"
@@ -137,23 +129,23 @@
 			{TurnTime   13.6}
 			{TurnStart  1.6}
 			{TurnRadius 8}
-    		{TurnStop   0.8}
+			{TurnStop   0.8}
 			{BrakeTime  1.5}
 			{StopTime   2.5}
 			{Gears   0.21 0.31 0.41 1}
 			{RearGears  0.27}
 		}
 		{FuelBag
-			{volume 660 }	
-			{rate	35 }   
+			{volume 660 }
+			{rate	35 }
 			{remain 660 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  33}
-        	{Slow  33}
-    	}
-	{DisableMoveWhileFiring}
+			{Normal  33}
+			{Slow  33}
+		}
+		{DisableMoveWhileFiring}
 	}
 	{bone "turret_mgun"
 		{limits -15 15}

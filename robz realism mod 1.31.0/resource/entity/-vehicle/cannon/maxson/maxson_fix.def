@@ -2,8 +2,8 @@
 	(include "/properties/cannon.ext")
 	{props "vehicle" "cannon" "cannon_small" "flak" "turret_rotator" "vision_cannon_low" "medium_weapons" "switch_mgun"}
 	{collider "cannon_small"}
-    {targetSelector "cannon_bullet"}
-	
+	{targetSelector "cannon_bullet"}
+
 	; --- Godny hitbox armor (ported from GodnyMod: maxson_fix.def) ---
 	{Volume "body"
 		{tags "body"}
@@ -53,7 +53,7 @@
 		{Box
 			{item "ammo hmgun inc" 2500}
 		}
-	}	
+	}
 	{Weaponry
 
 		{place "gun"
@@ -61,7 +61,7 @@
 			{Barrels 4}
 		}
 	}
-	
+
 	{mass 500}
 	{Extension "maxson_fix.mdl"}
 	(include "/properties/selection/cannon.inc"  scale(0.7))

@@ -1,33 +1,22 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.0))
 	{collider "tank.light"}
 	;{props "light" "zenite" "turret_rotator" "flak" "vision_vehicle_medium" "muzzle_minimum" }
-        {props "medium" "zenite" "turret_rotator" "flak" "opened" "vision_vehicle_high" "muzzle_zenite"}
+	{props "medium" "zenite" "turret_rotator" "flak" "opened" "vision_vehicle_high" "muzzle_zenite"}
 	{patherId "tank.light"}
 	;{targetClass "light_tank" "bullet"}
 	;{targetSelector "tank_aa"}
-	
+
 	{extender "enumerator"
 		{digit_folder "ger"}
 	}
-	
-	{Volume "body1"
-		{tags "body"}
-		{component "body"}
-	}
-	{Volume "body2"
-		{tags "body"}
-		{component "body"}
-	}
-	{Volume "body3"
-		{tags "body"}
-		{component "body"}
-	}
-	{Volume "body4"
-		{tags "body"}
-		{component "body"}
-	}
+
+	("vol_body_part" name(body1))
+	("vol_body_part" name(body2))
+	("vol_body_part" name(body3))
+	("vol_body_part" name(body4))
 	{Volume "turret1"
 		{tags "turret"}
 		{thickness 28}
@@ -70,11 +59,11 @@
 	}
 	("armor_light" turret(28) body(20 16 14 8))
 	("armor_engine"  t(16))
-		
-	
+
+
 	{boarder
 		{anm "driver"
-			{forward	{begin	"board_pz4_driver"} {end "seat_sd222_gunner2"} {base "open_driver"}}
+			{forward	{begin	"board_pz4_driver"} {end "seat_driver_car"} {base "open_driver"}}
 			{reverse 	{end	"board_pz4_driver" -1} {base "open_driver" -1}}
 		}
 		{anm "gunner"
@@ -94,27 +83,12 @@
 			{reverse 	{end	"emit_tank_2_hold"}}
 		}
 	}
-	
-	(define "crew_human"
-		{placer
-			{place "%place"
-				{group "crew"}
-				{linkbone "%place"}
-				{turnoff {sensor} {shadow}}
-				{visor "main"}
-			}
-		}
-		{boarder
-			{door "%door1"}
-			{door "%door2"}
-			{link "%door1" "%place" {anm "%place"} {forward putoff} {reverse puton}}
-			{link "%door2" "%place" {anm "%place"} {forward putoff} {reverse puton}}
-		}
-	)
-	("crew_human" place(gunner)	    door1(emit1) door2(emit2))
-	("crew_human" place(charger)	door1(emit1) door2(emit2))
-	("crew_human" place(gunner1)	door1(emit1) door2(emit2))
-	("crew_human" place(commander)	door1(emit1) door2(emit2))
+
+	(include "/properties/robz/crew.inc")
+	("crew_human_visor_main" place(gunner)	    door1(emit1) door2(emit2))
+	("crew_human_visor_main" place(charger)	door1(emit1) door2(emit2))
+	("crew_human_visor_main" place(gunner1)	door1(emit1) door2(emit2))
+	("crew_human_visor_main" place(commander)	door1(emit1) door2(emit2))
 	{placer
 		{place "driver" {group "crew"} {visor "driver"}}
 	}
@@ -125,12 +99,12 @@
 	{placer
 		{place "gunner" {openForCrush 0}}
 	}
-	
+
 	{extender "inventory"
 		{box
 			{item "bullet40_hun zenite" 80}
 			{item "bullet40_hun zenite fg" 80}
-                        ;{item "bullet40_hun zenite heat" 12}
+		;{item "bullet40_hun zenite heat" 12}
 
 		}
 	}
@@ -140,7 +114,7 @@
 			("abm_zenite")
 		}
 	}
-	
+
 	{mass 22000}
 	{Chassis
 		("tank_trace" fx("tracks_mid") step(0.52) len(0.21))
@@ -149,34 +123,34 @@
 			{maxSpeedAtMaxTurn 4}
 			{StartTime	  40}
 			{TurnTime  	  19}
-    		{TurnStart  1.4} 
-    		{BrakeTime    1} 
-    		{StopTime     2} 
-    		{TurnRadius   8} 
-    		{TurnStop   0.8}
-     		{Gears  0.1 0.2 0.3 1}
-    		{RearGears 0.28}
+			{TurnStart  1.4}
+			{BrakeTime    1}
+			{StopTime     2}
+			{TurnRadius   8}
+			{TurnStop   0.8}
+			{Gears  0.1 0.2 0.3 1}
+			{RearGears 0.28}
 		}
 		{FuelBag
-			{volume 470 }	
-			{rate	35 }   
+			{volume 470 }
+			{rate	35 }
 			{remain 470 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  28}
-        	{Slow  28}
-    	}
+			{Normal  28}
+			{Slow  28}
+		}
 	}
 
 	{Extension "nimrod.mdl"}
-	  
+
 	{bone "turret"
 		{speed 0.005}
 	}
 	{bone "gun_rot"
 		{speed 0.003}
 	}
-	;("turret_speed_zenite")
+;("turret_speed_zenite")
 
 }

@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-reg2-rfl"}
+	{portrait "ger_soldier2"}
+	{icon "rifleman"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{head helmet_ger_m40}
+	}
+	{perks
+		("breed_body" health(150%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.75) vehicle(1) cannon(0.8))
+		("breed_skills" pistol(4) smg(3) mgun(2) rifle(4) rocket(2) melee(4))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_mauzer")
+		{item "ammo mg_mauser drum" 50}
+		{item "bandage" 3}
+		("frag_m24_x2")
+		{item "sandbag_kit"}
+		("at_grenade_m24x5_xm1_2")
+		{item "panzerfaust_60 weapon" 0 1 filled}
+		{in_hands 0}
+	}
+}

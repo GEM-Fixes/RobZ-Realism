@@ -1,16 +1,17 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.2))
 	{props "medium" "-turret" "opened" "vision_vehicle_medium" "muzzle_large_nodust" "gun_mode_change_art"}
 
-	{extender "enumerator"}	
-	
+	{extender "enumerator"}
+
 	("armor_spa_light" armor(25 25 7 8))
 	("armor_engine"  t(25 25 17 18))
 	("shield" args 10)
 
 	{extender "shield"
-			{on}
+		{on}
 	}
 	{component "shield"}
 
@@ -36,7 +37,7 @@
 	("crew_human"		place(driver) door1(emit1) door2(emit2) visor(driver))
 	("crew_human_visible_anm"	place(commander) door1(emit1) door2(emit2) visor(main) anm_left(left) anm_right(right))
 	("crew_human_visible_anm"	place(gunner) door1(emit1) door2(emit2) visor(main) anm_left(left) anm_right(right))
-	{placer 
+	{placer
 		{place "commander" {openForCrush 0}}
 		{place "gunner" {openForCrush 0}}
 	}
@@ -54,30 +55,30 @@
 	("seat_human" place(seat6) bone(seat06) door(emit6)  animation(armor))
 
 	{extender "inventory"
-			{box
-				{item "ammo bullet105 jap fg" 30}
-				{item "ammo bullet105 jap heat" 4}
-			}
+		{box
+			{item "ammo bullet105 jap fg" 30}
+			{item "ammo bullet105 jap heat" 4}
 		}
-		{Weaponry
+	}
+	{Weaponry
 		("restore_ik_time")
-			{place "gun"
-				{RestoreIKAfterAim}
-				{weapon "105mm_type91" filling "ammo bullet105 jap fg" 4}
-				{charger "commander"}
-				{StationaryFiring}
-				("abm_howitzer")
-			}
-				{place "gun1_2"
-				{type "gun_change_direct"}
-				{weapon "105mm_type91_2"}
-				{basic}
-				{rotate}
-				{charger "gunner"}
-				("abm_direct_how")
-			}
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "105mm_type91" filling "ammo bullet105 jap fg" 4}
+			{charger "commander"}
+			{StationaryFiring}
+			("abm_howitzer")
 		}
-	
+		{place "gun1_2"
+			{type "gun_change_direct"}
+			{weapon "105mm_type91_2"}
+			{basic}
+			{rotate}
+			{charger "gunner"}
+			("abm_direct_how")
+		}
+	}
+
 
 	{mass 16300}
 
@@ -88,35 +89,35 @@
 			{maxSpeedAtMaxTurn 6}
 			{StartTime	 26}
 			{TurnTime	16}
-			{TurnStart  1.5} 
-    		        {BrakeTime  1.5}
-     		        {StopTime   2.5} 
-    		        {TurnRadius 9} 
-    		        {TurnStop   0.7} 
-    		        {Gears      0.1 0.2 0.3 1.0}
-    		        {RearGears  0.2}
+			{TurnStart  1.5}
+			{BrakeTime  1.5}
+			{StopTime   2.5}
+			{TurnRadius 9}
+			{TurnStop   0.7}
+			{Gears      0.1 0.2 0.3 1.0}
+			{RearGears  0.2}
 		}
 		{speed
-        	{Normal  26}
-        	{Slow  26}
-    	}
+			{Normal  26}
+			{Slow  26}
+		}
 		{FuelBag
-			{volume 350 }	
-			{rate	 15 }   
+			{volume 350 }
+			{rate	 15 }
 			{remain 350 }
 			{fuel "fuel"}
 		}
 		{DisableMoveWhileFiring}
 	}
 	{Extension "ho-ni2.mdl"}
-      	
+
 	; --- Godny hitbox armor (ported from GodnyMod: ho-ni2.def) ---
 	{Volume "body01"	;нижн€€ часть корпуса
 		{component "body"}
 		{tags "body"}
 		{able {holed}}
 		{thickness 25	;нижн€€ боковина 25мм
-		;	{front	25}
+			;	{front	25}
 			{rear	20}
 			{top	0.1}	;внутренн€€ стенка
 			{bottom	10}
@@ -128,7 +129,7 @@
 		{tags "body"}
 		{able {holed}}
 		{thickness 25	;верхн€€ боковина 25мм
-		;	{front	25}
+			;	{front	25}
 			{rear	0.1}	;внутренн€€ стенка
 			{top	12}
 			{bottom	10}
@@ -151,7 +152,7 @@
 		{component "body"}
 		{tags "body"}
 		{thickness 25
-		;	{front	25}
+			;	{front	25}
 			{rear	0.1}	;внутренн€€ стенка
 			{top	12}
 			{bottom	10}
@@ -177,10 +178,7 @@
 			{bottom	10}
 		}
 	}
-	{Volume "hole_bod"
-		{able clear {hole}}
-		{component "body"}
-	}
+	("vol_body_hole_only" name(hole_bod))
 	{Volume "gun01"	;лафет
 		{tags "gun"}
 		{component "gun"}
@@ -194,10 +192,7 @@
 		{component "shield"}
 	}
 	; --- end Godny hitbox armor ---
-	{Volume "body07"
-		{tags "body"}
-		{component "body"}
-	}
+	("vol_body_part" name(body07))
 	{Volume "engine01"
 		{tags "engine"}
 		{component "engine"}
@@ -230,12 +225,12 @@
 	}
 
 	{bone "turret"
-	    {limits -5 50}
-	    {speed 0.001}
+		{limits -5 50}
+		{speed 0.001}
 	}
 	{bone "gun_rot"
-	    {limits -15 15}
-	    {speed 0.001}
+		{limits -15 15}
+		{speed 0.001}
 	}
 	(mod "mp"
 		{brain

@@ -20,7 +20,7 @@
 			{forward	{end "pose_m42_gunlayer" 10}}
 		}
 	}
-	
+
 	{extender "cannon"
 		{animation
 			{aim	"cannon_flak38-1_gunlayer" ""}
@@ -42,7 +42,7 @@
 			{weapon "20mm_flak38" filling "bullet20 ger zenite ap" 30}
 			("abm_zenite")
 		}
-	}  	
+	}
 
 	{mass 1000}
 	{Extension "2cm_flak38_fix.mdl"}

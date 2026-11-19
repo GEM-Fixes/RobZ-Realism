@@ -4,7 +4,7 @@
 	{fillingVisible "rocket"}
 	{foresight "foresight1"}
 	{range 265 265}
-	
+
 	{fireSound "reactive/katyusha_burst"}
 	{spreading
 		{SpreadRadius 14.0}

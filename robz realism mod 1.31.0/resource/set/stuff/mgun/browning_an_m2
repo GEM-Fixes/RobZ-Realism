@@ -28,7 +28,7 @@
 	{parameters "inc"
 		{projectileDamageTable {0 23} {62.5 16} {125 10} {187.5 6} {250 5}}
 	}
-	
+
 	("accuracy_dshk")
 	("speed" s(856))
 	{Spreading 1

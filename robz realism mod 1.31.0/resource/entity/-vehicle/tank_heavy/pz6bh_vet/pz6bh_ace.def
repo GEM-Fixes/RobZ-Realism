@@ -1,27 +1,19 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{collider "tank.heavy"}
 	{props "heavy" "turret_rotator" "vision_vehicle_maximum" "muzzle_large_sides" "pz6bh" "ace_camo"}
-	
+
 	{extender "enumerator"
 		{digit_folder "ger"}
 	}
-	
-	{volume "body1"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body2"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body3"
-		{tags "body"}
-		{component "body"}
-	}
 
-	("armor_heavy_advanced" turret(185 80 80 40) body(150 80 80 40) body2(150 80 80 40) body3(100 80 80 40))
+	("vol_body_part_lower" name(body1))
+	("vol_body_part_lower" name(body2))
+	("vol_body_part_lower" name(body3))
+
+	("armor_heavy_advanced" turret(185 80 80 40) body_mm(150 80 80 40) body2(150 80 80 40) body3(100 80 80 40))
 	("armor_mantlet" t(150))
 	("armor_engine"  t(40 80 80 40))
 	("ger_2-5x_sight")
@@ -92,7 +84,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "88mm_kwk43_ace" filling "ammo bullet88 gerl apcbc" 1}	
+			{weapon "88mm_kwk43_ace" filling "ammo bullet88 gerl apcbc" 1}
 			("abm_ace")
 		}
 		{place "mgun"
@@ -128,13 +120,13 @@
 			{maxSpeedAtMaxTurn 2.5}
 			{StartTime	56.25}
 			{TurnTime	28.0}
-			{TurnStart  2} 
-    			{BrakeTime  3.0}
-     			{StopTime   4.0}
-    			{TurnRadius 11} 
-    			{TurnStop   1}
+			{TurnStart  2}
+			{BrakeTime  3.0}
+			{StopTime   4.0}
+			{TurnRadius 11}
+			{TurnStop   1}
 			{Gears      0.16 0.24 0.34 1.0}
-    			{RearGears  0.1 0.2}
+			{RearGears  0.1 0.2}
 		}
 		{FuelBag
 			{volume 860 }
@@ -143,9 +135,9 @@
 			{fuel "fuel"}
 		}
 		{speed
-        		{Normal  24}
-        		{Slow  24}
-    		}
+			{Normal  24}
+			{Slow  24}
+		}
 	}
 	{texmod "ace"}
 	{Extension "pz6bh_vet.mdl"}

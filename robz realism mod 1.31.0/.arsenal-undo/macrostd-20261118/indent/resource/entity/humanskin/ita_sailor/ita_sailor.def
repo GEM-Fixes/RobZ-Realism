@@ -1,0 +1,4 @@
+{game_entity
+	{Extension "ita_sailor.mdl"}
+        	{tag "ita sailor"}
+}

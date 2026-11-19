@@ -7,10 +7,10 @@
 	{PatherID "cannon.large"}
 
 	("armor_heavy")
-	{placer	
+	{placer
 		{place "gunner" {visor "main"} {useVision 0}}
 		{place "commander" {visor "main"} {useVision 0}}
-	}	
+	}
 	{Volume "body"
 		{thickness 10}
 		{tags "body"}
@@ -63,7 +63,7 @@
 	("wheel" args "wheelright2")
 	("wheel" args "wheelleft1")
 	("wheel" args "wheelleft2")
-	("ger_5x8_sight")
+	("ger_5x8_sight_no_visor1")
 
 	("crew_wheeled_gun")
 	{boarder
@@ -88,11 +88,11 @@
 	}
 	{Extension "pak44.mdl"}
 	{extender "inventory"
-		{box	
-           	{item "ammo bullet128 ger apcbc"}
+		{box
 			{item "ammo bullet128 ger apcbc"}
 			{item "ammo bullet128 ger apcbc"}
-            {item "ammo bullet128 ger fg"}
+			{item "ammo bullet128 ger apcbc"}
+			{item "ammo bullet128 ger fg"}
 			{item "ammo bullet128 ger fg"}
 			{item "ammo bullet128 ger fg"}
 			{item "ammo bullet128 ger fg"}
@@ -105,7 +105,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "128mm_pak44" filling "ammo bullet128 ger apcbc"}	
+			{weapon "128mm_pak44" filling "ammo bullet128 ger apcbc"}
 			("abm_field_gun")
 		}
 		{place "gun1_2"
@@ -117,12 +117,12 @@
 			{StationaryFiring}
 			("abm_howitzer")
 		}
-	}  	
+	}
 
 	{extender "cannon"
 		{animation
 			{aim "cannon_m8_gunlayer" "Cannon_61K_gunlayer_left"}
-			
+
 			{move "cannon_pak40_pusher_left" "cannon_pak40_pusher_right"}
 			;{reload  "" "cannon_flak38_charger_left"}
 			{switch "close"}
@@ -143,5 +143,5 @@
 	{bone "gun_rot"
 		{speed 0.0005}
 	}
-	
+
 }

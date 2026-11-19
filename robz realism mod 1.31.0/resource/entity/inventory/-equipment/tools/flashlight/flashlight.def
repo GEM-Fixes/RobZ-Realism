@@ -6,7 +6,7 @@
 	{extender "stuff"
 		{item "flashlight"}
 	}
-        	{extender "light"
+	{extender "light"
 		{lamp "2"}
 		{lightfx "light_boat"}
 	}

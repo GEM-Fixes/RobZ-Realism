@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.2))
@@ -7,71 +8,31 @@
 	{targetClass "light_tank"}
 	{patherId "tank.light"}
 
-	{extender "enumerator"}	
-	
-	{volume "sticky"
-		{tags "grenade_fg_target"}
-		{able clear {contact} {touch}}
-		{component "sticky_body"}
-	}
-	{volume "body1"
-		{component "body"}
-		{tags "body"}
-		{thickness 15}
-	}
-	{volume "body2"
-		{component "body"}
-		{tags "body"}
-		{thickness 15}
-	}
-	{volume "body3"
-		{component "body"}
-		{tags "body"}
-		{thickness 15}
-	}
-	{volume "body4"
-		{component "body"}
-		{tags "body"}
-		{thickness 15}
-	}
+	{extender "enumerator"}
 
-	{volume "body5"
-		{component "body"}
-		{tags "body"}
-		{thickness 15}
-	}
-	{volume "body6"
-		{component "body"}
-		{tags "body"}
-		{thickness 15}
-	}
-	{volume "body7"
-		{component "body"}
-		{tags "body"}
-		{thickness 15}
-	}
-	{volume "body8"
-		{component "body"}
-		{tags "body"}
-		{thickness 15}
-	}
-	{volume "body9"
-		{component "body"}
-		{tags "body"}
-		{thickness 15}
-	}
+	("vol_sticky_grenade_target" name(sticky))
+	("vol_body_plate_component_first" name(body1) mm(15))
+	("vol_body_plate_component_first" name(body2) mm(15))
+	("vol_body_plate_component_first" name(body3) mm(15))
+	("vol_body_plate_component_first" name(body4) mm(15))
+
+	("vol_body_plate_component_first" name(body5) mm(15))
+	("vol_body_plate_component_first" name(body6) mm(15))
+	("vol_body_plate_component_first" name(body7) mm(15))
+	("vol_body_plate_component_first" name(body8) mm(15))
+	("vol_body_plate_component_first" name(body9) mm(15))
 
 	("armor_spa_light" armor(30 15 15 7))
 	("armor_engine"  t(10 15 15 7))
 	("armor_mantlet" t(10))
 	("rus_2-5x_sight")
-	
+
 	{Volume "mantlet"
 		{tags "gun"}
 		{component "gun"}
 		{thickness 10}
 	}
-	
+
 	{boarder
 		{anm "driver"
 			{forward	{begin	"board_su76"}}
@@ -95,22 +56,7 @@
 		}
 	}
 
-	(define "crew_human"
-		{placer
-			{place "%place"
-				{group "crew"}
-				{linkbone "%place"}
-				{turnoff {sensor} {shadow}}
-				{visor "main"}
-			}
-		}
-		{boarder
-			{door "%door1"}
-			{door "%door2"}
-			{link "%door1" "%place" {anm "%place"} {forward putoff} {reverse puton}}
-			{link "%door2" "%place" {anm "%place"} {forward putoff} {reverse puton}}
-		}
-	)
+	(include "/properties/robz/crew.inc")
 
 	{placer
 		{place "driver" {group "crew"} {visor "driver"}}
@@ -124,29 +70,29 @@
 		{link "emit2" "commander" {anm "commander"} {forward putoff} {reverse puton}}
 	}
 
-	("crew_human" place(gunner) door1(emit1) door2(emit2) visor(main))
-	("crew_human" place(charger)	door1(emit1) door2(emit2))
-	("crew_human" place(commander)	door1(emit1) door2(emit2))
+	("crew_human_visor_main" place(gunner) door1(emit1) door2(emit2) visor(main))
+	("crew_human_visor_main" place(charger)	door1(emit1) door2(emit2))
+	("crew_human_visor_main" place(commander)	door1(emit1) door2(emit2))
 
 	{placer
 		{place "commander" {group "crew"} {visor "main"}}
 	}
-	
+
 	{extender "inventory"
 		{box
-            {item "bullet76 rus br350b" 15}
-            {item "bullet76 rus fg" 25}
+			{item "bullet76 rus br350b" 15}
+			{item "bullet76 rus fg" 25}
 			{item "bullet76 rus wp" 6}
-            {item "bullet76 rus apcr" 8}
-            {item "bullet76 rus heat" 5}
+			{item "bullet76 rus apcr" 8}
+			{item "bullet76 rus heat" 5}
 		}
 	}
 	{Weaponry
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "76mm_zis3" filling "ammo bullet76 rus br350b" 1}        
-			("abm_low")
+			{weapon "76mm_zis3" filling "ammo bullet76 rus br350b" 1}
+			("abm_low_v4")
 		}
 		{place "gun1_2"
 			{type "gun_change_arty"}
@@ -161,29 +107,29 @@
 	{Chassis
 		("tank_trace" fx("tracks_sm2") step(0.15) len(0.3))
 		{Locomotion ("locomotion")
-				{maxspeed   36}
-				{maxSpeedAtMaxTurn 6}
-				{StartTime  25}
-				{TurnTime   15}
-				{TurnStart  1.1}			
-				{TurnRadius 7} 
-    			{TurnStop   0.6}
-				{BrakeTime  1}
-				{StopTime   2.5}
-				{Gears   0.1 0.2 0.3 1}
-				{RearGears  0.25}	
+			{maxspeed   36}
+			{maxSpeedAtMaxTurn 6}
+			{StartTime  25}
+			{TurnTime   15}
+			{TurnStart  1.1}
+			{TurnRadius 7}
+			{TurnStop   0.6}
+			{BrakeTime  1}
+			{StopTime   2.5}
+			{Gears   0.1 0.2 0.3 1}
+			{RearGears  0.25}
 		}
 		{FuelBag
-			{volume 420 }	
-			{rate	 13 }   
+			{volume 420 }
+			{rate	 13 }
 			{remain 420 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  36}
-        	{Slow  36}
-    	}
-	{DisableMoveWhileFiring}
+			{Normal  36}
+			{Slow  36}
+		}
+		{DisableMoveWhileFiring}
 	}
 
 	{Extension "su76m.mdl"}

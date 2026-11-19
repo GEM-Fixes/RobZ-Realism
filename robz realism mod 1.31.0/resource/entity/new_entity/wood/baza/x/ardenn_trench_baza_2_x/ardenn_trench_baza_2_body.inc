@@ -1,0 +1,5 @@
+(include "/properties/trench_new.inc")
+{Extension "ardenn_trench_baza_x.mdl"}
+{props "wood"}
+{Extender "land_patch"
+}

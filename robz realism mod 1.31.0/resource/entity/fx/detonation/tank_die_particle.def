@@ -51,7 +51,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage initial 
+			{stage initial
 				{sprite "$/particle/pieces2"
 					{turn 1
 						{npower
@@ -81,7 +81,7 @@
 					}
 				}
 			}
-			{stage collided dying 
+			{stage collided dying
 				{flags killparticle ground }
 				{sprite "$/particle/pieces"
 					{visibility 1
@@ -143,7 +143,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/oskolki"
 					{scale 0.15 0.05}
 				}

@@ -2,17 +2,17 @@
 	{rechargeTime 4.9}
 	("accuracy_high_220m_vet")
 	{range 220 220}
-	("damage_215" a(135) b(123) c(109) d(97) e(86) range(220))
+	("damage_215" at20(135) at100(123) at170(109) at215(97) at250(86) max(220))
 	{parameters "apc"
-		("damage_215" a(135) b(123) c(109) d(97) e(86) range(220))
+		("damage_215" at20(135) at100(123) at170(109) at215(97) at250(86) max(220))
 	}
 	{parameters "heatb"
-		("damage_heat" a(87) range(220))
+		("damage_heat" damage(87) max(220))
 	}
 	{parameters "heatc"
-		("damage_heat" a(100) range(220))
+		("damage_heat" damage(100) max(220))
 	}
 	{parameters "apcr"
-        	("damage_215" a(176) b(154) c(130) d(109) e(92) range(220))
+		("damage_215" at20(176) at100(154) at170(130) at215(109) at250(92) max(220))
 	}
 }

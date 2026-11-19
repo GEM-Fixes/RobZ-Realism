@@ -1,0 +1,28 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-commando"}
+	{portrait "eng_elite1"}
+	{nationality eng}
+	{icon "elite"}
+	{icon_priority 3}
+	{armors
+		{head beret_eng_comm}
+	}
+	{perks
+		("breed_body" health(350%) regen_health(100%) stamina(150%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.9) vehicle(1.0) cannon(1.0))
+		("breed_skills" pistol(7) smg(7) mgun(7) rifle(7) rocket(7) melee(7))
+	}
+	("breed_vet" table(elite))
+	{inventory
+		{item "sten_v" filled}
+		{item "ammo sten_mag" 128}
+		{item "bandage" 5}
+		{item "grenade mk1" 2}
+		{item "grenade n73at" 1}
+		{item "smoke grenade" 1}
+		{item "n77_smoke grenade" 1}
+		;{item "mine antitank" 1}
+		{in_hands 0}
+	}
+}

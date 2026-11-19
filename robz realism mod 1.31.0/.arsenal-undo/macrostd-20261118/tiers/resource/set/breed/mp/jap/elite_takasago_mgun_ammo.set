@@ -1,0 +1,29 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "jap_army_sturmovik"}
+	{portrait "jap_elite1"}
+	{nationality jap}
+	{icon "elite2"}
+	{icon_priority 0}
+	{armors
+		{head "jap_army_helmet2_net"}
+	}
+	{perks
+		("breed_body" health(350%) regen_health(100%) stamina(225%) regen_stamina(125%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(1.0) vehicle(1.0) cannon(1.0))
+		{"stealth"}
+		("breed_skills" pistol(6) smg(4) mgun(4) rifle(6) rocket(4) melee(6))
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("rifle_type99rifle_bayonet")
+		{item "ammo type99_mag" 120}
+		{item "bandage" 5}
+		("frag_type97_x3")
+		("at_grenade_type3at_a_x1")
+		("smoke_x1")
+		("explosive_dynamite_x1")
+		{item "knife_japan" 1}
+		{in_hands 0}
+	}
+}

@@ -25,7 +25,7 @@
 		{able {holed}}
 		{thickness 30
 			{front	50}
-		;	{rear	30}
+			;	{rear	30}
 			{top	0.1}	;внутренняя стенка
 			{bottom	0.1}	;внутренняя стенка
 		}
@@ -35,7 +35,7 @@
 		{component "body"}
 		{thickness 30
 			{front	50}
-		;	{rear	30}
+			;	{rear	30}
 			{top	10}
 			{bottom	0.1}	;внутренняя стенка
 		}
@@ -56,7 +56,7 @@
 		{thickness 30
 			{front	80}	;50+30
 			{rear	0.1}	;внутрення стенка
-		;	{top	30}	;гласис консоли
+			;	{top	30}	;гласис консоли
 			{bottom	0.1}	;внутрення стенка
 		}
 	}
@@ -66,7 +66,7 @@
 		{thickness 30
 			{front	80}	;50+30
 			{rear	0.1}	;внутрення стенка
-		;	{top	30}	;гласис консоли
+			;	{top	30}	;гласис консоли
 			{bottom	0.1}	;внутрення стенка
 		}
 	}
@@ -74,8 +74,8 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 30
-		;	{front	30}
-		;	{rear	30}
+			;	{front	30}
+			;	{rear	30}
 			{top	0.1}	;внутренняя стенка
 			{bottom	15}
 			{left	0.1}	;внутрення стенка
@@ -85,8 +85,8 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 30
-		;	{front	30}
-		;	{rear	30}
+			;	{front	30}
+			;	{rear	30}
 			{top	0.1}	;внутренняя стенка
 			{bottom	15}
 			{right	0.1}	;внутрення стенка
@@ -111,13 +111,13 @@
 	{Volume "mantlet1"
 		{able {holed}}	;дырка от брони тормозных
 		{thickness 50
-		;	{front	50}
+			;	{front	50}
 			{rear	1}
 		}
 	}
 	{volume "mantlet"
 		{thickness 70
-		;	{front	70}
+			;	{front	70}
 			{rear	15}	;орудие дает небольшую броню
 		}
 	}
@@ -132,12 +132,12 @@
 	("armor_engine"  t(30 30 30 17))
 	("armor_mantlet" t(80))
 	("ger_5x8_sight")
-	
+
 	("shield" args 8)
 	{extender "shield"
 		{on}
 	}
-	
+
 	{component "shieldl1" {tags "shield"}}
 	{component "shieldl2" {tags "shield"}}
 	{component "shieldl3" {tags "shield"}}
@@ -151,13 +151,13 @@
 
 	("crew_3_human")
 
-;	("gunner_visible")
+	;	("gunner_visible")
 	("crew_human" place(gunner3) door1(emit1) door2(emit2) visor(top))
 	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
 	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
 	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
 	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
-	
+
 	{sensor
 		{visor "top"
 			{vision "vehicle_top_turret"}
@@ -199,12 +199,12 @@
 			{item "ammo mg_mauser belt" 1200}
 		}
 	}
-	
+
 	{Weaponry
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "75mm_stuk40_vet" filling "ammo bullet75 ger apcbc" 1}	
+			{weapon "75mm_stuk40_vet" filling "ammo bullet75 ger apcbc" 1}
 			("abm_veteran")
 		}
 		{place "mgun"
@@ -232,24 +232,24 @@
 			{maxSpeedAtMaxTurn 6}
 			{StartTime 	 29.75}
 			{TurnTime  	 13.5}
-    		{TurnStart 1.4}
-     		{BrakeTime   1} 
-    		{StopTime    2}
-     		{TurnRadius  8} 
-    		{TurnStop   0.7}
-     		{Gears  0.13 0.23 0.33 1}
-     		{RearGears 0.28}
+			{TurnStart 1.4}
+			{BrakeTime   1}
+			{StopTime    2}
+			{TurnRadius  8}
+			{TurnStop   0.7}
+			{Gears  0.13 0.23 0.33 1}
+			{RearGears 0.28}
 		}
 		{FuelBag
-			{volume 310 }	
-			{rate	24 }   
+			{volume 310 }
+			{rate	24 }
 			{remain 310 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  30}
-        	{Slow  30}
-    	}
+			{Normal  30}
+			{Slow  30}
+		}
 	}
 
 	{Extension "stug3g.mdl"}
@@ -259,5 +259,5 @@
 	}
 	{bone "gun_rot"
 		{speed 0.0022}
-	}	
+	}
 }

@@ -17,7 +17,7 @@
 		}
 	}
 	{volume "turret"
-		{thickness 35 0.3 
+		{thickness 35 0.3
 			{front	35}
 		}
 	}

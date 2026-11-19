@@ -2,15 +2,7 @@
 
 (include "/properties/car_crew.ext")
 
-(define "crew_human"
-	{placer
-		{place "%place" {group "%group"} {linkbone "%bone"} {turnoff {sensor} {shadow}}}
-	}
-	{boarder
-		{door "%door"}
-		{link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
-	}
-)
+(include "/properties/robz/crew.inc")
 
 {sensor
 	{visor "gunner" {bone "visor1"}}
@@ -28,8 +20,8 @@
 ("board_animation" place(charger)	  board_begin(board_body) board_end(pose_pak40_charger))
 ("board_animation" place(gunner1)	  board_begin(board_body) board_end(seat_gunner_stand) base(gunner))
 
-("crew_human" place(driver)	door(emit1) bone(driver) animation(driver) 		group(crew))
-("crew_human" place(gunner)	door(emit3) bone(gunner) animation(gunner) 		group(crew))
-("crew_human" place(charger)	door(emit3) bone(charger) animation(charger) 		group(crew))
-("crew_human" place(commander)	door(emit2) bone(commander) animation(commander) 		group(crew))
-("crew_human" place(gunner1)	door(emit3) bone(gunner1) animation(gunner1) 		group(passengers))
+("crew_human_no_targetable" place(driver)	door(emit1) bone(driver) animation(driver) 		group(crew))
+("crew_human_no_targetable" place(gunner)	door(emit3) bone(gunner) animation(gunner) 		group(crew))
+("crew_human_no_targetable" place(charger)	door(emit3) bone(charger) animation(charger) 		group(crew))
+("crew_human_no_targetable" place(commander)	door(emit2) bone(commander) animation(commander) 		group(crew))
+("crew_human_no_targetable" place(gunner1)	door(emit3) bone(gunner1) animation(gunner1) 		group(passengers))

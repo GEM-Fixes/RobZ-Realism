@@ -3,7 +3,7 @@
 	{inventory
 		{size 5 2}
 		{weight 100}
-	}	
+	}
 	{mass 150}
 	{entity "sturmtiger_ammo"}
 	{view "sturmtiger_ammo"

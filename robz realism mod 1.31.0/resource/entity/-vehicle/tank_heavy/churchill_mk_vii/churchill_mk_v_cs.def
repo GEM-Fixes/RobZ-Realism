@@ -4,7 +4,7 @@
 		{box
 			{item "ammo bullet95 eng fg" 41}
 			{item "ammo bullet95 eng heat" 6}
-            		{item "ammo mg_mauser belt red" 3475}
+			{item "ammo mg_mauser belt red" 3475}
 			{item "besa" filled {user "mgun"}}
 		}
 	}
@@ -12,7 +12,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "95mm_oqf" filling "ammo bullet95 eng fg" 1}	
+			{weapon "95mm_oqf" filling "ammo bullet95 eng fg" 1}
 			("abm_high")
 		}
 		{place "mgun1"
@@ -32,7 +32,7 @@
 		}
 	}
 
-{Extension "churchill_mk_v_cs.mdl"}
+	{Extension "churchill_mk_v_cs.mdl"}
 	{bone "turret"
 		{speed 0.0025}
 	}

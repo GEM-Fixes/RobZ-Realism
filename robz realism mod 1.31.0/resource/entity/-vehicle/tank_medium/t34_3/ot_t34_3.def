@@ -1,18 +1,19 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{props "medium" "turret_rotator" "vision_vehicle_high" "muzzle_large"}
 	{tag "diesel_exhaust full_auto_mode"}
-	
+
 	{extender "enumerator"}
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: t34_3.def) ---
 	{volume "body1"	;нижн€€ часть корпуса
 		{component "body"}
 		{tags "body"}
 		{thickness 45	;нижний борт 45мм
-		;	{front	45}
-		;	{rear	45}
+			;	{front	45}
+			;	{rear	45}
 			{top	0.1}	;внутренн€€ стенка
 			{bottom	20}
 		}
@@ -22,7 +23,7 @@
 		{tags "body"}
 		{able {holed}}
 		{thickness 45
-		;	{front	45}
+			;	{front	45}
 			{rear	10}	;стенка мто
 			{top	20}
 			{bottom	20}
@@ -33,7 +34,7 @@
 		{component "body"}
 		{thickness 45
 			{front	10}	;стенка мто
-		;	{rear	45}
+			;	{rear	45}
 			{top	20}	;мто
 			{bottom	20}
 		}
@@ -42,7 +43,7 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 75
-		;	{front	75}
+			;	{front	75}
 			{rear	0.1}	;внутренн€€ стенка
 		}
 	}
@@ -62,23 +63,17 @@
 		{tags "turret"}
 		{component "turret"}
 		{thickness 75
-		;	{front	75}
-		;	{rear	75}
+			;	{front	75}
+			;	{rear	75}
 			{top	0.1}	;внутренн€€ стенка
 			{bottom	20}
 		}
 	}
-	{Volume "hole_bod"
-		{able clear {hole}}
-		{component "body"}
-	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "turret"}
-	}
+	("vol_body_hole_only" name(hole_bod))
+	("vol_turret_hole_only" name(hole_man))
 	{volume "mantlet"
 		{thickness 90
-		;	{front	90}
+			;	{front	90}
 			{rear	15}	;орудие дает небольшую броню
 		}
 	}
@@ -97,20 +92,14 @@
 	{Volume "Gun"
 		{thickness 30}
 	}
-	{volume "turret2"
-		{component "turret"}
-		{tags "turret"}
-	}
-	{volume "turret3"
-		{component "turret"}
-		{tags "turret"}
-	}
-	
-    ("armor_medium"  turret(90 75 75 20) body(45 45 45 20))
+	("vol_turret_part_component_first" name(turret2))
+	("vol_turret_part_component_first" name(turret3))
+
+	("armor_medium"  turret(90 75 75 20) body(45 45 45 20))
 	("armor_mantlet" t(90))
 	("armor_engine"  t(45 45 45 20))
 	("rus_4x_sight")
-	
+
 	("crew_4_human_extended")
 	{boarder
 		{anm "driver"
@@ -150,18 +139,18 @@
 
 	{extender "inventory"
 		{box
-          	{item "ammo bullet85 rus aphebc" 14}
-          	{item "ammo bullet85 rus fg" 36}
-          	{item "ammo bullet85 rus apcr" 5}
-          	{item "ammo dt29_mag" 1200}
-		{item "tank_balloon" filled}
+			{item "ammo bullet85 rus aphebc" 14}
+			{item "ammo bullet85 rus fg" 36}
+			{item "ammo bullet85 rus apcr" 5}
+			{item "ammo dt29_mag" 1200}
+			{item "tank_balloon" filled}
 		}
 	}
 	{Weaponry
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "85mm_zis53" filling "ammo bullet85 rus aphebc" 1}	
+			{weapon "85mm_zis53" filling "ammo bullet85 rus aphebc" 1}
 			("abm_medium")
 		}
 		{place "mgun1"
@@ -178,36 +167,36 @@
 			{weapon "dt_optic" filled}
 			{foresight "foresight5"}
 			("abm_mgun")
-            {basic}
+			{basic}
 		}
 	}
-	
+
 	{mass 32000}
 	{Chassis
-        ("tank_trace" fx("tracks_mid") step(0.52) len(0.28))
+		("tank_trace" fx("tracks_mid") step(0.52) len(0.28))
 		{Locomotion ("locomotion")
 			{maxspeed   34}
 			{maxSpeedAtMaxTurn 5}
 			{StartTime	       30}
 			{TurnTime	        15}
 			{TurnStart        1.5}
-    		{BrakeTime        4}
-     		{StopTime         1.5} 
-    		{TurnRadius         8} 
-    		{TurnStop         0.7} 
-    		{Gears      0.1 0.25 0.35 1.0}
-    		{RearGears       0.27}
+			{BrakeTime        4}
+			{StopTime         1.5}
+			{TurnRadius         8}
+			{TurnStop         0.7}
+			{Gears      0.1 0.25 0.35 1.0}
+			{RearGears       0.27}
 		}
 		{FuelBag
-			{volume 790 }	
-			{rate	24 }   
+			{volume 790 }
+			{rate	24 }
 			{remain 790 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  34}
-        	{Slow  34}
-    	}
+			{Normal  34}
+			{Slow  34}
+		}
 	}
 
 	{Extension "t34-85.mdl"}

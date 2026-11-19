@@ -1,35 +1,4 @@
+; same as the other 1 def here; body in m36b1_body.inc
 {game_entity
-	{Extension "m36b1_xx.mdl"}
-	{Volume "body1"
-	}
-	{Volume "body2"
-	}
-	{Volume "body3"
-	}
-	{Volume "engine"
-	}
-	{Volume "gun"
-	}
-	{Volume "mantlet"
-	}
-	{Volume "part1"
-	}
-	{Volume "part2"
-	}
-	{Volume "part3"
-	}
-	{Volume "part4"
-	}
-	{Volume "part5"
-	}
-	{Volume "trackleft"
-	}
-	{Volume "trackright"
-	}
-	{Volume "turret1"
-	}
-	{Volume "turret2"
-	}
-	{Volume "turret3"
-	}
+	(include "m36b1_body.inc")
 }

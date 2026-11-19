@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-sco-late-smg2"}
+	{portrait "rus_soldier5"}
+	{nationality rus}
+	{icon "stormtrooper"}
+	{icon_priority 1}
+	{armors
+		{head helmet_rus_para_goggles}
+	}
+	{perks
+		("body_elite")
+		("drive_regular")
+		("skills_elite_7")
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("smg_pps43_105")
+		{item "bandage" 5}
+		("frag_f1_x2")
+		{item "rpg43 grenade" 1}
+		{item "ru_roll"}
+		("smoke_x1")
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,12 @@
+{from "pattern gun"      ; 
+	{filling "bullet114_fin"}
+	{fireSound "gun/howitzer/105mm_m2a1"}
+	{reloadSound "tankgun_r04"}
+	("range_light_howitzer")
+	("caliber_medium")
+	{recoveryTime 12}
+	{rechargeTime 12}
+	("speed" s(370))
+	; anti-personel
+	{range 180 180}
+}

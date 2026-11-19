@@ -23,7 +23,7 @@
 			{damping 0.9}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4a"
 					{scale 1
 						{linear
@@ -127,7 +127,7 @@
 			{damping 0.9}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop_short"
 					{scale 1
 						{linear
@@ -181,7 +181,7 @@
 			{damping 0.95}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/explosion/ground_exp2a"
 					{scale 0.075 0.025}
 					{visibility 1
@@ -232,7 +232,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/smoke/smokesmal4"
 					{scale 0.1
 						{linear
@@ -287,7 +287,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{flags trace }
 				{sprite "$/flash/flash_g03"
 					{timer
@@ -361,7 +361,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_lightloop_short"
 					{timer
 						{mode play }

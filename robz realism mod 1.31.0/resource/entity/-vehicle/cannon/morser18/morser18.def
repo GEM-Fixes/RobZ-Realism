@@ -1,11 +1,12 @@
+(include "/properties/robz/volumes.inc")
 {entity
 	(include "/properties/cannon.ext")
-	
+
 	{props "vehicle" "cannon" "round_sandbag2" "vision_cannon_maximum" "muzzle_maximum" "gun_mode_change_art"}
 	{PatherID  "cannon.large"}
 	{collider "cannon_heavy"}
-	("armor_heavy")	
-	{placer	
+	("armor_heavy")
+	{placer
 		{place "gunner" {visor "main"} {useVision 0}}
 		{place "commander" {visor "main"} {useVision 0}}
 	}
@@ -14,52 +15,16 @@
 	("wheel" args "wheelright2")
 	("wheel" args "wheelleft2")
 
-	{Volume "body2"
-		{tags "body"}
-		{component "body"}
-		{thickness 10}
-	}
-	{Volume "body3"
-		{tags "body"}
-		{component "body"}
-		{thickness 10}
-	}
-	{Volume "body4"
-		{tags "body"}
-		{component "body"}
-		{thickness 10}
-	}
-	{Volume "body5"
-		{tags "body"}
-		{component "body"}
-		{thickness 10}
-	}
-	{Volume "body6"
-		{tags "body"}
-		{component "body"}
-		{thickness 10}
-	}
-	{Volume "body"
-		{tags "body"}
-		{component "body"}
-		{thickness 10}
-	}
-	{Volume "gun2"
-		{tags "gun"}
-		{component "gun"}
-	}
-	{Volume "gun_rot"
-		{tags "gun"}
-		{component "gun"}
-	}
-	{Volume "gun"
-		{tags "gun"}
-		{component "gun"}
-	}
-	{Volume "gunback"
-		{tags "gun"}
-		{component "gun"}
-	}
+	("vol_body_plate" name(body2) mm(10))
+	("vol_body_plate" name(body3) mm(10))
+	("vol_body_plate" name(body4) mm(10))
+	("vol_body_plate" name(body5) mm(10))
+	("vol_body_plate" name(body6) mm(10))
+	("vol_body_plate" name(body) mm(10))
+	("vol_gun_part" name(gun2))
+	("vol_gun_part" name(gun_rot))
+	("vol_gun_part" name(gun))
+	("vol_gun_part" name(gunback))
 
 	("crew_wheeled_gun")
 	{boarder
@@ -109,7 +74,7 @@
 	}
 
 	{mass 4000}
-	
+
 
 	{extender "cannon"
 		{animation
@@ -130,7 +95,7 @@
 		{Visor "commander"
 			{vision "cannon_crew"}
 			{bone "commander"}
-		}	
+		}
 	}
 	{Extension "morser.mdl"}
 	(include "/properties/selection/cannon.inc"  scale(0.7))

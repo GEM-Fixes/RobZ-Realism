@@ -6,7 +6,7 @@
 		{entity "flesh"}
 		{tag "flesh"}
 	}
-	
+
 	{group "dead" actor dead
 		{limit 1}
 		{remove instant}
@@ -18,18 +18,18 @@
 		{remove dissolve}
 		{DeadVehicles}
 	}
-    	{group "gore" gameentity
+	{group "gore" gameentity
 		{limit 20}
 		{remove dissolve}
 		{entity "flesh"}
 		{tag "flesh"}
 	}
-   	{group "gore2" gameentity
+	{group "gore2" gameentity
 		{limit 50}
 		{remove instant}
 		{entity "flesh"}
 		{tag "flesh"}
-	}	
+	}
 
 	{group "piece" gameentity
 		{limit 8}
@@ -94,7 +94,7 @@
 		{entity "trench_spade"}
 		{tag "trench_spade"}
 	}
-	
+
 	{group "equip" stuff
 		{limit 10}
 		{remove dissolve}
@@ -102,7 +102,7 @@
 		{tag "head"}
 		{tag "body"}
 	}
-	
+
 	{group "shellhole" gameentity
 		{limit 200}
 		{remove instant}

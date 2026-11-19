@@ -1,0 +1,105 @@
+(include "/properties/robz/volumes.inc")
+(include "/properties/armoredcar.ext")
+(include "/properties/selection/vehicle.inc"  scale(1.0))
+{Extension "sdkfz251_1.mdl"}
+{extension "crew.ext"}
+{props "vehicle" "armored_car" "tank" "turret" "wheeled" "explosion_throw_crew" "vision_vehicle_medium" "open_door2"}
+
+{extender "enumerator"
+	{digit_folder "ger2"}
+}
+("vol_body_plate_lower" name(body) mm(15))
+("vol_body_plate_lower" name(body2) mm(15))
+("vol_body_plate_lower" name(body3) mm(15))
+("vol_body_plate_lower" name(body4) mm(15))
+("vol_body_plate_lower" name(body5) mm(15))
+("vol_body_plate_lower" name(body6) mm(15))
+("vol_body_plate_lower" name(body7) mm(15))
+("vol_body_plate_lower" name(body8) mm(15))
+("vol_body_plate_lower" name(body9) mm(15))
+("vol_body_plate_lower" name(body10) mm(15))
+("vol_body_plate_lower" name(body11) mm(15))
+("vol_body_plate_lower" name(body12) mm(15))
+("vol_body_plate_lower" name(body13) mm(15))
+{volume "engine"
+	{tags "engine"}
+	{component "engine"}
+	{thickness 15}
+}
+("vol_body_plate" name(body_l) mm(10))
+("vol_body_plate" name(body_r) mm(10))
+("vol_body_plate" name(mgun_turret) mm(10))
+("vol_body_plate" name(shield) mm(15))
+{component "body"
+	{RepairTime 15}
+}
+{component "engine"
+	{RepairTime 20}
+}
+("armor_medium" args 1.0)
+
+{extender "inventory"
+	{weapon "mgun"
+		{mask "weapon mgun"}
+	}
+	{Box
+		{item "m24x5" "grenade" 10}
+		{item "m24" "grenade" 25}
+		{item "smoke" "grenade" 10}
+		{item "bandage" 10}
+		{item "dynamite"}
+		{item "mg34" filled {user "mgun"}}
+		{item "7x57" "ammo" 2500}
+	}
+}
+{Weaponry
+	{place "mgun"
+		{type "mgun_main"}
+		{LinkBone "mgun"}
+		{LinkAnimation "off"}
+		{foresight "foresight3"}
+		{charger "gunner"}
+		{basic}
+		("abm_mgun")
+	}
+	{place "mgun1"
+		{type "mgun_main"}
+		{weapon "mg34" filled}
+		{LinkBone "mgun1"}
+		{LinkAnimation "off"}
+		{charger "gunner1"}
+		{gunner "gunner1"}
+		{foresight "foresight4"}
+		{basic}
+		("abm_mgun")
+	}
+}
+
+("wheel" args "wheelright1")
+("wheel" args "wheelleft1")
+("tracks")
+
+{Chassis
+	{Locomotion ("locomotion")
+		{MaxSpeed	33}
+		{maxSpeedAtMaxTurn 16}
+		{StartTime 20}
+		{BrakeTime	1.5}
+		{StopTime	2.5}
+		{TurnRadius	8}
+	}
+	{FuelBag
+		{volume 160}
+		{rate	40}
+		{remain 160 }
+		{fuel "fuel"}
+	}
+	{speed
+		{Normal  12}
+		{Slow  20}
+	}
+	; left track must be first
+	("tank_trace" fx("tracks_mid") step(0.5) len(0.86) boneleft("FXtraceL2") boneright("FXtraceR2"))
+	("car_trace" fx("tracewheel02") step(0.09) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
+}
+{mass 8500}

@@ -1,0 +1,30 @@
+{from "pattern gun"		; "kugelblitz"
+	{filling "bullet30 ger zenite" 100}
+	{fireSound "gun/zenite/20mm_aa/"}
+	{reloadSound "flak38"}
+	{rechargeTime 10}
+	;("range_short")
+	{range 170 170}
+
+
+	("speed" s(860))
+	("caliber_minimum")
+	("recoveryTime" r(900))
+	{projectileDamage 50}
+	("damage_170" a(58) b(55) c(44) d(33) e(25) range(170))
+	{parameters "apcr"
+		("speed" s(940))
+		("damage_170" a(77) b(74) c(61) d(47) e(37) range(170))
+		{cursor "cannon_on_apcr"}
+		{cursorReloading "cannon_reload_apcr"}
+	}
+
+	{Automatic}
+	{burst
+		{short 2.5 1}
+		{long 7 2}
+	}
+	{RelaxationTime 0}
+
+	("accuracy_zenite_medium")
+}

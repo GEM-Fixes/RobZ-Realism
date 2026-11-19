@@ -6,27 +6,27 @@
 ;		noContactWith				tags
 ;		noContactsAtAll				1
 ;		colliderId					tag
-; in tags 
+; in tags
 ; 	tags are inherited
 ;	"clear" 	--> clear tags (must be 1st)
 ; 	"-xxx" 		--> remove tag
 ; 	"xxx" 		--> add tag
 ; 32 collider id limit
-; list of used colliderId's: 
+; list of used colliderId's:
 ; 	"nothing" "tree" "bush" "construction" "human" "particle" "particle.big" "flame" "stuff" "mine.ap" "mine.at"
 ; 	"car" "moto" "truck" "armored" "tank.light" "tank.medium" "tank.heavy" "cannon" "cannon_small" "sandbag"
 {colliders
 	;///////////////////////////// basic
-	
+
 	; default collider profile must be first
-	{"nothing" 						
+	{"nothing"
 		{colliderId "nothing"}
 		{noContactsAtAll}
 	}
-	{"tree" 
+	{"tree"
 		{colliderID "tree"}
 	}
-	{"bush" 
+	{"bush"
 		{colliderID "bush"}
 	}
 	{"construction"
@@ -38,16 +38,16 @@
 	{"mine.at"
 		{colliderId "mine.at"}
 	}
-	{"animal" 
+	{"animal"
 		{colliderId "human"}
 		{noContactsAtAll}
 	}
-	{"human" 
+	{"human"
 		{colliderId "human"}
 		{collideWith  "bush" "mine.ap"}
 		{noContactsAtAll}
 	}
-	{"human.part" 
+	{"human.part"
 		{colliderId "human"}
 		{collideWith  "bush"}
 	}
@@ -63,7 +63,7 @@
 		{colliderId "particle"}
 		{collideWith  "construction" "sandbag" "bush" "human" "vehicle" "tank.light" "tank.medium" "tank.heavy" "armored"}
 	}
-	{"particle.big"  
+	{"particle.big"
 		{colliderId "particle.big"}
 		{collideWith  "construction" "sandbag" "tree" "bush" "human" "cannon" "cannon_heavy" "cannon_small" "moto" "car" "truck" "armored" "tank.light" "tank.medium" "tank.heavy"}
 		{noContactWith "particle" "human" "bush" "stuff"}
@@ -78,7 +78,7 @@
 		{colliderID "flame"}
 		{collideWith "construction" "sandbag" "human" "cannon" "cannon_heavy" "cannon_small" "moto" "car" "truck" "armored" "tank.light" "tank.medium" "tank.heavy"}
 	}
-	
+
 	;///////////////////////////// stuff
 	{"stuff"
 		{colliderID "stuff"}

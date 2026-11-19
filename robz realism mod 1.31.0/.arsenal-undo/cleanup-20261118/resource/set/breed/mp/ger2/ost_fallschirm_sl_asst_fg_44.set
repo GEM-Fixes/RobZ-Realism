@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-para-fg"}
+	{portrait "ger_elite1"}
+	{icon "elite3"}
+	{icon_priority 4}
+	{nationality ger}
+	{armors
+		{head helmet_ger_m38_cover}
+	}
+	{perks
+		("soldier_smg_7" rocket(7) body(line))
+		{"avoidance" lvl_1}
+		{"stealth"}
+	}
+	("breed_vet" table(start5))
+	{inventory
+		("kit_rifle" gun(fg42_sc) ammo(fg42_mag) rounds(160))
+		{item "bandage" 5}
+		("frag_m39_x2")
+		("at_grenade_pwm1")
+		("smoke_x2")
+		{item "panzerfaust weapon" 0 1 filled}
+		{in_hands 0}
+	}
+}

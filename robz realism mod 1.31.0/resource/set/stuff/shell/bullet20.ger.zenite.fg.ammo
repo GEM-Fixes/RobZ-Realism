@@ -7,7 +7,7 @@
 	}
 	{mass 1.2}
 	{entity "shell_fg_20x138b"}
-	{damage blastwave  
+	{damage blastwave
 		{energy 0.8}
 		{area 0.1 0.2}
 	}

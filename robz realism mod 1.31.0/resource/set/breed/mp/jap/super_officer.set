@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "jap_army_officer"}
 	{portrait jap_officer}
@@ -9,45 +10,12 @@
 		{head japarmy_officer_cap1}
 	}
 	{perks
-		{"health" "250%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "150%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" mp_officer
-		}
-		{"speed" 1
-		}
-		{"field_glass"}
-		{"tank" 1
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 1
-		}
-		{"pistol" lvl_3
-		}
-		{"smg" lvl_3
-		}
-		{"mgun" lvl_3
-		}
-		{"rifle" lvl_3
-		}
-		{"rocketlauncher" lvl_3
-		}
-		{"melee" lvl_3
-		}
+		("soldier_pistol_3" rocket(1) body(hardy) sight(officer))
+		("perks_officer")
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(standard))
 	{inventory
-		{item "nambu" filled}
-		{item "ammo nambu_mag" 32}
+		("kit_pistol" gun(nambu) ammo(nambu_mag) rounds(32))
 		{item "knife_japan"}
 		{item "binocular"}
 		{item "bandage" 5}

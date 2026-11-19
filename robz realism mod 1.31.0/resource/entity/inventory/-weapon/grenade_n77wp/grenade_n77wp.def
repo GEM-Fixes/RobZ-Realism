@@ -4,7 +4,7 @@
 	{props "grenade" "contact"}
 	{extender "stuff"
 		{item "grenade n77wp"}
-	}	
+	}
 	{nogroupmesh 1}
 	{volume "body"
 		{able {contact}}

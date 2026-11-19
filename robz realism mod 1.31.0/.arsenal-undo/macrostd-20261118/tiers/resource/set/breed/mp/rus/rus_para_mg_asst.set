@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-sco-late-rfl"}
+	{portrait "rus_soldier5"}
+	{nationality rus}
+	{icon "stormtrooper4"}
+	{icon_priority 1}
+	{armors
+		{head helmet_rus_para_goggles}
+	}
+	{perks
+		("breed_body" health(400%) regen_health(100%) stamina(200%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.75) vehicle(1) cannon(0.8))
+		("breed_skills" pistol(7) smg(7) mgun(7) rifle(7) rocket(7) melee(7))
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("rifle_mosin_vet")
+		{item "ammo dt29_mag" 180}
+		{item "bandage" 5}
+		("frag_f1_x2")
+		{item "ru_roll"}
+		{item "sandbag_kit" 1}
+
+		{in_hands 0}
+	}
+}

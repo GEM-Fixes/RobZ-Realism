@@ -1,7 +1,7 @@
 {game_entity
 	(include "/properties/construction.inc")
 	{Extension "clothes_hb2.mdl"}
-;	{props "flag" "one" "staged" "wood" "construction" "burning" "disable_area" "no_destroyed_stamp"}
+	;	{props "flag" "one" "staged" "wood" "construction" "burning" "disable_area" "no_destroyed_stamp"}
 	{props "flag" "wood" "small" "construction" "parts" "disable_area" "no_destroyed_stamp" "burning" }
 
 	{extender "structure_bone"

@@ -1,17 +1,18 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "churchill_mk_vii.inc")
 	{extender "inventory"
 		{box
 			{item "ammo bullet75 us ap" 30}
 			{item "ammo bullet75 us fg" 54}
-            		{item "ammo mg_mauser belt red" 3475}
+			{item "ammo mg_mauser belt red" 3475}
 		}
 	}
 	{Weaponry
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "75mm_mk5" filling "ammo bullet75 us ap" 1}	
+			{weapon "75mm_mk5" filling "ammo bullet75 us ap" 1}
 			("abm_medium")
 			{basic}
 		}
@@ -40,7 +41,7 @@
 		}
 	}
 
-; --- Godny hitbox armor (ported from GodnyMod: churchill_mk_vii.def) ---
+	; --- Godny hitbox armor (ported from GodnyMod: churchill_mk_vii.def) ---
 	{volume "body1"	;низ корпуса
 		{component "body"}
 		{tags "body"}
@@ -102,15 +103,12 @@
 		{tags "turret"}
 		{thickness 95.25
 			{front	152.4}
-		;	{rear	95.25}
+			;	{rear	95.25}
 			{top	20}
 			{bottom	28.57}
 		}
 	}
-	{Volume "hole_bod"
-		{able clear {hole}}
-		{component "body"}
-	}
+	("vol_body_hole_only" name(hole_bod))
 	{volume "engine"
 		{thickness 10}
 	}

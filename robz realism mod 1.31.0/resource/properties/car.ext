@@ -6,36 +6,15 @@ actor
 
 ("brain_vehicle")
 
-(define "accuracy_by_motion" ; 	spreading depending on the speed of "body", "gun" volumes
-	{AccuracyByMotion
-		{MaxLinearSpeed %max_linear}               ;km/h
-		{ByLinearSpeed %accuracy_by_linear}
-		{MaxAngularSpeed %max_angular}             ;deg/s
-		{ByAngularSpeed %accuracy_by_angular}
-		{DisorderTime %disorder_time}              ;s
-		{OrderTime %order_time}                    ;s
-	}
-)
-(define "abm_low"
-	("accuracy_by_motion"
-		max_linear(14) accuracy_by_linear(0.2)
-		max_angular(4) accuracy_by_angular(0.6)
-		disorder_time(1.2) order_time(2)
-	)
-)
+(include "/properties/robz/armor.inc")
+; abm_mgun: calls "accuracy_by_motion"
+;   e.g. ("abm_mgun")
 (define "abm_mgun"
 	("accuracy_by_motion"
 		max_linear(18) accuracy_by_linear(0.5)
 		max_angular(4) accuracy_by_angular(0.8)
 		disorder_time(1.2) order_time(2)
 	)
-)
-(define "abm_zenite"
-    ("accuracy_by_motion"
-        max_linear(10) accuracy_by_linear(0.5)
-        max_angular(4) accuracy_by_angular(0.8)
-        disorder_time(1.2) order_time(1.4)
-    )
 )
 
 {hearingBias 4.5} ; in meters
@@ -57,7 +36,7 @@ actor
 	{box
 		{Size 6 10}
 		{weight 10000}
-        {item "repair_kit"}
+		{item "repair_kit"}
 		{item "can" filling "fuel" 60}
 	}
 }
@@ -86,13 +65,16 @@ actor
 	{tags "explosive"}
 	{thickness 1}
 }
+; glass_volume: {volume {thickness} {tags}}
+;   %0 - {volume}, [?]
+;   e.g. none (not called)
 (define "glass_volume"
 	{volume %0
 		{thickness 0.1}
 		{tags "glass"}
 	}
-)	
-	
+)
+
 {component "body"
 	{RepairTime 25}
 	{tags "mover"}
@@ -118,6 +100,8 @@ actor
 	}
 }
 
+; locomotion: {MaxSpeed} {StartTime} {maxSpeedAtMaxTurn} {BrakeTime} {StopTime} {TurnRadius} +5 more
+;   e.g. ("locomotion")
 (define "locomotion"
 	{MaxSpeed	25	}		; максимальная скорость, kmph
 	{StartTime	15	}		; время разгона до макс. скорости с 0, seconds
@@ -132,145 +116,159 @@ actor
 	{SplineRadius 1}		; ограничение радиуса поворота на сплайнах, метров
 )
 
+; armor_car: {armor {setting}} {sensor {visor}}
+;   b - [?]
+;   k - [?]
+;   bb - [?]
+;   e.g. ("armor_car" b(10) k(%0) bb(6))
 (define "armor_car"
 	{armor
 		{setting "body"
 			;{thickness (* %b %k)}
 			{threshold
-				{blast 					
+				{blast
 					{value 5}
-				}								
-				{pierce 
+				}
+				{pierce
 					{value 3}
 				}
-			}						
-			{durability 
-				{blast 					
+			}
+			{durability
+				{blast
 					{value 10}
-				}			
+				}
 				{pierce
 					{value 60}
 				}
-			}				
+			}
 			{volumes "body*"}
 		}
 		{setting "body_back"
 			;{thickness %bb}
 			{threshold
-				{blast 					
+				{blast
 					{value 5}
-				}								
-				{pierce 
+				}
+				{pierce
 					{value 1}
 				}
-			}						
-			{durability 
-				{blast 					
+			}
+			{durability
+				{blast
 					{value 10}
-				}			
+				}
 				{pierce
 					{value 50}
 				}
-			}				
+			}
 			{volumes "bodyback*"}
 		}
 		{setting "engine"
 			;{thickness (* 2.5 %b)}
-			{threshold								
-				{blast 					
+			{threshold
+				{blast
 					{value 5}
-				}								
-				{pierce 
+				}
+				{pierce
 					{value 3}
 				}
-			}						
-			{durability 		
-				{blast 					
+			}
+			{durability
+				{blast
 					{value 10}
-				}							
-				{pierce
-					{value 75}				
 				}
-			}		
-			{whole_wound}		
+				{pierce
+					{value 75}
+				}
+			}
+			{whole_wound}
 			{volumes "engine*"}
 		}
 		{setting "wheel"
 			{thickness 5}
 			{threshold
-				{blast 
+				{blast
 					{value 10}
-				}				
-				{pierce 
+				}
+				{pierce
 					{value 1}
 				}
-			}			
-			{durability 
-				{blast 
-					{value 10}
-				}				
-				{pierce 
+			}
+			{durability
+				{blast
 					{value 10}
 				}
-			}			
+				{pierce
+					{value 10}
+				}
+			}
 			{whole_wound}
 			{volumes "wheel*"}
 		}
 		{setting "cabin"
 			{thickness 5}
 			{threshold
-				{blast 
+				{blast
 					{value 1}
 				}
 			}
-			{durability 
-				{blast 					
+			{durability
+				{blast
 					{value 10}
-				}			
-				{pierce					
+				}
+				{pierce
 					{value 15}
-				}			
+				}
 			}
 			{volumes "cabin*"}
 		}
-			{setting "shields"
-				{thickness 5}
-				{threshold
-					{blast 					
-						{value 8}
-					}								
-					{pierce 
-						{value 7}
-					}
+		{setting "shields"
+			{thickness 5}
+			{threshold
+				{blast
+					{value 8}
 				}
-				{durability 
-					{blast 					
-						{value 17}
-					}			
-					{pierce
-						{value 22}
-					}
-				}				
-				{volumes "shield1*" "shiel2*" "shield3*"}
+				{pierce
+					{value 7}
+				}
 			}
+			{durability
+				{blast
+					{value 17}
+				}
+				{pierce
+					{value 22}
+				}
+			}
+			{volumes "shield1*" "shiel2*" "shield3*"}
 		}
-		{sensor
-			{visor "view-around"
-                {vision "moto_around"}
-				{bone "basis"}
-			}		
-			{visor "main"
-				{vision "vehicle_main"}
-			}		
+	}
+	{sensor
+		{visor "view-around"
+			{vision "moto_around"}
+			{bone "basis"}
 		}
+		{visor "main"
+			{vision "vehicle_main"}
+		}
+	}
 )
 
+; armor_light: calls "armor_car"
+;   %0 - k() of "armor_car"
+;   e.g. ("armor_light" args 0.5)
 (define "armor_light"
 	("armor_car" b(10) k(%0) bb(0.5))
 )
+; armor_medium: calls "armor_car"
+;   %0 - k() of "armor_car"
+;   e.g. ("armor_medium" args 1.0)
 (define "armor_medium"
 	("armor_car" b(15) k(%0) bb(0.5))
 )
+; armor_fuel: calls "armor_car"
+;   %0 - k() of "armor_car"
+;   e.g. none (not called)
 (define "armor_fuel"
 	("armor_car" b(10) k(%0) bb(6))
 )

@@ -17,6 +17,6 @@
 	{range 250 250}
 	{gravity 0}
 	{speed 300}
-    {AimingTolerance 3}
+	{AimingTolerance 3}
 	{cursor "cannon_on"}
 }

@@ -1,22 +1,13 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
-	
-	{volume "body1"
-		{tags "body"}
-		{component "body"}
-		{thickness 9
-		}
-	}
-	{volume "body2"
-		{tags "body"}
-		{component "body"}
-		{thickness 9
-		}
-	}
+
+	("vol_body_plate_lower" name(body1) mm(9))
+	("vol_body_plate_lower" name(body2) mm(9))
 	{volume "turret"
 		{component "turret"}
 		{tags "turret" "body"}
 		{thickness 9
-		    {front 18}
+			{front 18}
 		}
 	}
 	{Volume "wheelright1"

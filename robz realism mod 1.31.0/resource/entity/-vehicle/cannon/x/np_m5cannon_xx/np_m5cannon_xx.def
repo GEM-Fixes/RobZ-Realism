@@ -1,25 +1,4 @@
+; same as the other 1 def here; body in np_m5cannon_body.inc
 {game_entity
-	{Extension "m5_xx.mdl"}
-	{Volume "body2"
-	}
-	{Volume "body"
-	}
-	{Volume "gun2"
-	}
-	{Volume "gun_rot"
-	}
-	{Volume "gun"
-	}
-	{Volume "part1"
-	}
-	{Volume "standl"
-	}
-	{Volume "turret1"
-	}
-	{Volume "turret2"
-	}
-	{Volume "turret3"
-	}
-	{Volume "wheelright"
-	}
+	(include "np_m5cannon_body.inc")
 }

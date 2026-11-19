@@ -1,14 +1,15 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc" scale(1.2))
 	{props "medium" "-turret" "vision_vehicle_medium" "muzzle_medium" "hetzer"}
-	
+
 	{extender "enumerator"
 		{digit_folder "ger"}
 	}
 
 	("armor_spa_light"  armor(60 15 15 6))
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: hetzer_ger2.def) ---
 	{volume "body1"	;нижн€€ часть корпуса
 		{component "body"}
@@ -36,22 +37,19 @@
 		{tags "body"}
 		{able {holed}}
 		{thickness 60
-		;	{front	60}
+			;	{front	60}
 			{rear	0.1}	;стык body3 и body2
 		;	{top	20}
 		;	{bottom	20}
 		}
 	}
-	{Volume "hole_bod"
-		{able clear {hole}}
-		{component "body"}
-	}
+	("vol_body_hole_only" name(hole_bod))
 	{volume "engine"
 		{thickness 10}
 	}
 	{volume "mantlet"
 		{thickness 70
-		;	{front	70}
+			;	{front	70}
 			{rear	15}	;орудие дает небольшую броню
 		}
 	}
@@ -69,7 +67,7 @@
 		{component "gun"}
 		{thickness 60}
 	}
-	
+
 	("crew_3_human")
 
 	{boarder
@@ -82,7 +80,7 @@
 			{reverse 	{end	"emit_tank_2_hold"}}
 		}
 	}
-     
+
 	("crew_human" place(gunner3) door1(emit1) door2(emit2) visor(top))
 	{sensor
 		{visor "top"
@@ -91,7 +89,7 @@
 		}
 	}
 
-	{extender "inventory"	
+	{extender "inventory"
 		{weapon "mgun"
 			{mask "weapon mgun"}
 		}
@@ -133,22 +131,22 @@
 			{TurnStart  1.2}
 			{TurnTime   24}
 			{TurnRadius 10}
-    		{TurnStop   0.6}
+			{TurnStop   0.6}
 			{BrakeTime  2}
 			{StopTime   3}
 			{Gears 0.07 0.14 0.21 1}
 			{RearGears  0.15}
-    	}
+		}
 		{FuelBag
-			{volume 320}	
-			{rate	29}   
+			{volume 320}
+			{rate	29}
 			{remain 320}
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  26}
-        	{Slow  26}
-    	}
+			{Normal  26}
+			{Slow  26}
+		}
 	}
 
 	{Extension "Hetzer.mdl"}

@@ -1,7 +1,7 @@
 {bullet
 	{tag "dropboxed mortar_ic_heavy"}
 	{inventory
-                {size 3 1}
+		{size 3 1}
 		{weight 70}
 	}	{mass 2}
 	{entity "ammo_mortar120_tr843"}

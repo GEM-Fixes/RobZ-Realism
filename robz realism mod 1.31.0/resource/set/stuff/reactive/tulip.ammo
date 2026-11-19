@@ -4,7 +4,7 @@
 	{inventory
 		{size 6 1}
 		{weight 50}
-	}	
+	}
 	{mass 27}
 	{view "tulip_ammo"
 		{tail "rocket_smoke_norm" "tail"}

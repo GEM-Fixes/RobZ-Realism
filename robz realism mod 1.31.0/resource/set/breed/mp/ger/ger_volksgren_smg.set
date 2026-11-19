@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "ger-volkg2-smg"}
 	{portrait "ger_soldier2"}
@@ -8,50 +9,17 @@
 		{head helmet_ger_m40}
 	}
 	{perks
-		{"health" "100%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "75%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.75
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 0.8
-		}
-		{"pistol" lvl_1
-		}
-		{"smg" lvl_2
-		}
-		{"mgun" lvl_1
-		}
-		{"rifle" lvl_1
-		}
-		{"rocketlauncher" lvl_1
-		}
-		{"melee" lvl_2
-		}
+		("soldier_smg_2" rocket(2) body(line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(standard))
 	{inventory
-		{item "mp40" filled}
-		{item "ammo mp40_mag" 192}
+		("smg_mp40")
 		{item "bandage" 3}
-		{item "grenade m24" 1.5 0.5}
-		{item "grenade m24x5" 0 1}
-		{item "smoke grenade" 0 1}
+		("give_1_or_2" item(grenade m24))
+		("give_chance" item(grenade m24x5) chance(25))
+		("give_chance" item(smoke grenade) chance(25))
 		{item "panzerfaust_30 weapon" 0 1 filled}
-                {item "small_shovel" 1}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

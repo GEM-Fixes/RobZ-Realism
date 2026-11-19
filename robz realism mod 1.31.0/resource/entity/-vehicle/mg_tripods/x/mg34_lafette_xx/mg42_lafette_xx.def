@@ -1,11 +1,4 @@
+; same as the other 1 def here; body in mg_body.inc
 {game_entity
-	{Extension "mg34_lafette_xx.mdl"}
-	{Volume "body"
-	}
-	{Volume "part1"
-	}
-	{Volume "part2"
-	}
-	{Volume "part3"
-	}
+	(include "mg_body.inc")
 }

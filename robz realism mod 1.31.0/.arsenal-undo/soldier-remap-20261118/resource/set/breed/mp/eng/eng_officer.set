@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-officer"}
+	{portrait eng_officer}
+	{icon officer}
+	{icon_priority 6}
+	{tags "officer"}
+	{nationality eng}
+	{armors
+		{head cap_eng_off}
+	}
+	{perks
+		("body_officer_bare")
+		{"field_glass"}
+		("drive_t1_v1_c1")
+		("breed_skills" pistol(5) smg(5) mgun(4) rifle(4) rocket(3) melee(4))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("pistol_webley")
+		;{item "smoke_paradrop_ammo_heavy grenade" 2}
+		{item "knife_union"}
+		{item "binocular"}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

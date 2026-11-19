@@ -1,15 +1,4 @@
+; same as the other 1 def here; body in 303_bren_tripod_body.inc
 {game_entity
-	{Extension "303_bren_tripod_xx.mdl"}
-	{Volume "body1"
-	}
-	{Volume "body2"
-	}
-	{Volume "body"
-	}
-	{Volume "support1"
-	}
-	{Volume "support2"
-	}
-	{Volume "support3"
-	}
+	(include "303_bren_tripod_body.inc")
 }

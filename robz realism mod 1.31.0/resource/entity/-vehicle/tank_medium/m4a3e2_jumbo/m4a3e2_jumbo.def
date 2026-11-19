@@ -1,10 +1,11 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{props "heavy" "turret_rotator" "vision_vehicle_high" "muzzle_medium_reduced"}
 
 	{extender "enumerator"}
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: m4a3e2_jumbo.def) ---
 	{volume "body1"	;нижн€€ часть корпуса
 		{component "body"}
@@ -33,7 +34,7 @@
 		{tags "body"}
 		{thickness 76.2
 			{front	10}
-		;	{rear	76.2}
+			;	{rear	76.2}
 			{right	19.05}	;верхние скосы мто
 			{top	15}
 			{bottom	12.7}
@@ -54,20 +55,17 @@
 		{tags "turret"}
 		{able {holed}}
 		{thickness 152.4
-		;	{front	152.4}
-		;	{rear	152.4}
-		;	{right	63.5}	;скос
+			;	{front	152.4}
+			;	{rear	152.4}
+			;	{right	63.5}	;скос
 			{top	25.4}
 			{bottom	12.7}
 		}
 	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "turret"}
-	}
+	("vol_turret_hole_only" name(hole_man))
 	{Volume "mantlet"
 		{thickness 177.8
-		;	{front	177.8}
+			;	{front	177.8}
 			{rear	15}	;орудие дает небольшую броню
 		}
 	}
@@ -81,16 +79,10 @@
 		{thickness 5}
 	}
 	; --- end Godny hitbox armor ---
-	{Volume "turret1"
-		{tags "turret"}
-		{component "turret"}
-	}
-	{Volume "turret2"
-		{tags "turret"}
-		{component "turret"}
-	}
-	("armor_heavy_advanced" turret(152 152 152 25) body(102 76 38 22) body2(114 38 38 22) body3(114 38 38 22))
-	("armor_engine"  t(30 76 38 22))		
+	("vol_turret_part" name(turret1))
+	("vol_turret_part" name(turret2))
+	("armor_heavy_advanced" turret(152 152 152 25) body_mm(102 76 38 22) body2(114 38 38 22) body3(114 38 38 22))
+	("armor_engine"  t(30 76 38 22))
 	("armor_mantlet" t(178))
 	("shield" args 10)
 	("us_3x_sight")
@@ -105,7 +97,7 @@
 	{component "shieldr1" {tags "shield"}}
 	{component "shieldr2" {tags "shield"}}
 
-	
+
 	("crew_4_human")
 
 	("gunner_visible")
@@ -151,7 +143,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "75mm_m3" filling "ammo bullet75 us apcbc" 1}	
+			{weapon "75mm_m3" filling "ammo bullet75 us apcbc" 1}
 			("abm_stabilized")
 		}
 		{place "mgun"
@@ -180,7 +172,7 @@
 		}
 	}
 
-{Extension "m4a3e2_jumbo.mdl"}
+	{Extension "m4a3e2_jumbo.mdl"}
 
 	{mass 42700}
 	{Chassis
@@ -192,22 +184,22 @@
 			{TurnTime   22}
 			{TurnStart  1.6}
 			{TurnRadius 8}
-    		{TurnStop   0.8}
+			{TurnStop   0.8}
 			{BrakeTime  1.5}
 			{StopTime   2.5}
 			{Gears   0.1 0.2 0.28 1}
 			{RearGears  0.27}
 		}
 		{FuelBag
-			{volume 640 }	
-			{rate	45 }   
+			{volume 640 }
+			{rate	45 }
 			{remain 640 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  25}
-        	{Slow  25}
-    	}
+			{Normal  25}
+			{Slow  25}
+		}
 	}
 	{bone "turret_mgun"
 		{limits -15 15}

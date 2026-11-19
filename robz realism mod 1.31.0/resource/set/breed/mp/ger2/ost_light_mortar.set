@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "ger-reg2-rfl"}
 	{portrait "ger_soldier2"}
@@ -8,45 +9,12 @@
 		{head helmet_ger_m40}
 	}
 	{perks
-		{"health" "150%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "100%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.75
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 0.8
-		}
-		{"pistol" lvl_4
-		}
-		{"smg" lvl_3
-		}
-		{"mgun" lvl_2
-		}
-		{"rifle" lvl_5
-		}
-		{"rocketlauncher" lvl_2
-		}
-		{"melee" lvl_4
-		}
+		("soldier_rifle_2" rocket(2) body(line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(standard))
 	{inventory
 
-		{item "mortar_legrw_36" filled}
-		{item "ammo mortar50 ger fg" 12}
+		("kit_mortar" gun(mortar_legrw_36) ammo(mortar50 ger fg) rounds(12))
 		{item "bandage" 3}
 		{in_hands 0}
 	}

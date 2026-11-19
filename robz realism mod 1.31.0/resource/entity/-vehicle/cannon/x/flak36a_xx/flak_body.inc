@@ -1,0 +1,13 @@
+{Extension "flak36a_xx.mdl"}
+{Volume "body1"
+}
+{Volume "body2"
+}
+{Volume "body3"
+}
+{Volume "inventory"
+}
+{Volume "part1"
+}
+{Volume "part2"
+}

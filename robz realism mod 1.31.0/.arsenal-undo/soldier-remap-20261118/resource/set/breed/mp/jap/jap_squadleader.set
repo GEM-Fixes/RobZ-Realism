@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "jap_army_squadleader"}
+	{portrait "jap_soldier3"}
+	{nationality jap}
+	{icon "squadleader"}
+	{icon_priority 2}
+	{armors
+		{head japarmy_cap_hohei2}
+	}
+	{perks
+		("body_squadleader")
+		("drive_t08_v10_c10")
+		("breed_skills" pistol(4) smg(4) mgun(3) rifle(4) rocket(1) melee(3))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_type100smg")
+		{item "bandage" 3}
+		("frag_type97_x2")
+		("at_grenade_type3at_a_x2")
+		("smoke_x2")
+		{in_hands 0}
+	}
+}

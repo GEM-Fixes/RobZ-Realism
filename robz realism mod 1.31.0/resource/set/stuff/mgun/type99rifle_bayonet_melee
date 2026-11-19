@@ -4,7 +4,7 @@
 	{entity "type99rifle_bayonet"}
 	{fireSound "rifle/no"}
 	{filling "ammo durability_melee" 9999}
-	
+
 	{Spreading 0
 		{BurstRecoveryTime 0}
 		{SpreadRadius 0}
@@ -12,14 +12,14 @@
 	}
 	{speed 10000}
 	{calibre 0}
-    {AimingTolerance 0.8}
-	
+	{AimingTolerance 0.8}
+
 	{range 4 4}
 	{maxRange 4}
-	
+
 	("recoveryTime" r(120))
-	
+
 	{healthDamage 5000}
-	
+
 	{projectileDamageTable {0 0}}
 }

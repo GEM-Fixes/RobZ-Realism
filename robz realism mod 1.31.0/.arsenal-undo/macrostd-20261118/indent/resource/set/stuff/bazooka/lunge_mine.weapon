@@ -1,0 +1,35 @@
+{from "pattern rpg_weapon"
+	{desc "Lunge Mine"}
+	{tag "-rocketlauncher lunge_mine stab cqcs"}
+
+	{filling "ammo boom" 1}
+	{ammoLocked}
+
+	{fireSound "rifle/no"}
+
+	{inventory
+		{size 4 2}
+		{weight 10}
+		{link_bone "gun_back"}
+	}
+
+	{traceFreq 0}
+
+	{entity "lunge_mine"}
+	{mass 5}
+
+	{foresight "foresight2"}
+
+	{Spreading
+		{BurstRecoveryTime 0}
+		{SpreadRadius 0}
+	}
+	{speed 10000}
+	{calibre 0}
+    {AimingTolerance 0.8}
+
+	{range 6 6}
+	{maxRange 15}
+
+	{projectileDamageTable {15 150} {16 0}}
+}

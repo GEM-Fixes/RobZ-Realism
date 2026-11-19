@@ -1,11 +1,4 @@
+; same as the other 1 def here; body in sgrw_34_body.inc
 {game_entity
-	{Extension "sgrw_34_xx.mdl"}
-	{Volume "part1"
-	}
-	{Volume "part2"
-	}
-	{Volume "part3"
-	}
-	{Volume "part4"
-	}
+	(include "sgrw_34_body.inc")
 }

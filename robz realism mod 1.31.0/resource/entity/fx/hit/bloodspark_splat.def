@@ -27,7 +27,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage initial 
+			{stage initial
 				{sprite "$/particle/cow_2"
 					{turn 1
 						{linear
@@ -90,7 +90,7 @@
 			{nodependonwind}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/cow_2"
 					{scale 1
 						{linear

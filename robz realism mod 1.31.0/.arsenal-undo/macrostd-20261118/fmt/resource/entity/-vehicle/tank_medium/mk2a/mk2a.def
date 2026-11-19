@@ -1,0 +1,223 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "turret_rotator" "vision_vehicle_medium" "muzzle_minimum" "switch_mgun_coax"}
+
+	{extender "enumerator"}
+	
+	; --- Godny hitbox armor (ported from GodnyMod: mk2a.def) ---
+	{volume "body1"	;низ корпуса
+		{component "body"}
+		{tags "body"}
+		{thickness 40	;40мм борт + 25мм экран
+			{front	78}
+			{rear	55}
+			{top	0.1}	;стык body1 и body2
+			{bottom	20}
+			{right	47}	;гласис
+		}
+	}
+	{volume "body2"	;средн€€ часть корпуса
+		{component "body"}
+		{tags "body"}
+		{thickness 40	;40мм борт + 25мм экран
+			{front	75}
+			{rear	55}
+			{top	12}	;мто
+			{bottom	0.1}	;стык body1 и body2
+			{right	55}	;скосы-скулы
+		}
+	}
+	{volume "body3"	;верхн€€ часть корпуса
+		{component "body"}
+		{tags "body"}
+		{thickness 70
+			{front	75}
+			{rear	55}
+			{top	12}	;мто
+			{bottom	10}
+		}
+	}
+	{Volume "turret"
+		{component "turret"}
+		{tags "turret"}
+		{able {holed}}
+		{thickness 75
+		;	{front	75}
+		;	{rear	75}
+			{top	20}
+			{bottom	10}
+		}
+	}
+	{Volume "turret1"
+		{component "turret"}
+		{tags "turret"}
+		{thickness 65
+			{top	0.1}	;внутренн€€ стенка
+			{bottom	10}
+		}
+	}
+	{Volume "hole_man"
+		{able clear {hole}}
+		{component "turret"}
+	}
+	{volume "mantlet"
+		{thickness 75
+		;	{front	75}
+			{rear	10}	;орудие дает небольшую броню
+		}
+	}
+	{volume "engine"
+		{thickness 10}
+	}
+	{volume "shield1"	;права€ передн€€ часть корпуса - экран
+		{component "shield1"}
+		{thickness 22
+		;	{front	22}
+			{rear	0.1}	;стык body1 и body4
+			{top	0.1}	;стык body4 и body6
+		}
+	}
+	{volume "shield2"	;лева€ передн€€ часть корпуса - экран
+		{component "shield2"}
+		{thickness 22
+		;	{front	22}
+			{rear	0.1}	;стык body1 и body5
+			{top	0.1}	;стык body5 и body7
+		}
+	}
+	{volume "shield3"	;права€ средн€€ часть корпуса - экран
+		{component "shield3"}
+		{thickness 22
+			{front	75}
+			{rear	0.1}	;стык body1 и body6
+			{top	20}
+			{bottom	0.1}	;стык body4 и body6
+		}
+	}
+	{volume "shield4"	;лева€ средн€€ часть корпуса - экран
+		{component "shield4"}
+		{thickness 22
+			{front	75}
+			{rear	0.1}	;стык body1 и body7
+			{top	20}
+			{bottom	0.1}	;стык body5 и body7
+		}
+	}
+	{volume "shieldl1"
+		{component "shieldl1"}
+		{tags "shieldl1"}
+		{thickness 25
+			{right	0.1}	;внутренн€€ стенка
+		}
+	}
+	{volume "shieldr1"
+		{component "shieldr1"}
+		{tags "shieldr1"}
+		{thickness 25
+			{right	0.1}	;внутренн€€ стенка
+		}
+	}
+	; --- end Godny hitbox armor ---
+	{Volume "engine1"
+		{tags "engine"}
+		{component "engine"}
+	}
+	{Volume "engine2"
+		{tags "engine"}
+		{component "engine"}
+	}
+	
+	("armor_medium" turret(75 75 75 20) body(78 70 55 22))
+	("armor_engine"  t(30 70 55 22))
+	("eng_1-9x_sight")
+	
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_sherman_left"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_sherman_right"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} 	{end "pose_seat_armor_1"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_HighArmor"} 	{end "pose_seat_armor_1"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor1))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor))
+
+	{extender "inventory"
+        {box
+            {item "ammo bullet40 eng ap" 93}
+            ;{item "ammo bullet40 fg" 43}
+            ;{item "ammo bullet40 apcr" 3}
+            {item "ammo mg_mauser belt red" 2950}
+        }
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "40mm_oqf2pdr" filling "ammo bullet40 eng ap" 1}
+			("abm_medium")
+		}
+		{place "mgun"
+			{type "mgun_coaxial"}
+			{weapon "besa_optic" filling "mg_mauser belt red" 225}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	{mass 26500}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.52) len(0.7))
+		{Locomotion ("locomotion")
+			{MaxSpeed   20}
+			{maxSpeedAtMaxTurn 4}
+			{StartTime  30}
+			{TurnStart  1.7}			
+			{TurnTime   18}
+			{TurnRadius 8} 
+    		{TurnStop   0.8}
+			{BrakeTime  1.5}
+			{StopTime   2.5}
+			{Gears  0.1 0.2 0.3 1}
+			{RearGears  0.24}		
+		}
+		{FuelBag
+			{volume 210 }	
+			{rate	24 }   
+			{remain 210 }
+			{fuel "fuel"}
+		}
+		{speed
+        	{Normal  20}
+        	{Slow  20}
+    	}
+	}
+	{Extension "mk2a.mdl"}
+	
+	{bone "gun_rot"
+		{speed 0.001}
+		{limits -15 20}
+	}
+	{bone "turret"
+		{speed 0.003}
+	}
+    {bone "foresight3"
+		{limits 1}
+	}
+}

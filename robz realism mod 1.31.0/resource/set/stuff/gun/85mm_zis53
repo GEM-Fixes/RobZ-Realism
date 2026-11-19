@@ -3,21 +3,21 @@
 	{fireSound "gun/85to100_cal/85mm_zis53"}
 	{rechargeTime 9.2}
 	("range_medium")
-	
+
 	{range 210 210}
-	("speed_all" ap(792) apcr(1030) fg(780) heat(780))
+	("speed_all" speed(792) apcr(1030) fg(780) heat(780))
 	("caliber_large")
 	{projectileDamage 129}
-	("damage_170" a(145) b(125) c(107) d(92) e(78) range(210))
+	("damage_170" at20(145) at100(125) at170(107) at215(92) at250(78) max(210))
 	{parameters "aphe"
 		{cursorReloading "cannon_reload_aphe"}
 	}
 	{parameters "aphebc"
-		("damage_170" a(142) b(123) c(105) d(91) e(81) range(210))
+		("damage_170" at20(142) at100(123) at170(105) at215(91) at250(81) max(210))
 		{cursorReloading "cannon_reload_aphebc"}
 	}
 	{parameters "apcr"
-        	("damage_170" a(190) b(145) c(111) d(86) e(64) range(210))
+		("damage_170" at20(190) at100(145) at170(111) at215(86) at250(64) max(210))
 	}
 	{parameters "fg"
 		{range 200 200}

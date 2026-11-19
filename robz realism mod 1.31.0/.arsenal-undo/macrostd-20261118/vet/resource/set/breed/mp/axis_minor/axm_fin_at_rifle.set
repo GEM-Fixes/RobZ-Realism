@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "fin-inf-rfl"}
+	{portrait "fin_soldier3"}
+	{nationality fin}
+	{icon "at_rifle"}
+	{icon_priority 1}
+	{armors
+		{head helmet_fin_m16}
+	}
+	{perks
+		("breed_body" health(150%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.8) vehicle(1.0) cannon(1.0))
+		("breed_skills" pistol(2) smg(2) mgun(1) rifle(3) rocket(1) melee(2))
+	}
+	("breed_vet" kind(1))
+	{inventory
+		{item "boyes" filled}
+		{item "ammo ptr" 50}
+		{item "grenade m24" 2}
+		{item "kasapanos_2kg" 1}
+		{in_hands 0}
+
+
+	}
+}

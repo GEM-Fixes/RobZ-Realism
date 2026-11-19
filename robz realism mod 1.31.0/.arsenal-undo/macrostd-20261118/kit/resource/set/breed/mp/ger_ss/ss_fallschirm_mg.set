@@ -1,0 +1,28 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-fj-rifleman"}
+	{portrait "ger_elite1"}
+	{icon "elite3"}
+	{icon_priority 4}
+	{nationality ger}
+	{armors
+		;{body ammo_ger2}
+		{head helmet_ger_m38_cover}
+	}
+	{perks
+		("breed_body" health(250%) regen_health(100%) stamina(150%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.75) vehicle(1) cannon(0.8))
+		("breed_skills" pistol(3) smg(3) mgun(3) rifle(3) rocket(3) melee(3))
+		{"avoidance" lvl_1}
+		{"stealth"}
+	}
+	("breed_vet" table(start5))
+	{inventory
+		{item "mg34" filled}
+		{item "ammo mg_mauser drum" 300}
+		{item "bandage" 5}
+		{item "sandbag_kit"}
+		{item "barrel_case"}
+		{in_hands 0}
+	}
+}

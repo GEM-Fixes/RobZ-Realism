@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "snlf_rifle_gear2"}
+	{portrait "jap_soldier5"}
+	{nationality jap}
+	{icon "stormtrooper6b"}
+	{icon_priority 4}
+	{armors
+		{head "helmet_japmc9"}
+	}
+	{perks
+		("breed_body" health(400%) regen_health(100%) stamina(200%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(1.0) vehicle(1.0) cannon(1.0))
+		("breed_skills" pistol(7) smg(7) mgun(7) rifle(7) rocket(7) melee(7))
+	}
+	("breed_vet" table(elite))
+	{inventory
+		{item "type38rifle" filled}
+		{item "ammo arisaka6-5_clip" 60}
+		{item "ammo type99_mag" 90}
+		{item "bandage" 5}
+		{item "grenade type97" 4}
+		{item "grenade type3at_a" 1}
+		{in_hands 0}
+	}
+}

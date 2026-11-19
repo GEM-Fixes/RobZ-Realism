@@ -3,7 +3,7 @@
 	{entity "mosin"}
 	{fireSound "rifle/mosin_shot/"}
 	{reloadSound "rifle_bolt_five"}
-	
+
 	("speed" s(850))
 	;("accuracy_boost")
 	{recoveryTime 1.4}

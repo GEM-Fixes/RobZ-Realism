@@ -1,4 +1,5 @@
-{game_entity	
+(include "/properties/robz/volumes.inc")
+{game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{collider "tank.heavy"}
@@ -6,43 +7,22 @@
 	{extender "enumerator"
 		{digit_folder "ger"}
 	}
-	{Volume "body1"
-		{tags "body"}
-		{component "body"}
-	}
-	{Volume "body2"
-		{tags "body"}
-		{component "body"}
-	}
-	{Volume "body3"
-		{tags "body"}
-		{component "body"}
-	}
-	{Volume "gun"
-		{tags "gun"}
-		{component "gun"}
-	}
-	{Volume "turret1"
-		{tags "turret"}
-		{component "turret"}
-	}
-	{Volume "turret2"
-		{tags "turret"}
-		{component "turret"}	
-	}
+	("vol_body_part" name(body1))
+	("vol_body_part" name(body2))
+	("vol_body_part" name(body3))
+	("vol_gun_part" name(gun))
+	("vol_turret_part" name(turret1))
+	("vol_turret_part" name(turret2))
 	{volume "engine"
 		{tags "engine"}
 		{component "engine"}
 	}
-	{Volume "mantlet"
-		{tags "turret"}
-		{component "turret"}
-	}
+	("vol_turret_part" name(mantlet))
 	{Volume "trackleft"
 	}
 	{Volume "trackright"
 	}
-	("armor_heavy_advanced" turret(100 80 80 25) body(100 80 80 25) body2(60 60 80 25) body3(100 60 80 25))
+	("armor_heavy_advanced" turret(100 80 80 25) body_mm(100 80 80 25) body2(60 60 80 25) body3(100 60 80 25))
 	("armor_engine"  t(10 80 80 25))
 	("armor_mantlet" t(120))
 	("shield" args 8)
@@ -85,8 +65,8 @@
 			{reverse 	{end	"emit_body"}}
 		}
 	}
-	
-	
+
+
 	{extender "inventory"
 		{box
 			{item "bullet88 ger apcbc" 43}
@@ -96,7 +76,7 @@
 			{item "ammo mg_mauser belt" 2950}
 		}
 	}
-	
+
 	{Weaponry
 		("restore_ik_time")
 		{place "gun"
@@ -127,20 +107,20 @@
 			("abm_mgun")
 			{basic}
 		}
-		;{place "mgun17"			
-		;	{type "mgun_right"}
-		;	{weapon "3xsmokegun" filled}
-		;	{gunner "gunner"}
-		;	{foresight "foresight20"}
-		;}
-		;{place "mgun18"
-		;	{type "mgun_left"}
-		;	{weapon "3xsmokegun" filled}
-		;	{gunner "gunner"}
-		;	{foresight "foresight21"}
-		;}
+	;{place "mgun17"
+	;	{type "mgun_right"}
+	;	{weapon "3xsmokegun" filled}
+	;	{gunner "gunner"}
+	;	{foresight "foresight20"}
+	;}
+	;{place "mgun18"
+	;	{type "mgun_left"}
+	;	{weapon "3xsmokegun" filled}
+	;	{gunner "gunner"}
+	;	{foresight "foresight21"}
+	;}
 	}
-	
+
 	{mass 57000}
 	{Chassis
 		("tank_trace" fx("tracks_big") step(0.47) len(1.25))
@@ -150,12 +130,12 @@
 			{StartTime	60}
 			{TurnTime	28}
 			{TurnStart  2}
-    		{BrakeTime  2.5}
-     		{StopTime   3.5}
-    		{TurnRadius 11}
-    		{TurnStop   1}
+			{BrakeTime  2.5}
+			{StopTime   3.5}
+			{TurnRadius 11}
+			{TurnStop   1}
 			{Gears  0.1 0.18 0.25 1}
-    		{RearGears  0.1 0.2}
+			{RearGears  0.1 0.2}
 		}
 		{FuelBag
 			{volume 570 }
@@ -164,11 +144,11 @@
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  28}
-        	{Slow  28}
-    	}
+			{Normal  28}
+			{Slow  28}
+		}
 	}
-	{Extension "pz6h.mdl"}	
+	{Extension "pz6h.mdl"}
 	{bone "turret"
 		{speed 0.00205} ; 60s
 	}

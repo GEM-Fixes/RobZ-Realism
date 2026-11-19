@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "hun_soldier"}
+	{portrait "hun_soldier2"}
+	{nationality hun}
+	{icon "smg"}
+	{icon_priority 0}
+	{armors
+		{head "helmet1_hun"}
+	}
+	{perks
+		("body_regular")
+		("drive_t08_v10_c10")
+		("skills_2_2_1_1_1_2")
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("kit_smg" gun(ppsh) ammo(ppsh_mag) rounds(213))
+		{item "bandage" 2}
+		{item "grenade hungarian_36m" 2}
+		{item "grenade molotov_coctail"}
+		("smoke_x2")
+
+		{in_hands 0}
+	}
+}

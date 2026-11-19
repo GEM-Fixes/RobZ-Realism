@@ -1,0 +1,7 @@
+{from "fiat_65" ; fiat stand, lancia1zm
+	{filling "ammo ravelli_belt" 50}
+	("recoveryTime" r(500))
+	("speed" s(800))
+
+	
+}

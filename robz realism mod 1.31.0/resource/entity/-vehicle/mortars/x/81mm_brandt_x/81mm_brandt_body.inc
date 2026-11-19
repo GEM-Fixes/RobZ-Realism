@@ -1,0 +1,5 @@
+{Extension "brandt_mle_27-31_x.mdl"}
+{Volume "body"
+}
+{Volume "gun"
+}

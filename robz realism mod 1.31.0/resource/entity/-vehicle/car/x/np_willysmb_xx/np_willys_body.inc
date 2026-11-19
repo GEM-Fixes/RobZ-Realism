@@ -1,0 +1,17 @@
+{Extension "willysat_xx.mdl"}
+{Volume "body2"
+}
+{Volume "body"
+}
+{Volume "engine"
+}
+{Volume "wheelleft1"
+}
+{Volume "wheelleft2"
+}
+{Volume "wheelright1"
+}
+{Volume "wheelright2"
+}
+{Volume "windshield"
+}

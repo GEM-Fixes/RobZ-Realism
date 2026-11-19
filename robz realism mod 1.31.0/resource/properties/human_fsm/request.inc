@@ -1,6 +1,6 @@
 ;SDL
 {Split 2}
- 
+
 {Request "dead"   			{priority 50} {interrupt}}
 {Request "corpse"  			{priority 0}}
 

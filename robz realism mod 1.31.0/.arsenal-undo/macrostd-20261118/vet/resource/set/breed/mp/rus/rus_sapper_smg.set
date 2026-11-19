@@ -1,0 +1,29 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-smg"}
+	{portrait "rus_soldier2"}
+	{nationality rus}
+	{icon "sapper"}
+	{icon_priority 3}
+	{armors
+		{body soviet_pack}
+		{head helmet1_rus}
+	}
+	{perks
+		("breed_body" health(150%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.85) vehicle(1) cannon(0.9))
+		("breed_skills" pistol(2) smg(3) mgun(1) rifle(1) rocket(2) melee(2))
+	}
+	("breed_vet" kind(1))
+	{inventory
+		{item "pps43" filled}
+		{item "ammo pps43_mag" 210}
+		{item "bandage" 3}
+		{item "grenade f1" 2}
+		{item "mine antipersonnel" 16}
+		{item "grenade satchel" 1}
+		{item "mine antipersonnel" 4}
+		{item "grenade satchel" 1}
+		{in_hands 0}
+	}
+}

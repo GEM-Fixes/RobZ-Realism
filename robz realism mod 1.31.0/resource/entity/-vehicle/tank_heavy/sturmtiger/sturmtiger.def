@@ -1,13 +1,14 @@
-{game_entity	
+(include "/properties/robz/volumes.inc")
+{game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{collider "tank.heavy"}
-	{props "heavy" "-turret" "sturmtiger" "vision_vehicle_maximum" "gun_mode_change"}	
-	
+	{props "heavy" "-turret" "sturmtiger" "vision_vehicle_maximum" "gun_mode_change"}
+
 	{extender "enumerator"
 		{digit_folder "ger2"}
 	}
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: sturmtiger.def) ---
 	{Volume "body1"	;рубка
 		{tags "body"}
@@ -52,17 +53,14 @@
 			{bottom	28}
 		}
 	}
-	{Volume "gun1"
-		{tags "gun"}
-		{component "gun"}
-	}
+	("vol_gun_part" name(gun1))
 	{Volume "gun2"
 		{tags "mantlet"}
 		{component "mantlet"}
 	}
 	{volume "mantlet"
 		{thickness 110
-		;	{front	110}
+			;	{front	110}
 			{rear	15}	;орудие дает небольшую броню
 		}
 	}
@@ -70,11 +68,11 @@
 		{thickness 10}
 	}
 	; --- end Godny hitbox armor ---
-	("armor_spa_heavy_sturmtiger" body(150 82 82 40) body2(150 82 82 40) body3(150 62 82 62) body4(62 62 82 70))
+	("armor_spa_heavy_sturmtiger" body_mm(150 82 82 40) body2(150 82 82 40) body3(150 62 82 62) body4(62 62 82 70))
 	("armor_mantlet" t(110))
 	("armor_engine"  t(40 82 82 40))
 	("ger_5x8_sight")
-	
+
 
 	("shield" args 8)
 	{extender "shield"
@@ -123,7 +121,7 @@
 			{item "ammo sturmtiger" 13}
 			{item "ammo mg_mauser belt" 600}
 		}
-		
+
 	}
 
 	{Weaponry
@@ -143,14 +141,14 @@
 		{place "mgun"
 			{type "mgun_hull"}
 			{weapon "mg34_optic" filled}
-			{foresight "foresight3"} 
+			{foresight "foresight3"}
 			{gunner "driver"}
 			{charger "driver"}
 			("abm_mgun")
 			{basic}
 		}
 	}
-	
+
 	{mass 65000}
 	{Chassis
 		("tank_trace" fx("tracks_big") step(0.47) len(1.2))
@@ -159,13 +157,13 @@
 			{maxSpeedAtMaxTurn 3}
 			{StartTime	60}
 			{TurnTime	28}
-			{TurnStart  2} 
-    		{BrakeTime  2}
-     		{StopTime   3} 
-    		{TurnRadius 11} 
-    		{TurnStop   1}
-			{Gears 0.1 0.18 0.25 1} 
-    		{RearGears 0.1 0.2}
+			{TurnStart  2}
+			{BrakeTime  2}
+			{StopTime   3}
+			{TurnRadius 11}
+			{TurnStop   1}
+			{Gears 0.1 0.18 0.25 1}
+			{RearGears 0.1 0.2}
 		}
 		{FuelBag
 			{volume 540 }
@@ -174,12 +172,12 @@
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  24}
-        	{Slow  24}
-    	}
+			{Normal  24}
+			{Slow  24}
+		}
 	}
 	{Extension "sturmtiger.mdl"}
-	
+
 	{bone "gun_rot"
 		{limits -2 60}
 		{speed 0.0005}

@@ -1,13 +1,13 @@
 {bullet
-  {tag "bullet stackable pierce 7-62_rifle"}
-  {inventory
-    {weight 1.666666}
-    {block 60}
-    {size 2 2}
-    {fsm "belt"}
-  }
-  {mass 0.025}
-  {entity "dt29_mag"}
+	{tag "bullet stackable pierce 7-62_rifle"}
+	{inventory
+		{weight 1.666666}
+		{block 60}
+		{size 2 2}
+		{fsm "belt"}
+	}
+	{mass 0.025}
+	{entity "dt29_mag"}
 	;{view "bullet"
 	;	{tail "tracer_green" "basis"}
 	;}

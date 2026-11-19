@@ -1,0 +1,28 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "hun_elite2"}
+	{portrait "hun_elite3"}
+	{icon "stormtrooper3"}
+	{icon_priority 3}
+	{nationality hun}
+	{armors
+
+		{head "helmet1_hun"}
+	}
+	{perks
+		("body_axis_minor_assault")
+		("drive_t10_v10_c10")
+		("skills_4_4_4_4_4_4")
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("kit_rifle" gun(feg_43m) ammo(7x57) rounds(190))
+		{item "bandage" 2}
+		{item "grenade hungarian_36m" 1}
+		{item "grenade molotov_coctail" 1}
+		("frag_f1_x3")
+		("smoke_x2")
+		{in_hands 0}
+
+	}
+}

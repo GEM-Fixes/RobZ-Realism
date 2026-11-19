@@ -1,0 +1,7 @@
+{Extension "t34-76_xx.mdl"}
+{Volume "part1"
+}
+{Volume "part2"
+}
+{Volume "part3"
+}

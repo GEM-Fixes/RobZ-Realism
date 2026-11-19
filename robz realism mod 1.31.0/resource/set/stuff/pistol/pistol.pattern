@@ -7,18 +7,18 @@
 	}
 	{mass 1}
 	{entity "pistol"}
-	
+
 	{range 55 55}
 	{spreading 1
 		{SpreadPower	1}
 	}
 	("recoveryTime" r(350))
 	{rechargeTime 3}
- 	("speed" s(250))
+	("speed" s(250))
 	{burst
 		{short 1.5 0.5}
 		{long 3.5 0.5}
-	}	
+	}
 	;{gravity 10}
 	{healthDamage 25}
 	{ProjectileDamage 3}

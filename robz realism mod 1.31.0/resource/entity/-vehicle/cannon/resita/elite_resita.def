@@ -1,19 +1,14 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/cannon.ext")
 	{props "vehicle" "cannon" "wheeled" "round_sandbag2" "vision_cannon_medium_vet" "muzzle_medium_sides" "gun_mode_change" "medium_weapons"}
-	
-	
+
+
 	("armor_medium")
 
-	{volume "body1"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body2"
-		{tags "body"}
-		{component "body"}
-	}
-	{component "shield"	
+	("vol_body_part_lower" name(body1))
+	("vol_body_part_lower" name(body2))
+	{component "shield"
 		{RepairTime 20}
 	}
 	{volume "shield1"
@@ -53,7 +48,7 @@
 			{forward {end "pose_seat_cannon_right" 10}}
 		}
 	}
-		("wheel" args "wheelright")
+	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
 
 	{extender "inventory"
@@ -88,10 +83,10 @@
 
 	{bone "basis"
 		{limits}
-	    {speed 0.007}
+		{speed 0.007}
 	}
 
-	
+
 
 	{extender "cannon"
 		{animation
@@ -119,5 +114,5 @@
 	{bone "gun_rot"
 		{speed 0.0066}
 	}
-	;("ger_3_sight")
+;("ger_3_sight")
 }

@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "usa-soldier1"}
 	{portrait "usa_soldier4"}
@@ -8,52 +9,14 @@
 		{head "helmet4_usa"}
 	}
 	{perks
-		{"health" "350%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "150%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_sniper"
-		}
-		{"speed" 1.0
-		}
-		{"stealth"
-		}
-		{"telescope"
-		}
-		{"tank"	0.75
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 0.8
-		}
-		
-		{"pistol" lvl_3
-		}
-		{"smg" lvl_3
-		}
-		{"mgun" lvl_3
-		}
-		{"rifle" lvl_4
-		}
-		{"rocketlauncher" lvl_2
-		}
-		{"melee" lvl_4
-		}
-		{"aimedshot"}
+		("soldier_rifle_4" rocket(1) body(line) sight(sniper))
+		("perks_sniper")
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(standard))
 	{inventory
-		{item "m1903a4" filled}
-		{item "ammo springfield_clip" 100}
+		("rifle_m1903a4")
 		{item "bandage" 3}
-		{item "grenade m61" 2}
+		("give" item(grenade m61) count(2))
 		{in_hands 0}
 	}
 }

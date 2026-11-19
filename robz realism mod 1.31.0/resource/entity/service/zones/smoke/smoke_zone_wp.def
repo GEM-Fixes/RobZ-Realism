@@ -9,7 +9,7 @@
 		{sphere 71.2212}
 		;{able }  ;{contact 1}{able clear}{density 0}{visible 1}
 		{bone "basis"}
-		;{material "dummy"}
+	;{material "dummy"}
 	}
 	{body
 		{proper body}

@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
@@ -6,7 +7,7 @@
 	{extender "enumerator"
 		{digit_folder "ger"}
 	}
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: pz4g_ger2.def) ---
 	{volume "body1"	;нижн€€ часть корпуса
 		{tags "body"}
@@ -55,19 +56,16 @@
 		{tags "turret"}
 		{able {holed}}
 		{thickness 30
-		;	{front	30}
-		;	{rear	30}
+			;	{front	30}
+			;	{rear	30}
 			{top	16}
 			{bottom	10}
 		}
 	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "turret"}
-	}
+	("vol_turret_hole_only" name(hole_man))
 	{volume "mantlet"
 		{thickness 50
-		;	{front	50}
+			;	{front	50}
 			{rear	15}	;орудие дает небольшую броню
 		}
 	}
@@ -85,7 +83,7 @@
 	("armor_medium" turret(50 30 30 10) body(80 30 20 22))
 	("armor_engine"  t(30 30 20 22))
 	("armor_mantlet" t(50))
-	
+
 	("crew_4_human_extended")
 	{boarder
 		{anm "driver"
@@ -135,7 +133,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "75mm_kwk40_vet" filling "ammo bullet75 ger apcbc" 1}	
+			{weapon "75mm_kwk40_vet" filling "ammo bullet75 ger apcbc" 1}
 			("abm_veteran")
 		}
 		{place "mgun1"
@@ -151,7 +149,7 @@
 			{weapon "mg34_optic" filled}
 			{foresight "foresight5"}
 			("abm_mgun")
-            {basic}
+			{basic}
 		}
 	}
 
@@ -163,28 +161,28 @@
 			{maxSpeedAtMaxTurn 4}
 			{StartTime	  38.25}
 			{TurnTime  	  17.1}
-    		{TurnStart  1.4} 
-    		{BrakeTime    1} 
-    		{StopTime     2} 
-    		{TurnRadius   8} 
-    		{TurnStop   0.8}
-     		{Gears  0.13 0.23 0.33 1}
-    		{RearGears 0.28}
+			{TurnStart  1.4}
+			{BrakeTime    1}
+			{StopTime     2}
+			{TurnRadius   8}
+			{TurnStop   0.8}
+			{Gears  0.13 0.23 0.33 1}
+			{RearGears 0.28}
 		}
 		{FuelBag
-			{volume 470 }	
-			{rate	36 }   
+			{volume 470 }
+			{rate	36 }
 			{remain 470 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  28}
-        	{Slow  28}
-    	}
+			{Normal  28}
+			{Slow  28}
+		}
 	}
-	
+
 	{Extension "pz4g.mdl"}
-	
+
 	{bone "turret"
 		{speed 0.0037}
 	}

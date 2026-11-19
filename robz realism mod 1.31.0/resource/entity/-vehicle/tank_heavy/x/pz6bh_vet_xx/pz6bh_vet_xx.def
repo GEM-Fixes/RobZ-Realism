@@ -1,31 +1,4 @@
+; same as the other 1 def here; body in pz6bh_body.inc
 {game_entity
-	{Extension "pz6bh_xx.mdl"}
-	{Volume "body1"
-	}
-	{Volume "body2"
-	}
-	{Volume "body3"
-	}
-	{Volume "engine"
-	}
-	{Volume "gun"
-	}
-	{Volume "mantlet"
-	}
-	{Volume "part1"
-	}
-	{Volume "part2"
-	}
-	{Volume "part3"
-	}
-	{Volume "part4"
-	}
-	{Volume "part5"
-	}
-	{Volume "trackleft"
-	}
-	{Volume "trackright"
-	}
-	{Volume "turret"
-	}
+	(include "pz6bh_body.inc")
 }

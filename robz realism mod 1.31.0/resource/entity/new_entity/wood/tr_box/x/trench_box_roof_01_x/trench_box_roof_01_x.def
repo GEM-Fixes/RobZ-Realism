@@ -3,7 +3,7 @@
 	(include "/properties/construction.inc")
 	("armor_light" args 0.5)
 	{Extension "trench_box_roof_01_x.mdl"}
-	{props "construction" "parts" "wood" "no_destroyed_stamp" "disable_area" "small" "burning"} 
+	{props "construction" "parts" "wood" "no_destroyed_stamp" "disable_area" "small" "burning"}
 	("armor_heavy" args 0.8)
 	{obstacleID "small_building"}
 

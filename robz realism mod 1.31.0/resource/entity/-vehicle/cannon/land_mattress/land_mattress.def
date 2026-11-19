@@ -2,7 +2,7 @@
 	(include "/properties/cannon.ext")
 	{props "vehicle" "cannon" "nebelwerfer" "round_sandbag2" "wheeled" "vision_cannon_maximum"}
 	{targetSelector "cannon_rocket"}
-	
+
 	("armor_light")
 
 	; --- Godny hitbox armor (ported from GodnyMod: land_mattress.def) ---
@@ -97,6 +97,6 @@
 			{properties
 				{fire_mode hold}
 			}
-		}	
+		}
 	)
 }

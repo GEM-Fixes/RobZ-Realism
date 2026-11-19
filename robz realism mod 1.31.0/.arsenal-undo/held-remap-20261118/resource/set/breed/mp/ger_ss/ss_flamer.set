@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-reg-rfl"}
+	{portrait ger_soldier2}
+	{icon flamer}
+	{icon_priority 3}
+	{nationality ger}
+	{armors
+		{head waffen_helmet_camo}
+	}
+	{perks
+		("body_regular_bare")
+		("drive_regular")
+		("skills_4_4_2_3_2_4")
+		{"avoidance" lvl_1}
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "flame_thrower_g"}
+		{item "balloon_g" filled}
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

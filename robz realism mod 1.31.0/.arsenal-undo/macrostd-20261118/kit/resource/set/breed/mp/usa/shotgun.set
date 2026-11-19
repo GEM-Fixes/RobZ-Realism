@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "us_mgun"}
+	{portrait "usa_soldier2"}
+	{nationality usa}
+	{icon "shotgun"}
+	{icon_priority 3}
+	{armors
+		{head "usmc-cap1"}
+	}
+	{perks
+		("breed_body" health(150%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.75) vehicle(1) cannon(0.8))
+		("breed_skills" pistol(2) smg(2) mgun(2) rifle(3) rocket(1) melee(3))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "m12_shotgun" filled}
+		{item "ammo shotgun" 90}
+		{item "bandage" 3}
+		{item "grenade m61" 2}
+		;{item "grenade n73at" 1}
+		{item "smoke grenade" 1}
+		{in_hands 0}
+	}
+}

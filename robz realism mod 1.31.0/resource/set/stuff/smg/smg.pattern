@@ -20,7 +20,7 @@
 	{rechargeTime 4}
 	{speed 190}
 	;{gravity 10}
-	
+
 	{healthDamage 25}
 	{ProjectileDamage 3}
 	{ProjectileDamageClip 3}
@@ -31,6 +31,6 @@
 		{short 6 0.5}
 		{long 8 0.5}
 	}
-	
-	("accuracy_smg")	
+
+	("accuracy_smg")
 }

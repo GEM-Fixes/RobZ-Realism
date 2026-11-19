@@ -7,22 +7,22 @@
 	{cursorReloading "zenite_reload"}
 	{mass 255}
 	{Automatic}
-	
+
 	("caliber_zenite")
-	{Spreading	
+	{Spreading
 		{BurstRecoveryTime 0.6}
 		{BurstAccuracy 100 95 90 85 80 75 70 60 50 40}
 	}
-	
+
 	{burst
 		{short 4.5 1}
 		{long 11 2.5}
-	}	
+	}
 
 	{rechargeTime 5}
 	{recoveryTime 0.13}
 	("speed" s(744))
-	
+
 	{healthDamage 100}
 	{projectileDamage 24}
 	("damage" a(22) b(15) c(8) d(5) e(1))
@@ -33,5 +33,5 @@
 	{aimingTolerance 1}
 	("range_zenite")
 	{range 150 150}
-	
+
 }

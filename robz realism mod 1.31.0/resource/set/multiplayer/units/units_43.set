@@ -6,6 +6,7 @@
 	(include "squads.set")
 	(include "vehicles.set")
 	(include "years_compat.set")
+	(include "_macros.inc")
 	(include "/set/multiplayer/units/usa/squads_43-45.set")
 	(include "/set/multiplayer/units/usa/vehicles_43-45.set")
 	(include "/set/multiplayer/units/ger/squads_43.set")

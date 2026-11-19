@@ -3,7 +3,7 @@
 	{inventory
 		{size 2 1}
 	}
-	{damage blastwave  
+	{damage blastwave
 		{energy 0.8}
 		{area 0.1 0.2}
 	}

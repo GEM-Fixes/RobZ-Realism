@@ -22,7 +22,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/particle/oskolki"
 					{scale 1
 						{linear
@@ -78,7 +78,7 @@
 			{damping 0.95}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "/texture/fx/_bmp/smoke/smokeend_lightloop"
 					{timer
 						{mode play }
@@ -116,7 +116,7 @@
 			{damping 0.95}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "/texture/fx/smoke/smokesmal4b_30"
 					{timer
 						{mode play }

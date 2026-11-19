@@ -3,7 +3,7 @@
 	{filling "ammo nebel" 6}
 	{fireSound "reactive/nebelwerfer_real"}
 	("heavy_artillery")
-	
+
 	{recoveryTime 1}
 	{AimingTolerance 0.1}
 	{foresight "foresight"}

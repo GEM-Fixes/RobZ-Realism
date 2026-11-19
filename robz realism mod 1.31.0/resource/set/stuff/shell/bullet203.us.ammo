@@ -5,15 +5,15 @@
 	{inventory
 		{size 4 2}
 		{weight 150}
-	}	
+	}
 	{mass 50}
 	{entity "mortar_shell"}
-	
+
 	{detonationThickness 1}
 	{applyProjectile}
 
 	("fg_maximum" args 26)
-	
+
 	{trace
 		{view "/texture/fx/trace"
 			{Light 0.5}

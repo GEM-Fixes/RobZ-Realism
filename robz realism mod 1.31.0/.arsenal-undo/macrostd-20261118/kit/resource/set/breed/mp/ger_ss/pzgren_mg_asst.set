@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-smock2-rfl"}
+	{portrait "ger_soldier7"}
+	{icon "rifleman"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{head waffen_helmet_camo}
+	}
+	{perks
+		("breed_body" health(200%) regen_health(100%) stamina(150%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.75) vehicle(1) cannon(0.8))
+		("breed_skills" pistol(4) smg(3) mgun(5) rifle(5) rocket(4) melee(4))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "mauzer" filled}
+		{item "ammo mauser_clip" 60}
+		{item "ammo mg_mauser belt" 600}
+		{item "bandage" 3}
+		{item "grenade m24" 2}
+		{item "sandbag_kit"}
+		{in_hands 0}
+	}
+}

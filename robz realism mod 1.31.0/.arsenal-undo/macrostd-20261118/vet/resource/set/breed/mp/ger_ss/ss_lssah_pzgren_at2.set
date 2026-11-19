@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-lsssmock2-rfl"}
+	{portrait "ger_soldier6"}
+	{icon "stormtrooper2"}
+	{icon_priority 4}
+	{nationality ger}
+	{armors
+		{head waffen_helmet_lssah}
+	}
+	{perks
+		("breed_body" health(200%) regen_health(100%) stamina(150%) regen_stamina(100%) vision(mp_soldier) speed(0.9))
+		("breed_drive" tank(0.95) vehicle(1) cannon(1))
+		("breed_skills" pistol(4) smg(3) mgun(3) rifle(5) rocket(5) melee(4))
+		{"at_rifle" lvl_5}
+	}
+	("breed_vet" kind(lvl5))
+	{inventory
+		{item "mauzer_vet" filled}
+		{item "ammo mauser_clip" 60}
+		{item "bandage" 5}
+		{item "grenade m39" 2}
+		{item "grenade hohlladung" 1}
+		{item "ammo panzershreck" 5}
+		{in_hands 0}
+	}
+}

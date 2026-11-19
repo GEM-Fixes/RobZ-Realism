@@ -1,22 +1,17 @@
+(include "/properties/robz/volumes.inc")
 {entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{props "medium" "-turret" "vision_vehicle_high" "muzzle_maximum"}
 
-	{volume "body1"
-		{tags "body"}
-		{component "body"}
-	}
-	{volume "body2"
-		{tags "body"}
-		{component "body"}
-	}
-	
+	("vol_body_part_lower" name(body1))
+	("vol_body_part_lower" name(body2))
+
 	("armor_spa_heavy" armor(80 30 30 22))
 	("armor_mantlet" t(30))
 	("armor_engine"  t(10 30 30 12))
 	("shield" args 10)
-	
+
 	("crew_52_human")
 
 	{boarder
@@ -44,7 +39,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "150mm_sig33" filling "bullet150 gers fg" 1}	
+			{weapon "150mm_sig33" filling "bullet150 gers fg" 1}
 			("abm_direct_how")
 		}
 		{place "mgun1"
@@ -56,7 +51,7 @@
 			{basic}
 		}
 	}
-	
+
 	{mass 21000}
 	{Chassis
 		("tank_trace" fx("tracks_mid") step(0.52) len(0.21))
@@ -65,26 +60,26 @@
 			{maxSpeedAtMaxTurn 6}
 			{StartTime 	 37}
 			{TurnTime  	 15}
-    			{TurnStart 1.4}
-     			{BrakeTime   1} 
-    			{StopTime    2}
-     			{TurnRadius  8} 
-    			{TurnStop   0.7}
-     			{Gears  0.1 0.2 0.3 1}
-     			{RearGears 0.28}
+			{TurnStart 1.4}
+			{BrakeTime   1}
+			{StopTime    2}
+			{TurnRadius  8}
+			{TurnStop   0.7}
+			{Gears  0.1 0.2 0.3 1}
+			{RearGears 0.28}
 		}
 		{FuelBag
-			{volume 310 }	
+			{volume 310 }
 			{rate	24 }
 			{remain 310 }
 			{fuel "fuel"}
 		}
 		{speed
-        			{Normal  30}
-        			{Slow  30}
-    		}
+			{Normal  30}
+			{Slow  30}
+		}
 	}
-	
+
 	{Extension "Sig33b.mdl"}
 	{bone "gun_rot1"
 		{speed 0.001}

@@ -1,0 +1,34 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-pioneer"}
+	{portrait "ger_soldier7"}
+	{icon "rifleman"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{head waffen_helmet_camo}
+	}
+	{perks
+		("breed_body" health(150%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_soldier") speed(0.9))
+		("breed_drive" tank(0.75) vehicle(1) cannon(0.8))
+		("breed_skills" pistol(4) smg(4) mgun(2) rifle(3) rocket(2) melee(4))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "sg44" filled}
+		{item "ammo stg44_mag" 180}
+		{item "bandage" 3}
+		{item "grenade m24" 2}
+		{item "mine antitank" 3}
+		{item "sandbag_kit" 1}
+		{item "mine s_mine" 6}
+		{item "trench_spade" 1}
+		;{item "dynamite_ladung" 1}
+		;{item "mine antitank" 1}
+		;{item "grenade m24" 2}
+		;{item "trench_spade" 1}
+		;{item "sandbag_kit" 3}
+		;{item "hedgehog_kit" 1}
+		{in_hands 0}
+	}
+}

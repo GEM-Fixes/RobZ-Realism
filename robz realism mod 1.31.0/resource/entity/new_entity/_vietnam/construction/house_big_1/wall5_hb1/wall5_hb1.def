@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/construction.inc")
 	{Extension "wall5_hb1.mdl"}
@@ -14,10 +15,7 @@
 	{extender "structure_bone"
 		{hold  "36"}
 	}
-	{Volume "body"
-		{Tags  "body" "fire"}
-		{Thickness 10}
-	}
+	("vol_body_fire" name(body) mm(10))
 	{Volume "hole"
 		{Tags  "attach" "1"}
 		{able clear {hole}{touch 1}}

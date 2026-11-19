@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "waffen-fj-rifleman"}
 	{portrait "ger_elite1"}
@@ -9,47 +10,13 @@
 		{head helmet_ger_m38_cover}
 	}
 	{perks
-		{"health" "250%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "150%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.75
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 0.8
-		}
-		{"pistol" lvl_3
-		}
-		{"smg" lvl_3
-		}
-		{"mgun" lvl_3
-		}
-		{"rifle" lvl_3
-		}
-		{"rocketlauncher" lvl_3
-		}
-		{"melee" lvl_3
-		}
-		{"avoidance" lvl_1
-		}
+		("soldier_mgun_3" rocket(2) body(hardy) sight(soldier))
+		{"avoidance" lvl_1}
 		{"stealth"}
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_lvl5")
-	}
+	("breed_vet" table(start5))
 	{inventory
-		{item "mg34" filled}
-		{item "ammo mg_mauser drum" 300}
+		("mgun_mg34")
 		{item "bandage" 5}
 		{item "sandbag_kit"}
 		{item "barrel_case"}

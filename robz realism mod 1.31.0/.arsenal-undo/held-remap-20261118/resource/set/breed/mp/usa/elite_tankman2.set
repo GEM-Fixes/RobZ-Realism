@@ -1,0 +1,20 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-tank-ssgt"}
+	{portrait "usa_tankman"}
+	{nationality usa}
+	{icon "tankman"}
+	{icon_priority 1}
+	{armors
+		{head tankhelmet_usa}
+	}
+	{perks
+		("crew_4" body(line))
+		{"tankgun" lvl_10}
+	}
+	("breed_vet" table(crew))
+	{inventory
+		("smg_m3a_96")
+		{in_hands 0}
+	}
+}

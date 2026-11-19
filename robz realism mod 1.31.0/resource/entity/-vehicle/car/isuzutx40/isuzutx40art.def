@@ -47,35 +47,35 @@
 		{thickness hollow 0.3}
 	}
 	; --- end Godny hitbox armor ---
-	{component "shield"	
+	{component "shield"
 		{RepairTime 10}
 	}
 	{Volume "cargo"
-	    {thickness 2}
-	  }
-	  {component "cargo"	
-	  		{RepairTime 10}
+		{thickness 2}
 	}
-	  {Volume "body"
-	      {thickness 2}
-	  }
-	  {component "body"	
-	  		{RepairTime 10}
+	{component "cargo"
+		{RepairTime 10}
+	}
+	{Volume "body"
+		{thickness 2}
+	}
+	{component "body"
+		{RepairTime 10}
 	}
 
-	  {Volume "cabin"
-	        {thickness 2}
-	  }
-	  {component "cabin"	
-	  		{RepairTime 10}
+	{Volume "cabin"
+		{thickness 2}
 	}
-	  {Volume "hood"
-	        {thickness 2}
-	  }
-	  {component "hood"	
-	  		{RepairTime 10}
+	{component "cabin"
+		{RepairTime 10}
 	}
-  
+	{Volume "hood"
+		{thickness 2}
+	}
+	{component "hood"
+		{RepairTime 10}
+	}
+
 	{sensor
 		{visor "driver"
 			{vision "tank_driver"}
@@ -92,8 +92,8 @@
 			{RearGears	0.4}
 		}
 		{FuelBag
-			{volume 120 }	
-			{rate	10 }   
+			{volume 120 }
+			{rate	10 }
 			{remain 120 }
 			{fuel "fuel"}
 		}
@@ -108,7 +108,7 @@
 	{Extension "isuzutx40.mdl"}
 	{extender "inventory"
 		{box
-      		{size 6 10}
+			{size 6 10}
 			{clear}
 			{item "type97" "grenade" 25}
 			{item "type3at_a" "grenade" 10}
@@ -126,7 +126,7 @@
 		{detail1 0}
 	}
 	{extender "shield"
-			{off}
+		{off}
 	}
 	(include "/properties/resupply_generic.inc")
 	("truck_ammo_jap_art")

@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-inf-pvt"}
+	{portrait "eng_soldier2"}
+	{nationality eng}
+	{icon "rifleman"}
+	{icon_priority 1}
+	{armors
+		{head "helmet2_eng"}
+	}
+	{perks
+		("body_regular")
+		("drive_t08_v10_c10")
+		("breed_skills" pistol(2) smg(2) mgun(4) rifle(4) rocket(1) melee(4))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_em3")
+		{item "ammo bren_mag" 168}
+		{item "bandage" 3}
+		("frag_mk1_x1")
+		{item "sandbag_kit" 1}
+		{in_hands 0}
+	}
+}

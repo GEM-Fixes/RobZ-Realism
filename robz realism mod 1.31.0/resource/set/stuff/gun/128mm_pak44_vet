@@ -3,7 +3,7 @@
 	{rechargeTime 16}
 	("accuracy_max_260m_anti_far")
 
-	("damage_215" a(269) b(253) c(237) d(222) e(208) range(250))
+	("damage_215" at20(269) at100(253) at170(237) at215(222) at250(208) max(250))
 	{parameters "fg"
 		{range 260 260}
 	}

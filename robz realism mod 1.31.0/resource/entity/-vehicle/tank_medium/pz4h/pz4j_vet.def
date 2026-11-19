@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
@@ -6,17 +7,9 @@
 	{extender "enumerator"
 		{digit_folder "ger"}
 	}
-	
-	{volume "body1"
-		{tags "body"}
-		{component "body"}
-		{thickness 30}
-	}
-	{volume "body2"
-		{tags "body"}
-		{component "body"}
-		{thickness 30}
-	}
+
+	("vol_body_plate_lower" name(body1) mm(30))
+	("vol_body_plate_lower" name(body2) mm(30))
 	{volume "shieldl61"
 		{tags "shield"}
 		{component "shieldl6"}
@@ -29,9 +22,9 @@
 	("armor_engine"  t(30 30 20 26))
 	("armor_mantlet" t(50))
 	("shield" args 10)
-	
+
 	{extender "shield"
-			{on}
+		{on}
 	}
 	{component "shieldl1" {tags "shield"}}
 	{component "shieldl2" {tags "shield"}}
@@ -42,8 +35,8 @@
 	{component "shieldr2" {tags "shield"}}
 	{component "shieldr3" {tags "shield"}}
 	{component "shieldr4" {tags "shield"}}
-	{component "shieldr5" {tags "shield"}}	
-	
+	{component "shieldr5" {tags "shield"}}
+
 	("crew_4_human_extended")
 	{boarder
 		{anm "driver"
@@ -71,7 +64,7 @@
 			{reverse 	{end	"emit_body"}}
 		}
 	}
-	
+
 	("gunner_visible")
 
 	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
@@ -95,7 +88,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "75mm_kwk40(L48)_vet" filling "ammo bullet75 ger apcbc" 1}		
+			{weapon "75mm_kwk40(L48)_vet" filling "ammo bullet75 ger apcbc" 1}
 			("abm_veteran")
 		}
 		{place "mgun"
@@ -105,7 +98,7 @@
 			{LinkBone "mgun1_rot"}
 			{LinkAnimation "off"}
 			("abm_mgun")
-		}	
+		}
 		{place "mgun1"
 			{type "mgun_hull"}
 			{weapon "mg34_optic" filled}
@@ -119,7 +112,7 @@
 			{weapon "mg34_optic" filled}
 			{foresight "foresight5"}
 			("abm_mgun")
-            {basic}
+			{basic}
 		}
 	}
 
@@ -131,35 +124,35 @@
 			{maxSpeedAtMaxTurn 4}
 			{StartTime	  40.8}
 			{TurnTime  	  17.1}
-    		{TurnStart  1.4} 
-    		{BrakeTime    1} 
-    		{StopTime     2} 
-    		{TurnRadius   8} 
-    		{TurnStop   0.8}
-     		{Gears  0.13 0.23 0.33 1}
-    		{RearGears 0.28}
+			{TurnStart  1.4}
+			{BrakeTime    1}
+			{StopTime     2}
+			{TurnRadius   8}
+			{TurnStop   0.8}
+			{Gears  0.13 0.23 0.33 1}
+			{RearGears 0.28}
 		}
 		{FuelBag
-			{volume 670 }	
-			{rate	37 }   
+			{volume 670 }
+			{rate	37 }
 			{remain 670 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  28}
-        	{Slow  28}
-    	}
+			{Normal  28}
+			{Slow  28}
+		}
 	}
-	
+
 	{Extension "pz4j.mdl"}
-	
+
 	{bone "turret"
 		{speed 0.0021}
 	}
 	{bone "gun_rot"
 		{speed 0.0012}
 	}
-	
+
 	{bone "turret_mgun"
 		{limits -30 30}
 		{speed 0.03}

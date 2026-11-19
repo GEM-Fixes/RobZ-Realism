@@ -1,7 +1,7 @@
 {from "pattern rpg_weapon"
 	{filling "ammo m18recoilless" 1}
 	{entity "m18rr"}
-    	{projectileDamageTable {0 76} {90 76} {95 0}}
+	{projectileDamageTable {0 76} {90 76} {95 0}}
 	{fireSound "reactive/launch03"}
 	{spreading 3}
 	{range 90 90}

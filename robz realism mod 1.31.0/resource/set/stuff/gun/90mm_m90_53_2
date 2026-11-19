@@ -4,13 +4,13 @@
 	{recoveryTime 9.5}
 	{rechargeTime 9.5}
 	{range 490 490}
-        {burst {min 6} {noaiming}}
-	("speed_lowarc" s(820))
+	{burst {min 6} {noaiming}}
+	("speed_lowarc" mps(820))
 	("caliber_large")
 	{projectileDamage 158}
 	{gravity 12}
 	("zeroing_6")
-	
+
 
 }
 

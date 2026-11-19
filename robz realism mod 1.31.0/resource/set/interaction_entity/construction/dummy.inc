@@ -33,7 +33,7 @@
 	{on bullet_hit
 		{if stuff "shell"
 			{spawn "hay_hit_norm"}
-		else stuff "bullet"
+			else stuff "bullet"
 			{spawn "hay_hit_small2"}
 		}
 	}
@@ -86,7 +86,7 @@
 			{spawn "hay_hit_fall" "fx_hayfall2"}
 			{spawn "hay_hit_fall" "fx_hayfall3"}
 			{spawn "hay_hit_fall" "fx_hayfall4"}
-		else
+			else
 			{spawn "hay_hit_big" no_position}
 			{spawn "hay_hit_big" "FX_haulm1"}
 			{spawn "hay_hit_big" "FX_haulm2"}
@@ -100,11 +100,11 @@
 		{if not under_water
 			{if stuff "bullet"
 				{spawn "spheredust_small_short"}
-			else stuff "zenite"
+				else stuff "zenite"
 				{spawn "spheredust_small_short"}
-			else stuff "shell"
+				else stuff "shell"
 				{spawn "spheredust_small_short"}
-			else stuff "mortar"
+				else stuff "mortar"
 				{spawn "spheredust_small_short"}
 			}
 		}
@@ -137,7 +137,7 @@
 			{area disable	"close"}
 			{area enable	"left"}
 			{area enable	"right"}
-		else
+			else
 			{area enable	"close"}
 			{area disable	"left"}
 			{area disable	"right"}
@@ -155,6 +155,12 @@
 	{on spawn
 		{call "update_area"}
 	}
+	; update_area: {if "opened%0" {area}}
+	;   0_ - text in {area}
+	;   %0 - text in {if}
+	;   %1 - text in {area}
+	;   %2 - text in {area}
+	;   e.g. ("update_area" args %0 1 2)
 	(define "update_area"
 		{if "opened%0"
 			{area disable	"close%0_%1"}
@@ -164,7 +170,7 @@
 			{area disable	"close%0_%2"}
 			{area disable	"left%0_%2"}
 			{area disable	"right%0_%2"}
-		else
+			else
 			{area enable	"close%0_%1"}
 			{area disable	"left%0_%1"}
 			{area disable	"right%0_%1"}
@@ -174,6 +180,9 @@
 			{area disable	"right%0_%2"}
 		}
 	)
+	; door: {on "open%0"} {on "close%0"} {on "open_fast%0"} {on "close_fast%0"} {on "update_area%0"}
+	;   %0 - text in {on}, text in {set}, text in {ani_play}
+	;   e.g. ("door" args 1)
 	(define "door"
 		{on "open%0"
 			{set "opened%0" 1}
@@ -202,7 +211,7 @@
 				{area enable	"rectangle02"}
 				{area disable	"rectangle03"}
 				{area disable	"rectangle04"}
-			else
+				else
 				("update_area" args %0 2 1)
 				{area disable	"rectangle01"}
 				{area disable	"rectangle02"}
@@ -251,7 +260,7 @@
 	}
 
 	{on "move"
-		{ani_play "move"}	
+		{ani_play "move"}
 	}
 }
 
@@ -280,7 +289,7 @@
 
 {"gate lock"
 	{on "open"
-;		{start_sound "vehicle/engine/door"}
+		;		{start_sound "vehicle/engine/door"}
 		{volumes "attach" enable touch}
 	}
 	{on bullet_hit
@@ -303,9 +312,9 @@
 		{if stuff "bullet"
 			{spawn "ex_air_sm"}
 			;{bullet_detonate}
-		else stuff "shell"
+			else stuff "shell"
 			{spawn "sand_hit_small"}
-			;{bullet_detonate}
+		;{bullet_detonate}
 		}
 	}
 	{on contact
@@ -410,7 +419,7 @@
 	{on "update_area"
 		{if "opened"
 			{area enable "sewer"}
-		else
+			else
 			{area disable "sewer"}
 		}
 	}

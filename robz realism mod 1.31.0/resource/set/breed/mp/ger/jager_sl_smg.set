@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "ger-cavnco-smg"}
 	{portrait "ger_soldier3"}
@@ -9,49 +10,15 @@
 		{head fieldcap_ger_heer}
 	}
 	{perks
-		{"health" "200%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "100%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.85
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 0.9
-		}
-		
-		{"pistol" lvl_5
-		}
-		{"smg" lvl_5
-		}
-		{"mgun" lvl_4
-		}
-		{"rifle" lvl_5
-		}
-		{"rocketlauncher" lvl_4
-		}
-		{"melee" lvl_5
-		}
+		("soldier_smg_6" rocket(1) body(line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(elite))
 	{inventory
-		{item "mp40" filled}      
-		{item "ammo mp40_mag" 192}
+		("smg_mp40")
 		{item "bandage" 3}
-		{item "grenade m24" 2}
-		{item "grenade m24x5" 0 1}
-		{item "smoke grenade" 2}
+		("give" item(grenade m24) count(2))
+		("give_chance" item(grenade m24x5) chance(25))
+		("give" item(smoke grenade) count(2))
 		{in_hands 0}
 	}
 }

@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "eng-engineer"}
 	{portrait "eng_soldier2"}
@@ -8,50 +9,16 @@
 		{head "helmet2_eng"}
 	}
 	{perks
-		{"health" "150%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "100%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.8
-		}
-		{"vehicle" 1.0
-		}
-		{"cannon" 1.0
-		}
-		
-		{"pistol" lvl_3
-		}
-		{"smg" lvl_3
-		}
-		{"mgun" lvl_3
-		}
-		{"rifle" lvl_4
-		}
-		{"rocketlauncher" lvl_3
-		}
-		{"melee" lvl_4
-		}
+		("soldier_rifle_5" rocket(1) body(line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(standard))
 	{inventory
-		{item "em3" filled}
-		{item "ammo british303_clip" 50}
+		("rifle_em3")
 		{item "bandage" 3}
-		{item "grenade mk1" 2}
-		{item "grenade smoke" 2}
-		{item "n77_smoke grenade" 1}
-		{item "grenade n73at" 1}
+		("give" item(grenade mk1) count(2))
+		("give" item(grenade smoke) count(2))
+		("give" item(n77_smoke grenade) count(1))
+		("give" item(grenade n73at) count(1))
 		{item "sandbag_kit" 2}
 		{in_hands 0}
 	}

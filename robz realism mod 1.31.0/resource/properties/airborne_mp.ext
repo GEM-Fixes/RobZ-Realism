@@ -27,23 +27,23 @@ actor
 	{InformRange 150 150}		;first - AI ;second - USER
 }
 
-{Weaponry	
-    {Manualaccuracy 1}				
-    {place "mgun01" 				
-    {rotate}            			
-    }
-    {place "mgun02"
-    {rotate}
-    }
-    {place "mgun03"
-    {rotate}
-    }
-    {place "mgun04"
-    {rotate}
-    }
-    {place "bomb"
-        {Rotate}
-    }
+{Weaponry
+	{Manualaccuracy 1}
+	{place "mgun01"
+		{rotate}
+	}
+	{place "mgun02"
+		{rotate}
+	}
+	{place "mgun03"
+		{rotate}
+	}
+	{place "mgun04"
+		{rotate}
+	}
+	{place "bomb"
+		{Rotate}
+	}
 }
 
 
@@ -63,7 +63,7 @@ actor
 	("chassis_defaults")
 	{locomotion
 		{Maxspeed 		95 } ; kmph
- 	  	{turnRadius 	40 } ; m
+		{turnRadius 	40 } ; m
 		{StartTime 		6  } ; время разгона до макс. скорости с 0, seconds
 		{BrakeTime 		4  } ; время торможения с макс. скорости до 0, seconds
 		{StopTime		7  } ; время остановки после отключения двигателя с макс. скорости до 0, seconds
@@ -79,14 +79,14 @@ actor
 		{Altitude 58}
 	)
 	{FuelBag
-        		{volume 8000 }   ; liters
-        		{rate   50 }    ; liters per kilometer
-        		{remain 8000 }
-        		{fuel "fuel"}
-    	}
+		{volume 8000 }   ; liters
+		{rate   50 }    ; liters per kilometer
+		{remain 8000 }
+		{fuel "fuel"}
+	}
 }
 {extender "talk"
-	{talker "tank"}	
+	{talker "tank"}
 }
 {ChassisManager
 	{Current "airborne"}
@@ -100,33 +100,29 @@ actor
 		{weight 25000}
 	}
 }
+; aircraft_vitality: {Extender "vitality" {Health}}
+;   hp - {max}, [?], {current}, [?]
+;   e.g. ("aircraft_vitality" hp(4000))
 (define "aircraft_vitality"
 	{Extender "vitality"
 		{Health
 			{max (*1 %hp)}
 			{current (* 1 %hp)}
-			{inc 0}			
+			{inc 0}
 		}
-			
+
 	}
 )
 
-(define "accuracy_by_motion" ;  spreading depending on the speed of "body", "gun" volumes
-    {AccuracyByMotion
-        {MaxLinearSpeed %max_linear}               ;km/h
-        {ByLinearSpeed %accuracy_by_linear}
-        {MaxAngularSpeed %max_angular}             ;deg/s
-        {ByAngularSpeed %accuracy_by_angular}
-        {DisorderTime %disorder_time}              ;s
-        {OrderTime %order_time}                    ;s
-    }
-)
+(include "/properties/robz/armor.inc")
+; abm_zenite: calls "accuracy_by_motion"
+;   e.g. ("abm_zenite")
 (define "abm_zenite"
-    ("accuracy_by_motion"
-        max_linear(15) accuracy_by_linear(0.3)
-        max_angular(4) accuracy_by_angular(0.8)
-        disorder_time(1.2) order_time(1.4)
-    )
+	("accuracy_by_motion"
+		max_linear(15) accuracy_by_linear(0.3)
+		max_angular(4) accuracy_by_angular(0.8)
+		disorder_time(1.2) order_time(1.4)
+	)
 )
 {volume "propeller"
 	{tags "part"}
@@ -191,7 +187,7 @@ actor
 	{thickness 3}
 	{able {visible 0}}
 }
-	
+
 {component "propeller"
 	{RepairTime 10}
 }
@@ -232,7 +228,9 @@ actor
 	{tags "mover"}
 }
 
-(define "locomotion"
+; locomotion_steer_on: {StartTime} {BrakeTime} {StopTime} {SteerOn} {SteerOff} {SplineRadius}
+;   e.g. none (not called)
+(define "locomotion_steer_on"
 	{StartTime	5	}		; время разгона до макс. скорости с 0, seconds
 	{BrakeTime	2	}		; время торможения с макс. скорости до 0, seconds
 	{StopTime	4	}		; время остановки после отключения двигателя с макс. скорости до 0, seconds
@@ -241,6 +239,9 @@ actor
 	{SplineRadius 5}		; ограничение радиуса поворота на сплайнах, метров
 )
 
+; part: {volume {tags} {thickness} {able}} {component}
+;   %0 - {volume}, [?], {component}, [?]
+;   e.g. none in the mod (called from vanilla files)
 (define "part"
 	{volume %0
 		{tags "part"}
@@ -250,146 +251,162 @@ actor
 	{component %0}
 )
 
-(define "armor_airborne" 
-    {armor
-        {setting "body"
-            {thickness %bod}
-            {durability
-                {blast
-                    {koef %dur}
-                }
-        		{pierce
-                    {koef %pierce_dur}
-                }
-            }
-            {threshold
-                {blast
-                    {koef %thr}
-                }
-            }
-            {volumes "body*"}
-        }
-        {setting "body_back"
-            {thickness %bod_back}
-            {durability
-                {blast
-                    {koef %dur}
-                }
-        		{pierce
-                    {koef %pierce_dur}
-                }
-            }
-            {threshold
-                {blast
-                    {koef %thr}
-                }
-            }
-            {volumes "body_back*"}
-        }
-        {setting "engine"
-            {thickness %en}
-            {durability
-                {blast
-                    {koef %dur}
-                }
+; armor_airborne: {armor {setting}}
+;   body_mm - {thickness}, mm
+;   dur - {koef}, [?]
+;   pierce_dur - {koef}, [?]
+;   thr - {koef}, [?]
+;   bod_back - {thickness}, mm
+;   en - {thickness}, mm
+;   wl1 - {thickness}, mm
+;   wl2 - {thickness}, mm
+;   wr1 - {thickness}, mm
+;   wr2 - {thickness}, mm
+;   e.g. ("armor_airborne"  bod(8) bod_back(3) en(3) wl1(3) wl2(3) wr1(3) wr2(3) dur(1.25) thr(0.8) pierce_dur(3.25))
+(define "armor_airborne"
+	{armor
+		{setting "body"
+			{thickness %body_mm}
+			{durability
+				{blast
+					{koef %dur}
+				}
 				{pierce
-                    {koef %pierce_dur}
-                }
-            }
-            {threshold
-                {blast
-                    {koef %thr}
-                }
-            }
-            {volumes "engine*"}
-        }
-        {setting "wingl1"
-            {thickness %wl1}
-            {durability
-                {blast
-                    {koef %dur}
-                }
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
+			{volumes "body*"}
+		}
+		{setting "body_back"
+			{thickness %bod_back}
+			{durability
+				{blast
+					{koef %dur}
+				}
 				{pierce
-                    {koef %pierce_dur}
-                }
-            }
-            {threshold
-                {blast
-                    {koef %thr}
-                }
-            }
-            {volumes "wingl1*"}
-        }
-        {setting "wingl2"
-            {thickness %wl2}
-            {durability
-                {blast
-                    {koef %dur}
-                }
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
+			{volumes "body_back*"}
+		}
+		{setting "engine"
+			{thickness %en}
+			{durability
+				{blast
+					{koef %dur}
+				}
 				{pierce
-                    {koef %pierce_dur}
-                }
-            }
-            {threshold
-                {blast
-                    {koef %thr}
-                }
-            }
-            {volumes "wingl2*"}
-        }
-       {setting "wingr1"
-            {thickness %wr1}
-            {durability
-                {blast
-                    {koef %dur}
-                }
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
+			{volumes "engine*"}
+		}
+		{setting "wingl1"
+			{thickness %wl1}
+			{durability
+				{blast
+					{koef %dur}
+				}
 				{pierce
-                    {koef %pierce_dur}
-                }
-            }
-            {threshold
-                {blast
-                    {koef %thr}
-                }
-            }
-            {volumes "wingr1*"}
-        }
-        {setting "wingr2"
-            {thickness %wr2}
-            {durability
-                {blast
-                    {koef %dur}
-                }
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
+			{volumes "wingl1*"}
+		}
+		{setting "wingl2"
+			{thickness %wl2}
+			{durability
+				{blast
+					{koef %dur}
+				}
 				{pierce
-                    {koef %pierce_dur}
-                }
-            }
-            {threshold
-                {blast
-                    {koef %thr}
-                }
-            }
-            {volumes "wingr2*"}
-        }
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
+			{volumes "wingl2*"}
+		}
+		{setting "wingr1"
+			{thickness %wr1}
+			{durability
+				{blast
+					{koef %dur}
+				}
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
+			{volumes "wingr1*"}
+		}
+		{setting "wingr2"
+			{thickness %wr2}
+			{durability
+				{blast
+					{koef %dur}
+				}
+				{pierce
+					{koef %pierce_dur}
+				}
+			}
+			{threshold
+				{blast
+					{koef %thr}
+				}
+			}
+			{volumes "wingr2*"}
+		}
 	}
 )
-(define "armor_fighter"
-    ("armor_airborne"  bod(14) bod_back(3) en(3) wl1(3) wl2(3) wr1(3) wr2(3) dur(1.25) thr(0.8) pierce_dur(3.25))
-    ("aircraft_vitality" hp(5500))
+; armor_light_airborne: calls "armor_airborne" "aircraft_vitality"
+;   e.g. none (not called)
+(define "armor_light_airborne"
+	("armor_airborne"  bod(8) bod_back(3) en(3) wl1(3) wl2(3) wr1(3) wr2(3) dur(1.25) thr(0.8) pierce_dur(3.25))
+	("aircraft_vitality" hp(4000))
 )
-(define "armor_attack_aircraft"
-    ("armor_airborne"  bod(16) bod_back(3) en(3) wl1(3) wl2(3) wr1(3) wr2(3) dur(1.25) thr(0.8) pierce_dur(3.25))
-    ("aircraft_vitality" hp(7500))
-)
-(define "armor_bomber"
-    ("armor_airborne"  bod(14) bod_back(3) en(3) wl1(3) wl2(3) wr1(3) wr2(3) dur(1.25) thr(0.8) pierce_dur(3.25))
-    ("aircraft_vitality" hp(10000))
-)
-(define "armor_transport"
-    ("armor_airborne"  bod(8) bod_back(3) en(3) wl1(3) wl2(3) wr1(3) wr2(3) dur(1.25) thr(0.8) pierce_dur(3.25))
-    ("aircraft_vitality" hp(6000))
-)
-(define "armor_light"
-    ("armor_airborne"  bod(8) bod_back(3) en(3) wl1(3) wl2(3) wr1(3) wr2(3) dur(1.25) thr(0.8) pierce_dur(3.25))
-    ("aircraft_vitality" hp(4000))
-)
+
+; ---- unused macros (macrostd): defined, never called ----
+; (define "armor_fighter"
+; 	("armor_airborne"  bod(14) bod_back(3) en(3) wl1(3) wl2(3) wr1(3) wr2(3) dur(1.25) thr(0.8) pierce_dur(3.25))
+; 	("aircraft_vitality" hp(5500))
+; )
+; (define "armor_attack_aircraft"
+; 	("armor_airborne"  bod(16) bod_back(3) en(3) wl1(3) wl2(3) wr1(3) wr2(3) dur(1.25) thr(0.8) pierce_dur(3.25))
+; 	("aircraft_vitality" hp(7500))
+; )
+; (define "armor_bomber"
+; 	("armor_airborne"  bod(14) bod_back(3) en(3) wl1(3) wl2(3) wr1(3) wr2(3) dur(1.25) thr(0.8) pierce_dur(3.25))
+; 	("aircraft_vitality" hp(10000))
+; )
+; (define "armor_transport"
+; 	("armor_airborne"  bod(8) bod_back(3) en(3) wl1(3) wl2(3) wr1(3) wr2(3) dur(1.25) thr(0.8) pierce_dur(3.25))
+; 	("aircraft_vitality" hp(6000))
+; )

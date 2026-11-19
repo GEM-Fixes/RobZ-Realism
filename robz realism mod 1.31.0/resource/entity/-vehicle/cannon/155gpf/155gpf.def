@@ -3,7 +3,7 @@
 	{props "vehicle" "cannon" "wheeled" "vision_cannon_maximum" "muzzle_maximum_nodust"}
 	{PatherID  "cannon.large"}
 	; --- Godny hitbox armor (ported from GodnyMod: 155gpf.def) ---
-	
+
 	; --- end Godny hitbox armor ---
 	("armor_heavy")
 	("wheel" args "wheelright")

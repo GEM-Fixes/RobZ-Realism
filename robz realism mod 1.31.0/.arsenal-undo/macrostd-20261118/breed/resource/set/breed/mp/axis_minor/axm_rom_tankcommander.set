@@ -1,0 +1,56 @@
+{breed
+	{skin "rom-tankman"}
+	{portrait "rom_tankman"}
+	{icon "tankmans"}
+	{icon_priority 0}
+	{nationality rom}
+	{armors
+		{head "9_beret_tankist_ruminia"}
+	}
+	{tags "tankman2"}
+	{perks
+		{"health" "150%"
+		}
+		{"health_regeneration" "100%"
+		}
+		{"stamina" "100%"
+		}
+		{"stamina_regeneration" "100%"
+		}
+		{"vision" mp_soldier
+		}
+		{"speed" 0.8
+		}
+		{"tank" 1.1
+		}
+		{"vehicle" 1
+		}
+		{"cannon" 0.95
+		}
+		{"pistol" lvl_4
+		}
+		{"smg" lvl_4
+		}
+		{"mgun" lvl_4
+		}
+		{"rifle" lvl_3
+		}
+		{"rocketlauncher" lvl_2
+		}
+		{"melee" lvl_4
+		}
+		{"tankgun" lvl_4
+		}
+	}
+	{veterancy
+		(include "veterancy_generic.inc")
+		("veterancy_tankcrew")
+	}
+
+	{inventory
+		{item "steyer_pistol_1912" filled}
+		{item  "ammo 9x19" 40}
+		{item "bandage" 2}
+		{in_hands 0}
+	}
+}

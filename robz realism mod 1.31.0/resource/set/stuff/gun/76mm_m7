@@ -2,6 +2,6 @@
 	{filling "bullet76 us3inch"}
 	{rechargeTime 7}
 	{parameters "hvap" ;using the M93 HVAP ammunition
-        	("damage_170" a(239) b(208) c(175) d(147) e(124) range(200))
+		("damage_170" at20(239) at100(208) at170(175) at215(147) at250(124) max(200))
 	}
 }

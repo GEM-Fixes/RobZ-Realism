@@ -3,7 +3,7 @@
 	{tag "pierce cumulative_small"}
 	;{view "m18_ammo"
 	;	{tail "pfaust_tail" "tail"}
-	;} 
+	;}
 	{damage blastwave
 		{energy 1}
 		{area 2 4}

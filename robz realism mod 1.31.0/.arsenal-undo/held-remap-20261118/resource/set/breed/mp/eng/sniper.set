@@ -1,0 +1,28 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-scout-cpl"}
+	{portrait "eng_soldier4"}
+	{nationality eng}
+	{icon "sniper"}
+	{icon_priority 5}
+	{armors
+		{head helmet_eng_mk3c}
+	}
+	{perks
+		("body_sniper")
+		{"stealth"}
+		{"telescope"}
+		("drive_t10_v10_c10")
+		("breed_skills" pistol(3) smg(3) mgun(3) rifle(6) rocket(2) melee(4))
+		{"aimedshot"}
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("kit_rifle" gun(em2) ammo(british303_clip) rounds(50))
+		{item "bandage" 5}
+		;{item "smoke_paradrop_ammo grenade" 1}
+		{item "plant" 3}
+		{item "knife_union"}
+		{in_hands 0}
+	}
+}

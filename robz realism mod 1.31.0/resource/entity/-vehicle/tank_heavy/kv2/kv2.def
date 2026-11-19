@@ -1,16 +1,17 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{collider "tank.heavy"}
 	{props "heavy" "turret_rotator" "vision_vehicle_maximum" "muzzle_maximum"}
 	{tag "diesel_exhaust"}
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: kv2.def) ---
 	{volume "body1"	;нижн€€ часть корпуса
 		{tags "body"}
 		{component "body"}
 		{thickness 75
-		;	{front	75}	;нлд
+			;	{front	75}	;нлд
 			{rear	70}
 			{top	0.1}	;внутренн€€ стенка
 			{bottom	40}
@@ -21,7 +22,7 @@
 		{tags "body"}
 		{component "body"}
 		{thickness 75
-		;	{front	75}	;мехвод
+			;	{front	75}	;мехвод
 			{rear	10}	;внутренн€€ стенка мто
 			{top	40}
 			{bottom	0.1}	;внутренн€€ стенка
@@ -42,8 +43,8 @@
 		{component "turret"}
 		{able {holed}}
 		{thickness 75
-		;	{front	75}
-		;	{rear	75}
+			;	{front	75}
+			;	{rear	75}
 			{top	40}
 			{bottom	40}
 		}
@@ -52,19 +53,16 @@
 		{tags "turret"}
 		{component "turret"}
 		{thickness 75
-		;	{front	75}
-		;	{rear	75}
+			;	{front	75}
+			;	{rear	75}
 			{top	0.1}	;внутренн€€ стенка
 			{bottom	40}
 		}
 	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "turret"}
-	}
+	("vol_turret_hole_only" name(hole_man))
 	{volume "mantlet"
 		{thickness 110
-		;	{front	110}
+			;	{front	110}
 			{rear	20}	;орудие дает небольшую броню
 		}
 	}
@@ -73,14 +71,14 @@
 	}
 	; --- end Godny hitbox armor ---
 	("armor_heavy" turret(75 75 75 35) body(75 75 70 30) body2(40 75 70 30) body3(75 75 70 30))
-	("armor_engine"  t(30 75 30 30))		
+	("armor_engine"  t(30 75 30 30))
 	("armor_mantlet" t(110))
 	("rus_2-5x_sight")
 
 	{extender "enumerator"}
 
 	("crew_4_human")
-	{placer 
+	{placer
 		{place "commander" {visor "back"}}
 	}
 	{boarder
@@ -111,7 +109,7 @@
 	("seat_human" place(seat7) bone(seat07) door(emit9)  animation(armor))
 	("seat_human" place(seat8) bone(seat08) door(emit10)  animation(armor1))
 	("seat_human" place(seat9) bone(seat09) door(emit11)  animation(armor))
-	
+
 	{sensor
 		{visor "back"
 			{vision "tank_back"}
@@ -121,16 +119,16 @@
 
 	{extender "inventory"
 		{box
-            		{item "ammo bullet152 rus ap" 8}
-            		{item "ammo bullet152 rus fg" 28}
-            		{item  "ammo dt29_mag" 2100}
+			{item "ammo bullet152 rus ap" 8}
+			{item "ammo bullet152 rus fg" 28}
+			{item  "ammo dt29_mag" 2100}
 		}
 	}
 	{Weaponry
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "152mm_m10t" filling "ammo bullet152 rus fg" 1}		
+			{weapon "152mm_m10t" filling "ammo bullet152 rus fg" 1}
 			("abm_direct_how")
 		}
 		{place "mgun3"
@@ -160,26 +158,26 @@
 			{maxSpeedAtMaxTurn 3}
 			{StartTime	60}
 			{TurnTime	28}
-			{TurnStart  2} 
-		{BrakeTime  3}
-		{StopTime   4}
-		{TurnRadius 10}
-		{TurnStop   1}
-		{Gears      0.1 0.18 0.25 1.0}
-		{RearGears  0.1 0.2} 
+			{TurnStart  2}
+			{BrakeTime  3}
+			{StopTime   4}
+			{TurnRadius 10}
+			{TurnStop   1}
+			{Gears      0.1 0.18 0.25 1.0}
+			{RearGears  0.1 0.2}
 		}
 		{FuelBag
-			{volume 600 }	
-			{rate	35 }   
+			{volume 600 }
+			{rate	35 }
 			{remain 600 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  25}
-        	{Slow  25}
-    	}
+			{Normal  25}
+			{Slow  25}
+		}
 	}
-	
+
 	{Extension "kv2.mdl"}
 
 	{bone "turret"

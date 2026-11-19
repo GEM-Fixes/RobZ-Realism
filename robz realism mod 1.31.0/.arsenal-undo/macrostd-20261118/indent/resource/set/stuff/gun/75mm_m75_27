@@ -1,0 +1,23 @@
+{from "pattern gun"     ; "Cannone da 75/27"
+	{filling "bullet75_ita"}
+	{fireSound "gun/50to76_cal/75mm_kwk40"}
+	{reloadSound "gun_r03"}
+	{rechargeTime 8}
+	("range_short")
+	("speed" s(502))
+	("caliber_medium")
+	("damage_170" a(121) b(106) c(91) d(79) e(68) range(190))
+	{parameters "aphebc"
+		{cursorReloading "cannon_reload_aphebc"}
+	}
+	{parameters "apcr"
+        	("damage_170" a(185) b(147) c(111) d(84) e(64) range(190))
+	}
+	{parameters "fg"
+		{range 180 180}
+	}
+	("accuracy_high")
+
+
+	("accuracy_medium")
+}

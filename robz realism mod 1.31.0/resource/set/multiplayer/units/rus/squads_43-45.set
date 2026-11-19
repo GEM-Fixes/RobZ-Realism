@@ -1,50 +1,50 @@
-;   Squads   
+;   Squads
 ;------------------------------home guards | vet 1--------------------------------------------------------------
 
-("squad_with5types" side(rus) name(home_guards) c(180) g(partisan) c1(rus_partisan_rifle:3) c2(rus_partisan_smg:4) c3(rus_partisan_mp38:2) c4(rus_partisan_at:1) c5(rus_partisan_mg:1) b(squad1) t(all inf_only 43 44 45) level(1) cost(95) f(1.0))
+("squad_5" side(rus) name(home_guards) member1(rus_partisan_rifle:3) member2(rus_partisan_smg:4) member3(rus_partisan_mp38:2) member4(rus_partisan_at:1) member5(rus_partisan_mg:1) charge(180) tags(all inf_only 43 44 45) group(partisan) button(squad1) level(1) cost(95) fore(1.0))
 
 ;------------------------------assault infantry || vet 2/3--------------------------------------------------------
 
-("i_seq_with3types" side(rus) name(smgs) c(0) g(squad_2) i(7) c1(rus_squadleader2_43:1) c2(rus_smg2_43:1) c3(rus_smg2:8) b(squad1) t(all inf_only 43 44 45) level(1) cost(120) f(1.0))
-("i_seq_with3types" side(rus) name(smgsv2) c(0) g(squad_2) i(7) c1(rus_squadleader2_43:1) c2(rus_smg2_43:1) c3(rus_smg2:8) b(squad1) t(all inf_only 43 44 45) level(1) cost(106) f(1.0))
-("i_seq_with3types" side(rus) name(smgsv3) c(0) g(squad_2) i(7) c1(rus_squadleader2_43:1) c2(rus_smg2_43:1) c3(rus_smg2:8) b(squad1) t(all inf_only 43 44 45) level(1) cost(106) f(1.0))
-("i_seq_with3types" side(rus) name(smgsv4) c(0) g(squad_2) i(7) c1(rus_squadleader2_43:1) c2(rus_smg2_43:1) c3(rus_smg2:8) b(squad1) t(all inf_only 43 44 45) level(1) cost(96) f(1.0))
-("i_seq_with3types" side(rus) name(smgsv5) c(0) g(squad_2) i(7) c1(rus_squadleader2_43:1) c2(rus_smg2_43:1) c3(rus_smg2:8) b(squad1) t(all inf_only 43 44 45) level(1) cost(96) f(1.0))
+("squad_3_sequence" side(rus) name(smgs) member1(rus_squadleader2_43:1) member2(rus_smg2_43:1) member3(rus_smg2:8) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(7) level(1) cost(120) fore(1.0))
+("squad_3_sequence" side(rus) name(smgsv2) member1(rus_squadleader2_43:1) member2(rus_smg2_43:1) member3(rus_smg2:8) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(7) level(1) cost(106) fore(1.0))
+("squad_3_sequence" side(rus) name(smgsv3) member1(rus_squadleader2_43:1) member2(rus_smg2_43:1) member3(rus_smg2:8) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(7) level(1) cost(106) fore(1.0))
+("squad_3_sequence" side(rus) name(smgsv4) member1(rus_squadleader2_43:1) member2(rus_smg2_43:1) member3(rus_smg2:8) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(7) level(1) cost(96) fore(1.0))
+("squad_3_sequence" side(rus) name(smgsv5) member1(rus_squadleader2_43:1) member2(rus_smg2_43:1) member3(rus_smg2:8) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(7) level(1) cost(96) fore(1.0))
 
 ("squad_with4types_vehicle" side(rus) name(smgs_mot) c(60) g(squad_2) v1(zis5) c1(rus_squadleader2_43:1) c2(rus_smg2_43:1) c3(rus_smg2:8) b(squad1) t(all inf_only 43 44 45) level(1) cost(137) f(-1.0))
 
-("squad_with7types" side(rus) name(sapper_squad) c(0) g(squad_2) c1(rus_sapper_sl:1) c2(rus_sapper_smg:1) c3(rus_sapper_smg2:2) c4(rus_sapper_rifle1:1) c5(rus_sapper_rifle2:1) c6(rus_sapper_rifle3:1) c7(rus_sapper_rifle4:2) b(squad1) t(all inf_only 43 44 45) level(1) cost(172) f(1.0))
+("squad_7" side(rus) name(sapper_squad) member1(rus_sapper_sl:1) member2(rus_sapper_smg:1) member3(rus_sapper_smg2:2) member4(rus_sapper_rifle1:1) member5(rus_sapper_rifle2:1) member6(rus_sapper_rifle3:1) member7(rus_sapper_rifle4:2) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) level(1) cost(172) fore(1.0))
 
 ;------------------------------regular squad || vet 2/3-----------------------------------------------------------
 
-("i_seq_with6types" side(rus) name(riflemans) c(0) g(squad_2) i(8) c1(rus_squadleader_smg:1) c2(rus_smg:3) c3(rus_rifle_sa:2) c4(rus_rifle:3) c5(rus_mgun:1) c6(rus_mgun_asst:1) b(squad1) t(all inf_only 43 44 45) level(1) cost(142) f(1.0))
-("i_seq_with6types" side(rus) name(riflemansv2) c(0) g(squad_2) i(8) c1(rus_squadleader_smg:1) c2(rus_smg:3) c3(rus_rifle_sa:2) c4(rus_rifle:3) c5(rus_mgun:1) c6(rus_mgun_asst:1) b(squad1) t(all inf_only 43 44 45) level(1) cost(138) f(1.0))
-("i_seq_with6types" side(rus) name(riflemansv3) c(0) g(squad_2) i(8) c1(rus_squadleader_smg:1) c2(rus_smg:3) c3(rus_rifle_sa:2) c4(rus_rifle:3) c5(rus_mgun:1) c6(rus_mgun_asst:1) b(squad1) t(all inf_only 43 44 45) level(1) cost(138) f(1.0))
-("i_seq_with6types" side(rus) name(riflemansv4) c(0) g(squad_2) i(8) c1(rus_squadleader_smg:1) c2(rus_smg:3) c3(rus_rifle_sa:2) c4(rus_rifle:3) c5(rus_mgun:1) c6(rus_mgun_asst:1) b(squad1) t(all inf_only 43 44 45) level(1) cost(124) f(1.0))
-("i_seq_with6types" side(rus) name(riflemansv5) c(0) g(squad_2) i(8) c1(rus_squadleader_smg:1) c2(rus_smg:3) c3(rus_rifle_sa:2) c4(rus_rifle:3) c5(rus_mgun:1) c6(rus_mgun_asst:1) b(squad1) t(all inf_only 43 44 45) level(1) cost(124) f(1.0))
+("squad_6_sequence" side(rus) name(riflemans) member1(rus_squadleader_smg:1) member2(rus_smg:3) member3(rus_rifle_sa:2) member4(rus_rifle:3) member5(rus_mgun:1) member6(rus_mgun_asst:1) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(8) level(1) cost(142) fore(1.0))
+("squad_6_sequence" side(rus) name(riflemansv2) member1(rus_squadleader_smg:1) member2(rus_smg:3) member3(rus_rifle_sa:2) member4(rus_rifle:3) member5(rus_mgun:1) member6(rus_mgun_asst:1) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(8) level(1) cost(138) fore(1.0))
+("squad_6_sequence" side(rus) name(riflemansv3) member1(rus_squadleader_smg:1) member2(rus_smg:3) member3(rus_rifle_sa:2) member4(rus_rifle:3) member5(rus_mgun:1) member6(rus_mgun_asst:1) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(8) level(1) cost(138) fore(1.0))
+("squad_6_sequence" side(rus) name(riflemansv4) member1(rus_squadleader_smg:1) member2(rus_smg:3) member3(rus_rifle_sa:2) member4(rus_rifle:3) member5(rus_mgun:1) member6(rus_mgun_asst:1) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(8) level(1) cost(124) fore(1.0))
+("squad_6_sequence" side(rus) name(riflemansv5) member1(rus_squadleader_smg:1) member2(rus_smg:3) member3(rus_rifle_sa:2) member4(rus_rifle:3) member5(rus_mgun:1) member6(rus_mgun_asst:1) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(8) level(1) cost(124) fore(1.0))
 
 
-("i_seq_with6types" side(rus) name(riflemans_rifle) c(0) g(squad_2) i(9) c1(rus_squadleader_smg:1) c2(rus_smg:1) c3(rus_rifle_sa:1) c4(rus_rifle:6) c5(rus_mgun:1) c6(rus_mgun_asst:1) b(squad1) t(all inf_only 43 44 45) level(1) cost(132) f(1.0))
-("i_seq_with6types" side(rus) name(riflemans_riflev2) c(0) g(squad_2) i(9) c1(rus_squadleader_smg:1) c2(rus_smg:1) c3(rus_rifle_sa:1) c4(rus_rifle:6) c5(rus_mgun:1) c6(rus_mgun_asst:1) b(squad1) t(all inf_only 43 44 45) level(1) cost(115) f(1.0))
-("i_seq_with6types" side(rus) name(riflemans_riflev3) c(0) g(squad_2) i(9) c1(rus_squadleader_smg:1) c2(rus_smg:1) c3(rus_rifle_sa:1) c4(rus_rifle:6) c5(rus_mgun:1) c6(rus_mgun_asst:1) b(squad1) t(all inf_only 43 44 45) level(1) cost(115) f(1.0))
-("i_seq_with6types" side(rus) name(riflemans_riflev4) c(0) g(squad_2) i(9) c1(rus_squadleader_smg:1) c2(rus_smg:1) c3(rus_rifle_sa:1) c4(rus_rifle:6) c5(rus_mgun:1) c6(rus_mgun_asst:1) b(squad1) t(all inf_only 43 44 45) level(1) cost(103) f(1.0))
-("i_seq_with6types" side(rus) name(riflemans_riflev5) c(0) g(squad_2) i(9) c1(rus_squadleader_smg:1) c2(rus_smg:1) c3(rus_rifle_sa:1) c4(rus_rifle:6) c5(rus_mgun:1) c6(rus_mgun_asst:1) b(squad1) t(all inf_only 43 44 45) level(1) cost(103) f(1.0))
+("squad_6_sequence" side(rus) name(riflemans_rifle) member1(rus_squadleader_smg:1) member2(rus_smg:1) member3(rus_rifle_sa:1) member4(rus_rifle:6) member5(rus_mgun:1) member6(rus_mgun_asst:1) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(9) level(1) cost(132) fore(1.0))
+("squad_6_sequence" side(rus) name(riflemans_riflev2) member1(rus_squadleader_smg:1) member2(rus_smg:1) member3(rus_rifle_sa:1) member4(rus_rifle:6) member5(rus_mgun:1) member6(rus_mgun_asst:1) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(9) level(1) cost(115) fore(1.0))
+("squad_6_sequence" side(rus) name(riflemans_riflev3) member1(rus_squadleader_smg:1) member2(rus_smg:1) member3(rus_rifle_sa:1) member4(rus_rifle:6) member5(rus_mgun:1) member6(rus_mgun_asst:1) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(9) level(1) cost(115) fore(1.0))
+("squad_6_sequence" side(rus) name(riflemans_riflev4) member1(rus_squadleader_smg:1) member2(rus_smg:1) member3(rus_rifle_sa:1) member4(rus_rifle:6) member5(rus_mgun:1) member6(rus_mgun_asst:1) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(9) level(1) cost(103) fore(1.0))
+("squad_6_sequence" side(rus) name(riflemans_riflev5) member1(rus_squadleader_smg:1) member2(rus_smg:1) member3(rus_rifle_sa:1) member4(rus_rifle:6) member5(rus_mgun:1) member6(rus_mgun_asst:1) charge(0) tags(all inf_only 43 44 45) group(squad_2) button(squad1) icon(9) level(1) cost(103) fore(1.0))
 
 ("squad_with7types_vehicle" side(rus) name(riflemans_rifle_mot) c(60) g(squad_2) v1(zis5) c1(rus_squadleader_smg:1) c2(rus_smg:1) c3(rus_rifle_sa:1) c4(rus_rifle:6) c5(rus_mgun:1) c6(rus_mgun_asst:1) b(squad1) t(all inf_only 43 44 45) level(1) cost(167) f(-1.0))
 
 ;------------------------------shock troops ||| vet 4-----------------------------------------------------------
 
-("squad_with5types" side(rus) name(shock_assault) c(20) g(squad_3) c1(rus_shock_sl_smg:1) c2(rus_shock_smg:3) c3(rus_shock_smg2:2) c4(rus_shock_smg3:2) c5(rus_shock_flame:1) b(squad1) t(all inf_only 42 43 44 45) level(1) cost(138) f(1.0))
+("squad_5" side(rus) name(shock_assault) member1(rus_shock_sl_smg:1) member2(rus_shock_smg:3) member3(rus_shock_smg2:2) member4(rus_shock_smg3:2) member5(rus_shock_flame:1) charge(20) tags(all inf_only 42 43 44 45) group(squad_3) button(squad1) level(1) cost(138) fore(1.0))
 
 ("squad_with6types_vehicle" side(rus) name(shock_assault_mech) c(60) g(squad_3) v1(m3) c1(rus_shock_sl_smg:1) c2(rus_shock_smg:3) c3(rus_shock_smg2:2) c4(rus_shock_smg3:2) c5(rus_shock_flame:1) b(squad1) t(all inf_only 42 43 44 45) level(1) cost(196) f(-3.0))
 
-("squad_with6types" side(rus) name(shock) c(20) g(squad_3) c1(rus_shock_sl:1) c2(rus_shock_smg2:2) c3(rus_shock_sa:2) c4(rus_shock_rifle:2) c5(rus_shock_mg:1) c6(rus_shock_mg_asst:1) b(squad1) t(all inf_only 42 43 44 45) level(1) cost(121) f(1.0))
+("squad_6" side(rus) name(shock) member1(rus_shock_sl:1) member2(rus_shock_smg2:2) member3(rus_shock_sa:2) member4(rus_shock_rifle:2) member5(rus_shock_mg:1) member6(rus_shock_mg_asst:1) charge(20) tags(all inf_only 42 43 44 45) group(squad_3) button(squad1) level(1) cost(121) fore(1.0))
 
 ;------------------------------elite squads ||| vet 3/4-----------------------------------------------------------
 
-("squad_with4types" side(rus) name(elites) c(60) g(squad_5) c1(rus_marine_rifle:6) c2(rus_marine_svt:3) c3(rus_marine_mg:1) c4(rus_marine_mgassist:1) b(squad1) t(all inf_only 43 44 45) level(1) cost(137) f(1.0))
+("squad_4" side(rus) name(elites) member1(rus_marine_rifle:6) member2(rus_marine_svt:3) member3(rus_marine_mg:1) member4(rus_marine_mgassist:1) charge(60) tags(all inf_only 43 44 45) group(squad_5) button(squad1) level(1) cost(137) fore(1.0))
 
-("squad_with4types" side(rus) name(bsf_marines) c(240) g(squad_5) c1(rus_bsf_marine:4) c2(rus_bsf_marine2:3) c3(rus_bsf_marine3:2) c4(rus_bsf_marine_mg_asst:2) b(squad1) t(all inf_only 43 44 45) level(1) cost(205) f(1.0))
+("squad_4" side(rus) name(bsf_marines) member1(rus_bsf_marine:4) member2(rus_bsf_marine2:3) member3(rus_bsf_marine3:2) member4(rus_bsf_marine_mg_asst:2) charge(240) tags(all inf_only 43 44 45) group(squad_5) button(squad1) level(1) cost(205) fore(1.0))
 
 ;------------------------------paratroopers |||| vet 7---------------------------------------------------------
 
@@ -53,55 +53,55 @@
 
 ;------------------------------AP and AT miners, sappers || vet 2-----------------------------------------------
 
-("squad_with1types" side(rus) name(ap_miners) c(0) g(squad_7) c1(rus_ap_miner:4) b(squad1) t(all inf_only engineers mines 39 40 41 42 43 44 45) level(20) cost(100) f(0))
+("squad_1" side(rus) name(ap_miners) member1(rus_ap_miner:4) charge(0) tags(all inf_only engineers mines 39 40 41 42 43 44 45) group(squad_7) button(squad1) level(20) cost(100) fore(0))
 
-("squad_with1types" side(rus) name(at_miners) c(0) g(squad_8) c1(rus_at_miner:4) b(squad1) t(all inf_only engineers mines 39 40 41 42 43 44 45) level(25) cost(150) f(0))
+("squad_1" side(rus) name(at_miners) member1(rus_at_miner:4) charge(0) tags(all inf_only engineers mines 39 40 41 42 43 44 45) group(squad_8) button(squad1) level(25) cost(150) fore(0))
 
-("squad_with1types" side(rus) name(sappers) c(0) g(squad_9) c1(rus_saper:2) b(squad1) t(all inf_only engineers 39 40 41 42 43 44 45) level(1) cost(70) f(0))
+("squad_1" side(rus) name(sappers) member1(rus_saper:2) charge(0) tags(all inf_only engineers 39 40 41 42 43 44 45) group(squad_9) button(squad1) level(1) cost(70) fore(0))
 
 ;------------------------------tank and support crews || vet 2--------------------------------------------------
 
-("squad_with1types" side(rus) name(vehic_supporter) c(0) g(soldier_3) c1(vehicle_supporter_single:2) b(squad1) t(all inf_only 43 44 45) level(1) cost(25) f(-1.0))
+("squad_1" side(rus) name(vehic_supporter) member1(vehicle_supporter_single:2) charge(0) tags(all inf_only 43 44 45) group(soldier_3) button(squad1) level(1) cost(25) fore(-1.0))
 
-("squad_with2types" side(rus) name(tankmans) c(0) g(soldier_3) c1(rus_tankman2_single:1) c2(rus_tankman_single:4) b(squad1) t(all inf_only tankmans 39 40 41 42 43 44 45) level(1) cost(70) f(-1.0))
+("squad_2" side(rus) name(tankmans) member1(rus_tankman2_single:1) member2(rus_tankman_single:4) charge(0) tags(all inf_only tankmans 39 40 41 42 43 44 45) group(soldier_3) button(squad1) level(1) cost(70) fore(-1.0))
 
-("squad_with1types" side(rus) name(elite_tankmans) c(0) g(soldier_3) c1(rus_vet_tankman2_single:1) b(squad1) t(all inf_only tankmans 39 40 41 42 43 44 45) level(1) cost(100) f(-1.0))
+("squad_1" side(rus) name(elite_tankmans) member1(rus_vet_tankman2_single:1) charge(0) tags(all inf_only tankmans 39 40 41 42 43 44 45) group(soldier_3) button(squad1) level(1) cost(100) fore(-1.0))
 
 
 
-;   Single Soldiers   
+;   Single Soldiers
 
 ;------------------------------rifleman and smg || vet 2--------------------------------------------------------
 
-("squad_with1types" side(rus) name(riflemans2) c(0) g(soldier_1) c1(rus_rifle:1) b(squad2) t(all inf_only 39 40 41 42 43 44 45) level(1) cost(9) f(1.0))
+("squad_1" side(rus) name(riflemans2) member1(rus_rifle:1) charge(0) tags(all inf_only 39 40 41 42 43 44 45) group(soldier_1) button(squad2) level(1) cost(9) fore(1.0))
 
-("squad_with1types" side(rus) name(rifle_sa) c(30) g(soldier_sa) c1(rus_rifle_sa:1) b(squad2) t(all inf_only 40 41 42 43 44 45) level(1) cost(13) f(1.0))
+("squad_1" side(rus) name(rifle_sa) member1(rus_rifle_sa:1) charge(30) tags(all inf_only 40 41 42 43 44 45) group(soldier_sa) button(squad2) level(1) cost(13) fore(1.0))
 
-("squad_with1types" side(rus) name(smgs2) c(0) g(soldier_2) c1(rus_smg:1) b(squad2) t(all inf_only 41 42 43 44 45) level(1) cost(12) f(1.0))
+("squad_1" side(rus) name(smgs2) member1(rus_smg:1) charge(0) tags(all inf_only 41 42 43 44 45) group(soldier_2) button(squad2) level(1) cost(12) fore(1.0))
 
 ;------------------------------AT rifles and bazookas || vet 2--------------------------------------------------
 
-("i_seq_with2types" side(rus) name(at_rifles) c1(rus_at_rifle:1) c2(rus_at_rifleassist:1) c(0) i(6) g(soldier_4) b(squad2) t(all inf_only 41 42 43 44 45) level(1) cost(70) f(1.0))
-("i_seq_with2types" side(rus) name(at_riflesv2) c1(rus_at_rifle:1) c2(rus_at_rifleassist:1) c(0) i(6) g(soldier_4) b(squad2) t(all inf_only 41 42 43 44 45) level(1) cost(42) f(1.0))
+("squad_2_sequence" side(rus) name(at_rifles) member1(rus_at_rifle:1) member2(rus_at_rifleassist:1) charge(0) tags(all inf_only 41 42 43 44 45) group(soldier_4) button(squad2) icon(6) level(1) cost(70) fore(1.0))
+("squad_2_sequence" side(rus) name(at_riflesv2) member1(rus_at_rifle:1) member2(rus_at_rifleassist:1) charge(0) tags(all inf_only 41 42 43 44 45) group(soldier_4) button(squad2) icon(6) level(1) cost(42) fore(1.0))
 
-("squad_with2types" side(rus) name(bazookers) c1(rus_bazooker:1) c2(rus_bazookerassist:1) c(300) g(soldier_5) b(squad2) t(all inf_only 42 43 44 45) level(1) cost(47) f(1.0))
+("squad_2" side(rus) name(bazookers) member1(rus_bazooker:1) member2(rus_bazookerassist:1) charge(300) tags(all inf_only 42 43 44 45) group(soldier_5) button(squad2) level(1) cost(47) fore(1.0))
 
 ;------------------------------MG infantry || vet 2-------------------------------------------------------------
 
-("squad_with2types" side(rus) name(mgs2) c(90) g(soldier_6) c1(rus_mgun:1) c2(rus_mgun_asst:1) b(squad2) t(all inf_only 43 44 45) level(1) cost(45) f(1.0))
+("squad_2" side(rus) name(mgs2) member1(rus_mgun:1) member2(rus_mgun_asst:1) charge(90) tags(all inf_only 43 44 45) group(soldier_6) button(squad2) level(1) cost(45) fore(1.0))
 
 ;------------------------------elite3
 
-("squad_with2types" side(rus) name(elite3) c(200) g(squad_4) c1(rus_marine_mg:1) c2(rus_marine_rifle:2) b(squad2) t(all inf_only 42 43 44 45) level(1) cost(61) f(1.0))
+("squad_2" side(rus) name(elite3) member1(rus_marine_mg:1) member2(rus_marine_rifle:2) charge(200) tags(all inf_only 42 43 44 45) group(squad_4) button(squad2) level(1) cost(61) fore(1.0))
 
 ;------------------------------flamer, sniper and officer || vet2/3/4----------------------------------------------
 
-("squad_with2types" side(rus) name(flamers) c(150) g(soldier_8) c1(rus_flamer:1) c2(rus_flamerassist:1) b(squad2) t(all flamer inf_only 39 40 41 42 43 44 45) level(1) cost(78) f(0))
+("squad_2" side(rus) name(flamers) member1(rus_flamer:1) member2(rus_flamerassist:1) charge(150) tags(all flamer inf_only 39 40 41 42 43 44 45) group(soldier_8) button(squad2) level(1) cost(78) fore(0))
 
-("squad_with1types" side(rus) name(snipers) c(150) g(soldier_9) c1(rus_sniper_mosin:2) b(squad2) t(all sniper inf_only 39 40 41 42 43 44 45) level(1) cost(180) f(0))
-("squad_with1types" side(rus) name(snipers3) c(150) g(soldier_9) c1(rus_sniper_svtscoped:2) b(squad2) t(all sniper inf_only 40 41 42 43 44 45) level(1) cost(180) f(0))
+("squad_1" side(rus) name(snipers) member1(rus_sniper_mosin:2) charge(150) tags(all sniper inf_only 39 40 41 42 43 44 45) group(soldier_9) button(squad2) level(1) cost(180) fore(0))
+("squad_1" side(rus) name(snipers3) member1(rus_sniper_svtscoped:2) charge(150) tags(all sniper inf_only 40 41 42 43 44 45) group(soldier_9) button(squad2) level(1) cost(180) fore(0))
 
-("i_seq_with1x4types" side(rus) name(officers) c(1) g(soldier_10) c1(rus_officer:1) b(squad2) i(10002) t(all officer inf_only 39 40 41 42 43 44 45) level(1) cost(0) f(-599.0)) ;10 minutes
-("i_seq_with1x4types" side(rus) name(officers_40) c(1800) g(soldier_10) c1(rus_officer:1) b(squad2) i(10002) t(all officer inf_only 39 40 41 42 43 44 45) level(1) cost(0) f(-2399.0)) ;40 minutes
+("squad_1_x4_sequence" side(rus) name(officers) member1(rus_officer:1) charge(1) tags(all officer inf_only 39 40 41 42 43 44 45) group(soldier_10) button(squad2) icon(10002) level(1) cost(0) fore(-599.0)) ;10 minutes
+("squad_1_x4_sequence" side(rus) name(officers_40) member1(rus_officer:1) charge(1800) tags(all officer inf_only 39 40 41 42 43 44 45) group(soldier_10) button(squad2) icon(10002) level(1) cost(0) fore(-2399.0)) ;40 minutes
 
-("squad_with1types" side(rus) name(radioman_mortar) c(300) g(radio_1) c1(rus_radioman_mortar:1) b(squad2) t(all mortar 39 40 41 42 43 44 45) level(1) cost(200) f(1.0))
+("squad_1" side(rus) name(radioman_mortar) member1(rus_radioman_mortar:1) charge(300) tags(all mortar 39 40 41 42 43 44 45) group(radio_1) button(squad2) level(1) cost(200) fore(1.0))

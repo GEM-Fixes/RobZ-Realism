@@ -12,11 +12,11 @@
 	{burst
 		{short 1}
 		{Long 1}
-	}	
+	}
 	{range 95 95}
 	{preloaded}
 	{mass 4}
-	
+
 	{fireSound "smg/beretta_burst/"}
 	{calibre 50}
 
@@ -34,25 +34,25 @@
 	{aimtype curved}
 
 	{spreading 10
-		;{SpreadXYRatio	1}
+	;{SpreadXYRatio	1}
 	}
 	{parameters "ap"
 		{range 55 55}
-    		{projectileDamageTable {0 70} {55 70} {60 0}}
+		{projectileDamageTable {0 70} {55 70} {60 0}}
 		{cursor "cannon_on_apcr"}
 		{cursorReloading "cannon_reload_heat"}
 		{spreading 4}
 	}
 	{parameters "ap2"
 		{range 75 75}
-    		{projectileDamageTable {0 130} {75 130} {80 0}}
+		{projectileDamageTable {0 130} {75 130} {80 0}}
 		{cursor "cannon_on_apcr"}
 		{cursorReloading "cannon_reload_heat"}
 		{spreading 5.5}
 	}
 	{parameters "ap3"
 		{range 75 75}
-    		{projectileDamageTable {0 90} {75 90} {80 0}}
+		{projectileDamageTable {0 90} {75 90} {80 0}}
 		{cursor "cannon_on_apcr"}
 		{cursorReloading "cannon_reload_heat"}
 		{spreading 5.5}

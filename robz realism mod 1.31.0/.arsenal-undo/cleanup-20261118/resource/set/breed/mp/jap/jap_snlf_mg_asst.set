@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "snlf_rifle_gear2"}
+	{portrait "jap_soldier5"}
+	{nationality jap}
+	{icon "stormtrooper4"}
+	{icon_priority 4}
+	{armors
+		{head "helmet_japmc9"}
+	}
+	{perks
+		("soldier_mgun_7" rocket(1) body(hardy))
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("rifle_type99rifle")
+		{item "ammo type99_mag" 120}
+		{item "bandage" 5}
+		{item "grenade type99" 2}
+		("at_grenade_type3at_a_x1")
+		{in_hands 0}
+	}
+}

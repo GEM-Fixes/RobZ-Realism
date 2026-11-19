@@ -1,0 +1,27 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "eng-inf-pvt"}
+	{portrait "eng_soldier2"}
+	{nationality eng}
+	{icon "bazooker"}
+	{icon_priority 3}
+	{armors
+		{head helmet2_eng}
+	}
+	{perks
+		("body_regular")
+		("drive_t08_v10_c10")
+		("breed_skills" pistol(2) smg(2) mgun(2) rifle(4) rocket(4) melee(4))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("rifle_em3")
+		{item "ammo bren_mag" 56}
+		{item "bandage" 3}
+		("frag_mk1_x1")
+		("at_grenade_n73at_x1")
+		{item "weapon piatrocket" 0.2 1 filled}
+		{item "ammo piatrocket" 5}
+		{in_hands 0}
+	}
+}

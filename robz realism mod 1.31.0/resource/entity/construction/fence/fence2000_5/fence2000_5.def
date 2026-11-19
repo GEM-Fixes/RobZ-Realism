@@ -1,8 +1,8 @@
 {game_entity
-    (include "/properties/construction.inc")
-    	("armor_medium" args 0.1)
+	(include "/properties/construction.inc")
+	("armor_medium" args 0.1)
 	{Extension "fence2000_5.mdl"}
-    {props "concrete" "small" "parts" "construction" "no_destroyed_stamp"}
+	{props "concrete" "small" "parts" "construction" "no_destroyed_stamp"}
 
 	{Volume "body1"
 		{Tags  "body" "climb"}

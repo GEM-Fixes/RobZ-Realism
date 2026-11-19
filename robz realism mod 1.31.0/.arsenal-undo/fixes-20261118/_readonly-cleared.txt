@@ -1,0 +1,14 @@
+E:\RobZ Realism\robz realism mod 1.31.0\resource\entity\inventory\-ammo\air_bomb\air_bomb_small.def
+E:\RobZ Realism\robz realism mod 1.31.0\resource\entity\inventory\-ammo\air_bomb\air_bomb.def
+E:\RobZ Realism\robz realism mod 1.31.0\resource\entity\inventory\-ammo\air_bombju87\air_bombju87.def
+E:\RobZ Realism\robz realism mod 1.31.0\resource\entity\inventory\-ammo\air_new_bomb\air_new_bomb_small.def
+E:\RobZ Realism\robz realism mod 1.31.0\resource\entity\inventory\-ammo\air_new_bomb\air_new_bomb.def
+E:\RobZ Realism\robz realism mod 1.31.0\resource\entity\inventory\-weapon\mauzer1924\mauzer1924.def
+E:\RobZ Realism\robz realism mod 1.31.0\resource\texture\construction\town_e\x\fc_c5_1_ru_x\fc_c5_1_ru_x.def
+E:\RobZ Realism\robz realism mod 1.31.0\resource\texture\inventory\-ammo\air_bomb\air_bomb_small.def
+E:\RobZ Realism\robz realism mod 1.31.0\resource\texture\inventory\-ammo\air_bomb\air_bomb.def
+E:\RobZ Realism\robz realism mod 1.31.0\resource\texture\inventory\-ammo\air_bombju87\air_bombju87.def
+E:\RobZ Realism\robz realism mod 1.31.0\resource\texture\inventory\-ammo\air_new_bomb\air_new_bomb_small.def
+E:\RobZ Realism\robz realism mod 1.31.0\resource\texture\inventory\-ammo\air_new_bomb\air_new_bomb.def
+E:\RobZ Realism\robz realism mod 1.31.0\resource\texture\inventory\-ammo\shell_ap_600\shell_ap_600.def
+E:\RobZ Realism\robz realism mod 1.31.0\resource\texture\inventory\-weapon\mauzer1924\mauzer1924.def

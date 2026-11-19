@@ -24,7 +24,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_loop"
 					{turn 1
 						{linear
@@ -109,7 +109,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{sprite "$/_bmp/smoke/smokeend_loop"
 					{turn 1
 						{linear
@@ -194,7 +194,7 @@
 			}
 		}
 		{visualizer
-			{stage 
+			{stage
 				{#+ sprite "$/smoke/smoke_g04c"
 					{turn 1
 						{linear

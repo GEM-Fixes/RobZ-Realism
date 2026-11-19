@@ -1,0 +1,204 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "turret_rotator" "vision_vehicle_medium" "muzzle_minimum" "switch_mgun_coax"}
+
+	{extender "enumerator"}
+
+	; --- Godny hitbox armor (ported from GodnyMod: mk3.def) ---
+	{volume "body1"	;боевое отделение
+		{component "body"}
+		{tags "body"}
+		{thickness 60
+			{front	0.1}	;стык body1 и body2
+			{rear	10}	;стенка с мто
+			{top	10}
+			{bottom	7}
+		}
+	}
+	{volume "body2"	;каморка мехвода
+		{component "body"}
+		{tags "body"}
+		{thickness 60	;нижние борта
+		;	{front	60}
+			{rear	0.1}	;стык body1 и body2
+			{right	30}	;верхние наклонные борта, боковые скосы крыши
+			{top	20}	;крыша
+		;	{bottom	0.1}	;нет
+		}
+	}
+	{volume "body3"	;передняя часть и гласис
+		{component "body"}
+		{tags "body"}
+		{thickness 60
+			{front	60}
+			{rear	0.1}	;стык body2 и body3
+			{top	30}
+			{bottom	20}
+		}
+	}
+	{volume "body4"	;моторное
+		{component "body"}
+		{tags "body"}
+		{thickness 60	;нижний и задний борта
+			{front	10}	;стенка с бо
+			{rear	17}
+			{right	30}	;верхний наклонный борт
+			{top	10}
+			{bottom	7}
+		}
+	}
+	{volume "body5"	;правый угол бо
+		{component "body"}
+		{tags "body"}
+		{thickness 60
+		;	{front	60}
+		;	{rear	60}
+			{top	10}
+			{bottom	0.1}	;стык body1 и body5
+		}
+	}
+	{volume "body6"	;левый угол бо
+		{component "body"}
+		{tags "body"}
+		{thickness 60
+		;	{front	60}
+		;	{rear	60}
+			{top	10}
+			{bottom	0.1}	;стык body1 и body6
+		}
+	}
+	{volume "turret"
+		{tags "turret"}
+		{component "turret"}
+		{able {holed}}
+		{thickness 60
+			{front	65}
+			{rear	65}
+			{top	20}
+			{bottom	12}
+			{right	0.1}	;внутреняя стенка задней ниши башни
+		}
+	}
+	{volume "turret1"
+		{tags "turret"}
+		{component "turret"}
+		{able {holed}}
+		{thickness 65
+			{front	0.1}	;внутреняя стенка задней ниши башни
+		;	{rear	65}
+			{top	20}
+			{bottom	20}
+		}
+	}
+	{volume "mantlet"
+		{thickness 65
+		;	{front	65}
+			{rear	10}	;орудие дает небольшую броню
+		}
+	}
+	{Volume "hole_man"
+		{able clear {hole}}
+		{component "turret"}
+	}
+	{volume "engine"
+		{thickness 10}
+	}
+	{volume "zip1"
+		{component "zip1"}
+		{thickness 6}
+	}
+	{volume "zipr1"
+		{component "zipr1"}
+		{thickness 6}
+	}
+	; --- end Godny hitbox armor ---
+	("armor_medium" turret(65 60 65 20) body(60 60 60 22))
+	("eng_1-9x_sight")
+
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_LowArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit6)  animation(armor))
+	("seat_human" place(seat2) bone(seat02) door(emit5)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit4)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit3)  animation(armor))
+
+	{extender "inventory"
+		{box
+            {item "ammo bullet40 eng ap" 61}
+            ;{item "ammo bullet40 fg" 25}
+            ;{item "ammo bullet40 apcr" 3}
+            {item "ammo mg_mauser belt red" 3150}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "40mm_oqf2pdr" filling "ammo bullet40 eng ap" 1}
+			("abm_medium")
+		}
+		{place "mgun"
+			{type "mgun_coaxial"}
+			{weapon "besa_optic" filling "mg_mauser belt red" 225}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	{mass 16200}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.52) len(0.2))
+		{Locomotion ("locomotion")
+			{MaxSpeed   22}
+			{maxSpeedAtMaxTurn 4}
+			{StartTime  30}
+			{TurnStart  1.7}
+			{TurnTime   18}
+			{TurnRadius 8}
+    		{TurnStop   0.7}
+			{BrakeTime  1.5}
+			{StopTime   2.5}
+			{Gears 0.1 0.2 0.3 1}
+			{RearGears  0.24}
+		}
+		{FuelBag
+			{volume 165 }
+			{rate	24 }
+			{remain 165 }
+			{fuel "fuel"}
+		}
+		{speed
+        	{Normal  22}
+        	{Slow  22}
+    	}
+	}
+
+	{Extension "mk3.mdl"}
+
+	{bone "gun_rot"
+		{speed 0.001}
+		{limits -8 20}
+	}
+	{bone "turret"
+		{speed 0.003}
+	}
+	{bone "foresight3"
+		{limits 1}
+	}
+}

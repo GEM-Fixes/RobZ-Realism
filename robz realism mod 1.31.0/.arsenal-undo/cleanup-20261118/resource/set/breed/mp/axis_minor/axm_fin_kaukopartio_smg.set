@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "fin-camo2-svt"}
+	{portrait "fin_elite1"}
+	{icon "elite-smg"}
+	{icon_priority 1}
+	{nationality fin}
+	{armors
+	;{head helmet_fin_m38}
+	}
+	{perks
+		("soldier_smg_6" rocket(1) body(line))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("kit_smg" gun(suomi_m31) ammo(ppsh_mag) rounds(213))
+		{item "bandage" 4}
+		("frag_m24_x2")
+		("frag_kasapanos_2kg_x1")
+		("at_grenade_kasapanos_4kg_x1")
+		("smoke_x1")
+
+		{in_hands 0}
+	}
+}

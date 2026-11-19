@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "waffen-lsssmock2-rfl"}
+	{portrait "ger_soldier6"}
+	{icon "stormtrooper2"}
+	{icon_priority 4}
+	{nationality ger}
+	{armors
+		{head waffen_helmet_lssah}
+	}
+	{perks
+		("body_veteran_bare")
+		("drive_elite")
+		("skills_ger_ss_4_3_3_5_5_4")
+		{"at_rifle" lvl_5}
+	}
+	("breed_vet" table(start5))
+	{inventory
+		("rifle_mauzer_vet")
+		{item "bandage" 5}
+		("frag_m39_x2")
+		("at_grenade_grenade_hohlladung_x1")
+		{item "ammo panzershreck" 5}
+		{in_hands 0}
+	}
+}

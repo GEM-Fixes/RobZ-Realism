@@ -19,7 +19,7 @@
 		{thickness 64 0.3
 			{front	30}
 			{rear 	6}
-		} 
+		}
 	}
 	{obstacleId "tank"}
 	{Extension "m15_contraereo_xx.mdl"}

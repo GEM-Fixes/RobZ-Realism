@@ -4,23 +4,23 @@
 	{reloadSound "gun_r01"}
 	{rechargeTime 8}
 	("range_short")
-	
+
 	{range 190 190}
-	("speed_all" ap(680) apcr(950) fg(680) heat(355))
+	("speed_all" speed(680) apcr(950) fg(680) heat(355))
 	("caliber_medium")
 	{projectileDamage 86}
-	("damage_170" a(86) b(74) c(67) d(57) e(38) range(190))
+	("damage_170" at20(86) at100(74) at170(67) at215(57) at250(38) max(190))
 	{parameters "br350b"
-		("damage_170" a(91) b(79) c(67) d(57) e(48) range(190))
+		("damage_170" at20(91) at100(79) at170(67) at215(57) at250(48) max(190))
 	}
 	{parameters "apbc"
-		("damage_170" a(92) b(77) c(73) d(64) e(55) range(190))
+		("damage_170" at20(92) at100(77) at170(73) at215(64) at250(55) max(190))
 	}
 	{parameters "apcr"
-		("damage_170" a(116) b(102) c(92) d(78) e(60) range(190))
+		("damage_170" at20(116) at100(102) at170(92) at215(78) at250(60) max(190))
 	}
 	{parameters "heat"
-		("damage_heat" a(87) range(190))
+		("damage_heat" damage(87) max(190))
 	}
 	{parameters "fg"
 		{range 180 180}

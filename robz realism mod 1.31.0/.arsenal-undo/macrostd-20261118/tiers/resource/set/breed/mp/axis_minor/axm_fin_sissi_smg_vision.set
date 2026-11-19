@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "fin-inf"}
+	{portrait "fin_soldier2"}
+	{nationality fin}
+	{icon "smg"}
+	{icon_priority 0}
+	{armors
+		{head cap_fin_m36}
+	}
+	{perks
+		("breed_body" health(150%) regen_health(100%) stamina(100%) regen_stamina(100%) vision("mp_officer") speed(1.1))
+		("breed_drive" tank(0.8) vehicle(1.0) cannon(1.0))
+		("breed_skills" pistol(2) smg(7) mgun(5) rifle(5) rocket(3) melee(2))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_suomi_m31")
+		{item "bandage" 3}
+		("frag_m24_x2")
+		("frag_kasapanos_2kg_x1")
+		("smoke_x1")
+
+		{in_hands 0}
+	}
+}

@@ -1,53 +1,53 @@
 {game_entity
 	{extension "/properties/piece.ext"}
 	{obstacleId "nothing"}
-     {Skeleton
-	{bone "basis"
-		{parameters "CommonMesh;"}
-		{Orientation
-			-1	0	0
-			0	1	0
-			0	0	-1
-		}
-		{bone "tree1"
+	{Skeleton
+		{bone "basis"
+			{parameters "CommonMesh;"}
 			{Orientation
 				-1	0	0
 				0	1	0
-				0	0	1
+				0	0	-1
 			}
-		}
-		{bone "tree2"
-			{Orientation
-				-1	0	0
-				0	1	0
-				0	0	1
+			{bone "tree1"
+				{Orientation
+					-1	0	0
+					0	1	0
+					0	0	1
+				}
 			}
+			{bone "tree2"
+				{Orientation
+					-1	0	0
+					0	1	0
+					0	0	1
+				}
 				{Position 0 200 0}
-		}
-		{bone "tree3"
-			{Orientation
-				-1	0	0
-				0	1	0
-				0	0	1
 			}
+			{bone "tree3"
+				{Orientation
+					-1	0	0
+					0	1	0
+					0	0	1
+				}
 				{Position 0 400 0}
-		}
-		{bone "tree4"
-			{Orientation
-				-1	0	0
-				0	1	0
-				0	0	1
 			}
+			{bone "tree4"
+				{Orientation
+					-1	0	0
+					0	1	0
+					0	0	1
+				}
 				{Position 0 -200 0}
-		}
-		{bone "tree5"
-			{Orientation
-				-1	0	0
-				0	1	0
-				0	0	1
 			}
+			{bone "tree5"
+				{Orientation
+					-1	0	0
+					0	1	0
+					0	0	1
+				}
 				{Position 0 -400 0}
+			}
 		}
 	}
-     }
 }

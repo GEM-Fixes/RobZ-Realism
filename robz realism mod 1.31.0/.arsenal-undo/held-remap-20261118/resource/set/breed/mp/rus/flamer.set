@@ -1,0 +1,23 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "rus-smg"}
+	{portrait "rus_soldier2"}
+	{nationality rus}
+	{icon "flamer"}
+	{icon_priority 3}
+	{armors
+		{head fieldcap1_rus}
+	}
+	{perks
+		("body_regular")
+		("drive_regular")
+		("skills_rus_2_2_1_2_1_2")
+		{"avoidance" lvl_1}
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "flame_thrower"}
+		{item "balloon" filled}
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,26 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "usa-devil-pvt"}
+	{portrait "usa_elite4"}
+	{nationality usa}
+	{icon "devil_brigade3"}
+	{icon_priority 4}
+	{armors
+		{head "helmet4_usa"}
+	}
+	{perks
+		("body_h350_s200")
+		("drive_elite")
+		{"stealth"}
+		("skills_elite_6")
+	}
+	("breed_vet" table(elite))
+	{inventory
+		("rifle_johnson_m1941_rifle")
+		("pistol_colt")
+		{item "bandage" 5}
+		("frag_m61_x2")
+		("explosive_dynamite_x1")
+		{in_hands 0}
+	}
+}

@@ -8,6 +8,6 @@
 	{recoveryTime 90}
 	{rechargeTime 90}
 	{cursor "cannon_on_fg"}
-	{cursorReloading "cannon_reload_fg"}	
+	{cursorReloading "cannon_reload_fg"}
 	{range 560 560}
 }

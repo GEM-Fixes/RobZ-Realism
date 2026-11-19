@@ -1,9 +1,10 @@
+(include "/properties/robz/volumes.inc")
 {game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{collider "tank.heavy"}
 	{props "medium" "turret_rotator" "vision_vehicle_high" "muzzle_large_sides" "cometa34"}
-	
+
 	{extender "enumerator"}
 
 	; --- Godny hitbox armor (ported from GodnyMod: cometa34.def) ---
@@ -44,7 +45,7 @@
 		{thickness 31.75
 			{front	76.2}
 			{rear	0.1}	;внутренн€€ стенка
-		;	{top	14}
+			;	{top	14}
 			{bottom	6.35}
 		}
 	}
@@ -62,7 +63,7 @@
 		{component "body"}
 		{tags "body"}
 		{thickness 31.75	;31.75мм боковые жабры под наклоном
-		;	{front	31.75}
+			;	{front	31.75}
 			{rear	25}
 			{top	14.3}
 			{bottom	0.1}	;внутренн€€ стенка
@@ -73,7 +74,7 @@
 		{tags "body"}
 		{thickness 25
 			{front	0.1}	;внутренн€€ стенка
-		;	{rear	25}
+			;	{rear	25}
 			{top	14.3}
 			{bottom	6.35}
 		}
@@ -115,21 +116,18 @@
 		{tags "turret"}
 		{component "turret"}
 		{thickness 100
-		;	{front	100}
+			;	{front	100}
 			{rear	0.1}	;внутренн€€ стенка
 			{top	20}
 			{bottom	20}
 		}
 	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "turret"}
-	}
+	("vol_turret_hole_only" name(hole_man))
 	{Volume "mantlet"
 		{tags "gun"}
 		{component "gun"}
 		{thickness 102
-		;	{front	102}
+			;	{front	102}
 			{rear	15}	;орудие дает небольшую броню
 		}
 	}
@@ -149,10 +147,7 @@
 		{thickness 6}
 	}
 	; --- end Godny hitbox armor ---
-	{Volume "gun"
-		{tags "gun"}
-		{component "gun"}
-	}
+	("vol_gun_part" name(gun))
 	("armor_medium" turret(102 64 57 25) body(76 43 25 25) body2(32 43 25 25) body3(63 43 25 25))
 	("armor_engine"  t(10 43 25 25))
 	("armor_mantlet" t(102))
@@ -207,7 +202,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "77mm_hv_elite" filling "ammo bullet77 eng apcbc" 1}	
+			{weapon "77mm_hv_elite" filling "ammo bullet77 eng apcbc" 1}
 			("abm_high")
 		}
 
@@ -236,26 +231,26 @@
 			{maxSpeedAtMaxTurn 4}
 			{StartTime	28}
 			{TurnTime	18}
-			{TurnStart  1.8} 
-    		{BrakeTime  1.5}
-     		{StopTime   2.5} 
-    		{TurnRadius 10} 
-    		{TurnStop   0.8} 
-    		{Gears      0.15 0.25 0.35 1.0}
-    		{RearGears  0.25}
+			{TurnStart  1.8}
+			{BrakeTime  1.5}
+			{StopTime   2.5}
+			{TurnRadius 10}
+			{TurnStop   0.8}
+			{Gears      0.15 0.25 0.35 1.0}
+			{RearGears  0.25}
 		}
 		{FuelBag
-			{volume 530 }	
-			{rate	41 }   
+			{volume 530 }
+			{rate	41 }
 			{remain 530 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  36}
-        	{Slow  36}
-    	}
+			{Normal  36}
+			{Slow  36}
+		}
 	}
-{Extension "cometa34.mdl"}
+	{Extension "cometa34.mdl"}
 	{bone "turret"
 		{speed 0.0034}
 	}

@@ -1,0 +1,25 @@
+{weapon_bullet
+	{tag "gun"}
+	{filling "ammo 8cm_wurfgranate" 48}
+	{fillingVisible "rocket"}
+	{fireSound "reactive/katyusha_burst"}
+        ("heavy_artillery")
+
+      	{recoveryTime 0.35}
+	{aimtype direct}
+
+	{gravity 3}
+	{burst {min 16} {noaiming}}
+	{spreading
+		{SpreadRadius 22}
+		{SpreadPower 1}
+		{radiusFunction
+			0.0		0.1
+			0.2		0.3
+			0.5		0.6
+			0.8		1
+			1.00		1.2
+		}
+	}
+	{range 300 300}
+}

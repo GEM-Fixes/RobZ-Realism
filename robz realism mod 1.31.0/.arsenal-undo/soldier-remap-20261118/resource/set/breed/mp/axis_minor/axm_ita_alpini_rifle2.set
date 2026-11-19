@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ita-alp-rfl"}
+	{portrait "ita_soldier1"}
+	{icon "rifleman"}
+	{icon_priority 0}
+	{nationality ita}
+	{armors
+		{head helmet_ita_m33_alpini}
+	}
+	{perks
+		("body_regular")
+		("drive_t08_v10_c10")
+		("breed_skills" pistol(2) smg(3) mgun(3) rifle(4) rocket(1) melee(2))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("kit_rifle" gun(carcano_m91) ammo(6x52) rounds(160))
+		{item "bandage" 4}
+		{item "breda35"}
+		{item "sandbag_kit"}
+		{in_hands 0}
+
+	}
+}

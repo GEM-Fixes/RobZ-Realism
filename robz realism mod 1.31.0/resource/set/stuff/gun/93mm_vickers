@@ -1,17 +1,17 @@
 {from "pattern gun"		; "vickers"
 	{filling "bullet94 eng"}
-	{fireSound "gun/85to100_cal/93mm_vickers"}	
+	{fireSound "gun/85to100_cal/93mm_vickers"}
 	{reloadSound "gun_r04"}
 	{rechargeTime 13.2}
 	("range_long")
-	
+
 	{range 230 230}
 	("speed" s(793))
 	("caliber_large")
 	{projectileDamage 151}
-	("damage_215" a(151) b(143) c(134) d(125) e(115) range(230))   
+	("damage_215" at20(151) at100(143) at170(134) at215(125) at250(115) max(230))
 	{parameters "apds"
-        	("damage_215" a(176) b(163) c(149) d(135) e(120) range(230))
+		("damage_215" at20(176) at100(163) at170(149) at215(135) at250(120) max(230))
 	}
 	{parameters "fg"
 		{range 210 210}

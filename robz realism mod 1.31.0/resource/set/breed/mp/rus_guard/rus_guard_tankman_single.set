@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "rus_tankman_hp"}
 	{portrait "rus_tankman"}
@@ -8,47 +9,11 @@
 		{head tankhelmet_rus}
 	}
 	{perks
-		{"health" "150%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "100%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	1
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 1
-		}
-		
-		{"pistol" lvl_5
-		}
-		{"smg" lvl_5
-		}
-		{"mgun" lvl_3
-		}
-		{"rifle" lvl_2
-		}
-		{"rocketlauncher" lvl_2
-		}
-		{"melee" lvl_5
-		}
-		{"tankgun" lvl_3
-		}
+		("crew_1" body(normal_line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_tankcrew")
-	}
+	("breed_vet" table(crew))
 	{inventory
-		{item "nagan" filled}
-		{item "ammo nagant_clip" 28}
+		("pistol_nagan")
 		{item "bandage" 3}
 		{in_hands 0}
 	}

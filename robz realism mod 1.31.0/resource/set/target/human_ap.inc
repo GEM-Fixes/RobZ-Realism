@@ -18,7 +18,7 @@
 		{sort {class car}}
 		{sort {attacking}}
 		{sort distance}
-    }
+	}
 	{group
 		{sort {weapon "flame"} {attacking}}
 		{sort {weapon "flame"} {threating}}
@@ -41,5 +41,5 @@
 		{sort {class human} {weapon}}
 		{sort {class human}}
 		{sort distance}
-    }
+	}
 }

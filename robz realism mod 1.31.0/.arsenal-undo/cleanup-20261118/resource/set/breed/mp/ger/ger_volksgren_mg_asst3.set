@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "ger-smock2mix-g43"}
+	{portrait "ger_soldier2"}
+	{icon "rifleman"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{head helmet_ger_m40}
+	}
+	{perks
+		("soldier_mgun_2" rocket(1) body(line))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "g43" filling "ammo g43_mag" 10}
+		{item "ammo g43_mag" 20}
+		{item "ammo mauser_clip" 60}
+		{item "ammo mg_mauser belt" 600}
+		{item "bandage" 3}
+		{item "small_shovel" 1}
+		("frag_m24")
+		{in_hands 0}
+	}
+}

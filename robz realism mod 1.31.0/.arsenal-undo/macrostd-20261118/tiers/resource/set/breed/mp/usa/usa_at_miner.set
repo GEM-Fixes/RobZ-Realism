@@ -1,0 +1,25 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "us_mgun"}
+	{portrait usa_soldier2}
+	{icon at_miner}
+	{icon_priority 3}
+	{nationality usa}
+	{armors
+		{body ammo_us2}
+		{head helmet4_usa}
+	}
+	{perks
+		("breed_body" health(150%) regen_health(100%) stamina(100%) regen_stamina(100%) vision(mp_soldier) speed(0.9))
+		("breed_drive" tank(0.75) vehicle(1) cannon(0.8))
+		("breed_skills" pistol(2) smg(3) mgun(2) rifle(2) rocket(1) melee(3))
+	}
+	("breed_vet" table(standard))
+	{inventory
+		("smg_m3a")
+		("mine_antitank_x8")
+		{item "hedgehog_kit"}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

@@ -8,7 +8,7 @@
 	("speed" s(1400))
 	("caliber_minimum")
 	{projectileDamage 92}
-	("damage_100" a(92) b(56) c(34) d(21) e(13) range(150))
+	("damage_100" at20(92) at100(56) at170(34) at215(21) at250(13) max(150))
 
 	("accuracy_minimum")
 }

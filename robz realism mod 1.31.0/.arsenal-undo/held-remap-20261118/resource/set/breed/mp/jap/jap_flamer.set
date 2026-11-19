@@ -1,0 +1,24 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	{skin "jap_army_flamethrower"}
+	{portrait jap_soldier2}
+	{icon flamer}
+	{icon_priority 3}
+	{nationality jap}
+	{armors
+		{head jap_army_helmet7}
+	}
+	{perks
+		("body_regular_bare")
+		("drive_t08_v1_c1")
+		("skills_2_2_1_1_1_2")
+		{"avoidance" lvl_1}
+	}
+	("breed_vet" table(standard))
+	{inventory
+		{item "flame_thrower_g"}
+		{item "balloon_g" filled}
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

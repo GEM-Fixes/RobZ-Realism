@@ -1,3 +1,4 @@
+(include "/set/breed/breed_macros.inc")
 {breed
 	{skin "ger-smock2sump-stg44"}
 	{portrait "ger_soldier2"}
@@ -8,50 +9,17 @@
 		{head helmet_heer_camo}
 	}
 	{perks
-		{"health" "150%"
-		}
-		{"health_regeneration" "100%"
-		}
-		{"stamina" "100%"
-		}
-		{"stamina_regeneration" "100%"
-		}
-		{"vision" "mp_soldier"
-		}
-		{"speed" 0.9
-		}
-		{"tank"	0.75
-		}
-		{"vehicle" 1
-		}
-		{"cannon" 0.8
-		}
-		{"pistol" lvl_4
-		}
-		{"smg" lvl_4
-		}
-		{"mgun" lvl_2
-		}
-		{"rifle" lvl_3
-		}
-		{"rocketlauncher" lvl_2
-		}
-		{"melee" lvl_4
-		}
+		("soldier_smg_4" rocket(4) body(line) sight(soldier))
 	}
-	{veterancy
-		(include "veterancy_generic.inc")
-		("veterancy_1")
-	}
+	("breed_vet" table(standard))
 	{inventory
-		{item "sg44" filled}
-		{item "ammo stg44_mag" 180}
+		("smg_sg44")
 		{item "bandage" 3}
-		{item "m24 grenade" 2}
-		{item "grenade m24x5" 0 1}
-		{item "smoke grenade"}
+		("give" item(m24 grenade) count(2))
+		("give_chance" item(grenade m24x5) chance(25))
+		("give" item(smoke grenade) count(1))
 		{item "panzerfaust_60 weapon" 0 1 filled}
-                {item "small_shovel" 1}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

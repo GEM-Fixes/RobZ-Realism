@@ -5,8 +5,8 @@
 		{weight 70}
 	}	{mass 2}
 	{entity "ammo_mortar120_fg"}
-	{view "ammo_mortar120_fg"}	
+	{view "ammo_mortar120_fg"}
 	{detonationThickness 1}
-	
-	("fg_medium" args 6.8)
+
+	("fg_medium_v3" args 6.8)
 }

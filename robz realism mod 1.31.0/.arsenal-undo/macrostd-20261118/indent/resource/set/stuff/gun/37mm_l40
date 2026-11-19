@@ -1,0 +1,22 @@
+{from "pattern gun"		; M11/39, fiat611
+	{filling "bullet37_ita"}
+	{fireSound "gun/37mm_pak35"}
+	{reloadSound "pak35"}
+	{rechargeTime 4.4}
+	("caliber_minimum")
+	;("range_minimum")
+        {range 180 180}
+        ("speed" s(792))
+
+		("damage_170" a(78) b(69) c(59) d(51) e(43) range(180))
+	{parameters "apcr"
+        	("damage_170" a(107) b(82) c(59) d(41) e(27) range(180))
+	}
+	{parameters "fg"
+		{range 160 160}
+	}
+	{parameters "canister"
+		{range 100 100}
+	}
+	("accuracy_low")
+}

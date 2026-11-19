@@ -6,7 +6,7 @@
 	;{targetSelector "cannon_aa"}
 	("armor_medium")
 
-	("wheel" args "wheelright") 
+	("wheel" args "wheelright")
 	("wheel" args "wheelleft")
 
 	("crew_wheeled_gun")
@@ -41,7 +41,7 @@
 		{place "gun"
 			{weapon "20mm_Scotti" filled}
 		}
-	}  	
+	}
 	{mass 502}
 	{Extension "20mmScotti.mdl"}
 	(include "/properties/selection/cannon.inc"  scale(0.7))
@@ -61,12 +61,12 @@
 		("loco_medium")
 	}
 
-        {bone "turret"
+	{bone "turret"
 		{speed 0.001}
 	}
 	{bone "gun_rot"
-	      {limits -10 85}
-	      {speed 0.0006}
+		{limits -10 85}
+		{speed 0.0006}
 	}
-	
+
 }

@@ -1,4 +1,5 @@
-{game_entity	
+(include "/properties/robz/volumes.inc")
+{game_entity
 	(include "/properties/tank.ext")
 	(include "/properties/selection/vehicle.inc"  scale(1.2))
 	{props "medium" "-turret" "vision_vehicle_high" "muzzle_large"}
@@ -6,7 +7,7 @@
 	{extender "enumerator"
 		{digit_folder "ger"}
 	}
-	
+
 	; --- Godny hitbox armor (ported from GodnyMod: jagdpanzer_iv.def) ---
 	{Volume "body1"	;рубка верхн€€ часть
 		{tags "body"}
@@ -22,7 +23,7 @@
 	{Volume "body2"	;рубка нижн€€ часть
 		{tags "body"}
 		{component "body"}
-	;	{able {holed}}
+		;	{able {holed}}
 		{thickness 30
 			{front	80}
 			{rear	30}
@@ -78,13 +79,10 @@
 			{bottom	10}
 		}
 	}
-	{Volume "hole_man"
-		{able clear {hole}}
-		{component "body"}
-	}
+	("vol_body_hole_only" name(hole_man))
 	{volume "mantlet"
 		{thickness 75
-		;	{front	75}
+			;	{front	75}
 			{rear	15}	;орудие дает небольшую броню
 		}
 	}
@@ -107,11 +105,11 @@
 	("armor_mantlet" t(80))
 	("armor_engine"  t(30 40 40 22))
 	("ger_5x8_sight")
-	
+
 	("crew_4_human")
-	
+
 	("shield" args 10)
-	
+
 	{extender "shield"
 		{on}
 	}
@@ -136,7 +134,7 @@
 		}
 
 	}
-	
+
 	{extender "inventory"
 		{box
 			{item "ammo bullet75 gerl apcbc" 27}
@@ -145,7 +143,7 @@
 			{item "ammo mg_mauser belt" 900}
 		}
 	}
-	
+
 	{Weaponry
 		{place "gun"
 			{weapon "75mm_stuk42" filling "ammo bullet75 gerl apcbc" 1}
@@ -171,32 +169,32 @@
 			{maxSpeedAtMaxTurn 4}
 			{StartTime	  45}
 			{TurnTime  	  19}
-    		{TurnStart  1.4} 
-    		{BrakeTime    1} 
-    		{StopTime     2} 
-    		{TurnRadius   8} 
-    		{TurnStop   0.8}
-     		{Gears  0.1 0.2 0.3 1}
-    		{RearGears 0.28}
+			{TurnStart  1.4}
+			{BrakeTime    1}
+			{StopTime     2}
+			{TurnRadius   8}
+			{TurnStop   0.8}
+			{Gears  0.1 0.2 0.3 1}
+			{RearGears 0.28}
 		}
 		{FuelBag
-			{volume 470 }	
-			{rate	36 }   
+			{volume 470 }
+			{rate	36 }
 			{remain 470 }
 			{fuel "fuel"}
 		}
 		{speed
-        	{Normal  27}
-        	{Slow  27}
-    	}
+			{Normal  27}
+			{Slow  27}
+		}
 	}
-	
-	{Extension "jagdpanzer_iv.mdl"}	
-	
+
+	{Extension "jagdpanzer_iv.mdl"}
+
 	{bone "gun_rot"
-        {speed 0.001}
-    }
-    {bone "gun_rot2"
-        {speed 0.001}
-    }
+		{speed 0.001}
+	}
+	{bone "gun_rot2"
+		{speed 0.001}
+	}
 }

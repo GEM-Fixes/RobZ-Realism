@@ -1,3 +1,4 @@
+(include "/properties/robz/volumes.inc")
 {actor
 	(include "/properties/cannon_mgun.ext")
 	{props "vision_cannon_minimum" "cannon_small" "round_sandbag"}
@@ -7,12 +8,12 @@
 		{place "mgun"
 			{weapon "mg34" filled}
 		}
-	}  	
+	}
 	{extender "inventory"
 		{box
-				{item "ammo mg_mauser drum" 1000}			
-				{item "sandbag_kit2"}
-		}	
+			{item "ammo mg_mauser drum" 1000}
+			{item "sandbag_kit2"}
+		}
 	}
 	{Extension "mg34_stan.mdl"}
 	{bone "turret" {limits}}
@@ -27,23 +28,8 @@
 		{thickness 2}
 		{component "body"}
 	}
-	{Volume "body1"
-		{tags "body"}
-		{able{obstacle 0}{blast 0}}
-		{thickness 2}
-		{component "body"}
-	}
-	{Volume "body2"
-		{tags "body"}
-		{able{obstacle 0}{blast 0}}
-		{thickness 2}
-		{component "body"}
-	}
-	{Volume "body3"
-		{tags "body"}
-		{able{obstacle 0}{blast 0}}
-		{thickness 2}
-		{component "body"}
-	}
-	; --- end Godny hitbox armor ---
-	}
+	("vol_body_plate_no_obstacle_blast" name(body1) mm(2))
+	("vol_body_plate_no_obstacle_blast" name(body2) mm(2))
+	("vol_body_plate_no_obstacle_blast" name(body3) mm(2))
+; --- end Godny hitbox armor ---
+}
