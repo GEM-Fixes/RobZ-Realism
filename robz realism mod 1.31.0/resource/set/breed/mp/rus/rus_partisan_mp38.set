@@ -9,6 +9,7 @@
 	{inventory
 		("kit_smg" gun(mp38) ammo(mp40_mag) rounds(96))
 		{item "bandage" 3}
+		{item "small_shovel" 1}
 		{in_hands 0}
 		("give_chance" item(grenade molotov_coctail) chance(25))
 	}

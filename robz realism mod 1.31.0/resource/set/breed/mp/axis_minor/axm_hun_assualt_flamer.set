@@ -10,6 +10,7 @@
 		{item "flame_thrower"}
 		{item "bandage" 4}
 		{item "balloon" filling "fuel" 40}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

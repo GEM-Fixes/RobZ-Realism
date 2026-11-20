@@ -15,6 +15,7 @@
 		("give_chance" item(grenade molotov_coctail) chance(25))
 		("give_chance" item(grenade rpg43) chance(25))
 		("give_chance" item(grenade rpg40) chance(25))
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

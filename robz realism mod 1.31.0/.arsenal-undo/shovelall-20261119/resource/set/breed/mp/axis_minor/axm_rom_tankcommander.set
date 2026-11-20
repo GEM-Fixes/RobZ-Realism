@@ -1,0 +1,16 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(rom-tankman) portrait(rom_tankman) icon(tankmans) priority(0) nation(rom))
+	("breed_armor" head(9_beret_tankist_ruminia))
+	{tags "tankman2"}
+	{perks
+		("crew_2" body(normal_line) sight(soldier))
+	}
+	("breed_vet" table(crew) start(1))
+
+	{inventory
+		("kit_pistol" gun(steyer_pistol_1912) ammo(9x19) rounds(40))
+		{item "bandage" 2}
+		{in_hands 0}
+	}
+}

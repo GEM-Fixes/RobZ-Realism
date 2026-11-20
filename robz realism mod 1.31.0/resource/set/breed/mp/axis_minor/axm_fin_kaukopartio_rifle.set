@@ -21,6 +21,7 @@
 		{item "grenade molotov_coctail" 1}
 		("give" item(mine antipersonnel) count(3))
 
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

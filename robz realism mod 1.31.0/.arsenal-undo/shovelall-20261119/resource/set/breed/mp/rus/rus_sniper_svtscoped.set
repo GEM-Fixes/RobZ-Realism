@@ -1,0 +1,19 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(rus-smguner) portrait(rus_soldier4) icon(sniper) priority(5) nation(rus))
+	("breed_armor" head(fieldcap1_rus))
+	{perks
+		("soldier_rifle_5" rocket(1) body(line) sight(sniper))
+		("perks_sniper")
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		("kit_rifle" gun(svt40_s) ammo(svt40_mag) rounds(20))
+		{item "ammo mosin_clip" 100}
+		{item "bandage" 5}
+		;{item "grenade smoke_paradrop_ammo" 1}
+		{item "plant" 3}
+		{item "knife_rus"}
+		{in_hands 0}
+	}
+}

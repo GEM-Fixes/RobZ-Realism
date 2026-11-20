@@ -1,0 +1,14 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(jap_army_tankman) portrait(jap_tankman) icon(tankman) priority(0) nation(jap))
+	("breed_armor" head(tankhelmet_jap_old))
+	{perks
+		("crew_1" body(normal_hardy) sight(soldier))
+	}
+	("breed_vet" table(crew) start(1))
+	{inventory
+		("kit_pistol" gun(nambu) ammo(nambu_mag) rounds(24))
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

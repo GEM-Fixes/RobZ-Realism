@@ -11,6 +11,7 @@
 		{item "bandage" 3}
 		{item "sandbag_kit"}
 		{item "springfield_belt ammo" 500}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

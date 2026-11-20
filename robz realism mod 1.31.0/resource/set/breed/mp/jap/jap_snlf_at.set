@@ -12,6 +12,7 @@
 		("give" item(grenade type97) count(2))
 		("give" item(dynamite) count(1))
 		("at_type_4at")
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

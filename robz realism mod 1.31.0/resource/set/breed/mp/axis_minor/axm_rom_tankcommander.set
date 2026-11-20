@@ -11,6 +11,7 @@
 	{inventory
 		("kit_pistol" gun(steyer_pistol_1912) ammo(9x19) rounds(40))
 		{item "bandage" 2}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

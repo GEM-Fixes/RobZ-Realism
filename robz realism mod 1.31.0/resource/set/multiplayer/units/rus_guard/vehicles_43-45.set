@@ -98,7 +98,6 @@
 
 ;   Button Hero
 
-;{price {rule squad} {members 71.36} {cost 71}}
 ("squad_4" side(rus_guard) name(hero_guard_recon) member1(guard_recon_sl:1) member2(guard_recon_smg2:1) member3(guard_recon_smg:3) member4(guard_recon_rifle:1) charge(60) tags(all hero 43 44 45) group(h1) button(hero) level(1) cost(1) fore(-0.5))
 
 ("unit_vehicle_members_sided" side(rus_guard) name(hero_guard_lend_lease_apc) vehicle1(universal_carrier_ptrs) member1(vehicle_supporter:2) member2(tankman:0) charge(60) tags(all hero 44 45) group(h3) button(hero) level(1) cost(1.0) fore(-0.5))

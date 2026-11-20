@@ -12,6 +12,7 @@
 		{item "bandage" 5}
 		{item "plant" 3}
 		{item "em2_vet" filling "british303_clip ammo" 10}
+		{item "small_shovel" 1}
 		{in_hands 3}
 	}
 }

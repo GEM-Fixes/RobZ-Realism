@@ -12,6 +12,7 @@
 		{item "bandage" 4}
 		("give" item(grenade f1) count(3))
 		("give" item(grenade smoke) count(2))
+		{item "small_shovel" 1}
 		{in_hands 0}
 
 	}

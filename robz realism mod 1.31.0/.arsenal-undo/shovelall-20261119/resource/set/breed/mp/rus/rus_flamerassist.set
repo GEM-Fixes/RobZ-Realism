@@ -1,0 +1,17 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(rus-smg) portrait(rus_soldier2) icon(smg) priority(1) nation(rus))
+	("breed_armor_vest" vest(ammo_rus) head(fieldcap1_rus))
+	{perks
+		("soldier_smg_2" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		("smg_ppsh_213")
+		{item "bandage" 3}
+		("give" item(grenade f1) count(2))
+		("give" item(grenade rpg40) count(1))
+		("give" item(grenade smoke) count(1))
+		{in_hands 0}
+	}
+}

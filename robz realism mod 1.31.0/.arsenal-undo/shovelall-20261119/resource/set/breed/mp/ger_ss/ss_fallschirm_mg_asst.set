@@ -1,0 +1,18 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(waffen-fj-rifleman) portrait(ger_elite1) icon(elite) priority(4) nation(ger))
+	{armors
+		;{body ammo_ger2}
+		{head helmet_ger_m38_cover}
+	}
+	{perks
+		("soldier_rifle_3" rocket(1) body(hardy) sight(soldier))
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		("kit_rifle" gun(mauzer) ammo(mauser_clip) rounds(90))
+		{item "ammo mg_mauser belt" 600}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

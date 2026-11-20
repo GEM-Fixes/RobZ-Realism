@@ -1,0 +1,15 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(jap_army_mc) portrait(jap_soldier2) icon(home_guard) priority(0) nation(jap))
+	("breed_armor" head(jap_army_helmet3))
+	{perks
+		("soldier_rifle_3" rocket(1) body(hardy) sight(soldier))
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		("rifle_type44_carbine")
+		{item "ammo 5cm_grenade fg" 16}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

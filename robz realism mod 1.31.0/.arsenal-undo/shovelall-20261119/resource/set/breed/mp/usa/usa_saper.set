@@ -1,0 +1,16 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(us_bazooker) portrait(usa_soldier2) icon(sapper) priority(3) nation(usa))
+	("breed_armor" head(helmet_novice))
+	{perks
+		("soldier_smg_3" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		("smg_m3a")
+		{item "mine_detector"}
+		("give" item(dynamite) count(2))
+		{item "trench_spade"}
+		{in_hands 0}
+	}
+}

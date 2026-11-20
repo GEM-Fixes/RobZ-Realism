@@ -15,6 +15,7 @@
 		("give_chance" item(grenade m15_smoke) chance(50))
 		("give" item(dynamite) count(1))
 		{item "sandbag_kit" 1}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

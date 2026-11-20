@@ -1,0 +1,17 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(ger-smock2-mgun) portrait(ger2_soldier2) icon(mg) priority(2) nation(ger))
+	("breed_armor" head(helmet_heer_camo))
+	{perks
+		("soldier_mgun_4" rocket(3) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(2))
+	{inventory
+		("mgun_mg42_inf")
+		("pistol_valter")
+		{item "bandage" 3}
+		{item "sandbag_kit" 1}
+		{item "barrel_case"}
+		{in_hands 0}
+	}
+}

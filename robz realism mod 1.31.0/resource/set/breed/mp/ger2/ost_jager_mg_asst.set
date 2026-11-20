@@ -11,6 +11,7 @@
 		{item "ammo mg_mauser belt" 600}
 		{item "bandage" 3}
 		{item "sandbag_kit"}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

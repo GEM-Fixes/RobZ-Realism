@@ -62,7 +62,7 @@
 	{weapon_group "radio" {label "Radio"} {skill "rifle"} {sole 1}
 		{tier "60" {label "call-in 60 [I] sheet Radio row 1 = calibre, row 2 = MP; cp = sheet singles Radio"}
 			{mp 20 20 20 20 20 20 20 20 20 20}
-			{cp 2 2 2 2 2 2 2 2 2 2}	; owner 2026-11-19: the 60 mm call-in keeps the mod's CP 2; 5 is the sheet value of the bigger call-ins
+			{cp 5 5 5 5 5 5 5 5 5 5}
 			{items
 				"mortar_60_flaregun"	; [I] call-in flare gun, calibre 60 in the name -> sheet Radio 60
 			}

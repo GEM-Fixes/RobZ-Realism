@@ -12,6 +12,7 @@
 		("pistol_luger")
 		{item "knife_ger"}
 		{item "binocular"}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

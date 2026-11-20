@@ -9,6 +9,7 @@
 	{inventory
 		("kit_smg" gun(type100smg) ammo(type100_mag) rounds(30))
 		{item "bandage" 3}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

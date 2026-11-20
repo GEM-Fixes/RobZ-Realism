@@ -1,0 +1,16 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(us_mgun) portrait(usa_soldier2) icon(at_miner) priority(3) nation(usa))
+	("breed_armor_vest" vest(ammo_us2) head(helmet4_usa))
+	{perks
+		("soldier_smg_3" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		("smg_m3a")
+		("give" item(mine antitank) count(8))
+		{item "hedgehog_kit"}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

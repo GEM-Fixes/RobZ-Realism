@@ -16,6 +16,7 @@
 		{item "k98_grenade ap" 1 1}
 		{item "ammo mg_mauser drum" 50}
 		{item "panzerfaust_60 weapon" 0 1 filled}
+		{item "small_shovel" 1}
 		{in_hands 3}
 	}
 }

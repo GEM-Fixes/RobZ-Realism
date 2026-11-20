@@ -1,0 +1,14 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(rus-sco-late) portrait(rus_elite3) icon(smg3) priority(1) nation(rus))
+	("breed_armor_vest" vest(body_armor) head(helmet_rus_ssh40_cover_camo))
+	{perks
+		("soldier_smg_4" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(5))
+	{inventory
+		{item "flame_thrower"}
+		{item "balloon" filled}
+		{in_hands 0}
+	}
+}

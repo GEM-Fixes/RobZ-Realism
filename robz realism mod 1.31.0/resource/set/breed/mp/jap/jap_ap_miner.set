@@ -11,6 +11,7 @@
 		("give" item(mine antipersonnel) count(32))
 		{item "barbwire_kit"}
 		{item "bandage" 5}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

@@ -124,7 +124,6 @@
 
 ;°°°Button Hero°°°
 
-;{price {rule single} {members 72.5} {mult 1.5} {cost 109}}
 ("unit_infantry_sided" side(ger_ss) name(hero_ss_sniper) member1(sniper2:1) charge(120) tags(all hero 41 42 43 44 45) group(h1) button(hero) level(1) cost(1.0) fore(-0.5))
 ;{"heronew1(ger)"     ("i2" c(120)			t(all hero 42 43 44 45) s(ger) n1(bazooker3:2) n2(rifle:4) g(h1) b(hero)) {level 1} {cost 1.0} {fore -0.5}}
 ("unit_vehicle_members_sided" side(ger_ss) name(hero_ss_sdkfz251_16) vehicle1(np_sdkfz251_16) member1(vehicle_supporter:5) member2(tankman2:0) charge(120) tags(all hero 43 44 45) group(h2) button(hero) level(1) cost(2.0) fore(-0.5))

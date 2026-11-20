@@ -9,6 +9,7 @@
 	{inventory
 		("smg_sten_mk2")
 		{item "bandage" 3}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

@@ -1,0 +1,18 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(bul-alp-rfl) portrait(bul_soldier2) icon(rifleman) priority(0) nation(bul))
+	("breed_armor" head(helmet1_bul))
+	{perks
+		("soldier_rifle_5" rocket(1) body(line) sight(soldier))
+		{"at_rifle" lvl_5}
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		{item "pzb39" filled}
+		{item "bandage" 3}
+		("give" item(grenade m24) count(1))
+		{item "ammo ptr" 35}
+		{in_hands 0}
+	}
+}
+

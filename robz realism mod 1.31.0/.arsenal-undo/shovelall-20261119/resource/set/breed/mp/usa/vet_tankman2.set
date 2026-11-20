@@ -1,0 +1,14 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(usa-tank-sgt) portrait(usa_tankman) icon(tankman) priority(1) nation(usa))
+	("breed_armor" head(tankhelmet_usa))
+	{perks
+		("crew_3" body(vet_line) sight(soldier))
+	}
+	("breed_vet" table(crew) start(1))
+	{inventory
+		("smg_m3a_96")
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

@@ -11,6 +11,7 @@
 		("give" item(mine antitank) count(9))
 		{item "hedgehog_kit"}
 		{item "bandage" 5}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

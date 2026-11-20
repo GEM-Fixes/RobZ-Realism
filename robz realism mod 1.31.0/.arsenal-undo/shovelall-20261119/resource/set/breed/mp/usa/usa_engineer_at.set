@@ -1,0 +1,16 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(usa-soldier1) portrait(usa_soldier2) icon(bazooker) priority(3) nation(usa))
+	("breed_armor" head(helmet_novice))
+	{perks
+		("soldier_rifle_3" rocket(3) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		("rifle_garand")
+		{item "bandage" 3}
+		("kit_at" gun(weapon bazooka) ammo(bazooka) rounds(4))
+		{item "ammo bazooka wp" 1 1}
+		{in_hands 0}
+	}
+}

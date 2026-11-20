@@ -15,6 +15,7 @@
 		{item "k98_grenade ap" 1 1}
 		("give_chance" item(k98_grenade ap3) chance(50))
 		{item "sandbag_kit"}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

@@ -1,0 +1,19 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(usa-devil-sgt) portrait(usa_elite4) icon(devil_brigade2) priority(4) nation(usa))
+	("breed_armor" head(helmet4_usa))
+	{perks
+		("soldier_smg_7" rocket(1) body(line) sight(soldier))
+		{"stealth"}
+	}
+	("breed_vet" table(elite) start(1))
+	{inventory
+		("smg_thompson")
+		("pistol_colt")
+		{item "bandage" 5}
+		("give" item(grenade m61) count(2))
+		("give_1_or_2" item(grenade smoke))
+		("give_chance" item(grenade m15_smoke) chance(50))
+		{in_hands 0}
+	}
+}

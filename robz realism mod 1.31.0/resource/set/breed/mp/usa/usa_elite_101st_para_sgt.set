@@ -15,6 +15,7 @@
 		("give_chance" item(grenade m15_smoke) chance(50))
 		{item "knife_union"}
 		("give" item(grenade satchel) count(1))
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

@@ -1,0 +1,15 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(rom-inf-rec) portrait(rom_soldier1) icon(smgs2) priority(0) nation(rom))
+	("breed_armor" head(8_kaska_soldat_ruminia))
+	{perks
+		("support_1" body(normal_line) sight(soldier))
+	}
+	("breed_vet" table(crew) start(1))
+
+	{inventory
+		("smg_orita")
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

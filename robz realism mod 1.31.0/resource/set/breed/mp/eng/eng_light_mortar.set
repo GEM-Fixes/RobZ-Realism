@@ -11,6 +11,7 @@
 		{item "ammo mortar50 eng sm" 8}
 		{item "ammo mortar50 eng wp" 2}
 		{item "bandage" 3}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

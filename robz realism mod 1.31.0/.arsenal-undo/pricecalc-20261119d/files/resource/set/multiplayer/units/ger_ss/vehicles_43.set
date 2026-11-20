@@ -1,0 +1,144 @@
+; ported from Robz realism mod 1.28.6 (year presets)
+;----- Germany -----
+
+
+;같캛utton 1같�
+
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(r12_34_ss) vehicle1(r12_34) crew(2) charge(0) tags(all 39 40 41 42 43 44 45) group(b1) button(v1) level(1) cost(115) fore(0.0))		;0sec
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(r12_ss) vehicle1(r12) crew(2) charge(0) tags(all 42 43 44 45) group(b1) button(v1) level(1) cost(140) fore(0.0))			;0sec
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(kubel_mgun_34_ss) vehicle1(kubel_mgun_34) crew(3) charge(30) tags(all 39 40 41 42 43 44 45) group(b2) button(v1) level(1) cost(155) fore(0.0))	;30sec
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(kubel_mgun_ss) vehicle1(kubel_mgun) crew(3) charge(30) tags(all 42 43 44 45) group(b2) button(v1) level(1) cost(175) fore(0.0))			;30sec
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(schwimmwagen_ss) vehicle1(schwimmwagen) crew(3) charge(30) tags(all 42 43 44 45) group(b3) button(v1) level(1) cost(175) fore(0.0))			;30sec
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(np_sdkfz250_1_ss) vehicle1(np_sdkfz250_1) crew(4) charge(10) tags(all 39 40 41 42 43 44 45) group(b4) button(v1) level(1) cost(140) fore(-17.0))	;180sec
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(np_sdkfz251_1_ss) vehicle1(np_sdkfz251_1) crew(2) charge(10) tags(all 39 40 41 42 43 44 45) group(b5) button(v1) level(1) cost(145) fore(-17.0))	;180sec
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(sdkfz251_1_ss) vehicle1(sdkfz251_1) crew(2) charge(10) tags(all 42 43 44 45) group(b5) button(v1) level(1) cost(165) fore(-17.0))			;180sec
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(np_sdkfz8_ss) vehicle1(np_sdkfz8) crew(2) charge(0) tags(all 39 40 41 42 43 44 45) group(b1) button(v1) level(1) cost(100) fore(0.0))		;0sec
+
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(blitz3_6_ss) vehicle1(blitz3_6) crew(2) charge(0) tags(all 39 40 41 42 43 44 45) group(b7) button(v1) level(1) cost(100) fore(0.0))		;0sec
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(blitz3_6art_ss) vehicle1(blitz3_6art) crew(2) charge(0) tags(all 39 40 41 42 43 44 45) group(b8) button(v1) level(1) cost(300) fore(0.0))		;0sec
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(blitz3_6eng_ss) vehicle1(blitz3_6eng) crew(2) charge(0) tags(all 39 40 41 42 43 44 45) group(b9) button(v1) level(1) cost(250) fore(0.0))		;0sec
+
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(ammo_box_ger_inf_ss) vehicle1(ammo_box_ger_inf) crew(2) charge(0) tags(all 39 40 41 42 43 44 45) group(b10) button(v1) level(1) cost(25) fore(0.0))	;0sec
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(ammo_box_ger_art_ss) vehicle1(ammo_box_ger_art) crew(2) charge(0) tags(all 39 40 41 42 43 44 45) group(b11) button(v1) level(1) cost(75) fore(0.0))	;0sec
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(ammo_box_ger_special_ss) vehicle1(ammo_box_ger_special) crew(2) charge(300) tags(all 39 40 41 42 43 44 45) group(b12) button(v1) level(1) cost(100) fore(0.0))	;0sec
+
+
+
+;같캛utton 2같� support weapons
+
+("unit_vehicle_supporters_info" side(ger_ss) name(zb53_stan) vehicle1(zb53_stan) crew(2) charge(10) tags(all 39 40 41 42 43 44 45) group(c1) button(v2) level(1) cost(130) fore(-2.0))			;30sec
+("unit_vehicle_supporters_info" side(ger_ss) name(mg34_lafette_ss) vehicle1(mg34_lafette) crew(2) charge(10) tags(all 39 40 41 42 43 44 45) group(c1) button(v2) level(1) cost(165) fore(-2.0))		;30sec
+("unit_vehicle_supporters_info" side(ger_ss) name(mg42_lafette_ss) vehicle1(mg42_lafette) crew(2) charge(10) tags(all 42 43 44 45) group(c2) button(v2) level(1) cost(195) fore(-2.0))			;30sec
+("unit_vehicle_supporters_noinfo_sided" side(ger_ss) name(2cm_flak38_ss) vehicle1(2cm_flak38) crew(2) charge(30) tags(all 39 40 41 42 43 44 45) group(c3) button(v2) level(1) cost(200) fore(-4.0))		;150sec
+("unit_vehicle_supporters_noinfo_sided" side(ger_ss) name(2cm_flakvierling38_ss) vehicle1(2cm_flakvierling38) crew(4) charge(30) tags(all 39 40 41 42 43 44 45) group(c4) button(v2) level(1) cost(250) fore(-4.0))	;150sec
+("unit_vehicle_supporters_noinfo_sided" side(ger_ss) name(37mm_flak_36_ss) vehicle1(37mm_flak_36) crew(2) charge(30) tags(all 39 40 41 42 43 44 45) group(c5) button(v2) level(1) cost(300) fore(-5.0))	;180sec
+
+;{price {rule squad} {members 54.4} {cost 54}}
+("unit_light_mortar_sided" side(ger_ss) name(5_cm_granatwerfer_36_ss) charge(10) tags(all 43 mortar) group(c56) button(v2) level(1) cost(150) fore(-2.0))		;30sec
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(sgrw_34_ss) vehicle1(sgrw_34) crew(2) charge(10) tags(all 39 40 41 42 43 44 45 mortar) group(c6) button(v2) level(1) cost(320) fore(-2.0))		;30sec
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(sgrw_42_ss) vehicle1(sgrw_42) crew(2) charge(60) tags(all 42 43 44 45 mortar) group(c7) button(v2) level(1) cost(670) fore(-9.0))			;600sec
+
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(pak38_ss) vehicle1(pak38) crew(2) charge(10) tags(all 40 41 42 43 44 45) group(c9) button(v2) level(1) cost(180) fore(-14.0))			;300sec
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(np_pak40_ss) vehicle1(np_pak40) crew(2) charge(20) tags(all medium 42 43 44 45) group(c10) button(v2) level(1) cost(400) fore(-19.0))			;400sec
+
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(pak43_ss) vehicle1(pak43) crew(2) charge(60) tags(all heavy 43 44 45) group(c11) button(v2) level(1) cost(850) fore(-19.0))				;1200sec
+
+("unit_howitzer" side(ger_ss) name(how_aa) vehicle2(flak36a) charge(60) tags(artillery all medium 39 40 41 42 43 44 45) group(c12) button(v2) level(1) cost(700) fore(-14.0))			;900sec
+
+("unit_vehicle_supporters_noinfo_sided" side(ger_ss) name(75mm_leig18_ss) vehicle1(75mm_leig18) crew(2) charge(60) tags(artillery all 40 41 42 43 44 45) group(c13) button(v2) level(1) cost(320) fore(-1.0))		;120sec
+("unit_vehicle_supporters_noinfo_sided" side(ger_ss) name(15_cm_sig33_ss) vehicle1(15_cm_sig33) crew(2) charge(60) tags(artillery all 39 40 41 42 43 44 45) group(c133) button(v2) level(1) cost(750) fore(-9.0))	;600sec
+
+("unit_tank_info_sided" side(ger_ss) name(stuh42_ss) vehicle1(stuh42) crew1(4) crew2(1) charge(10) tags(all medium 43 44 45) group(c14) button(v2) level(1) cost(625) fore(-69.0))			;700sec
+("unit_tank_info_sided" side(ger_ss) name(brummbar_ss) vehicle1(brummbar_early) crew1(3) crew2(1) charge(60) tags(all medium 43 44 45) group(c15) button(v2) level(1) cost(1000) fore(-14.0))		;900sec
+
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(np_sdkfz8_flak_ss) vehicle1(np_sdkfz8_flak) crew(3) charge(60) tags(artillery all 39 40 41 42 43) group(c19) button(v2) level(1) cost(750) fore(-14.0))			;900sec
+
+;같캛utton support 2같� artillery guns
+
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(flak18a_ss) vehicle1(flak18a) crew(2) charge(60) tags(all artillery 39 40 41 42 43 44 45) group(cc1) button(v22) level(1) cost(600) fore(-14.0))		;900sec
+
+("unit_howitzer" side(ger_ss) name(how_b) vehicle2(lefh18) charge(60) tags(all artillery 39 40 41 42 43 44 45) group(cc2) button(v22) level(1) cost(500) fore(-14.0))		;900sec
+("unit_howitzer" side(ger_ss) name(how_a) vehicle2(sfh18) charge(60) tags(all artillery heavyart heavy 39 40 41 42 43 44 45) group(cc3) button(v22) level(1) cost(750) fore(-19.0))		;1200sec
+("unit_howitzer" side(ger_ss) name(morser18) vehicle2(morser18) charge(60) tags(all artillery heavyart heavy 39 40 41 42 43 44 45) group(cc4) button(v22) level(1) cost(1150) fore(-19.0))	;1200sec
+
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(nebelwerfer41_ss) vehicle1(nebelwerfer41) crew(2) charge(60) tags(all artillery rocket 41 42 43 44 45) group(cc5) button(v22) level(1) cost(450) fore(-14.0))	;900sec
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(nebelwerfer42_ss) vehicle1(nebelwerfer42) crew(2) charge(60) tags(all artillery heavyart rocket 42 43 44 45) group(cc6) button(v22) level(1) cost(1100) fore(-14.0))	;900sec
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(np_sdkfz251_1w_ss) vehicle1(np_sdkfz251_1w) crew(3) charge(60) tags(all artillery heavyart rocket 41 42 43 44 45) group(cc7) button(v22) level(1) cost(1500) fore(-19.0));1200sec
+
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(np_sdkfz250_7_ss) vehicle1(np_sdkfz250_7) crew(4) charge(10) tags(all 39 40 41 42 43 44 45 mortar) group(d3) button(v22) level(1) cost(370) fore(-31.0))	;320sec
+("unit_tank_info_sided" side(ger_ss) name(wespe_ss) vehicle1(wespe) crew1(3) crew2(1) charge(60) tags(all artillery 43 44 45) group(cc8) button(v22) level(1) cost(800) fore(-14.0))	;900sec
+("unit_tank_info_sided" side(ger_ss) name(hummel_ss) vehicle1(hummel) crew1(3) crew2(1) charge(60) tags(all artillery heavyart heavy 43 44 45) group(cc9) button(v22) level(1) cost(1150) fore(-19.0))	;1200sec
+
+;같캛utton 3같�
+
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(np_sdkfz250_10_ss) vehicle1(np_sdkfz250_10) crew(4) charge(10) tags(all 39 40 41 42 43 44 45) group(d1) button(v3) level(1) cost(200) fore(-23.0))		;240sec
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(np_sdkfz251_10_ss) vehicle1(np_sdkfz251_10) crew(4) charge(10) tags(all 39 40 41 42 43 44 45) group(d2) button(v3) level(1) cost(200) fore(-23.0))		;240sec
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(np_sdkfz250_9_ss) vehicle1(np_sdkfz250_9) crew(3) charge(10) tags(all 39 40 41 42 43 44 45) group(d4) button(v3) level(1) cost(210) fore(-31.0))		;320sec
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(np_sdkfz251_17_ss) vehicle1(np_sdkfz251_17) crew(3) charge(10) tags(all 39 40 41 42 43 44 45) group(d5) button(v3) level(1) cost(220) fore(-31.0))		;320sec
+("unit_vehicle_supporters_info_sided" side(ger_ss) name(np_sdkfz251_9_ss) vehicle1(np_sdkfz251_9) crew(3) charge(10) tags(all 39 40 41 42 43 44 45) group(d6) button(v3) level(1) cost(280) fore(-31.0))		;320sec
+("unit_tank_info_sided" side(ger_ss) name(pz1b_ss) vehicle1(pz1b) crew1(1) crew2(1) charge(10) tags(all 39 40 41 42 43 44 45) group(d7) button(v3) level(1) cost(195) fore(-31.0))		;320sec
+("unit_tank_info" side(ger_ss) name(sdkfz223_ss) vehicle1(sdkfz223) crew1(1) crew2(1) charge(10) tags(all 39 40 41 42 43 44 45) group(d8) button(v3) level(1) cost(195) fore(-31.0))		;320sec
+("unit_tank_info_sided" side(ger_ss) name(pz1_ss) vehicle1(pz1) crew1(2) crew2(1) charge(10) tags(all 41 42 43) group(d9) button(v3) level(1) cost(235) fore(-35.0))				;360sec
+("unit_tank_info" side(ger_ss) name(sdkfz222_ss) vehicle1(sdkfz222) crew1(1) crew2(1) charge(10) tags(all 39 40 41 42 43 44 45) group(d10) button(v3) level(1) cost(245) fore(-37.0))		;380sec
+("unit_tank_info_sided" side(ger_ss) name(pz2f_ss) vehicle1(pz2f) crew1(2) crew2(1) charge(10) tags(all 39 40 41 42 43 44 45) group(d11) button(v3) level(1) cost(265) fore(-41.0))		;420sec
+("unit_tank_info_sided" side(ger_ss) name(pz2l_ss) vehicle1(pz2l) crew1(2) crew2(1) charge(10) tags(all 43 44 45) group(d12) button(v3) level(1) cost(265) fore(-41.0))				;420sec
+("unit_tank_info_sided" side(ger_ss) name(pzkpfw38t_b_ss) vehicle1(pzkpfw38t_b) crew1(3) crew2(1) charge(10) tags(all 39 40 41 42 43 44 45) group(d13) button(v3) level(1) cost(295) fore(-45.0))	;460sec
+("unit_tank_info" side(ger_ss) name(np_sdkfz231_ss) vehicle1(np_sdkfz231) crew1(2) crew2(1) charge(10) tags(all 39 40 41 42 43 44 45) group(d14) button(v3) level(1) cost(245) fore(-39.0))	;400sec
+
+;같캛utton 4같�
+
+("unit_tank_info_sided" side(ger_ss) name(pz3_l_ss) vehicle1(pz3_l) crew1(3) crew2(1) charge(10) tags(medium all 42 43) group(e5) button(v4) level(1) cost(390) fore(-49.0))		;500sec
+
+("unit_tank_info" side(ger_ss) name(pz3_m_ss) vehicle1(pz3_m) crew1(3) crew2(1) charge(10) tags(medium all 42 43 44) group(e6) button(v4) level(1) cost(400) fore(-49.0))		;500sec
+("unit_tank_info_sided" side(ger_ss) name(pz3_m_flamer_ss) vehicle1(pz3_m_flamer) crew1(3) crew2(1) charge(500) tags(medium all 43 44) group(e7) button(v4) level(1) cost(500) fore(0.0))	;500sec
+("unit_tank_info" side(ger_ss) name(pz3n_ss) vehicle1(pz3n) crew1(3) crew2(1) charge(10) tags(medium all 42 43 44) group(e8) button(v4) level(1) cost(400) fore(-49.0))		;500sec
+
+("unit_tank_info_sided" side(ger_ss) name(pz4f_ss) vehicle1(pz4f) crew1(3) crew2(1) charge(10) tags(medium all 42 43) group(e11) button(v4) level(1) cost(500) fore(-59.0))		;600sec
+("unit_tank_info" side(ger_ss) name(pz4g_ss) vehicle1(pz4g) crew1(3) crew2(1) charge(10) tags(medium all 43 44) group(e13) button(v4) level(1) cost(525) fore(-65.0))		;660sec
+("unit_tank_info_sided" side(ger_ss) name(pz4h_ss) vehicle1(pz4h) crew1(4) crew2(1) charge(10) tags(medium all 43 44 45) group(e14) button(v4) level(1) cost(575) fore(-89.0))		;900sec
+
+("unit_tank_info_sided" side(ger_ss) name(pz5d_ss) vehicle1(pz5d) crew1(4) crew2(1) charge(700) tags(heavy all 43) group(e16) button(v4) level(1) cost(1775) fore(-1.0))		;1400sec
+("unit_tank_info_sided" side(ger_ss) name(pz5a_ss) vehicle1(pz5a) crew1(4) crew2(1) charge(700) tags(heavy all 43 44) group(e16) button(v4) level(1) cost(1825) fore(-1.0))		;1400sec
+
+("unit_tank_info_sided" side(ger_ss) name(pz6h_ss) vehicle1(pz6h) crew1(3) crew2(1) charge(120) tags(heavy all 43 44) group(e17) button(v4) level(1) cost(1375) fore(-9.0))		;1200sec
+("unit_tank_info_sided" side(ger_ss) name(pz6e_ss) vehicle1(pz6e) crew1(4) crew2(1) charge(120) tags(heavy all 43 44 45) group(e18) button(v4) level(1) cost(1475) fore(-9.0))		;1200sec
+
+;같캛utton 5같�
+
+("unit_tank_info_sided" side(ger_ss) name(marder_3h_ss) vehicle1(marder_3h) crew1(3) crew2(1) charge(10) tags(medium all 42 43) group(f0) button(v5) level(1) cost(550) fore(-59.0))		;600sec
+("unit_tank_info" side(ger_ss) name(marder_3m_ss) vehicle1(marder_3m) crew1(3) crew2(1) charge(10) tags(medium all 43 44) group(f0) button(v5) level(1) cost(525) fore(-59.0))		;600sec
+
+("unit_tank_info_sided" side(ger_ss) name(stug3f_ss) vehicle1(stug3f) crew1(3) crew2(1) charge(10) tags(medium all 42 43 44) group(f4) button(v5) level(1) cost(500) fore(-59.0))		;600sec
+("unit_tank_info_sided" side(ger_ss) name(stug3f_8_ss) vehicle1(stug3f_8) crew1(3) crew2(1) charge(10) tags(medium all 42 43 44) group(f5) button(v5) level(1) cost(600) fore(-64.0))		;650sec
+("unit_tank_info_commander_first_sided" side(ger_ss) name(stug3g_ss) vehicle1(stug3g) crew1(3) crew2(1) charge(10) tags(medium all 43 44 45) group(f6) button(v5) level(1) cost(675) fore(-69.0))		;700sec
+
+("unit_tank_info" side(ger_ss) name(nashorn_ss) vehicle1(nashorn) crew1(3) crew2(1) charge(60) tags(heavy all 43 44 45) group(f9) button(v5) level(1) cost(1500) fore(-27.0))		;1680sec
+
+
+;같캛utton vet같� SS special
+
+("unit_tank_commander_first" side(ger_ss) name(stug3g_vet) breed1(vet_tankman2) breed2(vet_tankman) crew1(3) crew2(1) charge(900) tags(all medium 43 44 45) group(g1) button(v6) score(850) weight(0) points(15) level(1) cost(850) fore(0.0)) 	;900sec
+("unit_tank" side(ger_ss) name(pz4h_vet) breed1(vet_tankman) breed2(vet_tankman2) crew1(4) crew2(1) charge(900) tags(all 43 44 45 medium) group(g3) button(v6) score(700) weight(0) points(20) level(1) cost(700) fore(0.0))	;900sec
+("unit_tank" side(ger_ss) name(veteran_tiger) breed1(vet_tankman) breed2(vet_tankman2) crew1(4) crew2(1) charge(1200) tags(all 43 44 45 heavy) group(g4) button(v6) score(1650) weight(0) points(30) level(1) cost(1650) fore(0.0))  	;1200sec
+
+
+;같캛utton Hero같�
+
+;{price {rule single} {members 72.5} {mult 1.5} {cost 109}}
+("unit_infantry_sided" side(ger_ss) name(hero_ss_sniper) member1(sniper2:1) charge(120) tags(all hero 41 42 43 44 45) group(h1) button(hero) level(1) cost(1.0) fore(-0.5))
+;{"heronew1(ger)"     ("i2" c(120)			t(all hero 42 43 44 45) s(ger) n1(bazooker3:2) n2(rifle:4) g(h1) b(hero)) {level 1} {cost 1.0} {fore -0.5}}
+("unit_vehicle_members_sided" side(ger_ss) name(hero_ss_sdkfz251_16) vehicle1(np_sdkfz251_16) member1(vehicle_supporter:5) member2(tankman2:0) charge(120) tags(all hero 43 44 45) group(h2) button(hero) level(1) cost(2.0) fore(-0.5))
+("unit_vehicle_pair_sided" side(ger_ss) name(hero_ss_2cmflak) vehicle1(sdkfz251_1) vehicle2(2cm_flak38) member1(vehicle_supporter:4) member2(vehicle_supporter:0) charge(120) tags(all hero 41 42 43 44 45) group(h3) button(hero) level(1) cost(2.0) fore(-0.5))
+
+;{"hero2(ger)"        ("i3" c(240)			t(all hero 43 44 45) s(ger) n1(elite4:3) n2(elite5:4) n3(elite6:1) g(h2) b(hero)) {level 1} {cost 2.0} {fore -0.5}}
+;{"hero4(ger)"        ("v4" c(360) c1(sdkfz251_1) 	t(all hero 42 43 44 45) s(ger) n1(elite:5) n2(elite2:2) n3(elite3:2) n4(elite_at:1) g(h2) b(hero)) {level 1} {cost 3.0} {fore -0.5}}
+;{"heronew2(ger)"     ("v1" c(360) c1(marder_3h)		t(all hero 42 43) s(ger) n1(tankman:3) n2(tankman2:1) g(h2) b(hero)) {level 1} {cost 3.0} {fore -0.5}}
+
+;{"hero5(ger)"        ("i2" c(480)			t(all hero) s(ger) n1(radioman:1) n2(smg:2) g(h7) b(hero)) {level 1} {cost 4.0} {fore -0.5}}
+("unit_vehicle_members_sided" side(ger_ss) name(hero_ss_stuka) vehicle1(np_sdkfz251_1w) member1(vehicle_supporter:3) member2(tankman2:0) charge(800) tags(all hero artillery rocket 41 42 43 44 45) group(h8) button(hero) level(1) cost(15.0) fore(-0.5))
+;{"hero6(ger)"	    ("v1" c(600) c1(stuh42) 		t(all hero 43 44 45) s(ger) n1(tankman:4) n2(tankman2:1) g(h9) b(hero)) {level 1} {cost 5.0} {fore -0.5}}
+
+("unit_vehicles2_members1_sided_2" side(ger_ss) name(hero_ss_pak40) vehicle1(np_sdkfz8) vehicle2(pak40) member(vehicle_supporter:2) charge(600) tags(all hero 42 43 44 45) group(h11) button(hero) level(1) cost(10.0) fore(-0.5))
+("unit_two_vehicles_members_sided" side(ger_ss) name(hero_ss_lefh18) vehicle1(lefh18) member1(vehicle_supporter:2) member2(tankman2:0) charge(650) tags(all hero artillery 39 40 41 42 43 44 45) group(h12) button(hero) level(1) cost(10.0) fore(-0.5))
+("unit_vehicle_members_sided" side(ger_ss) name(hero_ss_brummbar) vehicle1(brummbar_early) member1(tankman:3) member2(tankman2:1) charge(900) tags(all hero 44 45) group(h13) button(hero) level(1) cost(9.0) fore(-0.5))
+("unit_vehicle_members_sided" side(ger_ss) name(hero_tiger_ace) vehicle1(pz6e_ace) member1(elite_tankman:4) member2(elite_tankman2:1) charge(1200) tags(all hero 44 45) group(h14) button(hero) level(1) cost(14.0) fore(-0.5))

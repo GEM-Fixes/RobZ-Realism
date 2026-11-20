@@ -1,0 +1,15 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(usa-mgun) portrait(usa_soldier2) icon(mg2) priority(2) nation(usa))
+	("breed_armor_vest" vest(mgun_ammo) head(helmet_novice))
+	{perks
+		("soldier_mgun_3" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		("mgun_browning_m19a6")
+		{item "bandage" 3}
+		{item "sandbag_kit" 1}
+		{in_hands 0}
+	}
+}

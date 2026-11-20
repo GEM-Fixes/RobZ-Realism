@@ -1,0 +1,18 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(usa-ranger-carbine) portrait(usa_soldier5) icon(stormtrooper5) priority(4) nation(usa))
+	("breed_armor_vest" vest(us_haversack_shovel) head(helmet_usa_ranger))
+	{perks
+		("soldier_rifle_6" rocket(6) body(line) sight(soldier))
+	}
+	("breed_vet" table(elite) start(1))
+	{inventory
+		{item "weapon bazooka_m9" filled}
+		("rifle_m1_carbine")
+		{item "bandage" 5}
+		;{item "grenade n73at" 1}
+		{item "ammo bazooka" 7}
+		{item "ammo bazooka wp" 1 1}
+		{in_hands 0}
+	}
+}

@@ -12,6 +12,7 @@
 		{item "bandage" 5}
 		("give" item(grenade type3at_a) count(1))
 		{item "ammo type_4" 7}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

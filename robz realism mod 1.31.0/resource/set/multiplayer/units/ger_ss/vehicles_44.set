@@ -159,10 +159,8 @@
 
 ;   Button Hero
 
-;{price {rule single} {members 72.5} {mult 1.5} {cost 109}}
 ("unit_infantry_sided" side(ger_ss) name(hero_ss_sniper) member1(ss_vet_sniper:1) charge(120) tags(all hero 41 42 43 44 45 sniper_h_ss) group(h0) button(hero) level(1) cost(1.0) fore(-2))
 
-;{price {rule squad} {members 200.94} {cost 201}}
 ("squad_8" side(ger_ss) name(hero_ss_grenadier) member1(ss_grenadier_sl:1) member2(ss_grenadier_sl_asst_44:1) member3(ss_grenadier_stg:1) member4(ss_grenadier_rifle:2) member5(ss_grenadier_sa:0) member6(ss_grenadier_rifle_grenadier3:2) member7(ss_grenadier_mg:1) member8(ss_grenadier_mg_asst:1) charge(90) tags(all hero 44 45) group(h1) button(hero) level(1) cost(2) fore(-0.5))
 
 ("unit_vehicle_members_sided" side(ger_ss) name(hero_ss_sdkfz251_16) vehicle1(np_sdkfz251_16) member1(ss_support:5) member2(tankman2:0) charge(360) tags(all hero 43 44 45 flamethrower) group(h2) button(hero) level(1) cost(2.0) fore(0.0))

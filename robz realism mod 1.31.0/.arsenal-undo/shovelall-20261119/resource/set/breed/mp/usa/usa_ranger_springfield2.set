@@ -1,0 +1,17 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(usa-ranger-rfl) portrait(usa_soldier5) icon(stormtrooper4b) priority(4) nation(usa))
+	("breed_armor" head(helmet_usa_ranger))
+	{perks
+		("soldier_rifle_6" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(elite) start(1))
+	{inventory
+		("kit_rifle" gun(m1903) ammo(springfield_clip) rounds(100))
+		{item "bandage" 5}
+		("give" item(grenade m61) count(2))
+		;{item "grenade n73at" 1}
+		("give" item(dynamite) count(1))
+		{in_hands 0}
+	}
+}

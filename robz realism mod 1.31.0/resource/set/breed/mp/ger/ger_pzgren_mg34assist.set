@@ -14,6 +14,7 @@
 		;{item "grenade m24" 2}
 		{item "sandbag_kit"}
 		{item "barrel_case"}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

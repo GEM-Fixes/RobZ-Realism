@@ -1,0 +1,15 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(bul-inf-rfl) portrait(bul_soldier2) icon(at_miner) priority(1) nation(bul))
+	("breed_armor" head(helmet1_bul))
+	{perks
+		("soldier_rifle_4" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		("kit_rifle" gun(mannlicher_m1895) ammo(8x50) rounds(25))
+		("give" item(mine antitank) count(4))
+		{in_hands 0}
+
+	}
+}

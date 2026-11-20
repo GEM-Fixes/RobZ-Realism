@@ -1,0 +1,19 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(eng-engineer) portrait(eng_soldier2) icon(squadleader) priority(1) nation(eng))
+	("breed_armor" head(helmet2_eng))
+	{perks
+		("soldier_rifle_5" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		("rifle_em3")
+		{item "bandage" 3}
+		("give" item(grenade mk1) count(2))
+		("give" item(grenade smoke) count(2))
+		("give" item(grenade n77_smoke) count(1))
+		("give" item(grenade n73at) count(1))
+		{item "sandbag_kit" 2}
+		{in_hands 0}
+	}
+}

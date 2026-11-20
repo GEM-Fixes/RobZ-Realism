@@ -12,6 +12,7 @@
 		{item "bandage" 2}
 
 
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

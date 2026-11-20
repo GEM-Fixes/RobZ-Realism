@@ -12,6 +12,7 @@
 		("give" item(grenade mk1) count(2))
 		("give" item(grenade n73at) count(1))
 		("give_chance" item(grenade n77_smoke) chance(37))
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

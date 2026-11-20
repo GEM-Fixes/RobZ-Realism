@@ -12,6 +12,7 @@
 		("give" item(grenade m24) count(1))
 		{item "sandbag_kit" 1}
 		{item "trench_spade" 2}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

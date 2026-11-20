@@ -16,6 +16,7 @@
 		;{item "mine s_mine" 20}
 		;{item "mine_detector"}
 		;{item "trench_spade" 1}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

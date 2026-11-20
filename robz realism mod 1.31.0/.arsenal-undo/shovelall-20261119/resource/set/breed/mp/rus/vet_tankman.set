@@ -1,0 +1,15 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(rus_tankman_hp) portrait(rus_tankman) icon(tankman) priority(0) nation(rus))
+	("breed_armor" head(tankhelmet_rus))
+	{perks
+		("crew_2" body(vet_line) sight(soldier))
+	}
+	("breed_vet" table(crew) start(1))
+	{inventory
+		("kit_loaded" gun(ppsh41) ammo(ammo ppsh41_mag) loaded(35) spare(210))
+		{item "bandage" 5}
+		("give" item(grenade f1) count(2))
+		{in_hands 0}
+	}
+}

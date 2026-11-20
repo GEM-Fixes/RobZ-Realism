@@ -15,6 +15,7 @@
 		{item "ita_pack1" 1}
 
 
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

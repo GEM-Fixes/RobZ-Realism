@@ -1,0 +1,13 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(ger_ss_tankcom) portrait(ger_tankman) icon(tankman) priority(2) nation(ger2))
+	("breed_armor" head(tank_cap1_ger))
+	{perks
+		("crew_2" body(normal_line) sight(soldier))
+	}
+	("breed_vet" table(crew) start(1))
+	{inventory
+		("smg_mp40_96")
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,18 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(usa-camo-carbine) portrait(usa_elite2) icon(elite) priority(3) nation(usa))
+	("breed_armor_vest" vest(us_marine_haversack) head(helmet_marine_usa))
+	{perks
+		("soldier_rifle_7" rocket(1) body(line) sight(soldier))
+		{"tankgun" lvl_4}
+	}
+	("breed_vet" table(elite) start(1))
+	{inventory
+		("kit_rifle" gun(m3_carbine) ammo(m2carbine_mag) rounds(240))
+		{item "bandage" 5}
+		("give" item(grenade m61) count(1))
+		("give" item(grenade smoke) count(2))
+		{in_hands 0}
+	}
+
+}

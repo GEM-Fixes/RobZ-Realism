@@ -10,6 +10,7 @@
 	{inventory
 		("kit_smg" gun(suomi_m31r) ammo(ppsh_mag) rounds(160))
 
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

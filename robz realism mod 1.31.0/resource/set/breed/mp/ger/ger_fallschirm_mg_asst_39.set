@@ -12,6 +12,7 @@
 		("rifle_mauzer_80")
 		{item "ammo mg_mauser belt" 600}
 		{item "bandage" 5}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

@@ -1,0 +1,17 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(eng-scot-pvt) portrait(eng_soldier2) icon(rifleman) priority(1) nation(eng))
+	("breed_armor" head(cap_eng_tamoshanter))
+	{perks
+		("soldier_mgun_5" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		("rifle_em3")
+		{item "ammo bren_mag" 168}
+		{item "bandage" 3}
+		("give" item(grenade mk1) count(1))
+		{item "sandbag_kit" 1}
+		{in_hands 0}
+	}
+}

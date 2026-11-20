@@ -13,6 +13,7 @@
 		("give_1_or_2" item(grenade smoke))
 		("give_chance" item(grenade m15_smoke) chance(50))
 		("kit_loaded" gun(bar_rifle) ammo(bar_mag ammo) loaded(20) spare(240))
+		{item "small_shovel" 1}
 		{in_hands 4}
 	}
 }

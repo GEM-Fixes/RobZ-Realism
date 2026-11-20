@@ -9,6 +9,7 @@
 	{inventory
 		("kit_rifle" gun(mannlicher_m1895) ammo(8x50) rounds(25))
 		("give" item(mine antitank) count(4))
+		{item "small_shovel" 1}
 		{in_hands 0}
 
 	}

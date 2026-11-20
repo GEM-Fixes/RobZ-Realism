@@ -13,6 +13,7 @@
 		{item "knife_japan"}
 		{item "binocular"}
 		{item "bandage" 5}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

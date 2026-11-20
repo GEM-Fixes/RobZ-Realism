@@ -1,0 +1,15 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(rus-smguner) portrait(rus_elite2) icon(elite6) priority(3) nation(rus))
+	("breed_armor_vest" vest(ammo_rus) head(helmet1_rus))
+	{perks
+		("soldier_mgun_3" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(5))
+	{inventory
+		("kit_loaded" gun(dt) ammo(ammo dt29_mag) loaded(60) spare(240))
+		{item "bandage" 5}
+		{item "sandbag_kit" 1}
+		{in_hands 0}
+	}
+}

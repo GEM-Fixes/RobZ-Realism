@@ -11,6 +11,7 @@
 		("rifle_type44_carbine")
 		{item "ammo 5cm_grenade fg" 8}
 		{item "bandage" 5}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

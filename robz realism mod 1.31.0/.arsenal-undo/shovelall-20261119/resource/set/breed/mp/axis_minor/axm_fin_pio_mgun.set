@@ -1,0 +1,18 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(fin-sum-inf-svt) portrait(fin_soldier2) icon(mg) priority(0) nation(fin))
+	("breed_armor" head(helmet_fin_m16))
+	{perks
+		("soldier_mgun_4" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		{item "lsm26" filled}
+		{item  "LSM26_mag" 320}
+		("kit_pistol" gun(luger) ammo(walther_mag) rounds(40))
+		{item "bandage" 2}
+		{item "sandbag_kit" 1}
+
+		{in_hands 0}
+	}
+}

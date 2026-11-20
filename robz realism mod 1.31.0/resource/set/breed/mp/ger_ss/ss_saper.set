@@ -12,6 +12,7 @@
 		("give" item(dynamite_ladung) count(2))
 		("give" item(grenade hohlladung) count(1))
 		{item "trench_spade"}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

@@ -97,7 +97,6 @@
 
 ("unit_vehicle_members_sided" side(rus) name(hero3) vehicle1(gaz67) member1(sniper2:2) member2(tankman2:0) charge(240) tags(hero 43) group(h1) button(hero) level(1) cost(1.0) fore(-0.5))
 
-;{price {rule squad} {members 269.1} {cost 269}}
 ("unit_infantry_sided_members2" side(rus) name(hero5) member1(rifle3:30) member2(smg2:3) charge(240) tags(hero 43) group(h2) button(hero) level(1) cost(2.0) fore(-0.5))
 
 ("unit_vehicle_members_sided" side(rus) name(hero_isu152) vehicle1(isu152) member1(tankman:4) member2(tankman2:1) charge(600) tags(hero 43) group(h5) button(hero) level(1) cost(8.0) fore(-0.5))

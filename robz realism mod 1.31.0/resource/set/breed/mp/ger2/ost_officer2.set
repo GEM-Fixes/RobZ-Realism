@@ -12,6 +12,7 @@
 		("kit_smg" gun(mp41) ammo(mp40_mag) rounds(64))
 		{item "knife_ger"}
 		{item "binocular"}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

@@ -1,0 +1,17 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(snlf_mg_gear2) portrait(jap_soldier5) icon(stormtrooper3) priority(4) nation(jap))
+	("breed_armor" head(helmet_japmc))
+	{perks
+		("soldier_smg_7" rocket(7) body(hardy) sight(soldier))
+	}
+	("breed_vet" table(elite) start(1))
+	{inventory
+		("smg_type100smg")
+		{item "bandage" 5}
+		("give" item(grenade type97) count(2))
+		("give" item(dynamite) count(1))
+		("at_type_4at")
+		{in_hands 0}
+	}
+}

@@ -12,6 +12,7 @@
 		{item "ammo sten_mag" 128}
 		{item "ammo airstrike_rp3_flare" 5}
 		{item "bandage" 3}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

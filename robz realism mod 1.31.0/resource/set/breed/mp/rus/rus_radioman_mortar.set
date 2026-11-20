@@ -12,6 +12,7 @@
 		{item "ammo ppsh_mag" 142}
 		{item "ammo mortar_flaer" 5}
 		{item "bandage" 3}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

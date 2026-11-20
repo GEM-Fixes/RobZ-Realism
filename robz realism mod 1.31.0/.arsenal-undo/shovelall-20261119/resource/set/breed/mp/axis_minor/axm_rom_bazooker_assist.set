@@ -1,0 +1,18 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(rom-smg) portrait(rom_soldier1) icon(smgs2) priority(0) nation(rom))
+	("breed_armor" head(8_kaska_soldat_ruminia))
+	{perks
+		("soldier_rifle_3" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		("smg_orita")
+		("kit_pistol" gun(valter) ammo(walther_mag) rounds(16))
+		{item  "ammo 9x19" 40}
+		{item "bandage" 3}
+		("give" item(grenade m24x5) count(1))
+		{item "ammo panzershreck" 5}
+		{in_hands 0}
+	}
+}

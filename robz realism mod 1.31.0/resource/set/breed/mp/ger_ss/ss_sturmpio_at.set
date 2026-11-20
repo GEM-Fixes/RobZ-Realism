@@ -13,6 +13,7 @@
 		{item "ammo panzershreck" 5}
 		("pistol_valter")
 		{item "sandbag_kit"}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

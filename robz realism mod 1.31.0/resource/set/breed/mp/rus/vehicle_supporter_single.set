@@ -10,6 +10,7 @@
 		("smg_ppsh41")
 		{item "bandage" 3}
 		;{item "grenade f1" 1}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

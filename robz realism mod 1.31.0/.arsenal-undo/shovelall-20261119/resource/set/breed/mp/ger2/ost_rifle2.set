@@ -1,0 +1,20 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(ger-smock2-g43) portrait(ger2_soldier2) icon(rifleman) priority(1) nation(ger))
+	("breed_armor" head(helmet_heer_camo))
+	{perks
+		("soldier_rifle_4" rocket(4) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(2))
+	{inventory
+		("kit_rifle" gun(g43) ammo(g43_mag) rounds(20))
+		{item "ammo mauser_clip" 60}
+		{item "ammo mg_mauser drum" 50}
+		{item "bandage" 5}
+		("give" item(grenade m24) count(2))
+		("give_chance" item(grenade m24x5) chance(25))
+		{item "sandbag_kit" 1}
+		{item "panzerfaust_60 weapon" 0 1 filled}
+		{in_hands 0}
+	}
+}

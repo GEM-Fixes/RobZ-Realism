@@ -1,0 +1,18 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(fin-camo2-svt) portrait(fin_elite1) icon(elite5) priority(5) nation(fin))
+	{armors
+	}
+	{perks
+		("soldier_rifle_7" rocket(1) body(line) sight(sniper))
+		("perks_sniper")
+	}
+	("breed_vet" table(elite) start(5))
+	{inventory
+		("kit_loaded" gun(mosin_s_elite) ammo(ammo mosin_clip fg) loaded(5) spare(120))
+		{item "bandage" 5}
+		;{item "grenade smoke_paradrop_ammo" 1}
+		{item "plant" 3}
+		{in_hands 0}
+	}
+}

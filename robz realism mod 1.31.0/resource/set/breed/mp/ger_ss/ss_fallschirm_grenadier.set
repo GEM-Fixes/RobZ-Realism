@@ -19,6 +19,7 @@
 		{item "k98_grenade ap3" 1 2}
 		("give_chance" item(k98_grenade ap2) chance(25))
 		{item "ammo mg_mauser drum" 50}
+		{item "small_shovel" 1}
 		{in_hands 3}
 	}
 }

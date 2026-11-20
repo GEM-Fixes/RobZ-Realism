@@ -10,6 +10,7 @@
 		("kit_rifle" gun(mosin) ammo(mosin_clip) rounds(30))
 		{item "bandage" 3}
 		("give_chance" item(grenade molotov_coctail) chance(25))
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

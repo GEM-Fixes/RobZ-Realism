@@ -1,0 +1,16 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(ita-alp-mgun) portrait(ita_soldier1) icon(mg) priority(3) nation(ita))
+	("breed_armor" head(helmet_ita_m33_alpini))
+	{perks
+		("soldier_mgun_4" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		("kit_mgun" gun(breda_30) ammo(breda_mag) rounds(320))
+		("kit_pistol" gun(beretta_m1934) ammo(9x17) rounds(35))
+		{item "bandage" 2}
+		{item "sandbag_kit" 1}
+		{in_hands 0}
+	}
+}

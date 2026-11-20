@@ -16,6 +16,7 @@
 		("give" item(grenade rpg40) count(1))
 		("give" item(grenade smoke) count(1))
 		{item "ru_backpack_meshok2"}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

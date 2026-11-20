@@ -10,6 +10,7 @@
 		("kit_smg" gun(mp3008) ammo(mp40_mag) rounds(192))
 		{item "bandage" 3}
 		{item "faustpatrone_30 weapon" 0 1 filled}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

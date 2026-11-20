@@ -1845,12 +1845,12 @@
 (define "level_93"
 	{tags   "level_93 %side soldier"}
 	{cp     2.0}
-	{score  75.0}
+	{score  20.0}
 	{basic}
 	{breed}
 	{cw 2.0}
 )
-;{price {rule sole} {class "radio"} {tier "60"} {item "mortar_60_flaregun"} {mp 20} {cp 2} {cw 2}}
+;{price {rule sole} {class "radio"} {tier "60"} {item "mortar_60_flaregun"} {mp 20} {cp 5} {cw 5}}
 {"mp/usa/usa_devil_brigade_radio" ("level_93" side(usa))}
 (define "level_94"
 	{tags   "level_94 %side soldier"}

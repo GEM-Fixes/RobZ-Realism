@@ -12,6 +12,7 @@
 		("kit_pistol" gun(tt) ammo(tt_mag) rounds(32))
 		{item "knife_rus"}
 		{item "binocular"}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

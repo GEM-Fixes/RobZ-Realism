@@ -15,6 +15,7 @@
 		{item "grenade satchel" 0}
 		("give" item(dynamite) count(3))
 		("kit_loaded" gun(m3a) ammo(m3a_mag ammo) loaded(32) spare(180))
+		{item "small_shovel" 1}
 		{in_hands 6}
 	}
 }

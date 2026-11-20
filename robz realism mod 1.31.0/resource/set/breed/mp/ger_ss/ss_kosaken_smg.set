@@ -10,6 +10,7 @@
 		("kit_smg" gun(ppsh41) ammo(ppsh41_mag) rounds(140))
 		{item "bandage" 3}
 		("give" item(grenade m24) count(1))
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

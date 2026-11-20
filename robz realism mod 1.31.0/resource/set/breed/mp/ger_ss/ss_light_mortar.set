@@ -10,6 +10,7 @@
 
 		("kit_mortar" gun(mortar_legrw_36) ammo(mortar50 ger fg) rounds(12))
 		{item "bandage" 3}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

@@ -15,6 +15,7 @@
 		("give" item(grenade smoke) count(1))
 		{item "sandbag_kit"}
 		{item "panzerfaust_60 weapon" 0 1 filled}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

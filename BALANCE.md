@@ -7,7 +7,7 @@ This file lists every change to RobZ Realism 1.31.0 that affects balance or game
 ## How to read this file
 
 - Baseline: the imported mod, git commits efd0c93aa..3b6bd4535 ("Start (part N/28)").
-- Covered: commits fb2612215..001f235fb (2026-11-16 to 2026-11-19).
+- Covered: commits fb2612215..2566d233a (2026-11-16 to 2026-11-19), plus the not yet committed work of 2026-11-19 evening (undo tags shovelall-20261119, mortar60-20261119, pricecalc-20261119d; sections 3, 3a, 3b).
 - Undo tag = folder name under `robz realism mod 1.31.0/.arsenal-undo/`. It holds the files as they were before the change. "git only" = no undo folder; undo with git.
 - "old -> new" values come from a full macro expansion of the mod over vanilla at each commit, not from the notes.
 - Paths are relative to `robz realism mod 1.31.0/resource/`.
@@ -17,7 +17,7 @@ This file lists every change to RobZ Realism 1.31.0 that affects balance or game
 
 1. Veteran and elite vehicles and cannons (2026-11-19)
 2. Sniper rifles (2026-11-19)
-3. Price model (calculator only, 2026-11-19)
+3. Price model (2026-11-19): calculator model, small shovel for every priced breed, 60 mm mortar call-in price
 4. Grenade item names (2026-11-19)
 5. Soldier breeds: skill, health and kit remap (2026-11-18 / 2026-11-19)
 6. Bug fixes in cards, vehicles and props (2026-11-18)
@@ -136,15 +136,19 @@ Date 2026-11-19. Undo tag: sniperfix-20261119. Commit 243293645.
 | m1903a4_vet | kept own values | PrepareTime 2.5, recoveryTime 1.05, range 150 150, tag bolt_r105 | owner vet rule |
 | m1903a4_vet | inherited from m1903a4 | springfield_clip 5, bullet speed 855, fireSound rifle/m1903a4_s, rechargeTime 7.5 | follows the base rifle |
 
-## 3. Price model (calculator only)
+## 3. Price model
 
-Dates 2026-11-19. Undo tags: pricecalc-20261119, pricecalc-20261119b, pricecalc-20261119c, pricemodel-20261119, shovel-20261119. Commits 990aa6048, 001f235fb.
+Dates 2026-11-19. Undo tags: pricecalc-20261119, pricecalc-20261119b, pricecalc-20261119c, pricemodel-20261119, shovel-20261119, shovelall-20261119, mortar60-20261119, pricecalc-20261119d. Commits 990aa6048, 001f235fb, 2566d233a; the last three tags are not committed yet.
 
-This work changed NO real price. Only two things changed:
+The model work itself changed no real price. It changed only two things:
 - `set/multiplayer/units/price_model.inc`. No file includes it. The game does not read it.
 - `;{price ...}` comment lines next to soldier rows and squad cards. The game ignores comments.
 
-Check: the expanded unit sets are identical before and after (57b45f09b -> 990aa6048 and 990aa6048 -> 001f235fb). All 16 non-comment changed lines of 001f235fb are in price_model.inc.
+Real data changed through the price work: the kit changes in 3a and the one price in 3b.
+
+Check: the expanded unit sets are identical before and after (57b45f09b -> 990aa6048 and 990aa6048 -> 001f235fb). All 16 non-comment changed lines of 001f235fb are in price_model.inc. For pricecalc-20261119d: `pricecalc check` passed (comments only, a second apply changes nothing).
+
+Hero cards (button hero, paid in SP) no longer get a computed-MP comment line (pricecalc-20261119d). The calculator cannot price them in MP. The model has no `{point_value}` yet, so these cards get no line at all, and 56 old lines were removed from 15 vehicle card files. Once a point value is set, the line will show the SP cost and what it is worth in MP.
 
 Owner rules written into the model:
 
@@ -154,7 +158,7 @@ Owner rules written into the model:
 | fg42_sc | priced as an auto rifle |
 | m3_carbine | priced in the special carbine tier |
 | Plain `panzerfaust` | = Panzerfaust 100 = pzf high tier |
-| 60 mm mortar call-in | CP 5 -> 2 |
+| 60 mm mortar call-in | MP 20, CP 5 (the CP 5 -> 2 change made earlier on 2026-11-19 is withdrawn: owner, "the CP should be 5 for the 60 radio"; undo tag mortar60-20261119; a fresh seed from the rules file also gives CP 5) |
 | `small_shovel` (digs a scrape; not the sandbag kit) | 8 MP -> free, in its own group `scrape_shovel`. Other spades stay 8 MP; sandbag kits stay priced per kit |
 | Panzerfaust add-on | full add-on price -> price x chance of carrying it (`{item "x" 0 1 filled}` = 0.25), never more than once |
 
@@ -162,14 +166,36 @@ Effect on computed (not real) prices, example: card sturmgrens_44 302 -> 168 (re
 
 ### 3a. Real kit change found through the price work
 
-Date 2026-11-19. Undo tag: shovel-20261119. Owner rule: a breed carries one small shovel.
+Date 2026-11-19. Undo tags: shovel-20261119, shovelall-20261119. Owner rules: a breed carries one small shovel; "All breeds have small".
 
 | Breed | Item | Old -> new | Why |
 |---|---|---|---|
 | ger/ger_sturmgren_sl_asst | small_shovel | 2 -> 1 | the breed file listed it twice (already so in the original mod) |
 | ger/ger_sturmgren_sg44_pzfst | small_shovel | 2 -> 1 | same |
+| 800 breeds (list: undo tag shovelall-20261119, same paths) | small_shovel | 0 -> 1 | owner: every breed carries one small shovel |
 
-Open: 45 of the 870 priced breeds carry a small shovel, 825 carry none. No shovel was added to any breed.
+Small shovel for every breed (shovelall-20261119):
+- Scope: the 849 breeds the price calculator prices (870 `soldiers.set` rows; some breeds have two rows). 844 have a breed file in the mod. 44 already carried one shovel and 800 got one. Now all 844 carry exactly one.
+- Line added: `{item "small_shovel" 1}`, put right before the `{in_hands N}` line (the last item of the kit). That is one of the places the 44 older ones use. Adding the item last does not move the `in_hands` index. No other line changed.
+- Price: none changed. The shovel is free in the model (group `scrape_shovel`, price 0). The calculator gives the same result before and after on all 870 breed rows and 2440 cards (0 differences).
+- Skipped, no breed file in the mod or game: eng/eng_elite_tankman, eng/eng_elite_tankcommander, jap/jap_elite_vehicle_supporter, axis_minor/axm_rom_vet_tankman2_single, axis_minor/axm_hun_tankmancommander_single. Their price rows point to files that do not exist (NO_BREED_FILE).
+- Not touched: 344 breed files under `set/breed/mp/` that have no price row, none of them with a shovel: axis_minor 4, eng 45, ger 88, ger_ss 67, jap 47, rus 41, rus_guard 2, usa 50. Most are older or unprefixed versions of priced breeds, for example usa/devil_brigade_radio in the squads_42 card. Full list: `notes/robz-shovel-unpriced-breeds.tsv`. There is no breed folder outside `mp/`.
+- No animal, dummy or other non-human breed is in the priced set. Officers, radiomen, crews, jap_kamikaze and jap_charger_throwgun got the shovel like everyone else.
+- Inventory room: `GiveItems` (game/entity/eHumanBreed.cpp:83) puts each item with `PutWhole` (game/inventory/eInventoryLocation.cpp:277). That uses `FindPlace` with no rearrange, and an item that finds no place is deleted silently. The breed still loads. The mod's `stuff/special/small_shovel` has no `{size}`, so its size is 0x0 (eInventoryBox.cpp:63). It covers no cell, so it never pushes out another item. It still needs one free cell when it is placed (eInventoryBox.cpp:193-225, 585).
+- [T] usa/usa_elite_101st_para4 (6x10 box): at the middle counts its kit covers all 60 cells. The shovel then has no free cell and is dropped silently, unless the random `{item "ammo m18recoilless wp" 1 1}` gives 0 rounds (about 1 time in 4). Next fullest kits (worst-case counts, simulated [I]): usa/usa_ranger_recoiless 2 free cells, eng/eng_pioneer_ap_miner 4, ger/ger_ap_miner 5. Items with no `{size}` (kits, mines, dynamite) were counted as 0x0.
+- Found on the way, not changed: three kit items have no stuff in the mod or game, so the game gives nothing. axm_fin_sissi_squadleader has `knife_fin`, `small_inf_shovel` and `ammo_box_inf_fin`. axm_bul_mgun_assist has `ammo mauser_rifle mauser`.
+
+### 3b. Real price change: 60 mm mortar call-in
+
+Date 2026-11-19. Undo tag: mortar60-20261119. Owner: "Sheet is accurate". The sheet's Radio row prices the 60 mm call-in at 20 MP.
+
+| What | File:line | Old -> new |
+|---|---|---|
+| level_93 score (MP). Its only price row is `mp/usa/usa_devil_brigade_radio` (soldiers.set:1854). The breed carries `mortar_60_flaregun`, the only 60 mm call-in | `set/multiplayer/units/soldiers.set:1848` | 75.0 -> 20.0 |
+| Model, radio tier "60", cp | `set/multiplayer/units/price_model.inc:65` | 2 -> 5 (withdrawal, see section 3) |
+
+The 75 and the 20 measure the same thing: the soldier row's `{score}`, which is the soldier's MP value. Model MP for the tier was already 20.
+Not changed: the real CP of level_93 is still 2.0 (`soldiers.set:1847`), while the model now says 5. The owner's CP 5 was asked for the model only. The cards with this breed keep their own `cost()`: devils_brigade(usa) in usa/squads_43-45.set:62 costs 255.
 
 ## 4. Grenade item names
 
@@ -1573,7 +1599,7 @@ Method: each mod snapshot was expanded (macros, includes, `.presets`, mod over v
 
 ## Not yet loaded in the game
 
-Nothing in this file has been loaded or tested in the game. No game.log was read for any of these changes. Every entry is checked only against the data (git diffs and macro expansion). The notes say the same for the remap, the vet rules and the price model.
+Nothing in this file has been loaded or tested in the game. No game.log was read for any of these changes. Every entry is checked only against the data (git diffs and macro expansion). The notes say the same for the remap, the vet rules and the price model. The small shovel for every breed and the 60 mm call-in price (3a, 3b) are not loaded in the game either: no spawn test, no buy test.
 
 ## Not determined
 
@@ -1589,4 +1615,6 @@ Nothing in this file has been loaded or tested in the game. No game.log was read
 | m1139 boarding animation (topic 6b) | whether emit_tank_2 is the right animation for that exit | in-game boarding test |
 | tree include fix (topic 6b) | how the 23 trees behaved with the missing include (props, collision, falling) | in-game check on a jungle map |
 | human_full_test.inc closer (fixes-20261118) | nothing in the mod includes this file, so likely no effect; vanilla use not checked | grep vanilla data for human_full_test |
+| small shovel in a full kit (topic 3a) [T] | usa_elite_101st_para4 fills its 60 cells, so the shovel is likely dropped silently unless the random wp round count is 0; the fit was worked out from engine code and stuff sizes, not seen in the game | spawn the breed several times and open its inventory |
+| level_93 CP (topic 3b) | the model now says CP 5 for the 60 mm call-in; the breed's real CP is still 2.0 | owner: should the game value become 5 too |
 | give_chance `-1 2` (pre-existing, not changed) | the 12% kit chance draws a negative count for about 37% of soldiers; what the game does then | in-game spawn test |

@@ -1,0 +1,30 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(eng-inf-pvt) portrait(eng_soldier2) icon(rifleman) priority(1) nation(eng))
+	("breed_armor" head(helmet2_eng))
+	{perks
+		("soldier_rifle_4" rocket(1) body(line) sight(soldier))
+	}
+	{veterancy
+		{"lvl_1" 2
+		}
+		{"lvl_2" 5
+		}
+		{"lvl_3" 9
+		}
+		{"lvl_4" 14
+		}
+		{"lvl_5" 20
+		}
+	}
+	{inventory
+		("kit_rifle" gun(em3) ammo(british303_clip) rounds(60))
+		{item "ammo bren_mag" 56}
+		{item "bandage" 3}
+		("give" item(grenade mk1) count(1))
+		{item "sandbag_kit"}
+		("give" item(grenade n73at) count(1))
+		("give_chance" item(grenade n77_smoke) chance(25))
+		{in_hands 0}
+	}
+}

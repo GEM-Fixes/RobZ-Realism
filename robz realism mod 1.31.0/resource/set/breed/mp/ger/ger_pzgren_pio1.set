@@ -19,6 +19,7 @@
 		;{item "ammo panzershreck" 3}
 		;{item "sandbag_kit" 3}
 		;{item "dynamite_ladung" 1}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

@@ -13,6 +13,7 @@
 		{item "sandbag_kit" 1}
 		{item "smoke_candle" 3}
 		{item "knife_japan" 1}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

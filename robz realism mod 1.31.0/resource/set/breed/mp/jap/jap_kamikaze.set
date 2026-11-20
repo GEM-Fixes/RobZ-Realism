@@ -10,6 +10,7 @@
 	("breed_vet" table(standard) start(1))
 	{inventory
 		{item "lunge_mine" filled}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

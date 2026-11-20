@@ -1,0 +1,19 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(ger-reg2-mgun) portrait(ger_soldier3) icon(stormtrooper6) priority(3) nation(ger))
+	("breed_armor" head(helmet_heer_camo))
+	{perks
+		("soldier_mgun_5" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		("rifle_mauzer")
+		{item "ammo mg_mauser drum" 300}
+
+		{item "bandage" 5}
+		;{item "grenade m24" 2}
+		{item "sandbag_kit"}
+		{item "barrel_case"}
+		{in_hands 0}
+	}
+}

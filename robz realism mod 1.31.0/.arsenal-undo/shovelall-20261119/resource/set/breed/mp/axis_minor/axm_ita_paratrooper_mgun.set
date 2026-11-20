@@ -1,0 +1,18 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(ita-para-smg) portrait(ita_elite1) icon(elite) priority(3) nation(ita))
+	("breed_armor" head(helmet_ita_para))
+	{perks
+		("soldier_mgun_7" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(elite) start(1))
+	{inventory
+		("kit_mgun" gun(breda_30) ammo(breda_mag) rounds(240))
+		{item "mg_backpack"}
+		{item "bandage" 4}
+		{item "grenade oto_mod35"}
+		{item "breda42at"}
+		{item "sandbag_kit"}
+		{in_hands 0}
+	}
+}

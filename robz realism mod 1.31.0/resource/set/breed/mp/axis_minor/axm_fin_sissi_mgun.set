@@ -12,6 +12,7 @@
 		("kit_pistol" gun(luger) ammo(walther_mag) rounds(40))
 		{item "bandage" 2}
 		{item "sandbag_kit" 1}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

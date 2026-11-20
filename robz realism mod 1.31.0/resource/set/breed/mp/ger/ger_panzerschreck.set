@@ -12,6 +12,7 @@
 		("give" item(grenade hohlladung) count(1))
 		{item "ammo panzershreck" 7}
 		("pistol_valter")
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

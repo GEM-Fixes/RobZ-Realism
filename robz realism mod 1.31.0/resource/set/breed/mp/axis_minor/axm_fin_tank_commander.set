@@ -9,6 +9,7 @@
 	("breed_vet" table(crew) start(1))
 	{inventory
 		("pistol_valter_32")
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

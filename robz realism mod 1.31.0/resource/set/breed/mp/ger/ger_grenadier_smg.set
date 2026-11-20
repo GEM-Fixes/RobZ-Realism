@@ -11,6 +11,7 @@
 		{item "bandage" 3}
 		("give" item(grenade m24) count(2))
 		("give_chance" item(grenade m24x5) chance(12))
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

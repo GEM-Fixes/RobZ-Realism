@@ -15,6 +15,7 @@
 		("give_chance" item(grenade m24x5) chance(25))
 		{item "sandbag_kit" 1}
 		{item "panzerfaust_60 weapon" 0 1 filled}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

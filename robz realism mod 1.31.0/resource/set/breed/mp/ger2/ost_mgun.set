@@ -12,6 +12,7 @@
 		{item "bandage" 3}
 		{item "sandbag_kit" 1}
 		{item "barrel_case"}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

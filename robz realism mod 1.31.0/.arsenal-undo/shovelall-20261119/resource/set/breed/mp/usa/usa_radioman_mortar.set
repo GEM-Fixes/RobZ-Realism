@@ -1,0 +1,17 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(us_ranger_hp) portrait(usa_soldier3) icon(radioman) priority(5) nation(usa))
+	("breed_armor" head(radioman_hat))
+	{perks
+		("soldier_smg_3" rocket(1) body(line) sight(soldier))
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		{item "m3a" filled}
+		{item "mortar_flaergun" filled}
+		{item "ammo m3a_mag" 192}
+		{item "ammo mortar_flaer" 5}
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

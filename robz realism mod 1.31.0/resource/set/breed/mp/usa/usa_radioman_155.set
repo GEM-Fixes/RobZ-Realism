@@ -12,6 +12,7 @@
 		{item "ammo m3a_mag" 192}
 		{item "ammo artillery_155_flare" 5}
 		{item "bandage" 3}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

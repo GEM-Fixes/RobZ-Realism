@@ -15,6 +15,7 @@
 		("kit_at" gun(weapon m18recoilless) ammo(m18recoilless) rounds(8))
 		{item "ammo m18recoilless fg" 3}
 		{item "ammo m18recoilless wp" 1 1}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

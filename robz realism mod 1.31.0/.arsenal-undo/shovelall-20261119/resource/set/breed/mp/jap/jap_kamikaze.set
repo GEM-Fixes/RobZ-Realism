@@ -1,0 +1,15 @@
+(include "/set/breed/breed_macros.inc")
+{breed
+	("breed_look" skin(jap_army_kamikaze) portrait(jap_elite2) icon(kamikaze) priority(0) nation(jap))
+	("breed_armor" head(jap_army_helmet6))
+	{tags "stealth"}
+	{perks
+		("soldier_charge_5" speed(1.1))
+		{"stealth"}
+	}
+	("breed_vet" table(standard) start(1))
+	{inventory
+		{item "lunge_mine" filled}
+		{in_hands 0}
+	}
+}

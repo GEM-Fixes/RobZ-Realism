@@ -23,6 +23,7 @@
 		("give" item(grenade hohlladung) count(1))
 		{item "hedgehog_kit"}
 		{item "bandage" 5}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

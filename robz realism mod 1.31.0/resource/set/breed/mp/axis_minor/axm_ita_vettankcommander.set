@@ -10,6 +10,7 @@
 	("breed_vet" table(standard) start(1))
 	{inventory
 		("kit_pistol" gun(glisenti) ammo(9x19c) rounds(35))
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

@@ -12,6 +12,7 @@
 		("give" item(mine antipersonnel) count(2))
 		{item "trench_spade"}
 		{item "tunnel_spade"}
+		{item "small_shovel" 1}
 		{in_hands 0}
 	}
 }

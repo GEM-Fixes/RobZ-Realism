@@ -1,0 +1,24 @@
+{
+ "tool": "pricecalc",
+ "tag": "pricecalc-20261119d",
+ "changed": [
+  "resource/set/multiplayer/units/soldiers.set",
+  "resource/set/multiplayer/units/axis_minor/vehicles.set",
+  "resource/set/multiplayer/units/eng/vehicles_43-44.set",
+  "resource/set/multiplayer/units/ger2/vehicles_all.set",
+  "resource/set/multiplayer/units/ger_ss/vehicles_41.set",
+  "resource/set/multiplayer/units/ger_ss/vehicles_42.set",
+  "resource/set/multiplayer/units/ger_ss/vehicles_43.set",
+  "resource/set/multiplayer/units/ger_ss/vehicles_44.set",
+  "resource/set/multiplayer/units/ger_ss/vehicles_45.set",
+  "resource/set/multiplayer/units/jap/vehicles_all.set",
+  "resource/set/multiplayer/units/rus/vehicles_41.set",
+  "resource/set/multiplayer/units/rus/vehicles_42.set",
+  "resource/set/multiplayer/units/rus/vehicles_43.set",
+  "resource/set/multiplayer/units/rus/vehicles_44-45.set",
+  "resource/set/multiplayer/units/rus_guard/vehicles_43-45.set",
+  "resource/set/multiplayer/units/usa/vehicles_43-45.set"
+ ],
+ "created": [],
+ "setPrices": false
+}
