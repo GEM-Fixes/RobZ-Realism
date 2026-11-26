@@ -8,7 +8,7 @@
 				}
 			}
 			{timer
-				{duration 1500}
+				{duration 120}
 			}
 			{scale 1
 				{linear

@@ -8,7 +8,7 @@
 				}
 			}
 			{timer
-				{duration 3000}
+				{duration 120}
 			}
 			{scale 0.175 0.025}
 			{preturn 90 90}

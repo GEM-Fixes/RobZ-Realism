@@ -1,34 +1,76 @@
+; How the game sorts an entity into a group: the group's kind (actor dead, gameentity, stuff, or none for plain
+; entities such as decals) must be exactly the entity's, then a stuff group matches the item's tags ({tag}) and
+; every other group the entity's name ({entity}). {tag} does nothing in a group that is not stuff, {entity} nothing
+; in a stuff group. The first group that matches takes the entity: a later group with the same entities or tags
+; never gets any.
 {entitymanager
 	{group "dead" actor dead
 		{limit 60}
 		{remove dissolve}
 		{entity "human"}
-		{entity "flesh"}
-		{tag "flesh"}
 	}
 
-	{group "dead" actor dead
+	{group "dead_fauna" actor dead
 		{limit 1}
 		{remove instant}
-		{entity "fauna"}
-		{entity "animal"}
+		{entity "cow"}
+		{entity "chicken"}
 	}
 	{group "broken" gameentity
 		{limit 20}
 		{remove dissolve}
 		{DeadVehicles}
 	}
+	; The body parts set/interaction_entity/human.inc throws (entity/particle/_*).
 	{group "gore" gameentity
-		{limit 20}
-		{remove dissolve}
-		{entity "flesh"}
-		{tag "flesh"}
-	}
-	{group "gore2" gameentity
 		{limit 50}
-		{remove instant}
-		{entity "flesh"}
-		{tag "flesh"}
+		{remove dissolve}
+		{entity "_corp01"}
+		{entity "_corp02"}
+		{entity "_corp03"}
+		{entity "_foot01"}
+		{entity "_foot02"}
+		{entity "_foot03"}
+		{entity "_full01"}
+		{entity "_full02"}
+		{entity "_full03"}
+		{entity "_guts01"}
+		{entity "_guts01a"}
+		{entity "_guts01b"}
+		{entity "_guts02"}
+		{entity "_guts02a"}
+		{entity "_guts02b"}
+		{entity "_guts03"}
+		{entity "_guts03a"}
+		{entity "_guts03b"}
+		{entity "_halflimb01"}
+		{entity "_halflimb02"}
+		{entity "_hand01"}
+		{entity "_hand02"}
+		{entity "_hand03"}
+		{entity "_hand04"}
+		{entity "_hand05"}
+		{entity "_head01"}
+		{entity "_head02"}
+		{entity "_head03"}
+		{entity "_head04"}
+		{entity "_head05"}
+		{entity "_leg01"}
+		{entity "_leg02"}
+		{entity "_leg03"}
+		{entity "_leg04"}
+		{entity "_lowtor01"}
+		{entity "_lowtor02"}
+		{entity "_lowtor03"}
+		{entity "_sguts01"}
+		{entity "_sguts02"}
+		{entity "_sguts03"}
+		{entity "_torse01"}
+		{entity "_torse02"}
+		{entity "_torse03"}
+		{entity "_xlcorp01"}
+		{entity "_xlcorp02"}
+		{entity "_xlcorp03"}
 	}
 
 	{group "piece" gameentity
@@ -38,13 +80,17 @@
 		{entity "piece_large_steel"}
 		{entity "piece_medium_steel"}
 	}
-
-	{group "piece2" gameentity
-		{limit 30};mod new
-		{remove instant}
-		{entity "piece_big_steel"}
-		{entity "piece_large_steel"}
-		{entity "piece_medium_steel"}
+	; The scrap, stones and clods that explosions and dying tanks throw (entity/fx/detonation's entity generators).
+	{group "debris" gameentity
+		{limit 100}
+		{remove dissolve}
+		{entity "#metall1"}
+		{entity "#metall2"}
+		{entity "#metall3"}
+		{entity "#stone01"}
+		{entity "#stone02"}
+		{entity "#grunt2"}
+		{entity "#flotsam2"}
 	}
 	{group "guns" stuff
 		{limit 25}
@@ -75,23 +121,11 @@
 		{tag "grenade"}
 		{tag "missile"}
 		{tag "sharp_edge"}
-		{entity "trench_spade"}
 	}
 	{group "stuff2" stuff
 		{limit 20}
 		{remove dissolve}
-		{tag "shell"}
 		{tag "dynamite"}
-		{tag "grenade"}
-		{tag "missile"}
-		{tag "sharp_edge"}
-		{entity "trench_spade"}
-		{tag "trench_spade"}
-	}
-	{group "stuff3" stuff
-		{limit 10}
-		{remove dissolve}
-		{entity "trench_spade"}
 		{tag "trench_spade"}
 	}
 
@@ -109,6 +143,13 @@
 		{entity "grenade_shellhole"}
 		{entity "grenade_at_shellhole"}
 	}
+	; The scorched grass a fire leaves (a decal: no kind).
+	{group "burn_marks"
+		{limit 100}
+		{remove instant}
+		{entity "burn_grass1"}
+	}
+	; These two match by tag, which the game does only for stuff: they never get a member.
 	{group "burning" gameentity
 		{limit 20}
 		{remove dissolve}
@@ -118,11 +159,6 @@
 	{group "construction_broken" gameentity
 		{limit 8}
 		{remove dissolve}
-		{tag "crushed"}
-	}
-	{group "construction_broken" gameentity
-		{limit 20}
-		{remove instant}
 		{tag "crushed"}
 	}
 }
