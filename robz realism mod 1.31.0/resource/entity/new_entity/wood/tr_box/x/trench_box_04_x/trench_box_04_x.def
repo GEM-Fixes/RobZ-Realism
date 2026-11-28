@@ -3,5 +3,4 @@
 	{Extension "trench_box_04_x.mdl"}
 	{Extender "land_patch"
 	}
-	("volume" args "body")
 }
