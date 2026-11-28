@@ -3,7 +3,5 @@
 	{Extension "trench_tank_rs_x.mdl"}
 	{props "sand"}
 	("boneLand"  args "trench_tank_rs")
-	("volume" args "body")
-	("volume" args "body1")
 	{ObstacleID "unbreakable"}
 }
