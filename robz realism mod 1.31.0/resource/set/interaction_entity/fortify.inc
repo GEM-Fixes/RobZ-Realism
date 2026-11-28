@@ -74,7 +74,7 @@
 	{on "break"
 		{if not "broken"
 			{set "broken" 1}
-			{tags add "crushed"}
+			; not tagged "crushed": entitymanager.set's construction_broken (limit 8) would remove broken trenches
 			{call "disable_volumes"}
 			{if not "sliced"
 				{set "sliced" 1}
